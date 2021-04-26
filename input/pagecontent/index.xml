@@ -1,0 +1,68 @@
+<div xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../fhir-single.xsd">
+  <a name="background"></a>
+  <h3>Background</h3>
+
+  <img src="osiris2.png" alt="Osiris logo" />
+
+  <p>
+    The OSIRIS (Interoperability and data sharing of clinical and biological
+    data in Oncology) is a national initiative launched in 2015 to address data
+    heterogeneity and how to accelerate cancer research in France by making
+    better use of the molecular-based clinical trials data. Through a national
+    and bottom-up approach, we have defined a minimum set of clinical and
+    genomic data relevant to the field of precision medicine in oncology, a
+    Common Data Model (CDM) and a technical framework for sharing and enhancing
+    data retrieval in compliance with national and European regulatory
+    procedures.
+  </p>
+
+  <a name="contributors"></a>
+  <h3>Contributors</h3>
+  <p>
+    The OSIRIS project is mainly financed by the
+    <a href="https://www.e-cancer.fr/">INCA</a>
+    (Institut National du Cancer, The French National Cancer Institute). The core contributors to the original data model are Institut Curie, Institut Bergonié, the oncology center Léon Bérard, with the contribution of a dozens oncology centre and French hospitals. The current FHIR version of the data model was realized by the same stakeholders in partnership with the start-up
+    <a href="https://arkhn.com/">Arkhn</a>
+    .
+  </p>
+
+  <a name="geninfo"></a>
+  <h3>Patient general information</h3>
+
+  <p>
+    These resources are directly bound to patient, containing general
+    information about him.
+  </p>
+
+  <img src="patient_metadata.png" alt="Patient metadata" />
+
+  <a name="treatments"></a>
+  <h3>Treatments</h3>
+
+  <p>Treatment plan and administrations, as well as adverse events that could occur during the latter.</p>
+
+  <img src="treatments.png" alt="Treatments" />
+
+  <a name="sequencing"></a>
+  <h3>Sequencing</h3>
+
+  <p>This category contains the results of sequencing analysis.</p>
+  <p>
+    The sequencing analysis is modelised by the
+    <a href="StructureDefinition-analysis.html">Analysis</a>
+    profile.
+  </p>
+  <p>
+    Variants are modelised by
+    <a href="StructureDefinition-snp.html">SNP</a>,
+    <a href="StructureDefinition-copy-number.html">CopyNumber</a>,
+    <a href="StructureDefinition-expression.html">Expression</a>
+    or
+    <a href="StructureDefinition-fusion.html">Fusion</a>
+    profiles, and more information are added with the
+    <a href="StructureDefinition-variant-annotation.html">Annotation</a>
+    profile (where a comparison to a reference is done)
+  </p>
+  <img src="sequencing.png" alt="Sequencing" />
+</div>
