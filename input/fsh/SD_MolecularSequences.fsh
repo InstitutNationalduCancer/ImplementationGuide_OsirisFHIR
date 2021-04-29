@@ -2,7 +2,7 @@ Profile:        GenomeEntity
 Parent:         MolecularSequence
 Id:             genome-entity
 Title:          "Genome Entity"
-Description:    "Genome entity"
+Description:    "The genome entity profile is used to indicate the genome reference used to create the Annotation."
 * patient only Reference (onco-patient)
 
 * type from GenomeEntityType (required)
@@ -16,6 +16,7 @@ Description:    "Genome entity"
 * repository[genome-entity-db].name ^short = "Database name"
 * repository[genome-entity-db].datasetId ^short = "GenomeEntity Database ID"
 
+
 ValueSet: GenomeEntityType
 Title: "Genome entity type Value Set"
 Description: "Type of genome entity"
@@ -25,7 +26,6 @@ Description: "Type of genome entity"
 * UMLS#C0035696	"mRNA"
 * UMLS#C0887909	"ncRNA"
 * UMLS#C0079941	"ORF"
-
 
 
 Profile:        AnnotationReference

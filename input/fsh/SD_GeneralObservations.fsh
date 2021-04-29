@@ -2,7 +2,7 @@ Profile:        CauseOfDeath
 Parent:         Observation
 Id:             cause-of-death
 Title:          "Cause Of Death"
-Description:    "Cause of death observation"
+Description:    "Cause of death observation."
 * subject only Reference (onco-patient)
 * code = LNC#69453-9 "Cause of death"
 * subject 1..1

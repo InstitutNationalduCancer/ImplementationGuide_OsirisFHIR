@@ -8,7 +8,7 @@ Profile:        PerformanceStatus
 Parent:         Observation
 Id:             performance-status
 Title:          "Performance Status"
-Description:    "Performance status observation (see https://www.ncbi.nlm.nih.gov/books/NBK97482/ for more information)"
+Description:    "Oncology-patient performance status observation (see https://www.ncbi.nlm.nih.gov/books/NBK97482/ for more information)"
 // References
 * subject only Reference (onco-patient)
 * focus only Reference (tumor-pathology-event)
@@ -91,7 +91,7 @@ Profile:        Biomarker
 Parent:         Observation
 Id:             biomarker
 Title:          "Biomarker"
-Description:    "Biomarker"
+Description:    "Biomarker observation about a patient from BiomarkerCode ValueSet"
 // References
 * subject only Reference (onco-patient)
 * derivedFrom only Reference (analysis)

@@ -2,7 +2,7 @@ Profile:        ResponseEvaluation
 Parent:         Observation
 Id:             response-evaluation
 Title:          "Response Evaluation"
-Description:    "Response evaluation to an oncology treatment"
+Description:    "Response evaluation to an oncology treatment from RECIST terminology."
 
 // References
 * subject only Reference (onco-patient)

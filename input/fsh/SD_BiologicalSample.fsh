@@ -2,7 +2,7 @@ Profile:        BiologicalSample
 Parent:         Specimen
 Id:             onco-biological-sample
 Title:          "Biological Sample"
-Description:    "Description of a biological sample"
+Description:    "Description of a biological sample coming from an oncology Patient."
 * subject only Reference (onco-patient)
 * type from BiologicalSampleNature
 * parent only Reference (BiologicalSample)

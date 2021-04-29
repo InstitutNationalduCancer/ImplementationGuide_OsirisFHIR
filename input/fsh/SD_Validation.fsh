@@ -2,7 +2,7 @@ Profile:        DataValidation
 Parent:         VerificationResult
 Id:             data-validation
 Title:          "Validation"
-Description:    "Validation information from Variant / Expression / Fusion / CopyNumber"
+Description:    "Validation information about data from a Variant / Expression / Fusion / CopyNumber profile."
 * status ^short = "Validation status of the detected alteration (attested | validated | in-process | req-revalid | val-fail | reval-fail)"
 * validationType from OsirisValidationType (extensible)
 * validationType ^short = "Type of validation of the detected alteration (Experimental | By biologist | In silico)"

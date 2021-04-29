@@ -8,7 +8,7 @@ Profile:        OncoAdverseEvent //Not really oncologic-specialized
 Parent:         AdverseEvent
 Id:             onco-adverse-event
 Title:          "Oncologic Adverse Event"
-Description:    "Oncologic adverse event"
+Description:    "Adverse event related to a cancer-related treatment associated to a grade from MEDDRA terminology (ex: 10047700: \"Vomiting\")."
 * subject only Reference (onco-patient)
 
 // Extensions

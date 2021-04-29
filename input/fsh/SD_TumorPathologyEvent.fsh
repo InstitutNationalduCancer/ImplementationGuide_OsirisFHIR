@@ -2,7 +2,7 @@ Profile:        TumorPathologyEvent
 Parent:         Condition
 Id:             tumor-pathology-event
 Title:          "Tumor Pathology Event"
-Description:    "Description of a tumor pathology event"
+Description:    "Tumor pathology event Condition."
 
 // References
 * subject only Reference (onco-patient)

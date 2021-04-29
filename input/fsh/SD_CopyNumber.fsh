@@ -2,7 +2,7 @@ Profile:        CopyNumber
 Parent:         variant
 Id:             copy-number
 Title:          "Variant Copy Number"
-Description:    "Variant copy number"
+Description:    "Observation of a Copy Number variant derived from a SequencingAnalysis. The CopyNumber profile is used to indicate the pathogenicity, the actionability, the loss of heterozygosity, the cytogenetic location, the start and end position, the reference sequence assembly, the variation code, the segment intensity, the copy number found and the Copy Number segment size."
 
 // References
 * subject only Reference (onco-patient)
@@ -68,7 +68,7 @@ Title: "Fhir-osiris copynumber to osiris"
 * derivedFrom  -> "CopyNumber.Analysis_Ref"
 * component[pathogenicity].valueCodeableConcept -> "CopyNumber.AlterationOnSample_Pathogenicity"
 * component[actionability].valueBoolean -> "CopyNumber.AlterationOnSample_Actionability"
-* component[loss-of-heterozygosity].valueBoolean -> "CopyNumber.AlterationOnSample_ProposedForOrientation"
+* component[proposed-for-orientation].valueBoolean -> "CopyNumber.AlterationOnSample_ProposedForOrientation"
 * component[cytogenetic-location] -> "CopyNumber.Alteration_Chromosome"
 * component[cytogenetic-location] -> "CopyNumber.Alteration_Cytoband"
 * component[exact-start-end].valueRange.low -> "CopyNumber.Alteration_GenomicStart"

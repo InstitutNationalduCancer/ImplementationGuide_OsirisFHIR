@@ -2,7 +2,7 @@ Profile:        OncoPatient
 Parent:         Patient
 Id:             onco-patient
 Title:          "Oncology Patient"
-Description:    "Oncology patient"
+Description:    "Oncology patient defined by Osiris."
 
 // References
 // * generalPractitioner only Reference(OncoOrganization)
