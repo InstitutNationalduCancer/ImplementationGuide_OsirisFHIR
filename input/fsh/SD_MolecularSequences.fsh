@@ -2,7 +2,7 @@ Profile:        GenomeEntity
 Parent:         MolecularSequence
 Id:             genome-entity
 Title:          "Genome Entity"
-Description:    "The genome entity profile is used to indicate the genome reference used to create the Annotation."
+Description:    "The genome entity profile is used to indicate the genome reference used to compute the variant Annotation."
 * patient only Reference (onco-patient)
 
 * type from GenomeEntityType (required)
@@ -32,7 +32,7 @@ Profile:        AnnotationReference
 Parent:         MolecularSequence
 Id:             annotation-reference
 Title:          "Annotation Reference"
-Description:    "Annotation reference"
+Description:    "The annotation reference profile is used to indicate the annotation used to generate this instance."
 * patient only Reference (onco-patient)
 
 * coordinateSystem = 0
@@ -61,11 +61,12 @@ Description:  "Annotation reference type"
 * OSIRIS#O90-5	"Transcript reference"
 * OSIRIS#O90-6	"Variant id"
 
+// Would it be better to use a extension for MolecularSequence3Prime and MolecularSequence5Prime ?
 Profile:        MolecularSequence3Prime
 Parent:         MolecularSequence
 Id:             molecular-sequence-3-prime
 Title:          "3 Prime Molecular Sequence"
-Description:    "3 prime molecular sequence is for referencing the two edges of Fusion observation"
+Description:    "3 prime molecular sequence is for referencing the 3' edge of a Fusion observation."
 * patient only Reference (onco-patient)
 
 * type from GenomeEntityType (required)
@@ -82,7 +83,7 @@ Profile:        MolecularSequence5Prime
 Parent:         MolecularSequence
 Id:             molecular-sequence-5-prime
 Title:          "5 Prime Molecular Sequence"
-Description:    "5 prime molecular sequence is for referencing the two edges of Fusion observation"
+Description:    "5 prime molecular sequence is for referencing the 5' edge of a Fusion observation."
 * patient only Reference (onco-patient)
 
 * type from GenomeEntityType (required)

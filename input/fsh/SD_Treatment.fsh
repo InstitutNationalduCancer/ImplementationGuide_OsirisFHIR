@@ -67,7 +67,7 @@ Profile:        OncoMedicationStatement
 Parent:         MedicationStatement
 Id:             onco-medication-statement
 Title:          "Oncology-related Medication Statement"
-Description:    "Medication statement related to a cancer cure"
+Description:    "Medication statement related to a cancer cure."
 * subject only Reference (onco-patient)
 * basedOn only Reference (treatment)
 * medication[x] from ATC (extensible)

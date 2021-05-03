@@ -29,7 +29,7 @@ Description: "The patient ethnicity"
 Extension:  OriginCenter
 Id: origin-center
 Title: "Patient Origin Center"
-Description: "The patient origin center organization"
+Description: "The origin center organization of an Oncology Patient."
 * value[x] only Reference
 * valueReference only Reference (OncoOrganization) // To be adapted on pyrog
 
