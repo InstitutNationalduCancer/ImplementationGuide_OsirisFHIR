@@ -33,7 +33,7 @@ Profile:        OncoTNM
 Parent:         Observation
 Id:             onco-tnm
 Title:          "TNM"
-Description:    "TNM Classification of malignant tumors used to classify a Tumor Pathology Event."
+Description:    "TNM Classification of malignant tumors used to indicate the tumor, node and metastasis state of a Tumor Pathology Event."
 // References
 * subject only Reference (onco-patient)
 * focus only Reference (tumor-pathology-event)
@@ -91,7 +91,7 @@ Profile:        Biomarker
 Parent:         Observation
 Id:             biomarker
 Title:          "Biomarker"
-Description:    "Biomarker observation about a patient from BiomarkerCode ValueSet."
+Description:    "Biomarker Observation about a patient from BiomarkerCode ValueSet."
 // References
 * subject only Reference (onco-patient)
 * derivedFrom only Reference (analysis)

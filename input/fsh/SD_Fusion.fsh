@@ -2,7 +2,7 @@ Profile:        Fusion
 Parent:         Observation
 Id:             fusion
 Title:          "Gene Fusion"
-Description:    "Observation of a Gene Fusion derived from a SequencingAnalysis. The Fusion profile indicates the pathogenicity, the actionability and if the fusion has occured in-frame."
+Description:    "Observation of a Gene Fusion derived from a SequencingAnalysis. The Fusion profile indicates the pathogenicity, the actionability and if the fusion has occured in the reading frame."
 
 // References
 * subject only Reference (onco-patient)

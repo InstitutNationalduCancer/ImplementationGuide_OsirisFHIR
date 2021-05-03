@@ -2,7 +2,7 @@ Profile:        VariantAnnotation
 Parent:         variant
 Id:             variant-annotation
 Title:          "Variant Annotation"
-Description:    "The Annotation profile allows to add information about a SNP, a fusion, an expression or a copy number event. It is generally used to compare variant from a reference genome. For example, there can be multiple instance of Variant Annotation for one instance of identified SNP."
+Description:    "The Annotation profile allows to add information about a SNP, a fusion, an expression or a copy number event. It is generally used to compare variant from a reference genome. There can be multiple instance of Variant Annotation Resource for one instance of SNP, CopyNumber, Expression or Fusion Resource."
 * obeys osiris-1
 
 * subject only Reference (onco-patient)

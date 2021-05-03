@@ -2,7 +2,7 @@ Profile:        TumorPathologyEvent
 Parent:         Condition
 Id:             tumor-pathology-event
 Title:          "Tumor Pathology Event"
-Description:    "Tumor pathology event Condition."
+Description:    "Tumor Pathology Event (TPE) Condition describing a tumoral event: reference to the parent TPE, laterality, morphology."
 
 // References
 * subject only Reference (onco-patient)

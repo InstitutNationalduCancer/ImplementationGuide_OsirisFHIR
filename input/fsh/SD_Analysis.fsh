@@ -28,7 +28,7 @@ Profile:        SequencingAnalysis
 Parent:         Analysis
 Id:             sequencing-analysis
 Title:          "Sequencing Analysis"
-Description:    "Sequencing analysis about a biological sample coming from a TumorPathologyEvent. This profile shows general information about the analysis done, more results can be found in SNP, Fusion, CopyNumber and Expression profiles."
+Description:    "Sequencing analysis about a biological sample coming from a TumorPathologyEvent. This profile shows general information about the analysis done, additional omics results can be found in SNP, Fusion, CopyNumber, Expression and Annotation profiles."
 * specimen only Reference (BiologicalSample)
 * specimen ^short = "Parent external accession"
 * device only Reference (SequencingDevice)

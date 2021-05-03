@@ -2,7 +2,7 @@ Profile:        CauseOfDeath // Should be better to merge this profile with Obse
 Parent:         Observation
 Id:             cause-of-death
 Title:          "Cause Of Death"
-Description:    "Cause of death observation."
+Description:    "Observation that indicates the cause of death of an Oncology Patient."
 * subject only Reference (onco-patient)
 * code = LNC#69453-9 "Cause of death"
 * subject 1..1
@@ -34,7 +34,7 @@ Profile:        VitalStatus
 Parent:         Observation
 Id:             vital-status
 Title:          "Vital Status"
-Description:    "Vital status observation"
+Description:    "Observation that indicates the last known Vital status of an Onco Patient."
 * code = LNC#22023-6 "Last follow-up hospital [Identifier] Cancer registry"
 * subject 1..1
 * value[x] 1..1
@@ -70,7 +70,7 @@ Profile:        FamilyCancerHistory
 Parent:         FamilyMemberHistory
 Id:             family-cancer-history
 Title:          "Family Cancer History"
-Description:    "Family cancer history"
+Description:    "History of cancer in an Onco Patient Family."
 * patient 1..1
 * patient only Reference (onco-patient)
 * relationship 1..1
