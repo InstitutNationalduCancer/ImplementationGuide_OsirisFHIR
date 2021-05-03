@@ -32,7 +32,7 @@ Profile:        AnnotationReference
 Parent:         MolecularSequence
 Id:             annotation-reference
 Title:          "Annotation Reference"
-Description:    "The annotation reference profile is used to indicate the annotation used to generate this instance."
+Description:    "The annotation reference profile is used to indicate the reference used to generate this instance."
 * patient only Reference (onco-patient)
 
 * coordinateSystem = 0

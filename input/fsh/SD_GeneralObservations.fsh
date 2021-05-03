@@ -1,4 +1,4 @@
-Profile:        CauseOfDeath
+Profile:        CauseOfDeath // Should be better to merge this profile with Observation VitalStatus ?
 Parent:         Observation
 Id:             cause-of-death
 Title:          "Cause Of Death"
@@ -30,7 +30,7 @@ Description:  "Cause of death"
 * UMLS#C0027651	"Neoplasm" 
 * UMLS#C0277589	"Death of unknown cause"
 
-Profile:        VitalStatus
+Profile:        VitalStatus  
 Parent:         Observation
 Id:             vital-status
 Title:          "Vital Status"
