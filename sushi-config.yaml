@@ -3,9 +3,9 @@
 # │  supported properties, see:                                                                    │
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: arkhn.fhir.osiris
+id: arkhn.fhir.uv.osiris
 canonical: http://osiris.arkhn.com
-version: 1.0.0
+version: 0.1.0
 name: OsirisImplementationGuide
 title: FHIR Osiris Implementation Guide
 status: draft
@@ -23,7 +23,7 @@ license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.uv.genomics-reporting: 1.0.0
-  # todo : migrate to 2.0.0 (http://build.fhir.org/ig/HL7/genomics-reporting/)
+  # todo : migrate to 1.1.0 (http://build.fhir.org/ig/HL7/genomics-reporting/)
 parameters:
   apply-publisher: true
   apply-contact: true
