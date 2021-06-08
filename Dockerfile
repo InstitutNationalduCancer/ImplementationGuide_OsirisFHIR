@@ -3,9 +3,9 @@ FROM jruby:9.2.17.0-jdk11 as build-image
 RUN apt-get update \
     && apt-get upgrade -y \
     && apt-get install -y build-essential npm \
+    && apt-get install -y iputils-ping \
     && apt-get autoremove --purge -y \
     && apt-get clean -y \
-    && apt-get iputils-ping -y \
     && rm -rf /var/lib/apt/lists/*
 
 RUN gem install jekyll
