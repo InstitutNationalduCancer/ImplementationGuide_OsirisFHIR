@@ -5,6 +5,7 @@ RUN apt-get update \
     && apt-get install -y build-essential npm \
     && apt-get autoremove --purge -y \
     && apt-get clean -y \
+    && apt-get iputils-ping -y \
     && rm -rf /var/lib/apt/lists/*
 
 RUN gem install jekyll
