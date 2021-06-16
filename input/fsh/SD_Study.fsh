@@ -2,7 +2,7 @@ Profile:        ClinicalTrial
 Parent:         ResearchStudy
 Id:             clinical-trial
 Title:          "Oncology Clinical Trial"
-Description:    "Oncology clinical trial"
+Description:    "Oncology clinical trial used to associate a Onco Patient to a Clinical Trial using the ResearchSubject Resource."
 * title ^short = "Clinical trial name"
 * identifier 1..*
 * identifier ^short = "Clinical trial identifier" //Treatment > Treatment_ClinicalTrialId
@@ -21,7 +21,7 @@ Profile:        ClinicalTrialSubject
 Parent:         ResearchSubject
 Id:             clinical-trial-subject
 Title:          "Clinical Trial Subject"
-Description:    "Clinical trial subject"
+Description:    "Subject that belongs to a oncology-related Clinical Trial."
 
 // References
 * study only Reference (clinical-trial)

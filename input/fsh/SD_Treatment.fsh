@@ -2,7 +2,7 @@ Profile:        Treatment
 Parent:         CarePlan
 Id:             treatment
 Title:          "Treatment"
-Description:    "Description of treatment related to an onco-patient"
+Description:    "Description of a treatment plan related to an Oncology Patient."
 
 // References
 * subject only Reference (onco-patient)
@@ -67,7 +67,7 @@ Profile:        OncoMedicationStatement
 Parent:         MedicationStatement
 Id:             onco-medication-statement
 Title:          "Oncology-related Medication Statement"
-Description:    "Medication statement related to a cancer cure"
+Description:    "Medication statement related to a cancer cure."
 * subject only Reference (onco-patient)
 * basedOn only Reference (treatment)
 * medication[x] from ATC (extensible)
@@ -91,7 +91,7 @@ Profile:        Surgery
 Parent:         Procedure
 Id:             onco-surgery
 Title:          "Oncology Surgery"
-Description:    "Oncology surgery"
+Description:    "Oncology-related surgery with a description of the outcome using RECIST codes."
 * basedOn only Reference (Treatment)
 * reasonReference only Reference (TumorPathologyEvent)
 * code ^short = "Nature of the surgery (ValueSet TBD)" // Treatment > SurgeryNature

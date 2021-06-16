@@ -2,7 +2,7 @@ Profile:        CopyNumber
 Parent:         variant
 Id:             copy-number
 Title:          "Variant Copy Number"
-Description:    "Variant copy number"
+Description:    "Observation of a Copy Number variant derived from a SequencingAnalysis. The CopyNumber profile is used to indicate the pathogenicity, the actionability, the loss of heterozygosity, the cytogenetic location, the start - end positions, the reference sequence assembly, the variation code, the segment intensity, the number of copy found and the Copy Number segment size."
 
 // References
 * subject only Reference (onco-patient)
@@ -54,7 +54,7 @@ Description:    "Variant copy number"
 // Variant.component:gene-studied: Annotation > GenomeEntity_Symbol
 // Variant.component:cytogenetic-location: CopyNumber > Alteration_Chromosome
 // Variant.component:ref-sequence-assembly: CopyNumber > Alteration_GenomeBuild
-// Varant.component:cytogenetic-location: CopyNumber > Alteration_Cytoband
+// Variant.component:cytogenetic-location: CopyNumber > Alteration_Cytoband
 // Variant.component:exact-start-end: CopyNumber > Alteration_GenomicStart / Alteration_GenomicStop
 // Variant.component:variation-code: CopyNumber > CNV_SegmentGenomicStatus
 // Variant.component:copy-number: CopyNumber > CNV_CopyNumber
@@ -68,7 +68,7 @@ Title: "Fhir-osiris copynumber to osiris"
 * derivedFrom  -> "CopyNumber.Analysis_Ref"
 * component[pathogenicity].valueCodeableConcept -> "CopyNumber.AlterationOnSample_Pathogenicity"
 * component[actionability].valueBoolean -> "CopyNumber.AlterationOnSample_Actionability"
-* component[loss-of-heterozygosity].valueBoolean -> "CopyNumber.AlterationOnSample_ProposedForOrientation"
+* component[proposed-for-orientation].valueBoolean -> "CopyNumber.AlterationOnSample_ProposedForOrientation"
 * component[cytogenetic-location] -> "CopyNumber.Alteration_Chromosome"
 * component[cytogenetic-location] -> "CopyNumber.Alteration_Cytoband"
 * component[exact-start-end].valueRange.low -> "CopyNumber.Alteration_GenomicStart"

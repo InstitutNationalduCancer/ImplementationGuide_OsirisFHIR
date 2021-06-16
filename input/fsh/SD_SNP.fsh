@@ -2,7 +2,7 @@ Profile:        SNP
 Parent:         variant
 Id:             snp
 Title:          "Single Nucleotide Polymorphism"
-Description:    "Description of a SNP"
+Description:    "Observation of a Single Nucleotide Polymorphism (SNP) derived from a Sequencing Analysis."
 
 // References
 * subject only Reference (onco-patient)

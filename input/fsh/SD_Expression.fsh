@@ -1,9 +1,9 @@
 Profile:        Expression
-Parent:         Observation 
-// Finding ?
+Parent:         Observation // Finding ?
 Id:             expression
 Title:          "Gene Expression"
-Description:    "Gene expression reporting"
+Description:    "Observation of a Gene Expression variant derived from a SequencingAnalysis. The Expression profile is used to indicate the actionability, the pathogenecity and the gene expression quantity of the gene of interest."
+
 // References
 * subject only Reference (onco-patient)
 

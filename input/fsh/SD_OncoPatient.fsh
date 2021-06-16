@@ -2,7 +2,7 @@ Profile:        OncoPatient
 Parent:         Patient
 Id:             onco-patient
 Title:          "Oncology Patient"
-Description:    "Oncology patient"
+Description:    "Oncology patient defined by Osiris."
 
 // References
 // * generalPractitioner only Reference(OncoOrganization)
@@ -29,7 +29,7 @@ Description: "The patient ethnicity"
 Extension:  OriginCenter
 Id: origin-center
 Title: "Patient Origin Center"
-Description: "The patient origin center organization"
+Description: "The origin center organization of an Oncology Patient."
 * value[x] only Reference
 * valueReference only Reference (OncoOrganization) // To be adapted on pyrog
 

@@ -22,17 +22,24 @@
   <p>
     The OSIRIS project is mainly financed by the
     <a href="https://www.e-cancer.fr/">INCA</a>
-    (Institut National du Cancer, The French National Cancer Institute). The core contributors to the original data model are Institut Curie, Institut Bergonié, the oncology center Léon Bérard, with the contribution of a dozens oncology centre and French hospitals. The current FHIR version of the data model was realized by the same stakeholders in partnership with the start-up
+    (Institut National du Cancer, The French National Cancer Institute). The core contributors to the original data model are Institut Curie, Institut Bergonié, the oncology center Léon Bérard, with the contribution of a dozen oncology centre and French hospitals. The current FHIR version of the data model was realized by the same stakeholders in partnership with the start-up
     <a href="https://arkhn.com/">Arkhn</a>
     .
   </p>
+
+<h3>Cancer History Modelization</h3>
+
+  <!-- Schema showing the characteristics and the scope of the modelization-->  
+
+  <img src="modelisation_schema.png" alt="modelisation_schema" />
+
 
   <a name="geninfo"></a>
   <h3>Patient general information</h3>
 
   <p>
-    These resources are directly bound to patient, containing general
-    information about him.
+    These resources are directly bound to patient and contain general
+    information about the patient and the cancer clinical history (ex: family cancer history, clinical trials participation, vital status, etc).
   </p>
 
   <img src="patient_metadata.png" alt="Patient metadata" />
@@ -40,7 +47,7 @@
   <a name="treatments"></a>
   <h3>Treatments</h3>
 
-  <p>Treatment plan and administrations, as well as adverse events that could occur during the latter.</p>
+  <p>Treatment plan, drug  administrations, surgical procedures, as well as adverse events that could occur.</p>
 
   <img src="treatments.png" alt="Treatments" />
 
@@ -54,15 +61,24 @@
     profile.
   </p>
   <p>
-    Variants are modelised by
+    Genetic Variants are modelised by
     <a href="StructureDefinition-snp.html">SNP</a>,
     <a href="StructureDefinition-copy-number.html">CopyNumber</a>,
     <a href="StructureDefinition-expression.html">Expression</a>
     or
     <a href="StructureDefinition-fusion.html">Fusion</a>
-    profiles, and more information are added with the
+    <!-- profiles, and more information are added with the  -->
+    profiles. Additional information as the comparison to the reference sequence, is / can be(?) added with the
     <a href="StructureDefinition-variant-annotation.html">Annotation</a>
-    profile (where a comparison to a reference is done)
+    profile.
   </p>
   <img src="sequencing.png" alt="Sequencing" />
+  <a name="about"></a>
+  <h3>About</h3>
+  <p>
+  The FHIR osiris implementation guide has been generated using FSH and the FHIR publisher. Source files including FSH files are available open source on
+    <a href="https://github.com/arkhn/arkhn-ig-osiris/">github</a>. You can also download the
+    <a href="package.tgz">FHIR NPM Package</a>.
+  </p>
+
 </div>

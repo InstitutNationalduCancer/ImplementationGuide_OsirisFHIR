@@ -2,7 +2,7 @@ Profile:        RelatedPathology
 Parent:         Condition
 Id:             related-pathology
 Title:          "Oncology Patient Related Pathology"
-Description:    "Related pathology of oncology patient"
+Description:    "Related pathology of oncology patient."
 * subject only Reference (onco-patient)
 * code ^short = "International code for the related disease (other than cancer)."
 * onset[x] ^short = "Date of diagnosis for the related disease."

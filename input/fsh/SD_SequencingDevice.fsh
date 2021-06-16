@@ -2,7 +2,7 @@ Profile:        SequencingDevice
 Parent:         Device
 Id:             sequencing-device
 Title:          "Sequencing Device"
-Description:    "Sequencing device description"
+Description:    "Description of a sequencing device used for a Sequencing Analysis."
 
 * identifier ^short = "GEO Identifier of the platform"
 

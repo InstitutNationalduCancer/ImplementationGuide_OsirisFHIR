@@ -8,8 +8,7 @@ Profile:        Analysis
 Parent:         Observation
 Id:             analysis
 Title:          "Analysis"
-Description:    "Analysis reporting"
-// What about splitting Analysis on two kind of profiles --> SequencingAnalysis and classic observation ?
+Description:    "Analysis about an onco-patient, potentially referencing a tumor pathology event."
 
 * subject only Reference (onco-patient)
 * category from AnalysisType (required)
@@ -29,7 +28,7 @@ Profile:        SequencingAnalysis
 Parent:         Analysis
 Id:             sequencing-analysis
 Title:          "Sequencing Analysis"
-Description:    "Sequencing analysis reporting"
+Description:    "Sequencing analysis about a biological sample coming from a TumorPathologyEvent. This profile shows general information about the analysis done, additional omics results can be found in SNP, Fusion, CopyNumber, Expression and Annotation profiles."
 * specimen only Reference (BiologicalSample)
 * specimen ^short = "Parent external accession"
 * device only Reference (SequencingDevice)

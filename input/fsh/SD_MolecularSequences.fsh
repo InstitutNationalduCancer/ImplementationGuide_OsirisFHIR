@@ -2,7 +2,7 @@ Profile:        GenomeEntity
 Parent:         MolecularSequence
 Id:             genome-entity
 Title:          "Genome Entity"
-Description:    "Genome entity"
+Description:    "The genome entity profile is used to indicate the genome reference used to build the Annotation."
 * patient only Reference (onco-patient)
 
 * type from GenomeEntityType (required)
@@ -16,6 +16,7 @@ Description:    "Genome entity"
 * repository[genome-entity-db].name ^short = "Database name"
 * repository[genome-entity-db].datasetId ^short = "GenomeEntity Database ID"
 
+
 ValueSet: GenomeEntityType
 Title: "Genome entity type Value Set"
 Description: "Type of genome entity"
@@ -27,12 +28,11 @@ Description: "Type of genome entity"
 * UMLS#C0079941	"ORF"
 
 
-
 Profile:        AnnotationReference
 Parent:         MolecularSequence
 Id:             annotation-reference
 Title:          "Annotation Reference"
-Description:    "Annotation reference"
+Description:    "The annotation reference profile indicates the reference genome / pfam domain / database used to generate the Annotation instance linked."
 * patient only Reference (onco-patient)
 
 * coordinateSystem = 0
@@ -61,11 +61,12 @@ Description:  "Annotation reference type"
 * OSIRIS#O90-5	"Transcript reference"
 * OSIRIS#O90-6	"Variant id"
 
+// Would it be better to use extensions for MolecularSequence3Prime and MolecularSequence5Prime ?
 Profile:        MolecularSequence3Prime
 Parent:         MolecularSequence
 Id:             molecular-sequence-3-prime
 Title:          "3 Prime Molecular Sequence"
-Description:    "3 prime molecular sequence is for referencing the two edges of Fusion observation"
+Description:    "3 prime molecular sequence is for referencing the 3' edge of a Fusion Observation."
 * patient only Reference (onco-patient)
 
 * type from GenomeEntityType (required)
@@ -82,7 +83,7 @@ Profile:        MolecularSequence5Prime
 Parent:         MolecularSequence
 Id:             molecular-sequence-5-prime
 Title:          "5 Prime Molecular Sequence"
-Description:    "5 prime molecular sequence is for referencing the two edges of Fusion observation"
+Description:    "5 prime molecular sequence is for referencing the 5' edge of a Fusion Observation."
 * patient only Reference (onco-patient)
 
 * type from GenomeEntityType (required)
