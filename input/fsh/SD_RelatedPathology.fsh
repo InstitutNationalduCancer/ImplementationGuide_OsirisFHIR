@@ -9,7 +9,7 @@ Description:    "Related pathology of oncology patient."
 * abatement[x] ^short = "Date of the end of the related disease (if occuring and known)"
 
 
-Mapping: FhirOSIRIS
+Mapping: FhirOSIRISRelatedPathology
 Source: RelatedPathology
 Target: "RelatedPathology"
 Id: fhir-osiris-rp

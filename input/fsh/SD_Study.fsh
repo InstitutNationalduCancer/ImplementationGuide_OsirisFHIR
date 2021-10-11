@@ -7,7 +7,7 @@ Description:    "Oncology clinical trial used to associate a Onco Patient to a C
 * identifier 1..*
 * identifier ^short = "Clinical trial identifier" //Treatment > Treatment_ClinicalTrialId
 
-Mapping: FhirOSIRIS
+Mapping: FhirOSIRISClinicalTrial
 Source: ClinicalTrial
 Target: "Study"
 Id: fhir-osiris-study

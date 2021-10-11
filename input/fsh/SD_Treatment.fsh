@@ -28,7 +28,7 @@ Description:    "Description of a treatment plan related to an Oncology Patient.
 * activity[activity-code].detail.code ^short = "CCAM code of the medical act"
 // * activity[activity-code].detail.status = #complete
 
-Mapping: FhirOSIRIS
+Mapping: FhirOSIRISTreatment
 Source: Treatment
 Target: "Treatment"
 Id: fhir-osiris-treatment
