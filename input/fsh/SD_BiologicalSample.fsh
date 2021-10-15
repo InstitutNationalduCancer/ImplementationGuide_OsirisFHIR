@@ -64,6 +64,10 @@ Description:  "Biological sample nature"
 * UMLS#C1519524	"Paraffin Embedded Tissue (FFPE)"
 * UMLS#C0042036	"Urine"
 * UMLS#C0439673	"Unknown"
+* UMLS#C0036087 "Saliva" 
+* UMLS#C0229671 "Serum"
+* UMLS#C3827014 "Circulating Tumor-Derived DNA" 
+* UMLS#C0522537 "Xenograft" 
 
 ValueSet: BiologicalSampleOrigin
 Title: "Biological Sample Origin Value Set"
