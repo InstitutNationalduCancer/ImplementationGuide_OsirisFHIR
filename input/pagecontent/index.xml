@@ -27,11 +27,13 @@
     .
   </p>
 
-<h3>Cancer History Modelization</h3>
+  <!-- TODO -->
 
-  <!-- Schema showing the characteristics and the scope of the modelization-->  
+  <!-- <h3>Cancer History Modelization</h3> -->
 
-  <img src="modelisation_schema.png" alt="modelisation_schema" />
+  <!-- Schema showing the characteristics and the scope of the modelization-->
+
+  <!-- <img src="modelisation_schema.png" alt="modelisation_schema" /> -->
 
 
   <a name="geninfo"></a>
@@ -71,6 +73,11 @@
     profiles. Additional information as the comparison to the reference sequence, is / can be(?) added with the
     <a href="StructureDefinition-variant-annotation.html">Annotation</a>
     profile.
+  </p>
+  <p>
+    Other profiles like 
+    <a href="https://hl7.org/fhir/bodyweight.html">weight</a> and 
+    <a href="https://hl7.org/fhir/bodyheight.html">height</a> are also used by the osiris model. These profiles are not added to the osiris-core ig because they are already defined by the FHIR documentation.
   </p>
   <img src="sequencing.png" alt="Sequencing" />
   <a name="about"></a>
