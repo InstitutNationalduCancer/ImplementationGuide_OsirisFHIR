@@ -203,16 +203,24 @@ Description:    "Imaging Settings."
 * extension[dx_image].extension[contrast_bolus_agent] ^short = "Contrast or bolus agent"
 * extension[dx_image].extension[contrast_bolus_agent].value[x] only string
 
-
+/*
+    ###################################
+    # MAPPING OSIRIS <--> FHIR-OSIRIS #
+    ###################################
+*/
 Mapping: FhirOSIRISImagingStudy
 Source: onco-imagingstudy
 Target: "ImagingStudy"
 Id: fhir-osiris-imaging-study
 Title: "Fhir-osiris to osiris"
 * -> "Imaging Study" "Imaging study description"
+// todo
 
-
-
+/*
+    ##########################
+    # DICOM <--> FHIR-OSIRIS #
+    ##########################
+*/
 Mapping: DicomToFhirImagingStudy
 Source: onco-imagingstudy
 Target: "ImagingStudy"
@@ -226,7 +234,6 @@ Title: "Fhir-osiris to osiris"
 * series.extension[imaging-settings].extension[rows] -> "(0028,0010)"
 * series.extension[imaging-settings].extension[columns] -> "(0028,0011)"
 
--------
 * series.extension[imaging-settings].extension[mr_image].extension[sequence_name] -> "(0018,0024)"
 * series.extension[imaging-settings].extension[mr_image].extension[magnetic_field_strength] -> "(0018,0087)"
 * series.extension[imaging-settings].extension[mr_image].extension[mr_acquisition_type] -> "(0018,0023)"
