@@ -1,6 +1,6 @@
 // CodeSystem
 Alias:   OSIRIS = https://github.com/siric-osiris/OSIRIS
-Alias:   UMLS = http://terminology.hl7.org/CodeSystem/umls
+Alias:   UMLS = http://www.nlm.nih.gov/research/umls
 Alias:   SCT = http://snomed.info/sct
 Alias:   LNC = http://loinc.org
 Alias:   ICDO3 = http://hl7.org/fhir/sid/ICD-O-3
