@@ -7,3 +7,4 @@ Description:    "Description of an imaging study contrast injected in radiomic s
 * code MS
 * code 1..1
 * code.coding from DICOMcontrast (required)
+* code.coding ^short  = "Name of the radiopharmaceutical"
