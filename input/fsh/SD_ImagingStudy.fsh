@@ -1,6 +1,6 @@
-Profile:        ImagingStudyRadiomics
+Profile:        OncoImagingStudy
 Parent:         ImagingStudy    
-Id:             onco-biological-imagingstudy
+Id:             onco-imagingstudy
 Title:          "Imaging Study"
 Description:    "Description of an imaging study coming from an oncology Patient used to recreate a radiomic study."
 
@@ -55,6 +55,7 @@ Description:    "Imaging Settings."
     columns 1..1 MS and
     mr_image 0..1 and
     ct_image 0..1 and
+    dx_image 0..1 and
     pt_image 0..1 and
     nm_image 0..1
 * extension[slice_thickness] ^short = "Describe the slice thickness in mm"
@@ -69,6 +70,9 @@ Description:    "Imaging Settings."
 * extension[columns].value[x] only decimal
 
 
+// ############
+// # MR IMAGE #
+// ############
 * extension[mr_image].extension contains
     sequence_name 1..1 MS and
     magnetic_field_strength 1..1 MS and
@@ -101,3 +105,167 @@ Description:    "Imaging Settings."
 
 
 // * series.performer.actor only Reference(imaging-device)
+
+// ############
+// # CT IMAGE #
+// ############
+* extension[ct_image].extension contains
+    kvp 1..1 MS and
+    xray_tube_current 1..1 MS and
+    exposure_time 1..1 MS and
+    spiral_pitch_factor 1..1 MS and
+    filter_type 1..1 MS and
+    convolution_kernel 1..1 MS 
+
+
+* extension[ct_image].extension[kvp] ^short = "Describe the tube tension in KV"
+* extension[ct_image].extension[kvp].value[x] only decimal
+
+* extension[ct_image].extension[xray_tube_current] ^short = "Tube current in mA"
+* extension[ct_image].extension[xray_tube_current].value[x] only decimal
+
+* extension[ct_image].extension[exposure_time] ^short = "Duration of x-ray exposure in ms"
+* extension[ct_image].extension[exposure_time].value[x] only decimal
+
+* extension[ct_image].extension[spiral_pitch_factor] ^short = "Ratio of the table feed per rotation to the total collimation width"
+* extension[ct_image].extension[spiral_pitch_factor].value[x] only decimal
+
+* extension[ct_image].extension[filter_type] ^short = "Type of filter inserted into the X-Ray beam"
+* extension[ct_image].extension[filter_type].value[x] only string
+
+* extension[ct_image].extension[convolution_kernel] ^short = "A label describing the convolution kernel or algorithm used to recontruct the data"
+* extension[ct_image].extension[convolution_kernel].value[x] only string
+
+// ############
+// # PT IMAGE #
+// ############
+* extension[pt_image].extension contains
+    attenuation_correction_method 1..1 MS and
+    reconstruction_method 1..1 MS and
+    scatter_correction_method 1..1 MS
+
+// * extension[pt_image].extension[attenuation_correction_method] ^short = "A label describing the convolution kernel or algorithm used to recontruct the data"
+* extension[pt_image].extension[attenuation_correction_method].value[x] only string
+// * extension[pt_image].extension[reconstruction_method] ^short = "A label describing the convolution kernel or algorithm used to recontruct the data"
+* extension[pt_image].extension[reconstruction_method].value[x] only string
+// * extension[pt_image].extension[scatter_correction_method] ^short = "A label describing the convolution kernel or algorithm used to recontruct the data"
+* extension[pt_image].extension[scatter_correction_method].value[x] only string
+
+// ############
+// # NM IMAGE #
+// ############
+* extension[nm_image].extension contains
+    attenuation_correction_method 1..1 MS and
+    reconstruction_method 1..1 MS and
+    scatter_correction_method 1..1 MS
+
+// * extension[nm_image].extension[attenuation_correction_method] ^short = "A label describing the convolution kernel or algorithm used to recontruct the data"
+* extension[nm_image].extension[attenuation_correction_method].value[x] only string
+// * extension[nm_image].extension[reconstruction_method] ^short = "A label describing the convolution kernel or algorithm used to recontruct the data"
+* extension[nm_image].extension[reconstruction_method].value[x] only string
+// * extension[nm_image].extension[scatter_correction_method] ^short = "A label describing the convolution kernel or algorithm used to recontruct the data"
+* extension[nm_image].extension[scatter_correction_method].value[x] only string
+
+// ############
+// # DX IMAGE #
+// ############
+* extension[dx_image].extension contains
+    image_laterality 1..1 MS and
+    patient_orientation 0..1 MS and
+    anat_code_meaning 0..1 MS and
+    anat_code_value 0..1 MS and
+    kvp 0..1 MS and
+    exposure 0..1 MS and
+    exposure_time 0..1 MS and
+    contrast_bolus_agent 0..1 MS 
+
+* extension[dx_image].extension[image_laterality] ^short = "Laterality of (possibly paired) body part (as described in Anatomic Region Sequence (0008,2218)) examined"
+* extension[dx_image].extension[image_laterality].value[x] only string
+
+* extension[dx_image].extension[patient_orientation] ^short = "Patient direction of the rows and columns of the image."
+* extension[dx_image].extension[patient_orientation].value[x] only string
+
+* extension[dx_image].extension[anat_code_meaning] ^short = "Text that conveys the meaning of the Coded Entry"
+* extension[dx_image].extension[anat_code_meaning].value[x] only string
+
+* extension[dx_image].extension[anat_code_value] ^short = "Shall be present if the code value length is 16 characters or less"
+* extension[dx_image].extension[anat_code_value].value[x] only string
+
+* extension[dx_image].extension[kvp] ^short = "Peak kilo voltage output of the X-Ray generator used."
+* extension[dx_image].extension[kvp].value[x] only decimal
+
+* extension[dx_image].extension[exposure] ^short = "The exposure expressed in mAs, for example calculated from Exposure Time and X-Ray Tube Current."
+* extension[dx_image].extension[exposure].value[x] only decimal
+
+* extension[dx_image].extension[exposure_time] ^short = "Duration of X-Ray exposure in msec."
+* extension[dx_image].extension[exposure_time].value[x] only decimal
+
+* extension[dx_image].extension[contrast_bolus_agent] ^short = "Contrast or bolus agent"
+* extension[dx_image].extension[contrast_bolus_agent].value[x] only string
+
+/*
+    ###################################
+    # MAPPING OSIRIS <--> FHIR-OSIRIS #
+    ###################################
+*/
+Mapping: FhirOSIRISImagingStudy
+Source: onco-imagingstudy
+Target: "ImagingStudy"
+Id: fhir-osiris-imaging-study
+Title: "Fhir-osiris to osiris"
+* -> "Imaging Study" "Imaging study description"
+// todo
+
+/*
+    ##########################
+    # DICOM <--> FHIR-OSIRIS #
+    ##########################
+*/
+Mapping: DicomToFhirImagingStudy
+Source: onco-imagingstudy
+Target: "ImagingStudy"
+Id: dicom-to-fhir-imaging-study
+Title: "Fhir-osiris to osiris"
+* -> "Imaging Study" "Imaging study description"
+
+* series.extension[imaging-settings].extension[slice_thickness] -> "(0018,0050)"
+* series.extension[imaging-settings].extension[pixel_spacing] -> "(0028,0030)"
+// * series.extension[imaging-settings].extension[fov] -> "Field Of View"
+* series.extension[imaging-settings].extension[rows] -> "(0028,0010)"
+* series.extension[imaging-settings].extension[columns] -> "(0028,0011)"
+
+* series.extension[imaging-settings].extension[mr_image].extension[sequence_name] -> "(0018,0024)"
+* series.extension[imaging-settings].extension[mr_image].extension[magnetic_field_strength] -> "(0018,0087)"
+* series.extension[imaging-settings].extension[mr_image].extension[mr_acquisition_type] -> "(0018,0023)"
+* series.extension[imaging-settings].extension[mr_image].extension[repetition_time] -> "(0018,0080)"
+* series.extension[imaging-settings].extension[mr_image].extension[echo_time] -> "(0018,0081)"
+* series.extension[imaging-settings].extension[mr_image].extension[imaging_frequency] -> "(0018,0084)"
+* series.extension[imaging-settings].extension[mr_image].extension[flip_angle] -> "(0018,0024)"
+* series.extension[imaging-settings].extension[mr_image].extension[inversion_time] -> "(0018,0082)"
+* series.extension[imaging-settings].extension[mr_image].extension[receive_coil_name] -> "(0018,1250)" 
+
+
+* series.extension[imaging-settings].extension[ct_image].extension[kvp] -> "(0018,0060)"
+* series.extension[imaging-settings].extension[ct_image].extension[xray_tube_current] -> "(0018,1151)"
+* series.extension[imaging-settings].extension[ct_image].extension[exposure_time] -> "(0018,1150)"
+* series.extension[imaging-settings].extension[ct_image].extension[spiral_pitch_factor] -> "(0018,9311)"
+* series.extension[imaging-settings].extension[ct_image].extension[filter_type] -> "(0018,1160)"
+* series.extension[imaging-settings].extension[ct_image].extension[convolution_kernel] -> "(0018,1210)"
+
+* series.extension[imaging-settings].extension[pt_image].extension[attenuation_correction_method] -> "(0054,1101)"
+* series.extension[imaging-settings].extension[pt_image].extension[reconstruction_method] -> "(0054,1103)"
+* series.extension[imaging-settings].extension[pt_image].extension[scatter_correction_method] -> "(0054,1105)"
+
+* series.extension[imaging-settings].extension[nm_image].extension[attenuation_correction_method] -> "(0054,1101)"
+* series.extension[imaging-settings].extension[nm_image].extension[reconstruction_method] -> "(0054,1103)"
+* series.extension[imaging-settings].extension[nm_image].extension[scatter_correction_method] -> "(0054,1105)"
+
+
+* series.extension[imaging-settings].extension[dx_image].extension[image_laterality] -> "(0020,0062)"
+* series.extension[imaging-settings].extension[dx_image].extension[patient_orientation] -> "(0020,0020)"
+* series.extension[imaging-settings].extension[dx_image].extension[anat_code_meaning] -> "(0008,0104)"
+* series.extension[imaging-settings].extension[dx_image].extension[anat_code_value] -> "(0008,0100)"
+* series.extension[imaging-settings].extension[dx_image].extension[kvp] -> "(0008,0060)"
+* series.extension[imaging-settings].extension[dx_image].extension[exposure] -> "(0018,1152)"
+* series.extension[imaging-settings].extension[dx_image].extension[exposure_time] -> "(0018,1150)"
+* series.extension[imaging-settings].extension[dx_image].extension[contrast_bolus_agent] -> "(0018,0010)"
