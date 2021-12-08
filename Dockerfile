@@ -1,7 +1,6 @@
-FROM jekyll/jekyll:4.2.0 as build-image
+FROM alpine:3.13 as build-image
 
-ENV JEKYLL_UID = 1001
-ENV JEKYLL_GID = 1001
+WORKDIR /build
 
 RUN apk update \
     && apk upgrade \
@@ -9,11 +8,14 @@ RUN apk update \
         build-base \
         npm \
         curl \
-        iputils
+        iputils \
+        ruby-full \
+        ruby-dev \
+        openjdk8 \
+        bash
 
+RUN gem install jekyll
 RUN npm install -g fsh-sushi
-
-WORKDIR /build
 
 COPY _updatePublisher_curl.sh _updatePublisher_curl.sh
 COPY _genonce.sh _genonce.sh
@@ -23,8 +25,7 @@ COPY sushi-config.yaml sushi-config.yaml
 COPY package-list.json package-list.json
 
 RUN ./_updatePublisher_curl.sh -y
-
-RUN chmod +x _updatePublisher_curl.sh _genonce.sh _gencontinuous.sh
+RUN chmod +x _genonce.sh
 RUN ./_genonce.sh -y
 
 FROM alpine:3.13
