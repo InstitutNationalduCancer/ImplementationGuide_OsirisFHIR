@@ -17,22 +17,16 @@
     procedures.
   </p>
 
-  <a name="contributors"></a>
-  <h3>Contributors</h3>
   <p>
-    The OSIRIS project is mainly financed by the
-    <a href="https://www.e-cancer.fr/">INCA</a>
-    (Institut National du Cancer, The French National Cancer Institute). The core contributors to the original data model are Institut Curie, Institut Bergonié, the oncology center Léon Bérard, with the contribution of a dozen oncology centre and French hospitals. The current FHIR version of the data model was realized by the same stakeholders in partnership with the start-up
-    <a href="https://arkhn.com/">Arkhn</a>
-    .
+    The osiris model is divided on multiple parts:
+    <ul>
+      <li>The patient general information</li>
+      <li>The tumor pathology event data</li>
+      <li>The treatments</li>
+      <li>The sequencing analysis, containing omics data</li>
+      <li>The radiomics / radiotherapy module</li>
+    </ul>
   </p>
-
-<h3>Cancer History Modelization</h3>
-
-  <!-- Schema showing the characteristics and the scope of the modelization-->  
-
-  <img src="modelisation_schema.png" alt="modelisation_schema" />
-
 
   <a name="geninfo"></a>
   <h3>Patient general information</h3>
@@ -43,6 +37,18 @@
   </p>
 
   <img src="patient_metadata.png" alt="Patient metadata" />
+
+
+  <a name="TPE"></a>
+  <h3>Cancer History Modelization</h3>
+
+  <!-- Schema showing the characteristics and the scope of the modelization-->
+  <p>
+    The Tumoral Pathology Event (TPE) is a central resource in the FHIR-OSIRIS model, it will describe a tumoral event (primary or metastasis). All analysis, treatments and omics data will be linked to a TPE.
+  </p>
+  <img src="tpe.png" alt="modelisation_schema" />
+
+
 
   <a name="treatments"></a>
   <h3>Treatments</h3>
@@ -72,13 +78,29 @@
     <a href="StructureDefinition-variant-annotation.html">Annotation</a>
     profile.
   </p>
-  <img src="sequencing.png" alt="Sequencing" />
+  <img src="sequencing.png" alt="Sequencing-schema" />
+
+  <a name="radiomics"></a>
+  <h3>Radiomics</h3>
+  <img src="radiomics.png" alt="Radiomics-schema" />
+
+
   <a name="about"></a>
   <h3>About</h3>
   <p>
   The FHIR osiris implementation guide has been generated using FSH and the FHIR publisher. Source files including FSH files are available open source on
     <a href="https://github.com/arkhn/arkhn-ig-osiris/">github</a>. You can also download the
     <a href="package.tgz">FHIR NPM Package</a>.
+  </p>
+
+  <a name="contributors"></a>
+  <h3>Contributors</h3>
+  <p>
+    The OSIRIS project is mainly financed by the
+    <a href="https://www.e-cancer.fr/">INCA</a>
+    (Institut National du Cancer, The French National Cancer Institute). The core contributors to the original data model are Institut Curie, Institut Bergonié, the oncology center Léon Bérard, with the contribution of a dozen oncology centre and French hospitals. The current FHIR version of the data model was realized by the same stakeholders in partnership with the start-up
+    <a href="https://arkhn.com/">Arkhn</a>
+    .
   </p>
 
 </div>
