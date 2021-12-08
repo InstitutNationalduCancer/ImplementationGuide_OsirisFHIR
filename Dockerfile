@@ -1,5 +1,8 @@
 FROM jekyll/jekyll:4.2.0 as build-image
 
+ENV JEKYLL_UID = 1001
+ENV JEKYLL_GID = 1001
+
 RUN apk update \
     && apk upgrade \
     && apk add --no-cache \
