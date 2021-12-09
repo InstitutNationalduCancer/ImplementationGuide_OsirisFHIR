@@ -19,12 +19,13 @@ RUN npm install -g fsh-sushi
 
 COPY _updatePublisher_curl.sh _updatePublisher_curl.sh
 COPY _genonce.sh _genonce.sh
+RUN ./_updatePublisher_curl.sh -y
+
 COPY input input
 COPY ig.ini ig.ini
 COPY sushi-config.yaml sushi-config.yaml
 COPY package-list.json package-list.json
 
-RUN ./_updatePublisher_curl.sh -y
 RUN chmod +x _genonce.sh
 RUN ./_genonce.sh -y
 
