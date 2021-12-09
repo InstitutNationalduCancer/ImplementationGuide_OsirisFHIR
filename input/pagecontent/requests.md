@@ -1,4 +1,7 @@
-### Request Patient•s with breast cancer (primary or metastatic) with a genetic alteration on TP53.
+These requests are examples of the potential of this IG.
+These requests will work on each hospital that has a FHIR endpoint using the osiris data model.
+
+### Request Patients with breast cancer (primary or metastatic) with a genetic alteration on TP53.
 
 #### Requests Patient with breast cancer
 
@@ -8,7 +11,7 @@ Patient?
     &_has:Condition:subject:body-site=C50.9
 ```
 
-#### Request Patient•s with a genetic alteration on TP53 \*\*
+#### Request Patients with a genetic alteration on TP53 \*\*
 
 ```
 Patient?
@@ -24,9 +27,9 @@ Patient?
     &_has:Observation:patient:component-code-value-concept=http://loinc.org|48018-6$http://hl7.org/fhir/uv/genomics-reporting/ValueSet/hgnc|TP53
 ```
 
-### Request Patient•s with colorectal cancer and metastatic with an genetic alteration on KRAS, treated by Bevacizumab and progressing.
+### Request Patients with colorectal cancer and metastatic with an genetic alteration on KRAS, treated by Bevacizumab and progressing.
 
-#### Request female Patient•s with a colorectal cancer
+#### Request female Patients with a colorectal cancer
 
 ```
 Patient?
@@ -34,28 +37,28 @@ Patient?
     &_has:Condition:subject:body-site=C18.9
 ```
 
-#### Request Patient•s with metastasis
+#### Request Patients with metastasis
 
 ```
 Condition?
     code=C2939419
 ```
 
-#### Request Patient•s treated by bevacizumab (ATC code L01XC07)
+#### Request Patients treated by bevacizumab (ATC code L01XC07)
 
 ```
 Patient?
     _has:MedicationStatement:subject:code=L01XC07
 ```
 
-#### Request Patient•s with an genetic alteration on KRAS
+#### Request Patients with an genetic alteration on KRAS
 
 ```
 Patient?
     _has:Observation:patient:component-code-value-concept=http://loinc.org|48018-6$http://hl7.org/fhir/uv/genomics-reporting/ValueSet/hgnc|KRAS
 ```
 
-#### Request female Patient•s with a progressing cancer
+#### Request female Patients with a progressing cancer
 
 ```
 Patient?
