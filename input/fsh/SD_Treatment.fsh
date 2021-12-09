@@ -17,6 +17,7 @@ Description:    "Description of a treatment plan related to an Oncology Patient.
 // Other
 
 * category ^short = "Type of treatment"
+* category from TreatmentType (required)
 * activity ^slicing.discriminator.type = #pattern
 * activity ^slicing.discriminator.path = "detail.code"
 * activity ^slicing.rules = #open
