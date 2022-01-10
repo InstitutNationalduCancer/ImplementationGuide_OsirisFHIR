@@ -43,10 +43,17 @@ Description:    "Description of an imaging study coming from an oncology Patient
 //device = software version dicomTag (0018,1020)
 
 
+Invariant:   imaging-settings-1
+Description: "one of mr_image, ct_image, dx_image, pt_image, nm_image exists"
+Expression:  "extension[mr_image].exists() or extension[ct_image].exists() or extension[dx_image].exists() or extension[pt_image].exists() or extension[nm_image].exists()"
+Severity:    #error
+XPath:       "f:extension[mr_image] or f:extension[ct_image] or f:extension[dx_image] or f:extension[pt_image] or f:extension[nm_image]"
+
 Extension:      ImagingSettings
 Id:             imaging-settings
 Title:          "Imaging Settings"
 Description:    "Imaging Settings."
+* extension obeys imaging-settings-1
 * extension contains
     slice_thickness 1..1 MS and
     pixel_spacing 1..1 MS and
