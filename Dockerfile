@@ -1,29 +1,32 @@
-FROM jruby:9.2.18.0-jdk11 as build-image
-
-RUN apt-get update \
-    && apt-get upgrade -y \
-    && apt-get install -y build-essential npm \
-    && apt-get install -y iputils-ping \
-    && apt-get autoremove --purge -y \
-    && apt-get clean -y \
-    && rm -rf /var/lib/apt/lists/*
-
-
-RUN gem install jekyll
-
-RUN npm install -g fsh-sushi
+FROM alpine:3.13 as build-image
 
 WORKDIR /build
 
+RUN apk update \
+    && apk upgrade \
+    && apk add --no-cache \
+        build-base \
+        npm \
+        curl \
+        iputils \
+        ruby-full \
+        ruby-dev \
+        openjdk8 \
+        bash
+
+RUN gem install jekyll
+RUN npm install -g fsh-sushi
+
 COPY _updatePublisher_curl.sh _updatePublisher_curl.sh
 COPY _genonce.sh _genonce.sh
+RUN ./_updatePublisher_curl.sh -y
+
 COPY input input
 COPY ig.ini ig.ini
 COPY sushi-config.yaml sushi-config.yaml
 COPY package-list.json package-list.json
 
-RUN ./_updatePublisher_curl.sh -y || echo "ok"
-
+RUN chmod +x _genonce.sh
 RUN ./_genonce.sh -y
 
 FROM alpine:3.13
