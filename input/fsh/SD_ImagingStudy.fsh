@@ -25,8 +25,8 @@ Description:    "Description of an imaging study coming from an oncology Patient
 * endpoint only Reference (imaging-pacs) //
 * numberOfSeries MS
 * numberOfSeries 1..1  //dicomtag(0020,1206)
-* procedureReference 1..1 MS
-* procedureReference only Reference (onco-biological-imagingstudy-procedure)
+//* procedureReference 1..1 MS
+//* procedureReference only Reference (onco-biological-imagingstudy-procedure)
 
 //Series
 * series.uid MS
