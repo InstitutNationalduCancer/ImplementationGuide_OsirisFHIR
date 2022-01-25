@@ -4,7 +4,7 @@ Id:             onco-imagingstudy
 Title:          "Imaging Study"
 Description:    "Description of an imaging study coming from an oncology Patient used to recreate a radiomic study."
 
-* series.extension contains imaging-settings named imaging-settings 1..1
+
 * identifier MS // Study Instance UID dicomTag(0020,000D)
 * identifier 1..1
 * modality MS // Modalities in Study dicomTag(0008,0061)
@@ -24,6 +24,8 @@ Description:    "Description of an imaging study coming from an oncology Patient
 * endpoint only Reference (imaging-pacs) //
 * numberOfSeries MS
 * numberOfSeries 1..1  //dicomtag(0020,1206)
+* procedureReference 1..1 MS
+* procedureReference only Reference (onco-biological-imagingstudy-procedure)
 
 //Series
 * series.uid MS
@@ -43,6 +45,7 @@ Description:    "Description of an imaging study coming from an oncology Patient
 //device = software version dicomTag (0018,1020)
 
 
+<<<<<<< HEAD
 Extension:      ImagingSettings
 Id:             imaging-settings
 Title:          "Imaging Settings"
@@ -269,3 +272,5 @@ Title: "Fhir-osiris to osiris"
 * series.extension[imaging-settings].extension[dx_image].extension[exposure] -> "(0018,1152)"
 * series.extension[imaging-settings].extension[dx_image].extension[exposure_time] -> "(0018,1150)"
 * series.extension[imaging-settings].extension[dx_image].extension[contrast_bolus_agent] -> "(0018,0010)"
+=======
+>>>>>>> 8003c1f3ee695f37e3b94579921396188fa9ab9c
