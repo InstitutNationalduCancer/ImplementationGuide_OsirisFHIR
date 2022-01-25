@@ -4,6 +4,7 @@ Id:             onco-imagingstudy
 Title:          "Imaging Study"
 Description:    "Description of an imaging study coming from an oncology Patient used to recreate a radiomic study."
 
+* series.extension contains imaging-settings named imaging-settings 1..1
 
 * identifier MS // Study Instance UID dicomTag(0020,000D)
 * identifier 1..1
