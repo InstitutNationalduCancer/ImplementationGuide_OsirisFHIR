@@ -45,7 +45,6 @@ Description:    "Description of an imaging study coming from an oncology Patient
 //device = software version dicomTag (0018,1020)
 
 
-<<<<<<< HEAD
 Extension:      ImagingSettings
 Id:             imaging-settings
 Title:          "Imaging Settings"
@@ -272,5 +271,3 @@ Title: "Fhir-osiris to osiris"
 * series.extension[imaging-settings].extension[dx_image].extension[exposure] -> "(0018,1152)"
 * series.extension[imaging-settings].extension[dx_image].extension[exposure_time] -> "(0018,1150)"
 * series.extension[imaging-settings].extension[dx_image].extension[contrast_bolus_agent] -> "(0018,0010)"
-=======
->>>>>>> 8003c1f3ee695f37e3b94579921396188fa9ab9c
