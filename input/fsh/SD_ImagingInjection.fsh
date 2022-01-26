@@ -30,7 +30,7 @@ Description:    "Description of an imaging study injection used for radiomic stu
 */
 Mapping: DicomToFhirImagingInjection
 Source: onco-imagingstudy-injection
-Target: "ImagingStudy"
+Target: "Imaging Study Injection"
 Id: dicom-to-fhir-imaging-injection
 Title: "Fhir-osiris to osiris"
 * -> "Imaging Injection" "Imaging injection description"

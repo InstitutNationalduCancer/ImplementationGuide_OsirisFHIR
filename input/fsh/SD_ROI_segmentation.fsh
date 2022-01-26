@@ -37,7 +37,7 @@ Description:    "Observation that contient the ROI segmentation."
 Mapping: DicomToFhirRoiSeqmentation
 Source: roi-segmentation
 Target: "ROI segmentation"
-Id: dicom-to-fhir-imaging-study
+Id: dicom-to-fhir-roi-segmentation
 Title: "Fhir-osiris to osiris"
 
 * -> "ROI segmentation" "ROI segmentation description"
