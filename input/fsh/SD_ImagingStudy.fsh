@@ -43,10 +43,17 @@ Description:    "Description of an imaging study coming from an oncology Patient
 //device = software version dicomTag (0018,1020)
 
 
+Invariant:   imaging-settings-1
+Description: "one of mr_image, ct_image, dx_image, pt_image, nm_image exists"
+Expression:  "extension[mr_image].exists() or extension[ct_image].exists() or extension[dx_image].exists() or extension[pt_image].exists() or extension[nm_image].exists()"
+Severity:    #error
+XPath:       "f:extension[mr_image] or f:extension[ct_image] or f:extension[dx_image] or f:extension[pt_image] or f:extension[nm_image]"
+
 Extension:      ImagingSettings
 Id:             imaging-settings
 Title:          "Imaging Settings"
 Description:    "Imaging Settings."
+* extension obeys imaging-settings-1
 * extension contains
     slice_thickness 1..1 MS and
     pixel_spacing 1..1 MS and
@@ -214,7 +221,25 @@ Target: "ImagingStudy"
 Id: fhir-osiris-imaging-study
 Title: "Fhir-osiris to osiris"
 * -> "Imaging Study" "Imaging study description"
+* series.instance.uid -> "Common_Image.SOP Instance UID"
+* series.extension[imaging-settings].extension[slice_thickness] -> "Common_Image.Slice thickness"
+* series.extension[imaging-settings].extension[pixel_spacing] -> "Common_Image.Pixel spacing"
+* series.extension[imaging-settings].extension[fov] -> "Common_Image.Field of View (FOV)"
+* series.extension[imaging-settings].extension[rows] -> "Common_Image.Rows"
+* series.extension[imaging-settings].extension[columns] -> "Common_Image.Columns"
+
+* series.extension[imaging-settings].extension[mr_image].extension[sequence_name] -> "MR_Image.Sequence Name"
+* series.extension[imaging-settings].extension[mr_image].extension[magnetic_field_strength] -> "MR_Image.Magnetic Field Strength"
+* series.extension[imaging-settings].extension[mr_image].extension[mr_acquisition_type] -> "MR_Image.MR acquisition type"
+* series.extension[imaging-settings].extension[mr_image].extension[repetition_time] -> "MR_Image.Repetition Time"
+* series.extension[imaging-settings].extension[mr_image].extension[echo_time] -> "MR_Image.Echo Time"
+* series.extension[imaging-settings].extension[mr_image].extension[imaging_frequency] -> "MR_Image.Imaging frequency"
+* series.extension[imaging-settings].extension[mr_image].extension[flip_angle] -> "MR_Image.Flip angle"
+* series.extension[imaging-settings].extension[mr_image].extension[inversion_time] -> "MR_Image.Inversion Time"
+* series.extension[imaging-settings].extension[mr_image].extension[receive_coil_name] -> "MR_Image.Receive Coil Name"
 // todo
+
+
 
 /*
     ##########################
