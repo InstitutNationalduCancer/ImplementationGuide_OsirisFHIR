@@ -9,6 +9,7 @@ Alias:   RECIST = https://recist.eortc.org
 Alias:   MEDDRA = http://terminology.hl7.org/CodeSystem/mdr
 Alias:   DICOMod = https://dicom.nema.org/medical/dicom
 Alias:   DICOMcontrast = https://dicom.nema.org/medical/dicom
+Alias:   IBSI = https://ibsi.readthedocs.io/en/latest/index.html
 
 // ValueSet
 Alias:   ATC = http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips // CodeSystem : http://www.whocc.no/atc
