@@ -64,3 +64,22 @@ Description:    "Radiomics Criteria Settings."
 * extension[textureMatrixAggregation].value[x] only string
 
 
+/*
+    ##########################
+    # IBSI <--> FHIR-OSIRIS #
+    ##########################
+*/
+
+Mapping: IbsiToFhirRadiomicsCriteria 
+Source: radiomics-criteria-settings
+Target: "RadiomicsCriteria"
+Id: ibsi-to-fhir-radiomics-criteria
+Title: "Fhir-osiris to osiris"
+* -> "Radiomics Criteria" "Radiomics Criteria Description"
+
+* extension[softwareName] -> "IBSI (61)"
+* extension[softwareVersion] -> "IBSI (61)"
+* extension[distanceWeighting] -> "IBSI (63)"
+* extension[binSize] -> "IBSI (56b)"
+* extension[lowestIntensity] -> "IBSI (56c)"
+* extension[textureMatrixAggregation] -> "IBSI (62)"
