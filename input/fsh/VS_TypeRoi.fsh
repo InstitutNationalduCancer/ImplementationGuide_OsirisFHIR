@@ -2,5 +2,5 @@ ValueSet: ROIType
 Title: "ROI Type Value Set"
 Description:  "ROI Type"
 
-* RoiCS#DICOM "ROI Type DICOM"
-* RoiCS#NIFTI "ROI Type NIfTI"
+* RadiomicsCS#DICOM "ROI Type DICOM"
+* RadiomicsCS#NIFTI "ROI Type NIfTI"
