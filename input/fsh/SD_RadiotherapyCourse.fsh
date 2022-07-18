@@ -49,18 +49,11 @@ Id: radiotherapy-course-settings
 Title: "Radiotherapy Course Description"
 Description: "Radiotherapy Course Description"
 * extension contains 
-<<<<<<< HEAD
       treatmentIntent 1..1 MS and
       treatmentTerminationReason 1..1 MS and
       treatmentMachineName 1..1 MS and
       radiotherapyModality  1..* MS and
       radiotherapyTechnique 1..* MS and
-=======
-      treatmentIntent 1..1 and
-      treatmentTerminationReason 1..1 and
-      radiotherapyModality  1..* and
-      radiotherapyTechnique 1..* and
->>>>>>> f982449 (Radiotherapy Course Summary)
       radiotherapySessions  1..1 MS
 
 
@@ -70,10 +63,14 @@ Description: "Radiotherapy Course Description"
 
 * extension[treatmentTerminationReason].value[x] only CodeableConcept
 <<<<<<< HEAD
+<<<<<<< HEAD
 //* extension[treatmentTerminationReason].valueCodableConcept from NOMENCLATURE (required)
 =======
 //* extension[treatmentTerminationReason] NOMENCLATURE
 >>>>>>> f982449 (Radiotherapy Course Summary)
+=======
+//* extension[treatmentTerminationReason].valueCodableConcept from NOMENCLATURE (required)
+>>>>>>> 4fad63f (fix resource)
 * extension[treatmentTerminationReason] ^short = ""
 
 
