@@ -11,9 +11,12 @@ Description: "A summary of a course of radiotherapy delivered to a patient"
 * identifier 1..1
 * identifier MS
 
-* category = SCT#1217123003 // "Radiotherapy course of treatment (regime/therapy)"
+* category 1..1
+* category MS
+//* category from typeCourseCS (required)
+* category ^short = "Planned or Delivered"
 
-//* code = SCT#1217123003
+* code = SCT#1217123003
 * code 1..1
 * code MS
 * code ^short = "Identification of the procedure (e.g. Radiotherapy Course of Treatment (regime/therapy) ) " //nomenclature
@@ -33,15 +36,21 @@ Description: "A summary of a course of radiotherapy delivered to a patient"
 
 * reasonReference only Reference(tumor-pathology-event)
 
+// ################ 
+// ## Extensions ## 
+// ################
+
+
 Extension: RadiotherapyCourseSettings
 Id: radiotherapy-course-settings
 Title: "Radiotherapy Course Description"
 Description: "Radiotherapy Course Description"
 * extension contains 
-      treatmentIntent 1..1 and
-      treatmentTerminationReason 1..1 and
-      radiotherapyModality  1..* and
-      radiotherapyTechnique 1..* and
+      treatmentIntent 1..1 MS and
+      treatmentTerminationReason 1..1 MS and
+      treatmentMachineName 1..1 MS and
+      radiotherapyModality  1..* MS and
+      radiotherapyTechnique 1..* MS and
       radiotherapySessions  1..1 MS
 
 
@@ -66,7 +75,8 @@ Description: "Radiotherapy Course Description"
 * extension[radiotherapySessions].value[x] only unsignedInt
 * extension[radiotherapySessions] ^short = ""
 
-
+* extension[treatmentMachineName].value[x] only string
+* extension[treatmentMachineName] ^short = "Treatment Machine Name. Dicom tag (300A,00B2)"
 
 Extension: RadiotherapyDoseDeliveredToVolume
 Id: mcode-radiotherapy-dose-delivered-to-volume
