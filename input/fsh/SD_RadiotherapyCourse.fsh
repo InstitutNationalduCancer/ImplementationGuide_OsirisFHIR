@@ -36,14 +36,11 @@ Description: "A summary of a course of radiotherapy delivered to a patient"
 
 * reasonReference only Reference(tumor-pathology-event)
 
-<<<<<<< HEAD
 // ################ 
 // ## Extensions ## 
 // ################
 
 
-=======
->>>>>>> f982449 (Radiotherapy Course Summary)
 Extension: RadiotherapyCourseSettings
 Id: radiotherapy-course-settings
 Title: "Radiotherapy Course Description"
@@ -62,15 +59,7 @@ Description: "Radiotherapy Course Description"
 * extension[treatmentIntent] ^short = "CURATIVE, PALLIATIVE, PROPHYLACTIC, VERIFICATION, MACHINE_QA, RESEARCH, SERVICE"
 
 * extension[treatmentTerminationReason].value[x] only CodeableConcept
-<<<<<<< HEAD
-<<<<<<< HEAD
 //* extension[treatmentTerminationReason].valueCodableConcept from NOMENCLATURE (required)
-=======
-//* extension[treatmentTerminationReason] NOMENCLATURE
->>>>>>> f982449 (Radiotherapy Course Summary)
-=======
-//* extension[treatmentTerminationReason].valueCodableConcept from NOMENCLATURE (required)
->>>>>>> 4fad63f (fix resource)
 * extension[treatmentTerminationReason] ^short = ""
 
 
@@ -86,12 +75,8 @@ Description: "Radiotherapy Course Description"
 * extension[radiotherapySessions].value[x] only unsignedInt
 * extension[radiotherapySessions] ^short = ""
 
-<<<<<<< HEAD
 * extension[treatmentMachineName].value[x] only string
 * extension[treatmentMachineName] ^short = "Treatment Machine Name. dicomTag(300A,00B2)"
-=======
-
->>>>>>> f982449 (Radiotherapy Course Summary)
 
 Extension: RadiotherapyDoseDeliveredToVolume
 Id: mcode-radiotherapy-dose-delivered-to-volume
