@@ -1,4 +1,5 @@
 Profile: RadiotherapyPhase
+<<<<<<< HEAD
 Parent: Procedure
 Id: radiotherapy-phase
 Title: "Radiotherapy Phase"
@@ -92,3 +93,9 @@ Description: "Dose delivered to a given radiotherapy volume."
 * extension[fractionsDelivered] ^definition = "The number of fractions delivered to this volume."
 
 
+=======
+Parent: procedure
+Id: radiotherapy-phase
+Title: "Radiotherapy Phase"
+Description: "Radiotherapy Phase"
+>>>>>>> 43cb3d8 (radiotherapy phase)
