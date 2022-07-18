@@ -50,7 +50,7 @@ Description: "Radiotherapy Course Description"
 * extension[treatmentIntent] ^short = "CURATIVE, PALLIATIVE, PROPHYLACTIC, VERIFICATION, MACHINE_QA, RESEARCH, SERVICE"
 
 * extension[treatmentTerminationReason].value[x] only CodeableConcept
-//* extension[treatmentTerminationReason] NOMENCLATURE
+//* extension[treatmentTerminationReason].valueCodableConcept from NOMENCLATURE (required)
 * extension[treatmentTerminationReason] ^short = ""
 
 
