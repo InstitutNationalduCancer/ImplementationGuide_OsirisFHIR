@@ -73,6 +73,7 @@ Description: "RadioTherapy Intent Described in DicomTag(300A,000A)"
 * DICOM#VERIFICATION "Verification of patient plan using phantom"
 * DICOM#MACHINE_QA "Quality assurance of the delivery machine (independently of a specific patient)"
 * DICOM#RESEARCH "Research project"
+<<<<<<< HEAD
 * DICOM#SERVICE "Machine repair or maintenance operation"
 
 ValueSet: RadiotherapyIsotopes
@@ -109,3 +110,6 @@ Description: "Isotopes Used in Radiotherapy"
 * SCT#80751004  "Xenon-133 (substance)"
 // yttrium
 * SCT#14691008 "Yttrium-90 (substance)"
+=======
+* DICOM#SERVICE "Machine repair or maintenance operation"
+>>>>>>> e497605 (Radiotherapy Volume and Value Set related to volume)
