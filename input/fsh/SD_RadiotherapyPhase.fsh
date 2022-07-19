@@ -4,8 +4,6 @@ Id: radiotherapy-phase
 Title: "Radiotherapy Phase"
 Description: "Radiotherapy Phase"
 
-
-
 * extension contains
     radiotherapy-phase-settings named radiotherapy-phase-settings 0..* MS and
     RadiotherapyDoseDeliveredToVolume named doseDeliveredToVolume 0..* MS
@@ -39,9 +37,6 @@ Description: "Radiotherapy Phase"
 //* basedOn only Reference(radiotherapy-plan)
 
 * partOf only Reference(radiotherapy-course-summary)
-
-* code = SCT#1217123003 "Radiotherapy Treatment Plan (therapy/regime)"
-
 
 
 Extension: RadiotherapyPhaseSettings
@@ -81,7 +76,7 @@ Extension: RadiotherapyDoseDeliveredToVolume
 Id: mcode-radiotherapy-dose-delivered-to-volume
 Title: "Radiotherapy Dose Delivered To Volume Extension"
 Description: "Dose delivered to a given radiotherapy volume."
-// * insert ExtensionContext(Procedure) - removed as per FHIR-32243
+
 * extension contains
     volume 1..1 MS and
     totalDoseDelivered 0..1 MS and
