@@ -76,7 +76,7 @@ Description: "Radiotherapy Course Description"
 * extension[radiotherapySessions] ^short = ""
 
 * extension[treatmentMachineName].value[x] only string
-* extension[treatmentMachineName] ^short = "Treatment Machine Name. Dicom tag (300A,00B2)"
+* extension[treatmentMachineName] ^short = "Treatment Machine Name. dicomTag(300A,00B2)"
 
 Extension: RadiotherapyDoseDeliveredToVolume
 Id: mcode-radiotherapy-dose-delivered-to-volume
