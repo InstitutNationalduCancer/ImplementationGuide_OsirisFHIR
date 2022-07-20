@@ -15,7 +15,7 @@ Description:    "Description of an imaging study injection used for radiomic stu
 * dosage.route ^short = "Administration route of contrast agent."
 
 * effective[x] MS
-* effective[x] ^short = "Time of start of injection.)"
+* effective[x] ^short = "Time of start of injection."
 
 * medication[x] MS
 * medication[x] 1..1
