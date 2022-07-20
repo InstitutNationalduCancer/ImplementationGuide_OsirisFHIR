@@ -1,10 +1,6 @@
 Profile: RadiotherapyPlan
 Parent: Procedure
-<<<<<<< HEAD
 Id: radiotherapy-plan
-=======
-Id: RadiotherapyPlan
->>>>>>> 8eb86bf (radiotherapy Plan)
 Title: "Radiotherapy Plan"
 Description: "Padiotherapy Plan"
 
@@ -34,7 +30,7 @@ Description: "Padiotherapy Plan"
 
 * reasonReference only Reference(tumor-pathology-event)
 
-<<<<<<< HEAD
+
 * partOf ^short = "" 
 * partOf only Reference(radiotherapy-phase)
 
@@ -43,16 +39,7 @@ Extension: RadiotherapyPlanSettings
 Id: radiotherapy-plan-settings
 Title: "Radiotherapy Plan Description"
 Description: "Radiotherapy Plan Description"
-=======
-* basedOn ^short = "" 
-//* basedOn only Reference(radiotherapy-plan)
 
-
-Extension: RadiotherapyPhaseSettings
-Id: radiotherapy-phase-settings
-Title: "Radiotherapy Phase Description"
-Description: "Radiotherapy Phase Description"
->>>>>>> 8eb86bf (radiotherapy Plan)
 * extension contains
     radiotherapyModality  1..1 MS and
     radiotherapyTechnique 1..1 MS and
