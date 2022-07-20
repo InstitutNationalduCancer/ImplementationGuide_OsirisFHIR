@@ -34,10 +34,10 @@ Description: "Padiotherapy Plan"
 //* basedOn only Reference(radiotherapy-plan)
 
 
-Extension: RadiotherapyPhaseSettings
-Id: radiotherapy-phase-settings
-Title: "Radiotherapy Phase Description"
-Description: "Radiotherapy Phase Description"
+Extension: RadiotherapyPlanSettings
+Id: radiotherapy-plan-settings
+Title: "Radiotherapy Plan Description"
+Description: "Radiotherapy Plan Description"
 * extension contains
     radiotherapyModality  1..1 MS and
     radiotherapyTechnique 1..1 MS and
