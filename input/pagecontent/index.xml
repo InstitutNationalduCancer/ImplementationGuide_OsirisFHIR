@@ -1,5 +1,4 @@
-<div xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../fhir-single.xsd">
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../fhir-single.xsd">
   <a name="background"></a>
   <h3>Background</h3>
 
@@ -45,8 +44,11 @@
     information about the patient and the cancer clinical history (ex: family cancer history, clinical trials participation, vital status, etc).
   </p>
 
-  <img src="patient_metadata.png" alt="Patient metadata" />
+  <!--img src="patient_metadata.png" alt="Patient metadata" /> -->
 
+  <object data="patient_metadata.svg" width="900" type="image/svg+xml" class="center">
+    <img src="patient_metadata.jpg" />
+  </object>
 
   <a name="TPE"></a>
   <h3>Cancer History Modelization</h3>
@@ -55,22 +57,28 @@
   <p>
     The Tumoral Pathology Event (TPE) is a central resource in the FHIR-OSIRIS model, it will describe a tumoral event (primary or metastasis). All analysis, treatments and omics data will be linked to a TPE.
   </p>
-  <img src="tpe.png" alt="modelisation_schema" />
+  <!--img src="tpe.png" alt="modelisation_schema" /> -->
+  <object data="tpe.svg" width="900" type="image/svg+xml" class="center">
+    <img src="tpe.jpg" />
+  </object>
 
-
-
-  
   <p>
-    Other profiles like 
-    <a href="https://hl7.org/fhir/bodyweight.html">weight</a> and 
-    <a href="https://hl7.org/fhir/bodyheight.html">height</a> are also used by the osiris model. These profiles are not added to the osiris-core ig because they are already defined by the FHIR documentation.
+    Other profiles like
+    <a href="https://hl7.org/fhir/bodyweight.html">weight</a>
+    and
+    <a href="https://hl7.org/fhir/bodyheight.html">height</a>
+    are also used by the osiris model. These profiles are not added to the osiris-core ig because they are already defined by the FHIR documentation.
   </p>
   <a name="treatments"></a>
   <h3>Treatments</h3>
 
   <p>Treatment plan, drug  administrations, surgical procedures, as well as adverse events that could occur.</p>
 
-  <img src="treatments.png" alt="Treatments" />
+  <!--img src="treatments.png" alt="Treatments" /> -->
+
+  <object data="treatments.svg" width="900" type="image/svg+xml">
+    <img src="treatments.jpg" />
+  </object>
 
   <a name="sequencing"></a>
   <h3>Sequencing</h3>
@@ -83,8 +91,10 @@
   </p>
   <p>
     Genetic Variants are modelised by
-    <a href="StructureDefinition-snp.html">SNP</a>,
-    <a href="StructureDefinition-copy-number.html">CopyNumber</a>,
+    <a href="StructureDefinition-snp.html">SNP</a>
+    ,
+    <a href="StructureDefinition-copy-number.html">CopyNumber</a>
+    ,
     <a href="StructureDefinition-expression.html">Expression</a>
     or
     <a href="StructureDefinition-fusion.html">Fusion</a>
@@ -93,7 +103,10 @@
     <a href="StructureDefinition-variant-annotation.html">Annotation</a>
     profile.
   </p>
-  <img src="sequencing.png" alt="Sequencing-schema" />
+  <!--img src="sequencing.png" alt="Sequencing-schema" />-->
+  <object data="sequencing.svg" width="1100" type="image/svg+xml">
+    <img src="sequencing.jpg" />
+  </object>
 
   <a name="radiomics"></a>
   <h3>Radiomics</h3>
@@ -103,9 +116,11 @@
   <a name="about"></a>
   <h3>About</h3>
   <p>
-  The FHIR osiris implementation guide has been generated using FSH and the FHIR publisher. Source files including FSH files are available open source on
-    <a href="https://github.com/arkhn/arkhn-ig-osiris/">github</a>. You can also download the
-    <a href="package.tgz">FHIR NPM Package</a>.
+    The FHIR osiris implementation guide has been generated using FSH and the FHIR publisher. Source files including FSH files are available open source on
+    <a href="https://github.com/arkhn/arkhn-ig-osiris/">github</a>
+    . You can also download the
+    <a href="package.tgz">FHIR NPM Package</a>
+    .
   </p>
 
   <a name="contributors"></a>
