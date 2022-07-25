@@ -44,6 +44,9 @@ Description:    "Description of an imaging study coming from an oncology Patient
 * numberOfInstances MS
 * numberOfInstances 1..1 //dicomtag (0020,1209)
 //device = software version dicomTag (0018,1020)
+* series.performer.actor 1..1
+* series.performer.actor MS
+* series.performer.actor only Reference(imaging-device)
 
 
 Invariant:   imaging-settings-1
@@ -63,6 +66,7 @@ Description:    "Imaging Settings."
     fov 1..1 MS and
     rows 1..1 MS and
     columns 1..1 MS and
+    imaging_injection 0..1 MS and
     mr_image 0..1 and
     ct_image 0..1 and
     dx_image 0..1 and
@@ -78,6 +82,7 @@ Description:    "Imaging Settings."
 * extension[rows].value[x] only decimal
 * extension[columns] ^short = "Number of pixel in the column direction in the reconstructed matrix"
 * extension[columns].value[x] only decimal
+* extension[imaging_injection].value[x] only Reference(onco-imagingstudy-injection)
 
 
 // ############
