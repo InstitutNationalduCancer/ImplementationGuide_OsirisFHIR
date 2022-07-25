@@ -10,7 +10,6 @@ Description:    "Description of an imaging study coming from an oncology Patient
 * identifier 1..1
 * modality MS // Modalities in Study dicomTag(0008,0061)
 * modality 1..*
-
 * modality from DICOMod
 * subject MS
 * subject only Reference (onco-patient)
@@ -25,6 +24,7 @@ Description:    "Description of an imaging study coming from an oncology Patient
 * endpoint only Reference (imaging-pacs) //
 * numberOfSeries MS
 * numberOfSeries 1..1  //dicomtag(0020,1206)
+* reasonReference only Reference(tumor-pathology-event)
 //* procedureReference 1..1 MS
 //* procedureReference only Reference (onco-biological-imagingstudy-procedure)
 
