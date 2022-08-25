@@ -69,7 +69,7 @@ Description:    "Observation of a Gene Fusion derived from a SequencingAnalysis.
 * component[gene-studied].value[x] from HGNCVS (extensible)
 
 * component[in-frame] ^short = "Specify whether the fusion is in frame"
-* component[in-frame].code = LNC#74019-1
+* component[in-frame].code = LNC#95123-6
 * component[in-frame].value[x] only boolean // to adapt in pyrog
 
 
