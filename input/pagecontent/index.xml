@@ -1,5 +1,4 @@
-<div xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../fhir-single.xsd">
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../fhir-single.xsd">
   <a name="background"></a>
   <h3>Background</h3>
 
@@ -17,14 +16,15 @@
     procedures.
   </p>
 
-  <a name="contributors"></a>
-  <h3>Contributors</h3>
   <p>
-    The OSIRIS project is mainly financed by the
-    <a href="https://www.e-cancer.fr/">INCA</a>
-    (Institut National du Cancer, The French National Cancer Institute). The core contributors to the original data model are Institut Curie, Institut Bergonié, the oncology center Léon Bérard, with the contribution of a dozen oncology centre and French hospitals. The current FHIR version of the data model was realized by the same stakeholders in partnership with the start-up
-    <a href="https://arkhn.com/">Arkhn</a>
-    .
+    The osiris model is divided on multiple parts:
+    <ul>
+      <li>The patient general information</li>
+      <li>The tumor pathology event data</li>
+      <li>The treatments</li>
+      <li>The sequencing analysis, containing omics data</li>
+      <li>The radiomics / radiotherapy module</li>
+    </ul>
   </p>
 
   <!-- TODO -->
@@ -44,19 +44,41 @@
     information about the patient and the cancer clinical history (ex: family cancer history, clinical trials participation, vital status, etc).
   </p>
 
-  <img src="patient_metadata.png" alt="Patient metadata" />
-  
+  <!--img src="patient_metadata.png" alt="Patient metadata" /> -->
+
+  <object data="patient_metadata.svg" width="900" type="image/svg+xml" class="center">
+    <img src="patient_metadata.jpg" />
+  </object>
+
+  <a name="TPE"></a>
+  <h3>Cancer History Modelization</h3>
+
+  <!-- Schema showing the characteristics and the scope of the modelization-->
   <p>
-    Other profiles like 
-    <a href="https://hl7.org/fhir/bodyweight.html">weight</a> and 
-    <a href="https://hl7.org/fhir/bodyheight.html">height</a> are also used by the osiris model. These profiles are not added to the osiris-core ig because they are already defined by the FHIR documentation.
+    The Tumoral Pathology Event (TPE) is a central resource in the FHIR-OSIRIS model, it will describe a tumoral event (primary or metastasis). All analysis, treatments and omics data will be linked to a TPE.
+  </p>
+  <!--img src="tpe.png" alt="modelisation_schema" /> -->
+  <object data="tpe.svg" width="900" type="image/svg+xml" class="center">
+    <img src="tpe.jpg" />
+  </object>
+
+  <p>
+    Other profiles like
+    <a href="https://hl7.org/fhir/bodyweight.html">weight</a>
+    and
+    <a href="https://hl7.org/fhir/bodyheight.html">height</a>
+    are also used by the osiris model. These profiles are not added to the osiris-core ig because they are already defined by the FHIR documentation.
   </p>
   <a name="treatments"></a>
   <h3>Treatments</h3>
 
   <p>Treatment plan, drug  administrations, surgical procedures, as well as adverse events that could occur.</p>
 
-  <img src="treatments.png" alt="Treatments" />
+  <!--img src="treatments.png" alt="Treatments" /> -->
+
+  <object data="treatments.svg" width="900" type="image/svg+xml">
+    <img src="treatments.jpg" />
+  </object>
 
   <a name="sequencing"></a>
   <h3>Sequencing</h3>
@@ -69,8 +91,10 @@
   </p>
   <p>
     Genetic Variants are modelised by
-    <a href="StructureDefinition-snp.html">SNP</a>,
-    <a href="StructureDefinition-copy-number.html">CopyNumber</a>,
+    <a href="StructureDefinition-snp.html">SNP</a>
+    ,
+    <a href="StructureDefinition-copy-number.html">CopyNumber</a>
+    ,
     <a href="StructureDefinition-expression.html">Expression</a>
     or
     <a href="StructureDefinition-fusion.html">Fusion</a>
@@ -79,13 +103,36 @@
     <a href="StructureDefinition-variant-annotation.html">Annotation</a>
     profile.
   </p>
-  <img src="sequencing.png" alt="Sequencing" />
+  <!--img src="sequencing.png" alt="Sequencing-schema" />-->
+  <object data="sequencing.svg" width="900" type="image/svg+xml">
+    <img src="sequencing.jpg" />
+  </object>
+
+  <a name="radiomics"></a>
+  <h3>Radiomics</h3>
+  <!-- img src="radiomics.png" alt="Radiomics-schema" /> -->
+  <object data="radiomics.svg" width="900" type="image/svg+xml">
+    <img src="radiomics.jpg" />
+  </object>
+
   <a name="about"></a>
   <h3>About</h3>
   <p>
-  The FHIR osiris implementation guide has been generated using FSH and the FHIR publisher. Source files including FSH files are available open source on
-    <a href="https://github.com/arkhn/arkhn-ig-osiris/">github</a>. You can also download the
-    <a href="package.tgz">FHIR NPM Package</a>.
+    The FHIR osiris implementation guide has been generated using FSH and the FHIR publisher. Source files including FSH files are available open source on
+    <a href="https://github.com/arkhn/arkhn-ig-osiris/">github</a>
+    . You can also download the
+    <a href="package.tgz">FHIR NPM Package</a>
+    .
+  </p>
+
+  <a name="contributors"></a>
+  <h3>Contributors</h3>
+  <p>
+    The OSIRIS project is mainly financed by the
+    <a href="https://www.e-cancer.fr/">INCA</a>
+    (Institut National du Cancer, The French National Cancer Institute). The core contributors to the original data model are Institut Curie, Institut Bergonié, the oncology center Léon Bérard, with the contribution of a dozen oncology centre and French hospitals. The current FHIR version of the data model was realized by the same stakeholders in partnership with the start-up
+    <a href="https://arkhn.com/">Arkhn</a>
+    .
   </p>
 
 </div>

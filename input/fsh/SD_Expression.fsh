@@ -58,7 +58,7 @@ Description:    "Observation of a Gene Expression variant derived from a Sequenc
 * component[gene-studied].value[x] from HGNCVS (extensible)
 
 * component[gene-expression] ^short = "Numerical value for expression"
-* component[gene-expression].code = LNC#74019-1
+* component[gene-expression].code = LNC#94820-8
 * component[gene-expression].value[x] only integer
 
 

@@ -30,7 +30,7 @@ Source: sequencing-device
 Target: "Device"
 Id: fhir-osiris-device
 Title: "Fhir-osiris to osiris"
-* -> "Sequencing Devie" "Sequencing device description"
+* -> "Sequencing Device" "Sequencing device description"
 * deviceName -> "Analysis.Technology_PlatformName"
 * identifier -> "Analysis.Technology_PlatformAccession"
 * version.value -> "Analysis.Panel_Name"

@@ -40,7 +40,7 @@ Description:    "TNM Classification of malignant tumors used to indicate the tum
 
 * code = UMLS#C1515169 "TNM Staging System"
 * component ^slicing.discriminator.type = #pattern
-* component ^slicing.discriminator.path = "component.code"
+* component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component ^slicing.description = "Slice based on component pattern"
 * component contains tnm-t 0..1
