@@ -6,5 +6,3 @@ Description: "Imaging Code System"
 // Type of ROI Segmentation
 * #DICOM    "ROI Type DICOM"
 * #NIFTI    "ROI Type NIfTI"
-
-
