@@ -33,9 +33,7 @@ Description: "Radiotherapy Phase"
 
 * reasonReference only Reference(tumor-pathology-event)
 
-* basedOn ^short = "Should Reference a Radiotherapy Treatment Plan" // http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-treatment-plan" // only Reference(RadiotherapyTreatmentPlan)
-//* basedOn only Reference(radiotherapy-plan)
-
+* partOf ^short = "Should Reference a Radiotherapy Treatment Course" 
 * partOf only Reference(radiotherapy-course-summary)
 
 
