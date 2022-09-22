@@ -15,7 +15,6 @@ Description:    "Description of a sequencing device used for a Sequencing Analys
 * deviceName[platform-name].name 1..1
 * deviceName[platform-name] ^short = "Technological platform name (provider followed by the platform name)"
 
-// To be discussed: how to store panel name ?
 * version ^slicing.discriminator.type = #pattern
 * version ^slicing.discriminator.path = "type.code"
 * version ^slicing.rules = #open

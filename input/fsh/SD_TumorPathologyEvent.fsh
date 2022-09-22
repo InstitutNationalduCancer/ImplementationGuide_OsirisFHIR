@@ -31,15 +31,6 @@ Description:    "Tumor Pathology Event (TPE) Condition describing a tumoral even
 * stage[morphology].summary 1..1
 * stage[morphology].summary from Morphology (extensible)
 
-// * stage contains laterality 0..1
-// * stage[laterality] ^short = "Cancer laterality"
-// * stage[laterality].type = LNC#20228-3
-// * stage[laterality].summary 1..1
-// * stage[laterality].summary ^short = "Laterality code"
-// * stage[laterality].summary from Laterality (extensible)
-
-
-
 Extension:  Laterality
 Id: laterality
 Title: "Laterality"

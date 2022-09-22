@@ -51,13 +51,6 @@ Description:    "Observation of a Copy Number variant derived from a SequencingA
 * component[segment-intensity].code = UMLS#C2732930
 * component[segment-intensity].value[x] only integer
 
-// Variant.component:gene-studied: Annotation > GenomeEntity_Symbol
-// Variant.component:cytogenetic-location: CopyNumber > Alteration_Chromosome
-// Variant.component:ref-sequence-assembly: CopyNumber > Alteration_GenomeBuild
-// Variant.component:cytogenetic-location: CopyNumber > Alteration_Cytoband
-// Variant.component:exact-start-end: CopyNumber > Alteration_GenomicStart / Alteration_GenomicStop
-// Variant.component:variation-code: CopyNumber > CNV_SegmentGenomicStatus
-// Variant.component:copy-number: CopyNumber > CNV_CopyNumber
 
 Mapping: FhirOSIRISCopyNumber
 Source: copy-number

@@ -4,7 +4,8 @@ Id:             onco-imagingstudy
 Title:          "Imaging Study"
 Description:    "Description of an imaging study coming from an oncology Patient used to recreate a radiomic study."
 
-* series.extension contains imaging-settings named imaging-settings 1..1
+* series.extension contains imaging-settings named imaging-settings 1..1 and
+                            series-weightheigt named series-weightheigt 0..1
 
 * identifier MS // Study Instance UID dicomTag(0020,000D)
 * identifier 1..1
@@ -25,45 +26,51 @@ Description:    "Description of an imaging study coming from an oncology Patient
 * numberOfSeries MS
 * numberOfSeries 1..1  //dicomtag(0020,1206)
 * reasonReference only Reference(tumor-pathology-event)
-//* procedureReference 1..1 MS
-//* procedureReference only Reference (onco-biological-imagingstudy-procedure)
+
+
+* procedureReference only Reference (radiotherapy-course-summary)
 
 //Series
 * series.uid MS
 * series.uid 1..1 //dicomTag(0020,000E)
 * series.number MS
-* series.number 1..1 //dicomTag(0020,0011)
+* series.number 0..1 //dicomTag(0020,0011)
 * series.modality MS
 * series.modality 1..1
 * series.modality from DICOMod 
 * series.description MS
 * series.description 1..1
-//*series.extension.medicationAdministration*/
 * series.bodySite MS
 * series.bodySite 1..1 //dicomTag (0018,0015)
 * numberOfInstances MS
 * numberOfInstances 1..1 //dicomtag (0020,1209)
-//device = software version dicomTag (0018,1020)
 * series.performer.actor 1..1
 * series.performer.actor MS
 * series.performer.actor only Reference(imaging-device)
 
 
-//Invariant:   imaging-settings-1
-//Description: "one of mr_image, ct_image, dx_image, pt_image, nm_image exists"
-//Expression:  "extension[mr_image].exists() or extension[ct_image].exists() or extension[dx_image].exists() or extension[pt_image].exists() or extension[nm_image].exists()"
-//Severity:    #error
-//XPath:       "f:extension[mr_image] or f:extension[ct_image] or f:extension[dx_image] or f:extension[pt_image] or f:extension[nm_image]"
+Extension:      WeightHeight
+Id:             series-weightheigt
+Title:          "Weight and Height at the time of the Serie"
+Description:    "Weight and Height at the time of the Serie"
+
+* extension contains
+    patient_weight 0..1 MS and
+    patient_height 0..1
+
+* extension[patient_weight] ^short = "Patient weight in kilograms (Kg) at the time of the Serie acquisition. Described in Dicom Tag (0010,1030)"
+* extension[patient_weight].value[x] only decimal
+* extension[patient_height] ^short = "Patient height in meters (m) at the time of the Serie acquisition. Described in Dicom Tag (0010,1020)"
+* extension[patient_height].value[x] only decimal
 
 Extension:      ImagingSettings
 Id:             imaging-settings
 Title:          "Imaging Settings"
 Description:    "Imaging Settings."
-//* extension obeys imaging-settings-1
 * extension contains
     slice_thickness 1..1 MS and
     pixel_spacing 1..1 MS and
-    fov 1..1 MS and
+    fov 0..1 MS and
     rows 1..1 MS and
     columns 1..1 MS and
     imaging_injection 0..1 MS and
@@ -119,7 +126,6 @@ Description:    "Imaging Settings."
 * extension[mr_image].extension[receive_coil_name].value[x] only string 
 
 
-// * series.performer.actor only Reference(imaging-device)
 
 // ############
 // # CT IMAGE #
@@ -263,7 +269,6 @@ Title: "Fhir-osiris to osiris"
 
 * series.extension[imaging-settings].extension[slice_thickness] -> "(0018,0050)"
 * series.extension[imaging-settings].extension[pixel_spacing] -> "(0028,0030)"
-// * series.extension[imaging-settings].extension[fov] -> "Field Of View"
 * series.extension[imaging-settings].extension[rows] -> "(0028,0010)"
 * series.extension[imaging-settings].extension[columns] -> "(0028,0011)"
 
