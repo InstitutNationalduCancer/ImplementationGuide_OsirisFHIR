@@ -13,17 +13,25 @@ Description:    "Observation that contient the ROI segmentation."
 
 * note MS // ROI description Attribute dicomTag(3006,0028)
 * note ^short = "ROI description Attribute"
+* note 1..1
+
+* text MS
+* text ^short = "Name given by the user"
+* text 1..1
 
 * code MS // Type of ROI
 * code from ROIType (required)
+* code 1..1
 
 * partOf MS
 * partOf only Reference (onco-imagingstudy)
 * partOf ^short = "Uniquely identifies the referenced SOP Instance"
+* partOf 1..1
 
 * focus MS
 * focus only Reference (imaging-pacs)
 * focus ^short = "Uniquely identifies the referenced id or filename"
+* focus 1..1
 
 
 
@@ -43,4 +51,5 @@ Title: "Fhir-osiris to osiris"
 * -> "ROI segmentation" "ROI segmentation description"
 * identifier -> "(3006,0084)"
 * note -> "(3006,0028)"
+* text -> "(3006,0026)"
 * partOf -> "(0008,1150)"
