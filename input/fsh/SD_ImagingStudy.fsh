@@ -4,7 +4,8 @@ Id:             onco-imagingstudy
 Title:          "Imaging Study"
 Description:    "Description of an imaging study coming from an oncology Patient used to recreate a radiomic study."
 
-* series.extension contains imaging-settings named imaging-settings 1..1
+* series.extension contains imaging-settings named imaging-settings 1..1 and
+                            series-weightheigt named series-weightheigt 0..1
 
 * identifier MS // Study Instance UID dicomTag(0020,000D)
 * identifier 1..1
@@ -34,7 +35,7 @@ Description:    "Description of an imaging study coming from an oncology Patient
 * series.uid MS
 * series.uid 1..1 //dicomTag(0020,000E)
 * series.number MS
-* series.number 1..1 //dicomTag(0020,0011)
+* series.number 0..1 //dicomTag(0020,0011)
 * series.modality MS
 * series.modality 1..1
 * series.modality from DICOMod 
@@ -51,6 +52,20 @@ Description:    "Description of an imaging study coming from an oncology Patient
 * series.performer.actor only Reference(imaging-device)
 
 
+Extension:      WeightHeight
+Id:             series-weightheigt
+Title:          "Weight and Height at the time of the Serie"
+Description:    "Weight and Height at the time of the Serie"
+
+* extension contains
+    patient_weight 0..1 MS and
+    patient_height 0..1
+
+* extension[patient_weight] ^short = "Patient weight in kilograms (Kg) at the time of the Serie acquisition. Described in Dicom Tag (0010,1030)"
+* extension[patient_weight].value[x] only decimal
+* extension[patient_height] ^short = "Patient height in meters (m) at the time of the Serie acquisition. Described in Dicom Tag (0010,1020)"
+* extension[patient_height].value[x] only decimal
+
 //Invariant:   imaging-settings-1
 //Description: "one of mr_image, ct_image, dx_image, pt_image, nm_image exists"
 //Expression:  "extension[mr_image].exists() or extension[ct_image].exists() or extension[dx_image].exists() or extension[pt_image].exists() or extension[nm_image].exists()"
@@ -65,7 +80,7 @@ Description:    "Imaging Settings."
 * extension contains
     slice_thickness 1..1 MS and
     pixel_spacing 1..1 MS and
-    fov 1..1 MS and
+    fov 0..1 MS and
     rows 1..1 MS and
     columns 1..1 MS and
     imaging_injection 0..1 MS and
