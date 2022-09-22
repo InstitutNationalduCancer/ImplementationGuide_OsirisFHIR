@@ -39,20 +39,6 @@ Description:    "Observation of a Single Nucleotide Polymorphism (SNP) derived f
 * component[pathogenicity].value[x] only CodeableConcept 
 * component[pathogenicity].value[x] from Pathogenicity (required)
 
-
-// Variant.component:gene-studied: Annotation > GenomeEntity_symbol
-// Variant.component:cytogenetic-location: Variant > Alteration_Chromosome
-// Variant.component:ref-sequence-assembly: Variant > Alteration_GenomeBuild
-// Variant.component:cytogenetic-location: Variant > Alteration_Cytoband
-// Variant.component:exact-start-end: Variant > Alteration_GenomicStart & Alteration_GenomicStop
-// Variant.component:alt-allele: Variant > Variant_AlternativeAllele
-// Variant.component:ref-allele: Variant > Variant_ReferenceAllele
-// Variant.component:dna-chg-type: Variant > Variant_DNASequenceVariationType
-// Variant.component:allelic-read-depth: Variant > VariantInSample_PositionReadDepth
-// Variant.component:allelic-read-depth: Variant > VariantInSample_VariantReadDepth
-// Variant.component:genomic-source-class: Variant > VariantInSample_GenomicSourceClass
-// Variant.component:allelic-state: Variant > VariantInSample_AllelicState
-
 Mapping: FhirOSIRISVariant
 Source: snp
 Target: "SNP"
@@ -82,15 +68,6 @@ Id: strand-bias
 Title: "Strand bias"
 Description: "Indication of the existence of strand bias at the variant position"
 * value[x] only boolean
-// TODO modify in pyrog
-
-
-// strandbias (former valueset, to discuss)
-// UMLS:C1298908	No
-// UMLS:C1298907	Yes
-// UMLS:C0439673	Unknown
-
-
 
 //Pathogenicity
 ValueSet: Pathogenicity
@@ -101,12 +78,3 @@ Description:  "Pathogenicity"
 * OSIRIS#O81-3	"Uncertain significance"
 * OSIRIS#O81-4	"Likely benign"
 * OSIRIS#O81-5	"Benign"
-
-//Actionability (old valueset, to discuss)
-// OSIRIS:O82-1	Actionable
-// OSIRIS:O82-2	Non actionable
-
-//ProposedForOrientation (old valueset, to discuss)
-// UMLS:C1298908	No
-// UMLS:C1298907	Yes
-// UMLS:C0439673	Unknown

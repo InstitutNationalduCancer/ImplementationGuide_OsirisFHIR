@@ -62,8 +62,7 @@ Description:    "TNM Classification of malignant tumors used to indicate the tum
 
 * component[tnm-type].code = LNC#75620-5 "TNM clinical staging"
 * component[tnm-type] ^short = "c, p, r,..."
-* component[tnm-type].value[x] only CodeableConcept //tnm-type TODO : find VS
-// * component[tnm-type].valueCodeableConcept.coding.version //TODO : update on pyrog
+* component[tnm-type].value[x] only CodeableConcept 
 
 Mapping: FhirOSIRISTNM
 Source: onco-tnm
@@ -72,10 +71,8 @@ Id: fhir-osiris-tnm
 Title: "Fhir-osiris TNM to osiris TNM"
 * subject -> "TNM.Patient_Identifier"
 * focus -> "TNM.TumorPathologyEvent_Ref"
-// -- Could find a better mapping --
 * component[tnm-type].valueCodeableConcept.coding.version -> "TNM.TNM_Version"
 * component[tnm-type].valueCodeableConcept.coding.code -> "TNM.TNM_Type"
-// -- Could find a better mapping --
 * component[tnm-t].valueString -> "TNM.TNM_T"
 * component[tnm-n].valueString -> "TNM.TNM_N"
 * component[tnm-m].valueString -> "TNM.TNM_M"

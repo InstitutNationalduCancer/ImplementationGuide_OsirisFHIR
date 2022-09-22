@@ -37,16 +37,6 @@ Description:    "The Annotation profile allows to add information about a SNP, a
 * component[mutation-prediction].value[x] ^short = "Prediction of the variation effect over the protein"
 * component[mutation-prediction].interpretation ^short = "Level of confidence of the prediction of the variation effect over the protein"
 
-// What can we do with these other components ?
-// Variant.component:amino-acid-chg-type.valueCodeableConcept.code: Annotation > Annotation_AminoAcidChangeType
-// Variant.component:cytogenetic-location.valueCodeableConcept.code: Annotation > Annotation_DNARegionName
-// Variant.component:amino-acid-chg.valueCodeableConcept.code: Annotation > Annotation_AminoAcidChange
-// Variant.component:dna-chg.valueCodeableConcept.code: Annotation > Annotation_DNASequenceVariation
-// Variant.component:genomic-dna-chg.valueCodeableConcept.code: Annotation > Annotation_GenomicSequenceVariation
-// Variant.component:dna-chg.valueCodeableConcept.code: Annotation > Annotation_RNASequenceVariation
-
-
-
 Mapping: FhirOSIRISAnnotation
 Source: variant-annotation
 Target: "Annotation"

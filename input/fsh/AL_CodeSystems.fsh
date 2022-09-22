@@ -15,5 +15,5 @@ Alias:   ICD10 = http://hl7.org/fhir/sid/ICD-10
 Alias:   DICOMTech = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique
 
 // ValueSet
-Alias:   ATC = http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips // CodeSystem : http://www.whocc.no/atc
+Alias:   ATC = http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips 
 Alias:   HGNCVS = http://hl7.org/fhir/uv/genomics-reporting/ValueSet/hgnc

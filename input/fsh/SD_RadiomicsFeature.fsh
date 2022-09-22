@@ -4,8 +4,6 @@ Id:             radiomics-features
 Title:          "Radiomics Features"
 Description:    "Radiomics features"
 
-//* extension contains radiomics-image-filters-settings named radiomics-image-filters-settings 1..1
-
 * identifier MS 
 * identifier 1..1
 

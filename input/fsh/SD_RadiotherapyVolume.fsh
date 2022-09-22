@@ -5,8 +5,6 @@ Id: radiotherapy-volume
 Title: "Radiotherapy Volume Profile"
 Description: "A volume of the body used in radiotherapy planning or treatment delivery."
 
-// MISING LINK TO IMAGE or IMAGINGSTUDY or SERIE !!!!
-
 * identifier ^short = "Volume Identifier"
 * identifier ^definition = "The portion of the identifier typically relevant to the user and which is unique within the context of the system."
 * identifier 1..* MS
@@ -30,6 +28,3 @@ Description: "A volume of the body used in radiotherapy planning or treatment de
 * patient only Reference(onco-patient)
 * patient ^short = "The patient for which a radiotherapy procedure is planned or performed."
 * patient 1..1 MS
-
-//---- Mapping -----
-

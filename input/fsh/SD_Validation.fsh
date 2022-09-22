@@ -24,19 +24,3 @@ Title: "Fhir-osiris to osiris"
 * status -> "Validation.type"
 * validationType -> "Validation.Type"
 * validationProcess -> "Validation.Method"
-
-
-
-// Validation
-// Type	    Type of validation of the detected alteration           
-// Method	Validation method depending on the type of validation   string
-// Status	Validation status of the detected alteration            code(becomes boolean)
-
-// Type
-// OSIRIS:O16-1	Experimental
-// OSIRIS:O16-2	By biologist
-// OSIRIS:O16-3	In silico
-
-// Status (to discuss, replaced by https://www.hl7.org/fhir/valueset-verificationresult-status.html)
-// OSIRIS:O18-1	Not Validated
-// OSIRIS:O18-2	Validated

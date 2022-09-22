@@ -61,7 +61,7 @@ Description:  "Annotation reference type"
 * OSIRIS#O90-5	"Transcript reference"
 * OSIRIS#O90-6	"Variant id"
 
-// Would it be better to use extensions for MolecularSequence3Prime and MolecularSequence5Prime ?
+
 Profile:        MolecularSequence3Prime
 Parent:         MolecularSequence
 Id:             molecular-sequence-3-prime

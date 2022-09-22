@@ -13,7 +13,6 @@ Description: "A summary of a course of radiotherapy delivered to a patient"
 
 * category 1..1
 * category MS
-//* category from typeCourseCS (required)
 * category ^short = "Planned or Delivered"
 
 * code = SCT#1217123003
@@ -82,7 +81,6 @@ Extension: RadiotherapyDoseDeliveredToVolume
 Id: mcode-radiotherapy-dose-delivered-to-volume
 Title: "Radiotherapy Dose Delivered To Volume Extension"
 Description: "Dose delivered to a given radiotherapy volume."
-// * insert ExtensionContext(Procedure) - removed as per FHIR-32243
 * extension contains
     volume 1..1 MS and
     totalDoseDelivered 0..1 MS and

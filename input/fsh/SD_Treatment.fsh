@@ -27,7 +27,6 @@ Description:    "Description of a treatment plan related to an Oncology Patient.
 * activity[activity-code].detail.code 1..1
 * activity[activity-code] ^short = "Classification Commune des Actes Médicaux (CCAM) code of the medical act"
 * activity[activity-code].detail.code ^short = "CCAM code of the medical act"
-// * activity[activity-code].detail.status = #complete
 
 Mapping: FhirOSIRISTreatment
 Source: Treatment
@@ -73,8 +72,6 @@ Description:    "Medication statement related to a cancer cure."
 * basedOn only Reference (treatment)
 * medication[x] from ATC (extensible)
 * medication[x] ^short = "ATC code for treatment"
-// medication[x].code: Drug > Drug_Code
-// medication[x].display : Drug > Drug_Name
 
 Mapping: FhirOSIRISDrug
 Source: onco-medication-statement
@@ -98,7 +95,6 @@ Description:    "Oncology-related surgery with a description of the outcome usin
 * code ^short = "Nature of the surgery (ValueSet TBD)" // Treatment > SurgeryNature
 * subject only Reference (OncoPatient)
 * category = UMLS#C0543467 "Operative Surgical Procedures"
-// * performed[x] from Treatment_StartDate & Treatment_EndDate
 * outcome from SurgeryResectionQuality (extensible) //Treatment > TreatmentSurgeryResectionQuality
 * outcome ^short = "Quality of resection (anapath)"
 

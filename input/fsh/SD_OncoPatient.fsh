@@ -4,8 +4,7 @@ Id:             onco-patient
 Title:          "Oncology Patient"
 Description:    "Oncology patient defined by Osiris."
 
-// References
-// * generalPractitioner only Reference(OncoOrganization)
+
 * managingOrganization only Reference(OncoOrganization)
 * managingOrganization ^short = "Center providing the information"
 
@@ -31,7 +30,7 @@ Id: origin-center
 Title: "Patient Origin Center"
 Description: "The origin center organization of an Oncology Patient."
 * value[x] only Reference
-* valueReference only Reference (OncoOrganization) // To be adapted on pyrog
+* valueReference only Reference (OncoOrganization) 
 
 Mapping: FhirOSIRIS
 Source: onco-patient

@@ -4,7 +4,7 @@
 ####################################
 */
 
-Profile:        OncoAdverseEvent //Not really oncologic-specialized
+Profile:        OncoAdverseEvent 
 Parent:         AdverseEvent
 Id:             onco-adverse-event
 Title:          "Oncologic Adverse Event"
