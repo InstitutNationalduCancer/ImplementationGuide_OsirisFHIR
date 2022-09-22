@@ -25,7 +25,7 @@ Description:    "Radiomics Image Filters Settings."
 * extension contains
     softwareName 1..1 and
     softwareVersion 1..1 and
-    filterName 1..1 and
+    filterName 0..1 and
     filterType 1..1 and
     filterInterpolation 1..1 and
     intensityRounding 1..1 and
