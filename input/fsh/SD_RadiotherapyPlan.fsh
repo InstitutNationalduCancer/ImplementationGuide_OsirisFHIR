@@ -47,7 +47,7 @@ Description: "Radiotherapy Plan Description"
     treatmentMachineName 1..1 MS and
     totalDoseDelivered 1..1 MS and
     deliveredFraction 1..1 MS and
-    reasonReplanification 1..1 MS
+    reasonReplanification 0..1 MS
 
 * extension[radiotherapyModality].value[x] only CodeableConcept
 * extension[radiotherapyModality].valueCodeableConcept from DICOMod (required)
