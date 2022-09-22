@@ -46,7 +46,7 @@ Id: radiotherapy-course-settings
 Title: "Radiotherapy Course Description"
 Description: "Radiotherapy Course Description"
 * extension contains 
-      treatmentIntent 1..1 MS and
+      treatmentIntent 0..1 MS and
       treatmentTerminationReason 1..1 MS and
       treatmentMachineName 1..1 MS and
       radiotherapyModality  1..* MS and
