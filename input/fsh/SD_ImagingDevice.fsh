@@ -7,6 +7,8 @@ Description:    "Description of an imaging device used for radiotherapy or radio
 * identifier ^short = "GEO Identifier of the platform"
 
 * manufacturer MS
+* version MS
+* version 1..1
 
 * deviceName ^slicing.discriminator.type = #pattern
 * deviceName ^slicing.discriminator.path = "type"
@@ -25,4 +27,5 @@ Id: fhir-osiris-imaging-device
 Title: "Fhir-osiris to osiris"
 * -> "Imaging Device" "Imaging device description"
 * manufacturer -> "Equipment.manufacturer"
+* version -> "Version of the software"
 * deviceName[manufacturer-name] -> "Equipement.Model_name"
