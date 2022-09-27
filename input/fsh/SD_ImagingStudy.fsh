@@ -26,8 +26,6 @@ Description:    "Description of an imaging study coming from an oncology Patient
 * numberOfSeries MS
 * numberOfSeries 1..1  //dicomtag(0020,1206)
 * reasonReference only Reference(tumor-pathology-event)
-
-
 * procedureReference only Reference (radiotherapy-course-summary)
 
 //Series
@@ -266,6 +264,22 @@ Target: "ImagingStudy"
 Id: dicom-to-fhir-imaging-study
 Title: "Fhir-osiris to osiris"
 * -> "Imaging Study" "Imaging study description"
+
+* identifier -> "(0020,000D)"
+* description -> "(0008,1030)"
+* started -> "(0008, 0032), (0008, 0022) or (0008, 0021), (0008, 0023) or (0008, 0031), (0008, 0033)"
+* modality -> "(0008,0061)"
+* location -> "(0008,0080)"
+
+* series.uid -> "(0020,000E)"
+* series.number -> "(0020,0011)"
+* series.modality -> "(0008, 0060)"
+* series.description -> "(00e1, 1040), (0008, 103E), (0008, 1030)"
+* series.bodySite -> "(0018,0015)"
+* numberOfInstances -> "(0020,1209)"
+
+* series.extension[series-weightheigt].extension[patient_weight] -> "(0010,1030)"
+* series.extension[series-weightheigt].extension[patient_height] -> "(0010,1020)"
 
 * series.extension[imaging-settings].extension[slice_thickness] -> "(0018,0050)"
 * series.extension[imaging-settings].extension[pixel_spacing] -> "(0028,0030)"
