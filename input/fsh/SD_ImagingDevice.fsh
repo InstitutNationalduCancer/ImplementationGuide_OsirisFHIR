@@ -29,3 +29,20 @@ Title: "Fhir-osiris to osiris"
 * manufacturer -> "Equipment.manufacturer"
 * version -> "Version of the software"
 * deviceName[manufacturer-name] -> "Equipement.Model_name"
+
+
+/*
+    ##########################
+    # DICOM <--> FHIR-OSIRIS #
+    ##########################
+*/
+
+Mapping: DicomToFhirImagingDevice
+Source: imaging-device
+Target: "ImagingDevice"
+Id: dicom-to-fhir-imaging-device
+Title: "Fhir-osiris to osiris"
+* -> "Imaging Device" "Imagind device description"
+* manufacturer -> "(0008,0070)"
+* version -> "(0018,1020)"
+* deviceName[manufacturer-name] -> "(0018,1090)"
