@@ -2,7 +2,7 @@ Profile:        RadiomicsFeatures
 Parent:         Observation
 Id:             radiomics-features
 Title:          "Radiomics Features"
-Description:    "Radiomics features"
+Description:    "Description of the radiomics measurements described in IBSI nomenclature"
 
 * identifier MS 
 * identifier 1..1
@@ -26,7 +26,7 @@ Description:    "Radiomics features"
 * code.coding.display 1..1
 * code.coding.display MS
 * code.coding.code 0..1
-* code.coding.code ^short = "IBSI code ("
+* code.coding.code ^short = "Name of the measurement from the IBSI nomenclature"
 
 * value[x] MS
 * value[x] 1..1

@@ -2,7 +2,7 @@ Profile:        ImagingInjection
 Parent:         MedicationAdministration   
 Id:             onco-imagingstudy-injection
 Title:          "Imaging Study Injection"
-Description:    "Description of an imaging study injection used for radiomic studies."
+Description:    "Description of an imaging study injection."
 
 * dosage MS
 * dosage 1..1

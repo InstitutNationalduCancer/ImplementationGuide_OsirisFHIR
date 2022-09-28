@@ -2,7 +2,7 @@ Profile: RadiotherapyCourseSummary
 Parent: Procedure
 Id: radiotherapy-course-summary
 Title: "Radiotherapy course Summary"
-Description: "A summary of a course of radiotherapy delivered to a patient"
+Description: "A summary of a course of radiotherapy planned or delivered to a patient"
 
 * extension contains 
       radiotherapy-course-settings named radiotherapy-course-settings 1..1 and

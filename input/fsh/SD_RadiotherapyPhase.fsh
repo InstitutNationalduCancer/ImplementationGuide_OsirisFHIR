@@ -2,7 +2,7 @@ Profile: RadiotherapyPhase
 Parent: Procedure
 Id: radiotherapy-phase
 Title: "Radiotherapy Phase"
-Description: "Radiotherapy Phase"
+Description: "Summary of the radiotherapy phases planned or delivered to a patient"
 
 * extension contains
     radiotherapy-phase-settings named radiotherapy-phase-settings 0..* MS and

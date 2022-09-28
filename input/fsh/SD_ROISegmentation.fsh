@@ -2,7 +2,7 @@ Profile:        RoiSegmentation
 Parent:         Observation
 Id:             roi-segmentation
 Title:          "ROI segmentation"
-Description:    "Observation that contient the ROI segmentation."
+Description:    "Description of the segmentation method used allowing the deffinition of a region of interest (ROI)."
 
 
 * subject only Reference (onco-patient)

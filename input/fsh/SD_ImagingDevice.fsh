@@ -2,7 +2,7 @@ Profile:        ImagingDevice
 Parent:         Device
 Id:             imaging-device
 Title:          "Imaging Device"
-Description:    "Description of an imaging device used for radiotherapy or radiomics Analysis."
+Description:    "Description of an imaging device."
 
 * identifier ^short = "GEO Identifier of the platform"
 

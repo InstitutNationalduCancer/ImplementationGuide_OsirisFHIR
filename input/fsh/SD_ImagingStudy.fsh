@@ -2,7 +2,7 @@ Profile:        OncoImagingStudy
 Parent:         ImagingStudy    
 Id:             onco-imagingstudy
 Title:          "Imaging Study"
-Description:    "Description of an imaging study coming from an oncology Patient used to recreate a radiomic study."
+Description:    "Description of an imaging study."
 
 * series.extension contains imaging-settings named imaging-settings 1..1 and
                             series-weightheigt named series-weightheigt 0..1

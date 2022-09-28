@@ -2,7 +2,7 @@ Profile:        ImagingContrast
 Parent:         Medication   
 Id:             onco-biological-contrast
 Title:          "Imaging Study Injection Contrast"
-Description:    "Description of an imaging study contrast injected in radiomic studies."
+Description:    "Description of a contrast product."
 
 * code MS
 * code 1..1

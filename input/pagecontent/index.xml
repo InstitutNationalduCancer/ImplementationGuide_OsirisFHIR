@@ -26,38 +26,21 @@
       <li>The radiomics / radiotherapy module</li>
     </ul>
   </p>
-
-  <!-- TODO -->
-
-  <!-- <h3>Cancer History Modelization</h3> -->
-
-  <!-- Schema showing the characteristics and the scope of the modelization-->
-
-  <!-- <img src="modelisation_schema.png" alt="modelisation_schema" /> -->
-
-
   <a name="geninfo"></a>
   <h3>Patient general information</h3>
-
   <p>
     These resources are directly bound to patient and contain general
     information about the patient and the cancer clinical history (ex: family cancer history, clinical trials participation, vital status, etc).
   </p>
-
-  <!--img src="patient_metadata.png" alt="Patient metadata" /> -->
-
   <object data="patient_metadata.svg" width="900" type="image/svg+xml" class="center">
     <img src="patient_metadata.jpg" />
   </object>
 
   <a name="TPE"></a>
   <h3>Cancer History Modelization</h3>
-
-  <!-- Schema showing the characteristics and the scope of the modelization-->
   <p>
     The Tumoral Pathology Event (TPE) is a central resource in the FHIR-OSIRIS model, it will describe a tumoral event (primary or metastasis). All analysis, treatments and omics data will be linked to a TPE.
   </p>
-  <!--img src="tpe.png" alt="modelisation_schema" /> -->
   <object data="tpe.svg" width="900" type="image/svg+xml" class="center">
     <img src="tpe.jpg" />
   </object>
@@ -73,16 +56,11 @@
   <h3>Treatments</h3>
 
   <p>Treatment plan, drug  administrations, surgical procedures, as well as adverse events that could occur.</p>
-
-  <!--img src="treatments.png" alt="Treatments" /> -->
-
   <object data="treatments.svg" width="900" type="image/svg+xml">
     <img src="treatments.jpg" />
   </object>
-
   <a name="sequencing"></a>
   <h3>Sequencing</h3>
-
   <p>This category contains the results of sequencing analysis.</p>
   <p>
     The sequencing analysis is modelised by the
@@ -98,19 +76,18 @@
     <a href="StructureDefinition-expression.html">Expression</a>
     or
     <a href="StructureDefinition-fusion.html">Fusion</a>
-    <!-- profiles, and more information are added with the  -->
     profiles. Additional information as the comparison to the reference sequence, is / can be(?) added with the
     <a href="StructureDefinition-variant-annotation.html">Annotation</a>
     profile.
   </p>
-  <!--img src="sequencing.png" alt="Sequencing-schema" />-->
   <object data="sequencing.svg" width="900" type="image/svg+xml">
     <img src="sequencing.jpg" />
   </object>
 
   <a name="radiomics"></a>
   <h3>Radiomics and Radiotherapy</h3>
-  <!-- img src="radiomics.png" alt="Radiomics-schema" /> -->
+
+  <p>This category contains de description of imaging studies, radiotherapy tratments and the summary of radiomics criteria, measurements and filterings used for the analysis of the images. </p>
   <object data="radiotherapie.svg" width="900" type="image/svg+xml">
     <img src="radiotherapie.jpg" />
   </object>

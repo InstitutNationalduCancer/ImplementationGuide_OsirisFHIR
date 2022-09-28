@@ -2,7 +2,7 @@ Profile:        RadiomicsImageFilters
 Parent:         Observation
 Id:             radiomics-Image-filters
 Title:          "Radiomics Image Filters"
-Description:    "Filters used for Radiomic Analysis"
+Description:    "Filtering parameters used for the imaging analysis"
 
 * extension contains radiomics-image-filters-settings named radiomics-image-filters-settings 1..1
 

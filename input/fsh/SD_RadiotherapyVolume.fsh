@@ -3,7 +3,7 @@ Profile: RadiotherapyVolume
 Parent: BodyStructure
 Id: radiotherapy-volume
 Title: "Radiotherapy Volume Profile"
-Description: "A volume of the body used in radiotherapy planning or treatment delivery."
+Description: "A volume of the body treated by radiotherapy (plannes or delivered)."
 
 * identifier ^short = "Volume Identifier"
 * identifier ^definition = "The portion of the identifier typically relevant to the user and which is unique within the context of the system."

@@ -2,7 +2,7 @@ Profile:        RadiomicsCriteria
 Parent:         Observation
 Id:             radiomics-criteria
 Title:          "Radiomics Criteria"
-Description:    "Criteria used for Radiomic Analysis"
+Description:    "Description of the criteria used for the biomarkers calculations"
 
 * extension contains radiomics-criteria-settings named radiomics-criteria-settings 1..1
 
