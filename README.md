@@ -10,7 +10,7 @@ OSIRIS is a minimum data set for data sharing and interoperability in oncology, 
 
 <table>
   <tr>
-    <td><b>Publication </b></td>
+    <td><b>Publication primaire importante</b></td>
     <td><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8140800/">Minimum Data Set for Data Sharing and Interoperability in Oncology</a></td>
   </tr>
   <tr>
