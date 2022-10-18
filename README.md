@@ -4,22 +4,6 @@ By [Arkhn](http://arkhn.com/), data for open and collaborative healthcare
 IG-OSIRIS is the implementation guide of the data framework OSIRIS for clinical and biological data sharing and interoperability in oncology.
 
 # Context
-## What is an IG?
-FHIR Implementation Guides (IGs) are **a set of rules of how a particular interoperability or standards problem is solved**.
-
-To define these rules, IGs include:
-- Computable rules
-- Human-readable versions of the computable rules
-- Additional narrative descriptions of the rules, and additional information about the problem the IG is trying to solve
-
-The high-level goal of an IG is to provide sufficiently detailed instructions to implementers so that they can independently set up systems that will be able to successfully communicate with each other.
-
-To meet this goal, the computable rules are often insufficient. IGs usually include a significant amount of narrative content to supplement the computable rules, which may describe:
-
-- The primary use cases that are in the scope of the IG
-- The actors, and how the actors are expected to interact
-- How the components of the IG can be used together to meet the needs of these actors for these use cases
-- Conformance criteria that are not able to be represented in the computable portion of the IG
 
 ## What is OSIRIS?
 OSIRIS is a minimum data set for data sharing and interoperability in oncology, developed by Integrated Cancer Research Sites (SIRICs), in the context of large precision medicine clinical trials to incorporate the longitudinal changes associated with disease progression and resistance to therapeutic interventions. It could also provide an effective real-world data ecosystem by developing a data standard, which, if used, could improve the compatibility, quality, and consistency of electronic health record. In both cases, OSIRIS may facilitate the application of artificial intelligence and enhance supervised machine learning and data science in the context of clinical care and clinical research.
