@@ -42,7 +42,7 @@ brew install chruby ruby-install
 
 Install the latest stable version of Ruby:
 ```
-ruby-install ruby
+ruby-install ruby je suis bloquée ici
 ````
 
 Once it is done, configure your shell to automatically use `chruby`:

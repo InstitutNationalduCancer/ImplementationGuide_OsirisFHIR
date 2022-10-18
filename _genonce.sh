@@ -8,10 +8,7 @@ if [ $? -eq 0 ]; then
 	echo "Online"
 	txoption=""
 else
-	echo "Offline"
-	txoption="-tx n/a"
-fi
-
+	ec
 echo "$txoption"
 
 publisher=$input_cache_path/$publisher_jar
