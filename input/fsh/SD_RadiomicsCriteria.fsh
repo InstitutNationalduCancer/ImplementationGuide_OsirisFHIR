@@ -36,9 +36,25 @@ Description:    "Radiomics Criteria Settings."
     spatialResamplingMethod 1..1 and
     spatialResamplingValues 1..1 and
     textureMatrixAggregation 1..1
+
 * extension[softwareName] ^short = "Describe which software was used to compute image biomarkers"
-* extension[softwareName].value[x] only string
-* extension[softwareVersion] ^short = "Describe which software version was used to compute image biomarkers"
+* extension[softwareName].extension contains
+    code 1..1 and
+    valueString 1..1
+* extension[softwareName].extension[code] ^short = "ISBI Code"
+* extension[softwareName].extension[code].valueCoding = IBSI#61
+* extension[softwareName].extension[valueString] ^short = "Name of the software"
+* extension[softwareName].extension[valueString].value[x] only string 
+
+
+/* extension[softwareName] ^short = "Describe which software was used to compute image biomarkers"
+* extension[softwareName].value[x] only Coding
+* extension[softwareName].valueCoding = IBSI#61
+
+
+
+
+/* extension[softwareVersion] ^short = "Describe which software version was used to compute image biomarkers"
 * extension[softwareVersion].value[x] only string
 * extension[method] ^short = "Apply from a ROI, Apply directly on image voxels"
 * extension[method].value[x] only string
@@ -63,7 +79,6 @@ Description:    "Radiomics Criteria Settings."
 * extension[textureMatrixAggregation] ^short = "Define how texture-matrix based biomarkers were computed from underlying texture matrices."
 * extension[textureMatrixAggregation].value[x] only string
 
-
 /*
     ##########################
     # IBSI <--> FHIR-OSIRIS #
@@ -77,7 +92,7 @@ Id: ibsi-to-fhir-radiomics-criteria
 Title: "Fhir-osiris to osiris"
 * -> "Radiomics Criteria" "Radiomics Criteria Description"
 
-* extension[softwareName] -> "IBSI (61)"
+* extension[softwareName] -> "RadiomicsCriteria.RadiomicsCriteria_SoftwareName"
 * extension[softwareVersion] -> "IBSI (61)"
 * extension[distanceWeighting] -> "IBSI (63)"
 * extension[binSize] -> "IBSI (56b)"
