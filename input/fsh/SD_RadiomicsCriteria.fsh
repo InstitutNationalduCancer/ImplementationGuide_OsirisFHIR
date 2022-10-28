@@ -23,9 +23,10 @@ Id:             radiomics-criteria-settings
 Title:          "Radiomics Criteria Settings"
 Description:    "Radiomics Criteria Settings."
 * extension contains
-    softwareName 1..1 and
-    softwareVersion 1..1 and
-    method 1..1 and
+    softwareName 1..1  and
+    softwareVersion 1..1 /* and
+    methodLocal 1..1 and
+    methodGlobal 1..1 and
     usedImageFilter 1..1 and
     distanceWeighting 1..1 and
     numberOfGreyLevels 1..1 and
@@ -35,26 +36,29 @@ Description:    "Radiomics Criteria Settings."
     boundsRangeOfValueAfterDiscretisation 1..1 and
     spatialResamplingMethod 1..1 and
     spatialResamplingValues 1..1 and
-    textureMatrixAggregation 1..1
+    textureMatrixAggregation 1..1 */
 
 * extension[softwareName] ^short = "Describe which software was used to compute image biomarkers"
 * extension[softwareName].extension contains
-    code 1..1 and
+    code 0..1 and
     valueString 1..1
 * extension[softwareName].extension[code] ^short = "ISBI Code"
 * extension[softwareName].extension[code].valueCoding = IBSI#61
 * extension[softwareName].extension[valueString] ^short = "Name of the software"
 * extension[softwareName].extension[valueString].value[x] only string 
 
+* extension[softwareVersion] ^short = "Describe which software version was used to compute image biomarkers"
+* extension[softwareVersion].extension contains
+    code 0..1 and
+    valueString 1..1
+* extension[softwareVersion].extension[code] ^short = "ISBI Code"
+* extension[softwareVersion].extension[code].valueCoding = IBSI#61
+* extension[softwareVersion].extension[valueString] ^short = "Name of the version"
+* extension[softwareVersion].extension[valueString].value[x] only string 
 
-/* extension[softwareName] ^short = "Describe which software was used to compute image biomarkers"
-* extension[softwareName].value[x] only Coding
-* extension[softwareName].valueCoding = IBSI#61
 
 
-
-
-/* extension[softwareVersion] ^short = "Describe which software version was used to compute image biomarkers"
+/* extension[softwareVersion ^short = "Describe which software version was used to compute image biomarkers"
 * extension[softwareVersion].value[x] only string
 * extension[method] ^short = "Apply from a ROI, Apply directly on image voxels"
 * extension[method].value[x] only string
@@ -93,8 +97,8 @@ Title: "Fhir-osiris to osiris"
 * -> "Radiomics Criteria" "Radiomics Criteria Description"
 
 * extension[softwareName] -> "RadiomicsCriteria.RadiomicsCriteria_SoftwareName"
-* extension[softwareVersion] -> "IBSI (61)"
-* extension[distanceWeighting] -> "IBSI (63)"
+* extension[softwareVersion] -> "RadiomicsCriteria.RadiomicsCriteria_SoftwareVersion"
+/* extension[distanceWeighting] -> "IBSI (63)"
 * extension[binSize] -> "IBSI (56b)"
 * extension[lowestIntensity] -> "IBSI (56c)"
-* extension[textureMatrixAggregation] -> "IBSI (62)"
+* extension[textureMatrixAggregation] -> "IBSI (62)"*/
