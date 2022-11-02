@@ -12,6 +12,8 @@ Description: "Example of Patient from OSIRIS_pivot_RadiomicsCriteria.csv"
 * code = #IBSI // Not in pivot file but obligatory
 * extension[radiomics-criteria-settings].extension[localizationMethod].valueCoding = RadiomicsCS#Global
 //* extension[radiomics-criteria-settings].extension[windowMatrix].valueString = "5x5x5" / Not used because localizationMethod is Global
-* extension[radiomics-criteria-settings].extension[usedImageFilter].valueString = "NONE"
+* extension[radiomics-criteria-settings].extension[usedImageFilter].valueString = "None"
 * extension[radiomics-criteria-settings].extension[usedImageFilterParameters].valueString = "3x3x3"
+* extension[radiomics-criteria-settings].extension[distanceWeighting].extension[valueString].valueString = "None"
+
 

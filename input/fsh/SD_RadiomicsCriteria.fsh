@@ -31,8 +31,8 @@ Description:    "Radiomics Criteria Settings."
     localizationMethod 1..1  and
     windowMatrix 0..1 and
     usedImageFilter 1..1 and
-    usedImageFilterParameters 1..1 /* and
-    distanceWeighting 1..1 and
+    usedImageFilterParameters 1..1 and
+    distanceWeighting 1..1 /* and
     numberOfGreyLevels 1..1 and
     binSize 1..1 and
     intensityResampling 1..1 and
@@ -84,9 +84,19 @@ Description:    "Radiomics Criteria Settings."
 * extension[usedImageFilterParameters] ^short = "Method parameters used to filter images before calculation"
 * extension[usedImageFilterParameters].value[x] only string
 
+/* Distance Weighting */
+* extension[distanceWeighting].extension contains
+    code 0..1 and
+    valueString 1..1
+* extension[distanceWeighting].extension[valueString].value[x] 1..1
 
+* extension[distanceWeighting] ^short = "Define how CM, RLM, NGTDM and NGLDM weight distances, e.g. no weighting."
+* extension[distanceWeighting].extension[code] ^short = "ISBI Code"
+* extension[distanceWeighting].extension[code].valueCoding = IBSI#63
+* extension[distanceWeighting].extension[valueString] ^short = "Distance Weighting"
+* extension[distanceWeighting].extension[valueString].value[x] only string 
 
-/* extension[distanceWeighting] ^short = "Define how CM, RLM, NGTDM and NGLDM weight distances, e.g. no weighting."
+/*
 * extension[distanceWeighting].value[x] only decimal
 * extension[numberOfGreyLevels] ^short = "Describe the number of grey level used for discretisation."
 * extension[numberOfGreyLevels].value[x] only decimal
@@ -131,6 +141,7 @@ Title: "Fhir-osiris to osiris"
 * extension[windowMatrix] -> "RadiomicsCriteria_CalculationWindowMatrix"
 * extension[usedImageFilter] -> "RadiomicsCriteria_UsedImageFilter"
 * extension[usedImageFilterParameters] -> "RadiomicsCriteria_UsedImageFilterParameters"
+* extension[distanceWeighting] -> "RadiomicsCriteria_DistanceWeighted"
 /* extension[binSize] -> "IBSI (56b)"
 /* extension[lowestIntensity] -> "IBSI (56c)"
 * extension[textureMatrixAggregation] -> "IBSI (62)"*/
