@@ -2,7 +2,7 @@ Instance: fhir-osiris-example-ROISegmentation
 InstanceOf: RoiSegmentation
 Description: "Example of Patient from OSIRIS_pivot_ROISegmentation.csv"
 
-* text.div = "<Poumon>"
+* text.div = "<div>Poumon</div>"
 * text.status = #generated
 * identifier.value = "" //* fictional: obligatory but variable not found in pivot file
 * partOf = Reference(fhir-osiris-example-imagingstudy)
