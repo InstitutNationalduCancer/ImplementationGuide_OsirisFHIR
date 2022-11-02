@@ -29,8 +29,8 @@ Description:    "Radiomics Criteria Settings."
     softwareName 1..1  and
     softwareVersion 1..1  and
     localizationMethod 1..1  and
-    windowMatrix 0..1 /* and
-    usedImageFilter 1..1 and
+    windowMatrix 0..1 and
+    usedImageFilter 1..1 /* and
     distanceWeighting 1..1 and
     numberOfGreyLevels 1..1 and
     binSize 1..1 and
@@ -41,7 +41,7 @@ Description:    "Radiomics Criteria Settings."
     spatialResamplingValues 1..1 and
     textureMatrixAggregation 1..1 */
 
-/* Software Name */
+/* 1.1 Software Name */
 * extension[softwareName].extension contains
     code 0..1 and
     valueString 1..1
@@ -53,7 +53,7 @@ Description:    "Radiomics Criteria Settings."
 * extension[softwareName].extension[valueString] ^short = "Name of the software"
 * extension[softwareName].extension[valueString].value[x] only string
 
-/* Software Version */
+/* 1.2 Software Version */
 * extension[softwareVersion].extension contains
     code 0..1 and
     valueString 1..1
@@ -65,48 +65,21 @@ Description:    "Radiomics Criteria Settings."
 * extension[softwareVersion].extension[valueString] ^short = "Name of the version"
 * extension[softwareVersion].extension[valueString].value[x] only string 
 
-/* Localization Method */
+/* 1.3 Localization Method */
 * extension[localizationMethod] ^short = "Apply from a ROI, Apply directly on image voxels: Local || Global"
 * extension[localizationMethod].valueCoding from VSLocalizationMethod (required)
 * extension[localizationMethod].valueCoding 1..1
 
-/* Windows Matrix */
+/* 1.4 Calculation Windows Matrix */
+* extension[windowMatrix] ^short = "Calculation Windows Matrix"
 * extension[windowMatrix].value[x] only string 
 * extension[windowMatrix] obeys windowsMatrix-if-localizationMethod-local
 
+/* 1.5 Image Filter*/
+* extension[usedImageFilter] ^short = "Describe method used to filter images before calculation."
+* extension[usedImageFilter].value[x] only string
 
-
-
-/* extension[localizationMethod] ^slicing.discriminator.type = #exists
-* extension[localizationMethod] ^slicing.discriminator.path = "valueString"
-* extension[localizationMethod] ^slicing.rules = #open
-* extension[localizationMethod] ^slicing.description = "Slice based on the component.code pattern"
-
-
-* extension[localizationMethod].extension contains
-    localizationMethodLocal 0..1 and
-    localizationMethodGlobal 0..1
-* extension[localizationMethod].extension[localizationMethodLocal].extension contains
-    valueString 1..1 and
-    windowMatrix 1..1
-* extension[localizationMethod].extension[localizationMethodLocal].extension[valueString].value[x] 1..1
-* extension[localizationMethod].extension[localizationMethodGlobal].value[x] 1..1
-* extension[localizationMethod].extension[localizationMethodLocal].extension[windowMatrix].value[x] 1..1
-
-* extension[localizationMethod] ^short = "Apply from a ROI, Apply directly on image voxels: Local || Global"
-* extension[localizationMethod].extension[localizationMethodLocal].extension[valueString].valueString = "Local"
-* extension[localizationMethod].extension[localizationMethodLocal].extension[windowMatrix].value[x] only string 
-* extension[localizationMethod].extension[localizationMethodGlobal].valueString = "Global" */
-
-
-
-
-/*
-* extension[method] ^short = "Apply from a ROI, Apply directly on image voxels"
-* extension[method].value[x] only string
-* extension[usedImageFilter] ^short = "Describe if a method and settings was used or not to filter images before calculation."
-* extension[usedImageFilter].value[x] only boolean
-* extension[distanceWeighting] ^short = "Define how CM, RLM, NGTDM and NGLDM weight distances, e.g. no weighting."
+/* extension[distanceWeighting] ^short = "Define how CM, RLM, NGTDM and NGLDM weight distances, e.g. no weighting."
 * extension[distanceWeighting].value[x] only decimal
 * extension[numberOfGreyLevels] ^short = "Describe the number of grey level used for discretisation."
 * extension[numberOfGreyLevels].value[x] only decimal
@@ -149,6 +122,7 @@ Title: "Fhir-osiris to osiris"
 * extension[softwareVersion] -> "RadiomicsCriteria.RadiomicsCriteria_SoftwareVersion"
 * extension[localizationMethod] -> "RadiomicsCriteria_ComputationalLocalisationMethod"
 * extension[windowMatrix] -> "RadiomicsCriteria_CalculationWindowMatrix"
+* extension[usedImageFilter] -> "RadiomicsCriteria_UsedImageFilter"
 /* extension[binSize] -> "IBSI (56b)"
 /* extension[lowestIntensity] -> "IBSI (56c)"
 * extension[textureMatrixAggregation] -> "IBSI (62)"*/
