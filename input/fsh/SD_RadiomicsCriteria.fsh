@@ -1,3 +1,4 @@
+
 Profile:        RadiomicsCriteria
 Parent:         Observation
 Id:             radiomics-criteria
@@ -22,11 +23,13 @@ Extension:      RadiomicsCriteriaSettings
 Id:             radiomics-criteria-settings
 Title:          "Radiomics Criteria Settings"
 Description:    "Radiomics Criteria Settings."
+
+
 * extension contains
     softwareName 1..1  and
-    softwareVersion 1..1 /* and
-    methodLocal 1..1 and
-    methodGlobal 1..1 and
+    softwareVersion 1..1  and
+    localizationMethod 1..1  and
+    windowMatrix 0..1 /* and
     usedImageFilter 1..1 and
     distanceWeighting 1..1 and
     numberOfGreyLevels 1..1 and
@@ -38,28 +41,67 @@ Description:    "Radiomics Criteria Settings."
     spatialResamplingValues 1..1 and
     textureMatrixAggregation 1..1 */
 
-* extension[softwareName] ^short = "Describe which software was used to compute image biomarkers"
+/* Software Name */
 * extension[softwareName].extension contains
     code 0..1 and
     valueString 1..1
+* extension[softwareName].extension[valueString].value[x] 1..1
+
+* extension[softwareName] ^short = "Describe which software was used to compute image biomarkers"
 * extension[softwareName].extension[code] ^short = "ISBI Code"
 * extension[softwareName].extension[code].valueCoding = IBSI#61
 * extension[softwareName].extension[valueString] ^short = "Name of the software"
-* extension[softwareName].extension[valueString].value[x] only string 
+* extension[softwareName].extension[valueString].value[x] only string
 
-* extension[softwareVersion] ^short = "Describe which software version was used to compute image biomarkers"
+/* Software Version */
 * extension[softwareVersion].extension contains
     code 0..1 and
     valueString 1..1
+* extension[softwareVersion].extension[valueString].value[x] 1..1
+
+* extension[softwareVersion] ^short = "Describe which software version was used to compute image biomarkers"
 * extension[softwareVersion].extension[code] ^short = "ISBI Code"
 * extension[softwareVersion].extension[code].valueCoding = IBSI#61
 * extension[softwareVersion].extension[valueString] ^short = "Name of the version"
 * extension[softwareVersion].extension[valueString].value[x] only string 
 
+/* Localization Method */
+* extension[localizationMethod] ^short = "Apply from a ROI, Apply directly on image voxels: Local || Global"
+* extension[localizationMethod].valueCoding from VSLocalizationMethod (required)
+* extension[localizationMethod].valueCoding 1..1
+
+/* Windows Matrix */
+* extension[windowMatrix].value[x] only string 
+* extension[windowMatrix] obeys windowsMatrix-if-localizationMethod-local
 
 
-/* extension[softwareVersion ^short = "Describe which software version was used to compute image biomarkers"
-* extension[softwareVersion].value[x] only string
+
+
+/* extension[localizationMethod] ^slicing.discriminator.type = #exists
+* extension[localizationMethod] ^slicing.discriminator.path = "valueString"
+* extension[localizationMethod] ^slicing.rules = #open
+* extension[localizationMethod] ^slicing.description = "Slice based on the component.code pattern"
+
+
+* extension[localizationMethod].extension contains
+    localizationMethodLocal 0..1 and
+    localizationMethodGlobal 0..1
+* extension[localizationMethod].extension[localizationMethodLocal].extension contains
+    valueString 1..1 and
+    windowMatrix 1..1
+* extension[localizationMethod].extension[localizationMethodLocal].extension[valueString].value[x] 1..1
+* extension[localizationMethod].extension[localizationMethodGlobal].value[x] 1..1
+* extension[localizationMethod].extension[localizationMethodLocal].extension[windowMatrix].value[x] 1..1
+
+* extension[localizationMethod] ^short = "Apply from a ROI, Apply directly on image voxels: Local || Global"
+* extension[localizationMethod].extension[localizationMethodLocal].extension[valueString].valueString = "Local"
+* extension[localizationMethod].extension[localizationMethodLocal].extension[windowMatrix].value[x] only string 
+* extension[localizationMethod].extension[localizationMethodGlobal].valueString = "Global" */
+
+
+
+
+/*
 * extension[method] ^short = "Apply from a ROI, Apply directly on image voxels"
 * extension[method].value[x] only string
 * extension[usedImageFilter] ^short = "Describe if a method and settings was used or not to filter images before calculation."
@@ -81,7 +123,14 @@ Description:    "Radiomics Criteria Settings."
 * extension[spatialResamplingValues] ^short = "x, y, z, spatial resampling"
 * extension[spatialResamplingValues].value[x] only string
 * extension[textureMatrixAggregation] ^short = "Define how texture-matrix based biomarkers were computed from underlying texture matrices."
-* extension[textureMatrixAggregation].value[x] only string
+* extension[textureMatrixAggregation].value[x] only string */
+
+
+Invariant:   windowsMatrix-if-localizationMethod-local
+Description: "If extension[localizationMethod].valueCoding is Local, then extension[windowMatrix].value[x] MUST be present"
+Expression:  "extension[localizationMethod].valueCoding != 'Local' implies extension[windowMatrix].value[x].exists()"
+Severity:    #error
+
 
 /*
     ##########################
@@ -98,7 +147,8 @@ Title: "Fhir-osiris to osiris"
 
 * extension[softwareName] -> "RadiomicsCriteria.RadiomicsCriteria_SoftwareName"
 * extension[softwareVersion] -> "RadiomicsCriteria.RadiomicsCriteria_SoftwareVersion"
-/* extension[distanceWeighting] -> "IBSI (63)"
-* extension[binSize] -> "IBSI (56b)"
-* extension[lowestIntensity] -> "IBSI (56c)"
+* extension[localizationMethod] -> "RadiomicsCriteria_ComputationalLocalisationMethod"
+* extension[windowMatrix] -> "RadiomicsCriteria_CalculationWindowMatrix"
+/* extension[binSize] -> "IBSI (56b)"
+/* extension[lowestIntensity] -> "IBSI (56c)"
 * extension[textureMatrixAggregation] -> "IBSI (62)"*/

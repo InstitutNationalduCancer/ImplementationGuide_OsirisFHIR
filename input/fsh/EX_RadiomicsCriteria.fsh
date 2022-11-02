@@ -10,3 +10,6 @@ Description: "Example of Patient from OSIRIS_pivot_RadiomicsCriteria.csv"
 * extension[radiomics-criteria-settings].extension[softwareName].extension[valueString].valueString = "PyRadiomics"
 * extension[radiomics-criteria-settings].extension[softwareVersion].extension[valueString].valueString = "v3.0.1"
 * code = #IBSI // Not in pivot file but obligatory
+* extension[radiomics-criteria-settings].extension[localizationMethod].valueCoding = RadiomicsCS#Local
+* extension[radiomics-criteria-settings].extension[windowMatrix].valueString = "5x5x5"
+
