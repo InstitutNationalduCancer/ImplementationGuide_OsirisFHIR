@@ -13,4 +13,5 @@ Description: "Example of Patient from OSIRIS_pivot_RadiomicsCriteria.csv"
 * extension[radiomics-criteria-settings].extension[localizationMethod].valueCoding = RadiomicsCS#Global
 //* extension[radiomics-criteria-settings].extension[windowMatrix].valueString = "5x5x5" / Not used because localizationMethod is Global
 * extension[radiomics-criteria-settings].extension[usedImageFilter].valueString = "NONE"
+* extension[radiomics-criteria-settings].extension[usedImageFilterParameters].valueString = "3x3x3"
 

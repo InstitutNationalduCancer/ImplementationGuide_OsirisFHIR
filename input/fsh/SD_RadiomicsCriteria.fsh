@@ -30,7 +30,8 @@ Description:    "Radiomics Criteria Settings."
     softwareVersion 1..1  and
     localizationMethod 1..1  and
     windowMatrix 0..1 and
-    usedImageFilter 1..1 /* and
+    usedImageFilter 1..1 and
+    usedImageFilterParameters 1..1 /* and
     distanceWeighting 1..1 and
     numberOfGreyLevels 1..1 and
     binSize 1..1 and
@@ -70,14 +71,20 @@ Description:    "Radiomics Criteria Settings."
 * extension[localizationMethod].valueCoding from VSLocalizationMethod (required)
 * extension[localizationMethod].valueCoding 1..1
 
-/* 1.4 Calculation Windows Matrix */
-* extension[windowMatrix] ^short = "Calculation Windows Matrix"
+/* 1.4 Calculation Window Matrix */
+* extension[windowMatrix] ^short = "Calculation Window Matrix"
 * extension[windowMatrix].value[x] only string 
 * extension[windowMatrix] obeys windowsMatrix-if-localizationMethod-local
 
 /* 1.5 Image Filter*/
 * extension[usedImageFilter] ^short = "Describe method used to filter images before calculation."
 * extension[usedImageFilter].value[x] only string
+
+/* 1.6 Method Parameters Used */
+* extension[usedImageFilterParameters] ^short = "Method parameters used to filter images before calculation"
+* extension[usedImageFilterParameters].value[x] only string
+
+
 
 /* extension[distanceWeighting] ^short = "Define how CM, RLM, NGTDM and NGLDM weight distances, e.g. no weighting."
 * extension[distanceWeighting].value[x] only decimal
@@ -123,6 +130,7 @@ Title: "Fhir-osiris to osiris"
 * extension[localizationMethod] -> "RadiomicsCriteria_ComputationalLocalisationMethod"
 * extension[windowMatrix] -> "RadiomicsCriteria_CalculationWindowMatrix"
 * extension[usedImageFilter] -> "RadiomicsCriteria_UsedImageFilter"
+* extension[usedImageFilterParameters] -> "RadiomicsCriteria_UsedImageFilterParameters"
 /* extension[binSize] -> "IBSI (56b)"
 /* extension[lowestIntensity] -> "IBSI (56c)"
 * extension[textureMatrixAggregation] -> "IBSI (62)"*/
