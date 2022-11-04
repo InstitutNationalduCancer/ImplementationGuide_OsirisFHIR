@@ -1,0 +1,23 @@
+{
+	"name": "Ubuntu",
+	"image": "mcr.microsoft.com/devcontainers/base:0-jammy",
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [8080],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "gem install jekyll",
+	"postCreateCommand": "npm install -g fsh-sushi",
+	"postCreateCommand": "npm install -g npm@8.19.3",
+	"postCreateCommand": "chmod +x _updatePublisher.sh",
+	"postCreateCommand": "chmod +x _genonce.sh",
+
+	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "root",
+	"features": {
+		"ghcr.io/devcontainers/features/github-cli:1": {},
+		"ghcr.io/devcontainers/features/java:1": {},
+		"ghcr.io/devcontainers/features/node:1": {},
+		"ghcr.io/devcontainers/features/ruby:1": {}
+	}
+}
