@@ -6,14 +6,14 @@
 	// "forwardPorts": [8080],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "apt-get update ; apt-get install default-jre ; apt install ruby-full ; gem install jekyll ; npm install -g fsh-sushi",
+	"onCreateCommand": "apt-get update ; apt-get install default-jre ; sudo apt install ruby-full ; gem install jekyll ; npm install -g fsh-sushi",
 	
-	"postStartCommand": "chmod +x _updatePublisher.sh ; chmod +x _genonce.sh",
+	"postCreateCommand": "chmod +x _updatePublisher.sh ; chmod +x _genonce.sh",
 
 	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "root",
 	"features": {
 		"ghcr.io/devcontainers/features/github-cli:1": {},
-		"ghcr.io/devcontainers/features/node:1": {},
+		"ghcr.io/devcontainers/features/node:1": {}
 	}
 }
