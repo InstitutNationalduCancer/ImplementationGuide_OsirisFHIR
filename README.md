@@ -56,7 +56,7 @@ To start you work session:
 
 1. Open Docker
 2. Open VS Code
-3. Clone this repository on you computer
+3. Clone this repository on your computer
 ```
 git clone https://github.com/arkhn/arkhn-ig-osiris.git
 ```
