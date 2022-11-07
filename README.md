@@ -48,16 +48,19 @@ brew install visual-studio-code
 ```
 2. In VS Code, install the extension [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
+3. Install [Docker](https://docs.docker.com/desktop/install/mac-install/)
+
 ### Run
 
 To start you work session: 
 
-1. Open VS Code
-2. Clone this repository on you computer
+1. Open Docker
+2. Open VS Code
+3. Clone this repository on you computer
 ```
 git clone https://github.com/arkhn/arkhn-ig-osiris.git
 ```
-3. Run the **Dev Containers: Open Folder in Container...** command (`⇧⌘P`) and select the local folder.
+4. Run the **Dev Containers: Open Folder in Container...** command (`⇧⌘P`) and select the local folder.
 
 
 ## Manual installation
