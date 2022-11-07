@@ -67,24 +67,6 @@ git clone https://github.com/arkhn/arkhn-ig-osiris.git
 
 If you want to do a manual installation, follow this: [Manual Installation Guide](/readme_manualInstall.md)
 
-## Prerequisites (for Windows)
-### Java
-Install [Java&trade; SE Runtime Environment](https://www.java.com/fr/).
-
-### Ruby
-Install [Ruby](https://rubyinstaller.org/)
-
-### Jekyll
-Open Start Command Prompt with Ruby
-```
-gem install jekyll
-```
-
-### Sushi
-Install [Node.js](https://nodejs.org/) then `fsh-sushi`.
-
-> To install sushi, see [Sushi Installation guide](https://fshschool.org/docs/sushi/installation/)
-
 # Generate IG
 
 - Run SUSHI
