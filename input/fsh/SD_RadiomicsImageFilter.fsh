@@ -25,22 +25,67 @@ Description:    "Radiomics Image Filters Settings."
 * extension contains
     softwareName 1..1 and
     softwareVersion 1..1 and
-    filterName 0..1 and
-    filterType 1..1 and
-    filterInterpolation 1..1 and
-    intensityRounding 1..1 and
-    boundaryCondition 1..1
+    filterMethod 0..1 and
+    filterType 0..1 and
+    filterInterpolation 0..1 and
+    intensityRounding 0..1 and
+    boundaryCondition 0..1
+
+/* 2.1 Software Name*/
 * extension[softwareName] ^short = "Describe which software was used to compute image biomarkers"
 * extension[softwareName].value[x] only string
+
+/* 2.2 Software Version*/
 * extension[softwareVersion] ^short = "Describe which software version was used to compute image biomarkers"
 * extension[softwareVersion].value[x] only string
-* extension[filterName] ^short = "Mean Filter || Laplacian of Gaussian || Laws Kernels || Gabor || Wavelets || Riesz || Simoncelli"
-* extension[filterName].value[x] only string
-* extension[filterType] ^short = "Slice-wise (2D) || Volume (3D)"
-* extension[filterType].value[x] only string
-* extension[filterInterpolation] ^short = "Bicubic spline || Tricubic spline || Lagrangian polynomial"
-* extension[filterInterpolation].value[x] only string
-* extension[intensityRounding] ^short = "nearest integer."
-* extension[intensityRounding].value[x] only string
-* extension[boundaryCondition] ^short = "zero padding || mirror padding || periodic padding || Constant Value Padding || Nearest Value Padding"
-* extension[boundaryCondition].value[x] only string
+
+/* 2.3 Filter Method */
+* extension[filterMethod] ^short = "Define the image filter method"
+* extension[filterMethod].valueCoding from VSSFilterMethod (required)
+
+/* 2.4 Filter Type */
+* extension[filterType] ^short = "Define the type of image filter"
+* extension[filterType].valueCoding from VSSFilterType (required)
+
+/* 2.5 Interpolation Type */
+* extension[filterInterpolation] ^short = "Define the type of filter interpolation"
+* extension[filterInterpolation].valueCoding from VSSpatialResamplingMethodAndInterpolationType (required)
+
+/* 2.6 Intensity Rounding */
+* extension[intensityRounding].extension contains
+    code 0..1 and
+    valueString 1..1
+* extension[intensityRounding].extension[valueString].value[x] 1..1
+
+* extension[intensityRounding] ^short = "Describe Hounsfield fractional units rounded to integer values after interpolation"
+* extension[intensityRounding].extension[code] ^short = "ISBI Code"
+* extension[intensityRounding].extension[code].valueCoding = IBSI#52
+* extension[intensityRounding].extension[valueString] ^short = "Intensity Rounding"
+* extension[intensityRounding].extension[valueString].value[x] only string 
+
+/* 2.7 Boundary Condition */
+* extension[boundaryCondition] ^short = "Describe the boundary condition"
+* extension[boundaryCondition].valueCoding from VSBoundaryCondition (required)
+
+/*
+    ##########################
+    # FHIR-OSIRIS <--> OSIRIS #
+    ##########################
+*/
+
+Mapping: FhirOSIRIS-RadiomicsImageFilter
+Source: radiomics-image-filters-settings
+Target: "RadiomicsImageFilters"
+Id: fhir-osiris-RadiomicsImageFilters
+Title: "Fhir-osiris to osiris"
+
+* extension[softwareName] -> "RadiomicsImageFilter.RadiomicsImageFilter_SoftwareName"
+* extension[softwareVersion] -> "RadiomicsImageFilter.RadiomicsImageFilter_SoftwareVersion"
+* extension[filterMethod] -> "RadiomicsImageFilter.RadiomicsImageFilter_FilterMethod"
+* extension[filterType] -> "RadiomicsImageFilter.RadiomicsImageFilter_FilterType"
+* extension[filterInterpolation] -> "RadiomicsImageFilter.RadiomicsImageFilter_FilterInterpolation"
+* extension[intensityRounding] -> "RadiomicsImageFilter.RadiomicsImageFilter_IntensityRounding"
+* extension[boundaryCondition] -> "RadiomicsImageFilter.RadiomicsImageFilter_BoundaryCondition"
+
+
+
