@@ -181,22 +181,22 @@ Description:    "Radiomics Criteria Settings."
 /* Invariants */
 Invariant:   windowsMatrix-if-localizationMethod-local
 Description: "If extension[localizationMethod].valueCoding is Local, then extension[windowMatrix].valuevalueString MUST be present"
-Expression:  "extension[localizationMethod].valueCoding != 'Local' implies extension[windowMatrix].valueString.exists()"
+Expression:  "extension[localizationMethod].valueCoding == 'Local' implies extension[windowMatrix].valueString.exists()"
 Severity:    #error
 
 Invariant:   bounds-if-discretisationMethod-FBN
 Description: "If extension[discretisationMethod].valueCoding is FBN, then extension[bounds].valuevalueString MUST be present"
-Expression:  "extension[discretisationMethod].valueCoding != 'FBN' implies extension[bounds].valuevalueString.exists()"
+Expression:  "extension[discretisationMethod].valueCoding == 'FBN' implies extension[bounds].valuevalueString.exists()"
 Severity:    #error
 
 Invariant:   lowestIntensity-if-discretisationMethod-FBS
 Description: "If extension[discretisationMethod].valueCoding is FBS, then extension[lowestIntensity].valueDecimal MUST be present"
-Expression:  "extension[discretisationMethod].valueCoding != 'FBS' implies extension[lowestIntensity].valueDecimal.exists()"
+Expression:  "extension[discretisationMethod].valueCoding == 'FBS' implies extension[lowestIntensity].valueDecimal.exists()"
 Severity:    #error
 
 Invariant:   biggestIntensity-if-discretisationMethod-FBS
 Description: "If extension[discretisationMethod].valueCoding is FBS, then extension[biggestIntensity].valueDecimal MAY be present"
-Expression:  "(extension[discretisationMethod].valueCoding != 'FBS' implies extension[biggestIntensity].valueDecimal.exists()) or (extension[discretisationMethod].valueCoding != 'FBS' implies extension[biggestIntensity].valueDecimal.exists().not)"
+Expression:  "(extension[discretisationMethod].valueCoding == 'FBS' implies extension[biggestIntensity].valueDecimal.exists()) or (extension[discretisationMethod].valueCoding != 'FBS' implies extension[biggestIntensity].valueDecimal.exists().not)"
 Severity:    #error
 
 
