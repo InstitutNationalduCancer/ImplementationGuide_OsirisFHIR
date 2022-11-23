@@ -180,12 +180,12 @@ Description:    "Radiomics Criteria Settings."
 
 /* Invariants */
 Invariant:   windowsMatrix-if-localizationMethod-local
-Description: "If extension[localizationMethod].valueCoding is Local, then extension[windowMatrix].valuevalueString MUST be present"
+Description: "If extension[localizationMethod].valueCoding is Local, then extension[windowMatrix].valuestring MUST be present"
 Expression:  "extension[localizationMethod].valueCoding == 'Local' implies extension[windowMatrix].valueString.exists()"
 Severity:    #error
 
 Invariant:   bounds-if-discretisationMethod-FBN
-Description: "If extension[discretisationMethod].valueCoding is FBN, then extension[bounds].valuevalueString MUST be present"
+Description: "If extension[discretisationMethod].valueCoding is FBN, then extension[bounds].valueString MUST be present"
 Expression:  "extension[discretisationMethod].valueCoding == 'FBN' implies extension[bounds].valuevalueString.exists()"
 Severity:    #error
 
@@ -221,7 +221,7 @@ Title: "Fhir-osiris to osiris"
 * extension[distanceWeighting] -> "RadiomicsCriteria.RadiomicsCriteria_DistanceWeighted"
 * extension[discretisationMethod] -> "RadiomicsCriteria.RadiomicsCriteria_DiscretisationMethod"
 * extension[binSize] -> "RadiomicsCriteria.RadiomicsCriteria_BinSize"
-* extension[bounds] -> ""
+* extension[bounds] -> "RadiomicsCriteria.RadiomicsCriteria_Bound"
 * extension[lowestIntensity] -> "RadiomicsCriteria.RadiomicsCriteria_LowestIntensity"
 * extension[biggestIntensity] -> "RadiomicsCriteria.RadiomicsCriteria_BiggestIntensity"
 * extension[boundsRangeOfValueAfterDiscretisation] -> "RadiomicsCriteria.RadiomicsCriteria_BoundsRangeOfValueAfterDiscretisation"
