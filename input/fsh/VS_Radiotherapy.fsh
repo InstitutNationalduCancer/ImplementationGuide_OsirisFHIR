@@ -1,3 +1,40 @@
+ValueSet: VSRadiotherapyCategory
+Id: vs-radiotherapy-category
+Title: "Radiotherapy Category"
+Description: "Radiotherapy Category"
+* RadiotherapyCS#planned
+* RadiotherapyCS#delivred
+
+ValueSet: VSRadiotherapyIntent
+Id: vs-radiotherapy-intent
+Title: "Radiotherapy Intent"
+Description: "RadioTherapy Intent "
+* SCT#373808002	"Curative - procedure intent"
+* SCT#363676003	"Palliative - procedure intent"
+* SCT#399707004	"Supportive - procedure intent"
+* SCT#261004008	"Diagnostic intent"
+* SCT#129428001	"Preventive - intent"
+* SCT#429892002	"Guidance intent"
+* SCT#360156006	"Screening - procedure intent"
+* SCT#447295008	"Forensic intent"
+
+ValueSet: VSRadiotherapyTerminationReason
+Id: vs-radiotherapy-termination-reason
+Title: "Radiotherapy Termination Reason"
+Description: "Radiotherapy Termination Reason"
+* SCT#182992009	"Treatment completed (situation)"
+* SCT#266721009	"No response to treatment (situation)"
+* SCT#407563006	"Treatment not tolerated (situation)"
+* SCT#160932005	"Financial problem (finding)"
+* SCT#105480006	"Refusal of treatment by patient (situation)"
+* SCT#184081006	"Patient has moved away (finding)"
+* SCT#309846006	"Treatment not available (situation)"
+* SCT#399307001	"Lost to follow-up (finding)"
+* SCT#419620001	"Death (event)"
+
+
+
+
 ValueSet: RadiotherapyVolumeTypeVS
 Id: mcode-radiotherapy-volume-type-vs
 Title: "Radiotherapy Volume Type Value Set"
@@ -63,17 +100,7 @@ Description: "Various modifiers that can be applied to body locations where radi
 * SCT#1162615005 "Lymph node level XA (qualifier value)"
 * SCT#1162613003 "Lymph node level XB (qualifier value)"
 
-ValueSet: RadiotherapyIntent
-Id: radiotherapy-intent
-Title: "Radiotherapy Intent"
-Description: "RadioTherapy Intent Described in DicomTag(300A,000A)"
-* DICOM#CURATIVE "Curative therapy on patient"
-* DICOM#PALLIATIVE "Palliative therapy on patient"
-* DICOM#PROPHYLACTIC "Preventative therapy on patient"
-* DICOM#VERIFICATION "Verification of patient plan using phantom"
-* DICOM#MACHINE_QA "Quality assurance of the delivery machine (independently of a specific patient)"
-* DICOM#RESEARCH "Research project"
-* DICOM#SERVICE "Machine repair or maintenance operation"
+
 
 ValueSet: RadiotherapyIsotopes
 Id: codex-radiotherapy-isotopes
@@ -109,3 +136,4 @@ Description: "Isotopes Used in Radiotherapy"
 * SCT#80751004  "Xenon-133 (substance)"
 // yttrium
 * SCT#14691008 "Yttrium-90 (substance)"
+
