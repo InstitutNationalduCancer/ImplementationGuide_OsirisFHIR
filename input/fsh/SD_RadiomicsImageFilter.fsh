@@ -17,6 +17,8 @@ Description:    "Filtering parameters used for the imaging analysis"
 * partOf 1..1
 * partOf only Reference(onco-imagingstudy)
 
+* code = LNC#85430-7
+
 
 Extension:      RadiomicsImageFiltersSettings
 Id:             radiomics-image-filters-settings
@@ -53,7 +55,7 @@ Description:    "Radiomics Image Filters Settings."
 
 /* 2.6 Intensity Rounding */
 * extension[intensityRounding].extension contains
-    code 0..1 and
+    code 1..1 and
     valueString 1..1
 * extension[intensityRounding].extension[valueString].value[x] 1..1
 
