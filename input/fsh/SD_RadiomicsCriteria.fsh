@@ -18,6 +18,7 @@ Description:    "Description of the criteria used for the biomarkers calculation
 * partOf 1..1
 * partOf only Reference(onco-imagingstudy)
 
+* code = LNC#85430-7
 
 Extension:      RadiomicsCriteriaSettings
 Id:             radiomics-criteria-settings
@@ -45,7 +46,7 @@ Description:    "Radiomics Criteria Settings."
 
 /* 1.1 Software Name */
 * extension[softwareName].extension contains
-    code 0..1 and
+    code 1..1 and
     valueString 1..1
 * extension[softwareName].extension[valueString].value[x] 1..1
 
@@ -57,7 +58,7 @@ Description:    "Radiomics Criteria Settings."
 
 /* 1.2 Software Version */
 * extension[softwareVersion].extension contains
-    code 0..1 and
+    code 1..1 and
     valueString 1..1
 * extension[softwareVersion].extension[valueString].value[x] 1..1
 
@@ -87,7 +88,7 @@ Description:    "Radiomics Criteria Settings."
 
 /* 1.7 Distance Weighting */
 * extension[distanceWeighting].extension contains
-    code 0..1 and
+    code 1..1 and
     valueString 1..1
 * extension[distanceWeighting].extension[valueString].value[x] 1..1
 
@@ -99,7 +100,7 @@ Description:    "Radiomics Criteria Settings."
 
 /* 1.8 Resampling Intensity Method */
 * extension[discretisationMethod].extension contains
-    code 0..1 and
+    code 1..1 and
     valueCoding 1..1
 * extension[discretisationMethod].extension[valueCoding].value[x] 1..1
 
@@ -112,7 +113,7 @@ Description:    "Radiomics Criteria Settings."
 
 /* 1.9 Number Or Size Bins */
 * extension[binSize].extension contains
-    code 0..1 and
+    code 1..1 and
     valueDecimal 1..1
 * extension[binSize].extension[valueDecimal].value[x] 1..1
 
@@ -129,7 +130,7 @@ Description:    "Radiomics Criteria Settings."
 
 /* 1.11 Lowest Intensity */
 * extension[lowestIntensity].extension contains
-    code 0..1 and
+    code 1..1 and
     valueDecimal 1..1
 * extension[lowestIntensity].extension[valueDecimal].value[x] 1..1
 
@@ -142,7 +143,7 @@ Description:    "Radiomics Criteria Settings."
 
 /* 1.12 Biggest Intensity */
 * extension[biggestIntensity].extension contains
-    code 0..1 and
+    code 1..1 and
     valueDecimal 1..1
 * extension[biggestIntensity].extension[valueDecimal].value[x] 1..1
 
@@ -168,7 +169,7 @@ Description:    "Radiomics Criteria Settings."
 
 /* 16. Texture Matrix Aggregation */
 * extension[textureMatrixAggregation].extension contains
-    code 0..1 and
+    code 1..1 and
     valueString 1..1
 * extension[textureMatrixAggregation].extension[valueString].value[x] 1..1
 
