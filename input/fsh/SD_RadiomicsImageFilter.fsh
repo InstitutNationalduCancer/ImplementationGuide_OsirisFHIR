@@ -55,7 +55,11 @@ Description:    "Radiomics Image Filters Settings."
 
 /* 2.6 Intensity Rounding */
 * extension[intensityRounding].extension contains
+<<<<<<< HEAD
     code 1..1 and
+=======
+    code 0..1 and
+>>>>>>> 28db97433e144dfee8c41a113a14ad5a332bff08
     valueString 1..1
 * extension[intensityRounding].extension[valueString].value[x] 1..1
 
