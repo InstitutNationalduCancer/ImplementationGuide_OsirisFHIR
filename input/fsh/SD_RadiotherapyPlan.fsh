@@ -103,7 +103,7 @@ Title: "Fhir-osiris to osiris"
 
 Mapping: FhirOSIRIS-DicomTag-RadiotherapyPlan
 Source: radiotherapy-plan
-Target: "RadiotherapyPhase"
+Target: "RadiotherapyPlan"
 Id: fhir-osiris-dicomTag-RadiotherapyPlan
 Title: "Fhir-osiris to Dicom Tag"
 
