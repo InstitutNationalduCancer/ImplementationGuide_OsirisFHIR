@@ -25,6 +25,7 @@ Description: "Summary of the radiotherapy phases planned or delivered to a patie
 * subject only Reference(onco-patient)
 
 * performed[x] only Period
+* performed[x] 1..1
 
 * partOf ^short = "Should Reference a Radiotherapy Treatment Course" 
 * partOf only Reference(radiotherapy-course-summary)
