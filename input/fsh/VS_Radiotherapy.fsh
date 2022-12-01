@@ -135,7 +135,6 @@ Description: "Isotopes Used in Radiotherapy"
 // xenon
 * SCT#80751004  "Xenon-133 (substance)"
 // yttrium
-<<<<<<< HEAD
 * SCT#14691008 "Yttrium-90 (substance)"
 
 ValueSet: RadiotherapyReasonReplanificationVS
