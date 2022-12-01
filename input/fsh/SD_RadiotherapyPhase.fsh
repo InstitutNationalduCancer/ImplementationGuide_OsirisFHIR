@@ -62,7 +62,8 @@ If delivred, the number of sessions should be extracted from MOSAIQ/ARIA Record 
 * extension[radiotherapyModality] ^short = "Modality of the radiotherapy procedure"
 * extension[radiotherapyModality] ^definition = "The modality of the radiotherapy procedure corresponds to the dicom path: RT Plan/RT Beams/Beam Sequence/Radiation Type (300A,00C6)."
 
-* extension[radiotherapyModality].value[x] only string /* To check after answer, code in pivot without nomenclature specified */
+* extension[radiotherapyModality].value[x] only CodeableConcept
+* extension[radiotherapyModality].valueCodeableConcept from MCODEMODALITY (required)
 * extension[radiotherapyModality] ^short = "Modality of the radiotherapy procedure"
 
 * extension[radiotherapyTechnique].value[x] only CodeableConcept /* To check after answer, code in pivot without nomenclature specified */
