@@ -5,9 +5,7 @@ Title: "Radiotherapy Phase"
 Description: "Summary of the radiotherapy phases planned or delivered to a patient"
 
 * extension contains
-    radiotherapy-phase-settings named radiotherapy-phase-settings 0..* MS and
-    RadiotherapyDoseDeliveredToVolume named doseDeliveredToVolume 0..* MS
-
+    radiotherapy-phase-settings named radiotherapy-phase-settings 0..* MS 
 
 * identifier 1..1
 * identifier MS
