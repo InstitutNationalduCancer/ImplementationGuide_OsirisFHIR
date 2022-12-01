@@ -26,7 +26,10 @@ Description: "Summary of the radiotherapy phases planned or delivered to a patie
 
 * performed[x] only Period
 * performed[x] 1..1
+<<<<<<< HEAD
 * performed[x] ^definition = "The start and end period should be extracted from MOSAIQ/ARIA Record and Verify." 
+=======
+>>>>>>> 3157e22 (fix: performed constraint in SD_RadiotherapyPhase)
 
 * partOf ^short = "Should Reference a Radiotherapy Treatment Course" 
 * partOf only Reference(radiotherapy-course-summary)
