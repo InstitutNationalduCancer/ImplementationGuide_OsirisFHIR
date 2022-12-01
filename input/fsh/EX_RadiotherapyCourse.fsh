@@ -4,7 +4,7 @@ Description: "Example of instance from OSIRIS_pivot_CourseRT.csv, OSIRIS_pivot_E
 
 * identifier.value = "1"
 * subject = Reference(fhir-osiris-example-patient)
-* status = #final
+* status = #completed
 * category = RadiotherapyCS#planned
 * performedPeriod.start = "2018-08-15"
 * performedPeriod.end  = "2018-12-25"
@@ -21,7 +21,7 @@ Description: "Example of instance from OSIRIS_pivot_CourseRT.csv, OSIRIS_pivot_E
 
 * identifier.value = "2"
 * subject = Reference(fhir-osiris-example-patient)
-* status = #final
+* status = #completed
 * category = RadiotherapyCS#delivred
 * performedPeriod.start = "2018-08-15"
 * performedPeriod.end  = "2018-12-25"
