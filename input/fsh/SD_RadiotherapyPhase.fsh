@@ -18,7 +18,7 @@ Description: "Summary of the radiotherapy phases planned or delivered to a patie
 * code = SCT#302505005
 * code 1..1
 * code MS
-* code ^short = "Identification of the procedure (e.g. Radiotherapy Course of Treatment (regime/therapy) ) " //nomenclature
+* code ^short = "Radiotherapy"
 
 * subject 1..1 
 * subject MS
@@ -51,10 +51,12 @@ Description: "Radiotherapy Phase Description"
 * extension[algorithmName].value[x] only string
 * extension[algorithmName] ^short = "Name of algorithm"
 
-* extension[radiotherapyModality].value[x] only string /* To check after answer, code in pivot without nomenclature specified */
+* extension[radiotherapyModality].value[x] only CodeableConcept
+* extension[radiotherapyModality].valueCodeableConcept from MCODEMODALITY (required)
 * extension[radiotherapyModality] ^short = "Modality of the radiotherapy procedure"
 
-* extension[radiotherapyTechnique].value[x] only string /* To check after answer, code in pivot without nomenclature specified */
+* extension[radiotherapyTechnique].value[x] only CodeableConcept /* To check after answer, code in pivot without nomenclature specified */
+* extension[radiotherapyTechnique].valueCodeableConcept from MCODETECHNIQUE (required)
 * extension[radiotherapyTechnique] ^short = "Technique of the radiotherapy procedure"
 
 * extension[treatmentMachineName].value[x] only string

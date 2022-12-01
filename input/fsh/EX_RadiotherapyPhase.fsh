@@ -11,8 +11,8 @@ Description: "Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_En
 * performedPeriod.end  = "2018-11-25"
 * extension[radiotherapy-phase-settings].extension[numberOfFractions].valueUnsignedInt = 16
 * extension[radiotherapy-phase-settings].extension[algorithmName].valueString  = "" /* obligatory but missing in the pivot file*/
-* extension[radiotherapy-phase-settings].extension[radiotherapyModality].valueString  = "1156506007"
-* extension[radiotherapy-phase-settings].extension[radiotherapyTechnique].valueString  = "1162782007"
+* extension[radiotherapy-phase-settings].extension[radiotherapyModality].valueCodeableConcept.coding = MCODEMODALITY#1156506007
+* extension[radiotherapy-phase-settings].extension[radiotherapyTechnique].valueCodeableConcept.coding = MCODETECHNIQUE#1162782007
 /* extension[radiotherapy-phase-settings].extension[treatmentMachineName] - optionnal */
 * extension[radiotherapy-phase-settings].extension[quantityEnergyOrIsotope].valueQuantity.value = 0 /* obligatory but missing in the pivot file - fictive value*/
 /* extension[radiotherapy-phase-settings].extension[nameEnergyOrIsotope] - optionnal */
@@ -30,8 +30,8 @@ Description: "Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_En
 * performedPeriod.end  = "2018-12-25"
 * extension[radiotherapy-phase-settings].extension[numberOfFractions].valueUnsignedInt = 4
 * extension[radiotherapy-phase-settings].extension[algorithmName].valueString = "" /* obligatory but missing in the pivot file*/
-* extension[radiotherapy-phase-settings].extension[radiotherapyModality].valueString = "1156506007"
-* extension[radiotherapy-phase-settings].extension[radiotherapyTechnique].valueString = "45643008"
+* extension[radiotherapy-phase-settings].extension[radiotherapyModality].valueCodeableConcept.coding = MCODEMODALITY#45643008
+* extension[radiotherapy-phase-settings].extension[radiotherapyTechnique].valueCodeableConcept.coding = MCODETECHNIQUE#1162782007
 /* extension[radiotherapy-phase-settings].extension[treatmentMachineName] - optionnal */
 * extension[radiotherapy-phase-settings].extension[quantityEnergyOrIsotope].valueQuantity.value = 0 /* obligatory but missing in the pivot file - fictive value*/
 /* extension[radiotherapy-phase-settings].extension[nameEnergyOrIsotope] - optionnal */
@@ -49,8 +49,8 @@ Description: "Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_En
 * performedPeriod.end  = "2018-12-25"
 * extension[radiotherapy-phase-settings].extension[numberOfFractions].valueUnsignedInt = 16
 * extension[radiotherapy-phase-settings].extension[algorithmName].valueString = "" /* obligatory but missing in the pivot file*/
-* extension[radiotherapy-phase-settings].extension[radiotherapyModality].valueString = "1156506007"
-* extension[radiotherapy-phase-settings].extension[radiotherapyTechnique].valueString = "1162782007"
+* extension[radiotherapy-phase-settings].extension[radiotherapyModality].valueCodeableConcept.coding = MCODEMODALITY#1156506007
+* extension[radiotherapy-phase-settings].extension[radiotherapyTechnique].valueCodeableConcept.coding = MCODETECHNIQUE#1162782007
 /* extension[radiotherapy-phase-settings].extension[treatmentMachineName] - optionnal */
 * extension[radiotherapy-phase-settings].extension[quantityEnergyOrIsotope].valueQuantity.value = 0 /* obligatory but missing in the pivot file - fictive value*/
 /* extension[radiotherapy-phase-settings].extension[nameEnergyOrIsotope] - optionnal */
@@ -68,8 +68,8 @@ Description: "Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_En
 * performedPeriod.end  = "2018-11-25"
 * extension[radiotherapy-phase-settings].extension[numberOfFractions].valueUnsignedInt = 16
 * extension[radiotherapy-phase-settings].extension[algorithmName].valueString = "" /* obligatory but missing in the pivot file*/
-* extension[radiotherapy-phase-settings].extension[radiotherapyModality].valueString = "1156506007"
-* extension[radiotherapy-phase-settings].extension[radiotherapyTechnique].valueString = "1162782007"
+* extension[radiotherapy-phase-settings].extension[radiotherapyModality].valueCodeableConcept.coding = MCODEMODALITY#1156506007
+* extension[radiotherapy-phase-settings].extension[radiotherapyTechnique].valueCodeableConcept.coding = MCODETECHNIQUE#1162782007
 /* extension[radiotherapy-phase-settings].extension[treatmentMachineName] - optionnal */
 * extension[radiotherapy-phase-settings].extension[quantityEnergyOrIsotope].valueQuantity.value = 0 /* obligatory but missing in the pivot file - fictive value*/
 /* extension[radiotherapy-phase-settings].extension[nameEnergyOrIsotope] - optionnal */
@@ -87,8 +87,8 @@ Description: "Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_En
 * performedPeriod.end  = "2018-12-25"
 * extension[radiotherapy-phase-settings].extension[numberOfFractions].valueUnsignedInt = 4
 * extension[radiotherapy-phase-settings].extension[algorithmName].valueString = "" /* obligatory but missing in the pivot file*/
-* extension[radiotherapy-phase-settings].extension[radiotherapyModality].valueString = "1156506007"
-* extension[radiotherapy-phase-settings].extension[radiotherapyTechnique].valueString = "45643008"
+* extension[radiotherapy-phase-settings].extension[radiotherapyModality].valueCodeableConcept.coding = MCODEMODALITY#45643008
+* extension[radiotherapy-phase-settings].extension[radiotherapyTechnique].valueCodeableConcept.coding = MCODETECHNIQUE#1162782007
 /* extension[radiotherapy-phase-settings].extension[treatmentMachineName] - optionnal */
 * extension[radiotherapy-phase-settings].extension[quantityEnergyOrIsotope].valueQuantity.value = 0 /* obligatory but missing in the pivot file - fictive value*/
 /* extension[radiotherapy-phase-settings].extension[nameEnergyOrIsotope] - optionnal */
@@ -106,8 +106,8 @@ Description: "Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_En
 * performedPeriod.end  = "2018-12-25"
 * extension[radiotherapy-phase-settings].extension[numberOfFractions].valueUnsignedInt = 16
 * extension[radiotherapy-phase-settings].extension[algorithmName].valueString = "" /* obligatory but missing in the pivot file*/
-* extension[radiotherapy-phase-settings].extension[radiotherapyModality].valueString = "1156506007"
-* extension[radiotherapy-phase-settings].extension[radiotherapyTechnique].valueString = "1162782007"
+* extension[radiotherapy-phase-settings].extension[radiotherapyModality].valueCodeableConcept.coding = MCODEMODALITY#1156506007
+* extension[radiotherapy-phase-settings].extension[radiotherapyTechnique].valueCodeableConcept.coding = MCODETECHNIQUE#1162782007
 /* extension[radiotherapy-phase-settings].extension[treatmentMachineName] - optionnal */
 * extension[radiotherapy-phase-settings].extension[quantityEnergyOrIsotope].valueQuantity.value = 0 /* obligatory but missing in the pivot file - fictive value*/
 /* extension[radiotherapy-phase-settings].extension[nameEnergyOrIsotope] - optionnal */
