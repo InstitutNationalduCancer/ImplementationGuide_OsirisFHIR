@@ -135,6 +135,7 @@ Description: "Isotopes Used in Radiotherapy"
 // xenon
 * SCT#80751004  "Xenon-133 (substance)"
 // yttrium
+<<<<<<< HEAD
 * SCT#14691008 "Yttrium-90 (substance)"
 
 ValueSet: RadiotherapyReasonReplanificationVS
@@ -148,3 +149,6 @@ Description: "Radiotherapy Reason Replanification"
 * SnomedRequestedCS#373858009 "Radiotherapy course changed - acute radiotherapy toxicity (finding)"
 * SnomedRequestedCS#1259231006  "Radiotherapy course changed due to changes to target (finding)"
 * SnomedRequestedCS#1259232004  "Radiotherapy course changed due to change to organ at risk (finding)"   
+=======
+* SCT#14691008 "Yttrium-90 (substance)"
+>>>>>>> 160eb25 (update: RadiotherapyPhase file)

@@ -18,4 +18,8 @@ Alias:   DICOMTech = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radi
 Alias:   ATC = http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips 
 Alias:   HGNCVS = http://hl7.org/fhir/uv/genomics-reporting/ValueSet/hgnc
 Alias:   MCODETECHNIQUE = http://hl7.org/fhir/us/mcode/STU2/ValueSet-mcode-teleradiotherapy-photon-beam-technique-vs.html
+<<<<<<< HEAD
 Alias:   MCODEMODALITY = http://hl7.org/fhir/us/mcode/STU2/ValueSet-mcode-radiotherapy-modality-vs.html
+=======
+Alias:   MCODEMODALITY = http://hl7.org/fhir/us/mcode/STU2/ValueSet-mcode-radiotherapy-modality-vs.html
+>>>>>>> 160eb25 (update: RadiotherapyPhase file)
