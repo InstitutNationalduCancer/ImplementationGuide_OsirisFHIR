@@ -26,6 +26,7 @@ Description: "Radiotherapy plans planned or delivered to a patient"
 
 * performed[x] only Period
 * performed[x] 1..1
+* performed[x] ^definition = "The start and end period should be extracted from MOSAIQ/ARIA Record and Verify." 
 
 * partOf ^short = "Should Reference a Radiotherapy Treatment Phase" 
 * partOf only Reference(radiotherapy-phase)
@@ -48,27 +49,35 @@ Description: "Radiotherapy Plan Description"
     
 * extension[numberOfFractions].value[x] only unsignedInt
 * extension[numberOfFractions] ^short = "Number of fractions"
+* extension[numberOfFractions] ^definition = "If planned, the number of sessions corresponds to the dicom path: RT Plan/RT Fraction Scheme/Number Of Fractions Planned (300A,0078).
+If delivred, the number of sessions should be extracted from MOSAIQ/ARIA Record and Verify."
 
 * extension[reasonReplanification].value[x] only CodeableConcept
 * extension[reasonReplanification].valueCodeableConcept from RadiotherapyReasonReplanificationVS (required)
 * extension[reasonReplanification] ^short = "Reason for replanning"
+* extension[reasonReplanification] ^definition = "The reason for replanning should be extracted from MOSAIQ/ARIA Record and Verify." 
 
 * extension[radiotherapyModality].value[x] only CodeableConcept
 * extension[radiotherapyModality].valueCodeableConcept from MCODEMODALITY (required)
 * extension[radiotherapyModality] ^short = "Modality of the radiotherapy procedure"
+* extension[radiotherapyModality] ^definition = "The modality of the radiotherapy procedure corresponds to the dicom path: RT Plan/RT Beams/Beam Sequence/Radiation Type (300A,00C6)."
 
 * extension[radiotherapyTechnique].value[x] only CodeableConcept /* To check after answer, code in pivot without nomenclature specified */
 * extension[radiotherapyTechnique].valueCodeableConcept from MCODETECHNIQUE (required)
 * extension[radiotherapyTechnique] ^short = "Technique of the radiotherapy procedure"
+* extension[radiotherapyTechnique] ^definition = "The technique of the radiotherapy procedure corresponds to the dicom path: RT Plan/RT Beams/Beam Type (300A,00c4) WHERE Treatment Delivery Type = 'Treatment' (300A,00CE) OR Treatment Protocols (300A,0009)."
 
 * extension[treatmentMachineName].value[x] only string
 * extension[treatmentMachineName] ^short = "Treatment Machine Name"
+* extension[treatmentMachineName] ^definition = "The name of the treatment machine corresponds to the dicom path: RT Plan/RT Beams/Treatment Machine Name (300A,00B2)."
 
 * extension[manufacturerEquipment].value[x] only string
 * extension[manufacturerEquipment] ^short = "The manufacturer of the device to administer the treatment"
+* extension[manufacturerEquipment] ^definition = "The manufacturer of the device should be extracted from MOSAIQ/ARIA Record and Verify." 
 
 * extension[modelEquipment].value[x] only string
 * extension[modelEquipment] ^short = "The model of the device to administer the treatment"
+* extension[modelEquipment] ^definition = "The model of the device corresponds to the dicom path: RT Plan/RT Beams/Beam Sequence/Treatment Machine Name (300A,00B2)."
 
 /*
     ##########################
@@ -109,6 +118,6 @@ Title: "Fhir-osiris to Dicom Tag"
 
 * extension[radiotherapy-plan-settings].extension[numberOfFractions] -> "Number Of Fractions Planned (300A,0078)"
 * extension[radiotherapy-plan-settings].extension[radiotherapyModality] -> "Radiation Type (300A,00C6)"
-* extension[radiotherapy-plan-settings].extension[radiotherapyTechnique] -> "OSIRIS_pivot_ModalityAndTechniqueRT.ModalityAndTechnique_Technique"
-* extension[radiotherapy-plan-settings].extension[treatmentMachineName] -> "Bean Type (300A,00c4) WHERE Treatment Delivery Type = 'Treatment' (300A,00CE) OR Treatment Protocols (300A,0009)"
+* extension[radiotherapy-plan-settings].extension[radiotherapyTechnique] -> "Beam Type (300A,00c4) WHERE Treatment Delivery Type = 'Treatment' (300A,00CE) OR Treatment Protocols (300A,0009)"
+* extension[radiotherapy-plan-settings].extension[treatmentMachineName] -> "Treatment Machine Name (300A, 00B2)"
 * extension[radiotherapy-plan-settings].extension[modelEquipment] -> "Treatment Machine Name (300A,00B2)"
