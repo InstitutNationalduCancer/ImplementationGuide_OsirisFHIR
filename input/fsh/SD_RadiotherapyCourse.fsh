@@ -25,7 +25,8 @@ Description: "A summary of a course of radiotherapy planned or delivered to a pa
 * subject only Reference(onco-patient)
 
 * performed[x] only Period
-* performed[x] 1..1 
+* performed[x] 1..1
+* performed[x] ^definition = "The start and end period should be extracted from MOSAIQ/ARIA Record and Verify." 
 
 * basedOn only Reference(treatment) /* Missing actually in the pivot file */
 
@@ -50,17 +51,24 @@ Description: "Radiotherapy Course Description"
 * extension[treatmentIntent].value[x] only CodeableConcept
 * extension[treatmentIntent].valueCodeableConcept from vs-radiotherapy-intent (required)
 * extension[treatmentIntent] ^short = "Objective"
+* extension[treatmentIntent] ^definition = "The objective of the radiotherapy course corresponds to the dicom path: RT Plan/RT General Plan/Plan Intent (3001,00A)."
 
 * extension[treatmentTerminationReason].value[x] only CodeableConcept 
 * extension[treatmentTerminationReason].valueCodeableConcept from vs-radiotherapy-termination-reason (required)
 * extension[treatmentTerminationReason] ^short = "Reason for unplanned or premature termination, or normal completion"
+* extension[treatmentTerminationReason] ^definition = "The termination reason of the treatment should be extracted from MOSAIQ/ARIA Record and Verify."
+
 
 * extension[numberOfSession].value[x] only unsignedInt
-* extension[numberOfSession] ^short = "Total number of planned treatment"
+* extension[numberOfSession] ^short = "Total number of planned or delivred treatment"
+* extension[numberOfSession] ^definition = "If planned, the number of sessions corresponds to the dicom path: RT Plan/RT Fraction Scheme/Number Of Fractions Planned (300A,0078).
+If delivred, the number of sessions should be extracted from MOSAIQ/ARIA Record and Verify."
+
 
 * extension[quantityEnergyOrIsotope].value[x] only Quantity
 * extension[quantityEnergyOrIsotope] ^short = "Quantity"
-* extension[quantityEnergyOrIsotope] ^definition = "Energy spectrum of a radiation characterized by a maximum value. For electrons, the maximum energy is given in MeV. For photons, the maximum acceleration voltage is given in MV or kV, although these are not energy units."
+* extension[quantityEnergyOrIsotope] ^definition = "Energy spectrum of a radiation characterized by a maximum value. For electrons, the maximum energy is given in MeV. For photons, the maximum acceleration voltage is given in MV or kV, although these are not energy units.
+The quantity of Energy or Isotope corresponds to the dicom path: RT Plan/RT Beams/Beam Sequence/Control Point Sequence/Nominal Beam Energy (300A,0114)."
 
 * extension[nameEnergyOrIsotope].value[x] only string
 * extension[nameEnergyOrIsotope] ^short = "Isotope Name"
