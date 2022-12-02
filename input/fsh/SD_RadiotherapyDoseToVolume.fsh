@@ -47,24 +47,20 @@ Description: "Dose To Volume"
 
 * extension[numberOfFractions].value[x] only unsignedInt
 * extension[numberOfFractions] ^short = "The number of fractions"
-<<<<<<< HEAD
-<<<<<<< HEAD
 * extension[numberOfFractions] ^definition = "The number of fractions corresponds to the dicom path: RT Plan/RT Fraction Scheme/Number Of Fractions Planned (300A,0078)."
 
 
 * extension[totalDose].value[x] only string
 * extension[totalDose] ^short = "The total amount of radiation delivered to this volume"
 * extension[totalDose] ^definition = "The total dose corresponds to the dicom path: RT Plan/RT Prescription/Dose Reference Sequence/Target Prescription Dose (300A,0026)."
-=======
+
 
 * extension[totalDose].value[x] only string
 * extension[totalDose] ^short = "The total amount of radiation delivered to this volume"
->>>>>>> f40e041 (initialize: RadiotherapyDoseToVolume files)
-=======
 
 * extension[totalDose].value[x] only string
 * extension[totalDose] ^short = "The total amount of radiation delivered to this volume"
->>>>>>> 1962585 (initialize: RadiotherapyDoseToVolume files)
+
 
 /*
     ##########################
