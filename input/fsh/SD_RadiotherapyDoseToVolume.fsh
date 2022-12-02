@@ -30,6 +30,7 @@ Description: "Volume"
 
 * extension[volume].value[x] only Reference(radiotherapy-volume)
 * extension[volume] ^short = "The volume targeted by the dose "
+* extension[volume] ^definition = "The volume targeted by the dose corresponds to the dicom path: RT Structure Set/Structure Set/Structure Set ROI Sequence/ROI Number (3006,0022)."
 
 Extension: DoseToVolume
 Id: dose-to-volume
@@ -46,9 +47,12 @@ Description: "Dose To Volume"
 
 * extension[numberOfFractions].value[x] only unsignedInt
 * extension[numberOfFractions] ^short = "The number of fractions"
+* extension[numberOfFractions] ^definition = "The number of fractions corresponds to the dicom path: RT Plan/RT Fraction Scheme/Number Of Fractions Planned (300A,0078)."
+
 
 * extension[totalDose].value[x] only string
 * extension[totalDose] ^short = "The total amount of radiation delivered to this volume"
+* extension[totalDose] ^definition = "The total dose corresponds to the dicom path: RT Plan/RT Prescription/Dose Reference Sequence/Target Prescription Dose (300A,0026)."
 
 /*
     ##########################
