@@ -11,6 +11,7 @@ RUN apk update \
     iputils \
     ruby-full \
     ruby-dev \
+    fontconfig \
     openjdk11 \
     bash
 
