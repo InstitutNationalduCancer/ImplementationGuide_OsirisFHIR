@@ -15,7 +15,7 @@ Description:    "Tumor Pathology Event (TPE) Condition describing a tumoral even
 * extension[due-to] MS
 * extension[due-to] ^short = "The parent tumoral event"
 
-extension contains Laterality named laterality 0..1
+* extension contains Laterality named laterality 0..1
 * extension[laterality] MS
 * extension[laterality] ^short = "Laterality of location" 
 
@@ -54,7 +54,7 @@ Title: "Fhir-osiris to osiris"
 * recordedDate -> "TumorPathologyEvent.TumorPathologyEvent_DiagnosisDate"
 * bodySite.coding.code -> "TumorPathologyEvent.TumorPathologyEvent_TopographyCode"
 * stage[morphology].type.coding.code -> "TumorPathologyEvent.TumorPathologyEvent_MorphologyCode"
-/* extension[laterality].valueCodeableConcept.coding.code -> "TumorPathologyEvent.TumorPathologyEvent_Laterality" */
+* extension[laterality].valueCodeableConcept.coding.code -> "TumorPathologyEvent.TumorPathologyEvent_Laterality"
 
 ValueSet: TumorPathologyEventType
 Title: "Tumor Pathology Event Type Value Set"
