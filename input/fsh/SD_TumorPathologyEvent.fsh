@@ -36,7 +36,7 @@ Id: laterality
 Title: "Laterality"
 Description: "Laterality of location (if it exists)"
 * value[x] only CodeableConcept // This attribute should be a CodeableConcept or a Coding ?
-* valueCodeableConcept from Laterality (required)
+/* valueCodeableConcept from Laterality (required)*/
 * valueCodeableConcept ^short = "C0238767 | C0205091 | C2939193 | C1272460 | C0205090 | C0439673"
 
 Mapping: FhirOSIRISTPE
