@@ -54,7 +54,7 @@ Title: "Fhir-osiris to osiris"
 * recordedDate -> "TumorPathologyEvent.TumorPathologyEvent_DiagnosisDate"
 * bodySite.coding.code -> "TumorPathologyEvent.TumorPathologyEvent_TopographyCode"
 * stage[morphology].type.coding.code -> "TumorPathologyEvent.TumorPathologyEvent_MorphologyCode"
-* extension[laterality].valueCodeableConcept.coding.code -> "TumorPathologyEvent.TumorPathologyEvent_Laterality"
+/* extension[laterality].valueCodeableConcept.coding.code -> "TumorPathologyEvent.TumorPathologyEvent_Laterality" */
 
 ValueSet: TumorPathologyEventType
 Title: "Tumor Pathology Event Type Value Set"
