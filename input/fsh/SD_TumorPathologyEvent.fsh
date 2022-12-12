@@ -15,9 +15,9 @@ Description:    "Tumor Pathology Event (TPE) Condition describing a tumoral even
 * extension[due-to] MS
 * extension[due-to] ^short = "The parent tumoral event"
 
-/* extension contains Laterality named laterality 0..1
+extension contains Laterality named laterality 0..1
 * extension[laterality] MS
-* extension[laterality] ^short = "Laterality of location" */
+* extension[laterality] ^short = "Laterality of location" 
 
 // Others
 * stage ^slicing.discriminator.type = #pattern
@@ -31,13 +31,13 @@ Description:    "Tumor Pathology Event (TPE) Condition describing a tumoral even
 * stage[morphology].summary 1..1
 * stage[morphology].summary from Morphology (extensible)
 
-/*Extension:  Laterality
+Extension:  Laterality
 Id: laterality
 Title: "Laterality"
 Description: "Laterality of location (if it exists)"
 * value[x] only CodeableConcept // This attribute should be a CodeableConcept or a Coding ?
 * valueCodeableConcept from Laterality (required)
-* valueCodeableConcept ^short = "C0238767 | C0205091 | C2939193 | C1272460 | C0205090 | C0439673"*/
+* valueCodeableConcept ^short = "C0238767 | C0205091 | C2939193 | C1272460 | C0205090 | C0439673"
 
 Mapping: FhirOSIRISTPE
 Source: TumorPathologyEvent
