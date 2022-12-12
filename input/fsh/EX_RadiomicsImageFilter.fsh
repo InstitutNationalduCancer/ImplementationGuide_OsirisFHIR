@@ -7,10 +7,6 @@ Description: "Example of Patient from OSIRIS_pivot_RadiomicsImageFilter.csv"
 * focus = Reference(fhir-osiris-example-ROISegmentation)
 * identifier.value = "1"
 * status = #final // Not in pivot file but obligatory
-<<<<<<< HEAD
-=======
-* code = #IBSI // Not in pivot file but obligatory
->>>>>>> 28db97433e144dfee8c41a113a14ad5a332bff08
 * extension[radiomics-image-filters-settings].extension[softwareName].valueString = "PyRadiomics"
 * extension[radiomics-image-filters-settings].extension[softwareVersion].valueString = "v3.0.1"
 * extension[radiomics-image-filters-settings].extension[filterMethod].valueCoding = RadiomicsCS#Mean
