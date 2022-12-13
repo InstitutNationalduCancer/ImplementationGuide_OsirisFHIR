@@ -12,6 +12,7 @@ RUN apk update \
     ruby-full \
     ruby-dev \
     fontconfig \
+    ttf-dejavu \
     openjdk11 \
     bash
 
