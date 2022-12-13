@@ -120,4 +120,8 @@ Title: "Fhir-osiris to Dicom Tag"
 * extension[radiotherapy-plan-settings].extension[radiotherapyModality] -> "Radiation Type (300A,00C6)"
 * extension[radiotherapy-plan-settings].extension[radiotherapyTechnique] -> "Beam Type (300A,00c4) WHERE Treatment Delivery Type = 'Treatment' (300A,00CE) OR Treatment Protocols (300A,0009)"
 * extension[radiotherapy-plan-settings].extension[treatmentMachineName] -> "Treatment Machine Name (300A, 00B2)"
+<<<<<<< HEAD
 * extension[radiotherapy-plan-settings].extension[modelEquipment] -> "Treatment Machine Name (300A,00B2)"
+=======
+* extension[radiotherapy-plan-settings].extension[modelEquipment] -> "Treatment Machine Name (300A,00B2)"
+>>>>>>> b1d5b3c92af27738134f344aca06ca9e3d737708

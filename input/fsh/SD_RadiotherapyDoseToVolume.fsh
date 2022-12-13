@@ -55,13 +55,6 @@ Description: "Dose To Volume"
 * extension[totalDose] ^definition = "The total dose corresponds to the dicom path: RT Plan/RT Prescription/Dose Reference Sequence/Target Prescription Dose (300A,0026)."
 
 
-* extension[totalDose].value[x] only string
-* extension[totalDose] ^short = "The total amount of radiation delivered to this volume"
-
-* extension[totalDose].value[x] only string
-* extension[totalDose] ^short = "The total amount of radiation delivered to this volume"
-
-
 /*
     ##########################
     # FHIR-OSIRIS <--> OSIRIS #
