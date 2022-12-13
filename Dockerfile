@@ -1,4 +1,4 @@
-FROM alpine:3.13 as build-image
+FROM adoptopenjdk/openjdk11:alpine as build-image
 
 WORKDIR /build
 
@@ -11,9 +11,6 @@ RUN apk update \
     iputils \
     ruby-full \
     ruby-dev \
-    fontconfig \
-    ttf-dejavu \
-    openjdk11 \
     bash
 
 RUN gem install jekyll
