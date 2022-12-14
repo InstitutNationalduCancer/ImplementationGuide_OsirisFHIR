@@ -31,6 +31,7 @@ Description:    "Description of an imaging study."
 * numberOfSeries 1..1  //dicomtag(0020,1206)
 
 //Series
+* series 1..*
 * series.uid MS~
 * series.uid 1..1 //dicomTag(0020,000E)
 * series.number MS
