@@ -27,13 +27,13 @@ Description:    "Description of an imaging study."
 * modality MS // Modalities in Study dicomTag(0008,0061)
 * modality 1..*
 * modality from DICOMod
-
+* numberOfSeries MS
+* numberOfSeries 1..1  //dicomtag(0020,1206)
 
 
 
  //
-* numberOfSeries MS
-* numberOfSeries 1..1  //dicomtag(0020,1206)
+
 * procedureReference only Reference (radiotherapy-course-summary)
 
 //Series
