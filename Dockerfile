@@ -5,14 +5,16 @@ WORKDIR /build
 RUN apk update \
     && apk upgrade \
     && apk add --no-cache \
-        build-base \
-        npm \
-        curl \
-        iputils \
-        ruby-full \
-        ruby-dev \
-        openjdk8 \
-        bash
+    build-base \
+    npm \
+    curl \
+    iputils \
+    ruby-full \
+    ruby-dev \
+    fontconfig \
+    ttf-dejavu \
+    openjdk11 \
+    bash
 
 RUN gem install jekyll
 RUN npm install -g fsh-sushi

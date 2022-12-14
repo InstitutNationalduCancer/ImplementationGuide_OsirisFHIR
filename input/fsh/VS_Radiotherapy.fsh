@@ -137,3 +137,14 @@ Description: "Isotopes Used in Radiotherapy"
 // yttrium
 * SCT#14691008 "Yttrium-90 (substance)"
 
+ValueSet: RadiotherapyReasonReplanificationVS
+Id: codexrt-radiotherapy-reason-for-revision-or-adaptation-vs
+Title: "Radiotherapy Reason Replanification"
+Description: "Radiotherapy Reason Replanification"
+
+* SCT#373858009 "Radiotherapy course changed - acute radiotherapy toxicity (finding)"
+* SCT#314846003 "Patient given choice of treatment (finding)"   
+* SnomedRequestedCS#1259981006    "Radiotherapy course change due to change to treatment intent (finding)"
+* SnomedRequestedCS#373858009 "Radiotherapy course changed - acute radiotherapy toxicity (finding)"
+* SnomedRequestedCS#1259231006  "Radiotherapy course changed due to changes to target (finding)"
+* SnomedRequestedCS#1259232004  "Radiotherapy course changed due to change to organ at risk (finding)"   
