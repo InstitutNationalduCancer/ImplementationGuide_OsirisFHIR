@@ -10,6 +10,9 @@ Description:    "Description of an imaging study."
 * subject MS
 * subject only Reference (onco-patient)
 * subject 1..1
+* partOf only Reference(analysis)
+* partOf 1..1
+
 
 * identifier MS // Study Instance UID dicomTag(0020,000D)
 * identifier 1..1
@@ -26,7 +29,6 @@ Description:    "Description of an imaging study."
 * endpoint only Reference (imaging-pacs) //
 * numberOfSeries MS
 * numberOfSeries 1..1  //dicomtag(0020,1206)
-* reasonReference only Reference(tumor-pathology-event)
 * procedureReference only Reference (radiotherapy-course-summary)
 
 //Series
