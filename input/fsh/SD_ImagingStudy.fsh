@@ -7,14 +7,15 @@ Description:    "Description of an imaging study."
 * series.extension contains imaging-settings named imaging-settings 1..1 and
                             series-weightheigt named series-weightheigt 0..1
 
+* subject MS
+* subject only Reference (onco-patient)
+* subject 1..1
+
 * identifier MS // Study Instance UID dicomTag(0020,000D)
 * identifier 1..1
 * modality MS // Modalities in Study dicomTag(0008,0061)
 * modality 1..*
 * modality from DICOMod
-* subject MS
-* subject only Reference (onco-patient)
-* subject 1..1
 * started MS //dicomTag (0008, 0032), (0008, 0022) or dicomTag (0008, 0021), (0008, 0023) or dicomTag (0008, 0031), (0008, 0033) 
 * started 1..1
 * description MS
