@@ -30,12 +30,6 @@ Description:    "Description of an imaging study."
 * numberOfSeries MS
 * numberOfSeries 1..1  //dicomtag(0020,1206)
 
-
-
- //
-
-* procedureReference only Reference (radiotherapy-course-summary)
-
 //Series
 * series.uid MS~
 * series.uid 1..1 //dicomTag(0020,000E)
