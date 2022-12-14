@@ -17,14 +17,14 @@ Description:    "Description of an imaging study."
 * identifier 1..1
 * description MS
 * description 1..1 //dicomTag (0008,1030) 
-
+* started MS //dicomTag (0008, 0032), (0008, 0022) or dicomTag (0008, 0021), (0008, 0023) or dicomTag (0008, 0031), (0008, 0033) 
+* started 1..1
 
 
 * modality MS // Modalities in Study dicomTag(0008,0061)
 * modality 1..*
 * modality from DICOMod
-* started MS //dicomTag (0008, 0032), (0008, 0022) or dicomTag (0008, 0021), (0008, 0023) or dicomTag (0008, 0031), (0008, 0033) 
-* started 1..1
+
 
 * location MS
 * location only Reference (imaging-service) //dicomTag (0008,0080)
@@ -35,7 +35,7 @@ Description:    "Description of an imaging study."
 * procedureReference only Reference (radiotherapy-course-summary)
 
 //Series
-* series.uid MS
+* series.uid MS~
 * series.uid 1..1 //dicomTag(0020,000E)
 * series.number MS
 * series.number 0..1 //dicomTag(0020,0011)
