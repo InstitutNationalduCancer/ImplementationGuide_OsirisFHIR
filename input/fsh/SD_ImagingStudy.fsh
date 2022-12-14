@@ -36,13 +36,13 @@ Description:    "Description of an imaging study."
 * series.number 0..1 //dicomTag(0020,0011)
 * series.uid MS
 * series.uid 1..1 //dicomTag(0020,000E)
-
-
-
-
 * series.modality MS
 * series.modality 1..1
 * series.modality from DICOMod 
+
+
+
+
 * series.description MS
 * series.description 1..1
 * series.bodySite MS
