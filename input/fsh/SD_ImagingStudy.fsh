@@ -22,14 +22,15 @@ Description:    "Description of an imaging study."
 * endpoint MS
 * endpoint only Reference (imaging-pacs)
 * endpoint 1..1
+* location MS
+* location only Reference (imaging-service) //dicomTag (0008,0080)
 
 * modality MS // Modalities in Study dicomTag(0008,0061)
 * modality 1..*
 * modality from DICOMod
 
 
-* location MS
-* location only Reference (imaging-service) //dicomTag (0008,0080)
+
  //
 * numberOfSeries MS
 * numberOfSeries 1..1  //dicomtag(0020,1206)
