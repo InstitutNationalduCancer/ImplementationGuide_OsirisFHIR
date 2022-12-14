@@ -39,12 +39,11 @@ Description:    "Description of an imaging study."
 * series.modality MS
 * series.modality 1..1
 * series.modality from DICOMod 
-
-
-
-
 * series.description MS
 * series.description 1..1
+
+
+
 * series.bodySite MS
 * series.bodySite 1..1 //dicomTag (0018,0015)
 * numberOfInstances MS
