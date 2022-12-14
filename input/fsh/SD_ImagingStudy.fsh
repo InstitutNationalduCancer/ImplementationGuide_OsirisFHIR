@@ -12,10 +12,13 @@ Description:    "Description of an imaging study."
 * subject 1..1
 * partOf only Reference(analysis)
 * partOf 1..1
-
-
+* partOf MS
 * identifier MS // Study Instance UID dicomTag(0020,000D)
 * identifier 1..1
+
+
+
+
 * modality MS // Modalities in Study dicomTag(0008,0061)
 * modality 1..*
 * modality from DICOMod
