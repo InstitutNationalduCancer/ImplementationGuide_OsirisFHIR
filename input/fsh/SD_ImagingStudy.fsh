@@ -15,7 +15,8 @@ Description:    "Description of an imaging study."
 * partOf MS
 * identifier MS // Study Instance UID dicomTag(0020,000D)
 * identifier 1..1
-
+* description MS
+* description 1..1 //dicomTag (0008,1030) 
 
 
 
@@ -24,8 +25,7 @@ Description:    "Description of an imaging study."
 * modality from DICOMod
 * started MS //dicomTag (0008, 0032), (0008, 0022) or dicomTag (0008, 0021), (0008, 0023) or dicomTag (0008, 0031), (0008, 0033) 
 * started 1..1
-* description MS
-* description 1..1 //dicomTag (0008,1030) 
+
 * location MS
 * location only Reference (imaging-service) //dicomTag (0008,0080)
 * endpoint MS
