@@ -39,65 +39,33 @@ OSIRIS is a minimum data set for data sharing and interoperability in oncology, 
 
 # Getting started
 
-## Prerequisites (for macOS)
-### Java
-Install [Java&trade; SE Runtime Environment](https://www.java.com/fr/).
-> See _[Installing the JDK on macOS](https://docs.oracle.com/en/java/javase/15/install/installation-jdk-macos.html#GUID-F575EB4A-70D3-4AB4-A20E-DBE95171AB5F)_, if any issue
+## Recommended
 
-### Ruby
-Install Ruby:
-
-First install `chruby`and `ruby-install`:
+### Install VS Code
+1. Install [Visual Studio Code IDE](https://code.visualstudio.com/)
 ```
-brew install chruby ruby-install
+brew install visual-studio-code
 ```
+2. In VS Code, install the extension [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
-Install the latest stable version of Ruby:
+3. Install [Docker](https://docs.docker.com/desktop/install/mac-install/)
+
+### Run
+
+To start you work session: 
+
+1. Open Docker
+2. Open VS Code
+3. Clone this repository on your computer
 ```
-ruby-install ruby
-````
-
-Once it is done, configure your shell to automatically use `chruby`:
+git clone https://github.com/arkhn/arkhn-ig-osiris.git
 ```
-echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
-echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
-echo "chruby ruby-3.1.2" >> ~/.zshrc # run 'chruby' to see actual version
-```
-> If you’re using **Bash**, replace `.zshrc` with `.bash_profile`.
+4. Run the **Dev Containers: Open Folder in Container...** command (`⇧⌘P`) and select the local folder.
 
-Quit and relaunch Terminal, check that everything is working with 
-```
-ruby -v
-```
 
-### Jekyll
-Finally, install [Jekyll](https://jekyllrb.com/docs/installation/macos/):
-```
-gem install jekyll
-```
+## Manual installation
 
-### Sushi
-Install [Node.js](https://nodejs.org/) then `fsh-sushi`.
-
-> To install sushi, see [Sushi Installation guide](https://fshschool.org/docs/sushi/installation/)
-
-## Prerequisites (for Windows)
-### Java
-Install [Java&trade; SE Runtime Environment](https://www.java.com/fr/).
-
-### Ruby
-Install [Ruby](https://rubyinstaller.org/)
-
-### Jekyll
-Open Start Command Prompt with Ruby
-```
-gem install jekyll
-```
-
-### Sushi
-Install [Node.js](https://nodejs.org/) then `fsh-sushi`.
-
-> To install sushi, see [Sushi Installation guide](https://fshschool.org/docs/sushi/installation/)
+If you want to do a manual installation, follow this: [Manual Installation Guide](/readme_manualInstall.md)
 
 # Generate IG
 
