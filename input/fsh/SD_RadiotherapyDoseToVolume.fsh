@@ -26,7 +26,7 @@ Title: "Volume"
 Description: "Volume"
 
 * extension contains
-    volume 0..1 MS
+    volume 1..1 MS
 
 * extension[volume].value[x] only Reference(radiotherapy-volume)
 * extension[volume] ^short = "The volume targeted by the dose "
