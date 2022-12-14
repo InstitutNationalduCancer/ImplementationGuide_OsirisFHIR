@@ -80,7 +80,7 @@ Description:    "Imaging Settings."
 * extension[slice_thickness] ^short = "Describe the slice thickness in mm"
 * extension[slice_thickness].value[x] only decimal
 * extension[pixel_spacing] ^short = "In plane resolution (pixel size), in mm"
-* extension[pixel_spacing].value[x] only decimal
+* extension[pixel_spacing].value[x] only string
 * extension[fov] ^short = "Field Of View"
 * extension[fov].value[x] only decimal
 * extension[rows] ^short = "Number of pixel in the row direction in the reconstructed matrix"
