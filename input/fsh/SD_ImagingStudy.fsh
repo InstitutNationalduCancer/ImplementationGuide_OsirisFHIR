@@ -202,8 +202,7 @@ Description:    "Imaging Settings."
     patient_orientation 0..1 MS and
     kvp 1..1 MS and
     exposure 1..1 MS and
-    exposure_time 1..1 MS and
-    contrast_bolus_agent 0..1 MS 
+    exposure_time 1..1 MS
 
 * extension[dx_image].extension[image_laterality] ^short = "Laterality of (possibly paired) body part (as described in Anatomic Region Sequence (0008,2218)) examined"
 * extension[dx_image].extension[image_laterality].value[x] only string
@@ -215,9 +214,6 @@ Description:    "Imaging Settings."
 * extension[dx_image].extension[exposure].value[x] only integer
 * extension[dx_image].extension[exposure_time] ^short = "Duration of X-Ray exposure in msec."
 * extension[dx_image].extension[exposure_time].value[x] only integer
-
-* extension[dx_image].extension[contrast_bolus_agent] ^short = "Contrast or bolus agent"
-* extension[dx_image].extension[contrast_bolus_agent].value[x] only string
 
 /*
     ###################################
