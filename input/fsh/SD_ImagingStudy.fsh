@@ -43,11 +43,10 @@ Description:    "Description of an imaging study."
 * series.description 1..1
 * series.bodySite MS
 * series.bodySite 0..1 //dicomTag (0018,0015)
-
-
-
 * numberOfInstances MS
 * numberOfInstances 1..1 //dicomtag (0020,1209)
+
+
 * series.performer.actor 1..1
 * series.performer.actor MS
 * series.performer.actor only Reference(imaging-device)
