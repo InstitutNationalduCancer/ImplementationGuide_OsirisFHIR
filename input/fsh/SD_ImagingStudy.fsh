@@ -209,7 +209,6 @@ Description:    "Imaging Settings."
 
 * extension[dx_image].extension[image_laterality] ^short = "Laterality of (possibly paired) body part (as described in Anatomic Region Sequence (0008,2218)) examined"
 * extension[dx_image].extension[image_laterality].value[x] only string
-
 * extension[dx_image].extension[patient_orientation] ^short = "Patient direction of the rows and columns of the image."
 * extension[dx_image].extension[patient_orientation].value[x] only string
 
