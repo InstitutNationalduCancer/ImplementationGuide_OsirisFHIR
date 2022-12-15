@@ -26,7 +26,7 @@ Description:    "Description of an imaging study."
 * location only Reference (imaging-service) //dicomTag (0008,0080)
 * modality MS // Modalities in Study dicomTag(0008,0061)
 * modality 1..*
-* modality only valueCodeableConcept.string
+* modality from DICOMod
 * numberOfSeries MS
 * numberOfSeries 1..1  //dicomtag(0020,1206)
 
@@ -42,7 +42,7 @@ Description:    "Description of an imaging study."
 * series.description MS
 * series.description 1..1
 * series.bodySite MS
-* series.bodySite 0..1 //dicomTag (0018,0015)
+* series.bodySite 0..1 from Topography //dicomTag (0018,0015)
 * numberOfInstances MS
 * numberOfInstances 1..1 //dicomtag (0020,1209)
 
