@@ -7,6 +7,7 @@ Description:    "Description of an imaging study."
 * series.extension contains series-weightheigt named series-weightheigt 0..1 and
                             imaging-settings named imaging-settings 1..1
 
+//Study
 * subject MS
 * subject only Reference (onco-patient)
 * subject 1..1
@@ -51,6 +52,10 @@ Description:    "Description of an imaging study."
 * series.performer.actor 1..1
 * series.performer.actor MS
 * series.performer.actor only Reference(imaging-device)
+
+//Common Image
+* series.instance.uid MS
+* series.instance.uid 1..1
 
 
 Extension:      WeightHeight
