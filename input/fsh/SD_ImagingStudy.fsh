@@ -201,7 +201,7 @@ Description:    "Imaging Settings."
     image_laterality 1..1 MS and
     patient_orientation 0..1 MS and
     kvp 1..1 MS and
-    exposure 0..1 MS and
+    exposure 1..1 MS and
     exposure_time 0..1 MS and
     contrast_bolus_agent 0..1 MS 
 
@@ -211,9 +211,8 @@ Description:    "Imaging Settings."
 * extension[dx_image].extension[patient_orientation].value[x] only string
 * extension[dx_image].extension[kvp] ^short = "Peak kilo voltage output of the X-Ray generator used."
 * extension[dx_image].extension[kvp].value[x] only integer
-
 * extension[dx_image].extension[exposure] ^short = "The exposure expressed in mAs, for example calculated from Exposure Time and X-Ray Tube Current."
-* extension[dx_image].extension[exposure].value[x] only decimal
+* extension[dx_image].extension[exposure].value[x] only integer
 
 * extension[dx_image].extension[exposure_time] ^short = "Duration of X-Ray exposure in msec."
 * extension[dx_image].extension[exposure_time].value[x] only decimal
