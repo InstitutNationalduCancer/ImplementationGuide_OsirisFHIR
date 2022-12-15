@@ -10,9 +10,9 @@ Description:    "Description of an imaging study."
 * subject MS
 * subject only Reference (onco-patient)
 * subject 1..1
-* partOf only Reference(analysis)
-* partOf 1..1
-* partOf MS
+* reasonReference only Reference(analysis)
+* reasonReference 1..1
+* reasonReference MS
 * identifier MS // Study Instance UID dicomTag(0020,000D)
 * identifier 1..1
 * description MS
