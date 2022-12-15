@@ -48,7 +48,6 @@ Description:    "Description of an imaging study."
 * series.numberOfInstances 1..1 //dicomtag (0020,1209)
 * series.started MS
 * series.started 1..1
-
 * series.performer.actor 1..1
 * series.performer.actor MS
 * series.performer.actor only Reference(imaging-device)
