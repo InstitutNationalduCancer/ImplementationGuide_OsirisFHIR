@@ -100,10 +100,10 @@ Description:    "Imaging Settings."
 * extension[field_of_view].value[x] only integer
 * extension[rows] ^short = "Number of pixel in the row direction in the reconstructed matrix"
 * extension[rows].value[x] only integer
-
-
 * extension[columns] ^short = "Number of pixel in the column direction in the reconstructed matrix"
-* extension[columns].value[x] only decimal
+* extension[columns].value[x] only integer
+
+
 * extension[imaging_injection].value[x] only Reference(onco-imagingstudy-injection)
 
 
