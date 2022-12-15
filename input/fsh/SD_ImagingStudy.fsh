@@ -64,6 +64,8 @@ Description:    "Weight and Height at the time of the Serie"
 
 * extension[patient_weight] ^short = "Patient weight in kilograms (Kg) at the time of the Serie acquisition. Described in Dicom Tag (0010,1030)"
 * extension[patient_weight].value[x] only decimal
+* extension[patient_weight] obeys patient-weight-if-pt-image
+
 * extension[patient_height] ^short = "Patient height in meters (m) at the time of the Serie acquisition. Described in Dicom Tag (0010,1020)"
 * extension[patient_height].value[x] only decimal
 
@@ -227,6 +229,18 @@ Description:    "Imaging Settings."
 
 * extension[dx_image].extension[contrast_bolus_agent] ^short = "Contrast or bolus agent"
 * extension[dx_image].extension[contrast_bolus_agent].value[x] only string
+
+/*
+    ###################################
+    # Invariants#
+    ###################################
+*/
+Invariant:   patient-weight-if-pt-image
+Description: "If extension:pt_image exist, then extension[patient_weight] MUST be present"
+Expression:  "extension:pt_image.exists() implies extension[patient_weight].valueString.exists()"
+Severity:    #error
+
+
 
 /*
     ###################################
