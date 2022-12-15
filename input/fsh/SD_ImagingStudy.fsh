@@ -102,8 +102,6 @@ Description:    "Imaging Settings."
 * extension[rows].value[x] only integer
 * extension[columns] ^short = "Number of pixel in the column direction in the reconstructed matrix"
 * extension[columns].value[x] only integer
-
-
 * extension[imaging_injection].value[x] only Reference(onco-imagingstudy-injection)
 
 
