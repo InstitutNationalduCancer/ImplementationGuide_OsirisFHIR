@@ -121,6 +121,7 @@ Description:    "Imaging Settings."
 
 * extension[mr_image].extension[sequence_name] ^short = "Describe the type of the pulse sequence"
 * extension[mr_image].extension[sequence_name].value[x] only string
+
 * extension[mr_image].extension[magnetic_field_strength] ^short = "Magnetic Field Strength"
 * extension[mr_image].extension[magnetic_field_strength].value[x] only string
 * extension[mr_image].extension[mr_acquisition_type] ^short = "Describe the type of acquisition, particularly the number of dimension"
