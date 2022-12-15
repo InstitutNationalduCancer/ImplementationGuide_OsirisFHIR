@@ -127,9 +127,9 @@ Description:    "Imaging Settings."
 * extension[mr_image].extension[mr_acquisition_type].value[x] only string
 * extension[mr_image].extension[repetition_time] ^short = "Repetition time of the MR pulse sequence in ms. It impact the T1 weighting"
 * extension[mr_image].extension[repetition_time].value[x] only decimal
-
 * extension[mr_image].extension[echo_time] ^short = "Echo time of the MR pulse sequence in ms. It impact the T2 weighting"
 * extension[mr_image].extension[echo_time].value[x] only decimal
+
 * extension[mr_image].extension[imaging_frequency] ^short = "Central frequency of the MR system (in Mhz), linked to the static magnetic field intensity"
 * extension[mr_image].extension[imaging_frequency].value[x] only decimal
 * extension[mr_image].extension[flip_angle] ^short = "Flip angle of the RF pulse in degree . It impact T1 weighting"
