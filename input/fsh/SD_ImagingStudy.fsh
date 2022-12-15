@@ -133,9 +133,9 @@ Description:    "Imaging Settings."
 * extension[mr_image].extension[imaging_frequency].value[x] only decimal
 * extension[mr_image].extension[flip_angle] ^short = "Flip angle of the RF pulse in degree . It impact T1 weighting"
 * extension[mr_image].extension[flip_angle].value[x] only decimal
-
 * extension[mr_image].extension[inversion_time] ^short = "Inversion time"
 * extension[mr_image].extension[inversion_time].value[x] only decimal
+
 * extension[mr_image].extension[receive_coil_name] ^short = "Receive col name"
 * extension[mr_image].extension[receive_coil_name].value[x] only string 
 
