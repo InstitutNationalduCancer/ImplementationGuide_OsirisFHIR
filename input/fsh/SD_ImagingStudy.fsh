@@ -157,7 +157,6 @@ Description:    "Imaging Settings."
 * extension[ct_image].extension[xray_tube_current].value[x] only integer
 * extension[ct_image].extension[exposure_time] ^short = "Duration of x-ray exposure in ms"
 * extension[ct_image].extension[exposure_time].value[x] only integer
-
 * extension[ct_image].extension[spiral_pitch_factor] ^short = "Ratio of the table feed per rotation to the total collimation width"
 * extension[ct_image].extension[spiral_pitch_factor].value[x] only decimal
 
