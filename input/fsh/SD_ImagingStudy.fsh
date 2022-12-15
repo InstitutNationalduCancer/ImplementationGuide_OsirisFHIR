@@ -93,7 +93,7 @@ Description:    "Imaging Settings."
     pt_image 0..1 and
     nm_image 0..1
 * extension[slice_thickness] ^short = "Describe the slice thickness in mm"
-* extension[slice_thickness].value[x] only decimal
+* extension[slice_thickness].value[x] only string
 
 
 * extension[pixel_spacing] ^short = "In plane resolution (pixel size), in mm"
