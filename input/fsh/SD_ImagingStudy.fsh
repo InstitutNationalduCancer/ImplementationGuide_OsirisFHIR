@@ -60,7 +60,7 @@ Description:    "Weight and Height at the time of the Serie"
 
 * extension contains
     patient_weight 0..1 MS and
-    patient_height 0..1
+    patient_height 0..1 MS
 
 * extension[patient_weight] ^short = "Patient weight in kilograms (Kg) at the time of the Serie acquisition. Described in Dicom Tag (0010,1030)"
 * extension[patient_weight].value[x] only decimal
@@ -68,6 +68,8 @@ Description:    "Weight and Height at the time of the Serie"
 
 * extension[patient_height] ^short = "Patient height in meters (m) at the time of the Serie acquisition. Described in Dicom Tag (0010,1020)"
 * extension[patient_height].value[x] only decimal
+* extension[patient_height] obeys patient-height-if-pt-image
+
 
 Extension:      ImagingSettings
 Id:             imaging-settings
@@ -237,9 +239,13 @@ Description:    "Imaging Settings."
 */
 Invariant:   patient-weight-if-pt-image
 Description: "If extension:pt_image exist, then extension[patient_weight] MUST be present"
-Expression:  "extension:pt_image.exists() implies extension[patient_weight].valueString.exists()"
+Expression:  "extension:pt_image.exists() implies extension[patient_weight].valueDecimal.exists()"
 Severity:    #error
 
+Invariant:   patient-height-if-pt-image
+Description: "If extension:pt_image exist, then extension[patient_height] MUST be present"
+Expression:  "extension:pt_image.exists() implies extension[patient_height].valueDecimal.exists()"
+Severity:    #error
 
 
 /*
