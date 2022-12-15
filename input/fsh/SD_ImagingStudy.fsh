@@ -4,8 +4,8 @@ Id:             onco-imagingstudy
 Title:          "Imaging Study"
 Description:    "Description of an imaging study."
 
-* series.extension contains imaging-settings named imaging-settings 1..1 and
-                            series-weightheigt named series-weightheigt 0..1
+* series.extension contains series-weightheigt named series-weightheigt 0..1 and
+                            imaging-settings named imaging-settings 1..1
 
 * subject MS
 * subject only Reference (onco-patient)
