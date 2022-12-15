@@ -144,16 +144,15 @@ Description:    "Imaging Settings."
 // # CT IMAGE #
 // ############
 * extension[ct_image].extension contains
-    kvp 1..1 MS and
+    kvp 0..1 MS and
     xray_tube_current 1..1 MS and
     exposure_time 1..1 MS and
     spiral_pitch_factor 1..1 MS and
     filter_type 1..1 MS and
     convolution_kernel 1..1 MS 
 
-
 * extension[ct_image].extension[kvp] ^short = "Describe the tube tension in KV"
-* extension[ct_image].extension[kvp].value[x] only decimal
+* extension[ct_image].extension[kvp].value[x] only integer
 
 * extension[ct_image].extension[xray_tube_current] ^short = "Tube current in mA"
 * extension[ct_image].extension[xray_tube_current].value[x] only decimal
