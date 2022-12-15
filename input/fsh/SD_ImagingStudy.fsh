@@ -42,7 +42,7 @@ Description:    "Description of an imaging study."
 * series.description MS
 * series.description 1..1
 * series.bodySite MS
-* series.bodySite 1..1 //dicomTag (0018,0015)
+* series.bodySite 0..1 //dicomTag (0018,0015)
 
 
 
