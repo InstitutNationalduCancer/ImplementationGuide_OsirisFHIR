@@ -46,7 +46,8 @@ Description:    "Description of an imaging study."
 * series.bodySite from Topography
 * series.numberOfInstances MS
 * series.numberOfInstances 1..1 //dicomtag (0020,1209)
-
+* series.started MS
+* series.started 1..1
 
 * series.performer.actor 1..1
 * series.performer.actor MS
