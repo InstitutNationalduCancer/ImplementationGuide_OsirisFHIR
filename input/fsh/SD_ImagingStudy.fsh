@@ -200,8 +200,6 @@ Description:    "Imaging Settings."
 * extension[dx_image].extension contains
     image_laterality 1..1 MS and
     patient_orientation 0..1 MS and
-    anat_code_meaning 0..1 MS and
-    anat_code_value 0..1 MS and
     kvp 0..1 MS and
     exposure 0..1 MS and
     exposure_time 0..1 MS and
@@ -212,11 +210,6 @@ Description:    "Imaging Settings."
 * extension[dx_image].extension[patient_orientation] ^short = "Patient direction of the rows and columns of the image."
 * extension[dx_image].extension[patient_orientation].value[x] only string
 
-* extension[dx_image].extension[anat_code_meaning] ^short = "Text that conveys the meaning of the Coded Entry"
-* extension[dx_image].extension[anat_code_meaning].value[x] only string
-
-* extension[dx_image].extension[anat_code_value] ^short = "Shall be present if the code value length is 16 characters or less"
-* extension[dx_image].extension[anat_code_value].value[x] only string
 
 * extension[dx_image].extension[kvp] ^short = "Peak kilo voltage output of the X-Ray generator used."
 * extension[dx_image].extension[kvp].value[x] only decimal
