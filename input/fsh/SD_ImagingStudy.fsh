@@ -161,7 +161,6 @@ Description:    "Imaging Settings."
 * extension[ct_image].extension[spiral_pitch_factor].value[x] only decimal
 * extension[ct_image].extension[filter_type] ^short = "Type of filter inserted into the X-Ray beam"
 * extension[ct_image].extension[filter_type].value[x] only string
-
 * extension[ct_image].extension[convolution_kernel] ^short = "A label describing the convolution kernel or algorithm used to recontruct the data"
 * extension[ct_image].extension[convolution_kernel].value[x] only string
 
