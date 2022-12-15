@@ -176,8 +176,6 @@ Description:    "Imaging Settings."
 * extension[pt_image].extension[attenuation_correction_method].value[x] only string
 // * extension[pt_image].extension[reconstruction_method] ^short = "A label describing the convolution kernel or algorithm used to recontruct the data"
 * extension[pt_image].extension[reconstruction_method].value[x] only string
-
-
 // * extension[pt_image].extension[scatter_correction_method] ^short = "A label describing the convolution kernel or algorithm used to recontruct the data"
 * extension[pt_image].extension[scatter_correction_method].value[x] only string
 
@@ -193,8 +191,6 @@ Description:    "Imaging Settings."
 * extension[nm_image].extension[attenuation_correction_method].value[x] only string
 // * extension[nm_image].extension[reconstruction_method] ^short = "A label describing the convolution kernel or algorithm used to recontruct the data"
 * extension[nm_image].extension[reconstruction_method].value[x] only string
-
-
 // * extension[nm_image].extension[scatter_correction_method] ^short = "A label describing the convolution kernel or algorithm used to recontruct the data"
 * extension[nm_image].extension[scatter_correction_method].value[x] only string
 
