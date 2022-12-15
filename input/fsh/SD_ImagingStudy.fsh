@@ -83,7 +83,7 @@ Description:    "Imaging Settings."
 * extension contains
     slice_thickness 1..1 MS and
     pixel_spacing 1..1 MS and
-    fov 0..1 MS and
+    field_of_view 0..1 MS and
     rows 1..1 MS and
     columns 1..1 MS and
     imaging_injection 0..1 MS and
@@ -96,9 +96,10 @@ Description:    "Imaging Settings."
 * extension[slice_thickness].value[x] only string
 * extension[pixel_spacing] ^short = "In plane resolution (pixel size), in mm"
 * extension[pixel_spacing].value[x] only string
+* extension[field_of_view] ^short = "Field Of View"
+* extension[field_of_view].value[x] only integer
 
-* extension[fov] ^short = "Field Of View"
-* extension[fov].value[x] only decimal
+
 * extension[rows] ^short = "Number of pixel in the row direction in the reconstructed matrix"
 * extension[rows].value[x] only decimal
 * extension[columns] ^short = "Number of pixel in the column direction in the reconstructed matrix"
