@@ -38,14 +38,11 @@ Description:    "Description of the segmentation method used allowing the deffin
 * code.text ^short = "ROI Type"
 * code.text ^definition = "Type of ROI (e.g. RTStruct, binary mask)."
 
-
-
 * focus MS
-* focus only Reference (imaging-pacs)
-* focus ^short = "Uniquely identifies the referenced id or filename"
 * focus 1..1
-
-
+* focus only Reference (imaging-pacs)
+* focus ^short = "File identifier"
+* focus ^definition =  "Uniquely identifies the referenced identifier or file name."
 
 
 
