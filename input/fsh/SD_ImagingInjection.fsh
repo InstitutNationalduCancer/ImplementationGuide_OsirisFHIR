@@ -10,8 +10,8 @@ Description:    "Description of an imaging study injection."
 
 * effective[x] MS
 * effective[x] 0..1
-* effective[x] ^short = "Start and end time of the injection"
-* effective[x] ^definition = "Start (Dicom Tag (0018,1042)) and end time (Dicom Tag (0018,1043)) of the injection."
+* effective[x] ^short = "Start and end time of the injection for contrast agents / Actual injection time for radiopharmaceutical"
+* effective[x] ^definition = "Start (Dicom Tag (0018,1042)) and end time (Dicom Tag (0018,1043)) of the injection for contrast agents. / Actual time of administration of the radiopharmaceutical to the patient for imaging purposes. Dicom Tag (0018,1072). This variable is mandatory only if the series is PT."
 
 
 
