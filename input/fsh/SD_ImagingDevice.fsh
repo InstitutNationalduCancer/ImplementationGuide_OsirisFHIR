@@ -15,13 +15,16 @@ Description:    "Qualification of the equipment used to acquire a series of imag
 * deviceName ^short = "Equipment model name"
 * deviceName ^definition = "Equipment model name. Dicom Tag (0008,1090)"
 
-
-
 * version MS
 * version 1..1
+* version ^short = "Acquisition software version"
+* version ^definition = "Software version of the acquisition equipment of the series. Dicom Tag (0018,1020)"
 
-
-
+/*
+    ###################################
+    # MAPPING OSIRIS <--> FHIR-OSIRIS #
+    ###################################
+*/
 
 Mapping: FhirOSIRISImagingDevice
 Source: imaging-device
