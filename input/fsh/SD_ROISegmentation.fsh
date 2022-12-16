@@ -23,14 +23,16 @@ Description:    "Description of the segmentation method used allowing the deffin
 * identifier[roi] ^short = "Unique identifier ROI"
 * identifier[roi] ^definition = "The region of interest identifier (ROI). Dicom Tag (3006,0084)"
 
+* text MS
+* text ^short = "User-defined name for the ROI"
+* text ^definition = "User-defined name for the ROI. Dicom tag (3006,0026)"
+* text 1..1
+
 * note MS 
 * note ^short = "User-defined description for the ROI"
 * note ^definition = "User-defined description for the ROI. Dicom tag (3006,0028)"
 * note 0..1
 
-* text MS
-* text ^short = "Name given by the user"
-* text 1..1
 
 * code MS // Type of ROI
 * code from ROIType (required)
