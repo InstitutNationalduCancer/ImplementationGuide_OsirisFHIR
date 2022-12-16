@@ -7,20 +7,20 @@ Description:    "Qualification of the equipment used to acquire a series of imag
 
 * manufacturer MS
 * manufacturer 1..1
+* manufacturer ^definition = "A name of the manufacturer. Dicom Tag (0008,0070)"
+
+* deviceName 1..1
+* deviceName MS
+* deviceName.type = http://hl7.org/fhir/device-nametype#manufacturer-name
+* deviceName ^short = "Equipment model name"
+* deviceName ^definition = "Equipment model name. Dicom Tag (0008,1090)"
 
 
 
 * version MS
 * version 1..1
 
-* deviceName ^slicing.discriminator.type = #pattern
-* deviceName ^slicing.discriminator.path = "type"
-* deviceName ^slicing.rules = #open
-* deviceName ^slicing.description = "Slice based on deviceName pattern"
-* deviceName contains manufacturer-name 1..1
-* deviceName[manufacturer-name].type = http://hl7.org/fhir/device-nametype#manufacturer-name
-* deviceName[manufacturer-name].name 1..1 MS
-* deviceName[manufacturer-name] ^short = "Manufacturer’s Model Name"
+
 
 
 Mapping: FhirOSIRISImagingDevice
