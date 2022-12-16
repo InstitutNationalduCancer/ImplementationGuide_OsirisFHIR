@@ -140,8 +140,7 @@ Description:    "Imaging Settings."
     mr_image 0..1 and
     ct_image 0..1 and
     dx_image 0..1 and
-    pt_image 0..1 and
-    nm_image 0..1
+    pt_nm_image 0..1
 
 * extension[slice_thickness].value[x] only string
 * extension[slice_thickness] ^short = "Thickness of the slice in mm"
@@ -254,45 +253,24 @@ Description:    "Imaging Settings."
 * extension[ct_image].extension[convolution_kernel] ^definition = "A label describing the convolution kernel or algorithm used to recontruct the data. Dicom Tag (0018,1210)"
 
 // ############
-// # PT IMAGE #
+// # PT and NM IMAGE #
 // ############
-* extension[pt_image].extension contains
+* extension[pt_nm_image].extension contains
     attenuation_correction_method 1..1 MS and
     reconstruction_method 1..1 MS and
     scatter_correction_method 1..1 MS
 
+* extension[pt_nm_image].extension[attenuation_correction_method].value[x] only string
+* extension[pt_nm_image].extension[attenuation_correction_method] ^short = "Attenuation correction method"
+* extension[pt_nm_image].extension[attenuation_correction_method] ^definition = "Attenuation correction method. Dicom Tag (0054,1101)"
 
-* extension[pt_image].extension[attenuation_correction_method].value[x] only string
-* extension[pt_image].extension[attenuation_correction_method] ^short = "Attenuation correction method"
-* extension[pt_image].extension[attenuation_correction_method] ^definition = "Attenuation correction method. Dicom Tag (0054,1101)"
+* extension[pt_nm_image].extension[reconstruction_method].value[x] only string
+* extension[pt_nm_image].extension[reconstruction_method] ^short = "Reconstruction method"
+* extension[pt_nm_image].extension[reconstruction_method] ^definition = "Reconstruction method e.g. 2D filtered back projection, 2D iterative, 3D PROMIS, 3D FAVOR, 3D iterative. Dicom Tag (0054,1103)"
 
-* extension[pt_image].extension[reconstruction_method].value[x] only string
-* extension[pt_image].extension[reconstruction_method] ^short = "Reconstruction method"
-* extension[pt_image].extension[reconstruction_method] ^definition = "Reconstruction method e.g. 2D filtered back projection, 2D iterative, 3D PROMIS, 3D FAVOR, 3D iterative. Dicom Tag (0054,1103)"
-
-* extension[pt_image].extension[scatter_correction_method].value[x] only string
-* extension[pt_image].extension[scatter_correction_method] ^short = "Scattering correction method"
-* extension[pt_image].extension[scatter_correction_method] ^definition = "Scattering correction method. For example, convolution-subtraction, dual energy window, model based, use of attenuation data. Dicom Tag (0054,1105)"
-
-// ############
-// # NM IMAGE #
-// ############
-* extension[nm_image].extension contains
-    attenuation_correction_method 1..1 MS and
-    reconstruction_method 1..1 MS and
-    scatter_correction_method 1..1 MS
-
-* extension[nm_image].extension[attenuation_correction_method].value[x] only string
-* extension[nm_image].extension[attenuation_correction_method] ^short = "Attenuation correction method"
-* extension[nm_image].extension[attenuation_correction_method] ^definition = "Attenuation correction method. Dicom Tag (0054,1101)"
-
-* extension[nm_image].extension[reconstruction_method].value[x] only string
-* extension[nm_image].extension[reconstruction_method] ^short = "Reconstruction method"
-* extension[nm_image].extension[reconstruction_method] ^definition = "Reconstruction method e.g. 2D filtered back projection, 2D iterative, 3D PROMIS, 3D FAVOR, 3D iterative. Dicom Tag (0054,1103)"
-
-* extension[nm_image].extension[scatter_correction_method].value[x] only string
-* extension[nm_image].extension[scatter_correction_method] ^short = "Scattering correction method"
-* extension[nm_image].extension[scatter_correction_method] ^definition = "Scattering correction method. For example, convolution-subtraction, dual energy window, model based, use of attenuation data. Dicom Tag (0054,1105)"
+* extension[pt_nm_image].extension[scatter_correction_method].value[x] only string
+* extension[pt_nm_image].extension[scatter_correction_method] ^short = "Scattering correction method"
+* extension[pt_nm_image].extension[scatter_correction_method] ^definition = "Scattering correction method. For example, convolution-subtraction, dual energy window, model based, use of attenuation data. Dicom Tag (0054,1105)"
 
 // ############
 // # DX IMAGE #
@@ -398,13 +376,9 @@ Title: "Fhir-osiris to osiris"
 * series.extension[imaging-settings].extension[ct_image].extension[filter_type] -> "OSIRIS_pivot_CTImage.CTImage_FilterType"
 * series.extension[imaging-settings].extension[ct_image].extension[convolution_kernel] -> "OSIRIS_pivot_CTImage.CTImage_ConvolutionKernel"
 
-* series.extension[imaging-settings].extension[pt_image].extension[attenuation_correction_method] -> ""
-* series.extension[imaging-settings].extension[pt_image].extension[reconstruction_method] -> ""
-* series.extension[imaging-settings].extension[pt_image].extension[scatter_correction_method] -> ""
-
-* series.extension[imaging-settings].extension[nm_image].extension[attenuation_correction_method] -> "OSIRIS_pivot_NMImage.NMImage_AttenuationCorrectionMethod"
-* series.extension[imaging-settings].extension[nm_image].extension[reconstruction_method] -> "OSIRIS_pivot_NMImage.NMImage_ReconstructionMethod"
-* series.extension[imaging-settings].extension[nm_image].extension[scatter_correction_method] -> "OSIRIS_pivot_NMImage.NMImage_ScatterCorrectionMethod"
+* series.extension[imaging-settings].extension[pt_nm_image].extension[attenuation_correction_method] -> "OSIRIS_pivot_NMImage.NMImage_AttenuationCorrectionMethod"
+* series.extension[imaging-settings].extension[pt_nm_image].extension[reconstruction_method] -> "OSIRIS_pivot_NMImage.NMImage_ReconstructionMethod"
+* series.extension[imaging-settings].extension[pt_nm_image].extension[scatter_correction_method] -> "OSIRIS_pivot_NMImage.NMImage_ScatterCorrectionMethod"
 
 
 * series.extension[imaging-settings].extension[dx_image].extension[image_laterality] -> "OSIRIS_pivot_DXImage.DXImage_ImageLaterality"
@@ -439,7 +413,6 @@ Title: "Fhir-osiris to Dicom"
 * series.description -> "Dicom Tag (00e1, 1040), (0008, 103E), (0008, 1030)"
 * series.bodySite -> "Dicom Tag (0018,0015)"
 * series.numberOfInstances -> "Dicom Tag (0020,1209)"
-
 * series.extension[series-weightheigt].extension[patient_weight] -> "Dicom Tag (0010,1030)"
 * series.extension[series-weightheigt].extension[patient_height] -> "Dicom Tag (0010,1020)"
 
@@ -459,7 +432,6 @@ Title: "Fhir-osiris to Dicom"
 * series.extension[imaging-settings].extension[mr_image].extension[inversion_time] -> "Dicom Tag (0018,0082)"
 * series.extension[imaging-settings].extension[mr_image].extension[receive_coil_name] -> "Dicom Tag (0018,1250)" 
 
-
 * series.extension[imaging-settings].extension[ct_image].extension[kvp] -> "Dicom Tag (0018,0060)"
 * series.extension[imaging-settings].extension[ct_image].extension[xray_tube_current] -> "Dicom Tag (0018,1151)"
 * series.extension[imaging-settings].extension[ct_image].extension[exposure_time] -> "Dicom Tag (0018,1150)"
@@ -467,14 +439,9 @@ Title: "Fhir-osiris to Dicom"
 * series.extension[imaging-settings].extension[ct_image].extension[filter_type] -> "Dicom Tag (0018,1160)"
 * series.extension[imaging-settings].extension[ct_image].extension[convolution_kernel] -> "Dicom Tag (0018,1210)"
 
-* series.extension[imaging-settings].extension[pt_image].extension[attenuation_correction_method] -> "Dicom Tag (0054,1101)"
-* series.extension[imaging-settings].extension[pt_image].extension[reconstruction_method] -> "Dicom Tag (0054,1103)"
-* series.extension[imaging-settings].extension[pt_image].extension[scatter_correction_method] -> "Dicom Tag (0054,1105)"
-
-* series.extension[imaging-settings].extension[nm_image].extension[attenuation_correction_method] -> "Dicom Tag (0054,1101)"
-* series.extension[imaging-settings].extension[nm_image].extension[reconstruction_method] -> "Dicom Tag (0054,1103)"
-* series.extension[imaging-settings].extension[nm_image].extension[scatter_correction_method] -> "Dicom Tag (0054,1105)"
-
+* series.extension[imaging-settings].extension[pt_nm_image].extension[attenuation_correction_method] -> "Dicom Tag (0054,1101)"
+* series.extension[imaging-settings].extension[pt_nm_image].extension[reconstruction_method] -> "Dicom Tag (0054,1103)"
+* series.extension[imaging-settings].extension[pt_nm_image].extension[scatter_correction_method] -> "Dicom Tag (0054,1105)"
 
 * series.extension[imaging-settings].extension[dx_image].extension[image_laterality] -> "Dicom Tag (0020,0062)"
 * series.extension[imaging-settings].extension[dx_image].extension[patient_orientation] -> "Dicom Tag (0020,0020)"
