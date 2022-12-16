@@ -7,9 +7,24 @@ Description:    "Description of an imaging device."
 * identifier ^short = "GEO Identifier of the platform"
 
 * manufacturer MS
+<<<<<<< HEAD
+=======
+* manufacturer 1..1
+* manufacturer ^definition = "A name of the manufacturer. Dicom Tag (0008,0070)"
+
+* deviceName 1..1
+* deviceName MS
+* deviceName.type = http://hl7.org/fhir/device-nametype#manufacturer-name
+* deviceName ^short = "Equipment model name"
+* deviceName ^definition = "Equipment model name. Dicom Tag (0008,1090)"
+
+>>>>>>> cf3848c (add short and definition to version variable)
 * version MS
 * version 1..1
+* version ^short = "Acquisition software version"
+* version ^definition = "Software version of the acquisition equipment of the series. Dicom Tag (0018,1020)"
 
+<<<<<<< HEAD
 * deviceName ^slicing.discriminator.type = #pattern
 * deviceName ^slicing.discriminator.path = "type"
 * deviceName ^slicing.rules = #open
@@ -19,6 +34,13 @@ Description:    "Description of an imaging device."
 * deviceName[manufacturer-name].name 1..1 MS
 * deviceName[manufacturer-name] ^short = "Manufacturer’s Model Name"
 
+=======
+/*
+    ###################################
+    # MAPPING OSIRIS <--> FHIR-OSIRIS #
+    ###################################
+*/
+>>>>>>> cf3848c (add short and definition to version variable)
 
 Mapping: FhirOSIRISImagingDevice
 Source: imaging-device
