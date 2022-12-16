@@ -16,18 +16,17 @@ Description:    "Description of the segmentation method used allowing the deffin
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice based on identifier pattern"
-* identifier contains dicom 1..1 and
+* identifier contains dicom 1..* and
                     roi 1..1
 * identifier[dicom] ^short = "Unique identifier of the DICOM object"
 * identifier[dicom] ^definition = "Unique identifier of the DICOM object. Dicom Tag (0008,1155)"
 * identifier[roi] ^short = "Unique identifier ROI"
 * identifier[roi] ^definition = "The region of interest identifier (ROI). Dicom Tag (3006,0084)"
 
-
-
-* note MS // ROI description Attribute dicomTag(3006,0028)
-* note ^short = "ROI description Attribute"
-* note 1..1
+* note MS 
+* note ^short = "User-defined description for the ROI"
+* note ^definition = "User-defined description for the ROI. Dicom tag (3006,0028)"
+* note 0..1
 
 * text MS
 * text ^short = "Name given by the user"
