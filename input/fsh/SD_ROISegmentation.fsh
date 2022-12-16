@@ -12,9 +12,11 @@ Description:    "Description of the segmentation method used allowing the deffin
 * partOf ^short = "Uniquely identifies the referenced SOP Instance"
 * partOf 1..1
 
-* identifier MS // Referenced ROI Number, dicomTag(3006,0084)
+* identifier MS 
 * identifier 1..1
-* identifier ^short = "Uniquely identifies the referenced ROI described in the Structure Set ROI Sequence"
+* identifier ^short = "Unique identifier of the DICOM object"
+* identifier ^definition =  "Unique identifier of the DICOM object. Dicom Tag (0008,1155)"
+
 
 * note MS // ROI description Attribute dicomTag(3006,0028)
 * note ^short = "ROI description Attribute"
