@@ -5,7 +5,7 @@ Title:          "Imaging Study Injection"
 Description:    "Description of an imaging study injection."
 
 * medication[x] MS
-* medication[x] 1..1
+* medication[x] 0..1
 * medication[x] only Reference (ImagingContrast)
 
 

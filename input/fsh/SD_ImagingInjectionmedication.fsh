@@ -6,8 +6,8 @@ Description:    "Description of a contrast product."
 
 * code MS
 * code 1..1
-* code.text ^short = "Name of the radiopharmaceutical"
-* code.text ^definition = "Name of the radiopharmaceutical. Dicom Tag (0018,0031)"
+* code.text ^short = "Name of the radiopharmaceutical or the contrast agent"
+* code.text ^definition = "Name of the radiopharmaceutical (Dicom Tag (0018,0031)) or the contrast agent (Dicom Tag (0018,0010)). This variable is mandatory only if the series is PT."
 
 
 /*
@@ -22,7 +22,7 @@ Id: fhir-osiris-imaging-contrast
 Title: "Fhir-osiris to osiris"
 * -> "Imaging Contrast" "Imaging Contrast description"
 
-* code.text -> "OSIRIS_pivot_Injection.Injection_Radiopharmaceutical"
+* code.text -> "OSIRIS_pivot_Injection.Injection_Radiopharmaceutical / OSIRIS_pivot_Injection.Injection_ContrastBolusAgent"
 
 /*
     ##########################
@@ -36,4 +36,4 @@ Id: dicom-to-fhir-imaging-contrast
 Title: "Fhir-osiris to Dicom"
 * -> "Imaging Contrast" "Imaging Contrast description"
 
-* code.text -> "Dicom Tag (0018,0031)"
+* code.text -> "Dicom Tag (0018,0031) / Dicom Tag (0018,0010)"
