@@ -122,8 +122,8 @@ Description:    "Weight and Height at the time of the Serie"
 
 * extension[patient_height].value[x] only decimal
 * extension[patient_height] obeys patient-height-if-pt-image
-* extension[patient_weight] ^short = "Patient height"
-* extension[patient_weight] ^definition = "Patient height in meters. Dicom Tag (0010,1020)"
+* extension[patient_height] ^short = "Patient height"
+* extension[patient_height] ^definition = "Patient height in meters. Dicom Tag (0010,1020)"
 
 
 Extension:      ImagingSettings
