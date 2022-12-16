@@ -33,10 +33,10 @@ Description:    "Description of the segmentation method used allowing the deffin
 * note ^definition = "User-defined description for the ROI. Dicom tag (3006,0028)"
 * note 0..1
 
-
-* code MS // Type of ROI
-* code from ROIType (required)
+* code.text MS 
 * code 1..1
+* code.text ^short = "ROI Type"
+* code.text ^definition = "Type of ROI (e.g. RTStruct, binary mask)."
 
 
 
