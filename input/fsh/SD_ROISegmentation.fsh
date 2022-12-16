@@ -7,6 +7,11 @@ Description:    "Description of the segmentation method used allowing the deffin
 
 * subject only Reference (onco-patient)
 
+* partOf MS
+* partOf only Reference (onco-imagingstudy)
+* partOf ^short = "Uniquely identifies the referenced SOP Instance"
+* partOf 1..1
+
 * identifier MS // Referenced ROI Number, dicomTag(3006,0084)
 * identifier 1..1
 * identifier ^short = "Uniquely identifies the referenced ROI described in the Structure Set ROI Sequence"
@@ -23,10 +28,7 @@ Description:    "Description of the segmentation method used allowing the deffin
 * code from ROIType (required)
 * code 1..1
 
-* partOf MS
-* partOf only Reference (onco-imagingstudy)
-* partOf ^short = "Uniquely identifies the referenced SOP Instance"
-* partOf 1..1
+
 
 * focus MS
 * focus only Reference (imaging-pacs)
