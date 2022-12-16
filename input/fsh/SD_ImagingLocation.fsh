@@ -21,7 +21,7 @@ Id: fhir-osiris-imaging-service
 Title: "Fhir-osiris to osiris"
 * -> "Imaging Service" "Imaging service description"
 
-* location -> "OSIRIS_pivot_Study.Study_InstitutionName"
+* name -> "OSIRIS_pivot_Study.Study_InstitutionName"
 
 /*
     ##########################
@@ -35,4 +35,4 @@ Id: fhir-osiris-to-dicom-imaging-service
 Title: "Fhir-osiris to Dicom"
 * -> "Imaging Service" "Imaging service description"
 
-* location -> "Dicom Tag (0008,0080)"
+* name -> "Dicom Tag (0008,0080)"
