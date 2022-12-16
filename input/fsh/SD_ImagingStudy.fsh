@@ -16,17 +16,17 @@ Description:    "Description of an imaging study."
 * reasonReference 1..1
 * reasonReference MS
 
-* identifier MS // Study Instance UID dicomTag(0020,000D)
+* identifier MS 
 * identifier 1..1
 * identifier ^short = "Unique number"
 * identifier ^definition = "Unique number to identify the study. Dicom Tag (0020,000D)"
 
 * description MS
-* description 1..1 //dicomTag (0008,1030) 
+* description 1..1 
 * description ^short = "Description"
 * description ^definition = "Study Description. Dicom Tag (0008,1030)"
 
-* started MS //dicomTag (0008, 0032), (0008, 0022) or dicomTag (0008, 0021), (0008, 0023) or dicomTag (0008, 0031), (0008, 0033) 
+* started MS  
 * started 1..1
 * started ^short = "Date and time of acquisition"
 * started ^definition = "Date and time of acquisition. Dicom Tag (0008, 0032), (0008, 0022) or DicomTag (0008, 0021), (0008, 0023) or Dicom Tag (0008, 0031), (0008, 0033)"
@@ -38,18 +38,18 @@ Description:    "Description of an imaging study."
 * endpoint ^definition = "Study storage location (PACS, web server etc)."
 
 * location MS
-* location only Reference (imaging-service) //dicomTag (0008,0080)
+* location only Reference (imaging-service) 
 * location ^short = "Name of the institution"
 * location ^definition = "Name of the organization or institution responsible for the study. Dicom Tag (0008,0080)"
 
-* modality MS // Modalities in Study dicomTag(0008,0061)
+* modality MS 
 * modality 1..*
 * modality from DICOMod
 * modality ^short = "Modalities"
 * modality ^definition = "List of all the modalities used. Dicom Tag (0008,0061)"
 
 * numberOfSeries MS
-* numberOfSeries 1..1  //dicomtag(0020,1206)
+* numberOfSeries 1..1  
 * numberOfSeries ^short = "Number of series"
 * numberOfSeries ^definition = "Number of series contained in the study. Dicom Tag (0020, 1206)"
 
@@ -57,12 +57,12 @@ Description:    "Description of an imaging study."
 * series 1..*
 
 * series.number MS
-* series.number 0..1 //dicomTag(0020,0011)
+* series.number 0..1 
 * series.number ^short = "User number"
 * series.number ^definition = "User number to identify the series. Dicom Tag (0020,0011)"
 
 * series.uid MS
-* series.uid 1..1 //dicomTag(0020,000E)
+* series.uid 1..1 
 * series.uid ^short = "Unique referenced number"
 * series.uid ^definition = "Unique number (SUID) of the series referenced in the series study. Dicom Tag (0020,000E)"
 
@@ -78,13 +78,13 @@ Description:    "Description of an imaging study."
 * series.description ^definition = "Description of the series. Dicom Tag (00e1, 1040), (0008, 103E), (0008, 1030)"
 
 * series.bodySite MS
-* series.bodySite 0..1  //dicomTag (0018,0015)
+* series.bodySite 0..1  
 * series.bodySite from Topography
 * series.bodySite ^short = "Part of the body examined"
 * series.bodySite ^definition = "Part of the body examined. Dicom Tag (0018,0015)"
 
 * series.numberOfInstances MS
-* series.numberOfInstances 1..1 //dicomtag (0020,1209)
+* series.numberOfInstances 1..1 
 * series.numberOfInstances ^short = "Number of images in the series"
 * series.numberOfInstances ^definition = "Number of images in the series. Dicom Tag (0020,1209)"
 
@@ -96,8 +96,8 @@ Description:    "Description of an imaging study."
 * series.performer.actor 1..1
 * series.performer.actor MS
 * series.performer.actor only Reference(imaging-device)
-* series.performer.actor  ^short = "Device"
-* series.performer.actor  ^definition = "Device used for the serie"
+* series.performer.actor ^short = "Device"
+* series.performer.actor ^definition = "Device used for the serie"
 
 //Common Image
 * series.instance.uid MS
@@ -351,36 +351,79 @@ Target: "ImagingStudy"
 Id: fhir-osiris-imaging-study
 Title: "Fhir-osiris to osiris"
 * -> "Imaging Study" "Imaging study description"
-* series.instance.uid -> "Common_Image.SOP Instance UID"
-* series.extension[imaging-settings].extension[slice_thickness] -> "Common_Image.Slice thickness"
-* series.extension[imaging-settings].extension[pixel_spacing] -> "Common_Image.Pixel spacing"
-* series.extension[imaging-settings].extension[field_of_view] -> "Common_Image.Field of View (FOV)"
-* series.extension[imaging-settings].extension[rows] -> "Common_Image.Rows"
-* series.extension[imaging-settings].extension[columns] -> "Common_Image.Columns"
 
-* series.extension[imaging-settings].extension[mr_image].extension[sequence_name] -> "MR_Image.Sequence Name"
-* series.extension[imaging-settings].extension[mr_image].extension[magnetic_field_strength] -> "MR_Image.Magnetic Field Strength"
-* series.extension[imaging-settings].extension[mr_image].extension[mr_acquisition_type] -> "MR_Image.MR acquisition type"
-* series.extension[imaging-settings].extension[mr_image].extension[repetition_time] -> "MR_Image.Repetition Time"
-* series.extension[imaging-settings].extension[mr_image].extension[echo_time] -> "MR_Image.Echo Time"
-* series.extension[imaging-settings].extension[mr_image].extension[imaging_frequency] -> "MR_Image.Imaging frequency"
-* series.extension[imaging-settings].extension[mr_image].extension[flip_angle] -> "MR_Image.Flip angle"
-* series.extension[imaging-settings].extension[mr_image].extension[inversion_time] -> "MR_Image.Inversion Time"
-* series.extension[imaging-settings].extension[mr_image].extension[receive_coil_name] -> "MR_Image.Receive Coil Name"
-// todo
+* subject -> "OSIRIS_pivot_Study.Patient_Id"
+* reasonReference -> "OSIRIS_pivot_Study.Analysis_Ref"
+* identifier -> "OSIRIS_pivot_Study.Study_StudyInstanceUID"
+* endpoint -> "OSIRIS_pivot_Study.Study_Location"
+* description -> "OSIRIS_pivot_Study.Study_StudyDescription"
+* started -> "OSIRIS_pivot_Study.Study_AcquisitionDate"
+* location -> "OSIRIS_pivot_Study.Study_InstitutionName"
+* modality -> "OSIRIS_pivot_Study.Study_ModalitiesInStudy"
+* numberOfInstances -> "OSIRIS_pivot_Study.Study_NbStudyRelatedSeries"
 
+* series.number -> "OSIRIS_pivot_Series.Series_SeriesNumber"
+* series.uid -> "OSIRIS_pivot_Series.Series_SeriesInstanceUID"
+* series.modality -> "OSIRIS_pivot_Series.Series_Modality"
+* series.description -> "OSIRIS_pivot_Series.Series_Description"
+* series.bodySite -> "OSIRIS_pivot_Series.Series_BodyPartExamined"
+* series.started -> "OSIRIS_pivot_Series.Series_AcquisitionDate"
+* series.numberOfInstances -> "OSIRIS_pivot_Series.Series_NbSeriesRelatedInstances"
+* series.performer.actor -> "OSIRIS_pivot_Series.Equipment_Ref"
+* series.extension[series-weightheigt].extension[patient_weight] -> "OSIRIS_pivot_Series.Series_PatientWeight"
+* series.extension[series-weightheigt].extension[patient_height] -> "OSIRIS_pivot_Series.Series_PatientSize"
+
+* series.instance.uid -> "OSIRIS_pivot_CommonImage.CommonImage_SOPInstanceUID"
+* series.extension[imaging-settings].extension[slice_thickness] -> "OSIRIS_pivot_CommonImage.CommonImage_SliceThickness"
+* series.extension[imaging-settings].extension[pixel_spacing] -> "OSIRIS_pivot_CommonImage.CommonImage_PixelSpacing"
+* series.extension[imaging-settings].extension[field_of_view] -> "OSIRIS_pivot_CommonImage.CommonImage_FieldOfView"
+* series.extension[imaging-settings].extension[rows] -> "OSIRIS_pivot_CommonImage.CommonImage_Rows"
+* series.extension[imaging-settings].extension[columns] -> "OSIRIS_pivot_CommonImage.CommonImage_Columns"
+
+* series.extension[imaging-settings].extension[mr_image].extension[sequence_name] -> "OSIRIS_pivot_MRImage.MRImage_SequenceName"
+* series.extension[imaging-settings].extension[mr_image].extension[magnetic_field_strength] -> "OSIRIS_pivot_MRImage.MRImage_MagneticFieldStrength"
+* series.extension[imaging-settings].extension[mr_image].extension[mr_acquisition_type] -> "OSIRIS_pivot_MRImage.MRImage_MRAcquisitionType"
+* series.extension[imaging-settings].extension[mr_image].extension[repetition_time] -> "OSIRIS_pivot_MRImage.MRImage_RepetitionTime"
+* series.extension[imaging-settings].extension[mr_image].extension[echo_time] -> "OSIRIS_pivot_MRImage.MRImage_EchoTime"
+* series.extension[imaging-settings].extension[mr_image].extension[imaging_frequency] -> "OSIRIS_pivot_MRImage.MRImage_ImagingFrequency"
+* series.extension[imaging-settings].extension[mr_image].extension[flip_angle] -> "OSIRIS_pivot_MRImage.MRImage_FlipAngle"
+* series.extension[imaging-settings].extension[mr_image].extension[inversion_time] -> "OSIRIS_pivot_MRImage.MRImage_InversionTime"
+* series.extension[imaging-settings].extension[mr_image].extension[receive_coil_name] -> "OSIRIS_pivot_MRImage.MRImage_ReceiveCoilName" 
+
+
+* series.extension[imaging-settings].extension[ct_image].extension[kvp] -> "OSIRIS_pivot_CTImage.CTImage_KVp"
+* series.extension[imaging-settings].extension[ct_image].extension[xray_tube_current] -> "OSIRIS_pivot_CTImage.CTImage_XRayTubeCurrent"
+* series.extension[imaging-settings].extension[ct_image].extension[exposure_time] -> "OSIRIS_pivot_CTImage.CTImage_ExposureTime"
+* series.extension[imaging-settings].extension[ct_image].extension[spiral_pitch_factor] -> "OSIRIS_pivot_CTImage.CTImage_SpiralPitchFactor"
+* series.extension[imaging-settings].extension[ct_image].extension[filter_type] -> "OSIRIS_pivot_CTImage.CTImage_FilterType"
+* series.extension[imaging-settings].extension[ct_image].extension[convolution_kernel] -> "OSIRIS_pivot_CTImage.CTImage_ConvolutionKernel"
+
+* series.extension[imaging-settings].extension[pt_image].extension[attenuation_correction_method] -> ""
+* series.extension[imaging-settings].extension[pt_image].extension[reconstruction_method] -> ""
+* series.extension[imaging-settings].extension[pt_image].extension[scatter_correction_method] -> ""
+
+* series.extension[imaging-settings].extension[nm_image].extension[attenuation_correction_method] -> "OSIRIS_pivot_NMImage.NMImage_AttenuationCorrectionMethod"
+* series.extension[imaging-settings].extension[nm_image].extension[reconstruction_method] -> "OSIRIS_pivot_NMImage.NMImage_ReconstructionMethod"
+* series.extension[imaging-settings].extension[nm_image].extension[scatter_correction_method] -> "OSIRIS_pivot_NMImage.NMImage_ScatterCorrectionMethod"
+
+
+* series.extension[imaging-settings].extension[dx_image].extension[image_laterality] -> "OSIRIS_pivot_DXImage.DXImage_ImageLaterality"
+* series.extension[imaging-settings].extension[dx_image].extension[patient_orientation] -> "OSIRIS_pivot_DXImage.DXImage_PatientOrientation"
+* series.extension[imaging-settings].extension[dx_image].extension[kvp] -> "OSIRIS_pivot_DXImage.DXImage_KVP"
+* series.extension[imaging-settings].extension[dx_image].extension[exposure] -> "OSIRIS_pivot_DXImage.DXImage_Exposure"
+* series.extension[imaging-settings].extension[dx_image].extension[exposure_time] -> "OSIRIS_pivot_DXImage.DXImage_ExposureTime"
 
 
 /*
     ##########################
-    # DICOM <--> FHIR-OSIRIS #
+    # FHIR-OSIRIS  <--> DICOM #
     ##########################
 */
-Mapping: DicomToFhirImagingStudy
+Mapping: FhirToDicomImagingStudy
 Source: onco-imagingstudy
 Target: "ImagingStudy"
-Id: dicom-to-fhir-imaging-study
-Title: "Fhir-osiris to osiris"
+Id: fhir-osiris-to-dicom-imaging-study
+Title: "Fhir-osiris to Dicom"
 * -> "Imaging Study" "Imaging study description"
 
 * identifier -> "Dicom Tag (0020,000D)"
