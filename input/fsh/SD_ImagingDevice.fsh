@@ -26,9 +26,9 @@ Target: "Device"
 Id: fhir-osiris-imaging-device
 Title: "Fhir-osiris to osiris"
 * -> "Imaging Device" "Imaging device description"
-* manufacturer -> "Equipment.manufacturer"
-* version -> "Version of the software"
-* deviceName[manufacturer-name] -> "Equipement.Model_name"
+* manufacturer -> "OSIRIS_pivot_Equipment.Equipment_Manufacturer"
+* version -> "OSIRIS_pivot_Equipment.Equipment_SoftwareVersion"
+* deviceName -> "OSIRIS_pivot_Equipment.Equipment_ModelName"
 
 
 /*
@@ -43,6 +43,6 @@ Target: "ImagingDevice"
 Id: dicom-to-fhir-imaging-device
 Title: "Fhir-osiris to osiris"
 * -> "Imaging Device" "Imagind device description"
-* manufacturer -> "(0008,0070)"
-* version -> "(0018,1020)"
-* deviceName[manufacturer-name] -> "(0018,1090)"
+* manufacturer -> "Dicom Tag (0008,0070)"
+* version -> "Dicom Tag (0018,1020)"
+* deviceName -> "Dicom Tag (0018,1090)"
