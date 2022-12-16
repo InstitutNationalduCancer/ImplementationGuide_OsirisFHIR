@@ -16,7 +16,7 @@ Description:    "Description of a contrast product."
     ##########################
 */
 Mapping: FhirOSIRISImagingContrast
-Source: onco-imagingstudy-contrast
+Source: onco-biological-contrast
 Target: "Imaging Study Contrast"
 Id: fhir-osiris-imaging-contrast
 Title: "Fhir-osiris to osiris"
@@ -30,7 +30,7 @@ Title: "Fhir-osiris to osiris"
     ##########################
 */
 Mapping: DicomToFhirImagingContrast
-Source: onco-imagingstudy-contrast
+Source: onco-biological-contrast
 Target: "Imaging Study Injection"
 Id: dicom-to-fhir-imaging-contrast
 Title: "Fhir-osiris to Dicom"
