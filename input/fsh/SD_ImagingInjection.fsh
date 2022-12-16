@@ -4,6 +4,12 @@ Id:             onco-imagingstudy-injection
 Title:          "Imaging Study Injection"
 Description:    "Description of an imaging study injection."
 
+* medication[x] MS
+* medication[x] 1..1
+* medication[x] only Reference (ImagingContrast)
+
+
+
 * dosage MS
 * dosage 1..1
 
@@ -17,10 +23,7 @@ Description:    "Description of an imaging study injection."
 * effective[x] MS
 * effective[x] ^short = "Time of start of injection."
 
-* medication[x] MS
-* medication[x] 1..1
-* medication[x] only Reference (ImagingContrast)
-* medication[x] ^short = "Name of the radiopharmaceuticel."
+
 
 
 /*
