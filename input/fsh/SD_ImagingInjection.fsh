@@ -8,6 +8,11 @@ Description:    "Description of an imaging study injection."
 * medication[x] 0..1
 * medication[x] only Reference (ImagingContrast)
 
+* effective[x] MS
+* effective[x] 0..1
+* effective[x] ^short = "Start and end time of the injection"
+* effective[x] ^definition = "Start (Dicom Tag (0018,1042)) and end time (Dicom Tag (0018,1043)) of the injection."
+
 
 
 * dosage MS
@@ -20,8 +25,7 @@ Description:    "Description of an imaging study injection."
 * dosage.route 1..1
 * dosage.route ^short = "Administration route of contrast agent."
 
-* effective[x] MS
-* effective[x] ^short = "Time of start of injection."
+
 
 
 
