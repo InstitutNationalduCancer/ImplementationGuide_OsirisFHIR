@@ -6,6 +6,10 @@ Description:    "Qualification of the equipment used to acquire a series of imag
 
 
 * manufacturer MS
+* manufacturer 1..1
+
+
+
 * version MS
 * version 1..1
 
