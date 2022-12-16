@@ -44,7 +44,26 @@ Description:    "Description of the segmentation method used allowing the deffin
 * focus ^short = "File identifier"
 * focus ^definition =  "Uniquely identifies the referenced identifier or file name."
 
+/*
+    ##########################
+    # MAPPING OSIRIS <--> FHIR-OSIRIS #
+    ##########################
+*/
+Mapping: FhirOSIRISRoiSeqmentation
+Source: roi-segmentation
+Target: "ROI segmentation"
+Id: fhir-osiris-roi-segmentation
+Title: "Fhir-osiris to osiris"
+* -> "ROI segmentation" "ROI segmentation description"
 
+* subject -> "OSIRIS_pivot_ROISegmentation.Patient_Id"
+* partOf -> "OSIRIS_pivot_ROISegmentation.Series_Ref"
+* identifier[dicom] -> "OSIRIS_pivot_ROISegmentation.ROISegmentation_ReferencedSOPInstanceUID"
+* identifier[roi] -> "OSIRIS_pivot_ROISegmentation.ROISegmentation_ROINumber"
+* text -> "OSIRIS_pivot_ROISegmentation.ROISegmentation_ROIName"
+* note -> "OSIRIS_pivot_ROISegmentation.ROISegmentation_ROIDescription"
+* code.text -> "OSIRIS_pivot_ROISegmentation.ROISegmentation_ROIType"
+* focus -> "OSIRIS_pivot_ROISegmentation.ROISegmentation_ROIFilename"
 
 /*
     ##########################
@@ -55,10 +74,9 @@ Mapping: DicomToFhirRoiSeqmentation
 Source: roi-segmentation
 Target: "ROI segmentation"
 Id: dicom-to-fhir-roi-segmentation
-Title: "Fhir-osiris to osiris"
-
+Title: "Fhir-osiris to Dicom"
 * -> "ROI segmentation" "ROI segmentation description"
-* identifier -> "(3006,0084)"
+* identifier[dicom] -> "(0008,1155)"
+* identifier[roi] -> "(3006,0084)"
 * note -> "(3006,0028)"
 * text -> "(3006,0026)"
-* partOf -> "(0008,1150)"
