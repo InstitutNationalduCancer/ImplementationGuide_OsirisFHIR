@@ -49,22 +49,22 @@ Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS
 * identifier.value = "1.2.840.113654.2.70.1.264191517102522984763858507036706241396"
 * endpoint = Reference(fhir-osiris-example-imagingendpoint-mr)
 * description = "Unknown"
-* started = "	2008-05-17"
+* started = "2008-05-17"
 // * location = 
 * modality = UMLS#C0439673
 * numberOfSeries = 999999
 * status = http://hl7.org/fhir/imagingstudy-status#available
 
 * series.number = 604	
-* series.uid = ""
-* series.instance.sopClass.code = https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1#
-* series.instance.sopClass.display = "1.2.840.113654.2.70.1.113529323909702015163602886063558263046"
+* series.uid = "1.2.840.113654.2.70.1.113529323909702015163602886063558263046"
+* series.instance.sopClass.code = https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1#1.2.840.10008.5.1.4.1.1.4
+* series.instance.sopClass.display = "MR Image Storage"
 * series.modality = SeriesModalityCS#MR
 * series.description = "sFRAME 3"
 * series.bodySite = ICDO3#C50
 * series.started  = "2008-05-17"
 * series.numberOfInstances = 999999
-* series.performer.actor = Reference()
+* series.performer.actor = Reference(fhir-osiris-example-imagingdevice-mr)
 * series.extension[series-weightheigt].extension[patient_weight].valueDecimal = 90
 * series.extension[series-weightheigt].extension[patient_height].valueDecimal = 999999
 
@@ -78,14 +78,14 @@ Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS
 * series.extension[imaging-settings].extension[mr_image].extension[sequence_name].valueString = "Unknown"
 * series.extension[imaging-settings].extension[mr_image].extension[magnetic_field_strength].valueDecimal = 1.5
 * series.extension[imaging-settings].extension[mr_image].extension[mr_acquisition_type].valueString = "3D"
-* series.extension[imaging-settings].extension[mr_image].extension[repetition_time].valueDecimal = "5.49580001831054"
-* series.extension[imaging-settings].extension[mr_image].extension[echo_time].valueDecimal = "2.73"
-* series.extension[imaging-settings].extension[mr_image].extension[imaging_frequency].valueDecimal = "63.877401"
+* series.extension[imaging-settings].extension[mr_image].extension[repetition_time].valueDecimal = 5.49580001831054
+* series.extension[imaging-settings].extension[mr_image].extension[echo_time].valueDecimal = 2.73
+* series.extension[imaging-settings].extension[mr_image].extension[imaging_frequency].valueDecimal = 63.877401
 * series.extension[imaging-settings].extension[mr_image].extension[flip_angle].valueDecimal = 999999
 * series.extension[imaging-settings].extension[mr_image].extension[inversion_time].valueDecimal = 999999
 * series.extension[imaging-settings].extension[mr_image].extension[receive_coil_name].valueString = "SENSE-Breast16M"
 
-/*Instance: fhir-osiris-example-imagingstudy-pt-nm
+/* Instance: fhir-osiris-example-imagingstudy-pt-nm
 InstanceOf: OncoImagingStudy
 Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_CTImage.csv, OSIRIS_pivot_CommonImage.csv"
 
@@ -163,5 +163,5 @@ Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS
 * series.extension[imaging-settings].extension[dx_image].extension[patient_orientation] =
 * series.extension[imaging-settings].extension[dx_image].extension[kvp] =
 * series.extension[imaging-settings].extension[dx_image].extension[exposure] =
-* series.extension[imaging-settings].extension[dx_image].extension[exposure_time] = 
+* series.extension[imaging-settings].extension[dx_image].extension[exposure_time] = */
 
