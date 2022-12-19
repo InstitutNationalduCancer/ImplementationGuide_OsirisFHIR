@@ -109,59 +109,61 @@ Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS
 * series.bodySite = SCT#123169005
 * series.started  = "2004-01-27"
 * series.numberOfInstances = 999999
-* series.performer.actor = Reference()
+* series.performer.actor = Reference(fhir-osiris-example-imagingdevice-pt-nm)
 * series.extension[series-weightheigt].extension[patient_weight].valueDecimal = 58.0
 * series.extension[series-weightheigt].extension[patient_height].valueDecimal = 1.57
 
-* series.instance.uid = "1.3.6.1.4.1.14519.5.2.1.5168.1900.3093232958827533456166720956921.3.6.1.4.1.14519.5.2.1.5168.1900.232314510307931707150339993565"
+* series.instance.uid = "1.3.6.1.4.1.14519.5.2.1.5168.1900.232314510307931707150339993565"
 * series.extension[imaging-settings].extension[slice_thickness].valueString = "3.2700"
 * series.extension[imaging-settings].extension[pixel_spacing].valueString = "[5.46875, 5.46875]"
 //* series.extension[imaging-settings].extension[field_of_view].valueInteger = 999999
 * series.extension[imaging-settings].extension[rows].valueInteger = 128
 * series.extension[imaging-settings].extension[columns].valueInteger = 128
+* extension[imaging_injection].valueReference = Reference (fhir-osiris-example-injection-pt-nm)
 
 * series.extension[imaging-settings].extension[pt_nm_image].extension[attenuation_correction_method].valueString = "measured,, 0.096000 cm-1"
 * series.extension[imaging-settings].extension[pt_nm_image].extension[reconstruction_method].valueString = "OSEM"
 * series.extension[imaging-settings].extension[pt_nm_image].extension[scatter_correction_method].valueString = "Convolution subtraction"
 
 
-/*Instance: fhir-osiris-example-imagingstudy-dx
+Instance: fhir-osiris-example-imagingstudy-dx
 InstanceOf: OncoImagingStudy
 Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_CTImage.csv, OSIRIS_pivot_CommonImage.csv"
 
-* subject = Reference()
-* reasonReference = Reference()
-* identifier.value = ""
-* endpoint = Reference()
-* description = ""
-* started = ""
+* subject = Reference(fhir-osiris-example-patient-dx)
+* reasonReference = Reference(fhir-osiris-example-analysis-dx)
+* identifier.value = "1.3.6.1.4.1.14519.5.2.1.6279.6001.175012972118199124641098335511"
+* endpoint = Reference(fhir-osiris-example-imagingendpoint-dx)
+* description = "Unknown"
+* started = "20000101"
 // * location = 
 * modality = UMLS#C0439673
-* numberOfSeries = 
+* numberOfSeries = 999999
 * status = http://hl7.org/fhir/imagingstudy-status#available
 
-* series.number = 
-* series.uid = ""
-* series.instance.sopClass.code = https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1#
-* series.instance.sopClass.display = ""
-* series.modality = SeriesModalityCS#
+* series.number = 3000923
+* series.uid = "1.3.6.1.4.1.14519.5.2.1.6279.6001.141365756818074696859567662357"
+* series.instance.sopClass.code = https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1#1.2.840.10008.5.1.4.1.1.1.1
+* series.instance.sopClass.display = "Digital X-Ray Image Storage - For Presentation"
+* series.modality = SeriesModalityCS#DX
 * series.description = "Unknown"
-* series.bodySite = ICDO3#
-* series.started  = ""
+* series.bodySite = ICDO3#C76.1
+* series.started  = "2000-01-01"
 * series.numberOfInstances = 999999
 * series.performer.actor = Reference()
-* series.extension[series-weightheigt].extension[patient_weight].valueDecimal = 
-* series.extension[series-weightheigt].extension[patient_height].valueDecimal =
+* series.extension[series-weightheigt].extension[patient_weight].valueDecimal = 999999
+* series.extension[series-weightheigt].extension[patient_height].valueDecimal = 999999
 
-* series.instance.uid = ""
-* series.extension[imaging-settings].extension[slice_thickness].valueString = ""
-* series.extension[imaging-settings].extension[pixel_spacing].valueString = ""
-* series.extension[imaging-settings].extension[field_of_view].valueInteger =
-* series.extension[imaging-settings].extension[rows].valueInteger =
-* series.extension[imaging-settings].extension[columns].valueInteger =
-* series.extension[imaging-settings].extension[dx_image].extension[image_laterality] =
-* series.extension[imaging-settings].extension[dx_image].extension[patient_orientation] =
-* series.extension[imaging-settings].extension[dx_image].extension[kvp] =
-* series.extension[imaging-settings].extension[dx_image].extension[exposure] =
-* series.extension[imaging-settings].extension[dx_image].extension[exposure_time] = */
+* series.instance.uid = "1.3.6.1.4.1.14519.5.2.1.6279.6001.307896144859643716158189196068"
+* series.extension[imaging-settings].extension[slice_thickness].valueString = "Unknown"
+* series.extension[imaging-settings].extension[pixel_spacing].valueString = "Unknown"
+//* series.extension[imaging-settings].extension[field_of_view].valueInteger =
+* series.extension[imaging-settings].extension[rows].valueInteger = 2022
+* series.extension[imaging-settings].extension[columns].valueInteger = 2022
+
+* series.extension[imaging-settings].extension[dx_image].extension[image_laterality].valueString = "Unknown"
+* series.extension[imaging-settings].extension[dx_image].extension[patient_orientation].valueString = "['P', 'F']"
+* series.extension[imaging-settings].extension[dx_image].extension[kvp].valueInteger = 999999
+* series.extension[imaging-settings].extension[dx_image].extension[exposure].valueInteger = 2
+* series.extension[imaging-settings].extension[dx_image].extension[exposure_time].valueInteger = 7
 

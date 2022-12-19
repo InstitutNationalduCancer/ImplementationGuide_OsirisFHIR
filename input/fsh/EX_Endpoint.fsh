@@ -24,3 +24,16 @@ Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv"
 * status = #active
 * connectionType = UMLS#C0439673  // unknown code
 * payloadType = UMLS#C0439673  // unknown code
+
+Instance: fhir-osiris-example-imagingendpoint-dx
+InstanceOf: imaging-pacs
+Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv"
+
+* address = "['Soft-tissue-Sarcoma/LIDC-IDRI-0001/01-01-2000-NA-NA-35511/3000923.000000-NA-62357/1-1.dcm']"
+* status = #active
+* connectionType = UMLS#C0439673  // unknown code
+* payloadType = UMLS#C0439673  // unknown code
+
+
+
+	

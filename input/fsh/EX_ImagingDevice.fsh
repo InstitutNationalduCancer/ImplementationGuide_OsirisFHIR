@@ -12,9 +12,6 @@ Description: "Example of Imaging Study from OSIRIS_pivot_Equipment.csv"
 
 * manufacturer = "Equipment_Manufacturer"
 * version.value = "3.2.3"
-<<<<<<< HEAD
-* deviceName.name = "Achieva"
-=======
 * deviceName.name = "Achieva"
 
 Instance: fhir-osiris-example-imagingdevice-pt-nm
@@ -24,4 +21,3 @@ Description: "Example of Imaging Study from OSIRIS_pivot_Equipment.csv"
 * manufacturer = "GE MEDICAL SYSTEMS"
 * version.value = "41.04"
 * deviceName.name = "Discovery ST" 
->>>>>>> bc69586 (update example for pt-nm)
