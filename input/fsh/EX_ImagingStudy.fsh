@@ -113,7 +113,7 @@ Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS
 * series.extension[series-weightheigt].extension[patient_weight].valueDecimal = 58.0
 * series.extension[series-weightheigt].extension[patient_height].valueDecimal = 1.57
 
-* series.instance.uid = "1.3.6.1.4.1.14519.5.2.1.5168.1900.232314510307931707150339993565"
+* series.instance.uid = "1.3.6.1.4.1.14519.5.2.1.5168.1900.309323295882753345616672095692"
 * series.extension[imaging-settings].extension[slice_thickness].valueString = "3.2700"
 * series.extension[imaging-settings].extension[pixel_spacing].valueString = "[5.46875, 5.46875]"
 //* series.extension[imaging-settings].extension[field_of_view].valueInteger = 999999
