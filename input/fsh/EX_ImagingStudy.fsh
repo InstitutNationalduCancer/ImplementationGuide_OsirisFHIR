@@ -29,7 +29,7 @@ Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS
 * series.instance.uid = "1.3.12.2.1107.5.8.15.131606.30000020020620243975600001109"
 * series.extension[imaging-settings].extension[slice_thickness].valueString = "1.5"
 * series.extension[imaging-settings].extension[pixel_spacing].valueString = "[0.63671875, 0.63671875]"
-* series.extension[imaging-settings].extension[field_of_view].valueInteger = 999999
+//* series.extension[imaging-settings].extension[field_of_view].valueInteger = 999999
 * series.extension[imaging-settings].extension[rows].valueInteger = 512
 * series.extension[imaging-settings].extension[columns].valueInteger = 512
 
@@ -71,7 +71,7 @@ Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS
 * series.instance.uid = "1.2.840.113654.2.70.1.208881666336949156802141584133456920873"
 * series.extension[imaging-settings].extension[slice_thickness].valueString = "2"
 * series.extension[imaging-settings].extension[pixel_spacing].valueString = "[0.75, 0.75]"
-* series.extension[imaging-settings].extension[field_of_view].valueInteger = 999999
+//* series.extension[imaging-settings].extension[field_of_view].valueInteger = 999999
 * series.extension[imaging-settings].extension[rows].valueInteger = 480
 * series.extension[imaging-settings].extension[columns].valueInteger = 480
 
@@ -85,47 +85,47 @@ Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS
 * series.extension[imaging-settings].extension[mr_image].extension[inversion_time].valueDecimal = 999999
 * series.extension[imaging-settings].extension[mr_image].extension[receive_coil_name].valueString = "SENSE-Breast16M"
 
-/* Instance: fhir-osiris-example-imagingstudy-pt-nm
+Instance: fhir-osiris-example-imagingstudy-pt-nm
 InstanceOf: OncoImagingStudy
 Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_CTImage.csv, OSIRIS_pivot_CommonImage.csv"
 
-* subject = Reference()
-* reasonReference = Reference()
-* identifier.value = ""
-* endpoint = Reference()
-* description = ""
-* started = ""
+* subject = Reference(fhir-osiris-example-patient-pt-nm)
+* reasonReference = Reference(fhir-osiris-example-patient-pt-nm)
+* identifier.value = "1.3.6.1.4.1.14519.5.2.1.5168.1900.291490762800233473213844289511"
+* endpoint = Reference(fhir-osiris-example-imagingendpoint-pt-nm)
+* description = "CT PET with registered MR	"
+* started = "2004-01-27"
 // * location = 
 * modality = UMLS#C0439673
-* numberOfSeries = 
+* numberOfSeries = 999999
 * status = http://hl7.org/fhir/imagingstudy-status#available
 
-* series.number = 
-* series.uid = ""
-* series.instance.sopClass.code = https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1#
-* series.instance.sopClass.display = ""
-* series.modality = SeriesModalityCS#
-* series.description = "Unknown"
-* series.bodySite = ICDO3#
-* series.started  = ""
+* series.number = 4	 
+* series.uid = "1.3.6.1.4.1.14519.5.2.1.5168.1900.250501927430896548137411991862"
+* series.instance.sopClass.code = https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1#1.2.840.10008.5.1.4.1.1.128
+* series.instance.sopClass.display = "Positron Emission Tomography Image Storage"
+* series.modality = SeriesModalityCS#PT
+* series.description = "LEGS_2D_AC PET CT with registered MR"
+* series.bodySite = SCT#123169005
+* series.started  = "2004-01-27"
 * series.numberOfInstances = 999999
 * series.performer.actor = Reference()
-* series.extension[series-weightheigt].extension[patient_weight].valueDecimal = 
-* series.extension[series-weightheigt].extension[patient_height].valueDecimal =
+* series.extension[series-weightheigt].extension[patient_weight].valueDecimal = 58.0
+* series.extension[series-weightheigt].extension[patient_height].valueDecimal = 1.57
 
-* series.instance.uid = ""
-* series.extension[imaging-settings].extension[slice_thickness].valueString = ""
-* series.extension[imaging-settings].extension[pixel_spacing].valueString = ""
-* series.extension[imaging-settings].extension[field_of_view].valueInteger =
-* series.extension[imaging-settings].extension[rows].valueInteger =
-* series.extension[imaging-settings].extension[columns].valueInteger =
+* series.instance.uid = "1.3.6.1.4.1.14519.5.2.1.5168.1900.3093232958827533456166720956921.3.6.1.4.1.14519.5.2.1.5168.1900.232314510307931707150339993565"
+* series.extension[imaging-settings].extension[slice_thickness].valueString = "3.2700"
+* series.extension[imaging-settings].extension[pixel_spacing].valueString = "[5.46875, 5.46875]"
+//* series.extension[imaging-settings].extension[field_of_view].valueInteger = 999999
+* series.extension[imaging-settings].extension[rows].valueInteger = 128
+* series.extension[imaging-settings].extension[columns].valueInteger = 128
 
-* series.extension[imaging-settings].extension[pt_nm_image].extension[attenuation_correction_method] =
-* series.extension[imaging-settings].extension[pt_nm_image].extension[reconstruction_method] =
-* series.extension[imaging-settings].extension[pt_nm_image].extension[scatter_correction_method] =
+* series.extension[imaging-settings].extension[pt_nm_image].extension[attenuation_correction_method].valueString = "measured,, 0.096000 cm-1"
+* series.extension[imaging-settings].extension[pt_nm_image].extension[reconstruction_method].valueString = "OSEM"
+* series.extension[imaging-settings].extension[pt_nm_image].extension[scatter_correction_method].valueString = "Convolution subtraction"
 
 
-Instance: fhir-osiris-example-imagingstudy-dx
+/*Instance: fhir-osiris-example-imagingstudy-dx
 InstanceOf: OncoImagingStudy
 Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_CTImage.csv, OSIRIS_pivot_CommonImage.csv"
 
