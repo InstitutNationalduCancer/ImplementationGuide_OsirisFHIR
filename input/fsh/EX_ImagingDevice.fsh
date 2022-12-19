@@ -20,4 +20,4 @@ Description: "Example of Imaging Study from OSIRIS_pivot_Equipment.csv"
 
 * manufacturer = "GE MEDICAL SYSTEMS"
 * version.value = "41.04"
-* deviceName.name = "Discovery ST"
+* deviceName.name = "Discovery ST" 
