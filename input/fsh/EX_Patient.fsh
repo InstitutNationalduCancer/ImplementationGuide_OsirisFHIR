@@ -14,6 +14,11 @@ InstanceOf: OncoPatient
 Description: "Example of Patient from OSIRIS_pivot_Patient.csv"
 * id = "13"
 
+Instance: fhir-osiris-example-patient-mr
+InstanceOf: OncoPatient
+Description: "Example of Patient from OSIRIS_pivot_Patient.csv"
+* id = "24"
+
 Instance: fhir-osiris-provider-organization 
 InstanceOf: OncoOrganization
 Description: "Example of provider(organization) from OSIRIS_pivot_Patient.csv"
