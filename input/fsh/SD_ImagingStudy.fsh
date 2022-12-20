@@ -79,7 +79,6 @@ Description:    "Description of an imaging study."
 
 * series.bodySite MS
 * series.bodySite 0..1  
-* series.bodySite from Topography
 * series.bodySite ^short = "Part of the body examined"
 * series.bodySite ^definition = "Part of the body examined. Dicom Tag (0018,0015)"
 

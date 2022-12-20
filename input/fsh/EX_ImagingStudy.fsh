@@ -19,7 +19,7 @@ Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS
 * series.instance.sopClass.display = "CT Image Storage"
 * series.modality = SeriesModalityCS#CT
 * series.description = "Unknown"
-* series.bodySite = ICDO3#C76.1
+* series.bodySite = SCT#43799004
 * series.started  = "2020-02-06"
 * series.numberOfInstances = 999999
 * series.performer.actor = Reference(fhir-osiris-example-imagingdevice-ct)
@@ -61,7 +61,7 @@ Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS
 * series.instance.sopClass.display = "MR Image Storage"
 * series.modality = SeriesModalityCS#MR
 * series.description = "sFRAME 3"
-* series.bodySite = ICDO3#C50
+* series.bodySite = SCT#76752008
 * series.started  = "2008-05-17"
 * series.numberOfInstances = 999999
 * series.performer.actor = Reference(fhir-osiris-example-imagingdevice-mr)
@@ -147,7 +147,7 @@ Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS
 * series.instance.sopClass.display = "Digital X-Ray Image Storage - For Presentation"
 * series.modality = SeriesModalityCS#DX
 * series.description = "Unknown"
-* series.bodySite = ICDO3#C76.1
+* series.bodySite = SCT#43799004
 * series.started  = "2000-01-01"
 * series.numberOfInstances = 999999
 * series.performer.actor = Reference(fhir-osiris-example-imagingdevice-dx)
@@ -175,7 +175,7 @@ Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS
 * reasonReference = Reference(fhir-osiris-example-analysis-mr-2)
 * identifier.value = "1.3.6.1.4.1.14519.5.2.1.5168.1900.293144742514571789106915674609	"
 * endpoint = Reference(fhir-osiris-example-imagingendpoint-mr-2)
-* description = "CT PET with registered MR	"
+* description = "CT PET with registered MR"
 * started = "2003-12-12"
 // * location = 
 * modality = UMLS#C0439673
@@ -188,7 +188,7 @@ Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS
 * series.instance.sopClass.display = "MR Image Storage"
 * series.modality = SeriesModalityCS#MR
 * series.description = "Aligned_STIRtoPET_BOX CT PET with registered MR"
-* series.bodySite = ICDO3#C50
+* series.bodySite = SCT#76752008
 * series.started  = "2003-12-12"
 * series.numberOfInstances = 999999
 * series.performer.actor = Reference(fhir-osiris-example-imagingdevice-mr-2)
