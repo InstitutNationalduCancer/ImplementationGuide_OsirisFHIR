@@ -7,9 +7,9 @@ Description: "Example of Patient from OSIRIS_pivot_ROISegmentation.csv"
 * identifier[dicom].value = "" //* fictional: obligatory but variable not found in pivot file
 * identifier[roi].value = ""
 * partOf = Reference(fhir-osiris-example-imagingstudy)
-* code.text = ""
+* method = RadiomicsCS#DICOM
 * subject = Reference(fhir-osiris-example-patient)
-* focus = Reference(fhir-osiris-example-EndpointImaging)
+* identifier[file] = "Unknown"
 * note.text = "Poumon"
 * status = #registered // Not in pivot file but obligatory
 

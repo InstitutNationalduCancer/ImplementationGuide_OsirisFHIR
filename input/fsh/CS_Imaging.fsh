@@ -5,7 +5,7 @@ Description: "Imaging Code System"
 
 // Radiomics Criteria: Type of ROI Segmentation
 * #DICOM    "ROI Type DICOM"
-* #NIFTI    "ROI Type NIfTI"
+* #MASK    "ROI Type NIfTI"
 
 // Radiomics Criteria: LocalizationMethod
 * #Local "Local Method: Apply from a ROI"

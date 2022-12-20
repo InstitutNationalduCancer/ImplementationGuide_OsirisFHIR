@@ -16,12 +16,16 @@ Description:    "Description of the segmentation method used allowing the deffin
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice based on identifier pattern"
-* identifier contains dicom 1..* and
-                    roi 1..1
+* identifier contains dicom 1..* MS and
+                    roi 1..1 MS and
+                    file 1..1 MS
+
 * identifier[dicom] ^short = "Unique identifier of the DICOM object"
 * identifier[dicom] ^definition = "Unique identifier of the DICOM object. Dicom Tag (0008,1155)"
 * identifier[roi] ^short = "Unique identifier ROI"
 * identifier[roi] ^definition = "The region of interest identifier (ROI). Dicom Tag (3006,0084)"
+* identifier[file] ^short = "File identifier"
+* identifier[file]  ^definition =  "Uniquely identifies the referenced identifier or file name."
 
 * text MS
 * text ^short = "User-defined name for the ROI"
@@ -33,16 +37,12 @@ Description:    "Description of the segmentation method used allowing the deffin
 * note ^definition = "User-defined description for the ROI. Dicom tag (3006,0028)"
 * note 0..1
 
-* code.text MS 
+* code MS 
 * code 1..1
-* code.text ^short = "ROI Type"
-* code.text ^definition = "Type of ROI (e.g. RTStruct, binary mask)."
+* code from ROIType (required)
+* code ^short = "ROI Type"
+* code ^definition = "Type of ROI (e.g. RTStruct, binary mask)."
 
-* focus MS
-* focus 1..1
-* focus only Reference (imaging-pacs)
-* focus ^short = "File identifier"
-* focus ^definition =  "Uniquely identifies the referenced identifier or file name."
 
 /*
     ##########################
@@ -62,8 +62,8 @@ Title: "Fhir-osiris to osiris"
 * identifier[roi] -> "OSIRIS_pivot_ROISegmentation.ROISegmentation_ROINumber"
 * text -> "OSIRIS_pivot_ROISegmentation.ROISegmentation_ROIName"
 * note -> "OSIRIS_pivot_ROISegmentation.ROISegmentation_ROIDescription"
-* code.text -> "OSIRIS_pivot_ROISegmentation.ROISegmentation_ROIType"
-* focus -> "OSIRIS_pivot_ROISegmentation.ROISegmentation_ROIFilename"
+* code -> "OSIRIS_pivot_ROISegmentation.ROISegmentation_ROIType"
+* identifier[file] -> "OSIRIS_pivot_ROISegmentation.ROISegmentation_ROIFilename"
 
 /*
     ##########################
