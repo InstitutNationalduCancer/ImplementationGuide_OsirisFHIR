@@ -90,7 +90,7 @@ InstanceOf: OncoImagingStudy
 Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_CTImage.csv, OSIRIS_pivot_CommonImage.csv"
 
 * subject = Reference(fhir-osiris-example-patient-pt-nm)
-* reasonReference = Reference(fhir-osiris-example-patient-pt-nm)
+* reasonReference = Reference(fhir-osiris-example-analysis-pt-nm)
 * identifier.value = "1.3.6.1.4.1.14519.5.2.1.5168.1900.291490762800233473213844289511"
 * endpoint = Reference(fhir-osiris-example-imagingendpoint-pt-nm)
 * description = "CT PET with registered MR	"
@@ -119,7 +119,7 @@ Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS
 //* series.extension[imaging-settings].extension[field_of_view].valueInteger = 999999
 * series.extension[imaging-settings].extension[rows].valueInteger = 128
 * series.extension[imaging-settings].extension[columns].valueInteger = 128
-* extension[imaging_injection].valueReference = Reference (fhir-osiris-example-injection-pt-nm)
+* series.extension[imaging-settings].extension[imaging_injection].valueReference = Reference (fhir-osiris-example-injection-pt-nm)
 
 * series.extension[imaging-settings].extension[pt_nm_image].extension[attenuation_correction_method].valueString = "measured,, 0.096000 cm-1"
 * series.extension[imaging-settings].extension[pt_nm_image].extension[reconstruction_method].valueString = "OSEM"
@@ -135,7 +135,7 @@ Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS
 * identifier.value = "1.3.6.1.4.1.14519.5.2.1.6279.6001.175012972118199124641098335511"
 * endpoint = Reference(fhir-osiris-example-imagingendpoint-dx)
 * description = "Unknown"
-* started = "20000101"
+* started = "2000-01-01"
 // * location = 
 * modality = UMLS#C0439673
 * numberOfSeries = 999999
@@ -150,7 +150,7 @@ Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS
 * series.bodySite = ICDO3#C76.1
 * series.started  = "2000-01-01"
 * series.numberOfInstances = 999999
-* series.performer.actor = Reference()
+* series.performer.actor = Reference(fhir-osiris-example-imagingdevice-dx)
 * series.extension[series-weightheigt].extension[patient_weight].valueDecimal = 999999
 * series.extension[series-weightheigt].extension[patient_height].valueDecimal = 999999
 
@@ -166,4 +166,3 @@ Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS
 * series.extension[imaging-settings].extension[dx_image].extension[kvp].valueInteger = 999999
 * series.extension[imaging-settings].extension[dx_image].extension[exposure].valueInteger = 2
 * series.extension[imaging-settings].extension[dx_image].extension[exposure_time].valueInteger = 7
-
