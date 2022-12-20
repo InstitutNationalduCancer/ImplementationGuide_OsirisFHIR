@@ -2,9 +2,8 @@ Profile:        ImagingDevice
 Parent:         Device
 Id:             imaging-device
 Title:          "Imaging Device"
-Description:    "Description of an imaging device."
+Description:    "Qualification of the equipment used to acquire a series of images"
 
-* identifier ^short = "GEO Identifier of the platform"
 
 * manufacturer MS
 * manufacturer 1..1

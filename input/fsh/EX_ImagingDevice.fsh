@@ -10,7 +10,7 @@ Instance: fhir-osiris-example-imagingdevice-mr
 InstanceOf: imaging-device
 Description: "Example of Imaging Study from OSIRIS_pivot_Equipment.csv"
 
-* manufacturer = "Equipment_Manufacturer"
+* manufacturer = "Philips Medical Systems"
 * version.value = "3.2.3"
 * deviceName.name = "Achieva"
 
@@ -21,3 +21,11 @@ Description: "Example of Imaging Study from OSIRIS_pivot_Equipment.csv"
 * manufacturer = "GE MEDICAL SYSTEMS"
 * version.value = "41.04"
 * deviceName.name = "Discovery ST" 
+
+Instance: fhir-osiris-example-imagingdevice-dx
+InstanceOf: imaging-device
+Description: "Example of Imaging Study from OSIRIS_pivot_Equipment.csv"
+
+* manufacturer = "GE MEDICAL SYSTEMS"
+* version.value = "Ads Application Package VERSION ADS_28.2"
+* deviceName.name = "Revolution XQi ADS_28.2	"
