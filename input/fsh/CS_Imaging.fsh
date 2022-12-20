@@ -2,6 +2,7 @@ CodeSystem: RadiomicsCS
 Id: RadiomicsCS
 Title: "Imaging Code System"
 Description: "Imaging Code System"
+* ^url = "https://terminology.arkhn.com/radiomicsCS"
 
 // Radiomics Criteria: Type of ROI Segmentation
 * #DICOM    "ROI Type DICOM"
@@ -60,5 +61,18 @@ Description: "Requested SNOMED Codes Code System"
 * #373858009 "Radiotherapy course changed - acute radiotherapy toxicity (finding)"
 * #1259231006  "Radiotherapy course changed due to changes to target (finding)"
 * #1259232004  "Radiotherapy course changed due to change to organ at risk (finding)"   
+
+CodeSystem: SeriesModalityCS
+Id: SeriesModalityCS
+Title: "Series Modality Code System"
+Description: "Series Modality  Code System"
+* ^url = "https://terminology.arkhn.com/SeriesModalityCS"
+
+* #MR    "Magnetic Resonance Imaging"
+* #CT    "Computed Tomography Scanner"
+* #RTSTRUCT "Radiotherapy Structure Set"
+* #PT "Positron emission Tomography"
+* #DX "Digital X Ray"
+* #NM "Nuclear Medicine image"
 
 

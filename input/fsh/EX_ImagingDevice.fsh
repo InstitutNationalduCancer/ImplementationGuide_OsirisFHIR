@@ -28,4 +28,4 @@ Description: "Example of Imaging Study from OSIRIS_pivot_Equipment.csv"
 
 * manufacturer = "GE MEDICAL SYSTEMS"
 * version.value = "Ads Application Package VERSION ADS_28.2"
-* deviceName.name = "Revolution XQi ADS_28.2	" 
+* deviceName.name = "Revolution XQi ADS_28.2	"
