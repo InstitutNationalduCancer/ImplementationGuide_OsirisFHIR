@@ -166,3 +166,48 @@ Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS
 * series.extension[imaging-settings].extension[dx_image].extension[kvp].valueInteger = 999999
 * series.extension[imaging-settings].extension[dx_image].extension[exposure].valueInteger = 2
 * series.extension[imaging-settings].extension[dx_image].extension[exposure_time].valueInteger = 7
+
+Instance: fhir-osiris-example-imagingstudy-mri-2
+InstanceOf: OncoImagingStudy
+Description: "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_MRImage.csv, OSIRIS_pivot_CommonImage.csv"
+
+* subject = Reference(fhir-osiris-example-patient-mr-2)
+* reasonReference = Reference(fhir-osiris-example-analysis-mr-2)
+* identifier.value = "1.3.6.1.4.1.14519.5.2.1.5168.1900.293144742514571789106915674609	"
+* endpoint = Reference(fhir-osiris-example-imagingendpoint-mr-2)
+* description = "CT PET with registered MR	"
+* started = "2003-12-12"
+// * location = 
+* modality = UMLS#C0439673
+* numberOfSeries = 999999
+* status = http://hl7.org/fhir/imagingstudy-status#available
+
+* series.number = 90027	
+* series.uid = "1.3.6.1.4.1.14519.5.2.1.5168.1900.143977537292523598024281101036"
+* series.instance.sopClass.code = https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1#1.2.840.10008.5.1.4.1.1.4
+* series.instance.sopClass.display = "MR Image Storage"
+* series.modality = SeriesModalityCS#MR
+* series.description = "Aligned_STIRtoPET_BOX CT PET with registered MR"
+* series.bodySite = ICDO3#C50
+* series.started  = "2003-12-12"
+* series.numberOfInstances = 999999
+* series.performer.actor = Reference(fhir-osiris-example-imagingdevice-mr-2)
+* series.extension[series-weightheigt].extension[patient_weight].valueDecimal = 65.0
+* series.extension[series-weightheigt].extension[patient_height].valueDecimal = 999999
+
+* series.instance.uid = "1.3.6.1.4.1.14519.5.2.1.5168.1900.145447087104754814293313200434"
+* series.extension[imaging-settings].extension[slice_thickness].valueString = "3.2699585"
+* series.extension[imaging-settings].extension[pixel_spacing].valueString = "[0.976562, 0.976562]"
+//* series.extension[imaging-settings].extension[field_of_view].valueInteger = 999999
+* series.extension[imaging-settings].extension[rows].valueInteger = 123
+* series.extension[imaging-settings].extension[columns].valueInteger = 127
+
+* series.extension[imaging-settings].extension[mr_image].extension[sequence_name].valueString = "Unknown"
+* series.extension[imaging-settings].extension[mr_image].extension[magnetic_field_strength].valueDecimal = 999999
+* series.extension[imaging-settings].extension[mr_image].extension[mr_acquisition_type].valueString = "Unknown"
+* series.extension[imaging-settings].extension[mr_image].extension[repetition_time].valueDecimal = 999999
+* series.extension[imaging-settings].extension[mr_image].extension[echo_time].valueDecimal = 999999
+* series.extension[imaging-settings].extension[mr_image].extension[imaging_frequency].valueDecimal = 999999
+* series.extension[imaging-settings].extension[mr_image].extension[flip_angle].valueDecimal = 999999
+* series.extension[imaging-settings].extension[mr_image].extension[inversion_time].valueDecimal = 999999
+* series.extension[imaging-settings].extension[mr_image].extension[receive_coil_name].valueString = "Unknown"
