@@ -4,9 +4,6 @@ Id:             radiomics-features
 Title:          "Radiomics Features"
 Description:    "Description of the radiomics measurements described in IBSI nomenclature"
 
-* identifier MS 
-* identifier 1..1
-
 * focus MS
 * focus 1..1
 * focus only Reference(roi-segmentation)
