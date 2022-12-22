@@ -50,10 +50,11 @@ Description:    "Radiomics Criteria Settings."
     valueString 1..1 MS
 * extension[softwareName].extension[valueString].value[x] 1..1 MS
 
-* extension[softwareName] ^short = "Describe which software was used to compute image biomarkers"
+* extension[softwareName] ^short = "Software name"
+* extension[softwareName] ^definition = "Name of the software used to calculate the biomarkers image (IBSI 61)"
 * extension[softwareName].extension[code] ^short = "ISBI Code"
 * extension[softwareName].extension[code].valueCoding = IBSI#61
-* extension[softwareName].extension[valueString] ^short = "Name of the software"
+* extension[softwareName].extension[valueString] ^short = "Software name"
 * extension[softwareName].extension[valueString].value[x] only string
 
 /* 1.2 Software Version */
@@ -62,29 +63,34 @@ Description:    "Radiomics Criteria Settings."
     valueString 1..1 MS
 * extension[softwareVersion].extension[valueString].value[x] 1..1 MS
 
-* extension[softwareVersion] ^short = "Describe which software version was used to compute image biomarkers"
+* extension[softwareVersion] ^short = "Version name"
+* extension[softwareVersion] ^definition = "Version of the software used to calculate the biomarkers image (IBSI 61)"
 * extension[softwareVersion].extension[code] ^short = "ISBI Code"
 * extension[softwareVersion].extension[code].valueCoding = IBSI#61
-* extension[softwareVersion].extension[valueString] ^short = "Name of the version"
+* extension[softwareVersion].extension[valueString] ^short = "Version name"
 * extension[softwareVersion].extension[valueString].value[x] only string 
 
 /* 1.3 Localization Method */
-* extension[localizationMethod] ^short = "Apply from a ROI, Apply directly on image voxels: Local || Global"
+* extension[localizationMethod] ^short = "Location of the the method of calculation : Local || Global"
+* extension[localizationMethod] ^definition = "The field allows you to define whether the calculation method has been applied to the whole image (voxels of the image) or on a area of interest (ROI)."
 * extension[localizationMethod].valueCoding from VSLocalizationMethod (required)
 * extension[localizationMethod].valueCoding 1..1 MS
 
 /* 1.4 Calculation Window Matrix */
-* extension[windowMatrix] ^short = "Define the matrix of the calculation window"
+* extension[windowMatrix] ^short = "Calculation window"
+* extension[windowMatrix] ^definition = "Matrix of the calculation window (ex. 5x5x5 voxels)"
 * extension[windowMatrix].value[x] only string 
 * extension[windowMatrix] obeys windowsMatrix-if-localizationMethod-local
 * extension[windowMatrix] MS
 
 /* 1.5 Image Filter*/
-* extension[usedImageFilter] ^short = "Describe method used to filter images before calculation."
+* extension[usedImageFilter] ^short = "Method used to filter the images before calculation"
+* extension[usedImageFilter] ^definition = "Method used to filter the images before calculation"
 * extension[usedImageFilter].value[x] only string
 
 /* 1.6 Method Parameters Used */
-* extension[usedImageFilterParameters] ^short = "Define method parameters used to filter images before calculation"
+* extension[usedImageFilterParameters] ^short = "Parameters of the method"
+* extension[usedImageFilterParameters] ^definition = "Parameters of the method used to filter the images before the calculation "
 * extension[usedImageFilterParameters].value[x] only string
 * extension[usedImageFilterParameters] MS
 
@@ -94,10 +100,11 @@ Description:    "Radiomics Criteria Settings."
     valueString 1..1 MS
 * extension[distanceWeighting].extension[valueString].value[x] 1..1 MS
 
-* extension[distanceWeighting] ^short = "Define how CM, RLM, NGTDM and NGLDM weight distances, e.g. no weighting."
+* extension[distanceWeighting] ^short = "Distance weighting"
+* extension[distanceWeighting] ^definition = "Define how CM, RLM, NGTDM and NGLDM weight the distances, for example no weighting (IBSI 63)"
 * extension[distanceWeighting].extension[code] ^short = "ISBI Code"
 * extension[distanceWeighting].extension[code].valueCoding = IBSI#63
-* extension[distanceWeighting].extension[valueString] ^short = "Distance Weighting"
+* extension[distanceWeighting].extension[valueString] ^short = "Distance weighting"
 * extension[distanceWeighting].extension[valueString].value[x] only string 
 
 /* 1.8 Resampling Intensity Method */
@@ -106,7 +113,8 @@ Description:    "Radiomics Criteria Settings."
     valueCoding 1..1 MS
 * extension[discretisationMethod].extension[valueCoding].value[x] 1..1 MS
 
-* extension[discretisationMethod] ^short = "Describe the resampling intensity method"
+* extension[discretisationMethod] ^short = "Resampling intensity method"
+* extension[discretisationMethod] ^definition = "Resampling intensity method (IBSI 56a)"
 * extension[discretisationMethod].extension[code] ^short = "ISBI Code"
 * extension[discretisationMethod].extension[code].valueCoding = IBSI#56a
 * extension[discretisationMethod].extension[valueCoding] ^short = "Resampling intensity method"
@@ -119,14 +127,16 @@ Description:    "Radiomics Criteria Settings."
     valueDecimal 1..1 MS
 * extension[binSize].extension[valueDecimal].value[x] 1..1 MS
 
-* extension[binSize] ^short = "Describe the number of bins (FBN) or the bin size (FBS) used for discretisation."
+* extension[binSize] ^short = "Number of bins or size of bin"
+* extension[binSize] ^definition = "Number of bins (FBN), size of bins (FBS) for discretization (IBSI 56b)"
 * extension[binSize].extension[code] ^short = "ISBI Code"
 * extension[binSize].extension[code].valueCoding = IBSI#56b
 * extension[binSize].extension[valueDecimal] ^short = "Number (FBN) Or size (FBS) bins"
 * extension[binSize].extension[valueDecimal].value[x] only decimal 
 
 /* 1.10 Bounds */
-* extension[bounds] ^short = "Describe the bounds in intensity to perform discretization."
+* extension[bounds] ^short = "Bounds"
+* extension[bounds] ^definition = "Bounds in intensity to perform the discretization"
 * extension[bounds].value[x] only string
 * extension[bounds] obeys bounds-if-discretisationMethod-FBN
 * extension[bounds] MS
@@ -137,7 +147,8 @@ Description:    "Radiomics Criteria Settings."
     valueDecimal 1..1 MS
 * extension[lowestIntensity].extension[valueDecimal].value[x] 1..1 MS
 
-* extension[lowestIntensity] ^short = "Describe the lowest intensity in the first bin for FBS discretisation."
+* extension[lowestIntensity] ^short = "Lowest intensity of discretization of the first bin"
+* extension[lowestIntensity] ^definition = "Lowest intensity of the first bin for the FBS discretization (IBSI 56c)"
 * extension[lowestIntensity].extension[code] ^short = "ISBI Code"
 * extension[lowestIntensity].extension[code].valueCoding = IBSI#56c
 * extension[lowestIntensity].extension[valueDecimal] ^short = "Lowest Intensity"
@@ -150,7 +161,8 @@ Description:    "Radiomics Criteria Settings."
     valueDecimal 1..1 MS
 * extension[biggestIntensity].extension[valueDecimal].value[x] 1..1 MS
 
-* extension[biggestIntensity] ^short = "Describe the biggest intensity in the first bin for FBS discretisation."
+* extension[biggestIntensity] ^short = "Biggest intensity of discretization of the first bin"
+* extension[biggestIntensity] ^definition = "Biggest intensity of the last bin for the FBS discretization (IBSI 56c)"
 * extension[biggestIntensity].extension[code] ^short = "ISBI Code"
 * extension[biggestIntensity].extension[code].valueCoding = IBSI#56c
 * extension[biggestIntensity].extension[valueDecimal] ^short = "Biggest Intensity"
@@ -158,17 +170,20 @@ Description:    "Radiomics Criteria Settings."
 * extension[biggestIntensity] obeys biggestIntensity-if-discretisationMethod-FBS
 
 /* 1.13 Bounds Range Of Value After Discretisation */
-* extension[boundsRangeOfValueAfterDiscretisation] ^short = "Describe bound intensities after discretisation."
+* extension[boundsRangeOfValueAfterDiscretisation] ^short = "Bounds of the intensity value after discretization"
+* extension[boundsRangeOfValueAfterDiscretisation] ^definition = "Bounds of the intensity value after discretization"
 * extension[boundsRangeOfValueAfterDiscretisation].value[x] only string
 * extension[boundsRangeOfValueAfterDiscretisation] MS
 
 /* 14. Spatial Resampling Method */
-* extension[spatialResamplingMethod] ^short = "Describe the spatial resampling method"
+* extension[spatialResamplingMethod] ^short = "Spatial resampling method"
+* extension[spatialResamplingMethod] ^definition = "Spatial resampling method"
 * extension[spatialResamplingMethod].valueCoding from VSSpatialResamplingMethodAndInterpolationType (required)
 * extension[spatialResamplingMethod].valueCoding 1..1 MS
 
 /* 15. Spatial Resampling Values */
-* extension[spatialResamplingValues] ^short = "Describe spatial resampling values: x, y, z"
+* extension[spatialResamplingValues] ^short = "Spatial resampling values: x, y, z"
+* extension[spatialResamplingValues] ^definition = "Spatial resampling values: x, y, z"
 * extension[spatialResamplingValues].value[x] only string 
 * extension[spatialResamplingValues].value[x] MS
 
@@ -178,7 +193,8 @@ Description:    "Radiomics Criteria Settings."
     valueString 1..1 MS
 * extension[textureMatrixAggregation].extension[valueString].value[x] 1..1 MS
 
-* extension[textureMatrixAggregation] ^short = "Define how texture matrix based biomarkers were computed from underlying texture matrices."
+* extension[textureMatrixAggregation] ^short = "Description of the calculation of biomarkers based on texture matrices"
+* extension[textureMatrixAggregation] ^definition = "Define how texture matrix-based biomarkers were calculated from the underlying texture matrices (IBSI 62)"
 * extension[textureMatrixAggregation].extension[code] ^short = "ISBI Code"
 * extension[textureMatrixAggregation].extension[code].valueCoding = IBSI#62
 * extension[textureMatrixAggregation].extension[valueString] ^short = "Texture Matrix Aggregation"
