@@ -26,7 +26,7 @@ Description:    "Description of the radiomics measurements described in IBSI nom
 * code.coding.display ^definition = "Name of the radiomic measure in the IBSI nomenclature"
 * code.coding.display 1..1
 * code.coding.display MS
-* code.coding.code 0..1 
+* code.coding.code 1..1 
 * code.coding.code ^short = "Unique number"
 * code.coding.code ^definition = "Unique number in the IBSI nomenclature"
 
