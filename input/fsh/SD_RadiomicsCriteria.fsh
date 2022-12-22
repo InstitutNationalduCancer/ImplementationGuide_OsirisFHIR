@@ -250,3 +250,24 @@ Title: "Fhir-osiris to osiris"
 * extension[spatialResamplingMethod] -> "RadiomicsCriteria.RadiomicsCriteria_SpatialResamplingMethod"
 * extension[spatialResamplingValues] -> "RadiomicsCriteria.RadiomicsCriteria_SpatialResamplingValues"	
 * extension[textureMatrixAggregation] -> "RadiomicsCriteria.RadiomicsCriteria_TextureMatrixAggregation"
+
+/*
+    ##########################
+    # FHIR-OSIRIS <--> IBSI #
+    ##########################
+*/
+
+Mapping: FhirOSIRISIBSI-RadiomicsCriteria
+Source: radiomics-criteria-settings
+Target: "RadiomicsCriteria"
+Id: fhir-osiris-ibsi-RadiomicsCriteria
+Title: "Fhir-osiris to ibsi"
+
+* extension[softwareName] -> "IBSI 61"
+* extension[softwareVersion] -> "IBSI 61"
+* extension[distanceWeighting] -> "IBSI 63"
+* extension[discretisationMethod] -> "IBSI 56a"
+* extension[binSize] -> "IBSI 56b"
+* extension[lowestIntensity] -> "IBSI 56c"
+* extension[biggestIntensity] -> "IBSI 56c"
+* extension[textureMatrixAggregation] -> "IBSI 62"

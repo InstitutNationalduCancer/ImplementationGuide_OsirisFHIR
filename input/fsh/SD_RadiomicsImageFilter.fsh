@@ -96,5 +96,17 @@ Title: "Fhir-osiris to osiris"
 * extension[intensityRounding] -> "RadiomicsImageFilter.RadiomicsImageFilter_IntensityRounding"
 * extension[boundaryCondition] -> "RadiomicsImageFilter.RadiomicsImageFilter_BoundaryCondition"
 
+/*
+    ##########################
+    # FHIR-OSIRIS <--> IBSI #
+    ##########################
+*/
 
+Mapping: FhirOSIRISIBSI-RadiomicsImageFilter
+Source: radiomics-image-filters-settings
+Target: "RadiomicsImageFilters"
+Id: fhir-osiris-ibsi-RadiomicsImageFilters
+Title: "Fhir-osiris to ibsi"
+
+* extension[intensityRounding] -> "IBSI 52"
 
