@@ -36,10 +36,6 @@ Description:    "Description of the radiomics measurements described in IBSI nom
 * value[x] ^short = "Value"
 * value[x] ^definition = "Value"
 
-* note MS
-* note 0..1
-* note ^short = "Radiomics Feature Description. References"
-
 /*
     ##########################
     # FHIR-OSIRIS <--> OSIRIS #
