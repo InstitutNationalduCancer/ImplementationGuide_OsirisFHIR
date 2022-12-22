@@ -25,13 +25,13 @@ Id:             radiomics-image-filters-settings
 Title:          "Radiomics Image Filters Settings"
 Description:    "Radiomics Image Filters Settings."
 * extension contains
-    softwareName 1..1 and
-    softwareVersion 1..1 and
-    filterMethod 0..1 and
-    filterType 0..1 and
-    filterInterpolation 0..1 and
-    intensityRounding 0..1 and
-    boundaryCondition 0..1
+    softwareName 1..1 MS and
+    softwareVersion 1..1 MS and
+    filterMethod 0..1 MS and
+    filterType 0..1 MS and
+    filterInterpolation 0..1 MS and
+    intensityRounding 0..1 MS and
+    boundaryCondition 0..1 MS
 
 /* 2.1 Software Name*/
 * extension[softwareName] ^short = "Software name"
@@ -60,8 +60,8 @@ Description:    "Radiomics Image Filters Settings."
 
 /* 2.6 Intensity Rounding */
 * extension[intensityRounding].extension contains
-    code 1..1 and
-    valueString 1..1
+    code 1..1 MS and
+    valueString 1..1 MS
 
 * extension[intensityRounding] ^short = "Rounding of fractional Hounsfield units"
 * extension[intensityRounding] ^definition = "Field to describe the fractional Hounsfield units rounded to integer values after interpolation (IBSI 52)"
