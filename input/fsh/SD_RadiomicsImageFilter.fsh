@@ -9,10 +9,6 @@ Description:    "Filtering parameters used for the imaging analysis"
 * identifier MS 
 * identifier 1..1
 
-* focus MS
-* focus 1..1
-* focus only Reference(roi-segmentation)
-
 * partOf MS
 * partOf 1..1
 * partOf only Reference(onco-imagingstudy)

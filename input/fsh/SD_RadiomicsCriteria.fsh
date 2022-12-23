@@ -14,9 +14,9 @@ Description:    "Description of the criteria used for the biomarkers calculation
 * focus 1..1
 * focus only Reference(roi-segmentation)
 
-* partOf MS
-* partOf 1..1
-* partOf only Reference(onco-imagingstudy)
+* hasMember MS
+* hasMember 1..1
+* hasMember only Reference(radiomics-Image-filters)
 
 * code = LNC#85430-7
 

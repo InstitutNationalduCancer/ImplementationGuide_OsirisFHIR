@@ -4,7 +4,6 @@ Description: "Example of Patient from OSIRIS_pivot_RadiomicsImageFilter.csv"
 
 * subject = Reference(fhir-osiris-example-patient)
 * partOf = Reference(fhir-osiris-example-imagingstudy)
-* focus = Reference(fhir-osiris-example-ROISegmentation)
 * identifier.value = "1"
 * status = #final // Not in pivot file but obligatory
 * extension[radiomics-image-filters-settings].extension[softwareName].valueString = "PyRadiomics"
