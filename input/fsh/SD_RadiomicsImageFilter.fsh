@@ -66,7 +66,7 @@ Description:    "Radiomics Image Filters Settings."
 * extension[intensityRounding] ^short = "Rounding of fractional Hounsfield units"
 * extension[intensityRounding] ^definition = "Field to describe the fractional Hounsfield units rounded to integer values after interpolation (IBSI 52)"
 * extension[intensityRounding].extension[code] ^short = "ISBI Code"
-* extension[intensityRounding].extension[code].valueCoding = IBSI#52
+* extension[intensityRounding].extension[code].valueCoding = IBSICS#52
 * extension[intensityRounding].extension[valueString] ^short = "Intensity Rounding"
 * extension[intensityRounding].extension[valueString].value[x] only string 
 * extension[intensityRounding].extension[valueString].value[x] 1..1

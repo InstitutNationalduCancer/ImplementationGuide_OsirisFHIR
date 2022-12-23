@@ -53,7 +53,7 @@ Description:    "Radiomics Criteria Settings."
 * extension[softwareName] ^short = "Software name"
 * extension[softwareName] ^definition = "Name of the software used to calculate the biomarkers image (IBSI 61)"
 * extension[softwareName].extension[code] ^short = "ISBI Code"
-* extension[softwareName].extension[code].valueCoding = IBSI#61
+* extension[softwareName].extension[code].valueCoding = IBSICS#61
 * extension[softwareName].extension[valueString] ^short = "Software name"
 * extension[softwareName].extension[valueString].value[x] only string
 
@@ -66,7 +66,7 @@ Description:    "Radiomics Criteria Settings."
 * extension[softwareVersion] ^short = "Version name"
 * extension[softwareVersion] ^definition = "Version of the software used to calculate the biomarkers image (IBSI 61)"
 * extension[softwareVersion].extension[code] ^short = "ISBI Code"
-* extension[softwareVersion].extension[code].valueCoding = IBSI#61
+* extension[softwareVersion].extension[code].valueCoding = IBSICS#61
 * extension[softwareVersion].extension[valueString] ^short = "Version name"
 * extension[softwareVersion].extension[valueString].value[x] only string 
 
@@ -103,7 +103,7 @@ Description:    "Radiomics Criteria Settings."
 * extension[distanceWeighting] ^short = "Distance weighting"
 * extension[distanceWeighting] ^definition = "Define how CM, RLM, NGTDM and NGLDM weight the distances, for example no weighting (IBSI 63)"
 * extension[distanceWeighting].extension[code] ^short = "ISBI Code"
-* extension[distanceWeighting].extension[code].valueCoding = IBSI#63
+* extension[distanceWeighting].extension[code].valueCoding = IBSICS#63
 * extension[distanceWeighting].extension[valueString] ^short = "Distance weighting"
 * extension[distanceWeighting].extension[valueString].value[x] only string 
 
@@ -116,7 +116,7 @@ Description:    "Radiomics Criteria Settings."
 * extension[discretisationMethod] ^short = "Resampling intensity method"
 * extension[discretisationMethod] ^definition = "Resampling intensity method (IBSI 56a)"
 * extension[discretisationMethod].extension[code] ^short = "ISBI Code"
-* extension[discretisationMethod].extension[code].valueCoding = IBSI#56a
+* extension[discretisationMethod].extension[code].valueCoding = IBSICS#56a
 * extension[discretisationMethod].extension[valueCoding] ^short = "Resampling intensity method"
 * extension[discretisationMethod].extension[valueCoding].valueCoding from VSIntensityResampling (required) 
 * extension[discretisationMethod].extension[valueCoding].valueCoding 1..1 MS
@@ -130,7 +130,7 @@ Description:    "Radiomics Criteria Settings."
 * extension[binSize] ^short = "Number of bins or size of bin"
 * extension[binSize] ^definition = "Number of bins (FBN), size of bins (FBS) for discretization (IBSI 56b)"
 * extension[binSize].extension[code] ^short = "ISBI Code"
-* extension[binSize].extension[code].valueCoding = IBSI#56b
+* extension[binSize].extension[code].valueCoding = IBSICS#56b
 * extension[binSize].extension[valueDecimal] ^short = "Number (FBN) Or size (FBS) bins"
 * extension[binSize].extension[valueDecimal].value[x] only decimal 
 
@@ -150,7 +150,7 @@ Description:    "Radiomics Criteria Settings."
 * extension[lowestIntensity] ^short = "Lowest intensity of discretization of the first bin"
 * extension[lowestIntensity] ^definition = "Lowest intensity of the first bin for the FBS discretization (IBSI 56c)"
 * extension[lowestIntensity].extension[code] ^short = "ISBI Code"
-* extension[lowestIntensity].extension[code].valueCoding = IBSI#56c
+* extension[lowestIntensity].extension[code].valueCoding = IBSICS#56c
 * extension[lowestIntensity].extension[valueDecimal] ^short = "Lowest Intensity"
 * extension[lowestIntensity].extension[valueDecimal].value[x] only decimal 
 * extension[lowestIntensity] obeys lowestIntensity-if-discretisationMethod-FBS
@@ -164,7 +164,7 @@ Description:    "Radiomics Criteria Settings."
 * extension[biggestIntensity] ^short = "Biggest intensity of discretization of the first bin"
 * extension[biggestIntensity] ^definition = "Biggest intensity of the last bin for the FBS discretization (IBSI 56c)"
 * extension[biggestIntensity].extension[code] ^short = "ISBI Code"
-* extension[biggestIntensity].extension[code].valueCoding = IBSI#56c
+* extension[biggestIntensity].extension[code].valueCoding = IBSICS#56c
 * extension[biggestIntensity].extension[valueDecimal] ^short = "Biggest Intensity"
 * extension[biggestIntensity].extension[valueDecimal].value[x] only decimal 
 * extension[biggestIntensity] obeys biggestIntensity-if-discretisationMethod-FBS
@@ -196,7 +196,7 @@ Description:    "Radiomics Criteria Settings."
 * extension[textureMatrixAggregation] ^short = "Description of the calculation of biomarkers based on texture matrices"
 * extension[textureMatrixAggregation] ^definition = "Define how texture matrix-based biomarkers were calculated from the underlying texture matrices (IBSI 62)"
 * extension[textureMatrixAggregation].extension[code] ^short = "ISBI Code"
-* extension[textureMatrixAggregation].extension[code].valueCoding = IBSI#62
+* extension[textureMatrixAggregation].extension[code].valueCoding = IBSICS#62
 * extension[textureMatrixAggregation].extension[valueString] ^short = "Texture Matrix Aggregation"
 * extension[textureMatrixAggregation].extension[valueString].value[x] only string 
 

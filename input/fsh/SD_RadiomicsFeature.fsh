@@ -18,11 +18,11 @@ Description:    "Description of the radiomics measurements described in IBSI nom
 
 * code MS
 * code 1..1
-* code from IBSI
-* code.coding.display ^short = "Radiomics Feature Name"
-* code.coding.display ^definition = "Name of the radiomic measure in the IBSI nomenclature"
-* code.coding.display 1..1
-* code.coding.display MS
+* code.text ^short = "Radiomics Feature Name"
+* code.text ^definition = "Name of the radiomic measure in the IBSI nomenclature"
+* code.text 1..1
+* code.text MS
+* code.coding.code from RadiomicsFeaturesVS (extensible)
 * code.coding.code 1..1 
 * code.coding.code ^short = "Unique number"
 * code.coding.code ^definition = "Unique number in the IBSI nomenclature"
@@ -45,5 +45,5 @@ Target: "RadiomicsFeatures"
 Id: fhir-osiris-RadiomicsFeatures
 Title: "Fhir-osiris to osiris"
 * code.coding.code -> "RadiomicsFeature_Id"
-* code.coding.display -> "RadiomicsFeature.RadiomicsFeature_Name"
+* code.text -> "RadiomicsFeature.RadiomicsFeature_Name"
 * value[x] -> "RadiomicsFeature.RadiomicsFeature_Value"

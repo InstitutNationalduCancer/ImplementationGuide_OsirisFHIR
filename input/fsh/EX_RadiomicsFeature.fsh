@@ -7,6 +7,6 @@ Description: "Example of Patient from OSIRIS_pivot_RadiomicsFeature.csv"
 * focus = Reference(fhir-osiris-example-ROISegmentation)
 * hasMember = Reference(fhir-osiris-example-RadiomicsCriteria)
 * status = 	http://hl7.org/fhir/observation-status#final
-* code.coding.code = IBSI#Q3CK
-* code.coding.display = "original_shape_Elongation"
+* code.coding.code = IBSICS#Q3CK
+* code.text = "original_shape_Elongation"
 * valueQuantity.value = 0.9124894758560576

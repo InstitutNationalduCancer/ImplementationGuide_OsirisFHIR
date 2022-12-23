@@ -10,7 +10,6 @@ Alias:   MEDDRA = http://terminology.hl7.org/CodeSystem/mdr
 Alias:   DICOM = https://dicom.nema.org/medical/dicom
 Alias:   DICOMod = https://dicom.nema.org/medical/dicom
 Alias:   DICOMcontrast = https://dicom.nema.org/medical/dicom
-Alias:   IBSI = https://ibsi.readthedocs.io/en/latest/
 Alias:   ICD10 = http://hl7.org/fhir/sid/ICD-10
 Alias:   DICOMTech = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique
 
