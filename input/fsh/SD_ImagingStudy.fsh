@@ -143,11 +143,11 @@ Description:    "Imaging Settings."
 
 * extension[slice_thickness].value[x] only string
 * extension[slice_thickness] ^short = "Thickness of the slice in mm"
-* extension[slice_thickness] ^definition = "Nominal thickness of the slice, in mm."
+* extension[slice_thickness] ^definition = "Nominal thickness of the slice, in mm. Dicom Tag (0018,0050)"
 
 * extension[pixel_spacing].value[x] only string
 * extension[pixel_spacing] ^short = "Pixel spacing"
-* extension[pixel_spacing] ^definition = "Physical distance between the centers of each two-dimensional pixel, specified by two numerical values."
+* extension[pixel_spacing] ^definition = "Physical distance between the centers of each two-dimensional pixel, specified by two numerical values.  Dicom Tag (0028,0030)"
 
 * extension[field_of_view].value[x] only integer
 * extension[field_of_view] ^short = "Field of view"
@@ -155,11 +155,11 @@ Description:    "Imaging Settings."
 
 * extension[rows].value[x] only integer
 * extension[rows] ^short = "Number of pixels in the direction of the row"
-* extension[rows] ^definition = "Number of pixels in the row direction of the reconstructed matrix."
+* extension[rows] ^definition = "Number of pixels in the row direction of the reconstructed matrix. Dicom Tag (0028,0010)"
 
 * extension[columns].value[x] only integer
 * extension[columns] ^short = "Number of pixels in the direction of the column"
-* extension[columns] ^definition = "Number of pixels in the column direction of the reconstructed matrix."
+* extension[columns] ^definition = "Number of pixels in the column direction of the reconstructed matrix. Dicom Tag (0028,0011)"
 
 * extension[imaging_injection].value[x] only Reference(onco-imagingstudy-injection)
 * extension[imaging_injection] ^short = "Qualification of the medical image contrast injection"
