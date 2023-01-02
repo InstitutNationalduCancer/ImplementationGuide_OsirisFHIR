@@ -404,7 +404,7 @@ Title: "Fhir-osiris to Dicom"
 * started -> "Dicom Tag (0008, 0032), (0008, 0022) or Dicom Tag (0008, 0021), (0008, 0023) or Dicom Tag (0008, 0031), (0008, 0033)"
 * location -> "Dicom Tag (0008,0080)"
 * modality -> "Dicom Tag (0008,0061)"
-* numberOfInstances -> "Dicom Tag (0008,0070)"
+* numberOfSeries -> "Dicom Tag (0020,1206)"
 
 * series.number -> "Dicom Tag (0020,0011)"
 * series.uid -> "Dicom Tag (0020,000E)"

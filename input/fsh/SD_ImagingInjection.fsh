@@ -22,7 +22,7 @@ Description:    "Description of an imaging study injection."
 * dosage ^definition = "This variable is mandatory only if the series is PT."
 * dosage.dose MS
 * dosage.dose 0..1
-* dosage.dose ^short = "Total amount of radionuclide injected"
+* dosage.dose ^short = "Radiopharmaceutical dose"
 * dosage.dose ^definition = "Radiopharmaceutical dose administered to the patient, measured in megabecquerels (Mbq) at the time the radiopharmaceutical treatment was started. Dicom Tag (0018,1074)"
 * dosage.route.coding.code = SCT#47625008
 * dosage.route.coding.display = "Intravenous use"
