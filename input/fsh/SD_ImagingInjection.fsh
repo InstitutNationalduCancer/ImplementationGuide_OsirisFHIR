@@ -13,7 +13,7 @@ Description:    "Description of an imaging study injection."
 * effectiveDateTime ^short = "Actual injection time for radiopharmaceutical"
 * effectiveDateTime ^definition = "Actual injection time for radiopharmaceutical. Actual time of administration of the radiopharmaceutical to the patient for imaging purposes. Dicom Tag (0018,1072). This variable is mandatory only if the series is PT."
 * effectivePeriod.start ^short = "Start of the injection for contrast agents"
-* effectivePeriod.start ^definition = "Start of the injection for contrast agents. Dicom Tag (0018,1043)"
+* effectivePeriod.start ^definition = "Start of the injection for contrast agents. Dicom Tag (0018,1042)"
 * effectivePeriod.end ^short = "End of the injection for contrast agents"
 * effectivePeriod.end ^definition = "End of the injection for contrast agents. Dicom Tag (0018,1043)"
 
