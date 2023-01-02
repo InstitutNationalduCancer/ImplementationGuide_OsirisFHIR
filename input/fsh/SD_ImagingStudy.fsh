@@ -414,6 +414,7 @@ Title: "Fhir-osiris to Dicom"
 * series.numberOfInstances -> "Dicom Tag (0020,1209)"
 * series.extension[series-weightheigt].extension[patient_weight] -> "Dicom Tag (0010,1030)"
 * series.extension[series-weightheigt].extension[patient_height] -> "Dicom Tag (0010,1020)"
+* series.started -> "Dicom Tag (0008,002a)/Dicom Tag (0008,0032)"
 
 * series.instance.uid -> "Dicom Tag (0008,0018)"
 * series.extension[imaging-settings].extension[slice_thickness] -> "Dicom Tag (0018,0050)"
