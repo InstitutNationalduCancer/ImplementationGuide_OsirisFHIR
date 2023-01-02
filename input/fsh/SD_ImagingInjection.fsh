@@ -5,11 +5,11 @@ Title:          "Imaging Study Injection"
 Description:    "Description of an imaging study injection."
 
 * medication[x] MS
-* medication[x] 1..1
+* medication[x] 0..1
 * medication[x] only Reference (ImagingContrast)
 
 * effective[x] MS
-* effective[x] 1..1
+* effective[x] 0..1
 * effectiveDateTime ^short = "Actual injection time for radiopharmaceutical"
 * effectiveDateTime ^definition = "Actual injection time for radiopharmaceutical. Actual time of administration of the radiopharmaceutical to the patient for imaging purposes. Dicom Tag (0018,1072). This variable is mandatory only if the series is PT."
 * effectivePeriod.start ^short = "Start of the injection for contrast agents"
@@ -21,7 +21,7 @@ Description:    "Description of an imaging study injection."
 * dosage 0..1
 * dosage ^definition = "This variable is mandatory only if the series is PT."
 * dosage.dose MS
-* dosage.dose 1..1
+* dosage.dose 0..1
 * dosage.dose ^short = "Total amount of radionuclide injected"
 * dosage.dose ^definition = "Radiopharmaceutical dose administered to the patient, measured in megabecquerels (Mbq) at the time the radiopharmaceutical treatment was started. Dicom Tag (0018,1074)"
 * dosage.route.coding.code = SCT#47625008
