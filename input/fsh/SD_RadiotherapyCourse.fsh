@@ -25,9 +25,9 @@ Description: "A summary of a course of radiotherapy planned or delivered to a pa
 * category.coding.code from vs-radiotherapy-category (required)
 
 * code = SCT#1217123003
+* code.coding.display = "Radiotherapy course of treatment (regime/therapy)"
 * code 1..1
 * code MS
-* code ^short = "Identification of the procedure (e.g. Radiotherapy Course of Treatment (regime/therapy) ) " //nomenclature
 
 * extension contains treatmentIntent named treatmentIntent 0..1 MS
 * extension[treatmentIntent] ^short = "Objective"
@@ -37,10 +37,10 @@ Description: "A summary of a course of radiotherapy planned or delivered to a pa
 * extension[treatmentTerminationReason] ^short = "Termination Reason"
 * extension[treatmentTerminationReason] ^definition = "A code explaining the reason for unplanned or premature end, or normal completion. It should be extracted from MOSAIQ/ARIA Record and Verify."
 
-* extension contains numberOfSession named numberOfSession 0..1 MS 
-* extension[numberOfSession] obeys numberOfSession-if-category-planned
-* extension[numberOfSession] ^short = "Number of Sessions"
-* extension[numberOfSession] ^definition = "Total number of fractions planned. Summarize from phases"
+* extension contains numberOfSessions named numberOfSessions 0..1 MS 
+* extension[numberOfSessions] obeys numberOfSession-if-category-planned
+* extension[numberOfSessions] ^short = "Number of Sessions"
+* extension[numberOfSessions] ^definition = "Total number of fractions planned. Summarize from phases"
 
 * performed[x] only Period
 * performed[x] 1..1
@@ -70,8 +70,8 @@ Description: "The treatment Termination Reason"
 * value[x] only CodeableConcept 
 * valueCodeableConcept from vs-radiotherapy-termination-reason (required)
 
-Extension:  NumberOfSession
-Id: numberOfSession
+Extension:  NumberOfSessions
+Id: numberOfSessions
 Title: "Number of Sessions"
 Description: "The number of sessions"
 * value[x] only unsignedInt
@@ -103,7 +103,7 @@ Title: "Fhir-osiris to osiris"
 * performedPeriod.end -> "OSIRIS_pivot_CourseRT.Course_EndDate"
 * extension[treatmentIntent] -> "OSIRIS_pivot_CourseRT.Course_TreatmentIntent"
 * extension[treatmentTerminationReason] -> "OSIRIS_pivot_CourseRT.Course_TerminationReason"
-* extension[numberOfSession] -> "OSIRIS_pivot_CourseRT.Course_NumberOfSessions"
+* extension[numberOfSessions] -> "OSIRIS_pivot_CourseRT.Course_NumberOfSessions"
 
 
 /*
@@ -118,6 +118,4 @@ Target: "RadiotherapyCourse"
 Id: fhir-osiris-dicomTag-RadiotherapyCourse
 Title: "Fhir-osiris to Dicom Tag"
 
-* extension[treatmentIntent] -> "Plan Intent (300A, 000A)"
-* extension[numberOfSession] -> "Number Of Fractions Planned (300A,0078)"
-
+* extension[treatmentIntent] -> "RT Plan/RT General Plan/Plan Intent (300A,000A)"

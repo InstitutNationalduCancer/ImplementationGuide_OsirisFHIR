@@ -10,7 +10,7 @@ Description: "Example of instance from OSIRIS_pivot_CourseRT.csv, OSIRIS_pivot_E
 * performedPeriod.end  = "2018-12-25"
 * extension[treatmentIntent].valueCodeableConcept.coding = #373808002
 /* extension[treatmentTerminationReason] / optional and missing in the pivot file */
-* extension[numberOfSession].valueUnsignedInt = 36
+* extension[numberOfSessions].valueUnsignedInt = 36
 * basedOn = Reference(fhir-osiris-example-treatment-radiotherapy)
 
 
@@ -26,7 +26,7 @@ Description: "Example of instance from OSIRIS_pivot_CourseRT.csv, OSIRIS_pivot_E
 * performedPeriod.end  = "2018-12-25"
 * extension[treatmentIntent].valueCodeableConcept.coding  = #373808002
 /* extension[treatmentTerminationReason] / optional and missing in the pivot file */
-* extension[numberOfSession].valueUnsignedInt = 36
+* extension[numberOfSessions].valueUnsignedInt = 36
 * basedOn = Reference(fhir-osiris-example-treatment-radiotherapy)
 
 
