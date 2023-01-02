@@ -2,7 +2,6 @@ Instance: fhir-osiris-example-RadiotherapyCourse-1
 InstanceOf: RadiotherapyCourseSummary
 Description: "Example of instance from OSIRIS_pivot_CourseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv, OSIRIS_pivot_DoseToVolumeRT.csv"
 
-* identifier.value = "1"
 * subject = Reference(fhir-osiris-example-patient)
 * status = #completed
 * category = RadiotherapyCS#planned
@@ -18,7 +17,6 @@ Instance: fhir-osiris-example-RadiotherapyCourse-2
 InstanceOf: RadiotherapyCourseSummary
 Description: "Example of instance from OSIRIS_pivot_CourseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv, OSIRIS_pivot_DoseToVolumeRT.csv"
 
-* identifier.value = "2"
 * subject = Reference(fhir-osiris-example-patient)
 * status = #completed
 * category = RadiotherapyCS#delivred

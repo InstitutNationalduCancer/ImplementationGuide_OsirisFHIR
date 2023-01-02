@@ -2,7 +2,6 @@ Instance: fhir-osiris-example-RadiotherapyPhase-1
 InstanceOf: RadiotherapyPhase
 Description: "Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv"
 
-* identifier.value = "1"
 * subject = Reference(fhir-osiris-example-patient)
 * partOf = Reference(fhir-osiris-example-RadiotherapyCourse-1)
 * status = #completed
@@ -15,7 +14,6 @@ Instance: fhir-osiris-example-RadiotherapyPhase-2
 InstanceOf: RadiotherapyPhase
 Description: "Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv"
 
-* identifier.value = "2"
 * subject = Reference(fhir-osiris-example-patient)
 * partOf = Reference(fhir-osiris-example-RadiotherapyCourse-1)
 * status = #completed
@@ -28,7 +26,6 @@ Instance: fhir-osiris-example-RadiotherapyPhase-3
 InstanceOf: RadiotherapyPhase
 Description: "Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv"
 
-* identifier.value = "3"
 * subject = Reference(fhir-osiris-example-patient)
 * partOf = Reference(fhir-osiris-example-RadiotherapyCourse-1)
 * status = #completed
@@ -41,7 +38,6 @@ Instance: fhir-osiris-example-RadiotherapyPhase-4
 InstanceOf: RadiotherapyPhase
 Description: "Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv"
 
-* identifier.value = "4"
 * subject = Reference(fhir-osiris-example-patient)
 * partOf = Reference(fhir-osiris-example-RadiotherapyCourse-2)
 * status = #completed
@@ -54,7 +50,6 @@ Instance: fhir-osiris-example-RadiotherapyPhase-5
 InstanceOf: RadiotherapyPhase
 Description: "Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv"
 
-* identifier.value = "5"
 * subject = Reference(fhir-osiris-example-patient)
 * partOf = Reference(fhir-osiris-example-RadiotherapyCourse-2)
 * status = #completed
@@ -67,7 +62,6 @@ Instance: fhir-osiris-example-RadiotherapyPhase-6
 InstanceOf: RadiotherapyPhase
 Description: "Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv"
 
-* identifier.value = "6"
 * subject = Reference(fhir-osiris-example-patient)
 * partOf = Reference(fhir-osiris-example-RadiotherapyCourse-6)
 * status = #completed

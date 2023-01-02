@@ -4,9 +4,6 @@ Id: radiotherapy-phase
 Title: "Radiotherapy Phase"
 Description: "Summary of the radiotherapy phases planned or delivered to a patient"
 
-* identifier 1..1
-* identifier MS
-
 * subject 1..1 
 * subject MS
 * subject only Reference(onco-patient)
@@ -26,7 +23,7 @@ Description: "Summary of the radiotherapy phases planned or delivered to a patie
 * code 1..1
 * code MS
 
-* extension contains numberOfFractions named numberOfFractions 0..1 MS 
+* extension contains numberOfFractions named numberOfFractions 1..1 MS 
 * extension[numberOfFractions] ^short = "Number of Fractions"
 * extension[numberOfFractions] ^definition = "Number of Fractions. If delivred, it should be extracted from MOSAIQ/ARIA Record and Verify. 
 If planned, it corresponds to Dicom Tag (300A,0078)"

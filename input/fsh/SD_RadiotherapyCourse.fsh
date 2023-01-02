@@ -14,9 +14,6 @@ Description: "A summary of a course of radiotherapy planned or delivered to a pa
 * subject only Reference(onco-patient)
 
 * basedOn only Reference(treatment)
-  
-* identifier 1..1
-* identifier MS
 
 * category 1..1
 * category MS
