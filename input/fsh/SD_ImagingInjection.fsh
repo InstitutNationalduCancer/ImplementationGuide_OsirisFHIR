@@ -5,11 +5,11 @@ Title:          "Imaging Study Injection"
 Description:    "Description of an imaging study injection."
 
 * medication[x] MS
-* medication[x] 0..1
+* medication[x] 1..1
 * medication[x] only Reference (ImagingContrast)
 
 * effective[x] MS
-* effective[x] 0..1
+* effective[x] 1..1
 * effectiveDateTime ^short = "Actual injection time for radiopharmaceutical"
 * effectiveDateTime ^definition = "Actual injection time for radiopharmaceutical. Actual time of administration of the radiopharmaceutical to the patient for imaging purposes. Dicom Tag (0018,1072). This variable is mandatory only if the series is PT."
 * effectivePeriod.start ^short = "Start of the injection for contrast agents"
