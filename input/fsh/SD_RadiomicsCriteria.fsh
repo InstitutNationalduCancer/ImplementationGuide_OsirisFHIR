@@ -89,7 +89,7 @@ Description:    "Radiomics Criteria Settings."
 * extension[usedImageFilter].value[x] only string
 
 /* 1.6 Method Parameters Used */
-* extension[usedImageFilterParameters] ^short = "Parameters of the method"
+* extension[usedImageFilterParameters] ^short = "Parameters of the used method"
 * extension[usedImageFilterParameters] ^definition = "Parameters of the method used to filter the images before the calculation "
 * extension[usedImageFilterParameters].value[x] only string
 * extension[usedImageFilterParameters] MS
