@@ -4,79 +4,74 @@ Id: radiotherapy-course-summary
 Title: "Radiotherapy course Summary"
 Description: "A summary of a course of radiotherapy planned or delivered to a patient"
 
-* extension contains 
-      radiotherapy-course-settings named radiotherapy-course-settings 1..1 
-    
-* identifier 1..1
-* identifier MS
-
-* category 1..1
-* category MS
-* category ^short = "Planned or Delivered"
-* category.coding.code from vs-radiotherapy-category (required)
-
-* code = SCT#1217123003
-* code 1..1
-* code MS
-* code ^short = "Identification of the procedure (e.g. Radiotherapy Course of Treatment (regime/therapy) ) " //nomenclature
+/* extension contains 
+    treatmentIntent named treatmentIntent 0..1 MS and
+    treatmentTerminationReason named treatmentTerminationReason 0..1 MS and 
+    numberOfSession named numberOfSession 0..1 MS */
 
 * subject 1..1 
 * subject MS
 * subject only Reference(onco-patient)
 
+* basedOn only Reference(treatment)
+
+* category 1..1
+* category MS
+* category ^short = "Type (planned or delivered)"
+* category ^definition = "Type (planned or delivered)"
+* category.coding.code from vs-radiotherapy-category (required)
+
+* code = SCT#1217123003
+* code.coding.display = "Radiotherapy course of treatment (regime/therapy)"
+* code 1..1
+* code MS
+
+* extension contains treatmentIntent named treatmentIntent 0..1 MS
+* extension[treatmentIntent] ^short = "Objective"
+* extension[treatmentIntent] ^definition = "A code explaining the objective (eg curative, palliative, preventive therapy). Dicom Tag (3001,000A)."
+
+* extension contains treatmentTerminationReason named treatmentTerminationReason 0..1 MS 
+* extension[treatmentTerminationReason] ^short = "Termination Reason"
+* extension[treatmentTerminationReason] ^definition = "A code explaining the reason for unplanned or premature end, or normal completion. It should be extracted from MOSAIQ/ARIA Record and Verify."
+
+* extension contains numberOfSessions named numberOfSessions 0..1 MS 
+* extension[numberOfSessions] obeys numberOfSession-if-category-planned
+* extension[numberOfSessions] ^short = "Number of Sessions"
+* extension[numberOfSessions] ^definition = "Total number of fractions planned. Summarize from phases"
+
 * performed[x] only Period
 * performed[x] 1..1
-* performed[x] ^definition = "The start and end period should be extracted from MOSAIQ/ARIA Record and Verify." 
-
-* basedOn only Reference(treatment) /* Missing actually in the pivot file */
-
-/* Missing ref to ImagingStudy */
+* performed[x] ^definition = "The start and end period " 
+* performedPeriod.start 1..1
+* performedPeriod.start ^short = "Start date"
+* performedPeriod.start ^definition = "Start date and time. They should be extracted from MOSAIQ/ARIA Record and Verify."
+* performedPeriod.end 1..1
+* performedPeriod.end ^short = "End date"
+* performedPeriod.end ^definition = "End date and time. They should be extracted from MOSAIQ/ARIA Record and Verify."
 
 // ################ 
-// ## Extensions ## 
-// ################
+// Extension     ##
+// ################ 
 
-Extension: RadiotherapyCourseSettings
-Id: radiotherapy-course-settings
-Title: "Radiotherapy Course Description"
-Description: "Radiotherapy Course Description"
-* extension contains 
-      treatmentIntent 0..1 MS and
-      treatmentTerminationReason 0..1 MS and
-      numberOfSession  0..1 MS and
-      quantityEnergyOrIsotope 1..1 MS and
-      nameEnergyOrIsotope 0..1 MS
+Extension:  TreatmentIntent
+Id: treatmentIntent
+Title: "Treatment Intent"
+Description: "The treatment Intent"
+* value[x] only CodeableConcept
+* valueCodeableConcept from vs-radiotherapy-intent (required)
 
+Extension:  TreatmentTerminationReason
+Id: treatmentTerminationReason
+Title: "Treatment Termination Reason"
+Description: "The treatment Termination Reason"
+* value[x] only CodeableConcept 
+* valueCodeableConcept from vs-radiotherapy-termination-reason (required)
 
-* extension[treatmentIntent].value[x] only CodeableConcept
-* extension[treatmentIntent].valueCodeableConcept from vs-radiotherapy-intent (required)
-* extension[treatmentIntent] ^short = "Objective"
-* extension[treatmentIntent] ^definition = "The objective of the radiotherapy course corresponds to the dicom path: RT Plan/RT General Plan/Plan Intent (3001,00A)."
-
-* extension[treatmentTerminationReason].value[x] only CodeableConcept 
-* extension[treatmentTerminationReason].valueCodeableConcept from vs-radiotherapy-termination-reason (required)
-* extension[treatmentTerminationReason] ^short = "Reason for unplanned or premature termination, or normal completion"
-* extension[treatmentTerminationReason] ^definition = "The termination reason of the treatment should be extracted from MOSAIQ/ARIA Record and Verify."
-
-
-* extension[numberOfSession].value[x] only unsignedInt
-* extension[numberOfSession] ^short = "Total number of planned or delivred treatment"
-* extension[numberOfSession] ^definition = "If planned, the number of sessions corresponds to the dicom path: RT Plan/RT Fraction Scheme/Number Of Fractions Planned (300A,0078).
-If delivred, the number of sessions should be extracted from MOSAIQ/ARIA Record and Verify."
-
-
-* extension[quantityEnergyOrIsotope].value[x] only Quantity
-* extension[quantityEnergyOrIsotope] ^short = "Quantity"
-* extension[quantityEnergyOrIsotope] ^definition = "Energy spectrum of a radiation characterized by a maximum value. For electrons, the maximum energy is given in MeV. For photons, the maximum acceleration voltage is given in MV or kV, although these are not energy units.
-The quantity of Energy or Isotope corresponds to the dicom path: RT Plan/RT Beams/Beam Sequence/Control Point Sequence/Nominal Beam Energy (300A,0114)."
-
-* extension[nameEnergyOrIsotope].value[x] only string
-* extension[nameEnergyOrIsotope] ^short = "Isotope Name"
-* extension[nameEnergyOrIsotope] ^definition = "The isotope used for radiotherapy"
-
-
-
-
+Extension:  NumberOfSessions
+Id: numberOfSessions
+Title: "Number of Sessions"
+Description: "The number of sessions"
+* value[x] only unsignedInt
 
 // ################ 
 // ## Invariants ## 
@@ -103,11 +98,10 @@ Title: "Fhir-osiris to osiris"
 * category -> "OSIRIS_pivot_CourseRT.Course_Type"
 * performedPeriod.start -> "OSIRIS_pivot_CourseRT.Course_StartDate"
 * performedPeriod.end -> "OSIRIS_pivot_CourseRT.Course_EndDate"
-* extension[radiotherapy-course-settings].extension[treatmentIntent] -> "OSIRIS_pivot_CourseRT.Course_TreatmentIntent"
-* extension[radiotherapy-course-settings].extension[treatmentTerminationReason] -> "OSIRIS_pivot_CourseRT.Course_TerminationReason"
-* extension[radiotherapy-course-settings].extension[numberOfSession] -> "OSIRIS_pivot_CourseRT.Course_NumberOfSessions"
-* extension[radiotherapy-course-settings].extension[quantityEnergyOrIsotope] -> "OSIRIS_pivot_EnergyOrIsotopeRT.EnergyOrIsotope_Quantity"
-* extension[radiotherapy-course-settings].extension[nameEnergyOrIsotope] -> "OSIRIS_pivot_EnergyOrIsotopeRT.EnergyOrIsotope_IsotopeName"
+* extension[treatmentIntent] -> "OSIRIS_pivot_CourseRT.Course_TreatmentIntent"
+* extension[treatmentTerminationReason] -> "OSIRIS_pivot_CourseRT.Course_TerminationReason"
+* extension[numberOfSessions] -> "OSIRIS_pivot_CourseRT.Course_NumberOfSessions"
+
 
 /*
     #############################
@@ -121,7 +115,4 @@ Target: "RadiotherapyCourse"
 Id: fhir-osiris-dicomTag-RadiotherapyCourse
 Title: "Fhir-osiris to Dicom Tag"
 
-* extension[radiotherapy-course-settings].extension[treatmentIntent] -> "Plan Intent (300A, 000A)"
-* extension[radiotherapy-course-settings].extension[numberOfSession] -> "Number Of Fractions Planned (300A,0078)"
-* extension[radiotherapy-course-settings].extension[quantityEnergyOrIsotope] -> "Nominal Beam Energy (300A, 0114)"
-
+* extension[treatmentIntent] -> "RT Plan/RT General Plan/Plan Intent (300A,000A)"

@@ -12,4 +12,4 @@ Description: "Example of Patient from OSIRIS_pivot_ROISegmentation.csv"
 * text.div = "<div>Poumon</div>"
 * text.status = #generated
 * code = RadiomicsCS#DICOM
-* status = #registered // Not in pivot file but obligatory
+* status = #registered

@@ -9,6 +9,11 @@ Description: "Example of Patient from OSIRIS_pivot_Patient.csv"
 * deceasedDateTime = "2017-11-29"
 * managingOrganization = Reference(fhir-osiris-provider-organization)
 
+Instance: fhir-osiris-example-patient-radiotherapy
+InstanceOf: OncoPatient
+Description: "Example of Patient for radiotherapy"
+* id = "Patient-XRTS-04-22A"
+
 Instance: fhir-osiris-example-patient-ct-scan
 InstanceOf: OncoPatient
 Description: "Example of Patient from OSIRIS_pivot_Patient.csv"
