@@ -28,7 +28,7 @@ Description: "A summary of a course of radiotherapy planned or delivered to a pa
 
 * extension contains treatmentIntent named treatmentIntent 0..1 MS
 * extension[treatmentIntent] ^short = "Objective"
-* extension[treatmentIntent] ^definition = "A code explaining the objective (eg curative, palliative, preventive therapy). Dicom Tag (3001,00A)."
+* extension[treatmentIntent] ^definition = "A code explaining the objective (eg curative, palliative, preventive therapy). Dicom Tag (3001,000A)."
 
 * extension contains treatmentTerminationReason named treatmentTerminationReason 0..1 MS 
 * extension[treatmentTerminationReason] ^short = "Termination Reason"
