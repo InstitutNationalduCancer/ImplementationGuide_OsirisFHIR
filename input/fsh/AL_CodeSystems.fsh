@@ -1,6 +1,6 @@
 // CodeSystem
 Alias:   OSIRIS = https://github.com/siric-osiris/OSIRIS
-Alias:   UMLS = http://www.nlm.nih.gov/research/umls
+Alias:   UMLS = http://terminology.hl7.org/CodeSystem/umls
 Alias:   SCT = http://snomed.info/sct
 Alias:   LNC = http://loinc.org
 Alias:   ICDO3 = http://hl7.org/fhir/sid/ICD-O-3
@@ -13,6 +13,7 @@ Alias:   DICOMcontrast = https://dicom.nema.org/medical/dicom
 Alias:   IBSI = https://ibsi.readthedocs.io/en/latest/index.html
 Alias:   ICD10 = http://hl7.org/fhir/sid/ICD-10
 Alias:   DICOMTech = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique
+Alias:   ENDPOINTstatus = 	http://hl7.org/fhir/ValueSet/endpoint-status
 
 // ValueSet
 Alias:   ATC = http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips 
