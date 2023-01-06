@@ -14,6 +14,7 @@ Description:    "Qualification of the equipment used to acquire a series of imag
 * deviceName.type = http://hl7.org/fhir/device-nametype#manufacturer-name
 * deviceName ^short = "Equipment model name"
 * deviceName ^definition = "Equipment model name. Dicom Tag (0008,1090)"
+* deviceName.name 1..1 MS
 
 * version MS
 * version 1..1

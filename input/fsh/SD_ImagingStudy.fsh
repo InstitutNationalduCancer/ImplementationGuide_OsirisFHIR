@@ -60,6 +60,7 @@ Description:    "Description of an imaging study."
 * series.number 0..1 
 * series.number ^short = "User number"
 * series.number ^definition = "User number to identify the series. Dicom Tag (0020,0011)"
+* series.number only unsignedInt
 
 * series.uid MS
 * series.uid 1..1 
@@ -68,7 +69,7 @@ Description:    "Description of an imaging study."
 
 * series.modality MS
 * series.modality 1..1
-* series.modality from DICOMod 
+* series.modality from DICOMod
 * series.modality ^short = "Modalities"
 * series.modality ^definition = "Type of equipment used to acquire data for the series. Dicom Tag (0008, 0060)"
 
@@ -141,22 +142,28 @@ Description:    "Imaging Settings."
     dx_image 0..1 and
     pt_nm_image 0..1
 
+* extension[slice_thickness].value[x] 1..1 MS
 * extension[slice_thickness].value[x] only string
 * extension[slice_thickness] ^short = "Thickness of the slice in mm"
 * extension[slice_thickness] ^definition = "Nominal thickness of the slice, in mm. Dicom Tag (0018,0050)"
 
+
+* extension[pixel_spacing].value[x] 1..1 MS
 * extension[pixel_spacing].value[x] only string
 * extension[pixel_spacing] ^short = "Pixel spacing"
 * extension[pixel_spacing] ^definition = "Physical distance between the centers of each two-dimensional pixel, specified by two numerical values.  Dicom Tag (0028,0030)"
 
+* extension[field_of_view].value[x]
 * extension[field_of_view].value[x] only integer
 * extension[field_of_view] ^short = "Field of view"
 * extension[field_of_view] ^definition = "The field of view (FOV) is defined as the dimensions of the exact anatomical region included in a scan in mm."
 
+* extension[rows].value[x] 1..1 MS
 * extension[rows].value[x] only integer
 * extension[rows] ^short = "Number of pixels in the direction of the row"
 * extension[rows] ^definition = "Number of pixels in the row direction of the reconstructed matrix. Dicom Tag (0028,0010)"
 
+* extension[columns].value[x] 1..1 MS
 * extension[columns].value[x] only integer
 * extension[columns] ^short = "Number of pixels in the direction of the column"
 * extension[columns] ^definition = "Number of pixels in the column direction of the reconstructed matrix. Dicom Tag (0028,0011)"
