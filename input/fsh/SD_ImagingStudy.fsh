@@ -44,7 +44,7 @@ Description:    "Description of an imaging study."
 
 * modality MS 
 * modality 1..*
-* modality from SeriesModalityCS
+* modality from VSModality
 * modality ^short = "Modalities"
 * modality ^definition = "List of all the modalities used. Dicom Tag (0008,0061)"
 
@@ -69,7 +69,7 @@ Description:    "Description of an imaging study."
 
 * series.modality MS
 * series.modality 1..1
-* series.modality from SeriesModalityCS
+* series.modality from VSModality
 * series.modality ^short = "Modalities"
 * series.modality ^definition = "Type of equipment used to acquire data for the series. Dicom Tag (0008, 0060)"
 
