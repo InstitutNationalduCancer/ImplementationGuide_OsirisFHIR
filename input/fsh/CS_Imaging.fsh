@@ -2,6 +2,7 @@ CodeSystem: RadiomicsCS
 Id: RadiomicsCS
 Title: "Imaging Code System"
 Description: "Imaging Code System"
+* ^url = "https://terminology.arkhn.com/radiomicsCS"
 
 // Radiomics Criteria: Type of ROI Segmentation
 * #DICOM    "ROI Type DICOM"
@@ -479,8 +480,6 @@ Description: "IBSI Code System"
 * #V530 "angle, phase or argument response map"
 * #F7DI "real"
 * #LI3Y "imaginary"
-
-
 * #52
 * #56a
 * #56b
@@ -488,3 +487,21 @@ Description: "IBSI Code System"
 * #61
 * #62
 * #63
+
+CodeSystem: SeriesModalityCS
+Id: SeriesModalityCS
+Title: "Series Modality Code System"
+Description: "Series Modality  Code System"
+* ^url = "https://terminology.arkhn.com/SeriesModalityCS"
+
+* #MR    "Magnetic Resonance Imaging"
+* #CT    "Computed Tomography Scanner"
+* #RTSTRUCT "Radiotherapy Structure Set"
+* #PT "Positron emission Tomography"
+* #DX "Digital X Ray"
+* #NM "Nuclear Medicine image"
+
+
+
+
+
