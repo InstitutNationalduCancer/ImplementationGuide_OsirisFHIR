@@ -14,6 +14,31 @@ InstanceOf: OncoPatient
 Description: "Example of Patient for radiotherapy"
 * id = "Patient-XRTS-04-22A"
 
+Instance: fhir-osiris-example-patient-ct-scan
+InstanceOf: OncoPatient
+Description: "Example of Patient from OSIRIS_pivot_Patient.csv"
+* id = "13"
+
+Instance: fhir-osiris-example-patient-mr
+InstanceOf: OncoPatient
+Description: "Example of Patient from OSIRIS_pivot_Patient.csv"
+* id = "24"
+
+Instance: fhir-osiris-example-patient-mr-2
+InstanceOf: OncoPatient
+Description: "Example of Patient from OSIRIS_pivot_Patient.csv"
+* id = "STS-010"
+
+Instance: fhir-osiris-example-patient-pt-nm
+InstanceOf: OncoPatient
+Description: "Example of Patient from OSIRIS_pivot_Patient.csv"
+* id = "STS-028"
+
+Instance: fhir-osiris-example-patient-dx
+InstanceOf: OncoPatient
+Description: "Example of Patient from OSIRIS_pivot_Patient.csv"
+* id = "LIDC-IDRI-0001"
+
 Instance: fhir-osiris-provider-organization 
 InstanceOf: OncoOrganization
 Description: "Example of provider(organization) from OSIRIS_pivot_Patient.csv"
