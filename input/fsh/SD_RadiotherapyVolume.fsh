@@ -21,7 +21,7 @@ Description: "A volume of the body treated by radiotherapy (plannes or delivered
 * locationQualifier 0..* MS
 	
 * description ^short = "Volume Description"
-* description ^definition = "A text description of the radiotherapy volume, which SHOULD contain any additional information above and beyond the location and locationQualifier that describe the volume."
+* description ^definition = "Description of the radiotherapy volume that may contain any additional information in addition to SNOMED codes."
 * description 0..1 MS
 
 /*
