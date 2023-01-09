@@ -16,6 +16,8 @@ RUN apk update \
     openjdk11 \
     bash
 
+# the following line is a fix for https://github.com/sass/dart-sass-embedded/issues/106#issuecomment-1374950950
+RUN gem install jekyll-sass-converter -v '~>2.0'
 RUN gem install jekyll
 RUN npm install -g fsh-sushi
 
