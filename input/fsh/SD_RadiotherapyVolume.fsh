@@ -7,26 +7,21 @@ Description: "A volume of the body treated by radiotherapy (plannes or delivered
 * patient MS
 * patient only Reference(onco-patient)
 
-* identifier ^short = "ROI identification number"
 * identifier 1..1 MS
-* identifier ^definition = "The ROI identification number corresponds to the dicom path: RT Structure Set/Structure Set/Structure Set ROI Sequence/ROI Number (3006,0022)."
+* identifier ^short = "ID"
+* identifier ^definition = " Identification number of the prescription volume. Dicom Tag (3006,0022) or Dicom Tag (300A,000B)"
 
-* morphology from RadiotherapyVolumeTypeVS (extensible)
-* morphology ^short = "Type of Radiotherapy Volume"
-* morphology 1..1 MS
-* morphology ^definition = "The type of Radiotherapy Volume corresponds to the dicom path: RT Structure Set/Structure Set/Structure Set ROI Sequence/ROI Name (3006,0026)."
 
-* location from Topography (required)
-* location ^short = "Codes describing the body locations where radiotherapy treatments can be directed."
+* location ^short = "Location"
 * location 1..1 MS
-* location ^definition = "The location should be extracted from MOSAIQ/ARIA Record and Verify."
+* location ^definition = "Codes describing the body locations where radiotherapy treatments can be directed. They should be extracted from MOSAIQ/ARIA Record and Verify."
 
-* locationQualifier from RadiotherapyTreatmentLocationQualifierVS
-* locationQualifier ^short = "Various modifiers that can be applied to body locations where radiotherapy treatments can be directed."
+* locationQualifier ^short = "Codes specifying the location"
+* locationQualifier ^definition = "Various modifiers that can be applied to body locations where radiotherapy treatments can be directed."
 * locationQualifier 0..* MS
 	
 * description ^short = "Volume Description"
-* description ^definition = "A text description of the radiotherapy volume, which SHOULD contain any additional information above and beyond the location and locationQualifier that describe the volume."
+* description ^definition = "Description of the radiotherapy volume that may contain any additional information in addition to SNOMED codes."
 * description 0..1 MS
 
 /*
@@ -42,7 +37,6 @@ Id: fhir-osiris-RadiotherapyVolume
 Title: "Fhir-osiris to osiris"
 
 * identifier -> "OSIRIS_pivot_VolumeRT.Volume_Identifier"
-* morphology  -> "OSIRIS_pivot_VolumeRT.Volume_Morphology"
 * location  -> "OSIRIS_pivot_VolumeRT.Volume_Location"
 * locationQualifier -> "OSIRIS_pivot_VolumeRT.Volume_LocationQualifier"
 * description -> "OSIRIS_pivot_VolumeRT.Volume_Description"
@@ -59,6 +53,6 @@ Target: "RadiotherapyVolume"
 Id: fhir-osiris-DicomTag-RadiotherapyVolume
 Title: "Fhir-osiris to Dicom Tag"
 
-* identifier -> "ROI Number (3006,0022)"
-* morphology  -> "ROI Name (3006,0026)"
+* identifier -> "RT Structure Set/Structure	Set/Structure Set ROI Sequence/ROI Number Attribute	(3006,0022) 
+Or RT Plan/RT General Plan/Treatment Sites Attribute (300A,000B)"
 
