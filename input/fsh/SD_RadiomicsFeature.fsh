@@ -25,6 +25,7 @@ Description:    "Description of the radiomics measurements described in IBSI nom
 * valueQuantity.value only decimal
 * value[x] ^short = "Value"
 * value[x] ^definition = "Value"
+* valueQuantity 1..1
 
 /*
     ##########################

@@ -33,26 +33,31 @@ Description:    "Radiomics Image Filters Settings."
 * extension[softwareName] ^short = "Software name"
 * extension[softwareName] ^definition = "Name of the software used"
 * extension[softwareName].value[x] only string
+* extension[softwareName].value[x] 1..1 MS
 
 /* 2.2 Software Version*/
 * extension[softwareVersion] ^short = "Version name"
 * extension[softwareVersion] ^definition = "Name of the version used."
 * extension[softwareVersion].value[x] only string
+* extension[softwareVersion].value[x] 1..1 MS
 
 /* 2.3 Filter Method */
 * extension[filterMethod] ^short = "Method of filter"
 * extension[filterMethod] ^definition = "Method of image filter"
 * extension[filterMethod].valueCoding from VSSFilterMethod (required)
+* extension[filterMethod].valueCoding  MS
 
 /* 2.4 Filter Type */
 * extension[filterType] ^short = "Type of filter"
 * extension[filterType] ^definition = "Type of image filter"
 * extension[filterType].valueCoding from VSSFilterType (required)
+* extension[filterType].valueCoding  MS
 
 /* 2.5 Interpolation Type */
 * extension[filterInterpolation] ^short = "Type of interpolation "
 * extension[filterInterpolation] ^definition = "Type of filter interpolation"
 * extension[filterInterpolation].valueCoding from VSSpatialResamplingMethodAndInterpolationType (required)
+* extension[filterInterpolation].valueCoding MS
 
 /* 2.6 Intensity Rounding */
 * extension[intensityRounding].extension contains
@@ -65,12 +70,13 @@ Description:    "Radiomics Image Filters Settings."
 * extension[intensityRounding].extension[code].valueCoding = IBSICS#52
 * extension[intensityRounding].extension[valueString] ^short = "Intensity Rounding"
 * extension[intensityRounding].extension[valueString].value[x] only string 
-* extension[intensityRounding].extension[valueString].value[x] 1..1
+* extension[intensityRounding].extension[valueString].value[x] 1..1 MS
 
 /* 2.7 Boundary Condition */
 * extension[boundaryCondition] ^short = "Limit condition"
 * extension[boundaryCondition] ^definition = "Limit condition"
 * extension[boundaryCondition].valueCoding from VSBoundaryCondition (required)
+* extension[boundaryCondition].valueCoding MS
 
 /*
     ##########################

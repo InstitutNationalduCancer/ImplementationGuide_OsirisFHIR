@@ -87,12 +87,13 @@ Description:    "Radiomics Criteria Settings."
 * extension[usedImageFilter] ^short = "Method used to filter the images before calculation"
 * extension[usedImageFilter] ^definition = "Method used to filter the images before calculation"
 * extension[usedImageFilter].value[x] only string
+* extension[usedImageFilter].value[x] 1..1 MS
 
 /* 1.6 Method Parameters Used */
 * extension[usedImageFilterParameters] ^short = "Parameters of the used method"
 * extension[usedImageFilterParameters] ^definition = "Parameters of the method used to filter the images before the calculation "
 * extension[usedImageFilterParameters].value[x] only string
-* extension[usedImageFilterParameters] MS
+* extension[usedImageFilterParameters] 1..1 MS
 
 /* 1.7 Distance Weighting */
 * extension[distanceWeighting].extension contains
@@ -139,7 +140,7 @@ Description:    "Radiomics Criteria Settings."
 * extension[bounds] ^definition = "Bounds in intensity to perform the discretization"
 * extension[bounds].value[x] only string
 * extension[bounds] obeys bounds-if-discretisationMethod-FBN
-* extension[bounds] MS
+* extension[bounds].value[x] MS
 
 /* 1.11 Lowest Intensity */
 * extension[lowestIntensity].extension contains
@@ -173,7 +174,7 @@ Description:    "Radiomics Criteria Settings."
 * extension[boundsRangeOfValueAfterDiscretisation] ^short = "Bounds of the intensity value after discretization"
 * extension[boundsRangeOfValueAfterDiscretisation] ^definition = "Bounds of the intensity value after discretization"
 * extension[boundsRangeOfValueAfterDiscretisation].value[x] only string
-* extension[boundsRangeOfValueAfterDiscretisation] MS
+* extension[boundsRangeOfValueAfterDiscretisation].value[x] 1..1 MS
 
 /* 14. Spatial Resampling Method */
 * extension[spatialResamplingMethod] ^short = "Spatial resampling method"

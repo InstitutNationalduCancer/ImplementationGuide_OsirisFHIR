@@ -17,6 +17,7 @@ Description: "Summary of the radiotherapy phases planned or delivered to a patie
 * category ^short = "Type (planned or delivered)"
 * category ^definition = "Type (planned or delivered)"
 * category.coding.code from vs-radiotherapy-category (required)
+* category.coding.code  1..1 MS
 
 * code = SCT#1222565005
 * code.coding.display = "Radiotherapy treatment phase (regime/therapy)"
@@ -29,12 +30,12 @@ Description: "Summary of the radiotherapy phases planned or delivered to a patie
 If planned, it corresponds to Dicom Tag (300A,0078)"
 
 * performed[x] only Period
-* performed[x] 1..1
+* performed[x] 1..1 MS
 * performed[x] ^definition = "The start and end period " 
-* performedPeriod.start 1..1
+* performedPeriod.start 1..1 MS
 * performedPeriod.start ^short = "Start date"
 * performedPeriod.start ^definition = "Start date and time. They should be extracted from MOSAIQ/ARIA Record and Verify."
-* performedPeriod.end 1..1
+* performedPeriod.end 1..1 MS
 * performedPeriod.end ^short = "End date"
 * performedPeriod.end ^definition = "End date and time. They should be extracted from MOSAIQ/ARIA Record and Verify."
 

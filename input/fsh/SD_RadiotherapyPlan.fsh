@@ -33,6 +33,7 @@ Description: "Radiotherapy plans planned or delivered to a patient"
 * category ^short = "Type (planned or delivered)"
 * category ^definition = "Type (planned or delivered)"
 * category.coding.code from vs-radiotherapy-category (required)
+* category.coding.code 1..1 MS
 
 * code = SCT#1255724003
 * code.coding.display = "Radiotherapy treatment plan (regime/therapy)"
@@ -49,11 +50,11 @@ If planned, it corresponds to Dicom Tag (300A,0078)"
 * performed[x] 1..1
 * performed[x] ^definition = "The start and end period " 
 /* Item 3.3 */
-* performedPeriod.start 1..1
+* performedPeriod.start 1..1 MS
 * performedPeriod.start ^short = "Start date"
 * performedPeriod.start ^definition = "Start date and time. They should be extracted from MOSAIQ/ARIA Record and Verify."
 /* Item 3.4 */
-* performedPeriod.end 1..1
+* performedPeriod.end 1..1 MS
 * performedPeriod.end ^short = "End date"
 * performedPeriod.end ^definition = "End date and time. They should be extracted from MOSAIQ/ARIA Record and Verify."
 
@@ -123,21 +124,25 @@ Description: "Dose To Volume"
 * extension[volume].value[x] only Reference(radiotherapy-volume)
 * extension[volume] ^short = "Volume targeted"
 * extension[volume] ^definition = "The volume targeted by the dose."
+* extension[volume].value[x] 1..1 MS
 
 /* Item 5.1 */
 * extension[fractionDose].value[x] only string
 * extension[fractionDose] ^short = "Expected dose per fraction"
 * extension[fractionDose] ^definition = "Expected radiation dose per fraction. The division numberOfFractions/totalDose must be done"
+* extension[fractionDose].value[x] 1..1 MS
 
 /* Item 5.2 */
 * extension[numberOfFractions].value[x] only unsignedInt
 * extension[numberOfFractions] ^short = "Number of fractions"
 * extension[numberOfFractions] ^definition = "Number of fractions expected. Dicom Tag (300A,0078)."
+* extension[numberOfFractions].value[x] 1..1 MS
 
 /* Item 5.3 */
 * extension[totalDose].value[x] only string
 * extension[totalDose] ^short = "Total Dose"
 * extension[totalDose] ^definition = "The total amount of radiation delivered to this volume. Dicom Tag (300A, 0026). If delivred, it should be extracted from MOSAIQ/ARIA Record and Verify"
+* extension[totalDose].value[x] 1..1 MS
 
 /* Item 3.9 */
 * extension[rtDoseUID].value[x] only string
@@ -155,21 +160,22 @@ Description: "Modality And Technique"
     radiotherapyTreatmentMachinePlanned 0..1 MS
 
 /* Item 6.2 */
-* extension[radiotherapyModality].value[x] only CodeableConcept
-* extension[radiotherapyModality].valueCodeableConcept from MCODEMODALITY (required)
+* extension[radiotherapyModality].value[x] only string
 * extension[radiotherapyModality] ^short = "Modality"
 * extension[radiotherapyModality] ^definition = "Modality of the radiotherapy procedure. Dicom Tag (300A,00C6)."
+* extension[radiotherapyModality].value[x] 1..1 MS
 
 /* Item 6.1 */
-* extension[radiotherapyTechnique].value[x] only CodeableConcept
-* extension[radiotherapyTechnique].valueCodeableConcept from MCODETECHNIQUE (required)
+* extension[radiotherapyTechnique].value[x] only string
 * extension[radiotherapyTechnique] ^short = "Technique"
 * extension[radiotherapyTechnique] ^definition = "Technique of the radiotherapy procedure. Dicom Tag (300A,0009)."
+* extension[radiotherapyTechnique].value[x] 1..1 MS
 
 /* Item 6.3 */
 * extension[radiotherapyTreatmentMachinePlanned].value[x] only string
 * extension[radiotherapyTreatmentMachinePlanned] ^short = "Name of the machine used for the emission of the beam"
 * extension[radiotherapyTreatmentMachinePlanned] ^definition = "Name of the processing machine used for the emission of the beam. Dicom Tag (300A,00B2)"
+* extension[radiotherapyTreatmentMachinePlanned].value[x] MS
 
 Extension: EnergyOrIsotope
 Id: energyOrIsotope
@@ -185,11 +191,13 @@ Description: "Energy Or Isotope"
 * extension[quantityEnergyOrIsotope] ^short = "Quantity"
 * extension[quantityEnergyOrIsotope] ^definition = "Energy spectrum of a radiation characterized by a maximum value. For electrons, the maximum energy is given in MeV. For photons, the maximum acceleration voltage is given in MV or kV, although these are not energy units.
 Dicom Tag (300A,0114)."
+* extension[quantityEnergyOrIsotope].value[x] 1..1 MS
 
 /* Item 7.2 */
 * extension[nameEnergyOrIsotope].value[x] only string
 * extension[nameEnergyOrIsotope] ^short = "Isotope Name"
 * extension[nameEnergyOrIsotope] ^definition = "The isotope used for radiotherapy"
+* extension[nameEnergyOrIsotope].value[x] MS
 
 /*
     ##########################

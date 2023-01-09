@@ -115,11 +115,13 @@ Description:    "Weight and Height at the time of the Serie"
     patient_weight 0..1 MS and
     patient_height 0..1 MS
 
+* extension[patient_weight].value[x] MS
 * extension[patient_weight].value[x] only decimal
 * extension[patient_weight] obeys patient-weight-if-pt-image
 * extension[patient_weight] ^short = "Patient weight"
 * extension[patient_weight] ^definition = "Patient weight in kilograms. Dicom Tag (0010,1030)"
 
+* extension[patient_height].value[x] MS
 * extension[patient_height].value[x] only decimal
 * extension[patient_height] obeys patient-height-if-pt-image
 * extension[patient_height] ^short = "Patient height"
@@ -153,7 +155,8 @@ Description:    "Imaging Settings."
 * extension[pixel_spacing] ^short = "Pixel spacing"
 * extension[pixel_spacing] ^definition = "Physical distance between the centers of each two-dimensional pixel, specified by two numerical values.  Dicom Tag (0028,0030)"
 
-* extension[field_of_view].value[x]
+* extension[field_of_view] MS
+* extension[field_of_view].value[x] MS
 * extension[field_of_view].value[x] only integer
 * extension[field_of_view] ^short = "Field of view"
 * extension[field_of_view] ^definition = "The field of view (FOV) is defined as the dimensions of the exact anatomical region included in a scan in mm."
@@ -186,38 +189,47 @@ Description:    "Imaging Settings."
     inversion_time 1..1 MS and
     receive_coil_name 1..1 MS 
 
+* extension[mr_image].extension[sequence_name].value[x] 1..1 MS
 * extension[mr_image].extension[sequence_name].value[x] only string
 * extension[mr_image].extension[sequence_name] ^short = "Type of pulse sequence"
 * extension[mr_image].extension[sequence_name] ^definition = "Type of pulse sequence. Dicom Tag (0018,0024)"
 
+* extension[mr_image].extension[magnetic_field_strength].value[x] 1..1 MS
 * extension[mr_image].extension[magnetic_field_strength].value[x] only decimal
 * extension[mr_image].extension[magnetic_field_strength] ^short = "Nominal field strength"
 * extension[mr_image].extension[magnetic_field_strength] ^definition = "Nominal field strength of the magnet, in Tesla. Dicom Tag (0018,0087)"
 
+* extension[mr_image].extension[mr_acquisition_type].value[x] 1..1 MS
 * extension[mr_image].extension[mr_acquisition_type].value[x] only string
 * extension[mr_image].extension[mr_acquisition_type] ^short = "Description of the type of acquisition"
 * extension[mr_image].extension[mr_acquisition_type] ^definition = "Describe the type of acquisition, particularly the number of dimension. Dicom Tag (0018,0023)"
 
+* extension[mr_image].extension[repetition_time].value[x] 1..1 MS
 * extension[mr_image].extension[repetition_time].value[x] only decimal
 * extension[mr_image].extension[repetition_time] ^short = "Repetition time"
 * extension[mr_image].extension[repetition_time] ^definition = "Repetition time in ms. Dicom Tag (0018,0080)"
 
+* extension[mr_image].extension[echo_time].value[x] 1..1 MS
 * extension[mr_image].extension[echo_time].value[x] only decimal
 * extension[mr_image].extension[echo_time] ^short = "Echo time"
 * extension[mr_image].extension[echo_time] ^definition = "Echo time in ms. Dicom Tag (0018,0081)"
 
+* extension[mr_image].extension[imaging_frequency].value[x] 1..1 MS
 * extension[mr_image].extension[imaging_frequency].value[x] only decimal
 * extension[mr_image].extension[imaging_frequency] ^short = "Precession frequency"
 * extension[mr_image].extension[imaging_frequency] ^definition = "Precession frequency in MHz of the target core. Dicom Tag (0018,0084)"
 
+* extension[mr_image].extension[flip_angle].value[x] 1..1 MS
 * extension[mr_image].extension[flip_angle].value[x] only decimal
 * extension[mr_image].extension[flip_angle] ^short = "Flip angle"
 * extension[mr_image].extension[flip_angle] ^definition = "Flip angle of the RF pulse in degrees impacting the T1 weighting. Dicom Tag (0018,0024) / (0018,1314)"
 
+* extension[mr_image].extension[inversion_time].value[x] 1..1 MS
 * extension[mr_image].extension[inversion_time].value[x] only decimal
 * extension[mr_image].extension[inversion_time] ^short = "Period between the middle of the RF inversion pulse and the middle of the excitation pulse"
 * extension[mr_image].extension[inversion_time] ^definition = "Period between the middle of the RF inversion pulse and the middle of the excitation pulse to detect the amount of longitudinal magnetization. Dicom Tag (0018,0082)"
 
+* extension[mr_image].extension[receive_coil_name].value[x] 1..1 MS
 * extension[mr_image].extension[receive_coil_name].value[x] only string 
 * extension[mr_image].extension[receive_coil_name] ^short = "Receive col name"
 * extension[mr_image].extension[receive_coil_name] ^definition = "Receive col name. Dicom Tag (0018,1250)"
@@ -234,26 +246,32 @@ Description:    "Imaging Settings."
     filter_type 1..1 MS and
     convolution_kernel 1..1 MS 
 
+* extension[ct_image].extension[kvp].value[x] MS
 * extension[ct_image].extension[kvp].value[x] only integer
 * extension[ct_image].extension[kvp] ^short = "Peak kilovoltage produced by the X-ray generator"
 * extension[ct_image].extension[kvp] ^definition = "Peak kilovoltage of the voltage produced by the X-ray generator. Dicom Tag (0018,0060)"
 
+* extension[ct_image].extension[xray_tube_current].value[x] 1..1 MS
 * extension[ct_image].extension[xray_tube_current].value[x] only integer
 * extension[ct_image].extension[xray_tube_current] ^short = "X-ray tube current in mA"
 * extension[ct_image].extension[xray_tube_current] ^definition = "X-ray tube current in mA. Dicom Tag (0018,1151)"
 
+* extension[ct_image].extension[exposure_time].value[x] 1..1 MS
 * extension[ct_image].extension[exposure_time].value[x] only integer
 * extension[ct_image].extension[exposure_time] ^short = "X-ray exposure time in ms"
 * extension[ct_image].extension[exposure_time] ^definition = "X-ray exposure time in ms. Dicom Tag (0018,1150)"
 
+* extension[ct_image].extension[spiral_pitch_factor].value[x] 1..1 MS
 * extension[ct_image].extension[spiral_pitch_factor].value[x] only decimal
 * extension[ct_image].extension[spiral_pitch_factor] ^short = "'Spiral Pitch' - Ratio between the table feed per rotation and the total width of the collimation"
 * extension[ct_image].extension[spiral_pitch_factor] ^definition = "'Spiral Pitch' - Ratio between the table feed per rotation and the total width of the collimation. Dicom Tag (0018,9311)"
 
+* extension[ct_image].extension[filter_type].value[x] 1..1 MS
 * extension[ct_image].extension[filter_type].value[x] only string
 * extension[ct_image].extension[filter_type] ^short = "Filter type"
 * extension[ct_image].extension[filter_type] ^definition = "Filter type. DicomTag (0018,1160)"
 
+* extension[ct_image].extension[convolution_kernel].value[x] 1..1 MS
 * extension[ct_image].extension[convolution_kernel].value[x] only string
 * extension[ct_image].extension[convolution_kernel] ^short = "Convolution kernel or algorithm"
 * extension[ct_image].extension[convolution_kernel] ^definition = "A label describing the convolution kernel or algorithm used to recontruct the data. Dicom Tag (0018,1210)"
@@ -266,14 +284,17 @@ Description:    "Imaging Settings."
     reconstruction_method 1..1 MS and
     scatter_correction_method 1..1 MS
 
+* extension[pt_nm_image].extension[attenuation_correction_method].value[x] 1..1 MS
 * extension[pt_nm_image].extension[attenuation_correction_method].value[x] only string
 * extension[pt_nm_image].extension[attenuation_correction_method] ^short = "Attenuation correction method"
 * extension[pt_nm_image].extension[attenuation_correction_method] ^definition = "Attenuation correction method. Dicom Tag (0054,1101)"
 
+* extension[pt_nm_image].extension[reconstruction_method].value[x] 1..1 MS
 * extension[pt_nm_image].extension[reconstruction_method].value[x] only string
 * extension[pt_nm_image].extension[reconstruction_method] ^short = "Reconstruction method"
 * extension[pt_nm_image].extension[reconstruction_method] ^definition = "Reconstruction method e.g. 2D filtered back projection, 2D iterative, 3D PROMIS, 3D FAVOR, 3D iterative. Dicom Tag (0054,1103)"
 
+* extension[pt_nm_image].extension[scatter_correction_method].value[x] 1..1 MS
 * extension[pt_nm_image].extension[scatter_correction_method].value[x] only string
 * extension[pt_nm_image].extension[scatter_correction_method] ^short = "Scattering correction method"
 * extension[pt_nm_image].extension[scatter_correction_method] ^definition = "Scattering correction method. For example, convolution-subtraction, dual energy window, model based, use of attenuation data. Dicom Tag (0054,1105)"
@@ -288,22 +309,27 @@ Description:    "Imaging Settings."
     exposure 1..1 MS and
     exposure_time 1..1 MS
 
+* extension[dx_image].extension[image_laterality].value[x] 1..1 MS
 * extension[dx_image].extension[image_laterality].value[x] only string
 * extension[dx_image].extension[image_laterality] ^short = "Laterality of the body part"
 * extension[dx_image].extension[image_laterality] ^definition = "Examination of the laterality of the body part examined. Dicom Tag (0020,0062)"
 
+* extension[dx_image].extension[patient_orientation].value[x] MS
 * extension[dx_image].extension[patient_orientation].value[x] only string
 * extension[dx_image].extension[patient_orientation] ^short = "Patient orientation"
 * extension[dx_image].extension[patient_orientation] ^definition = "Patient orientation. Dicom Tag (0020,0020)"
 
+* extension[dx_image].extension[kvp].value[x] 1..1 MS
 * extension[dx_image].extension[kvp].value[x] only integer
 * extension[dx_image].extension[kvp] ^short = "Peak in kilovoltage of the X-ray generator used"
 * extension[dx_image].extension[kvp] ^definition = "Peak kilovoltage of the voltage produced by the X-ray generator. Dicom Tag (0008,0060)"
 
+* extension[dx_image].extension[exposure].value[x] 1..1 MS
 * extension[dx_image].extension[exposure].value[x] only integer
 * extension[dx_image].extension[exposure] ^short = "The exposure expressed in mAs"
 * extension[dx_image].extension[exposure] ^definition = "The exposure expressed in mAs, for example calculated from the exposure time and the X-ray tube current. DicomTag (0018,1152)"
 
+* extension[dx_image].extension[exposure_time].value[x] 1..1 MS
 * extension[dx_image].extension[exposure_time].value[x] only integer
 * extension[dx_image].extension[exposure_time] ^short = "Duration of X-ray exposure in ms"
 * extension[dx_image].extension[exposure_time] ^short = "Duration of X-Ray exposure in ms. DicomTag (0018,1150)"
