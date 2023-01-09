@@ -160,13 +160,15 @@ Description: "Modality And Technique"
     radiotherapyTreatmentMachinePlanned 0..1 MS
 
 /* Item 6.2 */
-* extension[radiotherapyModality].value[x] only string
+* extension[radiotherapyModality].value[x] only CodeableConcept
+* extension[radiotherapyModality].valueCodeableConcept from MCODEMODALITY (required)
 * extension[radiotherapyModality] ^short = "Modality"
 * extension[radiotherapyModality] ^definition = "Modality of the radiotherapy procedure. Dicom Tag (300A,00C6)."
 * extension[radiotherapyModality].value[x] 1..1 MS
 
 /* Item 6.1 */
-* extension[radiotherapyTechnique].value[x] only string
+* extension[radiotherapyTechnique].value[x] only CodeableConcept
+* extension[radiotherapyTechnique].valueCodeableConcept from MCODETECHNIQUE (required)
 * extension[radiotherapyTechnique] ^short = "Technique"
 * extension[radiotherapyTechnique] ^definition = "Technique of the radiotherapy procedure. Dicom Tag (300A,0009)."
 * extension[radiotherapyTechnique].value[x] 1..1 MS
