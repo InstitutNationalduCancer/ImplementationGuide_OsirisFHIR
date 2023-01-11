@@ -211,7 +211,7 @@ Mapping: FhirOSIRIS-RadiotherapyPlan
 Source: radiotherapy-plan
 Target: "RadiotherapyPlan"
 Id: fhir-osiris-RadiotherapyPlan
-Title: "Fhir-osiris to osiris"
+Title: "OSIRIS pivot files"
 
 * subject -> "OSIRIS_pivot_PlanRT.Patient_Id"
 * partOf -> "OSIRIS_pivot_PlanRT.PhaseRT_Ref"
@@ -250,7 +250,7 @@ Mapping: FhirOSIRIS-DicomTag-RadiotherapyPlan
 Source: radiotherapy-plan
 Target: "RadiotherapyPlan"
 Id: fhir-osiris-dicomTag-RadiotherapyPlan
-Title: "Fhir-osiris to Dicom Tag"
+Title: "DICOM Tag Mapping (version OSIRIS)"
 
 * identifier[rtPlanUID] -> "RT Dose/RT Dose/Referenced RT Plan Sequence (300C,0002)/Referenced SOP Instance UID (0008,1155)"
 * extension[numberOfFractions] -> "RT Plan/RT Fraction Scheme/Fraction Group Sequence/Number Of Fractions Planned (300A,0078)"

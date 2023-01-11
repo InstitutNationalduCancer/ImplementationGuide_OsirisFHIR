@@ -233,7 +233,7 @@ Mapping: FhirOSIRIS-RadiomicsCriteria
 Source: radiomics-criteria-settings
 Target: "RadiomicsCriteria"
 Id: fhir-osiris-RadiomicsCriteria
-Title: "Fhir-osiris to osiris"
+Title: "OSIRIS pivot files"
 
 * extension[softwareName] -> "RadiomicsCriteria.RadiomicsCriteria_SoftwareName"
 * extension[softwareVersion] -> "RadiomicsCriteria.RadiomicsCriteria_SoftwareVersion"
@@ -262,7 +262,7 @@ Mapping: FhirOSIRISIBSI-RadiomicsCriteria
 Source: radiomics-criteria-settings
 Target: "RadiomicsCriteria"
 Id: fhir-osiris-ibsi-RadiomicsCriteria
-Title: "Fhir-osiris to ibsi"
+Title: "IBSI (https://ibsi.readthedocs.io/)"
 
 * extension[softwareName] -> "IBSI 61"
 * extension[softwareVersion] -> "IBSI 61"

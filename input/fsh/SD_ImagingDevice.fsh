@@ -31,7 +31,7 @@ Mapping: FhirOSIRISImagingDevice
 Source: imaging-device
 Target: "Device"
 Id: fhir-osiris-imaging-device
-Title: "Fhir-osiris to osiris"
+Title: "OSIRIS pivot files"
 * -> "Imaging Device" "Imaging device description"
 * manufacturer -> "OSIRIS_pivot_Equipment.Equipment_Manufacturer"
 * version -> "OSIRIS_pivot_Equipment.Equipment_SoftwareVersion"
@@ -48,7 +48,7 @@ Mapping: DicomToFhirImagingDevice
 Source: imaging-device
 Target: "ImagingDevice"
 Id: dicom-to-fhir-imaging-device
-Title: "Fhir-osiris to osiris"
+Title: "DICOM Tag Mapping (version OSIRIS)"
 * -> "Imaging Device" "Imagind device description"
 * manufacturer -> "Dicom Tag (0008,0070)"
 * version -> "Dicom Tag (0018,1020)"

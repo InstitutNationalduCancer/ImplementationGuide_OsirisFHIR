@@ -19,7 +19,7 @@ Mapping: FhirOSIRISImagingContrast
 Source: onco-biological-contrast
 Target: "Imaging Study Contrast"
 Id: fhir-osiris-imaging-contrast
-Title: "Fhir-osiris to osiris"
+Title: "OSIRIS pivot files"
 * -> "Imaging Contrast" "Imaging Contrast description"
 
 * code.text -> "OSIRIS_pivot_Injection.Injection_Radiopharmaceutical / OSIRIS_pivot_Injection.Injection_ContrastBolusAgent"
@@ -33,7 +33,7 @@ Mapping: DicomToFhirImagingContrast
 Source: onco-biological-contrast
 Target: "Imaging Study Injection"
 Id: dicom-to-fhir-imaging-contrast
-Title: "Fhir-osiris to Dicom"
+Title: "DICOM Tag Mapping (version OSIRIS)"
 * -> "Imaging Contrast" "Imaging Contrast description"
 
 * code.text -> "Dicom Tag (0018,0031) / Dicom Tag (0018,0010)"

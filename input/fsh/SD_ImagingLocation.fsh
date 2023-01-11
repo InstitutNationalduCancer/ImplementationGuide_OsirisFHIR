@@ -18,7 +18,7 @@ Mapping: FhirOSIRISImagingService
 Source: imaging-service
 Target: "ImagingService"
 Id: fhir-osiris-imaging-service
-Title: "Fhir-osiris to osiris"
+Title: "OSIRIS pivot files"
 * -> "Imaging Service" "Imaging service description"
 
 * name -> "OSIRIS_pivot_Study.Study_InstitutionName"
@@ -32,7 +32,7 @@ Mapping: FhirToDicomImagingService
 Source: imaging-service
 Target: "ImagingService"
 Id: fhir-osiris-to-dicom-imaging-service
-Title: "Fhir-osiris to Dicom"
+Title: "DICOM Tag Mapping (version OSIRIS)"
 * -> "Imaging Service" "Imaging service description"
 
 * name -> "Dicom Tag (0008,0080)"

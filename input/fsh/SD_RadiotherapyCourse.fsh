@@ -92,7 +92,7 @@ Mapping: FhirOSIRIS-RadiotherapyCourse
 Source: radiotherapy-course-summary
 Target: "RadiotherapyCourse"
 Id: fhir-osiris-RadiotherapyCourse
-Title: "Fhir-osiris to osiris"
+Title: "OSIRIS pivot files"
 
 * subject -> "OSIRIS_pivot_CourseRT.Patient_Id"
 * category -> "OSIRIS_pivot_CourseRT.Course_Type"
@@ -113,6 +113,6 @@ Mapping: FhirOSIRIS-DicomTag-RadiotherapyCourse
 Source: radiotherapy-course-summary
 Target: "RadiotherapyCourse"
 Id: fhir-osiris-dicomTag-RadiotherapyCourse
-Title: "Fhir-osiris to Dicom Tag"
+Title: "DICOM Tag Mapping (version OSIRIS)"
 
 * extension[treatmentIntent] -> "RT Plan/RT General Plan/Plan Intent (300A,000A)"

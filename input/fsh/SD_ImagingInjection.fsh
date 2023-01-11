@@ -37,7 +37,7 @@ Mapping: FhirOSIRISImagingInjection
 Source: onco-imagingstudy-injection
 Target: "Imaging Study Injection"
 Id: fhir-osiris-imaging-injection
-Title: "Fhir-osiris to osiris"
+Title: "OSIRIS pivot files"
 * -> "Imaging Injection" "Imaging Injection description"
 
 * effectiveDateTime -> "OSIRIS_pivot_Injection.Injection_RadiopharmaceuticalStartTime"
@@ -54,7 +54,7 @@ Mapping: DicomToFhirImagingInjection
 Source: onco-imagingstudy-injection
 Target: "Imaging Study Injection"
 Id: dicom-to-fhir-imaging-injection
-Title: "Fhir-osiris to Dicom"
+Title: "DICOM Tag Mapping (version OSIRIS)"
 * -> "Imaging Injection" "Imaging injection description"
 
 * effectiveDateTime -> "Dicom Tag (0018,1072)"

@@ -34,7 +34,7 @@ Mapping: FhirOSIRIS-RadiotherapyVolume
 Source: radiotherapy-volume
 Target: "RadiotherapyVolume"
 Id: fhir-osiris-RadiotherapyVolume
-Title: "Fhir-osiris to osiris"
+Title: "OSIRIS pivot files"
 
 * identifier -> "OSIRIS_pivot_VolumeRT.Volume_Identifier"
 * location  -> "OSIRIS_pivot_VolumeRT.Volume_Location"
@@ -51,7 +51,7 @@ Mapping: FhirOSIRIS-DicomTag-RadiotherapyVolume
 Source: radiotherapy-volume
 Target: "RadiotherapyVolume"
 Id: fhir-osiris-DicomTag-RadiotherapyVolume
-Title: "Fhir-osiris to Dicom Tag"
+Title: "DICOM Tag Mapping (version OSIRIS)"
 
 * identifier -> "RT Structure Set/Structure	Set/Structure Set ROI Sequence/ROI Number Attribute	(3006,0022) 
 Or RT Plan/RT General Plan/Treatment Sites Attribute (300A,000B)"

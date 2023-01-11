@@ -88,7 +88,7 @@ Mapping: FhirOSIRIS-RadiomicsImageFilter
 Source: radiomics-image-filters-settings
 Target: "RadiomicsImageFilters"
 Id: fhir-osiris-RadiomicsImageFilters
-Title: "Fhir-osiris to osiris"
+Title: "OSIRIS pivot files"
 
 * extension[softwareName] -> "RadiomicsImageFilter.RadiomicsImageFilter_SoftwareName"
 * extension[softwareVersion] -> "RadiomicsImageFilter.RadiomicsImageFilter_SoftwareVersion"
@@ -108,7 +108,7 @@ Mapping: FhirOSIRISIBSI-RadiomicsImageFilter
 Source: radiomics-image-filters-settings
 Target: "RadiomicsImageFilters"
 Id: fhir-osiris-ibsi-RadiomicsImageFilters
-Title: "Fhir-osiris to ibsi"
+Title: "IBSI (https://ibsi.readthedocs.io/)"
 
 * extension[intensityRounding] -> "IBSI 52"
 

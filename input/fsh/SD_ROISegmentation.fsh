@@ -53,7 +53,7 @@ Mapping: FhirOSIRISRoiSeqmentation
 Source: roi-segmentation
 Target: "ROI segmentation"
 Id: fhir-osiris-roi-segmentation
-Title: "Fhir-osiris to osiris"
+Title: "OSIRIS pivot files"
 * -> "ROI segmentation" "ROI segmentation description"
 
 * subject -> "OSIRIS_pivot_ROISegmentation.Patient_Id"
@@ -74,7 +74,7 @@ Mapping: DicomToFhirRoiSeqmentation
 Source: roi-segmentation
 Target: "ROI segmentation"
 Id: dicom-to-fhir-roi-segmentation
-Title: "Fhir-osiris to Dicom"
+Title: "DICOM Tag Mapping (version OSIRIS)"
 * -> "ROI segmentation" "ROI segmentation description"
 * identifier[dicom] -> "Dicom Tag (0008,1155)"
 * identifier[roi] -> "Dicom Tag (3006,0084)"

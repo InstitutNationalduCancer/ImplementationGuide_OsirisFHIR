@@ -359,7 +359,7 @@ Mapping: FhirOSIRISImagingStudy
 Source: onco-imagingstudy
 Target: "ImagingStudy"
 Id: fhir-osiris-imaging-study
-Title: "Fhir-osiris to osiris"
+Title: "OSIRIS pivot files"
 * -> "Imaging Study" "Imaging study description"
 
 * subject -> "OSIRIS_pivot_Study.Patient_Id"
@@ -429,7 +429,7 @@ Mapping: FhirToDicomImagingStudy
 Source: onco-imagingstudy
 Target: "ImagingStudy"
 Id: fhir-osiris-to-dicom-imaging-study
-Title: "Fhir-osiris to Dicom"
+Title: "DICOM Tag Mapping (version OSIRIS)"
 * -> "Imaging Study" "Imaging study description"
 
 * identifier -> "Dicom Tag (0020,000D)"

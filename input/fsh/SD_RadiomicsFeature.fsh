@@ -37,7 +37,7 @@ Mapping: FhirOSIRIS-RadiomicsFeatures
 Source: radiomics-features
 Target: "RadiomicsFeatures"
 Id: fhir-osiris-RadiomicsFeatures
-Title: "Fhir-osiris to osiris"
+Title: "OSIRIS pivot files"
 * code.coding.code -> "RadiomicsFeature_Id"
 * code.text -> "RadiomicsFeature.RadiomicsFeature_Name"
 * value[x] -> "RadiomicsFeature.RadiomicsFeature_Value"

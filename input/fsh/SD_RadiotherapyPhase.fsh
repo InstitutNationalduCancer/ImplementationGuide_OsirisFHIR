@@ -59,7 +59,7 @@ Mapping: FhirOSIRIS-RadiotherapyPhase
 Source: radiotherapy-phase
 Target: "RadiotherapyPhase"
 Id: fhir-osiris-RadiotherapyPhase
-Title: "Fhir-osiris to osiris"
+Title: "OSIRIS pivot files"
 
 * subject -> "OSIRIS_pivot_PhaseRT.Patient_Id	"
 * partOf -> "OSIRIS_pivot_PhaseRT.CourseRT_Ref	"
@@ -78,7 +78,7 @@ Mapping: FhirOSIRIS-DicomTag-RadiotherapyPhase
 Source: radiotherapy-phase
 Target: "RadiotherapyPhase"
 Id: fhir-osiris-dicomTag-RadiotherapyPhase
-Title: "Fhir-osiris to Dicom Tag"
+Title: "DICOM Tag Mapping (version OSIRIS)"
 
 * extension[numberOfFractions] -> "RT Plan/RT Fraction Scheme/Fraction Group Sequence/Number Of Fractions Planned (300A,0078)"
 

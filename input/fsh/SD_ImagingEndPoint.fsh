@@ -18,7 +18,7 @@ Mapping: FhirOSIRISImagingEndpoint
 Source: imaging-pacs
 Target: "ImagingEndpoint"
 Id: fhir-osiris-imaging-endpoint
-Title: "Fhir-osiris to osiris"
+Title: "OSIRIS pivot files"
 * -> "Imaging endpoint" "Imaging endpoint description"
 
 * name -> "OSIRIS_pivot_Study.Study_Location"
