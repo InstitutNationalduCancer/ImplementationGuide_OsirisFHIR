@@ -7,7 +7,8 @@ Description: "Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv"
 * subject = Reference(fhir-osiris-example-patient)
 * onsetDateTime = "2005-11-17"
 * recordedDate = "2005-11-17"
-* stage[morphology].summary = #8002/3	
+* stage[morphology].summary = ICDO3#8002/3
+* stage[morphology].type = UMLS#116676008
 
 Instance: fhir-osiris-example-TumorPathologyEvent-instance-2
 InstanceOf: TumorPathologyEvent
@@ -19,7 +20,8 @@ Description: "Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv"
 * subject = Reference(fhir-osiris-example-patient)
 * onsetDateTime = "2010-11-18"
 * recordedDate = "2010-11-18"
-* stage[morphology].summary = #8000-1	
+* stage[morphology].summary = ICDO3#8000-1
+* stage[morphology].type = UMLS#116676008
 
 
 
