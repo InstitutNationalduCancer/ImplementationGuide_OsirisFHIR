@@ -233,8 +233,8 @@ Description:    "Imaging Settings."
 
 * extension[mr_image].extension[receive_coil_name].value[x] 1..1 MS
 * extension[mr_image].extension[receive_coil_name].value[x] only string 
-* extension[mr_image].extension[receive_coil_name] ^short = "Receive col name"
-* extension[mr_image].extension[receive_coil_name] ^definition = "Receive col name. Dicom Tag (0018,1250)"
+* extension[mr_image].extension[receive_coil_name] ^short = "Receive coil name"
+* extension[mr_image].extension[receive_coil_name] ^definition = "Receive coil name. Dicom Tag (0018,1250)"
 
 
 // ############
