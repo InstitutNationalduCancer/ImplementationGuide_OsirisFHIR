@@ -17,6 +17,10 @@ Description:    "Description of the criteria used for the biomarkers calculation
 
 * code = LNC#85430-7
 
+* obeys windowsMatrix-if-localizationMethod-local
+* obeys bounds-if-discretisationMethod-FBN
+* obeys lowestIntensity-if-discretisationMethod-FBS
+
 Extension:      RadiomicsCriteriaSettings
 Id:             radiomics-criteria-settings
 Title:          "Radiomics Criteria Settings"
@@ -77,7 +81,6 @@ Description:    "Radiomics Criteria Settings."
 * extension[windowMatrix] ^short = "Calculation window"
 * extension[windowMatrix] ^definition = "Matrix of the calculation window (ex. 5x5x5 voxels)"
 * extension[windowMatrix].valueString 
-* extension[windowMatrix] obeys windowsMatrix-if-localizationMethod-local
 * extension[windowMatrix] MS
 
 /* 1.5 Image Filter*/
@@ -88,7 +91,7 @@ Description:    "Radiomics Criteria Settings."
 
 /* 1.6 Method Parameters Used */
 * extension[usedImageFilterParameters] ^short = "Parameters of the used method"
-* extension[usedImageFilterParameters] ^definition = "Parameters of the method used to filter the images before the calculation "
+* extension[usedImageFilterParameters] ^definition = "Parameters of the method used to filter the images before the calculation"
 * extension[usedImageFilterParameters].valueString
 * extension[usedImageFilterParameters] 1..1 MS
 
@@ -136,7 +139,6 @@ Description:    "Radiomics Criteria Settings."
 * extension[bounds] ^short = "Bounds"
 * extension[bounds] ^definition = "Bounds in intensity to perform the discretization"
 * extension[bounds].valueString
-* extension[bounds] obeys bounds-if-discretisationMethod-FBN
 * extension[bounds].valueString MS
 
 /* 1.11 Lowest Intensity */
@@ -151,7 +153,6 @@ Description:    "Radiomics Criteria Settings."
 * extension[lowestIntensity].extension[code].valueCoding = IBSICS#56c
 * extension[lowestIntensity].extension[valueDecimal] ^short = "Lowest Intensity"
 * extension[lowestIntensity].extension[valueDecimal].valueDecimal only decimal 
-* extension[lowestIntensity] obeys lowestIntensity-if-discretisationMethod-FBS
 
 /* 1.12 Biggest Intensity */
 * extension[biggestIntensity].extension contains
@@ -165,7 +166,6 @@ Description:    "Radiomics Criteria Settings."
 * extension[biggestIntensity].extension[code].valueCoding = IBSICS#56c
 * extension[biggestIntensity].extension[valueDecimal] ^short = "Biggest Intensity"
 * extension[biggestIntensity].extension[valueDecimal].valueDecimal only decimal 
-* extension[biggestIntensity] obeys biggestIntensity-if-discretisationMethod-FBS
 
 /* 1.13 Bounds Range Of Value After Discretisation */
 * extension[boundsRangeOfValueAfterDiscretisation] ^short = "Bounds of the intensity value after discretization"
@@ -201,24 +201,21 @@ Description:    "Radiomics Criteria Settings."
 /* Invariants */
 Invariant:   windowsMatrix-if-localizationMethod-local
 Description: "If extension[localizationMethod].valueString is LOCAL, then extension[windowMatrix].valuestring MUST be present"
-Expression:  "extension[localizationMethod].valueString == 'LOCAL' implies extension[windowMatrix].valueString.exists()"
+Expression: "extension.where(url= 'http://fhir.arkhn.com/osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='localizationMethod').valueString = 'LOCAL'implies
+extension.where(url= 'http://fhir.arkhn.com/osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='windowMatrix').exists()"
 Severity:    #error
 
 Invariant:   bounds-if-discretisationMethod-FBN
 Description: "If extension[discretisationMethod].valueString is FBN, then extension[bounds].valueString MUST be present"
-Expression:  "extension[discretisationMethod].valueString == 'FBN' implies extension[bounds].valuevalueString.exists()"
+Expression:  "extension.where(url= 'http://fhir.arkhn.com/osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='discretisationMethod').extension.where(url='valueString').valueString = 'FBN' implies
+extension.where(url= 'http://fhir.arkhn.com/osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='bounds').exists()"
 Severity:    #error
 
 Invariant:   lowestIntensity-if-discretisationMethod-FBS
 Description: "If extension[discretisationMethod].valueString is FBS, then extension[lowestIntensity].valueDecimal MUST be present"
-Expression:  "extension[discretisationMethod].valueString == 'FBS' implies extension[lowestIntensity].valueDecimal.exists()"
+Expression:  "extension.where(url= 'http://fhir.arkhn.com/osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='discretisationMethod').extension.where(url='valueString').valueString = 'FBS' implies
+extension.where(url= 'http://fhir.arkhn.com/osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='lowestIntensity').exists()"
 Severity:    #error
-
-Invariant:   biggestIntensity-if-discretisationMethod-FBS
-Description: "If extension[discretisationMethod].valueString is FBS, then extension[biggestIntensity].valueDecimal MAY be present"
-Expression:  "extension[discretisationMethod].valueString == 'FBS' implies extension[biggestIntensity].valueDecimal.exists())"
-Severity:    #error
-
 
 /*
     ##########################

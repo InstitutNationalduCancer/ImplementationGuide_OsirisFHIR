@@ -24,7 +24,7 @@ Description:    "Description of an imaging study injection."
 * dosage.dose 0..1
 * dosage.dose ^short = "Radiopharmaceutical dose"
 * dosage.dose ^definition = "Radiopharmaceutical dose administered to the patient, measured in megabecquerels (Mbq) at the time the radiopharmaceutical treatment was started. Dicom Tag (0018,1074)"
-* dosage.route.coding.code = SCT#47625008
+* dosage.route.coding.code = SnomedCS#47625008
 * dosage.route.coding.display = "Intravenous use"
 * dosage.route ^short = "Administration route of contrast agent."
 

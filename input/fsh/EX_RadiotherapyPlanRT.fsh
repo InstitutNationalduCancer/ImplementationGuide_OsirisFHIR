@@ -11,12 +11,12 @@ Description: "Example of instance from OSIRIS_pivot_PlanRT.csv, OSIRIS_pivot_Equ
 * extension[numberOfFractions].valueUnsignedInt = 16
 /* extension[reasonReplanification] = */
 * extension[algorithmName].valueString = "Unknown"
-/* extension[basedOn].extension[seriesUID] = */
-/* extension[basedOn].extension[rtStructUID] = */
+* extension[basedOn].extension[seriesUID].valueString = "Unknown"
+* extension[basedOn].extension[rtStructUID].valueReference = Reference(fhir-osiris-example-ROISegmentation)
 * identifier[rtPlanUID].value = "Unknown"
-/* extension[doseToVolume].extension[rtDoseUID] = */
-* extension[modalityAndTechnique].extension[radiotherapyModality].valueCodeableConcept = MCODEMODALITY#1156506007
-* extension[modalityAndTechnique].extension[radiotherapyTechnique].valueCodeableConcept = MCODETECHNIQUE#1162782007
+* extension[doseToVolume].extension[rtDoseUID].valueString = "Unknown"
+* extension[modalityAndTechnique].extension[radiotherapyModality].valueCodeableConcept = SnomedCS#1156506007
+* extension[modalityAndTechnique].extension[radiotherapyTechnique].valueCodeableConcept = SnomedRequestedCSmcode#1162782007
 * extension[modalityAndTechnique].extension[radiotherapyTreatmentMachinePlanned].valueString = "Unknown"
 * extension[doseToVolume][0].extension[volume].valueReference = Reference(fhir-osiris-example-RadiotherapyVolume-1)
 * extension[doseToVolume][0].extension[numberOfFractions].valueUnsignedInt = 16

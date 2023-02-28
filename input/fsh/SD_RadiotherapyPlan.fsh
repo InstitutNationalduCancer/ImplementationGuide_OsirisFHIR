@@ -18,7 +18,8 @@ Description: "Radiotherapy plans planned or delivered to a patient"
 * identifier contains rtPlanUID 1..1 MS
 * identifier[rtPlanUID] ^short = "UID RT Plan"
 * identifier[rtPlanUID] ^definition = "Reference SOP Instance UID of the RT Plan. Dicom Tag (0008,1155)" 
-      
+* identifier[rtPlanUID].type = #MR
+
 * subject 1..1 
 * subject MS
 * subject only Reference(onco-patient)
@@ -35,7 +36,7 @@ Description: "Radiotherapy plans planned or delivered to a patient"
 * category.coding.code from vs-radiotherapy-category (required)
 * category.coding.code 1..1 MS
 
-* code = SCT#1255724003
+* code = SnomedCS#1255724003
 * code.coding.display = "Radiotherapy treatment plan (regime/therapy)"
 * code 1..1
 * code MS
@@ -221,9 +222,9 @@ Title: "OSIRIS pivot files"
 * extension[numberOfFractions] -> "OSIRIS_pivot_PlanRT.Plan_NumberOfFractions"
 * extension[reasonReplanification] -> "OSIRIS_pivot_PlanRT.Plan_ReasonReplanification"
 * extension[algorithmName] -> "OSIRIS_pivot_PlanRT.Plan_AlgorithmName"
-* extension[basedOn].extension[seriesUID] -> "OSIRIS_pivot_PlanRT.Plan_SeriesUID"
-* extension[basedOn].extension[rtStructUID] -> "OSIRIS_pivot_PlanRT.Plan_RtStructUID"
-* identifier[rtPlanUID] -> "OSIRIS_pivot_PlanRT.Plan_RtStructUID"
+* extension[basedOn].extension[seriesUID] -> "OSIRIS_pivot_PlanRT.Series_Ref"
+* extension[basedOn].extension[rtStructUID] -> "OSIRIS_pivot_PlanRT.ROISegmentation_Ref"
+* identifier[rtPlanUID] -> "OSIRIS_pivot_PlanRT.Plan_RtPlanUID"
 * extension[doseToVolume].extension[rtDoseUID] -> "OSIRIS_pivot_PlanRT.Plan_RtDoseUID"
 
 

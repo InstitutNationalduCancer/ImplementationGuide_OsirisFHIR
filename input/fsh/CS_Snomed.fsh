@@ -1,7 +1,7 @@
-CodeSystem: SnomedRequestedCS
-Id: SnomedRequestedCS
-Title: "Requested SNOMED Codes Code System"
-Description: "Requested SNOMED Codes Code System"
+CodeSystem: SnomedCS
+Id: SnomedCS
+Title: "SNOMED Codes Code System"
+Description: "SNOMED Codes Code System"
 
 * ^url = "http://snomed.info/sct"
 
@@ -349,27 +349,27 @@ Description: "Requested SNOMED Codes Code System"
 * #277733009 "Level 1 (qualifier value)"
 * #277734003 "Level 2 (qualifier value)"
 * #277735002 "Level 3 (qualifier value)"
-* #261089000    "Inferior (qualifier value)"
-* #264217000    "Superior (qualifier value)"
-* #261183002    "Upper (qualifier value)"
-* #261122009    "Lower (qualifier value)"
-* #260528009    "Middle (qualifier value)"
-* #46053002    "Distal (qualifier value)"
-* #40415009    "Proximal (qualifier value)"
-* #255503000    "Entire (qualifier value)" // flagged spuriously as invalid
-* #255609007    "Partial (qualifier value)"
-* #7771000    "Left (qualifier value)" 
-* #24028007    "Right (qualifier value)" 
-* #51440002    "Right and left (qualifier value)" 
-* #14414005  "Peripheral (qualifier value)"
-* #26216008  "Central (qualifier value)"
+* #261089000 "Inferior (qualifier value)"
+* #264217000 "Superior (qualifier value)"
+* #261183002 "Upper (qualifier value)"
+* #261122009 "Lower (qualifier value)"
+* #260528009 "Middle (qualifier value)"
+* #46053002 "Distal (qualifier value)"
+* #40415009 "Proximal (qualifier value)"
+* #255503000 "Entire (qualifier value)" // flagged spuriously as invalid
+* #255609007 "Partial (qualifier value)"
+* #7771000 "Left (qualifier value)" 
+* #24028007 "Right (qualifier value)" 
+* #51440002 "Right and left (qualifier value)" 
+* #14414005 "Peripheral (qualifier value)"
+* #26216008 "Central (qualifier value)"
 * #260235002 "Core (qualifier value)"
 * #410679008 "Surface (qualifier value)"
 * #260521003 "Internal (qualifier value)"
 * #261074009 "External (qualifier value)"
 * #261115001 "Laryngeal (qualifier value)"
-* #260548002  "Oral (qualifier value)"
-* #18769003   "Adjacent" // or "Juxta-posed (qualifier value)"
+* #260548002 "Oral (qualifier value)"
+* #18769003 "Adjacent" // or "Juxta-posed (qualifier value)"
 * #1217011006 "Non-adjacent (qualifier value)"
 * #1162616006 "Lymph node level IA (qualifier value)"
 * #1162617002 "Lymph node level IB (qualifier value)"
@@ -387,11 +387,47 @@ Description: "Requested SNOMED Codes Code System"
 * #1162614009 "Lymph node level X (qualifier value)"
 * #1162615005 "Lymph node level XA (qualifier value)"
 * #1162613003 "Lymph node level XB (qualifier value)"
-* #68171009 "	Axillary lymph node structure"
+* #68171009 "Axillary lymph node structure"
 
 // Radiotherapy Reason Replanification
 * #373858009 "Radiotherapy course changed - acute radiotherapy toxicity (finding)"
 * #314846003 "Patient given choice of treatment (finding)"   
-* #1259981006    "Radiotherapy course change due to change to treatment intent (finding)"
-* #1259232004  "Radiotherapy course changed due to change to organ at risk (finding)"
-* #1259231006  "Radiotherapy course changed due to changes to target (finding)"
+
+// Modality
+* #10611004 "External beam radiation therapy protons (procedure)"
+* #45643008 "External beam radiation therapy using electrons (procedure)"
+* #80347004 "External beam radiation therapy neutrons (procedure)"
+* #1156505006	"External beam radiation therapy using carbon ions (procedure)"
+* #1156506007	"External beam radiation therapy using photons (procedure)"
+* #1156708005 "Low dose rate brachytherapy using temporary radioactive source (procedure)"
+* #169359004 "Internal radiotherapy - permanent seeds (procedure)"
+* #1156384006 "Pulsed dose rate brachytherapy (procedure)"
+* #394902000 "High dose brachytherapy (procedure)"
+* #438629002 "High dose rate electronic brachytherapy (procedure)"
+* #440252007 "Administration of radiopharmaceutical (procedure)"
+
+// Technique
+* #441799006 "Intensity modulated radiation therapy (procedure)"
+* #1156530009	"Volumetric Modulated Arc Therapy (procedure)"
+* #1156526006 "Two dimensional external beam radiation therapy (procedure)"
+* #168524008 "Radiotherapy - intraoperative control (procedure)"
+ 
+CodeSystem: SnomedRequestedCSmcode
+Id: SnomedRequestedCSmcode
+Title: "Requested SNOMED Codes Code System"
+Description: "Requested SNOMED Codes by mcode"
+ 
+
+* ^url = "http://hl7.org/fhir/us/mcode/CodeSystem/snomed-requested-cs"
+
+*  #1162782007 "Three dimensional external beam radiation therapy (procedure)"
+
+CodeSystem: SnomedRequestedCScodex
+Id: SnomedRequestedCScodex
+Title: "Requested SNOMED Codes Code System"
+Description: "Requested SNOMED Codes by codex"
+
+* ^url = "http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/snomed-requested-cs"
+* #1259981006 "Radiotherapy course change due to change to treatment intent (finding)"
+* #1259232004 "Radiotherapy course changed due to change to organ at risk (finding)"
+* #1259231006 "Radiotherapy course changed due to changes to target (finding)"

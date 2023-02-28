@@ -48,8 +48,8 @@ Title: "Radiotherapy Code System"
 Description: "Radiotherapy Code System"
 
 // Type (planified or delevred)
-* #planned "Planified"
-* #delivred  "Delivred"
+* #Planned "Planified"
+* #Delivered  "Delivered"
 
 CodeSystem: IBSICS
 Id: IBSICS
