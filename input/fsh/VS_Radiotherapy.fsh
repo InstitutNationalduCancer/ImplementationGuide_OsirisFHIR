@@ -2,8 +2,8 @@ ValueSet: VSRadiotherapyCategory
 Id: vs-radiotherapy-category
 Title: "Radiotherapy Category"
 Description: "Radiotherapy Category"
-* RadiotherapyCS#planned
-* RadiotherapyCS#delivered
+* RadiotherapyCS#Planned
+* RadiotherapyCS#Delivered
 
 ValueSet: VSRadiotherapyIntent
 Id: vs-radiotherapy-intent

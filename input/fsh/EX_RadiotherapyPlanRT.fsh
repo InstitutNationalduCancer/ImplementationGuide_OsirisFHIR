@@ -5,7 +5,7 @@ Description: "Example of instance from OSIRIS_pivot_PlanRT.csv, OSIRIS_pivot_Equ
 * subject = Reference(fhir-osiris-example-patient)
 * status = #completed
 * partOf = Reference(fhir-osiris-example-RadiotherapyPhase-1)
-* category = http://hl7.org/fhir/event-status#completed
+* category = RadiotherapyCS#Planned
 * performedPeriod.start = "2018-08-15"
 * performedPeriod.end = "2018-11-25"
 * extension[numberOfFractions].valueUnsignedInt = 16
