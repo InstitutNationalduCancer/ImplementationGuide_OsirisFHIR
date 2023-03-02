@@ -38,13 +38,3 @@ Instance: fhir-osiris-example-patient-dx
 InstanceOf: OncoPatient
 Description: "Example of Patient from OSIRIS_pivot_Patient.csv"
 * id = "LIDC-IDRI-0001"
-
-Instance: fhir-osiris-provider-organization 
-InstanceOf: OncoOrganization
-Description: "Example of provider(organization) from OSIRIS_pivot_Patient.csv"
-* identifier[finess].value = "IB"
-
-Instance: fhir-osiris-origin-organization
-InstanceOf: OncoOrganization
-Description: "Example of origin(organization) from OSIRIS_pivot_Patient.csv"
-* identifier[finess].value = "IB"
