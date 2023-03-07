@@ -35,6 +35,6 @@ Mapping: FhirOSIRISCauseOfDeath
 Source: CauseOfDeath
 Target: "Patient"
 Id: fhir-osiris-causeofdeath
-Title: "Fhir-osiris to osiris"
+Title: "OSIRIS pivot files"
 * -> "Cause of death"
 * valueCodeableConcept -> "OSIRIS_pivot_Patient.Patient_CauseOfDeath"

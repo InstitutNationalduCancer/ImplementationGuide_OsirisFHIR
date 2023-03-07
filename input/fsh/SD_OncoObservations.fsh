@@ -84,27 +84,27 @@ Title: "Fhir-osiris TNM to osiris TNM"
 #############################
 */
 
-Profile:        Biomarker
-Parent:         Observation
-Id:             biomarker
-Title:          "Biomarker"
-Description:    "Biomarker Observation about a patient from BiomarkerCode ValueSet."
-// References
-* subject only Reference (onco-patient)
-* derivedFrom only Reference (analysis)
+// Profile:        Biomarker
+// Parent:         Observation
+// Id:             biomarker
+// Title:          "Biomarker"
+// Description:    "Biomarker Observation about a patient from BiomarkerCode ValueSet."
+// // References
+// * subject only Reference (onco-patient)
+// * derivedFrom only Reference (analysis)
 
-// Other
-* code from BiomarkerCode (extensible)
-* value[x] 1..1
-* value[x] only Quantity 
+// // Other
+// * code from BiomarkerCode (extensible)
+// * value[x] 1..1
+// * value[x] only Quantity 
 
-Mapping: FhirOSIRISBiomarker
-Source: Biomarker
-Target: "Biomarker"
-Id: fhir-osiris-biomarker
-Title: "Fhir-osiris biomarker to osiris"
-* subject -> "Biomarker.Patient_Identifier"
-* derivedFrom -> "AdverseEvent.Analysis_Ref"
-* code -> "AdverseEvent.Biomarker_Code"
-* valueQuantity.value -> "AdverseEvent.Biomarker_Code"
-* valueQuantity.unit -> "Biomarker_Unit"
+// Mapping: FhirOSIRISBiomarker
+// Source: Biomarker
+// Target: "Biomarker"
+// Id: fhir-osiris-biomarker
+// Title: "Fhir-osiris biomarker to osiris"
+// * subject -> "Biomarker.Patient_Identifier"
+// * derivedFrom -> "AdverseEvent.Analysis_Ref"
+// * code -> "AdverseEvent.Biomarker_Code"
+// * valueQuantity.value -> "AdverseEvent.Biomarker_Code"
+// * valueQuantity.unit -> "Biomarker_Unit"

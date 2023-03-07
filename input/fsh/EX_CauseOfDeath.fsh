@@ -1,6 +1,6 @@
 Instance: fhir-osiris-example-causeofdeath
 InstanceOf: cause-of-death
-Description: "Example of VitalStatus"
+Description: "Example of CauseOfDeath"
 
 * subject = Reference(fhir-osiris-example-patient)
 * valueCodeableConcept.coding = UMLS#C0027651
