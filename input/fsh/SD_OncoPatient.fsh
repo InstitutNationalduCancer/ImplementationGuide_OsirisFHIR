@@ -63,7 +63,7 @@ Description: "The origin center organization of an Oncology Patient."
 
 Invariant:   deceasedDateTime-if-deceased
 Description: "If VitalStatus.valueCodeableConcept is deceased, then OncoPatient.deceasedDateTime MUST be present"
-Expression:  "Observation.where(id='fhir-osiris-example-vitalstatus').valueCodeableConcept.coding.code = 'C1546956' and Observation.subject.reference='Patient/'+ Patient.id implies deceasedDateTime.exists()"
+Expression:  "Observation.where(meta.profile='http://fhir.arkhn.com/osiris/StructureDefinition/vital-status').valueCodeableConcept.coding.where(code='C1546956').exists() implies Patient.where(meta.profile='http://fhir.arkhn.com/osiris/StructureDefinition/onco-patient').where(id = $this.subject.resolve().id).deceasedDateTime.exists()"
 Severity:    #error
 
 /* Observation.where(id='fhir-osiris-example-vitalstatus') and value.coding.where(code ='C1546956').exists() and patient.resolve().exists() implies patient.resolve().deceased.ofType('dateTime').exists()

@@ -43,3 +43,22 @@ Description:  "Analysis technical protocol"
 * OSIRIS#O6-14	"Whole genome bisulfite sequencing"
 * OSIRIS#O6-15	"Whole genome sequencing"
 * OSIRIS#O6-16	"miRNA microarray"
+
+ValueSet: TumorPathologyEventType
+Title: "Tumor Pathology Event Type Value Set"
+Description:  "Tumor pathology event type"
+* UMLS#C1882062	"Neoplasm"
+* UMLS#C2939419	"Metastatic Malignant Neoplasm (NCI:C36263)"
+* UMLS#C0521158	"Recurrent tumor"
+* UMLS#C0677930	"Primary tumor"
+* UMLS#C0439673	"Unknown"
+
+ValueSet: Laterality
+Title: "Tumor Laterality Value Set"
+Description:  "Tumor laterality"
+* UMLS#C0238767	"Bilateral"
+* UMLS#C0205091	"Left"
+* UMLS#C2939193	"Median (qualifier value)"
+* UMLS#C1272460	"Not Applicable"
+* UMLS#C0205090	"Right"
+* UMLS#C0439673	"Unknown"
