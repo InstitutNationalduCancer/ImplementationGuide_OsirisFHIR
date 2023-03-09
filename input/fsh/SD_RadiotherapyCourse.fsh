@@ -30,7 +30,6 @@ Description: "A summary of a course of radiotherapy planned or delivered to a pa
 * extension[treatmentTerminationReason] ^definition = "A code explaining the reason for unplanned or premature end, or normal completion. It should be extracted from MOSAIQ/ARIA Record and Verify."
 
 * extension contains numberOfSessions named numberOfSessions 0..1 MS 
-* obeys numberOfSession-if-category-planned
 * extension[numberOfSessions] ^short = "Number of Sessions"
 * extension[numberOfSessions] ^definition = "Total number of fractions planned. Summarize from phases"
 
