@@ -12,7 +12,7 @@ Description:    "Observation that indicates the cause of death of an Oncology Pa
 * value[x] only CodeableConcept 
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from CauseOfDeath (required)
-* valueCodeableConcept ^short = "Cause of death"
+* valueCodeableConcept ^short = "Cause of death. "
 * valueCodeableConcept ^definition = "The patient's primary cause of death."
 
 * component 0..0
