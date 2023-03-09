@@ -338,21 +338,6 @@ Description:    "Imaging Settings."
 
 /*
     ###################################
-    # Invariants#
-    ###################################
-*/
-Invariant:   patient-weight-if-pt-image
-Description: "If series.modality.code is 'PT', then series.extension.extension[patient_weight].valueDecimal MUST be present"
-Expression:  "series.modality.code ='PT' implies series.extension.extension.where(url = 'patient_weight').valueDecimal.exists()"
-Severity:    #error
-
-Invariant:   patient-height-if-pt-image
-Description: "If series.modality.code is 'PT', then series.extension.extension[patient_height].valueDecimal MUST be present"
-Expression:  "series.modality.code ='PT' implies series.extension.extension.where(url = 'patient_height').valueDecimal.exists()"
-Severity:    #error
-
-/*
-    ###################################
     # MAPPING OSIRIS <--> FHIR-OSIRIS #
     ###################################
 */
