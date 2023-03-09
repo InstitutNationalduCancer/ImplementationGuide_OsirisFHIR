@@ -20,7 +20,6 @@ Description:    "Oncology patient defined by Osiris."
 * gender ^definition = "Biological sex of the patient."
 
 * deceasedDateTime MS
-* obeys deceasedDateTime-if-deceased
 * deceasedDateTime ^short = "Death date"
 * deceasedDateTime ^definition = "Date of patient's death. Date (indicating the 15th day of the month of death for anonymization)."
 
@@ -55,18 +54,6 @@ Description: "The origin center organization of an Oncology Patient."
 * valueReference only Reference (OncoOrganization)
 * valueReference 1..1
 
-/*
-    ###################################
-    # Invariants#
-    ###################################
-*/
-
-Invariant:   deceasedDateTime-if-deceased
-Description: "If VitalStatus.valueCodeableConcept is deceased, then OncoPatient.deceasedDateTime MUST be present"
-Expression:  "Observation.where(meta.profile='http://fhir.arkhn.com/osiris/StructureDefinition/vital-status').valueCodeableConcept.coding.where(code='C1546956').exists() implies Patient.where(meta.profile='http://fhir.arkhn.com/osiris/StructureDefinition/onco-patient').where(id = $this.subject.resolve().id).deceasedDateTime.exists()"
-Severity:    #error
-
-/* Observation.where(id='fhir-osiris-example-vitalstatus') and value.coding.where(code ='C1546956').exists() and patient.resolve().exists() implies patient.resolve().deceased.ofType('dateTime').exists()
 /*
     ###################################
     # MAPPING OSIRIS <--> FHIR-OSIRIS #

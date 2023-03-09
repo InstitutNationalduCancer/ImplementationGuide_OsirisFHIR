@@ -19,14 +19,6 @@ Description:    "Observation that indicates the cause of death of an Oncology Pa
 
 /*
     ###################################
-    # Invariants#
-    ###################################
-*/
-  
-/* TO DO */
-
-/*
-    ###################################
     # MAPPING OSIRIS <--> FHIR-OSIRIS #
     ###################################
 */
