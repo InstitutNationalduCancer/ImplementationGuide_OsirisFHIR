@@ -106,9 +106,6 @@ Description:    "Description of an imaging study."
 * series.instance.uid ^short = "Unique number"
 * series.instance.uid ^definition = "Unique number to identify the image. Dicom Tag (0008,0018)"
 
-* obeys patient-weight-if-pt-image
-* obeys patient-height-if-pt-image
-
 
 Extension:      WeightHeight
 Id:             series-weightheigt
