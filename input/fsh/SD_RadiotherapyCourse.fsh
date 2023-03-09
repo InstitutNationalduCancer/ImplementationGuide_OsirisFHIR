@@ -68,14 +68,6 @@ Title: "Number of Sessions"
 Description: "The number of sessions"
 * value[x] only unsignedInt
 
-// ################ 
-// ## Invariants ## 
-// ################
-Invariant:   numberOfSession-if-category-planned
-Description: "If category.coding.code is planned, then extension[numberOfSession].value[x] MUST be present"
-Expression:  "category.coding.code='Planned' implies extension.where(url='http://fhir.arkhn.com/osiris/StructureDefinition/numberOfSessions').exists()"
-Severity:    #error
-
 
 /*
     ##########################
