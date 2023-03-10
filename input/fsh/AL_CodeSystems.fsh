@@ -13,6 +13,7 @@ Alias:   DICOMcontrast = https://dicom.nema.org/medical/dicom
 Alias:   ICD10 = http://hl7.org/fhir/sid/ICD-10
 Alias:   DICOMTech = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique
 Alias:   ENDPOINTstatus = 	http://hl7.org/fhir/ValueSet/endpoint-status
+Alias:   CTCAE = https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/CTCAE_v5_Quick_Reference_8.5x11.pdf
 
 // ValueSet
 Alias:   ATC = http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips 
