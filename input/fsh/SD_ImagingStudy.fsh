@@ -118,13 +118,13 @@ Description:    "Weight and Height at the time of the Serie"
 
 * extension[patient_weight].value[x] MS
 * extension[patient_weight].value[x] only decimal
-* extension[patient_weight] ^short = "Patient weight"
-* extension[patient_weight] ^definition = "Patient weight in kilograms. Dicom Tag (0010,1030)"
+* extension[patient_weight] ^short = "Patient weight. Obligatory if series.modality is PT."
+* extension[patient_weight] ^definition = "Patient weight in kilograms. Dicom Tag (0010,1030). Obligatory if series.modality is PT."
 
 * extension[patient_height].value[x] MS
 * extension[patient_height].value[x] only decimal
-* extension[patient_height] ^short = "Patient height"
-* extension[patient_height] ^definition = "Patient height in meters. Dicom Tag (0010,1020)"
+* extension[patient_height] ^short = "Patient height. Obligatory if series.modality is PT."
+* extension[patient_height] ^definition = "Patient height in meters. Dicom Tag (0010,1020). Obligatory if series.modality is PT."
 
 
 Extension:      ImagingSettings
