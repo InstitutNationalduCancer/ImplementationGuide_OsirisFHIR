@@ -12,8 +12,8 @@ Description:    "Observation that indicates the cause of death of an Oncology Pa
 * value[x] only CodeableConcept 
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from CauseOfDeath (required)
-* valueCodeableConcept ^short = "Cause of death. "
-* valueCodeableConcept ^definition = "The patient's primary cause of death."
+* valueCodeableConcept ^short = "Cause of death. Obligatory if vitalstatus is C1546956 (died)."
+* valueCodeableConcept ^definition = "The patient's primary cause of death. Obligatory if vitalstatus is C1546956 (died)."
 
 * component 0..0
 

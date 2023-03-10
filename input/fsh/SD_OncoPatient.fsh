@@ -20,8 +20,8 @@ Description:    "Oncology patient defined by Osiris."
 * gender ^definition = "Biological sex of the patient."
 
 * deceasedDateTime MS
-* deceasedDateTime ^short = "Death date"
-* deceasedDateTime ^definition = "Date of patient's death. Date (indicating the 15th day of the month of death for anonymization)."
+* deceasedDateTime ^short = "Death date. Obligatory if vitalstatus is C1546956 (died)."
+* deceasedDateTime ^definition = "Date of patient's death. Date (indicating the 15th day of the month of death for anonymization). Obligatory if vitalstatus is C1546956 (died)."
 
 * birthDate 1..1 MS
 * birthDate ^short = "Birthdate"

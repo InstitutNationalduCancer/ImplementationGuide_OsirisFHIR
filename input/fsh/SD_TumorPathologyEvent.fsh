@@ -60,8 +60,6 @@ Description:    "Tumor Pathology Event (TPE) Condition describing a tumoral even
 * extension[histologygrade] MS
 * extension[histologygrade] ^short = "Histology of the tumor"
 * extension[histologygrade] ^definition = "Histology of the tumor"
-// * obeys histologyGrade-if-category-histologyType
-// * obeys histologyType-if-category-histologyGrade
 
 
 Extension:      DueToTumorPathologyEvent
@@ -90,11 +88,11 @@ Description: "Grade of Histology"
     histologyGradeValue 0..1 MS
 
 * extension[histologyGradeType].value[x] only string
-* extension[histologyGradeType] ^short = "Histological Type"
+* extension[histologyGradeType] ^short = "Histological Type. Obligatory if Histological Grade exists."
 * extension[histologyGradeType] ^definition = "The classification system used to define the grade of the tumor (breast, prostate are given here as examples)."
 
 * extension[histologyGradeValue].value[x] only string
-* extension[histologyGradeValue] ^short = "Histological Grade"
+* extension[histologyGradeValue] ^short = "Histological Grade. Obligatory if Histological Type exists."
 * extension[histologyGradeValue] ^definition = "The value of the histological grade according to the classification system used."
 
 
@@ -116,16 +114,3 @@ Title: "OSIRIS pivot files"
 * extension[histologygrade].extension[histologyGradeValue] -> "OSIRIS_pivot_TumorPathologyEvent.TumorPathologyEvent_HistologicalGradeType"
 * extension[laterality].valueCodeableConcept.coding.code -> "OSIRIS_pivot_TumorPathologyEvent.TumorPathologyEvent_Laterality"
 
-
-// ################ 
-// ## Invariants ## 
-// ################
-// Invariant:   histologyGrade-if-category-histologyType
-// Description: "If histologyType.valueString exists, then histologyGrade.valueString MUST be present"
-// Expression:  "extension[histology].extension[histologyType].valueString.exists() implies extension[histology].extension[histologyGrade].valueString.exists()"
-// Severity:    #error
-
-// Invariant:   histologyType-if-category-histologyGrade
-// Description: "If histologyGrade.valueString exists, then histologyType.valueString MUST be present"
-// Expression:  "extension[histology].extension[histologyGrade].valueString.exists() implies extension[histology].extension[histologyType].valueString.exists()"
-// Severity:    #error

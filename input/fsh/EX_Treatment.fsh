@@ -9,7 +9,7 @@ Description: "Example of Treatment from OSIRIS_pivot_Treatment.csv"
 * status = http://hl7.org/fhir/request-status#unknown
 * intent = http://hl7.org/fhir/request-intent#plan
 
-Instance: fhir-osiris-example-treatment
+Instance: fhir-osiris-example-treatment-1
 InstanceOf: Treatment
 Description: "Example of Treatment from OSIRIS_pivot_Treatment.csv"
 
@@ -21,5 +21,18 @@ Description: "Example of Treatment from OSIRIS_pivot_Treatment.csv"
 * status = http://hl7.org/fhir/request-status#unknown
 * intent = http://hl7.org/fhir/request-intent#plan
 * extension[treatment-line].valueInteger = 2
-* activity.detail.code.text = "Unknown"
+* activity.detail.status = #unknown
+
+Instance: fhir-osiris-example-treatment-2
+InstanceOf: Treatment
+Description: "Example of Treatment from OSIRIS_pivot_Treatment.csv"
+
+* subject = Reference(fhir-osiris-example-patient)
+* activity.detail.reasonReference = Reference(fhir-osiris-example-TumorPathologyEvent-instance-2)
+* category = UMLS#C3665472
+* period.start = "2007-01-12"
+* period.end = "2008-11-17"
+* supportingInfo = Reference(fhir-osiris-example-researchstudy)
+* status = http://hl7.org/fhir/request-status#unknown
+* intent = http://hl7.org/fhir/request-intent#plan
 * activity.detail.status = #unknown
