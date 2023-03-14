@@ -4,11 +4,6 @@ Id: radiotherapy-course-summary
 Title: "Radiotherapy course Summary"
 Description: "A summary of a course of radiotherapy planned or delivered to a patient"
 
-/* extension contains 
-    treatmentIntent named treatmentIntent 0..1 MS and
-    treatmentTerminationReason named treatmentTerminationReason 0..1 MS and 
-    numberOfSession named numberOfSession 0..1 MS */
-
 * subject 1..1 
 * subject MS
 * subject only Reference(onco-patient)
@@ -22,7 +17,7 @@ Description: "A summary of a course of radiotherapy planned or delivered to a pa
 * category.coding.code from vs-radiotherapy-category (required)
 * category.coding.code 1..1 MS
 
-* code = SCT#1217123003
+* code = SnomedCS#1217123003
 * code.coding.display = "Radiotherapy course of treatment (regime/therapy)"
 * code 1..1 MS
 
@@ -35,7 +30,7 @@ Description: "A summary of a course of radiotherapy planned or delivered to a pa
 * extension[treatmentTerminationReason] ^definition = "A code explaining the reason for unplanned or premature end, or normal completion. It should be extracted from MOSAIQ/ARIA Record and Verify."
 
 * extension contains numberOfSessions named numberOfSessions 0..1 MS 
-* extension[numberOfSessions] obeys numberOfSession-if-category-planned
+* obeys numberOfSession-if-category-planned
 * extension[numberOfSessions] ^short = "Number of Sessions"
 * extension[numberOfSessions] ^definition = "Total number of fractions planned. Summarize from phases"
 
@@ -78,7 +73,7 @@ Description: "The number of sessions"
 // ################
 Invariant:   numberOfSession-if-category-planned
 Description: "If category.coding.code is planned, then extension[numberOfSession].value[x] MUST be present"
-Expression:  "category.coding.code == 'planned' implies extension[numberOfSession].value[x].exists()"
+Expression:  "category.coding.code='Planned' implies extension.where(url='http://fhir.arkhn.com/osiris/StructureDefinition/numberOfSessions').exists()"
 Severity:    #error
 
 
@@ -101,6 +96,7 @@ Title: "OSIRIS pivot files"
 * extension[treatmentIntent] -> "OSIRIS_pivot_CourseRT.Course_TreatmentIntent"
 * extension[treatmentTerminationReason] -> "OSIRIS_pivot_CourseRT.Course_TerminationReason"
 * extension[numberOfSessions] -> "OSIRIS_pivot_CourseRT.Course_NumberOfSessions"
+* basedOn -> "OSIRIS_pivot_CourseRT.Treatment_Ref"
 
 
 /*

@@ -19,7 +19,7 @@ Description:    "Description of a treatment plan related to an Oncology Patient.
 * category ^short = "Type of treatment"
 * category from TreatmentType (required)
 * activity ^slicing.discriminator.type = #pattern
-* activity ^slicing.discriminator.path = "detail.code"
+* activity ^slicing.discriminator.path = "detail.code.coding.system"
 * activity ^slicing.rules = #open
 * activity ^slicing.description = "Slice based on the activity code pattern"
 * activity contains activity-code 0..1
@@ -27,6 +27,7 @@ Description:    "Description of a treatment plan related to an Oncology Patient.
 * activity[activity-code].detail.code 1..1
 * activity[activity-code] ^short = "Classification Commune des Actes Médicaux (CCAM) code of the medical act"
 * activity[activity-code].detail.code ^short = "CCAM code of the medical act"
+* activity[activity-code].detail.code.coding.system = "https://www.atih.sante.fr/les-versions-de-la-ccam"
 
 Mapping: FhirOSIRISTreatment
 Source: Treatment

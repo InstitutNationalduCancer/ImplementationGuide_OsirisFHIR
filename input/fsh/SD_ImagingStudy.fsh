@@ -79,7 +79,8 @@ Description:    "Description of an imaging study."
 * series.description ^definition = "Description of the series. Dicom Tag (00e1, 1040), (0008, 103E), (0008, 1030)"
 
 * series.bodySite MS
-* series.bodySite 0..1  
+* series.bodySite 0..1 
+* series.bodySite from VSBodySite
 * series.bodySite ^short = "Part of the body examined"
 * series.bodySite ^definition = "Part of the body examined. Dicom Tag (0018,0015)"
 
@@ -105,6 +106,9 @@ Description:    "Description of an imaging study."
 * series.instance.uid ^short = "Unique number"
 * series.instance.uid ^definition = "Unique number to identify the image. Dicom Tag (0008,0018)"
 
+* obeys patient-weight-if-pt-image
+* obeys patient-height-if-pt-image
+
 
 Extension:      WeightHeight
 Id:             series-weightheigt
@@ -117,13 +121,11 @@ Description:    "Weight and Height at the time of the Serie"
 
 * extension[patient_weight].value[x] MS
 * extension[patient_weight].value[x] only decimal
-* extension[patient_weight] obeys patient-weight-if-pt-image
 * extension[patient_weight] ^short = "Patient weight"
 * extension[patient_weight] ^definition = "Patient weight in kilograms. Dicom Tag (0010,1030)"
 
 * extension[patient_height].value[x] MS
 * extension[patient_height].value[x] only decimal
-* extension[patient_height] obeys patient-height-if-pt-image
 * extension[patient_height] ^short = "Patient height"
 * extension[patient_height] ^definition = "Patient height in meters. Dicom Tag (0010,1020)"
 
@@ -171,7 +173,7 @@ Description:    "Imaging Settings."
 * extension[columns] ^short = "Number of pixels in the direction of the column"
 * extension[columns] ^definition = "Number of pixels in the column direction of the reconstructed matrix. Dicom Tag (0028,0011)"
 
-* extension[imaging_injection].value[x] only Reference(onco-imagingstudy-injection)
+* extension[imaging_injection].valueReference only Reference(onco-imagingstudy-injection)
 * extension[imaging_injection] ^short = "Qualification of the medical image contrast injection"
 
 
@@ -231,8 +233,8 @@ Description:    "Imaging Settings."
 
 * extension[mr_image].extension[receive_coil_name].value[x] 1..1 MS
 * extension[mr_image].extension[receive_coil_name].value[x] only string 
-* extension[mr_image].extension[receive_coil_name] ^short = "Receive col name"
-* extension[mr_image].extension[receive_coil_name] ^definition = "Receive col name. Dicom Tag (0018,1250)"
+* extension[mr_image].extension[receive_coil_name] ^short = "Receive coil name"
+* extension[mr_image].extension[receive_coil_name] ^definition = "Receive coil name. Dicom Tag (0018,1250)"
 
 
 // ############
@@ -340,15 +342,14 @@ Description:    "Imaging Settings."
     ###################################
 */
 Invariant:   patient-weight-if-pt-image
-Description: "If extension:pt_image exist, then extension[patient_weight] MUST be present"
-Expression:  "extension:pt_image.exists() implies extension[patient_weight].valueDecimal.exists()"
+Description: "If series.modality.code is 'PT', then series.extension.extension[patient_weight].valueDecimal MUST be present"
+Expression:  "series.modality.code ='PT' implies series.extension.extension.where(url = 'patient_weight').valueDecimal.exists()"
 Severity:    #error
 
 Invariant:   patient-height-if-pt-image
-Description: "If extension:pt_image exist, then extension[patient_height] MUST be present"
-Expression:  "extension:pt_image.exists() implies extension[patient_height].valueDecimal.exists()"
+Description: "If series.modality.code is 'PT', then series.extension.extension[patient_height].valueDecimal MUST be present"
+Expression:  "series.modality.code ='PT' implies series.extension.extension.where(url = 'patient_height').valueDecimal.exists()"
 Severity:    #error
-
 
 /*
     ###################################
@@ -370,7 +371,7 @@ Title: "OSIRIS pivot files"
 * started -> "OSIRIS_pivot_Study.Study_AcquisitionDate"
 * location -> "OSIRIS_pivot_Study.Study_InstitutionName"
 * modality -> "OSIRIS_pivot_Study.Study_ModalitiesInStudy"
-* numberOfInstances -> "OSIRIS_pivot_Study.Study_NbStudyRelatedSeries"
+* numberOfSeries -> "OSIRIS_pivot_Study.Study_NbStudyRelatedSeries"
 
 * series.number -> "OSIRIS_pivot_Series.Series_SeriesNumber"
 * series.uid -> "OSIRIS_pivot_Series.Series_SeriesInstanceUID"

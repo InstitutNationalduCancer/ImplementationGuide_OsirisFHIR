@@ -9,7 +9,7 @@ Description: "A volume of the body treated by radiotherapy (plannes or delivered
 
 * identifier 1..1 MS
 * identifier ^short = "ID"
-* identifier ^definition = " Identification number of the prescription volume. Dicom Tag (3006,0022) or Dicom Tag (300A,000B)"
+* identifier ^definition = "Identification number of the prescription volume. Dicom Tag (3006,0022) or Dicom Tag (300A,000B)"
 
 
 * location ^short = "Location"

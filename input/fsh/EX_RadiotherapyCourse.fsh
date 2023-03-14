@@ -4,7 +4,7 @@ Description: "Example of instance from OSIRIS_pivot_CourseRT.csv, OSIRIS_pivot_E
 
 * subject = Reference(fhir-osiris-example-patient)
 * status = #completed
-* category = RadiotherapyCS#planned
+* category = RadiotherapyCS#Planned
 * performedPeriod.start = "2018-08-15"
 * performedPeriod.end  = "2018-12-25"
 * extension[treatmentIntent].valueCodeableConcept.coding = #373808002
@@ -19,7 +19,7 @@ Description: "Example of instance from OSIRIS_pivot_CourseRT.csv, OSIRIS_pivot_E
 
 * subject = Reference(fhir-osiris-example-patient)
 * status = #completed
-* category = RadiotherapyCS#delivred
+* category = RadiotherapyCS#Delivered
 * performedPeriod.start = "2018-08-15"
 * performedPeriod.end  = "2018-12-25"
 * extension[treatmentIntent].valueCodeableConcept.coding  = #373808002

@@ -2,7 +2,7 @@ Instance: fhir-osiris-example-patient
 InstanceOf: OncoPatient
 Description: "Example of Patient from OSIRIS_pivot_Patient.csv"
 * id = "L304"
-//* extension[ethnicity].value[x] = #2043-8
+* extension[ethnicity].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-Race#2043-8
 * extension[origin-center].valueReference = Reference(fhir-osiris-origin-organization)
 * gender = #male
 * birthDate = "1967-11-08"

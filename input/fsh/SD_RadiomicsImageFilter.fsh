@@ -6,12 +6,15 @@ Description:    "Filtering parameters used for the imaging analysis"
 
 * extension contains radiomics-image-filters-settings named radiomics-image-filters-settings 1..1
 
-* identifier MS 
-* identifier 1..1
-
 * partOf MS
 * partOf 1..1
 * partOf only Reference(onco-imagingstudy)
+* partOf ^short = "Study of reference"
+* partOf ^definition = "Study of reference in the ImagingStudy resource"
+
+* note 1..1
+* note ^short = "Series uid of reference"
+* note ^definition = "Series uid of reference in the ImagingStudy resource"
 
 * code = LNC#85430-7
 
@@ -32,32 +35,32 @@ Description:    "Radiomics Image Filters Settings."
 /* 2.1 Software Name*/
 * extension[softwareName] ^short = "Software name"
 * extension[softwareName] ^definition = "Name of the software used"
-* extension[softwareName].value[x] only string
-* extension[softwareName].value[x] 1..1 MS
+* extension[softwareName].valueString
+* extension[softwareName].valueString 1..1 MS
 
 /* 2.2 Software Version*/
 * extension[softwareVersion] ^short = "Version name"
-* extension[softwareVersion] ^definition = "Name of the version used."
-* extension[softwareVersion].value[x] only string
-* extension[softwareVersion].value[x] 1..1 MS
+* extension[softwareVersion] ^definition = "Name of the version used"
+* extension[softwareVersion].valueString only string
+* extension[softwareVersion].valueString 1..1 MS
 
 /* 2.3 Filter Method */
-* extension[filterMethod] ^short = "Method of filter"
-* extension[filterMethod] ^definition = "Method of image filter"
-* extension[filterMethod].valueCoding from VSSFilterMethod (required)
-* extension[filterMethod].valueCoding  MS
+* extension[filterMethod] ^short = "Method of filter: Mean Filter|Laplacian of Gaussian|Laws Kernels|Gabor|Wavelets|Riesz|Simoncelli"
+* extension[filterMethod] ^definition = "Method of image filter: Mean Filter|Laplacian of Gaussian|Laws Kernels|Gabor|Wavelets|Riesz|Simoncelli"
+* extension[filterMethod].valueString
+* extension[filterMethod].valueString  MS
 
 /* 2.4 Filter Type */
-* extension[filterType] ^short = "Type of filter"
-* extension[filterType] ^definition = "Type of image filter"
-* extension[filterType].valueCoding from VSSFilterType (required)
-* extension[filterType].valueCoding  MS
+* extension[filterType] ^short = "Type of filter: Bicubic spline|Tricubic spline|Lagrangian polynomial"
+* extension[filterType] ^definition = "Type of image filter: Bicubic spline|Tricubic spline|Lagrangian polynomial"
+* extension[filterType].valueString 
+* extension[filterType].valueString  MS
 
 /* 2.5 Interpolation Type */
-* extension[filterInterpolation] ^short = "Type of interpolation "
-* extension[filterInterpolation] ^definition = "Type of filter interpolation"
-* extension[filterInterpolation].valueCoding from VSSpatialResamplingMethodAndInterpolationType (required)
-* extension[filterInterpolation].valueCoding MS
+* extension[filterInterpolation] ^short = "Type of interpolation: Slice-wise (2D)|Volume (3D)"
+* extension[filterInterpolation] ^definition = "Type of filter interpolation: Slice-wise (2D)|Volume (3D)"
+* extension[filterInterpolation].valueString
+* extension[filterInterpolation].valueString MS
 
 /* 2.6 Intensity Rounding */
 * extension[intensityRounding].extension contains
@@ -73,10 +76,10 @@ Description:    "Radiomics Image Filters Settings."
 * extension[intensityRounding].extension[valueString].value[x] 1..1 MS
 
 /* 2.7 Boundary Condition */
-* extension[boundaryCondition] ^short = "Limit condition"
-* extension[boundaryCondition] ^definition = "Limit condition"
-* extension[boundaryCondition].valueCoding from VSBoundaryCondition (required)
-* extension[boundaryCondition].valueCoding MS
+* extension[boundaryCondition] ^short = "Limit condition: zero padding|mirror padding|periodic padding|Constant Value Padding|Nearest Value Padding"
+* extension[boundaryCondition] ^definition = "Limit condition: zero padding|mirror padding|periodic padding|Constant Value Padding|Nearest Value Padding"
+* extension[boundaryCondition].valueString
+* extension[boundaryCondition].valueString MS
 
 /*
     ##########################

@@ -19,7 +19,7 @@ Description: "Summary of the radiotherapy phases planned or delivered to a patie
 * category.coding.code from vs-radiotherapy-category (required)
 * category.coding.code  1..1 MS
 
-* code = SCT#1222565005
+* code = SnomedCS#1222565005
 * code.coding.display = "Radiotherapy treatment phase (regime/therapy)"
 * code 1..1
 * code MS

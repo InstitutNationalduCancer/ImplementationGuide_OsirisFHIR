@@ -8,39 +8,39 @@ Description: "Imaging Code System"
 * #DICOM    "ROI Type DICOM"
 * #MASK    "ROI Type NIfTI"
 
-// Radiomics Criteria: LocalizationMethod
-* #Local "Local Method: Apply from a ROI"
-* #Global "Global Method: Apply directly on image voxels"
+// // Radiomics Criteria: LocalizationMethod
+// * #Local "Local Method: Apply from a ROI"
+// * #Global "Global Method: Apply directly on image voxels"
 
-// Radiomics Criteria: Resampling Intensity Method
-* #FBN "Relative"
-* #FBS "Absolute"
+// // Radiomics Criteria: Resampling Intensity Method
+// * #FBN "Relative"
+// * #FBS "Absolute"
 
-// Radiomics Criteria: Spatial Resampling Method and Radiomics Image Filter: Interpolation Type
-* #BicubicSpline "Bicubic spline"
-* #TricubicSpline "Tricubic spline"
-* #LagrangianPolynomial "Lagrangian polynomial"
-* #None "None"
+// // Radiomics Criteria: Spatial Resampling Method and Radiomics Image Filter: Interpolation Type
+// * #BicubicSpline "Bicubic spline"
+// * #TricubicSpline "Tricubic spline"
+// * #LagrangianPolynomial "Lagrangian polynomial"
+// * #None "None"
 
-// Radiomics Image Filter: Filter Method
-* #Mean "Mean"
-* #LaplacianOfGaussian "Laplacian of Gaussian"
-* #LawsKernels "Laws Kernels"
-* #Gabor "Gabor"
-* #Wavelets "Wavelets"
-* #Riesz "Riesz"
-* #Simoncelli "Simoncelli"
+// // Radiomics Image Filter: Filter Method
+// * #MeanFilter "Mean Filter"
+// * #LaplacianOfGaussian "Laplacian of Gaussian"
+// * #LawsKernels "Laws Kernels"
+// * #Gabor "Gabor"
+// * #Wavelets "Wavelets"
+// * #Riesz "Riesz"
+// * #Simoncelli "Simoncelli"
 
-// Radiomics Image Filter: Filter Type
-* #SliceWise2D "Slice-wise (2D)"
-* #Volume3D "Volume (3D)"
+// // Radiomics Image Filter: Filter Type
+// * #SliceWise2D "Slice-wise (2D)"
+// * #Volume3D "Volume (3D)"
 
-// Boundary Condition
-* #ZeroPadding "Zero Padding"
-* #MirrorPadding "Mirror Padding"
-* #PeriodicPadding "Periodic Padding"
-* #ConstantValuePadding  "Constant Value Padding "
-* #NearestValuePadding "Nearest Value Padding"
+// // Boundary Condition
+// * #ZeroPadding "zero padding"
+// * #MirrorPadding "mirror padding"
+// * #PeriodicPadding "periodic padding"
+// * #ConstantValuePadding  "Constant Value Padding"
+// * #NearestValuePadding "Nearest Value Padding"
 
 CodeSystem: RadiotherapyCS
 Id: RadiotherapyCS
@@ -48,25 +48,14 @@ Title: "Radiotherapy Code System"
 Description: "Radiotherapy Code System"
 
 // Type (planified or delevred)
-* #planned "Planified"
-* #delivred  "Delivred"
-
-CodeSystem: SnomedRequestedCS
-Id: SnomedRequestedCS
-Title: "Requested SNOMED Codes Code System"
-Description: "Requested SNOMED Codes Code System"
-
-// ReasonReplanification
-* #1259981006  "Radiotherapy course change due to change to treatment intent (finding)"
-* #373858009 "Radiotherapy course changed - acute radiotherapy toxicity (finding)"
-* #1259231006  "Radiotherapy course changed due to changes to target (finding)"
-* #1259232004  "Radiotherapy course changed due to change to organ at risk (finding)"   
+* #Planned "Planified"
+* #Delivered  "Delivered"
 
 CodeSystem: IBSICS
 Id: IBSICS
 Title: "IBSI Code System"
 Description: "IBSI Code System"
-//* author.telecom.code = http://hl7.org/fhir/contact-point-system#email
+
 * ^url = "https://ibsi.readthedocs.io/en/latest/"
 * #HCUG "Morphological features"
 * #RNU0 "Volume"
@@ -480,13 +469,13 @@ Description: "IBSI Code System"
 * #V530 "angle, phase or argument response map"
 * #F7DI "real"
 * #LI3Y "imaginary"
-* #52
-* #56a
-* #56b
-* #56c
-* #61
-* #62
-* #63
+* #52 "Intensity rounding: Describe how fractional Hounsfield Units are rounded to integer values after interpolation"
+* #56a "Discretisation method: Describe the method used to discretise image intensities"
+* #56b "Discretisation method: Describe the number of bins (FBN) or the bin size (FBS) used for discretisation"
+* #56c "Discretisation method: Describe the lowest intensity in the first bin for FBS discretisation"
+* #61 "Software availability: Describe which software and version was used to compute image biomarkers"
+* #62 "Texture matrix aggregation: Define how texture-matrix based biomarkers were computed from underlying texture matrices"
+* #63 "Distance weighting: Describe which software and version was used to compute image biomarkers"
 
 CodeSystem: SeriesModalityCS
 Id: SeriesModalityCS
@@ -494,12 +483,8 @@ Title: "Series Modality Code System"
 Description: "Series Modality  Code System"
 * ^url = "https://terminology.arkhn.com/SeriesModalityCS"
 
-* #MR    "Magnetic Resonance Imaging"
-* #CT    "Computed Tomography Scanner"
 * #RTSTRUCT "Radiotherapy Structure Set"
-* #PT "Positron emission Tomography"
-* #DX "Digital X Ray"
-* #NM "Nuclear Medicine image"
+
 
 
 
