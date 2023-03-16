@@ -106,9 +106,6 @@ Description:    "Description of an imaging study."
 * series.instance.uid ^short = "Unique number"
 * series.instance.uid ^definition = "Unique number to identify the image. Dicom Tag (0008,0018)"
 
-* obeys patient-weight-if-pt-image
-* obeys patient-height-if-pt-image
-
 
 Extension:      WeightHeight
 Id:             series-weightheigt
@@ -121,13 +118,13 @@ Description:    "Weight and Height at the time of the Serie"
 
 * extension[patient_weight].value[x] MS
 * extension[patient_weight].value[x] only decimal
-* extension[patient_weight] ^short = "Patient weight"
-* extension[patient_weight] ^definition = "Patient weight in kilograms. Dicom Tag (0010,1030)"
+* extension[patient_weight] ^short = "Patient weight. Obligatory if series.modality is PT."
+* extension[patient_weight] ^definition = "Patient weight in kilograms. Dicom Tag (0010,1030). Obligatory if series.modality is PT."
 
 * extension[patient_height].value[x] MS
 * extension[patient_height].value[x] only decimal
-* extension[patient_height] ^short = "Patient height"
-* extension[patient_height] ^definition = "Patient height in meters. Dicom Tag (0010,1020)"
+* extension[patient_height] ^short = "Patient height. Obligatory if series.modality is PT."
+* extension[patient_height] ^definition = "Patient height in meters. Dicom Tag (0010,1020). Obligatory if series.modality is PT."
 
 
 Extension:      ImagingSettings
@@ -335,21 +332,6 @@ Description:    "Imaging Settings."
 * extension[dx_image].extension[exposure_time].value[x] only integer
 * extension[dx_image].extension[exposure_time] ^short = "Duration of X-ray exposure in ms"
 * extension[dx_image].extension[exposure_time] ^short = "Duration of X-Ray exposure in ms. DicomTag (0018,1150)"
-
-/*
-    ###################################
-    # Invariants#
-    ###################################
-*/
-Invariant:   patient-weight-if-pt-image
-Description: "If series.modality.code is 'PT', then series.extension.extension[patient_weight].valueDecimal MUST be present"
-Expression:  "series.modality.code ='PT' implies series.extension.extension.where(url = 'patient_weight').valueDecimal.exists()"
-Severity:    #error
-
-Invariant:   patient-height-if-pt-image
-Description: "If series.modality.code is 'PT', then series.extension.extension[patient_height].valueDecimal MUST be present"
-Expression:  "series.modality.code ='PT' implies series.extension.extension.where(url = 'patient_height').valueDecimal.exists()"
-Severity:    #error
 
 /*
     ###################################

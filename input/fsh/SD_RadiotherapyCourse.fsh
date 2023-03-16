@@ -30,9 +30,8 @@ Description: "A summary of a course of radiotherapy planned or delivered to a pa
 * extension[treatmentTerminationReason] ^definition = "A code explaining the reason for unplanned or premature end, or normal completion. It should be extracted from MOSAIQ/ARIA Record and Verify."
 
 * extension contains numberOfSessions named numberOfSessions 0..1 MS 
-* obeys numberOfSession-if-category-planned
-* extension[numberOfSessions] ^short = "Number of Sessions"
-* extension[numberOfSessions] ^definition = "Total number of fractions planned. Summarize from phases"
+* extension[numberOfSessions] ^short = "Number of Sessions. Obligatory if category is Planned"
+* extension[numberOfSessions] ^definition = "Total number of fractions planned. Summarize from phases. Obligatory if category is Planned"
 
 * performed[x] only Period
 * performed[x] 1..1 MS
@@ -67,14 +66,6 @@ Id: numberOfSessions
 Title: "Number of Sessions"
 Description: "The number of sessions"
 * value[x] only unsignedInt
-
-// ################ 
-// ## Invariants ## 
-// ################
-Invariant:   numberOfSession-if-category-planned
-Description: "If category.coding.code is planned, then extension[numberOfSession].value[x] MUST be present"
-Expression:  "category.coding.code='Planned' implies extension.where(url='http://fhir.arkhn.com/osiris/StructureDefinition/numberOfSessions').exists()"
-Severity:    #error
 
 
 /*
