@@ -1,6 +1,6 @@
 Instance: fhir-osiris-example-analysis-clinical 
 InstanceOf: analysis
-Description: "Example of Patient from OSIRIS_pivot_Analysis.csv"
+Description: "Example of Analysis from OSIRIS_pivot_Analysis.csv"
 
 * subject =  Reference(fhir-osiris-example-patient)
 * focus = Reference(fhir-osiris-example-TumorPathologyEvent-instance-1)
@@ -10,7 +10,7 @@ Description: "Example of Patient from OSIRIS_pivot_Analysis.csv"
 
 Instance: fhir-osiris-example-analysis-ct 
 InstanceOf: analysis
-Description: "Example of Patient from OSIRIS_pivot_Analysis.csv"
+Description: "Example of Analysis from OSIRIS_pivot_Analysis.csv"
 
 * subject =  Reference(fhir-osiris-example-patient-ct-scan)
 * effectiveDateTime = "2018-10-12"
@@ -19,7 +19,7 @@ Description: "Example of Patient from OSIRIS_pivot_Analysis.csv"
 
 Instance: fhir-osiris-example-analysis-mr 
 InstanceOf: analysis
-Description: "Example of Patient from OSIRIS_pivot_Analysis.csv"
+Description: "Example of Analysis from OSIRIS_pivot_Analysis.csv"
 
 * subject =  Reference(fhir-osiris-example-patient-ct-mr)
 * effectiveDateTime = "2018-10-12"
@@ -28,7 +28,7 @@ Description: "Example of Patient from OSIRIS_pivot_Analysis.csv"
 
 Instance: fhir-osiris-example-analysis-mr-2
 InstanceOf: analysis
-Description: "Example of Patient from OSIRIS_pivot_Analysis.csv"
+Description: "Example of Analysis from OSIRIS_pivot_Analysis.csv"
 
 * subject =  Reference(fhir-osiris-example-patient-ct-mr-2)
 * effectiveDateTime = "2018-10-12"
@@ -37,7 +37,7 @@ Description: "Example of Patient from OSIRIS_pivot_Analysis.csv"
 
 Instance: fhir-osiris-example-analysis-pt-nm
 InstanceOf: analysis
-Description: "Example of Patient from OSIRIS_pivot_Analysis.csv"
+Description: "Example of Analysis from OSIRIS_pivot_Analysis.csv"
 
 * subject =  Reference(fhir-osiris-example-patient-pt-nm)
 * effectiveDateTime = "2018-10-12"
@@ -46,7 +46,7 @@ Description: "Example of Patient from OSIRIS_pivot_Analysis.csv"
 
 Instance: fhir-osiris-example-analysis-dx
 InstanceOf: analysis
-Description: "Example of Patient from OSIRIS_pivot_Analysis.csv"
+Description: "Example of Analysis from OSIRIS_pivot_Analysis.csv"
 
 * subject =  Reference(fhir-osiris-example-patient-dx)
 * effectiveDateTime = "2018-10-12"
