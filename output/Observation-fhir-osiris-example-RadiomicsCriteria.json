@@ -1,0 +1,134 @@
+{
+  "resourceType" : "Observation",
+  "id" : "fhir-osiris-example-RadiomicsCriteria",
+  "meta" : {
+    "profile" : ["http://fhir.arkhn.com/osiris/StructureDefinition/radiomics-criteria"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"fhir-osiris-example-RadiomicsCriteria\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;fhir-osiris-example-RadiomicsCriteria&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-radiomics-criteria.html\">Radiomics Criteria</a></p></div><blockquote><p><b>Radiomics Criteria Settings</b></p><p><b>value</b>: GLOBAL</p><p><b>value</b>: None</p><p><b>value</b>: 3x3x3</p><p><b>value</b>: 0,100</p><p><b>value</b>: Bicubic spline</p><p><b>value</b>: [1.0, 2.0, 3.0]</p></blockquote><p><b>status</b>: final</p><p><b>code</b>: Diagnostic imaging report - example sections and entries <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#85430-7)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><p><b>focus</b>: <a href=\"Observation-fhir-osiris-example-ROISegmentation.html\">Observation/fhir-osiris-example-ROISegmentation</a></p><p><b>hasMember</b>: <a href=\"Observation-fhir-osiris-example-RadiomicsImageFilter.html\">Observation/fhir-osiris-example-RadiomicsImageFilter</a></p></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "extension" : [{
+        "url" : "code"
+      },
+      {
+        "url" : "valueString",
+        "valueString" : "PyRadiomics"
+      }],
+      "url" : "softwareName"
+    },
+    {
+      "extension" : [{
+        "url" : "code"
+      },
+      {
+        "url" : "valueString",
+        "valueString" : "v3.0.1"
+      }],
+      "url" : "softwareVersion"
+    },
+    {
+      "url" : "localizationMethod",
+      "valueString" : "GLOBAL"
+    },
+    {
+      "url" : "usedImageFilter",
+      "valueString" : "None"
+    },
+    {
+      "url" : "usedImageFilterParameters",
+      "valueString" : "3x3x3"
+    },
+    {
+      "extension" : [{
+        "url" : "code"
+      },
+      {
+        "url" : "valueString",
+        "valueString" : "None"
+      }],
+      "url" : "distanceWeighting"
+    },
+    {
+      "extension" : [{
+        "url" : "code"
+      },
+      {
+        "url" : "valueString",
+        "valueString" : "FBS"
+      }],
+      "url" : "discretisationMethod"
+    },
+    {
+      "extension" : [{
+        "url" : "code"
+      },
+      {
+        "url" : "valueDecimal",
+        "valueDecimal" : 12
+      }],
+      "url" : "binSize"
+    },
+    {
+      "url" : "boundsRangeOfValueAfterDiscretisation",
+      "valueString" : "0,100"
+    },
+    {
+      "url" : "spatialResamplingMethod",
+      "valueString" : "Bicubic spline"
+    },
+    {
+      "extension" : [{
+        "url" : "code"
+      },
+      {
+        "url" : "valueString",
+        "valueString" : "None"
+      }],
+      "url" : "textureMatrixAggregation"
+    },
+    {
+      "extension" : [{
+        "url" : "valueDecimal",
+        "valueDecimal" : 0
+      },
+      {
+        "url" : "code"
+      }],
+      "url" : "lowestIntensity"
+    },
+    {
+      "extension" : [{
+        "url" : "valueDecimal",
+        "valueDecimal" : 1
+      },
+      {
+        "url" : "code"
+      }],
+      "url" : "biggestIntensity"
+    },
+    {
+      "url" : "spatialResamplingValues",
+      "valueString" : "[1.0, 2.0, 3.0]"
+    }],
+    "url" : "http://fhir.arkhn.com/osiris/StructureDefinition/radiomics-criteria-settings"
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "85430-7"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/L304"
+  },
+  "focus" : [{
+    "reference" : "Observation/fhir-osiris-example-ROISegmentation"
+  }],
+  "hasMember" : [{
+    "reference" : "Observation/fhir-osiris-example-RadiomicsImageFilter"
+  }]
+}

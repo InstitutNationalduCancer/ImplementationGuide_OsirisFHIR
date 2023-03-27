@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="fhir-osiris-example-RadiomicsCriteria"/>
+  <meta>
+    <profile value="http://fhir.arkhn.com/osiris/StructureDefinition/radiomics-criteria"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="fhir-osiris-example-RadiomicsCriteria"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;fhir-osiris-example-RadiomicsCriteria&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-radiomics-criteria.html">Radiomics Criteria</a></p></div><blockquote><p><b>Radiomics Criteria Settings</b></p><p><b>value</b>: GLOBAL</p><p><b>value</b>: None</p><p><b>value</b>: 3x3x3</p><p><b>value</b>: 0,100</p><p><b>value</b>: Bicubic spline</p><p><b>value</b>: [1.0, 2.0, 3.0]</p></blockquote><p><b>status</b>: final</p><p><b>code</b>: Diagnostic imaging report - example sections and entries <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#85430-7)</span></p><p><b>subject</b>: <a href="Patient-L304.html">Patient/L304</a></p><p><b>focus</b>: <a href="Observation-fhir-osiris-example-ROISegmentation.html">Observation/fhir-osiris-example-ROISegmentation</a></p><p><b>hasMember</b>: <a href="Observation-fhir-osiris-example-RadiomicsImageFilter.html">Observation/fhir-osiris-example-RadiomicsImageFilter</a></p></div>
+  </text>
+  <extension url="http://fhir.arkhn.com/osiris/StructureDefinition/radiomics-criteria-settings">
+    <extension url="softwareName">
+      <extension url="code"/>
+      <extension url="valueString">
+        <valueString value="PyRadiomics"/>
+      </extension>
+    </extension>
+    <extension url="softwareVersion">
+      <extension url="code"/>
+      <extension url="valueString">
+        <valueString value="v3.0.1"/>
+      </extension>
+    </extension>
+    <extension url="localizationMethod">
+      <valueString value="GLOBAL"/>
+    </extension>
+    <extension url="usedImageFilter">
+      <valueString value="None"/>
+    </extension>
+    <extension url="usedImageFilterParameters">
+      <valueString value="3x3x3"/>
+    </extension>
+    <extension url="distanceWeighting">
+      <extension url="code"/>
+      <extension url="valueString">
+        <valueString value="None"/>
+      </extension>
+    </extension>
+    <extension url="discretisationMethod">
+      <extension url="code"/>
+      <extension url="valueString">
+        <valueString value="FBS"/>
+      </extension>
+    </extension>
+    <extension url="binSize">
+      <extension url="code"/>
+      <extension url="valueDecimal">
+        <valueDecimal value="12"/>
+      </extension>
+    </extension>
+    <extension url="boundsRangeOfValueAfterDiscretisation">
+      <valueString value="0,100"/>
+    </extension>
+    <extension url="spatialResamplingMethod">
+      <valueString value="Bicubic spline"/>
+    </extension>
+    <extension url="textureMatrixAggregation">
+      <extension url="code"/>
+      <extension url="valueString">
+        <valueString value="None"/>
+      </extension>
+    </extension>
+    <extension url="lowestIntensity">
+      <extension url="valueDecimal">
+        <valueDecimal value="0"/>
+      </extension>
+      <extension url="code"/>
+    </extension>
+    <extension url="biggestIntensity">
+      <extension url="valueDecimal">
+        <valueDecimal value="1"/>
+      </extension>
+      <extension url="code"/>
+    </extension>
+    <extension url="spatialResamplingValues">
+      <valueString value="[1.0, 2.0, 3.0]"/>
+    </extension>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="85430-7"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/L304"/>
+  </subject>
+  <focus>
+    <reference value="Observation/fhir-osiris-example-ROISegmentation"/>
+  </focus>
+  <hasMember>
+    <reference value="Observation/fhir-osiris-example-RadiomicsImageFilter"/>
+  </hasMember>
+</Observation>

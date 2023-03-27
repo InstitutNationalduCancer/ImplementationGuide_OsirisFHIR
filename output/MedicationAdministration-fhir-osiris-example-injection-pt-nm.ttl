@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.arkhn.com/osiris/MedicationAdministration/fhir-osiris-example-injection-pt-nm> a fhir:MedicationAdministration;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fhir-osiris-example-injection-pt-nm"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.arkhn.com/osiris/StructureDefinition/onco-imagingstudy-injection";
+       fhir:index 0;
+       fhir:link <http://fhir.arkhn.com/osiris/StructureDefinition/onco-imagingstudy-injection>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationAdministration</b><a name=\"fhir-osiris-example-injection-pt-nm\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationAdministration &quot;fhir-osiris-example-injection-pt-nm&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-imagingstudy-injection.html\">Imaging Study Injection</a></p></div><p><b>status</b>: completed</p><p><b>medication</b>: <a href=\"Medication-fhir-osiris-example-injection-medication-pt-nm.html\">Medication/fhir-osiris-example-injection-medication-pt-nm</a></p><p><b>subject</b>: <a href=\"Patient-STS-028.html\">Patient/STS-028</a></p><p><b>effective</b>: 1000-01-01</p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Dose</b></td></tr><tr><td>*</td><td>132600</td></tr></table></div>"
+  ]; # 
+  fhir:MedicationAdministration.status [ fhir:value "completed"]; # 
+  fhir:MedicationAdministration.medicationReference [
+     fhir:link <http://fhir.arkhn.com/osiris/Medication/fhir-osiris-example-injection-medication-pt-nm>;
+     fhir:Reference.reference [ fhir:value "Medication/fhir-osiris-example-injection-medication-pt-nm" ]
+  ]; # 
+  fhir:MedicationAdministration.subject [
+     fhir:link <http://fhir.arkhn.com/osiris/Patient/STS-028>;
+     fhir:Reference.reference [ fhir:value "Patient/STS-028" ]
+  ]; # 
+  fhir:MedicationAdministration.effectiveDateTime [ fhir:value "1000-01-01"^^xsd:date]; # 
+  fhir:MedicationAdministration.dosage [
+     fhir:MedicationAdministration.dosage.dose [
+       fhir:Quantity.value [ fhir:value "132600"^^xsd:decimal ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.arkhn.com/osiris/MedicationAdministration/fhir-osiris-example-injection-pt-nm.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

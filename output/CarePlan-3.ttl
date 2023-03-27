@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.arkhn.com/osiris/CarePlan/3> a fhir:CarePlan;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "3"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.arkhn.com/osiris/StructureDefinition/treatment";
+       fhir:index 0;
+       fhir:link <http://fhir.arkhn.com/osiris/StructureDefinition/treatment>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;3&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-treatment.html\">Treatment</a></p></div><p><b>status</b>: unknown</p><p><b>intent</b>: plan</p><p><b>category</b>: C1522449 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\">Unified Medical Language System</a>#C1522449)</span></p><p><b>subject</b>: <a href=\"Patient-Patient-XRTS-04-22A.html\">Patient/Patient-XRTS-04-22A</a></p><p><b>period</b>: 2018-08-15 --&gt; 2018-12-25</p></div>"
+  ]; # 
+  fhir:CarePlan.status [ fhir:value "unknown"]; # 
+  fhir:CarePlan.intent [ fhir:value "plan"]; # 
+  fhir:CarePlan.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/umls" ];
+       fhir:Coding.code [ fhir:value "C1522449" ]
+     ]
+  ]; # 
+  fhir:CarePlan.subject [
+     fhir:link <http://fhir.arkhn.com/osiris/Patient/Patient-XRTS-04-22A>;
+     fhir:Reference.reference [ fhir:value "Patient/Patient-XRTS-04-22A" ]
+  ]; # 
+  fhir:CarePlan.period [
+     fhir:Period.start [ fhir:value "2018-08-15"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2018-12-25"^^xsd:date ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.arkhn.com/osiris/CarePlan/3.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,146 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.arkhn.com/osiris/ImagingStudy/fhir-osiris-example-imagingstudy-dx> a fhir:ImagingStudy;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fhir-osiris-example-imagingstudy-dx"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.arkhn.com/osiris/StructureDefinition/onco-imagingstudy";
+       fhir:index 0;
+       fhir:link <http://fhir.arkhn.com/osiris/StructureDefinition/onco-imagingstudy>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ImagingStudy</b><a name=\"fhir-osiris-example-imagingstudy-dx\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ImagingStudy &quot;fhir-osiris-example-imagingstudy-dx&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-imagingstudy.html\">Imaging Study</a></p></div><p><b>identifier</b>: id: 1.3.6.1.4.1.14519.5.2.1.6279.6001.175012972118199124641098335511</p><p><b>status</b>: available</p><p><b>modality</b>: C0439673 (Details: http://terminology.hl7.org/CodeSystem/umls code C0439673 = 'C0439673', stated as 'null')</p><p><b>subject</b>: <a href=\"Patient-LIDC-IDRI-0001.html\">Patient/LIDC-IDRI-0001</a></p><p><b>started</b>: 2000-01-01</p><p><b>endpoint</b>: <a href=\"Endpoint-fhir-osiris-example-imagingendpoint-dx.html\">Endpoint/fhir-osiris-example-imagingendpoint-dx</a> &quot;['Soft-tissue-Sarcoma/LIDC-IDRI-0001/01-01-2000-NA-NA-35511/3000923.000000-NA-62357/1-1.dcm']&quot;</p><p><b>numberOfSeries</b>: 999999</p><p><b>reasonReference</b>: <a href=\"Observation-fhir-osiris-example-analysis-dx.html\">Observation/fhir-osiris-example-analysis-dx</a></p><p><b>description</b>: Unknown</p><blockquote><p><b>series</b></p><blockquote><p><b>Imaging Settings</b></p><p><b>value</b>: Unknown</p><p><b>value</b>: Unknown</p><p><b>value</b>: 2022</p><p><b>value</b>: 2022</p></blockquote><blockquote><p><b>Weight and Height at the time of the Serie</b></p><p><b>value</b>: 999999</p><p><b>value</b>: 999999</p></blockquote><p><b>uid</b>: 1.3.6.1.4.1.14519.5.2.1.6279.6001.141365756818074696859567662357</p><p><b>number</b>: 3000923</p><p><b>modality</b>: DX (Details: https://dicom.nema.org/medical/dicom code DX = 'DX', stated as 'null')</p><p><b>description</b>: Unknown</p><p><b>numberOfInstances</b>: 999999</p><p><b>bodySite</b>: Thorax (Details: SNOMED CT code 43799004 = 'Thorax', stated as 'null')</p><p><b>started</b>: 2000-01-01</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"Device-fhir-osiris-example-imagingdevice-dx.html\">Device/fhir-osiris-example-imagingdevice-dx</a></td></tr></table><h3>Instances</h3><table class=\"grid\"><tr><td>-</td><td><b>Uid</b></td><td><b>SopClass</b></td></tr><tr><td>*</td><td>1.3.6.1.4.1.14519.5.2.1.6279.6001.307896144859643716158189196068</td><td>Digital X-Ray Image Storage - For Presentation (Details: [not stated] code table_B.5-1#1.2.840.10008.5.1.4.1.1.1.1 = 'table_B.5-1#1.2.840.10008.5.1.4.1.1.1.1', stated as 'Digital X-Ray Image Storage - For Presentation')</td></tr></table></blockquote></div>"
+  ]; # 
+  fhir:ImagingStudy.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "1.3.6.1.4.1.14519.5.2.1.6279.6001.175012972118199124641098335511" ]
+  ]; # 
+  fhir:ImagingStudy.status [ fhir:value "available"]; # 
+  fhir:ImagingStudy.modality [
+     fhir:index 0;
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/umls" ];
+     fhir:Coding.code [ fhir:value "C0439673" ]
+  ]; # 
+  fhir:ImagingStudy.subject [
+     fhir:link <http://fhir.arkhn.com/osiris/Patient/LIDC-IDRI-0001>;
+     fhir:Reference.reference [ fhir:value "Patient/LIDC-IDRI-0001" ]
+  ]; # 
+  fhir:ImagingStudy.started [ fhir:value "2000-01-01"^^xsd:date]; # 
+  fhir:ImagingStudy.endpoint [
+     fhir:index 0;
+     fhir:link <http://fhir.arkhn.com/osiris/Endpoint/fhir-osiris-example-imagingendpoint-dx>;
+     fhir:Reference.reference [ fhir:value "Endpoint/fhir-osiris-example-imagingendpoint-dx" ]
+  ]; # 
+  fhir:ImagingStudy.numberOfSeries [ fhir:value "999999"^^xsd:nonNegativeInteger]; # 
+  fhir:ImagingStudy.reasonReference [
+     fhir:index 0;
+     fhir:link <http://fhir.arkhn.com/osiris/Observation/fhir-osiris-example-analysis-dx>;
+     fhir:Reference.reference [ fhir:value "Observation/fhir-osiris-example-analysis-dx" ]
+  ]; # 
+  fhir:ImagingStudy.description [ fhir:value "Unknown"]; # 
+  fhir:ImagingStudy.series [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "slice_thickness" ];
+         fhir:Extension.valueString [ fhir:value "Unknown" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "pixel_spacing" ];
+         fhir:Extension.valueString [ fhir:value "Unknown" ]
+       ], [
+         fhir:index 2;
+         fhir:Extension.url [ fhir:value "rows" ];
+         fhir:Extension.valueInteger [ fhir:value "2022"^^xsd:integer ]
+       ], [
+         fhir:index 3;
+         fhir:Extension.url [ fhir:value "columns" ];
+         fhir:Extension.valueInteger [ fhir:value "2022"^^xsd:integer ]
+       ], [
+         fhir:index 4;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "image_laterality" ];
+           fhir:Extension.valueString [ fhir:value "Unknown" ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "kvp" ];
+           fhir:Extension.valueInteger [ fhir:value "999999"^^xsd:integer ]
+         ], [
+           fhir:index 2;
+           fhir:Extension.url [ fhir:value "exposure" ];
+           fhir:Extension.valueInteger [ fhir:value "2"^^xsd:integer ]
+         ], [
+           fhir:index 3;
+           fhir:Extension.url [ fhir:value "exposure_time" ];
+           fhir:Extension.valueInteger [ fhir:value "7"^^xsd:integer ]
+         ], [
+           fhir:index 4;
+           fhir:Extension.url [ fhir:value "patient_orientation" ];
+           fhir:Extension.valueString [ fhir:value "['P', 'F']" ]
+         ];
+         fhir:Extension.url [ fhir:value "dx_image" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://fhir.arkhn.com/osiris/StructureDefinition/imaging-settings" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "patient_weight" ];
+         fhir:Extension.valueDecimal [ fhir:value "999999"^^xsd:decimal ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "patient_height" ];
+         fhir:Extension.valueDecimal [ fhir:value "999999"^^xsd:decimal ]
+       ];
+       fhir:Extension.url [ fhir:value "http://fhir.arkhn.com/osiris/StructureDefinition/series-weightheigt" ]
+     ];
+     fhir:ImagingStudy.series.uid [ fhir:value "1.3.6.1.4.1.14519.5.2.1.6279.6001.141365756818074696859567662357" ];
+     fhir:ImagingStudy.series.number [ fhir:value "3000923"^^xsd:nonNegativeInteger ];
+     fhir:ImagingStudy.series.modality [
+       fhir:Coding.system [ fhir:value "https://dicom.nema.org/medical/dicom" ];
+       fhir:Coding.code [ fhir:value "DX" ]
+     ];
+     fhir:ImagingStudy.series.description [ fhir:value "Unknown" ];
+     fhir:ImagingStudy.series.numberOfInstances [ fhir:value "999999"^^xsd:nonNegativeInteger ];
+     fhir:ImagingStudy.series.bodySite [
+       a sct:43799004;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "43799004" ]
+     ];
+     fhir:ImagingStudy.series.started [ fhir:value "2000-01-01"^^xsd:date ];
+     fhir:ImagingStudy.series.performer [
+       fhir:index 0;
+       fhir:ImagingStudy.series.performer.actor [
+         fhir:link <http://fhir.arkhn.com/osiris/Device/fhir-osiris-example-imagingdevice-dx>;
+         fhir:Reference.reference [ fhir:value "Device/fhir-osiris-example-imagingdevice-dx" ]
+       ]
+     ];
+     fhir:ImagingStudy.series.instance [
+       fhir:index 0;
+       fhir:ImagingStudy.series.instance.uid [ fhir:value "1.3.6.1.4.1.14519.5.2.1.6279.6001.307896144859643716158189196068" ];
+       fhir:ImagingStudy.series.instance.sopClass [
+         fhir:Coding.code [ fhir:value "table_B.5-1#1.2.840.10008.5.1.4.1.1.1.1" ];
+         fhir:Coding.display [ fhir:value "Digital X-Ray Image Storage - For Presentation" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.arkhn.com/osiris/ImagingStudy/fhir-osiris-example-imagingstudy-dx.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

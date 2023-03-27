@@ -1,0 +1,1639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="Topography"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/5.0.0/CodeSystem-icd-o-3.html"><code>http://terminology.hl7.org/CodeSystem/icd-o-3</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C00</td><td>LIP</td></tr><tr><td>C00.0</td><td>External upper lip</td></tr><tr><td>C00.1</td><td>External lower lip</td></tr><tr><td>C00.2</td><td>External lip, NOS</td></tr><tr><td>C00.3</td><td>Mucosa of upper lip</td></tr><tr><td>C00.4</td><td>Mucosa of lower lip</td></tr><tr><td>C00.5</td><td>Mucosa of lip, NOS</td></tr><tr><td>C00.6</td><td>Commissure of lip</td></tr><tr><td>C00.8</td><td>Overlapping lesion of lip</td></tr><tr><td>C00.9</td><td>Lip, NOS</td></tr><tr><td>C01</td><td>BASE OF TONGUE</td></tr><tr><td>C01.9</td><td>Base of tongue, NOS</td></tr><tr><td>C02</td><td>OTHER AND UNSPECIFIED PARTS OF TONGUE</td></tr><tr><td>C02.0</td><td>Dorsal surface of tongue, NOS</td></tr><tr><td>C02.1</td><td>Border of tongue</td></tr><tr><td>C02.2</td><td>Ventral surface of tongue, NOS</td></tr><tr><td>C02.3</td><td>Anterior 2/3 of tongue, NOS</td></tr><tr><td>C02.4</td><td>Lingual tonsil</td></tr><tr><td>C02.8</td><td>Overlapping lesion of tongue</td></tr><tr><td>C02.9</td><td>Tongue, NOS</td></tr><tr><td>C03</td><td>GUM</td></tr><tr><td>C03.0</td><td>Upper gum</td></tr><tr><td>C03.1</td><td>Lower gum</td></tr><tr><td>C03.9</td><td>Gum, NOS</td></tr><tr><td>C04</td><td>FLOOR OF MOUTH</td></tr><tr><td>C04.0</td><td>Anterior floor of mouth</td></tr><tr><td>C04.1</td><td>Lateral floor of mouth</td></tr><tr><td>C04.8</td><td>Overlapping lesion of floor of mouth</td></tr><tr><td>C04.9</td><td>Floor of mouth, NOS</td></tr><tr><td>C05</td><td>PALATE</td></tr><tr><td>C05.0</td><td>Hard palate</td></tr><tr><td>C05.1</td><td>Soft palate, NOS</td></tr><tr><td>C05.2</td><td>Uvula</td></tr><tr><td>C05.8</td><td>Overlapping lesion of palate</td></tr><tr><td>C05.9</td><td>Palate, NOS</td></tr><tr><td>C06</td><td>OTHER AND UNSPECIFIED PARTS OF MOUTH</td></tr><tr><td>C06.0</td><td>Cheek mucosa</td></tr><tr><td>C06.1</td><td>Vestibule of mouth</td></tr><tr><td>C06.2</td><td>Retromolar area</td></tr><tr><td>C06.8</td><td>Overlapping lesion of other and unspecified parts of mouth</td></tr><tr><td>C06.9</td><td>Mouth, NOS</td></tr><tr><td>C07</td><td>PAROTID GLAND</td></tr><tr><td>C07.9</td><td>Parotid gland</td></tr><tr><td>C08</td><td>OTHER AND UNSPECIFIED MAJOR SALIVARY GLANDS</td></tr><tr><td>C08.0</td><td>Submandibular gland</td></tr><tr><td>C08.1</td><td>Sublingual gland</td></tr><tr><td>C08.8</td><td>Overlapping lesion of major salivary glands</td></tr><tr><td>C08.9</td><td>Major salivary gland, NOS</td></tr><tr><td>C09</td><td>TONSIL</td></tr><tr><td>C09.0</td><td>Tonsillar fossa</td></tr><tr><td>C09.1</td><td>Tonsillar pillar</td></tr><tr><td>C09.8</td><td>Overlapping lesion of tonsil</td></tr><tr><td>C09.9</td><td>Tonsil, NOS</td></tr><tr><td>C10</td><td>OROPHARYNX</td></tr><tr><td>C10.0</td><td>Vallecula</td></tr><tr><td>C10.1</td><td>Anterior surface of epiglottis</td></tr><tr><td>C10.2</td><td>Lateral wall of oropharynx</td></tr><tr><td>C10.3</td><td>Posterior wall of oropharynx</td></tr><tr><td>C10.4</td><td>Branchial cleft</td></tr><tr><td>C10.8</td><td>Overlapping lesion of oropharynx</td></tr><tr><td>C10.9</td><td>Oropharynx, NOS</td></tr><tr><td>C11</td><td>NASOPHARYNX</td></tr><tr><td>C11.0</td><td>Superior wall of nasopharynx</td></tr><tr><td>C11.1</td><td>Posterior wall of nasopharynx</td></tr><tr><td>C11.2</td><td>Lateral wall of nasopharynx</td></tr><tr><td>C11.3</td><td>Anterior wall of nasopharynx</td></tr><tr><td>C11.8</td><td>Overlapping lesion of nasopharynx</td></tr><tr><td>C11.9</td><td>Nasopharynx, NOS</td></tr><tr><td>C12</td><td>PYRIFORM SINUS</td></tr><tr><td>C12.9</td><td>Pyriform sinus</td></tr><tr><td>C13</td><td>HYPOPHARYNX</td></tr><tr><td>C13.0</td><td>Postcricoid region</td></tr><tr><td>C13.1</td><td>Hypopharyngeal aspect of aryepiglottic fold</td></tr><tr><td>C13.2</td><td>Posterior wall of hypopharynx</td></tr><tr><td>C13.8</td><td>Overlapping lesion of hypopharynx</td></tr><tr><td>C13.9</td><td>Hypopharynx, NOS</td></tr><tr><td>C14</td><td>OTHER AND ILL-DEFINED SITES IN LIP, ORAL CAVITY AND PHARYNX</td></tr><tr><td>C14.0</td><td>Pharynx, NOS</td></tr><tr><td>C14.2</td><td>Waldeyer ring</td></tr><tr><td>C14.8</td><td>Overlapping lesion of lip, oral cavity and pharynx</td></tr><tr><td>C15</td><td>ESOPHAGUS</td></tr><tr><td>C15.0</td><td>Cervical esophagus</td></tr><tr><td>C15.1</td><td>Thoracic esophagus</td></tr><tr><td>C15.2</td><td>Abdominal esophagus</td></tr><tr><td>C15.3</td><td>Upper third of esophagus</td></tr><tr><td>C15.4</td><td>Middle third of esophagus</td></tr><tr><td>C15.5</td><td>Lower third of esophagus</td></tr><tr><td>C15.8</td><td>Overlapping lesion of esophagus</td></tr><tr><td>C15.9</td><td>Esophagus, NOS</td></tr><tr><td>C16</td><td>STOMACH</td></tr><tr><td>C16.0</td><td>Cardia, NOS</td></tr><tr><td>C16.1</td><td>Fundus of stomach</td></tr><tr><td>C16.2</td><td>Body of stomach</td></tr><tr><td>C16.3</td><td>Gastric antrum</td></tr><tr><td>C16.4</td><td>Pylorus</td></tr><tr><td>C16.5</td><td>Lesser curvature of stomach, NOS</td></tr><tr><td>C16.6</td><td>Greater curvature of stomach, NOS</td></tr><tr><td>C16.8</td><td>Overlapping lesion of stomach</td></tr><tr><td>C16.9</td><td>Stomach, NOS</td></tr><tr><td>C17</td><td>SMALL INTESTINE</td></tr><tr><td>C17.0</td><td>Duodenum</td></tr><tr><td>C17.1</td><td>Jejunum</td></tr><tr><td>C17.2</td><td>Ileum</td></tr><tr><td>C17.3</td><td>Meckel diverticulum</td></tr><tr><td>C17.8</td><td>Overlapping lesion of smallintestine</td></tr><tr><td>C17.9</td><td>Small intestine, NOS</td></tr><tr><td>C18</td><td>COLON</td></tr><tr><td>C18.0</td><td>Cecum</td></tr><tr><td>C18.1</td><td>Appendix</td></tr><tr><td>C18.2</td><td>Ascending colon</td></tr><tr><td>C18.3</td><td>Hepatic flexure of colon</td></tr><tr><td>C18.4</td><td>Transverse colon</td></tr><tr><td>C18.5</td><td>Splenic flexure of colon</td></tr><tr><td>C18.6</td><td>Descending colon</td></tr><tr><td>C18.7</td><td>Sigmoid colon</td></tr><tr><td>C18.8</td><td>Overlapping lesion of colon</td></tr><tr><td>C18.9</td><td>Colon, NOS</td></tr><tr><td>C19</td><td>RECTOSIGMOID JUNCTION</td></tr><tr><td>C19.9</td><td>Rectosigmoid junction</td></tr><tr><td>C20</td><td>RECTUM</td></tr><tr><td>C20.9</td><td>Rectum, NOS</td></tr><tr><td>C21</td><td>ANUS AND ANAL CANAL</td></tr><tr><td>C21.0</td><td>Anus, NOS</td></tr><tr><td>C21.1</td><td>Anal canal</td></tr><tr><td>C21.2</td><td>Cloacogenic zone</td></tr><tr><td>C21.8</td><td>Overlapping lesion of rectum, anus and anal canal</td></tr><tr><td>C22</td><td>LIVER AND INTRAHEPATIC BILE DUCTS</td></tr><tr><td>C22.0</td><td>Liver</td></tr><tr><td>C22.1</td><td>Intrahepatic bile duct</td></tr><tr><td>C23</td><td>   GALLBLADDER</td></tr><tr><td>C23.9</td><td>Gallbladder</td></tr><tr><td>C24</td><td>OTHER AND UNSPECIFIED PARTS OF BILIARY TRACT</td></tr><tr><td>C24.0</td><td>Extrahepatic bile duct</td></tr><tr><td>C24.1</td><td>Ampulla of Vater</td></tr><tr><td>C24.8</td><td>Overlapping lesion of biliary tract Note:</td></tr><tr><td>C24.9</td><td>Biliary tract, NOS</td></tr><tr><td>C25</td><td>PANCREAS</td></tr><tr><td>C25.0</td><td>Head of pancreas</td></tr><tr><td>C25.1</td><td>Body of pancreas</td></tr><tr><td>C25.2</td><td>Tail of pancreas</td></tr><tr><td>C25.3</td><td>Pancreatic duct</td></tr><tr><td>C25.4</td><td>Islets of Langerhans</td></tr><tr><td>C25.7</td><td>Other specified parts of pancreas</td></tr><tr><td>C25.8</td><td>Overlapping lesion of pancreas</td></tr><tr><td>C25.9</td><td>Pancreas, NOS</td></tr><tr><td>C26</td><td>OTHER AND ILL-DEFINED DIGESTIVE ORGANS</td></tr><tr><td>C26.0</td><td>Intestinal tract, NOS</td></tr><tr><td>C26.8</td><td>Overlapping lesion of digestive system</td></tr><tr><td>C26.9</td><td>Gastrointestinal tract, NOS</td></tr><tr><td>C30</td><td>NASAL CAVITY AND MIDDLE EAR</td></tr><tr><td>C30.0</td><td>Nasal cavity</td></tr><tr><td>C30.1</td><td>Middle ear</td></tr><tr><td>C31</td><td>ACCESSORY SINUSES</td></tr><tr><td>C31.0</td><td>Maxillary sinus</td></tr><tr><td>C31.1</td><td>Ethmoid sinus</td></tr><tr><td>C31.2</td><td>Frontal sinus</td></tr><tr><td>C31.3</td><td>Sphenoid sinus</td></tr><tr><td>C31.8</td><td>Overlapping lesion of accessory sinuses</td></tr><tr><td>C31.9</td><td>Accessory sinus, NOS</td></tr><tr><td>C32</td><td>LARYNX</td></tr><tr><td>C32.0</td><td>Glottis</td></tr><tr><td>C32.1</td><td>Supraglottis</td></tr><tr><td>C32.2</td><td>Subglottis</td></tr><tr><td>C32.3</td><td>Laryngeal cartilage</td></tr><tr><td>C32.8</td><td>Overlapping lesion of larynx</td></tr><tr><td>C32.9</td><td>Larynx, NOS</td></tr><tr><td>C33</td><td>TRACHEA</td></tr><tr><td>C33.9</td><td>Trachea</td></tr><tr><td>C34</td><td>BRONCHUS AND LUNG</td></tr><tr><td>C34.0</td><td>Main bronchus</td></tr><tr><td>C34.1</td><td>Upper lobe, lung</td></tr><tr><td>C34.2</td><td>Middle lobe, lung</td></tr><tr><td>C34.3</td><td>Lower lobe, lung</td></tr><tr><td>C34.8</td><td>Overlapping lesion of lung</td></tr><tr><td>C34.9</td><td>Lung, NOS</td></tr><tr><td>C37</td><td>THYMUS</td></tr><tr><td>C37.9</td><td>Thymus</td></tr><tr><td>C38</td><td>HEART, MEDIASTINUM, AND PLEURA</td></tr><tr><td>C38.0</td><td>Heart</td></tr><tr><td>C38.1</td><td>Anterior mediastinum</td></tr><tr><td>C38.2</td><td>Posterior mediastinum</td></tr><tr><td>C38.3</td><td>Mediastinum, NOS</td></tr><tr><td>C38.4</td><td>Pleura, NOS</td></tr><tr><td>C38.8</td><td>Overlapping lesion of heart, mediastinum and pleura</td></tr><tr><td>C39</td><td>OTHER AND ILL-DEFINED SITES WITHIN RESPIRATORY SYSTEM AND INTRATHORACIC ORGANS</td></tr><tr><td>C39.0</td><td>Upper respiratory tract, NOS</td></tr><tr><td>C39.8</td><td>Overlapping lesion of respiratory system and intrathoracic organs</td></tr><tr><td>C39.9</td><td>Ill-defined sites within respiratory system</td></tr><tr><td>C40</td><td>BONES, JOINTS AND ARTICULAR CARTILAGE OF LIMBS</td></tr><tr><td>C40.0</td><td>Long bones of upper limb, scapula and associated joints</td></tr><tr><td>C40.1</td><td>Short bones of upper limb and associated joints</td></tr><tr><td>C40.2</td><td>Long bones of lower limb and associated joints</td></tr><tr><td>C40.3</td><td>Short bones of lower limb and associated joints</td></tr><tr><td>C40.8</td><td>Overlapping lesion of bones, joints and articular cartilage of limbs</td></tr><tr><td>C40.9</td><td>Bone of limb, NOS</td></tr><tr><td>C41</td><td>BONES, JOINTS AND ARTICULAR CARTILAGE OF OTHER AND UNSPECIFIED SITES</td></tr><tr><td>C41.0</td><td>Bones of skull and face and associated joints</td></tr><tr><td>C41.1</td><td>Mandible</td></tr><tr><td>C41.2</td><td>Vertebral column</td></tr><tr><td>C41.3</td><td>Rib, sternum, clavicle and associated joints</td></tr><tr><td>C41.4</td><td>Pelvic bones, sacrum, coccyx and associated joints</td></tr><tr><td>C41.8</td><td>Overlapping lesion of bones, joints and articular cartilage</td></tr><tr><td>C41.9</td><td>Bone, NOS</td></tr><tr><td>C42</td><td>HEMATOPOIETIC AND RETICULOENDOTHELIAL SYSTEMS</td></tr><tr><td>C42.0</td><td>Blood</td></tr><tr><td>C42.1</td><td>Bone marrow</td></tr><tr><td>C42.2</td><td>Spleen</td></tr><tr><td>C42.3</td><td>Reticuloendothelial system,NOS</td></tr><tr><td>C42.4</td><td>Hematopoietic system, NOS</td></tr><tr><td>C44</td><td>SKIN</td></tr><tr><td>C44.0</td><td>Skin of lip, NOS</td></tr><tr><td>C44.1</td><td>Eyelid</td></tr><tr><td>C44.2</td><td>External ear</td></tr><tr><td>C44.3</td><td>Skin of other and unspecified parts of face</td></tr><tr><td>C44.4</td><td>Skin of scalp and neck</td></tr><tr><td>C44.5</td><td>Skin of trunk</td></tr><tr><td>C44.6</td><td>Skin of upper limb and shoulder</td></tr><tr><td>C44.7</td><td>Skin of lower limb and hip</td></tr><tr><td>C44.8</td><td>Overlapping lesion of skin</td></tr><tr><td>C44.9</td><td>Skin, NOS</td></tr><tr><td>C47</td><td>PERIPHERAL NERVES AND AUTONOMIC NERVOUS SYSTEM</td></tr><tr><td>C47.0</td><td>Peripheral nerves and autonomic nervous system of head, face, and neck</td></tr><tr><td>C47.1</td><td>Peripheral nerves and autonomic nervous system of upper limb and shoulder</td></tr><tr><td>C47.2</td><td>Peripheral nerves and autonomic nervous system of lower limband hip</td></tr><tr><td>C47.3</td><td>Peripheral nerves and autonomic nervous system of thorax</td></tr><tr><td>C47.4</td><td>Peripheral nerves and autonomic nervous system of abdomen</td></tr><tr><td>C47.5</td><td>Peripheral nerves and autonomic nervous system of pelvis</td></tr><tr><td>C47.6</td><td>Peripheral nerves and autonomic nervous system of trunk, NOS</td></tr><tr><td>C47.8</td><td>Overlapping lesion of peripheral nerves and autonomic nervous system</td></tr><tr><td>C47.9</td><td>Autonomic nervous system, NOS</td></tr><tr><td>C48</td><td>RETROPERITONEUM AND PERITONEUM</td></tr><tr><td>C48.0</td><td>Retroperitoneum</td></tr><tr><td>C48.1</td><td>Specified parts of peritoneum</td></tr><tr><td>C48.2</td><td>Peritoneum, NOS</td></tr><tr><td>C48.8</td><td>Overlapping lesion of retroperitoneum and peritoneum</td></tr><tr><td>C49</td><td>CONNECTIVE, SUBCUTANEOUS AND OTHER SOFT TISSUES</td></tr><tr><td>C49.0</td><td>Connective, subcutaneous and other soft tissues of head, face, and neck</td></tr><tr><td>C49.1</td><td>Connective, subcutaneous and other soft tissues of upper limb and shoulder</td></tr><tr><td>C49.2</td><td>Connective, subcutaneous and other soft tissues of lower limb and hip</td></tr><tr><td>C49.3</td><td>Connective, subcutaneous and other soft tissues of thorax</td></tr><tr><td>C49.4</td><td>Connective, subcutaneous and other soft tissues of abdomen</td></tr><tr><td>C49.5</td><td>Connective, subcutaneous and other soft tissues of pelvis</td></tr><tr><td>C49.6</td><td>Connective, subcutaneous and other soft tissues of trunk NOS</td></tr><tr><td>C49.8</td><td>Overlapping lesion of connective, subcutaneous and other soft tissues</td></tr><tr><td>C49.9</td><td>Connective, subcutaneous and other soft tissues, NOS</td></tr><tr><td>C50</td><td>BREAST</td></tr><tr><td>C50.0</td><td>Nipple</td></tr><tr><td>C50.1</td><td>Central portion of breast</td></tr><tr><td>C50.2</td><td>Upper-inner quadrant of breast</td></tr><tr><td>C50.3</td><td>Lower-inner quadrant of breast</td></tr><tr><td>C50.4</td><td>Upper-outer quadrant of breast</td></tr><tr><td>C50.5</td><td>Lower-outer quadrant of breast</td></tr><tr><td>C50.6</td><td>Axillary tail of breast</td></tr><tr><td>C50.8</td><td>Overlapping lesion of breast</td></tr><tr><td>C50.9</td><td>Breast, NOS</td></tr><tr><td>C51</td><td>VULVA</td></tr><tr><td>C51.0</td><td>Labium majus</td></tr><tr><td>C51.1</td><td>Labium minus</td></tr><tr><td>C51.2</td><td>Clitoris</td></tr><tr><td>C51.8</td><td>Overlapping lesion of vulva</td></tr><tr><td>C51.9</td><td>Vulva, NOS</td></tr><tr><td>C52</td><td>VAGINA</td></tr><tr><td>C52.9</td><td>Vagina, NOS</td></tr><tr><td>C53</td><td>CERVIX UTERI</td></tr><tr><td>C53.0</td><td>Endocervix</td></tr><tr><td>C53.1</td><td>Exocervix</td></tr><tr><td>C53.8</td><td>Overlapping lesion of cervix uteri</td></tr><tr><td>C53.9</td><td>Cervix uteri</td></tr><tr><td>C54</td><td>CORPUS UTERI</td></tr><tr><td>C54.0</td><td>Isthmus uteri</td></tr><tr><td>C54.1</td><td>Endometrium</td></tr><tr><td>C54.2</td><td>Myometrium</td></tr><tr><td>C54.3</td><td>Fundus uteri</td></tr><tr><td>C54.8</td><td>Overlapping lesion of corpus uteri</td></tr><tr><td>C54.9</td><td>Corpus uteri</td></tr><tr><td>C55</td><td>UTERUS, NOS</td></tr><tr><td>C55.9</td><td>Uterus, NOS</td></tr><tr><td>C56</td><td>OVARY</td></tr><tr><td>C56.9</td><td>Ovary</td></tr><tr><td>C57</td><td>OTHER AND UNSPECIFIED FEMALE GENITAL ORGANS</td></tr><tr><td>C57.0</td><td>Fallopian tube</td></tr><tr><td>C57.1</td><td>Broad ligament</td></tr><tr><td>C57.2</td><td>Round ligament</td></tr><tr><td>C57.3</td><td>Parametrium</td></tr><tr><td>C57.4</td><td>Uterine adnexa</td></tr><tr><td>C57.7</td><td>Other specified parts of female genital organs</td></tr><tr><td>C57.8</td><td>Overlapping lesion of female genital organs</td></tr><tr><td>C57.9</td><td>Female genital tract, NOS</td></tr><tr><td>C58</td><td>PLACENTA</td></tr><tr><td>C58.9</td><td>Placenta</td></tr><tr><td>C60</td><td>PENIS</td></tr><tr><td>C60.0</td><td>Prepuce</td></tr><tr><td>C60.1</td><td>Glans penis</td></tr><tr><td>C60.2</td><td>Body of penis</td></tr><tr><td>C60.8</td><td>Overlapping lesion of penis</td></tr><tr><td>C60.9</td><td>Penis, NOS</td></tr><tr><td>C61</td><td>PROSTATE GLAND</td></tr><tr><td>C61.9</td><td>Prostate gland</td></tr><tr><td>C62</td><td>TESTIS</td></tr><tr><td>C62.0</td><td>Undescended testis</td></tr><tr><td>C62.1</td><td>Descended testis</td></tr><tr><td>C62.9</td><td>Testis, NOS</td></tr><tr><td>C63</td><td>OTHER AND UNSPECIFIED MALE GENITAL ORGANS</td></tr><tr><td>C63.0</td><td>Epididymis</td></tr><tr><td>C63.1</td><td>Spermatic cord</td></tr><tr><td>C63.2</td><td>Scrotum, NOS</td></tr><tr><td>C63.7</td><td>Other specified parts of male genital organs</td></tr><tr><td>C63.8</td><td>Overlapping lesion of male genital organs Note:</td></tr><tr><td>C63.9</td><td>Male genital organs, NOS</td></tr><tr><td>C64</td><td>KIDNEY</td></tr><tr><td>C64.9</td><td>Kidney, NOS</td></tr><tr><td>C65</td><td>RENAL PELVIS</td></tr><tr><td>C65.9</td><td>Renal pelvis</td></tr><tr><td>C66</td><td>URETER</td></tr><tr><td>C66.9</td><td>Ureter</td></tr><tr><td>C67</td><td>BLADDER</td></tr><tr><td>C67.0</td><td>Trigone of bladder</td></tr><tr><td>C67.1</td><td>Dome of bladder</td></tr><tr><td>C67.2</td><td>Lateral wall of bladder</td></tr><tr><td>C67.3</td><td>Anterior wall of bladder</td></tr><tr><td>C67.4</td><td>Posterior wall of bladder</td></tr><tr><td>C67.5</td><td>Bladder neck</td></tr><tr><td>C67.6</td><td>Ureteric orifice</td></tr><tr><td>C67.7</td><td>Urachus</td></tr><tr><td>C67.8</td><td>Overlapping lesion of bladder</td></tr><tr><td>C67.9</td><td>Bladder, NOS</td></tr><tr><td>C68</td><td>OTHER AND UNSPECIFIED URINARY ORGANS</td></tr><tr><td>C68.0</td><td>Urethra</td></tr><tr><td>C68.1</td><td>Paraurethral gland</td></tr><tr><td>C68.8</td><td>Overlapping lesion of urinary organs</td></tr><tr><td>C68.9</td><td>Urinary system, NOS</td></tr><tr><td>C69</td><td>EYE AND ADNEXA</td></tr><tr><td>C69.0</td><td>Conjunctiva</td></tr><tr><td>C69.1</td><td>Cornea, NOS</td></tr><tr><td>C69.2</td><td>Retina</td></tr><tr><td>C69.3</td><td>Choroid</td></tr><tr><td>C69.4</td><td>Ciliary body</td></tr><tr><td>C69.5</td><td>Lacrimal gland</td></tr><tr><td>C69.6</td><td>Orbit, NOS</td></tr><tr><td>C69.8</td><td>Overlapping lesion of eye and adnexa</td></tr><tr><td>C69.9</td><td>Eye, NOS</td></tr><tr><td>C70</td><td>MENINGES</td></tr><tr><td>C70.0</td><td>Cerebral meninges</td></tr><tr><td>C70.1</td><td>Spinal meninges</td></tr><tr><td>C70.9</td><td>Meninges, NOS</td></tr><tr><td>C71</td><td>BRAIN</td></tr><tr><td>C71.0</td><td>Cerebrum</td></tr><tr><td>C71.1</td><td>Frontal lobe</td></tr><tr><td>C71.2</td><td>Temporal lobe</td></tr><tr><td>C71.3</td><td>Parietal lobe</td></tr><tr><td>C71.4</td><td>Occipital lobe</td></tr><tr><td>C71.5</td><td>Ventricle, NOS</td></tr><tr><td>C71.6</td><td>Cerebellum, NOS</td></tr><tr><td>C71.7</td><td>Brain stem</td></tr><tr><td>C71.8</td><td>Overlapping lesion of brain</td></tr><tr><td>C71.9</td><td>Brain, NOS</td></tr><tr><td>C72</td><td>SPINAL CORD, CRANIAL NERVES, AND OTHER PARTS OF CENTRAL NERVOUS SYSTEM</td></tr><tr><td>C72.0</td><td>Spinal cord</td></tr><tr><td>C72.1</td><td>Cauda equina</td></tr><tr><td>C72.2</td><td>Olfactory nerve</td></tr><tr><td>C72.3</td><td>Optic nerve</td></tr><tr><td>C72.4</td><td>Acoustic nerve</td></tr><tr><td>C72.5</td><td>Cranial nerve, NOS</td></tr><tr><td>C72.8</td><td>Overlapping lesion of brain and central nervous system</td></tr><tr><td>C72.9</td><td>Nervous system, NOS</td></tr><tr><td>C73</td><td>THYROID GLAND</td></tr><tr><td>C73.9</td><td>Thyroid gland</td></tr><tr><td>C74</td><td>ADRENAL GLAND</td></tr><tr><td>C74.0</td><td>Cortex of adrenal gland</td></tr><tr><td>C74.1</td><td>Medulla of adrenal gland</td></tr><tr><td>C74.9</td><td>Adrenal gland, NOS</td></tr><tr><td>C75</td><td>OTHER ENDOCRINE GLANDS AND RELATED STRUCTURES</td></tr><tr><td>C75.0</td><td>Parathyroid gland</td></tr><tr><td>C75.1</td><td>Pituitary gland</td></tr><tr><td>C75.2</td><td>Craniopharyngeal duct</td></tr><tr><td>C75.3</td><td>Pineal gland</td></tr><tr><td>C75.4</td><td>Carotid body</td></tr><tr><td>C75.5</td><td>Aortic body and other paraganglia</td></tr><tr><td>C75.8</td><td>Overlapping lesion of endocrine glands and related structures</td></tr><tr><td>C75.9</td><td>Endocrine gland, NOS</td></tr><tr><td>C76</td><td>OTHER AND ILL-DEFINED SITES</td></tr><tr><td>C76.0</td><td>Head, face or neck, NOS</td></tr><tr><td>C76.1</td><td>Thorax, NOS</td></tr><tr><td>C76.2</td><td>Abdomen, NOS</td></tr><tr><td>C76.3</td><td>Pelvis, NOS</td></tr><tr><td>C76.4</td><td>Upper limb, NOS</td></tr><tr><td>C76.5</td><td>Lower limb, NOS</td></tr><tr><td>C76.7</td><td>Other ill-defined sites</td></tr><tr><td>C76.8</td><td>Overlapping lesion of ill-defined sites</td></tr><tr><td>C77</td><td>LYMPH NODES</td></tr><tr><td>C77.0</td><td>Lymph nodes of head, face and neck</td></tr><tr><td>C77.1</td><td>Intrathoracic lymph nodes</td></tr><tr><td>C77.2</td><td>Intra-abdominal lymph nodes</td></tr><tr><td>C77.3</td><td>Lymph nodes of axilla or arm</td></tr><tr><td>C77.4</td><td>Lymph nodes of inguinal region or leg</td></tr><tr><td>C77.5</td><td>Pelvic lymph nodes</td></tr><tr><td>C77.8</td><td>Lymph nodes of multiple regions</td></tr><tr><td>C77.9</td><td>Lymph node, NOS</td></tr><tr><td>C80</td><td>UNKNOWN PRIMARY SITE</td></tr><tr><td>C80.9</td><td>Unknown primary site</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.arkhn.com/osiris/ValueSet/Topography"/>
+  <version value="2.1.0"/>
+  <name value="Topography"/>
+  <title value="Topography Value Set"/>
+  <status value="active"/>
+  <date value="2023-03-16T15:52:24+01:00"/>
+  <publisher value="Arkhn"/>
+  <contact>
+    <name value="Arkhn"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://arkhn.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="contact@arkhn.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nicolas Riss"/>
+    <telecom>
+      <system value="email"/>
+      <value value="nicolas@arkhn.com"/>
+    </telecom>
+  </contact>
+  <description value="Cancer topography"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/icd-o-3"/>
+      <concept>
+        <code value="C00"/>
+        <display value="LIP"/>
+      </concept>
+      <concept>
+        <code value="C00.0"/>
+        <display value="External upper lip"/>
+      </concept>
+      <concept>
+        <code value="C00.1"/>
+        <display value="External lower lip"/>
+      </concept>
+      <concept>
+        <code value="C00.2"/>
+        <display value="External lip, NOS"/>
+      </concept>
+      <concept>
+        <code value="C00.3"/>
+        <display value="Mucosa of upper lip"/>
+      </concept>
+      <concept>
+        <code value="C00.4"/>
+        <display value="Mucosa of lower lip"/>
+      </concept>
+      <concept>
+        <code value="C00.5"/>
+        <display value="Mucosa of lip, NOS"/>
+      </concept>
+      <concept>
+        <code value="C00.6"/>
+        <display value="Commissure of lip"/>
+      </concept>
+      <concept>
+        <code value="C00.8"/>
+        <display value="Overlapping lesion of lip"/>
+      </concept>
+      <concept>
+        <code value="C00.9"/>
+        <display value="Lip, NOS"/>
+      </concept>
+      <concept>
+        <code value="C01"/>
+        <display value="BASE OF TONGUE"/>
+      </concept>
+      <concept>
+        <code value="C01.9"/>
+        <display value="Base of tongue, NOS"/>
+      </concept>
+      <concept>
+        <code value="C02"/>
+        <display value="OTHER AND UNSPECIFIED PARTS OF TONGUE"/>
+      </concept>
+      <concept>
+        <code value="C02.0"/>
+        <display value="Dorsal surface of tongue, NOS"/>
+      </concept>
+      <concept>
+        <code value="C02.1"/>
+        <display value="Border of tongue"/>
+      </concept>
+      <concept>
+        <code value="C02.2"/>
+        <display value="Ventral surface of tongue, NOS"/>
+      </concept>
+      <concept>
+        <code value="C02.3"/>
+        <display value="Anterior 2/3 of tongue, NOS"/>
+      </concept>
+      <concept>
+        <code value="C02.4"/>
+        <display value="Lingual tonsil"/>
+      </concept>
+      <concept>
+        <code value="C02.8"/>
+        <display value="Overlapping lesion of tongue"/>
+      </concept>
+      <concept>
+        <code value="C02.9"/>
+        <display value="Tongue, NOS"/>
+      </concept>
+      <concept>
+        <code value="C03"/>
+        <display value="GUM"/>
+      </concept>
+      <concept>
+        <code value="C03.0"/>
+        <display value="Upper gum"/>
+      </concept>
+      <concept>
+        <code value="C03.1"/>
+        <display value="Lower gum"/>
+      </concept>
+      <concept>
+        <code value="C03.9"/>
+        <display value="Gum, NOS"/>
+      </concept>
+      <concept>
+        <code value="C04"/>
+        <display value="FLOOR OF MOUTH"/>
+      </concept>
+      <concept>
+        <code value="C04.0"/>
+        <display value="Anterior floor of mouth"/>
+      </concept>
+      <concept>
+        <code value="C04.1"/>
+        <display value="Lateral floor of mouth"/>
+      </concept>
+      <concept>
+        <code value="C04.8"/>
+        <display value="Overlapping lesion of floor of mouth"/>
+      </concept>
+      <concept>
+        <code value="C04.9"/>
+        <display value="Floor of mouth, NOS"/>
+      </concept>
+      <concept>
+        <code value="C05"/>
+        <display value="PALATE"/>
+      </concept>
+      <concept>
+        <code value="C05.0"/>
+        <display value="Hard palate"/>
+      </concept>
+      <concept>
+        <code value="C05.1"/>
+        <display value="Soft palate, NOS"/>
+      </concept>
+      <concept>
+        <code value="C05.2"/>
+        <display value="Uvula"/>
+      </concept>
+      <concept>
+        <code value="C05.8"/>
+        <display value="Overlapping lesion of palate"/>
+      </concept>
+      <concept>
+        <code value="C05.9"/>
+        <display value="Palate, NOS"/>
+      </concept>
+      <concept>
+        <code value="C06"/>
+        <display value="OTHER AND UNSPECIFIED PARTS OF MOUTH"/>
+      </concept>
+      <concept>
+        <code value="C06.0"/>
+        <display value="Cheek mucosa"/>
+      </concept>
+      <concept>
+        <code value="C06.1"/>
+        <display value="Vestibule of mouth"/>
+      </concept>
+      <concept>
+        <code value="C06.2"/>
+        <display value="Retromolar area"/>
+      </concept>
+      <concept>
+        <code value="C06.8"/>
+        <display value="Overlapping lesion of other and unspecified parts of mouth"/>
+      </concept>
+      <concept>
+        <code value="C06.9"/>
+        <display value="Mouth, NOS"/>
+      </concept>
+      <concept>
+        <code value="C07"/>
+        <display value="PAROTID GLAND"/>
+      </concept>
+      <concept>
+        <code value="C07.9"/>
+        <display value="Parotid gland"/>
+      </concept>
+      <concept>
+        <code value="C08"/>
+        <display value="OTHER AND UNSPECIFIED MAJOR SALIVARY GLANDS"/>
+      </concept>
+      <concept>
+        <code value="C08.0"/>
+        <display value="Submandibular gland"/>
+      </concept>
+      <concept>
+        <code value="C08.1"/>
+        <display value="Sublingual gland"/>
+      </concept>
+      <concept>
+        <code value="C08.8"/>
+        <display value="Overlapping lesion of major salivary glands"/>
+      </concept>
+      <concept>
+        <code value="C08.9"/>
+        <display value="Major salivary gland, NOS"/>
+      </concept>
+      <concept>
+        <code value="C09"/>
+        <display value="TONSIL"/>
+      </concept>
+      <concept>
+        <code value="C09.0"/>
+        <display value="Tonsillar fossa"/>
+      </concept>
+      <concept>
+        <code value="C09.1"/>
+        <display value="Tonsillar pillar"/>
+      </concept>
+      <concept>
+        <code value="C09.8"/>
+        <display value="Overlapping lesion of tonsil"/>
+      </concept>
+      <concept>
+        <code value="C09.9"/>
+        <display value="Tonsil, NOS"/>
+      </concept>
+      <concept>
+        <code value="C10"/>
+        <display value="OROPHARYNX"/>
+      </concept>
+      <concept>
+        <code value="C10.0"/>
+        <display value="Vallecula"/>
+      </concept>
+      <concept>
+        <code value="C10.1"/>
+        <display value="Anterior surface of epiglottis"/>
+      </concept>
+      <concept>
+        <code value="C10.2"/>
+        <display value="Lateral wall of oropharynx"/>
+      </concept>
+      <concept>
+        <code value="C10.3"/>
+        <display value="Posterior wall of oropharynx"/>
+      </concept>
+      <concept>
+        <code value="C10.4"/>
+        <display value="Branchial cleft"/>
+      </concept>
+      <concept>
+        <code value="C10.8"/>
+        <display value="Overlapping lesion of oropharynx"/>
+      </concept>
+      <concept>
+        <code value="C10.9"/>
+        <display value="Oropharynx, NOS"/>
+      </concept>
+      <concept>
+        <code value="C11"/>
+        <display value="NASOPHARYNX"/>
+      </concept>
+      <concept>
+        <code value="C11.0"/>
+        <display value="Superior wall of nasopharynx"/>
+      </concept>
+      <concept>
+        <code value="C11.1"/>
+        <display value="Posterior wall of nasopharynx"/>
+      </concept>
+      <concept>
+        <code value="C11.2"/>
+        <display value="Lateral wall of nasopharynx"/>
+      </concept>
+      <concept>
+        <code value="C11.3"/>
+        <display value="Anterior wall of nasopharynx"/>
+      </concept>
+      <concept>
+        <code value="C11.8"/>
+        <display value="Overlapping lesion of nasopharynx"/>
+      </concept>
+      <concept>
+        <code value="C11.9"/>
+        <display value="Nasopharynx, NOS"/>
+      </concept>
+      <concept>
+        <code value="C12"/>
+        <display value="PYRIFORM SINUS"/>
+      </concept>
+      <concept>
+        <code value="C12.9"/>
+        <display value="Pyriform sinus"/>
+      </concept>
+      <concept>
+        <code value="C13"/>
+        <display value="HYPOPHARYNX"/>
+      </concept>
+      <concept>
+        <code value="C13.0"/>
+        <display value="Postcricoid region"/>
+      </concept>
+      <concept>
+        <code value="C13.1"/>
+        <display value="Hypopharyngeal aspect of aryepiglottic fold"/>
+      </concept>
+      <concept>
+        <code value="C13.2"/>
+        <display value="Posterior wall of hypopharynx"/>
+      </concept>
+      <concept>
+        <code value="C13.8"/>
+        <display value="Overlapping lesion of hypopharynx"/>
+      </concept>
+      <concept>
+        <code value="C13.9"/>
+        <display value="Hypopharynx, NOS"/>
+      </concept>
+      <concept>
+        <code value="C14"/>
+        <display value="OTHER AND ILL-DEFINED SITES IN LIP, ORAL CAVITY AND PHARYNX"/>
+      </concept>
+      <concept>
+        <code value="C14.0"/>
+        <display value="Pharynx, NOS"/>
+      </concept>
+      <concept>
+        <code value="C14.2"/>
+        <display value="Waldeyer ring"/>
+      </concept>
+      <concept>
+        <code value="C14.8"/>
+        <display value="Overlapping lesion of lip, oral cavity and pharynx"/>
+      </concept>
+      <concept>
+        <code value="C15"/>
+        <display value="ESOPHAGUS"/>
+      </concept>
+      <concept>
+        <code value="C15.0"/>
+        <display value="Cervical esophagus"/>
+      </concept>
+      <concept>
+        <code value="C15.1"/>
+        <display value="Thoracic esophagus"/>
+      </concept>
+      <concept>
+        <code value="C15.2"/>
+        <display value="Abdominal esophagus"/>
+      </concept>
+      <concept>
+        <code value="C15.3"/>
+        <display value="Upper third of esophagus"/>
+      </concept>
+      <concept>
+        <code value="C15.4"/>
+        <display value="Middle third of esophagus"/>
+      </concept>
+      <concept>
+        <code value="C15.5"/>
+        <display value="Lower third of esophagus"/>
+      </concept>
+      <concept>
+        <code value="C15.8"/>
+        <display value="Overlapping lesion of esophagus"/>
+      </concept>
+      <concept>
+        <code value="C15.9"/>
+        <display value="Esophagus, NOS"/>
+      </concept>
+      <concept>
+        <code value="C16"/>
+        <display value="STOMACH"/>
+      </concept>
+      <concept>
+        <code value="C16.0"/>
+        <display value="Cardia, NOS"/>
+      </concept>
+      <concept>
+        <code value="C16.1"/>
+        <display value="Fundus of stomach"/>
+      </concept>
+      <concept>
+        <code value="C16.2"/>
+        <display value="Body of stomach"/>
+      </concept>
+      <concept>
+        <code value="C16.3"/>
+        <display value="Gastric antrum"/>
+      </concept>
+      <concept>
+        <code value="C16.4"/>
+        <display value="Pylorus"/>
+      </concept>
+      <concept>
+        <code value="C16.5"/>
+        <display value="Lesser curvature of stomach, NOS"/>
+      </concept>
+      <concept>
+        <code value="C16.6"/>
+        <display value="Greater curvature of stomach, NOS"/>
+      </concept>
+      <concept>
+        <code value="C16.8"/>
+        <display value="Overlapping lesion of stomach"/>
+      </concept>
+      <concept>
+        <code value="C16.9"/>
+        <display value="Stomach, NOS"/>
+      </concept>
+      <concept>
+        <code value="C17"/>
+        <display value="SMALL INTESTINE"/>
+      </concept>
+      <concept>
+        <code value="C17.0"/>
+        <display value="Duodenum"/>
+      </concept>
+      <concept>
+        <code value="C17.1"/>
+        <display value="Jejunum"/>
+      </concept>
+      <concept>
+        <code value="C17.2"/>
+        <display value="Ileum"/>
+      </concept>
+      <concept>
+        <code value="C17.3"/>
+        <display value="Meckel diverticulum"/>
+      </concept>
+      <concept>
+        <code value="C17.8"/>
+        <display value="Overlapping lesion of smallintestine"/>
+      </concept>
+      <concept>
+        <code value="C17.9"/>
+        <display value="Small intestine, NOS"/>
+      </concept>
+      <concept>
+        <code value="C18"/>
+        <display value="COLON"/>
+      </concept>
+      <concept>
+        <code value="C18.0"/>
+        <display value="Cecum"/>
+      </concept>
+      <concept>
+        <code value="C18.1"/>
+        <display value="Appendix"/>
+      </concept>
+      <concept>
+        <code value="C18.2"/>
+        <display value="Ascending colon"/>
+      </concept>
+      <concept>
+        <code value="C18.3"/>
+        <display value="Hepatic flexure of colon"/>
+      </concept>
+      <concept>
+        <code value="C18.4"/>
+        <display value="Transverse colon"/>
+      </concept>
+      <concept>
+        <code value="C18.5"/>
+        <display value="Splenic flexure of colon"/>
+      </concept>
+      <concept>
+        <code value="C18.6"/>
+        <display value="Descending colon"/>
+      </concept>
+      <concept>
+        <code value="C18.7"/>
+        <display value="Sigmoid colon"/>
+      </concept>
+      <concept>
+        <code value="C18.8"/>
+        <display value="Overlapping lesion of colon"/>
+      </concept>
+      <concept>
+        <code value="C18.9"/>
+        <display value="Colon, NOS"/>
+      </concept>
+      <concept>
+        <code value="C19"/>
+        <display value="RECTOSIGMOID JUNCTION"/>
+      </concept>
+      <concept>
+        <code value="C19.9"/>
+        <display value="Rectosigmoid junction"/>
+      </concept>
+      <concept>
+        <code value="C20"/>
+        <display value="RECTUM"/>
+      </concept>
+      <concept>
+        <code value="C20.9"/>
+        <display value="Rectum, NOS"/>
+      </concept>
+      <concept>
+        <code value="C21"/>
+        <display value="ANUS AND ANAL CANAL"/>
+      </concept>
+      <concept>
+        <code value="C21.0"/>
+        <display value="Anus, NOS"/>
+      </concept>
+      <concept>
+        <code value="C21.1"/>
+        <display value="Anal canal"/>
+      </concept>
+      <concept>
+        <code value="C21.2"/>
+        <display value="Cloacogenic zone"/>
+      </concept>
+      <concept>
+        <code value="C21.8"/>
+        <display value="Overlapping lesion of rectum, anus and anal canal"/>
+      </concept>
+      <concept>
+        <code value="C22"/>
+        <display value="LIVER AND INTRAHEPATIC BILE DUCTS"/>
+      </concept>
+      <concept>
+        <code value="C22.0"/>
+        <display value="Liver"/>
+      </concept>
+      <concept>
+        <code value="C22.1"/>
+        <display value="Intrahepatic bile duct"/>
+      </concept>
+      <concept>
+        <code value="C23"/>
+        <display value="   GALLBLADDER"/>
+      </concept>
+      <concept>
+        <code value="C23.9"/>
+        <display value="Gallbladder"/>
+      </concept>
+      <concept>
+        <code value="C24"/>
+        <display value="OTHER AND UNSPECIFIED PARTS OF BILIARY TRACT"/>
+      </concept>
+      <concept>
+        <code value="C24.0"/>
+        <display value="Extrahepatic bile duct"/>
+      </concept>
+      <concept>
+        <code value="C24.1"/>
+        <display value="Ampulla of Vater"/>
+      </concept>
+      <concept>
+        <code value="C24.8"/>
+        <display value="Overlapping lesion of biliary tract Note:"/>
+      </concept>
+      <concept>
+        <code value="C24.9"/>
+        <display value="Biliary tract, NOS"/>
+      </concept>
+      <concept>
+        <code value="C25"/>
+        <display value="PANCREAS"/>
+      </concept>
+      <concept>
+        <code value="C25.0"/>
+        <display value="Head of pancreas"/>
+      </concept>
+      <concept>
+        <code value="C25.1"/>
+        <display value="Body of pancreas"/>
+      </concept>
+      <concept>
+        <code value="C25.2"/>
+        <display value="Tail of pancreas"/>
+      </concept>
+      <concept>
+        <code value="C25.3"/>
+        <display value="Pancreatic duct"/>
+      </concept>
+      <concept>
+        <code value="C25.4"/>
+        <display value="Islets of Langerhans"/>
+      </concept>
+      <concept>
+        <code value="C25.7"/>
+        <display value="Other specified parts of pancreas"/>
+      </concept>
+      <concept>
+        <code value="C25.8"/>
+        <display value="Overlapping lesion of pancreas"/>
+      </concept>
+      <concept>
+        <code value="C25.9"/>
+        <display value="Pancreas, NOS"/>
+      </concept>
+      <concept>
+        <code value="C26"/>
+        <display value="OTHER AND ILL-DEFINED DIGESTIVE ORGANS"/>
+      </concept>
+      <concept>
+        <code value="C26.0"/>
+        <display value="Intestinal tract, NOS"/>
+      </concept>
+      <concept>
+        <code value="C26.8"/>
+        <display value="Overlapping lesion of digestive system"/>
+      </concept>
+      <concept>
+        <code value="C26.9"/>
+        <display value="Gastrointestinal tract, NOS"/>
+      </concept>
+      <concept>
+        <code value="C30"/>
+        <display value="NASAL CAVITY AND MIDDLE EAR"/>
+      </concept>
+      <concept>
+        <code value="C30.0"/>
+        <display value="Nasal cavity"/>
+      </concept>
+      <concept>
+        <code value="C30.1"/>
+        <display value="Middle ear"/>
+      </concept>
+      <concept>
+        <code value="C31"/>
+        <display value="ACCESSORY SINUSES"/>
+      </concept>
+      <concept>
+        <code value="C31.0"/>
+        <display value="Maxillary sinus"/>
+      </concept>
+      <concept>
+        <code value="C31.1"/>
+        <display value="Ethmoid sinus"/>
+      </concept>
+      <concept>
+        <code value="C31.2"/>
+        <display value="Frontal sinus"/>
+      </concept>
+      <concept>
+        <code value="C31.3"/>
+        <display value="Sphenoid sinus"/>
+      </concept>
+      <concept>
+        <code value="C31.8"/>
+        <display value="Overlapping lesion of accessory sinuses"/>
+      </concept>
+      <concept>
+        <code value="C31.9"/>
+        <display value="Accessory sinus, NOS"/>
+      </concept>
+      <concept>
+        <code value="C32"/>
+        <display value="LARYNX"/>
+      </concept>
+      <concept>
+        <code value="C32.0"/>
+        <display value="Glottis"/>
+      </concept>
+      <concept>
+        <code value="C32.1"/>
+        <display value="Supraglottis"/>
+      </concept>
+      <concept>
+        <code value="C32.2"/>
+        <display value="Subglottis"/>
+      </concept>
+      <concept>
+        <code value="C32.3"/>
+        <display value="Laryngeal cartilage"/>
+      </concept>
+      <concept>
+        <code value="C32.8"/>
+        <display value="Overlapping lesion of larynx"/>
+      </concept>
+      <concept>
+        <code value="C32.9"/>
+        <display value="Larynx, NOS"/>
+      </concept>
+      <concept>
+        <code value="C33"/>
+        <display value="TRACHEA"/>
+      </concept>
+      <concept>
+        <code value="C33.9"/>
+        <display value="Trachea"/>
+      </concept>
+      <concept>
+        <code value="C34"/>
+        <display value="BRONCHUS AND LUNG"/>
+      </concept>
+      <concept>
+        <code value="C34.0"/>
+        <display value="Main bronchus"/>
+      </concept>
+      <concept>
+        <code value="C34.1"/>
+        <display value="Upper lobe, lung"/>
+      </concept>
+      <concept>
+        <code value="C34.2"/>
+        <display value="Middle lobe, lung"/>
+      </concept>
+      <concept>
+        <code value="C34.3"/>
+        <display value="Lower lobe, lung"/>
+      </concept>
+      <concept>
+        <code value="C34.8"/>
+        <display value="Overlapping lesion of lung"/>
+      </concept>
+      <concept>
+        <code value="C34.9"/>
+        <display value="Lung, NOS"/>
+      </concept>
+      <concept>
+        <code value="C37"/>
+        <display value="THYMUS"/>
+      </concept>
+      <concept>
+        <code value="C37.9"/>
+        <display value="Thymus"/>
+      </concept>
+      <concept>
+        <code value="C38"/>
+        <display value="HEART, MEDIASTINUM, AND PLEURA"/>
+      </concept>
+      <concept>
+        <code value="C38.0"/>
+        <display value="Heart"/>
+      </concept>
+      <concept>
+        <code value="C38.1"/>
+        <display value="Anterior mediastinum"/>
+      </concept>
+      <concept>
+        <code value="C38.2"/>
+        <display value="Posterior mediastinum"/>
+      </concept>
+      <concept>
+        <code value="C38.3"/>
+        <display value="Mediastinum, NOS"/>
+      </concept>
+      <concept>
+        <code value="C38.4"/>
+        <display value="Pleura, NOS"/>
+      </concept>
+      <concept>
+        <code value="C38.8"/>
+        <display value="Overlapping lesion of heart, mediastinum and pleura"/>
+      </concept>
+      <concept>
+        <code value="C39"/>
+        <display value="OTHER AND ILL-DEFINED SITES WITHIN RESPIRATORY SYSTEM AND INTRATHORACIC ORGANS"/>
+      </concept>
+      <concept>
+        <code value="C39.0"/>
+        <display value="Upper respiratory tract, NOS"/>
+      </concept>
+      <concept>
+        <code value="C39.8"/>
+        <display value="Overlapping lesion of respiratory system and intrathoracic organs"/>
+      </concept>
+      <concept>
+        <code value="C39.9"/>
+        <display value="Ill-defined sites within respiratory system"/>
+      </concept>
+      <concept>
+        <code value="C40"/>
+        <display value="BONES, JOINTS AND ARTICULAR CARTILAGE OF LIMBS"/>
+      </concept>
+      <concept>
+        <code value="C40.0"/>
+        <display value="Long bones of upper limb, scapula and associated joints"/>
+      </concept>
+      <concept>
+        <code value="C40.1"/>
+        <display value="Short bones of upper limb and associated joints"/>
+      </concept>
+      <concept>
+        <code value="C40.2"/>
+        <display value="Long bones of lower limb and associated joints"/>
+      </concept>
+      <concept>
+        <code value="C40.3"/>
+        <display value="Short bones of lower limb and associated joints"/>
+      </concept>
+      <concept>
+        <code value="C40.8"/>
+        <display value="Overlapping lesion of bones, joints and articular cartilage of limbs"/>
+      </concept>
+      <concept>
+        <code value="C40.9"/>
+        <display value="Bone of limb, NOS"/>
+      </concept>
+      <concept>
+        <code value="C41"/>
+        <display value="BONES, JOINTS AND ARTICULAR CARTILAGE OF OTHER AND UNSPECIFIED SITES"/>
+      </concept>
+      <concept>
+        <code value="C41.0"/>
+        <display value="Bones of skull and face and associated joints"/>
+      </concept>
+      <concept>
+        <code value="C41.1"/>
+        <display value="Mandible"/>
+      </concept>
+      <concept>
+        <code value="C41.2"/>
+        <display value="Vertebral column"/>
+      </concept>
+      <concept>
+        <code value="C41.3"/>
+        <display value="Rib, sternum, clavicle and associated joints"/>
+      </concept>
+      <concept>
+        <code value="C41.4"/>
+        <display value="Pelvic bones, sacrum, coccyx and associated joints"/>
+      </concept>
+      <concept>
+        <code value="C41.8"/>
+        <display value="Overlapping lesion of bones, joints and articular cartilage"/>
+      </concept>
+      <concept>
+        <code value="C41.9"/>
+        <display value="Bone, NOS"/>
+      </concept>
+      <concept>
+        <code value="C42"/>
+        <display value="HEMATOPOIETIC AND RETICULOENDOTHELIAL SYSTEMS"/>
+      </concept>
+      <concept>
+        <code value="C42.0"/>
+        <display value="Blood"/>
+      </concept>
+      <concept>
+        <code value="C42.1"/>
+        <display value="Bone marrow"/>
+      </concept>
+      <concept>
+        <code value="C42.2"/>
+        <display value="Spleen"/>
+      </concept>
+      <concept>
+        <code value="C42.3"/>
+        <display value="Reticuloendothelial system,NOS"/>
+      </concept>
+      <concept>
+        <code value="C42.4"/>
+        <display value="Hematopoietic system, NOS"/>
+      </concept>
+      <concept>
+        <code value="C44"/>
+        <display value="SKIN"/>
+      </concept>
+      <concept>
+        <code value="C44.0"/>
+        <display value="Skin of lip, NOS"/>
+      </concept>
+      <concept>
+        <code value="C44.1"/>
+        <display value="Eyelid"/>
+      </concept>
+      <concept>
+        <code value="C44.2"/>
+        <display value="External ear"/>
+      </concept>
+      <concept>
+        <code value="C44.3"/>
+        <display value="Skin of other and unspecified parts of face"/>
+      </concept>
+      <concept>
+        <code value="C44.4"/>
+        <display value="Skin of scalp and neck"/>
+      </concept>
+      <concept>
+        <code value="C44.5"/>
+        <display value="Skin of trunk"/>
+      </concept>
+      <concept>
+        <code value="C44.6"/>
+        <display value="Skin of upper limb and shoulder"/>
+      </concept>
+      <concept>
+        <code value="C44.7"/>
+        <display value="Skin of lower limb and hip"/>
+      </concept>
+      <concept>
+        <code value="C44.8"/>
+        <display value="Overlapping lesion of skin"/>
+      </concept>
+      <concept>
+        <code value="C44.9"/>
+        <display value="Skin, NOS"/>
+      </concept>
+      <concept>
+        <code value="C47"/>
+        <display value="PERIPHERAL NERVES AND AUTONOMIC NERVOUS SYSTEM"/>
+      </concept>
+      <concept>
+        <code value="C47.0"/>
+        <display value="Peripheral nerves and autonomic nervous system of head, face, and neck"/>
+      </concept>
+      <concept>
+        <code value="C47.1"/>
+        <display value="Peripheral nerves and autonomic nervous system of upper limb and shoulder"/>
+      </concept>
+      <concept>
+        <code value="C47.2"/>
+        <display value="Peripheral nerves and autonomic nervous system of lower limband hip"/>
+      </concept>
+      <concept>
+        <code value="C47.3"/>
+        <display value="Peripheral nerves and autonomic nervous system of thorax"/>
+      </concept>
+      <concept>
+        <code value="C47.4"/>
+        <display value="Peripheral nerves and autonomic nervous system of abdomen"/>
+      </concept>
+      <concept>
+        <code value="C47.5"/>
+        <display value="Peripheral nerves and autonomic nervous system of pelvis"/>
+      </concept>
+      <concept>
+        <code value="C47.6"/>
+        <display value="Peripheral nerves and autonomic nervous system of trunk, NOS"/>
+      </concept>
+      <concept>
+        <code value="C47.8"/>
+        <display value="Overlapping lesion of peripheral nerves and autonomic nervous system"/>
+      </concept>
+      <concept>
+        <code value="C47.9"/>
+        <display value="Autonomic nervous system, NOS"/>
+      </concept>
+      <concept>
+        <code value="C48"/>
+        <display value="RETROPERITONEUM AND PERITONEUM"/>
+      </concept>
+      <concept>
+        <code value="C48.0"/>
+        <display value="Retroperitoneum"/>
+      </concept>
+      <concept>
+        <code value="C48.1"/>
+        <display value="Specified parts of peritoneum"/>
+      </concept>
+      <concept>
+        <code value="C48.2"/>
+        <display value="Peritoneum, NOS"/>
+      </concept>
+      <concept>
+        <code value="C48.8"/>
+        <display value="Overlapping lesion of retroperitoneum and peritoneum"/>
+      </concept>
+      <concept>
+        <code value="C49"/>
+        <display value="CONNECTIVE, SUBCUTANEOUS AND OTHER SOFT TISSUES"/>
+      </concept>
+      <concept>
+        <code value="C49.0"/>
+        <display value="Connective, subcutaneous and other soft tissues of head, face, and neck"/>
+      </concept>
+      <concept>
+        <code value="C49.1"/>
+        <display value="Connective, subcutaneous and other soft tissues of upper limb and shoulder"/>
+      </concept>
+      <concept>
+        <code value="C49.2"/>
+        <display value="Connective, subcutaneous and other soft tissues of lower limb and hip"/>
+      </concept>
+      <concept>
+        <code value="C49.3"/>
+        <display value="Connective, subcutaneous and other soft tissues of thorax"/>
+      </concept>
+      <concept>
+        <code value="C49.4"/>
+        <display value="Connective, subcutaneous and other soft tissues of abdomen"/>
+      </concept>
+      <concept>
+        <code value="C49.5"/>
+        <display value="Connective, subcutaneous and other soft tissues of pelvis"/>
+      </concept>
+      <concept>
+        <code value="C49.6"/>
+        <display value="Connective, subcutaneous and other soft tissues of trunk NOS"/>
+      </concept>
+      <concept>
+        <code value="C49.8"/>
+        <display value="Overlapping lesion of connective, subcutaneous and other soft tissues"/>
+      </concept>
+      <concept>
+        <code value="C49.9"/>
+        <display value="Connective, subcutaneous and other soft tissues, NOS"/>
+      </concept>
+      <concept>
+        <code value="C50"/>
+        <display value="BREAST"/>
+      </concept>
+      <concept>
+        <code value="C50.0"/>
+        <display value="Nipple"/>
+      </concept>
+      <concept>
+        <code value="C50.1"/>
+        <display value="Central portion of breast"/>
+      </concept>
+      <concept>
+        <code value="C50.2"/>
+        <display value="Upper-inner quadrant of breast"/>
+      </concept>
+      <concept>
+        <code value="C50.3"/>
+        <display value="Lower-inner quadrant of breast"/>
+      </concept>
+      <concept>
+        <code value="C50.4"/>
+        <display value="Upper-outer quadrant of breast"/>
+      </concept>
+      <concept>
+        <code value="C50.5"/>
+        <display value="Lower-outer quadrant of breast"/>
+      </concept>
+      <concept>
+        <code value="C50.6"/>
+        <display value="Axillary tail of breast"/>
+      </concept>
+      <concept>
+        <code value="C50.8"/>
+        <display value="Overlapping lesion of breast"/>
+      </concept>
+      <concept>
+        <code value="C50.9"/>
+        <display value="Breast, NOS"/>
+      </concept>
+      <concept>
+        <code value="C51"/>
+        <display value="VULVA"/>
+      </concept>
+      <concept>
+        <code value="C51.0"/>
+        <display value="Labium majus"/>
+      </concept>
+      <concept>
+        <code value="C51.1"/>
+        <display value="Labium minus"/>
+      </concept>
+      <concept>
+        <code value="C51.2"/>
+        <display value="Clitoris"/>
+      </concept>
+      <concept>
+        <code value="C51.8"/>
+        <display value="Overlapping lesion of vulva"/>
+      </concept>
+      <concept>
+        <code value="C51.9"/>
+        <display value="Vulva, NOS"/>
+      </concept>
+      <concept>
+        <code value="C52"/>
+        <display value="VAGINA"/>
+      </concept>
+      <concept>
+        <code value="C52.9"/>
+        <display value="Vagina, NOS"/>
+      </concept>
+      <concept>
+        <code value="C53"/>
+        <display value="CERVIX UTERI"/>
+      </concept>
+      <concept>
+        <code value="C53.0"/>
+        <display value="Endocervix"/>
+      </concept>
+      <concept>
+        <code value="C53.1"/>
+        <display value="Exocervix"/>
+      </concept>
+      <concept>
+        <code value="C53.8"/>
+        <display value="Overlapping lesion of cervix uteri"/>
+      </concept>
+      <concept>
+        <code value="C53.9"/>
+        <display value="Cervix uteri"/>
+      </concept>
+      <concept>
+        <code value="C54"/>
+        <display value="CORPUS UTERI"/>
+      </concept>
+      <concept>
+        <code value="C54.0"/>
+        <display value="Isthmus uteri"/>
+      </concept>
+      <concept>
+        <code value="C54.1"/>
+        <display value="Endometrium"/>
+      </concept>
+      <concept>
+        <code value="C54.2"/>
+        <display value="Myometrium"/>
+      </concept>
+      <concept>
+        <code value="C54.3"/>
+        <display value="Fundus uteri"/>
+      </concept>
+      <concept>
+        <code value="C54.8"/>
+        <display value="Overlapping lesion of corpus uteri"/>
+      </concept>
+      <concept>
+        <code value="C54.9"/>
+        <display value="Corpus uteri"/>
+      </concept>
+      <concept>
+        <code value="C55"/>
+        <display value="UTERUS, NOS"/>
+      </concept>
+      <concept>
+        <code value="C55.9"/>
+        <display value="Uterus, NOS"/>
+      </concept>
+      <concept>
+        <code value="C56"/>
+        <display value="OVARY"/>
+      </concept>
+      <concept>
+        <code value="C56.9"/>
+        <display value="Ovary"/>
+      </concept>
+      <concept>
+        <code value="C57"/>
+        <display value="OTHER AND UNSPECIFIED FEMALE GENITAL ORGANS"/>
+      </concept>
+      <concept>
+        <code value="C57.0"/>
+        <display value="Fallopian tube"/>
+      </concept>
+      <concept>
+        <code value="C57.1"/>
+        <display value="Broad ligament"/>
+      </concept>
+      <concept>
+        <code value="C57.2"/>
+        <display value="Round ligament"/>
+      </concept>
+      <concept>
+        <code value="C57.3"/>
+        <display value="Parametrium"/>
+      </concept>
+      <concept>
+        <code value="C57.4"/>
+        <display value="Uterine adnexa"/>
+      </concept>
+      <concept>
+        <code value="C57.7"/>
+        <display value="Other specified parts of female genital organs"/>
+      </concept>
+      <concept>
+        <code value="C57.8"/>
+        <display value="Overlapping lesion of female genital organs"/>
+      </concept>
+      <concept>
+        <code value="C57.9"/>
+        <display value="Female genital tract, NOS"/>
+      </concept>
+      <concept>
+        <code value="C58"/>
+        <display value="PLACENTA"/>
+      </concept>
+      <concept>
+        <code value="C58.9"/>
+        <display value="Placenta"/>
+      </concept>
+      <concept>
+        <code value="C60"/>
+        <display value="PENIS"/>
+      </concept>
+      <concept>
+        <code value="C60.0"/>
+        <display value="Prepuce"/>
+      </concept>
+      <concept>
+        <code value="C60.1"/>
+        <display value="Glans penis"/>
+      </concept>
+      <concept>
+        <code value="C60.2"/>
+        <display value="Body of penis"/>
+      </concept>
+      <concept>
+        <code value="C60.8"/>
+        <display value="Overlapping lesion of penis"/>
+      </concept>
+      <concept>
+        <code value="C60.9"/>
+        <display value="Penis, NOS"/>
+      </concept>
+      <concept>
+        <code value="C61"/>
+        <display value="PROSTATE GLAND"/>
+      </concept>
+      <concept>
+        <code value="C61.9"/>
+        <display value="Prostate gland"/>
+      </concept>
+      <concept>
+        <code value="C62"/>
+        <display value="TESTIS"/>
+      </concept>
+      <concept>
+        <code value="C62.0"/>
+        <display value="Undescended testis"/>
+      </concept>
+      <concept>
+        <code value="C62.1"/>
+        <display value="Descended testis"/>
+      </concept>
+      <concept>
+        <code value="C62.9"/>
+        <display value="Testis, NOS"/>
+      </concept>
+      <concept>
+        <code value="C63"/>
+        <display value="OTHER AND UNSPECIFIED MALE GENITAL ORGANS"/>
+      </concept>
+      <concept>
+        <code value="C63.0"/>
+        <display value="Epididymis"/>
+      </concept>
+      <concept>
+        <code value="C63.1"/>
+        <display value="Spermatic cord"/>
+      </concept>
+      <concept>
+        <code value="C63.2"/>
+        <display value="Scrotum, NOS"/>
+      </concept>
+      <concept>
+        <code value="C63.7"/>
+        <display value="Other specified parts of male genital organs"/>
+      </concept>
+      <concept>
+        <code value="C63.8"/>
+        <display value="Overlapping lesion of male genital organs Note:"/>
+      </concept>
+      <concept>
+        <code value="C63.9"/>
+        <display value="Male genital organs, NOS"/>
+      </concept>
+      <concept>
+        <code value="C64"/>
+        <display value="KIDNEY"/>
+      </concept>
+      <concept>
+        <code value="C64.9"/>
+        <display value="Kidney, NOS"/>
+      </concept>
+      <concept>
+        <code value="C65"/>
+        <display value="RENAL PELVIS"/>
+      </concept>
+      <concept>
+        <code value="C65.9"/>
+        <display value="Renal pelvis"/>
+      </concept>
+      <concept>
+        <code value="C66"/>
+        <display value="URETER"/>
+      </concept>
+      <concept>
+        <code value="C66.9"/>
+        <display value="Ureter"/>
+      </concept>
+      <concept>
+        <code value="C67"/>
+        <display value="BLADDER"/>
+      </concept>
+      <concept>
+        <code value="C67.0"/>
+        <display value="Trigone of bladder"/>
+      </concept>
+      <concept>
+        <code value="C67.1"/>
+        <display value="Dome of bladder"/>
+      </concept>
+      <concept>
+        <code value="C67.2"/>
+        <display value="Lateral wall of bladder"/>
+      </concept>
+      <concept>
+        <code value="C67.3"/>
+        <display value="Anterior wall of bladder"/>
+      </concept>
+      <concept>
+        <code value="C67.4"/>
+        <display value="Posterior wall of bladder"/>
+      </concept>
+      <concept>
+        <code value="C67.5"/>
+        <display value="Bladder neck"/>
+      </concept>
+      <concept>
+        <code value="C67.6"/>
+        <display value="Ureteric orifice"/>
+      </concept>
+      <concept>
+        <code value="C67.7"/>
+        <display value="Urachus"/>
+      </concept>
+      <concept>
+        <code value="C67.8"/>
+        <display value="Overlapping lesion of bladder"/>
+      </concept>
+      <concept>
+        <code value="C67.9"/>
+        <display value="Bladder, NOS"/>
+      </concept>
+      <concept>
+        <code value="C68"/>
+        <display value="OTHER AND UNSPECIFIED URINARY ORGANS"/>
+      </concept>
+      <concept>
+        <code value="C68.0"/>
+        <display value="Urethra"/>
+      </concept>
+      <concept>
+        <code value="C68.1"/>
+        <display value="Paraurethral gland"/>
+      </concept>
+      <concept>
+        <code value="C68.8"/>
+        <display value="Overlapping lesion of urinary organs"/>
+      </concept>
+      <concept>
+        <code value="C68.9"/>
+        <display value="Urinary system, NOS"/>
+      </concept>
+      <concept>
+        <code value="C69"/>
+        <display value="EYE AND ADNEXA"/>
+      </concept>
+      <concept>
+        <code value="C69.0"/>
+        <display value="Conjunctiva"/>
+      </concept>
+      <concept>
+        <code value="C69.1"/>
+        <display value="Cornea, NOS"/>
+      </concept>
+      <concept>
+        <code value="C69.2"/>
+        <display value="Retina"/>
+      </concept>
+      <concept>
+        <code value="C69.3"/>
+        <display value="Choroid"/>
+      </concept>
+      <concept>
+        <code value="C69.4"/>
+        <display value="Ciliary body"/>
+      </concept>
+      <concept>
+        <code value="C69.5"/>
+        <display value="Lacrimal gland"/>
+      </concept>
+      <concept>
+        <code value="C69.6"/>
+        <display value="Orbit, NOS"/>
+      </concept>
+      <concept>
+        <code value="C69.8"/>
+        <display value="Overlapping lesion of eye and adnexa"/>
+      </concept>
+      <concept>
+        <code value="C69.9"/>
+        <display value="Eye, NOS"/>
+      </concept>
+      <concept>
+        <code value="C70"/>
+        <display value="MENINGES"/>
+      </concept>
+      <concept>
+        <code value="C70.0"/>
+        <display value="Cerebral meninges"/>
+      </concept>
+      <concept>
+        <code value="C70.1"/>
+        <display value="Spinal meninges"/>
+      </concept>
+      <concept>
+        <code value="C70.9"/>
+        <display value="Meninges, NOS"/>
+      </concept>
+      <concept>
+        <code value="C71"/>
+        <display value="BRAIN"/>
+      </concept>
+      <concept>
+        <code value="C71.0"/>
+        <display value="Cerebrum"/>
+      </concept>
+      <concept>
+        <code value="C71.1"/>
+        <display value="Frontal lobe"/>
+      </concept>
+      <concept>
+        <code value="C71.2"/>
+        <display value="Temporal lobe"/>
+      </concept>
+      <concept>
+        <code value="C71.3"/>
+        <display value="Parietal lobe"/>
+      </concept>
+      <concept>
+        <code value="C71.4"/>
+        <display value="Occipital lobe"/>
+      </concept>
+      <concept>
+        <code value="C71.5"/>
+        <display value="Ventricle, NOS"/>
+      </concept>
+      <concept>
+        <code value="C71.6"/>
+        <display value="Cerebellum, NOS"/>
+      </concept>
+      <concept>
+        <code value="C71.7"/>
+        <display value="Brain stem"/>
+      </concept>
+      <concept>
+        <code value="C71.8"/>
+        <display value="Overlapping lesion of brain"/>
+      </concept>
+      <concept>
+        <code value="C71.9"/>
+        <display value="Brain, NOS"/>
+      </concept>
+      <concept>
+        <code value="C72"/>
+        <display value="SPINAL CORD, CRANIAL NERVES, AND OTHER PARTS OF CENTRAL NERVOUS SYSTEM"/>
+      </concept>
+      <concept>
+        <code value="C72.0"/>
+        <display value="Spinal cord"/>
+      </concept>
+      <concept>
+        <code value="C72.1"/>
+        <display value="Cauda equina"/>
+      </concept>
+      <concept>
+        <code value="C72.2"/>
+        <display value="Olfactory nerve"/>
+      </concept>
+      <concept>
+        <code value="C72.3"/>
+        <display value="Optic nerve"/>
+      </concept>
+      <concept>
+        <code value="C72.4"/>
+        <display value="Acoustic nerve"/>
+      </concept>
+      <concept>
+        <code value="C72.5"/>
+        <display value="Cranial nerve, NOS"/>
+      </concept>
+      <concept>
+        <code value="C72.8"/>
+        <display value="Overlapping lesion of brain and central nervous system"/>
+      </concept>
+      <concept>
+        <code value="C72.9"/>
+        <display value="Nervous system, NOS"/>
+      </concept>
+      <concept>
+        <code value="C73"/>
+        <display value="THYROID GLAND"/>
+      </concept>
+      <concept>
+        <code value="C73.9"/>
+        <display value="Thyroid gland"/>
+      </concept>
+      <concept>
+        <code value="C74"/>
+        <display value="ADRENAL GLAND"/>
+      </concept>
+      <concept>
+        <code value="C74.0"/>
+        <display value="Cortex of adrenal gland"/>
+      </concept>
+      <concept>
+        <code value="C74.1"/>
+        <display value="Medulla of adrenal gland"/>
+      </concept>
+      <concept>
+        <code value="C74.9"/>
+        <display value="Adrenal gland, NOS"/>
+      </concept>
+      <concept>
+        <code value="C75"/>
+        <display value="OTHER ENDOCRINE GLANDS AND RELATED STRUCTURES"/>
+      </concept>
+      <concept>
+        <code value="C75.0"/>
+        <display value="Parathyroid gland"/>
+      </concept>
+      <concept>
+        <code value="C75.1"/>
+        <display value="Pituitary gland"/>
+      </concept>
+      <concept>
+        <code value="C75.2"/>
+        <display value="Craniopharyngeal duct"/>
+      </concept>
+      <concept>
+        <code value="C75.3"/>
+        <display value="Pineal gland"/>
+      </concept>
+      <concept>
+        <code value="C75.4"/>
+        <display value="Carotid body"/>
+      </concept>
+      <concept>
+        <code value="C75.5"/>
+        <display value="Aortic body and other paraganglia"/>
+      </concept>
+      <concept>
+        <code value="C75.8"/>
+        <display value="Overlapping lesion of endocrine glands and related structures"/>
+      </concept>
+      <concept>
+        <code value="C75.9"/>
+        <display value="Endocrine gland, NOS"/>
+      </concept>
+      <concept>
+        <code value="C76"/>
+        <display value="OTHER AND ILL-DEFINED SITES"/>
+      </concept>
+      <concept>
+        <code value="C76.0"/>
+        <display value="Head, face or neck, NOS"/>
+      </concept>
+      <concept>
+        <code value="C76.1"/>
+        <display value="Thorax, NOS"/>
+      </concept>
+      <concept>
+        <code value="C76.2"/>
+        <display value="Abdomen, NOS"/>
+      </concept>
+      <concept>
+        <code value="C76.3"/>
+        <display value="Pelvis, NOS"/>
+      </concept>
+      <concept>
+        <code value="C76.4"/>
+        <display value="Upper limb, NOS"/>
+      </concept>
+      <concept>
+        <code value="C76.5"/>
+        <display value="Lower limb, NOS"/>
+      </concept>
+      <concept>
+        <code value="C76.7"/>
+        <display value="Other ill-defined sites"/>
+      </concept>
+      <concept>
+        <code value="C76.8"/>
+        <display value="Overlapping lesion of ill-defined sites"/>
+      </concept>
+      <concept>
+        <code value="C77"/>
+        <display value="LYMPH NODES"/>
+      </concept>
+      <concept>
+        <code value="C77.0"/>
+        <display value="Lymph nodes of head, face and neck"/>
+      </concept>
+      <concept>
+        <code value="C77.1"/>
+        <display value="Intrathoracic lymph nodes"/>
+      </concept>
+      <concept>
+        <code value="C77.2"/>
+        <display value="Intra-abdominal lymph nodes"/>
+      </concept>
+      <concept>
+        <code value="C77.3"/>
+        <display value="Lymph nodes of axilla or arm"/>
+      </concept>
+      <concept>
+        <code value="C77.4"/>
+        <display value="Lymph nodes of inguinal region or leg"/>
+      </concept>
+      <concept>
+        <code value="C77.5"/>
+        <display value="Pelvic lymph nodes"/>
+      </concept>
+      <concept>
+        <code value="C77.8"/>
+        <display value="Lymph nodes of multiple regions"/>
+      </concept>
+      <concept>
+        <code value="C77.9"/>
+        <display value="Lymph node, NOS"/>
+      </concept>
+      <concept>
+        <code value="C80"/>
+        <display value="UNKNOWN PRIMARY SITE"/>
+      </concept>
+      <concept>
+        <code value="C80.9"/>
+        <display value="Unknown primary site"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

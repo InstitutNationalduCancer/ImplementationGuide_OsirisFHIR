@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "codexrt-radiotherapy-reason-for-revision-or-adaptation-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-373858009\">373858009</a></td><td>Radiotherapy course changed - acute radiotherapy toxicity (finding)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-314846003\">314846003</a></td><td>Patient given choice of treatment (finding)</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-SnomedRequestedCScodex.html\"><code>http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/snomed-requested-cs</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-SnomedRequestedCScodex.html#SnomedRequestedCScodex-1259981006\">1259981006</a></td><td>Radiotherapy course change due to change to treatment intent (finding)</td></tr><tr><td><a href=\"CodeSystem-SnomedRequestedCScodex.html#SnomedRequestedCScodex-1259231006\">1259231006</a></td><td>Radiotherapy course changed due to changes to target (finding)</td></tr><tr><td><a href=\"CodeSystem-SnomedRequestedCScodex.html#SnomedRequestedCScodex-1259232004\">1259232004</a></td><td>Radiotherapy course changed due to change to organ at risk (finding)</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.arkhn.com/osiris/ValueSet/codexrt-radiotherapy-reason-for-revision-or-adaptation-vs",
+  "version" : "2.1.0",
+  "name" : "RadiotherapyReasonReplanificationVS",
+  "title" : "Radiotherapy Reason Replanification",
+  "status" : "active",
+  "date" : "2023-03-16T15:52:24+01:00",
+  "publisher" : "Arkhn",
+  "contact" : [{
+    "name" : "Arkhn",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://arkhn.com"
+    },
+    {
+      "system" : "email",
+      "value" : "contact@arkhn.com"
+    }]
+  },
+  {
+    "name" : "Nicolas Riss",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "nicolas@arkhn.com"
+    }]
+  }],
+  "description" : "Radiotherapy Reason Replanification",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "373858009",
+        "display" : "Radiotherapy course changed - acute radiotherapy toxicity (finding)"
+      },
+      {
+        "code" : "314846003",
+        "display" : "Patient given choice of treatment (finding)"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/snomed-requested-cs",
+      "concept" : [{
+        "code" : "1259981006",
+        "display" : "Radiotherapy course change due to change to treatment intent (finding)"
+      },
+      {
+        "code" : "1259231006",
+        "display" : "Radiotherapy course changed due to changes to target (finding)"
+      },
+      {
+        "code" : "1259232004",
+        "display" : "Radiotherapy course changed due to change to organ at risk (finding)"
+      }]
+    }]
+  }
+}

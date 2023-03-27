@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="OsirisValidationType"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://github.com/siric-osiris/OSIRIS</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>O16-1</td><td>Experimental</td></tr><tr><td>O16-2</td><td>By biologist</td></tr><tr><td>O16-3</td><td>In silico</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.arkhn.com/osiris/ValueSet/OsirisValidationType"/>
+  <version value="2.1.0"/>
+  <name value="OsirisValidationType"/>
+  <title value="Osiris Validation Type"/>
+  <status value="active"/>
+  <date value="2023-03-16T15:52:24+01:00"/>
+  <publisher value="Arkhn"/>
+  <contact>
+    <name value="Arkhn"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://arkhn.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="contact@arkhn.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nicolas Riss"/>
+    <telecom>
+      <system value="email"/>
+      <value value="nicolas@arkhn.com"/>
+    </telecom>
+  </contact>
+  <description value="Osiris validation type"/>
+  <compose>
+    <include>
+      <system value="https://github.com/siric-osiris/OSIRIS"/>
+      <concept>
+        <code value="O16-1"/>
+        <display value="Experimental"/>
+      </concept>
+      <concept>
+        <code value="O16-2"/>
+        <display value="By biologist"/>
+      </concept>
+      <concept>
+        <code value="O16-3"/>
+        <display value="In silico"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

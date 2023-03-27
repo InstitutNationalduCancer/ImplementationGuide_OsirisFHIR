@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>ARKHN.FHIR.UV.OSIRIS\Topography Value Set - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.98"}
+    h3,h4,h5,h6{--heading-prefix:"5.98"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="arkhn-logo">
+          <a id="hl7-search-lnk" no-external="true" href="https://www.arkhn.com"><img alt="Arkhn Logo" src="assets/images/logo_arkhn.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Osiris Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">2.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="valuesets.html">ValueSets</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts Summary</a>
+  </li>
+  <li>
+    <a href="requests.html">Requests Example</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://github.com/siric-osiris/OSIRIS">OSIRIS Spec </a>
+      </li>
+      <li>
+        <a target="_blank" href="http://arkhn.com/">Arkhn website </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Topography Value Set</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v2.1.0). See the <a href="http://fhir.arkhn.com/osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-Topography.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-Topography.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-Topography.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: Topography Value Set
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.arkhn.com/osiris/ValueSet/Topography<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://fhir.arkhn.com/osiris/ValueSet/Topography"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.arkhn.com/osiris/ValueSet/Topography|2.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2023-03-16
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">Topography</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Cancer topography</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-family-cancer-history.html">Family Cancer History</a></li>
+ <li><a href="StructureDefinition-onco-biological-sample.html">Biological Sample</a></li>
+ <li><a href="StructureDefinition-tumor-pathology-event.html">Tumor Pathology Event</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/5.0.0/CodeSystem-icd-o-3.html"><code>http://terminology.hl7.org/CodeSystem/icd-o-3</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C00</td><td>LIP</td></tr><tr><td>C00.0</td><td>External upper lip</td></tr><tr><td>C00.1</td><td>External lower lip</td></tr><tr><td>C00.2</td><td>External lip, NOS</td></tr><tr><td>C00.3</td><td>Mucosa of upper lip</td></tr><tr><td>C00.4</td><td>Mucosa of lower lip</td></tr><tr><td>C00.5</td><td>Mucosa of lip, NOS</td></tr><tr><td>C00.6</td><td>Commissure of lip</td></tr><tr><td>C00.8</td><td>Overlapping lesion of lip</td></tr><tr><td>C00.9</td><td>Lip, NOS</td></tr><tr><td>C01</td><td>BASE OF TONGUE</td></tr><tr><td>C01.9</td><td>Base of tongue, NOS</td></tr><tr><td>C02</td><td>OTHER AND UNSPECIFIED PARTS OF TONGUE</td></tr><tr><td>C02.0</td><td>Dorsal surface of tongue, NOS</td></tr><tr><td>C02.1</td><td>Border of tongue</td></tr><tr><td>C02.2</td><td>Ventral surface of tongue, NOS</td></tr><tr><td>C02.3</td><td>Anterior 2/3 of tongue, NOS</td></tr><tr><td>C02.4</td><td>Lingual tonsil</td></tr><tr><td>C02.8</td><td>Overlapping lesion of tongue</td></tr><tr><td>C02.9</td><td>Tongue, NOS</td></tr><tr><td>C03</td><td>GUM</td></tr><tr><td>C03.0</td><td>Upper gum</td></tr><tr><td>C03.1</td><td>Lower gum</td></tr><tr><td>C03.9</td><td>Gum, NOS</td></tr><tr><td>C04</td><td>FLOOR OF MOUTH</td></tr><tr><td>C04.0</td><td>Anterior floor of mouth</td></tr><tr><td>C04.1</td><td>Lateral floor of mouth</td></tr><tr><td>C04.8</td><td>Overlapping lesion of floor of mouth</td></tr><tr><td>C04.9</td><td>Floor of mouth, NOS</td></tr><tr><td>C05</td><td>PALATE</td></tr><tr><td>C05.0</td><td>Hard palate</td></tr><tr><td>C05.1</td><td>Soft palate, NOS</td></tr><tr><td>C05.2</td><td>Uvula</td></tr><tr><td>C05.8</td><td>Overlapping lesion of palate</td></tr><tr><td>C05.9</td><td>Palate, NOS</td></tr><tr><td>C06</td><td>OTHER AND UNSPECIFIED PARTS OF MOUTH</td></tr><tr><td>C06.0</td><td>Cheek mucosa</td></tr><tr><td>C06.1</td><td>Vestibule of mouth</td></tr><tr><td>C06.2</td><td>Retromolar area</td></tr><tr><td>C06.8</td><td>Overlapping lesion of other and unspecified parts of mouth</td></tr><tr><td>C06.9</td><td>Mouth, NOS</td></tr><tr><td>C07</td><td>PAROTID GLAND</td></tr><tr><td>C07.9</td><td>Parotid gland</td></tr><tr><td>C08</td><td>OTHER AND UNSPECIFIED MAJOR SALIVARY GLANDS</td></tr><tr><td>C08.0</td><td>Submandibular gland</td></tr><tr><td>C08.1</td><td>Sublingual gland</td></tr><tr><td>C08.8</td><td>Overlapping lesion of major salivary glands</td></tr><tr><td>C08.9</td><td>Major salivary gland, NOS</td></tr><tr><td>C09</td><td>TONSIL</td></tr><tr><td>C09.0</td><td>Tonsillar fossa</td></tr><tr><td>C09.1</td><td>Tonsillar pillar</td></tr><tr><td>C09.8</td><td>Overlapping lesion of tonsil</td></tr><tr><td>C09.9</td><td>Tonsil, NOS</td></tr><tr><td>C10</td><td>OROPHARYNX</td></tr><tr><td>C10.0</td><td>Vallecula</td></tr><tr><td>C10.1</td><td>Anterior surface of epiglottis</td></tr><tr><td>C10.2</td><td>Lateral wall of oropharynx</td></tr><tr><td>C10.3</td><td>Posterior wall of oropharynx</td></tr><tr><td>C10.4</td><td>Branchial cleft</td></tr><tr><td>C10.8</td><td>Overlapping lesion of oropharynx</td></tr><tr><td>C10.9</td><td>Oropharynx, NOS</td></tr><tr><td>C11</td><td>NASOPHARYNX</td></tr><tr><td>C11.0</td><td>Superior wall of nasopharynx</td></tr><tr><td>C11.1</td><td>Posterior wall of nasopharynx</td></tr><tr><td>C11.2</td><td>Lateral wall of nasopharynx</td></tr><tr><td>C11.3</td><td>Anterior wall of nasopharynx</td></tr><tr><td>C11.8</td><td>Overlapping lesion of nasopharynx</td></tr><tr><td>C11.9</td><td>Nasopharynx, NOS</td></tr><tr><td>C12</td><td>PYRIFORM SINUS</td></tr><tr><td>C12.9</td><td>Pyriform sinus</td></tr><tr><td>C13</td><td>HYPOPHARYNX</td></tr><tr><td>C13.0</td><td>Postcricoid region</td></tr><tr><td>C13.1</td><td>Hypopharyngeal aspect of aryepiglottic fold</td></tr><tr><td>C13.2</td><td>Posterior wall of hypopharynx</td></tr><tr><td>C13.8</td><td>Overlapping lesion of hypopharynx</td></tr><tr><td>C13.9</td><td>Hypopharynx, NOS</td></tr><tr><td>C14</td><td>OTHER AND ILL-DEFINED SITES IN LIP, ORAL CAVITY AND PHARYNX</td></tr><tr><td>C14.0</td><td>Pharynx, NOS</td></tr><tr><td>C14.2</td><td>Waldeyer ring</td></tr><tr><td>C14.8</td><td>Overlapping lesion of lip, oral cavity and pharynx</td></tr><tr><td>C15</td><td>ESOPHAGUS</td></tr><tr><td>C15.0</td><td>Cervical esophagus</td></tr><tr><td>C15.1</td><td>Thoracic esophagus</td></tr><tr><td>C15.2</td><td>Abdominal esophagus</td></tr><tr><td>C15.3</td><td>Upper third of esophagus</td></tr><tr><td>C15.4</td><td>Middle third of esophagus</td></tr><tr><td>C15.5</td><td>Lower third of esophagus</td></tr><tr><td>C15.8</td><td>Overlapping lesion of esophagus</td></tr><tr><td>C15.9</td><td>Esophagus, NOS</td></tr><tr><td>C16</td><td>STOMACH</td></tr><tr><td>C16.0</td><td>Cardia, NOS</td></tr><tr><td>C16.1</td><td>Fundus of stomach</td></tr><tr><td>C16.2</td><td>Body of stomach</td></tr><tr><td>C16.3</td><td>Gastric antrum</td></tr><tr><td>C16.4</td><td>Pylorus</td></tr><tr><td>C16.5</td><td>Lesser curvature of stomach, NOS</td></tr><tr><td>C16.6</td><td>Greater curvature of stomach, NOS</td></tr><tr><td>C16.8</td><td>Overlapping lesion of stomach</td></tr><tr><td>C16.9</td><td>Stomach, NOS</td></tr><tr><td>C17</td><td>SMALL INTESTINE</td></tr><tr><td>C17.0</td><td>Duodenum</td></tr><tr><td>C17.1</td><td>Jejunum</td></tr><tr><td>C17.2</td><td>Ileum</td></tr><tr><td>C17.3</td><td>Meckel diverticulum</td></tr><tr><td>C17.8</td><td>Overlapping lesion of smallintestine</td></tr><tr><td>C17.9</td><td>Small intestine, NOS</td></tr><tr><td>C18</td><td>COLON</td></tr><tr><td>C18.0</td><td>Cecum</td></tr><tr><td>C18.1</td><td>Appendix</td></tr><tr><td>C18.2</td><td>Ascending colon</td></tr><tr><td>C18.3</td><td>Hepatic flexure of colon</td></tr><tr><td>C18.4</td><td>Transverse colon</td></tr><tr><td>C18.5</td><td>Splenic flexure of colon</td></tr><tr><td>C18.6</td><td>Descending colon</td></tr><tr><td>C18.7</td><td>Sigmoid colon</td></tr><tr><td>C18.8</td><td>Overlapping lesion of colon</td></tr><tr><td>C18.9</td><td>Colon, NOS</td></tr><tr><td>C19</td><td>RECTOSIGMOID JUNCTION</td></tr><tr><td>C19.9</td><td>Rectosigmoid junction</td></tr><tr><td>C20</td><td>RECTUM</td></tr><tr><td>C20.9</td><td>Rectum, NOS</td></tr><tr><td>C21</td><td>ANUS AND ANAL CANAL</td></tr><tr><td>C21.0</td><td>Anus, NOS</td></tr><tr><td>C21.1</td><td>Anal canal</td></tr><tr><td>C21.2</td><td>Cloacogenic zone</td></tr><tr><td>C21.8</td><td>Overlapping lesion of rectum, anus and anal canal</td></tr><tr><td>C22</td><td>LIVER AND INTRAHEPATIC BILE DUCTS</td></tr><tr><td>C22.0</td><td>Liver</td></tr><tr><td>C22.1</td><td>Intrahepatic bile duct</td></tr><tr><td>C23</td><td>   GALLBLADDER</td></tr><tr><td>C23.9</td><td>Gallbladder</td></tr><tr><td>C24</td><td>OTHER AND UNSPECIFIED PARTS OF BILIARY TRACT</td></tr><tr><td>C24.0</td><td>Extrahepatic bile duct</td></tr><tr><td>C24.1</td><td>Ampulla of Vater</td></tr><tr><td>C24.8</td><td>Overlapping lesion of biliary tract Note:</td></tr><tr><td>C24.9</td><td>Biliary tract, NOS</td></tr><tr><td>C25</td><td>PANCREAS</td></tr><tr><td>C25.0</td><td>Head of pancreas</td></tr><tr><td>C25.1</td><td>Body of pancreas</td></tr><tr><td>C25.2</td><td>Tail of pancreas</td></tr><tr><td>C25.3</td><td>Pancreatic duct</td></tr><tr><td>C25.4</td><td>Islets of Langerhans</td></tr><tr><td>C25.7</td><td>Other specified parts of pancreas</td></tr><tr><td>C25.8</td><td>Overlapping lesion of pancreas</td></tr><tr><td>C25.9</td><td>Pancreas, NOS</td></tr><tr><td>C26</td><td>OTHER AND ILL-DEFINED DIGESTIVE ORGANS</td></tr><tr><td>C26.0</td><td>Intestinal tract, NOS</td></tr><tr><td>C26.8</td><td>Overlapping lesion of digestive system</td></tr><tr><td>C26.9</td><td>Gastrointestinal tract, NOS</td></tr><tr><td>C30</td><td>NASAL CAVITY AND MIDDLE EAR</td></tr><tr><td>C30.0</td><td>Nasal cavity</td></tr><tr><td>C30.1</td><td>Middle ear</td></tr><tr><td>C31</td><td>ACCESSORY SINUSES</td></tr><tr><td>C31.0</td><td>Maxillary sinus</td></tr><tr><td>C31.1</td><td>Ethmoid sinus</td></tr><tr><td>C31.2</td><td>Frontal sinus</td></tr><tr><td>C31.3</td><td>Sphenoid sinus</td></tr><tr><td>C31.8</td><td>Overlapping lesion of accessory sinuses</td></tr><tr><td>C31.9</td><td>Accessory sinus, NOS</td></tr><tr><td>C32</td><td>LARYNX</td></tr><tr><td>C32.0</td><td>Glottis</td></tr><tr><td>C32.1</td><td>Supraglottis</td></tr><tr><td>C32.2</td><td>Subglottis</td></tr><tr><td>C32.3</td><td>Laryngeal cartilage</td></tr><tr><td>C32.8</td><td>Overlapping lesion of larynx</td></tr><tr><td>C32.9</td><td>Larynx, NOS</td></tr><tr><td>C33</td><td>TRACHEA</td></tr><tr><td>C33.9</td><td>Trachea</td></tr><tr><td>C34</td><td>BRONCHUS AND LUNG</td></tr><tr><td>C34.0</td><td>Main bronchus</td></tr><tr><td>C34.1</td><td>Upper lobe, lung</td></tr><tr><td>C34.2</td><td>Middle lobe, lung</td></tr><tr><td>C34.3</td><td>Lower lobe, lung</td></tr><tr><td>C34.8</td><td>Overlapping lesion of lung</td></tr><tr><td>C34.9</td><td>Lung, NOS</td></tr><tr><td>C37</td><td>THYMUS</td></tr><tr><td>C37.9</td><td>Thymus</td></tr><tr><td>C38</td><td>HEART, MEDIASTINUM, AND PLEURA</td></tr><tr><td>C38.0</td><td>Heart</td></tr><tr><td>C38.1</td><td>Anterior mediastinum</td></tr><tr><td>C38.2</td><td>Posterior mediastinum</td></tr><tr><td>C38.3</td><td>Mediastinum, NOS</td></tr><tr><td>C38.4</td><td>Pleura, NOS</td></tr><tr><td>C38.8</td><td>Overlapping lesion of heart, mediastinum and pleura</td></tr><tr><td>C39</td><td>OTHER AND ILL-DEFINED SITES WITHIN RESPIRATORY SYSTEM AND INTRATHORACIC ORGANS</td></tr><tr><td>C39.0</td><td>Upper respiratory tract, NOS</td></tr><tr><td>C39.8</td><td>Overlapping lesion of respiratory system and intrathoracic organs</td></tr><tr><td>C39.9</td><td>Ill-defined sites within respiratory system</td></tr><tr><td>C40</td><td>BONES, JOINTS AND ARTICULAR CARTILAGE OF LIMBS</td></tr><tr><td>C40.0</td><td>Long bones of upper limb, scapula and associated joints</td></tr><tr><td>C40.1</td><td>Short bones of upper limb and associated joints</td></tr><tr><td>C40.2</td><td>Long bones of lower limb and associated joints</td></tr><tr><td>C40.3</td><td>Short bones of lower limb and associated joints</td></tr><tr><td>C40.8</td><td>Overlapping lesion of bones, joints and articular cartilage of limbs</td></tr><tr><td>C40.9</td><td>Bone of limb, NOS</td></tr><tr><td>C41</td><td>BONES, JOINTS AND ARTICULAR CARTILAGE OF OTHER AND UNSPECIFIED SITES</td></tr><tr><td>C41.0</td><td>Bones of skull and face and associated joints</td></tr><tr><td>C41.1</td><td>Mandible</td></tr><tr><td>C41.2</td><td>Vertebral column</td></tr><tr><td>C41.3</td><td>Rib, sternum, clavicle and associated joints</td></tr><tr><td>C41.4</td><td>Pelvic bones, sacrum, coccyx and associated joints</td></tr><tr><td>C41.8</td><td>Overlapping lesion of bones, joints and articular cartilage</td></tr><tr><td>C41.9</td><td>Bone, NOS</td></tr><tr><td>C42</td><td>HEMATOPOIETIC AND RETICULOENDOTHELIAL SYSTEMS</td></tr><tr><td>C42.0</td><td>Blood</td></tr><tr><td>C42.1</td><td>Bone marrow</td></tr><tr><td>C42.2</td><td>Spleen</td></tr><tr><td>C42.3</td><td>Reticuloendothelial system,NOS</td></tr><tr><td>C42.4</td><td>Hematopoietic system, NOS</td></tr><tr><td>C44</td><td>SKIN</td></tr><tr><td>C44.0</td><td>Skin of lip, NOS</td></tr><tr><td>C44.1</td><td>Eyelid</td></tr><tr><td>C44.2</td><td>External ear</td></tr><tr><td>C44.3</td><td>Skin of other and unspecified parts of face</td></tr><tr><td>C44.4</td><td>Skin of scalp and neck</td></tr><tr><td>C44.5</td><td>Skin of trunk</td></tr><tr><td>C44.6</td><td>Skin of upper limb and shoulder</td></tr><tr><td>C44.7</td><td>Skin of lower limb and hip</td></tr><tr><td>C44.8</td><td>Overlapping lesion of skin</td></tr><tr><td>C44.9</td><td>Skin, NOS</td></tr><tr><td>C47</td><td>PERIPHERAL NERVES AND AUTONOMIC NERVOUS SYSTEM</td></tr><tr><td>C47.0</td><td>Peripheral nerves and autonomic nervous system of head, face, and neck</td></tr><tr><td>C47.1</td><td>Peripheral nerves and autonomic nervous system of upper limb and shoulder</td></tr><tr><td>C47.2</td><td>Peripheral nerves and autonomic nervous system of lower limband hip</td></tr><tr><td>C47.3</td><td>Peripheral nerves and autonomic nervous system of thorax</td></tr><tr><td>C47.4</td><td>Peripheral nerves and autonomic nervous system of abdomen</td></tr><tr><td>C47.5</td><td>Peripheral nerves and autonomic nervous system of pelvis</td></tr><tr><td>C47.6</td><td>Peripheral nerves and autonomic nervous system of trunk, NOS</td></tr><tr><td>C47.8</td><td>Overlapping lesion of peripheral nerves and autonomic nervous system</td></tr><tr><td>C47.9</td><td>Autonomic nervous system, NOS</td></tr><tr><td>C48</td><td>RETROPERITONEUM AND PERITONEUM</td></tr><tr><td>C48.0</td><td>Retroperitoneum</td></tr><tr><td>C48.1</td><td>Specified parts of peritoneum</td></tr><tr><td>C48.2</td><td>Peritoneum, NOS</td></tr><tr><td>C48.8</td><td>Overlapping lesion of retroperitoneum and peritoneum</td></tr><tr><td>C49</td><td>CONNECTIVE, SUBCUTANEOUS AND OTHER SOFT TISSUES</td></tr><tr><td>C49.0</td><td>Connective, subcutaneous and other soft tissues of head, face, and neck</td></tr><tr><td>C49.1</td><td>Connective, subcutaneous and other soft tissues of upper limb and shoulder</td></tr><tr><td>C49.2</td><td>Connective, subcutaneous and other soft tissues of lower limb and hip</td></tr><tr><td>C49.3</td><td>Connective, subcutaneous and other soft tissues of thorax</td></tr><tr><td>C49.4</td><td>Connective, subcutaneous and other soft tissues of abdomen</td></tr><tr><td>C49.5</td><td>Connective, subcutaneous and other soft tissues of pelvis</td></tr><tr><td>C49.6</td><td>Connective, subcutaneous and other soft tissues of trunk NOS</td></tr><tr><td>C49.8</td><td>Overlapping lesion of connective, subcutaneous and other soft tissues</td></tr><tr><td>C49.9</td><td>Connective, subcutaneous and other soft tissues, NOS</td></tr><tr><td>C50</td><td>BREAST</td></tr><tr><td>C50.0</td><td>Nipple</td></tr><tr><td>C50.1</td><td>Central portion of breast</td></tr><tr><td>C50.2</td><td>Upper-inner quadrant of breast</td></tr><tr><td>C50.3</td><td>Lower-inner quadrant of breast</td></tr><tr><td>C50.4</td><td>Upper-outer quadrant of breast</td></tr><tr><td>C50.5</td><td>Lower-outer quadrant of breast</td></tr><tr><td>C50.6</td><td>Axillary tail of breast</td></tr><tr><td>C50.8</td><td>Overlapping lesion of breast</td></tr><tr><td>C50.9</td><td>Breast, NOS</td></tr><tr><td>C51</td><td>VULVA</td></tr><tr><td>C51.0</td><td>Labium majus</td></tr><tr><td>C51.1</td><td>Labium minus</td></tr><tr><td>C51.2</td><td>Clitoris</td></tr><tr><td>C51.8</td><td>Overlapping lesion of vulva</td></tr><tr><td>C51.9</td><td>Vulva, NOS</td></tr><tr><td>C52</td><td>VAGINA</td></tr><tr><td>C52.9</td><td>Vagina, NOS</td></tr><tr><td>C53</td><td>CERVIX UTERI</td></tr><tr><td>C53.0</td><td>Endocervix</td></tr><tr><td>C53.1</td><td>Exocervix</td></tr><tr><td>C53.8</td><td>Overlapping lesion of cervix uteri</td></tr><tr><td>C53.9</td><td>Cervix uteri</td></tr><tr><td>C54</td><td>CORPUS UTERI</td></tr><tr><td>C54.0</td><td>Isthmus uteri</td></tr><tr><td>C54.1</td><td>Endometrium</td></tr><tr><td>C54.2</td><td>Myometrium</td></tr><tr><td>C54.3</td><td>Fundus uteri</td></tr><tr><td>C54.8</td><td>Overlapping lesion of corpus uteri</td></tr><tr><td>C54.9</td><td>Corpus uteri</td></tr><tr><td>C55</td><td>UTERUS, NOS</td></tr><tr><td>C55.9</td><td>Uterus, NOS</td></tr><tr><td>C56</td><td>OVARY</td></tr><tr><td>C56.9</td><td>Ovary</td></tr><tr><td>C57</td><td>OTHER AND UNSPECIFIED FEMALE GENITAL ORGANS</td></tr><tr><td>C57.0</td><td>Fallopian tube</td></tr><tr><td>C57.1</td><td>Broad ligament</td></tr><tr><td>C57.2</td><td>Round ligament</td></tr><tr><td>C57.3</td><td>Parametrium</td></tr><tr><td>C57.4</td><td>Uterine adnexa</td></tr><tr><td>C57.7</td><td>Other specified parts of female genital organs</td></tr><tr><td>C57.8</td><td>Overlapping lesion of female genital organs</td></tr><tr><td>C57.9</td><td>Female genital tract, NOS</td></tr><tr><td>C58</td><td>PLACENTA</td></tr><tr><td>C58.9</td><td>Placenta</td></tr><tr><td>C60</td><td>PENIS</td></tr><tr><td>C60.0</td><td>Prepuce</td></tr><tr><td>C60.1</td><td>Glans penis</td></tr><tr><td>C60.2</td><td>Body of penis</td></tr><tr><td>C60.8</td><td>Overlapping lesion of penis</td></tr><tr><td>C60.9</td><td>Penis, NOS</td></tr><tr><td>C61</td><td>PROSTATE GLAND</td></tr><tr><td>C61.9</td><td>Prostate gland</td></tr><tr><td>C62</td><td>TESTIS</td></tr><tr><td>C62.0</td><td>Undescended testis</td></tr><tr><td>C62.1</td><td>Descended testis</td></tr><tr><td>C62.9</td><td>Testis, NOS</td></tr><tr><td>C63</td><td>OTHER AND UNSPECIFIED MALE GENITAL ORGANS</td></tr><tr><td>C63.0</td><td>Epididymis</td></tr><tr><td>C63.1</td><td>Spermatic cord</td></tr><tr><td>C63.2</td><td>Scrotum, NOS</td></tr><tr><td>C63.7</td><td>Other specified parts of male genital organs</td></tr><tr><td>C63.8</td><td>Overlapping lesion of male genital organs Note:</td></tr><tr><td>C63.9</td><td>Male genital organs, NOS</td></tr><tr><td>C64</td><td>KIDNEY</td></tr><tr><td>C64.9</td><td>Kidney, NOS</td></tr><tr><td>C65</td><td>RENAL PELVIS</td></tr><tr><td>C65.9</td><td>Renal pelvis</td></tr><tr><td>C66</td><td>URETER</td></tr><tr><td>C66.9</td><td>Ureter</td></tr><tr><td>C67</td><td>BLADDER</td></tr><tr><td>C67.0</td><td>Trigone of bladder</td></tr><tr><td>C67.1</td><td>Dome of bladder</td></tr><tr><td>C67.2</td><td>Lateral wall of bladder</td></tr><tr><td>C67.3</td><td>Anterior wall of bladder</td></tr><tr><td>C67.4</td><td>Posterior wall of bladder</td></tr><tr><td>C67.5</td><td>Bladder neck</td></tr><tr><td>C67.6</td><td>Ureteric orifice</td></tr><tr><td>C67.7</td><td>Urachus</td></tr><tr><td>C67.8</td><td>Overlapping lesion of bladder</td></tr><tr><td>C67.9</td><td>Bladder, NOS</td></tr><tr><td>C68</td><td>OTHER AND UNSPECIFIED URINARY ORGANS</td></tr><tr><td>C68.0</td><td>Urethra</td></tr><tr><td>C68.1</td><td>Paraurethral gland</td></tr><tr><td>C68.8</td><td>Overlapping lesion of urinary organs</td></tr><tr><td>C68.9</td><td>Urinary system, NOS</td></tr><tr><td>C69</td><td>EYE AND ADNEXA</td></tr><tr><td>C69.0</td><td>Conjunctiva</td></tr><tr><td>C69.1</td><td>Cornea, NOS</td></tr><tr><td>C69.2</td><td>Retina</td></tr><tr><td>C69.3</td><td>Choroid</td></tr><tr><td>C69.4</td><td>Ciliary body</td></tr><tr><td>C69.5</td><td>Lacrimal gland</td></tr><tr><td>C69.6</td><td>Orbit, NOS</td></tr><tr><td>C69.8</td><td>Overlapping lesion of eye and adnexa</td></tr><tr><td>C69.9</td><td>Eye, NOS</td></tr><tr><td>C70</td><td>MENINGES</td></tr><tr><td>C70.0</td><td>Cerebral meninges</td></tr><tr><td>C70.1</td><td>Spinal meninges</td></tr><tr><td>C70.9</td><td>Meninges, NOS</td></tr><tr><td>C71</td><td>BRAIN</td></tr><tr><td>C71.0</td><td>Cerebrum</td></tr><tr><td>C71.1</td><td>Frontal lobe</td></tr><tr><td>C71.2</td><td>Temporal lobe</td></tr><tr><td>C71.3</td><td>Parietal lobe</td></tr><tr><td>C71.4</td><td>Occipital lobe</td></tr><tr><td>C71.5</td><td>Ventricle, NOS</td></tr><tr><td>C71.6</td><td>Cerebellum, NOS</td></tr><tr><td>C71.7</td><td>Brain stem</td></tr><tr><td>C71.8</td><td>Overlapping lesion of brain</td></tr><tr><td>C71.9</td><td>Brain, NOS</td></tr><tr><td>C72</td><td>SPINAL CORD, CRANIAL NERVES, AND OTHER PARTS OF CENTRAL NERVOUS SYSTEM</td></tr><tr><td>C72.0</td><td>Spinal cord</td></tr><tr><td>C72.1</td><td>Cauda equina</td></tr><tr><td>C72.2</td><td>Olfactory nerve</td></tr><tr><td>C72.3</td><td>Optic nerve</td></tr><tr><td>C72.4</td><td>Acoustic nerve</td></tr><tr><td>C72.5</td><td>Cranial nerve, NOS</td></tr><tr><td>C72.8</td><td>Overlapping lesion of brain and central nervous system</td></tr><tr><td>C72.9</td><td>Nervous system, NOS</td></tr><tr><td>C73</td><td>THYROID GLAND</td></tr><tr><td>C73.9</td><td>Thyroid gland</td></tr><tr><td>C74</td><td>ADRENAL GLAND</td></tr><tr><td>C74.0</td><td>Cortex of adrenal gland</td></tr><tr><td>C74.1</td><td>Medulla of adrenal gland</td></tr><tr><td>C74.9</td><td>Adrenal gland, NOS</td></tr><tr><td>C75</td><td>OTHER ENDOCRINE GLANDS AND RELATED STRUCTURES</td></tr><tr><td>C75.0</td><td>Parathyroid gland</td></tr><tr><td>C75.1</td><td>Pituitary gland</td></tr><tr><td>C75.2</td><td>Craniopharyngeal duct</td></tr><tr><td>C75.3</td><td>Pineal gland</td></tr><tr><td>C75.4</td><td>Carotid body</td></tr><tr><td>C75.5</td><td>Aortic body and other paraganglia</td></tr><tr><td>C75.8</td><td>Overlapping lesion of endocrine glands and related structures</td></tr><tr><td>C75.9</td><td>Endocrine gland, NOS</td></tr><tr><td>C76</td><td>OTHER AND ILL-DEFINED SITES</td></tr><tr><td>C76.0</td><td>Head, face or neck, NOS</td></tr><tr><td>C76.1</td><td>Thorax, NOS</td></tr><tr><td>C76.2</td><td>Abdomen, NOS</td></tr><tr><td>C76.3</td><td>Pelvis, NOS</td></tr><tr><td>C76.4</td><td>Upper limb, NOS</td></tr><tr><td>C76.5</td><td>Lower limb, NOS</td></tr><tr><td>C76.7</td><td>Other ill-defined sites</td></tr><tr><td>C76.8</td><td>Overlapping lesion of ill-defined sites</td></tr><tr><td>C77</td><td>LYMPH NODES</td></tr><tr><td>C77.0</td><td>Lymph nodes of head, face and neck</td></tr><tr><td>C77.1</td><td>Intrathoracic lymph nodes</td></tr><tr><td>C77.2</td><td>Intra-abdominal lymph nodes</td></tr><tr><td>C77.3</td><td>Lymph nodes of axilla or arm</td></tr><tr><td>C77.4</td><td>Lymph nodes of inguinal region or leg</td></tr><tr><td>C77.5</td><td>Pelvic lymph nodes</td></tr><tr><td>C77.8</td><td>Lymph nodes of multiple regions</td></tr><tr><td>C77.9</td><td>Lymph node, NOS</td></tr><tr><td>C80</td><td>UNKNOWN PRIMARY SITE</td></tr><tr><td>C80.9</td><td>Unknown primary site</td></tr></table></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <p><span style="color: maroon; font-weight: bold" title="Publication Tooling Error: [Unable to expand imported value set: Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3, Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3]">No Expansion for this valueset (Unknown Code System<!-- [Unable to expand imported value set: Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3, Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3] -->)</span></p>
+
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 16, 2023 15:52+0100">2023-03-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+               | <a style="color: #81BEF7" target="_blank" href="http://fhir.arkhn.com/osiris/history.html">Version History  |
+               <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change </a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

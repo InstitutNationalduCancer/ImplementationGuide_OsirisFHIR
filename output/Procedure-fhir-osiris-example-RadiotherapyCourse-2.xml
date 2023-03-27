@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="fhir-osiris-example-RadiotherapyCourse-2"/>
+  <meta>
+    <profile value="http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-course-summary"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Procedure</b><a name="fhir-osiris-example-RadiotherapyCourse-2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Procedure &quot;fhir-osiris-example-RadiotherapyCourse-2&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-radiotherapy-course-summary.html">Radiotherapy course Summary</a></p></div><p><b>Treatment Intent</b>: 373808002 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#373808002)</span></p><p><b>Number of Sessions</b>: 36</p><p><b>basedOn</b>: <a href="CarePlan-3.html">CarePlan/3</a></p><p><b>status</b>: completed</p><p><b>category</b>: Delivered <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-RadiotherapyCS.html">Radiotherapy Code System</a>#Delivered)</span></p><p><b>code</b>: Radiotherapy course of treatment (regime/therapy) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#1217123003)</span></p><p><b>subject</b>: <a href="Patient-L304.html">Patient/L304</a></p><p><b>performed</b>: 2018-08-15 --&gt; 2018-12-25</p></div>
+  </text>
+  <extension url="http://fhir.arkhn.com/osiris/StructureDefinition/treatmentIntent">
+    <valueCodeableConcept>
+      <coding>
+        <code value="373808002"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://fhir.arkhn.com/osiris/StructureDefinition/numberOfSessions">
+    <valueUnsignedInt value="36"/>
+  </extension>
+  <basedOn>
+    <reference value="CarePlan/3"/>
+  </basedOn>
+  <status value="completed"/>
+  <category>
+    <coding>
+      <system value="http://fhir.arkhn.com/osiris/CodeSystem/RadiotherapyCS"/>
+      <code value="Delivered"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1217123003"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/L304"/>
+  </subject>
+  <performedPeriod>
+    <start value="2018-08-15"/>
+    <end value="2018-12-25"/>
+  </performedPeriod>
+</Procedure>

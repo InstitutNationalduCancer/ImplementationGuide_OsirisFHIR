@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.arkhn.com/osiris/CodeSystem/SnomedRequestedCScodex> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "SnomedRequestedCScodex"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/snomed-requested-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1259981006<a name=\"SnomedRequestedCScodex-1259981006\"> </a></td><td>Radiotherapy course change due to change to treatment intent (finding)</td></tr><tr><td style=\"white-space:nowrap\">1259232004<a name=\"SnomedRequestedCScodex-1259232004\"> </a></td><td>Radiotherapy course changed due to change to organ at risk (finding)</td></tr><tr><td style=\"white-space:nowrap\">1259231006<a name=\"SnomedRequestedCScodex-1259231006\"> </a></td><td>Radiotherapy course changed due to changes to target (finding)</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/snomed-requested-cs"]; # 
+  fhir:CodeSystem.version [ fhir:value "2.1.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "SnomedRequestedCScodex"]; # 
+  fhir:CodeSystem.title [ fhir:value "Requested SNOMED Codes Code System"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-03-16T15:52:24+01:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "Arkhn"]; # 
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Arkhn" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://arkhn.com" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "contact@arkhn.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Nicolas Riss" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "nicolas@arkhn.com" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Requested SNOMED Codes by codex"]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger]; # 
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "1259981006" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Radiotherapy course change due to change to treatment intent (finding)" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "1259232004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Radiotherapy course changed due to change to organ at risk (finding)" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "1259231006" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Radiotherapy course changed due to changes to target (finding)" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.arkhn.com/osiris/CodeSystem/SnomedRequestedCScodex.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

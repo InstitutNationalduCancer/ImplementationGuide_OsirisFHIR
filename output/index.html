@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>ARKHN.FHIR.UV.OSIRIS\Home - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/fhir.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+        <div id="family-nav">
+          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+        </div>
+        <div id="arkhn-logo">
+          <a no-external="true" id="hl7-search-lnk" href="https://www.arkhn.com"><img src="assets/images/logo_arkhn.png" alt="Arkhn Logo"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Osiris Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">2.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="valuesets.html">ValueSets</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts Summary</a>
+  </li>
+  <li>
+    <a href="requests.html">Requests Example</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec </a>
+      </li>
+      <li>
+        <a href="https://github.com/siric-osiris/OSIRIS" target="_blank">OSIRIS Spec </a>
+      </li>
+      <li>
+        <a href="http://arkhn.com/" target="_blank">Arkhn website </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v2.1.0). See the <a href="http://fhir.arkhn.com/osiris/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Home</h2>
+  
+  
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.arkhn.com/osiris/ImplementationGuide/arkhn.fhir.uv.osiris<button data-clipboard-text="http://fhir.arkhn.com/osiris/ImplementationGuide/arkhn.fhir.uv.osiris" title="Click to copy URL" class="btn-copy"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.1.0<button data-clipboard-text="http://fhir.arkhn.com/osiris/ImplementationGuide/arkhn.fhir.uv.osiris|2.1.0" title="Click to copy versioned URL" class="btn-copy"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2023-03-16
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">OsirisImplementationGuide</span></td>
+    </tr>
+
+
+
+
+  </table>
+  
+  
+  
+  <div><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#background">Background</a></li><li><a href="#geninfo">Patient general information</a></li><li><a href="#TPE">Cancer History Modelization</a></li><li><a href="#treatments">Treatments</a></li><li><a href="#sequencing">Sequencing</a></li><li><a href="#radiomics">Radiomics and Radiotherapy</a></li><li><a href="#about">About</a></li><li><a href="#contributors">Contributors</a></li></ul></div>
+  <a name="background"> </a>
+  <h3 xmlns:ns0="http://www.w3.org/1999/xhtml">Background</h3>
+
+  <img xmlns:ns1="http://www.w3.org/1999/xhtml" src="osiris2.png" alt="Osiris logo"/>
+
+  <p xmlns:ns2="http://www.w3.org/1999/xhtml">
+    The OSIRIS (Interoperability and data sharing of clinical and biological
+    data in Oncology) is a national initiative launched in 2015 to address data
+    heterogeneity and how to accelerate cancer research in France by making
+    better use of the molecular-based clinical trials data. Through a national
+    and bottom-up approach, we have defined a minimum set of clinical and
+    genomic data relevant to the field of precision medicine in oncology, a
+    Common Data Model (CDM) and a technical framework for sharing and enhancing
+    data retrieval in compliance with national and European regulatory
+    procedures.
+  </p>
+
+  <p xmlns:ns3="http://www.w3.org/1999/xhtml">
+    The osiris model is divided on multiple parts:
+    <ul xmlns:ns4="http://www.w3.org/1999/xhtml">
+      <li xmlns:ns5="http://www.w3.org/1999/xhtml">The patient general information</li>
+      <li xmlns:ns6="http://www.w3.org/1999/xhtml">The tumor pathology event data</li>
+      <li xmlns:ns7="http://www.w3.org/1999/xhtml">The treatments</li>
+      <li xmlns:ns8="http://www.w3.org/1999/xhtml">The sequencing analysis, containing omics data</li>
+      <li xmlns:ns9="http://www.w3.org/1999/xhtml">The radiomics / radiotherapy module</li>
+    </ul>
+  </p>
+  <a name="geninfo"> </a>
+  <h3 xmlns:ns10="http://www.w3.org/1999/xhtml">Patient general information</h3>
+  <p xmlns:ns11="http://www.w3.org/1999/xhtml">
+    These resources are directly bound to patient and contain general
+    information about the patient and the cancer clinical history (ex: family cancer history, clinical trials participation, vital status, etc).
+  </p>
+  <object data="patient_metadata.svg" width="900" xmlns:ns12="http://www.w3.org/1999/xhtml" type="image/svg+xml" class="center"><a name="l394">​</a>
+    <img src="patient_metadata.jpg" xmlns:ns13="http://www.w3.org/1999/xhtml"/>
+  </object>
+
+  <a name="TPE"> </a>
+  <h3 xmlns:ns14="http://www.w3.org/1999/xhtml">Cancer History Modelization</h3>
+  <p xmlns:ns15="http://www.w3.org/1999/xhtml">
+    The Tumoral Pathology Event (TPE) is a central resource in the FHIR-OSIRIS model, it will describe a tumoral event (primary or metastasis). All analysis, treatments and omics data will be linked to a TPE.
+  </p>
+  <object data="tpe.svg" xmlns:ns16="http://www.w3.org/1999/xhtml" width="900" type="image/svg+xml" class="center"><a name="l408">​</a>
+    <img src="tpe.jpg" xmlns:ns17="http://www.w3.org/1999/xhtml"/>
+  </object>
+
+  <p xmlns:ns18="http://www.w3.org/1999/xhtml">
+    Other profiles like
+    <a xmlns:ns19="http://www.w3.org/1999/xhtml" href="https://hl7.org/fhir/bodyweight.html">weight</a>
+    and
+    <a href="https://hl7.org/fhir/bodyheight.html" xmlns:ns20="http://www.w3.org/1999/xhtml">height</a>
+    are also used by the osiris model. These profiles are not added to the osiris-core ig because they are already defined by the FHIR documentation.
+  </p>
+  <a name="treatments"> </a>
+  <h3 xmlns:ns21="http://www.w3.org/1999/xhtml">Treatments</h3>
+
+  <p xmlns:ns22="http://www.w3.org/1999/xhtml">Treatment plan, drug  administrations, surgical procedures, as well as adverse events that could occur.</p>
+  <object data="treatments.svg" width="900" xmlns:ns23="http://www.w3.org/1999/xhtml" type="image/svg+xml"><a name="l431">​</a>
+    <img src="treatments.jpg" xmlns:ns24="http://www.w3.org/1999/xhtml"/>
+  </object>
+  <a name="sequencing"> </a>
+  <h3 xmlns:ns25="http://www.w3.org/1999/xhtml">Sequencing</h3>
+  <p xmlns:ns26="http://www.w3.org/1999/xhtml">This category contains the results of sequencing analysis.</p>
+  <p xmlns:ns27="http://www.w3.org/1999/xhtml">
+    The sequencing analysis is modelised by the
+    <a xmlns:ns28="http://www.w3.org/1999/xhtml" href="StructureDefinition-analysis.html">Analysis</a>
+    profile.
+  </p>
+  <p xmlns:ns29="http://www.w3.org/1999/xhtml">
+    Genetic Variants are modelised by
+    <a href="StructureDefinition-snp.html" xmlns:ns30="http://www.w3.org/1999/xhtml">SNP</a>
+    ,
+    <a href="StructureDefinition-copy-number.html" xmlns:ns31="http://www.w3.org/1999/xhtml">CopyNumber</a>
+    ,
+    <a href="StructureDefinition-expression.html" xmlns:ns32="http://www.w3.org/1999/xhtml">Expression</a>
+    or
+    <a href="StructureDefinition-fusion.html" xmlns:ns33="http://www.w3.org/1999/xhtml">Fusion</a>
+    profiles. Additional information as the comparison to the reference sequence, is / can be(?) added with the
+    <a href="StructureDefinition-variant-annotation.html" xmlns:ns34="http://www.w3.org/1999/xhtml">Annotation</a>
+    profile.
+  </p>
+  <object data="sequencing.svg" width="900" xmlns:ns35="http://www.w3.org/1999/xhtml" type="image/svg+xml"><a name="l469">​</a>
+    <img src="sequencing.jpg" xmlns:ns36="http://www.w3.org/1999/xhtml"/>
+  </object>
+
+  <a name="radiomics"> </a>
+  <h3 xmlns:ns37="http://www.w3.org/1999/xhtml">Radiomics and Radiotherapy</h3>
+
+  <p xmlns:ns38="http://www.w3.org/1999/xhtml">This category contains the description of imaging studies, radiotherapy tratments and the summary of radiomics criteria, measurements and filterings used for the analysis of the images. </p>
+  <object data="radiotherapie.svg" xmlns:ns39="http://www.w3.org/1999/xhtml" width="900" type="image/svg+xml"><a name="l483">​</a>
+    <img xmlns:ns40="http://www.w3.org/1999/xhtml" src="radiotherapie.jpg"/>
+  </object>
+
+  <a name="about"> </a>
+  <h3 xmlns:ns41="http://www.w3.org/1999/xhtml">About</h3>
+  <p xmlns:ns42="http://www.w3.org/1999/xhtml">
+    The FHIR osiris implementation guide has been generated using FSH and the FHIR publisher. Source files including FSH files are available open source on
+    <a href="https://github.com/arkhn/arkhn-ig-osiris/" xmlns:ns43="http://www.w3.org/1999/xhtml">github</a>
+    . You can also download the
+    <a href="package.tgz" xmlns:ns44="http://www.w3.org/1999/xhtml">FHIR NPM Package</a>
+    .
+  </p>
+
+  <a name="contributors"> </a>
+  <h3 xmlns:ns45="http://www.w3.org/1999/xhtml">Contributors</h3>
+  <p xmlns:ns46="http://www.w3.org/1999/xhtml">
+    The OSIRIS project is mainly financed by the
+    <a xmlns:ns47="http://www.w3.org/1999/xhtml" href="https://www.e-cancer.fr/">INCA</a>
+    (Institut National du Cancer, The French National Cancer Institute). The core contributors to the original data model are Institut Curie, Institut Bergonié, the oncology center Léon Bérard, with the contribution of a dozen oncology centre and French hospitals. The current FHIR version of the data model was realized by the same stakeholders in partnership with the start-up
+    <a xmlns:ns48="http://www.w3.org/1999/xhtml" href="https://arkhn.com/">Arkhn</a>
+    .
+  </p>
+
+</div>
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 16, 2023 15:52+0100">2023-03-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+               | <a style="color: #81BEF7" href="http://fhir.arkhn.com/osiris/history.html" target="_blank">Version History  |
+               <a style="color: #81BEF7" href="searchform.html" target="_blank">Search  |
+                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change </a>
+
+          
+        
+          <!-- /inner-wrapper -->
+        <!-- /container -->
+      <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  
+
+
+</a></a></span></p></div></div></div></body></html>

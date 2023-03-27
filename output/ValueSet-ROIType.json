@@ -1,0 +1,47 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ROIType",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-RadiomicsCS.html\"><code>https://terminology.arkhn.com/radiomicsCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-RadiomicsCS.html#RadiomicsCS-DICOM\">DICOM</a></td><td>ROI Type DICOM</td></tr><tr><td><a href=\"CodeSystem-RadiomicsCS.html#RadiomicsCS-MASK\">MASK</a></td><td>ROI Type NIfTI</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.arkhn.com/osiris/ValueSet/ROIType",
+  "version" : "2.1.0",
+  "name" : "ROIType",
+  "title" : "ROI Type Value Set",
+  "status" : "active",
+  "date" : "2023-03-16T15:52:24+01:00",
+  "publisher" : "Arkhn",
+  "contact" : [{
+    "name" : "Arkhn",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://arkhn.com"
+    },
+    {
+      "system" : "email",
+      "value" : "contact@arkhn.com"
+    }]
+  },
+  {
+    "name" : "Nicolas Riss",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "nicolas@arkhn.com"
+    }]
+  }],
+  "description" : "ROI Type",
+  "compose" : {
+    "include" : [{
+      "system" : "https://terminology.arkhn.com/radiomicsCS",
+      "concept" : [{
+        "code" : "DICOM",
+        "display" : "ROI Type DICOM"
+      },
+      {
+        "code" : "MASK",
+        "display" : "ROI Type NIfTI"
+      }]
+    }]
+  }
+}

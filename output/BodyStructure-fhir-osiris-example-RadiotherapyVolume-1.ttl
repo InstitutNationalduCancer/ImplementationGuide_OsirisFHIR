@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.arkhn.com/osiris/BodyStructure/fhir-osiris-example-RadiotherapyVolume-1> a fhir:BodyStructure;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fhir-osiris-example-RadiotherapyVolume-1"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-volume";
+       fhir:index 0;
+       fhir:link <http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-volume>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: BodyStructure</b><a name=\"fhir-osiris-example-RadiotherapyVolume-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource BodyStructure &quot;fhir-osiris-example-RadiotherapyVolume-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-radiotherapy-volume.html\">Radiotherapy Volume Profile</a></p></div><p><b>identifier</b>: id: urn:oid:1.2.246.352.71.842418.2121.20150602151.102</p><p><b>location</b>: Breast <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76752008)</span></p><p><b>locationQualifier</b>: Left (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#7771000; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#255503000)</span></p><p><b>description</b>: Left Breast</p><p><b>patient</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p></div>"
+  ]; # 
+  fhir:BodyStructure.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "urn:oid:1.2.246.352.71.842418.2121.20150602151.102" ]
+  ]; # 
+  fhir:BodyStructure.location [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:76752008;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "76752008" ]
+     ]
+  ]; # 
+  fhir:BodyStructure.locationQualifier [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:7771000;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "7771000" ]
+     ], [
+       fhir:index 1;
+       a sct:255503000;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "255503000" ]
+     ]
+  ]; # 
+  fhir:BodyStructure.description [ fhir:value "Left Breast"]; # 
+  fhir:BodyStructure.patient [
+     fhir:link <http://fhir.arkhn.com/osiris/Patient/L304>;
+     fhir:Reference.reference [ fhir:value "Patient/L304" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.arkhn.com/osiris/BodyStructure/fhir-osiris-example-RadiotherapyVolume-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
