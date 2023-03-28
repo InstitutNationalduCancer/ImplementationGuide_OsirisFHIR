@@ -201,20 +201,20 @@ Description:    "Radiomics Criteria Settings."
 /* Invariants */
 Invariant:   windowsMatrix-if-localizationMethod-local
 Description: "If extension[localizationMethod].valueString is LOCAL, then extension[windowMatrix].valuestring MUST be present"
-Expression: "extension.where(url= 'http://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='localizationMethod').valueString = 'LOCAL'implies
-extension.where(url= 'http://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='windowMatrix').exists()"
+Expression: "extension.where(url= 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='localizationMethod').valueString = 'LOCAL'implies
+extension.where(url= 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='windowMatrix').exists()"
 Severity:    #error
 
 Invariant:   bounds-if-discretisationMethod-FBN
 Description: "If extension[discretisationMethod].valueString is FBN, then extension[bounds].valueString MUST be present"
-Expression:  "extension.where(url= 'http://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='discretisationMethod').extension.where(url='valueString').valueString = 'FBN' implies
-extension.where(url= 'http://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='bounds').exists()"
+Expression:  "extension.where(url= 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='discretisationMethod').extension.where(url='valueString').valueString = 'FBN' implies
+extension.where(url= 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='bounds').exists()"
 Severity:    #error
 
 Invariant:   lowestIntensity-if-discretisationMethod-FBS
 Description: "If extension[discretisationMethod].valueString is FBS, then extension[lowestIntensity].valueDecimal MUST be present"
-Expression:  "extension.where(url= 'http://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='discretisationMethod').extension.where(url='valueString').valueString = 'FBS' implies
-extension.where(url= 'http://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='lowestIntensity').exists()"
+Expression:  "extension.where(url= 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='discretisationMethod').extension.where(url='valueString').valueString = 'FBS' implies
+extension.where(url= 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='lowestIntensity').exists()"
 Severity:    #error
 
 /*
