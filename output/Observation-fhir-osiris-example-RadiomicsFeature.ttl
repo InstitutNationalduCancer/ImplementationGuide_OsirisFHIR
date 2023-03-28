@@ -5,45 +5,38 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.arkhn.com/osiris/Observation/fhir-osiris-example-RadiomicsFeature> a fhir:Observation;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "fhir-osiris-example-RadiomicsFeature"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://fhir.arkhn.com/osiris/StructureDefinition/radiomics-features";
-       fhir:index 0;
-       fhir:link <http://fhir.arkhn.com/osiris/StructureDefinition/radiomics-features>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"fhir-osiris-example-RadiomicsFeature\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;fhir-osiris-example-RadiomicsFeature&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-radiomics-features.html\">Radiomics Features</a></p></div><p><b>status</b>: final</p><p><b>code</b>: original_shape_Elongation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#Q3CK)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><p><b>value</b>: 0.9124894758560576</p><p><b>hasMember</b>: <a href=\"Observation-fhir-osiris-example-RadiomicsCriteria.html\">Observation/fhir-osiris-example-RadiomicsCriteria</a></p></div>"
-  ]; # 
-  fhir:Observation.status [ fhir:value "final"]; # 
-  fhir:Observation.code [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.code [ fhir:value "Q3CK" ]
-     ];
-     fhir:CodeableConcept.text [ fhir:value "original_shape_Elongation" ]
-  ]; # 
-  fhir:Observation.subject [
-     fhir:link <http://fhir.arkhn.com/osiris/Patient/L304>;
-     fhir:Reference.reference [ fhir:value "Patient/L304" ]
-  ]; # 
-  fhir:Observation.valueQuantity [
-     fhir:Quantity.value [ fhir:value "0.9124894758560576"^^xsd:decimal ]
-  ]; # 
-  fhir:Observation.hasMember [
-     fhir:index 0;
-     fhir:link <http://fhir.arkhn.com/osiris/Observation/fhir-osiris-example-RadiomicsCriteria>;
-     fhir:Reference.reference [ fhir:value "Observation/fhir-osiris-example-RadiomicsCriteria" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.arkhn.com/osiris/Observation/fhir-osiris-example-RadiomicsFeature.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Observation/fhir-osiris-example-RadiomicsFeature> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir-osiris-example-RadiomicsFeature"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-features"^^xsd:anyURI ;
+       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-features>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"fhir-osiris-example-RadiomicsFeature\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;fhir-osiris-example-RadiomicsFeature&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-radiomics-features.html\">Radiomics Features</a></p></div><p><b>status</b>: final</p><p><b>code</b>: original_shape_Elongation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#Q3CK)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><p><b>value</b>: 0.9124894758560576</p><p><b>hasMember</b>: <a href=\"Observation-fhir-osiris-example-RadiomicsCriteria.html\">Observation/fhir-osiris-example-RadiomicsCriteria</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:code [ fhir:v "Q3CK" ]
+     ] ) ;
+     fhir:text [ fhir:v "original_shape_Elongation" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/L304> ;
+     fhir:reference [ fhir:v "Patient/L304" ]
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "0.9124894758560576"^^xsd:decimal ]
+  ] ; # 
+  fhir:hasMember ( [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Observation/fhir-osiris-example-RadiomicsCriteria> ;
+     fhir:reference [ fhir:v "Observation/fhir-osiris-example-RadiomicsCriteria" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

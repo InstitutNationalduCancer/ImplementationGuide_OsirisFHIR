@@ -6,157 +6,126 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.arkhn.com/osiris/ImagingStudy/fhir-osiris-example-imagingstudy-mri-2> a fhir:ImagingStudy;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "fhir-osiris-example-imagingstudy-mri-2"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://fhir.arkhn.com/osiris/StructureDefinition/onco-imagingstudy";
-       fhir:index 0;
-       fhir:link <http://fhir.arkhn.com/osiris/StructureDefinition/onco-imagingstudy>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ImagingStudy</b><a name=\"fhir-osiris-example-imagingstudy-mri-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ImagingStudy &quot;fhir-osiris-example-imagingstudy-mri-2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-imagingstudy.html\">Imaging Study</a></p></div><p><b>identifier</b>: id: 1.3.6.1.4.1.14519.5.2.1.5168.1900.293144742514571789106915674609	</p><p><b>status</b>: available</p><p><b>modality</b>: C0439673 (Details: http://terminology.hl7.org/CodeSystem/umls code C0439673 = 'C0439673', stated as 'null')</p><p><b>subject</b>: <a href=\"Patient-STS-010.html\">Patient/STS-010</a></p><p><b>started</b>: 2003-12-12</p><p><b>endpoint</b>: <a href=\"Endpoint-fhir-osiris-example-imagingendpoint-mr-2.html\">Endpoint/fhir-osiris-example-imagingendpoint-mr-2</a> &quot;['Soft-tissue-Sarcoma/STS_010/12-30-2003-NA-CT PET with registered MR-74609/90027.000000-AlignedSTIRtoPETBOX-01036/1-67.dcm']&quot;</p><p><b>numberOfSeries</b>: 999999</p><p><b>reasonReference</b>: <a href=\"Observation-fhir-osiris-example-analysis-mr-2.html\">Observation/fhir-osiris-example-analysis-mr-2</a></p><p><b>description</b>: CT PET with registered MR</p><blockquote><p><b>series</b></p><blockquote><p><b>Imaging Settings</b></p><p><b>value</b>: 3.2699585</p><p><b>value</b>: [0.976562, 0.976562]</p><p><b>value</b>: 123</p><p><b>value</b>: 127</p></blockquote><blockquote><p><b>Weight and Height at the time of the Serie</b></p><p><b>value</b>: 65</p><p><b>value</b>: 999999</p></blockquote><p><b>uid</b>: 1.3.6.1.4.1.14519.5.2.1.5168.1900.143977537292523598024281101036</p><p><b>number</b>: 90027</p><p><b>modality</b>: MR (Details: https://dicom.nema.org/medical/dicom code MR = 'MR', stated as 'null')</p><p><b>description</b>: Aligned_STIRtoPET_BOX CT PET with registered MR</p><p><b>numberOfInstances</b>: 999999</p><p><b>bodySite</b>: Breast (Details: SNOMED CT code 76752008 = 'Breast', stated as 'null')</p><p><b>started</b>: 2003-12-12</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"Device-fhir-osiris-example-imagingdevice-mr-2.html\">Device/fhir-osiris-example-imagingdevice-mr-2</a></td></tr></table><h3>Instances</h3><table class=\"grid\"><tr><td>-</td><td><b>Uid</b></td><td><b>SopClass</b></td></tr><tr><td>*</td><td>1.3.6.1.4.1.14519.5.2.1.5168.1900.145447087104754814293313200434</td><td>MR Image Storage (Details: [not stated] code table_B.5-1#1.2.840.10008.5.1.4.1.1.4 = 'table_B.5-1#1.2.840.10008.5.1.4.1.1.4', stated as 'MR Image Storage')</td></tr></table></blockquote></div>"
-  ]; # 
-  fhir:ImagingStudy.identifier [
-     fhir:index 0;
-     fhir:Identifier.value [ fhir:value "1.3.6.1.4.1.14519.5.2.1.5168.1900.293144742514571789106915674609	" ]
-  ]; # 
-  fhir:ImagingStudy.status [ fhir:value "available"]; # 
-  fhir:ImagingStudy.modality [
-     fhir:index 0;
-     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/umls" ];
-     fhir:Coding.code [ fhir:value "C0439673" ]
-  ]; # 
-  fhir:ImagingStudy.subject [
-     fhir:link <http://fhir.arkhn.com/osiris/Patient/STS-010>;
-     fhir:Reference.reference [ fhir:value "Patient/STS-010" ]
-  ]; # 
-  fhir:ImagingStudy.started [ fhir:value "2003-12-12"^^xsd:date]; # 
-  fhir:ImagingStudy.endpoint [
-     fhir:index 0;
-     fhir:link <http://fhir.arkhn.com/osiris/Endpoint/fhir-osiris-example-imagingendpoint-mr-2>;
-     fhir:Reference.reference [ fhir:value "Endpoint/fhir-osiris-example-imagingendpoint-mr-2" ]
-  ]; # 
-  fhir:ImagingStudy.numberOfSeries [ fhir:value "999999"^^xsd:nonNegativeInteger]; # 
-  fhir:ImagingStudy.reasonReference [
-     fhir:index 0;
-     fhir:link <http://fhir.arkhn.com/osiris/Observation/fhir-osiris-example-analysis-mr-2>;
-     fhir:Reference.reference [ fhir:value "Observation/fhir-osiris-example-analysis-mr-2" ]
-  ]; # 
-  fhir:ImagingStudy.description [ fhir:value "CT PET with registered MR"]; # 
-  fhir:ImagingStudy.series [
-     fhir:index 0;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "slice_thickness" ];
-         fhir:Extension.valueString [ fhir:value "3.2699585" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "pixel_spacing" ];
-         fhir:Extension.valueString [ fhir:value "[0.976562, 0.976562]" ]
-       ], [
-         fhir:index 2;
-         fhir:Extension.url [ fhir:value "rows" ];
-         fhir:Extension.valueInteger [ fhir:value "123"^^xsd:integer ]
-       ], [
-         fhir:index 3;
-         fhir:Extension.url [ fhir:value "columns" ];
-         fhir:Extension.valueInteger [ fhir:value "127"^^xsd:integer ]
-       ], [
-         fhir:index 4;
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "sequence_name" ];
-           fhir:Extension.valueString [ fhir:value "Unknown" ]
-         ], [
-           fhir:index 1;
-           fhir:Extension.url [ fhir:value "magnetic_field_strength" ];
-           fhir:Extension.valueDecimal [ fhir:value "999999"^^xsd:decimal ]
-         ], [
-           fhir:index 2;
-           fhir:Extension.url [ fhir:value "mr_acquisition_type" ];
-           fhir:Extension.valueString [ fhir:value "Unknown" ]
-         ], [
-           fhir:index 3;
-           fhir:Extension.url [ fhir:value "repetition_time" ];
-           fhir:Extension.valueDecimal [ fhir:value "999999"^^xsd:decimal ]
-         ], [
-           fhir:index 4;
-           fhir:Extension.url [ fhir:value "echo_time" ];
-           fhir:Extension.valueDecimal [ fhir:value "999999"^^xsd:decimal ]
-         ], [
-           fhir:index 5;
-           fhir:Extension.url [ fhir:value "imaging_frequency" ];
-           fhir:Extension.valueDecimal [ fhir:value "999999"^^xsd:decimal ]
-         ], [
-           fhir:index 6;
-           fhir:Extension.url [ fhir:value "flip_angle" ];
-           fhir:Extension.valueDecimal [ fhir:value "999999"^^xsd:decimal ]
-         ], [
-           fhir:index 7;
-           fhir:Extension.url [ fhir:value "inversion_time" ];
-           fhir:Extension.valueDecimal [ fhir:value "999999"^^xsd:decimal ]
-         ], [
-           fhir:index 8;
-           fhir:Extension.url [ fhir:value "receive_coil_name" ];
-           fhir:Extension.valueString [ fhir:value "Unknown" ]
-         ];
-         fhir:Extension.url [ fhir:value "mr_image" ]
-       ];
-       fhir:Extension.url [ fhir:value "http://fhir.arkhn.com/osiris/StructureDefinition/imaging-settings" ]
-     ], [
-       fhir:index 1;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "patient_weight" ];
-         fhir:Extension.valueDecimal [ fhir:value "65"^^xsd:decimal ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "patient_height" ];
-         fhir:Extension.valueDecimal [ fhir:value "999999"^^xsd:decimal ]
-       ];
-       fhir:Extension.url [ fhir:value "http://fhir.arkhn.com/osiris/StructureDefinition/series-weightheigt" ]
-     ];
-     fhir:ImagingStudy.series.uid [ fhir:value "1.3.6.1.4.1.14519.5.2.1.5168.1900.143977537292523598024281101036" ];
-     fhir:ImagingStudy.series.number [ fhir:value "90027"^^xsd:nonNegativeInteger ];
-     fhir:ImagingStudy.series.modality [
-       fhir:Coding.system [ fhir:value "https://dicom.nema.org/medical/dicom" ];
-       fhir:Coding.code [ fhir:value "MR" ]
-     ];
-     fhir:ImagingStudy.series.description [ fhir:value "Aligned_STIRtoPET_BOX CT PET with registered MR" ];
-     fhir:ImagingStudy.series.numberOfInstances [ fhir:value "999999"^^xsd:nonNegativeInteger ];
-     fhir:ImagingStudy.series.bodySite [
-       a sct:76752008;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "76752008" ]
-     ];
-     fhir:ImagingStudy.series.started [ fhir:value "2003-12-12"^^xsd:date ];
-     fhir:ImagingStudy.series.performer [
-       fhir:index 0;
-       fhir:ImagingStudy.series.performer.actor [
-         fhir:link <http://fhir.arkhn.com/osiris/Device/fhir-osiris-example-imagingdevice-mr-2>;
-         fhir:Reference.reference [ fhir:value "Device/fhir-osiris-example-imagingdevice-mr-2" ]
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ImagingStudy/fhir-osiris-example-imagingstudy-mri-2> a fhir:ImagingStudy ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir-osiris-example-imagingstudy-mri-2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy"^^xsd:anyURI ;
+       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ImagingStudy</b><a name=\"fhir-osiris-example-imagingstudy-mri-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ImagingStudy &quot;fhir-osiris-example-imagingstudy-mri-2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-imagingstudy.html\">Imaging Study</a></p></div><p><b>identifier</b>: id: 1.3.6.1.4.1.14519.5.2.1.5168.1900.293144742514571789106915674609	</p><p><b>status</b>: available</p><p><b>modality</b>: C0439673 (Details: http://terminology.hl7.org/CodeSystem/umls code C0439673 = 'C0439673', stated as 'null')</p><p><b>subject</b>: <a href=\"Patient-STS-010.html\">Patient/STS-010</a></p><p><b>started</b>: 2003-12-12</p><p><b>endpoint</b>: <a href=\"Endpoint-fhir-osiris-example-imagingendpoint-mr-2.html\">Endpoint/fhir-osiris-example-imagingendpoint-mr-2</a> &quot;['Soft-tissue-Sarcoma/STS_010/12-30-2003-NA-CT PET with registered MR-74609/90027.000000-AlignedSTIRtoPETBOX-01036/1-67.dcm']&quot;</p><p><b>numberOfSeries</b>: 999999</p><p><b>reasonReference</b>: <a href=\"Observation-fhir-osiris-example-analysis-mr-2.html\">Observation/fhir-osiris-example-analysis-mr-2</a></p><p><b>description</b>: CT PET with registered MR</p><blockquote><p><b>series</b></p><blockquote><p><b>Imaging Settings</b></p><blockquote><p><b>url</b></p><code>slice_thickness</code></blockquote><p><b>value</b>: 3.2699585</p><blockquote><p><b>url</b></p><code>pixel_spacing</code></blockquote><p><b>value</b>: [0.976562, 0.976562]</p><blockquote><p><b>url</b></p><code>rows</code></blockquote><p><b>value</b>: 123</p><blockquote><p><b>url</b></p><code>columns</code></blockquote><p><b>value</b>: 127</p><blockquote><p><b>url</b></p><code>mr_image</code></blockquote></blockquote><blockquote><p><b>Weight and Height at the time of the Serie</b></p><blockquote><p><b>url</b></p><code>patient_weight</code></blockquote><p><b>value</b>: 65</p><blockquote><p><b>url</b></p><code>patient_height</code></blockquote><p><b>value</b>: 999999</p></blockquote><p><b>uid</b>: 1.3.6.1.4.1.14519.5.2.1.5168.1900.143977537292523598024281101036</p><p><b>number</b>: 90027</p><p><b>modality</b>: MR (Details: https://dicom.nema.org/medical/dicom code MR = 'MR', stated as 'null')</p><p><b>description</b>: Aligned_STIRtoPET_BOX CT PET with registered MR</p><p><b>numberOfInstances</b>: 999999</p><p><b>bodySite</b>: Breast (Details: SNOMED CT code 76752008 = 'Breast', stated as 'null')</p><p><b>started</b>: 2003-12-12</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"Device-fhir-osiris-example-imagingdevice-mr-2.html\">Device/fhir-osiris-example-imagingdevice-mr-2</a></td></tr></table><h3>Instances</h3><table class=\"grid\"><tr><td>-</td><td><b>Uid</b></td><td><b>SopClass</b></td></tr><tr><td>*</td><td>1.3.6.1.4.1.14519.5.2.1.5168.1900.145447087104754814293313200434</td><td>MR Image Storage (Details: [not stated] code table_B.5-1#1.2.840.10008.5.1.4.1.1.4 = 'table_B.5-1#1.2.840.10008.5.1.4.1.1.4', stated as 'MR Image Storage')</td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "1.3.6.1.4.1.14519.5.2.1.5168.1900.293144742514571789106915674609	" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "available"] ; # 
+  fhir:modality ( [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/umls"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "C0439673" ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/STS-010> ;
+     fhir:reference [ fhir:v "Patient/STS-010" ]
+  ] ; # 
+  fhir:started [ fhir:v "2003-12-12"^^xsd:date] ; # 
+  fhir:endpoint ( [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Endpoint/fhir-osiris-example-imagingendpoint-mr-2> ;
+     fhir:reference [ fhir:v "Endpoint/fhir-osiris-example-imagingendpoint-mr-2" ]
+  ] ) ; # 
+  fhir:numberOfSeries [ fhir:v "999999"^^xsd:nonNegativeInteger] ; # 
+  fhir:reasonReference ( [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Observation/fhir-osiris-example-analysis-mr-2> ;
+     fhir:reference [ fhir:v "Observation/fhir-osiris-example-analysis-mr-2" ]
+  ] ) ; # 
+  fhir:description [ fhir:v "CT PET with registered MR"] ; # 
+  fhir:series ( [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "slice_thickness"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "3.2699585" ]
+       ] [
+         fhir:url [ fhir:v "pixel_spacing"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "[0.976562, 0.976562]" ]
+       ] [
+         fhir:url [ fhir:v "rows"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "123"^^xsd:integer ]
+       ] [
+         fhir:url [ fhir:v "columns"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "127"^^xsd:integer ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "sequence_name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "Unknown" ]
+         ] [
+           fhir:url [ fhir:v "magnetic_field_strength"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "999999"^^xsd:decimal ]
+         ] [
+           fhir:url [ fhir:v "mr_acquisition_type"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "Unknown" ]
+         ] [
+           fhir:url [ fhir:v "repetition_time"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "999999"^^xsd:decimal ]
+         ] [
+           fhir:url [ fhir:v "echo_time"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "999999"^^xsd:decimal ]
+         ] [
+           fhir:url [ fhir:v "imaging_frequency"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "999999"^^xsd:decimal ]
+         ] [
+           fhir:url [ fhir:v "flip_angle"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "999999"^^xsd:decimal ]
+         ] [
+           fhir:url [ fhir:v "inversion_time"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "999999"^^xsd:decimal ]
+         ] [
+           fhir:url [ fhir:v "receive_coil_name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "Unknown" ]
+         ] ) ;
+         fhir:url [ fhir:v "mr_image"^^xsd:anyURI ]
+       ] ) ;
+       fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-settings"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "patient_weight"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "65"^^xsd:decimal ]
+       ] [
+         fhir:url [ fhir:v "patient_height"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "999999"^^xsd:decimal ]
+       ] ) ;
+       fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/series-weightheigt"^^xsd:anyURI ]
+     ] ) ;
+     fhir:uid [ fhir:v "1.3.6.1.4.1.14519.5.2.1.5168.1900.143977537292523598024281101036" ] ;
+     fhir:number [ fhir:v "90027"^^xsd:nonNegativeInteger ] ;
+     fhir:modality [
+       fhir:system [ fhir:v "https://dicom.nema.org/medical/dicom"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "MR" ]
+     ] ;
+     fhir:description [ fhir:v "Aligned_STIRtoPET_BOX CT PET with registered MR" ] ;
+     fhir:numberOfInstances [ fhir:v "999999"^^xsd:nonNegativeInteger ] ;
+     fhir:bodySite [
+       a sct:76752008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "76752008" ]
+     ] ;
+     fhir:started [ fhir:v "2003-12-12"^^xsd:date ] ;
+     fhir:performer ( [
+       fhir:actor [
+         fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Device/fhir-osiris-example-imagingdevice-mr-2> ;
+         fhir:reference [ fhir:v "Device/fhir-osiris-example-imagingdevice-mr-2" ]
        ]
-     ];
-     fhir:ImagingStudy.series.instance [
-       fhir:index 0;
-       fhir:ImagingStudy.series.instance.uid [ fhir:value "1.3.6.1.4.1.14519.5.2.1.5168.1900.145447087104754814293313200434" ];
-       fhir:ImagingStudy.series.instance.sopClass [
-         fhir:Coding.code [ fhir:value "table_B.5-1#1.2.840.10008.5.1.4.1.1.4" ];
-         fhir:Coding.display [ fhir:value "MR Image Storage" ]
+     ] ) ;
+     fhir:instance ( [
+       fhir:uid [ fhir:v "1.3.6.1.4.1.14519.5.2.1.5168.1900.145447087104754814293313200434" ] ;
+       fhir:sopClass [
+         fhir:code [ fhir:v "table_B.5-1#1.2.840.10008.5.1.4.1.1.4" ] ;
+         fhir:display [ fhir:v "MR Image Storage" ]
        ]
-     ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.arkhn.com/osiris/ImagingStudy/fhir-osiris-example-imagingstudy-mri-2.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

@@ -3,14 +3,14 @@
   "id" : "TechnicalProtocol",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://github.com/siric-osiris/OSIRIS</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>O6-1</td><td>ChIP-on-Chip</td></tr><tr><td>O6-2</td><td>ChIP-seq</td></tr><tr><td>O6-3</td><td>DNA microarray</td></tr><tr><td>O6-4</td><td>DNA targeted panel sequencing</td></tr><tr><td>O6-5</td><td>Exome sequencing</td></tr><tr><td>O6-6</td><td>Mass spectrometry</td></tr><tr><td>O6-7</td><td>MeDIP-Chip</td></tr><tr><td>O6-8</td><td>MeDIP-seq</td></tr><tr><td>O6-9</td><td>Methylation microarray</td></tr><tr><td>O6-10</td><td>RNA microarray</td></tr><tr><td>O6-11</td><td>RNA targeted panel sequencing</td></tr><tr><td>O6-12</td><td>RNA-seq</td></tr><tr><td>O6-13</td><td>RPPA</td></tr><tr><td>O6-14</td><td>Whole genome bisulfite sequencing</td></tr><tr><td>O6-15</td><td>Whole genome sequencing</td></tr><tr><td>O6-16</td><td>miRNA microarray</td></tr></table></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://github.com/siric-osiris/OSIRIS</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>O6-1</td><td>ChIP-on-Chip</td></tr><tr><td>O6-2</td><td>ChIP-seq</td></tr><tr><td>O6-3</td><td>DNA microarray</td></tr><tr><td>O6-4</td><td>DNA targeted panel sequencing</td></tr><tr><td>O6-5</td><td>Exome sequencing</td></tr><tr><td>O6-6</td><td>Mass spectrometry</td></tr><tr><td>O6-7</td><td>MeDIP-Chip</td></tr><tr><td>O6-8</td><td>MeDIP-seq</td></tr><tr><td>O6-9</td><td>Methylation microarray</td></tr><tr><td>O6-10</td><td>RNA microarray</td></tr><tr><td>O6-11</td><td>RNA targeted panel sequencing</td></tr><tr><td>O6-12</td><td>RNA-seq</td></tr><tr><td>O6-13</td><td>RPPA</td></tr><tr><td>O6-14</td><td>Whole genome bisulfite sequencing</td></tr><tr><td>O6-15</td><td>Whole genome sequencing</td></tr><tr><td>O6-16</td><td>miRNA microarray</td></tr><tr><td>O6-OTH</td><td>Other</td></tr></table></li></ul></div>"
   },
-  "url" : "http://fhir.arkhn.com/osiris/ValueSet/TechnicalProtocol",
+  "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/TechnicalProtocol",
   "version" : "2.1.0",
   "name" : "TechnicalProtocol",
   "title" : "Analysis Technical Protocol",
   "status" : "active",
-  "date" : "2023-03-16T15:52:24+01:00",
+  "date" : "2023-03-28T11:28:20+02:00",
   "publisher" : "Arkhn",
   "contact" : [{
     "name" : "Arkhn",
@@ -97,6 +97,10 @@
       {
         "code" : "O6-16",
         "display" : "miRNA microarray"
+      },
+      {
+        "code" : "O6-OTH",
+        "display" : "Other"
       }]
     }]
   }

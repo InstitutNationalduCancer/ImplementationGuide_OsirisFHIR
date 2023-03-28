@@ -1,6 +1,7 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: BRIDG 5.1 Mapping","Mapping: HL7 v2 Mapping","Mapping: RIM Mapping","Mapping: FiveWs Pattern Mapping","Mapping: Fhir-osiris to osiris"
 "ResearchSubject","ResearchSubject","","Study Subject
-","",0,*,"","","","","Physical entity which is the primary unit of interest in the study","A physical entity which is the primary unit of operational and/or administrative interest in a study.","Need to make sure we encompass public health studies.","","","","","","","","",,,,,"",,,,"ResearchSubject",0,*,"","","StudySubject","OBX","Entity. Role, or Act","Observation[classCode=CLNTRL, moodCode=EVN]","StudySubject"
+","",0,*,"","","","null {[]} {[]}
+","Physical entity which is the primary unit of interest in the study","A physical entity which is the primary unit of operational and/or administrative interest in a study.","Need to make sure we encompass public health studies.","","","","","","","","",,,,,"",,,,"ResearchSubject",0,*,"","","StudySubject","OBX","Entity. Role, or Act","Observation[classCode=CLNTRL, moodCode=EVN]","StudySubject"
 "ResearchSubject.id","ResearchSubject.id","","","",0,1,"","","Y","id {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "ResearchSubject.meta","ResearchSubject.meta","","","",0,1,"","","Y","Meta {[]} {[]}
@@ -39,12 +40,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",0,1,"","","Y","Period {[]} {[]}
 ","Start and end of participation","The dates the subject began and ended their participation in the study.","","","","","","","","","",,,,,"",,,,"ResearchSubject.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PerformedStudySubjectMilestone.studyReferenceDateRange","FiveWs.planned"
-"ResearchSubject.study","ResearchSubject.study","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://fhir.arkhn.com/osiris/StructureDefinition/clinical-trial]]}
+"ResearchSubject.study","ResearchSubject.study","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/clinical-trial]]}
 ","Study subject is part of","Reference to the study the subject is participating in.","","","","","","","","","",,,,,"",,,,"ResearchSubject.study",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","StudySubjectProtocolVersionRelationship","Treatment.ClinicalTrialId"
-"ResearchSubject.individual","ResearchSubject.individual","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://fhir.arkhn.com/osiris/StructureDefinition/onco-patient]]}
+","StudySubjectProtocolVersionRelationship","OSIRIS_pivot_Treatment.ClinicalTrialId"
+"ResearchSubject.individual","ResearchSubject.individual","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient]]}
 ","Who is part of study","The record of the person or animal who is involved in the study.","","","","","","","","","",,,,,"",,,,"ResearchSubject.individual",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","StudySubject","Treatment.Patient_Identifier"
+","StudySubject","OSIRIS_pivot_Treatment.Patient_Identifier"
 "ResearchSubject.assignedArm","ResearchSubject.assignedArm","","","",0,1,"","","","string {[]} {[]}
 ","What path should be followed","The name of the arm in the study the subject is expected to follow as part of this study.","","","","","","","","","",,,,,"",,,,"ResearchSubject.assignedArm",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Arm > ExperimentalUnit > BiologicEntity > Subject > StudySubject"

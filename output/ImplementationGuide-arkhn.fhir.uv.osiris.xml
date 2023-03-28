@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="arkhn.fhir.uv.osiris"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>OsirisImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.arkhn.com/osiris/ImplementationGuide/arkhn.fhir.uv.osiris</pre><div><p>An implementation guide about FHIR-osiris to store interoperable data about oncology, including genomics.</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>OsirisImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ImplementationGuide/arkhn.fhir.uv.osiris</pre><div><p>An implementation guide about FHIR-osiris to store interoperable data about oncology, including genomics.</p>
 </div></div>
   </text>
-  <url value="http://fhir.arkhn.com/osiris/ImplementationGuide/arkhn.fhir.uv.osiris"/>
+  <url value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ImplementationGuide/arkhn.fhir.uv.osiris"/>
   <version value="2.1.0"/>
   <name value="OsirisImplementationGuide"/>
   <title value="FHIR Osiris Implementation Guide"/>
   <status value="draft"/>
-  <date value="2023-03-16T15:52:24+01:00"/>
+  <date value="2023-03-28T11:28:20+02:00"/>
   <publisher value="Arkhn"/>
   <contact>
     <name value="Arkhn"/>
@@ -150,7 +150,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://fhir.arkhn.com/osiris/history.html"/>
+        <valueString value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -251,7 +251,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="copyrightyear"/>
+        <valueCode value="copyrightyear"/>
       </extension>
       <extension url="value">
         <valueString value="2020+"/>
@@ -259,7 +259,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="releaselabel"/>
+        <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
         <valueString value="ci-build"/>
@@ -267,7 +267,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-publisher"/>
+        <valueCode value="apply-publisher"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -275,7 +275,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-contact"/>
+        <valueCode value="apply-contact"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -283,7 +283,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="show-inherited-invariants"/>
+        <valueCode value="show-inherited-invariants"/>
       </extension>
       <extension url="value">
         <valueString value="false"/>
@@ -291,7 +291,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="autoload-resources"/>
+        <valueCode value="autoload-resources"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -299,7 +299,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-liquid"/>
+        <valueCode value="path-liquid"/>
       </extension>
       <extension url="value">
         <valueString value="template/liquid"/>
@@ -307,7 +307,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-liquid"/>
+        <valueCode value="path-liquid"/>
       </extension>
       <extension url="value">
         <valueString value="input/liquid"/>
@@ -315,7 +315,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-qa"/>
+        <valueCode value="path-qa"/>
       </extension>
       <extension url="value">
         <valueString value="temp/qa"/>
@@ -323,7 +323,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-temp"/>
+        <valueCode value="path-temp"/>
       </extension>
       <extension url="value">
         <valueString value="temp/pages"/>
@@ -331,7 +331,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-output"/>
+        <valueCode value="path-output"/>
       </extension>
       <extension url="value">
         <valueString value="output"/>
@@ -339,7 +339,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-suppressed-warnings"/>
+        <valueCode value="path-suppressed-warnings"/>
       </extension>
       <extension url="value">
         <valueString value="input/ignoreWarnings.txt"/>
@@ -347,15 +347,15 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-history"/>
+        <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://fhir.arkhn.com/osiris/history.html"/>
+        <valueString value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="template-html"/>
+        <valueCode value="template-html"/>
       </extension>
       <extension url="value">
         <valueString value="template-page.html"/>
@@ -363,7 +363,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="template-md"/>
+        <valueCode value="template-md"/>
       </extension>
       <extension url="value">
         <valueString value="template-page-md.html"/>
@@ -371,7 +371,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-context"/>
+        <valueCode value="apply-context"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -379,7 +379,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-copyright"/>
+        <valueCode value="apply-copyright"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -387,7 +387,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-jurisdiction"/>
+        <valueCode value="apply-jurisdiction"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -395,7 +395,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-license"/>
+        <valueCode value="apply-license"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -403,7 +403,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-version"/>
+        <valueCode value="apply-version"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -411,7 +411,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="active-tables"/>
+        <valueCode value="active-tables"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -419,7 +419,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="fmm-definition"/>
+        <valueCode value="fmm-definition"/>
       </extension>
       <extension url="value">
         <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
@@ -427,7 +427,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="propagate-status"/>
+        <valueCode value="propagate-status"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -435,7 +435,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="excludelogbinaryformat"/>
+        <valueCode value="excludelogbinaryformat"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -443,7 +443,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="tabbed-snapshots"/>
+        <valueCode value="tabbed-snapshots"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -477,7 +477,7 @@
         <reference value="StructureDefinition/analysis"/>
       </reference>
       <name value="Analysis"/>
-      <description value="Analysis about an onco-patient, potentially referencing a tumor pathology event."/>
+      <description value="Assessment of the technique(s) used to establish the diagnosis(es)"/>
       <exampleBoolean value="false"/>
       <groupingId value="Clinical"/>
     </resource>
@@ -537,7 +537,7 @@
         <reference value="StructureDefinition/clinical-trial"/>
       </reference>
       <name value="Oncology Clinical Trial"/>
-      <description value="Oncology clinical trial used to associate a Onco Patient to a Clinical Trial using the ResearchSubject Resource."/>
+      <description value="Oncology clinical trial used to associate a Onco Patient to a Clinical Trial"/>
       <exampleBoolean value="false"/>
       <groupingId value="General"/>
     </resource>
@@ -969,7 +969,7 @@
         <reference value="StructureDefinition/onco-surgery"/>
       </reference>
       <name value="Oncology Surgery"/>
-      <description value="Oncology-related surgery with a description of the outcome using RECIST codes."/>
+      <description value="Oncology-related surgery with a description of the outcome using RECIST categorys."/>
       <exampleBoolean value="false"/>
       <groupingId value="Treatment"/>
     </resource>
@@ -1048,6 +1048,28 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/BasedOnCondition"/>
+      </reference>
+      <name value="Based On Condition (Tumor Pathology Event)"/>
+      <description value="Based On Condition (Tumor Pathology Event)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BiologicalSampleOrigin"/>
+      </reference>
+      <name value="Biological Sample Origin"/>
+      <description value="Biological Sample Origin"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/doseToVolume"/>
       </reference>
       <name value="Dose To Volume"/>
@@ -1107,6 +1129,17 @@
       </reference>
       <name value="Gene Expression Data Type"/>
       <description value="Type of the expression value corresponding to the level of data processing"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/histologygrade"/>
+      </reference>
+      <name value="Histology"/>
+      <description value="Grade of Histology"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1301,6 +1334,28 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/AdverseEventGrade"/>
+      </reference>
+      <name value="Adverse Event Grade Value Set"/>
+      <description value="Adverse event grade"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/AlgorithmicPloidy"/>
+      </reference>
+      <name value="Algorithmic Ploidy"/>
+      <description value="Algorithmic Ploidy"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/AnalysisType"/>
       </reference>
       <name value="Analysis Types Value Set"/>
@@ -1444,6 +1499,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/PanelName"/>
+      </reference>
+      <name value="Panel Name"/>
+      <description value="Panel Name"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/Parentage"/>
       </reference>
       <name value="Parentage Value Set"/>
@@ -1459,6 +1525,17 @@
       </reference>
       <name value="Pathogenicity Value Set"/>
       <description value="Pathogenicity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/PlatformName"/>
+      </reference>
+      <name value="Platform Name"/>
+      <description value="Platform Name"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1789,7 +1866,7 @@
       </reference>
       <name value="fhir-osiris-example-patient-ct-scan"/>
       <description value="Example of Patient from OSIRIS_pivot_Patient.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/onco-patient"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1800,18 +1877,7 @@
       </reference>
       <name value="fhir-osiris-example-patient-mr"/>
       <description value="Example of Patient from OSIRIS_pivot_Patient.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/onco-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CarePlan"/>
-      </extension>
-      <reference>
-        <reference value="CarePlan/3"/>
-      </reference>
-      <name value="fhir-osiris-example-treatment-radiotherapy"/>
-      <description value="Example of Patient from OSIRIS_pivot_Treatment.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/treatment"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1822,7 +1888,7 @@
       </reference>
       <name value="fhir-osiris-example-patient"/>
       <description value="Example of Patient from OSIRIS_pivot_Patient.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/onco-patient"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1833,7 +1899,7 @@
       </reference>
       <name value="fhir-osiris-example-patient-dx"/>
       <description value="Example of Patient from OSIRIS_pivot_Patient.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/onco-patient"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1844,7 +1910,7 @@
       </reference>
       <name value="fhir-osiris-example-patient-radiotherapy"/>
       <description value="Example of Patient for radiotherapy"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/onco-patient"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1855,7 +1921,7 @@
       </reference>
       <name value="fhir-osiris-example-patient-mr-2"/>
       <description value="Example of Patient from OSIRIS_pivot_Patient.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/onco-patient"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1866,7 +1932,7 @@
       </reference>
       <name value="fhir-osiris-example-patient-pt-nm"/>
       <description value="Example of Patient from OSIRIS_pivot_Patient.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/onco-patient"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1877,7 +1943,7 @@
       </reference>
       <name value="fhir-osiris-example-ROISegmentation"/>
       <description value="Example of Patient from OSIRIS_pivot_ROISegmentation.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/roi-segmentation"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/roi-segmentation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1888,7 +1954,7 @@
       </reference>
       <name value="fhir-osiris-example-RadiomicsCriteria"/>
       <description value="Example of Patient from OSIRIS_pivot_RadiomicsCriteria.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/radiomics-criteria"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1899,7 +1965,7 @@
       </reference>
       <name value="fhir-osiris-example-RadiomicsFeature"/>
       <description value="Example of Patient from OSIRIS_pivot_RadiomicsFeature.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/radiomics-features"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-features"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1910,7 +1976,7 @@
       </reference>
       <name value="fhir-osiris-example-RadiomicsImageFilter"/>
       <description value="Example of Patient from OSIRIS_pivot_RadiomicsImageFilter.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/radiomics-Image-filters"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-Image-filters"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1921,7 +1987,7 @@
       </reference>
       <name value="fhir-osiris-example-RadiotherapyCourse-1"/>
       <description value="Example of instance from OSIRIS_pivot_CourseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv, OSIRIS_pivot_DoseToVolumeRT.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-course-summary"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-course-summary"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1932,7 +1998,7 @@
       </reference>
       <name value="fhir-osiris-example-RadiotherapyCourse-2"/>
       <description value="Example of instance from OSIRIS_pivot_CourseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv, OSIRIS_pivot_DoseToVolumeRT.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-course-summary"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-course-summary"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1943,7 +2009,7 @@
       </reference>
       <name value="fhir-osiris-example-RadiotherapyPhase-1"/>
       <description value="Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-phase"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1954,7 +2020,7 @@
       </reference>
       <name value="fhir-osiris-example-RadiotherapyPhase-2"/>
       <description value="Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-phase"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1965,7 +2031,7 @@
       </reference>
       <name value="fhir-osiris-example-RadiotherapyPhase-3"/>
       <description value="Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-phase"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1976,7 +2042,7 @@
       </reference>
       <name value="fhir-osiris-example-RadiotherapyPhase-4"/>
       <description value="Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-phase"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1987,7 +2053,7 @@
       </reference>
       <name value="fhir-osiris-example-RadiotherapyPhase-5"/>
       <description value="Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-phase"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1998,7 +2064,7 @@
       </reference>
       <name value="fhir-osiris-example-RadiotherapyPhase-6"/>
       <description value="Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-phase"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2009,7 +2075,7 @@
       </reference>
       <name value="fhir-osiris-example-RadiotherapyPlan-1"/>
       <description value="Example of instance from OSIRIS_pivot_PlanRT.csv, OSIRIS_pivot_EquipmentRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-plan"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-plan"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2020,7 +2086,7 @@
       </reference>
       <name value="fhir-osiris-example-RadiotherapyVolume-1"/>
       <description value="Example of instance from OSIRIS_pivot_VolumeRT.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-volume"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-volume"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2031,7 +2097,7 @@
       </reference>
       <name value="fhir-osiris-example-RadiotherapyVolume-2"/>
       <description value="Example of instance from OSIRIS_pivot_VolumeRT.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-volume"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-volume"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2042,7 +2108,7 @@
       </reference>
       <name value="fhir-osiris-example-RadiotherapyVolume-3"/>
       <description value="Example of instance from OSIRIS_pivot_VolumeRT.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-volume"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-volume"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2053,7 +2119,7 @@
       </reference>
       <name value="fhir-osiris-example-RadiotherapyVolume-4"/>
       <description value="Example of instance from OSIRIS_pivot_VolumeRT.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-volume"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-volume"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2064,7 +2130,7 @@
       </reference>
       <name value="fhir-osiris-example-TumorPathologyEvent-instance-1"/>
       <description value="Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/tumor-pathology-event"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/tumor-pathology-event"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2075,7 +2141,29 @@
       </reference>
       <name value="fhir-osiris-example-TumorPathologyEvent-instance-2"/>
       <description value="Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/tumor-pathology-event"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/tumor-pathology-event"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AdverseEvent"/>
+      </extension>
+      <reference>
+        <reference value="AdverseEvent/fhir-osiris-example-adverseevent-1"/>
+      </reference>
+      <name value="fhir-osiris-example-adverseevent-1"/>
+      <description value="Example of Adverse Event from OSIRIS_pivot_AdverseEvent.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-adverse-event"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-analysis-clinical"/>
+      </reference>
+      <name value="fhir-osiris-example-analysis-clinical"/>
+      <description value="Example of Analysis from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2085,8 +2173,8 @@
         <reference value="Observation/fhir-osiris-example-analysis-ct"/>
       </reference>
       <name value="fhir-osiris-example-analysis-ct"/>
-      <description value="Example of Patient from OSIRIS_pivot_Analysis.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/analysis"/>
+      <description value="Example of Analysis from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2096,8 +2184,8 @@
         <reference value="Observation/fhir-osiris-example-analysis-dx"/>
       </reference>
       <name value="fhir-osiris-example-analysis-dx"/>
-      <description value="Example of Patient from OSIRIS_pivot_Analysis.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/analysis"/>
+      <description value="Example of Analysis from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2107,8 +2195,8 @@
         <reference value="Observation/fhir-osiris-example-analysis-mr"/>
       </reference>
       <name value="fhir-osiris-example-analysis-mr"/>
-      <description value="Example of Patient from OSIRIS_pivot_Analysis.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/analysis"/>
+      <description value="Example of Analysis from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2118,8 +2206,8 @@
         <reference value="Observation/fhir-osiris-example-analysis-mr-2"/>
       </reference>
       <name value="fhir-osiris-example-analysis-mr-2"/>
-      <description value="Example of Patient from OSIRIS_pivot_Analysis.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/analysis"/>
+      <description value="Example of Analysis from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2129,8 +2217,74 @@
         <reference value="Observation/fhir-osiris-example-analysis-pt-nm"/>
       </reference>
       <name value="fhir-osiris-example-analysis-pt-nm"/>
-      <description value="Example of Patient from OSIRIS_pivot_Analysis.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/analysis"/>
+      <description value="Example of Analysis from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/fhir-osiris-example-biologicalsample-1"/>
+      </reference>
+      <name value="fhir-osiris-example-biologicalsample-1"/>
+      <description value="Example of BiologicalSample from OSIRIS_pivot_BiologicalSample.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-biological-sample"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/fhir-osiris-example-biologicalsample-2"/>
+      </reference>
+      <name value="fhir-osiris-example-biologicalsample-2"/>
+      <description value="Example of BiologicalSample from OSIRIS_pivot_BiologicalSample.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-biological-sample"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-biomarker"/>
+      </reference>
+      <name value="fhir-osiris-example-biomarker"/>
+      <description value="Example of Biomarker"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/biomarker"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-causeofdeath"/>
+      </reference>
+      <name value="fhir-osiris-example-causeofdeath"/>
+      <description value="Example of CauseOfDeath"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/cause-of-death"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/fhir-osiris-example-consent-1"/>
+      </reference>
+      <name value="fhir-osiris-example-consent-1"/>
+      <description value="Example of Instance from OSIRIS_pivot_Consent.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genetic-consent"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/fhir-osiris-example-consent-2"/>
+      </reference>
+      <name value="fhir-osiris-example-consent-2"/>
+      <description value="Example of Instance from OSIRIS_pivot_Consent.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genetic-consent"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2141,7 +2295,7 @@
       </reference>
       <name value="fhir-osiris-example-imagingdevice-ct"/>
       <description value="Example of Imaging Study from OSIRIS_pivot_Equipment.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/imaging-device"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-device"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2152,7 +2306,7 @@
       </reference>
       <name value="fhir-osiris-example-imagingdevice-dx"/>
       <description value="Example of Imaging Study from OSIRIS_pivot_Equipment.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/imaging-device"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-device"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2163,7 +2317,7 @@
       </reference>
       <name value="fhir-osiris-example-imagingdevice-mr"/>
       <description value="Example of Imaging Study from OSIRIS_pivot_Equipment.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/imaging-device"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-device"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2174,7 +2328,7 @@
       </reference>
       <name value="fhir-osiris-example-imagingdevice-mr-2"/>
       <description value="Example of Imaging Study from OSIRIS_pivot_Equipment.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/imaging-device"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-device"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2185,7 +2339,7 @@
       </reference>
       <name value="fhir-osiris-example-imagingdevice-pt-nm"/>
       <description value="Example of Imaging Study from OSIRIS_pivot_Equipment.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/imaging-device"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-device"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2196,7 +2350,7 @@
       </reference>
       <name value="fhir-osiris-example-imagingendpoint-ct"/>
       <description value="Example of Imaging Study from OSIRIS_pivot_CommonImage.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/imaging-pacs"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-pacs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2207,7 +2361,7 @@
       </reference>
       <name value="fhir-osiris-example-imagingendpoint-dx"/>
       <description value="Example of Imaging Study from OSIRIS_pivot_CommonImage.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/imaging-pacs"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-pacs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2218,7 +2372,7 @@
       </reference>
       <name value="fhir-osiris-example-imagingendpoint-mr"/>
       <description value="Example of Imaging Study from OSIRIS_pivot_CommonImage.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/imaging-pacs"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-pacs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2229,7 +2383,7 @@
       </reference>
       <name value="fhir-osiris-example-imagingendpoint-mr-2"/>
       <description value="Example of Imaging Study from OSIRIS_pivot_CommonImage.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/imaging-pacs"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-pacs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2240,7 +2394,7 @@
       </reference>
       <name value="fhir-osiris-example-imagingendpoint-pt-nm"/>
       <description value="Example of Imaging Study from OSIRIS_pivot_CommonImage.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/imaging-pacs"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-pacs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2251,7 +2405,7 @@
       </reference>
       <name value="fhir-osiris-example-imagingstudy-ct"/>
       <description value="Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_CTImage.csv, OSIRIS_pivot_CommonImage.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/onco-imagingstudy"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2262,7 +2416,7 @@
       </reference>
       <name value="fhir-osiris-example-imagingstudy-dx"/>
       <description value="Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_CTImage.csv, OSIRIS_pivot_CommonImage.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/onco-imagingstudy"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2273,7 +2427,7 @@
       </reference>
       <name value="fhir-osiris-example-imagingstudy-mri"/>
       <description value="Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_MRImage.csv, OSIRIS_pivot_CommonImage.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/onco-imagingstudy"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2284,7 +2438,7 @@
       </reference>
       <name value="fhir-osiris-example-imagingstudy-mri-2"/>
       <description value="Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_MRImage.csv, OSIRIS_pivot_CommonImage.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/onco-imagingstudy"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2295,7 +2449,7 @@
       </reference>
       <name value="fhir-osiris-example-imagingstudy-pt-nm"/>
       <description value="Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_CTImage.csv, OSIRIS_pivot_CommonImage.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/onco-imagingstudy"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2306,7 +2460,7 @@
       </reference>
       <name value="fhir-osiris-example-injection-medication-pt-nm"/>
       <description value="Example of Imaging Study from OSIRIS_pivot_Injection.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/onco-biological-contrast"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-biological-contrast"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2317,7 +2471,161 @@
       </reference>
       <name value="fhir-osiris-example-injection-pt-nm"/>
       <description value="Example of Imaging Study from OSIRIS_pivot_Injection.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/onco-imagingstudy-injection"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy-injection"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/fhir-osiris-example-oncomedicalstatement-1"/>
+      </reference>
+      <name value="fhir-osiris-example-oncomedicalstatement-1"/>
+      <description value="Example of OncoMedicalStatement from OSIRIS_pivot_Drug.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-medication-statement"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchStudy"/>
+      </extension>
+      <reference>
+        <reference value="ResearchStudy/fhir-osiris-example-researchstudy"/>
+      </reference>
+      <name value="fhir-osiris-example-researchstudy"/>
+      <description value="Example of ResearchStudy from OSIRIS_pivot_Treatment.csv"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-sequencinganalysis-1"/>
+      </reference>
+      <name value="fhir-osiris-example-sequencinganalysis-1"/>
+      <description value="Example of SequencingAnalysis from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-analysis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-sequencinganalysis-2"/>
+      </reference>
+      <name value="fhir-osiris-example-sequencinganalysis-2"/>
+      <description value="Example of SequencingAnalysis from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-analysis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-sequencinganalysis-3"/>
+      </reference>
+      <name value="fhir-osiris-example-sequencinganalysis-3"/>
+      <description value="Example of SequencingAnalysis from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-analysis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/fhir-osiris-example-sequencingdevice-1"/>
+      </reference>
+      <name value="fhir-osiris-example-sequencingdevice-1"/>
+      <description value="Example of SequencingDevice from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-device"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/fhir-osiris-example-sequencingdevice-2"/>
+      </reference>
+      <name value="fhir-osiris-example-sequencingdevice-2"/>
+      <description value="Example of SequencingDevice from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-device"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/fhir-osiris-example-sequencingdevice-3"/>
+      </reference>
+      <name value="fhir-osiris-example-sequencingdevice-3"/>
+      <description value="Example of SequencingDevice from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-device"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/fhir-osiris-example-surgery-1"/>
+      </reference>
+      <name value="fhir-osiris-example-surgery-1"/>
+      <description value="Example of Surgery from OSIRIS_pivot_Treatment.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-surgery"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/fhir-osiris-example-surgery-2"/>
+      </reference>
+      <name value="fhir-osiris-example-surgery-2"/>
+      <description value="Example of Surgery from OSIRIS_pivot_Treatment.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-surgery"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/fhir-osiris-example-treatment-1"/>
+      </reference>
+      <name value="fhir-osiris-example-treatment-1"/>
+      <description value="Example of Treatment from OSIRIS_pivot_Treatment.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/fhir-osiris-example-treatment-2"/>
+      </reference>
+      <name value="fhir-osiris-example-treatment-2"/>
+      <description value="Example of Treatment from OSIRIS_pivot_Treatment.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/fhir-osiris-example-treatment-radiotherapy"/>
+      </reference>
+      <name value="fhir-osiris-example-treatment-radiotherapy"/>
+      <description value="Example of Treatment from OSIRIS_pivot_Treatment.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-vitalstatus"/>
+      </reference>
+      <name value="fhir-osiris-example-vitalstatus"/>
+      <description value="Example of VitalStatus"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/vital-status"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2328,7 +2636,7 @@
       </reference>
       <name value="fhir-osiris-origin-organization"/>
       <description value="Example of origin(organization) from OSIRIS_pivot_Patient.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/onco-organization"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2339,7 +2647,7 @@
       </reference>
       <name value="fhir-osiris-provider-organization"/>
       <description value="Example of provider(organization) from OSIRIS_pivot_Patient.csv"/>
-      <exampleCanonical value="http://fhir.arkhn.com/osiris/StructureDefinition/onco-organization"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

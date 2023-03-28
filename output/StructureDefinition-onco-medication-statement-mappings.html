@@ -147,7 +147,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 5" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v2.1.0). See the <a href="http://fhir.arkhn.com/osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v2.1.0). See the <a href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -185,6 +185,16 @@
 
 
 
+  
+    
+      <li>
+        <a href="StructureDefinition-onco-medication-statement-examples.html">Examples</a>
+      </li>
+    
+  
+
+
+
 
   
     <li>
@@ -219,7 +229,7 @@
         
           Active
           
-            as of 2023-03-16
+            as of 2023-03-28
           
         
       </td>
@@ -321,14 +331,13 @@
 <a name="fhir-osiris-drug"> </a><h3>Mappings for Fhir-osiris to osiris (Drug)</h3><table class="grid">
  <tr><td colspan="3"><b>OncoMedicationStatement</b></td></tr>
  <tr><td>MedicationStatement</td><td>Treatment</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;basedOn</td><td>Drug.Treatment_Ref</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;basedOn</td><td>OSIRIS_pivot_Drug.Treatment_Ref</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;medication[x] (medicationCodeableConcept)</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>Drug.Drug_Code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>Drug.Drug_Name</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>Drug.Patient_Id</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;derivedFrom</td><td>Treatment.Treatment_ClinicalTrialId</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>OSIRIS_pivot_Drug.Drug_Code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>OSIRIS_pivot_Drug.Drug_Name</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>OSIRIS_pivot_Drug.Patient_Id</td> </tr>
 </table>
 
 
@@ -383,14 +392,14 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 16, 2023 15:52+0100">2023-03-16</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 28, 2023 11:28+0200">2023-03-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-               | <a style="color: #81BEF7" target="_blank" href="http://fhir.arkhn.com/osiris/history.html">Version History  |
+               | <a style="color: #81BEF7" target="_blank" href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Version History  |
                <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 

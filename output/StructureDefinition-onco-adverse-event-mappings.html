@@ -147,7 +147,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 5" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v2.1.0). See the <a href="http://fhir.arkhn.com/osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v2.1.0). See the <a href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -185,6 +185,16 @@
 
 
 
+  
+    
+      <li>
+        <a href="StructureDefinition-onco-adverse-event-examples.html">Examples</a>
+      </li>
+    
+  
+
+
+
 
   
     <li>
@@ -219,7 +229,7 @@
         
           Active
           
-            as of 2023-03-16
+            as of 2023-03-28
           
         
       </td>
@@ -277,16 +287,16 @@
 <a name="fhir-osiris-adverseevent"> </a><h3>Mappings for Fhir-osiris adverse event to osiris (AdverseEvent)</h3><table class="grid">
  <tr><td colspan="3"><b>OncoAdverseEvent</b></td></tr>
  <tr><td>AdverseEvent</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (end-date)</td><td>AdverseEvent.AdverseEvent_EndDate</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;event</td><td>AdverseEvent.AdverseEvent_Code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>AdverseEvent.Patient_Identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;date</td><td>AdverseEvent.AdverseEvent_Date</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (end-date)</td><td>OSIRIS_pivot_AdverseEvent.AdverseEvent_EndDate</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;event</td><td>OSIRIS_pivot_AdverseEvent.AdverseEvent_Code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>OSIRIS_pivot_AdverseEvent.Patient_Id</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;date</td><td>OSIRIS_pivot_AdverseEvent.AdverseEvent_Date</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;seriousness</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>AdverseEvent.AdverseEvent_Grade</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>OSIRIS_pivot_AdverseEvent.AdverseEvent_Grade</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;suspectEntity</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instance</td><td>AdverseEvent.Treatment_Ref</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;subjectMedicalHistory</td><td>AdverseEvent.TumorPathologyEvent_Ref</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instance</td><td>OSIRIS_pivot_AdverseEvent.Treatment_Ref</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;subjectMedicalHistory</td><td>OSIRIS_pivot_AdverseEvent.TumorPathologyEvent_Ref</td> </tr>
 </table>
 
 
@@ -341,14 +351,14 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 16, 2023 15:52+0100">2023-03-16</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 28, 2023 11:28+0200">2023-03-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-               | <a style="color: #81BEF7" target="_blank" href="http://fhir.arkhn.com/osiris/history.html">Version History  |
+               | <a style="color: #81BEF7" target="_blank" href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Version History  |
                <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 

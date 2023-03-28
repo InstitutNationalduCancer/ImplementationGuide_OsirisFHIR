@@ -3,14 +3,14 @@
   "id" : "arkhn.fhir.uv.osiris",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>OsirisImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.arkhn.com/osiris/ImplementationGuide/arkhn.fhir.uv.osiris</pre><div><p>An implementation guide about FHIR-osiris to store interoperable data about oncology, including genomics.</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>OsirisImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ImplementationGuide/arkhn.fhir.uv.osiris</pre><div><p>An implementation guide about FHIR-osiris to store interoperable data about oncology, including genomics.</p>\n</div></div>"
   },
-  "url" : "http://fhir.arkhn.com/osiris/ImplementationGuide/arkhn.fhir.uv.osiris",
+  "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ImplementationGuide/arkhn.fhir.uv.osiris",
   "version" : "2.1.0",
   "name" : "OsirisImplementationGuide",
   "title" : "FHIR Osiris Implementation Guide",
   "status" : "draft",
-  "date" : "2023-03-16T15:52:24+01:00",
+  "date" : "2023-03-28T11:28:20+02:00",
   "publisher" : "Arkhn",
   "contact" : [{
     "name" : "Arkhn",
@@ -190,7 +190,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://fhir.arkhn.com/osiris/history.html"
+        "valueString" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -329,7 +329,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "copyrightyear"
+        "valueCode" : "copyrightyear"
       },
       {
         "url" : "value",
@@ -340,7 +340,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "releaselabel"
+        "valueCode" : "releaselabel"
       },
       {
         "url" : "value",
@@ -351,7 +351,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-publisher"
+        "valueCode" : "apply-publisher"
       },
       {
         "url" : "value",
@@ -362,7 +362,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-contact"
+        "valueCode" : "apply-contact"
       },
       {
         "url" : "value",
@@ -373,7 +373,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "show-inherited-invariants"
+        "valueCode" : "show-inherited-invariants"
       },
       {
         "url" : "value",
@@ -384,7 +384,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "autoload-resources"
+        "valueCode" : "autoload-resources"
       },
       {
         "url" : "value",
@@ -395,7 +395,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-liquid"
+        "valueCode" : "path-liquid"
       },
       {
         "url" : "value",
@@ -406,7 +406,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-liquid"
+        "valueCode" : "path-liquid"
       },
       {
         "url" : "value",
@@ -417,7 +417,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-qa"
+        "valueCode" : "path-qa"
       },
       {
         "url" : "value",
@@ -428,7 +428,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-temp"
+        "valueCode" : "path-temp"
       },
       {
         "url" : "value",
@@ -439,7 +439,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-output"
+        "valueCode" : "path-output"
       },
       {
         "url" : "value",
@@ -450,7 +450,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-suppressed-warnings"
+        "valueCode" : "path-suppressed-warnings"
       },
       {
         "url" : "value",
@@ -461,18 +461,18 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-history"
+        "valueCode" : "path-history"
       },
       {
         "url" : "value",
-        "valueString" : "http://fhir.arkhn.com/osiris/history.html"
+        "valueString" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "template-html"
+        "valueCode" : "template-html"
       },
       {
         "url" : "value",
@@ -483,7 +483,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "template-md"
+        "valueCode" : "template-md"
       },
       {
         "url" : "value",
@@ -494,7 +494,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-context"
+        "valueCode" : "apply-context"
       },
       {
         "url" : "value",
@@ -505,7 +505,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-copyright"
+        "valueCode" : "apply-copyright"
       },
       {
         "url" : "value",
@@ -516,7 +516,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-jurisdiction"
+        "valueCode" : "apply-jurisdiction"
       },
       {
         "url" : "value",
@@ -527,7 +527,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-license"
+        "valueCode" : "apply-license"
       },
       {
         "url" : "value",
@@ -538,7 +538,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-version"
+        "valueCode" : "apply-version"
       },
       {
         "url" : "value",
@@ -549,7 +549,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "active-tables"
+        "valueCode" : "active-tables"
       },
       {
         "url" : "value",
@@ -560,7 +560,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "fmm-definition"
+        "valueCode" : "fmm-definition"
       },
       {
         "url" : "value",
@@ -571,7 +571,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "propagate-status"
+        "valueCode" : "propagate-status"
       },
       {
         "url" : "value",
@@ -582,7 +582,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "excludelogbinaryformat"
+        "valueCode" : "excludelogbinaryformat"
       },
       {
         "url" : "value",
@@ -593,7 +593,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "tabbed-snapshots"
+        "valueCode" : "tabbed-snapshots"
       },
       {
         "url" : "value",
@@ -635,7 +635,7 @@
         "reference" : "StructureDefinition/analysis"
       },
       "name" : "Analysis",
-      "description" : "Analysis about an onco-patient, potentially referencing a tumor pathology event.",
+      "description" : "Assessment of the technique(s) used to establish the diagnosis(es)",
       "exampleBoolean" : false,
       "groupingId" : "Clinical"
     },
@@ -700,7 +700,7 @@
         "reference" : "StructureDefinition/clinical-trial"
       },
       "name" : "Oncology Clinical Trial",
-      "description" : "Oncology clinical trial used to associate a Onco Patient to a Clinical Trial using the ResearchSubject Resource.",
+      "description" : "Oncology clinical trial used to associate a Onco Patient to a Clinical Trial",
       "exampleBoolean" : false,
       "groupingId" : "General"
     },
@@ -1168,7 +1168,7 @@
         "reference" : "StructureDefinition/onco-surgery"
       },
       "name" : "Oncology Surgery",
-      "description" : "Oncology-related surgery with a description of the outcome using RECIST codes.",
+      "description" : "Oncology-related surgery with a description of the outcome using RECIST categorys.",
       "exampleBoolean" : false,
       "groupingId" : "Treatment"
     },
@@ -1254,6 +1254,30 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/BasedOnCondition"
+      },
+      "name" : "Based On Condition (Tumor Pathology Event)",
+      "description" : "Based On Condition (Tumor Pathology Event)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/BiologicalSampleOrigin"
+      },
+      "name" : "Biological Sample Origin",
+      "description" : "Biological Sample Origin",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/doseToVolume"
       },
       "name" : "Dose To Volume",
@@ -1318,6 +1342,18 @@
       },
       "name" : "Gene Expression Data Type",
       "description" : "Type of the expression value corresponding to the level of data processing",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/histologygrade"
+      },
+      "name" : "Histology",
+      "description" : "Grade of Histology",
       "exampleBoolean" : false
     },
     {
@@ -1530,6 +1566,30 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/AdverseEventGrade"
+      },
+      "name" : "Adverse Event Grade Value Set",
+      "description" : "Adverse event grade",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/AlgorithmicPloidy"
+      },
+      "name" : "Algorithmic Ploidy",
+      "description" : "Algorithmic Ploidy",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/AnalysisType"
       },
       "name" : "Analysis Types Value Set",
@@ -1686,6 +1746,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/PanelName"
+      },
+      "name" : "Panel Name",
+      "description" : "Panel Name",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/Parentage"
       },
       "name" : "Parentage Value Set",
@@ -1702,6 +1774,18 @@
       },
       "name" : "Pathogenicity Value Set",
       "description" : "Pathogenicity",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/PlatformName"
+      },
+      "name" : "Platform Name",
+      "description" : "Platform Name",
       "exampleBoolean" : false
     },
     {
@@ -2062,7 +2146,7 @@
       },
       "name" : "fhir-osiris-example-patient-ct-scan",
       "description" : "Example of Patient from OSIRIS_pivot_Patient.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/onco-patient"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"
     },
     {
       "extension" : [{
@@ -2074,19 +2158,7 @@
       },
       "name" : "fhir-osiris-example-patient-mr",
       "description" : "Example of Patient from OSIRIS_pivot_Patient.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/onco-patient"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CarePlan"
-      }],
-      "reference" : {
-        "reference" : "CarePlan/3"
-      },
-      "name" : "fhir-osiris-example-treatment-radiotherapy",
-      "description" : "Example of Patient from OSIRIS_pivot_Treatment.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/treatment"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"
     },
     {
       "extension" : [{
@@ -2098,7 +2170,7 @@
       },
       "name" : "fhir-osiris-example-patient",
       "description" : "Example of Patient from OSIRIS_pivot_Patient.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/onco-patient"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"
     },
     {
       "extension" : [{
@@ -2110,7 +2182,7 @@
       },
       "name" : "fhir-osiris-example-patient-dx",
       "description" : "Example of Patient from OSIRIS_pivot_Patient.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/onco-patient"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"
     },
     {
       "extension" : [{
@@ -2122,7 +2194,7 @@
       },
       "name" : "fhir-osiris-example-patient-radiotherapy",
       "description" : "Example of Patient for radiotherapy",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/onco-patient"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"
     },
     {
       "extension" : [{
@@ -2134,7 +2206,7 @@
       },
       "name" : "fhir-osiris-example-patient-mr-2",
       "description" : "Example of Patient from OSIRIS_pivot_Patient.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/onco-patient"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"
     },
     {
       "extension" : [{
@@ -2146,7 +2218,7 @@
       },
       "name" : "fhir-osiris-example-patient-pt-nm",
       "description" : "Example of Patient from OSIRIS_pivot_Patient.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/onco-patient"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"
     },
     {
       "extension" : [{
@@ -2158,7 +2230,7 @@
       },
       "name" : "fhir-osiris-example-ROISegmentation",
       "description" : "Example of Patient from OSIRIS_pivot_ROISegmentation.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/roi-segmentation"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/roi-segmentation"
     },
     {
       "extension" : [{
@@ -2170,7 +2242,7 @@
       },
       "name" : "fhir-osiris-example-RadiomicsCriteria",
       "description" : "Example of Patient from OSIRIS_pivot_RadiomicsCriteria.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/radiomics-criteria"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria"
     },
     {
       "extension" : [{
@@ -2182,7 +2254,7 @@
       },
       "name" : "fhir-osiris-example-RadiomicsFeature",
       "description" : "Example of Patient from OSIRIS_pivot_RadiomicsFeature.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/radiomics-features"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-features"
     },
     {
       "extension" : [{
@@ -2194,7 +2266,7 @@
       },
       "name" : "fhir-osiris-example-RadiomicsImageFilter",
       "description" : "Example of Patient from OSIRIS_pivot_RadiomicsImageFilter.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/radiomics-Image-filters"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-Image-filters"
     },
     {
       "extension" : [{
@@ -2206,7 +2278,7 @@
       },
       "name" : "fhir-osiris-example-RadiotherapyCourse-1",
       "description" : "Example of instance from OSIRIS_pivot_CourseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv, OSIRIS_pivot_DoseToVolumeRT.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-course-summary"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-course-summary"
     },
     {
       "extension" : [{
@@ -2218,7 +2290,7 @@
       },
       "name" : "fhir-osiris-example-RadiotherapyCourse-2",
       "description" : "Example of instance from OSIRIS_pivot_CourseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv, OSIRIS_pivot_DoseToVolumeRT.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-course-summary"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-course-summary"
     },
     {
       "extension" : [{
@@ -2230,7 +2302,7 @@
       },
       "name" : "fhir-osiris-example-RadiotherapyPhase-1",
       "description" : "Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-phase"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase"
     },
     {
       "extension" : [{
@@ -2242,7 +2314,7 @@
       },
       "name" : "fhir-osiris-example-RadiotherapyPhase-2",
       "description" : "Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-phase"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase"
     },
     {
       "extension" : [{
@@ -2254,7 +2326,7 @@
       },
       "name" : "fhir-osiris-example-RadiotherapyPhase-3",
       "description" : "Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-phase"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase"
     },
     {
       "extension" : [{
@@ -2266,7 +2338,7 @@
       },
       "name" : "fhir-osiris-example-RadiotherapyPhase-4",
       "description" : "Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-phase"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase"
     },
     {
       "extension" : [{
@@ -2278,7 +2350,7 @@
       },
       "name" : "fhir-osiris-example-RadiotherapyPhase-5",
       "description" : "Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-phase"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase"
     },
     {
       "extension" : [{
@@ -2290,7 +2362,7 @@
       },
       "name" : "fhir-osiris-example-RadiotherapyPhase-6",
       "description" : "Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-phase"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase"
     },
     {
       "extension" : [{
@@ -2302,7 +2374,7 @@
       },
       "name" : "fhir-osiris-example-RadiotherapyPlan-1",
       "description" : "Example of instance from OSIRIS_pivot_PlanRT.csv, OSIRIS_pivot_EquipmentRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-plan"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-plan"
     },
     {
       "extension" : [{
@@ -2314,7 +2386,7 @@
       },
       "name" : "fhir-osiris-example-RadiotherapyVolume-1",
       "description" : "Example of instance from OSIRIS_pivot_VolumeRT.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-volume"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-volume"
     },
     {
       "extension" : [{
@@ -2326,7 +2398,7 @@
       },
       "name" : "fhir-osiris-example-RadiotherapyVolume-2",
       "description" : "Example of instance from OSIRIS_pivot_VolumeRT.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-volume"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-volume"
     },
     {
       "extension" : [{
@@ -2338,7 +2410,7 @@
       },
       "name" : "fhir-osiris-example-RadiotherapyVolume-3",
       "description" : "Example of instance from OSIRIS_pivot_VolumeRT.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-volume"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-volume"
     },
     {
       "extension" : [{
@@ -2350,7 +2422,7 @@
       },
       "name" : "fhir-osiris-example-RadiotherapyVolume-4",
       "description" : "Example of instance from OSIRIS_pivot_VolumeRT.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-volume"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-volume"
     },
     {
       "extension" : [{
@@ -2362,7 +2434,7 @@
       },
       "name" : "fhir-osiris-example-TumorPathologyEvent-instance-1",
       "description" : "Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/tumor-pathology-event"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/tumor-pathology-event"
     },
     {
       "extension" : [{
@@ -2374,7 +2446,31 @@
       },
       "name" : "fhir-osiris-example-TumorPathologyEvent-instance-2",
       "description" : "Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/tumor-pathology-event"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/tumor-pathology-event"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AdverseEvent"
+      }],
+      "reference" : {
+        "reference" : "AdverseEvent/fhir-osiris-example-adverseevent-1"
+      },
+      "name" : "fhir-osiris-example-adverseevent-1",
+      "description" : "Example of Adverse Event from OSIRIS_pivot_AdverseEvent.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-adverse-event"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/fhir-osiris-example-analysis-clinical"
+      },
+      "name" : "fhir-osiris-example-analysis-clinical",
+      "description" : "Example of Analysis from OSIRIS_pivot_Analysis.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis"
     },
     {
       "extension" : [{
@@ -2385,8 +2481,8 @@
         "reference" : "Observation/fhir-osiris-example-analysis-ct"
       },
       "name" : "fhir-osiris-example-analysis-ct",
-      "description" : "Example of Patient from OSIRIS_pivot_Analysis.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/analysis"
+      "description" : "Example of Analysis from OSIRIS_pivot_Analysis.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis"
     },
     {
       "extension" : [{
@@ -2397,8 +2493,8 @@
         "reference" : "Observation/fhir-osiris-example-analysis-dx"
       },
       "name" : "fhir-osiris-example-analysis-dx",
-      "description" : "Example of Patient from OSIRIS_pivot_Analysis.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/analysis"
+      "description" : "Example of Analysis from OSIRIS_pivot_Analysis.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis"
     },
     {
       "extension" : [{
@@ -2409,8 +2505,8 @@
         "reference" : "Observation/fhir-osiris-example-analysis-mr"
       },
       "name" : "fhir-osiris-example-analysis-mr",
-      "description" : "Example of Patient from OSIRIS_pivot_Analysis.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/analysis"
+      "description" : "Example of Analysis from OSIRIS_pivot_Analysis.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis"
     },
     {
       "extension" : [{
@@ -2421,8 +2517,8 @@
         "reference" : "Observation/fhir-osiris-example-analysis-mr-2"
       },
       "name" : "fhir-osiris-example-analysis-mr-2",
-      "description" : "Example of Patient from OSIRIS_pivot_Analysis.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/analysis"
+      "description" : "Example of Analysis from OSIRIS_pivot_Analysis.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis"
     },
     {
       "extension" : [{
@@ -2433,8 +2529,80 @@
         "reference" : "Observation/fhir-osiris-example-analysis-pt-nm"
       },
       "name" : "fhir-osiris-example-analysis-pt-nm",
-      "description" : "Example of Patient from OSIRIS_pivot_Analysis.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/analysis"
+      "description" : "Example of Analysis from OSIRIS_pivot_Analysis.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Specimen"
+      }],
+      "reference" : {
+        "reference" : "Specimen/fhir-osiris-example-biologicalsample-1"
+      },
+      "name" : "fhir-osiris-example-biologicalsample-1",
+      "description" : "Example of BiologicalSample from OSIRIS_pivot_BiologicalSample.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-biological-sample"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Specimen"
+      }],
+      "reference" : {
+        "reference" : "Specimen/fhir-osiris-example-biologicalsample-2"
+      },
+      "name" : "fhir-osiris-example-biologicalsample-2",
+      "description" : "Example of BiologicalSample from OSIRIS_pivot_BiologicalSample.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-biological-sample"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/fhir-osiris-example-biomarker"
+      },
+      "name" : "fhir-osiris-example-biomarker",
+      "description" : "Example of Biomarker",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/biomarker"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/fhir-osiris-example-causeofdeath"
+      },
+      "name" : "fhir-osiris-example-causeofdeath",
+      "description" : "Example of CauseOfDeath",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/cause-of-death"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/fhir-osiris-example-consent-1"
+      },
+      "name" : "fhir-osiris-example-consent-1",
+      "description" : "Example of Instance from OSIRIS_pivot_Consent.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genetic-consent"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/fhir-osiris-example-consent-2"
+      },
+      "name" : "fhir-osiris-example-consent-2",
+      "description" : "Example of Instance from OSIRIS_pivot_Consent.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genetic-consent"
     },
     {
       "extension" : [{
@@ -2446,7 +2614,7 @@
       },
       "name" : "fhir-osiris-example-imagingdevice-ct",
       "description" : "Example of Imaging Study from OSIRIS_pivot_Equipment.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/imaging-device"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-device"
     },
     {
       "extension" : [{
@@ -2458,7 +2626,7 @@
       },
       "name" : "fhir-osiris-example-imagingdevice-dx",
       "description" : "Example of Imaging Study from OSIRIS_pivot_Equipment.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/imaging-device"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-device"
     },
     {
       "extension" : [{
@@ -2470,7 +2638,7 @@
       },
       "name" : "fhir-osiris-example-imagingdevice-mr",
       "description" : "Example of Imaging Study from OSIRIS_pivot_Equipment.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/imaging-device"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-device"
     },
     {
       "extension" : [{
@@ -2482,7 +2650,7 @@
       },
       "name" : "fhir-osiris-example-imagingdevice-mr-2",
       "description" : "Example of Imaging Study from OSIRIS_pivot_Equipment.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/imaging-device"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-device"
     },
     {
       "extension" : [{
@@ -2494,7 +2662,7 @@
       },
       "name" : "fhir-osiris-example-imagingdevice-pt-nm",
       "description" : "Example of Imaging Study from OSIRIS_pivot_Equipment.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/imaging-device"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-device"
     },
     {
       "extension" : [{
@@ -2506,7 +2674,7 @@
       },
       "name" : "fhir-osiris-example-imagingendpoint-ct",
       "description" : "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/imaging-pacs"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-pacs"
     },
     {
       "extension" : [{
@@ -2518,7 +2686,7 @@
       },
       "name" : "fhir-osiris-example-imagingendpoint-dx",
       "description" : "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/imaging-pacs"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-pacs"
     },
     {
       "extension" : [{
@@ -2530,7 +2698,7 @@
       },
       "name" : "fhir-osiris-example-imagingendpoint-mr",
       "description" : "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/imaging-pacs"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-pacs"
     },
     {
       "extension" : [{
@@ -2542,7 +2710,7 @@
       },
       "name" : "fhir-osiris-example-imagingendpoint-mr-2",
       "description" : "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/imaging-pacs"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-pacs"
     },
     {
       "extension" : [{
@@ -2554,7 +2722,7 @@
       },
       "name" : "fhir-osiris-example-imagingendpoint-pt-nm",
       "description" : "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/imaging-pacs"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-pacs"
     },
     {
       "extension" : [{
@@ -2566,7 +2734,7 @@
       },
       "name" : "fhir-osiris-example-imagingstudy-ct",
       "description" : "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_CTImage.csv, OSIRIS_pivot_CommonImage.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/onco-imagingstudy"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy"
     },
     {
       "extension" : [{
@@ -2578,7 +2746,7 @@
       },
       "name" : "fhir-osiris-example-imagingstudy-dx",
       "description" : "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_CTImage.csv, OSIRIS_pivot_CommonImage.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/onco-imagingstudy"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy"
     },
     {
       "extension" : [{
@@ -2590,7 +2758,7 @@
       },
       "name" : "fhir-osiris-example-imagingstudy-mri",
       "description" : "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_MRImage.csv, OSIRIS_pivot_CommonImage.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/onco-imagingstudy"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy"
     },
     {
       "extension" : [{
@@ -2602,7 +2770,7 @@
       },
       "name" : "fhir-osiris-example-imagingstudy-mri-2",
       "description" : "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_MRImage.csv, OSIRIS_pivot_CommonImage.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/onco-imagingstudy"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy"
     },
     {
       "extension" : [{
@@ -2614,7 +2782,7 @@
       },
       "name" : "fhir-osiris-example-imagingstudy-pt-nm",
       "description" : "Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_CTImage.csv, OSIRIS_pivot_CommonImage.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/onco-imagingstudy"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy"
     },
     {
       "extension" : [{
@@ -2626,7 +2794,7 @@
       },
       "name" : "fhir-osiris-example-injection-medication-pt-nm",
       "description" : "Example of Imaging Study from OSIRIS_pivot_Injection.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/onco-biological-contrast"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-biological-contrast"
     },
     {
       "extension" : [{
@@ -2638,7 +2806,175 @@
       },
       "name" : "fhir-osiris-example-injection-pt-nm",
       "description" : "Example of Imaging Study from OSIRIS_pivot_Injection.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/onco-imagingstudy-injection"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy-injection"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationStatement"
+      }],
+      "reference" : {
+        "reference" : "MedicationStatement/fhir-osiris-example-oncomedicalstatement-1"
+      },
+      "name" : "fhir-osiris-example-oncomedicalstatement-1",
+      "description" : "Example of OncoMedicalStatement from OSIRIS_pivot_Drug.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-medication-statement"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ResearchStudy"
+      }],
+      "reference" : {
+        "reference" : "ResearchStudy/fhir-osiris-example-researchstudy"
+      },
+      "name" : "fhir-osiris-example-researchstudy",
+      "description" : "Example of ResearchStudy from OSIRIS_pivot_Treatment.csv",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/fhir-osiris-example-sequencinganalysis-1"
+      },
+      "name" : "fhir-osiris-example-sequencinganalysis-1",
+      "description" : "Example of SequencingAnalysis from OSIRIS_pivot_Analysis.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-analysis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/fhir-osiris-example-sequencinganalysis-2"
+      },
+      "name" : "fhir-osiris-example-sequencinganalysis-2",
+      "description" : "Example of SequencingAnalysis from OSIRIS_pivot_Analysis.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-analysis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/fhir-osiris-example-sequencinganalysis-3"
+      },
+      "name" : "fhir-osiris-example-sequencinganalysis-3",
+      "description" : "Example of SequencingAnalysis from OSIRIS_pivot_Analysis.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-analysis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/fhir-osiris-example-sequencingdevice-1"
+      },
+      "name" : "fhir-osiris-example-sequencingdevice-1",
+      "description" : "Example of SequencingDevice from OSIRIS_pivot_Analysis.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-device"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/fhir-osiris-example-sequencingdevice-2"
+      },
+      "name" : "fhir-osiris-example-sequencingdevice-2",
+      "description" : "Example of SequencingDevice from OSIRIS_pivot_Analysis.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-device"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/fhir-osiris-example-sequencingdevice-3"
+      },
+      "name" : "fhir-osiris-example-sequencingdevice-3",
+      "description" : "Example of SequencingDevice from OSIRIS_pivot_Analysis.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-device"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/fhir-osiris-example-surgery-1"
+      },
+      "name" : "fhir-osiris-example-surgery-1",
+      "description" : "Example of Surgery from OSIRIS_pivot_Treatment.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-surgery"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/fhir-osiris-example-surgery-2"
+      },
+      "name" : "fhir-osiris-example-surgery-2",
+      "description" : "Example of Surgery from OSIRIS_pivot_Treatment.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-surgery"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/fhir-osiris-example-treatment-1"
+      },
+      "name" : "fhir-osiris-example-treatment-1",
+      "description" : "Example of Treatment from OSIRIS_pivot_Treatment.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/fhir-osiris-example-treatment-2"
+      },
+      "name" : "fhir-osiris-example-treatment-2",
+      "description" : "Example of Treatment from OSIRIS_pivot_Treatment.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/fhir-osiris-example-treatment-radiotherapy"
+      },
+      "name" : "fhir-osiris-example-treatment-radiotherapy",
+      "description" : "Example of Treatment from OSIRIS_pivot_Treatment.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/fhir-osiris-example-vitalstatus"
+      },
+      "name" : "fhir-osiris-example-vitalstatus",
+      "description" : "Example of VitalStatus",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/vital-status"
     },
     {
       "extension" : [{
@@ -2650,7 +2986,7 @@
       },
       "name" : "fhir-osiris-origin-organization",
       "description" : "Example of origin(organization) from OSIRIS_pivot_Patient.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/onco-organization"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-organization"
     },
     {
       "extension" : [{
@@ -2662,7 +2998,7 @@
       },
       "name" : "fhir-osiris-provider-organization",
       "description" : "Example of provider(organization) from OSIRIS_pivot_Patient.csv",
-      "exampleCanonical" : "http://fhir.arkhn.com/osiris/StructureDefinition/onco-organization"
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-organization"
     },
     {
       "extension" : [{

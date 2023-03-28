@@ -147,7 +147,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 5" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v2.1.0). See the <a href="http://fhir.arkhn.com/osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v2.1.0). See the <a href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -185,6 +185,16 @@
 
 
 
+  
+    
+      <li>
+        <a href="StructureDefinition-onco-biological-sample-examples.html">Examples</a>
+      </li>
+    
+  
+
+
+
 
   
     <li>
@@ -219,7 +229,7 @@
         
           Active
           
-            as of 2023-03-16
+            as of 2023-03-28
           
         
       </td>
@@ -240,7 +250,21 @@
  <tr><td>Specimen</td><td>Entity. Role, or Act, Role[classCode=SPEC]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (BiologicalSampleOrigin)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x] (valueCodeableConcept)</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>union(., ./translation)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./originalText[mediaType/code=&quot;text/plain&quot;]/data</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (BasedOnCondition)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x] (valueReference)</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>.id</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;accessionIdentifier</td><td>.participation[typeCode=SBJ].act[classCode=ACSN, moodCode=EVN].id</td> </tr>
@@ -284,6 +308,11 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;capacity</td><td>.quantity</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;specimenQuantity</td><td>.playedRole[classCode=CONT].quantity</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive[x]</td><td>.scopesRole[classCode=ADTV].player</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;condition</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>union(., ./translation)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./originalText[mediaType/code=&quot;text/plain&quot;]/data</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>.inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=&quot;annotation&quot;].value</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
@@ -305,6 +334,12 @@
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>BiologicalSample</b></td></tr>
  <tr><td>Specimen</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (BiologicalSampleOrigin)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x] (valueCodeableConcept)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>C*E.1-8, C*E.10-22</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>C*E.9. But note many systems use C*E.2 for this</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>SPM-2</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;accessionIdentifier</td><td>SPM-30 (v2.7+)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>SPM-20</td> </tr>
@@ -332,23 +367,28 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;specimenQuantity</td><td>SAC-23 (value) SAC-24 (units</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;additive[x]</td><td>SAC-27</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;condition</td><td>SPM-24</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;condition (storage-temperature)</td><td>SPM-24</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;condition (origin)</td><td>SPM-24</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>C*E.1-8, C*E.10-22</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>C*E.9. But note many systems use C*E.2 for this</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>OBX</td> </tr>
 </table>
 <a name="fhir-osiris"> </a><h3>Mappings for Fhir-osiris to osiris (Patient)</h3><table class="grid">
  <tr><td colspan="3"><b>BiologicalSample</b></td></tr>
  <tr><td>Specimen</td><td>BiologicalSample</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>BiologicalSample_ExternalAccession</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>BiologicalSample_Nature</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>Patient_id</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;parent</td><td>BiologicalSample_ParentExternalAccession</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (BiologicalSampleOrigin)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x] (valueCodeableConcept)</td><td>OSIRIS_pivot_BiologicalSample.BiologicalSample_Origin</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (BasedOnCondition)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x] (valueReference)</td><td>OSIRIS_pivot_BiologicalSample.TumorPathologyEvent_Ref</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>OSIRIS_pivot_BiologicalSample.BiologicalSample_ExternalAccession</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>OSIRIS_pivot_BiologicalSample.BiologicalSample_Nature</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>OSIRIS_pivot_BiologicalSample.Patient_Id</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;parent</td><td>OSIRIS_pivot_BiologicalSample.BiologicalSample_ParentExternalAccession</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;collection</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;collected[x] (collectedDateTime)</td><td>BiologicalSample_CollectDate</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;collected[x] (collectedDateTime)</td><td>OSIRIS_pivot_BiologicalSample.BiologicalSample_CollectDate</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>BiologicalSample_TumorCellularity</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bodySite</td><td>BiologicalSample_TopographyCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;condition</td><td>BiologicalSample_origin, BiologicalSample_StorageTemperature</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>OSIRIS_pivot_BiologicalSample.BiologicalSample_TumorCellularity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bodySite</td><td>OSIRIS_pivot_BiologicalSample.BiologicalSample_TopographyCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;condition</td><td>OSIRIS_pivot_BiologicalSample.BiologicalSample_StorageTemperature</td> </tr>
 </table>
 
 
@@ -403,14 +443,14 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 16, 2023 15:52+0100">2023-03-16</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 28, 2023 11:28+0200">2023-03-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-               | <a style="color: #81BEF7" target="_blank" href="http://fhir.arkhn.com/osiris/history.html">Version History  |
+               | <a style="color: #81BEF7" target="_blank" href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Version History  |
                <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 

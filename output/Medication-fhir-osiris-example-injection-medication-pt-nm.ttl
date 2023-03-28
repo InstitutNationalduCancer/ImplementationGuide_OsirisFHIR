@@ -5,28 +5,22 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.arkhn.com/osiris/Medication/fhir-osiris-example-injection-medication-pt-nm> a fhir:Medication;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "fhir-osiris-example-injection-medication-pt-nm"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://fhir.arkhn.com/osiris/StructureDefinition/onco-biological-contrast";
-       fhir:index 0;
-       fhir:link <http://fhir.arkhn.com/osiris/StructureDefinition/onco-biological-contrast>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"fhir-osiris-example-injection-medication-pt-nm\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;fhir-osiris-example-injection-medication-pt-nm&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-biological-contrast.html\">Imaging Study Injection Contrast</a></p></div><p><b>code</b>: FDG -- fluorodeoxyglucose <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></div>"
-  ]; # 
-  fhir:Medication.code [
-     fhir:CodeableConcept.text [ fhir:value "FDG -- fluorodeoxyglucose" ]
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Medication/fhir-osiris-example-injection-medication-pt-nm> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir-osiris-example-injection-medication-pt-nm"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-biological-contrast"^^xsd:anyURI ;
+       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-biological-contrast>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"fhir-osiris-example-injection-medication-pt-nm\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;fhir-osiris-example-injection-medication-pt-nm&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-biological-contrast.html\">Imaging Study Injection Contrast</a></p></div><p><b>code</b>: FDG -- fluorodeoxyglucose <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></div>"
+  ] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "FDG -- fluorodeoxyglucose" ]
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.arkhn.com/osiris/Medication/fhir-osiris-example-injection-medication-pt-nm.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="fhir-osiris-example-treatment-radiotherapy"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CarePlan</b><a name="fhir-osiris-example-treatment-radiotherapy"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CarePlan &quot;fhir-osiris-example-treatment-radiotherapy&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-treatment.html">Treatment</a></p></div><p><b>status</b>: unknown</p><p><b>intent</b>: plan</p><p><b>category</b>: C1522449 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-umls.html">Unified Medical Language System</a>#C1522449)</span></p><p><b>subject</b>: <a href="Patient-Patient-XRTS-04-22A.html">Patient/Patient-XRTS-04-22A</a></p><p><b>period</b>: 2018-08-15 --&gt; 2018-12-25</p></div>
+  </text>
+  <status value="unknown"/>
+  <intent value="plan"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/umls"/>
+      <code value="C1522449"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/Patient-XRTS-04-22A"/>
+  </subject>
+  <period>
+    <start value="2018-08-15"/>
+    <end value="2018-12-25"/>
+  </period>
+</CarePlan>

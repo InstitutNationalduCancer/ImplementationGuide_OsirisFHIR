@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.162"}
-    h3,h4,h5,h6{--heading-prefix:"5.162"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.176"}
+    h3,h4,h5,h6{--heading-prefix:"5.176"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -145,7 +145,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v2.1.0). See the <a href="http://fhir.arkhn.com/osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v2.1.0). See the <a href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -222,114 +222,89 @@
 
 # - resource -------------------------------------------------------------------
 
- a fhir:ImagingStudy;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;fhir-osiris-example-imagingstudy-pt-nm&quot;]; # 
-  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.meta">fhir:Resource.meta</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://fhir.arkhn.com/osiris/StructureDefinition/onco-imagingstudy&quot;;
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://fhir.arkhn.com/osiris/StructureDefinition/onco-imagingstudy&gt;     ]
-  ]; # 
-  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.text">fhir:DomainResource.text</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;extensions&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: ImagingStudy&lt;/b&gt;&lt;a name=\&quot;fhir-osiris-example-imagingstudy-pt-nm\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource ImagingStudy &amp;quot;fhir-osiris-example-imagingstudy-pt-nm&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-onco-imagingstudy.html\&quot;&gt;Imaging Study&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 1.3.6.1.4.1.14519.5.2.1.5168.1900.291490762800233473213844289511&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: available&lt;/p&gt;&lt;p&gt;&lt;b&gt;modality&lt;/b&gt;: C0439673 (Details: http://terminology.hl7.org/CodeSystem/umls code C0439673 = 'C0439673', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-STS-028.html\&quot;&gt;Patient/STS-028&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;started&lt;/b&gt;: 2004-01-27&lt;/p&gt;&lt;p&gt;&lt;b&gt;endpoint&lt;/b&gt;: &lt;a href=\&quot;Endpoint-fhir-osiris-example-imagingendpoint-pt-nm.html\&quot;&gt;Endpoint/fhir-osiris-example-imagingendpoint-pt-nm&lt;/a&gt; &amp;quot;['Soft-tissue-Sarcoma/STS_028/01-27-2004-NA-PET CT with registered MR-89511/4.000000-LEGS2DAC-91862/1-036.dcm']&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;numberOfSeries&lt;/b&gt;: 999999&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonReference&lt;/b&gt;: &lt;a href=\&quot;Observation-fhir-osiris-example-analysis-pt-nm.html\&quot;&gt;Observation/fhir-osiris-example-analysis-pt-nm&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: CT PET with registered MR	&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;series&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Imaging Settings&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 3.2700&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: [5.46875, 5.46875]&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 128&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 128&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;a href=\&quot;MedicationAdministration-fhir-osiris-example-injection-pt-nm.html\&quot;&gt;MedicationAdministration/fhir-osiris-example-injection-pt-nm&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Weight and Height at the time of the Serie&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 58&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1.57&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;uid&lt;/b&gt;: 1.3.6.1.4.1.14519.5.2.1.5168.1900.250501927430896548137411991862&lt;/p&gt;&lt;p&gt;&lt;b&gt;number&lt;/b&gt;: 4&lt;/p&gt;&lt;p&gt;&lt;b&gt;modality&lt;/b&gt;: PT (Details: https://dicom.nema.org/medical/dicom code PT = 'PT', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: LEGS_2D_AC PET CT with registered MR&lt;/p&gt;&lt;p&gt;&lt;b&gt;numberOfInstances&lt;/b&gt;: 999999&lt;/p&gt;&lt;p&gt;&lt;b&gt;bodySite&lt;/b&gt;: Extremity (Details: SNOMED CT code 66019005 = 'Extremity', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;started&lt;/b&gt;: 2004-01-27&lt;/p&gt;&lt;h3&gt;Performers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Actor&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Device-fhir-osiris-example-imagingdevice-pt-nm.html\&quot;&gt;Device/fhir-osiris-example-imagingdevice-pt-nm&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Instances&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Uid&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;SopClass&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.3.6.1.4.1.14519.5.2.1.5168.1900.309323295882753345616672095692&lt;/td&gt;&lt;td&gt;Positron Emission Tomography Image Storage (Details: [not stated] code table_B.5-1#1.2.840.10008.5.1.4.1.1.128 = 'table_B.5-1#1.2.840.10008.5.1.4.1.1.128', stated as 'Positron Emission Tomography Image Storage')&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
-  ]; # 
-  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.identifier">fhir:ImagingStudy.identifier</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1.3.6.1.4.1.14519.5.2.1.5168.1900.291490762800233473213844289511&quot; ]
-  ]; # 
-  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.status">fhir:ImagingStudy.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;available&quot;]; # 
-  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.modality">fhir:ImagingStudy.modality</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/umls&quot; ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C0439673&quot; ]
-  ]; # 
-  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.subject">fhir:ImagingStudy.subject</a> [
-     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/STS-028&quot; ]
-  ]; # 
-  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.started">fhir:ImagingStudy.started</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2004-01-27&quot;^^xsd:date]; # 
-  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.endpoint">fhir:ImagingStudy.endpoint</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Endpoint/fhir-osiris-example-imagingendpoint-pt-nm&quot; ]
-  ]; # 
-  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.numberOfSeries">fhir:ImagingStudy.numberOfSeries</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:value</a> &quot;999999&quot;^^xsd:nonNegativeInteger]; # 
-  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.reasonReference">fhir:ImagingStudy.reasonReference</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Observation/fhir-osiris-example-analysis-pt-nm&quot; ]
-  ]; # 
-  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.description">fhir:ImagingStudy.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;CT PET with registered MR	&quot;]; # 
-  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series">fhir:ImagingStudy.series</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.extension">fhir:Element.extension</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">fhir:Element.extension</a> [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;slice_thickness&quot; ];
-         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;3.2700&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
-         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;pixel_spacing&quot; ];
-         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;[5.46875, 5.46875]&quot; ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2;
-         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;rows&quot; ];
-         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueInteger</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:value</a> &quot;128&quot;^^xsd:integer ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3;
-         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;columns&quot; ];
-         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueInteger</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:value</a> &quot;128&quot;^^xsd:integer ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4;
-         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;imaging_injection&quot; ];
-         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueReference</a> [
-           <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;MedicationAdministration/fhir-osiris-example-injection-pt-nm&quot; ]         ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 5;
-         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">fhir:Element.extension</a> [
-           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-           <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;attenuation_correction_method&quot; ];
-           <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;measured,, 0.096000 cm-1&quot; ]         ], [
-           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
-           <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;reconstruction_method&quot; ];
-           <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;OSEM&quot; ]         ], [
-           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2;
-           <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;scatter_correction_method&quot; ];
-           <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Convolution subtraction&quot; ]         ];
-         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;pt_nm_image&quot; ]       ];
-       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://fhir.arkhn.com/osiris/StructureDefinition/imaging-settings&quot; ]     ], [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
-       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">fhir:Element.extension</a> [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;patient_weight&quot; ];
-         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueDecimal</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;58&quot;^^xsd:decimal ]       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
-         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;patient_height&quot; ];
-         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueDecimal</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;1.57&quot;^^xsd:decimal ]       ];
-       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://fhir.arkhn.com/osiris/StructureDefinition/series-weightheigt&quot; ]     ];
-     <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.uid">fhir:ImagingStudy.series.uid</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;1.3.6.1.4.1.14519.5.2.1.5168.1900.250501927430896548137411991862&quot; ];
-     <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.number">fhir:ImagingStudy.series.number</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:value</a> &quot;4&quot;^^xsd:nonNegativeInteger ];
-     <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.modality">fhir:ImagingStudy.series.modality</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://dicom.nema.org/medical/dicom&quot; ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;PT&quot; ]     ];
-     <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.description">fhir:ImagingStudy.series.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;LEGS_2D_AC PET CT with registered MR&quot; ];
-     <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.numberOfInstances">fhir:ImagingStudy.series.numberOfInstances</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:value</a> &quot;999999&quot;^^xsd:nonNegativeInteger ];
-     <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.bodySite">fhir:ImagingStudy.series.bodySite</a> [
-       a sct:66019005;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;66019005&quot; ]     ];
-     <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.started">fhir:ImagingStudy.series.started</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2004-01-27&quot;^^xsd:date ];
-     <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.performer">fhir:ImagingStudy.series.performer</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.performer.actor">fhir:ImagingStudy.series.performer.actor</a> [
-         <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Device/fhir-osiris-example-imagingdevice-pt-nm&quot; ]       ]     ];
-     <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.instance">fhir:ImagingStudy.series.instance</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.instance.uid">fhir:ImagingStudy.series.instance.uid</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;1.3.6.1.4.1.14519.5.2.1.5168.1900.309323295882753345616672095692&quot; ];
-       <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.instance.sopClass">fhir:ImagingStudy.series.instance.sopClass</a> [
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;table_B.5-1#1.2.840.10008.5.1.4.1.1.128&quot; ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Positron Emission Tomography Image Storage&quot; ]       ]     ]
-  ]. # 
-
-# - ontology header ------------------------------------------------------------
-
- a owl:Ontology;
-  owl:imports fhir:fhir.ttl.
+ a fhir:ImagingStudy ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;fhir-osiris-example-imagingstudy-pt-nm&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: ImagingStudy&lt;/b&gt;&lt;a name=\&quot;fhir-osiris-example-imagingstudy-pt-nm\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource ImagingStudy &amp;quot;fhir-osiris-example-imagingstudy-pt-nm&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-onco-imagingstudy.html\&quot;&gt;Imaging Study&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 1.3.6.1.4.1.14519.5.2.1.5168.1900.291490762800233473213844289511&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: available&lt;/p&gt;&lt;p&gt;&lt;b&gt;modality&lt;/b&gt;: C0439673 (Details: http://terminology.hl7.org/CodeSystem/umls code C0439673 = 'C0439673', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-STS-028.html\&quot;&gt;Patient/STS-028&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;started&lt;/b&gt;: 2004-01-27&lt;/p&gt;&lt;p&gt;&lt;b&gt;endpoint&lt;/b&gt;: &lt;a href=\&quot;Endpoint-fhir-osiris-example-imagingendpoint-pt-nm.html\&quot;&gt;Endpoint/fhir-osiris-example-imagingendpoint-pt-nm&lt;/a&gt; &amp;quot;['Soft-tissue-Sarcoma/STS_028/01-27-2004-NA-PET CT with registered MR-89511/4.000000-LEGS2DAC-91862/1-036.dcm']&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;numberOfSeries&lt;/b&gt;: 999999&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonReference&lt;/b&gt;: &lt;a href=\&quot;Observation-fhir-osiris-example-analysis-pt-nm.html\&quot;&gt;Observation/fhir-osiris-example-analysis-pt-nm&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: CT PET with registered MR	&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;series&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Imaging Settings&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;slice_thickness&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 3.2700&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;pixel_spacing&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: [5.46875, 5.46875]&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;rows&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 128&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;columns&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 128&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;imaging_injection&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;a href=\&quot;MedicationAdministration-fhir-osiris-example-injection-pt-nm.html\&quot;&gt;MedicationAdministration/fhir-osiris-example-injection-pt-nm&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;pt_nm_image&lt;/code&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Weight and Height at the time of the Serie&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;patient_weight&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 58&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;patient_height&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1.57&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;uid&lt;/b&gt;: 1.3.6.1.4.1.14519.5.2.1.5168.1900.250501927430896548137411991862&lt;/p&gt;&lt;p&gt;&lt;b&gt;number&lt;/b&gt;: 4&lt;/p&gt;&lt;p&gt;&lt;b&gt;modality&lt;/b&gt;: PT (Details: https://dicom.nema.org/medical/dicom code PT = 'PT', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: LEGS_2D_AC PET CT with registered MR&lt;/p&gt;&lt;p&gt;&lt;b&gt;numberOfInstances&lt;/b&gt;: 999999&lt;/p&gt;&lt;p&gt;&lt;b&gt;bodySite&lt;/b&gt;: Extremity (Details: SNOMED CT code 66019005 = 'Extremity', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;started&lt;/b&gt;: 2004-01-27&lt;/p&gt;&lt;h3&gt;Performers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Actor&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Device-fhir-osiris-example-imagingdevice-pt-nm.html\&quot;&gt;Device/fhir-osiris-example-imagingdevice-pt-nm&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Instances&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Uid&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;SopClass&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.3.6.1.4.1.14519.5.2.1.5168.1900.309323295882753345616672095692&lt;/td&gt;&lt;td&gt;Positron Emission Tomography Image Storage (Details: [not stated] code table_B.5-1#1.2.840.10008.5.1.4.1.1.128 = 'table_B.5-1#1.2.840.10008.5.1.4.1.1.128', stated as 'Positron Emission Tomography Image Storage')&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1.3.6.1.4.1.14519.5.2.1.5168.1900.291490762800233473213844289511&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;available&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.modality">fhir:modality</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/umls&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C0439673&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/STS-028&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.started">fhir:started</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2004-01-27&quot;^^xsd:date] ; # 
+  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.endpoint">fhir:endpoint</a> ( [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Endpoint/fhir-osiris-example-imagingendpoint-pt-nm&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.numberOfSeries">fhir:numberOfSeries</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:v</a> &quot;999999&quot;^^xsd:nonNegativeInteger] ; # 
+  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.reasonReference">fhir:reasonReference</a> ( [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/fhir-osiris-example-analysis-pt-nm&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CT PET with registered MR	&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series">fhir:series</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.extension">fhir:extension</a> [
+      ( <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;slice_thickness&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;3.2700&quot; ]       ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;pixel_spacing&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;[5.46875, 5.46875]&quot; ]       ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;rows&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> &quot;128&quot;^^xsd:integer ]       ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;columns&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> &quot;128&quot;^^xsd:integer ]       ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;imaging_injection&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference">a</a> fhir:Reference ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;MedicationAdministration/fhir-osiris-example-injection-pt-nm&quot; ]         ]       ] [
+        ( <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;attenuation_correction_method&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;measured,, 0.096000 cm-1&quot; ]         ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;reconstruction_method&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;OSEM&quot; ]         ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;scatter_correction_method&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Convolution subtraction&quot; ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;pt_nm_image&quot;^^xsd:anyURI ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-settings&quot;^^xsd:anyURI ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;patient_weight&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:v</a> &quot;58&quot;^^xsd:decimal ]       ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;patient_height&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:v</a> &quot;1.57&quot;^^xsd:decimal ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/series-weightheigt&quot;^^xsd:anyURI ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.uid">fhir:uid</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;1.3.6.1.4.1.14519.5.2.1.5168.1900.250501927430896548137411991862&quot; ] ;
+<a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.number">fhir:number</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:v</a> &quot;4&quot;^^xsd:nonNegativeInteger ] ;
+<a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.modality">fhir:modality</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://dicom.nema.org/medical/dicom&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;PT&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;LEGS_2D_AC PET CT with registered MR&quot; ] ;
+<a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.numberOfInstances">fhir:numberOfInstances</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:v</a> &quot;999999&quot;^^xsd:nonNegativeInteger ] ;
+<a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.bodySite">fhir:bodySite</a> [
+a sct:66019005 ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;66019005&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.started">fhir:started</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2004-01-27&quot;^^xsd:date ] ;
+    ( <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.performer">fhir:performer</a> [
+<a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.performer.actor">fhir:actor</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Device/fhir-osiris-example-imagingdevice-pt-nm&quot; ]       ]     ] ) ;
+    ( <a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.instance">fhir:instance</a> [
+<a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.instance.uid">fhir:uid</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;1.3.6.1.4.1.14519.5.2.1.5168.1900.309323295882753345616672095692&quot; ] ;
+<a href="http://hl7.org/fhir/R4/imagingstudy.html#ImagingStudy.series.instance.sopClass">fhir:sopClass</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;table_B.5-1#1.2.840.10008.5.1.4.1.1.128&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Positron Emission Tomography Image Storage&quot; ]       ]     ] )
+  ] ) . # 
 
 </code></pre>
 
@@ -362,14 +337,14 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 16, 2023 15:52+0100">2023-03-16</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 28, 2023 11:28+0200">2023-03-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-               | <a style="color: #81BEF7" target="_blank" href="http://fhir.arkhn.com/osiris/history.html">Version History  |
+               | <a style="color: #81BEF7" target="_blank" href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Version History  |
                <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 

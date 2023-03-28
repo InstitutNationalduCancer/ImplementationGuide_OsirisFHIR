@@ -3,12 +3,12 @@
 <Procedure xmlns="http://hl7.org/fhir">
   <id value="fhir-osiris-example-RadiotherapyPhase-2"/>
   <meta>
-    <profile value="http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-phase"/>
+    <profile value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase"/>
   </meta>
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Procedure</b><a name="fhir-osiris-example-RadiotherapyPhase-2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Procedure &quot;fhir-osiris-example-RadiotherapyPhase-2&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-radiotherapy-phase.html">Radiotherapy Phase</a></p></div><p><b>Number of Fractions</b>: 4</p><p><b>partOf</b>: <a href="Procedure-fhir-osiris-example-RadiotherapyCourse-1.html">Procedure/fhir-osiris-example-RadiotherapyCourse-1</a></p><p><b>status</b>: completed</p><p><b>category</b>: Planified <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-RadiotherapyCS.html">Radiotherapy Code System</a>#Planned)</span></p><p><b>code</b>: Radiotherapy treatment phase (regime/therapy) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#1222565005)</span></p><p><b>subject</b>: <a href="Patient-L304.html">Patient/L304</a></p><p><b>performed</b>: 2018-11-25 --&gt; 2018-12-25</p></div>
   </text>
-  <extension url="http://fhir.arkhn.com/osiris/StructureDefinition/numberOfFractions">
+  <extension url="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/numberOfFractions">
     <valueUnsignedInt value="4"/>
   </extension>
   <partOf>
@@ -17,7 +17,7 @@
   <status value="completed"/>
   <category>
     <coding>
-      <system value="http://fhir.arkhn.com/osiris/CodeSystem/RadiotherapyCS"/>
+      <system value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/RadiotherapyCS"/>
       <code value="Planned"/>
     </coding>
   </category>

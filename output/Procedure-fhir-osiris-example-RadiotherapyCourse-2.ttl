@@ -6,68 +6,58 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.arkhn.com/osiris/Procedure/fhir-osiris-example-RadiotherapyCourse-2> a fhir:Procedure;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "fhir-osiris-example-RadiotherapyCourse-2"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-course-summary";
-       fhir:index 0;
-       fhir:link <http://fhir.arkhn.com/osiris/StructureDefinition/radiotherapy-course-summary>
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Procedure/fhir-osiris-example-RadiotherapyCourse-2> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir-osiris-example-RadiotherapyCourse-2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-course-summary"^^xsd:anyURI ;
+       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-course-summary>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"fhir-osiris-example-RadiotherapyCourse-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;fhir-osiris-example-RadiotherapyCourse-2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-radiotherapy-course-summary.html\">Radiotherapy course Summary</a></p></div><p><b>Treatment Intent</b>: 373808002 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#373808002)</span></p><p><b>Number of Sessions</b>: 36</p><p><b>basedOn</b>: <a href=\"CarePlan-fhir-osiris-example-treatment-radiotherapy.html\">CarePlan/fhir-osiris-example-treatment-radiotherapy</a></p><p><b>status</b>: completed</p><p><b>category</b>: Delivered <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-RadiotherapyCS.html\">Radiotherapy Code System</a>#Delivered)</span></p><p><b>code</b>: Radiotherapy course of treatment (regime/therapy) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1217123003)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><p><b>performed</b>: 2018-08-15 --&gt; 2018-12-25</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatmentIntent"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:code [ fhir:v "373808002" ]
+       ] )
      ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"fhir-osiris-example-RadiotherapyCourse-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;fhir-osiris-example-RadiotherapyCourse-2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-radiotherapy-course-summary.html\">Radiotherapy course Summary</a></p></div><p><b>Treatment Intent</b>: 373808002 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#373808002)</span></p><p><b>Number of Sessions</b>: 36</p><p><b>basedOn</b>: <a href=\"CarePlan-3.html\">CarePlan/3</a></p><p><b>status</b>: completed</p><p><b>category</b>: Delivered <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-RadiotherapyCS.html\">Radiotherapy Code System</a>#Delivered)</span></p><p><b>code</b>: Radiotherapy course of treatment (regime/therapy) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1217123003)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><p><b>performed</b>: 2018-08-15 --&gt; 2018-12-25</p></div>"
-  ]; # 
-  fhir:DomainResource.extension [
-     fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://fhir.arkhn.com/osiris/StructureDefinition/treatmentIntent" ];
-     fhir:Extension.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.code [ fhir:value "373808002" ]
-       ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:Extension.url [ fhir:value "http://fhir.arkhn.com/osiris/StructureDefinition/numberOfSessions" ];
-     fhir:Extension.valueUnsignedInt [ fhir:value "36"^^xsd:nonNegativeInteger ]
-  ]; # 
-  fhir:Procedure.basedOn [
-     fhir:index 0;
-     fhir:link <http://fhir.arkhn.com/osiris/CarePlan/3>;
-     fhir:Reference.reference [ fhir:value "CarePlan/3" ]
-  ]; # 
-  fhir:Procedure.status [ fhir:value "completed"]; # 
-  fhir:Procedure.category [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://fhir.arkhn.com/osiris/CodeSystem/RadiotherapyCS" ];
-       fhir:Coding.code [ fhir:value "Delivered" ]
-     ]
-  ]; # 
-  fhir:Procedure.code [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a sct:1217123003;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "1217123003" ]
-     ]
-  ]; # 
-  fhir:Procedure.subject [
-     fhir:link <http://fhir.arkhn.com/osiris/Patient/L304>;
-     fhir:Reference.reference [ fhir:value "Patient/L304" ]
-  ]; # 
-  fhir:Procedure.performedPeriod [
-     fhir:Period.start [ fhir:value "2018-08-15"^^xsd:date ];
-     fhir:Period.end [ fhir:value "2018-12-25"^^xsd:date ]
+  ] [
+     fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/numberOfSessions"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "36"^^xsd:nonNegativeInteger ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CarePlan/fhir-osiris-example-treatment-radiotherapy> ;
+     fhir:reference [ fhir:v "CarePlan/fhir-osiris-example-treatment-radiotherapy" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/RadiotherapyCS"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Delivered" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:1217123003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1217123003" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/L304> ;
+     fhir:reference [ fhir:v "Patient/L304" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2018-08-15"^^xsd:date ] ;
+     fhir:end [ fhir:v "2018-12-25"^^xsd:date ]
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://fhir.arkhn.com/osiris/Procedure/fhir-osiris-example-RadiotherapyCourse-2.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 
