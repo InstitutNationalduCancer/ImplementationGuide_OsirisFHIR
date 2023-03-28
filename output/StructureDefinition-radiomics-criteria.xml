@@ -19,7 +19,7 @@
   <name value="RadiomicsCriteria"/>
   <title value="Radiomics Criteria"/>
   <status value="active"/>
-  <date value="2023-03-28T11:43:34+02:00"/>
+  <date value="2023-03-28T12:16:37+02:00"/>
   <publisher value="Arkhn"/>
   <contact>
     <name value="Arkhn"/>
@@ -159,21 +159,21 @@
         <key value="windowsMatrix-if-localizationMethod-local"/>
         <severity value="error"/>
         <human value="If extension[localizationMethod].valueString is LOCAL, then extension[windowMatrix].valuestring MUST be present"/>
-        <expression value="extension.where(url= 'http://https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='localizationMethod').valueString = 'LOCAL'implies&#xA;extension.where(url= 'http://https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='windowMatrix').exists()"/>
+        <expression value="extension.where(url= 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='localizationMethod').valueString = 'LOCAL'implies&#xA;extension.where(url= 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='windowMatrix').exists()"/>
         <source value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria"/>
       </constraint>
       <constraint>
         <key value="bounds-if-discretisationMethod-FBN"/>
         <severity value="error"/>
         <human value="If extension[discretisationMethod].valueString is FBN, then extension[bounds].valueString MUST be present"/>
-        <expression value="extension.where(url= 'http://https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='discretisationMethod').extension.where(url='valueString').valueString = 'FBN' implies&#xA;extension.where(url= 'http://https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='bounds').exists()"/>
+        <expression value="extension.where(url= 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='discretisationMethod').extension.where(url='valueString').valueString = 'FBN' implies&#xA;extension.where(url= 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='bounds').exists()"/>
         <source value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria"/>
       </constraint>
       <constraint>
         <key value="lowestIntensity-if-discretisationMethod-FBS"/>
         <severity value="error"/>
         <human value="If extension[discretisationMethod].valueString is FBS, then extension[lowestIntensity].valueDecimal MUST be present"/>
-        <expression value="extension.where(url= 'http://https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='discretisationMethod').extension.where(url='valueString').valueString = 'FBS' implies&#xA;extension.where(url= 'http://https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='lowestIntensity').exists()"/>
+        <expression value="extension.where(url= 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='discretisationMethod').extension.where(url='valueString').valueString = 'FBS' implies&#xA;extension.where(url= 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='lowestIntensity').exists()"/>
         <source value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria"/>
       </constraint>
       <isModifier value="false"/>
@@ -2311,21 +2311,21 @@
         <key value="windowsMatrix-if-localizationMethod-local"/>
         <severity value="error"/>
         <human value="If extension[localizationMethod].valueString is LOCAL, then extension[windowMatrix].valuestring MUST be present"/>
-        <expression value="extension.where(url= 'http://https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='localizationMethod').valueString = 'LOCAL'implies&#xA;extension.where(url= 'http://https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='windowMatrix').exists()"/>
+        <expression value="extension.where(url= 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='localizationMethod').valueString = 'LOCAL'implies&#xA;extension.where(url= 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='windowMatrix').exists()"/>
         <source value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria"/>
       </constraint>
       <constraint>
         <key value="bounds-if-discretisationMethod-FBN"/>
         <severity value="error"/>
         <human value="If extension[discretisationMethod].valueString is FBN, then extension[bounds].valueString MUST be present"/>
-        <expression value="extension.where(url= 'http://https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='discretisationMethod').extension.where(url='valueString').valueString = 'FBN' implies&#xA;extension.where(url= 'http://https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='bounds').exists()"/>
+        <expression value="extension.where(url= 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='discretisationMethod').extension.where(url='valueString').valueString = 'FBN' implies&#xA;extension.where(url= 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='bounds').exists()"/>
         <source value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria"/>
       </constraint>
       <constraint>
         <key value="lowestIntensity-if-discretisationMethod-FBS"/>
         <severity value="error"/>
         <human value="If extension[discretisationMethod].valueString is FBS, then extension[lowestIntensity].valueDecimal MUST be present"/>
-        <expression value="extension.where(url= 'http://https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='discretisationMethod').extension.where(url='valueString').valueString = 'FBS' implies&#xA;extension.where(url= 'http://https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='lowestIntensity').exists()"/>
+        <expression value="extension.where(url= 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='discretisationMethod').extension.where(url='valueString').valueString = 'FBS' implies&#xA;extension.where(url= 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings').extension.where(url='lowestIntensity').exists()"/>
         <source value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria"/>
       </constraint>
     </element>
