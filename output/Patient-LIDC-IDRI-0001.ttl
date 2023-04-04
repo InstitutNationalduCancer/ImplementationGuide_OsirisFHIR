@@ -1,0 +1,37 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/LIDC-IDRI-0001> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "LIDC-IDRI-0001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"^^xsd:anyURI ;
+       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anonymous Patient</b> unknown, DoB: 1000-01-01</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: <a href=\"Organization-fhir-osiris-provider-organization.html\">Organization/fhir-osiris-provider-organization</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The origin center organization of an Oncology Patient.\"><a href=\"StructureDefinition-origin-center.html\">Patient Origin Center:</a></td><td colspan=\"3\"><ul><li><a href=\"Organization-fhir-osiris-origin-organization.html\">Organization/fhir-osiris-origin-organization</a></li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/origin-center"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Organization/fhir-osiris-origin-organization> ;
+       fhir:reference [ fhir:v "Organization/fhir-osiris-origin-organization" ]
+     ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "unknown"] ; # 
+  fhir:birthDate [ fhir:v "1000-01-01"^^xsd:date] ; # 
+  fhir:managingOrganization [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Organization/fhir-osiris-provider-organization> ;
+     fhir:reference [ fhir:v "Organization/fhir-osiris-provider-organization" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,116 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Parentage> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Parentage"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\"><code>http://terminology.hl7.org/CodeSystem/umls</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C0037047</td><td>Sibling</td></tr><tr><td>C0030551</td><td>Parent</td></tr><tr><td>C0015671</td><td>Father</td></tr><tr><td>C0026591</td><td>Mother</td></tr><tr><td>C3844804</td><td>Paternal cousin</td></tr><tr><td>C3844805</td><td>Maternal cousin</td></tr><tr><td>C3242761</td><td>Maternal grandparent</td></tr><tr><td>C3242764</td><td>Paternal grandparent</td></tr><tr><td>C1273524</td><td>Paternal grandmother</td></tr><tr><td>C1273525</td><td>Maternal grandmother</td></tr><tr><td>C1273523</td><td>Maternal grandfather</td></tr><tr><td>C1273522</td><td>Paternal grandfather</td></tr><tr><td>C0337471</td><td>Grandparent</td></tr><tr><td>C0337577</td><td>Uncle</td></tr><tr><td>C3714276</td><td>Paternal uncle</td></tr><tr><td>C3714277</td><td>Maternal uncle</td></tr><tr><td>C0337576</td><td>Aunt</td></tr><tr><td>C3714274</td><td>Paternal aunt</td></tr><tr><td>C3714275</td><td>Maternal aunt</td></tr><tr><td>C0337580</td><td>Cousin</td></tr><tr><td>C0439673</td><td>Unknown</td></tr></table></li><li>Include these codes as defined in <code>https://github.com/siric-osiris/OSIRIS</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C77-6</td><td>Other</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Parentage"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.1.0"] ; # 
+  fhir:name [ fhir:v "Parentage"] ; # 
+  fhir:title [ fhir:v "Parentage Value Set"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-03-28T12:16:37+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Arkhn"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Arkhn" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://arkhn.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "contact@arkhn.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Nicolas Riss" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "nicolas@arkhn.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Parentage"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/umls"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "C0037047" ] ;
+         fhir:display [ fhir:v "Sibling" ]
+       ] [
+         fhir:code [ fhir:v "C0030551" ] ;
+         fhir:display [ fhir:v "Parent" ]
+       ] [
+         fhir:code [ fhir:v "C0015671" ] ;
+         fhir:display [ fhir:v "Father" ]
+       ] [
+         fhir:code [ fhir:v "C0026591" ] ;
+         fhir:display [ fhir:v "Mother" ]
+       ] [
+         fhir:code [ fhir:v "C3844804" ] ;
+         fhir:display [ fhir:v "Paternal cousin" ]
+       ] [
+         fhir:code [ fhir:v "C3844805" ] ;
+         fhir:display [ fhir:v "Maternal cousin" ]
+       ] [
+         fhir:code [ fhir:v "C3242761" ] ;
+         fhir:display [ fhir:v "Maternal grandparent" ]
+       ] [
+         fhir:code [ fhir:v "C3242764" ] ;
+         fhir:display [ fhir:v "Paternal grandparent" ]
+       ] [
+         fhir:code [ fhir:v "C1273524" ] ;
+         fhir:display [ fhir:v "Paternal grandmother" ]
+       ] [
+         fhir:code [ fhir:v "C1273525" ] ;
+         fhir:display [ fhir:v "Maternal grandmother" ]
+       ] [
+         fhir:code [ fhir:v "C1273523" ] ;
+         fhir:display [ fhir:v "Maternal grandfather" ]
+       ] [
+         fhir:code [ fhir:v "C1273522" ] ;
+         fhir:display [ fhir:v "Paternal grandfather" ]
+       ] [
+         fhir:code [ fhir:v "C0337471" ] ;
+         fhir:display [ fhir:v "Grandparent" ]
+       ] [
+         fhir:code [ fhir:v "C0337577" ] ;
+         fhir:display [ fhir:v "Uncle" ]
+       ] [
+         fhir:code [ fhir:v "C3714276" ] ;
+         fhir:display [ fhir:v "Paternal uncle" ]
+       ] [
+         fhir:code [ fhir:v "C3714277" ] ;
+         fhir:display [ fhir:v "Maternal uncle" ]
+       ] [
+         fhir:code [ fhir:v "C0337576" ] ;
+         fhir:display [ fhir:v "Aunt" ]
+       ] [
+         fhir:code [ fhir:v "C3714274" ] ;
+         fhir:display [ fhir:v "Paternal aunt" ]
+       ] [
+         fhir:code [ fhir:v "C3714275" ] ;
+         fhir:display [ fhir:v "Maternal aunt" ]
+       ] [
+         fhir:code [ fhir:v "C0337580" ] ;
+         fhir:display [ fhir:v "Cousin" ]
+       ] [
+         fhir:code [ fhir:v "C0439673" ] ;
+         fhir:display [ fhir:v "Unknown" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://github.com/siric-osiris/OSIRIS"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "C77-6" ] ;
+         fhir:display [ fhir:v "Other" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

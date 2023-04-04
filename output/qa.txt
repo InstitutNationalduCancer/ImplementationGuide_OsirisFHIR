@@ -1,0 +1,870 @@
+﻿OsirisImplementationGuide : Validation Results
+=========================================
+
+err = 95, warn = 252, info = 110
+IG Publisher Version: 1.3.3
+Generated Tue Mar 28 12:21:44 CEST 2023. FHIR version 4.0.1 for arkhn.fhir.uv.osiris#2.1.0 (canonical = https://build.fhir.org/ig/arkhn/arkhn-ig-osiris)
+ Build Errors : 12 / 5 / 0
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/AdverseEvent-fhir-osiris-example-adverseevent-1 : 1 / 2 / 2
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/BodyStructure-fhir-osiris-example-RadiotherapyVolume-1 : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/BodyStructure-fhir-osiris-example-RadiotherapyVolume-2 : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/BodyStructure-fhir-osiris-example-RadiotherapyVolume-3 : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/BodyStructure-fhir-osiris-example-RadiotherapyVolume-4 : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CarePlan-fhir-osiris-example-treatment-1 : 0 / 1 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CarePlan-fhir-osiris-example-treatment-2 : 0 / 1 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CarePlan-fhir-osiris-example-treatment-radiotherapy : 0 / 1 / 2
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-IBSICS : 2 / 2 / 2
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-OsirisCS : 2 / 2 / 2
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-RadiomicsCS : 2 / 2 / 2
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-RadiotherapyCS : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-SeriesModalityCS : 2 / 2 / 2
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-SnomedCS : 2 / 2 / 2
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-SnomedRequestedCScodex : 4 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-SnomedRequestedCSmcode : 4 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Condition-fhir-osiris-example-TumorPathologyEvent-instance-1 : 0 / 4 / 5
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Condition-fhir-osiris-example-TumorPathologyEvent-instance-2 : 0 / 4 / 5
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Consent-fhir-osiris-example-consent-1 : 1 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Consent-fhir-osiris-example-consent-2 : 1 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Device-fhir-osiris-example-imagingdevice-ct : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Device-fhir-osiris-example-imagingdevice-dx : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Device-fhir-osiris-example-imagingdevice-mr : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Device-fhir-osiris-example-imagingdevice-mr-2 : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Device-fhir-osiris-example-imagingdevice-pt-nm : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Device-fhir-osiris-example-sequencingdevice-1 : 0 / 2 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Device-fhir-osiris-example-sequencingdevice-2 : 0 / 3 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Device-fhir-osiris-example-sequencingdevice-3 : 0 / 3 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Endpoint-fhir-osiris-example-imagingendpoint-ct : 2 / 0 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Endpoint-fhir-osiris-example-imagingendpoint-dx : 2 / 0 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Endpoint-fhir-osiris-example-imagingendpoint-mr : 2 / 0 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Endpoint-fhir-osiris-example-imagingendpoint-mr-2 : 2 / 0 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Endpoint-fhir-osiris-example-imagingendpoint-pt-nm : 2 / 0 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ImagingStudy-fhir-osiris-example-imagingstudy-ct : 1 / 1 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ImagingStudy-fhir-osiris-example-imagingstudy-dx : 0 / 1 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ImagingStudy-fhir-osiris-example-imagingstudy-mri : 0 / 1 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ImagingStudy-fhir-osiris-example-imagingstudy-mri-2 : 0 / 2 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ImagingStudy-fhir-osiris-example-imagingstudy-pt-nm : 0 / 2 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ImplementationGuide-arkhn.fhir.uv.osiris : 14 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Medication-fhir-osiris-example-injection-medication-pt-nm : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/MedicationAdministration-fhir-osiris-example-injection-pt-nm : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/MedicationStatement-fhir-osiris-example-oncomedicalstatement-1 : 2 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Observation-fhir-osiris-example-ROISegmentation : 1 / 6 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Observation-fhir-osiris-example-RadiomicsCriteria : 8 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Observation-fhir-osiris-example-RadiomicsFeature : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Observation-fhir-osiris-example-RadiomicsImageFilter : 2 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Observation-fhir-osiris-example-analysis-clinical : 1 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Observation-fhir-osiris-example-analysis-ct : 1 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Observation-fhir-osiris-example-analysis-dx : 1 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Observation-fhir-osiris-example-analysis-mr : 2 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Observation-fhir-osiris-example-analysis-mr-2 : 2 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Observation-fhir-osiris-example-analysis-pt-nm : 1 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Observation-fhir-osiris-example-biomarker : 0 / 1 / 2
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Observation-fhir-osiris-example-causeofdeath : 0 / 2 / 2
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Observation-fhir-osiris-example-sequencinganalysis-1 : 1 / 2 / 7
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Observation-fhir-osiris-example-sequencinganalysis-2 : 1 / 2 / 7
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Observation-fhir-osiris-example-sequencinganalysis-3 : 1 / 1 / 6
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Observation-fhir-osiris-example-vitalstatus : 0 / 1 / 2
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Organization-fhir-osiris-origin-organization : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Organization-fhir-osiris-provider-organization : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Patient-13 : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Patient-24 : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Patient-L304 : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Patient-LIDC-IDRI-0001 : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Patient-Patient-XRTS-04-22A : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Patient-STS-010 : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Patient-STS-028 : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Procedure-fhir-osiris-example-RadiotherapyCourse-1 : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Procedure-fhir-osiris-example-RadiotherapyCourse-2 : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Procedure-fhir-osiris-example-RadiotherapyPhase-1 : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Procedure-fhir-osiris-example-RadiotherapyPhase-2 : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Procedure-fhir-osiris-example-RadiotherapyPhase-3 : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Procedure-fhir-osiris-example-RadiotherapyPhase-4 : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Procedure-fhir-osiris-example-RadiotherapyPhase-5 : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Procedure-fhir-osiris-example-RadiotherapyPhase-6 : 1 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Procedure-fhir-osiris-example-RadiotherapyPlan-1 : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Procedure-fhir-osiris-example-surgery-1 : 0 / 1 / 2
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Procedure-fhir-osiris-example-surgery-2 : 0 / 1 / 2
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ResearchStudy-fhir-osiris-example-researchstudy : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Specimen-fhir-osiris-example-biologicalsample-1 : 1 / 3 / 4
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/Specimen-fhir-osiris-example-biologicalsample-2 : 1 / 4 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-BasedOnCondition : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-BiologicalSampleOrigin : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-adverse-event-end-date : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-algorithmName : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-analysis : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-annotation-reference : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-basedOn : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-biomarker : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-cause-of-death : 0 / 2 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-clinical-trial : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-clinical-trial-subject : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-copy-number : 2 / 1 / 8
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-data-validation : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-doseToVolume : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-dueTo-tumor-pathology-event : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-energyOrIsotope : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-ethnicity : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-expression : 0 / 1 / 5
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-family-cancer-history : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-fusion : 0 / 1 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-gene-expression-data-type : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-genetic-consent : 1 / 0 / 2
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-genome-entity : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-histologygrade : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-imaging-device : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-imaging-pacs : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-imaging-service : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-imaging-settings : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-laterality : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-modalityAndTechnique : 4 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-molecular-sequence-3-prime : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-molecular-sequence-5-prime : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-numberOfFractions : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-numberOfSessions : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-onco-adverse-event : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-onco-biological-contrast : 2 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-onco-biological-sample : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-onco-imagingstudy : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-onco-imagingstudy-injection : 2 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-onco-medication-statement : 2 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-onco-organization : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-onco-patient : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-onco-surgery : 0 / 0 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-onco-tnm : 0 / 3 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-origin-center : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-performance-status : 0 / 1 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-radiomics-Image-filters : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-radiomics-criteria : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-radiomics-criteria-settings : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-radiomics-features : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-radiomics-image-filters-settings : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-radiotherapy-course-summary : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-radiotherapy-phase : 0 / 2 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-radiotherapy-plan : 2 / 2 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-radiotherapy-volume : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-reasonReplanification : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-related-pathology : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-response-evaluation : 0 / 1 / 3
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-roi-segmentation : 2 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-sequencing-analysis : 0 / 0 / 9
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-sequencing-device : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-series-weightheigt : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-snp : 2 / 1 / 4
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-spanning-pairs : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-split-reads : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-strand-bias : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-treatment : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-treatment-line : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-treatmentIntent : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-treatmentTerminationReason : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-tumor-pathology-event : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-variant-annotation : 2 / 3 / 4
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/StructureDefinition-vital-status : 0 / 0 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-AdverseEventCode : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-AdverseEventGrade : 0 / 4 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-AlgorithmicPloidy : 0 / 4 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-AnalysisType : 0 / 4 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-BiologicalSampleNature : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-BiologicalSampleOrigin : 0 / 4 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-BiomarkerCode : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-CauseOfDeath : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-FusionType : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-GeneExpressionDataType : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-GeneticMaterial : 1 / 4 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-GenomeEntityType : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-Laterality : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-Morphology : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-MutationPrediction : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-OsirisValidationType : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-PanelName : 0 / 4 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-Parentage : 0 / 4 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-Pathogenicity : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-PlatformName : 0 / 4 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-ROIType : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-RadiomicsFeaturesVS : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-ReferenceType : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-ResponseEvaluationStatus : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-StorageTemperature : 0 / 4 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-SurgeryResectionQuality : 0 / 4 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-TNMVersion : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-TechnicalProtocol : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-Topography : 0 / 4 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-TreatmentType : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-TumorPathologyEventType : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-VSBodySite : 0 / 2 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-VSLocalizationMethod : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-VSModality : 0 / 5 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-VitalStatus : 0 / 3 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-codexrt-radiotherapy-reason-for-revision-or-adaptation-vs : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-mcode-radiotherapy-treatment-location-qualifier-vs : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-mcode-radiotherapy-volume-type-vs : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-vs-radiotherapy-category : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-vs-radiotherapy-intent : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/ValueSet-vs-radiotherapy-termination-reason : 0 / 1 / 1
+ /Users/triou/arkhn/arkhn-ig-osiris/input/examples/patient : 0 / 1 / 3
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/patient-synthetic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /Users/triou/arkhn/arkhn-ig-osiris/output/ImagingStudy-fhir-osiris-example-imagingstudy-ct.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 1116: The link 'fhir-osiris-example-analysis-ct-scan' for "fhir-osiris-example-analysis-ct-scan" cannot be resolved
+ERROR: /Users/triou/arkhn/arkhn-ig-osiris/output/Observation-fhir-osiris-example-RadiomicsImageFilter.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 1293: The link 'fhir-osiris-example-imagingstudy' for "fhir-osiris-example-imagingstudy" cannot be resolved
+ERROR: /Users/triou/arkhn/arkhn-ig-osiris/output/Observation-fhir-osiris-example-analysis-mr-2.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 733: The link 'fhir-osiris-example-patient-ct-mr-2' for "fhir-osiris-example-patient-ct-mr-2" cannot be resolved
+ERROR: /Users/triou/arkhn/arkhn-ig-osiris/output/Observation-fhir-osiris-example-analysis-mr.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 729: The link 'fhir-osiris-example-patient-ct-mr' for "fhir-osiris-example-patient-ct-mr" cannot be resolved
+ERROR: /Users/triou/arkhn/arkhn-ig-osiris/output/Procedure-fhir-osiris-example-RadiotherapyPhase-6.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 584: The link 'fhir-osiris-example-RadiotherapyCourse-6' for "fhir-osiris-example-RadiotherapyCourse-6" cannot be resolved
+ERROR: /Users/triou/arkhn/arkhn-ig-osiris/output/index.html#/html/body/div/div/div/div/div/div/object/img at Line 232, column 6: The image source 'patient_metadata.jpg' cannot be resolved
+ERROR: /Users/triou/arkhn/arkhn-ig-osiris/output/index.html#/html/body/div/div/div/div/div/div/object/img at Line 241, column 6: The image source 'tpe.jpg' cannot be resolved
+ERROR: /Users/triou/arkhn/arkhn-ig-osiris/output/index.html#/html/body/div/div/div/div/div/div/object/img at Line 256, column 6: The image source 'treatments.jpg' cannot be resolved
+ERROR: /Users/triou/arkhn/arkhn-ig-osiris/output/index.html#/html/body/div/div/div/div/div/div/object/img at Line 280, column 6: The image source 'sequencing.jpg' cannot be resolved
+ERROR: /Users/triou/arkhn/arkhn-ig-osiris/output/index.html#/html/body/div/div/div/div/div/div/object/img at Line 288, column 6: The image source 'radiotherapie.jpg' cannot be resolved
+ERROR: /Users/triou/arkhn/arkhn-ig-osiris/output/valuesets.html#/html/body/div/div/div/div/div/div/ul/li/p/a at Line 322, column 10: The link 'ValueSet-radiotherapy-intent.html' for "Radiotherapy intent" cannot be resolved
+ERROR: /Users/triou/arkhn/arkhn-ig-osiris/output/valuesets.html#/html/body/div/div/div/div/div/div/ul/li/p/a at Line 334, column 10: The link 'ValueSet-codex-radiotherapy-isotopes.html' for "Radiotherapy Isotopes (from Codex)" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/AdverseEvent-fhir-osiris-example-adverseevent-1.json ==
+WARNING: AdverseEvent/fhir-osiris-example-adverseevent-1: AdverseEvent.event: [Code System URI 'http://terminology.hl7.org/CodeSystem/mdr' is unknown so the code cannot be validated]
+INFORMATION: AdverseEvent/fhir-osiris-example-adverseevent-1: AdverseEvent.event.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/mdr' is unknown so the code cannot be validated
+ERROR: AdverseEvent/fhir-osiris-example-adverseevent-1: AdverseEvent.seriousness: None of the codings provided are in the value set 'Adverse Event Grade Value Set' (https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AdverseEventGrade|2.1.0), and a coding from this value set is required) (codes = null#C0439673)
+WARNING: AdverseEvent/fhir-osiris-example-adverseevent-1: AdverseEvent.seriousness.coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/BodyStructure-fhir-osiris-example-RadiotherapyVolume-1.json ==
+== fsh-generated/resources/BodyStructure-fhir-osiris-example-RadiotherapyVolume-2.json ==
+== fsh-generated/resources/BodyStructure-fhir-osiris-example-RadiotherapyVolume-3.json ==
+== fsh-generated/resources/BodyStructure-fhir-osiris-example-RadiotherapyVolume-4.json ==
+== fsh-generated/resources/CarePlan-fhir-osiris-example-treatment-1.json ==
+INFORMATION: CarePlan/fhir-osiris-example-treatment-1: CarePlan.activity[0]: This element does not match any known slice defined in the profile https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment|2.1.0
+WARNING: CarePlan/fhir-osiris-example-treatment-1: CarePlan.category[0]: [Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated]
+INFORMATION: CarePlan/fhir-osiris-example-treatment-1: CarePlan.category[0].coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+== fsh-generated/resources/CarePlan-fhir-osiris-example-treatment-2.json ==
+INFORMATION: CarePlan/fhir-osiris-example-treatment-2: CarePlan.activity[0]: This element does not match any known slice defined in the profile https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment|2.1.0
+WARNING: CarePlan/fhir-osiris-example-treatment-2: CarePlan.category[0]: [Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated]
+INFORMATION: CarePlan/fhir-osiris-example-treatment-2: CarePlan.category[0].coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+== fsh-generated/resources/CarePlan-fhir-osiris-example-treatment-radiotherapy.json ==
+WARNING: CarePlan/fhir-osiris-example-treatment-radiotherapy: CarePlan.category[0]: [Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated]
+INFORMATION: CarePlan/fhir-osiris-example-treatment-radiotherapy: CarePlan.category[0].coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+== fsh-generated/resources/CodeSystem-IBSICS.json ==
+ERROR: CodeSystem.where(url = 'https://ibsi.readthedocs.io/en/latest/'): Conformance resource /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-IBSICS.json - the canonical URL (https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/IBSICS) does not match the URL (https://ibsi.readthedocs.io/en/latest/)
+INFORMATION: CodeSystem/IBSICS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/IBSICS: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/IBSICS: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+ERROR: /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-IBSICS: URL Mismatch https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/IBSICS vs https://ibsi.readthedocs.io/en/latest/
+== fsh-generated/resources/CodeSystem-OsirisCS.json ==
+ERROR: CodeSystem.where(url = 'https://terminology.arkhn.com/osiris'): Conformance resource /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-OsirisCS.json - the canonical URL (https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/OsirisCS) does not match the URL (https://terminology.arkhn.com/osiris)
+INFORMATION: CodeSystem/OsirisCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/OsirisCS: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/OsirisCS: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+ERROR: /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-OsirisCS: URL Mismatch https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/OsirisCS vs https://terminology.arkhn.com/osiris
+== fsh-generated/resources/CodeSystem-RadiomicsCS.json ==
+ERROR: CodeSystem.where(url = 'https://terminology.arkhn.com/radiomicsCS'): Conformance resource /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-RadiomicsCS.json - the canonical URL (https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/RadiomicsCS) does not match the URL (https://terminology.arkhn.com/radiomicsCS)
+INFORMATION: CodeSystem/RadiomicsCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/RadiomicsCS: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/RadiomicsCS: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+ERROR: /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-RadiomicsCS: URL Mismatch https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/RadiomicsCS vs https://terminology.arkhn.com/radiomicsCS
+== fsh-generated/resources/CodeSystem-RadiotherapyCS.json ==
+WARNING: CodeSystem/RadiotherapyCS: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/RadiotherapyCS: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/RadiotherapyCS: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-SeriesModalityCS.json ==
+ERROR: CodeSystem.where(url = 'https://terminology.arkhn.com/SeriesModalityCS'): Conformance resource /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-SeriesModalityCS.json - the canonical URL (https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/SeriesModalityCS) does not match the URL (https://terminology.arkhn.com/SeriesModalityCS)
+INFORMATION: CodeSystem/SeriesModalityCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/SeriesModalityCS: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/SeriesModalityCS: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+ERROR: /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-SeriesModalityCS: URL Mismatch https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/SeriesModalityCS vs https://terminology.arkhn.com/SeriesModalityCS
+== fsh-generated/resources/CodeSystem-SnomedCS.json ==
+ERROR: CodeSystem.where(url = 'http://snomed.info/sct'): Conformance resource /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-SnomedCS.json - the canonical URL (https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/SnomedCS) does not match the URL (http://snomed.info/sct)
+INFORMATION: CodeSystem/SnomedCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/SnomedCS: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/SnomedCS: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+ERROR: /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-SnomedCS: URL Mismatch https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/SnomedCS vs http://snomed.info/sct
+== fsh-generated/resources/CodeSystem-SnomedRequestedCScodex.json ==
+ERROR: CodeSystem.where(url = 'http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/snomed-requested-cs'): Conformance resource /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-SnomedRequestedCScodex.json - the canonical URL (https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/SnomedRequestedCScodex) does not match the URL (http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/snomed-requested-cs)
+WARNING: CodeSystem/SnomedRequestedCScodex: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/SnomedRequestedCScodex: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/SnomedRequestedCScodex: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
+ERROR: /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-SnomedRequestedCScodex: URL Mismatch https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/SnomedRequestedCScodex vs http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/snomed-requested-cs
+== fsh-generated/resources/CodeSystem-SnomedRequestedCSmcode.json ==
+ERROR: CodeSystem.where(url = 'http://hl7.org/fhir/us/mcode/CodeSystem/snomed-requested-cs'): Conformance resource /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-SnomedRequestedCSmcode.json - the canonical URL (https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/SnomedRequestedCSmcode) does not match the URL (http://hl7.org/fhir/us/mcode/CodeSystem/snomed-requested-cs)
+WARNING: CodeSystem/SnomedRequestedCSmcode: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/SnomedRequestedCSmcode: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/SnomedRequestedCSmcode: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
+ERROR: /Users/triou/arkhn/arkhn-ig-osiris/fsh-generated/resources/CodeSystem-SnomedRequestedCSmcode: URL Mismatch https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/SnomedRequestedCSmcode vs http://hl7.org/fhir/us/mcode/CodeSystem/snomed-requested-cs
+== fsh-generated/resources/Condition-fhir-osiris-example-TumorPathologyEvent-instance-1.json ==
+WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-1: Condition.extension[0].value.ofType(CodeableConcept): [Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated]
+INFORMATION: Condition/fhir-osiris-example-TumorPathologyEvent-instance-1: Condition.extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-1: Condition.code: [Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated]
+INFORMATION: Condition/fhir-osiris-example-TumorPathologyEvent-instance-1: Condition.code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-1: Condition.bodySite[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-1: Condition.stage[0].summary: [Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated]
+INFORMATION: Condition/fhir-osiris-example-TumorPathologyEvent-instance-1: Condition.stage[0].summary.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated
+INFORMATION: Condition/fhir-osiris-example-TumorPathologyEvent-instance-1: Condition.stage[0].type.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+== fsh-generated/resources/Condition-fhir-osiris-example-TumorPathologyEvent-instance-2.json ==
+WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-2: Condition.extension[1].value.ofType(CodeableConcept): [Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated]
+INFORMATION: Condition/fhir-osiris-example-TumorPathologyEvent-instance-2: Condition.extension[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-2: Condition.code: [Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated]
+INFORMATION: Condition/fhir-osiris-example-TumorPathologyEvent-instance-2: Condition.code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-2: Condition.bodySite[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Condition/fhir-osiris-example-TumorPathologyEvent-instance-2: Condition.stage[0].summary: [Unable to determine whether the provided codes are in the value set https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Morphology because the value set or a code system it depends on is not known to the validator, Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated]
+INFORMATION: Condition/fhir-osiris-example-TumorPathologyEvent-instance-2: Condition.stage[0].summary.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated
+INFORMATION: Condition/fhir-osiris-example-TumorPathologyEvent-instance-2: Condition.stage[0].type.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+== fsh-generated/resources/Consent-fhir-osiris-example-consent-1.json ==
+ERROR: Consent/fhir-osiris-example-consent-1: Consent: Rule ppc-1: 'Either a Policy or PolicyRule' Failed
+== fsh-generated/resources/Consent-fhir-osiris-example-consent-2.json ==
+ERROR: Consent/fhir-osiris-example-consent-2: Consent: Rule ppc-1: 'Either a Policy or PolicyRule' Failed
+== fsh-generated/resources/Device-fhir-osiris-example-imagingdevice-ct.json ==
+== fsh-generated/resources/Device-fhir-osiris-example-imagingdevice-dx.json ==
+WARNING: Device/fhir-osiris-example-imagingdevice-dx: Device.deviceName[0].name: value should not start or finish with whitespace 'Revolution XQi ADS_28.2\t'
+== fsh-generated/resources/Device-fhir-osiris-example-imagingdevice-mr.json ==
+== fsh-generated/resources/Device-fhir-osiris-example-imagingdevice-mr-2.json ==
+WARNING: Device/fhir-osiris-example-imagingdevice-mr-2: Device.manufacturer: value should not start or finish with whitespace 'GE MEDICAL SYSTEMS / MIM Software\t'
+== fsh-generated/resources/Device-fhir-osiris-example-imagingdevice-pt-nm.json ==
+== fsh-generated/resources/Device-fhir-osiris-example-sequencingdevice-1.json ==
+WARNING: Device/fhir-osiris-example-sequencingdevice-1: Device.identifier[0].value: Primitive types should not only be whitespace
+WARNING: Device/fhir-osiris-example-sequencingdevice-1: Device.type: [Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated]
+INFORMATION: Device/fhir-osiris-example-sequencingdevice-1: Device.type.coding[0]: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated
+INFORMATION: Device/fhir-osiris-example-sequencingdevice-1: Device.version[0].type.coding[0]: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated
+== fsh-generated/resources/Device-fhir-osiris-example-sequencingdevice-2.json ==
+WARNING: Device/fhir-osiris-example-sequencingdevice-2: Device.identifier[0].value: Primitive types should not only be whitespace
+WARNING: Device/fhir-osiris-example-sequencingdevice-2: Device.type: [Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated]
+INFORMATION: Device/fhir-osiris-example-sequencingdevice-2: Device.type.coding[0]: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated
+INFORMATION: Device/fhir-osiris-example-sequencingdevice-2: Device.version[0].type.coding[0]: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated
+WARNING: Device/fhir-osiris-example-sequencingdevice-2: Device.version[0].type.coding[0]: Unable to check whether code is in value set https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/PanelName: [Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated]
+== fsh-generated/resources/Device-fhir-osiris-example-sequencingdevice-3.json ==
+WARNING: Device/fhir-osiris-example-sequencingdevice-3: Device.identifier[0].value: Primitive types should not only be whitespace
+WARNING: Device/fhir-osiris-example-sequencingdevice-3: Device.type: [Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated]
+INFORMATION: Device/fhir-osiris-example-sequencingdevice-3: Device.type.coding[0]: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated
+INFORMATION: Device/fhir-osiris-example-sequencingdevice-3: Device.version[0].type.coding[0]: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated
+WARNING: Device/fhir-osiris-example-sequencingdevice-3: Device.version[0].type.coding[0]: Unable to check whether code is in value set https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/PanelName: [Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated]
+== fsh-generated/resources/Endpoint-fhir-osiris-example-imagingendpoint-ct.json ==
+INFORMATION: Endpoint/fhir-osiris-example-imagingendpoint-ct: Endpoint.connectionType: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: Endpoint/fhir-osiris-example-imagingendpoint-ct: Endpoint.payloadType[0].coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+ERROR: Endpoint/fhir-osiris-example-imagingendpoint-ct: Endpoint.address: Rule ele-1: 'All FHIR elements must have a @value or children' Failed
+ERROR: Endpoint/fhir-osiris-example-imagingendpoint-ct: Endpoint.address: value cannot be empty
+== fsh-generated/resources/Endpoint-fhir-osiris-example-imagingendpoint-dx.json ==
+INFORMATION: Endpoint/fhir-osiris-example-imagingendpoint-dx: Endpoint.connectionType: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: Endpoint/fhir-osiris-example-imagingendpoint-dx: Endpoint.payloadType[0].coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+ERROR: Endpoint/fhir-osiris-example-imagingendpoint-dx: Endpoint.address: Rule ele-1: 'All FHIR elements must have a @value or children' Failed
+ERROR: Endpoint/fhir-osiris-example-imagingendpoint-dx: Endpoint.address: value cannot be empty
+== fsh-generated/resources/Endpoint-fhir-osiris-example-imagingendpoint-mr.json ==
+INFORMATION: Endpoint/fhir-osiris-example-imagingendpoint-mr: Endpoint.connectionType: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: Endpoint/fhir-osiris-example-imagingendpoint-mr: Endpoint.payloadType[0].coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+ERROR: Endpoint/fhir-osiris-example-imagingendpoint-mr: Endpoint.address: Rule ele-1: 'All FHIR elements must have a @value or children' Failed
+ERROR: Endpoint/fhir-osiris-example-imagingendpoint-mr: Endpoint.address: value cannot be empty
+== fsh-generated/resources/Endpoint-fhir-osiris-example-imagingendpoint-mr-2.json ==
+INFORMATION: Endpoint/fhir-osiris-example-imagingendpoint-mr-2: Endpoint.connectionType: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: Endpoint/fhir-osiris-example-imagingendpoint-mr-2: Endpoint.payloadType[0].coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+ERROR: Endpoint/fhir-osiris-example-imagingendpoint-mr-2: Endpoint.address: Rule ele-1: 'All FHIR elements must have a @value or children' Failed
+ERROR: Endpoint/fhir-osiris-example-imagingendpoint-mr-2: Endpoint.address: value cannot be empty
+== fsh-generated/resources/Endpoint-fhir-osiris-example-imagingendpoint-pt-nm.json ==
+INFORMATION: Endpoint/fhir-osiris-example-imagingendpoint-pt-nm: Endpoint.connectionType: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: Endpoint/fhir-osiris-example-imagingendpoint-pt-nm: Endpoint.payloadType[0].coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+ERROR: Endpoint/fhir-osiris-example-imagingendpoint-pt-nm: Endpoint.address: Rule ele-1: 'All FHIR elements must have a @value or children' Failed
+ERROR: Endpoint/fhir-osiris-example-imagingendpoint-pt-nm: Endpoint.address: value cannot be empty
+== fsh-generated/resources/ImagingStudy-fhir-osiris-example-imagingstudy-ct.json ==
+INFORMATION: ImagingStudy/fhir-osiris-example-imagingstudy-ct: ImagingStudy.modality[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+ERROR: ImagingStudy/fhir-osiris-example-imagingstudy-ct: ImagingStudy.reasonReference[0]: Unable to resolve resource with reference 'fhir-osiris-example-analysis-ct-scan'
+INFORMATION: ImagingStudy/fhir-osiris-example-imagingstudy-ct: ImagingStudy.series[0].modality: Code System URI 'https://dicom.nema.org/medical/dicom' is unknown so the code cannot be validated
+WARNING: ImagingStudy/fhir-osiris-example-imagingstudy-ct: ImagingStudy.series[0].instance[0].sopClass: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/ImagingStudy-fhir-osiris-example-imagingstudy-dx.json ==
+INFORMATION: ImagingStudy/fhir-osiris-example-imagingstudy-dx: ImagingStudy.modality[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: ImagingStudy/fhir-osiris-example-imagingstudy-dx: ImagingStudy.series[0].modality: Code System URI 'https://dicom.nema.org/medical/dicom' is unknown so the code cannot be validated
+WARNING: ImagingStudy/fhir-osiris-example-imagingstudy-dx: ImagingStudy.series[0].instance[0].sopClass: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/ImagingStudy-fhir-osiris-example-imagingstudy-mri.json ==
+INFORMATION: ImagingStudy/fhir-osiris-example-imagingstudy-mri: ImagingStudy.modality[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: ImagingStudy/fhir-osiris-example-imagingstudy-mri: ImagingStudy.series[0].modality: Code System URI 'https://dicom.nema.org/medical/dicom' is unknown so the code cannot be validated
+WARNING: ImagingStudy/fhir-osiris-example-imagingstudy-mri: ImagingStudy.series[0].instance[0].sopClass: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/ImagingStudy-fhir-osiris-example-imagingstudy-mri-2.json ==
+WARNING: ImagingStudy/fhir-osiris-example-imagingstudy-mri-2: ImagingStudy.identifier[0].value: value should not start or finish with whitespace '1.3.6.1.4.1.14519.5.2.1.5168.1900.293144742514571789106915674609\t'
+INFORMATION: ImagingStudy/fhir-osiris-example-imagingstudy-mri-2: ImagingStudy.modality[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: ImagingStudy/fhir-osiris-example-imagingstudy-mri-2: ImagingStudy.series[0].modality: Code System URI 'https://dicom.nema.org/medical/dicom' is unknown so the code cannot be validated
+WARNING: ImagingStudy/fhir-osiris-example-imagingstudy-mri-2: ImagingStudy.series[0].instance[0].sopClass: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/ImagingStudy-fhir-osiris-example-imagingstudy-pt-nm.json ==
+INFORMATION: ImagingStudy/fhir-osiris-example-imagingstudy-pt-nm: ImagingStudy.modality[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+WARNING: ImagingStudy/fhir-osiris-example-imagingstudy-pt-nm: ImagingStudy.description: value should not start or finish with whitespace 'CT PET with registered MR\t'
+INFORMATION: ImagingStudy/fhir-osiris-example-imagingstudy-pt-nm: ImagingStudy.series[0].modality: Code System URI 'https://dicom.nema.org/medical/dicom' is unknown so the code cannot be validated
+WARNING: ImagingStudy/fhir-osiris-example-imagingstudy-pt-nm: ImagingStudy.series[0].instance[0].sopClass: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/ImplementationGuide-arkhn.fhir.uv.osiris.json ==
+ERROR: ImplementationGuide/arkhn.fhir.uv.osiris: ImplementationGuide.definition.resource[9].groupingId: id value 'Radiomics and Radiotherapy' is not valid
+ERROR: ImplementationGuide/arkhn.fhir.uv.osiris: ImplementationGuide.definition.resource[15].groupingId: id value 'Radiomics and Radiotherapy' is not valid
+ERROR: ImplementationGuide/arkhn.fhir.uv.osiris: ImplementationGuide.definition.resource[16].groupingId: id value 'Radiomics and Radiotherapy' is not valid
+ERROR: ImplementationGuide/arkhn.fhir.uv.osiris: ImplementationGuide.definition.resource[17].groupingId: id value 'Radiomics and Radiotherapy' is not valid
+ERROR: ImplementationGuide/arkhn.fhir.uv.osiris: ImplementationGuide.definition.resource[18].groupingId: id value 'Radiomics and Radiotherapy' is not valid
+ERROR: ImplementationGuide/arkhn.fhir.uv.osiris: ImplementationGuide.definition.resource[22].groupingId: id value 'Radiomics and Radiotherapy' is not valid
+ERROR: ImplementationGuide/arkhn.fhir.uv.osiris: ImplementationGuide.definition.resource[28].groupingId: id value 'Radiomics and Radiotherapy' is not valid
+ERROR: ImplementationGuide/arkhn.fhir.uv.osiris: ImplementationGuide.definition.resource[29].groupingId: id value 'Radiomics and Radiotherapy' is not valid
+ERROR: ImplementationGuide/arkhn.fhir.uv.osiris: ImplementationGuide.definition.resource[30].groupingId: id value 'Radiomics and Radiotherapy' is not valid
+ERROR: ImplementationGuide/arkhn.fhir.uv.osiris: ImplementationGuide.definition.resource[31].groupingId: id value 'Radiomics and Radiotherapy' is not valid
+ERROR: ImplementationGuide/arkhn.fhir.uv.osiris: ImplementationGuide.definition.resource[32].groupingId: id value 'Radiomics and Radiotherapy' is not valid
+ERROR: ImplementationGuide/arkhn.fhir.uv.osiris: ImplementationGuide.definition.resource[33].groupingId: id value 'Radiomics and Radiotherapy' is not valid
+ERROR: ImplementationGuide/arkhn.fhir.uv.osiris: ImplementationGuide.definition.resource[34].groupingId: id value 'Radiomics and Radiotherapy' is not valid
+ERROR: ImplementationGuide/arkhn.fhir.uv.osiris: ImplementationGuide.definition.resource[37].groupingId: id value 'Radiomics and Radiotherapy' is not valid
+WARNING: ImplementationGuide/arkhn.fhir.uv.osiris: ImplementationGuide.definition.resource[107].name: value should not start or finish with whitespace ' Bodysite Value Set'
+WARNING: ImplementationGuide/arkhn.fhir.uv.osiris: ImplementationGuide.definition.resource[109].name: value should not start or finish with whitespace ' Modality Value Set'
+WARNING: ImplementationGuide/arkhn.fhir.uv.osiris: ImplementationGuide.definition.resource[111].description: value should not start or finish with whitespace 'RadioTherapy Intent '
+== fsh-generated/resources/Medication-fhir-osiris-example-injection-medication-pt-nm.json ==
+== fsh-generated/resources/MedicationAdministration-fhir-osiris-example-injection-pt-nm.json ==
+WARNING: MedicationAdministration/fhir-osiris-example-injection-pt-nm: MedicationAdministration.effective.ofType(dateTime): The value '1000-01-01' is outside the range of reasonable years - check for data entry error
+== fsh-generated/resources/MedicationStatement-fhir-osiris-example-oncomedicalstatement-1.json ==
+ERROR: MedicationStatement/fhir-osiris-example-oncomedicalstatement-1: MedicationStatement.medication.ofType(CodeableConcept).coding[0]: Unknown Code System 'http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips'
+ERROR: MedicationStatement/fhir-osiris-example-oncomedicalstatement-1: MedicationStatement.medication.ofType(CodeableConcept).coding[0].system: URL value 'http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips' does not resolve
+WARNING: MedicationStatement/fhir-osiris-example-oncomedicalstatement-1: MedicationStatement.medication.ofType(CodeableConcept): ValueSet http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips not found by validator
+== fsh-generated/resources/Observation-fhir-osiris-example-ROISegmentation.json ==
+ERROR: Observation/fhir-osiris-example-ROISegmentation: Observation.text.div: Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')
+WARNING: Observation/fhir-osiris-example-ROISegmentation: Observation.identifier[0].type: No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)
+WARNING: Observation/fhir-osiris-example-ROISegmentation: Observation.identifier[1].type: No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)
+WARNING: Observation/fhir-osiris-example-ROISegmentation: Observation.identifier[2].type: No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)
+WARNING: Observation/fhir-osiris-example-ROISegmentation: Observation.identifier[3].type: No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)
+WARNING: Observation/fhir-osiris-example-ROISegmentation: Observation.identifier[4].type: No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)
+WARNING: Observation/fhir-osiris-example-ROISegmentation: Observation.identifier[5].type: No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)
+== fsh-generated/resources/Observation-fhir-osiris-example-RadiomicsCriteria.json ==
+ERROR: Observation/fhir-osiris-example-RadiomicsCriteria: Observation.extension[0].extension[0].extension[0]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
+ERROR: Observation/fhir-osiris-example-RadiomicsCriteria: Observation.extension[0].extension[1].extension[0]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
+ERROR: Observation/fhir-osiris-example-RadiomicsCriteria: Observation.extension[0].extension[5].extension[0]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
+ERROR: Observation/fhir-osiris-example-RadiomicsCriteria: Observation.extension[0].extension[6].extension[0]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
+ERROR: Observation/fhir-osiris-example-RadiomicsCriteria: Observation.extension[0].extension[7].extension[0]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
+ERROR: Observation/fhir-osiris-example-RadiomicsCriteria: Observation.extension[0].extension[10].extension[0]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
+ERROR: Observation/fhir-osiris-example-RadiomicsCriteria: Observation.extension[0].extension[11].extension[1]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
+ERROR: Observation/fhir-osiris-example-RadiomicsCriteria: Observation.extension[0].extension[12].extension[1]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
+== fsh-generated/resources/Observation-fhir-osiris-example-RadiomicsFeature.json ==
+WARNING: Observation/fhir-osiris-example-RadiomicsFeature: Observation.code.coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Observation-fhir-osiris-example-RadiomicsImageFilter.json ==
+ERROR: Observation/fhir-osiris-example-RadiomicsImageFilter: Observation.extension[0].extension[5].extension[1]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
+ERROR: Observation/fhir-osiris-example-RadiomicsImageFilter: Observation.partOf[0]: Unable to resolve resource with reference 'fhir-osiris-example-imagingstudy'
+== fsh-generated/resources/Observation-fhir-osiris-example-analysis-clinical.json ==
+ERROR: Observation/fhir-osiris-example-analysis-clinical: Observation.code: None of the codings provided are in the value set 'Analysis Types Value Set' (https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AnalysisType|2.1.0), and a coding from this value set is required) (codes = https://terminology.arkhn.com/osiris#C37-3)
+== fsh-generated/resources/Observation-fhir-osiris-example-analysis-ct.json ==
+ERROR: Observation/fhir-osiris-example-analysis-ct: Observation.code: None of the codings provided are in the value set 'Analysis Types Value Set' (https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AnalysisType|2.1.0), and a coding from this value set is required) (codes = https://terminology.arkhn.com/osiris#C37-2)
+== fsh-generated/resources/Observation-fhir-osiris-example-analysis-dx.json ==
+ERROR: Observation/fhir-osiris-example-analysis-dx: Observation.code: None of the codings provided are in the value set 'Analysis Types Value Set' (https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AnalysisType|2.1.0), and a coding from this value set is required) (codes = https://terminology.arkhn.com/osiris#C37-2)
+== fsh-generated/resources/Observation-fhir-osiris-example-analysis-mr.json ==
+ERROR: Observation/fhir-osiris-example-analysis-mr: Observation.code: None of the codings provided are in the value set 'Analysis Types Value Set' (https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AnalysisType|2.1.0), and a coding from this value set is required) (codes = https://terminology.arkhn.com/osiris#C37-2)
+ERROR: Observation/fhir-osiris-example-analysis-mr: Observation.subject: Unable to resolve resource with reference 'fhir-osiris-example-patient-ct-mr'
+== fsh-generated/resources/Observation-fhir-osiris-example-analysis-mr-2.json ==
+ERROR: Observation/fhir-osiris-example-analysis-mr-2: Observation.code: None of the codings provided are in the value set 'Analysis Types Value Set' (https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AnalysisType|2.1.0), and a coding from this value set is required) (codes = https://terminology.arkhn.com/osiris#C37-2)
+ERROR: Observation/fhir-osiris-example-analysis-mr-2: Observation.subject: Unable to resolve resource with reference 'fhir-osiris-example-patient-ct-mr-2'
+== fsh-generated/resources/Observation-fhir-osiris-example-analysis-pt-nm.json ==
+ERROR: Observation/fhir-osiris-example-analysis-pt-nm: Observation.code: None of the codings provided are in the value set 'Analysis Types Value Set' (https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AnalysisType|2.1.0), and a coding from this value set is required) (codes = https://terminology.arkhn.com/osiris#C37-2)
+== fsh-generated/resources/Observation-fhir-osiris-example-biomarker.json ==
+INFORMATION: Observation/fhir-osiris-example-biomarker: Observation.value.ofType(string): This element does not match any known slice defined in the profile https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/biomarker|2.1.0
+WARNING: Observation/fhir-osiris-example-biomarker: Observation.code.coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Observation-fhir-osiris-example-causeofdeath.json ==
+WARNING: Observation/fhir-osiris-example-causeofdeath: Observation.code.coding[0]: The display "Cause of death" is not a valid display for the code {http://loinc.org}69453-9 - should be one of ['Cause of death [US Standard Certificate of Death]', ''] (from http://tx.fhir.org/r4) for 'http://loinc.org#69453-9'
+WARNING: Observation/fhir-osiris-example-causeofdeath: Observation.value.ofType(CodeableConcept): [Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated]
+INFORMATION: Observation/fhir-osiris-example-causeofdeath: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-fhir-osiris-example-sequencinganalysis-1.json ==
+ERROR: Observation/fhir-osiris-example-sequencinganalysis-1: Observation.code: None of the codings provided are in the value set 'Analysis Types Value Set' (https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AnalysisType|2.1.0), and a coding from this value set is required) (codes = https://terminology.arkhn.com/osiris#C37-3)
+WARNING: Observation/fhir-osiris-example-sequencinganalysis-1: Observation.method: [Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated]
+INFORMATION: Observation/fhir-osiris-example-sequencinganalysis-1: Observation.method.coding[0]: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated
+INFORMATION: Observation/fhir-osiris-example-sequencinganalysis-1: Observation.component[0].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: Observation/fhir-osiris-example-sequencinganalysis-1: Observation.component[1].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: Observation/fhir-osiris-example-sequencinganalysis-1: Observation.component[2].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: Observation/fhir-osiris-example-sequencinganalysis-1: Observation.component[3].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+WARNING: Observation/fhir-osiris-example-sequencinganalysis-1: Observation.component[3].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AlgorithmicPloidy because the value set or a code system it depends on is not known to the validator, Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated]
+INFORMATION: Observation/fhir-osiris-example-sequencinganalysis-1: Observation.component[3].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-fhir-osiris-example-sequencinganalysis-2.json ==
+ERROR: Observation/fhir-osiris-example-sequencinganalysis-2: Observation.code: None of the codings provided are in the value set 'Analysis Types Value Set' (https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AnalysisType|2.1.0), and a coding from this value set is required) (codes = https://terminology.arkhn.com/osiris#C37-3)
+WARNING: Observation/fhir-osiris-example-sequencinganalysis-2: Observation.method: [Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated]
+INFORMATION: Observation/fhir-osiris-example-sequencinganalysis-2: Observation.method.coding[0]: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated
+INFORMATION: Observation/fhir-osiris-example-sequencinganalysis-2: Observation.component[0].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: Observation/fhir-osiris-example-sequencinganalysis-2: Observation.component[1].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: Observation/fhir-osiris-example-sequencinganalysis-2: Observation.component[2].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: Observation/fhir-osiris-example-sequencinganalysis-2: Observation.component[3].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+WARNING: Observation/fhir-osiris-example-sequencinganalysis-2: Observation.component[3].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AlgorithmicPloidy because the value set or a code system it depends on is not known to the validator, Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated]
+INFORMATION: Observation/fhir-osiris-example-sequencinganalysis-2: Observation.component[3].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-fhir-osiris-example-sequencinganalysis-3.json ==
+ERROR: Observation/fhir-osiris-example-sequencinganalysis-3: Observation.code: None of the codings provided are in the value set 'Analysis Types Value Set' (https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AnalysisType|2.1.0), and a coding from this value set is required) (codes = https://terminology.arkhn.com/osiris#C37-3)
+WARNING: Observation/fhir-osiris-example-sequencinganalysis-3: Observation.method: [Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated]
+INFORMATION: Observation/fhir-osiris-example-sequencinganalysis-3: Observation.method.coding[0]: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated
+INFORMATION: Observation/fhir-osiris-example-sequencinganalysis-3: Observation.component[0].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: Observation/fhir-osiris-example-sequencinganalysis-3: Observation.component[1].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: Observation/fhir-osiris-example-sequencinganalysis-3: Observation.component[3].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: Observation/fhir-osiris-example-sequencinganalysis-3: Observation.component[4].code.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-fhir-osiris-example-vitalstatus.json ==
+WARNING: Observation/fhir-osiris-example-vitalstatus: Observation.value.ofType(CodeableConcept): [Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated]
+INFORMATION: Observation/fhir-osiris-example-vitalstatus: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+== fsh-generated/resources/Organization-fhir-osiris-origin-organization.json ==
+== fsh-generated/resources/Organization-fhir-osiris-provider-organization.json ==
+== fsh-generated/resources/Patient-13.json ==
+WARNING: Patient/13: Patient.birthDate: The value '1000-01-01' is outside the range of reasonable years - check for data entry error
+== fsh-generated/resources/Patient-24.json ==
+WARNING: Patient/24: Patient.birthDate: The value '1000-01-01' is outside the range of reasonable years - check for data entry error
+== fsh-generated/resources/Patient-L304.json ==
+== fsh-generated/resources/Patient-LIDC-IDRI-0001.json ==
+WARNING: Patient/LIDC-IDRI-0001: Patient.birthDate: The value '1000-01-01' is outside the range of reasonable years - check for data entry error
+== fsh-generated/resources/Patient-Patient-XRTS-04-22A.json ==
+WARNING: Patient/Patient-XRTS-04-22A: Patient.birthDate: The value '1000-01-01' is outside the range of reasonable years - check for data entry error
+== fsh-generated/resources/Patient-STS-010.json ==
+WARNING: Patient/STS-010: Patient.birthDate: The value '1000-01-01' is outside the range of reasonable years - check for data entry error
+== fsh-generated/resources/Patient-STS-028.json ==
+WARNING: Patient/STS-028: Patient.birthDate: The value '1000-01-01' is outside the range of reasonable years - check for data entry error
+== fsh-generated/resources/Procedure-fhir-osiris-example-RadiotherapyCourse-1.json ==
+WARNING: Procedure/fhir-osiris-example-RadiotherapyCourse-1: Procedure.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Procedure-fhir-osiris-example-RadiotherapyCourse-2.json ==
+WARNING: Procedure/fhir-osiris-example-RadiotherapyCourse-2: Procedure.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Procedure-fhir-osiris-example-RadiotherapyPhase-1.json ==
+== fsh-generated/resources/Procedure-fhir-osiris-example-RadiotherapyPhase-2.json ==
+== fsh-generated/resources/Procedure-fhir-osiris-example-RadiotherapyPhase-3.json ==
+== fsh-generated/resources/Procedure-fhir-osiris-example-RadiotherapyPhase-4.json ==
+== fsh-generated/resources/Procedure-fhir-osiris-example-RadiotherapyPhase-5.json ==
+== fsh-generated/resources/Procedure-fhir-osiris-example-RadiotherapyPhase-6.json ==
+ERROR: Procedure/fhir-osiris-example-RadiotherapyPhase-6: Procedure.partOf[0]: Unable to resolve resource with reference 'fhir-osiris-example-RadiotherapyCourse-6'
+== fsh-generated/resources/Procedure-fhir-osiris-example-RadiotherapyPlan-1.json ==
+WARNING: Procedure/fhir-osiris-example-RadiotherapyPlan-1: Procedure.extension[4].extension[0].value.ofType(CodeableConcept): ValueSet http://hl7.org/fhir/us/mcode/ValueSet/mcode-radiotherapy-modality-vs not found by validator
+WARNING: Procedure/fhir-osiris-example-RadiotherapyPlan-1: Procedure.extension[4].extension[1].value.ofType(CodeableConcept): ValueSet http://hl7.org/fhir/us/mcode/ValueSet/mcode-teleradiotherapy-photon-beam-technique-vs not found by validator
+WARNING: Procedure/fhir-osiris-example-RadiotherapyPlan-1: Procedure.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Procedure-fhir-osiris-example-surgery-1.json ==
+WARNING: Procedure/fhir-osiris-example-surgery-1: Procedure.outcome: [Code System URI 'https://recist.eortc.org' is unknown so the code cannot be validated]
+INFORMATION: Procedure/fhir-osiris-example-surgery-1: Procedure.outcome.coding[0]: Code System URI 'https://recist.eortc.org' is unknown so the code cannot be validated
+== fsh-generated/resources/Procedure-fhir-osiris-example-surgery-2.json ==
+WARNING: Procedure/fhir-osiris-example-surgery-2: Procedure.outcome: [Code System URI 'https://recist.eortc.org' is unknown so the code cannot be validated]
+INFORMATION: Procedure/fhir-osiris-example-surgery-2: Procedure.outcome.coding[0]: Code System URI 'https://recist.eortc.org' is unknown so the code cannot be validated
+== fsh-generated/resources/ResearchStudy-fhir-osiris-example-researchstudy.json ==
+== fsh-generated/resources/Specimen-fhir-osiris-example-biologicalsample-1.json ==
+WARNING: Specimen/fhir-osiris-example-biologicalsample-1: Specimen.type: [Unable to determine whether the provided codes are in the value set https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/BiologicalSampleNature because the value set or a code system it depends on is not known to the validator, Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated]
+INFORMATION: Specimen/fhir-osiris-example-biologicalsample-1: Specimen.type.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+WARNING: Specimen/fhir-osiris-example-biologicalsample-1: Specimen.collection.quantity: A code with no system has no defined meaning. A system should be provided
+ERROR: Specimen/fhir-osiris-example-biologicalsample-1: Specimen.collection.quantity: Rule qty-3: 'If a code for the unit is present, the system SHALL also be present' Failed
+WARNING: Specimen/fhir-osiris-example-biologicalsample-1: Specimen.collection.bodySite: [Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated]
+INFORMATION: Specimen/fhir-osiris-example-biologicalsample-1: Specimen.collection.bodySite.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated
+INFORMATION: Specimen/fhir-osiris-example-biologicalsample-1: Specimen.condition[0].coding[0]: Code System URI 'https://learning.iarc.fr/biobanking/all-resources/sample-and-data-management/miabis' is unknown so the code cannot be validated
+== fsh-generated/resources/Specimen-fhir-osiris-example-biologicalsample-2.json ==
+WARNING: Specimen/fhir-osiris-example-biologicalsample-2: Specimen.type: [Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated]
+INFORMATION: Specimen/fhir-osiris-example-biologicalsample-2: Specimen.type.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+WARNING: Specimen/fhir-osiris-example-biologicalsample-2: Specimen.collection.quantity: A code with no system has no defined meaning. A system should be provided
+ERROR: Specimen/fhir-osiris-example-biologicalsample-2: Specimen.collection.quantity: Rule qty-3: 'If a code for the unit is present, the system SHALL also be present' Failed
+WARNING: Specimen/fhir-osiris-example-biologicalsample-2: Specimen.collection.bodySite: [Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated]
+INFORMATION: Specimen/fhir-osiris-example-biologicalsample-2: Specimen.collection.bodySite.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated
+WARNING: Specimen/fhir-osiris-example-biologicalsample-2: Specimen.condition[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/StructureDefinition-BasedOnCondition.json ==
+== fsh-generated/resources/StructureDefinition-BiologicalSampleOrigin.json ==
+== fsh-generated/resources/StructureDefinition-adverse-event-end-date.json ==
+== fsh-generated/resources/StructureDefinition-algorithmName.json ==
+== fsh-generated/resources/StructureDefinition-analysis.json ==
+== fsh-generated/resources/StructureDefinition-annotation-reference.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/annotation-reference'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-basedOn.json ==
+== fsh-generated/resources/StructureDefinition-biomarker.json ==
+== fsh-generated/resources/StructureDefinition-cause-of-death.json ==
+WARNING: StructureDefinition/cause-of-death: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: The display "Cause of death" is not a valid display for the code {http://loinc.org}69453-9 - should be one of ['Cause of death [US Standard Certificate of Death]', ''] (from http://tx.fhir.org/r4) for 'http://loinc.org#69453-9'
+WARNING: StructureDefinition/cause-of-death: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0]: The display "Cause of death" is not a valid display for the code {http://loinc.org}69453-9 - should be one of ['Cause of death [US Standard Certificate of Death]', ''] (from http://tx.fhir.org/r4) for 'http://loinc.org#69453-9'
+== fsh-generated/resources/StructureDefinition-clinical-trial.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/clinical-trial'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-clinical-trial-subject.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/clinical-trial-subject'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-copy-number.json ==
+INFORMATION: StructureDefinition/copy-number: StructureDefinition.snapshot.element[357].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/copy-number: StructureDefinition.snapshot.element[377].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/copy-number: StructureDefinition.snapshot.element[387].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/copy-number: StructureDefinition.differential.element[21].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/copy-number: StructureDefinition.differential.element[29].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/copy-number: StructureDefinition.differential.element[33].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/copy-number: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+ERROR: StructureDefinition/copy-number: StructureDefinition.snapshot.element[219].type[0].profile[0]: Profile http://hl7.org/fhir/StructureDefinition/Count is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Count|4.0.1], but the Observation.component.value[x] element has type Quantity
+ERROR: StructureDefinition/copy-number: StructureDefinition.snapshot.element[268].type[0].profile[0]: Profile http://hl7.org/fhir/StructureDefinition/Count is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Count|4.0.1], but the Observation.component.value[x] element has type Quantity
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/copy-number'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-data-validation.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/data-validation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-doseToVolume.json ==
+== fsh-generated/resources/StructureDefinition-dueTo-tumor-pathology-event.json ==
+== fsh-generated/resources/StructureDefinition-energyOrIsotope.json ==
+== fsh-generated/resources/StructureDefinition-ethnicity.json ==
+== fsh-generated/resources/StructureDefinition-expression.json ==
+INFORMATION: StructureDefinition/expression: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/expression: StructureDefinition.snapshot.element[66].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/expression: StructureDefinition.differential.element[3].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/expression: StructureDefinition.differential.element[13].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/expression'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-family-cancer-history.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/family-cancer-history'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-fusion.json ==
+INFORMATION: StructureDefinition/fusion: StructureDefinition.snapshot.element[78].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/fusion: StructureDefinition.differential.element[17].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/fusion'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-gene-expression-data-type.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/gene-expression-data-type'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-genetic-consent.json ==
+ERROR: StructureDefinition/genetic-consent: StructureDefinition.snapshot.element[9].example[0].value.ofType(Identifier): if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
+INFORMATION: StructureDefinition/genetic-consent: StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+== fsh-generated/resources/StructureDefinition-genome-entity.json ==
+WARNING: Genome Entity.MolecularSequence.type: Binding https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeEntityType could not be expanded
+WARNING: StructureDefinition/genome-entity: StructureDefinition: Binding https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeEntityType could not be expanded
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genome-entity'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-histologygrade.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/histologygrade'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-imaging-device.json ==
+== fsh-generated/resources/StructureDefinition-imaging-pacs.json ==
+== fsh-generated/resources/StructureDefinition-imaging-service.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-service'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-imaging-settings.json ==
+== fsh-generated/resources/StructureDefinition-laterality.json ==
+== fsh-generated/resources/StructureDefinition-modalityAndTechnique.json ==
+ERROR: StructureDefinition/modalityAndTechnique: StructureDefinition.snapshot.element[8].binding.valueSet: Canonical URL 'http://hl7.org/fhir/us/mcode/ValueSet/mcode-radiotherapy-modality-vs' does not resolve
+ERROR: StructureDefinition/modalityAndTechnique: StructureDefinition.snapshot.element[14].binding.valueSet: Canonical URL 'http://hl7.org/fhir/us/mcode/ValueSet/mcode-teleradiotherapy-photon-beam-technique-vs' does not resolve
+ERROR: StructureDefinition/modalityAndTechnique: StructureDefinition.differential.element[6].binding.valueSet: Canonical URL 'http://hl7.org/fhir/us/mcode/ValueSet/mcode-radiotherapy-modality-vs' does not resolve
+ERROR: StructureDefinition/modalityAndTechnique: StructureDefinition.differential.element[11].binding.valueSet: Canonical URL 'http://hl7.org/fhir/us/mcode/ValueSet/mcode-teleradiotherapy-photon-beam-technique-vs' does not resolve
+== fsh-generated/resources/StructureDefinition-molecular-sequence-3-prime.json ==
+WARNING: 3 Prime Molecular Sequence.MolecularSequence.type: Binding https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeEntityType could not be expanded
+WARNING: StructureDefinition/molecular-sequence-3-prime: StructureDefinition: Binding https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeEntityType could not be expanded
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/molecular-sequence-3-prime'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-molecular-sequence-5-prime.json ==
+WARNING: 5 Prime Molecular Sequence.MolecularSequence.type: Binding https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeEntityType could not be expanded
+WARNING: StructureDefinition/molecular-sequence-5-prime: StructureDefinition: Binding https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeEntityType could not be expanded
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/molecular-sequence-5-prime'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-numberOfFractions.json ==
+== fsh-generated/resources/StructureDefinition-numberOfSessions.json ==
+== fsh-generated/resources/StructureDefinition-onco-adverse-event.json ==
+== fsh-generated/resources/StructureDefinition-onco-biological-contrast.json ==
+ERROR: StructureDefinition/onco-biological-contrast: StructureDefinition.mapping[4].uri: URI values cannot have whitespace('Imaging Study Contrast')
+ERROR: StructureDefinition/onco-biological-contrast: StructureDefinition.mapping[5].uri: URI values cannot have whitespace('Imaging Study Injection')
+== fsh-generated/resources/StructureDefinition-onco-biological-sample.json ==
+== fsh-generated/resources/StructureDefinition-onco-imagingstudy.json ==
+== fsh-generated/resources/StructureDefinition-onco-imagingstudy-injection.json ==
+ERROR: StructureDefinition/onco-imagingstudy-injection: StructureDefinition.mapping[5].uri: URI values cannot have whitespace('Imaging Study Injection')
+ERROR: StructureDefinition/onco-imagingstudy-injection: StructureDefinition.mapping[6].uri: URI values cannot have whitespace('Imaging Study Injection')
+== fsh-generated/resources/StructureDefinition-onco-medication-statement.json ==
+ERROR: StructureDefinition/onco-medication-statement: StructureDefinition.snapshot.element[15].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips' does not resolve
+ERROR: StructureDefinition/onco-medication-statement: StructureDefinition.differential.element[2].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips' does not resolve
+== fsh-generated/resources/StructureDefinition-onco-organization.json ==
+== fsh-generated/resources/StructureDefinition-onco-patient.json ==
+== fsh-generated/resources/StructureDefinition-onco-surgery.json ==
+INFORMATION: StructureDefinition/onco-surgery: StructureDefinition.snapshot.element[21].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/onco-surgery: StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+== fsh-generated/resources/StructureDefinition-onco-tnm.json ==
+INFORMATION: StructureDefinition/onco-tnm: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+WARNING: StructureDefinition/onco-tnm: StructureDefinition.snapshot.element[84].pattern.ofType(CodeableConcept).coding[0]: The display "TNM clinical staging" is not a valid display for the code {http://loinc.org}75620-5 - should be one of ['TNM clinical staging before treatment panel Cancer', 'TNM clinical staging Pnl Cancer', '', '不明癌' (zh-CN), '不明癌症' (zh-CN), '未作说明的癌' (zh-CN), '未作说明的癌症' (zh-CN), '癌.不明' (zh-CN), '癌.未作说明的' (zh-CN), '癌症.XXX' (zh-CN), '癌症.不明' (zh-CN), '癌症.未作说明的' (zh-CN), '此处未作说明的癌 不明的' (zh-CN), '其他' (zh-CN), '将在相应消息内其他部分之中加以详细说明' (zh-CN), '未作详细说明的' (zh-CN), '未作说明的' (zh-CN), '未做说明的标本' (zh-CN), '未加规定的' (zh-CN), '未加说明的标本' (zh-CN), '杂项 分级' (zh-CN), '阶段划分' (zh-CN), '等级划分 医嘱套餐 医嘱套餐类 医嘱套餐组 医嘱组 医嘱组合 医嘱组合类 医嘱组套 医嘱组套类 医嘱组类 国际 TNM 分期法 多重' (zh-CN), '多重型' (zh-CN), '多重标尺类型' (zh-CN), '多重精度类型 套餐 套餐医嘱 套餐医嘱组 套餐医嘱组类 实验室医嘱套餐 实验室医嘱套餐类 实验室医嘱组 实验室医嘱组合类 实验室医嘱组套 实验室医嘱组套类 实验室套餐医嘱组 实验室套餐医嘱组类 实验室检验项目医嘱组合类 实验室检验项目组合类 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 检验医嘱组合类 检验项目医嘱组合类 检验项目组合类 治疗前（治疗之前、处理前、处理之前、医治前、医治之前） TNM 临床分期组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目） 癌 组 组合 组合医嘱 组合类 组套 组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目）.肿瘤学' (zh-CN), '肿瘤学组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目）' (zh-CN), '肿瘤学组套 肿瘤, 淋巴结, 转移 肿瘤, 淋巴结, 转移（Tumor, node, metastasis，TNM）' (zh-CN), 'Cancro XXX Neoplasia maligna Panel di Oncologia Panel TNM stadazione clinica prima del trattamento Punto nel tempo (episodio)' (it-IT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#75620-5'
+INFORMATION: StructureDefinition/onco-tnm: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+WARNING: StructureDefinition/onco-tnm: StructureDefinition.differential.element[18].pattern.ofType(CodeableConcept).coding[0]: The display "TNM clinical staging" is not a valid display for the code {http://loinc.org}75620-5 - should be one of ['TNM clinical staging before treatment panel Cancer', 'TNM clinical staging Pnl Cancer', '', '不明癌' (zh-CN), '不明癌症' (zh-CN), '未作说明的癌' (zh-CN), '未作说明的癌症' (zh-CN), '癌.不明' (zh-CN), '癌.未作说明的' (zh-CN), '癌症.XXX' (zh-CN), '癌症.不明' (zh-CN), '癌症.未作说明的' (zh-CN), '此处未作说明的癌 不明的' (zh-CN), '其他' (zh-CN), '将在相应消息内其他部分之中加以详细说明' (zh-CN), '未作详细说明的' (zh-CN), '未作说明的' (zh-CN), '未做说明的标本' (zh-CN), '未加规定的' (zh-CN), '未加说明的标本' (zh-CN), '杂项 分级' (zh-CN), '阶段划分' (zh-CN), '等级划分 医嘱套餐 医嘱套餐类 医嘱套餐组 医嘱组 医嘱组合 医嘱组合类 医嘱组套 医嘱组套类 医嘱组类 国际 TNM 分期法 多重' (zh-CN), '多重型' (zh-CN), '多重标尺类型' (zh-CN), '多重精度类型 套餐 套餐医嘱 套餐医嘱组 套餐医嘱组类 实验室医嘱套餐 实验室医嘱套餐类 实验室医嘱组 实验室医嘱组合类 实验室医嘱组套 实验室医嘱组套类 实验室套餐医嘱组 实验室套餐医嘱组类 实验室检验项目医嘱组合类 实验室检验项目组合类 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 检验医嘱组合类 检验项目医嘱组合类 检验项目组合类 治疗前（治疗之前、处理前、处理之前、医治前、医治之前） TNM 临床分期组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目） 癌 组 组合 组合医嘱 组合类 组套 组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目）.肿瘤学' (zh-CN), '肿瘤学组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目）' (zh-CN), '肿瘤学组套 肿瘤, 淋巴结, 转移 肿瘤, 淋巴结, 转移（Tumor, node, metastasis，TNM）' (zh-CN), 'Cancro XXX Neoplasia maligna Panel di Oncologia Panel TNM stadazione clinica prima del trattamento Punto nel tempo (episodio)' (it-IT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#75620-5'
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-tnm'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-origin-center.json ==
+== fsh-generated/resources/StructureDefinition-performance-status.json ==
+INFORMATION: StructureDefinition/performance-status: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/performance-status: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/performance-status'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-radiomics-Image-filters.json ==
+== fsh-generated/resources/StructureDefinition-radiomics-criteria.json ==
+== fsh-generated/resources/StructureDefinition-radiomics-criteria-settings.json ==
+== fsh-generated/resources/StructureDefinition-radiomics-features.json ==
+== fsh-generated/resources/StructureDefinition-radiomics-image-filters-settings.json ==
+== fsh-generated/resources/StructureDefinition-radiotherapy-course-summary.json ==
+== fsh-generated/resources/StructureDefinition-radiotherapy-phase.json ==
+WARNING: StructureDefinition/radiotherapy-phase: StructureDefinition.differential.element[3].mapping[0].map: value should not start or finish with whitespace 'OSIRIS_pivot_PhaseRT.CourseRT_Ref\t'
+WARNING: StructureDefinition/radiotherapy-phase: StructureDefinition.differential.element[8].mapping[0].map: value should not start or finish with whitespace 'OSIRIS_pivot_PhaseRT.Patient_Id\t'
+== fsh-generated/resources/StructureDefinition-radiotherapy-plan.json ==
+ERROR: StructureDefinition/radiotherapy-plan: StructureDefinition.snapshot.element[66].binding.valueSet: Canonical URL 'http://hl7.org/fhir/us/mcode/ValueSet/mcode-radiotherapy-modality-vs' does not resolve
+ERROR: StructureDefinition/radiotherapy-plan: StructureDefinition.snapshot.element[72].binding.valueSet: Canonical URL 'http://hl7.org/fhir/us/mcode/ValueSet/mcode-teleradiotherapy-photon-beam-technique-vs' does not resolve
+WARNING: StructureDefinition/radiotherapy-plan: StructureDefinition.snapshot.element[104].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: StructureDefinition/radiotherapy-plan: StructureDefinition.differential.element[22].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/StructureDefinition-radiotherapy-volume.json ==
+== fsh-generated/resources/StructureDefinition-reasonReplanification.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/reasonReplanification'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-related-pathology.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/related-pathology'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-response-evaluation.json ==
+INFORMATION: StructureDefinition/response-evaluation: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/response-evaluation: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/response-evaluation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-roi-segmentation.json ==
+ERROR: StructureDefinition/roi-segmentation: StructureDefinition.mapping[6].uri: URI values cannot have whitespace('ROI segmentation')
+ERROR: StructureDefinition/roi-segmentation: StructureDefinition.mapping[7].uri: URI values cannot have whitespace('ROI segmentation')
+== fsh-generated/resources/StructureDefinition-sequencing-analysis.json ==
+INFORMATION: StructureDefinition/sequencing-analysis: StructureDefinition.snapshot.element[59].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/sequencing-analysis: StructureDefinition.snapshot.element[68].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/sequencing-analysis: StructureDefinition.snapshot.element[86].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/sequencing-analysis: StructureDefinition.snapshot.element[95].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/sequencing-analysis: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/sequencing-analysis: StructureDefinition.differential.element[14].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/sequencing-analysis: StructureDefinition.differential.element[20].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/sequencing-analysis: StructureDefinition.differential.element[23].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+== fsh-generated/resources/StructureDefinition-sequencing-device.json ==
+== fsh-generated/resources/StructureDefinition-series-weightheigt.json ==
+== fsh-generated/resources/StructureDefinition-snp.json ==
+INFORMATION: StructureDefinition/snp: StructureDefinition.snapshot.element[363].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/snp: StructureDefinition.differential.element[31].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/snp: StructureDefinition.snapshot.element[21].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+ERROR: StructureDefinition/snp: StructureDefinition.snapshot.element[225].type[0].profile[0]: Profile http://hl7.org/fhir/StructureDefinition/Count is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Count|4.0.1], but the Observation.component.value[x] element has type Quantity
+ERROR: StructureDefinition/snp: StructureDefinition.snapshot.element[274].type[0].profile[0]: Profile http://hl7.org/fhir/StructureDefinition/Count is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Count|4.0.1], but the Observation.component.value[x] element has type Quantity
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/snp'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-spanning-pairs.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/spanning-pairs'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-split-reads.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/split-reads'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-strand-bias.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/strand-bias'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-treatment.json ==
+== fsh-generated/resources/StructureDefinition-treatment-line.json ==
+== fsh-generated/resources/StructureDefinition-treatmentIntent.json ==
+== fsh-generated/resources/StructureDefinition-treatmentTerminationReason.json ==
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatmentTerminationReason'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-tumor-pathology-event.json ==
+== fsh-generated/resources/StructureDefinition-variant-annotation.json ==
+WARNING: StructureDefinition/variant-annotation: StructureDefinition.snapshot.element[0].constraint[7]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
+INFORMATION: StructureDefinition/variant-annotation: StructureDefinition.snapshot.element[397].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+WARNING: StructureDefinition/variant-annotation: StructureDefinition.differential.element[0].constraint[0]: Rule eld-21: 'Constraints should have an expression or else validators will not be able to enforce them' Failed
+INFORMATION: StructureDefinition/variant-annotation: StructureDefinition.differential.element[23].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/variant-annotation: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+ERROR: StructureDefinition/variant-annotation: StructureDefinition.snapshot.element[269].type[0].profile[0]: Profile http://hl7.org/fhir/StructureDefinition/Count is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Count|4.0.1], but the Observation.component.value[x] element has type Quantity
+ERROR: StructureDefinition/variant-annotation: StructureDefinition.snapshot.element[318].type[0].profile[0]: Profile http://hl7.org/fhir/StructureDefinition/Count is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Count|4.0.1], but the Observation.component.value[x] element has type Quantity
+WARNING: StructureDefinition.where(url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/variant-annotation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-vital-status.json ==
+== fsh-generated/resources/ValueSet-AdverseEventCode.json ==
+WARNING: ValueSet/AdverseEventCode: ValueSet.compose[0].include[0]: Unknown System/Version 'http://terminology.hl7.org/CodeSystem/mdr#"12.0"' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system http://terminology.hl7.org/CodeSystem/mdr. Server Error: The code system 'http://terminology.hl7.org/CodeSystem/mdr' is not known (encountered paired with code = '10002272'); The code provided (http://terminology.hl7.org/CodeSystem/mdr#10002272) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
+WARNING: ValueSet/AdverseEventCode: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'AdverseEventCode'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/mdr
+== fsh-generated/resources/ValueSet-AdverseEventGrade.json ==
+WARNING: ValueSet/AdverseEventGrade: ValueSet.compose[0].include[0]: Unknown System/Version 'https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/CTCAE_v5_Quick_Reference_8.5x11.pdf#"5.0"' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/CTCAE_v5_Quick_Reference_8.5x11.pdf. Server Error: The code system 'https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/CTCAE_v5_Quick_Reference_8.5x11.pdf' is not known (encountered paired with code = '1'); The code provided (https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/CTCAE_v5_Quick_Reference_8.5x11.pdf#1) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
+WARNING: ValueSet/AdverseEventGrade: ValueSet.compose[0].include[1]: Unknown System 'http://terminology.hl7.org/CodeSystem/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated)
+WARNING: ValueSet/AdverseEventGrade: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'AdverseEventGrade'): Error from server: Unable to provide support for code system https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/CTCAE_v5_Quick_Reference_8.5x11.pdf
+== fsh-generated/resources/ValueSet-AlgorithmicPloidy.json ==
+WARNING: ValueSet/AlgorithmicPloidy: ValueSet.compose[0].include[0]: Unknown System 'http://terminology.hl7.org/CodeSystem/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated)
+WARNING: ValueSet/AlgorithmicPloidy: ValueSet.compose[0].include[1]: Unknown System 'https://github.com/siric-osiris/OSIRIS' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated)
+WARNING: ValueSet/AlgorithmicPloidy: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'AlgorithmicPloidy'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/umls
+== fsh-generated/resources/ValueSet-AnalysisType.json ==
+WARNING: ValueSet/AnalysisType: ValueSet.compose[0].include[0]: Unknown System 'https://github.com/siric-osiris/OSIRIS' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated)
+WARNING: ValueSet/AnalysisType: ValueSet.compose[0].include[1]: Unknown System 'http://terminology.hl7.org/CodeSystem/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated)
+WARNING: ValueSet/AnalysisType: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'AnalysisType'): Error from server: Unable to provide support for code system https://github.com/siric-osiris/OSIRIS
+== fsh-generated/resources/ValueSet-BiologicalSampleNature.json ==
+WARNING: ValueSet/BiologicalSampleNature: ValueSet.compose[0].include[0]: Unknown System 'http://terminology.hl7.org/CodeSystem/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated)
+WARNING: ValueSet/BiologicalSampleNature: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'BiologicalSampleNature'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/umls
+== fsh-generated/resources/ValueSet-BiologicalSampleOrigin.json ==
+WARNING: ValueSet/BiologicalSampleOrigin: ValueSet.compose[0].include[0]: Unknown System 'https://github.com/siric-osiris/OSIRIS' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated)
+WARNING: ValueSet/BiologicalSampleOrigin: ValueSet.compose[0].include[1]: Unknown System 'http://terminology.hl7.org/CodeSystem/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated)
+WARNING: ValueSet/BiologicalSampleOrigin: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'BiologicalSampleOrigin'): Error from server: Unable to provide support for code system https://github.com/siric-osiris/OSIRIS
+== fsh-generated/resources/ValueSet-BiomarkerCode.json ==
+WARNING: ValueSet/BiomarkerCode: ValueSet.compose[0].include[0]: Unknown System 'https://github.com/siric-osiris/OSIRIS' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated)
+WARNING: ValueSet/BiomarkerCode: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'BiomarkerCode'): Error from server: Unable to provide support for code system https://github.com/siric-osiris/OSIRIS
+== fsh-generated/resources/ValueSet-CauseOfDeath.json ==
+WARNING: ValueSet/CauseOfDeath: ValueSet.compose[0].include[0]: Unknown System 'http://terminology.hl7.org/CodeSystem/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated)
+WARNING: ValueSet/CauseOfDeath: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'CauseOfDeath'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/umls
+== fsh-generated/resources/ValueSet-FusionType.json ==
+WARNING: ValueSet/FusionType: ValueSet.compose[0].include[1]: Unknown System 'https://github.com/siric-osiris/OSIRIS' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated)
+WARNING: ValueSet/FusionType: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'FusionType'): Error from server: Unable to provide support for code system https://github.com/siric-osiris/OSIRIS
+== fsh-generated/resources/ValueSet-GeneExpressionDataType.json ==
+WARNING: ValueSet/GeneExpressionDataType: ValueSet.compose[0].include[0]: Unknown System 'https://github.com/siric-osiris/OSIRIS' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated)
+WARNING: ValueSet/GeneExpressionDataType: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'GeneExpressionDataType'): Error from server: Unable to provide support for code system https://github.com/siric-osiris/OSIRIS
+== fsh-generated/resources/ValueSet-GeneticMaterial.json ==
+WARNING: ValueSet/GeneticMaterial: ValueSet.compose[0].include[0].valueSet[0]: The value set import http://loinc.org/vs/LL2938-0 could not be found so cannot be checked
+WARNING: ValueSet/GeneticMaterial: ValueSet.compose[0].include[1]: Unknown System 'https://github.com/siric-osiris/OSIRIS' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated)
+WARNING: ValueSet/GeneticMaterial: ValueSet.compose[0].include[2]: Unknown System 'http://terminology.hl7.org/CodeSystem/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated)
+WARNING: ValueSet/GeneticMaterial: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+ERROR: ValueSet.where(id = 'GeneticMaterial'): Error from server: Unable to find value set "http://loinc.org/vs/LL2938-0"
+== fsh-generated/resources/ValueSet-GenomeEntityType.json ==
+WARNING: ValueSet/GenomeEntityType: ValueSet.compose[0].include[0]: Unknown System 'http://terminology.hl7.org/CodeSystem/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated)
+WARNING: ValueSet/GenomeEntityType: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'GenomeEntityType'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/umls
+== fsh-generated/resources/ValueSet-Laterality.json ==
+WARNING: ValueSet/Laterality: ValueSet.compose[0].include[0]: Unknown System 'http://terminology.hl7.org/CodeSystem/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated)
+WARNING: ValueSet/Laterality: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'Laterality'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/umls
+== fsh-generated/resources/ValueSet-Morphology.json ==
+WARNING: ValueSet/Morphology: ValueSet.compose[0].include[0]: Unknown System 'http://terminology.hl7.org/CodeSystem/icd-o-3' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated)
+WARNING: ValueSet/Morphology: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'Morphology'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3
+== fsh-generated/resources/ValueSet-MutationPrediction.json ==
+WARNING: ValueSet/MutationPrediction: ValueSet.compose[0].include[0]: Unknown System 'https://github.com/siric-osiris/OSIRIS' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated)
+WARNING: ValueSet/MutationPrediction: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'MutationPrediction'): Error from server: Unable to provide support for code system https://github.com/siric-osiris/OSIRIS
+== fsh-generated/resources/ValueSet-OsirisValidationType.json ==
+WARNING: ValueSet/OsirisValidationType: ValueSet.compose[0].include[0]: Unknown System 'https://github.com/siric-osiris/OSIRIS' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated)
+WARNING: ValueSet/OsirisValidationType: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'OsirisValidationType'): Error from server: Unable to provide support for code system https://github.com/siric-osiris/OSIRIS
+== fsh-generated/resources/ValueSet-PanelName.json ==
+WARNING: ValueSet/PanelName: ValueSet.compose[0].include[0]: Unknown System 'https://github.com/siric-osiris/OSIRIS' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated)
+WARNING: ValueSet/PanelName: ValueSet.compose[0].include[1]: Unknown System 'http://terminology.hl7.org/CodeSystem/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated)
+WARNING: ValueSet/PanelName: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'PanelName'): Error from server: Unable to provide support for code system https://github.com/siric-osiris/OSIRIS
+== fsh-generated/resources/ValueSet-Parentage.json ==
+WARNING: ValueSet/Parentage: ValueSet.compose[0].include[0]: Unknown System 'http://terminology.hl7.org/CodeSystem/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated)
+WARNING: ValueSet/Parentage: ValueSet.compose[0].include[1]: Unknown System 'https://github.com/siric-osiris/OSIRIS' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated)
+WARNING: ValueSet/Parentage: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'Parentage'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/umls
+== fsh-generated/resources/ValueSet-Pathogenicity.json ==
+WARNING: ValueSet/Pathogenicity: ValueSet.compose[0].include[0]: Unknown System 'https://github.com/siric-osiris/OSIRIS' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated)
+WARNING: ValueSet/Pathogenicity: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'Pathogenicity'): Error from server: Unable to provide support for code system https://github.com/siric-osiris/OSIRIS
+== fsh-generated/resources/ValueSet-PlatformName.json ==
+WARNING: ValueSet/PlatformName: ValueSet.compose[0].include[0]: Unknown System 'https://github.com/siric-osiris/OSIRIS' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated)
+WARNING: ValueSet/PlatformName: ValueSet.compose[0].include[1]: Unknown System 'http://terminology.hl7.org/CodeSystem/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated)
+WARNING: ValueSet/PlatformName: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'PlatformName'): Error from server: Unable to provide support for code system https://github.com/siric-osiris/OSIRIS
+== fsh-generated/resources/ValueSet-ROIType.json ==
+WARNING: ValueSet/ROIType: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-RadiomicsFeaturesVS.json ==
+WARNING: ValueSet/RadiomicsFeaturesVS: ValueSet.compose[0].include[1]: Unknown System 'http://terminology.hl7.org/CodeSystem/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated)
+WARNING: ValueSet/RadiomicsFeaturesVS: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'RadiomicsFeaturesVS'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/umls
+== fsh-generated/resources/ValueSet-ReferenceType.json ==
+WARNING: ValueSet/ReferenceType: ValueSet.compose[0].include[0]: Unknown System 'https://github.com/siric-osiris/OSIRIS' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated)
+WARNING: ValueSet/ReferenceType: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'ReferenceType'): Error from server: Unable to provide support for code system https://github.com/siric-osiris/OSIRIS
+== fsh-generated/resources/ValueSet-ResponseEvaluationStatus.json ==
+WARNING: ValueSet/ResponseEvaluationStatus: ValueSet.compose[0].include[0]: Unknown System 'https://recist.eortc.org' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://recist.eortc.org' is unknown so the code cannot be validated)
+WARNING: ValueSet/ResponseEvaluationStatus: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'ResponseEvaluationStatus'): Error from server: Unable to provide support for code system https://recist.eortc.org
+== fsh-generated/resources/ValueSet-StorageTemperature.json ==
+WARNING: ValueSet/StorageTemperature: ValueSet.compose[0].include[0]: Unknown System 'https://github.com/siric-osiris/OSIRIS' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated)
+WARNING: ValueSet/StorageTemperature: ValueSet.compose[0].include[1]: Unknown System 'http://terminology.hl7.org/CodeSystem/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated)
+WARNING: ValueSet/StorageTemperature: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'StorageTemperature'): Error from server: Unable to provide support for code system https://github.com/siric-osiris/OSIRIS
+== fsh-generated/resources/ValueSet-SurgeryResectionQuality.json ==
+WARNING: ValueSet/SurgeryResectionQuality: ValueSet.compose[0].include[0]: Unknown System 'https://recist.eortc.org' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://recist.eortc.org' is unknown so the code cannot be validated)
+WARNING: ValueSet/SurgeryResectionQuality: ValueSet.compose[0].include[1]: Unknown System 'http://terminology.hl7.org/CodeSystem/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated)
+WARNING: ValueSet/SurgeryResectionQuality: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'SurgeryResectionQuality'): Error from server: Unable to provide support for code system https://recist.eortc.org
+== fsh-generated/resources/ValueSet-TNMVersion.json ==
+WARNING: ValueSet/TNMVersion: ValueSet.compose[0].include[0]: Unknown System 'https://github.com/siric-osiris/OSIRIS' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated)
+WARNING: ValueSet/TNMVersion: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'TNMVersion'): Error from server: Unable to provide support for code system https://github.com/siric-osiris/OSIRIS
+== fsh-generated/resources/ValueSet-TechnicalProtocol.json ==
+WARNING: ValueSet/TechnicalProtocol: ValueSet.compose[0].include[0]: Unknown System 'https://github.com/siric-osiris/OSIRIS' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://github.com/siric-osiris/OSIRIS' is unknown so the code cannot be validated)
+WARNING: ValueSet/TechnicalProtocol: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'TechnicalProtocol'): Error from server: Unable to provide support for code system https://github.com/siric-osiris/OSIRIS
+== fsh-generated/resources/ValueSet-Topography.json ==
+WARNING: ValueSet/Topography: ValueSet.compose.include[0].concept[129].display: value should not start or finish with whitespace '   GALLBLADDER'
+WARNING: ValueSet/Topography: ValueSet.compose[0].include[0]: Unknown System 'http://terminology.hl7.org/CodeSystem/icd-o-3' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated)
+WARNING: ValueSet/Topography: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'Topography'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3
+== fsh-generated/resources/ValueSet-TreatmentType.json ==
+WARNING: ValueSet/TreatmentType: ValueSet.compose[0].include[0]: Unknown System 'http://terminology.hl7.org/CodeSystem/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated)
+WARNING: ValueSet/TreatmentType: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'TreatmentType'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/umls
+== fsh-generated/resources/ValueSet-TumorPathologyEventType.json ==
+WARNING: ValueSet/TumorPathologyEventType: ValueSet.compose[0].include[0]: Unknown System 'http://terminology.hl7.org/CodeSystem/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated)
+WARNING: ValueSet/TumorPathologyEventType: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'TumorPathologyEventType'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/umls
+== fsh-generated/resources/ValueSet-VSBodySite.json ==
+WARNING: ValueSet/VSBodySite: ValueSet.title: value should not start or finish with whitespace ' Bodysite Value Set'
+WARNING: ValueSet/VSBodySite: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-VSLocalizationMethod.json ==
+WARNING: ValueSet/VSLocalizationMethod: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-VSModality.json ==
+WARNING: ValueSet/VSModality: ValueSet.title: value should not start or finish with whitespace ' Modality Value Set'
+WARNING: ValueSet/VSModality: ValueSet.compose[0].include[0]: Unknown System 'https://dicom.nema.org/medical/dicom' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://dicom.nema.org/medical/dicom' is unknown so the code cannot be validated)
+WARNING: ValueSet/VSModality: ValueSet.compose[0].include[2]: Unknown System 'http://terminology.hl7.org/CodeSystem/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated)
+WARNING: ValueSet/VSModality: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'VSModality'): Error from server: Unable to provide support for code system https://dicom.nema.org/medical/dicom
+== fsh-generated/resources/ValueSet-VitalStatus.json ==
+WARNING: ValueSet/VitalStatus: ValueSet.compose[0].include[0]: Unknown System 'http://terminology.hl7.org/CodeSystem/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated)
+WARNING: ValueSet/VitalStatus: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'VitalStatus'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/umls
+== fsh-generated/resources/ValueSet-codexrt-radiotherapy-reason-for-revision-or-adaptation-vs.json ==
+WARNING: ValueSet/codexrt-radiotherapy-reason-for-revision-or-adaptation-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-mcode-radiotherapy-treatment-location-qualifier-vs.json ==
+WARNING: ValueSet/mcode-radiotherapy-treatment-location-qualifier-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-mcode-radiotherapy-volume-type-vs.json ==
+WARNING: ValueSet/mcode-radiotherapy-volume-type-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-vs-radiotherapy-category.json ==
+WARNING: ValueSet/vs-radiotherapy-category: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-vs-radiotherapy-intent.json ==
+WARNING: ValueSet/vs-radiotherapy-intent: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-vs-radiotherapy-termination-reason.json ==
+WARNING: ValueSet/vs-radiotherapy-termination-reason: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== input/examples/patient.json ==
+INFORMATION: Patient/patient-synthetic: Patient.meta.tag[0]: Code System URI 'http://terminology.arkhn.org/CodeSystem/source' is unknown so the code cannot be validated
+INFORMATION: Patient/patient-synthetic: Patient.meta.tag[1]: Code System URI 'http://terminology.arkhn.org/CodeSystem/resource' is unknown so the code cannot be validated
+WARNING: Patient/patient-synthetic: Patient.meta.profile[0]: Profile reference 'http://osiris.arkhn.com/StructureDefinition/onco-patient' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles

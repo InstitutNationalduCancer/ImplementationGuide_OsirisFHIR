@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/AdverseEvent/fhir-osiris-example-adverseevent-1> a fhir:AdverseEvent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir-osiris-example-adverseevent-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-adverse-event"^^xsd:anyURI ;
+       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-adverse-event>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: AdverseEvent</b><a name=\"fhir-osiris-example-adverseevent-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource AdverseEvent &quot;fhir-osiris-example-adverseevent-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-adverse-event.html\">Oncologic Adverse Event</a></p></div><p><b>Adverse Event End date</b>: 2007-07-10</p><p><b>actuality</b>: actual</p><p><b>event</b>: 10019211 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-mdr.html\">MedDRA</a>#10019211)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><p><b>date</b>: 2007-06-13</p><p><b>seriousness</b>: C0439673 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#C0439673)</span></p><h3>SuspectEntities</h3><table class=\"grid\"><tr><td>-</td><td><b>Instance</b></td></tr><tr><td>*</td><td><a href=\"MedicationStatement-fhir-osiris-example-oncomedicalstatement-1.html\">MedicationStatement/fhir-osiris-example-oncomedicalstatement-1</a></td></tr></table><p><b>subjectMedicalHistory</b>: <a href=\"Condition-fhir-osiris-example-TumorPathologyEvent-instance-1.html\">Condition/fhir-osiris-example-TumorPathologyEvent-instance-1</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/adverse-event-end-date"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2007-07-10"^^xsd:date ]
+  ] ) ; # 
+  fhir:actuality [ fhir:v "actual"] ; # 
+  fhir:event [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/mdr"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10019211" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/L304> ;
+     fhir:reference [ fhir:v "Patient/L304" ]
+  ] ; # 
+  fhir:date [ fhir:v "2007-06-13"^^xsd:date] ; # 
+  fhir:seriousness [
+     fhir:coding ( [
+       fhir:code [ fhir:v "C0439673" ]
+     ] )
+  ] ; # 
+  fhir:suspectEntity ( [
+     fhir:instance [
+       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/MedicationStatement/fhir-osiris-example-oncomedicalstatement-1> ;
+       fhir:reference [ fhir:v "MedicationStatement/fhir-osiris-example-oncomedicalstatement-1" ]
+     ]
+  ] ) ; # 
+  fhir:subjectMedicalHistory ( [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Condition/fhir-osiris-example-TumorPathologyEvent-instance-1> ;
+     fhir:reference [ fhir:v "Condition/fhir-osiris-example-TumorPathologyEvent-instance-1" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

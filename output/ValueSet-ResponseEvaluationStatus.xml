@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ResponseEvaluationStatus"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://recist.eortc.org</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>CR</td><td>Complete Response</td></tr><tr><td>PR</td><td>Partial Response</td></tr><tr><td>SD</td><td>Stable disease</td></tr><tr><td>PD</td><td>Progressive Disease</td></tr><tr><td>NE</td><td>Not evaluable</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/ResponseEvaluationStatus"/>
+  <version value="2.1.0"/>
+  <name value="ResponseEvaluationStatus"/>
+  <title value="Response Status Value Set"/>
+  <status value="active"/>
+  <date value="2023-03-28T12:16:37+02:00"/>
+  <publisher value="Arkhn"/>
+  <contact>
+    <name value="Arkhn"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://arkhn.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="contact@arkhn.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nicolas Riss"/>
+    <telecom>
+      <system value="email"/>
+      <value value="nicolas@arkhn.com"/>
+    </telecom>
+  </contact>
+  <description value="Response evaluation status"/>
+  <compose>
+    <include>
+      <system value="https://recist.eortc.org"/>
+      <concept>
+        <code value="CR"/>
+        <display value="Complete Response"/>
+      </concept>
+      <concept>
+        <code value="PR"/>
+        <display value="Partial Response"/>
+      </concept>
+      <concept>
+        <code value="SD"/>
+        <display value="Stable disease"/>
+      </concept>
+      <concept>
+        <code value="PD"/>
+        <display value="Progressive Disease"/>
+      </concept>
+      <concept>
+        <code value="NE"/>
+        <display value="Not evaluable"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

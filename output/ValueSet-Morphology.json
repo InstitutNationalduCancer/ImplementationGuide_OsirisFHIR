@@ -1,0 +1,4167 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "Morphology",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-icd-o-3.html\"><code>http://terminology.hl7.org/CodeSystem/icd-o-3</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>8000/0</td><td>Neoplasm, benign</td></tr><tr><td>8000/1</td><td>Neoplasm, uncertain whether benign or malignant</td></tr><tr><td>8000/3</td><td>Neoplasm, malignant</td></tr><tr><td>8000/6</td><td>Neoplasm, metastatic</td></tr><tr><td>8000/9</td><td>Neoplasm, malignant, uncertain whether primary or metastatic</td></tr><tr><td>8001/0</td><td>Tumor cells, benign</td></tr><tr><td>8001/1</td><td>Tumor cells, uncertain whether benign or malignant</td></tr><tr><td>8001/3</td><td>Tumor cells, malignant</td></tr><tr><td>8002/3</td><td>Malignant tumor, small cell type</td></tr><tr><td>8003/3</td><td>Malignant tumor, giant cell type</td></tr><tr><td>8004/3</td><td>Malignant tumor, spindle cell type</td></tr><tr><td>8005/0</td><td>Clear cell tumor, NOS</td></tr><tr><td>8005/3</td><td>Malignant tumor, clear cell type</td></tr><tr><td>8010/0</td><td>Epithelial tumor, benign</td></tr><tr><td>8010/2</td><td>Carcinoma in situ, NOS</td></tr><tr><td>8010/3</td><td>Carcinoma, NOS</td></tr><tr><td>8010/6</td><td>Carcinoma, metastatic, NOS</td></tr><tr><td>8010/9</td><td>Carcinomatosis</td></tr><tr><td>8011/0</td><td>Epithelioma, benign</td></tr><tr><td>8011/3</td><td>Epithelioma, malignant</td></tr><tr><td>8012/3</td><td>Large cell carcinoma, NOS</td></tr><tr><td>8013/3</td><td>Large cell neuroendocrine carcinoma</td></tr><tr><td>8014/3</td><td>Large cell carcinoma with rhabdoid phenotype</td></tr><tr><td>8015/3</td><td>Glassy cell carcinoma</td></tr><tr><td>8020/3</td><td>Carcinoma, undifferentiated, NOS</td></tr><tr><td>8021/3</td><td>Carcinoma, anaplastic, NOS</td></tr><tr><td>8022/3</td><td>Pleomorphic carcinoma</td></tr><tr><td>8030/3</td><td>Giant cell and spindle cell carcinoma</td></tr><tr><td>8031/3</td><td>Giant cell carcinoma</td></tr><tr><td>8032/3</td><td>Spindle cell carcinoma, NOS</td></tr><tr><td>8033/3</td><td>Pseudosarcomatous carcinoma</td></tr><tr><td>8034/3</td><td>Polygonal cell carcinoma</td></tr><tr><td>8035/3</td><td>Carcinoma with osteoclast-like giant cells</td></tr><tr><td>8040/0</td><td>Tumorlet, benign</td></tr><tr><td>8040/1</td><td>Tumorlet, NOS</td></tr><tr><td>8041/3</td><td>Small cell carcinoma, NOS</td></tr><tr><td>8042/3</td><td>Oat cell carcinoma</td></tr><tr><td>8043/3</td><td>Small cell carcinoma, fusiform cell</td></tr><tr><td>8044/3</td><td>Small cell carcinoma, intermediate cell</td></tr><tr><td>8045/3</td><td>Combined small cell carcinoma</td></tr><tr><td>8046/3</td><td>Non-small cell carcinoma</td></tr><tr><td>8050/0</td><td>Papilloma, NOS</td></tr><tr><td>8050/2</td><td>Papillary carcinoma in situ</td></tr><tr><td>8050/3</td><td>Papillary carcinoma, NOS</td></tr><tr><td>8051/0</td><td>Verrucous papilloma</td></tr><tr><td>8051/3</td><td>Verrucous carcinoma, NOS</td></tr><tr><td>8052/0</td><td>Squamous cell papilloma, NOS</td></tr><tr><td>8052/2</td><td>Papillary squamous cell carcinoma,  non-invasive</td></tr><tr><td>8052/3</td><td>Papillary squamous cell carcinoma</td></tr><tr><td>8053/0</td><td>Squamous cell papilloma, inverted</td></tr><tr><td>8060/0</td><td>Squamous papillomatosis</td></tr><tr><td>8070/2</td><td>Squamous cell carcinoma in situ, NOS</td></tr><tr><td>8070/3</td><td>Squamous cell carcinoma, NOS</td></tr><tr><td>8070/6</td><td>Squamous cell carcinoma, metastatic, NOS</td></tr><tr><td>8071/3</td><td>Squamous cell carcinoma, keratinizing, NOS</td></tr><tr><td>8072/3</td><td>Squamous cell carcinoma, large cell, nonkeratinizing, NOS</td></tr><tr><td>8073/3</td><td>Squamous cell carcinoma, small cell, nonkeratinizing</td></tr><tr><td>8074/3</td><td>Squamous cell carcinoma, spindle cell</td></tr><tr><td>8075/3</td><td>Squamous cell carcinoma, adenoid</td></tr><tr><td>8076/2</td><td>Squamous cell carcinoma in situ with questionable stromal invasion</td></tr><tr><td>8076/3</td><td>Squamous cell carcinoma, microinvasive</td></tr><tr><td>8077/2</td><td>Squamous intraepithelial neoplasia, grade III</td></tr><tr><td>8078/3</td><td>Squamous cell carcinoma with horn formation</td></tr><tr><td>8080/2</td><td>Queyrat erythroplasia</td></tr><tr><td>8081/2</td><td>Bowen disease</td></tr><tr><td>8082/3</td><td>Lymphoepithelial carcinoma</td></tr><tr><td>8083/3</td><td>Basaloid squamous cell carcinoma</td></tr><tr><td>8084/3</td><td>Squamous cell carcinoma, clear cell type</td></tr><tr><td>8090/1</td><td>Basal cell tumor</td></tr><tr><td>8090/3</td><td>Basal cell carcinoma, NOS</td></tr><tr><td>8091/3</td><td>Multifocal superficial basal cell carcinoma</td></tr><tr><td>8092/3</td><td>Infiltrating basal cell carcinoma, NOS</td></tr><tr><td>8093/3</td><td>Basal cell carcinoma, fibroepithelial</td></tr><tr><td>8094/3</td><td>Basosquamous carcinoma</td></tr><tr><td>8095/3</td><td>Metatypical carcinoma</td></tr><tr><td>8096/0</td><td>Intraepidermal epithelioma of Jadassohn</td></tr><tr><td>8097/3</td><td>Basal cell carcinoma, nodular</td></tr><tr><td>8098/3</td><td>Adenoid basal carcinoma</td></tr><tr><td>8100/0</td><td>Trichoepithelioma</td></tr><tr><td>8101/0</td><td>Trichofolliculoma</td></tr><tr><td>8102/0</td><td>Trichilemmoma</td></tr><tr><td>8102/3</td><td>Trichilemmocarcinoma</td></tr><tr><td>8103/0</td><td>Pilar tumor</td></tr><tr><td>8110/0</td><td>Pilomatrixoma, NOS</td></tr><tr><td>8110/3</td><td>Pilomatrix carcinoma</td></tr><tr><td>8120/0</td><td>Transitional cell papilloma, benign</td></tr><tr><td>8120/1</td><td>Urothelial papilloma, NOS</td></tr><tr><td>8120/2</td><td>Transitional cell carcinoma in situ</td></tr><tr><td>8120/3</td><td>Transitional cell carcinoma, NOS</td></tr><tr><td>8121/0</td><td>Schneiderian papilloma, NOS</td></tr><tr><td>8121/1</td><td>Transitional cell papilloma, inverted, NOS</td></tr><tr><td>8121/3</td><td>Schneiderian carcinoma</td></tr><tr><td>8122/3</td><td>Transitional cell carcinoma, spindle cell</td></tr><tr><td>8123/3</td><td>Basaloid carcinoma</td></tr><tr><td>8124/3</td><td>Cloacogenic carcinoma</td></tr><tr><td>8130/1</td><td>Papillary transitional cell neoplasm of low malignant potential</td></tr><tr><td>8130/2</td><td>Papillary transitional cell carcinoma,  non-invasive</td></tr><tr><td>8130/3</td><td>Papillary transitional cell carcinoma</td></tr><tr><td>8131/3</td><td>Transitional cell carcinoma, micropapillary</td></tr><tr><td>8140/0</td><td>Adenoma, NOS</td></tr><tr><td>8140/1</td><td>Atypical adenoma</td></tr><tr><td>8140/2</td><td>Adenocarcinoma in situ, NOS</td></tr><tr><td>8140/3</td><td>Adenocarcinoma, NOS</td></tr><tr><td>8140/6</td><td>Adenocarcinoma, metastatic, NOS</td></tr><tr><td>8141/3</td><td>Scirrhous adenocarcinoma</td></tr><tr><td>8142/3</td><td>Linitis plastica</td></tr><tr><td>8143/3</td><td>Superficial spreading adenocarcinoma</td></tr><tr><td>8144/3</td><td>Adenocarcinoma, intestinal type</td></tr><tr><td>8145/3</td><td>Carcinoma, diffuse type</td></tr><tr><td>8146/0</td><td>Monomorphic adenoma</td></tr><tr><td>8147/0</td><td>Basal cell adenoma</td></tr><tr><td>8147/3</td><td>Basal cell adenocarcinoma</td></tr><tr><td>8148/2</td><td>Glandular intraepithelial neoplasia, grade III</td></tr><tr><td>8149/0</td><td>Canalicular adenoma</td></tr><tr><td>8150/0</td><td>Islet cell adenoma</td></tr><tr><td>8150/1</td><td>Islet cell tumor, NOS</td></tr><tr><td>8150/3</td><td>Islet cell carcinoma</td></tr><tr><td>8151/0</td><td>Insulinoma, NOS</td></tr><tr><td>8151/3</td><td>Insulinoma, malignant</td></tr><tr><td>8152/1</td><td>Glucagonoma, NOS</td></tr><tr><td>8152/3</td><td>Glucagonoma, malignant</td></tr><tr><td>8153/1</td><td>Gastrinoma, NOS</td></tr><tr><td>8153/3</td><td>Gastrinoma, malignant</td></tr><tr><td>8154/3</td><td>Mixed islet cell and exocrine adenocarcinoma</td></tr><tr><td>8155/1</td><td>Vipoma, NOS</td></tr><tr><td>8155/3</td><td>Vipoma, malignant</td></tr><tr><td>8156/1</td><td>Somatostatinoma, NOS</td></tr><tr><td>8156/3</td><td>Somatostatinoma, malignant</td></tr><tr><td>8157/1</td><td>Enteroglucagonoma, NOS</td></tr><tr><td>8157/3</td><td>Enteroglucagonoma, malignant</td></tr><tr><td>8160/0</td><td>Bile duct adenoma</td></tr><tr><td>8160/3</td><td>Cholangiocarcinoma</td></tr><tr><td>8161/0</td><td>Bile duct cystadenoma</td></tr><tr><td>8161/3</td><td>Bile duct cystadenocarcinoma</td></tr><tr><td>8162/3</td><td>Klatskin tumor</td></tr><tr><td>8170/0</td><td>Liver cell adenoma</td></tr><tr><td>8170/3</td><td>Hepatocellular carcinoma, NOS</td></tr><tr><td>8171/3</td><td>Hepatocellular carcinoma, fibrolamellar</td></tr><tr><td>8172/3</td><td>Hepatocellular carcinoma, scirrhous</td></tr><tr><td>8173/3</td><td>Hepatocellular carcinoma, spindle cell variant</td></tr><tr><td>8174/3</td><td>Hepatocellular carcinoma, clear cell type</td></tr><tr><td>8175/3</td><td>Hepatocellular carcinoma, pleomorphic type</td></tr><tr><td>8180/3</td><td>Combined hepatocellular carcinoma and cholangiocarcinoma</td></tr><tr><td>8190/0</td><td>Trabecular adenoma</td></tr><tr><td>8190/3</td><td>Trabecular adenocarcinoma</td></tr><tr><td>8191/0</td><td>Embryonal adenoma</td></tr><tr><td>8200/0</td><td>Eccrine dermal cylindroma</td></tr><tr><td>8200/3</td><td>Adenoid cystic carcinoma</td></tr><tr><td>8201/2</td><td>Cribriform carcinoma in situ</td></tr><tr><td>8201/3</td><td>Cribriform carcinoma, NOS</td></tr><tr><td>8202/0</td><td>Microcystic adenoma</td></tr><tr><td>8204/0</td><td>Lactating adenoma</td></tr><tr><td>8210/0</td><td>Adenomatous polyp, NOS</td></tr><tr><td>8210/2</td><td>Adenocarcinoma in situ in adenomatous polyp</td></tr><tr><td>8210/3</td><td>Adenocarcinoma in adenomatous polyp</td></tr><tr><td>8211/0</td><td>Tubular adenoma, NOS</td></tr><tr><td>8211/3</td><td>Tubular adenocarcinoma</td></tr><tr><td>8212/0</td><td>Flat adenoma</td></tr><tr><td>8213/0</td><td>Serrated adenoma</td></tr><tr><td>8214/3</td><td>Parietal cell carcinoma</td></tr><tr><td>8215/3</td><td>Adenocarcinoma of anal glands</td></tr><tr><td>8220/0</td><td>Adenomatous polyposis coli</td></tr><tr><td>8220/3</td><td>Adenocarcinoma in adenomatous polyposis coli</td></tr><tr><td>8221/0</td><td>Multiple adenomatous polyps</td></tr><tr><td>8221/3</td><td>Adenocarcinoma in multiple adenomatous polyps</td></tr><tr><td>8230/2</td><td>Ductal carcinoma in situ, solid type</td></tr><tr><td>8230/3</td><td>Solid carcinoma, NOS</td></tr><tr><td>8231/3</td><td>Carcinoma simplex</td></tr><tr><td>8240/1</td><td>Carcinoid tumor of uncertain malignant potential</td></tr><tr><td>8240/3</td><td>Carcinoid tumor, NOS</td></tr><tr><td>8241/3</td><td>Enterochromaffin cell carcinoid</td></tr><tr><td>8242/1</td><td>Enterochromaffin-like cell carcinoid, NOS</td></tr><tr><td>8242/3</td><td>Enterochromaffin-like cell tumor, malignant</td></tr><tr><td>8243/3</td><td>Goblet cell carcinoid</td></tr><tr><td>8244/3</td><td>Composite carcinoid</td></tr><tr><td>8245/1</td><td>Tubular carcinoid</td></tr><tr><td>8245/3</td><td>Adenocarcinoid tumor</td></tr><tr><td>8246/3</td><td>Neuroendocrine carcinoma, NOS</td></tr><tr><td>8247/3</td><td>Merkel cell carcinoma</td></tr><tr><td>8248/1</td><td>Apudoma</td></tr><tr><td>8249/3</td><td>Atypical carcinoid tumor</td></tr><tr><td>8250/1</td><td>Pulmonary adenomatosis</td></tr><tr><td>8250/3</td><td>Bronchiolo-alveolar adenocarcinoma, NOS</td></tr><tr><td>8251/0</td><td>Alveolar adenoma</td></tr><tr><td>8251/3</td><td>Alveolar adenocarcinoma</td></tr><tr><td>8252/3</td><td>Bronchiolo-alveolar carcinoma, non- mucinous</td></tr><tr><td>8253/3</td><td>Bronchiolo-alveolar carcinoma, mucinous</td></tr><tr><td>8254/3</td><td>Bronchiolo-alveolar carcinoma, mixed mucinous and non-mucinous</td></tr><tr><td>8255/3</td><td>Adenocarcinoma with mixed subtypes</td></tr><tr><td>8260/0</td><td>Papillary adenoma, NOS</td></tr><tr><td>8260/3</td><td>Papillary adenocarcinoma, NOS</td></tr><tr><td>8261/0</td><td>Villous adenoma, NOS</td></tr><tr><td>8261/2</td><td>Adenocarcinoma in situ in villous adenoma</td></tr><tr><td>8261/3</td><td>Adenocarcinoma in villous adenoma</td></tr><tr><td>8262/3</td><td>Villous adenocarcinoma</td></tr><tr><td>8263/0</td><td>Tubulovillous adenoma, NOS</td></tr><tr><td>8263/2</td><td>Adenocarcinoma in situ in tubulovillous adenoma</td></tr><tr><td>8263/3</td><td>Adenocarcinoma in tubulovillous adenoma</td></tr><tr><td>8264/0</td><td>Papillomatosis, glandular</td></tr><tr><td>8270/0</td><td>Chromophobe adenoma</td></tr><tr><td>8270/3</td><td>Chromophobe carcinoma</td></tr><tr><td>8271/0</td><td>Prolactinoma</td></tr><tr><td>8272/0</td><td>Pituitary adenoma, NOS</td></tr><tr><td>8272/3</td><td>Pituitary carcinoma, NOS</td></tr><tr><td>8280/0</td><td>Acidophil adenoma</td></tr><tr><td>8280/3</td><td>Acidophil carcinoma</td></tr><tr><td>8281/0</td><td>Mixed acidophil-basophil adenoma</td></tr><tr><td>8281/3</td><td>Mixed acidophil-basophil carcinoma</td></tr><tr><td>8290/0</td><td>Oxyphilic adenoma</td></tr><tr><td>8290/3</td><td>Oxyphilic adenocarcinoma</td></tr><tr><td>8300/0</td><td>Basophil adenoma</td></tr><tr><td>8300/3</td><td>Basophil carcinoma</td></tr><tr><td>8310/0</td><td>Clear cell adenoma</td></tr><tr><td>8310/3</td><td>Clear cell adenocarcinoma, NOS</td></tr><tr><td>8311/1</td><td>Hypernephroid tumor</td></tr><tr><td>8312/3</td><td>Renal cell carcinoma, NOS</td></tr><tr><td>8313/0</td><td>Clear cell adenofibroma</td></tr><tr><td>8313/1</td><td>Clear cell adenofibroma of borderline malignancy</td></tr><tr><td>8313/3</td><td>Clear cell adenocarcinofibroma</td></tr><tr><td>8314/3</td><td>Lipid-rich carcinoma</td></tr><tr><td>8315/3</td><td>Glycogen-rich carcinoma</td></tr><tr><td>8316/3</td><td>Cyst-associated renal cell carcinoma</td></tr><tr><td>8317/3</td><td>Renal cell carcinoma, chromophobe type</td></tr><tr><td>8318/3</td><td>Renal cell carcinoma, sarcomatoid</td></tr><tr><td>8319/3</td><td>Collecting duct carcinoma</td></tr><tr><td>8320/3</td><td>Granular cell carcinoma</td></tr><tr><td>8321/0</td><td>Chief cell adenoma</td></tr><tr><td>8322/0</td><td>Water-clear cell adenoma</td></tr><tr><td>8322/3</td><td>Water-clear cell adenocarcinoma</td></tr><tr><td>8323/0</td><td>Mixed cell adenoma</td></tr><tr><td>8323/3</td><td>Mixed cell adenocarcinoma</td></tr><tr><td>8324/0</td><td>Lipoadenoma</td></tr><tr><td>8325/0</td><td>Metanephric adenoma</td></tr><tr><td>8330/0</td><td>Follicular adenoma</td></tr><tr><td>8330/1</td><td>Atypical follicular adenoma</td></tr><tr><td>8330/3</td><td>Follicular adenocarcinoma, NOS</td></tr><tr><td>8331/3</td><td>Follicular adenocarcinoma, well differentiated</td></tr><tr><td>8332/3</td><td>Follicular adenocarcinoma, trabecular</td></tr><tr><td>8333/0</td><td>Microfollicular adenoma, NOS</td></tr><tr><td>8333/3</td><td>Fetal adenocarcinoma</td></tr><tr><td>8334/0</td><td>Macrofollicular adenoma</td></tr><tr><td>8335/3</td><td>Follicular carcinoma, minimally invasive</td></tr><tr><td>8336/0</td><td>Hyalinizing trabecular adenoma</td></tr><tr><td>8337/3</td><td>Insular carcinoma</td></tr><tr><td>8340/3</td><td>Papillary carcinoma, follicular variant</td></tr><tr><td>8341/3</td><td>Papillary microcarcinoma</td></tr><tr><td>8342/3</td><td>Papillary carcinoma, oxyphilic cell</td></tr><tr><td>8343/3</td><td>Papillary carcinoma, encapsulated</td></tr><tr><td>8344/3</td><td>Papillary carcinoma, columnar cell</td></tr><tr><td>8345/3</td><td>Medullary carcinoma with amyloid stroma</td></tr><tr><td>8346/3</td><td>Mixed medullary-follicular carcinoma</td></tr><tr><td>8347/3</td><td>Mixed medullary-papillary carcinoma</td></tr><tr><td>8350/3</td><td>Nonencapsulated sclerosing carcinoma</td></tr><tr><td>8360/1</td><td>Multiple endocrine adenomas</td></tr><tr><td>8361/0</td><td>Juxtaglomerular tumor</td></tr><tr><td>8370/0</td><td>Adrenal cortical adenoma, NOS</td></tr><tr><td>8370/3</td><td>Adrenal cortical carcinoma</td></tr><tr><td>8371/0</td><td>Adrenal cortical adenoma, compact cell</td></tr><tr><td>8372/0</td><td>Adrenal cortical adenoma, pigmented</td></tr><tr><td>8373/0</td><td>Adrenal cortical adenoma, clear cell</td></tr><tr><td>8374/0</td><td>Adrenal cortical adenoma, glomerulosa cell</td></tr><tr><td>8375/0</td><td>Adrenal cortical adenoma, mixed cell</td></tr><tr><td>8380/0</td><td>Endometrioid adenoma, NOS</td></tr><tr><td>8380/1</td><td>Endometrioid adenoma, borderline malignancy</td></tr><tr><td>8380/3</td><td>Endometrioid adenocarcinoma, NOS</td></tr><tr><td>8381/0</td><td>Endometrioid adenofibroma, NOS</td></tr><tr><td>8381/1</td><td>Endometrioid adenofibroma, borderline malignancy</td></tr><tr><td>8381/3</td><td>Endometrioid adenofibroma, malignant</td></tr><tr><td>8382/3</td><td>Endometrioid adenocarcinoma, secretory variant</td></tr><tr><td>8383/3</td><td>Endometrioid adenocarcinoma, ciliated cell variant</td></tr><tr><td>8384/3</td><td>Adenocarcinoma, endocervical type</td></tr><tr><td>8390/0</td><td>Skin appendage adenoma</td></tr><tr><td>8390/3</td><td>Skin appendage carcinoma</td></tr><tr><td>8391/0</td><td>Follicular fibroma</td></tr><tr><td>8392/0</td><td>Syringofibroadenoma</td></tr><tr><td>8400/0</td><td>Sweat gland adenoma</td></tr><tr><td>8400/1</td><td>Sweat gland tumor, NOS</td></tr><tr><td>8400/3</td><td>Sweat gland adenocarcinoma</td></tr><tr><td>8401/0</td><td>Apocrine adenoma</td></tr><tr><td>8401/3</td><td>Apocrine adenocarcinoma</td></tr><tr><td>8402/0</td><td>Nodular hidradenoma</td></tr><tr><td>8402/3</td><td>Nodular hidradenoma, malignant</td></tr><tr><td>8403/0</td><td>Eccrine spiradenoma</td></tr><tr><td>8403/3</td><td>Malignant eccrine spiradenoma</td></tr><tr><td>8404/0</td><td>Hidrocystoma</td></tr><tr><td>8405/0</td><td>Papillary hidradenoma</td></tr><tr><td>8406/0</td><td>Papillary syringadenoma</td></tr><tr><td>8407/0</td><td>Syringoma, NOS</td></tr><tr><td>8407/3</td><td>Sclerosing sweat duct carcinoma</td></tr><tr><td>8408/0</td><td>Eccrine papillary adenoma</td></tr><tr><td>8408/1</td><td>Aggressive digital papillary adenoma</td></tr><tr><td>8408/3</td><td>Eccrine papillary adenocarcinoma</td></tr><tr><td>8409/0</td><td>Eccrine poroma</td></tr><tr><td>8409/3</td><td>Eccrine poroma, malignant</td></tr><tr><td>8410/0</td><td>Sebaceous adenoma</td></tr><tr><td>8410/3</td><td>Sebaceous adenocarcinoma</td></tr><tr><td>8413/3</td><td>Eccrine adenocarcinoma</td></tr><tr><td>8420/0</td><td>Ceruminous adenoma</td></tr><tr><td>8420/3</td><td>Ceruminous adenocarcinoma</td></tr><tr><td>8430/1</td><td>Mucoepidermoid tumor</td></tr><tr><td>8430/3</td><td>Mucoepidermoid carcinoma</td></tr><tr><td>8440/0</td><td>Cystadenoma, NOS</td></tr><tr><td>8440/3</td><td>Cystadenocarcinoma, NOS</td></tr><tr><td>8441/0</td><td>Serous cystadenoma, NOS</td></tr><tr><td>8441/3</td><td>Serous cystadenocarcinoma, NOS</td></tr><tr><td>8442/1</td><td>Serous cystadenoma, borderline malignancy</td></tr><tr><td>8443/0</td><td>Clear cell cystadenoma</td></tr><tr><td>8444/1</td><td>Clear cell cystic tumor of borderline malignancy</td></tr><tr><td>8450/0</td><td>Papillary cystadenoma, NOS</td></tr><tr><td>8450/3</td><td>Papillary cystadenocarcinoma, NOS</td></tr><tr><td>8451/1</td><td>Papillary cystadenoma, borderline malignancy</td></tr><tr><td>8452/1</td><td>Solid pseudopapillary tumor</td></tr><tr><td>8452/3</td><td>Solid pseudopapillary carcinoma</td></tr><tr><td>8453/0</td><td>Intraductal papillary-mucinous adenoma</td></tr><tr><td>8453/1</td><td>Intraductal papillary-mucinous tumor with moderate dysplasia</td></tr><tr><td>8453/2</td><td>Intraductal papillary-mucinous carcinoma, non-invasive</td></tr><tr><td>8453/3</td><td>Intraductal papillary-mucinous carcinoma, invasive</td></tr><tr><td>8454/0</td><td>Cystic tumor of atrio-ventricular node</td></tr><tr><td>8460/0</td><td>Papillary serous cystadenoma, NOS</td></tr><tr><td>8460/3</td><td>Papillary serous cystadenocarcinoma</td></tr><tr><td>8461/0</td><td>Serous surface papilloma</td></tr><tr><td>8461/3</td><td>Serous surface papillary carcinoma</td></tr><tr><td>8462/1</td><td>Serous papillary cystic tumor of borderline malignancy</td></tr><tr><td>8463/1</td><td>Serous surface papillary tumor of borderline malignancy</td></tr><tr><td>8470/0</td><td>Mucinous cystadenoma, NOS</td></tr><tr><td>8470/1</td><td>Mucinous cystic tumor with moderate dysplasia</td></tr><tr><td>8470/2</td><td>Mucinous cystadenocarcinoma, non-invasive</td></tr><tr><td>8470/3</td><td>Mucinous cystadenocarcinoma, NOS</td></tr><tr><td>8471/0</td><td>Papillary mucinous cystadenoma, NOS</td></tr><tr><td>8471/3</td><td>Papillary mucinous cystadenocarcinoma</td></tr><tr><td>8472/1</td><td>Mucinous cystic tumor of borderline malignancy</td></tr><tr><td>8473/1</td><td>Papillary mucinous cystadenoma, borderline malignancy</td></tr><tr><td>8480/0</td><td>Mucinous adenoma</td></tr><tr><td>8480/3</td><td>Mucinous adenocarcinoma</td></tr><tr><td>8480/6</td><td>Pseudomyxoma peritonei</td></tr><tr><td>8481/3</td><td>Mucin-producing adenocarcinoma</td></tr><tr><td>8482/3</td><td>Mucinous adenocarcinoma, endocervical type</td></tr><tr><td>8490/3</td><td>Signet ring cell carcinoma</td></tr><tr><td>8490/6</td><td>Metastatic signet ring cell carcinoma</td></tr><tr><td>8500/2</td><td>Intraductal carcinoma, noninfiltrating, NOS</td></tr><tr><td>8500/3</td><td>Infiltrating duct carcinoma, NOS</td></tr><tr><td>8501/2</td><td>Comedocarcinoma, noninfiltrating</td></tr><tr><td>8501/3</td><td>Comedocarcinoma, NOS</td></tr><tr><td>8502/3</td><td>Secretory carcinoma of breast</td></tr><tr><td>8503/0</td><td>Intraductal papilloma</td></tr><tr><td>8503/2</td><td>Noninfiltrating intraductal papillary adenocarcinoma</td></tr><tr><td>8503/3</td><td>Intraductal papillary adenocarcinoma with invasion</td></tr><tr><td>8504/0</td><td>Intracystic papillary adenoma</td></tr><tr><td>8504/2</td><td>Noninfiltrating intracystic carcinoma</td></tr><tr><td>8504/3</td><td>Intracystic carcinoma, NOS</td></tr><tr><td>8505/0</td><td>Intraductal papillomatosis, NOS</td></tr><tr><td>8506/0</td><td>Adenoma of nipple</td></tr><tr><td>8507/2</td><td>Intraductal micropapillary carcinoma</td></tr><tr><td>8508/3</td><td>Cystic hypersecretory carcinoma</td></tr><tr><td>8510/3</td><td>Medullary carcinoma, NOS</td></tr><tr><td>8512/3</td><td>Medullary carcinoma with lymphoid stroma</td></tr><tr><td>8513/3</td><td>Atypical medullary carcinoma</td></tr><tr><td>8514/3</td><td>Duct carcinoma, desmoplastic type</td></tr><tr><td>8520/2</td><td>Lobular carcinoma in situ, NOS</td></tr><tr><td>8520/3</td><td>Lobular carcinoma, NOS</td></tr><tr><td>8851/0</td><td>Fibrolipoma</td></tr><tr><td>8851/3</td><td>Liposarcoma, well differentiated</td></tr><tr><td>8852/0</td><td>Fibromyxolipoma</td></tr><tr><td>8852/3</td><td>Myxoid liposarcoma</td></tr><tr><td>8853/3</td><td>Round cell liposarcoma</td></tr><tr><td>8854/0</td><td>Pleomorphic lipoma</td></tr><tr><td>8854/3</td><td>Pleomorphic liposarcoma</td></tr><tr><td>8855/3</td><td>Mixed liposarcoma</td></tr><tr><td>8856/0</td><td>Intramuscular lipoma</td></tr><tr><td>8857/0</td><td>Spindle cell lipoma</td></tr><tr><td>8857/3</td><td>Fibroblastic liposarcoma</td></tr><tr><td>8858/3</td><td>Dedifferentiated liposarcoma</td></tr><tr><td>8860/0</td><td>Angiomyolipoma</td></tr><tr><td>8861/0</td><td>Angiolipoma, NOS</td></tr><tr><td>8862/0</td><td>Chondroid lipoma</td></tr><tr><td>8870/0</td><td>Myelolipoma</td></tr><tr><td>8880/0</td><td>Hibernoma</td></tr><tr><td>8881/0</td><td>Lipoblastomatosis</td></tr><tr><td>8890/0</td><td>Leiomyoma, NOS</td></tr><tr><td>8890/1</td><td>Leiomyomatosis, NOS</td></tr><tr><td>8890/3</td><td>Leiomyosarcoma, NOS</td></tr><tr><td>8891/0</td><td>Epithelioid leiomyoma</td></tr><tr><td>8891/3</td><td>Epithelioid leiomyosarcoma</td></tr><tr><td>8892/0</td><td>Cellular leiomyoma</td></tr><tr><td>8893/0</td><td>Bizarre leiomyoma</td></tr><tr><td>8894/0</td><td>Angiomyoma</td></tr><tr><td>8894/3</td><td>Angiomyosarcoma</td></tr><tr><td>8895/0</td><td>Myoma</td></tr><tr><td>8895/3</td><td>Myosarcoma</td></tr><tr><td>8896/3</td><td>Myxoid leiomyosarcoma</td></tr><tr><td>8897/1</td><td>Smooth muscle tumor of uncertain malignant potential</td></tr><tr><td>8898/1</td><td>Metastasizing leiomyoma</td></tr><tr><td>8900/0</td><td>Rhabdomyoma, NOS</td></tr><tr><td>8900/3</td><td>Rhabdomyosarcoma, NOS</td></tr><tr><td>8901/3</td><td>Pleomorphic rhabdomyosarcoma, adult type</td></tr><tr><td>8902/3</td><td>Mixed type rhabdomyosarcoma</td></tr><tr><td>8903/0</td><td>Fetal rhabdomyoma</td></tr><tr><td>8904/0</td><td>Adult rhabdomyoma</td></tr><tr><td>8905/0</td><td>Genital rhabdomyoma</td></tr><tr><td>8910/3</td><td>Embryonal rhabdomyosarcoma, NOS</td></tr><tr><td>8912/3</td><td>Spindle cell rhabdomyosarcoma</td></tr><tr><td>8920/3</td><td>Alveolar rhabdomyosarcoma</td></tr><tr><td>8921/3</td><td>Rhabdomyosarcoma with ganglionic differentiation</td></tr><tr><td>8930/0</td><td>Endometrial stromal nodule</td></tr><tr><td>8930/3</td><td>Endometrial stromal sarcoma, NOS</td></tr><tr><td>8931/3</td><td>Endometrial stromal sarcoma, low grade</td></tr><tr><td>8932/0</td><td>Adenomyoma</td></tr><tr><td>8933/3</td><td>Adenosarcoma</td></tr><tr><td>8934/3</td><td>Carcinofibroma</td></tr><tr><td>8935/0</td><td>Stromal tumor, benign</td></tr><tr><td>8935/1</td><td>Stromal tumor, NOS</td></tr><tr><td>8935/3</td><td>Stromal sarcoma, NOS</td></tr><tr><td>9300/0</td><td>Adenomatoid odontogenic tumor</td></tr><tr><td>9301/0</td><td>Calcifying odontogenic cyst</td></tr><tr><td>9302/0</td><td>Odontogenic ghost cell tumor</td></tr><tr><td>9310/0</td><td>Ameloblastoma, NOS</td></tr><tr><td>9310/3</td><td>Ameloblastoma, malignant</td></tr><tr><td>9311/0</td><td>Odontoameloblastoma</td></tr><tr><td>9312/0</td><td>Squamous odontogenic tumor</td></tr><tr><td>9320/0</td><td>Odontogenic myxoma</td></tr><tr><td>9321/0</td><td>Central odontogenic fibroma</td></tr><tr><td>9322/0</td><td>Peripheral odontogenic fibroma</td></tr><tr><td>9330/0</td><td>Ameloblastic fibroma</td></tr><tr><td>9330/3</td><td>Ameloblastic fibrosarcoma</td></tr><tr><td>9340/0</td><td>Calcifying epithelial odontogenic tumor</td></tr><tr><td>9341/1</td><td>Clear cell odontogenic tumor</td></tr><tr><td>9342/3</td><td>Odontogenic carcinosarcoma</td></tr><tr><td>9350/1</td><td>Craniopharyngioma</td></tr><tr><td>9351/1</td><td>Craniopharyngioma, adamantinomatous</td></tr><tr><td>9352/1</td><td>Craniopharyngioma, papillary</td></tr><tr><td>9360/1</td><td>Pinealoma</td></tr><tr><td>9361/1</td><td>Pineocytoma</td></tr><tr><td>9362/3</td><td>Pineoblastoma</td></tr><tr><td>9363/0</td><td>Melanotic neuroectodermal tumor</td></tr><tr><td>9364/3</td><td>Peripheral neuroectodermal tumor</td></tr><tr><td>9365/3</td><td>Askin tumor</td></tr><tr><td>9370/3</td><td>Chordoma, NOS</td></tr><tr><td>9371/3</td><td>Chondroid chordoma</td></tr><tr><td>9372/3</td><td>Dedifferentiated chordoma</td></tr><tr><td>9373/0</td><td>Parachordoma</td></tr><tr><td>9380/3</td><td>Glioma, malignant</td></tr><tr><td>9381/3</td><td>Gliomatosis cerebri</td></tr><tr><td>9382/3</td><td>Mixed glioma</td></tr><tr><td>9383/1</td><td>Subependymoma</td></tr><tr><td>9384/1</td><td>Subependymal giant cell astrocytoma</td></tr><tr><td>9390/0</td><td>Choroid plexus papilloma, NOS</td></tr><tr><td>9390/1</td><td>Atypical choroid plexus papilloma</td></tr><tr><td>9390/3</td><td>Choroid plexus carcinoma</td></tr><tr><td>9391/3</td><td>Ependymoma, NOS</td></tr><tr><td>8521/3</td><td>Infiltrating ductular carcinoma</td></tr><tr><td>8522/2</td><td>Intraductal carcinoma and lobular carcinoma in situ</td></tr><tr><td>8522/3</td><td>Infiltrating duct and lobular carcinoma</td></tr><tr><td>8523/3</td><td>Infiltrating duct mixed with other types of carcinoma</td></tr><tr><td>8524/3</td><td>Infiltrating lobular mixed with other types of carcinoma</td></tr><tr><td>8525/3</td><td>Polymorphous low grade adenocarcinoma</td></tr><tr><td>8530/3</td><td>Inflammatory carcinoma</td></tr><tr><td>8540/3</td><td>Paget disease, mammary</td></tr><tr><td>8541/3</td><td>Paget disease and infiltrating duct carcinoma of breast</td></tr><tr><td>8542/3</td><td>Paget disease, extramammary</td></tr><tr><td>8543/3</td><td>Paget disease and intraductal carcinoma of breast</td></tr><tr><td>8550/0</td><td>Acinar cell adenoma</td></tr><tr><td>8550/1</td><td>Acinar cell tumor</td></tr><tr><td>8550/3</td><td>Acinar cell carcinoma</td></tr><tr><td>8551/3</td><td>Acinar cell cystadenocarcinoma</td></tr><tr><td>8560/0</td><td>Mixed squamous cell and glandular papilloma</td></tr><tr><td>8560/3</td><td>Adenosquamous carcinoma</td></tr><tr><td>8561/0</td><td>Adenolymphoma</td></tr><tr><td>8562/3</td><td>Epithelial-myoepithelial carcinoma</td></tr><tr><td>8570/3</td><td>Adenocarcinoma with squamous metaplasia</td></tr><tr><td>8571/3</td><td>Adenocarcinoma with cartilaginous and osseous metaplasia</td></tr><tr><td>8572/3</td><td>Adenocarcinoma with spindle cell metaplasia</td></tr><tr><td>8573/3</td><td>Adenocarcinoma with apocrine metaplasia</td></tr><tr><td>8574/3</td><td>Adenocarcinoma with neuroendocrine differentiation</td></tr><tr><td>8575/3</td><td>Metaplastic carcinoma, NOS</td></tr><tr><td>8576/3</td><td>Hepatoid adenocarcinoma</td></tr><tr><td>8580/0</td><td>Thymoma, benign</td></tr><tr><td>8580/1</td><td>Thymoma, NOS</td></tr><tr><td>8580/3</td><td>Thymoma, malignant, NOS</td></tr><tr><td>8581/1</td><td>Thymoma, type A, NOS</td></tr><tr><td>8581/3</td><td>Thymoma, type A, malignant</td></tr><tr><td>8582/1</td><td>Thymoma, type AB, NOS</td></tr><tr><td>8582/3</td><td>Thymoma, type AB, malignant</td></tr><tr><td>8583/1</td><td>Thymoma, type B1, NOS</td></tr><tr><td>8583/3</td><td>Thymoma, type B1, malignant</td></tr><tr><td>8584/1</td><td>Thymoma, type B2, NOS</td></tr><tr><td>8584/3</td><td>Thymoma, type B2, malignant</td></tr><tr><td>8585/1</td><td>Thymoma, type B3, NOS</td></tr><tr><td>8585/3</td><td>Thymoma, type B3, malignant</td></tr><tr><td>8586/3</td><td>Thymic carcinoma, NOS</td></tr><tr><td>8587/0</td><td>Ectopic hamartomatous thymoma</td></tr><tr><td>8588/3</td><td>Spindle epithelial tumor with thymus-like element</td></tr><tr><td>8589/3</td><td>Carcinoma showing thymus-like element</td></tr><tr><td>8590/1</td><td>Sex cord-gonadal stromal tumor, NOS</td></tr><tr><td>8591/1</td><td>Sex cord-gonadal stromal tumor, incompletely differentiated</td></tr><tr><td>8592/1</td><td>Sex cord-gonadal stromal tumor, mixed forms</td></tr><tr><td>8593/1</td><td>Stromal tumor with minor sex cord elements</td></tr><tr><td>8600/0</td><td>Thecoma, NOS</td></tr><tr><td>8600/3</td><td>Thecoma, malignant</td></tr><tr><td>8601/0</td><td>Thecoma, luteinized</td></tr><tr><td>8602/0</td><td>Sclerosing stromal tumor</td></tr><tr><td>8610/0</td><td>Luteoma, NOS</td></tr><tr><td>8620/1</td><td>Granulosa cell tumor, adult type</td></tr><tr><td>8620/3</td><td>Granulosa cell tumor, malignant</td></tr><tr><td>8621/1</td><td>Granulosa cell-theca cell tumor</td></tr><tr><td>8622/1</td><td>Granulosa cell tumor, juvenile</td></tr><tr><td>8623/1</td><td>Sex cord tumor with annular tubules</td></tr><tr><td>8630/0</td><td>Androblastoma, benign</td></tr><tr><td>8630/1</td><td>Androblastoma, NOS</td></tr><tr><td>8630/3</td><td>Androblastoma, malignant</td></tr><tr><td>8631/0</td><td>Sertoli-Leydig cell tumor, well differentiated</td></tr><tr><td>8631/1</td><td>Sertoli-Leydig cell tumor of intermediate differentiation</td></tr><tr><td>8631/3</td><td>Sertoli-Leydig cell tumor, poorly differentiated</td></tr><tr><td>8632/1</td><td>Gynandroblastoma</td></tr><tr><td>8633/1</td><td>Sertoli-Leydig cell tumor, retiform</td></tr><tr><td>8634/1</td><td>Sertoli-Leydig cell tumor, intermediate differentiation, with heterologous elements</td></tr><tr><td>8634/3</td><td>Sertoli-Leydig cell tumor, poorly differentiated, with heterologous elements</td></tr><tr><td>8640/1</td><td>Sertoli cell tumor, NOS</td></tr><tr><td>8640/3</td><td>Sertoli cell carcinoma</td></tr><tr><td>8641/0</td><td>Sertoli cell tumor with lipid storage</td></tr><tr><td>8642/1</td><td>Large cell calcifying Sertoli cell tumor</td></tr><tr><td>8650/0</td><td>Leydig cell tumor, benign</td></tr><tr><td>8650/1</td><td>Leydig cell tumor, NOS</td></tr><tr><td>8650/3</td><td>Leydig cell tumor, malignant</td></tr><tr><td>8660/0</td><td>Hilus cell tumor</td></tr><tr><td>8670/0</td><td>Lipid cell tumor of ovary</td></tr><tr><td>8670/3</td><td>Steroid cell tumor, malignant</td></tr><tr><td>8671/0</td><td>Adrenal rest tumor</td></tr><tr><td>8680/0</td><td>Paraganglioma, benign</td></tr><tr><td>8680/1</td><td>Paraganglioma, NOS</td></tr><tr><td>8680/3</td><td>Paraganglioma, malignant</td></tr><tr><td>8681/1</td><td>Sympathetic paraganglioma</td></tr><tr><td>8682/1</td><td>Parasympathetic paraganglioma</td></tr><tr><td>8683/0</td><td>Gangliocytic paraganglioma</td></tr><tr><td>8690/1</td><td>Glomus jugulare tumor, NOS</td></tr><tr><td>8691/1</td><td>Aortic body tumor</td></tr><tr><td>8692/1</td><td>Carotid body tumor</td></tr><tr><td>8693/1</td><td>Extra-adrenal paraganglioma, NOS</td></tr><tr><td>8693/3</td><td>Extra-adrenal paraganglioma, malignant</td></tr><tr><td>8700/0</td><td>Pheochromocytoma, NOS</td></tr><tr><td>8700/3</td><td>Pheochromocytoma, malignant</td></tr><tr><td>8710/3</td><td>Glomangiosarcoma</td></tr><tr><td>8711/0</td><td>Glomus tumor, NOS</td></tr><tr><td>8711/3</td><td>Glomus tumor, malignant</td></tr><tr><td>8712/0</td><td>Glomangioma</td></tr><tr><td>8713/0</td><td>Glomangiomyoma</td></tr><tr><td>8720/0</td><td>Pigmented nevus, NOS</td></tr><tr><td>8720/2</td><td>Melanoma in situ</td></tr><tr><td>8720/3</td><td>Malignant melanoma, NOS</td></tr><tr><td>8721/3</td><td>Nodular melanoma</td></tr><tr><td>8722/0</td><td>Balloon cell nevus</td></tr><tr><td>8722/3</td><td>Balloon cell melanoma</td></tr><tr><td>8723/0</td><td>Halo nevus</td></tr><tr><td>8723/3</td><td>Malignant melanoma, regressing</td></tr><tr><td>8725/0</td><td>Neuronevus</td></tr><tr><td>8726/0</td><td>Magnocellular nevus</td></tr><tr><td>8727/0</td><td>Dysplastic nevus</td></tr><tr><td>8728/0</td><td>Diffuse melanocytosis</td></tr><tr><td>8728/1</td><td>Meningeal melanocytoma</td></tr><tr><td>8728/3</td><td>Meningeal melanomatosis</td></tr><tr><td>8730/0</td><td>Nonpigmented nevus</td></tr><tr><td>8730/3</td><td>Amelanotic melanoma</td></tr><tr><td>8740/0</td><td>Junctional nevus, NOS</td></tr><tr><td>8740/3</td><td>Malignant melanoma in junctional nevus</td></tr><tr><td>8741/2</td><td>Precancerous melanosis, NOS</td></tr><tr><td>8741/3</td><td>Malignant melanoma in precancerous melanosis</td></tr><tr><td>8742/2</td><td>Lentigo maligna</td></tr><tr><td>8742/3</td><td>Lentigo maligna melanoma</td></tr><tr><td>8743/3</td><td>Superficial spreading melanoma</td></tr><tr><td>8744/3</td><td>Acral lentiginous melanoma, malignant</td></tr><tr><td>8745/3</td><td>Desmoplastic melanoma, malignant</td></tr><tr><td>8746/3</td><td>Mucosal lentiginous melanoma</td></tr><tr><td>8750/0</td><td>Intradermal nevus</td></tr><tr><td>8760/0</td><td>Compound nevus</td></tr><tr><td>8761/0</td><td>Small congenital nevus</td></tr><tr><td>8761/1</td><td>Giant pigmented nevus, NOS</td></tr><tr><td>8761/3</td><td>Malignant melanoma in giant pigmented nevus</td></tr><tr><td>8762/1</td><td>Proliferative dermal lesion in congenital nevus</td></tr><tr><td>8770/0</td><td>Epithelioid and spindle cell nevus</td></tr><tr><td>8770/3</td><td>Mixed epithelioid and spindle cell melanoma</td></tr><tr><td>8771/0</td><td>Epithelioid cell nevus</td></tr><tr><td>8771/3</td><td>Epithelioid cell melanoma</td></tr><tr><td>8772/0</td><td>Spindle cell nevus, NOS</td></tr><tr><td>8772/3</td><td>Spindle cell melanoma, NOS</td></tr><tr><td>8773/3</td><td>Spindle cell melanoma, type A</td></tr><tr><td>8774/3</td><td>Spindle cell melanoma, type B</td></tr><tr><td>8780/0</td><td>Blue nevus, NOS</td></tr><tr><td>8780/3</td><td>Blue nevus, malignant</td></tr><tr><td>8790/0</td><td>Cellular blue nevus</td></tr><tr><td>8800/0</td><td>Soft tissue tumor, benign</td></tr><tr><td>8800/3</td><td>Sarcoma, NOS</td></tr><tr><td>8800/9</td><td>Sarcomatosis, NOS</td></tr><tr><td>8801/3</td><td>Spindle cell sarcoma</td></tr><tr><td>8802/3</td><td>Giant cell sarcoma</td></tr><tr><td>8803/3</td><td>Small cell sarcoma</td></tr><tr><td>8804/3</td><td>Epithelioid sarcoma</td></tr><tr><td>8805/3</td><td>Undifferentiated sarcoma</td></tr><tr><td>8806/3</td><td>Desmoplastic small round cell tumor</td></tr><tr><td>8810/0</td><td>Fibroma, NOS</td></tr><tr><td>8810/1</td><td>Cellular fibroma</td></tr><tr><td>8810/3</td><td>Fibrosarcoma, NOS</td></tr><tr><td>8811/0</td><td>Fibromyxoma</td></tr><tr><td>8811/3</td><td>Fibromyxosarcoma</td></tr><tr><td>8812/0</td><td>Periosteal fibroma</td></tr><tr><td>8812/3</td><td>Periosteal fibrosarcoma</td></tr><tr><td>8813/0</td><td>Fascial fibroma</td></tr><tr><td>8813/3</td><td>Fascial fibrosarcoma</td></tr><tr><td>8814/3</td><td>Infantile fibrosarcoma</td></tr><tr><td>8815/0</td><td>Solitary fibrous tumor</td></tr><tr><td>8815/3</td><td>Solitary fibrous tumor, malignant</td></tr><tr><td>8820/0</td><td>Elastofibroma</td></tr><tr><td>8821/1</td><td>Aggressive fibromatosis</td></tr><tr><td>8822/1</td><td>Abdominal fibromatosis</td></tr><tr><td>8823/0</td><td>Desmoplastic fibroma</td></tr><tr><td>8824/0</td><td>Myofibroma</td></tr><tr><td>8824/1</td><td>Myofibromatosis</td></tr><tr><td>8825/0</td><td>Myofibroblastoma</td></tr><tr><td>8825/1</td><td>Myofibroblastic tumor, NOS</td></tr><tr><td>8826/0</td><td>Angiomyofibroblastoma</td></tr><tr><td>8827/1</td><td>Myofibroblastic tumor, peribronchial</td></tr><tr><td>8830/0</td><td>Benign fibrous histiocytoma</td></tr><tr><td>8830/1</td><td>Atypical fibrous histiocytoma</td></tr><tr><td>8830/3</td><td>Malignant fibrous histiocytoma</td></tr><tr><td>8831/0</td><td>Histiocytoma, NOS</td></tr><tr><td>8832/0</td><td>Dermatofibroma, NOS</td></tr><tr><td>8832/3</td><td>Dermatofibrosarcoma, NOS</td></tr><tr><td>8833/3</td><td>Pigmented dermatofibrosarcoma protuberans</td></tr><tr><td>8834/1</td><td>Giant cell fibroblastoma</td></tr><tr><td>8835/1</td><td>Plexiform fibrohistiocytic tumor</td></tr><tr><td>8836/1</td><td>Angiomatoid fibrous histiocytoma</td></tr><tr><td>8840/0</td><td>Myxoma, NOS</td></tr><tr><td>8840/3</td><td>Myxosarcoma</td></tr><tr><td>8841/1</td><td>Angiomyxoma</td></tr><tr><td>8842/0</td><td>Ossifying fibromyxoid tumor</td></tr><tr><td>8850/0</td><td>Lipoma, NOS</td></tr><tr><td>8850/1</td><td>Atypical lipoma/j</td></tr><tr><td>8850/3</td><td>Liposarcoma, NOS</td></tr><tr><td>8936/0</td><td>Gastrointestinal stromal tumor, benign</td></tr><tr><td>8936/1</td><td>Gastrointestinal stromal tumor, NOS</td></tr><tr><td>8936/3</td><td>Gastrointestinal stromal sarcoma</td></tr><tr><td>8940/0</td><td>Pleomorphic adenoma</td></tr><tr><td>8940/3</td><td>Mixed tumor, malignant, NOS</td></tr><tr><td>8941/3</td><td>Carcinoma in pleomorphic adenoma</td></tr><tr><td>8950/3</td><td>Mullerian mixed tumor</td></tr><tr><td>8951/3</td><td>Mesodermal mixed tumor</td></tr><tr><td>8959/0</td><td>Benign cystic nephroma</td></tr><tr><td>8959/1</td><td>Cystic partially differentiated nephroblastoma</td></tr><tr><td>8959/3</td><td>Malignant cystic nephroma</td></tr><tr><td>8960/1</td><td>Mesoblastic nephroma</td></tr><tr><td>8960/3</td><td>Nephroblastoma, NOS</td></tr><tr><td>8963/3</td><td>Malignant rhabdoid tumor</td></tr><tr><td>8964/3</td><td>Clear cell sarcoma of kidney</td></tr><tr><td>8965/0</td><td>Nephrogenic adenofibroma</td></tr><tr><td>8966/0</td><td>Renomedullary interstitial cell tumor</td></tr><tr><td>8967/0</td><td>Ossifying renal tumor</td></tr><tr><td>8970/3</td><td>Hepatoblastoma</td></tr><tr><td>8971/3</td><td>Pancreatoblastoma</td></tr><tr><td>8972/3</td><td>Pulmonary blastoma</td></tr><tr><td>8973/3</td><td>Pleuropulmonary blastoma</td></tr><tr><td>8974/1</td><td>Sialoblastoma</td></tr><tr><td>8980/3</td><td>Carcinosarcoma, NOS</td></tr><tr><td>8981/3</td><td>Carcinosarcoma, embryonal</td></tr><tr><td>8982/0</td><td>Myoepithelioma</td></tr><tr><td>8982/3</td><td>Malignant myoepithelioma</td></tr><tr><td>8983/0</td><td>Adenomyoepithelioma</td></tr><tr><td>8990/0</td><td>Mesenchymoma, benign</td></tr><tr><td>8990/1</td><td>Mesenchymoma, NOS</td></tr><tr><td>8990/3</td><td>Mesenchymoma, malignant</td></tr><tr><td>8991/3</td><td>Embryonal sarcoma</td></tr><tr><td>9000/0</td><td>Brenner tumor, NOS</td></tr><tr><td>9000/1</td><td>Brenner tumor, borderline malignancy</td></tr><tr><td>9000/3</td><td>Brenner tumor, malignant</td></tr><tr><td>9010/0</td><td>Fibroadenoma, NOS</td></tr><tr><td>9011/0</td><td>Intracanalicular fibroadenoma</td></tr><tr><td>9012/0</td><td>Pericanalicular fibroadenoma</td></tr><tr><td>9013/0</td><td>Adenofibroma, NOS</td></tr><tr><td>9014/0</td><td>Serous adenofibroma, NOS</td></tr><tr><td>9014/1</td><td>Serous adenofibroma of borderline malignancy</td></tr><tr><td>9014/3</td><td>Serous adenocarcinofibroma</td></tr><tr><td>9015/0</td><td>Mucinous adenofibroma, NOS</td></tr><tr><td>9015/1</td><td>Mucinous adenofibroma of borderline malignancy</td></tr><tr><td>9015/3</td><td>Mucinous adenocarcinofibroma</td></tr><tr><td>9016/0</td><td>Giant fibroadenoma</td></tr><tr><td>9020/0</td><td>Phyllodes tumor, benign</td></tr><tr><td>9020/1</td><td>Phyllodes tumor, borderline</td></tr><tr><td>9020/3</td><td>Phyllodes tumor, malignant</td></tr><tr><td>9030/0</td><td>Juvenile fibroadenoma</td></tr><tr><td>9040/0</td><td>Synovioma, benign</td></tr><tr><td>9040/3</td><td>Synovial sarcoma, NOS</td></tr><tr><td>9041/3</td><td>Synovial sarcoma, spindle cell</td></tr><tr><td>9042/3</td><td>Synovial sarcoma, epithelioid cell</td></tr><tr><td>9043/3</td><td>Synovial sarcoma, biphasic</td></tr><tr><td>9044/3</td><td>Clear cell sarcoma, NOS</td></tr><tr><td>9050/0</td><td>Mesothelioma, benign</td></tr><tr><td>9050/3</td><td>Mesothelioma, malignant</td></tr><tr><td>9051/0</td><td>Fibrous mesothelioma, benign</td></tr><tr><td>9051/3</td><td>Fibrous mesothelioma, malignant</td></tr><tr><td>9052/0</td><td>Epithelioid mesothelioma, benign</td></tr><tr><td>9052/3</td><td>Epithelioid mesothelioma, malignant</td></tr><tr><td>9053/3</td><td>Mesothelioma, biphasic, malignant</td></tr><tr><td>9054/0</td><td>Adenomatoid tumor, NOS</td></tr><tr><td>9055/0</td><td>Multicystic mesothelioma, benign</td></tr><tr><td>9055/1</td><td>Cystic mesothelioma, NOS</td></tr><tr><td>9060/3</td><td>Dysgerminoma</td></tr><tr><td>9061/3</td><td>Seminoma, NOS</td></tr><tr><td>9062/3</td><td>Seminoma, anaplastic</td></tr><tr><td>9063/3</td><td>Spermatocytic seminoma</td></tr><tr><td>9064/2</td><td>Intratubular malignant germ cells</td></tr><tr><td>9064/3</td><td>Germinoma</td></tr><tr><td>9065/3</td><td>Germ cell tumor, nonseminomatous</td></tr><tr><td>9070/3</td><td>Embryonal carcinoma, NOS</td></tr><tr><td>9071/3</td><td>Yolk sac tumor</td></tr><tr><td>9072/3</td><td>Polyembryoma</td></tr><tr><td>9073/1</td><td>Gonadoblastoma</td></tr><tr><td>9080/0</td><td>Teratoma, benign</td></tr><tr><td>9080/1</td><td>Teratoma, NOS</td></tr><tr><td>9080/3</td><td>Teratoma, malignant, NOS</td></tr><tr><td>9081/3</td><td>Teratocarcinoma</td></tr><tr><td>9082/3</td><td>Malignant teratoma, undifferentiated</td></tr><tr><td>9083/3</td><td>Malignant teratoma, intermediate</td></tr><tr><td>9084/0</td><td>Dermoid cyst, NOS</td></tr><tr><td>9084/3</td><td>Teratoma with malignant transformation</td></tr><tr><td>9085/3</td><td>Mixed germ cell tumor</td></tr><tr><td>9090/0</td><td>Struma ovarii, NOS</td></tr><tr><td>9090/3</td><td>Struma ovarii, malignant</td></tr><tr><td>9091/1</td><td>Strumal carcinoid</td></tr><tr><td>9100/0</td><td>Hydatidiform mole, NOS</td></tr><tr><td>9100/1</td><td>Invasive hydatidiform mole</td></tr><tr><td>9100/3</td><td>Choriocarcinoma, NOS</td></tr><tr><td>9101/3</td><td>Choriocarcinoma combined with other germ cell elements</td></tr><tr><td>9102/3</td><td>Malignant teratoma, trophoblastic</td></tr><tr><td>9103/0</td><td>Partial hydatidiform mole</td></tr><tr><td>9104/1</td><td>Placental site trophoblastic tumor</td></tr><tr><td>9105/3</td><td>Trophoblastic tumor, epithelioid</td></tr><tr><td>9110/0</td><td>Mesonephroma, benign</td></tr><tr><td>9110/1</td><td>Mesonephric tumor, NOS</td></tr><tr><td>9110/3</td><td>Mesonephroma, malignant</td></tr><tr><td>9120/0</td><td>Hemangioma, NOS</td></tr><tr><td>9120/3</td><td>Hemangiosarcoma</td></tr><tr><td>9121/0</td><td>Cavernous hemangioma</td></tr><tr><td>9122/0</td><td>Venous hemangioma</td></tr><tr><td>9123/0</td><td>Racemose hemangioma</td></tr><tr><td>9124/3</td><td>Kupffer cell sarcoma</td></tr><tr><td>9125/0</td><td>Epithelioid hemangioma</td></tr><tr><td>9130/0</td><td>Hemangioendothelioma, benign</td></tr><tr><td>9130/1</td><td>Hemangioendothelioma, NOS</td></tr><tr><td>9130/3</td><td>Hemangioendothelioma, malignant</td></tr><tr><td>9131/0</td><td>Capillary hemangioma</td></tr><tr><td>9132/0</td><td>Intramuscular hemangioma</td></tr><tr><td>9133/1</td><td>Epithelioid hemangioendothelioma, NOS</td></tr><tr><td>9133/3</td><td>Epithelioid hemangioendothelioma, malignant</td></tr><tr><td>9135/1</td><td>Endovascular papillary angioendothelioma</td></tr><tr><td>9136/1</td><td>Spindle cell hemangioendothelioma</td></tr><tr><td>9140/3</td><td>Kaposi sarcoma</td></tr><tr><td>9141/0</td><td>Angiokeratoma</td></tr><tr><td>9142/0</td><td>Verrucous keratotic hemangioma</td></tr><tr><td>9150/0</td><td>Hemangiopericytoma, benign</td></tr><tr><td>9150/1</td><td>Hemangiopericytoma, NOS</td></tr><tr><td>9150/3</td><td>Hemangiopericytoma, malignant</td></tr><tr><td>9160/0</td><td>Angiofibroma, NOS</td></tr><tr><td>9161/0</td><td>Acquired tufted hemangioma</td></tr><tr><td>9161/1</td><td>Hemangioblastoma</td></tr><tr><td>9170/0</td><td>Lymphangioma, NOS</td></tr><tr><td>9170/3</td><td>Lymphangiosarcoma</td></tr><tr><td>9171/0</td><td>Capillary lymphangioma</td></tr><tr><td>9172/0</td><td>Cavernous lymphangioma</td></tr><tr><td>9173/0</td><td>Cystic lymphangioma</td></tr><tr><td>9174/0</td><td>Lymphangiomyoma</td></tr><tr><td>9174/1</td><td>Lymphangiomyomatosis</td></tr><tr><td>9175/0</td><td>Hemolymphangioma</td></tr><tr><td>9180/0</td><td>Osteoma, NOS</td></tr><tr><td>9180/3</td><td>Osteosarcoma, NOS</td></tr><tr><td>9181/3</td><td>Chondroblastic osteosarcoma</td></tr><tr><td>9182/3</td><td>Fibroblastic osteosarcoma</td></tr><tr><td>9183/3</td><td>Telangiectatic osteosarcoma</td></tr><tr><td>9184/3</td><td>Osteosarcoma in Paget disease of bone</td></tr><tr><td>9185/3</td><td>Small cell osteosarcoma</td></tr><tr><td>9186/3</td><td>Central osteosarcoma</td></tr><tr><td>9187/3</td><td>Intraosseous well differentiated osteosarcoma</td></tr><tr><td>9191/0</td><td>Osteoid osteoma, NOS</td></tr><tr><td>9192/3</td><td>Parosteal osteosarcoma</td></tr><tr><td>9193/3</td><td>Periosteal osteosarcoma</td></tr><tr><td>9194/3</td><td>High grade surface osteosarcoma</td></tr><tr><td>9195/3</td><td>Intracortical osteosarcoma</td></tr><tr><td>9200/0</td><td>Osteoblastoma, NOS</td></tr><tr><td>9200/1</td><td>Aggressive osteoblastoma</td></tr><tr><td>9210/0</td><td>Osteochondroma</td></tr><tr><td>9210/1</td><td>Osteochondromatosis, NOS</td></tr><tr><td>9220/0</td><td>Chondroma, NOS</td></tr><tr><td>9220/1</td><td>Chondromatosis, NOS</td></tr><tr><td>9220/3</td><td>Chondrosarcoma, NOS</td></tr><tr><td>9221/0</td><td>Juxtacortical chondroma</td></tr><tr><td>9221/3</td><td>Juxtacortical chondrosarcoma</td></tr><tr><td>9230/0</td><td>Chondroblastoma, NOS</td></tr><tr><td>9230/3</td><td>Chondroblastoma, malignant</td></tr><tr><td>9231/3</td><td>Myxoid chondrosarcoma</td></tr><tr><td>9240/3</td><td>Mesenchymal chondrosarcoma</td></tr><tr><td>9241/0</td><td>Chondromyxoid fibroma</td></tr><tr><td>9242/3</td><td>Clear cell chondrosarcoma</td></tr><tr><td>9243/3</td><td>Dedifferentiated chondrosarcoma</td></tr><tr><td>9250/1</td><td>Giant cell tumor of bone, NOS</td></tr><tr><td>9250/3</td><td>Giant cell tumor of bone, malignant</td></tr><tr><td>9251/1</td><td>Giant cell tumor of soft parts, NOS</td></tr><tr><td>9251/3</td><td>Malignant giant cell tumor of soft parts</td></tr><tr><td>9252/0</td><td>Tenosynovial giant cell tumor</td></tr><tr><td>9252/3</td><td>Malignant tenosynovial giant cell tumor</td></tr><tr><td>9260/3</td><td>Ewing sarcoma</td></tr><tr><td>9261/3</td><td>Adamantinoma of long bones</td></tr><tr><td>9262/0</td><td>Ossifying fibroma</td></tr><tr><td>9270/0</td><td>Odontogenic tumor, benign</td></tr><tr><td>9270/1</td><td>Odontogenic tumor, NOS</td></tr><tr><td>9270/3</td><td>Odontogenic tumor, malignant</td></tr><tr><td>9271/0</td><td>Ameloblastic fibrodentinoma</td></tr><tr><td>9272/0</td><td>Cementoma, NOS</td></tr><tr><td>9273/0</td><td>Cementoblastoma, benign</td></tr><tr><td>9274/0</td><td>Cementifying fibroma</td></tr><tr><td>9275/0</td><td>Gigantiform cementoma</td></tr><tr><td>9280/0</td><td>Odontoma, NOS</td></tr><tr><td>9281/0</td><td>Compound odontoma</td></tr><tr><td>9282/0</td><td>Complex odontoma</td></tr><tr><td>9290/0</td><td>Ameloblastic fibro-odontoma</td></tr><tr><td>9290/3</td><td>Ameloblastic odontosarcoma</td></tr><tr><td>9392/3</td><td>Ependymoma, anaplastic</td></tr><tr><td>9393/3</td><td>Papillary ependymoma</td></tr><tr><td>9394/1</td><td>Myxopapillary ependymoma</td></tr><tr><td>9400/3</td><td>Astrocytoma, NOS</td></tr><tr><td>9401/3</td><td>Astrocytoma, anaplastic</td></tr><tr><td>9410/3</td><td>Protoplasmic astrocytoma</td></tr><tr><td>9411/3</td><td>Gemistocytic astrocytoma</td></tr><tr><td>9412/1</td><td>Desmoplastic infantile astrocytoma</td></tr><tr><td>9413/0</td><td>Dysembryoplastic neuroepithelial tumor</td></tr><tr><td>9420/3</td><td>Fibrillary astrocytoma</td></tr><tr><td>9421/1</td><td>Pilocytic astrocytoma</td></tr><tr><td>9423/3</td><td>Polar spongioblastoma</td></tr><tr><td>9424/3</td><td>Pleomorphic xanthoastrocytoma</td></tr><tr><td>9430/3</td><td>Astroblastoma</td></tr><tr><td>9440/3</td><td>Glioblastoma, NOS</td></tr><tr><td>9441/3</td><td>Giant cell glioblastoma</td></tr><tr><td>9442/1</td><td>Gliofibroma</td></tr><tr><td>9442/3</td><td>Gliosarcoma</td></tr><tr><td>9444/1</td><td>Chordoid glioma</td></tr><tr><td>9450/3</td><td>Oligodendroglioma, NOS</td></tr><tr><td>9451/3</td><td>Oligodendroglioma, anaplastic</td></tr><tr><td>9460/3</td><td>Oligodendroblastoma</td></tr><tr><td>9470/3</td><td>Medulloblastoma, NOS</td></tr><tr><td>9471/3</td><td>Desmoplastic nodular medulloblastoma</td></tr><tr><td>9472/3</td><td>Medullomyoblastoma</td></tr><tr><td>9473/3</td><td>Primitive neuroectodermal tumor, NOS</td></tr><tr><td>9474/3</td><td>Large cell medulloblastoma</td></tr><tr><td>9480/3</td><td>Cerebellar sarcoma, NOS</td></tr><tr><td>9490/0</td><td>Ganglioneuroma</td></tr><tr><td>9490/3</td><td>Ganglioneuroblastoma</td></tr><tr><td>9491/0</td><td>Ganglioneuromatosis</td></tr><tr><td>9492/0</td><td>Gangliocytoma</td></tr><tr><td>9493/0</td><td>Dysplastic gangliocytoma of cerebellum (Lhermitte-Duclos)</td></tr><tr><td>9500/3</td><td>Neuroblastoma, NOS</td></tr><tr><td>9501/0</td><td>Medulloepithelioma, benign</td></tr><tr><td>9501/3</td><td>Medulloepithelioma, NOS</td></tr><tr><td>9502/0</td><td>Teratoid medulloepithelioma, benign</td></tr><tr><td>9502/3</td><td>Teratoid medulloepithelioma</td></tr><tr><td>9503/3</td><td>Neuroepithelioma, NOS</td></tr><tr><td>9504/3</td><td>Spongioneuroblastoma</td></tr><tr><td>9505/1</td><td>Ganglioglioma, NOS</td></tr><tr><td>9505/3</td><td>Ganglioglioma, anaplastic</td></tr><tr><td>9506/1</td><td>Central neurocytoma</td></tr><tr><td>9507/0</td><td>Pacinian tumor</td></tr><tr><td>9508/3</td><td>Atypical teratoid/rhabdoid tumor</td></tr><tr><td>9510/0</td><td>Retinocytoma</td></tr><tr><td>9510/3</td><td>Retinoblastoma, NOS</td></tr><tr><td>9511/3</td><td>Retinoblastoma, differentiated</td></tr><tr><td>9512/3</td><td>Retinoblastoma, undifferentiated</td></tr><tr><td>9513/3</td><td>Retinoblastoma, diffuse</td></tr><tr><td>9514/1</td><td>Retinoblastoma, spontaneously regressed</td></tr><tr><td>9520/3</td><td>Olfactory neurogenic tumor</td></tr><tr><td>9521/3</td><td>Olfactory neurocytoma</td></tr><tr><td>9522/3</td><td>Olfactory neuroblastoma</td></tr><tr><td>9523/3</td><td>Olfactory neuroepithelioma</td></tr><tr><td>9530/0</td><td>Meningioma, NOS</td></tr><tr><td>9530/1</td><td>Meningiomatosis, NOS</td></tr><tr><td>9530/3</td><td>Meningioma, malignant</td></tr><tr><td>9531/0</td><td>Meningothelial meningioma</td></tr><tr><td>9532/0</td><td>Fibrous meningioma</td></tr><tr><td>9533/0</td><td>Psammomatous meningioma</td></tr><tr><td>9534/0</td><td>Angiomatous meningioma</td></tr><tr><td>9535/0</td><td>Hemangioblastic meningioma</td></tr><tr><td>9537/0</td><td>Transitional meningioma</td></tr><tr><td>9538/1</td><td>Clear cell meningioma</td></tr><tr><td>9538/3</td><td>Papillary meningioma</td></tr><tr><td>9539/1</td><td>Atypical meningioma</td></tr><tr><td>9539/3</td><td>Meningeal sarcomatosis</td></tr><tr><td>9540/0</td><td>Neurofibroma, NOS</td></tr><tr><td>9540/1</td><td>Neurofibromatosis, NOS</td></tr><tr><td>9540/3</td><td>Malignant peripheral nerve sheath tumor</td></tr><tr><td>9541/0</td><td>Melanotic neurofibroma</td></tr><tr><td>9550/0</td><td>Plexiform neurofibroma</td></tr><tr><td>9560/0</td><td>Neurilemoma, NOS</td></tr><tr><td>9560/1</td><td>Neurinomatosis</td></tr><tr><td>9560/3</td><td>Neurilemoma, malignant</td></tr><tr><td>9561/3</td><td>Malignant peripheral nerve sheath tumor with rhabdomyoblastic differentiation</td></tr><tr><td>9562/0</td><td>Neurothekeoma</td></tr><tr><td>9570/0</td><td>Neuroma, NOS</td></tr><tr><td>9571/0</td><td>Perineurioma, NOS</td></tr><tr><td>9571/3</td><td>Perineurioma, malignant</td></tr><tr><td>9580/0</td><td>Granular cell tumor, NOS</td></tr><tr><td>9580/3</td><td>Granular cell tumor, malignant</td></tr><tr><td>9581/3</td><td>Alveolar soft part sarcoma</td></tr><tr><td>9582/0</td><td>Granular cell tumor of the sellar region</td></tr><tr><td>9590/3</td><td>Malignant lymphoma, NOS</td></tr><tr><td>9591/3</td><td>Malignant lymphoma, non-Hodgkin, NOS</td></tr><tr><td>9596/3</td><td>Composite Hodgkin and non-Hodgkin lymphoma</td></tr><tr><td>9650/3</td><td>Hodgkin lymphoma, NOS</td></tr><tr><td>9651/3</td><td>Hodgkin lymphoma, lymphocyte-rich</td></tr><tr><td>9652/3</td><td>Hodgkin lymphoma, mixed cellularity, NOS</td></tr><tr><td>9653/3</td><td>Hodgkin lymphoma, lymphocyte depletion, NOS</td></tr><tr><td>9654/3</td><td>Hodgkin lymphoma, lymphocyte depletion, diffuse fibrosis</td></tr><tr><td>9655/3</td><td>Hodgkin lymphoma, lymphocyte depletion, reticular</td></tr><tr><td>9659/3</td><td>Hodgkin lymphoma, nodular lymphocyte predominance</td></tr><tr><td>9661/3</td><td>Hodgkin granuloma</td></tr><tr><td>9662/3</td><td>Hodgkin sarcoma</td></tr><tr><td>9663/3</td><td>Hodgkin lymphoma, nodular sclerosis, NOS</td></tr><tr><td>9664/3</td><td>Hodgkin lymphoma, nodular sclerosis, cellular phase</td></tr><tr><td>9665/3</td><td>Hodgkin lymphoma, nodular sclerosis,  grade 1</td></tr><tr><td>9667/3</td><td>Hodgkin lymphoma, nodular sclerosis,  grade 2</td></tr><tr><td>9670/3</td><td>Malignant lymphoma, small B lymphocytic, NOS</td></tr><tr><td>9671/3</td><td>Malignant lymphoma, lymphoplasmacytic</td></tr><tr><td>9673/3</td><td>Mantle cell lymphoma</td></tr><tr><td>9675/3</td><td>Malignant lymphoma, mixed small and large cell, diffuse</td></tr><tr><td>9678/3</td><td>Primary effusion lymphoma</td></tr><tr><td>9679/3</td><td>Mediastinal large B-cell lymphoma</td></tr><tr><td>9680/3</td><td>Malignant lymphoma, large B-cell, diffuse, NOS</td></tr><tr><td>9684/3</td><td>Malignant lymphoma, large B-cell, diffuse, immunoblastic, NOS</td></tr><tr><td>9687/3</td><td>Burkitt lymphoma, NOS</td></tr><tr><td>9689/3</td><td>Splenic marginal zone B-cell lymphoma</td></tr><tr><td>9690/3</td><td>Follicular lymphoma, NOS</td></tr><tr><td>9691/3</td><td>Follicular lymphoma, grade 2</td></tr><tr><td>9695/3</td><td>Follicular lymphoma, grade 1</td></tr><tr><td>9698/3</td><td>Follicular lymphoma, grade 3</td></tr><tr><td>9699/3</td><td>Marginal zone B-cell lymphoma, NOS</td></tr><tr><td>9700/3</td><td>Mycosis fungoides</td></tr><tr><td>9701/3</td><td>Sezary syndrome</td></tr><tr><td>9702/3</td><td>Mature T-cell lymphoma, NOS</td></tr><tr><td>9705/3</td><td>Angioimmunoblastic T-cell lymphoma</td></tr><tr><td>9708/3</td><td>Subcutaneous panniculitis-like T-cell lymphoma</td></tr><tr><td>9709/3</td><td>Cutaneous T-cell lymphoma, NOS</td></tr><tr><td>9714/3</td><td>Anaplastic large cell lymphoma, T cell and Null cell type</td></tr><tr><td>9716/3</td><td>Hepatosplenic  (gamma-delta) cell lymphoma</td></tr><tr><td>9717/3</td><td>Intestinal T-cell lymphoma</td></tr><tr><td>9718/3</td><td>Primary cutaneous CD30+ T-cell lymphoproliferative disorder</td></tr><tr><td>9719/3</td><td>NK/T-cell lymphoma, nasal and nasal-type</td></tr><tr><td>9727/3</td><td>Precursor cell lymphoblastic lymphoma, NOS</td></tr><tr><td>9728/3</td><td>Precursor B-cell lymphoblastic lymphoma</td></tr><tr><td>9729/3</td><td>Precursor T-cell lymphoblastic lymphoma</td></tr><tr><td>9731/3</td><td>Plasmacytoma, NOS</td></tr><tr><td>9732/3</td><td>Multiple myeloma</td></tr><tr><td>9733/3</td><td>Plasma cell leukemia</td></tr><tr><td>9734/3</td><td>Plasmacytoma, extramedullary (not occurring in bone)</td></tr><tr><td>9740/1</td><td>Mastocytoma, NOS</td></tr><tr><td>9740/3</td><td>Mast cell sarcoma</td></tr><tr><td>9741/3</td><td>Malignant mastocytosis</td></tr><tr><td>9742/3</td><td>Mast cell leukemia</td></tr><tr><td>9750/3</td><td>Malignant histiocytosis</td></tr><tr><td>9751/1</td><td>Langerhans cell histiocytosis, NOS</td></tr><tr><td>9752/1</td><td>Langerhans cell histiocytosis, unifocal</td></tr><tr><td>9753/1</td><td>Langerhans cell histiocytosis, multifocal</td></tr><tr><td>9754/3</td><td>Langerhans cell histiocytosis, disseminated</td></tr><tr><td>9755/3</td><td>Histiocytic sarcoma</td></tr><tr><td>9756/3</td><td>Langerhans cell sarcoma</td></tr><tr><td>9757/3</td><td>Interdigitating dendritic cell sarcoma</td></tr><tr><td>9758/3</td><td>Follicular dendritic cell sarcoma</td></tr><tr><td>9760/3</td><td>Immunoproliferative disease, NOS</td></tr><tr><td>9761/3</td><td>Waldenstrom macroglobulinemia</td></tr><tr><td>9762/3</td><td>Heavy chain disease, NOS</td></tr><tr><td>9764/3</td><td>Immunoproliferative small intestinal  disease</td></tr><tr><td>9765/1</td><td>Monoclonal gammopathy of undetermined significance</td></tr><tr><td>9766/1</td><td>Angiocentric immunoproliferative lesion</td></tr><tr><td>9767/1</td><td>Angioimmunoblastic lymphadenopathy (AIC)</td></tr><tr><td>9768/1</td><td>T-gamma lymphoproliferative disease</td></tr><tr><td>9769/1</td><td>Immunoglobulin deposition disease</td></tr><tr><td>9800/3</td><td>Leukemia, NOS</td></tr><tr><td>9801/3</td><td>Acute leukemia, NOS</td></tr><tr><td>9805/3</td><td>Acute biphenotypic leukemia</td></tr><tr><td>9820/3</td><td>Lymphoid leukemia, NOS</td></tr><tr><td>9823/3</td><td>B-cell chronic lymphocytic leukemia/small lymphocytic lymphoma</td></tr><tr><td>9826/3</td><td>Burkitt cell leukemia</td></tr><tr><td>9827/3</td><td>Adult T-cell leukemia/lymphoma (HTLV-1 positive)</td></tr><tr><td>9831/3</td><td>T-cell large granular lymphocytic leukemia</td></tr><tr><td>9832/3</td><td>Prolymphocytic leukemia, NOS</td></tr><tr><td>9833/3</td><td>Prolymphocytic leukemia, B-cell type</td></tr><tr><td>9834/3</td><td>Prolymphocytic leukemia, T-cell type</td></tr><tr><td>9835/3</td><td>Precursor cell lymphoblastic leukemia, NOS</td></tr><tr><td>9836/3</td><td>Precursor B-cell lymphoblastic leukemia</td></tr><tr><td>9837/3</td><td>Precursor T-cell lymphoblastic leukemia</td></tr><tr><td>9840/3</td><td>Acute myeloid leukemia, M6 type</td></tr><tr><td>9860/3</td><td>Myeloid leukemia, NOS</td></tr><tr><td>9861/3</td><td>Acute myeloid leukemia, NOS</td></tr><tr><td>9863/3</td><td>Chronic myeloid leukemia, NOS</td></tr><tr><td>9866/3</td><td>Acute promyelocytic leukemia</td></tr><tr><td>9867/3</td><td>Acute myelomonocytic leukemia</td></tr><tr><td>9870/3</td><td>Acute basophilic leukemia</td></tr><tr><td>9871/3</td><td>Acute myeloid leukemia with abnormal marrow eosinophils</td></tr><tr><td>9872/3</td><td>Acute myeloid leukemia, minimal differentiation</td></tr><tr><td>9873/3</td><td>Acute myeloid leukemia without maturation</td></tr><tr><td>9874/3</td><td>Acute myeloid leukemia with maturation</td></tr><tr><td>9875/3</td><td>Chronic myelogenous leukemia, BCR/ABL  positive</td></tr><tr><td>9876/3</td><td>Atypical chronic myeloid leukemia, BCR/ABL negative</td></tr><tr><td>9891/3</td><td>Acute monocytic leukemia</td></tr><tr><td>9895/3</td><td>Acute myeloid leukemia with multilineage dysplasia</td></tr><tr><td>9896/3</td><td>Acute myeloid leukemia, t(8</td></tr><tr><td>9897/3</td><td>Acute myeloid leukemia, 11q23 abnormalities</td></tr><tr><td>9910/3</td><td>Acute megakaryoblastic leukemia</td></tr><tr><td>9920/3</td><td>Therapy-related acute myeloid leukemia, NOS</td></tr><tr><td>9930/3</td><td>Myeloid sarcoma</td></tr><tr><td>9931/3</td><td>Acute panmyelosis with myelofibrosis</td></tr><tr><td>9940/3</td><td>Hairy cell leukemia</td></tr><tr><td>9945/3</td><td>Chronic myelomonocytic leukemia, NOS</td></tr><tr><td>9946/3</td><td>Juvenile myelomonocytic leukemia</td></tr><tr><td>9948/3</td><td>Aggressive NK-cell leukemia</td></tr><tr><td>9950/3</td><td>Polycythemia vera</td></tr><tr><td>9960/3</td><td>Chronic myeloproliferative disease, NOS</td></tr><tr><td>9961/3</td><td>Myelosclerosis with myeloid metaplasia</td></tr><tr><td>9962/3</td><td>Essential thrombocythemia</td></tr><tr><td>9963/3</td><td>Chronic neutrophilic leukemia</td></tr><tr><td>9964/3</td><td>Hypereosinophilic syndrome</td></tr><tr><td>9970/1</td><td>Lymphoproliferative disorder, NOS</td></tr><tr><td>9975/1</td><td>Myeloproliferative disease, NOS</td></tr><tr><td>9980/3</td><td>Refractory anemia</td></tr><tr><td>9982/3</td><td>Refractory anemia with sideroblasts</td></tr><tr><td>9983/3</td><td>Refractory anemia with excess blasts</td></tr><tr><td>9984/3</td><td>Refractory anemia with excess blasts in transformation</td></tr><tr><td>9985/3</td><td>Refractory cytopenia with multilineage dysplasia</td></tr><tr><td>9986/3</td><td>Myelodysplastic syndrome with 5q deletion (5q-) syndrome</td></tr><tr><td>9987/3</td><td>Therapy-related myelodysplastic syndrome, NOS</td></tr><tr><td>9989/3</td><td>Myelodysplastic syndrome, NOS</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Morphology",
+  "version" : "2.1.0",
+  "name" : "Morphology",
+  "title" : "Morphology Value Set",
+  "status" : "active",
+  "date" : "2023-03-28T12:16:37+02:00",
+  "publisher" : "Arkhn",
+  "contact" : [{
+    "name" : "Arkhn",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://arkhn.com"
+    },
+    {
+      "system" : "email",
+      "value" : "contact@arkhn.com"
+    }]
+  },
+  {
+    "name" : "Nicolas Riss",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "nicolas@arkhn.com"
+    }]
+  }],
+  "description" : "Cancer morphology",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+      "concept" : [{
+        "code" : "8000/0",
+        "display" : "Neoplasm, benign"
+      },
+      {
+        "code" : "8000/1",
+        "display" : "Neoplasm, uncertain whether benign or malignant"
+      },
+      {
+        "code" : "8000/3",
+        "display" : "Neoplasm, malignant"
+      },
+      {
+        "code" : "8000/6",
+        "display" : "Neoplasm, metastatic"
+      },
+      {
+        "code" : "8000/9",
+        "display" : "Neoplasm, malignant, uncertain whether primary or metastatic"
+      },
+      {
+        "code" : "8001/0",
+        "display" : "Tumor cells, benign"
+      },
+      {
+        "code" : "8001/1",
+        "display" : "Tumor cells, uncertain whether benign or malignant"
+      },
+      {
+        "code" : "8001/3",
+        "display" : "Tumor cells, malignant"
+      },
+      {
+        "code" : "8002/3",
+        "display" : "Malignant tumor, small cell type"
+      },
+      {
+        "code" : "8003/3",
+        "display" : "Malignant tumor, giant cell type"
+      },
+      {
+        "code" : "8004/3",
+        "display" : "Malignant tumor, spindle cell type"
+      },
+      {
+        "code" : "8005/0",
+        "display" : "Clear cell tumor, NOS"
+      },
+      {
+        "code" : "8005/3",
+        "display" : "Malignant tumor, clear cell type"
+      },
+      {
+        "code" : "8010/0",
+        "display" : "Epithelial tumor, benign"
+      },
+      {
+        "code" : "8010/2",
+        "display" : "Carcinoma in situ, NOS"
+      },
+      {
+        "code" : "8010/3",
+        "display" : "Carcinoma, NOS"
+      },
+      {
+        "code" : "8010/6",
+        "display" : "Carcinoma, metastatic, NOS"
+      },
+      {
+        "code" : "8010/9",
+        "display" : "Carcinomatosis"
+      },
+      {
+        "code" : "8011/0",
+        "display" : "Epithelioma, benign"
+      },
+      {
+        "code" : "8011/3",
+        "display" : "Epithelioma, malignant"
+      },
+      {
+        "code" : "8012/3",
+        "display" : "Large cell carcinoma, NOS"
+      },
+      {
+        "code" : "8013/3",
+        "display" : "Large cell neuroendocrine carcinoma"
+      },
+      {
+        "code" : "8014/3",
+        "display" : "Large cell carcinoma with rhabdoid phenotype"
+      },
+      {
+        "code" : "8015/3",
+        "display" : "Glassy cell carcinoma"
+      },
+      {
+        "code" : "8020/3",
+        "display" : "Carcinoma, undifferentiated, NOS"
+      },
+      {
+        "code" : "8021/3",
+        "display" : "Carcinoma, anaplastic, NOS"
+      },
+      {
+        "code" : "8022/3",
+        "display" : "Pleomorphic carcinoma"
+      },
+      {
+        "code" : "8030/3",
+        "display" : "Giant cell and spindle cell carcinoma"
+      },
+      {
+        "code" : "8031/3",
+        "display" : "Giant cell carcinoma"
+      },
+      {
+        "code" : "8032/3",
+        "display" : "Spindle cell carcinoma, NOS"
+      },
+      {
+        "code" : "8033/3",
+        "display" : "Pseudosarcomatous carcinoma"
+      },
+      {
+        "code" : "8034/3",
+        "display" : "Polygonal cell carcinoma"
+      },
+      {
+        "code" : "8035/3",
+        "display" : "Carcinoma with osteoclast-like giant cells"
+      },
+      {
+        "code" : "8040/0",
+        "display" : "Tumorlet, benign"
+      },
+      {
+        "code" : "8040/1",
+        "display" : "Tumorlet, NOS"
+      },
+      {
+        "code" : "8041/3",
+        "display" : "Small cell carcinoma, NOS"
+      },
+      {
+        "code" : "8042/3",
+        "display" : "Oat cell carcinoma"
+      },
+      {
+        "code" : "8043/3",
+        "display" : "Small cell carcinoma, fusiform cell"
+      },
+      {
+        "code" : "8044/3",
+        "display" : "Small cell carcinoma, intermediate cell"
+      },
+      {
+        "code" : "8045/3",
+        "display" : "Combined small cell carcinoma"
+      },
+      {
+        "code" : "8046/3",
+        "display" : "Non-small cell carcinoma"
+      },
+      {
+        "code" : "8050/0",
+        "display" : "Papilloma, NOS"
+      },
+      {
+        "code" : "8050/2",
+        "display" : "Papillary carcinoma in situ"
+      },
+      {
+        "code" : "8050/3",
+        "display" : "Papillary carcinoma, NOS"
+      },
+      {
+        "code" : "8051/0",
+        "display" : "Verrucous papilloma"
+      },
+      {
+        "code" : "8051/3",
+        "display" : "Verrucous carcinoma, NOS"
+      },
+      {
+        "code" : "8052/0",
+        "display" : "Squamous cell papilloma, NOS"
+      },
+      {
+        "code" : "8052/2",
+        "display" : "Papillary squamous cell carcinoma,  non-invasive"
+      },
+      {
+        "code" : "8052/3",
+        "display" : "Papillary squamous cell carcinoma"
+      },
+      {
+        "code" : "8053/0",
+        "display" : "Squamous cell papilloma, inverted"
+      },
+      {
+        "code" : "8060/0",
+        "display" : "Squamous papillomatosis"
+      },
+      {
+        "code" : "8070/2",
+        "display" : "Squamous cell carcinoma in situ, NOS"
+      },
+      {
+        "code" : "8070/3",
+        "display" : "Squamous cell carcinoma, NOS"
+      },
+      {
+        "code" : "8070/6",
+        "display" : "Squamous cell carcinoma, metastatic, NOS"
+      },
+      {
+        "code" : "8071/3",
+        "display" : "Squamous cell carcinoma, keratinizing, NOS"
+      },
+      {
+        "code" : "8072/3",
+        "display" : "Squamous cell carcinoma, large cell, nonkeratinizing, NOS"
+      },
+      {
+        "code" : "8073/3",
+        "display" : "Squamous cell carcinoma, small cell, nonkeratinizing"
+      },
+      {
+        "code" : "8074/3",
+        "display" : "Squamous cell carcinoma, spindle cell"
+      },
+      {
+        "code" : "8075/3",
+        "display" : "Squamous cell carcinoma, adenoid"
+      },
+      {
+        "code" : "8076/2",
+        "display" : "Squamous cell carcinoma in situ with questionable stromal invasion"
+      },
+      {
+        "code" : "8076/3",
+        "display" : "Squamous cell carcinoma, microinvasive"
+      },
+      {
+        "code" : "8077/2",
+        "display" : "Squamous intraepithelial neoplasia, grade III"
+      },
+      {
+        "code" : "8078/3",
+        "display" : "Squamous cell carcinoma with horn formation"
+      },
+      {
+        "code" : "8080/2",
+        "display" : "Queyrat erythroplasia"
+      },
+      {
+        "code" : "8081/2",
+        "display" : "Bowen disease"
+      },
+      {
+        "code" : "8082/3",
+        "display" : "Lymphoepithelial carcinoma"
+      },
+      {
+        "code" : "8083/3",
+        "display" : "Basaloid squamous cell carcinoma"
+      },
+      {
+        "code" : "8084/3",
+        "display" : "Squamous cell carcinoma, clear cell type"
+      },
+      {
+        "code" : "8090/1",
+        "display" : "Basal cell tumor"
+      },
+      {
+        "code" : "8090/3",
+        "display" : "Basal cell carcinoma, NOS"
+      },
+      {
+        "code" : "8091/3",
+        "display" : "Multifocal superficial basal cell carcinoma"
+      },
+      {
+        "code" : "8092/3",
+        "display" : "Infiltrating basal cell carcinoma, NOS"
+      },
+      {
+        "code" : "8093/3",
+        "display" : "Basal cell carcinoma, fibroepithelial"
+      },
+      {
+        "code" : "8094/3",
+        "display" : "Basosquamous carcinoma"
+      },
+      {
+        "code" : "8095/3",
+        "display" : "Metatypical carcinoma"
+      },
+      {
+        "code" : "8096/0",
+        "display" : "Intraepidermal epithelioma of Jadassohn"
+      },
+      {
+        "code" : "8097/3",
+        "display" : "Basal cell carcinoma, nodular"
+      },
+      {
+        "code" : "8098/3",
+        "display" : "Adenoid basal carcinoma"
+      },
+      {
+        "code" : "8100/0",
+        "display" : "Trichoepithelioma"
+      },
+      {
+        "code" : "8101/0",
+        "display" : "Trichofolliculoma"
+      },
+      {
+        "code" : "8102/0",
+        "display" : "Trichilemmoma"
+      },
+      {
+        "code" : "8102/3",
+        "display" : "Trichilemmocarcinoma"
+      },
+      {
+        "code" : "8103/0",
+        "display" : "Pilar tumor"
+      },
+      {
+        "code" : "8110/0",
+        "display" : "Pilomatrixoma, NOS"
+      },
+      {
+        "code" : "8110/3",
+        "display" : "Pilomatrix carcinoma"
+      },
+      {
+        "code" : "8120/0",
+        "display" : "Transitional cell papilloma, benign"
+      },
+      {
+        "code" : "8120/1",
+        "display" : "Urothelial papilloma, NOS"
+      },
+      {
+        "code" : "8120/2",
+        "display" : "Transitional cell carcinoma in situ"
+      },
+      {
+        "code" : "8120/3",
+        "display" : "Transitional cell carcinoma, NOS"
+      },
+      {
+        "code" : "8121/0",
+        "display" : "Schneiderian papilloma, NOS"
+      },
+      {
+        "code" : "8121/1",
+        "display" : "Transitional cell papilloma, inverted, NOS"
+      },
+      {
+        "code" : "8121/3",
+        "display" : "Schneiderian carcinoma"
+      },
+      {
+        "code" : "8122/3",
+        "display" : "Transitional cell carcinoma, spindle cell"
+      },
+      {
+        "code" : "8123/3",
+        "display" : "Basaloid carcinoma"
+      },
+      {
+        "code" : "8124/3",
+        "display" : "Cloacogenic carcinoma"
+      },
+      {
+        "code" : "8130/1",
+        "display" : "Papillary transitional cell neoplasm of low malignant potential"
+      },
+      {
+        "code" : "8130/2",
+        "display" : "Papillary transitional cell carcinoma,  non-invasive"
+      },
+      {
+        "code" : "8130/3",
+        "display" : "Papillary transitional cell carcinoma"
+      },
+      {
+        "code" : "8131/3",
+        "display" : "Transitional cell carcinoma, micropapillary"
+      },
+      {
+        "code" : "8140/0",
+        "display" : "Adenoma, NOS"
+      },
+      {
+        "code" : "8140/1",
+        "display" : "Atypical adenoma"
+      },
+      {
+        "code" : "8140/2",
+        "display" : "Adenocarcinoma in situ, NOS"
+      },
+      {
+        "code" : "8140/3",
+        "display" : "Adenocarcinoma, NOS"
+      },
+      {
+        "code" : "8140/6",
+        "display" : "Adenocarcinoma, metastatic, NOS"
+      },
+      {
+        "code" : "8141/3",
+        "display" : "Scirrhous adenocarcinoma"
+      },
+      {
+        "code" : "8142/3",
+        "display" : "Linitis plastica"
+      },
+      {
+        "code" : "8143/3",
+        "display" : "Superficial spreading adenocarcinoma"
+      },
+      {
+        "code" : "8144/3",
+        "display" : "Adenocarcinoma, intestinal type"
+      },
+      {
+        "code" : "8145/3",
+        "display" : "Carcinoma, diffuse type"
+      },
+      {
+        "code" : "8146/0",
+        "display" : "Monomorphic adenoma"
+      },
+      {
+        "code" : "8147/0",
+        "display" : "Basal cell adenoma"
+      },
+      {
+        "code" : "8147/3",
+        "display" : "Basal cell adenocarcinoma"
+      },
+      {
+        "code" : "8148/2",
+        "display" : "Glandular intraepithelial neoplasia, grade III"
+      },
+      {
+        "code" : "8149/0",
+        "display" : "Canalicular adenoma"
+      },
+      {
+        "code" : "8150/0",
+        "display" : "Islet cell adenoma"
+      },
+      {
+        "code" : "8150/1",
+        "display" : "Islet cell tumor, NOS"
+      },
+      {
+        "code" : "8150/3",
+        "display" : "Islet cell carcinoma"
+      },
+      {
+        "code" : "8151/0",
+        "display" : "Insulinoma, NOS"
+      },
+      {
+        "code" : "8151/3",
+        "display" : "Insulinoma, malignant"
+      },
+      {
+        "code" : "8152/1",
+        "display" : "Glucagonoma, NOS"
+      },
+      {
+        "code" : "8152/3",
+        "display" : "Glucagonoma, malignant"
+      },
+      {
+        "code" : "8153/1",
+        "display" : "Gastrinoma, NOS"
+      },
+      {
+        "code" : "8153/3",
+        "display" : "Gastrinoma, malignant"
+      },
+      {
+        "code" : "8154/3",
+        "display" : "Mixed islet cell and exocrine adenocarcinoma"
+      },
+      {
+        "code" : "8155/1",
+        "display" : "Vipoma, NOS"
+      },
+      {
+        "code" : "8155/3",
+        "display" : "Vipoma, malignant"
+      },
+      {
+        "code" : "8156/1",
+        "display" : "Somatostatinoma, NOS"
+      },
+      {
+        "code" : "8156/3",
+        "display" : "Somatostatinoma, malignant"
+      },
+      {
+        "code" : "8157/1",
+        "display" : "Enteroglucagonoma, NOS"
+      },
+      {
+        "code" : "8157/3",
+        "display" : "Enteroglucagonoma, malignant"
+      },
+      {
+        "code" : "8160/0",
+        "display" : "Bile duct adenoma"
+      },
+      {
+        "code" : "8160/3",
+        "display" : "Cholangiocarcinoma"
+      },
+      {
+        "code" : "8161/0",
+        "display" : "Bile duct cystadenoma"
+      },
+      {
+        "code" : "8161/3",
+        "display" : "Bile duct cystadenocarcinoma"
+      },
+      {
+        "code" : "8162/3",
+        "display" : "Klatskin tumor"
+      },
+      {
+        "code" : "8170/0",
+        "display" : "Liver cell adenoma"
+      },
+      {
+        "code" : "8170/3",
+        "display" : "Hepatocellular carcinoma, NOS"
+      },
+      {
+        "code" : "8171/3",
+        "display" : "Hepatocellular carcinoma, fibrolamellar"
+      },
+      {
+        "code" : "8172/3",
+        "display" : "Hepatocellular carcinoma, scirrhous"
+      },
+      {
+        "code" : "8173/3",
+        "display" : "Hepatocellular carcinoma, spindle cell variant"
+      },
+      {
+        "code" : "8174/3",
+        "display" : "Hepatocellular carcinoma, clear cell type"
+      },
+      {
+        "code" : "8175/3",
+        "display" : "Hepatocellular carcinoma, pleomorphic type"
+      },
+      {
+        "code" : "8180/3",
+        "display" : "Combined hepatocellular carcinoma and cholangiocarcinoma"
+      },
+      {
+        "code" : "8190/0",
+        "display" : "Trabecular adenoma"
+      },
+      {
+        "code" : "8190/3",
+        "display" : "Trabecular adenocarcinoma"
+      },
+      {
+        "code" : "8191/0",
+        "display" : "Embryonal adenoma"
+      },
+      {
+        "code" : "8200/0",
+        "display" : "Eccrine dermal cylindroma"
+      },
+      {
+        "code" : "8200/3",
+        "display" : "Adenoid cystic carcinoma"
+      },
+      {
+        "code" : "8201/2",
+        "display" : "Cribriform carcinoma in situ"
+      },
+      {
+        "code" : "8201/3",
+        "display" : "Cribriform carcinoma, NOS"
+      },
+      {
+        "code" : "8202/0",
+        "display" : "Microcystic adenoma"
+      },
+      {
+        "code" : "8204/0",
+        "display" : "Lactating adenoma"
+      },
+      {
+        "code" : "8210/0",
+        "display" : "Adenomatous polyp, NOS"
+      },
+      {
+        "code" : "8210/2",
+        "display" : "Adenocarcinoma in situ in adenomatous polyp"
+      },
+      {
+        "code" : "8210/3",
+        "display" : "Adenocarcinoma in adenomatous polyp"
+      },
+      {
+        "code" : "8211/0",
+        "display" : "Tubular adenoma, NOS"
+      },
+      {
+        "code" : "8211/3",
+        "display" : "Tubular adenocarcinoma"
+      },
+      {
+        "code" : "8212/0",
+        "display" : "Flat adenoma"
+      },
+      {
+        "code" : "8213/0",
+        "display" : "Serrated adenoma"
+      },
+      {
+        "code" : "8214/3",
+        "display" : "Parietal cell carcinoma"
+      },
+      {
+        "code" : "8215/3",
+        "display" : "Adenocarcinoma of anal glands"
+      },
+      {
+        "code" : "8220/0",
+        "display" : "Adenomatous polyposis coli"
+      },
+      {
+        "code" : "8220/3",
+        "display" : "Adenocarcinoma in adenomatous polyposis coli"
+      },
+      {
+        "code" : "8221/0",
+        "display" : "Multiple adenomatous polyps"
+      },
+      {
+        "code" : "8221/3",
+        "display" : "Adenocarcinoma in multiple adenomatous polyps"
+      },
+      {
+        "code" : "8230/2",
+        "display" : "Ductal carcinoma in situ, solid type"
+      },
+      {
+        "code" : "8230/3",
+        "display" : "Solid carcinoma, NOS"
+      },
+      {
+        "code" : "8231/3",
+        "display" : "Carcinoma simplex"
+      },
+      {
+        "code" : "8240/1",
+        "display" : "Carcinoid tumor of uncertain malignant potential"
+      },
+      {
+        "code" : "8240/3",
+        "display" : "Carcinoid tumor, NOS"
+      },
+      {
+        "code" : "8241/3",
+        "display" : "Enterochromaffin cell carcinoid"
+      },
+      {
+        "code" : "8242/1",
+        "display" : "Enterochromaffin-like cell carcinoid, NOS"
+      },
+      {
+        "code" : "8242/3",
+        "display" : "Enterochromaffin-like cell tumor, malignant"
+      },
+      {
+        "code" : "8243/3",
+        "display" : "Goblet cell carcinoid"
+      },
+      {
+        "code" : "8244/3",
+        "display" : "Composite carcinoid"
+      },
+      {
+        "code" : "8245/1",
+        "display" : "Tubular carcinoid"
+      },
+      {
+        "code" : "8245/3",
+        "display" : "Adenocarcinoid tumor"
+      },
+      {
+        "code" : "8246/3",
+        "display" : "Neuroendocrine carcinoma, NOS"
+      },
+      {
+        "code" : "8247/3",
+        "display" : "Merkel cell carcinoma"
+      },
+      {
+        "code" : "8248/1",
+        "display" : "Apudoma"
+      },
+      {
+        "code" : "8249/3",
+        "display" : "Atypical carcinoid tumor"
+      },
+      {
+        "code" : "8250/1",
+        "display" : "Pulmonary adenomatosis"
+      },
+      {
+        "code" : "8250/3",
+        "display" : "Bronchiolo-alveolar adenocarcinoma, NOS"
+      },
+      {
+        "code" : "8251/0",
+        "display" : "Alveolar adenoma"
+      },
+      {
+        "code" : "8251/3",
+        "display" : "Alveolar adenocarcinoma"
+      },
+      {
+        "code" : "8252/3",
+        "display" : "Bronchiolo-alveolar carcinoma, non- mucinous"
+      },
+      {
+        "code" : "8253/3",
+        "display" : "Bronchiolo-alveolar carcinoma, mucinous"
+      },
+      {
+        "code" : "8254/3",
+        "display" : "Bronchiolo-alveolar carcinoma, mixed mucinous and non-mucinous"
+      },
+      {
+        "code" : "8255/3",
+        "display" : "Adenocarcinoma with mixed subtypes"
+      },
+      {
+        "code" : "8260/0",
+        "display" : "Papillary adenoma, NOS"
+      },
+      {
+        "code" : "8260/3",
+        "display" : "Papillary adenocarcinoma, NOS"
+      },
+      {
+        "code" : "8261/0",
+        "display" : "Villous adenoma, NOS"
+      },
+      {
+        "code" : "8261/2",
+        "display" : "Adenocarcinoma in situ in villous adenoma"
+      },
+      {
+        "code" : "8261/3",
+        "display" : "Adenocarcinoma in villous adenoma"
+      },
+      {
+        "code" : "8262/3",
+        "display" : "Villous adenocarcinoma"
+      },
+      {
+        "code" : "8263/0",
+        "display" : "Tubulovillous adenoma, NOS"
+      },
+      {
+        "code" : "8263/2",
+        "display" : "Adenocarcinoma in situ in tubulovillous adenoma"
+      },
+      {
+        "code" : "8263/3",
+        "display" : "Adenocarcinoma in tubulovillous adenoma"
+      },
+      {
+        "code" : "8264/0",
+        "display" : "Papillomatosis, glandular"
+      },
+      {
+        "code" : "8270/0",
+        "display" : "Chromophobe adenoma"
+      },
+      {
+        "code" : "8270/3",
+        "display" : "Chromophobe carcinoma"
+      },
+      {
+        "code" : "8271/0",
+        "display" : "Prolactinoma"
+      },
+      {
+        "code" : "8272/0",
+        "display" : "Pituitary adenoma, NOS"
+      },
+      {
+        "code" : "8272/3",
+        "display" : "Pituitary carcinoma, NOS"
+      },
+      {
+        "code" : "8280/0",
+        "display" : "Acidophil adenoma"
+      },
+      {
+        "code" : "8280/3",
+        "display" : "Acidophil carcinoma"
+      },
+      {
+        "code" : "8281/0",
+        "display" : "Mixed acidophil-basophil adenoma"
+      },
+      {
+        "code" : "8281/3",
+        "display" : "Mixed acidophil-basophil carcinoma"
+      },
+      {
+        "code" : "8290/0",
+        "display" : "Oxyphilic adenoma"
+      },
+      {
+        "code" : "8290/3",
+        "display" : "Oxyphilic adenocarcinoma"
+      },
+      {
+        "code" : "8300/0",
+        "display" : "Basophil adenoma"
+      },
+      {
+        "code" : "8300/3",
+        "display" : "Basophil carcinoma"
+      },
+      {
+        "code" : "8310/0",
+        "display" : "Clear cell adenoma"
+      },
+      {
+        "code" : "8310/3",
+        "display" : "Clear cell adenocarcinoma, NOS"
+      },
+      {
+        "code" : "8311/1",
+        "display" : "Hypernephroid tumor"
+      },
+      {
+        "code" : "8312/3",
+        "display" : "Renal cell carcinoma, NOS"
+      },
+      {
+        "code" : "8313/0",
+        "display" : "Clear cell adenofibroma"
+      },
+      {
+        "code" : "8313/1",
+        "display" : "Clear cell adenofibroma of borderline malignancy"
+      },
+      {
+        "code" : "8313/3",
+        "display" : "Clear cell adenocarcinofibroma"
+      },
+      {
+        "code" : "8314/3",
+        "display" : "Lipid-rich carcinoma"
+      },
+      {
+        "code" : "8315/3",
+        "display" : "Glycogen-rich carcinoma"
+      },
+      {
+        "code" : "8316/3",
+        "display" : "Cyst-associated renal cell carcinoma"
+      },
+      {
+        "code" : "8317/3",
+        "display" : "Renal cell carcinoma, chromophobe type"
+      },
+      {
+        "code" : "8318/3",
+        "display" : "Renal cell carcinoma, sarcomatoid"
+      },
+      {
+        "code" : "8319/3",
+        "display" : "Collecting duct carcinoma"
+      },
+      {
+        "code" : "8320/3",
+        "display" : "Granular cell carcinoma"
+      },
+      {
+        "code" : "8321/0",
+        "display" : "Chief cell adenoma"
+      },
+      {
+        "code" : "8322/0",
+        "display" : "Water-clear cell adenoma"
+      },
+      {
+        "code" : "8322/3",
+        "display" : "Water-clear cell adenocarcinoma"
+      },
+      {
+        "code" : "8323/0",
+        "display" : "Mixed cell adenoma"
+      },
+      {
+        "code" : "8323/3",
+        "display" : "Mixed cell adenocarcinoma"
+      },
+      {
+        "code" : "8324/0",
+        "display" : "Lipoadenoma"
+      },
+      {
+        "code" : "8325/0",
+        "display" : "Metanephric adenoma"
+      },
+      {
+        "code" : "8330/0",
+        "display" : "Follicular adenoma"
+      },
+      {
+        "code" : "8330/1",
+        "display" : "Atypical follicular adenoma"
+      },
+      {
+        "code" : "8330/3",
+        "display" : "Follicular adenocarcinoma, NOS"
+      },
+      {
+        "code" : "8331/3",
+        "display" : "Follicular adenocarcinoma, well differentiated"
+      },
+      {
+        "code" : "8332/3",
+        "display" : "Follicular adenocarcinoma, trabecular"
+      },
+      {
+        "code" : "8333/0",
+        "display" : "Microfollicular adenoma, NOS"
+      },
+      {
+        "code" : "8333/3",
+        "display" : "Fetal adenocarcinoma"
+      },
+      {
+        "code" : "8334/0",
+        "display" : "Macrofollicular adenoma"
+      },
+      {
+        "code" : "8335/3",
+        "display" : "Follicular carcinoma, minimally invasive"
+      },
+      {
+        "code" : "8336/0",
+        "display" : "Hyalinizing trabecular adenoma"
+      },
+      {
+        "code" : "8337/3",
+        "display" : "Insular carcinoma"
+      },
+      {
+        "code" : "8340/3",
+        "display" : "Papillary carcinoma, follicular variant"
+      },
+      {
+        "code" : "8341/3",
+        "display" : "Papillary microcarcinoma"
+      },
+      {
+        "code" : "8342/3",
+        "display" : "Papillary carcinoma, oxyphilic cell"
+      },
+      {
+        "code" : "8343/3",
+        "display" : "Papillary carcinoma, encapsulated"
+      },
+      {
+        "code" : "8344/3",
+        "display" : "Papillary carcinoma, columnar cell"
+      },
+      {
+        "code" : "8345/3",
+        "display" : "Medullary carcinoma with amyloid stroma"
+      },
+      {
+        "code" : "8346/3",
+        "display" : "Mixed medullary-follicular carcinoma"
+      },
+      {
+        "code" : "8347/3",
+        "display" : "Mixed medullary-papillary carcinoma"
+      },
+      {
+        "code" : "8350/3",
+        "display" : "Nonencapsulated sclerosing carcinoma"
+      },
+      {
+        "code" : "8360/1",
+        "display" : "Multiple endocrine adenomas"
+      },
+      {
+        "code" : "8361/0",
+        "display" : "Juxtaglomerular tumor"
+      },
+      {
+        "code" : "8370/0",
+        "display" : "Adrenal cortical adenoma, NOS"
+      },
+      {
+        "code" : "8370/3",
+        "display" : "Adrenal cortical carcinoma"
+      },
+      {
+        "code" : "8371/0",
+        "display" : "Adrenal cortical adenoma, compact cell"
+      },
+      {
+        "code" : "8372/0",
+        "display" : "Adrenal cortical adenoma, pigmented"
+      },
+      {
+        "code" : "8373/0",
+        "display" : "Adrenal cortical adenoma, clear cell"
+      },
+      {
+        "code" : "8374/0",
+        "display" : "Adrenal cortical adenoma, glomerulosa cell"
+      },
+      {
+        "code" : "8375/0",
+        "display" : "Adrenal cortical adenoma, mixed cell"
+      },
+      {
+        "code" : "8380/0",
+        "display" : "Endometrioid adenoma, NOS"
+      },
+      {
+        "code" : "8380/1",
+        "display" : "Endometrioid adenoma, borderline malignancy"
+      },
+      {
+        "code" : "8380/3",
+        "display" : "Endometrioid adenocarcinoma, NOS"
+      },
+      {
+        "code" : "8381/0",
+        "display" : "Endometrioid adenofibroma, NOS"
+      },
+      {
+        "code" : "8381/1",
+        "display" : "Endometrioid adenofibroma, borderline malignancy"
+      },
+      {
+        "code" : "8381/3",
+        "display" : "Endometrioid adenofibroma, malignant"
+      },
+      {
+        "code" : "8382/3",
+        "display" : "Endometrioid adenocarcinoma, secretory variant"
+      },
+      {
+        "code" : "8383/3",
+        "display" : "Endometrioid adenocarcinoma, ciliated cell variant"
+      },
+      {
+        "code" : "8384/3",
+        "display" : "Adenocarcinoma, endocervical type"
+      },
+      {
+        "code" : "8390/0",
+        "display" : "Skin appendage adenoma"
+      },
+      {
+        "code" : "8390/3",
+        "display" : "Skin appendage carcinoma"
+      },
+      {
+        "code" : "8391/0",
+        "display" : "Follicular fibroma"
+      },
+      {
+        "code" : "8392/0",
+        "display" : "Syringofibroadenoma"
+      },
+      {
+        "code" : "8400/0",
+        "display" : "Sweat gland adenoma"
+      },
+      {
+        "code" : "8400/1",
+        "display" : "Sweat gland tumor, NOS"
+      },
+      {
+        "code" : "8400/3",
+        "display" : "Sweat gland adenocarcinoma"
+      },
+      {
+        "code" : "8401/0",
+        "display" : "Apocrine adenoma"
+      },
+      {
+        "code" : "8401/3",
+        "display" : "Apocrine adenocarcinoma"
+      },
+      {
+        "code" : "8402/0",
+        "display" : "Nodular hidradenoma"
+      },
+      {
+        "code" : "8402/3",
+        "display" : "Nodular hidradenoma, malignant"
+      },
+      {
+        "code" : "8403/0",
+        "display" : "Eccrine spiradenoma"
+      },
+      {
+        "code" : "8403/3",
+        "display" : "Malignant eccrine spiradenoma"
+      },
+      {
+        "code" : "8404/0",
+        "display" : "Hidrocystoma"
+      },
+      {
+        "code" : "8405/0",
+        "display" : "Papillary hidradenoma"
+      },
+      {
+        "code" : "8406/0",
+        "display" : "Papillary syringadenoma"
+      },
+      {
+        "code" : "8407/0",
+        "display" : "Syringoma, NOS"
+      },
+      {
+        "code" : "8407/3",
+        "display" : "Sclerosing sweat duct carcinoma"
+      },
+      {
+        "code" : "8408/0",
+        "display" : "Eccrine papillary adenoma"
+      },
+      {
+        "code" : "8408/1",
+        "display" : "Aggressive digital papillary adenoma"
+      },
+      {
+        "code" : "8408/3",
+        "display" : "Eccrine papillary adenocarcinoma"
+      },
+      {
+        "code" : "8409/0",
+        "display" : "Eccrine poroma"
+      },
+      {
+        "code" : "8409/3",
+        "display" : "Eccrine poroma, malignant"
+      },
+      {
+        "code" : "8410/0",
+        "display" : "Sebaceous adenoma"
+      },
+      {
+        "code" : "8410/3",
+        "display" : "Sebaceous adenocarcinoma"
+      },
+      {
+        "code" : "8413/3",
+        "display" : "Eccrine adenocarcinoma"
+      },
+      {
+        "code" : "8420/0",
+        "display" : "Ceruminous adenoma"
+      },
+      {
+        "code" : "8420/3",
+        "display" : "Ceruminous adenocarcinoma"
+      },
+      {
+        "code" : "8430/1",
+        "display" : "Mucoepidermoid tumor"
+      },
+      {
+        "code" : "8430/3",
+        "display" : "Mucoepidermoid carcinoma"
+      },
+      {
+        "code" : "8440/0",
+        "display" : "Cystadenoma, NOS"
+      },
+      {
+        "code" : "8440/3",
+        "display" : "Cystadenocarcinoma, NOS"
+      },
+      {
+        "code" : "8441/0",
+        "display" : "Serous cystadenoma, NOS"
+      },
+      {
+        "code" : "8441/3",
+        "display" : "Serous cystadenocarcinoma, NOS"
+      },
+      {
+        "code" : "8442/1",
+        "display" : "Serous cystadenoma, borderline malignancy"
+      },
+      {
+        "code" : "8443/0",
+        "display" : "Clear cell cystadenoma"
+      },
+      {
+        "code" : "8444/1",
+        "display" : "Clear cell cystic tumor of borderline malignancy"
+      },
+      {
+        "code" : "8450/0",
+        "display" : "Papillary cystadenoma, NOS"
+      },
+      {
+        "code" : "8450/3",
+        "display" : "Papillary cystadenocarcinoma, NOS"
+      },
+      {
+        "code" : "8451/1",
+        "display" : "Papillary cystadenoma, borderline malignancy"
+      },
+      {
+        "code" : "8452/1",
+        "display" : "Solid pseudopapillary tumor"
+      },
+      {
+        "code" : "8452/3",
+        "display" : "Solid pseudopapillary carcinoma"
+      },
+      {
+        "code" : "8453/0",
+        "display" : "Intraductal papillary-mucinous adenoma"
+      },
+      {
+        "code" : "8453/1",
+        "display" : "Intraductal papillary-mucinous tumor with moderate dysplasia"
+      },
+      {
+        "code" : "8453/2",
+        "display" : "Intraductal papillary-mucinous carcinoma, non-invasive"
+      },
+      {
+        "code" : "8453/3",
+        "display" : "Intraductal papillary-mucinous carcinoma, invasive"
+      },
+      {
+        "code" : "8454/0",
+        "display" : "Cystic tumor of atrio-ventricular node"
+      },
+      {
+        "code" : "8460/0",
+        "display" : "Papillary serous cystadenoma, NOS"
+      },
+      {
+        "code" : "8460/3",
+        "display" : "Papillary serous cystadenocarcinoma"
+      },
+      {
+        "code" : "8461/0",
+        "display" : "Serous surface papilloma"
+      },
+      {
+        "code" : "8461/3",
+        "display" : "Serous surface papillary carcinoma"
+      },
+      {
+        "code" : "8462/1",
+        "display" : "Serous papillary cystic tumor of borderline malignancy"
+      },
+      {
+        "code" : "8463/1",
+        "display" : "Serous surface papillary tumor of borderline malignancy"
+      },
+      {
+        "code" : "8470/0",
+        "display" : "Mucinous cystadenoma, NOS"
+      },
+      {
+        "code" : "8470/1",
+        "display" : "Mucinous cystic tumor with moderate dysplasia"
+      },
+      {
+        "code" : "8470/2",
+        "display" : "Mucinous cystadenocarcinoma, non-invasive"
+      },
+      {
+        "code" : "8470/3",
+        "display" : "Mucinous cystadenocarcinoma, NOS"
+      },
+      {
+        "code" : "8471/0",
+        "display" : "Papillary mucinous cystadenoma, NOS"
+      },
+      {
+        "code" : "8471/3",
+        "display" : "Papillary mucinous cystadenocarcinoma"
+      },
+      {
+        "code" : "8472/1",
+        "display" : "Mucinous cystic tumor of borderline malignancy"
+      },
+      {
+        "code" : "8473/1",
+        "display" : "Papillary mucinous cystadenoma, borderline malignancy"
+      },
+      {
+        "code" : "8480/0",
+        "display" : "Mucinous adenoma"
+      },
+      {
+        "code" : "8480/3",
+        "display" : "Mucinous adenocarcinoma"
+      },
+      {
+        "code" : "8480/6",
+        "display" : "Pseudomyxoma peritonei"
+      },
+      {
+        "code" : "8481/3",
+        "display" : "Mucin-producing adenocarcinoma"
+      },
+      {
+        "code" : "8482/3",
+        "display" : "Mucinous adenocarcinoma, endocervical type"
+      },
+      {
+        "code" : "8490/3",
+        "display" : "Signet ring cell carcinoma"
+      },
+      {
+        "code" : "8490/6",
+        "display" : "Metastatic signet ring cell carcinoma"
+      },
+      {
+        "code" : "8500/2",
+        "display" : "Intraductal carcinoma, noninfiltrating, NOS"
+      },
+      {
+        "code" : "8500/3",
+        "display" : "Infiltrating duct carcinoma, NOS"
+      },
+      {
+        "code" : "8501/2",
+        "display" : "Comedocarcinoma, noninfiltrating"
+      },
+      {
+        "code" : "8501/3",
+        "display" : "Comedocarcinoma, NOS"
+      },
+      {
+        "code" : "8502/3",
+        "display" : "Secretory carcinoma of breast"
+      },
+      {
+        "code" : "8503/0",
+        "display" : "Intraductal papilloma"
+      },
+      {
+        "code" : "8503/2",
+        "display" : "Noninfiltrating intraductal papillary adenocarcinoma"
+      },
+      {
+        "code" : "8503/3",
+        "display" : "Intraductal papillary adenocarcinoma with invasion"
+      },
+      {
+        "code" : "8504/0",
+        "display" : "Intracystic papillary adenoma"
+      },
+      {
+        "code" : "8504/2",
+        "display" : "Noninfiltrating intracystic carcinoma"
+      },
+      {
+        "code" : "8504/3",
+        "display" : "Intracystic carcinoma, NOS"
+      },
+      {
+        "code" : "8505/0",
+        "display" : "Intraductal papillomatosis, NOS"
+      },
+      {
+        "code" : "8506/0",
+        "display" : "Adenoma of nipple"
+      },
+      {
+        "code" : "8507/2",
+        "display" : "Intraductal micropapillary carcinoma"
+      },
+      {
+        "code" : "8508/3",
+        "display" : "Cystic hypersecretory carcinoma"
+      },
+      {
+        "code" : "8510/3",
+        "display" : "Medullary carcinoma, NOS"
+      },
+      {
+        "code" : "8512/3",
+        "display" : "Medullary carcinoma with lymphoid stroma"
+      },
+      {
+        "code" : "8513/3",
+        "display" : "Atypical medullary carcinoma"
+      },
+      {
+        "code" : "8514/3",
+        "display" : "Duct carcinoma, desmoplastic type"
+      },
+      {
+        "code" : "8520/2",
+        "display" : "Lobular carcinoma in situ, NOS"
+      },
+      {
+        "code" : "8520/3",
+        "display" : "Lobular carcinoma, NOS"
+      },
+      {
+        "code" : "8851/0",
+        "display" : "Fibrolipoma"
+      },
+      {
+        "code" : "8851/3",
+        "display" : "Liposarcoma, well differentiated"
+      },
+      {
+        "code" : "8852/0",
+        "display" : "Fibromyxolipoma"
+      },
+      {
+        "code" : "8852/3",
+        "display" : "Myxoid liposarcoma"
+      },
+      {
+        "code" : "8853/3",
+        "display" : "Round cell liposarcoma"
+      },
+      {
+        "code" : "8854/0",
+        "display" : "Pleomorphic lipoma"
+      },
+      {
+        "code" : "8854/3",
+        "display" : "Pleomorphic liposarcoma"
+      },
+      {
+        "code" : "8855/3",
+        "display" : "Mixed liposarcoma"
+      },
+      {
+        "code" : "8856/0",
+        "display" : "Intramuscular lipoma"
+      },
+      {
+        "code" : "8857/0",
+        "display" : "Spindle cell lipoma"
+      },
+      {
+        "code" : "8857/3",
+        "display" : "Fibroblastic liposarcoma"
+      },
+      {
+        "code" : "8858/3",
+        "display" : "Dedifferentiated liposarcoma"
+      },
+      {
+        "code" : "8860/0",
+        "display" : "Angiomyolipoma"
+      },
+      {
+        "code" : "8861/0",
+        "display" : "Angiolipoma, NOS"
+      },
+      {
+        "code" : "8862/0",
+        "display" : "Chondroid lipoma"
+      },
+      {
+        "code" : "8870/0",
+        "display" : "Myelolipoma"
+      },
+      {
+        "code" : "8880/0",
+        "display" : "Hibernoma"
+      },
+      {
+        "code" : "8881/0",
+        "display" : "Lipoblastomatosis"
+      },
+      {
+        "code" : "8890/0",
+        "display" : "Leiomyoma, NOS"
+      },
+      {
+        "code" : "8890/1",
+        "display" : "Leiomyomatosis, NOS"
+      },
+      {
+        "code" : "8890/3",
+        "display" : "Leiomyosarcoma, NOS"
+      },
+      {
+        "code" : "8891/0",
+        "display" : "Epithelioid leiomyoma"
+      },
+      {
+        "code" : "8891/3",
+        "display" : "Epithelioid leiomyosarcoma"
+      },
+      {
+        "code" : "8892/0",
+        "display" : "Cellular leiomyoma"
+      },
+      {
+        "code" : "8893/0",
+        "display" : "Bizarre leiomyoma"
+      },
+      {
+        "code" : "8894/0",
+        "display" : "Angiomyoma"
+      },
+      {
+        "code" : "8894/3",
+        "display" : "Angiomyosarcoma"
+      },
+      {
+        "code" : "8895/0",
+        "display" : "Myoma"
+      },
+      {
+        "code" : "8895/3",
+        "display" : "Myosarcoma"
+      },
+      {
+        "code" : "8896/3",
+        "display" : "Myxoid leiomyosarcoma"
+      },
+      {
+        "code" : "8897/1",
+        "display" : "Smooth muscle tumor of uncertain malignant potential"
+      },
+      {
+        "code" : "8898/1",
+        "display" : "Metastasizing leiomyoma"
+      },
+      {
+        "code" : "8900/0",
+        "display" : "Rhabdomyoma, NOS"
+      },
+      {
+        "code" : "8900/3",
+        "display" : "Rhabdomyosarcoma, NOS"
+      },
+      {
+        "code" : "8901/3",
+        "display" : "Pleomorphic rhabdomyosarcoma, adult type"
+      },
+      {
+        "code" : "8902/3",
+        "display" : "Mixed type rhabdomyosarcoma"
+      },
+      {
+        "code" : "8903/0",
+        "display" : "Fetal rhabdomyoma"
+      },
+      {
+        "code" : "8904/0",
+        "display" : "Adult rhabdomyoma"
+      },
+      {
+        "code" : "8905/0",
+        "display" : "Genital rhabdomyoma"
+      },
+      {
+        "code" : "8910/3",
+        "display" : "Embryonal rhabdomyosarcoma, NOS"
+      },
+      {
+        "code" : "8912/3",
+        "display" : "Spindle cell rhabdomyosarcoma"
+      },
+      {
+        "code" : "8920/3",
+        "display" : "Alveolar rhabdomyosarcoma"
+      },
+      {
+        "code" : "8921/3",
+        "display" : "Rhabdomyosarcoma with ganglionic differentiation"
+      },
+      {
+        "code" : "8930/0",
+        "display" : "Endometrial stromal nodule"
+      },
+      {
+        "code" : "8930/3",
+        "display" : "Endometrial stromal sarcoma, NOS"
+      },
+      {
+        "code" : "8931/3",
+        "display" : "Endometrial stromal sarcoma, low grade"
+      },
+      {
+        "code" : "8932/0",
+        "display" : "Adenomyoma"
+      },
+      {
+        "code" : "8933/3",
+        "display" : "Adenosarcoma"
+      },
+      {
+        "code" : "8934/3",
+        "display" : "Carcinofibroma"
+      },
+      {
+        "code" : "8935/0",
+        "display" : "Stromal tumor, benign"
+      },
+      {
+        "code" : "8935/1",
+        "display" : "Stromal tumor, NOS"
+      },
+      {
+        "code" : "8935/3",
+        "display" : "Stromal sarcoma, NOS"
+      },
+      {
+        "code" : "9300/0",
+        "display" : "Adenomatoid odontogenic tumor"
+      },
+      {
+        "code" : "9301/0",
+        "display" : "Calcifying odontogenic cyst"
+      },
+      {
+        "code" : "9302/0",
+        "display" : "Odontogenic ghost cell tumor"
+      },
+      {
+        "code" : "9310/0",
+        "display" : "Ameloblastoma, NOS"
+      },
+      {
+        "code" : "9310/3",
+        "display" : "Ameloblastoma, malignant"
+      },
+      {
+        "code" : "9311/0",
+        "display" : "Odontoameloblastoma"
+      },
+      {
+        "code" : "9312/0",
+        "display" : "Squamous odontogenic tumor"
+      },
+      {
+        "code" : "9320/0",
+        "display" : "Odontogenic myxoma"
+      },
+      {
+        "code" : "9321/0",
+        "display" : "Central odontogenic fibroma"
+      },
+      {
+        "code" : "9322/0",
+        "display" : "Peripheral odontogenic fibroma"
+      },
+      {
+        "code" : "9330/0",
+        "display" : "Ameloblastic fibroma"
+      },
+      {
+        "code" : "9330/3",
+        "display" : "Ameloblastic fibrosarcoma"
+      },
+      {
+        "code" : "9340/0",
+        "display" : "Calcifying epithelial odontogenic tumor"
+      },
+      {
+        "code" : "9341/1",
+        "display" : "Clear cell odontogenic tumor"
+      },
+      {
+        "code" : "9342/3",
+        "display" : "Odontogenic carcinosarcoma"
+      },
+      {
+        "code" : "9350/1",
+        "display" : "Craniopharyngioma"
+      },
+      {
+        "code" : "9351/1",
+        "display" : "Craniopharyngioma, adamantinomatous"
+      },
+      {
+        "code" : "9352/1",
+        "display" : "Craniopharyngioma, papillary"
+      },
+      {
+        "code" : "9360/1",
+        "display" : "Pinealoma"
+      },
+      {
+        "code" : "9361/1",
+        "display" : "Pineocytoma"
+      },
+      {
+        "code" : "9362/3",
+        "display" : "Pineoblastoma"
+      },
+      {
+        "code" : "9363/0",
+        "display" : "Melanotic neuroectodermal tumor"
+      },
+      {
+        "code" : "9364/3",
+        "display" : "Peripheral neuroectodermal tumor"
+      },
+      {
+        "code" : "9365/3",
+        "display" : "Askin tumor"
+      },
+      {
+        "code" : "9370/3",
+        "display" : "Chordoma, NOS"
+      },
+      {
+        "code" : "9371/3",
+        "display" : "Chondroid chordoma"
+      },
+      {
+        "code" : "9372/3",
+        "display" : "Dedifferentiated chordoma"
+      },
+      {
+        "code" : "9373/0",
+        "display" : "Parachordoma"
+      },
+      {
+        "code" : "9380/3",
+        "display" : "Glioma, malignant"
+      },
+      {
+        "code" : "9381/3",
+        "display" : "Gliomatosis cerebri"
+      },
+      {
+        "code" : "9382/3",
+        "display" : "Mixed glioma"
+      },
+      {
+        "code" : "9383/1",
+        "display" : "Subependymoma"
+      },
+      {
+        "code" : "9384/1",
+        "display" : "Subependymal giant cell astrocytoma"
+      },
+      {
+        "code" : "9390/0",
+        "display" : "Choroid plexus papilloma, NOS"
+      },
+      {
+        "code" : "9390/1",
+        "display" : "Atypical choroid plexus papilloma"
+      },
+      {
+        "code" : "9390/3",
+        "display" : "Choroid plexus carcinoma"
+      },
+      {
+        "code" : "9391/3",
+        "display" : "Ependymoma, NOS"
+      },
+      {
+        "code" : "8521/3",
+        "display" : "Infiltrating ductular carcinoma"
+      },
+      {
+        "code" : "8522/2",
+        "display" : "Intraductal carcinoma and lobular carcinoma in situ"
+      },
+      {
+        "code" : "8522/3",
+        "display" : "Infiltrating duct and lobular carcinoma"
+      },
+      {
+        "code" : "8523/3",
+        "display" : "Infiltrating duct mixed with other types of carcinoma"
+      },
+      {
+        "code" : "8524/3",
+        "display" : "Infiltrating lobular mixed with other types of carcinoma"
+      },
+      {
+        "code" : "8525/3",
+        "display" : "Polymorphous low grade adenocarcinoma"
+      },
+      {
+        "code" : "8530/3",
+        "display" : "Inflammatory carcinoma"
+      },
+      {
+        "code" : "8540/3",
+        "display" : "Paget disease, mammary"
+      },
+      {
+        "code" : "8541/3",
+        "display" : "Paget disease and infiltrating duct carcinoma of breast"
+      },
+      {
+        "code" : "8542/3",
+        "display" : "Paget disease, extramammary"
+      },
+      {
+        "code" : "8543/3",
+        "display" : "Paget disease and intraductal carcinoma of breast"
+      },
+      {
+        "code" : "8550/0",
+        "display" : "Acinar cell adenoma"
+      },
+      {
+        "code" : "8550/1",
+        "display" : "Acinar cell tumor"
+      },
+      {
+        "code" : "8550/3",
+        "display" : "Acinar cell carcinoma"
+      },
+      {
+        "code" : "8551/3",
+        "display" : "Acinar cell cystadenocarcinoma"
+      },
+      {
+        "code" : "8560/0",
+        "display" : "Mixed squamous cell and glandular papilloma"
+      },
+      {
+        "code" : "8560/3",
+        "display" : "Adenosquamous carcinoma"
+      },
+      {
+        "code" : "8561/0",
+        "display" : "Adenolymphoma"
+      },
+      {
+        "code" : "8562/3",
+        "display" : "Epithelial-myoepithelial carcinoma"
+      },
+      {
+        "code" : "8570/3",
+        "display" : "Adenocarcinoma with squamous metaplasia"
+      },
+      {
+        "code" : "8571/3",
+        "display" : "Adenocarcinoma with cartilaginous and osseous metaplasia"
+      },
+      {
+        "code" : "8572/3",
+        "display" : "Adenocarcinoma with spindle cell metaplasia"
+      },
+      {
+        "code" : "8573/3",
+        "display" : "Adenocarcinoma with apocrine metaplasia"
+      },
+      {
+        "code" : "8574/3",
+        "display" : "Adenocarcinoma with neuroendocrine differentiation"
+      },
+      {
+        "code" : "8575/3",
+        "display" : "Metaplastic carcinoma, NOS"
+      },
+      {
+        "code" : "8576/3",
+        "display" : "Hepatoid adenocarcinoma"
+      },
+      {
+        "code" : "8580/0",
+        "display" : "Thymoma, benign"
+      },
+      {
+        "code" : "8580/1",
+        "display" : "Thymoma, NOS"
+      },
+      {
+        "code" : "8580/3",
+        "display" : "Thymoma, malignant, NOS"
+      },
+      {
+        "code" : "8581/1",
+        "display" : "Thymoma, type A, NOS"
+      },
+      {
+        "code" : "8581/3",
+        "display" : "Thymoma, type A, malignant"
+      },
+      {
+        "code" : "8582/1",
+        "display" : "Thymoma, type AB, NOS"
+      },
+      {
+        "code" : "8582/3",
+        "display" : "Thymoma, type AB, malignant"
+      },
+      {
+        "code" : "8583/1",
+        "display" : "Thymoma, type B1, NOS"
+      },
+      {
+        "code" : "8583/3",
+        "display" : "Thymoma, type B1, malignant"
+      },
+      {
+        "code" : "8584/1",
+        "display" : "Thymoma, type B2, NOS"
+      },
+      {
+        "code" : "8584/3",
+        "display" : "Thymoma, type B2, malignant"
+      },
+      {
+        "code" : "8585/1",
+        "display" : "Thymoma, type B3, NOS"
+      },
+      {
+        "code" : "8585/3",
+        "display" : "Thymoma, type B3, malignant"
+      },
+      {
+        "code" : "8586/3",
+        "display" : "Thymic carcinoma, NOS"
+      },
+      {
+        "code" : "8587/0",
+        "display" : "Ectopic hamartomatous thymoma"
+      },
+      {
+        "code" : "8588/3",
+        "display" : "Spindle epithelial tumor with thymus-like element"
+      },
+      {
+        "code" : "8589/3",
+        "display" : "Carcinoma showing thymus-like element"
+      },
+      {
+        "code" : "8590/1",
+        "display" : "Sex cord-gonadal stromal tumor, NOS"
+      },
+      {
+        "code" : "8591/1",
+        "display" : "Sex cord-gonadal stromal tumor, incompletely differentiated"
+      },
+      {
+        "code" : "8592/1",
+        "display" : "Sex cord-gonadal stromal tumor, mixed forms"
+      },
+      {
+        "code" : "8593/1",
+        "display" : "Stromal tumor with minor sex cord elements"
+      },
+      {
+        "code" : "8600/0",
+        "display" : "Thecoma, NOS"
+      },
+      {
+        "code" : "8600/3",
+        "display" : "Thecoma, malignant"
+      },
+      {
+        "code" : "8601/0",
+        "display" : "Thecoma, luteinized"
+      },
+      {
+        "code" : "8602/0",
+        "display" : "Sclerosing stromal tumor"
+      },
+      {
+        "code" : "8610/0",
+        "display" : "Luteoma, NOS"
+      },
+      {
+        "code" : "8620/1",
+        "display" : "Granulosa cell tumor, adult type"
+      },
+      {
+        "code" : "8620/3",
+        "display" : "Granulosa cell tumor, malignant"
+      },
+      {
+        "code" : "8621/1",
+        "display" : "Granulosa cell-theca cell tumor"
+      },
+      {
+        "code" : "8622/1",
+        "display" : "Granulosa cell tumor, juvenile"
+      },
+      {
+        "code" : "8623/1",
+        "display" : "Sex cord tumor with annular tubules"
+      },
+      {
+        "code" : "8630/0",
+        "display" : "Androblastoma, benign"
+      },
+      {
+        "code" : "8630/1",
+        "display" : "Androblastoma, NOS"
+      },
+      {
+        "code" : "8630/3",
+        "display" : "Androblastoma, malignant"
+      },
+      {
+        "code" : "8631/0",
+        "display" : "Sertoli-Leydig cell tumor, well differentiated"
+      },
+      {
+        "code" : "8631/1",
+        "display" : "Sertoli-Leydig cell tumor of intermediate differentiation"
+      },
+      {
+        "code" : "8631/3",
+        "display" : "Sertoli-Leydig cell tumor, poorly differentiated"
+      },
+      {
+        "code" : "8632/1",
+        "display" : "Gynandroblastoma"
+      },
+      {
+        "code" : "8633/1",
+        "display" : "Sertoli-Leydig cell tumor, retiform"
+      },
+      {
+        "code" : "8634/1",
+        "display" : "Sertoli-Leydig cell tumor, intermediate differentiation, with heterologous elements"
+      },
+      {
+        "code" : "8634/3",
+        "display" : "Sertoli-Leydig cell tumor, poorly differentiated, with heterologous elements"
+      },
+      {
+        "code" : "8640/1",
+        "display" : "Sertoli cell tumor, NOS"
+      },
+      {
+        "code" : "8640/3",
+        "display" : "Sertoli cell carcinoma"
+      },
+      {
+        "code" : "8641/0",
+        "display" : "Sertoli cell tumor with lipid storage"
+      },
+      {
+        "code" : "8642/1",
+        "display" : "Large cell calcifying Sertoli cell tumor"
+      },
+      {
+        "code" : "8650/0",
+        "display" : "Leydig cell tumor, benign"
+      },
+      {
+        "code" : "8650/1",
+        "display" : "Leydig cell tumor, NOS"
+      },
+      {
+        "code" : "8650/3",
+        "display" : "Leydig cell tumor, malignant"
+      },
+      {
+        "code" : "8660/0",
+        "display" : "Hilus cell tumor"
+      },
+      {
+        "code" : "8670/0",
+        "display" : "Lipid cell tumor of ovary"
+      },
+      {
+        "code" : "8670/3",
+        "display" : "Steroid cell tumor, malignant"
+      },
+      {
+        "code" : "8671/0",
+        "display" : "Adrenal rest tumor"
+      },
+      {
+        "code" : "8680/0",
+        "display" : "Paraganglioma, benign"
+      },
+      {
+        "code" : "8680/1",
+        "display" : "Paraganglioma, NOS"
+      },
+      {
+        "code" : "8680/3",
+        "display" : "Paraganglioma, malignant"
+      },
+      {
+        "code" : "8681/1",
+        "display" : "Sympathetic paraganglioma"
+      },
+      {
+        "code" : "8682/1",
+        "display" : "Parasympathetic paraganglioma"
+      },
+      {
+        "code" : "8683/0",
+        "display" : "Gangliocytic paraganglioma"
+      },
+      {
+        "code" : "8690/1",
+        "display" : "Glomus jugulare tumor, NOS"
+      },
+      {
+        "code" : "8691/1",
+        "display" : "Aortic body tumor"
+      },
+      {
+        "code" : "8692/1",
+        "display" : "Carotid body tumor"
+      },
+      {
+        "code" : "8693/1",
+        "display" : "Extra-adrenal paraganglioma, NOS"
+      },
+      {
+        "code" : "8693/3",
+        "display" : "Extra-adrenal paraganglioma, malignant"
+      },
+      {
+        "code" : "8700/0",
+        "display" : "Pheochromocytoma, NOS"
+      },
+      {
+        "code" : "8700/3",
+        "display" : "Pheochromocytoma, malignant"
+      },
+      {
+        "code" : "8710/3",
+        "display" : "Glomangiosarcoma"
+      },
+      {
+        "code" : "8711/0",
+        "display" : "Glomus tumor, NOS"
+      },
+      {
+        "code" : "8711/3",
+        "display" : "Glomus tumor, malignant"
+      },
+      {
+        "code" : "8712/0",
+        "display" : "Glomangioma"
+      },
+      {
+        "code" : "8713/0",
+        "display" : "Glomangiomyoma"
+      },
+      {
+        "code" : "8720/0",
+        "display" : "Pigmented nevus, NOS"
+      },
+      {
+        "code" : "8720/2",
+        "display" : "Melanoma in situ"
+      },
+      {
+        "code" : "8720/3",
+        "display" : "Malignant melanoma, NOS"
+      },
+      {
+        "code" : "8721/3",
+        "display" : "Nodular melanoma"
+      },
+      {
+        "code" : "8722/0",
+        "display" : "Balloon cell nevus"
+      },
+      {
+        "code" : "8722/3",
+        "display" : "Balloon cell melanoma"
+      },
+      {
+        "code" : "8723/0",
+        "display" : "Halo nevus"
+      },
+      {
+        "code" : "8723/3",
+        "display" : "Malignant melanoma, regressing"
+      },
+      {
+        "code" : "8725/0",
+        "display" : "Neuronevus"
+      },
+      {
+        "code" : "8726/0",
+        "display" : "Magnocellular nevus"
+      },
+      {
+        "code" : "8727/0",
+        "display" : "Dysplastic nevus"
+      },
+      {
+        "code" : "8728/0",
+        "display" : "Diffuse melanocytosis"
+      },
+      {
+        "code" : "8728/1",
+        "display" : "Meningeal melanocytoma"
+      },
+      {
+        "code" : "8728/3",
+        "display" : "Meningeal melanomatosis"
+      },
+      {
+        "code" : "8730/0",
+        "display" : "Nonpigmented nevus"
+      },
+      {
+        "code" : "8730/3",
+        "display" : "Amelanotic melanoma"
+      },
+      {
+        "code" : "8740/0",
+        "display" : "Junctional nevus, NOS"
+      },
+      {
+        "code" : "8740/3",
+        "display" : "Malignant melanoma in junctional nevus"
+      },
+      {
+        "code" : "8741/2",
+        "display" : "Precancerous melanosis, NOS"
+      },
+      {
+        "code" : "8741/3",
+        "display" : "Malignant melanoma in precancerous melanosis"
+      },
+      {
+        "code" : "8742/2",
+        "display" : "Lentigo maligna"
+      },
+      {
+        "code" : "8742/3",
+        "display" : "Lentigo maligna melanoma"
+      },
+      {
+        "code" : "8743/3",
+        "display" : "Superficial spreading melanoma"
+      },
+      {
+        "code" : "8744/3",
+        "display" : "Acral lentiginous melanoma, malignant"
+      },
+      {
+        "code" : "8745/3",
+        "display" : "Desmoplastic melanoma, malignant"
+      },
+      {
+        "code" : "8746/3",
+        "display" : "Mucosal lentiginous melanoma"
+      },
+      {
+        "code" : "8750/0",
+        "display" : "Intradermal nevus"
+      },
+      {
+        "code" : "8760/0",
+        "display" : "Compound nevus"
+      },
+      {
+        "code" : "8761/0",
+        "display" : "Small congenital nevus"
+      },
+      {
+        "code" : "8761/1",
+        "display" : "Giant pigmented nevus, NOS"
+      },
+      {
+        "code" : "8761/3",
+        "display" : "Malignant melanoma in giant pigmented nevus"
+      },
+      {
+        "code" : "8762/1",
+        "display" : "Proliferative dermal lesion in congenital nevus"
+      },
+      {
+        "code" : "8770/0",
+        "display" : "Epithelioid and spindle cell nevus"
+      },
+      {
+        "code" : "8770/3",
+        "display" : "Mixed epithelioid and spindle cell melanoma"
+      },
+      {
+        "code" : "8771/0",
+        "display" : "Epithelioid cell nevus"
+      },
+      {
+        "code" : "8771/3",
+        "display" : "Epithelioid cell melanoma"
+      },
+      {
+        "code" : "8772/0",
+        "display" : "Spindle cell nevus, NOS"
+      },
+      {
+        "code" : "8772/3",
+        "display" : "Spindle cell melanoma, NOS"
+      },
+      {
+        "code" : "8773/3",
+        "display" : "Spindle cell melanoma, type A"
+      },
+      {
+        "code" : "8774/3",
+        "display" : "Spindle cell melanoma, type B"
+      },
+      {
+        "code" : "8780/0",
+        "display" : "Blue nevus, NOS"
+      },
+      {
+        "code" : "8780/3",
+        "display" : "Blue nevus, malignant"
+      },
+      {
+        "code" : "8790/0",
+        "display" : "Cellular blue nevus"
+      },
+      {
+        "code" : "8800/0",
+        "display" : "Soft tissue tumor, benign"
+      },
+      {
+        "code" : "8800/3",
+        "display" : "Sarcoma, NOS"
+      },
+      {
+        "code" : "8800/9",
+        "display" : "Sarcomatosis, NOS"
+      },
+      {
+        "code" : "8801/3",
+        "display" : "Spindle cell sarcoma"
+      },
+      {
+        "code" : "8802/3",
+        "display" : "Giant cell sarcoma"
+      },
+      {
+        "code" : "8803/3",
+        "display" : "Small cell sarcoma"
+      },
+      {
+        "code" : "8804/3",
+        "display" : "Epithelioid sarcoma"
+      },
+      {
+        "code" : "8805/3",
+        "display" : "Undifferentiated sarcoma"
+      },
+      {
+        "code" : "8806/3",
+        "display" : "Desmoplastic small round cell tumor"
+      },
+      {
+        "code" : "8810/0",
+        "display" : "Fibroma, NOS"
+      },
+      {
+        "code" : "8810/1",
+        "display" : "Cellular fibroma"
+      },
+      {
+        "code" : "8810/3",
+        "display" : "Fibrosarcoma, NOS"
+      },
+      {
+        "code" : "8811/0",
+        "display" : "Fibromyxoma"
+      },
+      {
+        "code" : "8811/3",
+        "display" : "Fibromyxosarcoma"
+      },
+      {
+        "code" : "8812/0",
+        "display" : "Periosteal fibroma"
+      },
+      {
+        "code" : "8812/3",
+        "display" : "Periosteal fibrosarcoma"
+      },
+      {
+        "code" : "8813/0",
+        "display" : "Fascial fibroma"
+      },
+      {
+        "code" : "8813/3",
+        "display" : "Fascial fibrosarcoma"
+      },
+      {
+        "code" : "8814/3",
+        "display" : "Infantile fibrosarcoma"
+      },
+      {
+        "code" : "8815/0",
+        "display" : "Solitary fibrous tumor"
+      },
+      {
+        "code" : "8815/3",
+        "display" : "Solitary fibrous tumor, malignant"
+      },
+      {
+        "code" : "8820/0",
+        "display" : "Elastofibroma"
+      },
+      {
+        "code" : "8821/1",
+        "display" : "Aggressive fibromatosis"
+      },
+      {
+        "code" : "8822/1",
+        "display" : "Abdominal fibromatosis"
+      },
+      {
+        "code" : "8823/0",
+        "display" : "Desmoplastic fibroma"
+      },
+      {
+        "code" : "8824/0",
+        "display" : "Myofibroma"
+      },
+      {
+        "code" : "8824/1",
+        "display" : "Myofibromatosis"
+      },
+      {
+        "code" : "8825/0",
+        "display" : "Myofibroblastoma"
+      },
+      {
+        "code" : "8825/1",
+        "display" : "Myofibroblastic tumor, NOS"
+      },
+      {
+        "code" : "8826/0",
+        "display" : "Angiomyofibroblastoma"
+      },
+      {
+        "code" : "8827/1",
+        "display" : "Myofibroblastic tumor, peribronchial"
+      },
+      {
+        "code" : "8830/0",
+        "display" : "Benign fibrous histiocytoma"
+      },
+      {
+        "code" : "8830/1",
+        "display" : "Atypical fibrous histiocytoma"
+      },
+      {
+        "code" : "8830/3",
+        "display" : "Malignant fibrous histiocytoma"
+      },
+      {
+        "code" : "8831/0",
+        "display" : "Histiocytoma, NOS"
+      },
+      {
+        "code" : "8832/0",
+        "display" : "Dermatofibroma, NOS"
+      },
+      {
+        "code" : "8832/3",
+        "display" : "Dermatofibrosarcoma, NOS"
+      },
+      {
+        "code" : "8833/3",
+        "display" : "Pigmented dermatofibrosarcoma protuberans"
+      },
+      {
+        "code" : "8834/1",
+        "display" : "Giant cell fibroblastoma"
+      },
+      {
+        "code" : "8835/1",
+        "display" : "Plexiform fibrohistiocytic tumor"
+      },
+      {
+        "code" : "8836/1",
+        "display" : "Angiomatoid fibrous histiocytoma"
+      },
+      {
+        "code" : "8840/0",
+        "display" : "Myxoma, NOS"
+      },
+      {
+        "code" : "8840/3",
+        "display" : "Myxosarcoma"
+      },
+      {
+        "code" : "8841/1",
+        "display" : "Angiomyxoma"
+      },
+      {
+        "code" : "8842/0",
+        "display" : "Ossifying fibromyxoid tumor"
+      },
+      {
+        "code" : "8850/0",
+        "display" : "Lipoma, NOS"
+      },
+      {
+        "code" : "8850/1",
+        "display" : "Atypical lipoma/j"
+      },
+      {
+        "code" : "8850/3",
+        "display" : "Liposarcoma, NOS"
+      },
+      {
+        "code" : "8936/0",
+        "display" : "Gastrointestinal stromal tumor, benign"
+      },
+      {
+        "code" : "8936/1",
+        "display" : "Gastrointestinal stromal tumor, NOS"
+      },
+      {
+        "code" : "8936/3",
+        "display" : "Gastrointestinal stromal sarcoma"
+      },
+      {
+        "code" : "8940/0",
+        "display" : "Pleomorphic adenoma"
+      },
+      {
+        "code" : "8940/3",
+        "display" : "Mixed tumor, malignant, NOS"
+      },
+      {
+        "code" : "8941/3",
+        "display" : "Carcinoma in pleomorphic adenoma"
+      },
+      {
+        "code" : "8950/3",
+        "display" : "Mullerian mixed tumor"
+      },
+      {
+        "code" : "8951/3",
+        "display" : "Mesodermal mixed tumor"
+      },
+      {
+        "code" : "8959/0",
+        "display" : "Benign cystic nephroma"
+      },
+      {
+        "code" : "8959/1",
+        "display" : "Cystic partially differentiated nephroblastoma"
+      },
+      {
+        "code" : "8959/3",
+        "display" : "Malignant cystic nephroma"
+      },
+      {
+        "code" : "8960/1",
+        "display" : "Mesoblastic nephroma"
+      },
+      {
+        "code" : "8960/3",
+        "display" : "Nephroblastoma, NOS"
+      },
+      {
+        "code" : "8963/3",
+        "display" : "Malignant rhabdoid tumor"
+      },
+      {
+        "code" : "8964/3",
+        "display" : "Clear cell sarcoma of kidney"
+      },
+      {
+        "code" : "8965/0",
+        "display" : "Nephrogenic adenofibroma"
+      },
+      {
+        "code" : "8966/0",
+        "display" : "Renomedullary interstitial cell tumor"
+      },
+      {
+        "code" : "8967/0",
+        "display" : "Ossifying renal tumor"
+      },
+      {
+        "code" : "8970/3",
+        "display" : "Hepatoblastoma"
+      },
+      {
+        "code" : "8971/3",
+        "display" : "Pancreatoblastoma"
+      },
+      {
+        "code" : "8972/3",
+        "display" : "Pulmonary blastoma"
+      },
+      {
+        "code" : "8973/3",
+        "display" : "Pleuropulmonary blastoma"
+      },
+      {
+        "code" : "8974/1",
+        "display" : "Sialoblastoma"
+      },
+      {
+        "code" : "8980/3",
+        "display" : "Carcinosarcoma, NOS"
+      },
+      {
+        "code" : "8981/3",
+        "display" : "Carcinosarcoma, embryonal"
+      },
+      {
+        "code" : "8982/0",
+        "display" : "Myoepithelioma"
+      },
+      {
+        "code" : "8982/3",
+        "display" : "Malignant myoepithelioma"
+      },
+      {
+        "code" : "8983/0",
+        "display" : "Adenomyoepithelioma"
+      },
+      {
+        "code" : "8990/0",
+        "display" : "Mesenchymoma, benign"
+      },
+      {
+        "code" : "8990/1",
+        "display" : "Mesenchymoma, NOS"
+      },
+      {
+        "code" : "8990/3",
+        "display" : "Mesenchymoma, malignant"
+      },
+      {
+        "code" : "8991/3",
+        "display" : "Embryonal sarcoma"
+      },
+      {
+        "code" : "9000/0",
+        "display" : "Brenner tumor, NOS"
+      },
+      {
+        "code" : "9000/1",
+        "display" : "Brenner tumor, borderline malignancy"
+      },
+      {
+        "code" : "9000/3",
+        "display" : "Brenner tumor, malignant"
+      },
+      {
+        "code" : "9010/0",
+        "display" : "Fibroadenoma, NOS"
+      },
+      {
+        "code" : "9011/0",
+        "display" : "Intracanalicular fibroadenoma"
+      },
+      {
+        "code" : "9012/0",
+        "display" : "Pericanalicular fibroadenoma"
+      },
+      {
+        "code" : "9013/0",
+        "display" : "Adenofibroma, NOS"
+      },
+      {
+        "code" : "9014/0",
+        "display" : "Serous adenofibroma, NOS"
+      },
+      {
+        "code" : "9014/1",
+        "display" : "Serous adenofibroma of borderline malignancy"
+      },
+      {
+        "code" : "9014/3",
+        "display" : "Serous adenocarcinofibroma"
+      },
+      {
+        "code" : "9015/0",
+        "display" : "Mucinous adenofibroma, NOS"
+      },
+      {
+        "code" : "9015/1",
+        "display" : "Mucinous adenofibroma of borderline malignancy"
+      },
+      {
+        "code" : "9015/3",
+        "display" : "Mucinous adenocarcinofibroma"
+      },
+      {
+        "code" : "9016/0",
+        "display" : "Giant fibroadenoma"
+      },
+      {
+        "code" : "9020/0",
+        "display" : "Phyllodes tumor, benign"
+      },
+      {
+        "code" : "9020/1",
+        "display" : "Phyllodes tumor, borderline"
+      },
+      {
+        "code" : "9020/3",
+        "display" : "Phyllodes tumor, malignant"
+      },
+      {
+        "code" : "9030/0",
+        "display" : "Juvenile fibroadenoma"
+      },
+      {
+        "code" : "9040/0",
+        "display" : "Synovioma, benign"
+      },
+      {
+        "code" : "9040/3",
+        "display" : "Synovial sarcoma, NOS"
+      },
+      {
+        "code" : "9041/3",
+        "display" : "Synovial sarcoma, spindle cell"
+      },
+      {
+        "code" : "9042/3",
+        "display" : "Synovial sarcoma, epithelioid cell"
+      },
+      {
+        "code" : "9043/3",
+        "display" : "Synovial sarcoma, biphasic"
+      },
+      {
+        "code" : "9044/3",
+        "display" : "Clear cell sarcoma, NOS"
+      },
+      {
+        "code" : "9050/0",
+        "display" : "Mesothelioma, benign"
+      },
+      {
+        "code" : "9050/3",
+        "display" : "Mesothelioma, malignant"
+      },
+      {
+        "code" : "9051/0",
+        "display" : "Fibrous mesothelioma, benign"
+      },
+      {
+        "code" : "9051/3",
+        "display" : "Fibrous mesothelioma, malignant"
+      },
+      {
+        "code" : "9052/0",
+        "display" : "Epithelioid mesothelioma, benign"
+      },
+      {
+        "code" : "9052/3",
+        "display" : "Epithelioid mesothelioma, malignant"
+      },
+      {
+        "code" : "9053/3",
+        "display" : "Mesothelioma, biphasic, malignant"
+      },
+      {
+        "code" : "9054/0",
+        "display" : "Adenomatoid tumor, NOS"
+      },
+      {
+        "code" : "9055/0",
+        "display" : "Multicystic mesothelioma, benign"
+      },
+      {
+        "code" : "9055/1",
+        "display" : "Cystic mesothelioma, NOS"
+      },
+      {
+        "code" : "9060/3",
+        "display" : "Dysgerminoma"
+      },
+      {
+        "code" : "9061/3",
+        "display" : "Seminoma, NOS"
+      },
+      {
+        "code" : "9062/3",
+        "display" : "Seminoma, anaplastic"
+      },
+      {
+        "code" : "9063/3",
+        "display" : "Spermatocytic seminoma"
+      },
+      {
+        "code" : "9064/2",
+        "display" : "Intratubular malignant germ cells"
+      },
+      {
+        "code" : "9064/3",
+        "display" : "Germinoma"
+      },
+      {
+        "code" : "9065/3",
+        "display" : "Germ cell tumor, nonseminomatous"
+      },
+      {
+        "code" : "9070/3",
+        "display" : "Embryonal carcinoma, NOS"
+      },
+      {
+        "code" : "9071/3",
+        "display" : "Yolk sac tumor"
+      },
+      {
+        "code" : "9072/3",
+        "display" : "Polyembryoma"
+      },
+      {
+        "code" : "9073/1",
+        "display" : "Gonadoblastoma"
+      },
+      {
+        "code" : "9080/0",
+        "display" : "Teratoma, benign"
+      },
+      {
+        "code" : "9080/1",
+        "display" : "Teratoma, NOS"
+      },
+      {
+        "code" : "9080/3",
+        "display" : "Teratoma, malignant, NOS"
+      },
+      {
+        "code" : "9081/3",
+        "display" : "Teratocarcinoma"
+      },
+      {
+        "code" : "9082/3",
+        "display" : "Malignant teratoma, undifferentiated"
+      },
+      {
+        "code" : "9083/3",
+        "display" : "Malignant teratoma, intermediate"
+      },
+      {
+        "code" : "9084/0",
+        "display" : "Dermoid cyst, NOS"
+      },
+      {
+        "code" : "9084/3",
+        "display" : "Teratoma with malignant transformation"
+      },
+      {
+        "code" : "9085/3",
+        "display" : "Mixed germ cell tumor"
+      },
+      {
+        "code" : "9090/0",
+        "display" : "Struma ovarii, NOS"
+      },
+      {
+        "code" : "9090/3",
+        "display" : "Struma ovarii, malignant"
+      },
+      {
+        "code" : "9091/1",
+        "display" : "Strumal carcinoid"
+      },
+      {
+        "code" : "9100/0",
+        "display" : "Hydatidiform mole, NOS"
+      },
+      {
+        "code" : "9100/1",
+        "display" : "Invasive hydatidiform mole"
+      },
+      {
+        "code" : "9100/3",
+        "display" : "Choriocarcinoma, NOS"
+      },
+      {
+        "code" : "9101/3",
+        "display" : "Choriocarcinoma combined with other germ cell elements"
+      },
+      {
+        "code" : "9102/3",
+        "display" : "Malignant teratoma, trophoblastic"
+      },
+      {
+        "code" : "9103/0",
+        "display" : "Partial hydatidiform mole"
+      },
+      {
+        "code" : "9104/1",
+        "display" : "Placental site trophoblastic tumor"
+      },
+      {
+        "code" : "9105/3",
+        "display" : "Trophoblastic tumor, epithelioid"
+      },
+      {
+        "code" : "9110/0",
+        "display" : "Mesonephroma, benign"
+      },
+      {
+        "code" : "9110/1",
+        "display" : "Mesonephric tumor, NOS"
+      },
+      {
+        "code" : "9110/3",
+        "display" : "Mesonephroma, malignant"
+      },
+      {
+        "code" : "9120/0",
+        "display" : "Hemangioma, NOS"
+      },
+      {
+        "code" : "9120/3",
+        "display" : "Hemangiosarcoma"
+      },
+      {
+        "code" : "9121/0",
+        "display" : "Cavernous hemangioma"
+      },
+      {
+        "code" : "9122/0",
+        "display" : "Venous hemangioma"
+      },
+      {
+        "code" : "9123/0",
+        "display" : "Racemose hemangioma"
+      },
+      {
+        "code" : "9124/3",
+        "display" : "Kupffer cell sarcoma"
+      },
+      {
+        "code" : "9125/0",
+        "display" : "Epithelioid hemangioma"
+      },
+      {
+        "code" : "9130/0",
+        "display" : "Hemangioendothelioma, benign"
+      },
+      {
+        "code" : "9130/1",
+        "display" : "Hemangioendothelioma, NOS"
+      },
+      {
+        "code" : "9130/3",
+        "display" : "Hemangioendothelioma, malignant"
+      },
+      {
+        "code" : "9131/0",
+        "display" : "Capillary hemangioma"
+      },
+      {
+        "code" : "9132/0",
+        "display" : "Intramuscular hemangioma"
+      },
+      {
+        "code" : "9133/1",
+        "display" : "Epithelioid hemangioendothelioma, NOS"
+      },
+      {
+        "code" : "9133/3",
+        "display" : "Epithelioid hemangioendothelioma, malignant"
+      },
+      {
+        "code" : "9135/1",
+        "display" : "Endovascular papillary angioendothelioma"
+      },
+      {
+        "code" : "9136/1",
+        "display" : "Spindle cell hemangioendothelioma"
+      },
+      {
+        "code" : "9140/3",
+        "display" : "Kaposi sarcoma"
+      },
+      {
+        "code" : "9141/0",
+        "display" : "Angiokeratoma"
+      },
+      {
+        "code" : "9142/0",
+        "display" : "Verrucous keratotic hemangioma"
+      },
+      {
+        "code" : "9150/0",
+        "display" : "Hemangiopericytoma, benign"
+      },
+      {
+        "code" : "9150/1",
+        "display" : "Hemangiopericytoma, NOS"
+      },
+      {
+        "code" : "9150/3",
+        "display" : "Hemangiopericytoma, malignant"
+      },
+      {
+        "code" : "9160/0",
+        "display" : "Angiofibroma, NOS"
+      },
+      {
+        "code" : "9161/0",
+        "display" : "Acquired tufted hemangioma"
+      },
+      {
+        "code" : "9161/1",
+        "display" : "Hemangioblastoma"
+      },
+      {
+        "code" : "9170/0",
+        "display" : "Lymphangioma, NOS"
+      },
+      {
+        "code" : "9170/3",
+        "display" : "Lymphangiosarcoma"
+      },
+      {
+        "code" : "9171/0",
+        "display" : "Capillary lymphangioma"
+      },
+      {
+        "code" : "9172/0",
+        "display" : "Cavernous lymphangioma"
+      },
+      {
+        "code" : "9173/0",
+        "display" : "Cystic lymphangioma"
+      },
+      {
+        "code" : "9174/0",
+        "display" : "Lymphangiomyoma"
+      },
+      {
+        "code" : "9174/1",
+        "display" : "Lymphangiomyomatosis"
+      },
+      {
+        "code" : "9175/0",
+        "display" : "Hemolymphangioma"
+      },
+      {
+        "code" : "9180/0",
+        "display" : "Osteoma, NOS"
+      },
+      {
+        "code" : "9180/3",
+        "display" : "Osteosarcoma, NOS"
+      },
+      {
+        "code" : "9181/3",
+        "display" : "Chondroblastic osteosarcoma"
+      },
+      {
+        "code" : "9182/3",
+        "display" : "Fibroblastic osteosarcoma"
+      },
+      {
+        "code" : "9183/3",
+        "display" : "Telangiectatic osteosarcoma"
+      },
+      {
+        "code" : "9184/3",
+        "display" : "Osteosarcoma in Paget disease of bone"
+      },
+      {
+        "code" : "9185/3",
+        "display" : "Small cell osteosarcoma"
+      },
+      {
+        "code" : "9186/3",
+        "display" : "Central osteosarcoma"
+      },
+      {
+        "code" : "9187/3",
+        "display" : "Intraosseous well differentiated osteosarcoma"
+      },
+      {
+        "code" : "9191/0",
+        "display" : "Osteoid osteoma, NOS"
+      },
+      {
+        "code" : "9192/3",
+        "display" : "Parosteal osteosarcoma"
+      },
+      {
+        "code" : "9193/3",
+        "display" : "Periosteal osteosarcoma"
+      },
+      {
+        "code" : "9194/3",
+        "display" : "High grade surface osteosarcoma"
+      },
+      {
+        "code" : "9195/3",
+        "display" : "Intracortical osteosarcoma"
+      },
+      {
+        "code" : "9200/0",
+        "display" : "Osteoblastoma, NOS"
+      },
+      {
+        "code" : "9200/1",
+        "display" : "Aggressive osteoblastoma"
+      },
+      {
+        "code" : "9210/0",
+        "display" : "Osteochondroma"
+      },
+      {
+        "code" : "9210/1",
+        "display" : "Osteochondromatosis, NOS"
+      },
+      {
+        "code" : "9220/0",
+        "display" : "Chondroma, NOS"
+      },
+      {
+        "code" : "9220/1",
+        "display" : "Chondromatosis, NOS"
+      },
+      {
+        "code" : "9220/3",
+        "display" : "Chondrosarcoma, NOS"
+      },
+      {
+        "code" : "9221/0",
+        "display" : "Juxtacortical chondroma"
+      },
+      {
+        "code" : "9221/3",
+        "display" : "Juxtacortical chondrosarcoma"
+      },
+      {
+        "code" : "9230/0",
+        "display" : "Chondroblastoma, NOS"
+      },
+      {
+        "code" : "9230/3",
+        "display" : "Chondroblastoma, malignant"
+      },
+      {
+        "code" : "9231/3",
+        "display" : "Myxoid chondrosarcoma"
+      },
+      {
+        "code" : "9240/3",
+        "display" : "Mesenchymal chondrosarcoma"
+      },
+      {
+        "code" : "9241/0",
+        "display" : "Chondromyxoid fibroma"
+      },
+      {
+        "code" : "9242/3",
+        "display" : "Clear cell chondrosarcoma"
+      },
+      {
+        "code" : "9243/3",
+        "display" : "Dedifferentiated chondrosarcoma"
+      },
+      {
+        "code" : "9250/1",
+        "display" : "Giant cell tumor of bone, NOS"
+      },
+      {
+        "code" : "9250/3",
+        "display" : "Giant cell tumor of bone, malignant"
+      },
+      {
+        "code" : "9251/1",
+        "display" : "Giant cell tumor of soft parts, NOS"
+      },
+      {
+        "code" : "9251/3",
+        "display" : "Malignant giant cell tumor of soft parts"
+      },
+      {
+        "code" : "9252/0",
+        "display" : "Tenosynovial giant cell tumor"
+      },
+      {
+        "code" : "9252/3",
+        "display" : "Malignant tenosynovial giant cell tumor"
+      },
+      {
+        "code" : "9260/3",
+        "display" : "Ewing sarcoma"
+      },
+      {
+        "code" : "9261/3",
+        "display" : "Adamantinoma of long bones"
+      },
+      {
+        "code" : "9262/0",
+        "display" : "Ossifying fibroma"
+      },
+      {
+        "code" : "9270/0",
+        "display" : "Odontogenic tumor, benign"
+      },
+      {
+        "code" : "9270/1",
+        "display" : "Odontogenic tumor, NOS"
+      },
+      {
+        "code" : "9270/3",
+        "display" : "Odontogenic tumor, malignant"
+      },
+      {
+        "code" : "9271/0",
+        "display" : "Ameloblastic fibrodentinoma"
+      },
+      {
+        "code" : "9272/0",
+        "display" : "Cementoma, NOS"
+      },
+      {
+        "code" : "9273/0",
+        "display" : "Cementoblastoma, benign"
+      },
+      {
+        "code" : "9274/0",
+        "display" : "Cementifying fibroma"
+      },
+      {
+        "code" : "9275/0",
+        "display" : "Gigantiform cementoma"
+      },
+      {
+        "code" : "9280/0",
+        "display" : "Odontoma, NOS"
+      },
+      {
+        "code" : "9281/0",
+        "display" : "Compound odontoma"
+      },
+      {
+        "code" : "9282/0",
+        "display" : "Complex odontoma"
+      },
+      {
+        "code" : "9290/0",
+        "display" : "Ameloblastic fibro-odontoma"
+      },
+      {
+        "code" : "9290/3",
+        "display" : "Ameloblastic odontosarcoma"
+      },
+      {
+        "code" : "9392/3",
+        "display" : "Ependymoma, anaplastic"
+      },
+      {
+        "code" : "9393/3",
+        "display" : "Papillary ependymoma"
+      },
+      {
+        "code" : "9394/1",
+        "display" : "Myxopapillary ependymoma"
+      },
+      {
+        "code" : "9400/3",
+        "display" : "Astrocytoma, NOS"
+      },
+      {
+        "code" : "9401/3",
+        "display" : "Astrocytoma, anaplastic"
+      },
+      {
+        "code" : "9410/3",
+        "display" : "Protoplasmic astrocytoma"
+      },
+      {
+        "code" : "9411/3",
+        "display" : "Gemistocytic astrocytoma"
+      },
+      {
+        "code" : "9412/1",
+        "display" : "Desmoplastic infantile astrocytoma"
+      },
+      {
+        "code" : "9413/0",
+        "display" : "Dysembryoplastic neuroepithelial tumor"
+      },
+      {
+        "code" : "9420/3",
+        "display" : "Fibrillary astrocytoma"
+      },
+      {
+        "code" : "9421/1",
+        "display" : "Pilocytic astrocytoma"
+      },
+      {
+        "code" : "9423/3",
+        "display" : "Polar spongioblastoma"
+      },
+      {
+        "code" : "9424/3",
+        "display" : "Pleomorphic xanthoastrocytoma"
+      },
+      {
+        "code" : "9430/3",
+        "display" : "Astroblastoma"
+      },
+      {
+        "code" : "9440/3",
+        "display" : "Glioblastoma, NOS"
+      },
+      {
+        "code" : "9441/3",
+        "display" : "Giant cell glioblastoma"
+      },
+      {
+        "code" : "9442/1",
+        "display" : "Gliofibroma"
+      },
+      {
+        "code" : "9442/3",
+        "display" : "Gliosarcoma"
+      },
+      {
+        "code" : "9444/1",
+        "display" : "Chordoid glioma"
+      },
+      {
+        "code" : "9450/3",
+        "display" : "Oligodendroglioma, NOS"
+      },
+      {
+        "code" : "9451/3",
+        "display" : "Oligodendroglioma, anaplastic"
+      },
+      {
+        "code" : "9460/3",
+        "display" : "Oligodendroblastoma"
+      },
+      {
+        "code" : "9470/3",
+        "display" : "Medulloblastoma, NOS"
+      },
+      {
+        "code" : "9471/3",
+        "display" : "Desmoplastic nodular medulloblastoma"
+      },
+      {
+        "code" : "9472/3",
+        "display" : "Medullomyoblastoma"
+      },
+      {
+        "code" : "9473/3",
+        "display" : "Primitive neuroectodermal tumor, NOS"
+      },
+      {
+        "code" : "9474/3",
+        "display" : "Large cell medulloblastoma"
+      },
+      {
+        "code" : "9480/3",
+        "display" : "Cerebellar sarcoma, NOS"
+      },
+      {
+        "code" : "9490/0",
+        "display" : "Ganglioneuroma"
+      },
+      {
+        "code" : "9490/3",
+        "display" : "Ganglioneuroblastoma"
+      },
+      {
+        "code" : "9491/0",
+        "display" : "Ganglioneuromatosis"
+      },
+      {
+        "code" : "9492/0",
+        "display" : "Gangliocytoma"
+      },
+      {
+        "code" : "9493/0",
+        "display" : "Dysplastic gangliocytoma of cerebellum (Lhermitte-Duclos)"
+      },
+      {
+        "code" : "9500/3",
+        "display" : "Neuroblastoma, NOS"
+      },
+      {
+        "code" : "9501/0",
+        "display" : "Medulloepithelioma, benign"
+      },
+      {
+        "code" : "9501/3",
+        "display" : "Medulloepithelioma, NOS"
+      },
+      {
+        "code" : "9502/0",
+        "display" : "Teratoid medulloepithelioma, benign"
+      },
+      {
+        "code" : "9502/3",
+        "display" : "Teratoid medulloepithelioma"
+      },
+      {
+        "code" : "9503/3",
+        "display" : "Neuroepithelioma, NOS"
+      },
+      {
+        "code" : "9504/3",
+        "display" : "Spongioneuroblastoma"
+      },
+      {
+        "code" : "9505/1",
+        "display" : "Ganglioglioma, NOS"
+      },
+      {
+        "code" : "9505/3",
+        "display" : "Ganglioglioma, anaplastic"
+      },
+      {
+        "code" : "9506/1",
+        "display" : "Central neurocytoma"
+      },
+      {
+        "code" : "9507/0",
+        "display" : "Pacinian tumor"
+      },
+      {
+        "code" : "9508/3",
+        "display" : "Atypical teratoid/rhabdoid tumor"
+      },
+      {
+        "code" : "9510/0",
+        "display" : "Retinocytoma"
+      },
+      {
+        "code" : "9510/3",
+        "display" : "Retinoblastoma, NOS"
+      },
+      {
+        "code" : "9511/3",
+        "display" : "Retinoblastoma, differentiated"
+      },
+      {
+        "code" : "9512/3",
+        "display" : "Retinoblastoma, undifferentiated"
+      },
+      {
+        "code" : "9513/3",
+        "display" : "Retinoblastoma, diffuse"
+      },
+      {
+        "code" : "9514/1",
+        "display" : "Retinoblastoma, spontaneously regressed"
+      },
+      {
+        "code" : "9520/3",
+        "display" : "Olfactory neurogenic tumor"
+      },
+      {
+        "code" : "9521/3",
+        "display" : "Olfactory neurocytoma"
+      },
+      {
+        "code" : "9522/3",
+        "display" : "Olfactory neuroblastoma"
+      },
+      {
+        "code" : "9523/3",
+        "display" : "Olfactory neuroepithelioma"
+      },
+      {
+        "code" : "9530/0",
+        "display" : "Meningioma, NOS"
+      },
+      {
+        "code" : "9530/1",
+        "display" : "Meningiomatosis, NOS"
+      },
+      {
+        "code" : "9530/3",
+        "display" : "Meningioma, malignant"
+      },
+      {
+        "code" : "9531/0",
+        "display" : "Meningothelial meningioma"
+      },
+      {
+        "code" : "9532/0",
+        "display" : "Fibrous meningioma"
+      },
+      {
+        "code" : "9533/0",
+        "display" : "Psammomatous meningioma"
+      },
+      {
+        "code" : "9534/0",
+        "display" : "Angiomatous meningioma"
+      },
+      {
+        "code" : "9535/0",
+        "display" : "Hemangioblastic meningioma"
+      },
+      {
+        "code" : "9537/0",
+        "display" : "Transitional meningioma"
+      },
+      {
+        "code" : "9538/1",
+        "display" : "Clear cell meningioma"
+      },
+      {
+        "code" : "9538/3",
+        "display" : "Papillary meningioma"
+      },
+      {
+        "code" : "9539/1",
+        "display" : "Atypical meningioma"
+      },
+      {
+        "code" : "9539/3",
+        "display" : "Meningeal sarcomatosis"
+      },
+      {
+        "code" : "9540/0",
+        "display" : "Neurofibroma, NOS"
+      },
+      {
+        "code" : "9540/1",
+        "display" : "Neurofibromatosis, NOS"
+      },
+      {
+        "code" : "9540/3",
+        "display" : "Malignant peripheral nerve sheath tumor"
+      },
+      {
+        "code" : "9541/0",
+        "display" : "Melanotic neurofibroma"
+      },
+      {
+        "code" : "9550/0",
+        "display" : "Plexiform neurofibroma"
+      },
+      {
+        "code" : "9560/0",
+        "display" : "Neurilemoma, NOS"
+      },
+      {
+        "code" : "9560/1",
+        "display" : "Neurinomatosis"
+      },
+      {
+        "code" : "9560/3",
+        "display" : "Neurilemoma, malignant"
+      },
+      {
+        "code" : "9561/3",
+        "display" : "Malignant peripheral nerve sheath tumor with rhabdomyoblastic differentiation"
+      },
+      {
+        "code" : "9562/0",
+        "display" : "Neurothekeoma"
+      },
+      {
+        "code" : "9570/0",
+        "display" : "Neuroma, NOS"
+      },
+      {
+        "code" : "9571/0",
+        "display" : "Perineurioma, NOS"
+      },
+      {
+        "code" : "9571/3",
+        "display" : "Perineurioma, malignant"
+      },
+      {
+        "code" : "9580/0",
+        "display" : "Granular cell tumor, NOS"
+      },
+      {
+        "code" : "9580/3",
+        "display" : "Granular cell tumor, malignant"
+      },
+      {
+        "code" : "9581/3",
+        "display" : "Alveolar soft part sarcoma"
+      },
+      {
+        "code" : "9582/0",
+        "display" : "Granular cell tumor of the sellar region"
+      },
+      {
+        "code" : "9590/3",
+        "display" : "Malignant lymphoma, NOS"
+      },
+      {
+        "code" : "9591/3",
+        "display" : "Malignant lymphoma, non-Hodgkin, NOS"
+      },
+      {
+        "code" : "9596/3",
+        "display" : "Composite Hodgkin and non-Hodgkin lymphoma"
+      },
+      {
+        "code" : "9650/3",
+        "display" : "Hodgkin lymphoma, NOS"
+      },
+      {
+        "code" : "9651/3",
+        "display" : "Hodgkin lymphoma, lymphocyte-rich"
+      },
+      {
+        "code" : "9652/3",
+        "display" : "Hodgkin lymphoma, mixed cellularity, NOS"
+      },
+      {
+        "code" : "9653/3",
+        "display" : "Hodgkin lymphoma, lymphocyte depletion, NOS"
+      },
+      {
+        "code" : "9654/3",
+        "display" : "Hodgkin lymphoma, lymphocyte depletion, diffuse fibrosis"
+      },
+      {
+        "code" : "9655/3",
+        "display" : "Hodgkin lymphoma, lymphocyte depletion, reticular"
+      },
+      {
+        "code" : "9659/3",
+        "display" : "Hodgkin lymphoma, nodular lymphocyte predominance"
+      },
+      {
+        "code" : "9661/3",
+        "display" : "Hodgkin granuloma"
+      },
+      {
+        "code" : "9662/3",
+        "display" : "Hodgkin sarcoma"
+      },
+      {
+        "code" : "9663/3",
+        "display" : "Hodgkin lymphoma, nodular sclerosis, NOS"
+      },
+      {
+        "code" : "9664/3",
+        "display" : "Hodgkin lymphoma, nodular sclerosis, cellular phase"
+      },
+      {
+        "code" : "9665/3",
+        "display" : "Hodgkin lymphoma, nodular sclerosis,  grade 1"
+      },
+      {
+        "code" : "9667/3",
+        "display" : "Hodgkin lymphoma, nodular sclerosis,  grade 2"
+      },
+      {
+        "code" : "9670/3",
+        "display" : "Malignant lymphoma, small B lymphocytic, NOS"
+      },
+      {
+        "code" : "9671/3",
+        "display" : "Malignant lymphoma, lymphoplasmacytic"
+      },
+      {
+        "code" : "9673/3",
+        "display" : "Mantle cell lymphoma"
+      },
+      {
+        "code" : "9675/3",
+        "display" : "Malignant lymphoma, mixed small and large cell, diffuse"
+      },
+      {
+        "code" : "9678/3",
+        "display" : "Primary effusion lymphoma"
+      },
+      {
+        "code" : "9679/3",
+        "display" : "Mediastinal large B-cell lymphoma"
+      },
+      {
+        "code" : "9680/3",
+        "display" : "Malignant lymphoma, large B-cell, diffuse, NOS"
+      },
+      {
+        "code" : "9684/3",
+        "display" : "Malignant lymphoma, large B-cell, diffuse, immunoblastic, NOS"
+      },
+      {
+        "code" : "9687/3",
+        "display" : "Burkitt lymphoma, NOS"
+      },
+      {
+        "code" : "9689/3",
+        "display" : "Splenic marginal zone B-cell lymphoma"
+      },
+      {
+        "code" : "9690/3",
+        "display" : "Follicular lymphoma, NOS"
+      },
+      {
+        "code" : "9691/3",
+        "display" : "Follicular lymphoma, grade 2"
+      },
+      {
+        "code" : "9695/3",
+        "display" : "Follicular lymphoma, grade 1"
+      },
+      {
+        "code" : "9698/3",
+        "display" : "Follicular lymphoma, grade 3"
+      },
+      {
+        "code" : "9699/3",
+        "display" : "Marginal zone B-cell lymphoma, NOS"
+      },
+      {
+        "code" : "9700/3",
+        "display" : "Mycosis fungoides"
+      },
+      {
+        "code" : "9701/3",
+        "display" : "Sezary syndrome"
+      },
+      {
+        "code" : "9702/3",
+        "display" : "Mature T-cell lymphoma, NOS"
+      },
+      {
+        "code" : "9705/3",
+        "display" : "Angioimmunoblastic T-cell lymphoma"
+      },
+      {
+        "code" : "9708/3",
+        "display" : "Subcutaneous panniculitis-like T-cell lymphoma"
+      },
+      {
+        "code" : "9709/3",
+        "display" : "Cutaneous T-cell lymphoma, NOS"
+      },
+      {
+        "code" : "9714/3",
+        "display" : "Anaplastic large cell lymphoma, T cell and Null cell type"
+      },
+      {
+        "code" : "9716/3",
+        "display" : "Hepatosplenic  (gamma-delta) cell lymphoma"
+      },
+      {
+        "code" : "9717/3",
+        "display" : "Intestinal T-cell lymphoma"
+      },
+      {
+        "code" : "9718/3",
+        "display" : "Primary cutaneous CD30+ T-cell lymphoproliferative disorder"
+      },
+      {
+        "code" : "9719/3",
+        "display" : "NK/T-cell lymphoma, nasal and nasal-type"
+      },
+      {
+        "code" : "9727/3",
+        "display" : "Precursor cell lymphoblastic lymphoma, NOS"
+      },
+      {
+        "code" : "9728/3",
+        "display" : "Precursor B-cell lymphoblastic lymphoma"
+      },
+      {
+        "code" : "9729/3",
+        "display" : "Precursor T-cell lymphoblastic lymphoma"
+      },
+      {
+        "code" : "9731/3",
+        "display" : "Plasmacytoma, NOS"
+      },
+      {
+        "code" : "9732/3",
+        "display" : "Multiple myeloma"
+      },
+      {
+        "code" : "9733/3",
+        "display" : "Plasma cell leukemia"
+      },
+      {
+        "code" : "9734/3",
+        "display" : "Plasmacytoma, extramedullary (not occurring in bone)"
+      },
+      {
+        "code" : "9740/1",
+        "display" : "Mastocytoma, NOS"
+      },
+      {
+        "code" : "9740/3",
+        "display" : "Mast cell sarcoma"
+      },
+      {
+        "code" : "9741/3",
+        "display" : "Malignant mastocytosis"
+      },
+      {
+        "code" : "9742/3",
+        "display" : "Mast cell leukemia"
+      },
+      {
+        "code" : "9750/3",
+        "display" : "Malignant histiocytosis"
+      },
+      {
+        "code" : "9751/1",
+        "display" : "Langerhans cell histiocytosis, NOS"
+      },
+      {
+        "code" : "9752/1",
+        "display" : "Langerhans cell histiocytosis, unifocal"
+      },
+      {
+        "code" : "9753/1",
+        "display" : "Langerhans cell histiocytosis, multifocal"
+      },
+      {
+        "code" : "9754/3",
+        "display" : "Langerhans cell histiocytosis, disseminated"
+      },
+      {
+        "code" : "9755/3",
+        "display" : "Histiocytic sarcoma"
+      },
+      {
+        "code" : "9756/3",
+        "display" : "Langerhans cell sarcoma"
+      },
+      {
+        "code" : "9757/3",
+        "display" : "Interdigitating dendritic cell sarcoma"
+      },
+      {
+        "code" : "9758/3",
+        "display" : "Follicular dendritic cell sarcoma"
+      },
+      {
+        "code" : "9760/3",
+        "display" : "Immunoproliferative disease, NOS"
+      },
+      {
+        "code" : "9761/3",
+        "display" : "Waldenstrom macroglobulinemia"
+      },
+      {
+        "code" : "9762/3",
+        "display" : "Heavy chain disease, NOS"
+      },
+      {
+        "code" : "9764/3",
+        "display" : "Immunoproliferative small intestinal  disease"
+      },
+      {
+        "code" : "9765/1",
+        "display" : "Monoclonal gammopathy of undetermined significance"
+      },
+      {
+        "code" : "9766/1",
+        "display" : "Angiocentric immunoproliferative lesion"
+      },
+      {
+        "code" : "9767/1",
+        "display" : "Angioimmunoblastic lymphadenopathy (AIC)"
+      },
+      {
+        "code" : "9768/1",
+        "display" : "T-gamma lymphoproliferative disease"
+      },
+      {
+        "code" : "9769/1",
+        "display" : "Immunoglobulin deposition disease"
+      },
+      {
+        "code" : "9800/3",
+        "display" : "Leukemia, NOS"
+      },
+      {
+        "code" : "9801/3",
+        "display" : "Acute leukemia, NOS"
+      },
+      {
+        "code" : "9805/3",
+        "display" : "Acute biphenotypic leukemia"
+      },
+      {
+        "code" : "9820/3",
+        "display" : "Lymphoid leukemia, NOS"
+      },
+      {
+        "code" : "9823/3",
+        "display" : "B-cell chronic lymphocytic leukemia/small lymphocytic lymphoma"
+      },
+      {
+        "code" : "9826/3",
+        "display" : "Burkitt cell leukemia"
+      },
+      {
+        "code" : "9827/3",
+        "display" : "Adult T-cell leukemia/lymphoma (HTLV-1 positive)"
+      },
+      {
+        "code" : "9831/3",
+        "display" : "T-cell large granular lymphocytic leukemia"
+      },
+      {
+        "code" : "9832/3",
+        "display" : "Prolymphocytic leukemia, NOS"
+      },
+      {
+        "code" : "9833/3",
+        "display" : "Prolymphocytic leukemia, B-cell type"
+      },
+      {
+        "code" : "9834/3",
+        "display" : "Prolymphocytic leukemia, T-cell type"
+      },
+      {
+        "code" : "9835/3",
+        "display" : "Precursor cell lymphoblastic leukemia, NOS"
+      },
+      {
+        "code" : "9836/3",
+        "display" : "Precursor B-cell lymphoblastic leukemia"
+      },
+      {
+        "code" : "9837/3",
+        "display" : "Precursor T-cell lymphoblastic leukemia"
+      },
+      {
+        "code" : "9840/3",
+        "display" : "Acute myeloid leukemia, M6 type"
+      },
+      {
+        "code" : "9860/3",
+        "display" : "Myeloid leukemia, NOS"
+      },
+      {
+        "code" : "9861/3",
+        "display" : "Acute myeloid leukemia, NOS"
+      },
+      {
+        "code" : "9863/3",
+        "display" : "Chronic myeloid leukemia, NOS"
+      },
+      {
+        "code" : "9866/3",
+        "display" : "Acute promyelocytic leukemia"
+      },
+      {
+        "code" : "9867/3",
+        "display" : "Acute myelomonocytic leukemia"
+      },
+      {
+        "code" : "9870/3",
+        "display" : "Acute basophilic leukemia"
+      },
+      {
+        "code" : "9871/3",
+        "display" : "Acute myeloid leukemia with abnormal marrow eosinophils"
+      },
+      {
+        "code" : "9872/3",
+        "display" : "Acute myeloid leukemia, minimal differentiation"
+      },
+      {
+        "code" : "9873/3",
+        "display" : "Acute myeloid leukemia without maturation"
+      },
+      {
+        "code" : "9874/3",
+        "display" : "Acute myeloid leukemia with maturation"
+      },
+      {
+        "code" : "9875/3",
+        "display" : "Chronic myelogenous leukemia, BCR/ABL  positive"
+      },
+      {
+        "code" : "9876/3",
+        "display" : "Atypical chronic myeloid leukemia, BCR/ABL negative"
+      },
+      {
+        "code" : "9891/3",
+        "display" : "Acute monocytic leukemia"
+      },
+      {
+        "code" : "9895/3",
+        "display" : "Acute myeloid leukemia with multilineage dysplasia"
+      },
+      {
+        "code" : "9896/3",
+        "display" : "Acute myeloid leukemia, t(8"
+      },
+      {
+        "code" : "9897/3",
+        "display" : "Acute myeloid leukemia, 11q23 abnormalities"
+      },
+      {
+        "code" : "9910/3",
+        "display" : "Acute megakaryoblastic leukemia"
+      },
+      {
+        "code" : "9920/3",
+        "display" : "Therapy-related acute myeloid leukemia, NOS"
+      },
+      {
+        "code" : "9930/3",
+        "display" : "Myeloid sarcoma"
+      },
+      {
+        "code" : "9931/3",
+        "display" : "Acute panmyelosis with myelofibrosis"
+      },
+      {
+        "code" : "9940/3",
+        "display" : "Hairy cell leukemia"
+      },
+      {
+        "code" : "9945/3",
+        "display" : "Chronic myelomonocytic leukemia, NOS"
+      },
+      {
+        "code" : "9946/3",
+        "display" : "Juvenile myelomonocytic leukemia"
+      },
+      {
+        "code" : "9948/3",
+        "display" : "Aggressive NK-cell leukemia"
+      },
+      {
+        "code" : "9950/3",
+        "display" : "Polycythemia vera"
+      },
+      {
+        "code" : "9960/3",
+        "display" : "Chronic myeloproliferative disease, NOS"
+      },
+      {
+        "code" : "9961/3",
+        "display" : "Myelosclerosis with myeloid metaplasia"
+      },
+      {
+        "code" : "9962/3",
+        "display" : "Essential thrombocythemia"
+      },
+      {
+        "code" : "9963/3",
+        "display" : "Chronic neutrophilic leukemia"
+      },
+      {
+        "code" : "9964/3",
+        "display" : "Hypereosinophilic syndrome"
+      },
+      {
+        "code" : "9970/1",
+        "display" : "Lymphoproliferative disorder, NOS"
+      },
+      {
+        "code" : "9975/1",
+        "display" : "Myeloproliferative disease, NOS"
+      },
+      {
+        "code" : "9980/3",
+        "display" : "Refractory anemia"
+      },
+      {
+        "code" : "9982/3",
+        "display" : "Refractory anemia with sideroblasts"
+      },
+      {
+        "code" : "9983/3",
+        "display" : "Refractory anemia with excess blasts"
+      },
+      {
+        "code" : "9984/3",
+        "display" : "Refractory anemia with excess blasts in transformation"
+      },
+      {
+        "code" : "9985/3",
+        "display" : "Refractory cytopenia with multilineage dysplasia"
+      },
+      {
+        "code" : "9986/3",
+        "display" : "Myelodysplastic syndrome with 5q deletion (5q-) syndrome"
+      },
+      {
+        "code" : "9987/3",
+        "display" : "Therapy-related myelodysplastic syndrome, NOS"
+      },
+      {
+        "code" : "9989/3",
+        "display" : "Myelodysplastic syndrome, NOS"
+      }]
+    }]
+  }
+}

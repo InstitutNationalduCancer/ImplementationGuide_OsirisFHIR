@@ -1,0 +1,22 @@
+{
+  "resourceType" : "Patient",
+  "id" : "Patient-XRTS-04-22A",
+  "meta" : {
+    "profile" : ["https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anonymous Patient</b> unknown, DoB: 1000-01-01</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: <a href=\"Organization-fhir-osiris-provider-organization.html\">Organization/fhir-osiris-provider-organization</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The origin center organization of an Oncology Patient.\"><a href=\"StructureDefinition-origin-center.html\">Patient Origin Center:</a></td><td colspan=\"3\"><ul><li><a href=\"Organization-fhir-osiris-origin-organization.html\">Organization/fhir-osiris-origin-organization</a></li></ul></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/origin-center",
+    "valueReference" : {
+      "reference" : "Organization/fhir-osiris-origin-organization"
+    }
+  }],
+  "gender" : "unknown",
+  "birthDate" : "1000-01-01",
+  "managingOrganization" : {
+    "reference" : "Organization/fhir-osiris-provider-organization"
+  }
+}

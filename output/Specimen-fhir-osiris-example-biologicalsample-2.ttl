@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Specimen/fhir-osiris-example-biologicalsample-2> a fhir:Specimen ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir-osiris-example-biologicalsample-2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-biological-sample"^^xsd:anyURI ;
+       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-biological-sample>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Specimen</b><a name=\"fhir-osiris-example-biologicalsample-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Specimen &quot;fhir-osiris-example-biologicalsample-2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-biological-sample.html\">Biological Sample</a></p></div><p><b>Biological Sample Origin</b>: Origin of the sample <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-OsirisCS.html\">Osiris code system</a>#O59-2)</span></p><p><b>Based On Condition (Tumor Pathology Event)</b>: <a href=\"Condition-fhir-osiris-example-TumorPathologyEvent-instance-1.html\">Condition/fhir-osiris-example-TumorPathologyEvent-instance-1</a></p><p><b>identifier</b>: id: ech 2</p><p><b>type</b>: C1519524 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\">Unified Medical Language System</a>#C1519524)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><p><b>parent</b>: <a href=\"Specimen-fhir-osiris-example-biologicalsample-1.html\">Specimen/fhir-osiris-example-biologicalsample-1</a></p><h3>Collections</h3><table class=\"grid\"><tr><td>-</td><td><b>Collected[x]</b></td><td><b>Quantity</b></td><td><b>BodySite</b></td></tr><tr><td>*</td><td>2011-02-08</td><td>60 %<span style=\"background: LightGoldenRodYellow\"> (Details: [not stated] code C4055283 = 'C4055283')</span></td><td>C30 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-icd-o-3.html\">International Classification of Diseases for Oncology, version 3.</a>#C30)</span></td></tr></table><p><b>condition</b>: Storage temperature of the sample. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#FFPE)</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/BiologicalSampleOrigin"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://terminology.arkhn.com/osiris"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "O59-2" ]
+       ] ) ;
+       fhir:text [ fhir:v "Origin of the sample" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/BasedOnCondition"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Condition/fhir-osiris-example-TumorPathologyEvent-instance-1> ;
+       fhir:reference [ fhir:v "Condition/fhir-osiris-example-TumorPathologyEvent-instance-1" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "ech 2" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/umls"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "C1519524" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/L304> ;
+     fhir:reference [ fhir:v "Patient/L304" ]
+  ] ; # 
+  fhir:parent ( [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Specimen/fhir-osiris-example-biologicalsample-1> ;
+     fhir:reference [ fhir:v "Specimen/fhir-osiris-example-biologicalsample-1" ]
+  ] ) ; # 
+  fhir:collection [
+     fhir:collected [ fhir:v "2011-02-08"^^xsd:date ] ;
+     fhir:quantity [
+       fhir:value [ fhir:v "60"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "%" ] ;
+       fhir:code [ fhir:v "C4055283" ]
+     ] ;
+     fhir:bodySite [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/icd-o-3"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "C30" ]
+       ] )
+     ]
+  ] ; # 
+  fhir:condition ( [
+     fhir:coding ( [
+       fhir:code [ fhir:v "FFPE" ]
+     ] ) ;
+     fhir:text [ fhir:v "Storage temperature of the sample." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
