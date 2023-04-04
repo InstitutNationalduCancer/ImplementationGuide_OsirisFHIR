@@ -10,7 +10,7 @@ Description: "Example of Surgery from OSIRIS_pivot_Variant.csv"
 //* component[proposed-for-orientation].valueBoolean 
 * component[chromosome].code.coding  = LNC#48000-4
 * component[chromosome].valueCodeableConcept = LNC#LA21256-5
-* component[exact-start-end].code.coding = http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes#exact-start-end
+* component[exact-start-end].code.coding = LNC#81254-5
 * component[exact-start-end].valueRange.low.value = 178916948
 * component[exact-start-end].valueRange.high.value = 178916948
 * component[ref-sequence-assembly].code.coding = LNC#62374-4
