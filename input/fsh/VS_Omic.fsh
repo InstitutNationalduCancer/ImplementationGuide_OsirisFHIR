@@ -203,3 +203,10 @@ Description:  "DNAChangeType"
 * LNC#LA6690-7	"Substitution"
 * OSIRIS#O55-1	"Virus insertion site"
 * OSIRIS#O55-2	"Delins"
+
+ValueSet: OsirisValidationType
+Title: "Osiris Validation Type"
+Description:  "Osiris validation type"
+* OSIRIS#O16-1	"Experimental"
+* OSIRIS#O16-2	"By biologist"
+* OSIRIS#O16-3	"In silico"
