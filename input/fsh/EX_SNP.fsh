@@ -3,7 +3,7 @@ InstanceOf: SNP
 Description: "Example of Surgery from OSIRIS_pivot_Variant.csv"
 
 * subject = Reference(fhir-osiris-example-patient)
-* derivedFrom[analysis] = Reference(fhir-osiris-example-sequencinganalysis-1)
+* derivedFrom = Reference(fhir-osiris-example-sequencinganalysis-1)
 * status = #final
 //* component[pathogenicity].valueCodeableConcept 
 //* component[actionability].valueBoolean
@@ -24,7 +24,7 @@ Description: "Example of Surgery from OSIRIS_pivot_Variant.csv"
 * component[dna-chg-type].valueCodeableConcept = LNC#LA6690-7
 * component[allelic-read-depth].code.coding = LNC#82121-5
 * component[allelic-read-depth].valueQuantity.value = 31
-* component[variant-read-depth].code.coding = LNC#82121-5
+* component[variant-read-depth].code.coding = LNC#LP232001-0
 * component[variant-read-depth].valueQuantity.value = 6	
 * extension[strand-bias].valueBoolean = false
 * component[genomic-source-class].code.coding = LNC#48002-0

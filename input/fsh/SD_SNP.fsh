@@ -9,18 +9,20 @@ Description:    "Observation of a Single Nucleotide Polymorphism (SNP) derived f
 * subject only Reference (onco-patient)
 
 
-* derivedFrom ^slicing.discriminator.type = #pattern
-* derivedFrom ^slicing.discriminator.path = "reference"
-* derivedFrom ^slicing.rules = #open
-* derivedFrom ^slicing.description = "Slice based on referece pattern"
-* derivedFrom contains analysis 1..1 MS
-* derivedFrom[analysis] only Reference (sequencing-analysis) 
-* derivedFrom[analysis] ^short = "Analysis from which come this observation"
-* derivedFrom[analysis] ^definition = "Analysis from which come this observation"
+
+* derivedFrom 1..1 MS
+* derivedFrom only Reference (sequencing-analysis) 
+* derivedFrom ^short = "Analysis from which come this observation"
+* derivedFrom ^definition = "Analysis from which come this observation"
+
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component ^slicing.description = "Slice based on the component.code pattern"
 
 
 * component contains pathogenicity 0..1 MS
-* component[pathogenicity].code.coding = LNC#74019-1
+* component[pathogenicity].code = LNC#74019-1
 * component[pathogenicity].value[x] only CodeableConcept 
 * component[pathogenicity].value[x] from Pathogenicity (required)
 * component[pathogenicity] ^short = "Pathogenicity"
@@ -28,20 +30,20 @@ Description:    "Observation of a Single Nucleotide Polymorphism (SNP) derived f
 
 
 * component contains actionability 0..1 MS
-* component[actionability].code.coding = LNC#93348-1
+* component[actionability].code = LNC#93348-1
 * component[actionability].value[x] only boolean 
 * component[actionability] ^short = "Impact on patient treatment"
 * component[actionability] ^definition = "Can (could) the genetic alteration affect the patient's response to treatment?"
 
 
 * component contains proposed-for-orientation 0..1 MS
-* component[proposed-for-orientation].code.coding = UMLS#C0449889
+* component[proposed-for-orientation].code = UMLS#C0449889
 * component[proposed-for-orientation].value[x] only boolean
 * component[proposed-for-orientation] ^short = "Impact on the choice of therapy"
 * component[proposed-for-orientation] ^definition = "Was the genetic alteration used to guide the patient's therapeutic choice?"
 
 * component contains chromosome 1..* MS
-* component[chromosome].code.coding = LNC#48000-4
+* component[chromosome].code = LNC#48000-4
 * component[chromosome].value[x] only CodeableConcept
 * component[chromosome].valueCodeableConcept 1..1 MS
 * component[chromosome].value[x] from Chromosome (required)
@@ -93,7 +95,7 @@ Description:    "Observation of a Single Nucleotide Polymorphism (SNP) derived f
 * component[allelic-read-depth] ^definition = "Number of 'reads' at the genomic position of the mutation."
 
 * component contains variant-read-depth 1..1 MS
-* component[variant-read-depth].code.coding = LNC#82121-5
+* component[variant-read-depth].code = LNC#LP232001-0 /* To check */
 * component[variant-read-depth].value[x] only Quantity
 * component[variant-read-depth].valueQuantity 1..1 MS
 * component[variant-read-depth] ^short = "Alternative allele depth"
@@ -121,7 +123,7 @@ Target: "SNP"
 Id: fhir-osiris-variant
 Title: "Fhir-osiris Variant to osiris"
 * subject -> "OSIRIS_pivot_Variant.Patient_Id"
-* derivedFrom[analysis]  -> "OSIRIS_pivot_Variant.Analysis_Ref"
+* derivedFrom  -> "OSIRIS_pivot_Variant.Analysis_Ref"
 * component[pathogenicity].valueCodeableConcept -> "OSIRIS_pivot_Variant.AlterationOnSample_Pathogenicity"
 * component[actionability].valueBoolean -> "OSIRIS_pivot_Variant.AlterationOnSample_Actionability"
 * component[proposed-for-orientation].valueBoolean -> "OSIRIS_pivot_Variant.AlterationOnSample_ProposedForOrientation"
