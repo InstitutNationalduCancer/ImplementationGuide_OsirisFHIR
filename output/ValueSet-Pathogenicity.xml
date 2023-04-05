@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="Pathogenicity"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://github.com/siric-osiris/OSIRIS</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>O81-1</td><td>Pathogenic</td></tr><tr><td>O81-2</td><td>Likely pathogenic</td></tr><tr><td>O81-3</td><td>Uncertain significance</td></tr><tr><td>O81-4</td><td>Likely benign</td></tr><tr><td>O81-5</td><td>Benign</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Pathogenicity"/>
+  <version value="2.1.0"/>
+  <name value="Pathogenicity"/>
+  <title value="Pathogenicity Value Set"/>
+  <status value="active"/>
+  <date value="2023-03-28T12:16:37+02:00"/>
+  <publisher value="Arkhn"/>
+  <contact>
+    <name value="Arkhn"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://arkhn.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="contact@arkhn.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nicolas Riss"/>
+    <telecom>
+      <system value="email"/>
+      <value value="nicolas@arkhn.com"/>
+    </telecom>
+  </contact>
+  <description value="Pathogenicity"/>
+  <compose>
+    <include>
+      <system value="https://github.com/siric-osiris/OSIRIS"/>
+      <concept>
+        <code value="O81-1"/>
+        <display value="Pathogenic"/>
+      </concept>
+      <concept>
+        <code value="O81-2"/>
+        <display value="Likely pathogenic"/>
+      </concept>
+      <concept>
+        <code value="O81-3"/>
+        <display value="Uncertain significance"/>
+      </concept>
+      <concept>
+        <code value="O81-4"/>
+        <display value="Likely benign"/>
+      </concept>
+      <concept>
+        <code value="O81-5"/>
+        <display value="Benign"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

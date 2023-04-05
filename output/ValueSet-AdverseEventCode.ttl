@@ -1,0 +1,2559 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AdverseEventCode> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AdverseEventCode"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-mdr.html\"><code>http://terminology.hl7.org/CodeSystem/mdr</code></a> version <code>&quot;12.0&quot;</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>10002272</td><td>Anemia</td></tr><tr><td>10005329</td><td>Blood and lymphatic system disorders - Other, specify</td></tr><tr><td>10048580</td><td>Bone marrow hypocellular</td></tr><tr><td>10013442</td><td>Disseminated intravascular coagulation</td></tr><tr><td>10014950</td><td>Eosinophilia</td></tr><tr><td>10016288</td><td>Febrile neutropenia</td></tr><tr><td>10019491</td><td>Hemolysis</td></tr><tr><td>10019515</td><td>Hemolytic uremic syndrome</td></tr><tr><td>10024378</td><td>Leukocytosis</td></tr><tr><td>10025182</td><td>Lymph node pain</td></tr><tr><td>10027506</td><td>Methemoglobinemia</td></tr><tr><td>10043648</td><td>Thrombotic thrombocytopenic purpura</td></tr><tr><td>10061589</td><td>Aortic valve disease</td></tr><tr><td>10003586</td><td>Asystole</td></tr><tr><td>10003658</td><td>Atrial fibrillation</td></tr><tr><td>10003662</td><td>Atrial flutter</td></tr><tr><td>10003673</td><td>Atrioventricular block complete</td></tr><tr><td>10003674</td><td>Atrioventricular block first degree</td></tr><tr><td>10007515</td><td>Cardiac arrest</td></tr><tr><td>10007541</td><td>Cardiac disorders - Other, specify</td></tr><tr><td>10008481</td><td>Chest pain - cardiac</td></tr><tr><td>10010276</td><td>Conduction disorder</td></tr><tr><td>10011703</td><td>Cyanosis</td></tr><tr><td>10019279</td><td>Heart failure</td></tr><tr><td>10069501</td><td>Left ventricular systolic dysfunction</td></tr><tr><td>10061532</td><td>Mitral valve disease</td></tr><tr><td>10027786</td><td>Mobitz (type) II atrioventricular block</td></tr><tr><td>10027787</td><td>Mobitz type I</td></tr><tr><td>10028596</td><td>Myocardial infarction</td></tr><tr><td>10028606</td><td>Myocarditis</td></tr><tr><td>10033557</td><td>Palpitations</td></tr><tr><td>10034040</td><td>Paroxysmal atrial tachycardia</td></tr><tr><td>10034474</td><td>Pericardial effusion</td></tr><tr><td>10053565</td><td>Pericardial tamponade</td></tr><tr><td>10034484</td><td>Pericarditis</td></tr><tr><td>10061541</td><td>Pulmonary valve disease</td></tr><tr><td>10038748</td><td>Restrictive cardiomyopathy</td></tr><tr><td>10058597</td><td>Right ventricular dysfunction</td></tr><tr><td>10040639</td><td>Sick sinus syndrome</td></tr><tr><td>10040741</td><td>Sinus bradycardia</td></tr><tr><td>10040752</td><td>Sinus tachycardia</td></tr><tr><td>10042604</td><td>Supraventricular tachycardia</td></tr><tr><td>10061389</td><td>Tricuspid valve disease</td></tr><tr><td>10047281</td><td>Ventricular arrhythmia</td></tr><tr><td>10047290</td><td>Ventricular fibrillation</td></tr><tr><td>10047302</td><td>Ventricular tachycardia</td></tr><tr><td>10010331</td><td>Congenital, familial and genetic disorders - Other, specify</td></tr><tr><td>10013993</td><td>Ear and labyrinth disorders - Other, specify</td></tr><tr><td>10014020</td><td>Ear pain</td></tr><tr><td>10065785</td><td>External ear pain</td></tr><tr><td>10019245</td><td>Hearing impaired</td></tr><tr><td>10065838</td><td>Middle ear inflammation</td></tr><tr><td>10043882</td><td>Tinnitus</td></tr><tr><td>10047340</td><td>Vertigo</td></tr><tr><td>10047386</td><td>Vestibular disorder</td></tr><tr><td>10001367</td><td>Adrenal insufficiency</td></tr><tr><td>10011655</td><td>Cushingoid</td></tr><tr><td>10012205</td><td>Delayed puberty</td></tr><tr><td>10014698</td><td>Endocrine disorders - Other, specify</td></tr><tr><td>10018746</td><td>Growth accelerated</td></tr><tr><td>10020705</td><td>Hyperparathyroidism</td></tr><tr><td>10020850</td><td>Hyperthyroidism</td></tr><tr><td>10021041</td><td>Hypoparathyroidism</td></tr><tr><td>10062767</td><td>Hypophysitis</td></tr><tr><td>10021067</td><td>Hypopituitarism</td></tr><tr><td>10021114</td><td>Hypothyroidism</td></tr><tr><td>10058084</td><td>Precocious puberty</td></tr><tr><td>10067734</td><td>Testosterone deficiency</td></tr><tr><td>10047488</td><td>Virilization</td></tr><tr><td>10005886</td><td>Blurred vision</td></tr><tr><td>10007739</td><td>Cataract</td></tr><tr><td>10048492</td><td>Corneal ulcer</td></tr><tr><td>10013774</td><td>Dry eye</td></tr><tr><td>10015829</td><td>Extraocular muscle paresis</td></tr><tr><td>10015919</td><td>Eye disorders - Other, specify</td></tr><tr><td>10015958</td><td>Eye pain</td></tr><tr><td>10061145</td><td>Eyelid function disorder</td></tr><tr><td>10016757</td><td>Flashing lights</td></tr><tr><td>10016778</td><td>Floaters</td></tr><tr><td>10018304</td><td>Glaucoma</td></tr><tr><td>10023332</td><td>Keratitis</td></tr><tr><td>10029404</td><td>Night blindness</td></tr><tr><td>10061322</td><td>Optic nerve disorder</td></tr><tr><td>10033703</td><td>Papilledema</td></tr><tr><td>10054541</td><td>Periorbital edema</td></tr><tr><td>10034960</td><td>Photophobia</td></tr><tr><td>10038848</td><td>Retinal detachment</td></tr><tr><td>10038897</td><td>Retinal tear</td></tr><tr><td>10038901</td><td>Retinal vascular disorder</td></tr><tr><td>10038923</td><td>Retinopathy</td></tr><tr><td>10061510</td><td>Scleral disorder</td></tr><tr><td>10046851</td><td>Uveitis</td></tr><tr><td>10047516</td><td>Vision decreased</td></tr><tr><td>10047656</td><td>Vitreous hemorrhage</td></tr><tr><td>10047848</td><td>Watering eyes</td></tr><tr><td>10000060</td><td>Abdominal distension</td></tr><tr><td>10000081</td><td>Abdominal pain</td></tr><tr><td>10002153</td><td>Anal fissure</td></tr><tr><td>10002156</td><td>Anal fistula</td></tr><tr><td>10055226</td><td>Anal hemorrhage</td></tr><tr><td>10065721</td><td>Anal mucositis</td></tr><tr><td>10065722</td><td>Anal necrosis</td></tr><tr><td>10002167</td><td>Anal pain</td></tr><tr><td>10002176</td><td>Anal stenosis</td></tr><tr><td>10002180</td><td>Anal ulcer</td></tr><tr><td>10003445</td><td>Ascites</td></tr><tr><td>10004222</td><td>Belching</td></tr><tr><td>10005265</td><td>Bloating</td></tr><tr><td>10065747</td><td>Cecal hemorrhage</td></tr><tr><td>10008417</td><td>Cheilitis</td></tr><tr><td>10009167</td><td>Chylous ascites</td></tr><tr><td>10009887</td><td>Colitis</td></tr><tr><td>10009995</td><td>Colonic fistula</td></tr><tr><td>10009998</td><td>Colonic hemorrhage</td></tr><tr><td>10010000</td><td>Colonic obstruction</td></tr><tr><td>10010001</td><td>Colonic perforation</td></tr><tr><td>10010004</td><td>Colonic stenosis</td></tr><tr><td>10010006</td><td>Colonic ulcer</td></tr><tr><td>10010774</td><td>Constipation</td></tr><tr><td>10012318</td><td>Dental caries</td></tr><tr><td>10012727</td><td>Diarrhea</td></tr><tr><td>10013781</td><td>Dry mouth</td></tr><tr><td>10013828</td><td>Duodenal fistula</td></tr><tr><td>10055242</td><td>Duodenal hemorrhage</td></tr><tr><td>10013830</td><td>Duodenal obstruction</td></tr><tr><td>10013832</td><td>Duodenal perforation</td></tr><tr><td>10050094</td><td>Duodenal stenosis</td></tr><tr><td>10013836</td><td>Duodenal ulcer</td></tr><tr><td>10013946</td><td>Dyspepsia</td></tr><tr><td>10013950</td><td>Dysphagia</td></tr><tr><td>10014893</td><td>Enterocolitis</td></tr><tr><td>10062570</td><td>Enterovesical fistula</td></tr><tr><td>10065851</td><td>Esophageal fistula</td></tr><tr><td>10015384</td><td>Esophageal hemorrhage</td></tr><tr><td>10065727</td><td>Esophageal necrosis</td></tr><tr><td>10015387</td><td>Esophageal obstruction</td></tr><tr><td>10015388</td><td>Esophageal pain</td></tr><tr><td>10055472</td><td>Esophageal perforation</td></tr><tr><td>10015448</td><td>Esophageal stenosis</td></tr><tr><td>10015451</td><td>Esophageal ulcer</td></tr><tr><td>10015453</td><td>Esophageal varices hemorrhage</td></tr><tr><td>10015461</td><td>Esophagitis</td></tr><tr><td>10016296</td><td>Fecal incontinence</td></tr><tr><td>10016766</td><td>Flatulence</td></tr><tr><td>10065713</td><td>Gastric fistula</td></tr><tr><td>10017789</td><td>Gastric hemorrhage</td></tr><tr><td>10051886</td><td>Gastric necrosis</td></tr><tr><td>10017815</td><td>Gastric perforation</td></tr><tr><td>10061970</td><td>Gastric stenosis</td></tr><tr><td>10017822</td><td>Gastric ulcer</td></tr><tr><td>10017853</td><td>Gastritis</td></tr><tr><td>10066874</td><td>Gastroesophageal reflux disease</td></tr><tr><td>10017947</td><td>Gastrointestinal disorders - Other, specify</td></tr><tr><td>10017877</td><td>Gastrointestinal fistula</td></tr><tr><td>10017999</td><td>Gastrointestinal pain</td></tr><tr><td>10018043</td><td>Gastroparesis</td></tr><tr><td>10018286</td><td>Gingival pain</td></tr><tr><td>10060640</td><td>Hemorrhoidal hemorrhage</td></tr><tr><td>10019611</td><td>Hemorrhoids</td></tr><tr><td>10065728</td><td>Ileal fistula</td></tr><tr><td>10055287</td><td>Ileal hemorrhage</td></tr><tr><td>10065730</td><td>Ileal obstruction</td></tr><tr><td>10021305</td><td>Ileal perforation</td></tr><tr><td>10021307</td><td>Ileal stenosis</td></tr><tr><td>10021309</td><td>Ileal ulcer</td></tr><tr><td>10021328</td><td>Ileus</td></tr><tr><td>10055291</td><td>Intra-abdominal hemorrhage</td></tr><tr><td>10065719</td><td>Jejunal fistula</td></tr><tr><td>10055300</td><td>Jejunal hemorrhage</td></tr><tr><td>10065732</td><td>Jejunal obstruction</td></tr><tr><td>10023174</td><td>Jejunal perforation</td></tr><tr><td>10023176</td><td>Jejunal stenosis</td></tr><tr><td>10023177</td><td>Jejunal ulcer</td></tr><tr><td>10024561</td><td>Lip pain</td></tr><tr><td>10051746</td><td>Lower gastrointestinal hemorrhage</td></tr><tr><td>10025476</td><td>Malabsorption</td></tr><tr><td>10028130</td><td>Mucositis oral</td></tr><tr><td>10028813</td><td>Nausea</td></tr><tr><td>10029957</td><td>Obstruction gastric</td></tr><tr><td>10065720</td><td>Oral cavity fistula</td></tr><tr><td>10054520</td><td>Oral dysesthesia</td></tr><tr><td>10030980</td><td>Oral hemorrhage</td></tr><tr><td>10031009</td><td>Oral pain</td></tr><tr><td>10065703</td><td>Pancreatic duct stenosis</td></tr><tr><td>10049192</td><td>Pancreatic fistula</td></tr><tr><td>10033626</td><td>Pancreatic hemorrhage</td></tr><tr><td>10058096</td><td>Pancreatic necrosis</td></tr><tr><td>10033645</td><td>Pancreatitis</td></tr><tr><td>10034536</td><td>Periodontal disease</td></tr><tr><td>10065704</td><td>Peritoneal necrosis</td></tr><tr><td>10036774</td><td>Proctitis</td></tr><tr><td>10064993</td><td>Rectal fissure</td></tr><tr><td>10038062</td><td>Rectal fistula</td></tr><tr><td>10038064</td><td>Rectal hemorrhage</td></tr><tr><td>10063190</td><td>Rectal mucositis</td></tr><tr><td>10065709</td><td>Rectal necrosis</td></tr><tr><td>10065707</td><td>Rectal obstruction</td></tr><tr><td>10038072</td><td>Rectal pain</td></tr><tr><td>10038073</td><td>Rectal perforation</td></tr><tr><td>10038079</td><td>Rectal stenosis</td></tr><tr><td>10038080</td><td>Rectal ulcer</td></tr><tr><td>10038981</td><td>Retroperitoneal hemorrhage</td></tr><tr><td>10056681</td><td>Salivary duct inflammation</td></tr><tr><td>10039411</td><td>Salivary gland fistula</td></tr><tr><td>10065710</td><td>Small intestinal mucositis</td></tr><tr><td>10041101</td><td>Small intestinal obstruction</td></tr><tr><td>10041103</td><td>Small intestinal perforation</td></tr><tr><td>10062263</td><td>Small intestinal stenosis</td></tr><tr><td>10041133</td><td>Small intestine ulcer</td></tr><tr><td>10042112</td><td>Stomach pain</td></tr><tr><td>10044030</td><td>Tooth development disorder</td></tr><tr><td>10044031</td><td>Tooth discoloration</td></tr><tr><td>10044055</td><td>Toothache</td></tr><tr><td>10045271</td><td>Typhlitis</td></tr><tr><td>10055356</td><td>Upper gastrointestinal hemorrhage</td></tr><tr><td>10054692</td><td>Visceral arterial ischemia</td></tr><tr><td>10047700</td><td>Vomiting</td></tr><tr><td>10008531</td><td>Chills</td></tr><tr><td>10011912</td><td>Death neonatal</td></tr><tr><td>10011914</td><td>Death NOS</td></tr><tr><td>10061818</td><td>Disease progression</td></tr><tr><td>10014222</td><td>Edema face</td></tr><tr><td>10050068</td><td>Edema limbs</td></tr><tr><td>10058720</td><td>Edema trunk</td></tr><tr><td>10016059</td><td>Facial pain</td></tr><tr><td>10016256</td><td>Fatigue</td></tr><tr><td>10016558</td><td>Fever</td></tr><tr><td>10016791</td><td>Flu like symptoms</td></tr><tr><td>10017577</td><td>Gait disturbance</td></tr><tr><td>10018065</td><td>General disorders and administration site conditions - Other, specify</td></tr><tr><td>10018112</td><td>Generalized edema</td></tr><tr><td>10021113</td><td>Hypothermia</td></tr><tr><td>10064774</td><td>Infusion site extravasation</td></tr><tr><td>10022095</td><td>Injection site reaction</td></tr><tr><td>10062466</td><td>Localized edema</td></tr><tr><td>10025482</td><td>Malaise</td></tr><tr><td>10028154</td><td>Multi-organ failure</td></tr><tr><td>10054482</td><td>Neck edema</td></tr><tr><td>10062501</td><td>Non-cardiac chest pain</td></tr><tr><td>10033371</td><td>Pain</td></tr><tr><td>10042435</td><td>Sudden death NOS</td></tr><tr><td>10069480</td><td>Vaccination site lymphadenopathy</td></tr><tr><td>10051341</td><td>Bile duct stenosis</td></tr><tr><td>10004665</td><td>Biliary fistula</td></tr><tr><td>10006537</td><td>Budd-Chiari syndrome</td></tr><tr><td>10008612</td><td>Cholecystitis</td></tr><tr><td>10017631</td><td>Gallbladder fistula</td></tr><tr><td>10059446</td><td>Gallbladder necrosis</td></tr><tr><td>10017636</td><td>Gallbladder obstruction</td></tr><tr><td>10017638</td><td>Gallbladder pain</td></tr><tr><td>10017639</td><td>Gallbladder perforation</td></tr><tr><td>10019663</td><td>Hepatic failure</td></tr><tr><td>10019678</td><td>Hepatic hemorrhage</td></tr><tr><td>10019692</td><td>Hepatic necrosis</td></tr><tr><td>10019705</td><td>Hepatic pain</td></tr><tr><td>10019805</td><td>Hepatobiliary disorders - Other, specify</td></tr><tr><td>10034405</td><td>Perforation bile duct</td></tr><tr><td>10036200</td><td>Portal hypertension</td></tr><tr><td>10036206</td><td>Portal vein thrombosis</td></tr><tr><td>10063675</td><td>Sinusoidal obstruction syndrome</td></tr><tr><td>10001718</td><td>Allergic reaction</td></tr><tr><td>10002218</td><td>Anaphylaxis</td></tr><tr><td>10061664</td><td>Autoimmune disorder</td></tr><tr><td>10052015</td><td>Cytokine release syndrome</td></tr><tr><td>10021428</td><td>Immune system disorders - Other, specify</td></tr><tr><td>10040400</td><td>Serum sickness</td></tr><tr><td>10056519</td><td>Abdominal infection</td></tr><tr><td>10061640</td><td>Anorectal infection</td></tr><tr><td>10003011</td><td>Appendicitis</td></tr><tr><td>10003012</td><td>Appendicitis perforated</td></tr><tr><td>10065744</td><td>Arteritis infective</td></tr><tr><td>10003999</td><td>Bacteremia</td></tr><tr><td>10061695</td><td>Biliary tract infection</td></tr><tr><td>10005047</td><td>Bladder infection</td></tr><tr><td>10061017</td><td>Bone infection</td></tr><tr><td>10006259</td><td>Breast infection</td></tr><tr><td>10055078</td><td>Bronchial infection</td></tr><tr><td>10007810</td><td>Catheter related infection</td></tr><tr><td>10065761</td><td>Cecal infection</td></tr><tr><td>10008330</td><td>Cervicitis infection</td></tr><tr><td>10010741</td><td>Conjunctivitis</td></tr><tr><td>10010742</td><td>Conjunctivitis infective</td></tr><tr><td>10061788</td><td>Corneal infection</td></tr><tr><td>10065765</td><td>Cranial nerve infection</td></tr><tr><td>10058666</td><td>Cytomegalovirus infection reactivation</td></tr><tr><td>10064687</td><td>Device related infection</td></tr><tr><td>10065752</td><td>Duodenal infection</td></tr><tr><td>10014594</td><td>Encephalitis infection</td></tr><tr><td>10014621</td><td>Encephalomyelitis infection</td></tr><tr><td>10014678</td><td>Endocarditis infective</td></tr><tr><td>10014801</td><td>Endophthalmitis</td></tr><tr><td>10058838</td><td>Enterocolitis infectious</td></tr><tr><td>10015109</td><td>Epstein-Barr virus infection reactivation</td></tr><tr><td>10058804</td><td>Esophageal infection</td></tr><tr><td>10015929</td><td>Eye infection</td></tr><tr><td>10016936</td><td>Folliculitis</td></tr><tr><td>10017544</td><td>Fungemia</td></tr><tr><td>10062632</td><td>Gallbladder infection</td></tr><tr><td>10018784</td><td>Gum infection</td></tr><tr><td>10056522</td><td>Hepatic infection</td></tr><tr><td>10058827</td><td>Hepatitis B reactivation</td></tr><tr><td>10019799</td><td>Hepatitis viral</td></tr><tr><td>10080137</td><td>Herpes simplex reactivation</td></tr><tr><td>10021881</td><td>Infections and infestations - Other, specify</td></tr><tr><td>10021918</td><td>Infective myositis</td></tr><tr><td>10023216</td><td>Joint infection</td></tr><tr><td>10023424</td><td>Kidney infection</td></tr><tr><td>10023874</td><td>Laryngitis</td></tr><tr><td>10065755</td><td>Lip infection</td></tr><tr><td>10061229</td><td>Lung infection</td></tr><tr><td>10050823</td><td>Lymph gland infection</td></tr><tr><td>10057483</td><td>Mediastinal infection</td></tr><tr><td>10027199</td><td>Meningitis</td></tr><tr><td>10065764</td><td>Mucosal infection</td></tr><tr><td>10028524</td><td>Myelitis</td></tr><tr><td>10061304</td><td>Nail infection</td></tr><tr><td>10033072</td><td>Otitis externa</td></tr><tr><td>10033078</td><td>Otitis media</td></tr><tr><td>10055005</td><td>Ovarian infection</td></tr><tr><td>10051741</td><td>Pancreas infection</td></tr><tr><td>10069138</td><td>Papulopustular rash</td></tr><tr><td>10034016</td><td>Paronychia</td></tr><tr><td>10058674</td><td>Pelvic infection</td></tr><tr><td>10061912</td><td>Penile infection</td></tr><tr><td>10051472</td><td>Periorbital infection</td></tr><tr><td>10065766</td><td>Peripheral nerve infection</td></tr><tr><td>10057262</td><td>Peritoneal infection</td></tr><tr><td>10034835</td><td>Pharyngitis</td></tr><tr><td>10056627</td><td>Phlebitis infective</td></tr><tr><td>10061351</td><td>Pleural infection</td></tr><tr><td>10050662</td><td>Prostate infection</td></tr><tr><td>10037888</td><td>Rash pustular</td></tr><tr><td>10059827</td><td>Rhinitis infective</td></tr><tr><td>10039413</td><td>Salivary gland infection</td></tr><tr><td>10062156</td><td>Scrotal infection</td></tr><tr><td>10040047</td><td>Sepsis</td></tr><tr><td>10040555</td><td>Shingles</td></tr><tr><td>10040753</td><td>Sinusitis</td></tr><tr><td>10040872</td><td>Skin infection</td></tr><tr><td>10065771</td><td>Small intestine infection</td></tr><tr><td>10062255</td><td>Soft tissue infection</td></tr><tr><td>10062112</td><td>Splenic infection</td></tr><tr><td>10064505</td><td>Stoma site infection</td></tr><tr><td>10043649</td><td>Thrush</td></tr><tr><td>10048762</td><td>Tooth infection</td></tr><tr><td>10044302</td><td>Tracheitis</td></tr><tr><td>10046300</td><td>Upper respiratory infection</td></tr><tr><td>10052298</td><td>Urethral infection</td></tr><tr><td>10046571</td><td>Urinary tract infection</td></tr><tr><td>10062233</td><td>Uterine infection</td></tr><tr><td>10046914</td><td>Vaginal infection</td></tr><tr><td>10054688</td><td>Viremia</td></tr><tr><td>10065772</td><td>Vulval infection</td></tr><tr><td>10048038</td><td>Wound infection</td></tr><tr><td>10002544</td><td>Ankle fracture</td></tr><tr><td>10002899</td><td>Aortic injury</td></tr><tr><td>10003162</td><td>Arterial injury</td></tr><tr><td>10050458</td><td>Biliary anastomotic leak</td></tr><tr><td>10065802</td><td>Bladder anastomotic leak</td></tr><tr><td>10006504</td><td>Bruising</td></tr><tr><td>10006634</td><td>Burn</td></tr><tr><td>10061103</td><td>Dermatitis radiation</td></tr><tr><td>10065961</td><td>Esophageal anastomotic leak</td></tr><tr><td>10016173</td><td>Fall</td></tr><tr><td>10065788</td><td>Fallopian tube anastomotic leak</td></tr><tr><td>10065790</td><td>Fallopian tube perforation</td></tr><tr><td>10017076</td><td>Fracture</td></tr><tr><td>10065893</td><td>Gastric anastomotic leak</td></tr><tr><td>10065879</td><td>Gastrointestinal anastomotic leak</td></tr><tr><td>10065712</td><td>Gastrointestinal stoma necrosis</td></tr><tr><td>10020100</td><td>Hip fracture</td></tr><tr><td>10051792</td><td>Infusion related reaction</td></tr><tr><td>10022161</td><td>Injury to carotid artery</td></tr><tr><td>10022213</td><td>Injury to inferior vena cava</td></tr><tr><td>10065849</td><td>Injury to jugular vein</td></tr><tr><td>10022356</td><td>Injury to superior vena cava</td></tr><tr><td>10022117</td><td>Injury, poisoning and procedural complications - Other, specify</td></tr><tr><td>10059095</td><td>Intestinal stoma leak</td></tr><tr><td>10059094</td><td>Intestinal stoma obstruction</td></tr><tr><td>10049468</td><td>Intestinal stoma site bleeding</td></tr><tr><td>10065826</td><td>Intraoperative arterial injury</td></tr><tr><td>10065831</td><td>Intraoperative breast injury</td></tr><tr><td>10065843</td><td>Intraoperative cardiac injury</td></tr><tr><td>10065844</td><td>Intraoperative ear injury</td></tr><tr><td>10065834</td><td>Intraoperative endocrine injury</td></tr><tr><td>10065825</td><td>Intraoperative gastrointestinal injury</td></tr><tr><td>10065842</td><td>Intraoperative head and neck injury</td></tr><tr><td>10055298</td><td>Intraoperative hemorrhage</td></tr><tr><td>10065827</td><td>Intraoperative hepatobiliary injury</td></tr><tr><td>10065829</td><td>Intraoperative musculoskeletal injury</td></tr><tr><td>10065830</td><td>Intraoperative neurological injury</td></tr><tr><td>10065841</td><td>Intraoperative ocular injury</td></tr><tr><td>10065845</td><td>Intraoperative renal injury</td></tr><tr><td>10065840</td><td>Intraoperative reproductive tract injury</td></tr><tr><td>10065832</td><td>Intraoperative respiratory injury</td></tr><tr><td>10065847</td><td>Intraoperative splenic injury</td></tr><tr><td>10065828</td><td>Intraoperative urinary injury</td></tr><tr><td>10065848</td><td>Intraoperative venous injury</td></tr><tr><td>10065803</td><td>Kidney anastomotic leak</td></tr><tr><td>10065891</td><td>Large intestinal anastomotic leak</td></tr><tr><td>10050457</td><td>Pancreatic anastomotic leak</td></tr><tr><td>10065705</td><td>Pharyngeal anastomotic leak</td></tr><tr><td>10055322</td><td>Postoperative hemorrhage</td></tr><tr><td>10056745</td><td>Postoperative thoracic procedure complication</td></tr><tr><td>10065745</td><td>Prolapse of intestinal stoma</td></tr><tr><td>10065822</td><td>Prolapse of urostomy</td></tr><tr><td>10037767</td><td>Radiation recall reaction (dermatologic)</td></tr><tr><td>10065894</td><td>Rectal anastomotic leak</td></tr><tr><td>10040102</td><td>Seroma</td></tr><tr><td>10065892</td><td>Small intestinal anastomotic leak</td></tr><tr><td>10065897</td><td>Spermatic cord anastomotic leak</td></tr><tr><td>10041569</td><td>Spinal fracture</td></tr><tr><td>10065898</td><td>Stenosis of gastrointestinal stoma</td></tr><tr><td>10042127</td><td>Stomal ulcer</td></tr><tr><td>10062548</td><td>Tracheal hemorrhage</td></tr><tr><td>10044291</td><td>Tracheal obstruction</td></tr><tr><td>10065749</td><td>Tracheostomy site bleeding</td></tr><tr><td>10065814</td><td>Ureteric anastomotic leak</td></tr><tr><td>10065815</td><td>Urethral anastomotic leak</td></tr><tr><td>10065882</td><td>Urostomy leak</td></tr><tr><td>10065883</td><td>Urostomy obstruction</td></tr><tr><td>10065748</td><td>Urostomy site bleeding</td></tr><tr><td>10065885</td><td>Urostomy stenosis</td></tr><tr><td>10065886</td><td>Uterine anastomotic leak</td></tr><tr><td>10046810</td><td>Uterine perforation</td></tr><tr><td>10046861</td><td>Vaccination complication</td></tr><tr><td>10065887</td><td>Vaginal anastomotic leak</td></tr><tr><td>10065888</td><td>Vas deferens anastomotic leak</td></tr><tr><td>10062169</td><td>Vascular access complication</td></tr><tr><td>10047228</td><td>Venous injury</td></tr><tr><td>10053692</td><td>Wound complication</td></tr><tr><td>10048031</td><td>Wound dehiscence</td></tr><tr><td>10048049</td><td>Wrist fracture</td></tr><tr><td>10000636</td><td>Activated partial thromboplastin time prolonged</td></tr><tr><td>10001551</td><td>Alanine aminotransferase increased</td></tr><tr><td>10001675</td><td>Alkaline phosphatase increased</td></tr><tr><td>10003481</td><td>Aspartate aminotransferase increased</td></tr><tr><td>10005332</td><td>Blood antidiuretic hormone abnormal</td></tr><tr><td>10005359</td><td>Blood bicarbonate decreased</td></tr><tr><td>10005364</td><td>Blood bilirubin increased</td></tr><tr><td>10005452</td><td>Blood corticotrophin decreased</td></tr><tr><td>10005561</td><td>Blood gonadotrophin abnormal</td></tr><tr><td>10005630</td><td>Blood lactate dehydrogenase increased</td></tr><tr><td>10005778</td><td>Blood prolactin abnormal</td></tr><tr><td>10065906</td><td>Carbon monoxide diffusing capacity decreased</td></tr><tr><td>10007612</td><td>Cardiac troponin I increased</td></tr><tr><td>10007613</td><td>Cardiac troponin T increased</td></tr><tr><td>10007839</td><td>CD4 lymphocytes decreased</td></tr><tr><td>10008661</td><td>Cholesterol high</td></tr><tr><td>10011268</td><td>CPK increased</td></tr><tr><td>10011368</td><td>Creatinine increased</td></tr><tr><td>10050528</td><td>Ejection fraction decreased</td></tr><tr><td>10014383</td><td>Electrocardiogram QT corrected interval prolonged</td></tr><tr><td>10050380</td><td>Electrocardiogram T wave abnormal</td></tr><tr><td>10016596</td><td>Fibrinogen decreased</td></tr><tr><td>10016987</td><td>Forced expiratory volume decreased</td></tr><tr><td>10056910</td><td>GGT increased</td></tr><tr><td>10018748</td><td>Growth hormone abnormal</td></tr><tr><td>10019150</td><td>Haptoglobin decreased</td></tr><tr><td>10055599</td><td>Hemoglobin increased</td></tr><tr><td>10022402</td><td>INR increased</td></tr><tr><td>10022891</td><td>Investigations - Other, specify</td></tr><tr><td>10024574</td><td>Lipase increased</td></tr><tr><td>10025256</td><td>Lymphocyte count decreased</td></tr><tr><td>10025258</td><td>Lymphocyte count increased</td></tr><tr><td>10029366</td><td>Neutrophil count decreased</td></tr><tr><td>10062646</td><td>Pancreatic enzymes decreased</td></tr><tr><td>10035528</td><td>Platelet count decreased</td></tr><tr><td>10040139</td><td>Serum amylase increased</td></tr><tr><td>10043770</td><td>Thyroid stimulating hormone increased</td></tr><tr><td>10059895</td><td>Urine output decreased</td></tr><tr><td>10047580</td><td>Vital capacity abnormal</td></tr><tr><td>10047896</td><td>Weight gain</td></tr><tr><td>10047900</td><td>Weight loss</td></tr><tr><td>10049182</td><td>White blood cell decreased</td></tr><tr><td>10000486</td><td>Acidosis</td></tr><tr><td>10001598</td><td>Alcohol intolerance</td></tr><tr><td>10001680</td><td>Alkalosis</td></tr><tr><td>10002646</td><td>Anorexia</td></tr><tr><td>10012174</td><td>Dehydration</td></tr><tr><td>10052426</td><td>Glucose intolerance</td></tr><tr><td>10020587</td><td>Hypercalcemia</td></tr><tr><td>10020639</td><td>Hyperglycemia</td></tr><tr><td>10020647</td><td>Hyperkalemia</td></tr><tr><td>10020667</td><td>Hyperlipidemia</td></tr><tr><td>10020670</td><td>Hypermagnesemia</td></tr><tr><td>10020680</td><td>Hypernatremia</td></tr><tr><td>10020712</td><td>Hyperphosphatemia</td></tr><tr><td>10020870</td><td>Hypertriglyceridemia</td></tr><tr><td>10020907</td><td>Hyperuricemia</td></tr><tr><td>10020943</td><td>Hypoalbuminemia</td></tr><tr><td>10020949</td><td>Hypocalcemia</td></tr><tr><td>10021005</td><td>Hypoglycemia</td></tr><tr><td>10021018</td><td>Hypokalemia</td></tr><tr><td>10021028</td><td>Hypomagnesemia</td></tr><tr><td>10021038</td><td>Hyponatremia</td></tr><tr><td>10021059</td><td>Hypophosphatemia</td></tr><tr><td>10065973</td><td>Iron overload</td></tr><tr><td>10027433</td><td>Metabolism and nutrition disorders - Other, specify</td></tr><tr><td>10029883</td><td>Obesity</td></tr><tr><td>10045152</td><td>Tumor lysis syndrome</td></tr><tr><td>10065775</td><td>Abdominal soft tissue necrosis</td></tr><tr><td>10003239</td><td>Arthralgia</td></tr><tr><td>10003246</td><td>Arthritis</td></tr><tr><td>10066480</td><td>Avascular necrosis</td></tr><tr><td>10003988</td><td>Back pain</td></tr><tr><td>10006002</td><td>Bone pain</td></tr><tr><td>10048677</td><td>Buttock pain</td></tr><tr><td>10048831</td><td>Chest wall necrosis</td></tr><tr><td>10008496</td><td>Chest wall pain</td></tr><tr><td>10015688</td><td>Exostosis</td></tr><tr><td>10065799</td><td>Fibrosis deep connective tissue</td></tr><tr><td>10016750</td><td>Flank pain</td></tr><tr><td>10062572</td><td>Generalized muscle weakness</td></tr><tr><td>10018761</td><td>Growth suppression</td></tr><tr><td>10065779</td><td>Head soft tissue necrosis</td></tr><tr><td>10023215</td><td>Joint effusion</td></tr><tr><td>10048706</td><td>Joint range of motion decreased</td></tr><tr><td>10065796</td><td>Joint range of motion decreased cervical spine</td></tr><tr><td>10065800</td><td>Joint range of motion decreased lumbar spine</td></tr><tr><td>10023509</td><td>Kyphosis</td></tr><tr><td>10024842</td><td>Lordosis</td></tr><tr><td>10028294</td><td>Muscle cramp</td></tr><tr><td>10065776</td><td>Muscle weakness lower limb</td></tr><tr><td>10065795</td><td>Muscle weakness trunk</td></tr><tr><td>10065895</td><td>Muscle weakness upper limb</td></tr><tr><td>10028395</td><td>Musculoskeletal and connective tissue disorder - Other, specify</td></tr><tr><td>10065783</td><td>Musculoskeletal deformity</td></tr><tr><td>10028411</td><td>Myalgia</td></tr><tr><td>10028653</td><td>Myositis</td></tr><tr><td>10028836</td><td>Neck pain</td></tr><tr><td>10065781</td><td>Neck soft tissue necrosis</td></tr><tr><td>10031264</td><td>Osteonecrosis</td></tr><tr><td>10064658</td><td>Osteonecrosis of jaw</td></tr><tr><td>10031282</td><td>Osteoporosis</td></tr><tr><td>10033425</td><td>Pain in extremity</td></tr><tr><td>10065793</td><td>Pelvic soft tissue necrosis</td></tr><tr><td>10039020</td><td>Rhabdomyolysis</td></tr><tr><td>10039226</td><td>Rotator cuff injury</td></tr><tr><td>10039722</td><td>Scoliosis</td></tr><tr><td>10065777</td><td>Soft tissue necrosis lower limb</td></tr><tr><td>10065778</td><td>Soft tissue necrosis upper limb</td></tr><tr><td>10065798</td><td>Superficial soft tissue fibrosis</td></tr><tr><td>10044684</td><td>Trismus</td></tr><tr><td>10065738</td><td>Unequal limb length</td></tr><tr><td>10048293</td><td>Leukemia secondary to oncology chemotherapy</td></tr><tr><td>10028533</td><td>Myelodysplastic syndrome</td></tr><tr><td>10029104</td><td>Neoplasms benign, malignant and unspecified (incl cysts and polyps) - Other, specify</td></tr><tr><td>10040907</td><td>Skin papilloma</td></tr><tr><td>10049737</td><td>Treatment related secondary malignancy</td></tr><tr><td>10055351</td><td>Tumor hemorrhage</td></tr><tr><td>10045158</td><td>Tumor pain</td></tr><tr><td>10053662</td><td>Abducens nerve disorder</td></tr><tr><td>10060929</td><td>Accessory nerve disorder</td></tr><tr><td>10000521</td><td>Acoustic nerve disorder NOS</td></tr><tr><td>10001540</td><td>Akathisia</td></tr><tr><td>10001949</td><td>Amnesia</td></tr><tr><td>10002653</td><td>Anosmia</td></tr><tr><td>10002953</td><td>Aphonia</td></tr><tr><td>10003074</td><td>Arachnoiditis</td></tr><tr><td>10003591</td><td>Ataxia</td></tr><tr><td>10065417</td><td>Brachial plexopathy</td></tr><tr><td>10065784</td><td>Central nervous system necrosis</td></tr><tr><td>10008164</td><td>Cerebrospinal fluid leakage</td></tr><tr><td>10009845</td><td>Cognitive disturbance</td></tr><tr><td>10010250</td><td>Concentration impairment</td></tr><tr><td>10012373</td><td>Depressed level of consciousness</td></tr><tr><td>10013573</td><td>Dizziness</td></tr><tr><td>10013887</td><td>Dysarthria</td></tr><tr><td>10062872</td><td>Dysesthesia</td></tr><tr><td>10013911</td><td>Dysgeusia</td></tr><tr><td>10013951</td><td>Dysphasia</td></tr><tr><td>10014217</td><td>Edema cerebral</td></tr><tr><td>10014625</td><td>Encephalopathy</td></tr><tr><td>10015832</td><td>Extrapyramidal disorder</td></tr><tr><td>10051272</td><td>Facial muscle weakness</td></tr><tr><td>10061457</td><td>Facial nerve disorder</td></tr><tr><td>10061185</td><td>Glossopharyngeal nerve disorder</td></tr><tr><td>10018767</td><td>Guillain-Barre syndrome</td></tr><tr><td>10019211</td><td>Headache</td></tr><tr><td>10020508</td><td>Hydrocephalus</td></tr><tr><td>10020765</td><td>Hypersomnia</td></tr><tr><td>10061212</td><td>Hypoglossal nerve disorder</td></tr><tr><td>10022763</td><td>Intracranial hemorrhage</td></tr><tr><td>10023030</td><td>Ischemia cerebrovascular</td></tr><tr><td>10024264</td><td>Lethargy</td></tr><tr><td>10024382</td><td>Leukoencephalopathy</td></tr><tr><td>10027175</td><td>Memory impairment</td></tr><tr><td>10027198</td><td>Meningismus</td></tr><tr><td>10028041</td><td>Movements involuntary</td></tr><tr><td>10065780</td><td>Muscle weakness left-sided</td></tr><tr><td>10065794</td><td>Muscle weakness right-sided</td></tr><tr><td>10028417</td><td>Myasthenia gravis</td></tr><tr><td>10029205</td><td>Nervous system disorders - Other, specify</td></tr><tr><td>10029223</td><td>Neuralgia</td></tr><tr><td>10029864</td><td>Nystagmus</td></tr><tr><td>10053661</td><td>Oculomotor nerve disorder</td></tr><tr><td>10056388</td><td>Olfactory nerve disorder</td></tr><tr><td>10033987</td><td>Paresthesia</td></tr><tr><td>10034580</td><td>Peripheral motor neuropathy</td></tr><tr><td>10034620</td><td>Peripheral sensory neuropathy</td></tr><tr><td>10056238</td><td>Phantom pain</td></tr><tr><td>10036653</td><td>Presyncope</td></tr><tr><td>10063636</td><td>Pyramidal tract syndrome</td></tr><tr><td>10061928</td><td>Radiculitis</td></tr><tr><td>10038130</td><td>Recurrent laryngeal nerve palsy</td></tr><tr><td>10063761</td><td>Reversible posterior leukoencephalopathy syndrome</td></tr><tr><td>10039906</td><td>Seizure</td></tr><tr><td>10041349</td><td>Somnolence</td></tr><tr><td>10041416</td><td>Spasticity</td></tr><tr><td>10041549</td><td>Spinal cord compression</td></tr><tr><td>10042244</td><td>Stroke</td></tr><tr><td>10042772</td><td>Syncope</td></tr><tr><td>10043245</td><td>Tendon reflex decreased</td></tr><tr><td>10044391</td><td>Transient ischemic attacks</td></tr><tr><td>10044565</td><td>Tremor</td></tr><tr><td>10060890</td><td>Trigeminal nerve disorder</td></tr><tr><td>10074765</td><td>Trochlear nerve disorder</td></tr><tr><td>10061403</td><td>Vagus nerve disorder</td></tr><tr><td>10047166</td><td>Vasovagal reaction</td></tr><tr><td>10054746</td><td>Fetal growth retardation</td></tr><tr><td>10072314</td><td>Pregnancy loss</td></tr><tr><td>10036585</td><td>Pregnancy, puerperium and perinatal conditions - Other, specify</td></tr><tr><td>10036595</td><td>Premature delivery</td></tr><tr><td>10001497</td><td>Agitation</td></tr><tr><td>10002652</td><td>Anorgasmia</td></tr><tr><td>10002855</td><td>Anxiety</td></tr><tr><td>10010300</td><td>Confusion</td></tr><tr><td>10057066</td><td>Delayed orgasm</td></tr><tr><td>10012218</td><td>Delirium</td></tr><tr><td>10012260</td><td>Delusions</td></tr><tr><td>10012378</td><td>Depression</td></tr><tr><td>10015533</td><td>Euphoria</td></tr><tr><td>10019077</td><td>Hallucinations</td></tr><tr><td>10022437</td><td>Insomnia</td></tr><tr><td>10022998</td><td>Irritability</td></tr><tr><td>10024419</td><td>Libido decreased</td></tr><tr><td>10024421</td><td>Libido increased</td></tr><tr><td>10026749</td><td>Mania</td></tr><tr><td>10034719</td><td>Personality change</td></tr><tr><td>10037175</td><td>Psychiatric disorders - Other, specify</td></tr><tr><td>10037234</td><td>Psychosis</td></tr><tr><td>10038743</td><td>Restlessness</td></tr><tr><td>10042458</td><td>Suicidal ideation</td></tr><tr><td>10042464</td><td>Suicide attempt</td></tr><tr><td>10069339</td><td>Acute kidney injury</td></tr><tr><td>10063575</td><td>Bladder perforation</td></tr><tr><td>10048994</td><td>Bladder spasm</td></tr><tr><td>10064848</td><td>Chronic kidney disease</td></tr><tr><td>10063057</td><td>Cystitis noninfective</td></tr><tr><td>10013990</td><td>Dysuria</td></tr><tr><td>10068405</td><td>Glucosuria</td></tr><tr><td>10019450</td><td>Hematuria</td></tr><tr><td>10019489</td><td>Hemoglobinuria</td></tr><tr><td>10029164</td><td>Nephrotic syndrome</td></tr><tr><td>10037032</td><td>Proteinuria</td></tr><tr><td>10038359</td><td>Renal and urinary disorders - Other, specify</td></tr><tr><td>10038385</td><td>Renal calculi</td></tr><tr><td>10038419</td><td>Renal colic</td></tr><tr><td>10038463</td><td>Renal hemorrhage</td></tr><tr><td>10065368</td><td>Urinary fistula</td></tr><tr><td>10046539</td><td>Urinary frequency</td></tr><tr><td>10046543</td><td>Urinary incontinence</td></tr><tr><td>10046555</td><td>Urinary retention</td></tr><tr><td>10061574</td><td>Urinary tract obstruction</td></tr><tr><td>10062225</td><td>Urinary tract pain</td></tr><tr><td>10046593</td><td>Urinary urgency</td></tr><tr><td>10046628</td><td>Urine discoloration</td></tr><tr><td>10001927</td><td>Amenorrhea</td></tr><tr><td>10003883</td><td>Azoospermia</td></tr><tr><td>10006179</td><td>Breast atrophy</td></tr><tr><td>10006298</td><td>Breast pain</td></tr><tr><td>10013934</td><td>Dysmenorrhea</td></tr><tr><td>10013941</td><td>Dyspareunia</td></tr><tr><td>10014326</td><td>Ejaculation disorder</td></tr><tr><td>10061461</td><td>Erectile dysfunction</td></tr><tr><td>10065789</td><td>Fallopian tube obstruction</td></tr><tr><td>10054382</td><td>Feminization acquired</td></tr><tr><td>10018146</td><td>Genital edema</td></tr><tr><td>10018801</td><td>Gynecomastia</td></tr><tr><td>10060602</td><td>Hematosalpinx</td></tr><tr><td>10022992</td><td>Irregular menstruation</td></tr><tr><td>10061261</td><td>Lactation disorder</td></tr><tr><td>10027313</td><td>Menorrhagia</td></tr><tr><td>10065823</td><td>Nipple deformity</td></tr><tr><td>10030300</td><td>Oligospermia</td></tr><tr><td>10065763</td><td>Ovarian hemorrhage</td></tr><tr><td>10033279</td><td>Ovarian rupture</td></tr><tr><td>10033314</td><td>Ovulation pain</td></tr><tr><td>10064026</td><td>Pelvic floor muscle weakness</td></tr><tr><td>10034263</td><td>Pelvic pain</td></tr><tr><td>10034310</td><td>Penile pain</td></tr><tr><td>10061339</td><td>Perineal pain</td></tr><tr><td>10036601</td><td>Premature menopause</td></tr><tr><td>10055325</td><td>Prostatic hemorrhage</td></tr><tr><td>10055026</td><td>Prostatic obstruction</td></tr><tr><td>10036968</td><td>Prostatic pain</td></tr><tr><td>10038604</td><td>Reproductive system and breast disorders - Other, specify</td></tr><tr><td>10039757</td><td>Scrotal pain</td></tr><tr><td>10065762</td><td>Spermatic cord hemorrhage</td></tr><tr><td>10065805</td><td>Spermatic cord obstruction</td></tr><tr><td>10043306</td><td>Testicular disorder</td></tr><tr><td>10055347</td><td>Testicular hemorrhage</td></tr><tr><td>10043345</td><td>Testicular pain</td></tr><tr><td>10065811</td><td>Uterine fistula</td></tr><tr><td>10046789</td><td>Uterine hemorrhage</td></tr><tr><td>10065928</td><td>Uterine obstruction</td></tr><tr><td>10046809</td><td>Uterine pain</td></tr><tr><td>10046901</td><td>Vaginal discharge</td></tr><tr><td>10046904</td><td>Vaginal dryness</td></tr><tr><td>10065813</td><td>Vaginal fistula</td></tr><tr><td>10046912</td><td>Vaginal hemorrhage</td></tr><tr><td>10046916</td><td>Vaginal inflammation</td></tr><tr><td>10065817</td><td>Vaginal obstruction</td></tr><tr><td>10046937</td><td>Vaginal pain</td></tr><tr><td>10065818</td><td>Vaginal perforation</td></tr><tr><td>10053496</td><td>Vaginal stricture</td></tr><tr><td>10001409</td><td>Adult respiratory distress syndrome</td></tr><tr><td>10001723</td><td>Allergic rhinitis</td></tr><tr><td>10002972</td><td>Apnea</td></tr><tr><td>10003504</td><td>Aspiration</td></tr><tr><td>10003598</td><td>Atelectasis</td></tr><tr><td>10006437</td><td>Bronchial fistula</td></tr><tr><td>10006440</td><td>Bronchial obstruction</td></tr><tr><td>10063524</td><td>Bronchial stricture</td></tr><tr><td>10053481</td><td>Bronchopleural fistula</td></tr><tr><td>10065746</td><td>Bronchopulmonary hemorrhage</td></tr><tr><td>10006482</td><td>Bronchospasm</td></tr><tr><td>10051228</td><td>Chylothorax</td></tr><tr><td>10011224</td><td>Cough</td></tr><tr><td>10013963</td><td>Dyspnea</td></tr><tr><td>10015090</td><td>Epistaxis</td></tr><tr><td>10020039</td><td>Hiccups</td></tr><tr><td>10020201</td><td>Hoarseness</td></tr><tr><td>10021143</td><td>Hypoxia</td></tr><tr><td>10023838</td><td>Laryngeal edema</td></tr><tr><td>10065786</td><td>Laryngeal fistula</td></tr><tr><td>10065759</td><td>Laryngeal hemorrhage</td></tr><tr><td>10065735</td><td>Laryngeal inflammation</td></tr><tr><td>10065880</td><td>Laryngeal mucositis</td></tr><tr><td>10059639</td><td>Laryngeal obstruction</td></tr><tr><td>10023862</td><td>Laryngeal stenosis</td></tr><tr><td>10062667</td><td>Laryngopharyngeal dysesthesia</td></tr><tr><td>10023891</td><td>Laryngospasm</td></tr><tr><td>10056356</td><td>Mediastinal hemorrhage</td></tr><tr><td>10028735</td><td>Nasal congestion</td></tr><tr><td>10068319</td><td>Oropharyngeal pain</td></tr><tr><td>10034825</td><td>Pharyngeal fistula</td></tr><tr><td>10055315</td><td>Pharyngeal hemorrhage</td></tr><tr><td>10065881</td><td>Pharyngeal mucositis</td></tr><tr><td>10065706</td><td>Pharyngeal necrosis</td></tr><tr><td>10050028</td><td>Pharyngeal stenosis</td></tr><tr><td>10034844</td><td>Pharyngolaryngeal pain</td></tr><tr><td>10035598</td><td>Pleural effusion</td></tr><tr><td>10055319</td><td>Pleural hemorrhage</td></tr><tr><td>10035623</td><td>Pleuritic pain</td></tr><tr><td>10035742</td><td>Pneumonitis</td></tr><tr><td>10035759</td><td>Pneumothorax</td></tr><tr><td>10036402</td><td>Postnasal drip</td></tr><tr><td>10036790</td><td>Productive cough</td></tr><tr><td>10037375</td><td>Pulmonary edema</td></tr><tr><td>10037383</td><td>Pulmonary fibrosis</td></tr><tr><td>10065873</td><td>Pulmonary fistula</td></tr><tr><td>10037400</td><td>Pulmonary hypertension</td></tr><tr><td>10038695</td><td>Respiratory failure</td></tr><tr><td>10038738</td><td>Respiratory, thoracic and mediastinal disorders - Other, specify</td></tr><tr><td>10038921</td><td>Retinoic acid syndrome</td></tr><tr><td>10039100</td><td>Rhinorrhea</td></tr><tr><td>10062244</td><td>Sinus disorder</td></tr><tr><td>10040747</td><td>Sinus pain</td></tr><tr><td>10040975</td><td>Sleep apnea</td></tr><tr><td>10041232</td><td>Sneezing</td></tr><tr><td>10041367</td><td>Sore throat</td></tr><tr><td>10042241</td><td>Stridor</td></tr><tr><td>10065787</td><td>Tracheal fistula</td></tr><tr><td>10065900</td><td>Tracheal mucositis</td></tr><tr><td>10050816</td><td>Tracheal stenosis</td></tr><tr><td>10047681</td><td>Voice alteration</td></tr><tr><td>10047924</td><td>Wheezing</td></tr><tr><td>10001760</td><td>Alopecia</td></tr><tr><td>10005901</td><td>Body odor</td></tr><tr><td>10006556</td><td>Bullous dermatitis</td></tr><tr><td>10013786</td><td>Dry skin</td></tr><tr><td>10014184</td><td>Eczema</td></tr><tr><td>10015218</td><td>Erythema multiforme</td></tr><tr><td>10015277</td><td>Erythroderma</td></tr><tr><td>10016241</td><td>Fat atrophy</td></tr><tr><td>10055525</td><td>Hair color changes</td></tr><tr><td>10019049</td><td>Hair texture abnormal</td></tr><tr><td>10020112</td><td>Hirsutism</td></tr><tr><td>10020642</td><td>Hyperhidrosis</td></tr><tr><td>10020649</td><td>Hyperkeratosis</td></tr><tr><td>10020864</td><td>Hypertrichosis</td></tr><tr><td>10021013</td><td>Hypohidrosis</td></tr><tr><td>10062315</td><td>Lipohypertrophy</td></tr><tr><td>10028689</td><td>Nail changes</td></tr><tr><td>10028691</td><td>Nail discoloration</td></tr><tr><td>10049281</td><td>Nail loss</td></tr><tr><td>10062283</td><td>Nail ridging</td></tr><tr><td>10033474</td><td>Pain of skin</td></tr><tr><td>10054524</td><td>Palmar-plantar erythrodysesthesia syndrome</td></tr><tr><td>10034966</td><td>Photosensitivity</td></tr><tr><td>10037087</td><td>Pruritus</td></tr><tr><td>10037549</td><td>Purpura</td></tr><tr><td>10037847</td><td>Rash acneiform</td></tr><tr><td>10037868</td><td>Rash maculo-papular</td></tr><tr><td>10049120</td><td>Scalp pain</td></tr><tr><td>10040785</td><td>Skin and subcutaneous tissue disorders - Other, specify</td></tr><tr><td>10040799</td><td>Skin atrophy</td></tr><tr><td>10040865</td><td>Skin hyperpigmentation</td></tr><tr><td>10040868</td><td>Skin hypopigmentation</td></tr><tr><td>10051837</td><td>Skin induration</td></tr><tr><td>10040947</td><td>Skin ulceration</td></tr><tr><td>10042033</td><td>Stevens-Johnson syndrome</td></tr><tr><td>10042344</td><td>Subcutaneous emphysema</td></tr><tr><td>10043189</td><td>Telangiectasia</td></tr><tr><td>10044223</td><td>Toxic epidermal necrolysis</td></tr><tr><td>10046735</td><td>Urticaria</td></tr><tr><td>10041244</td><td>Social circumstances - Other, specify</td></tr><tr><td>10042613</td><td>Surgical and medical procedures - Other, specify</td></tr><tr><td>10073529</td><td>Arterial thromboembolism</td></tr><tr><td>10007196</td><td>Capillary leak syndrome</td></tr><tr><td>10016825</td><td>Flushing</td></tr><tr><td>10019428</td><td>Hematoma</td></tr><tr><td>10020407</td><td>Hot flashes</td></tr><tr><td>10020772</td><td>Hypertension</td></tr><tr><td>10021097</td><td>Hypotension</td></tr><tr><td>10065773</td><td>Lymph leakage</td></tr><tr><td>10025233</td><td>Lymphedema</td></tr><tr><td>10048642</td><td>Lymphocele</td></tr><tr><td>10034578</td><td>Peripheral ischemia</td></tr><tr><td>10034879</td><td>Phlebitis</td></tr><tr><td>10042554</td><td>Superficial thrombophlebitis</td></tr><tr><td>10042569</td><td>Superior vena cava syndrome</td></tr><tr><td>10043565</td><td>Thromboembolic event</td></tr><tr><td>10047065</td><td>Vascular disorders - Other, specify</td></tr><tr><td>10047115</td><td>Vasculitis</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AdverseEventCode"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.1.0"] ; # 
+  fhir:name [ fhir:v "AdverseEventCode"] ; # 
+  fhir:title [ fhir:v "Adverse Event Code Value Set"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-03-28T12:16:37+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Arkhn"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Arkhn" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://arkhn.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "contact@arkhn.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Nicolas Riss" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "nicolas@arkhn.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Adverse event codes"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/mdr"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "\"12.0\"" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "10002272" ] ;
+         fhir:display [ fhir:v "Anemia" ]
+       ] [
+         fhir:code [ fhir:v "10005329" ] ;
+         fhir:display [ fhir:v "Blood and lymphatic system disorders - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10048580" ] ;
+         fhir:display [ fhir:v "Bone marrow hypocellular" ]
+       ] [
+         fhir:code [ fhir:v "10013442" ] ;
+         fhir:display [ fhir:v "Disseminated intravascular coagulation" ]
+       ] [
+         fhir:code [ fhir:v "10014950" ] ;
+         fhir:display [ fhir:v "Eosinophilia" ]
+       ] [
+         fhir:code [ fhir:v "10016288" ] ;
+         fhir:display [ fhir:v "Febrile neutropenia" ]
+       ] [
+         fhir:code [ fhir:v "10019491" ] ;
+         fhir:display [ fhir:v "Hemolysis" ]
+       ] [
+         fhir:code [ fhir:v "10019515" ] ;
+         fhir:display [ fhir:v "Hemolytic uremic syndrome" ]
+       ] [
+         fhir:code [ fhir:v "10024378" ] ;
+         fhir:display [ fhir:v "Leukocytosis" ]
+       ] [
+         fhir:code [ fhir:v "10025182" ] ;
+         fhir:display [ fhir:v "Lymph node pain" ]
+       ] [
+         fhir:code [ fhir:v "10027506" ] ;
+         fhir:display [ fhir:v "Methemoglobinemia" ]
+       ] [
+         fhir:code [ fhir:v "10043648" ] ;
+         fhir:display [ fhir:v "Thrombotic thrombocytopenic purpura" ]
+       ] [
+         fhir:code [ fhir:v "10061589" ] ;
+         fhir:display [ fhir:v "Aortic valve disease" ]
+       ] [
+         fhir:code [ fhir:v "10003586" ] ;
+         fhir:display [ fhir:v "Asystole" ]
+       ] [
+         fhir:code [ fhir:v "10003658" ] ;
+         fhir:display [ fhir:v "Atrial fibrillation" ]
+       ] [
+         fhir:code [ fhir:v "10003662" ] ;
+         fhir:display [ fhir:v "Atrial flutter" ]
+       ] [
+         fhir:code [ fhir:v "10003673" ] ;
+         fhir:display [ fhir:v "Atrioventricular block complete" ]
+       ] [
+         fhir:code [ fhir:v "10003674" ] ;
+         fhir:display [ fhir:v "Atrioventricular block first degree" ]
+       ] [
+         fhir:code [ fhir:v "10007515" ] ;
+         fhir:display [ fhir:v "Cardiac arrest" ]
+       ] [
+         fhir:code [ fhir:v "10007541" ] ;
+         fhir:display [ fhir:v "Cardiac disorders - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10008481" ] ;
+         fhir:display [ fhir:v "Chest pain - cardiac" ]
+       ] [
+         fhir:code [ fhir:v "10010276" ] ;
+         fhir:display [ fhir:v "Conduction disorder" ]
+       ] [
+         fhir:code [ fhir:v "10011703" ] ;
+         fhir:display [ fhir:v "Cyanosis" ]
+       ] [
+         fhir:code [ fhir:v "10019279" ] ;
+         fhir:display [ fhir:v "Heart failure" ]
+       ] [
+         fhir:code [ fhir:v "10069501" ] ;
+         fhir:display [ fhir:v "Left ventricular systolic dysfunction" ]
+       ] [
+         fhir:code [ fhir:v "10061532" ] ;
+         fhir:display [ fhir:v "Mitral valve disease" ]
+       ] [
+         fhir:code [ fhir:v "10027786" ] ;
+         fhir:display [ fhir:v "Mobitz (type) II atrioventricular block" ]
+       ] [
+         fhir:code [ fhir:v "10027787" ] ;
+         fhir:display [ fhir:v "Mobitz type I" ]
+       ] [
+         fhir:code [ fhir:v "10028596" ] ;
+         fhir:display [ fhir:v "Myocardial infarction" ]
+       ] [
+         fhir:code [ fhir:v "10028606" ] ;
+         fhir:display [ fhir:v "Myocarditis" ]
+       ] [
+         fhir:code [ fhir:v "10033557" ] ;
+         fhir:display [ fhir:v "Palpitations" ]
+       ] [
+         fhir:code [ fhir:v "10034040" ] ;
+         fhir:display [ fhir:v "Paroxysmal atrial tachycardia" ]
+       ] [
+         fhir:code [ fhir:v "10034474" ] ;
+         fhir:display [ fhir:v "Pericardial effusion" ]
+       ] [
+         fhir:code [ fhir:v "10053565" ] ;
+         fhir:display [ fhir:v "Pericardial tamponade" ]
+       ] [
+         fhir:code [ fhir:v "10034484" ] ;
+         fhir:display [ fhir:v "Pericarditis" ]
+       ] [
+         fhir:code [ fhir:v "10061541" ] ;
+         fhir:display [ fhir:v "Pulmonary valve disease" ]
+       ] [
+         fhir:code [ fhir:v "10038748" ] ;
+         fhir:display [ fhir:v "Restrictive cardiomyopathy" ]
+       ] [
+         fhir:code [ fhir:v "10058597" ] ;
+         fhir:display [ fhir:v "Right ventricular dysfunction" ]
+       ] [
+         fhir:code [ fhir:v "10040639" ] ;
+         fhir:display [ fhir:v "Sick sinus syndrome" ]
+       ] [
+         fhir:code [ fhir:v "10040741" ] ;
+         fhir:display [ fhir:v "Sinus bradycardia" ]
+       ] [
+         fhir:code [ fhir:v "10040752" ] ;
+         fhir:display [ fhir:v "Sinus tachycardia" ]
+       ] [
+         fhir:code [ fhir:v "10042604" ] ;
+         fhir:display [ fhir:v "Supraventricular tachycardia" ]
+       ] [
+         fhir:code [ fhir:v "10061389" ] ;
+         fhir:display [ fhir:v "Tricuspid valve disease" ]
+       ] [
+         fhir:code [ fhir:v "10047281" ] ;
+         fhir:display [ fhir:v "Ventricular arrhythmia" ]
+       ] [
+         fhir:code [ fhir:v "10047290" ] ;
+         fhir:display [ fhir:v "Ventricular fibrillation" ]
+       ] [
+         fhir:code [ fhir:v "10047302" ] ;
+         fhir:display [ fhir:v "Ventricular tachycardia" ]
+       ] [
+         fhir:code [ fhir:v "10010331" ] ;
+         fhir:display [ fhir:v "Congenital, familial and genetic disorders - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10013993" ] ;
+         fhir:display [ fhir:v "Ear and labyrinth disorders - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10014020" ] ;
+         fhir:display [ fhir:v "Ear pain" ]
+       ] [
+         fhir:code [ fhir:v "10065785" ] ;
+         fhir:display [ fhir:v "External ear pain" ]
+       ] [
+         fhir:code [ fhir:v "10019245" ] ;
+         fhir:display [ fhir:v "Hearing impaired" ]
+       ] [
+         fhir:code [ fhir:v "10065838" ] ;
+         fhir:display [ fhir:v "Middle ear inflammation" ]
+       ] [
+         fhir:code [ fhir:v "10043882" ] ;
+         fhir:display [ fhir:v "Tinnitus" ]
+       ] [
+         fhir:code [ fhir:v "10047340" ] ;
+         fhir:display [ fhir:v "Vertigo" ]
+       ] [
+         fhir:code [ fhir:v "10047386" ] ;
+         fhir:display [ fhir:v "Vestibular disorder" ]
+       ] [
+         fhir:code [ fhir:v "10001367" ] ;
+         fhir:display [ fhir:v "Adrenal insufficiency" ]
+       ] [
+         fhir:code [ fhir:v "10011655" ] ;
+         fhir:display [ fhir:v "Cushingoid" ]
+       ] [
+         fhir:code [ fhir:v "10012205" ] ;
+         fhir:display [ fhir:v "Delayed puberty" ]
+       ] [
+         fhir:code [ fhir:v "10014698" ] ;
+         fhir:display [ fhir:v "Endocrine disorders - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10018746" ] ;
+         fhir:display [ fhir:v "Growth accelerated" ]
+       ] [
+         fhir:code [ fhir:v "10020705" ] ;
+         fhir:display [ fhir:v "Hyperparathyroidism" ]
+       ] [
+         fhir:code [ fhir:v "10020850" ] ;
+         fhir:display [ fhir:v "Hyperthyroidism" ]
+       ] [
+         fhir:code [ fhir:v "10021041" ] ;
+         fhir:display [ fhir:v "Hypoparathyroidism" ]
+       ] [
+         fhir:code [ fhir:v "10062767" ] ;
+         fhir:display [ fhir:v "Hypophysitis" ]
+       ] [
+         fhir:code [ fhir:v "10021067" ] ;
+         fhir:display [ fhir:v "Hypopituitarism" ]
+       ] [
+         fhir:code [ fhir:v "10021114" ] ;
+         fhir:display [ fhir:v "Hypothyroidism" ]
+       ] [
+         fhir:code [ fhir:v "10058084" ] ;
+         fhir:display [ fhir:v "Precocious puberty" ]
+       ] [
+         fhir:code [ fhir:v "10067734" ] ;
+         fhir:display [ fhir:v "Testosterone deficiency" ]
+       ] [
+         fhir:code [ fhir:v "10047488" ] ;
+         fhir:display [ fhir:v "Virilization" ]
+       ] [
+         fhir:code [ fhir:v "10005886" ] ;
+         fhir:display [ fhir:v "Blurred vision" ]
+       ] [
+         fhir:code [ fhir:v "10007739" ] ;
+         fhir:display [ fhir:v "Cataract" ]
+       ] [
+         fhir:code [ fhir:v "10048492" ] ;
+         fhir:display [ fhir:v "Corneal ulcer" ]
+       ] [
+         fhir:code [ fhir:v "10013774" ] ;
+         fhir:display [ fhir:v "Dry eye" ]
+       ] [
+         fhir:code [ fhir:v "10015829" ] ;
+         fhir:display [ fhir:v "Extraocular muscle paresis" ]
+       ] [
+         fhir:code [ fhir:v "10015919" ] ;
+         fhir:display [ fhir:v "Eye disorders - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10015958" ] ;
+         fhir:display [ fhir:v "Eye pain" ]
+       ] [
+         fhir:code [ fhir:v "10061145" ] ;
+         fhir:display [ fhir:v "Eyelid function disorder" ]
+       ] [
+         fhir:code [ fhir:v "10016757" ] ;
+         fhir:display [ fhir:v "Flashing lights" ]
+       ] [
+         fhir:code [ fhir:v "10016778" ] ;
+         fhir:display [ fhir:v "Floaters" ]
+       ] [
+         fhir:code [ fhir:v "10018304" ] ;
+         fhir:display [ fhir:v "Glaucoma" ]
+       ] [
+         fhir:code [ fhir:v "10023332" ] ;
+         fhir:display [ fhir:v "Keratitis" ]
+       ] [
+         fhir:code [ fhir:v "10029404" ] ;
+         fhir:display [ fhir:v "Night blindness" ]
+       ] [
+         fhir:code [ fhir:v "10061322" ] ;
+         fhir:display [ fhir:v "Optic nerve disorder" ]
+       ] [
+         fhir:code [ fhir:v "10033703" ] ;
+         fhir:display [ fhir:v "Papilledema" ]
+       ] [
+         fhir:code [ fhir:v "10054541" ] ;
+         fhir:display [ fhir:v "Periorbital edema" ]
+       ] [
+         fhir:code [ fhir:v "10034960" ] ;
+         fhir:display [ fhir:v "Photophobia" ]
+       ] [
+         fhir:code [ fhir:v "10038848" ] ;
+         fhir:display [ fhir:v "Retinal detachment" ]
+       ] [
+         fhir:code [ fhir:v "10038897" ] ;
+         fhir:display [ fhir:v "Retinal tear" ]
+       ] [
+         fhir:code [ fhir:v "10038901" ] ;
+         fhir:display [ fhir:v "Retinal vascular disorder" ]
+       ] [
+         fhir:code [ fhir:v "10038923" ] ;
+         fhir:display [ fhir:v "Retinopathy" ]
+       ] [
+         fhir:code [ fhir:v "10061510" ] ;
+         fhir:display [ fhir:v "Scleral disorder" ]
+       ] [
+         fhir:code [ fhir:v "10046851" ] ;
+         fhir:display [ fhir:v "Uveitis" ]
+       ] [
+         fhir:code [ fhir:v "10047516" ] ;
+         fhir:display [ fhir:v "Vision decreased" ]
+       ] [
+         fhir:code [ fhir:v "10047656" ] ;
+         fhir:display [ fhir:v "Vitreous hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10047848" ] ;
+         fhir:display [ fhir:v "Watering eyes" ]
+       ] [
+         fhir:code [ fhir:v "10000060" ] ;
+         fhir:display [ fhir:v "Abdominal distension" ]
+       ] [
+         fhir:code [ fhir:v "10000081" ] ;
+         fhir:display [ fhir:v "Abdominal pain" ]
+       ] [
+         fhir:code [ fhir:v "10002153" ] ;
+         fhir:display [ fhir:v "Anal fissure" ]
+       ] [
+         fhir:code [ fhir:v "10002156" ] ;
+         fhir:display [ fhir:v "Anal fistula" ]
+       ] [
+         fhir:code [ fhir:v "10055226" ] ;
+         fhir:display [ fhir:v "Anal hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10065721" ] ;
+         fhir:display [ fhir:v "Anal mucositis" ]
+       ] [
+         fhir:code [ fhir:v "10065722" ] ;
+         fhir:display [ fhir:v "Anal necrosis" ]
+       ] [
+         fhir:code [ fhir:v "10002167" ] ;
+         fhir:display [ fhir:v "Anal pain" ]
+       ] [
+         fhir:code [ fhir:v "10002176" ] ;
+         fhir:display [ fhir:v "Anal stenosis" ]
+       ] [
+         fhir:code [ fhir:v "10002180" ] ;
+         fhir:display [ fhir:v "Anal ulcer" ]
+       ] [
+         fhir:code [ fhir:v "10003445" ] ;
+         fhir:display [ fhir:v "Ascites" ]
+       ] [
+         fhir:code [ fhir:v "10004222" ] ;
+         fhir:display [ fhir:v "Belching" ]
+       ] [
+         fhir:code [ fhir:v "10005265" ] ;
+         fhir:display [ fhir:v "Bloating" ]
+       ] [
+         fhir:code [ fhir:v "10065747" ] ;
+         fhir:display [ fhir:v "Cecal hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10008417" ] ;
+         fhir:display [ fhir:v "Cheilitis" ]
+       ] [
+         fhir:code [ fhir:v "10009167" ] ;
+         fhir:display [ fhir:v "Chylous ascites" ]
+       ] [
+         fhir:code [ fhir:v "10009887" ] ;
+         fhir:display [ fhir:v "Colitis" ]
+       ] [
+         fhir:code [ fhir:v "10009995" ] ;
+         fhir:display [ fhir:v "Colonic fistula" ]
+       ] [
+         fhir:code [ fhir:v "10009998" ] ;
+         fhir:display [ fhir:v "Colonic hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10010000" ] ;
+         fhir:display [ fhir:v "Colonic obstruction" ]
+       ] [
+         fhir:code [ fhir:v "10010001" ] ;
+         fhir:display [ fhir:v "Colonic perforation" ]
+       ] [
+         fhir:code [ fhir:v "10010004" ] ;
+         fhir:display [ fhir:v "Colonic stenosis" ]
+       ] [
+         fhir:code [ fhir:v "10010006" ] ;
+         fhir:display [ fhir:v "Colonic ulcer" ]
+       ] [
+         fhir:code [ fhir:v "10010774" ] ;
+         fhir:display [ fhir:v "Constipation" ]
+       ] [
+         fhir:code [ fhir:v "10012318" ] ;
+         fhir:display [ fhir:v "Dental caries" ]
+       ] [
+         fhir:code [ fhir:v "10012727" ] ;
+         fhir:display [ fhir:v "Diarrhea" ]
+       ] [
+         fhir:code [ fhir:v "10013781" ] ;
+         fhir:display [ fhir:v "Dry mouth" ]
+       ] [
+         fhir:code [ fhir:v "10013828" ] ;
+         fhir:display [ fhir:v "Duodenal fistula" ]
+       ] [
+         fhir:code [ fhir:v "10055242" ] ;
+         fhir:display [ fhir:v "Duodenal hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10013830" ] ;
+         fhir:display [ fhir:v "Duodenal obstruction" ]
+       ] [
+         fhir:code [ fhir:v "10013832" ] ;
+         fhir:display [ fhir:v "Duodenal perforation" ]
+       ] [
+         fhir:code [ fhir:v "10050094" ] ;
+         fhir:display [ fhir:v "Duodenal stenosis" ]
+       ] [
+         fhir:code [ fhir:v "10013836" ] ;
+         fhir:display [ fhir:v "Duodenal ulcer" ]
+       ] [
+         fhir:code [ fhir:v "10013946" ] ;
+         fhir:display [ fhir:v "Dyspepsia" ]
+       ] [
+         fhir:code [ fhir:v "10013950" ] ;
+         fhir:display [ fhir:v "Dysphagia" ]
+       ] [
+         fhir:code [ fhir:v "10014893" ] ;
+         fhir:display [ fhir:v "Enterocolitis" ]
+       ] [
+         fhir:code [ fhir:v "10062570" ] ;
+         fhir:display [ fhir:v "Enterovesical fistula" ]
+       ] [
+         fhir:code [ fhir:v "10065851" ] ;
+         fhir:display [ fhir:v "Esophageal fistula" ]
+       ] [
+         fhir:code [ fhir:v "10015384" ] ;
+         fhir:display [ fhir:v "Esophageal hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10065727" ] ;
+         fhir:display [ fhir:v "Esophageal necrosis" ]
+       ] [
+         fhir:code [ fhir:v "10015387" ] ;
+         fhir:display [ fhir:v "Esophageal obstruction" ]
+       ] [
+         fhir:code [ fhir:v "10015388" ] ;
+         fhir:display [ fhir:v "Esophageal pain" ]
+       ] [
+         fhir:code [ fhir:v "10055472" ] ;
+         fhir:display [ fhir:v "Esophageal perforation" ]
+       ] [
+         fhir:code [ fhir:v "10015448" ] ;
+         fhir:display [ fhir:v "Esophageal stenosis" ]
+       ] [
+         fhir:code [ fhir:v "10015451" ] ;
+         fhir:display [ fhir:v "Esophageal ulcer" ]
+       ] [
+         fhir:code [ fhir:v "10015453" ] ;
+         fhir:display [ fhir:v "Esophageal varices hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10015461" ] ;
+         fhir:display [ fhir:v "Esophagitis" ]
+       ] [
+         fhir:code [ fhir:v "10016296" ] ;
+         fhir:display [ fhir:v "Fecal incontinence" ]
+       ] [
+         fhir:code [ fhir:v "10016766" ] ;
+         fhir:display [ fhir:v "Flatulence" ]
+       ] [
+         fhir:code [ fhir:v "10065713" ] ;
+         fhir:display [ fhir:v "Gastric fistula" ]
+       ] [
+         fhir:code [ fhir:v "10017789" ] ;
+         fhir:display [ fhir:v "Gastric hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10051886" ] ;
+         fhir:display [ fhir:v "Gastric necrosis" ]
+       ] [
+         fhir:code [ fhir:v "10017815" ] ;
+         fhir:display [ fhir:v "Gastric perforation" ]
+       ] [
+         fhir:code [ fhir:v "10061970" ] ;
+         fhir:display [ fhir:v "Gastric stenosis" ]
+       ] [
+         fhir:code [ fhir:v "10017822" ] ;
+         fhir:display [ fhir:v "Gastric ulcer" ]
+       ] [
+         fhir:code [ fhir:v "10017853" ] ;
+         fhir:display [ fhir:v "Gastritis" ]
+       ] [
+         fhir:code [ fhir:v "10066874" ] ;
+         fhir:display [ fhir:v "Gastroesophageal reflux disease" ]
+       ] [
+         fhir:code [ fhir:v "10017947" ] ;
+         fhir:display [ fhir:v "Gastrointestinal disorders - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10017877" ] ;
+         fhir:display [ fhir:v "Gastrointestinal fistula" ]
+       ] [
+         fhir:code [ fhir:v "10017999" ] ;
+         fhir:display [ fhir:v "Gastrointestinal pain" ]
+       ] [
+         fhir:code [ fhir:v "10018043" ] ;
+         fhir:display [ fhir:v "Gastroparesis" ]
+       ] [
+         fhir:code [ fhir:v "10018286" ] ;
+         fhir:display [ fhir:v "Gingival pain" ]
+       ] [
+         fhir:code [ fhir:v "10060640" ] ;
+         fhir:display [ fhir:v "Hemorrhoidal hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10019611" ] ;
+         fhir:display [ fhir:v "Hemorrhoids" ]
+       ] [
+         fhir:code [ fhir:v "10065728" ] ;
+         fhir:display [ fhir:v "Ileal fistula" ]
+       ] [
+         fhir:code [ fhir:v "10055287" ] ;
+         fhir:display [ fhir:v "Ileal hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10065730" ] ;
+         fhir:display [ fhir:v "Ileal obstruction" ]
+       ] [
+         fhir:code [ fhir:v "10021305" ] ;
+         fhir:display [ fhir:v "Ileal perforation" ]
+       ] [
+         fhir:code [ fhir:v "10021307" ] ;
+         fhir:display [ fhir:v "Ileal stenosis" ]
+       ] [
+         fhir:code [ fhir:v "10021309" ] ;
+         fhir:display [ fhir:v "Ileal ulcer" ]
+       ] [
+         fhir:code [ fhir:v "10021328" ] ;
+         fhir:display [ fhir:v "Ileus" ]
+       ] [
+         fhir:code [ fhir:v "10055291" ] ;
+         fhir:display [ fhir:v "Intra-abdominal hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10065719" ] ;
+         fhir:display [ fhir:v "Jejunal fistula" ]
+       ] [
+         fhir:code [ fhir:v "10055300" ] ;
+         fhir:display [ fhir:v "Jejunal hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10065732" ] ;
+         fhir:display [ fhir:v "Jejunal obstruction" ]
+       ] [
+         fhir:code [ fhir:v "10023174" ] ;
+         fhir:display [ fhir:v "Jejunal perforation" ]
+       ] [
+         fhir:code [ fhir:v "10023176" ] ;
+         fhir:display [ fhir:v "Jejunal stenosis" ]
+       ] [
+         fhir:code [ fhir:v "10023177" ] ;
+         fhir:display [ fhir:v "Jejunal ulcer" ]
+       ] [
+         fhir:code [ fhir:v "10024561" ] ;
+         fhir:display [ fhir:v "Lip pain" ]
+       ] [
+         fhir:code [ fhir:v "10051746" ] ;
+         fhir:display [ fhir:v "Lower gastrointestinal hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10025476" ] ;
+         fhir:display [ fhir:v "Malabsorption" ]
+       ] [
+         fhir:code [ fhir:v "10028130" ] ;
+         fhir:display [ fhir:v "Mucositis oral" ]
+       ] [
+         fhir:code [ fhir:v "10028813" ] ;
+         fhir:display [ fhir:v "Nausea" ]
+       ] [
+         fhir:code [ fhir:v "10029957" ] ;
+         fhir:display [ fhir:v "Obstruction gastric" ]
+       ] [
+         fhir:code [ fhir:v "10065720" ] ;
+         fhir:display [ fhir:v "Oral cavity fistula" ]
+       ] [
+         fhir:code [ fhir:v "10054520" ] ;
+         fhir:display [ fhir:v "Oral dysesthesia" ]
+       ] [
+         fhir:code [ fhir:v "10030980" ] ;
+         fhir:display [ fhir:v "Oral hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10031009" ] ;
+         fhir:display [ fhir:v "Oral pain" ]
+       ] [
+         fhir:code [ fhir:v "10065703" ] ;
+         fhir:display [ fhir:v "Pancreatic duct stenosis" ]
+       ] [
+         fhir:code [ fhir:v "10049192" ] ;
+         fhir:display [ fhir:v "Pancreatic fistula" ]
+       ] [
+         fhir:code [ fhir:v "10033626" ] ;
+         fhir:display [ fhir:v "Pancreatic hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10058096" ] ;
+         fhir:display [ fhir:v "Pancreatic necrosis" ]
+       ] [
+         fhir:code [ fhir:v "10033645" ] ;
+         fhir:display [ fhir:v "Pancreatitis" ]
+       ] [
+         fhir:code [ fhir:v "10034536" ] ;
+         fhir:display [ fhir:v "Periodontal disease" ]
+       ] [
+         fhir:code [ fhir:v "10065704" ] ;
+         fhir:display [ fhir:v "Peritoneal necrosis" ]
+       ] [
+         fhir:code [ fhir:v "10036774" ] ;
+         fhir:display [ fhir:v "Proctitis" ]
+       ] [
+         fhir:code [ fhir:v "10064993" ] ;
+         fhir:display [ fhir:v "Rectal fissure" ]
+       ] [
+         fhir:code [ fhir:v "10038062" ] ;
+         fhir:display [ fhir:v "Rectal fistula" ]
+       ] [
+         fhir:code [ fhir:v "10038064" ] ;
+         fhir:display [ fhir:v "Rectal hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10063190" ] ;
+         fhir:display [ fhir:v "Rectal mucositis" ]
+       ] [
+         fhir:code [ fhir:v "10065709" ] ;
+         fhir:display [ fhir:v "Rectal necrosis" ]
+       ] [
+         fhir:code [ fhir:v "10065707" ] ;
+         fhir:display [ fhir:v "Rectal obstruction" ]
+       ] [
+         fhir:code [ fhir:v "10038072" ] ;
+         fhir:display [ fhir:v "Rectal pain" ]
+       ] [
+         fhir:code [ fhir:v "10038073" ] ;
+         fhir:display [ fhir:v "Rectal perforation" ]
+       ] [
+         fhir:code [ fhir:v "10038079" ] ;
+         fhir:display [ fhir:v "Rectal stenosis" ]
+       ] [
+         fhir:code [ fhir:v "10038080" ] ;
+         fhir:display [ fhir:v "Rectal ulcer" ]
+       ] [
+         fhir:code [ fhir:v "10038981" ] ;
+         fhir:display [ fhir:v "Retroperitoneal hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10056681" ] ;
+         fhir:display [ fhir:v "Salivary duct inflammation" ]
+       ] [
+         fhir:code [ fhir:v "10039411" ] ;
+         fhir:display [ fhir:v "Salivary gland fistula" ]
+       ] [
+         fhir:code [ fhir:v "10065710" ] ;
+         fhir:display [ fhir:v "Small intestinal mucositis" ]
+       ] [
+         fhir:code [ fhir:v "10041101" ] ;
+         fhir:display [ fhir:v "Small intestinal obstruction" ]
+       ] [
+         fhir:code [ fhir:v "10041103" ] ;
+         fhir:display [ fhir:v "Small intestinal perforation" ]
+       ] [
+         fhir:code [ fhir:v "10062263" ] ;
+         fhir:display [ fhir:v "Small intestinal stenosis" ]
+       ] [
+         fhir:code [ fhir:v "10041133" ] ;
+         fhir:display [ fhir:v "Small intestine ulcer" ]
+       ] [
+         fhir:code [ fhir:v "10042112" ] ;
+         fhir:display [ fhir:v "Stomach pain" ]
+       ] [
+         fhir:code [ fhir:v "10044030" ] ;
+         fhir:display [ fhir:v "Tooth development disorder" ]
+       ] [
+         fhir:code [ fhir:v "10044031" ] ;
+         fhir:display [ fhir:v "Tooth discoloration" ]
+       ] [
+         fhir:code [ fhir:v "10044055" ] ;
+         fhir:display [ fhir:v "Toothache" ]
+       ] [
+         fhir:code [ fhir:v "10045271" ] ;
+         fhir:display [ fhir:v "Typhlitis" ]
+       ] [
+         fhir:code [ fhir:v "10055356" ] ;
+         fhir:display [ fhir:v "Upper gastrointestinal hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10054692" ] ;
+         fhir:display [ fhir:v "Visceral arterial ischemia" ]
+       ] [
+         fhir:code [ fhir:v "10047700" ] ;
+         fhir:display [ fhir:v "Vomiting" ]
+       ] [
+         fhir:code [ fhir:v "10008531" ] ;
+         fhir:display [ fhir:v "Chills" ]
+       ] [
+         fhir:code [ fhir:v "10011912" ] ;
+         fhir:display [ fhir:v "Death neonatal" ]
+       ] [
+         fhir:code [ fhir:v "10011914" ] ;
+         fhir:display [ fhir:v "Death NOS" ]
+       ] [
+         fhir:code [ fhir:v "10061818" ] ;
+         fhir:display [ fhir:v "Disease progression" ]
+       ] [
+         fhir:code [ fhir:v "10014222" ] ;
+         fhir:display [ fhir:v "Edema face" ]
+       ] [
+         fhir:code [ fhir:v "10050068" ] ;
+         fhir:display [ fhir:v "Edema limbs" ]
+       ] [
+         fhir:code [ fhir:v "10058720" ] ;
+         fhir:display [ fhir:v "Edema trunk" ]
+       ] [
+         fhir:code [ fhir:v "10016059" ] ;
+         fhir:display [ fhir:v "Facial pain" ]
+       ] [
+         fhir:code [ fhir:v "10016256" ] ;
+         fhir:display [ fhir:v "Fatigue" ]
+       ] [
+         fhir:code [ fhir:v "10016558" ] ;
+         fhir:display [ fhir:v "Fever" ]
+       ] [
+         fhir:code [ fhir:v "10016791" ] ;
+         fhir:display [ fhir:v "Flu like symptoms" ]
+       ] [
+         fhir:code [ fhir:v "10017577" ] ;
+         fhir:display [ fhir:v "Gait disturbance" ]
+       ] [
+         fhir:code [ fhir:v "10018065" ] ;
+         fhir:display [ fhir:v "General disorders and administration site conditions - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10018112" ] ;
+         fhir:display [ fhir:v "Generalized edema" ]
+       ] [
+         fhir:code [ fhir:v "10021113" ] ;
+         fhir:display [ fhir:v "Hypothermia" ]
+       ] [
+         fhir:code [ fhir:v "10064774" ] ;
+         fhir:display [ fhir:v "Infusion site extravasation" ]
+       ] [
+         fhir:code [ fhir:v "10022095" ] ;
+         fhir:display [ fhir:v "Injection site reaction" ]
+       ] [
+         fhir:code [ fhir:v "10062466" ] ;
+         fhir:display [ fhir:v "Localized edema" ]
+       ] [
+         fhir:code [ fhir:v "10025482" ] ;
+         fhir:display [ fhir:v "Malaise" ]
+       ] [
+         fhir:code [ fhir:v "10028154" ] ;
+         fhir:display [ fhir:v "Multi-organ failure" ]
+       ] [
+         fhir:code [ fhir:v "10054482" ] ;
+         fhir:display [ fhir:v "Neck edema" ]
+       ] [
+         fhir:code [ fhir:v "10062501" ] ;
+         fhir:display [ fhir:v "Non-cardiac chest pain" ]
+       ] [
+         fhir:code [ fhir:v "10033371" ] ;
+         fhir:display [ fhir:v "Pain" ]
+       ] [
+         fhir:code [ fhir:v "10042435" ] ;
+         fhir:display [ fhir:v "Sudden death NOS" ]
+       ] [
+         fhir:code [ fhir:v "10069480" ] ;
+         fhir:display [ fhir:v "Vaccination site lymphadenopathy" ]
+       ] [
+         fhir:code [ fhir:v "10051341" ] ;
+         fhir:display [ fhir:v "Bile duct stenosis" ]
+       ] [
+         fhir:code [ fhir:v "10004665" ] ;
+         fhir:display [ fhir:v "Biliary fistula" ]
+       ] [
+         fhir:code [ fhir:v "10006537" ] ;
+         fhir:display [ fhir:v "Budd-Chiari syndrome" ]
+       ] [
+         fhir:code [ fhir:v "10008612" ] ;
+         fhir:display [ fhir:v "Cholecystitis" ]
+       ] [
+         fhir:code [ fhir:v "10017631" ] ;
+         fhir:display [ fhir:v "Gallbladder fistula" ]
+       ] [
+         fhir:code [ fhir:v "10059446" ] ;
+         fhir:display [ fhir:v "Gallbladder necrosis" ]
+       ] [
+         fhir:code [ fhir:v "10017636" ] ;
+         fhir:display [ fhir:v "Gallbladder obstruction" ]
+       ] [
+         fhir:code [ fhir:v "10017638" ] ;
+         fhir:display [ fhir:v "Gallbladder pain" ]
+       ] [
+         fhir:code [ fhir:v "10017639" ] ;
+         fhir:display [ fhir:v "Gallbladder perforation" ]
+       ] [
+         fhir:code [ fhir:v "10019663" ] ;
+         fhir:display [ fhir:v "Hepatic failure" ]
+       ] [
+         fhir:code [ fhir:v "10019678" ] ;
+         fhir:display [ fhir:v "Hepatic hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10019692" ] ;
+         fhir:display [ fhir:v "Hepatic necrosis" ]
+       ] [
+         fhir:code [ fhir:v "10019705" ] ;
+         fhir:display [ fhir:v "Hepatic pain" ]
+       ] [
+         fhir:code [ fhir:v "10019805" ] ;
+         fhir:display [ fhir:v "Hepatobiliary disorders - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10034405" ] ;
+         fhir:display [ fhir:v "Perforation bile duct" ]
+       ] [
+         fhir:code [ fhir:v "10036200" ] ;
+         fhir:display [ fhir:v "Portal hypertension" ]
+       ] [
+         fhir:code [ fhir:v "10036206" ] ;
+         fhir:display [ fhir:v "Portal vein thrombosis" ]
+       ] [
+         fhir:code [ fhir:v "10063675" ] ;
+         fhir:display [ fhir:v "Sinusoidal obstruction syndrome" ]
+       ] [
+         fhir:code [ fhir:v "10001718" ] ;
+         fhir:display [ fhir:v "Allergic reaction" ]
+       ] [
+         fhir:code [ fhir:v "10002218" ] ;
+         fhir:display [ fhir:v "Anaphylaxis" ]
+       ] [
+         fhir:code [ fhir:v "10061664" ] ;
+         fhir:display [ fhir:v "Autoimmune disorder" ]
+       ] [
+         fhir:code [ fhir:v "10052015" ] ;
+         fhir:display [ fhir:v "Cytokine release syndrome" ]
+       ] [
+         fhir:code [ fhir:v "10021428" ] ;
+         fhir:display [ fhir:v "Immune system disorders - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10040400" ] ;
+         fhir:display [ fhir:v "Serum sickness" ]
+       ] [
+         fhir:code [ fhir:v "10056519" ] ;
+         fhir:display [ fhir:v "Abdominal infection" ]
+       ] [
+         fhir:code [ fhir:v "10061640" ] ;
+         fhir:display [ fhir:v "Anorectal infection" ]
+       ] [
+         fhir:code [ fhir:v "10003011" ] ;
+         fhir:display [ fhir:v "Appendicitis" ]
+       ] [
+         fhir:code [ fhir:v "10003012" ] ;
+         fhir:display [ fhir:v "Appendicitis perforated" ]
+       ] [
+         fhir:code [ fhir:v "10065744" ] ;
+         fhir:display [ fhir:v "Arteritis infective" ]
+       ] [
+         fhir:code [ fhir:v "10003999" ] ;
+         fhir:display [ fhir:v "Bacteremia" ]
+       ] [
+         fhir:code [ fhir:v "10061695" ] ;
+         fhir:display [ fhir:v "Biliary tract infection" ]
+       ] [
+         fhir:code [ fhir:v "10005047" ] ;
+         fhir:display [ fhir:v "Bladder infection" ]
+       ] [
+         fhir:code [ fhir:v "10061017" ] ;
+         fhir:display [ fhir:v "Bone infection" ]
+       ] [
+         fhir:code [ fhir:v "10006259" ] ;
+         fhir:display [ fhir:v "Breast infection" ]
+       ] [
+         fhir:code [ fhir:v "10055078" ] ;
+         fhir:display [ fhir:v "Bronchial infection" ]
+       ] [
+         fhir:code [ fhir:v "10007810" ] ;
+         fhir:display [ fhir:v "Catheter related infection" ]
+       ] [
+         fhir:code [ fhir:v "10065761" ] ;
+         fhir:display [ fhir:v "Cecal infection" ]
+       ] [
+         fhir:code [ fhir:v "10008330" ] ;
+         fhir:display [ fhir:v "Cervicitis infection" ]
+       ] [
+         fhir:code [ fhir:v "10010741" ] ;
+         fhir:display [ fhir:v "Conjunctivitis" ]
+       ] [
+         fhir:code [ fhir:v "10010742" ] ;
+         fhir:display [ fhir:v "Conjunctivitis infective" ]
+       ] [
+         fhir:code [ fhir:v "10061788" ] ;
+         fhir:display [ fhir:v "Corneal infection" ]
+       ] [
+         fhir:code [ fhir:v "10065765" ] ;
+         fhir:display [ fhir:v "Cranial nerve infection" ]
+       ] [
+         fhir:code [ fhir:v "10058666" ] ;
+         fhir:display [ fhir:v "Cytomegalovirus infection reactivation" ]
+       ] [
+         fhir:code [ fhir:v "10064687" ] ;
+         fhir:display [ fhir:v "Device related infection" ]
+       ] [
+         fhir:code [ fhir:v "10065752" ] ;
+         fhir:display [ fhir:v "Duodenal infection" ]
+       ] [
+         fhir:code [ fhir:v "10014594" ] ;
+         fhir:display [ fhir:v "Encephalitis infection" ]
+       ] [
+         fhir:code [ fhir:v "10014621" ] ;
+         fhir:display [ fhir:v "Encephalomyelitis infection" ]
+       ] [
+         fhir:code [ fhir:v "10014678" ] ;
+         fhir:display [ fhir:v "Endocarditis infective" ]
+       ] [
+         fhir:code [ fhir:v "10014801" ] ;
+         fhir:display [ fhir:v "Endophthalmitis" ]
+       ] [
+         fhir:code [ fhir:v "10058838" ] ;
+         fhir:display [ fhir:v "Enterocolitis infectious" ]
+       ] [
+         fhir:code [ fhir:v "10015109" ] ;
+         fhir:display [ fhir:v "Epstein-Barr virus infection reactivation" ]
+       ] [
+         fhir:code [ fhir:v "10058804" ] ;
+         fhir:display [ fhir:v "Esophageal infection" ]
+       ] [
+         fhir:code [ fhir:v "10015929" ] ;
+         fhir:display [ fhir:v "Eye infection" ]
+       ] [
+         fhir:code [ fhir:v "10016936" ] ;
+         fhir:display [ fhir:v "Folliculitis" ]
+       ] [
+         fhir:code [ fhir:v "10017544" ] ;
+         fhir:display [ fhir:v "Fungemia" ]
+       ] [
+         fhir:code [ fhir:v "10062632" ] ;
+         fhir:display [ fhir:v "Gallbladder infection" ]
+       ] [
+         fhir:code [ fhir:v "10018784" ] ;
+         fhir:display [ fhir:v "Gum infection" ]
+       ] [
+         fhir:code [ fhir:v "10056522" ] ;
+         fhir:display [ fhir:v "Hepatic infection" ]
+       ] [
+         fhir:code [ fhir:v "10058827" ] ;
+         fhir:display [ fhir:v "Hepatitis B reactivation" ]
+       ] [
+         fhir:code [ fhir:v "10019799" ] ;
+         fhir:display [ fhir:v "Hepatitis viral" ]
+       ] [
+         fhir:code [ fhir:v "10080137" ] ;
+         fhir:display [ fhir:v "Herpes simplex reactivation" ]
+       ] [
+         fhir:code [ fhir:v "10021881" ] ;
+         fhir:display [ fhir:v "Infections and infestations - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10021918" ] ;
+         fhir:display [ fhir:v "Infective myositis" ]
+       ] [
+         fhir:code [ fhir:v "10023216" ] ;
+         fhir:display [ fhir:v "Joint infection" ]
+       ] [
+         fhir:code [ fhir:v "10023424" ] ;
+         fhir:display [ fhir:v "Kidney infection" ]
+       ] [
+         fhir:code [ fhir:v "10023874" ] ;
+         fhir:display [ fhir:v "Laryngitis" ]
+       ] [
+         fhir:code [ fhir:v "10065755" ] ;
+         fhir:display [ fhir:v "Lip infection" ]
+       ] [
+         fhir:code [ fhir:v "10061229" ] ;
+         fhir:display [ fhir:v "Lung infection" ]
+       ] [
+         fhir:code [ fhir:v "10050823" ] ;
+         fhir:display [ fhir:v "Lymph gland infection" ]
+       ] [
+         fhir:code [ fhir:v "10057483" ] ;
+         fhir:display [ fhir:v "Mediastinal infection" ]
+       ] [
+         fhir:code [ fhir:v "10027199" ] ;
+         fhir:display [ fhir:v "Meningitis" ]
+       ] [
+         fhir:code [ fhir:v "10065764" ] ;
+         fhir:display [ fhir:v "Mucosal infection" ]
+       ] [
+         fhir:code [ fhir:v "10028524" ] ;
+         fhir:display [ fhir:v "Myelitis" ]
+       ] [
+         fhir:code [ fhir:v "10061304" ] ;
+         fhir:display [ fhir:v "Nail infection" ]
+       ] [
+         fhir:code [ fhir:v "10033072" ] ;
+         fhir:display [ fhir:v "Otitis externa" ]
+       ] [
+         fhir:code [ fhir:v "10033078" ] ;
+         fhir:display [ fhir:v "Otitis media" ]
+       ] [
+         fhir:code [ fhir:v "10055005" ] ;
+         fhir:display [ fhir:v "Ovarian infection" ]
+       ] [
+         fhir:code [ fhir:v "10051741" ] ;
+         fhir:display [ fhir:v "Pancreas infection" ]
+       ] [
+         fhir:code [ fhir:v "10069138" ] ;
+         fhir:display [ fhir:v "Papulopustular rash" ]
+       ] [
+         fhir:code [ fhir:v "10034016" ] ;
+         fhir:display [ fhir:v "Paronychia" ]
+       ] [
+         fhir:code [ fhir:v "10058674" ] ;
+         fhir:display [ fhir:v "Pelvic infection" ]
+       ] [
+         fhir:code [ fhir:v "10061912" ] ;
+         fhir:display [ fhir:v "Penile infection" ]
+       ] [
+         fhir:code [ fhir:v "10051472" ] ;
+         fhir:display [ fhir:v "Periorbital infection" ]
+       ] [
+         fhir:code [ fhir:v "10065766" ] ;
+         fhir:display [ fhir:v "Peripheral nerve infection" ]
+       ] [
+         fhir:code [ fhir:v "10057262" ] ;
+         fhir:display [ fhir:v "Peritoneal infection" ]
+       ] [
+         fhir:code [ fhir:v "10034835" ] ;
+         fhir:display [ fhir:v "Pharyngitis" ]
+       ] [
+         fhir:code [ fhir:v "10056627" ] ;
+         fhir:display [ fhir:v "Phlebitis infective" ]
+       ] [
+         fhir:code [ fhir:v "10061351" ] ;
+         fhir:display [ fhir:v "Pleural infection" ]
+       ] [
+         fhir:code [ fhir:v "10050662" ] ;
+         fhir:display [ fhir:v "Prostate infection" ]
+       ] [
+         fhir:code [ fhir:v "10037888" ] ;
+         fhir:display [ fhir:v "Rash pustular" ]
+       ] [
+         fhir:code [ fhir:v "10059827" ] ;
+         fhir:display [ fhir:v "Rhinitis infective" ]
+       ] [
+         fhir:code [ fhir:v "10039413" ] ;
+         fhir:display [ fhir:v "Salivary gland infection" ]
+       ] [
+         fhir:code [ fhir:v "10062156" ] ;
+         fhir:display [ fhir:v "Scrotal infection" ]
+       ] [
+         fhir:code [ fhir:v "10040047" ] ;
+         fhir:display [ fhir:v "Sepsis" ]
+       ] [
+         fhir:code [ fhir:v "10040555" ] ;
+         fhir:display [ fhir:v "Shingles" ]
+       ] [
+         fhir:code [ fhir:v "10040753" ] ;
+         fhir:display [ fhir:v "Sinusitis" ]
+       ] [
+         fhir:code [ fhir:v "10040872" ] ;
+         fhir:display [ fhir:v "Skin infection" ]
+       ] [
+         fhir:code [ fhir:v "10065771" ] ;
+         fhir:display [ fhir:v "Small intestine infection" ]
+       ] [
+         fhir:code [ fhir:v "10062255" ] ;
+         fhir:display [ fhir:v "Soft tissue infection" ]
+       ] [
+         fhir:code [ fhir:v "10062112" ] ;
+         fhir:display [ fhir:v "Splenic infection" ]
+       ] [
+         fhir:code [ fhir:v "10064505" ] ;
+         fhir:display [ fhir:v "Stoma site infection" ]
+       ] [
+         fhir:code [ fhir:v "10043649" ] ;
+         fhir:display [ fhir:v "Thrush" ]
+       ] [
+         fhir:code [ fhir:v "10048762" ] ;
+         fhir:display [ fhir:v "Tooth infection" ]
+       ] [
+         fhir:code [ fhir:v "10044302" ] ;
+         fhir:display [ fhir:v "Tracheitis" ]
+       ] [
+         fhir:code [ fhir:v "10046300" ] ;
+         fhir:display [ fhir:v "Upper respiratory infection" ]
+       ] [
+         fhir:code [ fhir:v "10052298" ] ;
+         fhir:display [ fhir:v "Urethral infection" ]
+       ] [
+         fhir:code [ fhir:v "10046571" ] ;
+         fhir:display [ fhir:v "Urinary tract infection" ]
+       ] [
+         fhir:code [ fhir:v "10062233" ] ;
+         fhir:display [ fhir:v "Uterine infection" ]
+       ] [
+         fhir:code [ fhir:v "10046914" ] ;
+         fhir:display [ fhir:v "Vaginal infection" ]
+       ] [
+         fhir:code [ fhir:v "10054688" ] ;
+         fhir:display [ fhir:v "Viremia" ]
+       ] [
+         fhir:code [ fhir:v "10065772" ] ;
+         fhir:display [ fhir:v "Vulval infection" ]
+       ] [
+         fhir:code [ fhir:v "10048038" ] ;
+         fhir:display [ fhir:v "Wound infection" ]
+       ] [
+         fhir:code [ fhir:v "10002544" ] ;
+         fhir:display [ fhir:v "Ankle fracture" ]
+       ] [
+         fhir:code [ fhir:v "10002899" ] ;
+         fhir:display [ fhir:v "Aortic injury" ]
+       ] [
+         fhir:code [ fhir:v "10003162" ] ;
+         fhir:display [ fhir:v "Arterial injury" ]
+       ] [
+         fhir:code [ fhir:v "10050458" ] ;
+         fhir:display [ fhir:v "Biliary anastomotic leak" ]
+       ] [
+         fhir:code [ fhir:v "10065802" ] ;
+         fhir:display [ fhir:v "Bladder anastomotic leak" ]
+       ] [
+         fhir:code [ fhir:v "10006504" ] ;
+         fhir:display [ fhir:v "Bruising" ]
+       ] [
+         fhir:code [ fhir:v "10006634" ] ;
+         fhir:display [ fhir:v "Burn" ]
+       ] [
+         fhir:code [ fhir:v "10061103" ] ;
+         fhir:display [ fhir:v "Dermatitis radiation" ]
+       ] [
+         fhir:code [ fhir:v "10065961" ] ;
+         fhir:display [ fhir:v "Esophageal anastomotic leak" ]
+       ] [
+         fhir:code [ fhir:v "10016173" ] ;
+         fhir:display [ fhir:v "Fall" ]
+       ] [
+         fhir:code [ fhir:v "10065788" ] ;
+         fhir:display [ fhir:v "Fallopian tube anastomotic leak" ]
+       ] [
+         fhir:code [ fhir:v "10065790" ] ;
+         fhir:display [ fhir:v "Fallopian tube perforation" ]
+       ] [
+         fhir:code [ fhir:v "10017076" ] ;
+         fhir:display [ fhir:v "Fracture" ]
+       ] [
+         fhir:code [ fhir:v "10065893" ] ;
+         fhir:display [ fhir:v "Gastric anastomotic leak" ]
+       ] [
+         fhir:code [ fhir:v "10065879" ] ;
+         fhir:display [ fhir:v "Gastrointestinal anastomotic leak" ]
+       ] [
+         fhir:code [ fhir:v "10065712" ] ;
+         fhir:display [ fhir:v "Gastrointestinal stoma necrosis" ]
+       ] [
+         fhir:code [ fhir:v "10020100" ] ;
+         fhir:display [ fhir:v "Hip fracture" ]
+       ] [
+         fhir:code [ fhir:v "10051792" ] ;
+         fhir:display [ fhir:v "Infusion related reaction" ]
+       ] [
+         fhir:code [ fhir:v "10022161" ] ;
+         fhir:display [ fhir:v "Injury to carotid artery" ]
+       ] [
+         fhir:code [ fhir:v "10022213" ] ;
+         fhir:display [ fhir:v "Injury to inferior vena cava" ]
+       ] [
+         fhir:code [ fhir:v "10065849" ] ;
+         fhir:display [ fhir:v "Injury to jugular vein" ]
+       ] [
+         fhir:code [ fhir:v "10022356" ] ;
+         fhir:display [ fhir:v "Injury to superior vena cava" ]
+       ] [
+         fhir:code [ fhir:v "10022117" ] ;
+         fhir:display [ fhir:v "Injury, poisoning and procedural complications - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10059095" ] ;
+         fhir:display [ fhir:v "Intestinal stoma leak" ]
+       ] [
+         fhir:code [ fhir:v "10059094" ] ;
+         fhir:display [ fhir:v "Intestinal stoma obstruction" ]
+       ] [
+         fhir:code [ fhir:v "10049468" ] ;
+         fhir:display [ fhir:v "Intestinal stoma site bleeding" ]
+       ] [
+         fhir:code [ fhir:v "10065826" ] ;
+         fhir:display [ fhir:v "Intraoperative arterial injury" ]
+       ] [
+         fhir:code [ fhir:v "10065831" ] ;
+         fhir:display [ fhir:v "Intraoperative breast injury" ]
+       ] [
+         fhir:code [ fhir:v "10065843" ] ;
+         fhir:display [ fhir:v "Intraoperative cardiac injury" ]
+       ] [
+         fhir:code [ fhir:v "10065844" ] ;
+         fhir:display [ fhir:v "Intraoperative ear injury" ]
+       ] [
+         fhir:code [ fhir:v "10065834" ] ;
+         fhir:display [ fhir:v "Intraoperative endocrine injury" ]
+       ] [
+         fhir:code [ fhir:v "10065825" ] ;
+         fhir:display [ fhir:v "Intraoperative gastrointestinal injury" ]
+       ] [
+         fhir:code [ fhir:v "10065842" ] ;
+         fhir:display [ fhir:v "Intraoperative head and neck injury" ]
+       ] [
+         fhir:code [ fhir:v "10055298" ] ;
+         fhir:display [ fhir:v "Intraoperative hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10065827" ] ;
+         fhir:display [ fhir:v "Intraoperative hepatobiliary injury" ]
+       ] [
+         fhir:code [ fhir:v "10065829" ] ;
+         fhir:display [ fhir:v "Intraoperative musculoskeletal injury" ]
+       ] [
+         fhir:code [ fhir:v "10065830" ] ;
+         fhir:display [ fhir:v "Intraoperative neurological injury" ]
+       ] [
+         fhir:code [ fhir:v "10065841" ] ;
+         fhir:display [ fhir:v "Intraoperative ocular injury" ]
+       ] [
+         fhir:code [ fhir:v "10065845" ] ;
+         fhir:display [ fhir:v "Intraoperative renal injury" ]
+       ] [
+         fhir:code [ fhir:v "10065840" ] ;
+         fhir:display [ fhir:v "Intraoperative reproductive tract injury" ]
+       ] [
+         fhir:code [ fhir:v "10065832" ] ;
+         fhir:display [ fhir:v "Intraoperative respiratory injury" ]
+       ] [
+         fhir:code [ fhir:v "10065847" ] ;
+         fhir:display [ fhir:v "Intraoperative splenic injury" ]
+       ] [
+         fhir:code [ fhir:v "10065828" ] ;
+         fhir:display [ fhir:v "Intraoperative urinary injury" ]
+       ] [
+         fhir:code [ fhir:v "10065848" ] ;
+         fhir:display [ fhir:v "Intraoperative venous injury" ]
+       ] [
+         fhir:code [ fhir:v "10065803" ] ;
+         fhir:display [ fhir:v "Kidney anastomotic leak" ]
+       ] [
+         fhir:code [ fhir:v "10065891" ] ;
+         fhir:display [ fhir:v "Large intestinal anastomotic leak" ]
+       ] [
+         fhir:code [ fhir:v "10050457" ] ;
+         fhir:display [ fhir:v "Pancreatic anastomotic leak" ]
+       ] [
+         fhir:code [ fhir:v "10065705" ] ;
+         fhir:display [ fhir:v "Pharyngeal anastomotic leak" ]
+       ] [
+         fhir:code [ fhir:v "10055322" ] ;
+         fhir:display [ fhir:v "Postoperative hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10056745" ] ;
+         fhir:display [ fhir:v "Postoperative thoracic procedure complication" ]
+       ] [
+         fhir:code [ fhir:v "10065745" ] ;
+         fhir:display [ fhir:v "Prolapse of intestinal stoma" ]
+       ] [
+         fhir:code [ fhir:v "10065822" ] ;
+         fhir:display [ fhir:v "Prolapse of urostomy" ]
+       ] [
+         fhir:code [ fhir:v "10037767" ] ;
+         fhir:display [ fhir:v "Radiation recall reaction (dermatologic)" ]
+       ] [
+         fhir:code [ fhir:v "10065894" ] ;
+         fhir:display [ fhir:v "Rectal anastomotic leak" ]
+       ] [
+         fhir:code [ fhir:v "10040102" ] ;
+         fhir:display [ fhir:v "Seroma" ]
+       ] [
+         fhir:code [ fhir:v "10065892" ] ;
+         fhir:display [ fhir:v "Small intestinal anastomotic leak" ]
+       ] [
+         fhir:code [ fhir:v "10065897" ] ;
+         fhir:display [ fhir:v "Spermatic cord anastomotic leak" ]
+       ] [
+         fhir:code [ fhir:v "10041569" ] ;
+         fhir:display [ fhir:v "Spinal fracture" ]
+       ] [
+         fhir:code [ fhir:v "10065898" ] ;
+         fhir:display [ fhir:v "Stenosis of gastrointestinal stoma" ]
+       ] [
+         fhir:code [ fhir:v "10042127" ] ;
+         fhir:display [ fhir:v "Stomal ulcer" ]
+       ] [
+         fhir:code [ fhir:v "10062548" ] ;
+         fhir:display [ fhir:v "Tracheal hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10044291" ] ;
+         fhir:display [ fhir:v "Tracheal obstruction" ]
+       ] [
+         fhir:code [ fhir:v "10065749" ] ;
+         fhir:display [ fhir:v "Tracheostomy site bleeding" ]
+       ] [
+         fhir:code [ fhir:v "10065814" ] ;
+         fhir:display [ fhir:v "Ureteric anastomotic leak" ]
+       ] [
+         fhir:code [ fhir:v "10065815" ] ;
+         fhir:display [ fhir:v "Urethral anastomotic leak" ]
+       ] [
+         fhir:code [ fhir:v "10065882" ] ;
+         fhir:display [ fhir:v "Urostomy leak" ]
+       ] [
+         fhir:code [ fhir:v "10065883" ] ;
+         fhir:display [ fhir:v "Urostomy obstruction" ]
+       ] [
+         fhir:code [ fhir:v "10065748" ] ;
+         fhir:display [ fhir:v "Urostomy site bleeding" ]
+       ] [
+         fhir:code [ fhir:v "10065885" ] ;
+         fhir:display [ fhir:v "Urostomy stenosis" ]
+       ] [
+         fhir:code [ fhir:v "10065886" ] ;
+         fhir:display [ fhir:v "Uterine anastomotic leak" ]
+       ] [
+         fhir:code [ fhir:v "10046810" ] ;
+         fhir:display [ fhir:v "Uterine perforation" ]
+       ] [
+         fhir:code [ fhir:v "10046861" ] ;
+         fhir:display [ fhir:v "Vaccination complication" ]
+       ] [
+         fhir:code [ fhir:v "10065887" ] ;
+         fhir:display [ fhir:v "Vaginal anastomotic leak" ]
+       ] [
+         fhir:code [ fhir:v "10065888" ] ;
+         fhir:display [ fhir:v "Vas deferens anastomotic leak" ]
+       ] [
+         fhir:code [ fhir:v "10062169" ] ;
+         fhir:display [ fhir:v "Vascular access complication" ]
+       ] [
+         fhir:code [ fhir:v "10047228" ] ;
+         fhir:display [ fhir:v "Venous injury" ]
+       ] [
+         fhir:code [ fhir:v "10053692" ] ;
+         fhir:display [ fhir:v "Wound complication" ]
+       ] [
+         fhir:code [ fhir:v "10048031" ] ;
+         fhir:display [ fhir:v "Wound dehiscence" ]
+       ] [
+         fhir:code [ fhir:v "10048049" ] ;
+         fhir:display [ fhir:v "Wrist fracture" ]
+       ] [
+         fhir:code [ fhir:v "10000636" ] ;
+         fhir:display [ fhir:v "Activated partial thromboplastin time prolonged" ]
+       ] [
+         fhir:code [ fhir:v "10001551" ] ;
+         fhir:display [ fhir:v "Alanine aminotransferase increased" ]
+       ] [
+         fhir:code [ fhir:v "10001675" ] ;
+         fhir:display [ fhir:v "Alkaline phosphatase increased" ]
+       ] [
+         fhir:code [ fhir:v "10003481" ] ;
+         fhir:display [ fhir:v "Aspartate aminotransferase increased" ]
+       ] [
+         fhir:code [ fhir:v "10005332" ] ;
+         fhir:display [ fhir:v "Blood antidiuretic hormone abnormal" ]
+       ] [
+         fhir:code [ fhir:v "10005359" ] ;
+         fhir:display [ fhir:v "Blood bicarbonate decreased" ]
+       ] [
+         fhir:code [ fhir:v "10005364" ] ;
+         fhir:display [ fhir:v "Blood bilirubin increased" ]
+       ] [
+         fhir:code [ fhir:v "10005452" ] ;
+         fhir:display [ fhir:v "Blood corticotrophin decreased" ]
+       ] [
+         fhir:code [ fhir:v "10005561" ] ;
+         fhir:display [ fhir:v "Blood gonadotrophin abnormal" ]
+       ] [
+         fhir:code [ fhir:v "10005630" ] ;
+         fhir:display [ fhir:v "Blood lactate dehydrogenase increased" ]
+       ] [
+         fhir:code [ fhir:v "10005778" ] ;
+         fhir:display [ fhir:v "Blood prolactin abnormal" ]
+       ] [
+         fhir:code [ fhir:v "10065906" ] ;
+         fhir:display [ fhir:v "Carbon monoxide diffusing capacity decreased" ]
+       ] [
+         fhir:code [ fhir:v "10007612" ] ;
+         fhir:display [ fhir:v "Cardiac troponin I increased" ]
+       ] [
+         fhir:code [ fhir:v "10007613" ] ;
+         fhir:display [ fhir:v "Cardiac troponin T increased" ]
+       ] [
+         fhir:code [ fhir:v "10007839" ] ;
+         fhir:display [ fhir:v "CD4 lymphocytes decreased" ]
+       ] [
+         fhir:code [ fhir:v "10008661" ] ;
+         fhir:display [ fhir:v "Cholesterol high" ]
+       ] [
+         fhir:code [ fhir:v "10011268" ] ;
+         fhir:display [ fhir:v "CPK increased" ]
+       ] [
+         fhir:code [ fhir:v "10011368" ] ;
+         fhir:display [ fhir:v "Creatinine increased" ]
+       ] [
+         fhir:code [ fhir:v "10050528" ] ;
+         fhir:display [ fhir:v "Ejection fraction decreased" ]
+       ] [
+         fhir:code [ fhir:v "10014383" ] ;
+         fhir:display [ fhir:v "Electrocardiogram QT corrected interval prolonged" ]
+       ] [
+         fhir:code [ fhir:v "10050380" ] ;
+         fhir:display [ fhir:v "Electrocardiogram T wave abnormal" ]
+       ] [
+         fhir:code [ fhir:v "10016596" ] ;
+         fhir:display [ fhir:v "Fibrinogen decreased" ]
+       ] [
+         fhir:code [ fhir:v "10016987" ] ;
+         fhir:display [ fhir:v "Forced expiratory volume decreased" ]
+       ] [
+         fhir:code [ fhir:v "10056910" ] ;
+         fhir:display [ fhir:v "GGT increased" ]
+       ] [
+         fhir:code [ fhir:v "10018748" ] ;
+         fhir:display [ fhir:v "Growth hormone abnormal" ]
+       ] [
+         fhir:code [ fhir:v "10019150" ] ;
+         fhir:display [ fhir:v "Haptoglobin decreased" ]
+       ] [
+         fhir:code [ fhir:v "10055599" ] ;
+         fhir:display [ fhir:v "Hemoglobin increased" ]
+       ] [
+         fhir:code [ fhir:v "10022402" ] ;
+         fhir:display [ fhir:v "INR increased" ]
+       ] [
+         fhir:code [ fhir:v "10022891" ] ;
+         fhir:display [ fhir:v "Investigations - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10024574" ] ;
+         fhir:display [ fhir:v "Lipase increased" ]
+       ] [
+         fhir:code [ fhir:v "10025256" ] ;
+         fhir:display [ fhir:v "Lymphocyte count decreased" ]
+       ] [
+         fhir:code [ fhir:v "10025258" ] ;
+         fhir:display [ fhir:v "Lymphocyte count increased" ]
+       ] [
+         fhir:code [ fhir:v "10029366" ] ;
+         fhir:display [ fhir:v "Neutrophil count decreased" ]
+       ] [
+         fhir:code [ fhir:v "10062646" ] ;
+         fhir:display [ fhir:v "Pancreatic enzymes decreased" ]
+       ] [
+         fhir:code [ fhir:v "10035528" ] ;
+         fhir:display [ fhir:v "Platelet count decreased" ]
+       ] [
+         fhir:code [ fhir:v "10040139" ] ;
+         fhir:display [ fhir:v "Serum amylase increased" ]
+       ] [
+         fhir:code [ fhir:v "10043770" ] ;
+         fhir:display [ fhir:v "Thyroid stimulating hormone increased" ]
+       ] [
+         fhir:code [ fhir:v "10059895" ] ;
+         fhir:display [ fhir:v "Urine output decreased" ]
+       ] [
+         fhir:code [ fhir:v "10047580" ] ;
+         fhir:display [ fhir:v "Vital capacity abnormal" ]
+       ] [
+         fhir:code [ fhir:v "10047896" ] ;
+         fhir:display [ fhir:v "Weight gain" ]
+       ] [
+         fhir:code [ fhir:v "10047900" ] ;
+         fhir:display [ fhir:v "Weight loss" ]
+       ] [
+         fhir:code [ fhir:v "10049182" ] ;
+         fhir:display [ fhir:v "White blood cell decreased" ]
+       ] [
+         fhir:code [ fhir:v "10000486" ] ;
+         fhir:display [ fhir:v "Acidosis" ]
+       ] [
+         fhir:code [ fhir:v "10001598" ] ;
+         fhir:display [ fhir:v "Alcohol intolerance" ]
+       ] [
+         fhir:code [ fhir:v "10001680" ] ;
+         fhir:display [ fhir:v "Alkalosis" ]
+       ] [
+         fhir:code [ fhir:v "10002646" ] ;
+         fhir:display [ fhir:v "Anorexia" ]
+       ] [
+         fhir:code [ fhir:v "10012174" ] ;
+         fhir:display [ fhir:v "Dehydration" ]
+       ] [
+         fhir:code [ fhir:v "10052426" ] ;
+         fhir:display [ fhir:v "Glucose intolerance" ]
+       ] [
+         fhir:code [ fhir:v "10020587" ] ;
+         fhir:display [ fhir:v "Hypercalcemia" ]
+       ] [
+         fhir:code [ fhir:v "10020639" ] ;
+         fhir:display [ fhir:v "Hyperglycemia" ]
+       ] [
+         fhir:code [ fhir:v "10020647" ] ;
+         fhir:display [ fhir:v "Hyperkalemia" ]
+       ] [
+         fhir:code [ fhir:v "10020667" ] ;
+         fhir:display [ fhir:v "Hyperlipidemia" ]
+       ] [
+         fhir:code [ fhir:v "10020670" ] ;
+         fhir:display [ fhir:v "Hypermagnesemia" ]
+       ] [
+         fhir:code [ fhir:v "10020680" ] ;
+         fhir:display [ fhir:v "Hypernatremia" ]
+       ] [
+         fhir:code [ fhir:v "10020712" ] ;
+         fhir:display [ fhir:v "Hyperphosphatemia" ]
+       ] [
+         fhir:code [ fhir:v "10020870" ] ;
+         fhir:display [ fhir:v "Hypertriglyceridemia" ]
+       ] [
+         fhir:code [ fhir:v "10020907" ] ;
+         fhir:display [ fhir:v "Hyperuricemia" ]
+       ] [
+         fhir:code [ fhir:v "10020943" ] ;
+         fhir:display [ fhir:v "Hypoalbuminemia" ]
+       ] [
+         fhir:code [ fhir:v "10020949" ] ;
+         fhir:display [ fhir:v "Hypocalcemia" ]
+       ] [
+         fhir:code [ fhir:v "10021005" ] ;
+         fhir:display [ fhir:v "Hypoglycemia" ]
+       ] [
+         fhir:code [ fhir:v "10021018" ] ;
+         fhir:display [ fhir:v "Hypokalemia" ]
+       ] [
+         fhir:code [ fhir:v "10021028" ] ;
+         fhir:display [ fhir:v "Hypomagnesemia" ]
+       ] [
+         fhir:code [ fhir:v "10021038" ] ;
+         fhir:display [ fhir:v "Hyponatremia" ]
+       ] [
+         fhir:code [ fhir:v "10021059" ] ;
+         fhir:display [ fhir:v "Hypophosphatemia" ]
+       ] [
+         fhir:code [ fhir:v "10065973" ] ;
+         fhir:display [ fhir:v "Iron overload" ]
+       ] [
+         fhir:code [ fhir:v "10027433" ] ;
+         fhir:display [ fhir:v "Metabolism and nutrition disorders - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10029883" ] ;
+         fhir:display [ fhir:v "Obesity" ]
+       ] [
+         fhir:code [ fhir:v "10045152" ] ;
+         fhir:display [ fhir:v "Tumor lysis syndrome" ]
+       ] [
+         fhir:code [ fhir:v "10065775" ] ;
+         fhir:display [ fhir:v "Abdominal soft tissue necrosis" ]
+       ] [
+         fhir:code [ fhir:v "10003239" ] ;
+         fhir:display [ fhir:v "Arthralgia" ]
+       ] [
+         fhir:code [ fhir:v "10003246" ] ;
+         fhir:display [ fhir:v "Arthritis" ]
+       ] [
+         fhir:code [ fhir:v "10066480" ] ;
+         fhir:display [ fhir:v "Avascular necrosis" ]
+       ] [
+         fhir:code [ fhir:v "10003988" ] ;
+         fhir:display [ fhir:v "Back pain" ]
+       ] [
+         fhir:code [ fhir:v "10006002" ] ;
+         fhir:display [ fhir:v "Bone pain" ]
+       ] [
+         fhir:code [ fhir:v "10048677" ] ;
+         fhir:display [ fhir:v "Buttock pain" ]
+       ] [
+         fhir:code [ fhir:v "10048831" ] ;
+         fhir:display [ fhir:v "Chest wall necrosis" ]
+       ] [
+         fhir:code [ fhir:v "10008496" ] ;
+         fhir:display [ fhir:v "Chest wall pain" ]
+       ] [
+         fhir:code [ fhir:v "10015688" ] ;
+         fhir:display [ fhir:v "Exostosis" ]
+       ] [
+         fhir:code [ fhir:v "10065799" ] ;
+         fhir:display [ fhir:v "Fibrosis deep connective tissue" ]
+       ] [
+         fhir:code [ fhir:v "10016750" ] ;
+         fhir:display [ fhir:v "Flank pain" ]
+       ] [
+         fhir:code [ fhir:v "10062572" ] ;
+         fhir:display [ fhir:v "Generalized muscle weakness" ]
+       ] [
+         fhir:code [ fhir:v "10018761" ] ;
+         fhir:display [ fhir:v "Growth suppression" ]
+       ] [
+         fhir:code [ fhir:v "10065779" ] ;
+         fhir:display [ fhir:v "Head soft tissue necrosis" ]
+       ] [
+         fhir:code [ fhir:v "10023215" ] ;
+         fhir:display [ fhir:v "Joint effusion" ]
+       ] [
+         fhir:code [ fhir:v "10048706" ] ;
+         fhir:display [ fhir:v "Joint range of motion decreased" ]
+       ] [
+         fhir:code [ fhir:v "10065796" ] ;
+         fhir:display [ fhir:v "Joint range of motion decreased cervical spine" ]
+       ] [
+         fhir:code [ fhir:v "10065800" ] ;
+         fhir:display [ fhir:v "Joint range of motion decreased lumbar spine" ]
+       ] [
+         fhir:code [ fhir:v "10023509" ] ;
+         fhir:display [ fhir:v "Kyphosis" ]
+       ] [
+         fhir:code [ fhir:v "10024842" ] ;
+         fhir:display [ fhir:v "Lordosis" ]
+       ] [
+         fhir:code [ fhir:v "10028294" ] ;
+         fhir:display [ fhir:v "Muscle cramp" ]
+       ] [
+         fhir:code [ fhir:v "10065776" ] ;
+         fhir:display [ fhir:v "Muscle weakness lower limb" ]
+       ] [
+         fhir:code [ fhir:v "10065795" ] ;
+         fhir:display [ fhir:v "Muscle weakness trunk" ]
+       ] [
+         fhir:code [ fhir:v "10065895" ] ;
+         fhir:display [ fhir:v "Muscle weakness upper limb" ]
+       ] [
+         fhir:code [ fhir:v "10028395" ] ;
+         fhir:display [ fhir:v "Musculoskeletal and connective tissue disorder - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10065783" ] ;
+         fhir:display [ fhir:v "Musculoskeletal deformity" ]
+       ] [
+         fhir:code [ fhir:v "10028411" ] ;
+         fhir:display [ fhir:v "Myalgia" ]
+       ] [
+         fhir:code [ fhir:v "10028653" ] ;
+         fhir:display [ fhir:v "Myositis" ]
+       ] [
+         fhir:code [ fhir:v "10028836" ] ;
+         fhir:display [ fhir:v "Neck pain" ]
+       ] [
+         fhir:code [ fhir:v "10065781" ] ;
+         fhir:display [ fhir:v "Neck soft tissue necrosis" ]
+       ] [
+         fhir:code [ fhir:v "10031264" ] ;
+         fhir:display [ fhir:v "Osteonecrosis" ]
+       ] [
+         fhir:code [ fhir:v "10064658" ] ;
+         fhir:display [ fhir:v "Osteonecrosis of jaw" ]
+       ] [
+         fhir:code [ fhir:v "10031282" ] ;
+         fhir:display [ fhir:v "Osteoporosis" ]
+       ] [
+         fhir:code [ fhir:v "10033425" ] ;
+         fhir:display [ fhir:v "Pain in extremity" ]
+       ] [
+         fhir:code [ fhir:v "10065793" ] ;
+         fhir:display [ fhir:v "Pelvic soft tissue necrosis" ]
+       ] [
+         fhir:code [ fhir:v "10039020" ] ;
+         fhir:display [ fhir:v "Rhabdomyolysis" ]
+       ] [
+         fhir:code [ fhir:v "10039226" ] ;
+         fhir:display [ fhir:v "Rotator cuff injury" ]
+       ] [
+         fhir:code [ fhir:v "10039722" ] ;
+         fhir:display [ fhir:v "Scoliosis" ]
+       ] [
+         fhir:code [ fhir:v "10065777" ] ;
+         fhir:display [ fhir:v "Soft tissue necrosis lower limb" ]
+       ] [
+         fhir:code [ fhir:v "10065778" ] ;
+         fhir:display [ fhir:v "Soft tissue necrosis upper limb" ]
+       ] [
+         fhir:code [ fhir:v "10065798" ] ;
+         fhir:display [ fhir:v "Superficial soft tissue fibrosis" ]
+       ] [
+         fhir:code [ fhir:v "10044684" ] ;
+         fhir:display [ fhir:v "Trismus" ]
+       ] [
+         fhir:code [ fhir:v "10065738" ] ;
+         fhir:display [ fhir:v "Unequal limb length" ]
+       ] [
+         fhir:code [ fhir:v "10048293" ] ;
+         fhir:display [ fhir:v "Leukemia secondary to oncology chemotherapy" ]
+       ] [
+         fhir:code [ fhir:v "10028533" ] ;
+         fhir:display [ fhir:v "Myelodysplastic syndrome" ]
+       ] [
+         fhir:code [ fhir:v "10029104" ] ;
+         fhir:display [ fhir:v "Neoplasms benign, malignant and unspecified (incl cysts and polyps) - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10040907" ] ;
+         fhir:display [ fhir:v "Skin papilloma" ]
+       ] [
+         fhir:code [ fhir:v "10049737" ] ;
+         fhir:display [ fhir:v "Treatment related secondary malignancy" ]
+       ] [
+         fhir:code [ fhir:v "10055351" ] ;
+         fhir:display [ fhir:v "Tumor hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10045158" ] ;
+         fhir:display [ fhir:v "Tumor pain" ]
+       ] [
+         fhir:code [ fhir:v "10053662" ] ;
+         fhir:display [ fhir:v "Abducens nerve disorder" ]
+       ] [
+         fhir:code [ fhir:v "10060929" ] ;
+         fhir:display [ fhir:v "Accessory nerve disorder" ]
+       ] [
+         fhir:code [ fhir:v "10000521" ] ;
+         fhir:display [ fhir:v "Acoustic nerve disorder NOS" ]
+       ] [
+         fhir:code [ fhir:v "10001540" ] ;
+         fhir:display [ fhir:v "Akathisia" ]
+       ] [
+         fhir:code [ fhir:v "10001949" ] ;
+         fhir:display [ fhir:v "Amnesia" ]
+       ] [
+         fhir:code [ fhir:v "10002653" ] ;
+         fhir:display [ fhir:v "Anosmia" ]
+       ] [
+         fhir:code [ fhir:v "10002953" ] ;
+         fhir:display [ fhir:v "Aphonia" ]
+       ] [
+         fhir:code [ fhir:v "10003074" ] ;
+         fhir:display [ fhir:v "Arachnoiditis" ]
+       ] [
+         fhir:code [ fhir:v "10003591" ] ;
+         fhir:display [ fhir:v "Ataxia" ]
+       ] [
+         fhir:code [ fhir:v "10065417" ] ;
+         fhir:display [ fhir:v "Brachial plexopathy" ]
+       ] [
+         fhir:code [ fhir:v "10065784" ] ;
+         fhir:display [ fhir:v "Central nervous system necrosis" ]
+       ] [
+         fhir:code [ fhir:v "10008164" ] ;
+         fhir:display [ fhir:v "Cerebrospinal fluid leakage" ]
+       ] [
+         fhir:code [ fhir:v "10009845" ] ;
+         fhir:display [ fhir:v "Cognitive disturbance" ]
+       ] [
+         fhir:code [ fhir:v "10010250" ] ;
+         fhir:display [ fhir:v "Concentration impairment" ]
+       ] [
+         fhir:code [ fhir:v "10012373" ] ;
+         fhir:display [ fhir:v "Depressed level of consciousness" ]
+       ] [
+         fhir:code [ fhir:v "10013573" ] ;
+         fhir:display [ fhir:v "Dizziness" ]
+       ] [
+         fhir:code [ fhir:v "10013887" ] ;
+         fhir:display [ fhir:v "Dysarthria" ]
+       ] [
+         fhir:code [ fhir:v "10062872" ] ;
+         fhir:display [ fhir:v "Dysesthesia" ]
+       ] [
+         fhir:code [ fhir:v "10013911" ] ;
+         fhir:display [ fhir:v "Dysgeusia" ]
+       ] [
+         fhir:code [ fhir:v "10013951" ] ;
+         fhir:display [ fhir:v "Dysphasia" ]
+       ] [
+         fhir:code [ fhir:v "10014217" ] ;
+         fhir:display [ fhir:v "Edema cerebral" ]
+       ] [
+         fhir:code [ fhir:v "10014625" ] ;
+         fhir:display [ fhir:v "Encephalopathy" ]
+       ] [
+         fhir:code [ fhir:v "10015832" ] ;
+         fhir:display [ fhir:v "Extrapyramidal disorder" ]
+       ] [
+         fhir:code [ fhir:v "10051272" ] ;
+         fhir:display [ fhir:v "Facial muscle weakness" ]
+       ] [
+         fhir:code [ fhir:v "10061457" ] ;
+         fhir:display [ fhir:v "Facial nerve disorder" ]
+       ] [
+         fhir:code [ fhir:v "10061185" ] ;
+         fhir:display [ fhir:v "Glossopharyngeal nerve disorder" ]
+       ] [
+         fhir:code [ fhir:v "10018767" ] ;
+         fhir:display [ fhir:v "Guillain-Barre syndrome" ]
+       ] [
+         fhir:code [ fhir:v "10019211" ] ;
+         fhir:display [ fhir:v "Headache" ]
+       ] [
+         fhir:code [ fhir:v "10020508" ] ;
+         fhir:display [ fhir:v "Hydrocephalus" ]
+       ] [
+         fhir:code [ fhir:v "10020765" ] ;
+         fhir:display [ fhir:v "Hypersomnia" ]
+       ] [
+         fhir:code [ fhir:v "10061212" ] ;
+         fhir:display [ fhir:v "Hypoglossal nerve disorder" ]
+       ] [
+         fhir:code [ fhir:v "10022763" ] ;
+         fhir:display [ fhir:v "Intracranial hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10023030" ] ;
+         fhir:display [ fhir:v "Ischemia cerebrovascular" ]
+       ] [
+         fhir:code [ fhir:v "10024264" ] ;
+         fhir:display [ fhir:v "Lethargy" ]
+       ] [
+         fhir:code [ fhir:v "10024382" ] ;
+         fhir:display [ fhir:v "Leukoencephalopathy" ]
+       ] [
+         fhir:code [ fhir:v "10027175" ] ;
+         fhir:display [ fhir:v "Memory impairment" ]
+       ] [
+         fhir:code [ fhir:v "10027198" ] ;
+         fhir:display [ fhir:v "Meningismus" ]
+       ] [
+         fhir:code [ fhir:v "10028041" ] ;
+         fhir:display [ fhir:v "Movements involuntary" ]
+       ] [
+         fhir:code [ fhir:v "10065780" ] ;
+         fhir:display [ fhir:v "Muscle weakness left-sided" ]
+       ] [
+         fhir:code [ fhir:v "10065794" ] ;
+         fhir:display [ fhir:v "Muscle weakness right-sided" ]
+       ] [
+         fhir:code [ fhir:v "10028417" ] ;
+         fhir:display [ fhir:v "Myasthenia gravis" ]
+       ] [
+         fhir:code [ fhir:v "10029205" ] ;
+         fhir:display [ fhir:v "Nervous system disorders - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10029223" ] ;
+         fhir:display [ fhir:v "Neuralgia" ]
+       ] [
+         fhir:code [ fhir:v "10029864" ] ;
+         fhir:display [ fhir:v "Nystagmus" ]
+       ] [
+         fhir:code [ fhir:v "10053661" ] ;
+         fhir:display [ fhir:v "Oculomotor nerve disorder" ]
+       ] [
+         fhir:code [ fhir:v "10056388" ] ;
+         fhir:display [ fhir:v "Olfactory nerve disorder" ]
+       ] [
+         fhir:code [ fhir:v "10033987" ] ;
+         fhir:display [ fhir:v "Paresthesia" ]
+       ] [
+         fhir:code [ fhir:v "10034580" ] ;
+         fhir:display [ fhir:v "Peripheral motor neuropathy" ]
+       ] [
+         fhir:code [ fhir:v "10034620" ] ;
+         fhir:display [ fhir:v "Peripheral sensory neuropathy" ]
+       ] [
+         fhir:code [ fhir:v "10056238" ] ;
+         fhir:display [ fhir:v "Phantom pain" ]
+       ] [
+         fhir:code [ fhir:v "10036653" ] ;
+         fhir:display [ fhir:v "Presyncope" ]
+       ] [
+         fhir:code [ fhir:v "10063636" ] ;
+         fhir:display [ fhir:v "Pyramidal tract syndrome" ]
+       ] [
+         fhir:code [ fhir:v "10061928" ] ;
+         fhir:display [ fhir:v "Radiculitis" ]
+       ] [
+         fhir:code [ fhir:v "10038130" ] ;
+         fhir:display [ fhir:v "Recurrent laryngeal nerve palsy" ]
+       ] [
+         fhir:code [ fhir:v "10063761" ] ;
+         fhir:display [ fhir:v "Reversible posterior leukoencephalopathy syndrome" ]
+       ] [
+         fhir:code [ fhir:v "10039906" ] ;
+         fhir:display [ fhir:v "Seizure" ]
+       ] [
+         fhir:code [ fhir:v "10041349" ] ;
+         fhir:display [ fhir:v "Somnolence" ]
+       ] [
+         fhir:code [ fhir:v "10041416" ] ;
+         fhir:display [ fhir:v "Spasticity" ]
+       ] [
+         fhir:code [ fhir:v "10041549" ] ;
+         fhir:display [ fhir:v "Spinal cord compression" ]
+       ] [
+         fhir:code [ fhir:v "10042244" ] ;
+         fhir:display [ fhir:v "Stroke" ]
+       ] [
+         fhir:code [ fhir:v "10042772" ] ;
+         fhir:display [ fhir:v "Syncope" ]
+       ] [
+         fhir:code [ fhir:v "10043245" ] ;
+         fhir:display [ fhir:v "Tendon reflex decreased" ]
+       ] [
+         fhir:code [ fhir:v "10044391" ] ;
+         fhir:display [ fhir:v "Transient ischemic attacks" ]
+       ] [
+         fhir:code [ fhir:v "10044565" ] ;
+         fhir:display [ fhir:v "Tremor" ]
+       ] [
+         fhir:code [ fhir:v "10060890" ] ;
+         fhir:display [ fhir:v "Trigeminal nerve disorder" ]
+       ] [
+         fhir:code [ fhir:v "10074765" ] ;
+         fhir:display [ fhir:v "Trochlear nerve disorder" ]
+       ] [
+         fhir:code [ fhir:v "10061403" ] ;
+         fhir:display [ fhir:v "Vagus nerve disorder" ]
+       ] [
+         fhir:code [ fhir:v "10047166" ] ;
+         fhir:display [ fhir:v "Vasovagal reaction" ]
+       ] [
+         fhir:code [ fhir:v "10054746" ] ;
+         fhir:display [ fhir:v "Fetal growth retardation" ]
+       ] [
+         fhir:code [ fhir:v "10072314" ] ;
+         fhir:display [ fhir:v "Pregnancy loss" ]
+       ] [
+         fhir:code [ fhir:v "10036585" ] ;
+         fhir:display [ fhir:v "Pregnancy, puerperium and perinatal conditions - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10036595" ] ;
+         fhir:display [ fhir:v "Premature delivery" ]
+       ] [
+         fhir:code [ fhir:v "10001497" ] ;
+         fhir:display [ fhir:v "Agitation" ]
+       ] [
+         fhir:code [ fhir:v "10002652" ] ;
+         fhir:display [ fhir:v "Anorgasmia" ]
+       ] [
+         fhir:code [ fhir:v "10002855" ] ;
+         fhir:display [ fhir:v "Anxiety" ]
+       ] [
+         fhir:code [ fhir:v "10010300" ] ;
+         fhir:display [ fhir:v "Confusion" ]
+       ] [
+         fhir:code [ fhir:v "10057066" ] ;
+         fhir:display [ fhir:v "Delayed orgasm" ]
+       ] [
+         fhir:code [ fhir:v "10012218" ] ;
+         fhir:display [ fhir:v "Delirium" ]
+       ] [
+         fhir:code [ fhir:v "10012260" ] ;
+         fhir:display [ fhir:v "Delusions" ]
+       ] [
+         fhir:code [ fhir:v "10012378" ] ;
+         fhir:display [ fhir:v "Depression" ]
+       ] [
+         fhir:code [ fhir:v "10015533" ] ;
+         fhir:display [ fhir:v "Euphoria" ]
+       ] [
+         fhir:code [ fhir:v "10019077" ] ;
+         fhir:display [ fhir:v "Hallucinations" ]
+       ] [
+         fhir:code [ fhir:v "10022437" ] ;
+         fhir:display [ fhir:v "Insomnia" ]
+       ] [
+         fhir:code [ fhir:v "10022998" ] ;
+         fhir:display [ fhir:v "Irritability" ]
+       ] [
+         fhir:code [ fhir:v "10024419" ] ;
+         fhir:display [ fhir:v "Libido decreased" ]
+       ] [
+         fhir:code [ fhir:v "10024421" ] ;
+         fhir:display [ fhir:v "Libido increased" ]
+       ] [
+         fhir:code [ fhir:v "10026749" ] ;
+         fhir:display [ fhir:v "Mania" ]
+       ] [
+         fhir:code [ fhir:v "10034719" ] ;
+         fhir:display [ fhir:v "Personality change" ]
+       ] [
+         fhir:code [ fhir:v "10037175" ] ;
+         fhir:display [ fhir:v "Psychiatric disorders - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10037234" ] ;
+         fhir:display [ fhir:v "Psychosis" ]
+       ] [
+         fhir:code [ fhir:v "10038743" ] ;
+         fhir:display [ fhir:v "Restlessness" ]
+       ] [
+         fhir:code [ fhir:v "10042458" ] ;
+         fhir:display [ fhir:v "Suicidal ideation" ]
+       ] [
+         fhir:code [ fhir:v "10042464" ] ;
+         fhir:display [ fhir:v "Suicide attempt" ]
+       ] [
+         fhir:code [ fhir:v "10069339" ] ;
+         fhir:display [ fhir:v "Acute kidney injury" ]
+       ] [
+         fhir:code [ fhir:v "10063575" ] ;
+         fhir:display [ fhir:v "Bladder perforation" ]
+       ] [
+         fhir:code [ fhir:v "10048994" ] ;
+         fhir:display [ fhir:v "Bladder spasm" ]
+       ] [
+         fhir:code [ fhir:v "10064848" ] ;
+         fhir:display [ fhir:v "Chronic kidney disease" ]
+       ] [
+         fhir:code [ fhir:v "10063057" ] ;
+         fhir:display [ fhir:v "Cystitis noninfective" ]
+       ] [
+         fhir:code [ fhir:v "10013990" ] ;
+         fhir:display [ fhir:v "Dysuria" ]
+       ] [
+         fhir:code [ fhir:v "10068405" ] ;
+         fhir:display [ fhir:v "Glucosuria" ]
+       ] [
+         fhir:code [ fhir:v "10019450" ] ;
+         fhir:display [ fhir:v "Hematuria" ]
+       ] [
+         fhir:code [ fhir:v "10019489" ] ;
+         fhir:display [ fhir:v "Hemoglobinuria" ]
+       ] [
+         fhir:code [ fhir:v "10029164" ] ;
+         fhir:display [ fhir:v "Nephrotic syndrome" ]
+       ] [
+         fhir:code [ fhir:v "10037032" ] ;
+         fhir:display [ fhir:v "Proteinuria" ]
+       ] [
+         fhir:code [ fhir:v "10038359" ] ;
+         fhir:display [ fhir:v "Renal and urinary disorders - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10038385" ] ;
+         fhir:display [ fhir:v "Renal calculi" ]
+       ] [
+         fhir:code [ fhir:v "10038419" ] ;
+         fhir:display [ fhir:v "Renal colic" ]
+       ] [
+         fhir:code [ fhir:v "10038463" ] ;
+         fhir:display [ fhir:v "Renal hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10065368" ] ;
+         fhir:display [ fhir:v "Urinary fistula" ]
+       ] [
+         fhir:code [ fhir:v "10046539" ] ;
+         fhir:display [ fhir:v "Urinary frequency" ]
+       ] [
+         fhir:code [ fhir:v "10046543" ] ;
+         fhir:display [ fhir:v "Urinary incontinence" ]
+       ] [
+         fhir:code [ fhir:v "10046555" ] ;
+         fhir:display [ fhir:v "Urinary retention" ]
+       ] [
+         fhir:code [ fhir:v "10061574" ] ;
+         fhir:display [ fhir:v "Urinary tract obstruction" ]
+       ] [
+         fhir:code [ fhir:v "10062225" ] ;
+         fhir:display [ fhir:v "Urinary tract pain" ]
+       ] [
+         fhir:code [ fhir:v "10046593" ] ;
+         fhir:display [ fhir:v "Urinary urgency" ]
+       ] [
+         fhir:code [ fhir:v "10046628" ] ;
+         fhir:display [ fhir:v "Urine discoloration" ]
+       ] [
+         fhir:code [ fhir:v "10001927" ] ;
+         fhir:display [ fhir:v "Amenorrhea" ]
+       ] [
+         fhir:code [ fhir:v "10003883" ] ;
+         fhir:display [ fhir:v "Azoospermia" ]
+       ] [
+         fhir:code [ fhir:v "10006179" ] ;
+         fhir:display [ fhir:v "Breast atrophy" ]
+       ] [
+         fhir:code [ fhir:v "10006298" ] ;
+         fhir:display [ fhir:v "Breast pain" ]
+       ] [
+         fhir:code [ fhir:v "10013934" ] ;
+         fhir:display [ fhir:v "Dysmenorrhea" ]
+       ] [
+         fhir:code [ fhir:v "10013941" ] ;
+         fhir:display [ fhir:v "Dyspareunia" ]
+       ] [
+         fhir:code [ fhir:v "10014326" ] ;
+         fhir:display [ fhir:v "Ejaculation disorder" ]
+       ] [
+         fhir:code [ fhir:v "10061461" ] ;
+         fhir:display [ fhir:v "Erectile dysfunction" ]
+       ] [
+         fhir:code [ fhir:v "10065789" ] ;
+         fhir:display [ fhir:v "Fallopian tube obstruction" ]
+       ] [
+         fhir:code [ fhir:v "10054382" ] ;
+         fhir:display [ fhir:v "Feminization acquired" ]
+       ] [
+         fhir:code [ fhir:v "10018146" ] ;
+         fhir:display [ fhir:v "Genital edema" ]
+       ] [
+         fhir:code [ fhir:v "10018801" ] ;
+         fhir:display [ fhir:v "Gynecomastia" ]
+       ] [
+         fhir:code [ fhir:v "10060602" ] ;
+         fhir:display [ fhir:v "Hematosalpinx" ]
+       ] [
+         fhir:code [ fhir:v "10022992" ] ;
+         fhir:display [ fhir:v "Irregular menstruation" ]
+       ] [
+         fhir:code [ fhir:v "10061261" ] ;
+         fhir:display [ fhir:v "Lactation disorder" ]
+       ] [
+         fhir:code [ fhir:v "10027313" ] ;
+         fhir:display [ fhir:v "Menorrhagia" ]
+       ] [
+         fhir:code [ fhir:v "10065823" ] ;
+         fhir:display [ fhir:v "Nipple deformity" ]
+       ] [
+         fhir:code [ fhir:v "10030300" ] ;
+         fhir:display [ fhir:v "Oligospermia" ]
+       ] [
+         fhir:code [ fhir:v "10065763" ] ;
+         fhir:display [ fhir:v "Ovarian hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10033279" ] ;
+         fhir:display [ fhir:v "Ovarian rupture" ]
+       ] [
+         fhir:code [ fhir:v "10033314" ] ;
+         fhir:display [ fhir:v "Ovulation pain" ]
+       ] [
+         fhir:code [ fhir:v "10064026" ] ;
+         fhir:display [ fhir:v "Pelvic floor muscle weakness" ]
+       ] [
+         fhir:code [ fhir:v "10034263" ] ;
+         fhir:display [ fhir:v "Pelvic pain" ]
+       ] [
+         fhir:code [ fhir:v "10034310" ] ;
+         fhir:display [ fhir:v "Penile pain" ]
+       ] [
+         fhir:code [ fhir:v "10061339" ] ;
+         fhir:display [ fhir:v "Perineal pain" ]
+       ] [
+         fhir:code [ fhir:v "10036601" ] ;
+         fhir:display [ fhir:v "Premature menopause" ]
+       ] [
+         fhir:code [ fhir:v "10055325" ] ;
+         fhir:display [ fhir:v "Prostatic hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10055026" ] ;
+         fhir:display [ fhir:v "Prostatic obstruction" ]
+       ] [
+         fhir:code [ fhir:v "10036968" ] ;
+         fhir:display [ fhir:v "Prostatic pain" ]
+       ] [
+         fhir:code [ fhir:v "10038604" ] ;
+         fhir:display [ fhir:v "Reproductive system and breast disorders - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10039757" ] ;
+         fhir:display [ fhir:v "Scrotal pain" ]
+       ] [
+         fhir:code [ fhir:v "10065762" ] ;
+         fhir:display [ fhir:v "Spermatic cord hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10065805" ] ;
+         fhir:display [ fhir:v "Spermatic cord obstruction" ]
+       ] [
+         fhir:code [ fhir:v "10043306" ] ;
+         fhir:display [ fhir:v "Testicular disorder" ]
+       ] [
+         fhir:code [ fhir:v "10055347" ] ;
+         fhir:display [ fhir:v "Testicular hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10043345" ] ;
+         fhir:display [ fhir:v "Testicular pain" ]
+       ] [
+         fhir:code [ fhir:v "10065811" ] ;
+         fhir:display [ fhir:v "Uterine fistula" ]
+       ] [
+         fhir:code [ fhir:v "10046789" ] ;
+         fhir:display [ fhir:v "Uterine hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10065928" ] ;
+         fhir:display [ fhir:v "Uterine obstruction" ]
+       ] [
+         fhir:code [ fhir:v "10046809" ] ;
+         fhir:display [ fhir:v "Uterine pain" ]
+       ] [
+         fhir:code [ fhir:v "10046901" ] ;
+         fhir:display [ fhir:v "Vaginal discharge" ]
+       ] [
+         fhir:code [ fhir:v "10046904" ] ;
+         fhir:display [ fhir:v "Vaginal dryness" ]
+       ] [
+         fhir:code [ fhir:v "10065813" ] ;
+         fhir:display [ fhir:v "Vaginal fistula" ]
+       ] [
+         fhir:code [ fhir:v "10046912" ] ;
+         fhir:display [ fhir:v "Vaginal hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10046916" ] ;
+         fhir:display [ fhir:v "Vaginal inflammation" ]
+       ] [
+         fhir:code [ fhir:v "10065817" ] ;
+         fhir:display [ fhir:v "Vaginal obstruction" ]
+       ] [
+         fhir:code [ fhir:v "10046937" ] ;
+         fhir:display [ fhir:v "Vaginal pain" ]
+       ] [
+         fhir:code [ fhir:v "10065818" ] ;
+         fhir:display [ fhir:v "Vaginal perforation" ]
+       ] [
+         fhir:code [ fhir:v "10053496" ] ;
+         fhir:display [ fhir:v "Vaginal stricture" ]
+       ] [
+         fhir:code [ fhir:v "10001409" ] ;
+         fhir:display [ fhir:v "Adult respiratory distress syndrome" ]
+       ] [
+         fhir:code [ fhir:v "10001723" ] ;
+         fhir:display [ fhir:v "Allergic rhinitis" ]
+       ] [
+         fhir:code [ fhir:v "10002972" ] ;
+         fhir:display [ fhir:v "Apnea" ]
+       ] [
+         fhir:code [ fhir:v "10003504" ] ;
+         fhir:display [ fhir:v "Aspiration" ]
+       ] [
+         fhir:code [ fhir:v "10003598" ] ;
+         fhir:display [ fhir:v "Atelectasis" ]
+       ] [
+         fhir:code [ fhir:v "10006437" ] ;
+         fhir:display [ fhir:v "Bronchial fistula" ]
+       ] [
+         fhir:code [ fhir:v "10006440" ] ;
+         fhir:display [ fhir:v "Bronchial obstruction" ]
+       ] [
+         fhir:code [ fhir:v "10063524" ] ;
+         fhir:display [ fhir:v "Bronchial stricture" ]
+       ] [
+         fhir:code [ fhir:v "10053481" ] ;
+         fhir:display [ fhir:v "Bronchopleural fistula" ]
+       ] [
+         fhir:code [ fhir:v "10065746" ] ;
+         fhir:display [ fhir:v "Bronchopulmonary hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10006482" ] ;
+         fhir:display [ fhir:v "Bronchospasm" ]
+       ] [
+         fhir:code [ fhir:v "10051228" ] ;
+         fhir:display [ fhir:v "Chylothorax" ]
+       ] [
+         fhir:code [ fhir:v "10011224" ] ;
+         fhir:display [ fhir:v "Cough" ]
+       ] [
+         fhir:code [ fhir:v "10013963" ] ;
+         fhir:display [ fhir:v "Dyspnea" ]
+       ] [
+         fhir:code [ fhir:v "10015090" ] ;
+         fhir:display [ fhir:v "Epistaxis" ]
+       ] [
+         fhir:code [ fhir:v "10020039" ] ;
+         fhir:display [ fhir:v "Hiccups" ]
+       ] [
+         fhir:code [ fhir:v "10020201" ] ;
+         fhir:display [ fhir:v "Hoarseness" ]
+       ] [
+         fhir:code [ fhir:v "10021143" ] ;
+         fhir:display [ fhir:v "Hypoxia" ]
+       ] [
+         fhir:code [ fhir:v "10023838" ] ;
+         fhir:display [ fhir:v "Laryngeal edema" ]
+       ] [
+         fhir:code [ fhir:v "10065786" ] ;
+         fhir:display [ fhir:v "Laryngeal fistula" ]
+       ] [
+         fhir:code [ fhir:v "10065759" ] ;
+         fhir:display [ fhir:v "Laryngeal hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10065735" ] ;
+         fhir:display [ fhir:v "Laryngeal inflammation" ]
+       ] [
+         fhir:code [ fhir:v "10065880" ] ;
+         fhir:display [ fhir:v "Laryngeal mucositis" ]
+       ] [
+         fhir:code [ fhir:v "10059639" ] ;
+         fhir:display [ fhir:v "Laryngeal obstruction" ]
+       ] [
+         fhir:code [ fhir:v "10023862" ] ;
+         fhir:display [ fhir:v "Laryngeal stenosis" ]
+       ] [
+         fhir:code [ fhir:v "10062667" ] ;
+         fhir:display [ fhir:v "Laryngopharyngeal dysesthesia" ]
+       ] [
+         fhir:code [ fhir:v "10023891" ] ;
+         fhir:display [ fhir:v "Laryngospasm" ]
+       ] [
+         fhir:code [ fhir:v "10056356" ] ;
+         fhir:display [ fhir:v "Mediastinal hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10028735" ] ;
+         fhir:display [ fhir:v "Nasal congestion" ]
+       ] [
+         fhir:code [ fhir:v "10068319" ] ;
+         fhir:display [ fhir:v "Oropharyngeal pain" ]
+       ] [
+         fhir:code [ fhir:v "10034825" ] ;
+         fhir:display [ fhir:v "Pharyngeal fistula" ]
+       ] [
+         fhir:code [ fhir:v "10055315" ] ;
+         fhir:display [ fhir:v "Pharyngeal hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10065881" ] ;
+         fhir:display [ fhir:v "Pharyngeal mucositis" ]
+       ] [
+         fhir:code [ fhir:v "10065706" ] ;
+         fhir:display [ fhir:v "Pharyngeal necrosis" ]
+       ] [
+         fhir:code [ fhir:v "10050028" ] ;
+         fhir:display [ fhir:v "Pharyngeal stenosis" ]
+       ] [
+         fhir:code [ fhir:v "10034844" ] ;
+         fhir:display [ fhir:v "Pharyngolaryngeal pain" ]
+       ] [
+         fhir:code [ fhir:v "10035598" ] ;
+         fhir:display [ fhir:v "Pleural effusion" ]
+       ] [
+         fhir:code [ fhir:v "10055319" ] ;
+         fhir:display [ fhir:v "Pleural hemorrhage" ]
+       ] [
+         fhir:code [ fhir:v "10035623" ] ;
+         fhir:display [ fhir:v "Pleuritic pain" ]
+       ] [
+         fhir:code [ fhir:v "10035742" ] ;
+         fhir:display [ fhir:v "Pneumonitis" ]
+       ] [
+         fhir:code [ fhir:v "10035759" ] ;
+         fhir:display [ fhir:v "Pneumothorax" ]
+       ] [
+         fhir:code [ fhir:v "10036402" ] ;
+         fhir:display [ fhir:v "Postnasal drip" ]
+       ] [
+         fhir:code [ fhir:v "10036790" ] ;
+         fhir:display [ fhir:v "Productive cough" ]
+       ] [
+         fhir:code [ fhir:v "10037375" ] ;
+         fhir:display [ fhir:v "Pulmonary edema" ]
+       ] [
+         fhir:code [ fhir:v "10037383" ] ;
+         fhir:display [ fhir:v "Pulmonary fibrosis" ]
+       ] [
+         fhir:code [ fhir:v "10065873" ] ;
+         fhir:display [ fhir:v "Pulmonary fistula" ]
+       ] [
+         fhir:code [ fhir:v "10037400" ] ;
+         fhir:display [ fhir:v "Pulmonary hypertension" ]
+       ] [
+         fhir:code [ fhir:v "10038695" ] ;
+         fhir:display [ fhir:v "Respiratory failure" ]
+       ] [
+         fhir:code [ fhir:v "10038738" ] ;
+         fhir:display [ fhir:v "Respiratory, thoracic and mediastinal disorders - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10038921" ] ;
+         fhir:display [ fhir:v "Retinoic acid syndrome" ]
+       ] [
+         fhir:code [ fhir:v "10039100" ] ;
+         fhir:display [ fhir:v "Rhinorrhea" ]
+       ] [
+         fhir:code [ fhir:v "10062244" ] ;
+         fhir:display [ fhir:v "Sinus disorder" ]
+       ] [
+         fhir:code [ fhir:v "10040747" ] ;
+         fhir:display [ fhir:v "Sinus pain" ]
+       ] [
+         fhir:code [ fhir:v "10040975" ] ;
+         fhir:display [ fhir:v "Sleep apnea" ]
+       ] [
+         fhir:code [ fhir:v "10041232" ] ;
+         fhir:display [ fhir:v "Sneezing" ]
+       ] [
+         fhir:code [ fhir:v "10041367" ] ;
+         fhir:display [ fhir:v "Sore throat" ]
+       ] [
+         fhir:code [ fhir:v "10042241" ] ;
+         fhir:display [ fhir:v "Stridor" ]
+       ] [
+         fhir:code [ fhir:v "10065787" ] ;
+         fhir:display [ fhir:v "Tracheal fistula" ]
+       ] [
+         fhir:code [ fhir:v "10065900" ] ;
+         fhir:display [ fhir:v "Tracheal mucositis" ]
+       ] [
+         fhir:code [ fhir:v "10050816" ] ;
+         fhir:display [ fhir:v "Tracheal stenosis" ]
+       ] [
+         fhir:code [ fhir:v "10047681" ] ;
+         fhir:display [ fhir:v "Voice alteration" ]
+       ] [
+         fhir:code [ fhir:v "10047924" ] ;
+         fhir:display [ fhir:v "Wheezing" ]
+       ] [
+         fhir:code [ fhir:v "10001760" ] ;
+         fhir:display [ fhir:v "Alopecia" ]
+       ] [
+         fhir:code [ fhir:v "10005901" ] ;
+         fhir:display [ fhir:v "Body odor" ]
+       ] [
+         fhir:code [ fhir:v "10006556" ] ;
+         fhir:display [ fhir:v "Bullous dermatitis" ]
+       ] [
+         fhir:code [ fhir:v "10013786" ] ;
+         fhir:display [ fhir:v "Dry skin" ]
+       ] [
+         fhir:code [ fhir:v "10014184" ] ;
+         fhir:display [ fhir:v "Eczema" ]
+       ] [
+         fhir:code [ fhir:v "10015218" ] ;
+         fhir:display [ fhir:v "Erythema multiforme" ]
+       ] [
+         fhir:code [ fhir:v "10015277" ] ;
+         fhir:display [ fhir:v "Erythroderma" ]
+       ] [
+         fhir:code [ fhir:v "10016241" ] ;
+         fhir:display [ fhir:v "Fat atrophy" ]
+       ] [
+         fhir:code [ fhir:v "10055525" ] ;
+         fhir:display [ fhir:v "Hair color changes" ]
+       ] [
+         fhir:code [ fhir:v "10019049" ] ;
+         fhir:display [ fhir:v "Hair texture abnormal" ]
+       ] [
+         fhir:code [ fhir:v "10020112" ] ;
+         fhir:display [ fhir:v "Hirsutism" ]
+       ] [
+         fhir:code [ fhir:v "10020642" ] ;
+         fhir:display [ fhir:v "Hyperhidrosis" ]
+       ] [
+         fhir:code [ fhir:v "10020649" ] ;
+         fhir:display [ fhir:v "Hyperkeratosis" ]
+       ] [
+         fhir:code [ fhir:v "10020864" ] ;
+         fhir:display [ fhir:v "Hypertrichosis" ]
+       ] [
+         fhir:code [ fhir:v "10021013" ] ;
+         fhir:display [ fhir:v "Hypohidrosis" ]
+       ] [
+         fhir:code [ fhir:v "10062315" ] ;
+         fhir:display [ fhir:v "Lipohypertrophy" ]
+       ] [
+         fhir:code [ fhir:v "10028689" ] ;
+         fhir:display [ fhir:v "Nail changes" ]
+       ] [
+         fhir:code [ fhir:v "10028691" ] ;
+         fhir:display [ fhir:v "Nail discoloration" ]
+       ] [
+         fhir:code [ fhir:v "10049281" ] ;
+         fhir:display [ fhir:v "Nail loss" ]
+       ] [
+         fhir:code [ fhir:v "10062283" ] ;
+         fhir:display [ fhir:v "Nail ridging" ]
+       ] [
+         fhir:code [ fhir:v "10033474" ] ;
+         fhir:display [ fhir:v "Pain of skin" ]
+       ] [
+         fhir:code [ fhir:v "10054524" ] ;
+         fhir:display [ fhir:v "Palmar-plantar erythrodysesthesia syndrome" ]
+       ] [
+         fhir:code [ fhir:v "10034966" ] ;
+         fhir:display [ fhir:v "Photosensitivity" ]
+       ] [
+         fhir:code [ fhir:v "10037087" ] ;
+         fhir:display [ fhir:v "Pruritus" ]
+       ] [
+         fhir:code [ fhir:v "10037549" ] ;
+         fhir:display [ fhir:v "Purpura" ]
+       ] [
+         fhir:code [ fhir:v "10037847" ] ;
+         fhir:display [ fhir:v "Rash acneiform" ]
+       ] [
+         fhir:code [ fhir:v "10037868" ] ;
+         fhir:display [ fhir:v "Rash maculo-papular" ]
+       ] [
+         fhir:code [ fhir:v "10049120" ] ;
+         fhir:display [ fhir:v "Scalp pain" ]
+       ] [
+         fhir:code [ fhir:v "10040785" ] ;
+         fhir:display [ fhir:v "Skin and subcutaneous tissue disorders - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10040799" ] ;
+         fhir:display [ fhir:v "Skin atrophy" ]
+       ] [
+         fhir:code [ fhir:v "10040865" ] ;
+         fhir:display [ fhir:v "Skin hyperpigmentation" ]
+       ] [
+         fhir:code [ fhir:v "10040868" ] ;
+         fhir:display [ fhir:v "Skin hypopigmentation" ]
+       ] [
+         fhir:code [ fhir:v "10051837" ] ;
+         fhir:display [ fhir:v "Skin induration" ]
+       ] [
+         fhir:code [ fhir:v "10040947" ] ;
+         fhir:display [ fhir:v "Skin ulceration" ]
+       ] [
+         fhir:code [ fhir:v "10042033" ] ;
+         fhir:display [ fhir:v "Stevens-Johnson syndrome" ]
+       ] [
+         fhir:code [ fhir:v "10042344" ] ;
+         fhir:display [ fhir:v "Subcutaneous emphysema" ]
+       ] [
+         fhir:code [ fhir:v "10043189" ] ;
+         fhir:display [ fhir:v "Telangiectasia" ]
+       ] [
+         fhir:code [ fhir:v "10044223" ] ;
+         fhir:display [ fhir:v "Toxic epidermal necrolysis" ]
+       ] [
+         fhir:code [ fhir:v "10046735" ] ;
+         fhir:display [ fhir:v "Urticaria" ]
+       ] [
+         fhir:code [ fhir:v "10041244" ] ;
+         fhir:display [ fhir:v "Social circumstances - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10042613" ] ;
+         fhir:display [ fhir:v "Surgical and medical procedures - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10073529" ] ;
+         fhir:display [ fhir:v "Arterial thromboembolism" ]
+       ] [
+         fhir:code [ fhir:v "10007196" ] ;
+         fhir:display [ fhir:v "Capillary leak syndrome" ]
+       ] [
+         fhir:code [ fhir:v "10016825" ] ;
+         fhir:display [ fhir:v "Flushing" ]
+       ] [
+         fhir:code [ fhir:v "10019428" ] ;
+         fhir:display [ fhir:v "Hematoma" ]
+       ] [
+         fhir:code [ fhir:v "10020407" ] ;
+         fhir:display [ fhir:v "Hot flashes" ]
+       ] [
+         fhir:code [ fhir:v "10020772" ] ;
+         fhir:display [ fhir:v "Hypertension" ]
+       ] [
+         fhir:code [ fhir:v "10021097" ] ;
+         fhir:display [ fhir:v "Hypotension" ]
+       ] [
+         fhir:code [ fhir:v "10065773" ] ;
+         fhir:display [ fhir:v "Lymph leakage" ]
+       ] [
+         fhir:code [ fhir:v "10025233" ] ;
+         fhir:display [ fhir:v "Lymphedema" ]
+       ] [
+         fhir:code [ fhir:v "10048642" ] ;
+         fhir:display [ fhir:v "Lymphocele" ]
+       ] [
+         fhir:code [ fhir:v "10034578" ] ;
+         fhir:display [ fhir:v "Peripheral ischemia" ]
+       ] [
+         fhir:code [ fhir:v "10034879" ] ;
+         fhir:display [ fhir:v "Phlebitis" ]
+       ] [
+         fhir:code [ fhir:v "10042554" ] ;
+         fhir:display [ fhir:v "Superficial thrombophlebitis" ]
+       ] [
+         fhir:code [ fhir:v "10042569" ] ;
+         fhir:display [ fhir:v "Superior vena cava syndrome" ]
+       ] [
+         fhir:code [ fhir:v "10043565" ] ;
+         fhir:display [ fhir:v "Thromboembolic event" ]
+       ] [
+         fhir:code [ fhir:v "10047065" ] ;
+         fhir:display [ fhir:v "Vascular disorders - Other, specify" ]
+       ] [
+         fhir:code [ fhir:v "10047115" ] ;
+         fhir:display [ fhir:v "Vasculitis" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

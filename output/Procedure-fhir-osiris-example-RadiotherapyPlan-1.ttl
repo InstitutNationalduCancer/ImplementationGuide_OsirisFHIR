@@ -1,0 +1,176 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Procedure/fhir-osiris-example-RadiotherapyPlan-1> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir-osiris-example-RadiotherapyPlan-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-plan"^^xsd:anyURI ;
+       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-plan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"fhir-osiris-example-RadiotherapyPlan-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;fhir-osiris-example-RadiotherapyPlan-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-radiotherapy-plan.html\">Radiotherapy Plan</a></p></div><p><b>Number of Fractions</b>: 16</p><p><b>Algorith mName</b>: Unknown</p><blockquote><p><b>Connection with the imaging module</b></p><blockquote><p><b>url</b></p><code>seriesUID</code></blockquote><p><b>value</b>: Unknown</p><blockquote><p><b>url</b></p><code>rtStructUID</code></blockquote><p><b>value</b>: <a href=\"Observation-fhir-osiris-example-ROISegmentation.html\">Observation/fhir-osiris-example-ROISegmentation</a></p></blockquote><blockquote><p><b>Dose To Volume</b></p><blockquote><p><b>url</b></p><code>rtDoseUID</code></blockquote><p><b>value</b>: Unknown</p><blockquote><p><b>url</b></p><code>volume</code></blockquote><p><b>value</b>: <a href=\"BodyStructure-fhir-osiris-example-RadiotherapyVolume-1.html\">BodyStructure/fhir-osiris-example-RadiotherapyVolume-1</a></p><blockquote><p><b>url</b></p><code>fractionDose</code></blockquote><p><b>value</b>: 266</p><blockquote><p><b>url</b></p><a href=\"StructureDefinition-numberOfFractions.html\">Number of Fractions</a></blockquote><p><b>value</b>: 16</p><blockquote><p><b>url</b></p><code>totalDose</code></blockquote><p><b>value</b>: 4256</p></blockquote><blockquote><p><b>Modality And Technique</b></p><blockquote><p><b>url</b></p><code>radiotherapyModality</code></blockquote><p><b>value</b>: External beam radiation therapy using photons (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1156506007)</span></p><blockquote><p><b>url</b></p><code>radiotherapyTechnique</code></blockquote><p><b>value</b>: Three dimensional external beam radiation therapy (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-SnomedRequestedCSmcode.html\">Requested SNOMED Codes Code System</a>#1162782007)</span></p><blockquote><p><b>url</b></p><code>radiotherapyTreatmentMachinePlanned</code></blockquote><p><b>value</b>: Unknown</p></blockquote><blockquote><p><b>Dose To Volume</b></p><blockquote><p><b>url</b></p><code>volume</code></blockquote><p><b>value</b>: <a href=\"BodyStructure-fhir-osiris-example-RadiotherapyVolume-2.html\">BodyStructure/fhir-osiris-example-RadiotherapyVolume-2</a></p><blockquote><p><b>url</b></p><code>fractionDose</code></blockquote><p><b>value</b>: 266</p><blockquote><p><b>url</b></p><a href=\"StructureDefinition-numberOfFractions.html\">Number of Fractions</a></blockquote><p><b>value</b>: 16</p><blockquote><p><b>url</b></p><code>totalDose</code></blockquote><p><b>value</b>: 4256</p></blockquote><blockquote><p><b>Dose To Volume</b></p><blockquote><p><b>url</b></p><code>volume</code></blockquote><p><b>value</b>: <a href=\"BodyStructure-fhir-osiris-example-RadiotherapyVolume-3.html\">BodyStructure/fhir-osiris-example-RadiotherapyVolume-3</a></p><blockquote><p><b>url</b></p><code>fractionDose</code></blockquote><p><b>value</b>: 266</p><blockquote><p><b>url</b></p><a href=\"StructureDefinition-numberOfFractions.html\">Number of Fractions</a></blockquote><p><b>value</b>: 16</p><blockquote><p><b>url</b></p><code>totalDose</code></blockquote><p><b>value</b>: 4256</p></blockquote><blockquote><p><b>Energy Or Isotope</b></p><blockquote><p><b>url</b></p><code>quantityEnergyOrIsotope</code></blockquote><p><b>value</b>: 999999</p><blockquote><p><b>url</b></p><code>nameEnergyOrIsotope</code></blockquote><p><b>value</b>: Unknown</p></blockquote><p><b>identifier</b>: MR: Unknown</p><p><b>partOf</b>: <a href=\"Procedure-fhir-osiris-example-RadiotherapyPhase-1.html\">Procedure/fhir-osiris-example-RadiotherapyPhase-1</a></p><p><b>status</b>: completed</p><p><b>category</b>: Planified <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-RadiotherapyCS.html\">Radiotherapy Code System</a>#Planned)</span></p><p><b>code</b>: Radiotherapy treatment plan (regime/therapy) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1255724003)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><p><b>performed</b>: 2018-08-15 --&gt; 2018-11-25</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/numberOfFractions"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "16"^^xsd:nonNegativeInteger ]
+  ] [
+     fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/algorithmName"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Unknown" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "seriesUID"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Unknown" ]
+     ] [
+       fhir:url [ fhir:v "rtStructUID"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Observation/fhir-osiris-example-ROISegmentation> ;
+         fhir:reference [ fhir:v "Observation/fhir-osiris-example-ROISegmentation" ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/basedOn"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "rtDoseUID"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Unknown" ]
+     ] [
+       fhir:url [ fhir:v "volume"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/BodyStructure/fhir-osiris-example-RadiotherapyVolume-1> ;
+         fhir:reference [ fhir:v "BodyStructure/fhir-osiris-example-RadiotherapyVolume-1" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "fractionDose"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "266" ]
+     ] [
+       fhir:url [ fhir:v "numberOfFractions"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "16"^^xsd:nonNegativeInteger ]
+     ] [
+       fhir:url [ fhir:v "totalDose"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "4256" ]
+     ] ) ;
+     fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/doseToVolume"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "radiotherapyModality"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:1156506007 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "1156506007" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "radiotherapyTechnique"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/us/mcode/CodeSystem/snomed-requested-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "1162782007" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "radiotherapyTreatmentMachinePlanned"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Unknown" ]
+     ] ) ;
+     fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/modalityAndTechnique"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "volume"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/BodyStructure/fhir-osiris-example-RadiotherapyVolume-2> ;
+         fhir:reference [ fhir:v "BodyStructure/fhir-osiris-example-RadiotherapyVolume-2" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "fractionDose"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "266" ]
+     ] [
+       fhir:url [ fhir:v "numberOfFractions"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "16"^^xsd:nonNegativeInteger ]
+     ] [
+       fhir:url [ fhir:v "totalDose"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "4256" ]
+     ] ) ;
+     fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/doseToVolume"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "volume"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/BodyStructure/fhir-osiris-example-RadiotherapyVolume-3> ;
+         fhir:reference [ fhir:v "BodyStructure/fhir-osiris-example-RadiotherapyVolume-3" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "fractionDose"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "266" ]
+     ] [
+       fhir:url [ fhir:v "numberOfFractions"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "16"^^xsd:nonNegativeInteger ]
+     ] [
+       fhir:url [ fhir:v "totalDose"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "4256" ]
+     ] ) ;
+     fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/doseToVolume"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "quantityEnergyOrIsotope"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "999999"^^xsd:decimal ]
+       ]
+     ] [
+       fhir:url [ fhir:v "nameEnergyOrIsotope"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Unknown" ]
+     ] ) ;
+     fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/energyOrIsotope"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:code [ fhir:v "MR" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Unknown" ]
+  ] ) ; # 
+  fhir:partOf ( [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Procedure/fhir-osiris-example-RadiotherapyPhase-1> ;
+     fhir:reference [ fhir:v "Procedure/fhir-osiris-example-RadiotherapyPhase-1" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/RadiotherapyCS"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Planned" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:1255724003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1255724003" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/L304> ;
+     fhir:reference [ fhir:v "Patient/L304" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2018-08-15"^^xsd:date ] ;
+     fhir:end [ fhir:v "2018-11-25"^^xsd:date ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Observation/fhir-osiris-example-RadiomicsImageFilter> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir-osiris-example-RadiomicsImageFilter"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-Image-filters"^^xsd:anyURI ;
+       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-Image-filters>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"fhir-osiris-example-RadiomicsImageFilter\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;fhir-osiris-example-RadiomicsImageFilter&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-radiomics-Image-filters.html\">Radiomics Image Filters</a></p></div><blockquote><p><b>Radiomics Image Filters Settings</b></p><blockquote><p><b>url</b></p><code>softwareName</code></blockquote><p><b>value</b>: PyRadiomics</p><blockquote><p><b>url</b></p><code>softwareVersion</code></blockquote><p><b>value</b>: v3.0.1</p><blockquote><p><b>url</b></p><code>filterMethod</code></blockquote><p><b>value</b>: mean</p><blockquote><p><b>url</b></p><code>filterType</code></blockquote><p><b>value</b>: 3D volume</p><blockquote><p><b>url</b></p><code>filterInterpolation</code></blockquote><p><b>value</b>: None</p><blockquote><p><b>url</b></p><code>intensityRounding</code></blockquote><blockquote><p><b>url</b></p><code>boundaryCondition</code></blockquote><p><b>value</b>: zero padding</p></blockquote><p><b>partOf</b>: <a href=\"fhir-osiris-example-imagingstudy\">fhir-osiris-example-imagingstudy</a></p><p><b>status</b>: final</p><p><b>code</b>: Diagnostic imaging report - example sections and entries <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#85430-7)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><p><b>note</b>: 1.3.12.2.1107.5.8.15.131606.30000020020620243975600000856</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "softwareName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "PyRadiomics" ]
+     ] [
+       fhir:url [ fhir:v "softwareVersion"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "v3.0.1" ]
+     ] [
+       fhir:url [ fhir:v "filterMethod"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "mean" ]
+     ] [
+       fhir:url [ fhir:v "filterType"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "3D volume" ]
+     ] [
+       fhir:url [ fhir:v "filterInterpolation"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "None" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "valueString"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "linear" ]
+       ] [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:url [ fhir:v "intensityRounding"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "boundaryCondition"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "zero padding" ]
+     ] ) ;
+     fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-image-filters-settings"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:partOf ( [
+     fhir:reference [ fhir:v "fhir-osiris-example-imagingstudy" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:85430-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "85430-7" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/L304> ;
+     fhir:reference [ fhir:v "Patient/L304" ]
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "1.3.12.2.1107.5.8.15.131606.30000020020620243975600000856" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

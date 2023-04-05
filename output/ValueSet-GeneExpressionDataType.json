@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "GeneExpressionDataType",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://github.com/siric-osiris/OSIRIS</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>O84-1</td><td>RawExpression</td></tr><tr><td>O84-2</td><td>NormalizedExpression</td></tr><tr><td>O84-3</td><td>TPMExpression</td></tr><tr><td>O84-4</td><td>RPKMExpression</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GeneExpressionDataType",
+  "version" : "2.1.0",
+  "name" : "GeneExpressionDataType",
+  "title" : "Gene Expression Data Type Value Set",
+  "status" : "active",
+  "date" : "2023-03-28T12:16:37+02:00",
+  "publisher" : "Arkhn",
+  "contact" : [{
+    "name" : "Arkhn",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://arkhn.com"
+    },
+    {
+      "system" : "email",
+      "value" : "contact@arkhn.com"
+    }]
+  },
+  {
+    "name" : "Nicolas Riss",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "nicolas@arkhn.com"
+    }]
+  }],
+  "description" : "Gene Expression Data Type",
+  "compose" : {
+    "include" : [{
+      "system" : "https://github.com/siric-osiris/OSIRIS",
+      "concept" : [{
+        "code" : "O84-1",
+        "display" : "RawExpression"
+      },
+      {
+        "code" : "O84-2",
+        "display" : "NormalizedExpression"
+      },
+      {
+        "code" : "O84-3",
+        "display" : "TPMExpression"
+      },
+      {
+        "code" : "O84-4",
+        "display" : "RPKMExpression"
+      }]
+    }]
+  }
+}
