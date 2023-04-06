@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.183"}
-    h3,h4,h5,h6{--heading-prefix:"5.183"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.187"}
+    h3,h4,h5,h6{--heading-prefix:"5.187"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -145,7 +145,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v2.1.0). See the <a href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
 
 
 
@@ -215,81 +215,99 @@
 
   <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix loinc: &lt;https://loinc.org/rdf/&gt; .
+@prefix loinc: &lt;http://loinc.org/rdf#&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 # - resource -------------------------------------------------------------------
 
- a fhir:Observation ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;fhir-osiris-example-sequencinganalysis-3&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-analysis&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-analysis&gt;     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name=\&quot;fhir-osiris-example-sequencinganalysis-3\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Observation &amp;quot;fhir-osiris-example-sequencinganalysis-3&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-sequencing-analysis.html\&quot;&gt;Sequencing Analysis&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Omic &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-OsirisCS.html\&quot;&gt;Osiris code system&lt;/a&gt;#C37-3)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-L304.html\&quot;&gt;Patient/L304&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\&quot;Condition-fhir-osiris-example-TumorPathologyEvent-instance-2.html\&quot;&gt;Condition/fhir-osiris-example-TumorPathologyEvent-instance-2&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2018-02-07&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: O6-12 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (OSIRIS#O6-12)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;specimen&lt;/b&gt;: &lt;a href=\&quot;Specimen-fhir-osiris-example-biologicalsample-2.html\&quot;&gt;Specimen/fhir-osiris-example-biologicalsample-2&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;device&lt;/b&gt;: &lt;a href=\&quot;Device-fhir-osiris-example-sequencingdevice-3.html\&quot;&gt;Device/fhir-osiris-example-sequencingdevice-3&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: C0162801 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\&quot;&gt;Unified Medical Language System&lt;/a&gt;#C0162801)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: sbd54dsf57s&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: 258049002 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\&quot;&gt;Unified Medical Language System&lt;/a&gt;#258049002)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 2018-02-09&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Intrachromosomal breakpoint &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#LA26327-9)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 320&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: C3260254 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\&quot;&gt;Unified Medical Language System&lt;/a&gt;#C3260254)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: C0032246 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\&quot;&gt;Unified Medical Language System&lt;/a&gt;#C0032246)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://terminology.arkhn.com/osiris&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C37-3&quot; ]     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/L304&quot; ]
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.focus">fhir:focus</a> ( [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Condition/fhir-osiris-example-TumorPathologyEvent-instance-2&quot; ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:effective</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2018-02-07&quot;^^xsd:date] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.method">fhir:method</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://github.com/siric-osiris/OSIRIS&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;O6-12&quot; ]     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.specimen">fhir:specimen</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Specimen/fhir-osiris-example-biologicalsample-2&quot; ]
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.device">fhir:device</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Device/fhir-osiris-example-sequencingdevice-3&quot; ]
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.component">fhir:component</a> ( [
-<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">fhir:code</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/umls&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C0162801&quot; ]       ] )     ] ;
-<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;sbd54dsf57s&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">fhir:code</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/umls&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;258049002&quot; ]       ] )     ] ;
-<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2018-02-09&quot;^^xsd:date ]
-  ] [
-<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">fhir:code</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-a loinc:LA26327-9 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;LA26327-9&quot; ]       ] )     ] ;
-<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value[x]">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">a</a> fhir:Quantity ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:v</a> &quot;320&quot;^^xsd:decimal ]     ]
-  ] [
-<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">fhir:code</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/umls&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C3260254&quot; ]       ] )     ]
-  ] [
-<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">fhir:code</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/umls&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C0032246&quot; ]       ] )     ]
-  ] ) . # 
+ a fhir:Observation;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;fhir-osiris-example-sequencinganalysis-3&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-analysis&quot;;
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-analysis&gt;     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name=\&quot;fhir-osiris-example-sequencinganalysis-3\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Observation &amp;quot;fhir-osiris-example-sequencinganalysis-3&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-sequencing-analysis.html\&quot;&gt;Sequencing Analysis&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Omic &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-OsirisCS.html\&quot;&gt;Osiris code system&lt;/a&gt;#C37-3)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-L304.html\&quot;&gt;Patient/L304&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\&quot;Condition-fhir-osiris-example-TumorPathologyEvent-instance-2.html\&quot;&gt;Condition/fhir-osiris-example-TumorPathologyEvent-instance-2&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2018-02-07&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: O6-12 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (OSIRIS#O6-12)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;specimen&lt;/b&gt;: &lt;a href=\&quot;Specimen-fhir-osiris-example-biologicalsample-2.html\&quot;&gt;Specimen/fhir-osiris-example-biologicalsample-2&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;device&lt;/b&gt;: &lt;a href=\&quot;Device-fhir-osiris-example-sequencingdevice-3.html\&quot;&gt;Device/fhir-osiris-example-sequencingdevice-3&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: C0162801 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\&quot;&gt;Unified Medical Language System&lt;/a&gt;#C0162801)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: sbd54dsf57s&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: 258049002 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\&quot;&gt;Unified Medical Language System&lt;/a&gt;#258049002)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 2018-02-09&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Intrachromosomal breakpoint &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#LA26327-9)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 320&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: C3260254 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\&quot;&gt;Unified Medical Language System&lt;/a&gt;#C3260254)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: C0032246 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\&quot;&gt;Unified Medical Language System&lt;/a&gt;#C0032246)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:Observation.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;final&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:Observation.code</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.arkhn.com/osiris&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C37-3&quot; ]     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:Observation.subject</a> [
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/L304&quot; ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.focus">fhir:Observation.focus</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Condition/fhir-osiris-example-TumorPathologyEvent-instance-2&quot; ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:Observation.effectiveDateTime</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2018-02-07&quot;^^xsd:date]; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.method">fhir:Observation.method</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://github.com/siric-osiris/OSIRIS&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;O6-12&quot; ]     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.specimen">fhir:Observation.specimen</a> [
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Specimen/fhir-osiris-example-biologicalsample-2&quot; ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.device">fhir:Observation.device</a> [
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Device/fhir-osiris-example-sequencingdevice-3&quot; ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.component">fhir:Observation.component</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">fhir:Observation.component.code</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/umls&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C0162801&quot; ]       ]     ];
+     <a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value[x]">fhir:Observation.component.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;sbd54dsf57s&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+     <a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">fhir:Observation.component.code</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/umls&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;258049002&quot; ]       ]     ];
+     <a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value[x]">fhir:Observation.component.valueDateTime</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2018-02-09&quot;^^xsd:date ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2;
+     <a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">fhir:Observation.component.code</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         a loinc:LA26327-9;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://loinc.org&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;LA26327-9&quot; ]       ]     ];
+     <a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value[x]">fhir:Observation.component.valueQuantity</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;320&quot;^^xsd:decimal ]     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3;
+     <a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">fhir:Observation.component.code</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/umls&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C3260254&quot; ]       ]     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4;
+     <a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">fhir:Observation.component.code</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/umls&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C0032246&quot; ]       ]     ]
+  ]. # 
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
 
 </code></pre>
 
@@ -322,7 +340,7 @@ a loinc:LA26327-9 ;
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 28, 2023 12:16+0200">2023-03-28</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 6, 2023 18:12+0200">2023-04-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

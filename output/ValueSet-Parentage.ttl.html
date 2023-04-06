@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.91"}
-    h3,h4,h5,h6{--heading-prefix:"5.91"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.95"}
+    h3,h4,h5,h6{--heading-prefix:"5.95"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -145,7 +145,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v2.1.0). See the <a href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
 
 
 
@@ -199,7 +199,7 @@
         
           Active
           
-            as of 2023-03-28
+            as of 2023-04-06
           
         
       </td>
@@ -223,85 +223,119 @@
 
 # - resource -------------------------------------------------------------------
 
- a fhir:ValueSet ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Parentage&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\&quot;&gt;&lt;code&gt;http://terminology.hl7.org/CodeSystem/umls&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C0037047&lt;/td&gt;&lt;td&gt;Sibling&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C0030551&lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C0015671&lt;/td&gt;&lt;td&gt;Father&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C0026591&lt;/td&gt;&lt;td&gt;Mother&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C3844804&lt;/td&gt;&lt;td&gt;Paternal cousin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C3844805&lt;/td&gt;&lt;td&gt;Maternal cousin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C3242761&lt;/td&gt;&lt;td&gt;Maternal grandparent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C3242764&lt;/td&gt;&lt;td&gt;Paternal grandparent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C1273524&lt;/td&gt;&lt;td&gt;Paternal grandmother&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C1273525&lt;/td&gt;&lt;td&gt;Maternal grandmother&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C1273523&lt;/td&gt;&lt;td&gt;Maternal grandfather&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C1273522&lt;/td&gt;&lt;td&gt;Paternal grandfather&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C0337471&lt;/td&gt;&lt;td&gt;Grandparent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C0337577&lt;/td&gt;&lt;td&gt;Uncle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C3714276&lt;/td&gt;&lt;td&gt;Paternal uncle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C3714277&lt;/td&gt;&lt;td&gt;Maternal uncle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C0337576&lt;/td&gt;&lt;td&gt;Aunt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C3714274&lt;/td&gt;&lt;td&gt;Paternal aunt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C3714275&lt;/td&gt;&lt;td&gt;Maternal aunt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C0337580&lt;/td&gt;&lt;td&gt;Cousin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C0439673&lt;/td&gt;&lt;td&gt;Unknown&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;https://github.com/siric-osiris/OSIRIS&lt;/code&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C77-6&lt;/td&gt;&lt;td&gt;Other&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Parentage&quot;^^xsd:anyURI] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;2.1.0&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Parentage&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Parentage Value Set&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-03-28T12:16:37+02:00&quot;^^xsd:dateTime] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arkhn&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:contact</a> ( [
-<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arkhn&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://arkhn.com&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;contact@arkhn.com&quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Nicolas Riss&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;nicolas@arkhn.com&quot; ]     ] )
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Parentage&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">fhir:compose</a> [
-    ( <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:include</a> [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/umls&quot;^^xsd:anyURI ] ;
-      ( <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:concept</a> [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C0037047&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sibling&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C0030551&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Parent&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C0015671&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Father&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C0026591&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Mother&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C3844804&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Paternal cousin&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C3844805&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Maternal cousin&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C3242761&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Maternal grandparent&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C3242764&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Paternal grandparent&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C1273524&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Paternal grandmother&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C1273525&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Maternal grandmother&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C1273523&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Maternal grandfather&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C1273522&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Paternal grandfather&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C0337471&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Grandparent&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C0337577&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Uncle&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C3714276&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Paternal uncle&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C3714277&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Maternal uncle&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C0337576&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aunt&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C3714274&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Paternal aunt&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C3714275&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Maternal aunt&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C0337580&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Cousin&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C0439673&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unknown&quot; ]       ] )     ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://github.com/siric-osiris/OSIRIS&quot;^^xsd:anyURI ] ;
-      ( <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:concept</a> [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;C77-6&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Other&quot; ]       ] )     ] )
-  ] . # 
+ a fhir:ValueSet;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Parentage&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\&quot;&gt;&lt;code&gt;http://terminology.hl7.org/CodeSystem/umls&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C0037047&lt;/td&gt;&lt;td&gt;Sibling&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C0030551&lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C0015671&lt;/td&gt;&lt;td&gt;Father&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C0026591&lt;/td&gt;&lt;td&gt;Mother&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C3844804&lt;/td&gt;&lt;td&gt;Paternal cousin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C3844805&lt;/td&gt;&lt;td&gt;Maternal cousin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C3242761&lt;/td&gt;&lt;td&gt;Maternal grandparent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C3242764&lt;/td&gt;&lt;td&gt;Paternal grandparent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C1273524&lt;/td&gt;&lt;td&gt;Paternal grandmother&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C1273525&lt;/td&gt;&lt;td&gt;Maternal grandmother&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C1273523&lt;/td&gt;&lt;td&gt;Maternal grandfather&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C1273522&lt;/td&gt;&lt;td&gt;Paternal grandfather&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C0337471&lt;/td&gt;&lt;td&gt;Grandparent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C0337577&lt;/td&gt;&lt;td&gt;Uncle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C3714276&lt;/td&gt;&lt;td&gt;Paternal uncle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C3714277&lt;/td&gt;&lt;td&gt;Maternal uncle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C0337576&lt;/td&gt;&lt;td&gt;Aunt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C3714274&lt;/td&gt;&lt;td&gt;Paternal aunt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C3714275&lt;/td&gt;&lt;td&gt;Maternal aunt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C0337580&lt;/td&gt;&lt;td&gt;Cousin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C0439673&lt;/td&gt;&lt;td&gt;Unknown&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;https://github.com/siric-osiris/OSIRIS&lt;/code&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C77-6&lt;/td&gt;&lt;td&gt;Other&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Parentage&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;2.1.0&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Parentage&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Parentage Value Set&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2023-04-06T18:12:15+02:00&quot;^^xsd:dateTime]; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Arkhn&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Arkhn&quot; ];
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;http://arkhn.com&quot; ]     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;email&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;contact@arkhn.com&quot; ]     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Nicolas Riss&quot; ];
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;email&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;nicolas@arkhn.com&quot; ]     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">fhir:ValueSet.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Parentage&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">fhir:ValueSet.compose</a> [
+     <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:ValueSet.compose.include</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/umls&quot; ];
+       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:ValueSet.compose.include.concept</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C0037047&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Sibling&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C0030551&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Parent&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C0015671&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Father&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C0026591&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Mother&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C3844804&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Paternal cousin&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 5;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C3844805&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Maternal cousin&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 6;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C3242761&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Maternal grandparent&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 7;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C3242764&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Paternal grandparent&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 8;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C1273524&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Paternal grandmother&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 9;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C1273525&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Maternal grandmother&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 10;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C1273523&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Maternal grandfather&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 11;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C1273522&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Paternal grandfather&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 12;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C0337471&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Grandparent&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 13;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C0337577&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Uncle&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 14;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C3714276&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Paternal uncle&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 15;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C3714277&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Maternal uncle&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 16;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C0337576&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Aunt&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 17;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C3714274&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Paternal aunt&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 18;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C3714275&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Maternal aunt&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 19;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C0337580&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Cousin&quot; ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 20;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C0439673&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Unknown&quot; ]       ]     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://github.com/siric-osiris/OSIRIS&quot; ];
+       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:ValueSet.compose.include.concept</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;C77-6&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Other&quot; ]       ]     ]
+  ]. # 
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
 
 </code></pre>
 
@@ -334,7 +368,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 28, 2023 12:16+0200">2023-03-28</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 6, 2023 18:12+0200">2023-04-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

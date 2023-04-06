@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "CytoBand",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>http://genome.ucsc.edu/</code></li></ul></div>"
+  },
+  "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/CytoBand",
+  "version" : "2.1.0",
+  "name" : "CytoBand",
+  "title" : "CytoBand Value Set",
+  "status" : "active",
+  "date" : "2023-04-06T18:12:15+02:00",
+  "publisher" : "Arkhn",
+  "contact" : [{
+    "name" : "Arkhn",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://arkhn.com"
+    },
+    {
+      "system" : "email",
+      "value" : "contact@arkhn.com"
+    }]
+  },
+  {
+    "name" : "Nicolas Riss",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "nicolas@arkhn.com"
+    }]
+  }],
+  "description" : "CytoBand",
+  "compose" : {
+    "include" : [{
+      "system" : "http://genome.ucsc.edu/"
+    }]
+  }
+}

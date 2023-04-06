@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="CytoBand"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <code>http://genome.ucsc.edu/</code></li></ul></div>
+  </text>
+  <url value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/CytoBand"/>
+  <version value="2.1.0"/>
+  <name value="CytoBand"/>
+  <title value="CytoBand Value Set"/>
+  <status value="active"/>
+  <date value="2023-04-06T18:12:15+02:00"/>
+  <publisher value="Arkhn"/>
+  <contact>
+    <name value="Arkhn"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://arkhn.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="contact@arkhn.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nicolas Riss"/>
+    <telecom>
+      <system value="email"/>
+      <value value="nicolas@arkhn.com"/>
+    </telecom>
+  </contact>
+  <description value="CytoBand"/>
+  <compose>
+    <include>
+      <system value="http://genome.ucsc.edu/"/>
+    </include>
+  </compose>
+</ValueSet>

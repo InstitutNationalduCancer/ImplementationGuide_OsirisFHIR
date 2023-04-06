@@ -5,94 +5,122 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/TechnicalProtocol> a fhir:ValueSet ;
-  fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "TechnicalProtocol"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://github.com/siric-osiris/OSIRIS</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>O6-1</td><td>ChIP-on-Chip</td></tr><tr><td>O6-2</td><td>ChIP-seq</td></tr><tr><td>O6-3</td><td>DNA microarray</td></tr><tr><td>O6-4</td><td>DNA targeted panel sequencing</td></tr><tr><td>O6-5</td><td>Exome sequencing</td></tr><tr><td>O6-6</td><td>Mass spectrometry</td></tr><tr><td>O6-7</td><td>MeDIP-Chip</td></tr><tr><td>O6-8</td><td>MeDIP-seq</td></tr><tr><td>O6-9</td><td>Methylation microarray</td></tr><tr><td>O6-10</td><td>RNA microarray</td></tr><tr><td>O6-11</td><td>RNA targeted panel sequencing</td></tr><tr><td>O6-12</td><td>RNA-seq</td></tr><tr><td>O6-13</td><td>RPPA</td></tr><tr><td>O6-14</td><td>Whole genome bisulfite sequencing</td></tr><tr><td>O6-15</td><td>Whole genome sequencing</td></tr><tr><td>O6-16</td><td>miRNA microarray</td></tr><tr><td>O6-OTH</td><td>Other</td></tr></table></li></ul></div>"
-  ] ; # 
-  fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/TechnicalProtocol"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.1.0"] ; # 
-  fhir:name [ fhir:v "TechnicalProtocol"] ; # 
-  fhir:title [ fhir:v "Analysis Technical Protocol"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-03-28T12:16:37+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Arkhn"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "Arkhn" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://arkhn.com" ]
-     ] [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "contact@arkhn.com" ]
-     ] )
-  ] [
-     fhir:name [ fhir:v "Nicolas Riss" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "nicolas@arkhn.com" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Analysis technical protocol"] ; # 
-  fhir:compose [
-     fhir:include ( [
-       fhir:system [ fhir:v "https://github.com/siric-osiris/OSIRIS"^^xsd:anyURI ] ;
-       fhir:concept ( [
-         fhir:code [ fhir:v "O6-1" ] ;
-         fhir:display [ fhir:v "ChIP-on-Chip" ]
-       ] [
-         fhir:code [ fhir:v "O6-2" ] ;
-         fhir:display [ fhir:v "ChIP-seq" ]
-       ] [
-         fhir:code [ fhir:v "O6-3" ] ;
-         fhir:display [ fhir:v "DNA microarray" ]
-       ] [
-         fhir:code [ fhir:v "O6-4" ] ;
-         fhir:display [ fhir:v "DNA targeted panel sequencing" ]
-       ] [
-         fhir:code [ fhir:v "O6-5" ] ;
-         fhir:display [ fhir:v "Exome sequencing" ]
-       ] [
-         fhir:code [ fhir:v "O6-6" ] ;
-         fhir:display [ fhir:v "Mass spectrometry" ]
-       ] [
-         fhir:code [ fhir:v "O6-7" ] ;
-         fhir:display [ fhir:v "MeDIP-Chip" ]
-       ] [
-         fhir:code [ fhir:v "O6-8" ] ;
-         fhir:display [ fhir:v "MeDIP-seq" ]
-       ] [
-         fhir:code [ fhir:v "O6-9" ] ;
-         fhir:display [ fhir:v "Methylation microarray" ]
-       ] [
-         fhir:code [ fhir:v "O6-10" ] ;
-         fhir:display [ fhir:v "RNA microarray" ]
-       ] [
-         fhir:code [ fhir:v "O6-11" ] ;
-         fhir:display [ fhir:v "RNA targeted panel sequencing" ]
-       ] [
-         fhir:code [ fhir:v "O6-12" ] ;
-         fhir:display [ fhir:v "RNA-seq" ]
-       ] [
-         fhir:code [ fhir:v "O6-13" ] ;
-         fhir:display [ fhir:v "RPPA" ]
-       ] [
-         fhir:code [ fhir:v "O6-14" ] ;
-         fhir:display [ fhir:v "Whole genome bisulfite sequencing" ]
-       ] [
-         fhir:code [ fhir:v "O6-15" ] ;
-         fhir:display [ fhir:v "Whole genome sequencing" ]
-       ] [
-         fhir:code [ fhir:v "O6-16" ] ;
-         fhir:display [ fhir:v "miRNA microarray" ]
-       ] [
-         fhir:code [ fhir:v "O6-OTH" ] ;
-         fhir:display [ fhir:v "Other" ]
-       ] )
-     ] )
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/TechnicalProtocol> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "TechnicalProtocol"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://github.com/siric-osiris/OSIRIS</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>O6-1</td><td>ChIP-on-Chip</td></tr><tr><td>O6-2</td><td>ChIP-seq</td></tr><tr><td>O6-3</td><td>DNA microarray</td></tr><tr><td>O6-4</td><td>DNA targeted panel sequencing</td></tr><tr><td>O6-5</td><td>Exome sequencing</td></tr><tr><td>O6-6</td><td>Mass spectrometry</td></tr><tr><td>O6-7</td><td>MeDIP-Chip</td></tr><tr><td>O6-8</td><td>MeDIP-seq</td></tr><tr><td>O6-9</td><td>Methylation microarray</td></tr><tr><td>O6-10</td><td>RNA microarray</td></tr><tr><td>O6-11</td><td>RNA targeted panel sequencing</td></tr><tr><td>O6-12</td><td>RNA-seq</td></tr><tr><td>O6-13</td><td>RPPA</td></tr><tr><td>O6-14</td><td>Whole genome bisulfite sequencing</td></tr><tr><td>O6-15</td><td>Whole genome sequencing</td></tr><tr><td>O6-16</td><td>miRNA microarray</td></tr><tr><td>O6-OTH</td><td>Other</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/TechnicalProtocol"]; # 
+  fhir:ValueSet.version [ fhir:value "2.1.0"]; # 
+  fhir:ValueSet.name [ fhir:value "TechnicalProtocol"]; # 
+  fhir:ValueSet.title [ fhir:value "Analysis Technical Protocol"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.date [ fhir:value "2023-04-06T18:12:15+02:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "Arkhn"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Arkhn" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://arkhn.com" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "contact@arkhn.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Nicolas Riss" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "nicolas@arkhn.com" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "Analysis technical protocol"]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://github.com/siric-osiris/OSIRIS" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O6-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ChIP-on-Chip" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O6-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ChIP-seq" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O6-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DNA microarray" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O6-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DNA targeted panel sequencing" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O6-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Exome sequencing" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O6-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mass spectrometry" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O6-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MeDIP-Chip" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O6-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MeDIP-seq" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O6-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Methylation microarray" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O6-10" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "RNA microarray" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O6-11" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "RNA targeted panel sequencing" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O6-12" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "RNA-seq" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O6-13" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "RPPA" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O6-14" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Whole genome bisulfite sequencing" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O6-15" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Whole genome sequencing" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O6-16" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "miRNA microarray" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O6-OTH" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other" ]
+       ]
+     ]
   ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/TechnicalProtocol.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

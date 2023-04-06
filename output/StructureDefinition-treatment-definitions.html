@@ -147,7 +147,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 4" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v2.1.0). See the <a href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
   
 
 
@@ -229,7 +229,7 @@
         
           Active
           
-            as of 2023-03-28
+            as of 2023-04-06
           
         
       </td>
@@ -336,7 +336,6 @@
   <tr><td>Definition</td><td><span style='color:DarkGray'><p>Describes the intention of how one or more practitioners intend to deliver care for a particular patient, group or community for a period of time, possibly limited to care for a specific condition or set of conditions.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>*</span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td><span style='color:DarkGray'>Care Team</span></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">dom-2</b>: <span style='color:DarkGray'>If the resource is contained in another resource, it SHALL NOT contain nested Resources</span> (: <span style='color:DarkGray'>contained.contained.empty()</span>)<br/><b title="Formal Invariant Identifier">dom-3</b>: <span style='color:DarkGray'>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</span> (: <span style='color:DarkGray'>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</span>)<br/><b title="Formal Invariant Identifier">dom-4</b>: <span style='color:DarkGray'>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</span> (: <span style='color:DarkGray'>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</span>)<br/><b title="Formal Invariant Identifier">dom-5</b>: <span style='color:DarkGray'>If a resource is contained in another resource, it SHALL NOT have a security label</span> (: <span style='color:DarkGray'>contained.meta.security.empty()</span>)<br/><b title="Formal Invariant Identifier">dom-6</b>: <span style='color:DarkGray'>A resource should have narrative for robust management</span> (: <span style='color:DarkGray'>text.`div`.exists()</span>)</td></tr>
@@ -346,7 +345,6 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.</p>
 </span></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -357,7 +355,6 @@
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>*</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td><span style='color:DarkGray;text-decoration:line-through'>extensions</span>, <span style='color:DarkGray;text-decoration:line-through'>user content</span></td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray;text-decoration:line-through'><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </span></td></tr>
@@ -379,7 +376,6 @@
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..0<span style='color:DarkGray;text-decoration:line-through'>*</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td><span style='color:DarkGray;text-decoration:line-through'>extensions</span>, <span style='color:DarkGray;text-decoration:line-through'>user content</span></td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray;text-decoration:line-through'><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </span></td></tr>
@@ -392,7 +388,6 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>1</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></span></td></tr>
   <tr><td>XML Representation</td><td>In the XML format, this property is represented as an attribute.</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.</p>
 </span></td></tr>
   <tr><td>Fixed Value</td><td>https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment-line</td></tr>
@@ -402,7 +397,6 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Meta">Meta</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Attachment">Attachment</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Count">Count</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement">DataRequirement</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Dosage">Dosage</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#uuid">uuid</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#SampledData">SampledData</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Distance">Distance</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Duration">Duration</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#canonical">canonical</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact">RelatedArtifact</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">base64Binary</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext">UsageContext</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Timing">Timing</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition">ParameterDefinition</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/metadatatypes.html#Contributor">Contributor</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#oid">oid</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#instant">instant</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint">ContactPoint</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#HumanName">HumanName</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Money">Money</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#markdown">markdown</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Ratio">Ratio</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Age">Age</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/metadatatypes.html#TriggerDefinition">TriggerDefinition</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#url">url</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail">ContactDetail</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Expression">Expression</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Signature">Signature</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">unsignedInt</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#time">time</a></span></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: <span style='color:DarkGray'>All FHIR elements must have a @value or children</span> (: <span style='color:DarkGray'>hasValue() or (children().count() &gt; id.count())</span>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices on CarePlan.extension.value[x]. The slices are unordered and Closed, and can be differentiated using the following discriminators: <ul> <li>type @ $this</li></ul></td></tr>
@@ -415,7 +409,6 @@
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Meta">Meta</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Attachment">Attachment</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Count">Count</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement">DataRequirement</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Dosage">Dosage</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#uuid">uuid</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#SampledData">SampledData</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Distance">Distance</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Duration">Duration</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#canonical">canonical</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact">RelatedArtifact</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">base64Binary</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext">UsageContext</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Timing">Timing</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition">ParameterDefinition</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/metadatatypes.html#Contributor">Contributor</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#oid">oid</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#instant">instant</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint">ContactPoint</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#HumanName">HumanName</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Money">Money</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#markdown">markdown</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Ratio">Ratio</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Age">Age</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/metadatatypes.html#TriggerDefinition">TriggerDefinition</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#url">url</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail">ContactDetail</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Expression">Expression</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#Signature">Signature</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">unsignedInt</a></span>, <span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/datatypes.html#time">time</a></span></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: <span style='color:DarkGray'>All FHIR elements must have a @value or children</span> (: <span style='color:DarkGray'>hasValue() or (children().count() &gt; id.count())</span>)</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_CarePlan.modifierExtension"> </a><span style="color: grey">9.</span> <b>CarePlan.modifierExtension</b><a href="#key_CarePlan.modifierExtension" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -425,7 +418,6 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>*</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="http://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
 </span></td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td><span style='color:DarkGray'>extensions</span>, <span style='color:DarkGray'>user content</span></td></tr>
@@ -441,7 +433,6 @@
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Allows clinicians to determine whether the plan is actionable or not.</p>
 </span></td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>The unknown code is not to be used to convey other statuses.  The unknown code should be used when one of the statuses applies, but the authoring system doesn't know the current state of the care plan.</p>
@@ -457,7 +448,6 @@
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Proposals/recommendations, plans and orders all use the same structure and can exist in the same fulfillment chain.</p>
 </span></td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>This element is labeled as a modifier because the intent alters when and how the resource is actually applicable.</p>
@@ -472,7 +462,6 @@
   <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-TreatmentType.html">Treatment Type Value Set</a><span style='color:DarkGray;text-decoration:line-through'>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-care-plan-category.html">CarePlanCategory</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Used for filtering what plan(s) are retrieved and displayed to different types of users.</p>
 </span></td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>There may be multiple axes of categorization and one plan may serve multiple purposes.  In some cases, this may be redundant with references to CarePlan.concern.</p>
@@ -485,7 +474,6 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>1</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<a href="StructureDefinition-onco-patient.html" title="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient">OncoPatient</a>|<span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a></span>|<span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/group.html" title="http://hl7.org/fhir/StructureDefinition/Group">Group</a></span>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td><span style='color:DarkGray'>patient</span></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: <span style='color:DarkGray'>All FHIR elements must have a @value or children</span> (: <span style='color:DarkGray'>hasValue() or (children().count() &gt; id.count())</span>)</td></tr>
@@ -494,7 +482,6 @@
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Allows tracking what plan(s) are in effect at a particular time.</p>
 </span></td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td><span style='color:DarkGray'>timing</span></td></tr>
@@ -509,7 +496,6 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1<span style='color:DarkGray;text-decoration:line-through'>0</span>..<span style='color:DarkGray'>1</span> This element is affected by the following invariants: <span style='color:DarkGray'>per-1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>If the low element is missing, the meaning is that the low boundary is not known.</p>
 </span></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -521,7 +507,6 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1<span style='color:DarkGray;text-decoration:line-through'>0</span>..<span style='color:DarkGray'>1</span> This element is affected by the following invariants: <span style='color:DarkGray'>per-1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.</p>
 </span></td></tr>
   <tr><td>Meaning if Missing</td><td>If the end of the period is missing, it means that the period is ongoing</td></tr>
@@ -533,7 +518,6 @@
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..1<span style='color:DarkGray;text-decoration:line-through'>*</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<a href="StructureDefinition-clinical-trial.html" title="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/clinical-trial">ClinicalTrial</a>|<span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a></span>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Identifies barriers and other considerations associated with the care plan.</p>
 </span></td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>Use &quot;concern&quot; to identify specific conditions addressed by the care plan.</p>
@@ -545,7 +529,6 @@
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>*</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Allows systems to prompt for performance of planned activities, and validate plans against best practice.</p>
 </span></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -558,7 +541,6 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>*</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="http://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
 </span></td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td><span style='color:DarkGray'>extensions</span>, <span style='color:DarkGray'>user content</span>, <span style='color:DarkGray'>modifiers</span></td></tr>
@@ -571,7 +553,6 @@
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>1</span> This element is affected by the following invariants: <span style='color:DarkGray'>cpl-3</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Details in a simple form for generic care plan systems.</p>
 </span></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -583,7 +564,6 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>*</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="http://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
 </span></td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td><span style='color:DarkGray'>extensions</span>, <span style='color:DarkGray'>user content</span>, <span style='color:DarkGray'>modifiers</span></td></tr>
@@ -598,7 +578,6 @@
   <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><span style='color:DarkGray'>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-procedure-code.html">ProcedureCodes(SNOMEDCT)</a></span><br/><span style='color:DarkGray'><p>Detailed description of the type of activity; e.g. What lab test, what procedure, what kind of encounter.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Allows matching performed to planned as well as validation against protocols.</p>
 </span></td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>Tends to be less relevant for activities involving particular products.  Codes should not convey negation - use &quot;prohibited&quot; instead.</p>
@@ -611,7 +590,6 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>*</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<a href="StructureDefinition-tumor-pathology-event.html" title="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/tumor-pathology-event">TumorPathologyEvent</a>|<span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/condition.html" title="http://hl7.org/fhir/StructureDefinition/Condition">Condition</a></span>|<span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/observation.html" title="http://hl7.org/fhir/StructureDefinition/Observation">Observation</a></span>|<span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/diagnosticreport.html" title="http://hl7.org/fhir/StructureDefinition/DiagnosticReport">DiagnosticReport</a></span>|<span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/documentreference.html" title="http://hl7.org/fhir/StructureDefinition/DocumentReference">DocumentReference</a></span>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>Conditions can be identified at the activity level that are not identified as reasons for the overall plan.</p>
 </span></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -624,7 +602,6 @@
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Indicates progress against the plan, whether the activity is still relevant for the plan.</p>
 </span></td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>Some aspects of status can be inferred based on the resources linked in actionTaken.  Note that &quot;status&quot; is only as current as the plan was most recently updated.<br />
@@ -638,7 +615,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Captures intention to not do something that may have been previously typical.</p>
 </span></td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>This element is labeled as a modifier because it marks an activity as an activity that is not to be performed.</p>
@@ -653,7 +629,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..1<span style='color:DarkGray;text-decoration:line-through'>*</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Allows systems to prompt for performance of planned activities, and validate plans against best practice.</p>
 </span></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -665,7 +640,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>*</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="http://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
 </span></td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td><span style='color:DarkGray'>extensions</span>, <span style='color:DarkGray'>user content</span>, <span style='color:DarkGray'>modifiers</span></td></tr>
@@ -678,7 +652,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1<span style='color:DarkGray;text-decoration:line-through'>0</span>..<span style='color:DarkGray'>1</span> This element is affected by the following invariants: <span style='color:DarkGray'>cpl-3</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Details in a simple form for generic care plan systems.</p>
 </span></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -690,7 +663,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>*</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="http://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
 </span></td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td><span style='color:DarkGray'>extensions</span>, <span style='color:DarkGray'>user content</span>, <span style='color:DarkGray'>modifiers</span></td></tr>
@@ -706,7 +678,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
   <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><span style='color:DarkGray'>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-procedure-code.html">ProcedureCodes(SNOMEDCT)</a></span><br/><span style='color:DarkGray'><p>Detailed description of the type of activity; e.g. What lab test, what procedure, what kind of encounter.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Allows matching performed to planned as well as validation against protocols.</p>
 </span></td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>Tends to be less relevant for activities involving particular products.  Codes should not convey negation - use &quot;prohibited&quot; instead.</p>
@@ -721,7 +692,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Indicates progress against the plan, whether the activity is still relevant for the plan.</p>
 </span></td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>Some aspects of status can be inferred based on the resources linked in actionTaken.  Note that &quot;status&quot; is only as current as the plan was most recently updated.<br />
@@ -735,7 +705,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Captures intention to not do something that may have been previously typical.</p>
 </span></td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>This element is labeled as a modifier because it marks an activity as an activity that is not to be performed.</p>
@@ -754,14 +723,12 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
   <tr><td>Definition</td><td><p>Describes the intention of how one or more practitioners intend to deliver care for a particular patient, group or community for a period of time, possibly limited to care for a specific condition or set of conditions.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Care Team</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.id"> </a><span style="color: grey">2.</span> <b>CarePlan.id</b><a href="#CarePlan.id" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>The only time that a resource does not have an id is when it is being submitted to the server using a create operation.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.meta"> </a><span style="color: grey">3.</span> <b>CarePlan.meta</b><a href="#CarePlan.meta" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -769,7 +736,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Meta">Meta</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.implicitRules"> </a><span style="color: grey">4.</span> <b>CarePlan.implicitRules</b><a href="#CarePlan.implicitRules" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -778,7 +744,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -791,7 +756,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
 A human language
 <table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td></tr><tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a></td></tr></table></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Comments</td><td><p>Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -801,7 +765,6 @@ A human language
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Narrative">Narrative</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>narrative, html, xhtml, display</td></tr>
   <tr><td>Comments</td><td><p>Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a &quot;text blob&quot; or where text is additionally entered raw or narrated and encoded information is added later.</p>
 </td></tr>
@@ -812,7 +775,6 @@ A human language
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/resource.html">Resource</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>inline resources, anonymous resources, contained resources</td></tr>
   <tr><td>Comments</td><td><p>This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.</p>
 </td></tr>
@@ -821,7 +783,6 @@ A human language
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices on CarePlan.extension. The slices are unordered and Open, and can be differentiated using the following discriminators: <ul> <li>value @ url</li></ul></td></tr>
@@ -840,13 +801,11 @@ A human language
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td>XML Representation</td><td>In the XML format, this property is represented as an attribute.</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.extension:treatment-line.extension"> </a><span style="color: grey">11.</span> <b>CarePlan.extension:treatment-line.extension</b><a href="#CarePlan.extension:treatment-line.extension" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>An Extension</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices on CarePlan.extension.extension. The slices are unordered and Open, and can be differentiated using the following discriminators: <ul> <li>value @ url</li></ul></td></tr>
@@ -856,7 +815,6 @@ A human language
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td></tr>
   <tr><td>XML Representation</td><td>In the XML format, this property is represented as an attribute.</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Comments</td><td><p>The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.</p>
 </td></tr>
   <tr><td>Fixed Value</td><td>https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment-line</td></tr>
@@ -866,7 +824,6 @@ A human language
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices on CarePlan.extension.value[x]. The slices are unordered and Closed, and can be differentiated using the following discriminators: <ul> <li>type @ $this</li></ul></td></tr>
@@ -878,7 +835,6 @@ A human language
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.modifierExtension"> </a><span style="color: grey">15.</span> <b>CarePlan.modifierExtension</b><a href="#CarePlan.modifierExtension" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -888,7 +844,6 @@ A human language
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="http://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
@@ -902,7 +857,6 @@ A human language
   <tr><td>Note</td><td>This is a business identifier, not a resource identifier (see <a href="http://hl7.org/fhir/R4/resource.html#identifiers">discussion</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Allows identification of the care plan as it is known by various participating systems and in a way that remains consistent across servers.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This is a business identifier, not a resource identifier (see <a href="http://hl7.org/fhir/R4/resource.html#identifiers">discussion</a>).  It is best practice for the identifier to only appear on a single resource instance, however business practices may occasionally dictate that multiple resource instances with the same identifier can exist - possibly even with different resource types.  For example, multiple Patient and a Person resource instance might share the same social insurance number.</p>
@@ -914,7 +868,6 @@ A human language
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#canonical">canonical</a>(<a href="http://hl7.org/fhir/R4/plandefinition.html" title="http://hl7.org/fhir/StructureDefinition/PlanDefinition">PlanDefinition</a>|<a href="http://hl7.org/fhir/R4/questionnaire.html" title="http://hl7.org/fhir/StructureDefinition/Questionnaire">Questionnaire</a>|<a href="http://hl7.org/fhir/R4/measure.html" title="http://hl7.org/fhir/StructureDefinition/Measure">Measure</a>|<a href="http://hl7.org/fhir/R4/activitydefinition.html" title="http://hl7.org/fhir/StructureDefinition/ActivityDefinition">ActivityDefinition</a>|<a href="http://hl7.org/fhir/R4/operationdefinition.html" title="http://hl7.org/fhir/StructureDefinition/OperationDefinition">OperationDefinition</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.instantiatesUri"> </a><span style="color: grey">18.</span> <b>CarePlan.instantiatesUri</b><a href="#CarePlan.instantiatesUri" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -922,7 +875,6 @@ A human language
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>This might be an HTML page, PDF, etc. or could just be a non-resolvable URI identifier.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -932,7 +884,6 @@ A human language
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/careplan.html" title="http://hl7.org/fhir/StructureDefinition/CarePlan">CarePlan</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Allows tracing of the care plan and tracking whether proposals/recommendations were acted upon.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>fulfills</td></tr>
@@ -943,7 +894,6 @@ A human language
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/careplan.html" title="http://hl7.org/fhir/StructureDefinition/CarePlan">CarePlan</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Allows tracing the continuation of a therapy or administrative process instantiated through multiple care plans.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>supersedes</td></tr>
@@ -956,7 +906,6 @@ A human language
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/careplan.html" title="http://hl7.org/fhir/StructureDefinition/CarePlan">CarePlan</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Each care plan is an independent request, such that having a care plan be part of another care plan can cause issues with cascading statuses.  As such, this element is still being discussed.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -970,7 +919,6 @@ Indicates whether the plan is currently being acted upon, represents future inte
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Allows clinicians to determine whether the plan is actionable or not.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>The unknown code is not to be used to convey other statuses.  The unknown code should be used when one of the statuses applies, but the authoring system doesn't know the current state of the care plan.</p>
@@ -987,7 +935,6 @@ Codes indicating the degree of authority/intentionality associated with a care p
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Proposals/recommendations, plans and orders all use the same structure and can exist in the same fulfillment chain.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This element is labeled as a modifier because the intent alters when and how the resource is actually applicable.</p>
@@ -1001,7 +948,6 @@ Codes indicating the degree of authority/intentionality associated with a care p
   <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-TreatmentType.html">Treatment Type Value Set</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Used for filtering what plan(s) are retrieved and displayed to different types of users.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>There may be multiple axes of categorization and one plan may serve multiple purposes.  In some cases, this may be redundant with references to CarePlan.concern.</p>
@@ -1013,7 +959,6 @@ Codes indicating the degree of authority/intentionality associated with a care p
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.description"> </a><span style="color: grey">26.</span> <b>CarePlan.description</b><a href="#CarePlan.description" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -1021,7 +966,6 @@ Codes indicating the degree of authority/intentionality associated with a care p
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Provides more detail than conveyed by category.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1032,7 +976,6 @@ Codes indicating the degree of authority/intentionality associated with a care p
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-onco-patient.html" title="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient">OncoPatient</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>patient</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
@@ -1041,7 +984,6 @@ Codes indicating the degree of authority/intentionality associated with a care p
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/encounter.html" title="http://hl7.org/fhir/StructureDefinition/Encounter">Encounter</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter. CarePlan activities conducted as a result of the care plan may well occur as part of other encounters.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1051,7 +993,6 @@ Codes indicating the degree of authority/intentionality associated with a care p
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Allows tracking what plan(s) are in effect at a particular time.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>timing</td></tr>
@@ -1063,13 +1004,11 @@ Codes indicating the degree of authority/intentionality associated with a care p
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td>XML Representation</td><td>In the XML format, this property is represented as an attribute.</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.period.extension"> </a><span style="color: grey">31.</span> <b>CarePlan.period.extension</b><a href="#CarePlan.period.extension" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </td></tr>
@@ -1082,7 +1021,6 @@ Codes indicating the degree of authority/intentionality associated with a care p
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: per-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>If the low element is missing, the meaning is that the low boundary is not known.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1093,7 +1031,6 @@ Codes indicating the degree of authority/intentionality associated with a care p
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: per-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.</p>
 </td></tr>
   <tr><td>Meaning if Missing</td><td>If the end of the period is missing, it means that the period is ongoing</td></tr>
@@ -1104,7 +1041,6 @@ Codes indicating the degree of authority/intentionality associated with a care p
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>authoredOn</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
@@ -1113,7 +1049,6 @@ Codes indicating the degree of authority/intentionality associated with a care p
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a>|<a href="http://hl7.org/fhir/R4/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a>|<a href="http://hl7.org/fhir/R4/practitionerrole.html" title="http://hl7.org/fhir/StructureDefinition/PractitionerRole">PractitionerRole</a>|<a href="http://hl7.org/fhir/R4/device.html" title="http://hl7.org/fhir/StructureDefinition/Device">Device</a>|<a href="http://hl7.org/fhir/R4/relatedperson.html" title="http://hl7.org/fhir/StructureDefinition/RelatedPerson">RelatedPerson</a>|<a href="http://hl7.org/fhir/R4/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>|<a href="http://hl7.org/fhir/R4/careteam.html" title="http://hl7.org/fhir/StructureDefinition/CareTeam">CareTeam</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>The author may also be a contributor.  For example, an organization can be an author, but not listed as a contributor.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1123,7 +1058,6 @@ Codes indicating the degree of authority/intentionality associated with a care p
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a>|<a href="http://hl7.org/fhir/R4/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a>|<a href="http://hl7.org/fhir/R4/practitionerrole.html" title="http://hl7.org/fhir/StructureDefinition/PractitionerRole">PractitionerRole</a>|<a href="http://hl7.org/fhir/R4/device.html" title="http://hl7.org/fhir/StructureDefinition/Device">Device</a>|<a href="http://hl7.org/fhir/R4/relatedperson.html" title="http://hl7.org/fhir/StructureDefinition/RelatedPerson">RelatedPerson</a>|<a href="http://hl7.org/fhir/R4/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>|<a href="http://hl7.org/fhir/R4/careteam.html" title="http://hl7.org/fhir/StructureDefinition/CareTeam">CareTeam</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Comments</td><td><p>Collaborative care plans may have multiple contributors.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1133,7 +1067,6 @@ Codes indicating the degree of authority/intentionality associated with a care p
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/careteam.html" title="http://hl7.org/fhir/StructureDefinition/CareTeam">CareTeam</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Allows representation of care teams, helps scope care plan.  In some cases may be a determiner of access permissions.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1143,7 +1076,6 @@ Codes indicating the degree of authority/intentionality associated with a care p
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/condition.html" title="http://hl7.org/fhir/StructureDefinition/Condition">Condition</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Links plan to the conditions it manages.  The element can identify risks addressed by the plan as well as active conditions.  (The Condition resource can include things like &quot;at risk for hypertension&quot; or &quot;fall risk&quot;.)  Also scopes plans - multiple plans may exist addressing different concerns.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>When the diagnosis is related to an allergy or intolerance, the Condition and AllergyIntolerance resources can both be used. However, to be actionable for decision support, using Condition alone is not sufficient as the allergy or intolerance condition needs to be represented as an AllergyIntolerance.</p>
@@ -1155,7 +1087,6 @@ Codes indicating the degree of authority/intentionality associated with a care p
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-clinical-trial.html" title="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/clinical-trial">ClinicalTrial</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Identifies barriers and other considerations associated with the care plan.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Use &quot;concern&quot; to identify specific conditions addressed by the care plan.</p>
@@ -1167,7 +1098,6 @@ Codes indicating the degree of authority/intentionality associated with a care p
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/goal.html" title="http://hl7.org/fhir/StructureDefinition/Goal">Goal</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Provides context for plan.  Allows plan effectiveness to be evaluated by clinicians.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Goal can be achieving a particular change or merely maintaining a current state or even slowing a decline.</p>
@@ -1179,7 +1109,6 @@ Codes indicating the degree of authority/intentionality associated with a care p
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Allows systems to prompt for performance of planned activities, and validate plans against best practice.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices on CarePlan.activity. The slices are unordered and Open, and can be differentiated using the following discriminators: <ul> <li>pattern @ detail.code.coding.system</li></ul></td></tr>
@@ -1189,13 +1118,11 @@ Codes indicating the degree of authority/intentionality associated with a care p
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td>XML Representation</td><td>In the XML format, this property is represented as an attribute.</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.activity.extension"> </a><span style="color: grey">43.</span> <b>CarePlan.activity.extension</b><a href="#CarePlan.activity.extension" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </td></tr>
@@ -1208,7 +1135,6 @@ Codes indicating the degree of authority/intentionality associated with a care p
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="http://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content, modifiers</td></tr>
@@ -1224,7 +1150,6 @@ Codes indicating the degree of authority/intentionality associated with a care p
 Identifies the results of the activity
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Comments</td><td><p>Note that this should not duplicate the activity status (e.g. completed or in progress).</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1234,7 +1159,6 @@ Identifies the results of the activity
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Links plan to resulting actions.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>The activity outcome is independent of the outcome of the related goal(s).  For example, if the goal is to achieve a target body weight of 150 lbs and an activity is defined to diet, then the activity outcome could be calories consumed whereas the goal outcome is an observation for the actual body weight measured.</p>
@@ -1246,7 +1170,6 @@ Identifies the results of the activity
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Can be used to capture information about adherence, progress, concerns, etc.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This element should NOT be used to describe the activity to be performed - that occurs either within the resource pointed to by activity.detail.reference or in activity.detail.description.</p>
@@ -1258,7 +1181,6 @@ Identifies the results of the activity
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: cpl-3</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/appointment.html" title="http://hl7.org/fhir/StructureDefinition/Appointment">Appointment</a>|<a href="http://hl7.org/fhir/R4/communicationrequest.html" title="http://hl7.org/fhir/StructureDefinition/CommunicationRequest">CommunicationRequest</a>|<a href="http://hl7.org/fhir/R4/devicerequest.html" title="http://hl7.org/fhir/StructureDefinition/DeviceRequest">DeviceRequest</a>|<a href="http://hl7.org/fhir/R4/medicationrequest.html" title="http://hl7.org/fhir/StructureDefinition/MedicationRequest">MedicationRequest</a>|<a href="http://hl7.org/fhir/R4/nutritionorder.html" title="http://hl7.org/fhir/StructureDefinition/NutritionOrder">NutritionOrder</a>|<a href="http://hl7.org/fhir/R4/task.html" title="http://hl7.org/fhir/StructureDefinition/Task">Task</a>|<a href="http://hl7.org/fhir/R4/servicerequest.html" title="http://hl7.org/fhir/StructureDefinition/ServiceRequest">ServiceRequest</a>|<a href="http://hl7.org/fhir/R4/visionprescription.html" title="http://hl7.org/fhir/StructureDefinition/VisionPrescription">VisionPrescription</a>|<a href="http://hl7.org/fhir/R4/requestgroup.html" title="http://hl7.org/fhir/StructureDefinition/RequestGroup">RequestGroup</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Details in a form consistent with other applications and contexts of use.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Standard extension exists (<a href="http://hl7.org/fhir/R4/extension-resource-pertainstogoal.html">resource-pertainsToGoal</a>) that allows goals to be referenced from any of the referenced resources in CarePlan.activity.reference.<br />
@@ -1271,7 +1193,6 @@ The goal should be visible when the resource referenced by CarePlan.activity.ref
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: cpl-3</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Details in a simple form for generic care plan systems.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.activity.detail.id"> </a><span style="color: grey">50.</span> <b>CarePlan.activity.detail.id</b><a href="#CarePlan.activity.detail.id" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -1280,13 +1201,11 @@ The goal should be visible when the resource referenced by CarePlan.activity.ref
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td>XML Representation</td><td>In the XML format, this property is represented as an attribute.</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.activity.detail.extension"> </a><span style="color: grey">51.</span> <b>CarePlan.activity.detail.extension</b><a href="#CarePlan.activity.detail.extension" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </td></tr>
@@ -1299,7 +1218,6 @@ The goal should be visible when the resource referenced by CarePlan.activity.ref
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="http://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content, modifiers</td></tr>
@@ -1315,7 +1233,6 @@ The goal should be visible when the resource referenced by CarePlan.activity.ref
 Resource types defined as part of FHIR that can be represented as in-line definitions of a care plan activity
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>May determine what types of extensions are permitted.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1325,7 +1242,6 @@ Resource types defined as part of FHIR that can be represented as in-line defini
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#canonical">canonical</a>(<a href="http://hl7.org/fhir/R4/plandefinition.html" title="http://hl7.org/fhir/StructureDefinition/PlanDefinition">PlanDefinition</a>|<a href="http://hl7.org/fhir/R4/activitydefinition.html" title="http://hl7.org/fhir/StructureDefinition/ActivityDefinition">ActivityDefinition</a>|<a href="http://hl7.org/fhir/R4/questionnaire.html" title="http://hl7.org/fhir/StructureDefinition/Questionnaire">Questionnaire</a>|<a href="http://hl7.org/fhir/R4/measure.html" title="http://hl7.org/fhir/StructureDefinition/Measure">Measure</a>|<a href="http://hl7.org/fhir/R4/operationdefinition.html" title="http://hl7.org/fhir/StructureDefinition/OperationDefinition">OperationDefinition</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Allows Questionnaires that the patient (or practitioner) should fill in to fulfill the care plan activity.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1335,7 +1251,6 @@ Resource types defined as part of FHIR that can be represented as in-line defini
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Allows Questionnaires that the patient (or practitioner) should fill in to fulfill the care plan activity.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This might be an HTML page, PDF, etc. or could just be a non-resolvable URI identifier.</p>
@@ -1350,7 +1265,6 @@ Resource types defined as part of FHIR that can be represented as in-line defini
 Detailed description of the type of activity; e.g. What lab test, what procedure, what kind of encounter
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Allows matching performed to planned as well as validation against protocols.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Tends to be less relevant for activities involving particular products.  Codes should not convey negation - use &quot;prohibited&quot; instead.</p>
@@ -1365,7 +1279,6 @@ Detailed description of the type of activity; e.g. What lab test, what procedure
 Identifies why a care plan activity is needed.  Can include any health condition codes as well as such concepts as &quot;general wellness&quot;, prophylaxis, surgical preparation, etc
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Comments</td><td><p>This could be a diagnosis code.  If a full condition record exists or additional detail is needed, use reasonCondition instead.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1376,7 +1289,6 @@ Identifies why a care plan activity is needed.  Can include any health condition
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-tumor-pathology-event.html" title="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/tumor-pathology-event">TumorPathologyEvent</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Comments</td><td><p>Conditions can be identified at the activity level that are not identified as reasons for the overall plan.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1386,7 +1298,6 @@ Identifies why a care plan activity is needed.  Can include any health condition
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/goal.html" title="http://hl7.org/fhir/StructureDefinition/Goal">Goal</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>So that participants know the link explicitly.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1400,7 +1311,6 @@ Codes that reflect the current state of a care plan activity within its overall 
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Indicates progress against the plan, whether the activity is still relevant for the plan.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Some aspects of status can be inferred based on the resources linked in actionTaken.  Note that &quot;status&quot; is only as current as the plan was most recently updated.<br />
@@ -1413,7 +1323,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Comments</td><td><p>Will generally not be present if status is &quot;complete&quot;.  Be sure to prompt to update this (or at least remove the existing value) if the status is changed.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1424,7 +1333,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Captures intention to not do something that may have been previously typical.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This element is labeled as a modifier because it marks an activity as an activity that is not to be performed.</p>
@@ -1438,7 +1346,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/R4/datatypes.html#Timing">Timing</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Allows prompting for activities and detection of missed planned activities.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1448,7 +1355,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/location.html" title="http://hl7.org/fhir/StructureDefinition/Location">Location</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Helps in planning of activity.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>May reference a specific clinical location or may identify a type of location.</p>
@@ -1460,7 +1366,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a>|<a href="http://hl7.org/fhir/R4/practitionerrole.html" title="http://hl7.org/fhir/StructureDefinition/PractitionerRole">PractitionerRole</a>|<a href="http://hl7.org/fhir/R4/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>|<a href="http://hl7.org/fhir/R4/relatedperson.html" title="http://hl7.org/fhir/StructureDefinition/RelatedPerson">RelatedPerson</a>|<a href="http://hl7.org/fhir/R4/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a>|<a href="http://hl7.org/fhir/R4/careteam.html" title="http://hl7.org/fhir/StructureDefinition/CareTeam">CareTeam</a>|<a href="http://hl7.org/fhir/R4/healthcareservice.html" title="http://hl7.org/fhir/StructureDefinition/HealthcareService">HealthcareService</a>|<a href="http://hl7.org/fhir/R4/device.html" title="http://hl7.org/fhir/StructureDefinition/Device">Device</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Helps in planning of activity.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>A performer MAY also be a participant in the care plan.</p>
@@ -1476,7 +1381,6 @@ A product supplied or administered as part of a care plan activity
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/medication.html" title="http://hl7.org/fhir/StructureDefinition/Medication">Medication</a>|<a href="http://hl7.org/fhir/R4/substance.html" title="http://hl7.org/fhir/StructureDefinition/Substance">Substance</a>)</td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.activity.detail.dailyAmount"> </a><span style="color: grey">67.</span> <b>CarePlan.activity.detail.dailyAmount</b><a href="#CarePlan.activity.detail.dailyAmount" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -1484,7 +1388,6 @@ A product supplied or administered as part of a care plan activity
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a>(<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity" title="http://hl7.org/fhir/StructureDefinition/SimpleQuantity">SimpleQuantity</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Allows rough dose checking.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>daily dose</td></tr>
@@ -1495,7 +1398,6 @@ A product supplied or administered as part of a care plan activity
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a>(<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity" title="http://hl7.org/fhir/StructureDefinition/SimpleQuantity">SimpleQuantity</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.activity.detail.description"> </a><span style="color: grey">69.</span> <b>CarePlan.activity.detail.description</b><a href="#CarePlan.activity.detail.description" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -1503,7 +1405,6 @@ A product supplied or administered as part of a care plan activity
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.activity:activity-code"> </a><span style="color: grey">70.</span> <b>CarePlan.activity:activity-code</b><a href="#CarePlan.activity:activity-code" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -1512,7 +1413,6 @@ A product supplied or administered as part of a care plan activity
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Allows systems to prompt for performance of planned activities, and validate plans against best practice.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1523,13 +1423,11 @@ A product supplied or administered as part of a care plan activity
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td>XML Representation</td><td>In the XML format, this property is represented as an attribute.</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.activity:activity-code.extension"> </a><span style="color: grey">72.</span> <b>CarePlan.activity:activity-code.extension</b><a href="#CarePlan.activity:activity-code.extension" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </td></tr>
@@ -1542,7 +1440,6 @@ A product supplied or administered as part of a care plan activity
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="http://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content, modifiers</td></tr>
@@ -1558,7 +1455,6 @@ A product supplied or administered as part of a care plan activity
 Identifies the results of the activity
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Comments</td><td><p>Note that this should not duplicate the activity status (e.g. completed or in progress).</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1568,7 +1464,6 @@ Identifies the results of the activity
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Links plan to resulting actions.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>The activity outcome is independent of the outcome of the related goal(s).  For example, if the goal is to achieve a target body weight of 150 lbs and an activity is defined to diet, then the activity outcome could be calories consumed whereas the goal outcome is an observation for the actual body weight measured.</p>
@@ -1580,7 +1475,6 @@ Identifies the results of the activity
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Can be used to capture information about adherence, progress, concerns, etc.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This element should NOT be used to describe the activity to be performed - that occurs either within the resource pointed to by activity.detail.reference or in activity.detail.description.</p>
@@ -1592,7 +1486,6 @@ Identifies the results of the activity
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: cpl-3</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/appointment.html" title="http://hl7.org/fhir/StructureDefinition/Appointment">Appointment</a>|<a href="http://hl7.org/fhir/R4/communicationrequest.html" title="http://hl7.org/fhir/StructureDefinition/CommunicationRequest">CommunicationRequest</a>|<a href="http://hl7.org/fhir/R4/devicerequest.html" title="http://hl7.org/fhir/StructureDefinition/DeviceRequest">DeviceRequest</a>|<a href="http://hl7.org/fhir/R4/medicationrequest.html" title="http://hl7.org/fhir/StructureDefinition/MedicationRequest">MedicationRequest</a>|<a href="http://hl7.org/fhir/R4/nutritionorder.html" title="http://hl7.org/fhir/StructureDefinition/NutritionOrder">NutritionOrder</a>|<a href="http://hl7.org/fhir/R4/task.html" title="http://hl7.org/fhir/StructureDefinition/Task">Task</a>|<a href="http://hl7.org/fhir/R4/servicerequest.html" title="http://hl7.org/fhir/StructureDefinition/ServiceRequest">ServiceRequest</a>|<a href="http://hl7.org/fhir/R4/visionprescription.html" title="http://hl7.org/fhir/StructureDefinition/VisionPrescription">VisionPrescription</a>|<a href="http://hl7.org/fhir/R4/requestgroup.html" title="http://hl7.org/fhir/StructureDefinition/RequestGroup">RequestGroup</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Details in a form consistent with other applications and contexts of use.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Standard extension exists (<a href="http://hl7.org/fhir/R4/extension-resource-pertainstogoal.html">resource-pertainsToGoal</a>) that allows goals to be referenced from any of the referenced resources in CarePlan.activity.reference.<br />
@@ -1605,7 +1498,6 @@ The goal should be visible when the resource referenced by CarePlan.activity.ref
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: cpl-3</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Details in a simple form for generic care plan systems.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1616,13 +1508,11 @@ The goal should be visible when the resource referenced by CarePlan.activity.ref
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td>XML Representation</td><td>In the XML format, this property is represented as an attribute.</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.activity:activity-code.detail.extension"> </a><span style="color: grey">80.</span> <b>CarePlan.activity:activity-code.detail.extension</b><a href="#CarePlan.activity:activity-code.detail.extension" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </td></tr>
@@ -1635,7 +1525,6 @@ The goal should be visible when the resource referenced by CarePlan.activity.ref
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="http://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content, modifiers</td></tr>
@@ -1651,7 +1540,6 @@ The goal should be visible when the resource referenced by CarePlan.activity.ref
 Resource types defined as part of FHIR that can be represented as in-line definitions of a care plan activity
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>May determine what types of extensions are permitted.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1661,7 +1549,6 @@ Resource types defined as part of FHIR that can be represented as in-line defini
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#canonical">canonical</a>(<a href="http://hl7.org/fhir/R4/plandefinition.html" title="http://hl7.org/fhir/StructureDefinition/PlanDefinition">PlanDefinition</a>|<a href="http://hl7.org/fhir/R4/activitydefinition.html" title="http://hl7.org/fhir/StructureDefinition/ActivityDefinition">ActivityDefinition</a>|<a href="http://hl7.org/fhir/R4/questionnaire.html" title="http://hl7.org/fhir/StructureDefinition/Questionnaire">Questionnaire</a>|<a href="http://hl7.org/fhir/R4/measure.html" title="http://hl7.org/fhir/StructureDefinition/Measure">Measure</a>|<a href="http://hl7.org/fhir/R4/operationdefinition.html" title="http://hl7.org/fhir/StructureDefinition/OperationDefinition">OperationDefinition</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Allows Questionnaires that the patient (or practitioner) should fill in to fulfill the care plan activity.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1671,7 +1558,6 @@ Resource types defined as part of FHIR that can be represented as in-line defini
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Allows Questionnaires that the patient (or practitioner) should fill in to fulfill the care plan activity.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This might be an HTML page, PDF, etc. or could just be a non-resolvable URI identifier.</p>
@@ -1686,7 +1572,6 @@ Resource types defined as part of FHIR that can be represented as in-line defini
 Detailed description of the type of activity; e.g. What lab test, what procedure, what kind of encounter
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Allows matching performed to planned as well as validation against protocols.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Tends to be less relevant for activities involving particular products.  Codes should not convey negation - use &quot;prohibited&quot; instead.</p>
@@ -1699,13 +1584,11 @@ Detailed description of the type of activity; e.g. What lab test, what procedure
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td>XML Representation</td><td>In the XML format, this property is represented as an attribute.</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.activity:activity-code.detail.code.extension"> </a><span style="color: grey">87.</span> <b>CarePlan.activity:activity-code.detail.code.extension</b><a href="#CarePlan.activity:activity-code.detail.code.extension" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </td></tr>
@@ -1717,7 +1600,6 @@ Detailed description of the type of activity; e.g. What lab test, what procedure
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Allows for alternative encodings within a code system, and translations to other code systems.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.</p>
@@ -1730,13 +1612,11 @@ Detailed description of the type of activity; e.g. What lab test, what procedure
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td>XML Representation</td><td>In the XML format, this property is represented as an attribute.</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.activity:activity-code.detail.code.coding.extension"> </a><span style="color: grey">90.</span> <b>CarePlan.activity:activity-code.detail.code.coding.extension</b><a href="#CarePlan.activity:activity-code.detail.code.coding.extension" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </td></tr>
@@ -1748,7 +1628,6 @@ Detailed description of the type of activity; e.g. What lab test, what procedure
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Need to be unambiguous about the source of the definition of the symbol.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.</p>
@@ -1762,7 +1641,6 @@ Detailed description of the type of activity; e.g. What lab test, what procedure
   <tr><td>Note</td><td>This is a business versionId, not a resource version id (see <a href="http://hl7.org/fhir/R4/resource.html#versions">discussion</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1772,7 +1650,6 @@ Detailed description of the type of activity; e.g. What lab test, what procedure
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Need to refer to a particular code in the system.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1782,7 +1659,6 @@ Detailed description of the type of activity; e.g. What lab test, what procedure
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1792,7 +1668,6 @@ Detailed description of the type of activity; e.g. What lab test, what procedure
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
@@ -1804,7 +1679,6 @@ Detailed description of the type of activity; e.g. What lab test, what procedure
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Very often the text is the same as a displayName of one of the codings.</p>
@@ -1819,7 +1693,6 @@ Detailed description of the type of activity; e.g. What lab test, what procedure
 Identifies why a care plan activity is needed.  Can include any health condition codes as well as such concepts as &quot;general wellness&quot;, prophylaxis, surgical preparation, etc
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Comments</td><td><p>This could be a diagnosis code.  If a full condition record exists or additional detail is needed, use reasonCondition instead.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1829,7 +1702,6 @@ Identifies why a care plan activity is needed.  Can include any health condition
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/condition.html" title="http://hl7.org/fhir/StructureDefinition/Condition">Condition</a>|<a href="http://hl7.org/fhir/R4/observation.html" title="http://hl7.org/fhir/StructureDefinition/Observation">Observation</a>|<a href="http://hl7.org/fhir/R4/diagnosticreport.html" title="http://hl7.org/fhir/StructureDefinition/DiagnosticReport">DiagnosticReport</a>|<a href="http://hl7.org/fhir/R4/documentreference.html" title="http://hl7.org/fhir/StructureDefinition/DocumentReference">DocumentReference</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Comments</td><td><p>Conditions can be identified at the activity level that are not identified as reasons for the overall plan.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1839,7 +1711,6 @@ Identifies why a care plan activity is needed.  Can include any health condition
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/goal.html" title="http://hl7.org/fhir/StructureDefinition/Goal">Goal</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>So that participants know the link explicitly.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1853,7 +1724,6 @@ Codes that reflect the current state of a care plan activity within its overall 
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Indicates progress against the plan, whether the activity is still relevant for the plan.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Some aspects of status can be inferred based on the resources linked in actionTaken.  Note that &quot;status&quot; is only as current as the plan was most recently updated.<br />
@@ -1866,7 +1736,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Comments</td><td><p>Will generally not be present if status is &quot;complete&quot;.  Be sure to prompt to update this (or at least remove the existing value) if the status is changed.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1877,7 +1746,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Captures intention to not do something that may have been previously typical.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This element is labeled as a modifier because it marks an activity as an activity that is not to be performed.</p>
@@ -1891,7 +1759,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/R4/datatypes.html#Timing">Timing</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Allows prompting for activities and detection of missed planned activities.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1901,7 +1768,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/location.html" title="http://hl7.org/fhir/StructureDefinition/Location">Location</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Helps in planning of activity.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>May reference a specific clinical location or may identify a type of location.</p>
@@ -1913,7 +1779,6 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a>|<a href="http://hl7.org/fhir/R4/practitionerrole.html" title="http://hl7.org/fhir/StructureDefinition/PractitionerRole">PractitionerRole</a>|<a href="http://hl7.org/fhir/R4/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>|<a href="http://hl7.org/fhir/R4/relatedperson.html" title="http://hl7.org/fhir/StructureDefinition/RelatedPerson">RelatedPerson</a>|<a href="http://hl7.org/fhir/R4/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a>|<a href="http://hl7.org/fhir/R4/careteam.html" title="http://hl7.org/fhir/StructureDefinition/CareTeam">CareTeam</a>|<a href="http://hl7.org/fhir/R4/healthcareservice.html" title="http://hl7.org/fhir/StructureDefinition/HealthcareService">HealthcareService</a>|<a href="http://hl7.org/fhir/R4/device.html" title="http://hl7.org/fhir/StructureDefinition/Device">Device</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Helps in planning of activity.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>A performer MAY also be a participant in the care plan.</p>
@@ -1929,7 +1794,6 @@ A product supplied or administered as part of a care plan activity
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/medication.html" title="http://hl7.org/fhir/StructureDefinition/Medication">Medication</a>|<a href="http://hl7.org/fhir/R4/substance.html" title="http://hl7.org/fhir/StructureDefinition/Substance">Substance</a>)</td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.activity:activity-code.detail.dailyAmount"> </a><span style="color: grey">107.</span> <b>CarePlan.activity:activity-code.detail.dailyAmount</b><a href="#CarePlan.activity:activity-code.detail.dailyAmount" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -1937,7 +1801,6 @@ A product supplied or administered as part of a care plan activity
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a>(<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity" title="http://hl7.org/fhir/StructureDefinition/SimpleQuantity">SimpleQuantity</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Allows rough dose checking.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>daily dose</td></tr>
@@ -1948,7 +1811,6 @@ A product supplied or administered as part of a care plan activity
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a>(<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity" title="http://hl7.org/fhir/StructureDefinition/SimpleQuantity">SimpleQuantity</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.activity:activity-code.detail.description"> </a><span style="color: grey">109.</span> <b>CarePlan.activity:activity-code.detail.description</b><a href="#CarePlan.activity:activity-code.detail.description" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -1956,7 +1818,6 @@ A product supplied or administered as part of a care plan activity
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="CarePlan.note"> </a><span style="color: grey">110.</span> <b>CarePlan.note</b><a href="#CarePlan.note" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -1964,7 +1825,6 @@ A product supplied or administered as part of a care plan activity
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Used to capture information that applies to the plan as a whole that doesn't fit into discrete elements.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -2025,7 +1885,7 @@ A product supplied or administered as part of a care plan activity
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 28, 2023 12:16+0200">2023-03-28</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 6, 2023 18:12+0200">2023-04-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

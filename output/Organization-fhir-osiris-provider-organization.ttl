@@ -5,23 +5,30 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Organization/fhir-osiris-provider-organization> a fhir:Organization ;
-  fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "fhir-osiris-provider-organization"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-organization"^^xsd:anyURI ;
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Organization/fhir-osiris-provider-organization> a fhir:Organization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fhir-osiris-provider-organization"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-organization";
+       fhir:index 0;
        fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-organization>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"fhir-osiris-provider-organization\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;fhir-osiris-provider-organization&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-organization.html\">Cancer Organization</a></p></div><p><b>identifier</b>: id: 330000662</p></div>"
-  ] ; # 
-  fhir:identifier ( [
-     fhir:system [ fhir:v "http://finess.sante.gouv.fr"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "330000662" ]
-  ] ) . # 
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"fhir-osiris-provider-organization\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;fhir-osiris-provider-organization&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-organization.html\">Cancer Organization</a></p></div><p><b>identifier</b>: id: 330000662</p></div>"
+  ]; # 
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://finess.sante.gouv.fr" ];
+     fhir:Identifier.value [ fhir:value "330000662" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Organization/fhir-osiris-provider-organization.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

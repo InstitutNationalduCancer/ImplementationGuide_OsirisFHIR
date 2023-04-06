@@ -147,7 +147,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 4" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v2.1.0). See the <a href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
   
 
 
@@ -219,7 +219,7 @@
         
           Active
           
-            as of 2023-03-28
+            as of 2023-04-06
           
         
       </td>
@@ -271,7 +271,6 @@
   <tr><td>Definition</td><td><span style='color:DarkGray'><p>Significant health conditions for a person related to the patient relevant in the context of care for the patient.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>*</span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">dom-2</b>: <span style='color:DarkGray'>If the resource is contained in another resource, it SHALL NOT contain nested Resources</span> (: <span style='color:DarkGray'>contained.contained.empty()</span>)<br/><b title="Formal Invariant Identifier">dom-3</b>: <span style='color:DarkGray'>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</span> (: <span style='color:DarkGray'>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</span>)<br/><b title="Formal Invariant Identifier">dom-4</b>: <span style='color:DarkGray'>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</span> (: <span style='color:DarkGray'>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</span>)<br/><b title="Formal Invariant Identifier">dom-5</b>: <span style='color:DarkGray'>If a resource is contained in another resource, it SHALL NOT have a security label</span> (: <span style='color:DarkGray'>contained.meta.security.empty()</span>)<br/><b title="Formal Invariant Identifier">dom-6</b>: <span style='color:DarkGray'>A resource should have narrative for robust management</span> (: <span style='color:DarkGray'>text.`div`.exists()</span>)<br/><b title="Formal Invariant Identifier">fhs-1</b>: <span style='color:DarkGray'>Can have age[x] or born[x], but not both</span> (: <span style='color:DarkGray'>age.empty() or born.empty()</span>)<br/><b title="Formal Invariant Identifier">fhs-2</b>: <span style='color:DarkGray'>Can only have estimatedAge if age[x] is present</span> (: <span style='color:DarkGray'>age.exists() or estimatedAge.empty()</span>)</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_FamilyMemberHistory.implicitRules"> </a><span style="color: grey">2.</span> <b>FamilyMemberHistory.implicitRules</b><a href="#key_FamilyMemberHistory.implicitRules" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -280,7 +279,6 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.</p>
 </span></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -292,7 +290,6 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>*</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="http://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
 </span></td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td><span style='color:DarkGray'>extensions</span>, <span style='color:DarkGray'>user content</span></td></tr>
@@ -308,7 +305,6 @@
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.</p>
 </span></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -318,7 +314,6 @@
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>1</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<a href="StructureDefinition-onco-patient.html" title="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient">OncoPatient</a>|<span style='color:DarkGray;text-decoration:line-through'><a href="http://hl7.org/fhir/R4/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a></span>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td><span style='color:DarkGray'>Proband</span></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: <span style='color:DarkGray'>All FHIR elements must have a @value or children</span> (: <span style='color:DarkGray'>hasValue() or (children().count() &gt; id.count())</span>)</td></tr>
@@ -328,7 +323,6 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>1</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-Parentage.html">Parentage Value Set</a><span style='color:DarkGray;text-decoration:line-through'>For example codes, see <a href="http://terminology.hl7.org/5.0.0/ValueSet-v3-FamilyMember.html">FamilyMember</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: <span style='color:DarkGray'>All FHIR elements must have a @value or children</span> (: <span style='color:DarkGray'>hasValue() or (children().count() &gt; id.count())</span>)</td></tr>
 </table>
@@ -342,13 +336,11 @@
   <tr><td>Definition</td><td><p>Significant health conditions for a person related to the patient relevant in the context of care for the patient.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="FamilyMemberHistory.id"> </a><span style="color: grey">2.</span> <b>FamilyMemberHistory.id</b><a href="#FamilyMemberHistory.id" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>The only time that a resource does not have an id is when it is being submitted to the server using a create operation.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="FamilyMemberHistory.meta"> </a><span style="color: grey">3.</span> <b>FamilyMemberHistory.meta</b><a href="#FamilyMemberHistory.meta" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -356,7 +348,6 @@
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Meta">Meta</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="FamilyMemberHistory.implicitRules"> </a><span style="color: grey">4.</span> <b>FamilyMemberHistory.implicitRules</b><a href="#FamilyMemberHistory.implicitRules" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -365,7 +356,6 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -378,7 +368,6 @@
 A human language
 <table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td></tr><tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a></td></tr></table></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Comments</td><td><p>Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -388,7 +377,6 @@ A human language
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Narrative">Narrative</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>narrative, html, xhtml, display</td></tr>
   <tr><td>Comments</td><td><p>Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a &quot;text blob&quot; or where text is additionally entered raw or narrated and encoded information is added later.</p>
 </td></tr>
@@ -399,7 +387,6 @@ A human language
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/resource.html">Resource</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>inline resources, anonymous resources, contained resources</td></tr>
   <tr><td>Comments</td><td><p>This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.</p>
 </td></tr>
@@ -408,7 +395,6 @@ A human language
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </td></tr>
@@ -421,7 +407,6 @@ A human language
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="http://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
@@ -435,7 +420,6 @@ A human language
   <tr><td>Note</td><td>This is a business identifier, not a resource identifier (see <a href="http://hl7.org/fhir/R4/resource.html#identifiers">discussion</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Allows identification of the family member history as it is known by various participating systems and in a way that remains consistent across servers.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This is a business identifier, not a resource identifier (see <a href="http://hl7.org/fhir/R4/resource.html#identifiers">discussion</a>).  It is best practice for the identifier to only appear on a single resource instance, however business practices may occasionally dictate that multiple resource instances with the same identifier can exist - possibly even with different resource types.  For example, multiple Patient and a Person resource instance might share the same social insurance number.</p>
@@ -447,7 +431,6 @@ A human language
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#canonical">canonical</a>(<a href="http://hl7.org/fhir/R4/plandefinition.html" title="http://hl7.org/fhir/StructureDefinition/PlanDefinition">PlanDefinition</a>|<a href="http://hl7.org/fhir/R4/questionnaire.html" title="http://hl7.org/fhir/StructureDefinition/Questionnaire">Questionnaire</a>|<a href="http://hl7.org/fhir/R4/activitydefinition.html" title="http://hl7.org/fhir/StructureDefinition/ActivityDefinition">ActivityDefinition</a>|<a href="http://hl7.org/fhir/R4/measure.html" title="http://hl7.org/fhir/StructureDefinition/Measure">Measure</a>|<a href="http://hl7.org/fhir/R4/operationdefinition.html" title="http://hl7.org/fhir/StructureDefinition/OperationDefinition">OperationDefinition</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="FamilyMemberHistory.instantiatesUri"> </a><span style="color: grey">12.</span> <b>FamilyMemberHistory.instantiatesUri</b><a href="#FamilyMemberHistory.instantiatesUri" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -455,7 +438,6 @@ A human language
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>This might be an HTML page, PDF, etc. or could just be a non-resolvable URI identifier.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -469,7 +451,6 @@ A code that identifies the status of the family history record
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -482,7 +463,6 @@ A code that identifies the status of the family history record
 Codes describing the reason why a family member's history is not available
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>This is a separate element to allow it to have a distinct binding from reasonCode.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -492,7 +472,6 @@ Codes describing the reason why a family member's history is not available
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-onco-patient.html" title="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient">OncoPatient</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Proband</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
@@ -501,7 +480,6 @@ Codes describing the reason why a family member's history is not available
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Allows determination of how current the summary is.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This should be captured even if the same as the date on the List aggregating the full family history.</p>
@@ -513,7 +491,6 @@ Codes describing the reason why a family member's history is not available
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Allows greater ease in ensuring the same person is being talked about.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -524,7 +501,6 @@ Codes describing the reason why a family member's history is not available
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-Parentage.html">Parentage Value Set</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="FamilyMemberHistory.sex"> </a><span style="color: grey">19.</span> <b>FamilyMemberHistory.sex</b><a href="#FamilyMemberHistory.sex" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -535,7 +511,6 @@ Codes describing the reason why a family member's history is not available
 Codes describing the sex assigned at birth as documented on the birth registration
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Not all relationship codes imply sex and the relative's sex can be relevant for risk assessments.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This element should ideally reflect whether the individual is genetically male or female.  However, as reported information based on the knowledge of the patient or reporting friend/relative, there may be situations where the reported sex might not be totally accurate.  E.g. 'Aunt Sue' might be XY rather than XX.  Questions soliciting this information should be phrased to encourage capture of genetic sex where known.  However, systems performing analysis should also allow for the possibility of imprecision with this element.</p>
@@ -548,7 +523,6 @@ Codes describing the sex assigned at birth as documented on the birth registrati
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: fhs-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Allows calculation of the relative's age.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -559,7 +533,6 @@ Codes describing the sex assigned at birth as documented on the birth registrati
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: fhs-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/R4/datatypes.html#Age">Age</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>While age can be calculated from date of birth, sometimes recording age directly is more natural for clinicians.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>use estimatedAge to indicate whether the age is actual or not.</p>
@@ -571,7 +544,6 @@ Codes describing the sex assigned at birth as documented on the birth registrati
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: fhs-2</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Clinicians often prefer to specify an estimaged age rather than an age range.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This element is labeled as a modifier because the fact that age is estimated can/should change the results of any algorithm that calculates based on the specified age.</p>
@@ -585,7 +557,6 @@ Codes describing the sex assigned at birth as documented on the birth registrati
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Age">Age</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="FamilyMemberHistory.reasonCode"> </a><span style="color: grey">24.</span> <b>FamilyMemberHistory.reasonCode</b><a href="#FamilyMemberHistory.reasonCode" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -596,7 +567,6 @@ Codes describing the sex assigned at birth as documented on the birth registrati
 Codes indicating why the family member history was done
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Textual reasons can be captured using reasonCode.text.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -606,7 +576,6 @@ Codes indicating why the family member history was done
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/condition.html" title="http://hl7.org/fhir/StructureDefinition/Condition">Condition</a>|<a href="http://hl7.org/fhir/R4/observation.html" title="http://hl7.org/fhir/StructureDefinition/Observation">Observation</a>|<a href="http://hl7.org/fhir/R4/allergyintolerance.html" title="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance">AllergyIntolerance</a>|<a href="http://hl7.org/fhir/R4/questionnaireresponse.html" title="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse">QuestionnaireResponse</a>|<a href="http://hl7.org/fhir/R4/diagnosticreport.html" title="http://hl7.org/fhir/StructureDefinition/DiagnosticReport">DiagnosticReport</a>|<a href="http://hl7.org/fhir/R4/documentreference.html" title="http://hl7.org/fhir/StructureDefinition/DocumentReference">DocumentReference</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="FamilyMemberHistory.note"> </a><span style="color: grey">26.</span> <b>FamilyMemberHistory.note</b><a href="#FamilyMemberHistory.note" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -614,7 +583,6 @@ Codes indicating why the family member history was done
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="FamilyMemberHistory.condition"> </a><span style="color: grey">27.</span> <b>FamilyMemberHistory.condition</b><a href="#FamilyMemberHistory.condition" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -622,7 +590,6 @@ Codes indicating why the family member history was done
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="FamilyMemberHistory.condition.id"> </a><span style="color: grey">28.</span> <b>FamilyMemberHistory.condition.id</b><a href="#FamilyMemberHistory.condition.id" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -631,13 +598,11 @@ Codes indicating why the family member history was done
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td>XML Representation</td><td>In the XML format, this property is represented as an attribute.</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="FamilyMemberHistory.condition.extension"> </a><span style="color: grey">29.</span> <b>FamilyMemberHistory.condition.extension</b><a href="#FamilyMemberHistory.condition.extension" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </td></tr>
@@ -650,7 +615,6 @@ Codes indicating why the family member history was done
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="http://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content, modifiers</td></tr>
@@ -664,7 +628,6 @@ Codes indicating why the family member history was done
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-Topography.html">Topography Value Set</a>; other codes may be used where these codes are not suitable</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="FamilyMemberHistory.condition.outcome"> </a><span style="color: grey">32.</span> <b>FamilyMemberHistory.condition.outcome</b><a href="#FamilyMemberHistory.condition.outcome" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -675,7 +638,6 @@ Codes indicating why the family member history was done
 The result of the condition for the patient; e.g. death, permanent disability, temporary disability, etc
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="FamilyMemberHistory.condition.contributedToDeath"> </a><span style="color: grey">33.</span> <b>FamilyMemberHistory.condition.contributedToDeath</b><a href="#FamilyMemberHistory.condition.contributedToDeath" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -683,7 +645,6 @@ The result of the condition for the patient; e.g. death, permanent disability, t
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="FamilyMemberHistory.condition.onset[x]"> </a><a name="FamilyMemberHistory.condition.onsetAge"> </a><a name="FamilyMemberHistory.condition.onset[x]:onsetAge"> </a><a name="FamilyMemberHistory.condition.onsetRange"> </a><a name="FamilyMemberHistory.condition.onset[x]:onsetRange"> </a><a name="FamilyMemberHistory.condition.onsetPeriod"> </a><a name="FamilyMemberHistory.condition.onset[x]:onsetPeriod"> </a><a name="FamilyMemberHistory.condition.onsetString"> </a><a name="FamilyMemberHistory.condition.onset[x]:onsetString"> </a><span style="color: grey">34.</span> <b>FamilyMemberHistory.condition.onset[x]</b><a href="#FamilyMemberHistory.condition.onset[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -692,7 +653,6 @@ The result of the condition for the patient; e.g. death, permanent disability, t
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/R4/datatypes.html#Age">Age</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Age of onset of a condition in relatives is predictive of risk for the patient.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -702,7 +662,6 @@ The result of the condition for the patient; e.g. death, permanent disability, t
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
 </table>
@@ -761,7 +720,7 @@ The result of the condition for the patient; e.g. death, permanent disability, t
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 28, 2023 12:16+0200">2023-03-28</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 6, 2023 18:12+0200">2023-04-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

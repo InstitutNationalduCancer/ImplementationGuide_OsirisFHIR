@@ -5,37 +5,45 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Procedure/fhir-osiris-example-surgery-2> a fhir:Procedure ;
-  fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "fhir-osiris-example-surgery-2"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-surgery"^^xsd:anyURI ;
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Procedure/fhir-osiris-example-surgery-2> a fhir:Procedure;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fhir-osiris-example-surgery-2"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-surgery";
+       fhir:index 0;
        fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-surgery>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"fhir-osiris-example-surgery-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;fhir-osiris-example-surgery-2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-surgery.html\">Oncology Surgery</a></p></div><p><b>basedOn</b>: <a href=\"CarePlan-fhir-osiris-example-treatment-2.html\">CarePlan/fhir-osiris-example-treatment-2</a></p><p><b>status</b>: completed</p><p><b>category</b>: Unknown <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><p><b>outcome</b>: R1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (recist.eortc.org#R1)</span></p></div>"
-  ] ; # 
-  fhir:basedOn ( [
-     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CarePlan/fhir-osiris-example-treatment-2> ;
-     fhir:reference [ fhir:v "CarePlan/fhir-osiris-example-treatment-2" ]
-  ] ) ; # 
-  fhir:status [ fhir:v "completed"] ; # 
-  fhir:category [
-     fhir:text [ fhir:v "Unknown" ]
-  ] ; # 
-  fhir:subject [
-     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/L304> ;
-     fhir:reference [ fhir:v "Patient/L304" ]
-  ] ; # 
-  fhir:outcome [
-     fhir:coding ( [
-       fhir:system [ fhir:v "https://recist.eortc.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "R1" ]
-     ] )
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"fhir-osiris-example-surgery-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;fhir-osiris-example-surgery-2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-surgery.html\">Oncology Surgery</a></p></div><p><b>basedOn</b>: <a href=\"CarePlan-fhir-osiris-example-treatment-2.html\">CarePlan/fhir-osiris-example-treatment-2</a></p><p><b>status</b>: completed</p><p><b>category</b>: Unknown <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><p><b>outcome</b>: R1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (recist.eortc.org#R1)</span></p></div>"
+  ]; # 
+  fhir:Procedure.basedOn [
+     fhir:index 0;
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CarePlan/fhir-osiris-example-treatment-2>;
+     fhir:Reference.reference [ fhir:value "CarePlan/fhir-osiris-example-treatment-2" ]
+  ]; # 
+  fhir:Procedure.status [ fhir:value "completed"]; # 
+  fhir:Procedure.category [
+     fhir:CodeableConcept.text [ fhir:value "Unknown" ]
+  ]; # 
+  fhir:Procedure.subject [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/L304>;
+     fhir:Reference.reference [ fhir:value "Patient/L304" ]
+  ]; # 
+  fhir:Procedure.outcome [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://recist.eortc.org" ];
+       fhir:Coding.code [ fhir:value "R1" ]
+     ]
   ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Procedure/fhir-osiris-example-surgery-2.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

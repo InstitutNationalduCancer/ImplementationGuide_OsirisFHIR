@@ -147,7 +147,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 4" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v2.1.0). See the <a href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
   
 
 
@@ -229,7 +229,7 @@
         
           Active
           
-            as of 2023-03-28
+            as of 2023-04-06
           
         
       </td>
@@ -280,7 +280,6 @@
   <tr><td>Definition</td><td><span style='color:DarkGray'><p>This resource is primarily used for the identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>*</span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">dom-2</b>: <span style='color:DarkGray'>If the resource is contained in another resource, it SHALL NOT contain nested Resources</span> (: <span style='color:DarkGray'>contained.contained.empty()</span>)<br/><b title="Formal Invariant Identifier">dom-3</b>: <span style='color:DarkGray'>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</span> (: <span style='color:DarkGray'>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</span>)<br/><b title="Formal Invariant Identifier">dom-4</b>: <span style='color:DarkGray'>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</span> (: <span style='color:DarkGray'>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</span>)<br/><b title="Formal Invariant Identifier">dom-5</b>: <span style='color:DarkGray'>If a resource is contained in another resource, it SHALL NOT have a security label</span> (: <span style='color:DarkGray'>contained.meta.security.empty()</span>)<br/><b title="Formal Invariant Identifier">dom-6</b>: <span style='color:DarkGray'>A resource should have narrative for robust management</span> (: <span style='color:DarkGray'>text.`div`.exists()</span>)</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_Medication.implicitRules"> </a><span style="color: grey">2.</span> <b>Medication.implicitRules</b><a href="#key_Medication.implicitRules" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -289,7 +288,6 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.</p>
 </span></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -301,7 +299,6 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>*</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="http://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
 </span></td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td><span style='color:DarkGray'>extensions</span>, <span style='color:DarkGray'>user content</span></td></tr>
@@ -317,7 +314,6 @@
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>Depending on the context of use, the code that was actually selected by the user (prescriber, dispenser, etc.) will have the coding.userSelected set to true.  As described in the coding datatype: &quot;A coding may be marked as a &quot;userSelected&quot; if a user selected the particular coded value in a user interface (e.g. the user selects an item in a pick-list). If a user selected coding exists, it is the preferred choice for performing translations etc. Other codes can only be literal translations to alternative code systems, or codes at a lower level of granularity (e.g. a generic code for a vendor-specific primary one).</p>
 </span></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -328,7 +324,6 @@
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.</p>
 </span></td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>Very often the text is the same as a displayName of one of the codings.</p>
@@ -343,7 +338,6 @@
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><span style='color:DarkGray'><p>This status is intended to identify if the medication in a local system is in active use within a drug database or inventory.  For example, a pharmacy system may create a new drug file record for a compounded product &quot;ABC Hospital Special Cream&quot; with an active status.  At some point in the future, it may be determined that the drug record was created with an error and the status is changed to &quot;entered in error&quot;.   This status is not intended to specify if a medication is part of a particular formulary.  It is possible that the drug record may be referenced by multiple formularies or catalogues and each of those entries would have a separate status.</p>
 </span></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -359,13 +353,11 @@
   <tr><td>Definition</td><td><p>This resource is primarily used for the identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Medication.id"> </a><span style="color: grey">2.</span> <b>Medication.id</b><a href="#Medication.id" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>The only time that a resource does not have an id is when it is being submitted to the server using a create operation.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Medication.meta"> </a><span style="color: grey">3.</span> <b>Medication.meta</b><a href="#Medication.meta" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -373,7 +365,6 @@
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Meta">Meta</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Medication.implicitRules"> </a><span style="color: grey">4.</span> <b>Medication.implicitRules</b><a href="#Medication.implicitRules" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -382,7 +373,6 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -395,7 +385,6 @@
 A human language
 <table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td></tr><tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a></td></tr></table></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Comments</td><td><p>Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -405,7 +394,6 @@ A human language
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Narrative">Narrative</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>narrative, html, xhtml, display</td></tr>
   <tr><td>Comments</td><td><p>Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a &quot;text blob&quot; or where text is additionally entered raw or narrated and encoded information is added later.</p>
 </td></tr>
@@ -416,7 +404,6 @@ A human language
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/resource.html">Resource</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>inline resources, anonymous resources, contained resources</td></tr>
   <tr><td>Comments</td><td><p>This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.</p>
 </td></tr>
@@ -425,7 +412,6 @@ A human language
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </td></tr>
@@ -438,7 +424,6 @@ A human language
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="http://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
@@ -452,7 +437,6 @@ A human language
   <tr><td>Note</td><td>This is a business identifier, not a resource identifier (see <a href="http://hl7.org/fhir/R4/resource.html#identifiers">discussion</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>The serial number could be included as an identifier.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -466,7 +450,6 @@ A coded concept that defines the type of a medication
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Depending on the context of use, the code that was actually selected by the user (prescriber, dispenser, etc.) will have the coding.userSelected set to true.  As described in the coding datatype: &quot;A coding may be marked as a &quot;userSelected&quot; if a user selected the particular coded value in a user interface (e.g. the user selects an item in a pick-list). If a user selected coding exists, it is the preferred choice for performing translations etc. Other codes can only be literal translations to alternative code systems, or codes at a lower level of granularity (e.g. a generic code for a vendor-specific primary one).</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -477,13 +460,11 @@ A coded concept that defines the type of a medication
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td>XML Representation</td><td>In the XML format, this property is represented as an attribute.</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Medication.code.extension"> </a><span style="color: grey">13.</span> <b>Medication.code.extension</b><a href="#Medication.code.extension" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </td></tr>
@@ -495,7 +476,6 @@ A coded concept that defines the type of a medication
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Allows for alternative encodings within a code system, and translations to other code systems.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.</p>
@@ -507,7 +487,6 @@ A coded concept that defines the type of a medication
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Very often the text is the same as a displayName of one of the codings.</p>
@@ -523,7 +502,6 @@ A coded concept defining if the medication is in active use
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>This status is intended to identify if the medication in a local system is in active use within a drug database or inventory.  For example, a pharmacy system may create a new drug file record for a compounded product &quot;ABC Hospital Special Cream&quot; with an active status.  At some point in the future, it may be determined that the drug record was created with an error and the status is changed to &quot;entered in error&quot;.   This status is not intended to specify if a medication is part of a particular formulary.  It is possible that the drug record may be referenced by multiple formularies or catalogues and each of those entries would have a separate status.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -533,7 +511,6 @@ A coded concept defining if the medication is in active use
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Medication.form"> </a><span style="color: grey">18.</span> <b>Medication.form</b><a href="#Medication.form" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -544,7 +521,6 @@ A coded concept defining if the medication is in active use
 A coded concept defining the form of a medication
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Comments</td><td><p>When Medication is referenced from MedicationRequest, this is the ordered form.  When Medication is referenced within MedicationDispense, this is the dispensed form.  When Medication is referenced within MedicationAdministration, this is administered form.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -554,7 +530,6 @@ A coded concept defining the form of a medication
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Ratio">Ratio</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Medication.ingredient"> </a><span style="color: grey">20.</span> <b>Medication.ingredient</b><a href="#Medication.ingredient" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -562,7 +537,6 @@ A coded concept defining the form of a medication
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Comments</td><td><p>The ingredients need not be a complete list.  If an ingredient is not specified, this does not indicate whether an ingredient is present or absent.  If an ingredient is specified it does not mean that all ingredients are specified.  It is possible to specify both inactive and active ingredients.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -573,13 +547,11 @@ A coded concept defining the form of a medication
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td>XML Representation</td><td>In the XML format, this property is represented as an attribute.</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Medication.ingredient.extension"> </a><span style="color: grey">22.</span> <b>Medication.ingredient.extension</b><a href="#Medication.ingredient.extension" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </td></tr>
@@ -592,7 +564,6 @@ A coded concept defining the form of a medication
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="http://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content, modifiers</td></tr>
@@ -606,7 +577,6 @@ A coded concept defining the form of a medication
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/substance.html" title="http://hl7.org/fhir/StructureDefinition/Substance">Substance</a>|<a href="http://hl7.org/fhir/R4/medication.html" title="http://hl7.org/fhir/StructureDefinition/Medication">Medication</a>)</td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>The ingredient may reference a substance (for example, amoxicillin) or another medication (for example in the case of a compounded product, Glaxal Base).</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -616,7 +586,6 @@ A coded concept defining the form of a medication
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Requirements</td><td><p>True indicates that the ingredient affects the therapeutic action of the drug (i.e. active).
 False indicates that the ingredient does not affect the therapeutic action of the drug (i.e. inactive).</p>
 </td></tr>
@@ -627,7 +596,6 @@ False indicates that the ingredient does not affect the therapeutic action of th
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Ratio">Ratio</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Medication.batch"> </a><span style="color: grey">27.</span> <b>Medication.batch</b><a href="#Medication.batch" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -635,7 +603,6 @@ False indicates that the ingredient does not affect the therapeutic action of th
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Medication.batch.id"> </a><span style="color: grey">28.</span> <b>Medication.batch.id</b><a href="#Medication.batch.id" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -644,13 +611,11 @@ False indicates that the ingredient does not affect the therapeutic action of th
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td>XML Representation</td><td>In the XML format, this property is represented as an attribute.</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Medication.batch.extension"> </a><span style="color: grey">29.</span> <b>Medication.batch.extension</b><a href="#Medication.batch.extension" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </td></tr>
@@ -663,7 +628,6 @@ False indicates that the ingredient does not affect the therapeutic action of th
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="http://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content, modifiers</td></tr>
@@ -676,7 +640,6 @@ False indicates that the ingredient does not affect the therapeutic action of th
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Medication.batch.expirationDate"> </a><span style="color: grey">32.</span> <b>Medication.batch.expirationDate</b><a href="#Medication.batch.expirationDate" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -684,7 +647,6 @@ False indicates that the ingredient does not affect the therapeutic action of th
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
 </table>
@@ -743,7 +705,7 @@ False indicates that the ingredient does not affect the therapeutic action of th
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 28, 2023 12:16+0200">2023-03-28</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 6, 2023 18:12+0200">2023-04-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

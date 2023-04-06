@@ -5,43 +5,54 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/SeriesModalityCS> a fhir:CodeSystem ;
-  fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "SeriesModalityCS"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://terminology.arkhn.com/SeriesModalityCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">RTSTRUCT<a name=\"SeriesModalityCS-RTSTRUCT\"> </a></td><td>Radiotherapy Structure Set</td></tr></table></div>"
-  ] ; # 
-  fhir:url [ fhir:v "https://terminology.arkhn.com/SeriesModalityCS"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.1.0"] ; # 
-  fhir:name [ fhir:v "SeriesModalityCS"] ; # 
-  fhir:title [ fhir:v "Series Modality Code System"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-03-28T12:16:37+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Arkhn"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "Arkhn" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://arkhn.com" ]
-     ] [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "contact@arkhn.com" ]
-     ] )
-  ] [
-     fhir:name [ fhir:v "Nicolas Riss" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "nicolas@arkhn.com" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Series Modality  Code System"] ; # 
-  fhir:content [ fhir:v "complete"] ; # 
-  fhir:count [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
-  fhir:concept ( [
-     fhir:code [ fhir:v "RTSTRUCT" ] ;
-     fhir:display [ fhir:v "Radiotherapy Structure Set" ]
-  ] ) . # 
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/SeriesModalityCS> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "SeriesModalityCS"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://terminology.arkhn.com/SeriesModalityCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">RTSTRUCT<a name=\"SeriesModalityCS-RTSTRUCT\"> </a></td><td>Radiotherapy Structure Set</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "https://terminology.arkhn.com/SeriesModalityCS"]; # 
+  fhir:CodeSystem.version [ fhir:value "2.1.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "SeriesModalityCS"]; # 
+  fhir:CodeSystem.title [ fhir:value "Series Modality Code System"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-04-06T18:12:15+02:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "Arkhn"]; # 
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Arkhn" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://arkhn.com" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "contact@arkhn.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Nicolas Riss" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "nicolas@arkhn.com" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Series Modality  Code System"]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "1"^^xsd:nonNegativeInteger]; # 
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "RTSTRUCT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Radiotherapy Structure Set" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/SeriesModalityCS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

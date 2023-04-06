@@ -5,946 +5,1258 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/VSBodySite> a fhir:ValueSet ;
-  fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "VSBodySite"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-13881006\">13881006</a></td><td>Zygoma</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-74670003\">74670003</a></td><td>Wrist joint</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-38266002\">38266002</a></td><td>Entire body</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-45292006\">45292006</a></td><td>Vulva</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-85234005\">85234005</a></td><td>Vertebral artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-76784001\">76784001</a></td><td>Vagina</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-35039007\">35039007</a></td><td>Uterus</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-13648007\">13648007</a></td><td>Urethra</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-87953007\">87953007</a></td><td>Ureter</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-431491007\">431491007</a></td><td>Upper urinary tract</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-53120007\">53120007</a></td><td>Upper limb</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-40983000\">40983000</a></td><td>Upper arm</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-284639000\">284639000</a></td><td>Umbilical vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-50536004\">50536004</a></td><td>Umbilical artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-90290004\">90290004</a></td><td>Umbilical region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-44984001\">44984001</a></td><td>Ulnar artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-23416004\">23416004</a></td><td>Ulna</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-122495006\">122495006</a></td><td>Thoracic spine</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-485005\">485005</a></td><td>Transverse colon</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-110726009\">110726009</a></td><td>Trachea and bronchus</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-44567001\">44567001</a></td><td>Trachea</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-21974007\">21974007</a></td><td>Tongue</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-29707007\">29707007</a></td><td>Toe</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-53620006\">53620006</a></td><td>Temporomandibular joint</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-1217256009\">1217256009</a></td><td>Thoraco-lumbar spine</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-110536004\">110536004</a></td><td>Tibia and fibula</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-12611008\">12611008</a></td><td>Tibia</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-69748006\">69748006</a></td><td>Thyroid</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-9875009\">9875009</a></td><td>Thymus</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-76505004\">76505004</a></td><td>Thumb</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-43799004\">43799004</a></td><td>Thorax</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-113262008\">113262008</a></td><td>Thoracic aorta</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-68367000\">68367000</a></td><td>Thigh</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-42695009\">42695009</a></td><td>Thalamus</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-40689003\">40689003</a></td><td>Testis</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-48345005\">48345005</a></td><td>Superior vena cava</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-72021004\">72021004</a></td><td>Superior thyroid artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-11708003\">11708003</a></td><td>Pubic region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-77621008\">77621008</a></td><td>Supraclavicular region of neck</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-54019009\">54019009</a></td><td>Submandibular gland</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-19695001\">19695001</a></td><td>Subcostal</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-9454009\">9454009</a></td><td>Subclavian vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-36765005\">36765005</a></td><td>Subclavian artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-69695003\">69695003</a></td><td>Stomach</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-56873002\">56873002</a></td><td>Sternum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-54735007\">54735007</a></td><td>Sacrum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-35819009\">35819009</a></td><td>Splenic vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-22083002\">22083002</a></td><td>Splenic artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-78961009\">78961009</a></td><td>Spleen</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-421060004\">421060004</a></td><td>Spine</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-2748008\">2748008</a></td><td>Spinal cord</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-30315005\">30315005</a></td><td>Small intestine</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-42258001\">42258001</a></td><td>Superior mesenteric artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-89546000\">89546000</a></td><td>Skull</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-39723000\">39723000</a></td><td>Sacroiliac joint</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-60184004\">60184004</a></td><td>Sigmoid colon</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-16982005\">16982005</a></td><td>Shoulder</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-397364003\">397364003</a></td><td>Superficial femoral vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-128587003\">128587003</a></td><td>Saphenofemoral junction</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-181349008\">181349008</a></td><td>Superficial femoral artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-58742003\">58742003</a></td><td>Sesamoid bones of foot</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-64739004\">64739004</a></td><td>Seminal vesicle</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-42575006\">42575006</a></td><td>Sella turcica</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-20233005\">20233005</a></td><td>Scrotum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-18619003\">18619003</a></td><td>Sclera</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-7844006\">7844006</a></td><td>Sternoclavicular joint</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-79601000\">79601000</a></td><td>Scapula</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-41695006\">41695006</a></td><td>Scalp</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-362072009\">362072009</a></td><td>Saphenous vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-53085002\">53085002</a></td><td>Right ventricle</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-50519007\">50519007</a></td><td>Right upper quadrant of abdomen</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-8629005\">8629005</a></td><td>Superior right pulmonary vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-78480002\">78480002</a></td><td>Right pulmonary artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-73931004\">73931004</a></td><td>Right portal vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-1017211000\">1017211000</a></td><td>Right lumbar region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-48544008\">48544008</a></td><td>Right lower quadrant of abdomen</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-37117007\">37117007</a></td><td>Right inguinal region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-113197003\">113197003</a></td><td>Rib</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-133946002\">133946002</a></td><td>Right hypochondriac region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-272998002\">272998002</a></td><td>Right hepatic vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-69833005\">69833005</a></td><td>Right femoral artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-82849001\">82849001</a></td><td>Retroperitoneum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-56400007\">56400007</a></td><td>Renal vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-2841007\">2841007</a></td><td>Renal artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-34402009\">34402009</a></td><td>Rectum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-73829009\">73829009</a></td><td>Right atrium</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-110535000\">110535000</a></td><td>Radius and ulna</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-62413002\">62413002</a></td><td>Radius</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-45631007\">45631007</a></td><td>Radial artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-122972007\">122972007</a></td><td>Pulmonary vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-81040000\">81040000</a></td><td>Pulmonary artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-41216001\">41216001</a></td><td>Prostate</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-23438002\">23438002</a></td><td>Profunda femoris vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-31677005\">31677005</a></td><td>Profunda femoris artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-13363002\">13363002</a></td><td>Posterior tibial artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-43119007\">43119007</a></td><td>Posterior communicating artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-32764006\">32764006</a></td><td>Portal vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-56849005\">56849005</a></td><td>Popliteal vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-32361000\">32361000</a></td><td>Popliteal fossa</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-43899006\">43899006</a></td><td>Popliteal artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-78067005\">78067005</a></td><td>Placenta</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-312535008\">312535008</a></td><td>Pharynx and larynx</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-54066008\">54066008</a></td><td>Pharynx</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-706342009\">706342009</a></td><td>Phantom</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-8821006\">8821006</a></td><td>Peroneal artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-38864007\">38864007</a></td><td>Perineum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-18911002\">18911002</a></td><td>Penis</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-282044005\">282044005</a></td><td>Penile artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-1231522001\">1231522001</a></td><td>Pelvis and lower extremities</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-816092008\">816092008</a></td><td>Pelvis</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-70382005\">70382005</a></td><td>Posterior cerebral artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-64234005\">64234005</a></td><td>Patella</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-45289007\">45289007</a></td><td>Parotid gland</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-111002\">111002</a></td><td>Parathyroid</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-91691001\">91691001</a></td><td>Parasternal</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-69930009\">69930009</a></td><td>Pancreatic duct</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-15776009\">15776009</a></td><td>Pancreas</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-110621006\">110621006</a></td><td>Pancreatic duct and bile duct systems</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-15497006\">15497006</a></td><td>Ovary</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-363654007\">363654007</a></td><td>Orbital structure</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-55024004\">55024004</a></td><td>Optic canal</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-53549008\">53549008</a></td><td>Ophthalmic artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-31145008\">31145008</a></td><td>Occipital artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-32114007\">32114007</a></td><td>Occipital vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-45206002\">45206002</a></td><td>Nose</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-416319003\">416319003</a></td><td>Neck, Chest, Abdomen and Pelvis</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-416152001\">416152001</a></td><td>Neck, Chest and Abdomen</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-417437006\">417437006</a></td><td>Neck and Chest</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-45048000\">45048000</a></td><td>Neck</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-360955006\">360955006</a></td><td>Nasopharynx</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-123851003\">123851003</a></td><td>Mouth</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-243977002\">243977002</a></td><td>Morisons pouch</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-273099000\">273099000</a></td><td>Middle hepatic vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-128583004\">128583004</a></td><td>Mesenteric vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-86570000\">86570000</a></td><td>Mesenteric artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-72410000\">72410000</a></td><td>Mediastinum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-17232002\">17232002</a></td><td>Middle cerebral artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-70925003\">70925003</a></td><td>Maxilla</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-59066005\">59066005</a></td><td>Mastoid bone</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-91609006\">91609006</a></td><td>Mandible</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-87878005\">87878005</a></td><td>Left ventricle</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-86367003\">86367003</a></td><td>Left upper quadrant of abdomen</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-39607008\">39607008</a></td><td>Lung</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-91747007\">91747007</a></td><td>Lumen of blood vessel</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-34635009\">34635009</a></td><td>Lumbar artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-52612000\">52612000</a></td><td>Lumbar region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-43863001\">43863001</a></td><td>Superior left pulmonary vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-1217253001\">1217253001</a></td><td>Lumbo-sacral spine</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-122496007\">122496007</a></td><td>Lumbar spine</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-50408007\">50408007</a></td><td>Left pulmonary artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-70253006\">70253006</a></td><td>Left portal vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-61685007\">61685007</a></td><td>Lower limb</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-30021000\">30021000</a></td><td>Lower leg</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-1017210004\">1017210004</a></td><td>Left lumbar region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-68505006\">68505006</a></td><td>Left lower quadrant of abdomen</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-10200004\">10200004</a></td><td>Liver</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-85119005\">85119005</a></td><td>Left inguinal region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-113264009\">113264009</a></td><td>Lingual artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-133945003\">133945003</a></td><td>Left hypochondriac region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-273202007\">273202007</a></td><td>Left hepatic vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-113270003\">113270003</a></td><td>Left femoral artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-66720007\">66720007</a></td><td>Lateral Ventricle</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-82471001\">82471001</a></td><td>Left atrium</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-4596009\">4596009</a></td><td>Larynx</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-14742008\">14742008</a></td><td>Large intestine</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-59749000\">59749000</a></td><td>Lacrimal artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-72696002\">72696002</a></td><td>Knee</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-64033007\">64033007</a></td><td>Kidney</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-39352004\">39352004</a></td><td>Joint</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-21306003\">21306003</a></td><td>Jejunum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-661005\">661005</a></td><td>Jaw region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-1101003\">1101003</a></td><td>Intracranial</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-69327007\">69327007</a></td><td>Internal mammary artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-12123001\">12123001</a></td><td>Internal jugular vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-90024005\">90024005</a></td><td>Internal iliac artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-8887007\">8887007</a></td><td>Innominate vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-12691009\">12691009</a></td><td>Innominate artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-26893007\">26893007</a></td><td>Inguinal region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-64131007\">64131007</a></td><td>Inferior vena cava</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-33795007\">33795007</a></td><td>Inferior mesenteric artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-22356005\">22356005</a></td><td>Ilium</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-244411005\">244411005</a></td><td>Iliac vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-10293006\">10293006</a></td><td>Iliac artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-34516001\">34516001</a></td><td>Ileum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-86117002\">86117002</a></td><td>Internal carotid artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-361078006\">361078006</a></td><td>Internal Auditory Canal</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-81502006\">81502006</a></td><td>Hypopharynx</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-85050009\">85050009</a></td><td>Humerus</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-24136001\">24136001</a></td><td>Hip joint</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-8993003\">8993003</a></td><td>Hepatic vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-76015000\">76015000</a></td><td>Hepatic artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-80891009\">80891009</a></td><td>Heart</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-774007\">774007</a></td><td>Head and Neck</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-69536005\">69536005</a></td><td>Head</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-85562004\">85562004</a></td><td>Hand</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-60734001\">60734001</a></td><td>Great saphenous vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-46862004\">46862004</a></td><td>Gluteal region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-300571009\">300571009</a></td><td>Gestational sac</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-128559007\">128559007</a></td><td>Genicular artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-110568007\">110568007</a></td><td>Gastric vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-28231008\">28231008</a></td><td>Gallbladder</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-14975008\">14975008</a></td><td>Forearm</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-56459004\">56459004</a></td><td>Foot</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-79361005\">79361005</a></td><td>Fontanel of skull</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-58602004\">58602004</a></td><td>Flank</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-7569003\">7569003</a></td><td>Finger</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-87342007\">87342007</a></td><td>Fibula</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-71341001\">71341001</a></td><td>Femur</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-83419000\">83419000</a></td><td>Femoral vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-7657000\">7657000</a></td><td>Femoral artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-23074001\">23074001</a></td><td>Facial artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-89545001\">89545001</a></td><td>Face</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-80243003\">80243003</a></td><td>Eyelid</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-81745001\">81745001</a></td><td>Eye</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-66019005\">66019005</a></td><td>Extremity</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-71585003\">71585003</a></td><td>External jugular vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-63507001\">63507001</a></td><td>External iliac vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-113269004\">113269004</a></td><td>External iliac artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-32849002\">32849002</a></td><td>Esophagus</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-27947004\">27947004</a></td><td>Epigastric region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-87644002\">87644002</a></td><td>Epididymis</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-48367006\">48367006</a></td><td>Endo-vesical</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-29092000\">29092000</a></td><td>Vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-59820001\">59820001</a></td><td>Endo-vascular</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-18962004\">18962004</a></td><td>Endo-nasopharyngeal</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-53342003\">53342003</a></td><td>Endo-nasal</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-2739003\">2739003</a></td><td>Endometrium</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-16953009\">16953009</a></td><td>Elbow joint</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-22286001\">22286001</a></td><td>External carotid artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-117590005\">117590005</a></td><td>Ear</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-84301002\">84301002</a></td><td>External auditory canal</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-38848004\">38848004</a></td><td>Duodenum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-32622004\">32622004</a></td><td>Descending colon</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-32672002\">32672002</a></td><td>Descending aorta</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-53843000\">53843000</a></td><td>Rectouterine pouch</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-1217257000\">1217257000</a></td><td>Cervico-thoracic spine</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-122494005\">122494005</a></td><td>Cervical spine</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-90219004\">90219004</a></td><td>Coronary sinus</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-41801008\">41801008</a></td><td>Coronary artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-28726007\">28726007</a></td><td>Cornea</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-79741001\">79741001</a></td><td>Common bile duct</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-46027005\">46027005</a></td><td>Common iliac vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-73634005\">73634005</a></td><td>Common iliac artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-71854001\">71854001</a></td><td>Colon</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-64688005\">64688005</a></td><td>Coccyx</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-51299004\">51299004</a></td><td>Clavicle</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-11279006\">11279006</a></td><td>Circle of Willis</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-80621003\">80621003</a></td><td>Choroid plexus</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-416775004\">416775004</a></td><td>Chest, Abdomen and Pelvis</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-416550000\">416550000</a></td><td>Chest and Abdomen</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-60819002\">60819002</a></td><td>Cheek</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-397363009\">397363009</a></td><td>Common femoral vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-181347005\">181347005</a></td><td>Common femoral artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-71252005\">71252005</a></td><td>Cervix</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-88556005\">88556005</a></td><td>Cerebral artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-372073000\">372073000</a></td><td>Cerebral hemisphere</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-113305005\">113305005</a></td><td>Cerebellum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-20699002\">20699002</a></td><td>Cephalic vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-57850000\">57850000</a></td><td>Celiac artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-32062004\">32062004</a></td><td>Common carotid artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-69105007\">69105007</a></td><td>Carotid Artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-53840002\">53840002</a></td><td>Calf of leg</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-80144004\">80144004</a></td><td>Calcaneus</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-21479005\">21479005</a></td><td>Carotid bulb</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-955009\">955009</a></td><td>Bronchus</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-76752008\">76752008</a></td><td>Breast</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-12738006\">12738006</a></td><td>Brain</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-20115005\">20115005</a></td><td>Brachial vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-17137000\">17137000</a></td><td>Brachial artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-110837003\">110837003</a></td><td>Bladder and urethra</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-89837001\">89837001</a></td><td>Bladder</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-34707002\">34707002</a></td><td>Biliary tract</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-28273000\">28273000</a></td><td>Bile duct</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-59011009\">59011009</a></td><td>Basilar artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-77568009\">77568009</a></td><td>Back</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-72107004\">72107004</a></td><td>Azygos vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-68705008\">68705008</a></td><td>Axillary vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-67937003\">67937003</a></td><td>Axillary Artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-91470000\">91470000</a></td><td>Axilla</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-9040008\">9040008</a></td><td>Ascending colon</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-54247002\">54247002</a></td><td>Ascending aorta</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-51114001\">51114001</a></td><td>Artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-66754008\">66754008</a></td><td>Appendix</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-57034009\">57034009</a></td><td>Aortic arch</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-15825003\">15825003</a></td><td>Aorta</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-110612005\">110612005</a></td><td>Anus, rectum and sigmoid colon</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-68053000\">68053000</a></td><td>Anterior tibial artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-17388009\">17388009</a></td><td>Anterior spinal artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-128553008\">128553008</a></td><td>Antecubital vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-8012006\">8012006</a></td><td>Anterior communicating artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-194996006\">194996006</a></td><td>Anterior cardiac vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-70258002\">70258002</a></td><td>Ankle joint</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-77012006\">77012006</a></td><td>Amniotic fluid</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-23451007\">23451007</a></td><td>Adrenal gland</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-85856004\">85856004</a></td><td>Acromioclavicular joint</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-60176003\">60176003</a></td><td>Anterior cerebral artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-7832008\">7832008</a></td><td>Abdominal aorta</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-818982008\">818982008</a></td><td>Abdomen and Pelvis</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-818981001\">818981001</a></td><td>Abdomen</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-35918002\">35918002</a></td><td>Fourth ventricle</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-49841001\">49841001</a></td><td>Third ventricle</td></tr></table></li></ul></div>"
-  ] ; # 
-  fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/VSBodySite"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.1.0"] ; # 
-  fhir:name [ fhir:v "VSBodySite"] ; # 
-  fhir:title [ fhir:v " Bodysite Value Set"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-03-28T12:16:37+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Arkhn"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "Arkhn" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://arkhn.com" ]
-     ] [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "contact@arkhn.com" ]
-     ] )
-  ] [
-     fhir:name [ fhir:v "Nicolas Riss" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "nicolas@arkhn.com" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Bodysite"] ; # 
-  fhir:compose [
-     fhir:include ( [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:concept ( [
-         fhir:code [ fhir:v "13881006" ] ;
-         fhir:display [ fhir:v "Zygoma" ]
-       ] [
-         fhir:code [ fhir:v "74670003" ] ;
-         fhir:display [ fhir:v "Wrist joint" ]
-       ] [
-         fhir:code [ fhir:v "38266002" ] ;
-         fhir:display [ fhir:v "Entire body" ]
-       ] [
-         fhir:code [ fhir:v "45292006" ] ;
-         fhir:display [ fhir:v "Vulva" ]
-       ] [
-         fhir:code [ fhir:v "85234005" ] ;
-         fhir:display [ fhir:v "Vertebral artery" ]
-       ] [
-         fhir:code [ fhir:v "76784001" ] ;
-         fhir:display [ fhir:v "Vagina" ]
-       ] [
-         fhir:code [ fhir:v "35039007" ] ;
-         fhir:display [ fhir:v "Uterus" ]
-       ] [
-         fhir:code [ fhir:v "13648007" ] ;
-         fhir:display [ fhir:v "Urethra" ]
-       ] [
-         fhir:code [ fhir:v "87953007" ] ;
-         fhir:display [ fhir:v "Ureter" ]
-       ] [
-         fhir:code [ fhir:v "431491007" ] ;
-         fhir:display [ fhir:v "Upper urinary tract" ]
-       ] [
-         fhir:code [ fhir:v "53120007" ] ;
-         fhir:display [ fhir:v "Upper limb" ]
-       ] [
-         fhir:code [ fhir:v "40983000" ] ;
-         fhir:display [ fhir:v "Upper arm" ]
-       ] [
-         fhir:code [ fhir:v "284639000" ] ;
-         fhir:display [ fhir:v "Umbilical vein" ]
-       ] [
-         fhir:code [ fhir:v "50536004" ] ;
-         fhir:display [ fhir:v "Umbilical artery" ]
-       ] [
-         fhir:code [ fhir:v "90290004" ] ;
-         fhir:display [ fhir:v "Umbilical region" ]
-       ] [
-         fhir:code [ fhir:v "44984001" ] ;
-         fhir:display [ fhir:v "Ulnar artery" ]
-       ] [
-         fhir:code [ fhir:v "23416004" ] ;
-         fhir:display [ fhir:v "Ulna" ]
-       ] [
-         fhir:code [ fhir:v "122495006" ] ;
-         fhir:display [ fhir:v "Thoracic spine" ]
-       ] [
-         fhir:code [ fhir:v "485005" ] ;
-         fhir:display [ fhir:v "Transverse colon" ]
-       ] [
-         fhir:code [ fhir:v "110726009" ] ;
-         fhir:display [ fhir:v "Trachea and bronchus" ]
-       ] [
-         fhir:code [ fhir:v "44567001" ] ;
-         fhir:display [ fhir:v "Trachea" ]
-       ] [
-         fhir:code [ fhir:v "21974007" ] ;
-         fhir:display [ fhir:v "Tongue" ]
-       ] [
-         fhir:code [ fhir:v "29707007" ] ;
-         fhir:display [ fhir:v "Toe" ]
-       ] [
-         fhir:code [ fhir:v "53620006" ] ;
-         fhir:display [ fhir:v "Temporomandibular joint" ]
-       ] [
-         fhir:code [ fhir:v "1217256009" ] ;
-         fhir:display [ fhir:v "Thoraco-lumbar spine" ]
-       ] [
-         fhir:code [ fhir:v "110536004" ] ;
-         fhir:display [ fhir:v "Tibia and fibula" ]
-       ] [
-         fhir:code [ fhir:v "12611008" ] ;
-         fhir:display [ fhir:v "Tibia" ]
-       ] [
-         fhir:code [ fhir:v "69748006" ] ;
-         fhir:display [ fhir:v "Thyroid" ]
-       ] [
-         fhir:code [ fhir:v "9875009" ] ;
-         fhir:display [ fhir:v "Thymus" ]
-       ] [
-         fhir:code [ fhir:v "76505004" ] ;
-         fhir:display [ fhir:v "Thumb" ]
-       ] [
-         fhir:code [ fhir:v "43799004" ] ;
-         fhir:display [ fhir:v "Thorax" ]
-       ] [
-         fhir:code [ fhir:v "113262008" ] ;
-         fhir:display [ fhir:v "Thoracic aorta" ]
-       ] [
-         fhir:code [ fhir:v "68367000" ] ;
-         fhir:display [ fhir:v "Thigh" ]
-       ] [
-         fhir:code [ fhir:v "42695009" ] ;
-         fhir:display [ fhir:v "Thalamus" ]
-       ] [
-         fhir:code [ fhir:v "40689003" ] ;
-         fhir:display [ fhir:v "Testis" ]
-       ] [
-         fhir:code [ fhir:v "48345005" ] ;
-         fhir:display [ fhir:v "Superior vena cava" ]
-       ] [
-         fhir:code [ fhir:v "72021004" ] ;
-         fhir:display [ fhir:v "Superior thyroid artery" ]
-       ] [
-         fhir:code [ fhir:v "11708003" ] ;
-         fhir:display [ fhir:v "Pubic region" ]
-       ] [
-         fhir:code [ fhir:v "77621008" ] ;
-         fhir:display [ fhir:v "Supraclavicular region of neck" ]
-       ] [
-         fhir:code [ fhir:v "54019009" ] ;
-         fhir:display [ fhir:v "Submandibular gland" ]
-       ] [
-         fhir:code [ fhir:v "19695001" ] ;
-         fhir:display [ fhir:v "Subcostal" ]
-       ] [
-         fhir:code [ fhir:v "9454009" ] ;
-         fhir:display [ fhir:v "Subclavian vein" ]
-       ] [
-         fhir:code [ fhir:v "36765005" ] ;
-         fhir:display [ fhir:v "Subclavian artery" ]
-       ] [
-         fhir:code [ fhir:v "69695003" ] ;
-         fhir:display [ fhir:v "Stomach" ]
-       ] [
-         fhir:code [ fhir:v "56873002" ] ;
-         fhir:display [ fhir:v "Sternum" ]
-       ] [
-         fhir:code [ fhir:v "54735007" ] ;
-         fhir:display [ fhir:v "Sacrum" ]
-       ] [
-         fhir:code [ fhir:v "35819009" ] ;
-         fhir:display [ fhir:v "Splenic vein" ]
-       ] [
-         fhir:code [ fhir:v "22083002" ] ;
-         fhir:display [ fhir:v "Splenic artery" ]
-       ] [
-         fhir:code [ fhir:v "78961009" ] ;
-         fhir:display [ fhir:v "Spleen" ]
-       ] [
-         fhir:code [ fhir:v "421060004" ] ;
-         fhir:display [ fhir:v "Spine" ]
-       ] [
-         fhir:code [ fhir:v "2748008" ] ;
-         fhir:display [ fhir:v "Spinal cord" ]
-       ] [
-         fhir:code [ fhir:v "30315005" ] ;
-         fhir:display [ fhir:v "Small intestine" ]
-       ] [
-         fhir:code [ fhir:v "42258001" ] ;
-         fhir:display [ fhir:v "Superior mesenteric artery" ]
-       ] [
-         fhir:code [ fhir:v "89546000" ] ;
-         fhir:display [ fhir:v "Skull" ]
-       ] [
-         fhir:code [ fhir:v "39723000" ] ;
-         fhir:display [ fhir:v "Sacroiliac joint" ]
-       ] [
-         fhir:code [ fhir:v "60184004" ] ;
-         fhir:display [ fhir:v "Sigmoid colon" ]
-       ] [
-         fhir:code [ fhir:v "16982005" ] ;
-         fhir:display [ fhir:v "Shoulder" ]
-       ] [
-         fhir:code [ fhir:v "397364003" ] ;
-         fhir:display [ fhir:v "Superficial femoral vein" ]
-       ] [
-         fhir:code [ fhir:v "128587003" ] ;
-         fhir:display [ fhir:v "Saphenofemoral junction" ]
-       ] [
-         fhir:code [ fhir:v "181349008" ] ;
-         fhir:display [ fhir:v "Superficial femoral artery" ]
-       ] [
-         fhir:code [ fhir:v "58742003" ] ;
-         fhir:display [ fhir:v "Sesamoid bones of foot" ]
-       ] [
-         fhir:code [ fhir:v "64739004" ] ;
-         fhir:display [ fhir:v "Seminal vesicle" ]
-       ] [
-         fhir:code [ fhir:v "42575006" ] ;
-         fhir:display [ fhir:v "Sella turcica" ]
-       ] [
-         fhir:code [ fhir:v "20233005" ] ;
-         fhir:display [ fhir:v "Scrotum" ]
-       ] [
-         fhir:code [ fhir:v "18619003" ] ;
-         fhir:display [ fhir:v "Sclera" ]
-       ] [
-         fhir:code [ fhir:v "7844006" ] ;
-         fhir:display [ fhir:v "Sternoclavicular joint" ]
-       ] [
-         fhir:code [ fhir:v "79601000" ] ;
-         fhir:display [ fhir:v "Scapula" ]
-       ] [
-         fhir:code [ fhir:v "41695006" ] ;
-         fhir:display [ fhir:v "Scalp" ]
-       ] [
-         fhir:code [ fhir:v "362072009" ] ;
-         fhir:display [ fhir:v "Saphenous vein" ]
-       ] [
-         fhir:code [ fhir:v "53085002" ] ;
-         fhir:display [ fhir:v "Right ventricle" ]
-       ] [
-         fhir:code [ fhir:v "50519007" ] ;
-         fhir:display [ fhir:v "Right upper quadrant of abdomen" ]
-       ] [
-         fhir:code [ fhir:v "8629005" ] ;
-         fhir:display [ fhir:v "Superior right pulmonary vein" ]
-       ] [
-         fhir:code [ fhir:v "78480002" ] ;
-         fhir:display [ fhir:v "Right pulmonary artery" ]
-       ] [
-         fhir:code [ fhir:v "73931004" ] ;
-         fhir:display [ fhir:v "Right portal vein" ]
-       ] [
-         fhir:code [ fhir:v "1017211000" ] ;
-         fhir:display [ fhir:v "Right lumbar region" ]
-       ] [
-         fhir:code [ fhir:v "48544008" ] ;
-         fhir:display [ fhir:v "Right lower quadrant of abdomen" ]
-       ] [
-         fhir:code [ fhir:v "37117007" ] ;
-         fhir:display [ fhir:v "Right inguinal region" ]
-       ] [
-         fhir:code [ fhir:v "113197003" ] ;
-         fhir:display [ fhir:v "Rib" ]
-       ] [
-         fhir:code [ fhir:v "133946002" ] ;
-         fhir:display [ fhir:v "Right hypochondriac region" ]
-       ] [
-         fhir:code [ fhir:v "272998002" ] ;
-         fhir:display [ fhir:v "Right hepatic vein" ]
-       ] [
-         fhir:code [ fhir:v "69833005" ] ;
-         fhir:display [ fhir:v "Right femoral artery" ]
-       ] [
-         fhir:code [ fhir:v "82849001" ] ;
-         fhir:display [ fhir:v "Retroperitoneum" ]
-       ] [
-         fhir:code [ fhir:v "56400007" ] ;
-         fhir:display [ fhir:v "Renal vein" ]
-       ] [
-         fhir:code [ fhir:v "2841007" ] ;
-         fhir:display [ fhir:v "Renal artery" ]
-       ] [
-         fhir:code [ fhir:v "34402009" ] ;
-         fhir:display [ fhir:v "Rectum" ]
-       ] [
-         fhir:code [ fhir:v "73829009" ] ;
-         fhir:display [ fhir:v "Right atrium" ]
-       ] [
-         fhir:code [ fhir:v "110535000" ] ;
-         fhir:display [ fhir:v "Radius and ulna" ]
-       ] [
-         fhir:code [ fhir:v "62413002" ] ;
-         fhir:display [ fhir:v "Radius" ]
-       ] [
-         fhir:code [ fhir:v "45631007" ] ;
-         fhir:display [ fhir:v "Radial artery" ]
-       ] [
-         fhir:code [ fhir:v "122972007" ] ;
-         fhir:display [ fhir:v "Pulmonary vein" ]
-       ] [
-         fhir:code [ fhir:v "81040000" ] ;
-         fhir:display [ fhir:v "Pulmonary artery" ]
-       ] [
-         fhir:code [ fhir:v "41216001" ] ;
-         fhir:display [ fhir:v "Prostate" ]
-       ] [
-         fhir:code [ fhir:v "23438002" ] ;
-         fhir:display [ fhir:v "Profunda femoris vein" ]
-       ] [
-         fhir:code [ fhir:v "31677005" ] ;
-         fhir:display [ fhir:v "Profunda femoris artery" ]
-       ] [
-         fhir:code [ fhir:v "13363002" ] ;
-         fhir:display [ fhir:v "Posterior tibial artery" ]
-       ] [
-         fhir:code [ fhir:v "43119007" ] ;
-         fhir:display [ fhir:v "Posterior communicating artery" ]
-       ] [
-         fhir:code [ fhir:v "32764006" ] ;
-         fhir:display [ fhir:v "Portal vein" ]
-       ] [
-         fhir:code [ fhir:v "56849005" ] ;
-         fhir:display [ fhir:v "Popliteal vein" ]
-       ] [
-         fhir:code [ fhir:v "32361000" ] ;
-         fhir:display [ fhir:v "Popliteal fossa" ]
-       ] [
-         fhir:code [ fhir:v "43899006" ] ;
-         fhir:display [ fhir:v "Popliteal artery" ]
-       ] [
-         fhir:code [ fhir:v "78067005" ] ;
-         fhir:display [ fhir:v "Placenta" ]
-       ] [
-         fhir:code [ fhir:v "312535008" ] ;
-         fhir:display [ fhir:v "Pharynx and larynx" ]
-       ] [
-         fhir:code [ fhir:v "54066008" ] ;
-         fhir:display [ fhir:v "Pharynx" ]
-       ] [
-         fhir:code [ fhir:v "706342009" ] ;
-         fhir:display [ fhir:v "Phantom" ]
-       ] [
-         fhir:code [ fhir:v "8821006" ] ;
-         fhir:display [ fhir:v "Peroneal artery" ]
-       ] [
-         fhir:code [ fhir:v "38864007" ] ;
-         fhir:display [ fhir:v "Perineum" ]
-       ] [
-         fhir:code [ fhir:v "18911002" ] ;
-         fhir:display [ fhir:v "Penis" ]
-       ] [
-         fhir:code [ fhir:v "282044005" ] ;
-         fhir:display [ fhir:v "Penile artery" ]
-       ] [
-         fhir:code [ fhir:v "1231522001" ] ;
-         fhir:display [ fhir:v "Pelvis and lower extremities" ]
-       ] [
-         fhir:code [ fhir:v "816092008" ] ;
-         fhir:display [ fhir:v "Pelvis" ]
-       ] [
-         fhir:code [ fhir:v "70382005" ] ;
-         fhir:display [ fhir:v "Posterior cerebral artery" ]
-       ] [
-         fhir:code [ fhir:v "64234005" ] ;
-         fhir:display [ fhir:v "Patella" ]
-       ] [
-         fhir:code [ fhir:v "45289007" ] ;
-         fhir:display [ fhir:v "Parotid gland" ]
-       ] [
-         fhir:code [ fhir:v "111002" ] ;
-         fhir:display [ fhir:v "Parathyroid" ]
-       ] [
-         fhir:code [ fhir:v "91691001" ] ;
-         fhir:display [ fhir:v "Parasternal" ]
-       ] [
-         fhir:code [ fhir:v "69930009" ] ;
-         fhir:display [ fhir:v "Pancreatic duct" ]
-       ] [
-         fhir:code [ fhir:v "15776009" ] ;
-         fhir:display [ fhir:v "Pancreas" ]
-       ] [
-         fhir:code [ fhir:v "110621006" ] ;
-         fhir:display [ fhir:v "Pancreatic duct and bile duct systems" ]
-       ] [
-         fhir:code [ fhir:v "15497006" ] ;
-         fhir:display [ fhir:v "Ovary" ]
-       ] [
-         fhir:code [ fhir:v "363654007" ] ;
-         fhir:display [ fhir:v "Orbital structure" ]
-       ] [
-         fhir:code [ fhir:v "55024004" ] ;
-         fhir:display [ fhir:v "Optic canal" ]
-       ] [
-         fhir:code [ fhir:v "53549008" ] ;
-         fhir:display [ fhir:v "Ophthalmic artery" ]
-       ] [
-         fhir:code [ fhir:v "31145008" ] ;
-         fhir:display [ fhir:v "Occipital artery" ]
-       ] [
-         fhir:code [ fhir:v "32114007" ] ;
-         fhir:display [ fhir:v "Occipital vein" ]
-       ] [
-         fhir:code [ fhir:v "45206002" ] ;
-         fhir:display [ fhir:v "Nose" ]
-       ] [
-         fhir:code [ fhir:v "416319003" ] ;
-         fhir:display [ fhir:v "Neck, Chest, Abdomen and Pelvis" ]
-       ] [
-         fhir:code [ fhir:v "416152001" ] ;
-         fhir:display [ fhir:v "Neck, Chest and Abdomen" ]
-       ] [
-         fhir:code [ fhir:v "417437006" ] ;
-         fhir:display [ fhir:v "Neck and Chest" ]
-       ] [
-         fhir:code [ fhir:v "45048000" ] ;
-         fhir:display [ fhir:v "Neck" ]
-       ] [
-         fhir:code [ fhir:v "360955006" ] ;
-         fhir:display [ fhir:v "Nasopharynx" ]
-       ] [
-         fhir:code [ fhir:v "123851003" ] ;
-         fhir:display [ fhir:v "Mouth" ]
-       ] [
-         fhir:code [ fhir:v "243977002" ] ;
-         fhir:display [ fhir:v "Morisons pouch" ]
-       ] [
-         fhir:code [ fhir:v "273099000" ] ;
-         fhir:display [ fhir:v "Middle hepatic vein" ]
-       ] [
-         fhir:code [ fhir:v "128583004" ] ;
-         fhir:display [ fhir:v "Mesenteric vein" ]
-       ] [
-         fhir:code [ fhir:v "86570000" ] ;
-         fhir:display [ fhir:v "Mesenteric artery" ]
-       ] [
-         fhir:code [ fhir:v "72410000" ] ;
-         fhir:display [ fhir:v "Mediastinum" ]
-       ] [
-         fhir:code [ fhir:v "17232002" ] ;
-         fhir:display [ fhir:v "Middle cerebral artery" ]
-       ] [
-         fhir:code [ fhir:v "70925003" ] ;
-         fhir:display [ fhir:v "Maxilla" ]
-       ] [
-         fhir:code [ fhir:v "59066005" ] ;
-         fhir:display [ fhir:v "Mastoid bone" ]
-       ] [
-         fhir:code [ fhir:v "91609006" ] ;
-         fhir:display [ fhir:v "Mandible" ]
-       ] [
-         fhir:code [ fhir:v "87878005" ] ;
-         fhir:display [ fhir:v "Left ventricle" ]
-       ] [
-         fhir:code [ fhir:v "86367003" ] ;
-         fhir:display [ fhir:v "Left upper quadrant of abdomen" ]
-       ] [
-         fhir:code [ fhir:v "39607008" ] ;
-         fhir:display [ fhir:v "Lung" ]
-       ] [
-         fhir:code [ fhir:v "91747007" ] ;
-         fhir:display [ fhir:v "Lumen of blood vessel" ]
-       ] [
-         fhir:code [ fhir:v "34635009" ] ;
-         fhir:display [ fhir:v "Lumbar artery" ]
-       ] [
-         fhir:code [ fhir:v "52612000" ] ;
-         fhir:display [ fhir:v "Lumbar region" ]
-       ] [
-         fhir:code [ fhir:v "43863001" ] ;
-         fhir:display [ fhir:v "Superior left pulmonary vein" ]
-       ] [
-         fhir:code [ fhir:v "1217253001" ] ;
-         fhir:display [ fhir:v "Lumbo-sacral spine" ]
-       ] [
-         fhir:code [ fhir:v "122496007" ] ;
-         fhir:display [ fhir:v "Lumbar spine" ]
-       ] [
-         fhir:code [ fhir:v "50408007" ] ;
-         fhir:display [ fhir:v "Left pulmonary artery" ]
-       ] [
-         fhir:code [ fhir:v "70253006" ] ;
-         fhir:display [ fhir:v "Left portal vein" ]
-       ] [
-         fhir:code [ fhir:v "61685007" ] ;
-         fhir:display [ fhir:v "Lower limb" ]
-       ] [
-         fhir:code [ fhir:v "30021000" ] ;
-         fhir:display [ fhir:v "Lower leg" ]
-       ] [
-         fhir:code [ fhir:v "1017210004" ] ;
-         fhir:display [ fhir:v "Left lumbar region" ]
-       ] [
-         fhir:code [ fhir:v "68505006" ] ;
-         fhir:display [ fhir:v "Left lower quadrant of abdomen" ]
-       ] [
-         fhir:code [ fhir:v "10200004" ] ;
-         fhir:display [ fhir:v "Liver" ]
-       ] [
-         fhir:code [ fhir:v "85119005" ] ;
-         fhir:display [ fhir:v "Left inguinal region" ]
-       ] [
-         fhir:code [ fhir:v "113264009" ] ;
-         fhir:display [ fhir:v "Lingual artery" ]
-       ] [
-         fhir:code [ fhir:v "133945003" ] ;
-         fhir:display [ fhir:v "Left hypochondriac region" ]
-       ] [
-         fhir:code [ fhir:v "273202007" ] ;
-         fhir:display [ fhir:v "Left hepatic vein" ]
-       ] [
-         fhir:code [ fhir:v "113270003" ] ;
-         fhir:display [ fhir:v "Left femoral artery" ]
-       ] [
-         fhir:code [ fhir:v "66720007" ] ;
-         fhir:display [ fhir:v "Lateral Ventricle" ]
-       ] [
-         fhir:code [ fhir:v "82471001" ] ;
-         fhir:display [ fhir:v "Left atrium" ]
-       ] [
-         fhir:code [ fhir:v "4596009" ] ;
-         fhir:display [ fhir:v "Larynx" ]
-       ] [
-         fhir:code [ fhir:v "14742008" ] ;
-         fhir:display [ fhir:v "Large intestine" ]
-       ] [
-         fhir:code [ fhir:v "59749000" ] ;
-         fhir:display [ fhir:v "Lacrimal artery" ]
-       ] [
-         fhir:code [ fhir:v "72696002" ] ;
-         fhir:display [ fhir:v "Knee" ]
-       ] [
-         fhir:code [ fhir:v "64033007" ] ;
-         fhir:display [ fhir:v "Kidney" ]
-       ] [
-         fhir:code [ fhir:v "39352004" ] ;
-         fhir:display [ fhir:v "Joint" ]
-       ] [
-         fhir:code [ fhir:v "21306003" ] ;
-         fhir:display [ fhir:v "Jejunum" ]
-       ] [
-         fhir:code [ fhir:v "661005" ] ;
-         fhir:display [ fhir:v "Jaw region" ]
-       ] [
-         fhir:code [ fhir:v "1101003" ] ;
-         fhir:display [ fhir:v "Intracranial" ]
-       ] [
-         fhir:code [ fhir:v "69327007" ] ;
-         fhir:display [ fhir:v "Internal mammary artery" ]
-       ] [
-         fhir:code [ fhir:v "12123001" ] ;
-         fhir:display [ fhir:v "Internal jugular vein" ]
-       ] [
-         fhir:code [ fhir:v "90024005" ] ;
-         fhir:display [ fhir:v "Internal iliac artery" ]
-       ] [
-         fhir:code [ fhir:v "8887007" ] ;
-         fhir:display [ fhir:v "Innominate vein" ]
-       ] [
-         fhir:code [ fhir:v "12691009" ] ;
-         fhir:display [ fhir:v "Innominate artery" ]
-       ] [
-         fhir:code [ fhir:v "26893007" ] ;
-         fhir:display [ fhir:v "Inguinal region" ]
-       ] [
-         fhir:code [ fhir:v "64131007" ] ;
-         fhir:display [ fhir:v "Inferior vena cava" ]
-       ] [
-         fhir:code [ fhir:v "33795007" ] ;
-         fhir:display [ fhir:v "Inferior mesenteric artery" ]
-       ] [
-         fhir:code [ fhir:v "22356005" ] ;
-         fhir:display [ fhir:v "Ilium" ]
-       ] [
-         fhir:code [ fhir:v "244411005" ] ;
-         fhir:display [ fhir:v "Iliac vein" ]
-       ] [
-         fhir:code [ fhir:v "10293006" ] ;
-         fhir:display [ fhir:v "Iliac artery" ]
-       ] [
-         fhir:code [ fhir:v "34516001" ] ;
-         fhir:display [ fhir:v "Ileum" ]
-       ] [
-         fhir:code [ fhir:v "86117002" ] ;
-         fhir:display [ fhir:v "Internal carotid artery" ]
-       ] [
-         fhir:code [ fhir:v "361078006" ] ;
-         fhir:display [ fhir:v "Internal Auditory Canal" ]
-       ] [
-         fhir:code [ fhir:v "81502006" ] ;
-         fhir:display [ fhir:v "Hypopharynx" ]
-       ] [
-         fhir:code [ fhir:v "85050009" ] ;
-         fhir:display [ fhir:v "Humerus" ]
-       ] [
-         fhir:code [ fhir:v "24136001" ] ;
-         fhir:display [ fhir:v "Hip joint" ]
-       ] [
-         fhir:code [ fhir:v "8993003" ] ;
-         fhir:display [ fhir:v "Hepatic vein" ]
-       ] [
-         fhir:code [ fhir:v "76015000" ] ;
-         fhir:display [ fhir:v "Hepatic artery" ]
-       ] [
-         fhir:code [ fhir:v "80891009" ] ;
-         fhir:display [ fhir:v "Heart" ]
-       ] [
-         fhir:code [ fhir:v "774007" ] ;
-         fhir:display [ fhir:v "Head and Neck" ]
-       ] [
-         fhir:code [ fhir:v "69536005" ] ;
-         fhir:display [ fhir:v "Head" ]
-       ] [
-         fhir:code [ fhir:v "85562004" ] ;
-         fhir:display [ fhir:v "Hand" ]
-       ] [
-         fhir:code [ fhir:v "60734001" ] ;
-         fhir:display [ fhir:v "Great saphenous vein" ]
-       ] [
-         fhir:code [ fhir:v "46862004" ] ;
-         fhir:display [ fhir:v "Gluteal region" ]
-       ] [
-         fhir:code [ fhir:v "300571009" ] ;
-         fhir:display [ fhir:v "Gestational sac" ]
-       ] [
-         fhir:code [ fhir:v "128559007" ] ;
-         fhir:display [ fhir:v "Genicular artery" ]
-       ] [
-         fhir:code [ fhir:v "110568007" ] ;
-         fhir:display [ fhir:v "Gastric vein" ]
-       ] [
-         fhir:code [ fhir:v "28231008" ] ;
-         fhir:display [ fhir:v "Gallbladder" ]
-       ] [
-         fhir:code [ fhir:v "14975008" ] ;
-         fhir:display [ fhir:v "Forearm" ]
-       ] [
-         fhir:code [ fhir:v "56459004" ] ;
-         fhir:display [ fhir:v "Foot" ]
-       ] [
-         fhir:code [ fhir:v "79361005" ] ;
-         fhir:display [ fhir:v "Fontanel of skull" ]
-       ] [
-         fhir:code [ fhir:v "58602004" ] ;
-         fhir:display [ fhir:v "Flank" ]
-       ] [
-         fhir:code [ fhir:v "7569003" ] ;
-         fhir:display [ fhir:v "Finger" ]
-       ] [
-         fhir:code [ fhir:v "87342007" ] ;
-         fhir:display [ fhir:v "Fibula" ]
-       ] [
-         fhir:code [ fhir:v "71341001" ] ;
-         fhir:display [ fhir:v "Femur" ]
-       ] [
-         fhir:code [ fhir:v "83419000" ] ;
-         fhir:display [ fhir:v "Femoral vein" ]
-       ] [
-         fhir:code [ fhir:v "7657000" ] ;
-         fhir:display [ fhir:v "Femoral artery" ]
-       ] [
-         fhir:code [ fhir:v "23074001" ] ;
-         fhir:display [ fhir:v "Facial artery" ]
-       ] [
-         fhir:code [ fhir:v "89545001" ] ;
-         fhir:display [ fhir:v "Face" ]
-       ] [
-         fhir:code [ fhir:v "80243003" ] ;
-         fhir:display [ fhir:v "Eyelid" ]
-       ] [
-         fhir:code [ fhir:v "81745001" ] ;
-         fhir:display [ fhir:v "Eye" ]
-       ] [
-         fhir:code [ fhir:v "66019005" ] ;
-         fhir:display [ fhir:v "Extremity" ]
-       ] [
-         fhir:code [ fhir:v "71585003" ] ;
-         fhir:display [ fhir:v "External jugular vein" ]
-       ] [
-         fhir:code [ fhir:v "63507001" ] ;
-         fhir:display [ fhir:v "External iliac vein" ]
-       ] [
-         fhir:code [ fhir:v "113269004" ] ;
-         fhir:display [ fhir:v "External iliac artery" ]
-       ] [
-         fhir:code [ fhir:v "32849002" ] ;
-         fhir:display [ fhir:v "Esophagus" ]
-       ] [
-         fhir:code [ fhir:v "27947004" ] ;
-         fhir:display [ fhir:v "Epigastric region" ]
-       ] [
-         fhir:code [ fhir:v "87644002" ] ;
-         fhir:display [ fhir:v "Epididymis" ]
-       ] [
-         fhir:code [ fhir:v "48367006" ] ;
-         fhir:display [ fhir:v "Endo-vesical" ]
-       ] [
-         fhir:code [ fhir:v "29092000" ] ;
-         fhir:display [ fhir:v "Vein" ]
-       ] [
-         fhir:code [ fhir:v "59820001" ] ;
-         fhir:display [ fhir:v "Endo-vascular" ]
-       ] [
-         fhir:code [ fhir:v "18962004" ] ;
-         fhir:display [ fhir:v "Endo-nasopharyngeal" ]
-       ] [
-         fhir:code [ fhir:v "53342003" ] ;
-         fhir:display [ fhir:v "Endo-nasal" ]
-       ] [
-         fhir:code [ fhir:v "2739003" ] ;
-         fhir:display [ fhir:v "Endometrium" ]
-       ] [
-         fhir:code [ fhir:v "16953009" ] ;
-         fhir:display [ fhir:v "Elbow joint" ]
-       ] [
-         fhir:code [ fhir:v "22286001" ] ;
-         fhir:display [ fhir:v "External carotid artery" ]
-       ] [
-         fhir:code [ fhir:v "117590005" ] ;
-         fhir:display [ fhir:v "Ear" ]
-       ] [
-         fhir:code [ fhir:v "84301002" ] ;
-         fhir:display [ fhir:v "External auditory canal" ]
-       ] [
-         fhir:code [ fhir:v "38848004" ] ;
-         fhir:display [ fhir:v "Duodenum" ]
-       ] [
-         fhir:code [ fhir:v "32622004" ] ;
-         fhir:display [ fhir:v "Descending colon" ]
-       ] [
-         fhir:code [ fhir:v "32672002" ] ;
-         fhir:display [ fhir:v "Descending aorta" ]
-       ] [
-         fhir:code [ fhir:v "53843000" ] ;
-         fhir:display [ fhir:v "Rectouterine pouch" ]
-       ] [
-         fhir:code [ fhir:v "1217257000" ] ;
-         fhir:display [ fhir:v "Cervico-thoracic spine" ]
-       ] [
-         fhir:code [ fhir:v "122494005" ] ;
-         fhir:display [ fhir:v "Cervical spine" ]
-       ] [
-         fhir:code [ fhir:v "90219004" ] ;
-         fhir:display [ fhir:v "Coronary sinus" ]
-       ] [
-         fhir:code [ fhir:v "41801008" ] ;
-         fhir:display [ fhir:v "Coronary artery" ]
-       ] [
-         fhir:code [ fhir:v "28726007" ] ;
-         fhir:display [ fhir:v "Cornea" ]
-       ] [
-         fhir:code [ fhir:v "79741001" ] ;
-         fhir:display [ fhir:v "Common bile duct" ]
-       ] [
-         fhir:code [ fhir:v "46027005" ] ;
-         fhir:display [ fhir:v "Common iliac vein" ]
-       ] [
-         fhir:code [ fhir:v "73634005" ] ;
-         fhir:display [ fhir:v "Common iliac artery" ]
-       ] [
-         fhir:code [ fhir:v "71854001" ] ;
-         fhir:display [ fhir:v "Colon" ]
-       ] [
-         fhir:code [ fhir:v "64688005" ] ;
-         fhir:display [ fhir:v "Coccyx" ]
-       ] [
-         fhir:code [ fhir:v "51299004" ] ;
-         fhir:display [ fhir:v "Clavicle" ]
-       ] [
-         fhir:code [ fhir:v "11279006" ] ;
-         fhir:display [ fhir:v "Circle of Willis" ]
-       ] [
-         fhir:code [ fhir:v "80621003" ] ;
-         fhir:display [ fhir:v "Choroid plexus" ]
-       ] [
-         fhir:code [ fhir:v "416775004" ] ;
-         fhir:display [ fhir:v "Chest, Abdomen and Pelvis" ]
-       ] [
-         fhir:code [ fhir:v "416550000" ] ;
-         fhir:display [ fhir:v "Chest and Abdomen" ]
-       ] [
-         fhir:code [ fhir:v "60819002" ] ;
-         fhir:display [ fhir:v "Cheek" ]
-       ] [
-         fhir:code [ fhir:v "397363009" ] ;
-         fhir:display [ fhir:v "Common femoral vein" ]
-       ] [
-         fhir:code [ fhir:v "181347005" ] ;
-         fhir:display [ fhir:v "Common femoral artery" ]
-       ] [
-         fhir:code [ fhir:v "71252005" ] ;
-         fhir:display [ fhir:v "Cervix" ]
-       ] [
-         fhir:code [ fhir:v "88556005" ] ;
-         fhir:display [ fhir:v "Cerebral artery" ]
-       ] [
-         fhir:code [ fhir:v "372073000" ] ;
-         fhir:display [ fhir:v "Cerebral hemisphere" ]
-       ] [
-         fhir:code [ fhir:v "113305005" ] ;
-         fhir:display [ fhir:v "Cerebellum" ]
-       ] [
-         fhir:code [ fhir:v "20699002" ] ;
-         fhir:display [ fhir:v "Cephalic vein" ]
-       ] [
-         fhir:code [ fhir:v "57850000" ] ;
-         fhir:display [ fhir:v "Celiac artery" ]
-       ] [
-         fhir:code [ fhir:v "32062004" ] ;
-         fhir:display [ fhir:v "Common carotid artery" ]
-       ] [
-         fhir:code [ fhir:v "69105007" ] ;
-         fhir:display [ fhir:v "Carotid Artery" ]
-       ] [
-         fhir:code [ fhir:v "53840002" ] ;
-         fhir:display [ fhir:v "Calf of leg" ]
-       ] [
-         fhir:code [ fhir:v "80144004" ] ;
-         fhir:display [ fhir:v "Calcaneus" ]
-       ] [
-         fhir:code [ fhir:v "21479005" ] ;
-         fhir:display [ fhir:v "Carotid bulb" ]
-       ] [
-         fhir:code [ fhir:v "955009" ] ;
-         fhir:display [ fhir:v "Bronchus" ]
-       ] [
-         fhir:code [ fhir:v "76752008" ] ;
-         fhir:display [ fhir:v "Breast" ]
-       ] [
-         fhir:code [ fhir:v "12738006" ] ;
-         fhir:display [ fhir:v "Brain" ]
-       ] [
-         fhir:code [ fhir:v "20115005" ] ;
-         fhir:display [ fhir:v "Brachial vein" ]
-       ] [
-         fhir:code [ fhir:v "17137000" ] ;
-         fhir:display [ fhir:v "Brachial artery" ]
-       ] [
-         fhir:code [ fhir:v "110837003" ] ;
-         fhir:display [ fhir:v "Bladder and urethra" ]
-       ] [
-         fhir:code [ fhir:v "89837001" ] ;
-         fhir:display [ fhir:v "Bladder" ]
-       ] [
-         fhir:code [ fhir:v "34707002" ] ;
-         fhir:display [ fhir:v "Biliary tract" ]
-       ] [
-         fhir:code [ fhir:v "28273000" ] ;
-         fhir:display [ fhir:v "Bile duct" ]
-       ] [
-         fhir:code [ fhir:v "59011009" ] ;
-         fhir:display [ fhir:v "Basilar artery" ]
-       ] [
-         fhir:code [ fhir:v "77568009" ] ;
-         fhir:display [ fhir:v "Back" ]
-       ] [
-         fhir:code [ fhir:v "72107004" ] ;
-         fhir:display [ fhir:v "Azygos vein" ]
-       ] [
-         fhir:code [ fhir:v "68705008" ] ;
-         fhir:display [ fhir:v "Axillary vein" ]
-       ] [
-         fhir:code [ fhir:v "67937003" ] ;
-         fhir:display [ fhir:v "Axillary Artery" ]
-       ] [
-         fhir:code [ fhir:v "91470000" ] ;
-         fhir:display [ fhir:v "Axilla" ]
-       ] [
-         fhir:code [ fhir:v "9040008" ] ;
-         fhir:display [ fhir:v "Ascending colon" ]
-       ] [
-         fhir:code [ fhir:v "54247002" ] ;
-         fhir:display [ fhir:v "Ascending aorta" ]
-       ] [
-         fhir:code [ fhir:v "51114001" ] ;
-         fhir:display [ fhir:v "Artery" ]
-       ] [
-         fhir:code [ fhir:v "66754008" ] ;
-         fhir:display [ fhir:v "Appendix" ]
-       ] [
-         fhir:code [ fhir:v "57034009" ] ;
-         fhir:display [ fhir:v "Aortic arch" ]
-       ] [
-         fhir:code [ fhir:v "15825003" ] ;
-         fhir:display [ fhir:v "Aorta" ]
-       ] [
-         fhir:code [ fhir:v "110612005" ] ;
-         fhir:display [ fhir:v "Anus, rectum and sigmoid colon" ]
-       ] [
-         fhir:code [ fhir:v "68053000" ] ;
-         fhir:display [ fhir:v "Anterior tibial artery" ]
-       ] [
-         fhir:code [ fhir:v "17388009" ] ;
-         fhir:display [ fhir:v "Anterior spinal artery" ]
-       ] [
-         fhir:code [ fhir:v "128553008" ] ;
-         fhir:display [ fhir:v "Antecubital vein" ]
-       ] [
-         fhir:code [ fhir:v "8012006" ] ;
-         fhir:display [ fhir:v "Anterior communicating artery" ]
-       ] [
-         fhir:code [ fhir:v "194996006" ] ;
-         fhir:display [ fhir:v "Anterior cardiac vein" ]
-       ] [
-         fhir:code [ fhir:v "70258002" ] ;
-         fhir:display [ fhir:v "Ankle joint" ]
-       ] [
-         fhir:code [ fhir:v "77012006" ] ;
-         fhir:display [ fhir:v "Amniotic fluid" ]
-       ] [
-         fhir:code [ fhir:v "23451007" ] ;
-         fhir:display [ fhir:v "Adrenal gland" ]
-       ] [
-         fhir:code [ fhir:v "85856004" ] ;
-         fhir:display [ fhir:v "Acromioclavicular joint" ]
-       ] [
-         fhir:code [ fhir:v "60176003" ] ;
-         fhir:display [ fhir:v "Anterior cerebral artery" ]
-       ] [
-         fhir:code [ fhir:v "7832008" ] ;
-         fhir:display [ fhir:v "Abdominal aorta" ]
-       ] [
-         fhir:code [ fhir:v "818982008" ] ;
-         fhir:display [ fhir:v "Abdomen and Pelvis" ]
-       ] [
-         fhir:code [ fhir:v "818981001" ] ;
-         fhir:display [ fhir:v "Abdomen" ]
-       ] [
-         fhir:code [ fhir:v "35918002" ] ;
-         fhir:display [ fhir:v "Fourth ventricle" ]
-       ] [
-         fhir:code [ fhir:v "49841001" ] ;
-         fhir:display [ fhir:v "Third ventricle" ]
-       ] )
-     ] )
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/VSBodySite> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "VSBodySite"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-13881006\">13881006</a></td><td>Zygoma</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-74670003\">74670003</a></td><td>Wrist joint</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-38266002\">38266002</a></td><td>Entire body</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-45292006\">45292006</a></td><td>Vulva</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-85234005\">85234005</a></td><td>Vertebral artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-76784001\">76784001</a></td><td>Vagina</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-35039007\">35039007</a></td><td>Uterus</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-13648007\">13648007</a></td><td>Urethra</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-87953007\">87953007</a></td><td>Ureter</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-431491007\">431491007</a></td><td>Upper urinary tract</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-53120007\">53120007</a></td><td>Upper limb</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-40983000\">40983000</a></td><td>Upper arm</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-284639000\">284639000</a></td><td>Umbilical vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-50536004\">50536004</a></td><td>Umbilical artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-90290004\">90290004</a></td><td>Umbilical region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-44984001\">44984001</a></td><td>Ulnar artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-23416004\">23416004</a></td><td>Ulna</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-122495006\">122495006</a></td><td>Thoracic spine</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-485005\">485005</a></td><td>Transverse colon</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-110726009\">110726009</a></td><td>Trachea and bronchus</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-44567001\">44567001</a></td><td>Trachea</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-21974007\">21974007</a></td><td>Tongue</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-29707007\">29707007</a></td><td>Toe</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-53620006\">53620006</a></td><td>Temporomandibular joint</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-1217256009\">1217256009</a></td><td>Thoraco-lumbar spine</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-110536004\">110536004</a></td><td>Tibia and fibula</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-12611008\">12611008</a></td><td>Tibia</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-69748006\">69748006</a></td><td>Thyroid</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-9875009\">9875009</a></td><td>Thymus</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-76505004\">76505004</a></td><td>Thumb</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-43799004\">43799004</a></td><td>Thorax</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-113262008\">113262008</a></td><td>Thoracic aorta</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-68367000\">68367000</a></td><td>Thigh</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-42695009\">42695009</a></td><td>Thalamus</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-40689003\">40689003</a></td><td>Testis</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-48345005\">48345005</a></td><td>Superior vena cava</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-72021004\">72021004</a></td><td>Superior thyroid artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-11708003\">11708003</a></td><td>Pubic region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-77621008\">77621008</a></td><td>Supraclavicular region of neck</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-54019009\">54019009</a></td><td>Submandibular gland</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-19695001\">19695001</a></td><td>Subcostal</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-9454009\">9454009</a></td><td>Subclavian vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-36765005\">36765005</a></td><td>Subclavian artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-69695003\">69695003</a></td><td>Stomach</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-56873002\">56873002</a></td><td>Sternum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-54735007\">54735007</a></td><td>Sacrum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-35819009\">35819009</a></td><td>Splenic vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-22083002\">22083002</a></td><td>Splenic artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-78961009\">78961009</a></td><td>Spleen</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-421060004\">421060004</a></td><td>Spine</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-2748008\">2748008</a></td><td>Spinal cord</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-30315005\">30315005</a></td><td>Small intestine</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-42258001\">42258001</a></td><td>Superior mesenteric artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-89546000\">89546000</a></td><td>Skull</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-39723000\">39723000</a></td><td>Sacroiliac joint</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-60184004\">60184004</a></td><td>Sigmoid colon</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-16982005\">16982005</a></td><td>Shoulder</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-397364003\">397364003</a></td><td>Superficial femoral vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-128587003\">128587003</a></td><td>Saphenofemoral junction</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-181349008\">181349008</a></td><td>Superficial femoral artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-58742003\">58742003</a></td><td>Sesamoid bones of foot</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-64739004\">64739004</a></td><td>Seminal vesicle</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-42575006\">42575006</a></td><td>Sella turcica</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-20233005\">20233005</a></td><td>Scrotum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-18619003\">18619003</a></td><td>Sclera</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-7844006\">7844006</a></td><td>Sternoclavicular joint</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-79601000\">79601000</a></td><td>Scapula</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-41695006\">41695006</a></td><td>Scalp</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-362072009\">362072009</a></td><td>Saphenous vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-53085002\">53085002</a></td><td>Right ventricle</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-50519007\">50519007</a></td><td>Right upper quadrant of abdomen</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-8629005\">8629005</a></td><td>Superior right pulmonary vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-78480002\">78480002</a></td><td>Right pulmonary artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-73931004\">73931004</a></td><td>Right portal vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-1017211000\">1017211000</a></td><td>Right lumbar region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-48544008\">48544008</a></td><td>Right lower quadrant of abdomen</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-37117007\">37117007</a></td><td>Right inguinal region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-113197003\">113197003</a></td><td>Rib</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-133946002\">133946002</a></td><td>Right hypochondriac region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-272998002\">272998002</a></td><td>Right hepatic vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-69833005\">69833005</a></td><td>Right femoral artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-82849001\">82849001</a></td><td>Retroperitoneum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-56400007\">56400007</a></td><td>Renal vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-2841007\">2841007</a></td><td>Renal artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-34402009\">34402009</a></td><td>Rectum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-73829009\">73829009</a></td><td>Right atrium</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-110535000\">110535000</a></td><td>Radius and ulna</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-62413002\">62413002</a></td><td>Radius</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-45631007\">45631007</a></td><td>Radial artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-122972007\">122972007</a></td><td>Pulmonary vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-81040000\">81040000</a></td><td>Pulmonary artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-41216001\">41216001</a></td><td>Prostate</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-23438002\">23438002</a></td><td>Profunda femoris vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-31677005\">31677005</a></td><td>Profunda femoris artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-13363002\">13363002</a></td><td>Posterior tibial artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-43119007\">43119007</a></td><td>Posterior communicating artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-32764006\">32764006</a></td><td>Portal vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-56849005\">56849005</a></td><td>Popliteal vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-32361000\">32361000</a></td><td>Popliteal fossa</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-43899006\">43899006</a></td><td>Popliteal artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-78067005\">78067005</a></td><td>Placenta</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-312535008\">312535008</a></td><td>Pharynx and larynx</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-54066008\">54066008</a></td><td>Pharynx</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-706342009\">706342009</a></td><td>Phantom</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-8821006\">8821006</a></td><td>Peroneal artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-38864007\">38864007</a></td><td>Perineum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-18911002\">18911002</a></td><td>Penis</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-282044005\">282044005</a></td><td>Penile artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-1231522001\">1231522001</a></td><td>Pelvis and lower extremities</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-816092008\">816092008</a></td><td>Pelvis</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-70382005\">70382005</a></td><td>Posterior cerebral artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-64234005\">64234005</a></td><td>Patella</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-45289007\">45289007</a></td><td>Parotid gland</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-111002\">111002</a></td><td>Parathyroid</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-91691001\">91691001</a></td><td>Parasternal</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-69930009\">69930009</a></td><td>Pancreatic duct</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-15776009\">15776009</a></td><td>Pancreas</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-110621006\">110621006</a></td><td>Pancreatic duct and bile duct systems</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-15497006\">15497006</a></td><td>Ovary</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-363654007\">363654007</a></td><td>Orbital structure</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-55024004\">55024004</a></td><td>Optic canal</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-53549008\">53549008</a></td><td>Ophthalmic artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-31145008\">31145008</a></td><td>Occipital artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-32114007\">32114007</a></td><td>Occipital vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-45206002\">45206002</a></td><td>Nose</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-416319003\">416319003</a></td><td>Neck, Chest, Abdomen and Pelvis</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-416152001\">416152001</a></td><td>Neck, Chest and Abdomen</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-417437006\">417437006</a></td><td>Neck and Chest</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-45048000\">45048000</a></td><td>Neck</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-360955006\">360955006</a></td><td>Nasopharynx</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-123851003\">123851003</a></td><td>Mouth</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-243977002\">243977002</a></td><td>Morisons pouch</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-273099000\">273099000</a></td><td>Middle hepatic vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-128583004\">128583004</a></td><td>Mesenteric vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-86570000\">86570000</a></td><td>Mesenteric artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-72410000\">72410000</a></td><td>Mediastinum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-17232002\">17232002</a></td><td>Middle cerebral artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-70925003\">70925003</a></td><td>Maxilla</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-59066005\">59066005</a></td><td>Mastoid bone</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-91609006\">91609006</a></td><td>Mandible</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-87878005\">87878005</a></td><td>Left ventricle</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-86367003\">86367003</a></td><td>Left upper quadrant of abdomen</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-39607008\">39607008</a></td><td>Lung</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-91747007\">91747007</a></td><td>Lumen of blood vessel</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-34635009\">34635009</a></td><td>Lumbar artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-52612000\">52612000</a></td><td>Lumbar region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-43863001\">43863001</a></td><td>Superior left pulmonary vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-1217253001\">1217253001</a></td><td>Lumbo-sacral spine</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-122496007\">122496007</a></td><td>Lumbar spine</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-50408007\">50408007</a></td><td>Left pulmonary artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-70253006\">70253006</a></td><td>Left portal vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-61685007\">61685007</a></td><td>Lower limb</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-30021000\">30021000</a></td><td>Lower leg</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-1017210004\">1017210004</a></td><td>Left lumbar region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-68505006\">68505006</a></td><td>Left lower quadrant of abdomen</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-10200004\">10200004</a></td><td>Liver</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-85119005\">85119005</a></td><td>Left inguinal region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-113264009\">113264009</a></td><td>Lingual artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-133945003\">133945003</a></td><td>Left hypochondriac region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-273202007\">273202007</a></td><td>Left hepatic vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-113270003\">113270003</a></td><td>Left femoral artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-66720007\">66720007</a></td><td>Lateral Ventricle</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-82471001\">82471001</a></td><td>Left atrium</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-4596009\">4596009</a></td><td>Larynx</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-14742008\">14742008</a></td><td>Large intestine</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-59749000\">59749000</a></td><td>Lacrimal artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-72696002\">72696002</a></td><td>Knee</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-64033007\">64033007</a></td><td>Kidney</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-39352004\">39352004</a></td><td>Joint</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-21306003\">21306003</a></td><td>Jejunum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-661005\">661005</a></td><td>Jaw region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-1101003\">1101003</a></td><td>Intracranial</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-69327007\">69327007</a></td><td>Internal mammary artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-12123001\">12123001</a></td><td>Internal jugular vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-90024005\">90024005</a></td><td>Internal iliac artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-8887007\">8887007</a></td><td>Innominate vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-12691009\">12691009</a></td><td>Innominate artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-26893007\">26893007</a></td><td>Inguinal region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-64131007\">64131007</a></td><td>Inferior vena cava</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-33795007\">33795007</a></td><td>Inferior mesenteric artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-22356005\">22356005</a></td><td>Ilium</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-244411005\">244411005</a></td><td>Iliac vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-10293006\">10293006</a></td><td>Iliac artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-34516001\">34516001</a></td><td>Ileum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-86117002\">86117002</a></td><td>Internal carotid artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-361078006\">361078006</a></td><td>Internal Auditory Canal</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-81502006\">81502006</a></td><td>Hypopharynx</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-85050009\">85050009</a></td><td>Humerus</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-24136001\">24136001</a></td><td>Hip joint</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-8993003\">8993003</a></td><td>Hepatic vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-76015000\">76015000</a></td><td>Hepatic artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-80891009\">80891009</a></td><td>Heart</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-774007\">774007</a></td><td>Head and Neck</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-69536005\">69536005</a></td><td>Head</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-85562004\">85562004</a></td><td>Hand</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-60734001\">60734001</a></td><td>Great saphenous vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-46862004\">46862004</a></td><td>Gluteal region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-300571009\">300571009</a></td><td>Gestational sac</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-128559007\">128559007</a></td><td>Genicular artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-110568007\">110568007</a></td><td>Gastric vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-28231008\">28231008</a></td><td>Gallbladder</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-14975008\">14975008</a></td><td>Forearm</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-56459004\">56459004</a></td><td>Foot</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-79361005\">79361005</a></td><td>Fontanel of skull</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-58602004\">58602004</a></td><td>Flank</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-7569003\">7569003</a></td><td>Finger</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-87342007\">87342007</a></td><td>Fibula</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-71341001\">71341001</a></td><td>Femur</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-83419000\">83419000</a></td><td>Femoral vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-7657000\">7657000</a></td><td>Femoral artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-23074001\">23074001</a></td><td>Facial artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-89545001\">89545001</a></td><td>Face</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-80243003\">80243003</a></td><td>Eyelid</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-81745001\">81745001</a></td><td>Eye</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-66019005\">66019005</a></td><td>Extremity</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-71585003\">71585003</a></td><td>External jugular vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-63507001\">63507001</a></td><td>External iliac vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-113269004\">113269004</a></td><td>External iliac artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-32849002\">32849002</a></td><td>Esophagus</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-27947004\">27947004</a></td><td>Epigastric region</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-87644002\">87644002</a></td><td>Epididymis</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-48367006\">48367006</a></td><td>Endo-vesical</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-29092000\">29092000</a></td><td>Vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-59820001\">59820001</a></td><td>Endo-vascular</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-18962004\">18962004</a></td><td>Endo-nasopharyngeal</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-53342003\">53342003</a></td><td>Endo-nasal</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-2739003\">2739003</a></td><td>Endometrium</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-16953009\">16953009</a></td><td>Elbow joint</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-22286001\">22286001</a></td><td>External carotid artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-117590005\">117590005</a></td><td>Ear</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-84301002\">84301002</a></td><td>External auditory canal</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-38848004\">38848004</a></td><td>Duodenum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-32622004\">32622004</a></td><td>Descending colon</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-32672002\">32672002</a></td><td>Descending aorta</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-53843000\">53843000</a></td><td>Rectouterine pouch</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-1217257000\">1217257000</a></td><td>Cervico-thoracic spine</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-122494005\">122494005</a></td><td>Cervical spine</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-90219004\">90219004</a></td><td>Coronary sinus</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-41801008\">41801008</a></td><td>Coronary artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-28726007\">28726007</a></td><td>Cornea</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-79741001\">79741001</a></td><td>Common bile duct</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-46027005\">46027005</a></td><td>Common iliac vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-73634005\">73634005</a></td><td>Common iliac artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-71854001\">71854001</a></td><td>Colon</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-64688005\">64688005</a></td><td>Coccyx</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-51299004\">51299004</a></td><td>Clavicle</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-11279006\">11279006</a></td><td>Circle of Willis</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-80621003\">80621003</a></td><td>Choroid plexus</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-416775004\">416775004</a></td><td>Chest, Abdomen and Pelvis</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-416550000\">416550000</a></td><td>Chest and Abdomen</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-60819002\">60819002</a></td><td>Cheek</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-397363009\">397363009</a></td><td>Common femoral vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-181347005\">181347005</a></td><td>Common femoral artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-71252005\">71252005</a></td><td>Cervix</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-88556005\">88556005</a></td><td>Cerebral artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-372073000\">372073000</a></td><td>Cerebral hemisphere</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-113305005\">113305005</a></td><td>Cerebellum</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-20699002\">20699002</a></td><td>Cephalic vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-57850000\">57850000</a></td><td>Celiac artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-32062004\">32062004</a></td><td>Common carotid artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-69105007\">69105007</a></td><td>Carotid Artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-53840002\">53840002</a></td><td>Calf of leg</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-80144004\">80144004</a></td><td>Calcaneus</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-21479005\">21479005</a></td><td>Carotid bulb</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-955009\">955009</a></td><td>Bronchus</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-76752008\">76752008</a></td><td>Breast</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-12738006\">12738006</a></td><td>Brain</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-20115005\">20115005</a></td><td>Brachial vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-17137000\">17137000</a></td><td>Brachial artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-110837003\">110837003</a></td><td>Bladder and urethra</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-89837001\">89837001</a></td><td>Bladder</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-34707002\">34707002</a></td><td>Biliary tract</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-28273000\">28273000</a></td><td>Bile duct</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-59011009\">59011009</a></td><td>Basilar artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-77568009\">77568009</a></td><td>Back</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-72107004\">72107004</a></td><td>Azygos vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-68705008\">68705008</a></td><td>Axillary vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-67937003\">67937003</a></td><td>Axillary Artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-91470000\">91470000</a></td><td>Axilla</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-9040008\">9040008</a></td><td>Ascending colon</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-54247002\">54247002</a></td><td>Ascending aorta</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-51114001\">51114001</a></td><td>Artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-66754008\">66754008</a></td><td>Appendix</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-57034009\">57034009</a></td><td>Aortic arch</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-15825003\">15825003</a></td><td>Aorta</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-110612005\">110612005</a></td><td>Anus, rectum and sigmoid colon</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-68053000\">68053000</a></td><td>Anterior tibial artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-17388009\">17388009</a></td><td>Anterior spinal artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-128553008\">128553008</a></td><td>Antecubital vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-8012006\">8012006</a></td><td>Anterior communicating artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-194996006\">194996006</a></td><td>Anterior cardiac vein</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-70258002\">70258002</a></td><td>Ankle joint</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-77012006\">77012006</a></td><td>Amniotic fluid</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-23451007\">23451007</a></td><td>Adrenal gland</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-85856004\">85856004</a></td><td>Acromioclavicular joint</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-60176003\">60176003</a></td><td>Anterior cerebral artery</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-7832008\">7832008</a></td><td>Abdominal aorta</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-818982008\">818982008</a></td><td>Abdomen and Pelvis</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-818981001\">818981001</a></td><td>Abdomen</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-35918002\">35918002</a></td><td>Fourth ventricle</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-49841001\">49841001</a></td><td>Third ventricle</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/VSBodySite"]; # 
+  fhir:ValueSet.version [ fhir:value "2.1.0"]; # 
+  fhir:ValueSet.name [ fhir:value "VSBodySite"]; # 
+  fhir:ValueSet.title [ fhir:value " Bodysite Value Set"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.date [ fhir:value "2023-04-06T18:12:15+02:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "Arkhn"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Arkhn" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://arkhn.com" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "contact@arkhn.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Nicolas Riss" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "nicolas@arkhn.com" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "Bodysite"]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13881006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Zygoma" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "74670003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Wrist joint" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "38266002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Entire body" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "45292006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vulva" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "85234005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vertebral artery" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "76784001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vagina" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35039007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Uterus" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13648007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urethra" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "87953007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ureter" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "431491007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Upper urinary tract" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "53120007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Upper limb" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "40983000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Upper arm" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "284639000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Umbilical vein" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50536004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Umbilical artery" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "90290004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Umbilical region" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "44984001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ulnar artery" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "23416004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ulna" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122495006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thoracic spine" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "485005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Transverse colon" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "110726009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Trachea and bronchus" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "44567001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Trachea" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "21974007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tongue" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "29707007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Toe" ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "53620006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Temporomandibular joint" ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1217256009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thoraco-lumbar spine" ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "110536004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tibia and fibula" ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12611008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tibia" ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "69748006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thyroid" ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9875009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thymus" ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "76505004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thumb" ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "43799004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thorax" ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "113262008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thoracic aorta" ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "68367000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thigh" ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "42695009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thalamus" ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "40689003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Testis" ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "48345005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Superior vena cava" ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "72021004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Superior thyroid artery" ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11708003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pubic region" ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77621008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Supraclavicular region of neck" ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "54019009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Submandibular gland" ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "19695001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Subcostal" ]
+       ], [
+         fhir:index 41;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9454009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Subclavian vein" ]
+       ], [
+         fhir:index 42;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "36765005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Subclavian artery" ]
+       ], [
+         fhir:index 43;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "69695003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stomach" ]
+       ], [
+         fhir:index 44;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "56873002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sternum" ]
+       ], [
+         fhir:index 45;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "54735007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sacrum" ]
+       ], [
+         fhir:index 46;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35819009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Splenic vein" ]
+       ], [
+         fhir:index 47;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22083002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Splenic artery" ]
+       ], [
+         fhir:index 48;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "78961009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spleen" ]
+       ], [
+         fhir:index 49;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "421060004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spine" ]
+       ], [
+         fhir:index 50;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2748008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spinal cord" ]
+       ], [
+         fhir:index 51;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30315005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Small intestine" ]
+       ], [
+         fhir:index 52;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "42258001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Superior mesenteric artery" ]
+       ], [
+         fhir:index 53;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "89546000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Skull" ]
+       ], [
+         fhir:index 54;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "39723000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sacroiliac joint" ]
+       ], [
+         fhir:index 55;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "60184004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sigmoid colon" ]
+       ], [
+         fhir:index 56;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16982005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Shoulder" ]
+       ], [
+         fhir:index 57;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "397364003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Superficial femoral vein" ]
+       ], [
+         fhir:index 58;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "128587003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Saphenofemoral junction" ]
+       ], [
+         fhir:index 59;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "181349008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Superficial femoral artery" ]
+       ], [
+         fhir:index 60;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "58742003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sesamoid bones of foot" ]
+       ], [
+         fhir:index 61;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "64739004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Seminal vesicle" ]
+       ], [
+         fhir:index 62;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "42575006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sella turcica" ]
+       ], [
+         fhir:index 63;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20233005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Scrotum" ]
+       ], [
+         fhir:index 64;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "18619003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sclera" ]
+       ], [
+         fhir:index 65;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7844006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sternoclavicular joint" ]
+       ], [
+         fhir:index 66;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "79601000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Scapula" ]
+       ], [
+         fhir:index 67;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "41695006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Scalp" ]
+       ], [
+         fhir:index 68;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "362072009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Saphenous vein" ]
+       ], [
+         fhir:index 69;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "53085002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right ventricle" ]
+       ], [
+         fhir:index 70;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50519007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right upper quadrant of abdomen" ]
+       ], [
+         fhir:index 71;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8629005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Superior right pulmonary vein" ]
+       ], [
+         fhir:index 72;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "78480002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right pulmonary artery" ]
+       ], [
+         fhir:index 73;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "73931004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right portal vein" ]
+       ], [
+         fhir:index 74;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1017211000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right lumbar region" ]
+       ], [
+         fhir:index 75;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "48544008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right lower quadrant of abdomen" ]
+       ], [
+         fhir:index 76;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "37117007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right inguinal region" ]
+       ], [
+         fhir:index 77;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "113197003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rib" ]
+       ], [
+         fhir:index 78;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "133946002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right hypochondriac region" ]
+       ], [
+         fhir:index 79;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "272998002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right hepatic vein" ]
+       ], [
+         fhir:index 80;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "69833005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right femoral artery" ]
+       ], [
+         fhir:index 81;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "82849001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Retroperitoneum" ]
+       ], [
+         fhir:index 82;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "56400007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Renal vein" ]
+       ], [
+         fhir:index 83;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2841007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Renal artery" ]
+       ], [
+         fhir:index 84;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34402009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rectum" ]
+       ], [
+         fhir:index 85;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "73829009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right atrium" ]
+       ], [
+         fhir:index 86;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "110535000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Radius and ulna" ]
+       ], [
+         fhir:index 87;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "62413002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Radius" ]
+       ], [
+         fhir:index 88;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "45631007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Radial artery" ]
+       ], [
+         fhir:index 89;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122972007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pulmonary vein" ]
+       ], [
+         fhir:index 90;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "81040000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pulmonary artery" ]
+       ], [
+         fhir:index 91;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "41216001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prostate" ]
+       ], [
+         fhir:index 92;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "23438002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Profunda femoris vein" ]
+       ], [
+         fhir:index 93;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "31677005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Profunda femoris artery" ]
+       ], [
+         fhir:index 94;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13363002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Posterior tibial artery" ]
+       ], [
+         fhir:index 95;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "43119007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Posterior communicating artery" ]
+       ], [
+         fhir:index 96;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32764006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Portal vein" ]
+       ], [
+         fhir:index 97;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "56849005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Popliteal vein" ]
+       ], [
+         fhir:index 98;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32361000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Popliteal fossa" ]
+       ], [
+         fhir:index 99;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "43899006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Popliteal artery" ]
+       ], [
+         fhir:index 100;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "78067005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Placenta" ]
+       ], [
+         fhir:index 101;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "312535008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pharynx and larynx" ]
+       ], [
+         fhir:index 102;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "54066008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pharynx" ]
+       ], [
+         fhir:index 103;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "706342009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Phantom" ]
+       ], [
+         fhir:index 104;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8821006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Peroneal artery" ]
+       ], [
+         fhir:index 105;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "38864007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Perineum" ]
+       ], [
+         fhir:index 106;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "18911002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Penis" ]
+       ], [
+         fhir:index 107;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "282044005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Penile artery" ]
+       ], [
+         fhir:index 108;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1231522001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pelvis and lower extremities" ]
+       ], [
+         fhir:index 109;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "816092008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pelvis" ]
+       ], [
+         fhir:index 110;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "70382005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Posterior cerebral artery" ]
+       ], [
+         fhir:index 111;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "64234005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patella" ]
+       ], [
+         fhir:index 112;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "45289007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Parotid gland" ]
+       ], [
+         fhir:index 113;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "111002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Parathyroid" ]
+       ], [
+         fhir:index 114;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "91691001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Parasternal" ]
+       ], [
+         fhir:index 115;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "69930009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pancreatic duct" ]
+       ], [
+         fhir:index 116;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15776009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pancreas" ]
+       ], [
+         fhir:index 117;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "110621006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pancreatic duct and bile duct systems" ]
+       ], [
+         fhir:index 118;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15497006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ovary" ]
+       ], [
+         fhir:index 119;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "363654007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Orbital structure" ]
+       ], [
+         fhir:index 120;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "55024004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Optic canal" ]
+       ], [
+         fhir:index 121;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "53549008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ophthalmic artery" ]
+       ], [
+         fhir:index 122;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "31145008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Occipital artery" ]
+       ], [
+         fhir:index 123;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32114007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Occipital vein" ]
+       ], [
+         fhir:index 124;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "45206002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nose" ]
+       ], [
+         fhir:index 125;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "416319003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neck, Chest, Abdomen and Pelvis" ]
+       ], [
+         fhir:index 126;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "416152001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neck, Chest and Abdomen" ]
+       ], [
+         fhir:index 127;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "417437006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neck and Chest" ]
+       ], [
+         fhir:index 128;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "45048000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neck" ]
+       ], [
+         fhir:index 129;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "360955006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasopharynx" ]
+       ], [
+         fhir:index 130;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "123851003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mouth" ]
+       ], [
+         fhir:index 131;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "243977002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Morisons pouch" ]
+       ], [
+         fhir:index 132;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "273099000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Middle hepatic vein" ]
+       ], [
+         fhir:index 133;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "128583004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mesenteric vein" ]
+       ], [
+         fhir:index 134;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "86570000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mesenteric artery" ]
+       ], [
+         fhir:index 135;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "72410000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mediastinum" ]
+       ], [
+         fhir:index 136;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "17232002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Middle cerebral artery" ]
+       ], [
+         fhir:index 137;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "70925003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Maxilla" ]
+       ], [
+         fhir:index 138;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "59066005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mastoid bone" ]
+       ], [
+         fhir:index 139;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "91609006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mandible" ]
+       ], [
+         fhir:index 140;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "87878005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left ventricle" ]
+       ], [
+         fhir:index 141;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "86367003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left upper quadrant of abdomen" ]
+       ], [
+         fhir:index 142;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "39607008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lung" ]
+       ], [
+         fhir:index 143;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "91747007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lumen of blood vessel" ]
+       ], [
+         fhir:index 144;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34635009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lumbar artery" ]
+       ], [
+         fhir:index 145;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "52612000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lumbar region" ]
+       ], [
+         fhir:index 146;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "43863001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Superior left pulmonary vein" ]
+       ], [
+         fhir:index 147;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1217253001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lumbo-sacral spine" ]
+       ], [
+         fhir:index 148;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122496007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lumbar spine" ]
+       ], [
+         fhir:index 149;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50408007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left pulmonary artery" ]
+       ], [
+         fhir:index 150;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "70253006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left portal vein" ]
+       ], [
+         fhir:index 151;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "61685007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lower limb" ]
+       ], [
+         fhir:index 152;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30021000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lower leg" ]
+       ], [
+         fhir:index 153;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1017210004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left lumbar region" ]
+       ], [
+         fhir:index 154;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "68505006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left lower quadrant of abdomen" ]
+       ], [
+         fhir:index 155;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10200004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Liver" ]
+       ], [
+         fhir:index 156;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "85119005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left inguinal region" ]
+       ], [
+         fhir:index 157;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "113264009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lingual artery" ]
+       ], [
+         fhir:index 158;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "133945003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left hypochondriac region" ]
+       ], [
+         fhir:index 159;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "273202007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left hepatic vein" ]
+       ], [
+         fhir:index 160;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "113270003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left femoral artery" ]
+       ], [
+         fhir:index 161;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "66720007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lateral Ventricle" ]
+       ], [
+         fhir:index 162;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "82471001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left atrium" ]
+       ], [
+         fhir:index 163;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4596009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Larynx" ]
+       ], [
+         fhir:index 164;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14742008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Large intestine" ]
+       ], [
+         fhir:index 165;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "59749000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lacrimal artery" ]
+       ], [
+         fhir:index 166;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "72696002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Knee" ]
+       ], [
+         fhir:index 167;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "64033007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kidney" ]
+       ], [
+         fhir:index 168;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "39352004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Joint" ]
+       ], [
+         fhir:index 169;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "21306003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Jejunum" ]
+       ], [
+         fhir:index 170;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "661005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Jaw region" ]
+       ], [
+         fhir:index 171;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1101003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intracranial" ]
+       ], [
+         fhir:index 172;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "69327007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Internal mammary artery" ]
+       ], [
+         fhir:index 173;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12123001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Internal jugular vein" ]
+       ], [
+         fhir:index 174;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "90024005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Internal iliac artery" ]
+       ], [
+         fhir:index 175;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8887007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Innominate vein" ]
+       ], [
+         fhir:index 176;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12691009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Innominate artery" ]
+       ], [
+         fhir:index 177;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26893007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inguinal region" ]
+       ], [
+         fhir:index 178;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "64131007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inferior vena cava" ]
+       ], [
+         fhir:index 179;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "33795007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inferior mesenteric artery" ]
+       ], [
+         fhir:index 180;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22356005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ilium" ]
+       ], [
+         fhir:index 181;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "244411005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iliac vein" ]
+       ], [
+         fhir:index 182;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10293006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iliac artery" ]
+       ], [
+         fhir:index 183;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34516001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ileum" ]
+       ], [
+         fhir:index 184;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "86117002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Internal carotid artery" ]
+       ], [
+         fhir:index 185;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "361078006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Internal Auditory Canal" ]
+       ], [
+         fhir:index 186;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "81502006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hypopharynx" ]
+       ], [
+         fhir:index 187;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "85050009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Humerus" ]
+       ], [
+         fhir:index 188;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "24136001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hip joint" ]
+       ], [
+         fhir:index 189;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8993003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hepatic vein" ]
+       ], [
+         fhir:index 190;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "76015000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hepatic artery" ]
+       ], [
+         fhir:index 191;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "80891009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Heart" ]
+       ], [
+         fhir:index 192;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "774007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Head and Neck" ]
+       ], [
+         fhir:index 193;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "69536005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Head" ]
+       ], [
+         fhir:index 194;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "85562004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hand" ]
+       ], [
+         fhir:index 195;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "60734001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Great saphenous vein" ]
+       ], [
+         fhir:index 196;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "46862004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gluteal region" ]
+       ], [
+         fhir:index 197;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "300571009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gestational sac" ]
+       ], [
+         fhir:index 198;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "128559007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Genicular artery" ]
+       ], [
+         fhir:index 199;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "110568007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastric vein" ]
+       ], [
+         fhir:index 200;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "28231008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gallbladder" ]
+       ], [
+         fhir:index 201;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14975008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Forearm" ]
+       ], [
+         fhir:index 202;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "56459004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Foot" ]
+       ], [
+         fhir:index 203;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "79361005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fontanel of skull" ]
+       ], [
+         fhir:index 204;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "58602004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Flank" ]
+       ], [
+         fhir:index 205;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7569003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Finger" ]
+       ], [
+         fhir:index 206;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "87342007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fibula" ]
+       ], [
+         fhir:index 207;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "71341001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Femur" ]
+       ], [
+         fhir:index 208;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "83419000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Femoral vein" ]
+       ], [
+         fhir:index 209;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7657000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Femoral artery" ]
+       ], [
+         fhir:index 210;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "23074001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Facial artery" ]
+       ], [
+         fhir:index 211;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "89545001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Face" ]
+       ], [
+         fhir:index 212;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "80243003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eyelid" ]
+       ], [
+         fhir:index 213;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "81745001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eye" ]
+       ], [
+         fhir:index 214;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "66019005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Extremity" ]
+       ], [
+         fhir:index 215;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "71585003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "External jugular vein" ]
+       ], [
+         fhir:index 216;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "63507001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "External iliac vein" ]
+       ], [
+         fhir:index 217;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "113269004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "External iliac artery" ]
+       ], [
+         fhir:index 218;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32849002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Esophagus" ]
+       ], [
+         fhir:index 219;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "27947004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Epigastric region" ]
+       ], [
+         fhir:index 220;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "87644002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Epididymis" ]
+       ], [
+         fhir:index 221;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "48367006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Endo-vesical" ]
+       ], [
+         fhir:index 222;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "29092000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vein" ]
+       ], [
+         fhir:index 223;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "59820001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Endo-vascular" ]
+       ], [
+         fhir:index 224;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "18962004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Endo-nasopharyngeal" ]
+       ], [
+         fhir:index 225;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "53342003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Endo-nasal" ]
+       ], [
+         fhir:index 226;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2739003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Endometrium" ]
+       ], [
+         fhir:index 227;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16953009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Elbow joint" ]
+       ], [
+         fhir:index 228;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22286001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "External carotid artery" ]
+       ], [
+         fhir:index 229;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "117590005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ear" ]
+       ], [
+         fhir:index 230;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "84301002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "External auditory canal" ]
+       ], [
+         fhir:index 231;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "38848004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Duodenum" ]
+       ], [
+         fhir:index 232;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32622004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Descending colon" ]
+       ], [
+         fhir:index 233;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32672002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Descending aorta" ]
+       ], [
+         fhir:index 234;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "53843000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rectouterine pouch" ]
+       ], [
+         fhir:index 235;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1217257000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cervico-thoracic spine" ]
+       ], [
+         fhir:index 236;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122494005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cervical spine" ]
+       ], [
+         fhir:index 237;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "90219004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Coronary sinus" ]
+       ], [
+         fhir:index 238;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "41801008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Coronary artery" ]
+       ], [
+         fhir:index 239;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "28726007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cornea" ]
+       ], [
+         fhir:index 240;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "79741001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Common bile duct" ]
+       ], [
+         fhir:index 241;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "46027005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Common iliac vein" ]
+       ], [
+         fhir:index 242;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "73634005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Common iliac artery" ]
+       ], [
+         fhir:index 243;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "71854001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Colon" ]
+       ], [
+         fhir:index 244;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "64688005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Coccyx" ]
+       ], [
+         fhir:index 245;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "51299004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Clavicle" ]
+       ], [
+         fhir:index 246;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11279006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Circle of Willis" ]
+       ], [
+         fhir:index 247;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "80621003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Choroid plexus" ]
+       ], [
+         fhir:index 248;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "416775004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chest, Abdomen and Pelvis" ]
+       ], [
+         fhir:index 249;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "416550000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chest and Abdomen" ]
+       ], [
+         fhir:index 250;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "60819002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cheek" ]
+       ], [
+         fhir:index 251;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "397363009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Common femoral vein" ]
+       ], [
+         fhir:index 252;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "181347005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Common femoral artery" ]
+       ], [
+         fhir:index 253;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "71252005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cervix" ]
+       ], [
+         fhir:index 254;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "88556005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cerebral artery" ]
+       ], [
+         fhir:index 255;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "372073000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cerebral hemisphere" ]
+       ], [
+         fhir:index 256;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "113305005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cerebellum" ]
+       ], [
+         fhir:index 257;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20699002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cephalic vein" ]
+       ], [
+         fhir:index 258;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "57850000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Celiac artery" ]
+       ], [
+         fhir:index 259;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32062004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Common carotid artery" ]
+       ], [
+         fhir:index 260;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "69105007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Carotid Artery" ]
+       ], [
+         fhir:index 261;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "53840002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Calf of leg" ]
+       ], [
+         fhir:index 262;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "80144004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Calcaneus" ]
+       ], [
+         fhir:index 263;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "21479005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Carotid bulb" ]
+       ], [
+         fhir:index 264;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "955009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bronchus" ]
+       ], [
+         fhir:index 265;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "76752008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Breast" ]
+       ], [
+         fhir:index 266;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12738006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Brain" ]
+       ], [
+         fhir:index 267;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20115005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Brachial vein" ]
+       ], [
+         fhir:index 268;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "17137000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Brachial artery" ]
+       ], [
+         fhir:index 269;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "110837003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bladder and urethra" ]
+       ], [
+         fhir:index 270;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "89837001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bladder" ]
+       ], [
+         fhir:index 271;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34707002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Biliary tract" ]
+       ], [
+         fhir:index 272;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "28273000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bile duct" ]
+       ], [
+         fhir:index 273;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "59011009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Basilar artery" ]
+       ], [
+         fhir:index 274;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77568009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Back" ]
+       ], [
+         fhir:index 275;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "72107004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Azygos vein" ]
+       ], [
+         fhir:index 276;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "68705008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Axillary vein" ]
+       ], [
+         fhir:index 277;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "67937003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Axillary Artery" ]
+       ], [
+         fhir:index 278;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "91470000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Axilla" ]
+       ], [
+         fhir:index 279;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9040008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ascending colon" ]
+       ], [
+         fhir:index 280;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "54247002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ascending aorta" ]
+       ], [
+         fhir:index 281;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "51114001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Artery" ]
+       ], [
+         fhir:index 282;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "66754008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Appendix" ]
+       ], [
+         fhir:index 283;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "57034009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aortic arch" ]
+       ], [
+         fhir:index 284;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15825003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aorta" ]
+       ], [
+         fhir:index 285;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "110612005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anus, rectum and sigmoid colon" ]
+       ], [
+         fhir:index 286;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "68053000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anterior tibial artery" ]
+       ], [
+         fhir:index 287;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "17388009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anterior spinal artery" ]
+       ], [
+         fhir:index 288;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "128553008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Antecubital vein" ]
+       ], [
+         fhir:index 289;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8012006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anterior communicating artery" ]
+       ], [
+         fhir:index 290;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "194996006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anterior cardiac vein" ]
+       ], [
+         fhir:index 291;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "70258002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ankle joint" ]
+       ], [
+         fhir:index 292;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77012006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Amniotic fluid" ]
+       ], [
+         fhir:index 293;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "23451007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Adrenal gland" ]
+       ], [
+         fhir:index 294;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "85856004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acromioclavicular joint" ]
+       ], [
+         fhir:index 295;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "60176003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anterior cerebral artery" ]
+       ], [
+         fhir:index 296;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7832008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Abdominal aorta" ]
+       ], [
+         fhir:index 297;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "818982008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Abdomen and Pelvis" ]
+       ], [
+         fhir:index 298;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "818981001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Abdomen" ]
+       ], [
+         fhir:index 299;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35918002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fourth ventricle" ]
+       ], [
+         fhir:index 300;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "49841001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Third ventricle" ]
+       ]
+     ]
   ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/VSBodySite.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

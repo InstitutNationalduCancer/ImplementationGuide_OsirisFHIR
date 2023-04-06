@@ -3,7 +3,6 @@ Parent:         variant
 Id:             variant-annotation
 Title:          "Variant Annotation"
 Description:    "The Annotation profile allows to add information about a SNP, a fusion, an expression or a copy number event. It is generally used to compare variant from a reference genome. There can be multiple instance of Variant Annotation Resource for one instance of SNP, CopyNumber, Expression or Fusion Resource."
-* obeys osiris-1
 
 * subject only Reference (onco-patient)
 * hasMember only Reference (genome-entity or annotation-reference)
@@ -42,7 +41,7 @@ Source: variant-annotation
 Target: "Annotation"
 Id: fhir-osiris-annotation
 Title: "Fhir-osiris annotation to osiris"
-* subject -> "Annotation.Patient_Identifier"
+* subject -> "Annotation.Patient_Id"
 * component[gene-studied].valueCodeableConcept.coding.code -> "Annotation.GenomeEntity_Symbol"
 * component[mutation-prediction].code -> "Annotation.Annotation_MutationPredictionAlgorithm"
 * component[mutation-prediction].valueString -> "Annotation.Annotation_MutationPredictionValue"
@@ -58,14 +57,12 @@ Title: "Fhir-osiris annotation to osiris"
 * derivedFrom -> "Annotation.identifier (MolecularSequence annotation, GenomeEntity)"
 
 
-Invariant:  osiris-1
-Description: "OsirisAnnotation.derivedFrom with osiris-molecularsequence5prime and osiris-molecularsequence5prime must be present if Annotation references a fusion"
-Severity:   #error
-
-
 ValueSet: MutationPrediction
 Title: "Mutation prediction Value Set"
 Description:  "Mutation prediction"
 * OSIRIS#O63-1	"SIFT"
 * OSIRIS#O63-2	"POLYPHEN2_HDIV"
 * OSIRIS#O63-3	"MutationTaster"
+
+
+	// AlterationOnSample_AlterationType	Annotation_ReferenceType	Annotation_ReferenceDatabase	Annotation_ReferenceValue	Annotation_MutationPredictionAlgorithm	Annotation_MutationPredictionValue	Annotation_MutationPredictionScore	Annotation_PfamDomain	Annotation_PfamId	Annotation_DNARegionName	Annotation_DNASequenceVariation	Annotation_AminoAcidChange	Annotation_GenomicSequenceVariation	Annotation_RNASequenceVariation	Annotation_AminoAcidChangeType	Annotation_FusionPrimeEnd	Annotation_Strand

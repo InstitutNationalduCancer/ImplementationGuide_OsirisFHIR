@@ -5,35 +5,43 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CarePlan/fhir-osiris-example-treatment-radiotherapy> a fhir:CarePlan ;
-  fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "fhir-osiris-example-treatment-radiotherapy"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment"^^xsd:anyURI ;
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CarePlan/fhir-osiris-example-treatment-radiotherapy> a fhir:CarePlan;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fhir-osiris-example-treatment-radiotherapy"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment";
+       fhir:index 0;
        fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"fhir-osiris-example-treatment-radiotherapy\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;fhir-osiris-example-treatment-radiotherapy&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-treatment.html\">Treatment</a></p></div><p><b>status</b>: unknown</p><p><b>intent</b>: plan</p><p><b>category</b>: C1522449 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\">Unified Medical Language System</a>#C1522449)</span></p><p><b>subject</b>: <a href=\"Patient-Patient-XRTS-04-22A.html\">Patient/Patient-XRTS-04-22A</a></p><p><b>period</b>: 2018-08-15 --&gt; 2018-12-25</p></div>"
-  ] ; # 
-  fhir:status [ fhir:v "unknown"] ; # 
-  fhir:intent [ fhir:v "plan"] ; # 
-  fhir:category ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/umls"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "C1522449" ]
-     ] )
-  ] ) ; # 
-  fhir:subject [
-     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/Patient-XRTS-04-22A> ;
-     fhir:reference [ fhir:v "Patient/Patient-XRTS-04-22A" ]
-  ] ; # 
-  fhir:period [
-     fhir:start [ fhir:v "2018-08-15"^^xsd:date ] ;
-     fhir:end [ fhir:v "2018-12-25"^^xsd:date ]
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"fhir-osiris-example-treatment-radiotherapy\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;fhir-osiris-example-treatment-radiotherapy&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-treatment.html\">Treatment</a></p></div><p><b>status</b>: unknown</p><p><b>intent</b>: plan</p><p><b>category</b>: C1522449 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\">Unified Medical Language System</a>#C1522449)</span></p><p><b>subject</b>: <a href=\"Patient-Patient-XRTS-04-22A.html\">Patient/Patient-XRTS-04-22A</a></p><p><b>period</b>: 2018-08-15 --&gt; 2018-12-25</p></div>"
+  ]; # 
+  fhir:CarePlan.status [ fhir:value "unknown"]; # 
+  fhir:CarePlan.intent [ fhir:value "plan"]; # 
+  fhir:CarePlan.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/umls" ];
+       fhir:Coding.code [ fhir:value "C1522449" ]
+     ]
+  ]; # 
+  fhir:CarePlan.subject [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/Patient-XRTS-04-22A>;
+     fhir:Reference.reference [ fhir:value "Patient/Patient-XRTS-04-22A" ]
+  ]; # 
+  fhir:CarePlan.period [
+     fhir:Period.start [ fhir:value "2018-08-15"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2018-12-25"^^xsd:date ]
   ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CarePlan/fhir-osiris-example-treatment-radiotherapy.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

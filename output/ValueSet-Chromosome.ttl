@@ -1,0 +1,178 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Chromosome> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Chromosome"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA21254-0/\">LA21254-0</a></td><td>chr1</td></tr><tr><td><a href=\"https://loinc.org/LA21255-7/\">LA21255-7</a></td><td>chr2</td></tr><tr><td><a href=\"https://loinc.org/LA21256-5/\">LA21256-5</a></td><td>chr3</td></tr><tr><td><a href=\"https://loinc.org/LA21257-3/\">LA21257-3</a></td><td>chr4</td></tr><tr><td><a href=\"https://loinc.org/LA21258-1/\">LA21258-1</a></td><td>chr5</td></tr><tr><td><a href=\"https://loinc.org/LA21259-9/\">LA21259-9</a></td><td>chr6</td></tr><tr><td><a href=\"https://loinc.org/LA21260-7/\">LA21260-7</a></td><td>chr7</td></tr><tr><td><a href=\"https://loinc.org/LA21261-5/\">LA21261-5</a></td><td>chr8</td></tr><tr><td><a href=\"https://loinc.org/LA21262-3/\">LA21262-3</a></td><td>chr9</td></tr><tr><td><a href=\"https://loinc.org/LA21263-1/\">LA21263-1</a></td><td>chr10</td></tr><tr><td><a href=\"https://loinc.org/LA21264-9/\">LA21264-9</a></td><td>chr11</td></tr><tr><td><a href=\"https://loinc.org/LA21265-6/\">LA21265-6</a></td><td>chr12</td></tr><tr><td><a href=\"https://loinc.org/LA21266-4/\">LA21266-4</a></td><td>chr13</td></tr><tr><td><a href=\"https://loinc.org/LA21267-2/\">LA21267-2</a></td><td>chr14</td></tr><tr><td><a href=\"https://loinc.org/LA21268-0/\">LA21268-0</a></td><td>chr15</td></tr><tr><td><a href=\"https://loinc.org/LA21269-8/\">LA21269-8</a></td><td>chr16</td></tr><tr><td><a href=\"https://loinc.org/LA21270-6/\">LA21270-6</a></td><td>chr17</td></tr><tr><td><a href=\"https://loinc.org/LA21271-4/\">LA21271-4</a></td><td>chr18</td></tr><tr><td><a href=\"https://loinc.org/LA21272-2/\">LA21272-2</a></td><td>chr19</td></tr><tr><td><a href=\"https://loinc.org/LA21273-0/\">LA21273-0</a></td><td>chr20</td></tr><tr><td><a href=\"https://loinc.org/LA21274-8/\">LA21274-8</a></td><td>chr21</td></tr><tr><td><a href=\"https://loinc.org/LA21275-5/\">LA21275-5</a></td><td>chr22</td></tr><tr><td><a href=\"https://loinc.org/LA21276-3/\">LA21276-3</a></td><td>chrX</td></tr><tr><td><a href=\"https://loinc.org/LA21277-1/\">LA21277-1</a></td><td>chrY</td></tr></table></li><li>Include these codes as defined in <code>https://github.com/siric-osiris/OSIRIS</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>O19-1</td><td>MT</td></tr><tr><td>O19-2</td><td>viral</td></tr><tr><td>O19-3</td><td>bacterial</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\"><code>http://terminology.hl7.org/CodeSystem/umls</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C0439673</td><td>Unknown</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Chromosome"]; # 
+  fhir:ValueSet.version [ fhir:value "2.1.0"]; # 
+  fhir:ValueSet.name [ fhir:value "Chromosome"]; # 
+  fhir:ValueSet.title [ fhir:value "Chromosome Value Set"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.date [ fhir:value "2023-04-06T18:12:15+02:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "Arkhn"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Arkhn" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://arkhn.com" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "contact@arkhn.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Nicolas Riss" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "nicolas@arkhn.com" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "Chromosome"]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21254-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr1" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21255-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr2" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21256-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr3" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21257-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr4" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21258-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr5" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21259-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr6" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21260-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr7" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21261-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr8" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21262-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr9" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21263-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr10" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21264-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr11" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21265-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr12" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21266-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr13" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21267-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr14" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21268-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr15" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21269-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr16" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21270-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr17" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21271-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr18" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21272-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr19" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21273-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr20" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21274-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr21" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21275-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chr22" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21276-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chrX" ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA21277-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "chrY" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://github.com/siric-osiris/OSIRIS" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O19-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MT" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O19-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "viral" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O19-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bacterial" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/umls" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "C0439673" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unknown" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Chromosome.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

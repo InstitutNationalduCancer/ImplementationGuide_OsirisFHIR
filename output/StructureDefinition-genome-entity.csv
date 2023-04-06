@@ -1,6 +1,5 @@
-"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: FiveWs Pattern Mapping","Mapping: RIM Mapping"
-"MolecularSequence","MolecularSequence","","","",0,*,"","","","null {[]} {[]}
-","Information about a biological sequence","Raw data describing a biological sequence.","","","","","","","","","",,,,,"",,,,"MolecularSequence",0,*,"","","Entity. Role, or Act"
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: FiveWs Pattern Mapping","Mapping: RIM Mapping","Mapping: OSIRIS pivot files"
+"MolecularSequence","MolecularSequence","","","",0,*,"","","","","Information about a biological sequence","Raw data describing a biological sequence.","","","","","","","","","",,,,,"",,,,"MolecularSequence",0,*,"","","Entity. Role, or Act"
 "MolecularSequence.id","MolecularSequence.id","","","",0,1,"","","Y","id {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "MolecularSequence.meta","MolecularSequence.meta","","","",0,1,"","","Y","Meta {[]} {[]}
@@ -32,15 +31,15 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MolecularSequence.identifier","MolecularSequence.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
 ","Unique ID for this particular sequence. This is a FHIR-defined id","A unique identifier for this particular sequence instance. This is a FHIR-defined id.","","Allows sequences to be distinguished and referenced.","","","","","","","",,,,,"",,,,"MolecularSequence.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.identifier"
-"MolecularSequence.type","MolecularSequence.type","","","",0,1,"","","Y","code {[]} {[]}
-","aa | dna | rna","Amino Acid Sequence/ DNA Sequence / RNA Sequence.","","","","","","","","","",,"required","","https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeEntityType","",,,,"MolecularSequence.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
+"MolecularSequence.type","MolecularSequence.type","","","",1,1,"Y","","Y","code {[]} {[]}
+","Molecular entity","OSIRIS code of the molecular entity where the genomic alteration is found.","","","","","","","","","",,"required","","https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeEntityType","",,,,"MolecularSequence.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","OSIRIS_pivot_Annotation.GenomeEntity_Type"
 "MolecularSequence.coordinateSystem","MolecularSequence.coordinateSystem","","","",1,1,"","","Y","integer {[]} {[]}
 ","Base number of coordinate system (0 for 0-based numbering or coordinates, inclusive start, exclusive end, 1 for 1-based numbering, inclusive start, inclusive end)","Whether the sequence is numbered starting at 0 (0-based numbering or coordinates, inclusive start, exclusive end) or starting at 1 (1-based numbering, inclusive start and inclusive end).","","","","","","<valueInteger xmlns=""http://hl7.org/fhir"" value=""0""/>","","","",,,,,"",,,,"MolecularSequence.coordinateSystem",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"MolecularSequence.patient","MolecularSequence.patient","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient]]}
+"MolecularSequence.patient","MolecularSequence.patient","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient]]}
 ","Who and/or what this is about","The patient whose sequencing results are described by this resource.","","","","","","","","","",,,,,"",,,,"MolecularSequence.patient",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
+","OSIRIS_pivot_Annotation.Patient_Id"
 "MolecularSequence.specimen","MolecularSequence.specimen","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Specimen]]}
 ","Specimen used for sequencing","Specimen used for sequencing.","","","","","","","","","",,,,,"",,,,"MolecularSequence.specimen",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -282,12 +281,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MolecularSequence.repository:genome-entity-db.url","MolecularSequence.repository.url","","","",0,1,"","","Y","uri {[]} {[]}
 ","URI of the repository","URI of an external repository which contains further details about the genetics data.","","","","","","","","","",,,,,"",,,,"MolecularSequence.repository.url",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"MolecularSequence.repository:genome-entity-db.name","MolecularSequence.repository.name","","","",0,1,"","","Y","string {[]} {[]}
-","Database name","URI of an external repository which contains further details about the genetics data.","","","","","","","","","",,,,,"",,,,"MolecularSequence.repository.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"MolecularSequence.repository:genome-entity-db.datasetId","MolecularSequence.repository.datasetId","","","",0,1,"","","Y","string {[]} {[]}
-","GenomeEntity Database ID","Id of the variant in this external repository. The server will understand how to use this id to call for more info about datasets in external repository.","","","","","","","","","",,,,,"",,,,"MolecularSequence.repository.datasetId",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
+"MolecularSequence.repository:genome-entity-db.name","MolecularSequence.repository.name","","","",1,1,"","","Y","string {[]} {[]}
+","The database listing the molecular entity","The database used to precisely name the molecular entity.","","","","","","","","","",,,,,"",,,,"MolecularSequence.repository.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","OSIRIS_pivot_Annotation.GenomeEntity_Database"
+"MolecularSequence.repository:genome-entity-db.datasetId","MolecularSequence.repository.datasetId","","","",1,1,"","","Y","string {[]} {[]}
+","Molecular entity identifier","The identifier of the molecular entity in the database.","","","","","","","","","",,,,,"",,,,"MolecularSequence.repository.datasetId",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","OSIRIS_pivot_Annotation.GenomeEntity_Id"
 "MolecularSequence.repository:genome-entity-db.variantsetId","MolecularSequence.repository.variantsetId","","","",0,1,"","","Y","string {[]} {[]}
 ","Id of the variantset that used to call for variantset in repository","Id of the variantset in this external repository. The server will understand how to use this id to call for more info about variantsets in external repository.","","","","","","","","","",,,,,"",,,,"MolecularSequence.repository.variantsetId",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

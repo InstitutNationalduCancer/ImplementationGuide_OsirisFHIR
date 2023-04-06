@@ -5,51 +5,62 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Consent/fhir-osiris-example-consent-2> a fhir:Consent ;
-  fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "fhir-osiris-example-consent-2"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genetic-consent"^^xsd:anyURI ;
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Consent/fhir-osiris-example-consent-2> a fhir:Consent;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fhir-osiris-example-consent-2"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genetic-consent";
+       fhir:index 0;
        fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genetic-consent>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Consent</b><a name=\"fhir-osiris-example-consent-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Consent &quot;fhir-osiris-example-consent-2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-genetic-consent.html\">Consent for Genetic Data Usage</a></p></div><p><b>status</b>: active</p><p><b>scope</b>: Privacy Consent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-consentscope.html\">Consent Scope Codes</a>#patient-privacy)</span></p><p><b>category</b>: research information access <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActCode.html\">ActCode</a>#RESEARCH)</span></p><p><b>patient</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><p><b>dateTime</b>: 2000-11-16</p><blockquote><p><b>provision</b></p><p><b>type</b>: deny</p><p><b>class</b>: MolecularSequence (Details: http://hl7.org/fhir/resource-types code MolecularSequence = 'MolecularSequence', stated as 'null')</p><h3>Data</h3><table class=\"grid\"><tr><td>-</td><td><b>Meaning</b></td><td><b>Reference</b></td></tr><tr><td>*</td><td>instance</td><td><a href=\"Specimen-fhir-osiris-example-biologicalsample-2.html\">Specimen/fhir-osiris-example-biologicalsample-2</a></td></tr></table></blockquote></div>"
-  ] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:scope [
-     fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "patient-privacy" ]
-     ] )
-  ] ; # 
-  fhir:category ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "RESEARCH" ]
-     ] )
-  ] ) ; # 
-  fhir:patient [
-     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/L304> ;
-     fhir:reference [ fhir:v "Patient/L304" ]
-  ] ; # 
-  fhir:dateTime [ fhir:v "2000-11-16"^^xsd:date] ; # 
-  fhir:provision [
-     fhir:type [ fhir:v "deny" ] ;
-     fhir:class ( [
-       fhir:system [ fhir:v "http://hl7.org/fhir/resource-types"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "MolecularSequence" ]
-     ] ) ;
-     fhir:data ( [
-       fhir:meaning [ fhir:v "instance" ] ;
-       fhir:reference [
-         fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Specimen/fhir-osiris-example-biologicalsample-2> ;
-         fhir:reference [ fhir:v "Specimen/fhir-osiris-example-biologicalsample-2" ]
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Consent</b><a name=\"fhir-osiris-example-consent-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Consent &quot;fhir-osiris-example-consent-2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-genetic-consent.html\">Consent for Genetic Data Usage</a></p></div><p><b>status</b>: active</p><p><b>scope</b>: Privacy Consent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-consentscope.html\">Consent Scope Codes</a>#patient-privacy)</span></p><p><b>category</b>: research information access <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActCode.html\">ActCode</a>#RESEARCH)</span></p><p><b>patient</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><p><b>dateTime</b>: 2000-11-16</p><blockquote><p><b>provision</b></p><p><b>type</b>: deny</p><p><b>class</b>: MolecularSequence (Details: http://hl7.org/fhir/resource-types code MolecularSequence = 'MolecularSequence', stated as 'null')</p><h3>Data</h3><table class=\"grid\"><tr><td>-</td><td><b>Meaning</b></td><td><b>Reference</b></td></tr><tr><td>*</td><td>instance</td><td><a href=\"Specimen-fhir-osiris-example-biologicalsample-2.html\">Specimen/fhir-osiris-example-biologicalsample-2</a></td></tr></table></blockquote></div>"
+  ]; # 
+  fhir:Consent.status [ fhir:value "active"]; # 
+  fhir:Consent.scope [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/consentscope" ];
+       fhir:Coding.code [ fhir:value "patient-privacy" ]
+     ]
+  ]; # 
+  fhir:Consent.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ];
+       fhir:Coding.code [ fhir:value "RESEARCH" ]
+     ]
+  ]; # 
+  fhir:Consent.patient [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/L304>;
+     fhir:Reference.reference [ fhir:value "Patient/L304" ]
+  ]; # 
+  fhir:Consent.dateTime [ fhir:value "2000-11-16"^^xsd:date]; # 
+  fhir:Consent.provision [
+     fhir:Consent.provision.type [ fhir:value "deny" ];
+     fhir:Consent.provision.class [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/resource-types" ];
+       fhir:Coding.code [ fhir:value "MolecularSequence" ]
+     ];
+     fhir:Consent.provision.data [
+       fhir:index 0;
+       fhir:Consent.provision.data.meaning [ fhir:value "instance" ];
+       fhir:Consent.provision.data.reference [
+         fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Specimen/fhir-osiris-example-biologicalsample-2>;
+         fhir:Reference.reference [ fhir:value "Specimen/fhir-osiris-example-biologicalsample-2" ]
        ]
-     ] )
+     ]
   ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Consent/fhir-osiris-example-consent-2.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 
