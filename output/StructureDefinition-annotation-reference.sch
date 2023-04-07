@@ -96,11 +96,9 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MolecularSequence.referenceSeq</sch:title>
+    <sch:title>f:MolecularSequence/f:referenceSeq</sch:title>
     <sch:rule context="f:MolecularSequence/f:referenceSeq">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="(exists(f:chromosome) and exists(f:genomeBuild)) or (not(exists(f:chromosome)) and not(exists(f:genomeBuild)))">GenomeBuild and chromosome must be both contained if either one of them is contained (inherited)</sch:assert>
-      <sch:assert test="count(f:genomeBuild)+count(f:referenceSeqId)+count(f:referenceSeqPointer)+count(f:referenceSeqString)=1">Have and only have one of the following elements in referenceSeq : 1. genomeBuild ; 2 referenceSeqId; 3. referenceSeqPointer;  4. referenceSeqString; (inherited)</sch:assert>
+      <sch:assert test="count(f:referenceSeqId) &gt;= 1">referenceSeqId: minimum cardinality of 'referenceSeqId' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -410,7 +408,6 @@
     <sch:rule context="f:MolecularSequence/f:repository">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -481,6 +478,13 @@
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:MolecularSequence/f:repository</sch:title>
+    <sch:rule context="f:MolecularSequence/f:repository">
+      <sch:assert test="count(f:name) &gt;= 1">name: minimum cardinality of 'name' is 1</sch:assert>
+      <sch:assert test="count(f:datasetId) &gt;= 1">datasetId: minimum cardinality of 'datasetId' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

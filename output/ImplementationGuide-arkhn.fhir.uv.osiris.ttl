@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "OsirisImplementationGuide"]; # 
   fhir:ImplementationGuide.title [ fhir:value "FHIR Osiris Implementation Guide"]; # 
   fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-04-06T18:12:15+02:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-04-06T19:36:35+02:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "Arkhn"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -2633,6 +2633,23 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MolecularSequence" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/MolecularSequence/fhir-osiris-annotation-reference-1>;
+         fhir:Reference.reference [ fhir:value "MolecularSequence/fhir-osiris-annotation-reference-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fhir-osiris-annotation-reference-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Instance from OSIRIS_pivot_Annotations.csv" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/annotation-reference";
+         fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/annotation-reference>
+       ]
+     ], [
+       fhir:index 134;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -2646,7 +2663,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/roi-segmentation>
        ]
      ], [
-       fhir:index 134;
+       fhir:index 135;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2663,7 +2680,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria>
        ]
      ], [
-       fhir:index 135;
+       fhir:index 136;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2680,7 +2697,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-features>
        ]
      ], [
-       fhir:index 136;
+       fhir:index 137;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2697,7 +2714,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-Image-filters>
        ]
      ], [
-       fhir:index 137;
+       fhir:index 138;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2714,7 +2731,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-course-summary>
        ]
      ], [
-       fhir:index 138;
+       fhir:index 139;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2731,7 +2748,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-course-summary>
        ]
      ], [
-       fhir:index 139;
+       fhir:index 140;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2748,7 +2765,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase>
        ]
      ], [
-       fhir:index 140;
+       fhir:index 141;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2765,7 +2782,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase>
        ]
      ], [
-       fhir:index 141;
+       fhir:index 142;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2782,7 +2799,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase>
        ]
      ], [
-       fhir:index 142;
+       fhir:index 143;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2799,7 +2816,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase>
        ]
      ], [
-       fhir:index 143;
+       fhir:index 144;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2816,7 +2833,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase>
        ]
      ], [
-       fhir:index 144;
+       fhir:index 145;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2833,7 +2850,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase>
        ]
      ], [
-       fhir:index 145;
+       fhir:index 146;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2850,7 +2867,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-plan>
        ]
      ], [
-       fhir:index 146;
+       fhir:index 147;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2867,7 +2884,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-volume>
        ]
      ], [
-       fhir:index 147;
+       fhir:index 148;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2884,7 +2901,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-volume>
        ]
      ], [
-       fhir:index 148;
+       fhir:index 149;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2901,7 +2918,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-volume>
        ]
      ], [
-       fhir:index 149;
+       fhir:index 150;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2918,7 +2935,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-volume>
        ]
      ], [
-       fhir:index 150;
+       fhir:index 151;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2935,7 +2952,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/tumor-pathology-event>
        ]
      ], [
-       fhir:index 151;
+       fhir:index 152;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2952,7 +2969,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/tumor-pathology-event>
        ]
      ], [
-       fhir:index 152;
+       fhir:index 153;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2969,7 +2986,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-adverse-event>
        ]
      ], [
-       fhir:index 153;
+       fhir:index 154;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2986,7 +3003,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis>
        ]
      ], [
-       fhir:index 154;
+       fhir:index 155;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3003,7 +3020,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis>
        ]
      ], [
-       fhir:index 155;
+       fhir:index 156;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3020,7 +3037,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis>
        ]
      ], [
-       fhir:index 156;
+       fhir:index 157;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3037,7 +3054,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis>
        ]
      ], [
-       fhir:index 157;
+       fhir:index 158;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3054,7 +3071,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis>
        ]
      ], [
-       fhir:index 158;
+       fhir:index 159;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3071,7 +3088,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis>
        ]
      ], [
-       fhir:index 159;
+       fhir:index 160;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3088,7 +3105,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-biological-sample>
        ]
      ], [
-       fhir:index 160;
+       fhir:index 161;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3105,7 +3122,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-biological-sample>
        ]
      ], [
-       fhir:index 161;
+       fhir:index 162;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3122,7 +3139,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/biomarker>
        ]
      ], [
-       fhir:index 162;
+       fhir:index 163;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3139,7 +3156,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/cause-of-death>
        ]
      ], [
-       fhir:index 163;
+       fhir:index 164;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3156,7 +3173,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genetic-consent>
        ]
      ], [
-       fhir:index 164;
+       fhir:index 165;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3173,7 +3190,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genetic-consent>
        ]
      ], [
-       fhir:index 165;
+       fhir:index 166;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3190,7 +3207,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-device>
        ]
      ], [
-       fhir:index 166;
+       fhir:index 167;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3207,7 +3224,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-device>
        ]
      ], [
-       fhir:index 167;
+       fhir:index 168;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3224,7 +3241,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-device>
        ]
      ], [
-       fhir:index 168;
+       fhir:index 169;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3241,7 +3258,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-device>
        ]
      ], [
-       fhir:index 169;
+       fhir:index 170;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3258,7 +3275,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-device>
        ]
      ], [
-       fhir:index 170;
+       fhir:index 171;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3275,7 +3292,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-pacs>
        ]
      ], [
-       fhir:index 171;
+       fhir:index 172;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3292,7 +3309,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-pacs>
        ]
      ], [
-       fhir:index 172;
+       fhir:index 173;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3309,7 +3326,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-pacs>
        ]
      ], [
-       fhir:index 173;
+       fhir:index 174;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3326,7 +3343,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-pacs>
        ]
      ], [
-       fhir:index 174;
+       fhir:index 175;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3343,7 +3360,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-pacs>
        ]
      ], [
-       fhir:index 175;
+       fhir:index 176;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3360,7 +3377,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy>
        ]
      ], [
-       fhir:index 176;
+       fhir:index 177;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3377,7 +3394,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy>
        ]
      ], [
-       fhir:index 177;
+       fhir:index 178;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3394,7 +3411,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy>
        ]
      ], [
-       fhir:index 178;
+       fhir:index 179;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3411,7 +3428,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy>
        ]
      ], [
-       fhir:index 179;
+       fhir:index 180;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3428,7 +3445,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy>
        ]
      ], [
-       fhir:index 180;
+       fhir:index 181;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3445,7 +3462,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-biological-contrast>
        ]
      ], [
-       fhir:index 181;
+       fhir:index 182;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3462,7 +3479,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy-injection>
        ]
      ], [
-       fhir:index 182;
+       fhir:index 183;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3479,7 +3496,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-medication-statement>
        ]
      ], [
-       fhir:index 183;
+       fhir:index 184;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3493,7 +3510,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of ResearchStudy from OSIRIS_pivot_Treatment.csv" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 184;
+       fhir:index 185;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3510,7 +3527,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-analysis>
        ]
      ], [
-       fhir:index 185;
+       fhir:index 186;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3527,7 +3544,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-analysis>
        ]
      ], [
-       fhir:index 186;
+       fhir:index 187;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3544,7 +3561,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-analysis>
        ]
      ], [
-       fhir:index 187;
+       fhir:index 188;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3561,7 +3578,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-device>
        ]
      ], [
-       fhir:index 188;
+       fhir:index 189;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3578,7 +3595,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-device>
        ]
      ], [
-       fhir:index 189;
+       fhir:index 190;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3595,7 +3612,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-device>
        ]
      ], [
-       fhir:index 190;
+       fhir:index 191;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3612,7 +3629,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/snp>
        ]
      ], [
-       fhir:index 191;
+       fhir:index 192;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3629,7 +3646,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-surgery>
        ]
      ], [
-       fhir:index 192;
+       fhir:index 193;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3646,7 +3663,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-surgery>
        ]
      ], [
-       fhir:index 193;
+       fhir:index 194;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3663,7 +3680,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment>
        ]
      ], [
-       fhir:index 194;
+       fhir:index 195;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3680,7 +3697,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment>
        ]
      ], [
-       fhir:index 195;
+       fhir:index 196;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3697,7 +3714,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment>
        ]
      ], [
-       fhir:index 196;
+       fhir:index 197;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3714,7 +3731,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/data-validation>
        ]
      ], [
-       fhir:index 197;
+       fhir:index 198;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3731,7 +3748,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/vital-status>
        ]
      ], [
-       fhir:index 198;
+       fhir:index 199;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3748,7 +3765,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genome-entity>
        ]
      ], [
-       fhir:index 199;
+       fhir:index 200;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3765,7 +3782,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-organization>
        ]
      ], [
-       fhir:index 200;
+       fhir:index 201;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -3782,7 +3799,7 @@
          fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-organization>
        ]
      ], [
-       fhir:index 201;
+       fhir:index 202;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

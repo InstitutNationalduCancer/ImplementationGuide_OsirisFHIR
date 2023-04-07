@@ -10,7 +10,7 @@
   "name" : "OsirisImplementationGuide",
   "title" : "FHIR Osiris Implementation Guide",
   "status" : "draft",
-  "date" : "2023-04-06T18:12:15+02:00",
+  "date" : "2023-04-06T19:36:35+02:00",
   "publisher" : "Arkhn",
   "contact" : [{
     "name" : "Arkhn",
@@ -2267,6 +2267,18 @@
       "name" : "fhir-osiris-example-patient-pt-nm",
       "description" : "Example of Patient from OSIRIS_pivot_Patient.csv",
       "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MolecularSequence"
+      }],
+      "reference" : {
+        "reference" : "MolecularSequence/fhir-osiris-annotation-reference-1"
+      },
+      "name" : "fhir-osiris-annotation-reference-1",
+      "description" : "Example of Instance from OSIRIS_pivot_Annotations.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/annotation-reference"
     },
     {
       "extension" : [{
