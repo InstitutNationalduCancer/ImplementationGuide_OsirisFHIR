@@ -10,7 +10,7 @@
   "name" : "OsirisImplementationGuide",
   "title" : "FHIR Osiris Implementation Guide",
   "status" : "draft",
-  "date" : "2023-04-06T19:36:35+02:00",
+  "date" : "2023-04-10T11:48:35+02:00",
   "publisher" : "Arkhn",
   "contact" : [{
     "name" : "Arkhn",
@@ -1590,6 +1590,30 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/AlterationType"
+      },
+      "name" : "Alteration Type Value Set",
+      "description" : "Alteration type",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/AminoAcideChangeType"
+      },
+      "name" : "Amino Acide Change Type Value Set",
+      "description" : "Amino Acide Change Type",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/AnalysisType"
       },
       "name" : "Analysis Types Value Set",
@@ -2267,6 +2291,18 @@
       "name" : "fhir-osiris-example-patient-pt-nm",
       "description" : "Example of Patient from OSIRIS_pivot_Patient.csv",
       "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/fhir-osiris-annotation-1"
+      },
+      "name" : "fhir-osiris-annotation-1",
+      "description" : "Example of Instance from OSIRIS_pivot_Annotations.csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/variant-annotation"
     },
     {
       "extension" : [{
