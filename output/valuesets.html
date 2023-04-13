@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>ARKHN.FHIR.UV.OSIRIS\Valuesets - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="arkhn-logo">
+          <a id="hl7-search-lnk" no-external="true" href="https://www.arkhn.com"><img alt="Arkhn Logo" src="assets/images/logo_arkhn.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Osiris Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">2.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="valuesets.html">ValueSets</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts Summary</a>
+  </li>
+  <li>
+    <a href="requests.html">Requests Example</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://github.com/siric-osiris/OSIRIS">OSIRIS Spec </a>
+      </li>
+      <li>
+        <a target="_blank" href="http://arkhn.com/">Arkhn website </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Valuesets</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  <h2>Valuesets</h2>
+  
+  
+  
+  <div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#genvs">Patient general information ValueSets</a></li><li><a href="#oncovs">Oncologic ValueSets</a></li><li><a href="#treatmentsvs">Treatments ValueSets</a></li><li><a href="#analysissvs">Analysis ValueSets</a></li><li><a href="#radiomicsvs">Radiomics and Radiotherapy ValueSets</a></li><li><a href="#samplevs">Sample ValueSets</a></li></ul></div>
+
+  <a name="genvs"> </a>
+  <ns0:h3 xmlns:ns0="http://www.w3.org/1999/xhtml">Patient general information ValueSets</ns0:h3>
+  <ns1:ul xmlns:ns1="http://www.w3.org/1999/xhtml">
+    <ns2:li xmlns:ns2="http://www.w3.org/1999/xhtml">
+      <ns3:p xmlns:ns3="http://www.w3.org/1999/xhtml">
+        <ns4:a xmlns:ns4="http://www.w3.org/1999/xhtml" href="ValueSet-CauseOfDeath.html">Cause of death</ns4:a>
+      </ns3:p>
+    </ns2:li>
+
+    <ns5:li xmlns:ns5="http://www.w3.org/1999/xhtml">
+      <ns6:p xmlns:ns6="http://www.w3.org/1999/xhtml">
+        <ns7:a xmlns:ns7="http://www.w3.org/1999/xhtml" href="ValueSet-Parentage.html">Parentage</ns7:a>
+      </ns6:p>
+    </ns5:li>
+
+    <ns8:li xmlns:ns8="http://www.w3.org/1999/xhtml">
+      <ns9:p xmlns:ns9="http://www.w3.org/1999/xhtml">
+        <ns10:a xmlns:ns10="http://www.w3.org/1999/xhtml" href="ValueSet-VitalStatus.html">Vital status</ns10:a>
+      </ns9:p>
+    </ns8:li>
+  </ns1:ul>
+
+  <a name="oncovs"> </a>
+  <ns11:h3 xmlns:ns11="http://www.w3.org/1999/xhtml">Oncologic ValueSets</ns11:h3>
+  <ns12:ul xmlns:ns12="http://www.w3.org/1999/xhtml">
+
+    <ns13:li xmlns:ns13="http://www.w3.org/1999/xhtml">
+      <ns14:p xmlns:ns14="http://www.w3.org/1999/xhtml">
+        <ns15:a xmlns:ns15="http://www.w3.org/1999/xhtml" href="ValueSet-TNMVersion.html">TNM version</ns15:a>
+      </ns14:p>
+    </ns13:li>
+
+    <ns16:li xmlns:ns16="http://www.w3.org/1999/xhtml">
+      <ns17:p xmlns:ns17="http://www.w3.org/1999/xhtml">
+        <ns18:a xmlns:ns18="http://www.w3.org/1999/xhtml" href="ValueSet-Topography.html">Topography code</ns18:a>
+      </ns17:p>
+    </ns16:li>
+
+    <ns19:li xmlns:ns19="http://www.w3.org/1999/xhtml">
+      <ns20:p xmlns:ns20="http://www.w3.org/1999/xhtml">
+        <ns21:a xmlns:ns21="http://www.w3.org/1999/xhtml" href="ValueSet-Laterality.html">Laterality code</ns21:a>
+      </ns20:p>
+    </ns19:li>
+
+    <ns22:li xmlns:ns22="http://www.w3.org/1999/xhtml">
+      <ns23:p xmlns:ns23="http://www.w3.org/1999/xhtml">
+        <ns24:a xmlns:ns24="http://www.w3.org/1999/xhtml" href="ValueSet-Morphology.html">Morphology code</ns24:a>
+      </ns23:p>
+    </ns22:li>
+
+    <ns25:li xmlns:ns25="http://www.w3.org/1999/xhtml">
+      <ns26:p xmlns:ns26="http://www.w3.org/1999/xhtml">
+        <ns27:a xmlns:ns27="http://www.w3.org/1999/xhtml" href="ValueSet-TumorPathologyEventType.html">Tumor pathology event type</ns27:a>
+      </ns26:p>
+    </ns25:li>
+
+  </ns12:ul>
+  <a name="treatmentsvs"> </a>
+  <ns28:h3 xmlns:ns28="http://www.w3.org/1999/xhtml">Treatments ValueSets</ns28:h3>
+  <ns29:ul xmlns:ns29="http://www.w3.org/1999/xhtml">
+
+    <ns30:li xmlns:ns30="http://www.w3.org/1999/xhtml">
+      <ns31:p xmlns:ns31="http://www.w3.org/1999/xhtml">
+        <ns32:a xmlns:ns32="http://www.w3.org/1999/xhtml" href="ValueSet-AdverseEventCode.html">Adverse event code</ns32:a>
+      </ns31:p>
+    </ns30:li>
+
+    <ns33:li xmlns:ns33="http://www.w3.org/1999/xhtml">
+      <ns34:p xmlns:ns34="http://www.w3.org/1999/xhtml">
+        <ns35:a xmlns:ns35="http://www.w3.org/1999/xhtml" href="ValueSet-TreatmentType.html">Oncology treatment type</ns35:a>
+      </ns34:p>
+    </ns33:li>
+
+    <ns36:li xmlns:ns36="http://www.w3.org/1999/xhtml">
+      <ns37:p xmlns:ns37="http://www.w3.org/1999/xhtml">
+        <ns38:a xmlns:ns38="http://www.w3.org/1999/xhtml" href="ValueSet-ResponseEvaluationStatus.html">Oncology treatment response evaluation status</ns38:a>
+      </ns37:p>
+    </ns36:li>
+
+    <ns39:li xmlns:ns39="http://www.w3.org/1999/xhtml">
+      <ns40:p xmlns:ns40="http://www.w3.org/1999/xhtml">
+        <ns41:a xmlns:ns41="http://www.w3.org/1999/xhtml" href="ValueSet-SurgeryResectionQuality.html">Oncology surgery resection quality</ns41:a>
+      </ns40:p>
+    </ns39:li>
+
+
+  </ns29:ul>
+  <a name="analysissvs"> </a>
+  <ns42:h3 xmlns:ns42="http://www.w3.org/1999/xhtml">Analysis ValueSets</ns42:h3>
+  <ns43:ul xmlns:ns43="http://www.w3.org/1999/xhtml">
+
+    <ns44:li xmlns:ns44="http://www.w3.org/1999/xhtml">
+      <ns45:p xmlns:ns45="http://www.w3.org/1999/xhtml">
+        <ns46:a xmlns:ns46="http://www.w3.org/1999/xhtml" href="ValueSet-AnalysisType.html">Analysis type</ns46:a>
+      </ns45:p>
+    </ns44:li>
+
+    <ns47:li xmlns:ns47="http://www.w3.org/1999/xhtml">
+      <ns48:p xmlns:ns48="http://www.w3.org/1999/xhtml">
+        <ns49:a xmlns:ns49="http://www.w3.org/1999/xhtml" href="ValueSet-BiomarkerCode.html">Biomarker code</ns49:a>
+      </ns48:p>
+    </ns47:li>
+
+    <ns50:li xmlns:ns50="http://www.w3.org/1999/xhtml">
+      <ns51:p xmlns:ns51="http://www.w3.org/1999/xhtml">
+        <ns52:a xmlns:ns52="http://www.w3.org/1999/xhtml" href="ValueSet-FusionType.html">Fusion type</ns52:a>
+      </ns51:p>
+    </ns50:li>
+
+    <ns53:li xmlns:ns53="http://www.w3.org/1999/xhtml">
+      <ns54:p xmlns:ns54="http://www.w3.org/1999/xhtml">
+        <ns55:a xmlns:ns55="http://www.w3.org/1999/xhtml" href="ValueSet-GeneExpressionDataType.html">Gene expression data type</ns55:a>
+      </ns54:p>
+    </ns53:li>
+
+    <ns56:li xmlns:ns56="http://www.w3.org/1999/xhtml">
+      <ns57:p xmlns:ns57="http://www.w3.org/1999/xhtml">
+        <ns58:a xmlns:ns58="http://www.w3.org/1999/xhtml" href="ValueSet-GeneticMaterial.html">Genetic material</ns58:a>
+      </ns57:p>
+    </ns56:li>
+
+    <ns59:li xmlns:ns59="http://www.w3.org/1999/xhtml">
+      <ns60:p xmlns:ns60="http://www.w3.org/1999/xhtml">
+        <ns61:a xmlns:ns61="http://www.w3.org/1999/xhtml" href="ValueSet-GenomeEntityType.html">Genome entity type</ns61:a>
+      </ns60:p>
+    </ns59:li>
+
+    <ns62:li xmlns:ns62="http://www.w3.org/1999/xhtml">
+      <ns63:p xmlns:ns63="http://www.w3.org/1999/xhtml">
+        <ns64:a xmlns:ns64="http://www.w3.org/1999/xhtml" href="ValueSet-MutationPrediction.html">Mutation prediction</ns64:a>
+      </ns63:p>
+    </ns62:li>
+
+    <ns65:li xmlns:ns65="http://www.w3.org/1999/xhtml">
+      <ns66:p xmlns:ns66="http://www.w3.org/1999/xhtml">
+        <ns67:a xmlns:ns67="http://www.w3.org/1999/xhtml" href="ValueSet-OsirisValidationType.html">OsirisValidationType</ns67:a>
+      </ns66:p>
+    </ns65:li>
+
+    <ns68:li xmlns:ns68="http://www.w3.org/1999/xhtml">
+      <ns69:p xmlns:ns69="http://www.w3.org/1999/xhtml">
+        <ns70:a xmlns:ns70="http://www.w3.org/1999/xhtml" href="ValueSet-Pathogenicity.html">Pathogenicity</ns70:a>
+      </ns69:p>
+    </ns68:li>
+
+    <ns71:li xmlns:ns71="http://www.w3.org/1999/xhtml">
+      <ns72:p xmlns:ns72="http://www.w3.org/1999/xhtml">
+        <ns73:a xmlns:ns73="http://www.w3.org/1999/xhtml" href="ValueSet-ReferenceType.html">Reference type</ns73:a>
+      </ns72:p>
+    </ns71:li>
+
+    <ns74:li xmlns:ns74="http://www.w3.org/1999/xhtml">
+      <ns75:p xmlns:ns75="http://www.w3.org/1999/xhtml">
+        <ns76:a xmlns:ns76="http://www.w3.org/1999/xhtml" href="ValueSet-TechnicalProtocol.html">Technical protocol</ns76:a>
+      </ns75:p>
+    </ns74:li>
+  </ns43:ul>
+  <a name="radiomicsvs"> </a>
+  <ns77:h3 xmlns:ns77="http://www.w3.org/1999/xhtml">Radiomics and Radiotherapy ValueSets</ns77:h3>
+  <ns78:ul xmlns:ns78="http://www.w3.org/1999/xhtml">
+    <ns79:li xmlns:ns79="http://www.w3.org/1999/xhtml">
+      <ns80:p xmlns:ns80="http://www.w3.org/1999/xhtml">
+        <ns81:a xmlns:ns81="http://www.w3.org/1999/xhtml" href="ValueSet-radiotherapy-intent.html">Radiotherapy intent</ns81:a>
+      </ns80:p>
+    </ns79:li>
+
+    <ns82:li xmlns:ns82="http://www.w3.org/1999/xhtml">
+      <ns83:p xmlns:ns83="http://www.w3.org/1999/xhtml">
+        <ns84:a xmlns:ns84="http://www.w3.org/1999/xhtml" href="ValueSet-ROIType.html">ROI Type</ns84:a>
+      </ns83:p>
+    </ns82:li>
+
+    <ns85:li xmlns:ns85="http://www.w3.org/1999/xhtml">
+      <ns86:p xmlns:ns86="http://www.w3.org/1999/xhtml">
+        <ns87:a xmlns:ns87="http://www.w3.org/1999/xhtml" href="ValueSet-codex-radiotherapy-isotopes.html">Radiotherapy Isotopes (from Codex)</ns87:a>
+      </ns86:p>
+    </ns85:li>
+
+    <ns88:li xmlns:ns88="http://www.w3.org/1999/xhtml">
+      <ns89:p xmlns:ns89="http://www.w3.org/1999/xhtml">
+        <ns90:a xmlns:ns90="http://www.w3.org/1999/xhtml" href="ValueSet-mcode-radiotherapy-treatment-location-qualifier-vs.html">Radiotherapy Tratment Location (from mCode)</ns90:a>
+      </ns89:p>
+    </ns88:li>
+
+    <ns91:li xmlns:ns91="http://www.w3.org/1999/xhtml">
+      <ns92:p xmlns:ns92="http://www.w3.org/1999/xhtml">
+        <ns93:a xmlns:ns93="http://www.w3.org/1999/xhtml" href="ValueSet-mcode-radiotherapy-volume-type-vs.html">Radiotherapy Volume Type (from mCode)</ns93:a>
+      </ns92:p>
+    </ns91:li>
+
+    <ns94:li xmlns:ns94="http://www.w3.org/1999/xhtml">
+      <ns95:p xmlns:ns95="http://www.w3.org/1999/xhtml">
+        <ns96:a xmlns:ns96="http://www.w3.org/1999/xhtml" href="ValueSet-mcode-radiotherapy-volume-type-vs.html">Radiotherapy Volume Type (from mCode)</ns96:a>
+      </ns95:p>
+    </ns94:li>
+  </ns78:ul>
+  <a name="samplevs"> </a>
+  <ns97:h3 xmlns:ns97="http://www.w3.org/1999/xhtml">Sample ValueSets</ns97:h3>
+  <ns98:ul xmlns:ns98="http://www.w3.org/1999/xhtml">
+
+    <ns99:li xmlns:ns99="http://www.w3.org/1999/xhtml">
+      <ns100:p xmlns:ns100="http://www.w3.org/1999/xhtml">
+        <ns101:a xmlns:ns101="http://www.w3.org/1999/xhtml" href="ValueSet-StorageTemperature.html">Storage temperature</ns101:a>
+      </ns100:p>
+    </ns99:li>
+
+    <ns102:li xmlns:ns102="http://www.w3.org/1999/xhtml">
+      <ns103:p xmlns:ns103="http://www.w3.org/1999/xhtml">
+        <ns104:a xmlns:ns104="http://www.w3.org/1999/xhtml" href="ValueSet-BiologicalSampleNature.html">Biological sample nature</ns104:a>
+      </ns103:p>
+    </ns102:li>
+
+    <ns105:li xmlns:ns105="http://www.w3.org/1999/xhtml">
+      <ns106:p xmlns:ns106="http://www.w3.org/1999/xhtml">
+        <ns107:a xmlns:ns107="http://www.w3.org/1999/xhtml" href="ValueSet-BiologicalSampleOrigin.html">Biological sample origin</ns107:a>
+      </ns106:p>
+    </ns105:li>
+
+  </ns98:ul>
+</div>
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 10, 2023 11:48+0200">2023-04-10</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+               | <a style="color: #81BEF7" target="_blank" href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Version History  |
+               <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change </a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

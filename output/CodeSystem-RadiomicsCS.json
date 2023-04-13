@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "RadiomicsCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://terminology.arkhn.com/radiomicsCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">DICOM<a name=\"RadiomicsCS-DICOM\"> </a></td><td>ROI Type DICOM</td></tr><tr><td style=\"white-space:nowrap\">MASK<a name=\"RadiomicsCS-MASK\"> </a></td><td>ROI Type NIfTI</td></tr></table></div>"
+  },
+  "url" : "https://terminology.arkhn.com/radiomicsCS",
+  "version" : "2.1.0",
+  "name" : "RadiomicsCS",
+  "title" : "Imaging Code System",
+  "status" : "active",
+  "date" : "2023-04-10T11:48:35+02:00",
+  "publisher" : "Arkhn",
+  "contact" : [{
+    "name" : "Arkhn",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://arkhn.com"
+    },
+    {
+      "system" : "email",
+      "value" : "contact@arkhn.com"
+    }]
+  },
+  {
+    "name" : "Nicolas Riss",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "nicolas@arkhn.com"
+    }]
+  }],
+  "description" : "Imaging Code System",
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "DICOM",
+    "display" : "ROI Type DICOM"
+  },
+  {
+    "code" : "MASK",
+    "display" : "ROI Type NIfTI"
+  }]
+}

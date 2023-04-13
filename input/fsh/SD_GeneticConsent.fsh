@@ -4,7 +4,7 @@ Id:             genetic-consent
 Title:          "Consent for Genetic Data Usage"
 Description:    "The genetic consent resource indicates if a patient has given his authorization to share and use its genetics data."
 * patient only Reference(onco-patient)
-* category = http://terminology.hl7.org/CodeSystem/v3-ActCode#research
+* category = http://terminology.hl7.org/CodeSystem/v3-ActCode#RESEARCH
 * scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy
 
 * dateTime 1..1 MS

@@ -4,25 +4,21 @@ Id:             sequencing-device
 Title:          "Sequencing Device"
 Description:    "Description of a sequencing device used for a Sequencing Analysis."
 
-* identifier ^short = "GEO Identifier of the platform"
+* identifier 0..1 MS
+* identifier ^short = "GEO accession number"
+* identifier ^definition = "Accession number of the molecular analysis method in the GEO (Gene Expression Omnibus) database"
 
-* deviceName ^slicing.discriminator.type = #pattern
-* deviceName ^slicing.discriminator.path = "type"
-* deviceName ^slicing.rules = #open
-* deviceName ^slicing.description = "Slice based on deviceName pattern"
-* deviceName contains platform-name 0..1
-* deviceName[platform-name].type = http://hl7.org/fhir/device-nametype#model-name
-* deviceName[platform-name].name 1..1
-* deviceName[platform-name] ^short = "Technological platform name (provider followed by the platform name)"
+* type 1..1 MS
+* type from PlatformName (extensible)
+* type ^short = "Technology name"
+* type ^definition = "Name of the technology used to implement the analysis method."
 
-* version ^slicing.discriminator.type = #pattern
-* version ^slicing.discriminator.path = "type.code"
-* version ^slicing.rules = #open
-* version ^slicing.description = "Slice based on the PanelName pattern"
-* version contains panel-name 0..1
-* version[panel-name].type = LNC#48017-8
-* version[panel-name].value 1..1
-* version[panel-name] ^short = "Name of the panel targeted by the experimental analysis (provider followed by the panel name)"
+
+* version 0..1 MS
+* version.type.text = "Name of the gene panel"
+* version.type.coding from PanelName
+* version.type.coding ^short = "Name of the gene panel"
+* version.type.coding ^definition = " In the case of targeted sequencing, the name of the gene panel used."
 
 Mapping: FhirOSIRISDevice
 Source: sequencing-device
@@ -30,6 +26,6 @@ Target: "Device"
 Id: fhir-osiris-device
 Title: "Fhir-osiris to osiris"
 * -> "Sequencing Device" "Sequencing device description"
-* deviceName -> "Analysis.Technology_PlatformName"
-* identifier -> "Analysis.Technology_PlatformAccession"
-* version.value -> "Analysis.Panel_Name"
+* type -> "OSIRIS_pivot_Analysis.Technology_PlatformName"
+* identifier -> "OSIRIS_pivot_Analysis.Technology_PlatformAccession"
+* version.type -> "OSIRIS_pivot_Analysis.Panel_Name"

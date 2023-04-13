@@ -1,0 +1,25 @@
+{
+  "resourceType" : "MedicationStatement",
+  "id" : "fhir-osiris-example-oncomedicalstatement-1",
+  "meta" : {
+    "profile" : ["https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-medication-statement"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"fhir-osiris-example-oncomedicalstatement-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;fhir-osiris-example-oncomedicalstatement-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-medication-statement.html\">Oncology-related Medication Statement</a></p></div><p><b>basedOn</b>: <a href=\"CarePlan-fhir-osiris-example-treatment-2.html\">CarePlan/fhir-osiris-example-treatment-2</a></p><p><b>status</b>: unknown</p><p><b>medication</b>: cis-platine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (whoatc-uv-ips#c3564)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p></div>"
+  },
+  "basedOn" : [{
+    "reference" : "CarePlan/fhir-osiris-example-treatment-2"
+  }],
+  "status" : "unknown",
+  "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips",
+      "code" : "c3564"
+    }],
+    "text" : "cis-platine"
+  },
+  "subject" : {
+    "reference" : "Patient/L304"
+  }
+}

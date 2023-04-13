@@ -1,0 +1,1730 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/IBSICS> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "IBSICS"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://ibsi.readthedocs.io/en/latest/</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">HCUG<a name=\"IBSICS-HCUG\"> </a></td><td>Morphological features</td></tr><tr><td style=\"white-space:nowrap\">RNU0<a name=\"IBSICS-RNU0\"> </a></td><td>Volume</td></tr><tr><td style=\"white-space:nowrap\">YEKZ<a name=\"IBSICS-YEKZ\"> </a></td><td>Approximate volume</td></tr><tr><td style=\"white-space:nowrap\">C0JK<a name=\"IBSICS-C0JK\"> </a></td><td>Surface area</td></tr><tr><td style=\"white-space:nowrap\">2PR5<a name=\"IBSICS-2PR5\"> </a></td><td>Surface to volume ratio</td></tr><tr><td style=\"white-space:nowrap\">SKGS<a name=\"IBSICS-SKGS\"> </a></td><td>Compactness 1</td></tr><tr><td style=\"white-space:nowrap\">BQWJ<a name=\"IBSICS-BQWJ\"> </a></td><td>Compactness 2</td></tr><tr><td style=\"white-space:nowrap\">KRCK<a name=\"IBSICS-KRCK\"> </a></td><td>Spherical disproportion</td></tr><tr><td style=\"white-space:nowrap\">QCFX<a name=\"IBSICS-QCFX\"> </a></td><td>Sphericity</td></tr><tr><td style=\"white-space:nowrap\">25C7<a name=\"IBSICS-25C7\"> </a></td><td>Asphericity</td></tr><tr><td style=\"white-space:nowrap\">KLMA<a name=\"IBSICS-KLMA\"> </a></td><td>Centre of mass shift</td></tr><tr><td style=\"white-space:nowrap\">L0JK<a name=\"IBSICS-L0JK\"> </a></td><td>Maximum 3D diameter</td></tr><tr><td style=\"white-space:nowrap\">TDIC<a name=\"IBSICS-TDIC\"> </a></td><td>Major axis length</td></tr><tr><td style=\"white-space:nowrap\">P9VJ<a name=\"IBSICS-P9VJ\"> </a></td><td>Minor axis length</td></tr><tr><td style=\"white-space:nowrap\">7J51<a name=\"IBSICS-7J51\"> </a></td><td>Least axis length</td></tr><tr><td style=\"white-space:nowrap\">Q3CK<a name=\"IBSICS-Q3CK\"> </a></td><td>Elongation</td></tr><tr><td style=\"white-space:nowrap\">N17B<a name=\"IBSICS-N17B\"> </a></td><td>Flatness</td></tr><tr><td style=\"white-space:nowrap\">PBX1<a name=\"IBSICS-PBX1\"> </a></td><td>Volume density - axis-aligned bounding box</td></tr><tr><td style=\"white-space:nowrap\">R59B<a name=\"IBSICS-R59B\"> </a></td><td>Area density - axis-aligned bounding box</td></tr><tr><td style=\"white-space:nowrap\">ZH1A<a name=\"IBSICS-ZH1A\"> </a></td><td>Volume density - oriented minimum bounding box</td></tr><tr><td style=\"white-space:nowrap\">IQYR<a name=\"IBSICS-IQYR\"> </a></td><td>Area density - oriented minimum bounding box</td></tr><tr><td style=\"white-space:nowrap\">6BDE<a name=\"IBSICS-6BDE\"> </a></td><td>Volume density - approximate enclosing ellipsoid</td></tr><tr><td style=\"white-space:nowrap\">RDD2<a name=\"IBSICS-RDD2\"> </a></td><td>Area density - approximate enclosing ellipsoid</td></tr><tr><td style=\"white-space:nowrap\">SWZ1<a name=\"IBSICS-SWZ1\"> </a></td><td>Volume density - minimum volume enclosing ellipsoid</td></tr><tr><td style=\"white-space:nowrap\">BRI8<a name=\"IBSICS-BRI8\"> </a></td><td>Area density - minimum volume enclosing ellipsoid</td></tr><tr><td style=\"white-space:nowrap\">R3ER<a name=\"IBSICS-R3ER\"> </a></td><td>Volume density - convex hull</td></tr><tr><td style=\"white-space:nowrap\">7T7F<a name=\"IBSICS-7T7F\"> </a></td><td>Area density - convex hull</td></tr><tr><td style=\"white-space:nowrap\">99N0<a name=\"IBSICS-99N0\"> </a></td><td>Integrated intensity</td></tr><tr><td style=\"white-space:nowrap\">N365<a name=\"IBSICS-N365\"> </a></td><td>Moran's I index</td></tr><tr><td style=\"white-space:nowrap\">NPT7<a name=\"IBSICS-NPT7\"> </a></td><td>Geary's C measure</td></tr><tr><td style=\"white-space:nowrap\">9ST6<a name=\"IBSICS-9ST6\"> </a></td><td>Local intensity features</td></tr><tr><td style=\"white-space:nowrap\">VJGA<a name=\"IBSICS-VJGA\"> </a></td><td>Local intensity peak</td></tr><tr><td style=\"white-space:nowrap\">0F91<a name=\"IBSICS-0F91\"> </a></td><td>Global intensity peak</td></tr><tr><td style=\"white-space:nowrap\">UHIW<a name=\"IBSICS-UHIW\"> </a></td><td>Intensity-based statistical features</td></tr><tr><td style=\"white-space:nowrap\">Q4LE<a name=\"IBSICS-Q4LE\"> </a></td><td>Mean</td></tr><tr><td style=\"white-space:nowrap\">ECT3<a name=\"IBSICS-ECT3\"> </a></td><td>Variance</td></tr><tr><td style=\"white-space:nowrap\">KE2A<a name=\"IBSICS-KE2A\"> </a></td><td>Skewness</td></tr><tr><td style=\"white-space:nowrap\">IPH6<a name=\"IBSICS-IPH6\"> </a></td><td>Kurtosis</td></tr><tr><td style=\"white-space:nowrap\">Y12H<a name=\"IBSICS-Y12H\"> </a></td><td>Median</td></tr><tr><td style=\"white-space:nowrap\">1GSF<a name=\"IBSICS-1GSF\"> </a></td><td>Minimum grey level</td></tr><tr><td style=\"white-space:nowrap\">QG58<a name=\"IBSICS-QG58\"> </a></td><td>10th percentile</td></tr><tr><td style=\"white-space:nowrap\">8DWT<a name=\"IBSICS-8DWT\"> </a></td><td>90th percentile</td></tr><tr><td style=\"white-space:nowrap\">84IY<a name=\"IBSICS-84IY\"> </a></td><td>Maximum grey level</td></tr><tr><td style=\"white-space:nowrap\">SALO<a name=\"IBSICS-SALO\"> </a></td><td>Interquartile range</td></tr><tr><td style=\"white-space:nowrap\">2OJQ<a name=\"IBSICS-2OJQ\"> </a></td><td>Range</td></tr><tr><td style=\"white-space:nowrap\">4FUA<a name=\"IBSICS-4FUA\"> </a></td><td>Mean absolute deviation</td></tr><tr><td style=\"white-space:nowrap\">1128<a name=\"IBSICS-1128\"> </a></td><td>Robust mean absolute deviation</td></tr><tr><td style=\"white-space:nowrap\">N72L<a name=\"IBSICS-N72L\"> </a></td><td>Median absolute deviation</td></tr><tr><td style=\"white-space:nowrap\">7TET<a name=\"IBSICS-7TET\"> </a></td><td>Coefficient of variation</td></tr><tr><td style=\"white-space:nowrap\">9S40<a name=\"IBSICS-9S40\"> </a></td><td>Quartile coefficient of dispersion</td></tr><tr><td style=\"white-space:nowrap\">N8CA<a name=\"IBSICS-N8CA\"> </a></td><td>Energy</td></tr><tr><td style=\"white-space:nowrap\">5ZWQ<a name=\"IBSICS-5ZWQ\"> </a></td><td>Root mean square</td></tr><tr><td style=\"white-space:nowrap\">ZVCW<a name=\"IBSICS-ZVCW\"> </a></td><td>Intensity histogram features</td></tr><tr><td style=\"white-space:nowrap\">X6K6<a name=\"IBSICS-X6K6\"> </a></td><td>Intensity histogram mean</td></tr><tr><td style=\"white-space:nowrap\">CH89<a name=\"IBSICS-CH89\"> </a></td><td>Intensity histogram variance</td></tr><tr><td style=\"white-space:nowrap\">88K1<a name=\"IBSICS-88K1\"> </a></td><td>Intensity histogram skewness</td></tr><tr><td style=\"white-space:nowrap\">C3I7<a name=\"IBSICS-C3I7\"> </a></td><td>Intensity histogram kurtosis</td></tr><tr><td style=\"white-space:nowrap\">WIFQ<a name=\"IBSICS-WIFQ\"> </a></td><td>Intensity histogram median</td></tr><tr><td style=\"white-space:nowrap\">1PR8<a name=\"IBSICS-1PR8\"> </a></td><td>Intensity histogram minimum grey level</td></tr><tr><td style=\"white-space:nowrap\">GPMT<a name=\"IBSICS-GPMT\"> </a></td><td>Intensity histogram 10th percentile</td></tr><tr><td style=\"white-space:nowrap\">OZ0C<a name=\"IBSICS-OZ0C\"> </a></td><td>Intensity histogram 90th percentile</td></tr><tr><td style=\"white-space:nowrap\">3NCY<a name=\"IBSICS-3NCY\"> </a></td><td>Intensity histogram maximum grey level</td></tr><tr><td style=\"white-space:nowrap\">AMMC<a name=\"IBSICS-AMMC\"> </a></td><td>Intensity histogram mode</td></tr><tr><td style=\"white-space:nowrap\">WR0O<a name=\"IBSICS-WR0O\"> </a></td><td>Intensity histogram interquartile range</td></tr><tr><td style=\"white-space:nowrap\">5Z3W<a name=\"IBSICS-5Z3W\"> </a></td><td>Intensity histogram range</td></tr><tr><td style=\"white-space:nowrap\">D2ZX<a name=\"IBSICS-D2ZX\"> </a></td><td>Intensity histogram mean absolute deviation</td></tr><tr><td style=\"white-space:nowrap\">WRZB<a name=\"IBSICS-WRZB\"> </a></td><td>Intensity histogram robust mean absolute deviation</td></tr><tr><td style=\"white-space:nowrap\">4RNL<a name=\"IBSICS-4RNL\"> </a></td><td>Intensity histogram median absolute deviation</td></tr><tr><td style=\"white-space:nowrap\">CWYJ<a name=\"IBSICS-CWYJ\"> </a></td><td>Intensity histogram coefficient of variation</td></tr><tr><td style=\"white-space:nowrap\">SLWD<a name=\"IBSICS-SLWD\"> </a></td><td>Intensity histogram quartile coefficient of dispersion</td></tr><tr><td style=\"white-space:nowrap\">TLU2<a name=\"IBSICS-TLU2\"> </a></td><td>Intensity histogram entropy</td></tr><tr><td style=\"white-space:nowrap\">BJ5W<a name=\"IBSICS-BJ5W\"> </a></td><td>Intensity histogram uniformity</td></tr><tr><td style=\"white-space:nowrap\">12CE<a name=\"IBSICS-12CE\"> </a></td><td>Maximum histogram gradient</td></tr><tr><td style=\"white-space:nowrap\">8E6O<a name=\"IBSICS-8E6O\"> </a></td><td>Maximum histogram gradient grey level</td></tr><tr><td style=\"white-space:nowrap\">VQB3<a name=\"IBSICS-VQB3\"> </a></td><td>Minimum histogram gradient</td></tr><tr><td style=\"white-space:nowrap\">RHQZ<a name=\"IBSICS-RHQZ\"> </a></td><td>Minimum histogram gradient grey level</td></tr><tr><td style=\"white-space:nowrap\">P88C<a name=\"IBSICS-P88C\"> </a></td><td>Intensity-volume histogram features</td></tr><tr><td style=\"white-space:nowrap\">BC2M<a name=\"IBSICS-BC2M\"> </a></td><td>Volume at intensity fraction</td></tr><tr><td style=\"white-space:nowrap\">GBPN<a name=\"IBSICS-GBPN\"> </a></td><td>Intensity at volume fraction</td></tr><tr><td style=\"white-space:nowrap\">DDTU<a name=\"IBSICS-DDTU\"> </a></td><td>Volume fraction difference between intensity fractions</td></tr><tr><td style=\"white-space:nowrap\">CNV2<a name=\"IBSICS-CNV2\"> </a></td><td>Intensity fraction difference between volume fractions</td></tr><tr><td style=\"white-space:nowrap\">9CMM<a name=\"IBSICS-9CMM\"> </a></td><td>Area under IVH curve</td></tr><tr><td style=\"white-space:nowrap\">LFYI<a name=\"IBSICS-LFYI\"> </a></td><td>Grey level co-occurrence based features</td></tr><tr><td style=\"white-space:nowrap\">GYBY<a name=\"IBSICS-GYBY\"> </a></td><td>Joint maximum</td></tr><tr><td style=\"white-space:nowrap\">60VM<a name=\"IBSICS-60VM\"> </a></td><td>Joint average</td></tr><tr><td style=\"white-space:nowrap\">UR99<a name=\"IBSICS-UR99\"> </a></td><td>Joint variance</td></tr><tr><td style=\"white-space:nowrap\">TU9B<a name=\"IBSICS-TU9B\"> </a></td><td>Joint entropy</td></tr><tr><td style=\"white-space:nowrap\">TF7R<a name=\"IBSICS-TF7R\"> </a></td><td>Difference average</td></tr><tr><td style=\"white-space:nowrap\">D3YU<a name=\"IBSICS-D3YU\"> </a></td><td>Difference variance</td></tr><tr><td style=\"white-space:nowrap\">NTRS<a name=\"IBSICS-NTRS\"> </a></td><td>Difference entropy</td></tr><tr><td style=\"white-space:nowrap\">ZGXS<a name=\"IBSICS-ZGXS\"> </a></td><td>Sum average</td></tr><tr><td style=\"white-space:nowrap\">OEEB<a name=\"IBSICS-OEEB\"> </a></td><td>Sum variance</td></tr><tr><td style=\"white-space:nowrap\">P6QZ<a name=\"IBSICS-P6QZ\"> </a></td><td>Sum entropy</td></tr><tr><td style=\"white-space:nowrap\">8ZQL<a name=\"IBSICS-8ZQL\"> </a></td><td>Angular second moment</td></tr><tr><td style=\"white-space:nowrap\">ACUI<a name=\"IBSICS-ACUI\"> </a></td><td>Contrast</td></tr><tr><td style=\"white-space:nowrap\">8S9J<a name=\"IBSICS-8S9J\"> </a></td><td>Dissimilarity</td></tr><tr><td style=\"white-space:nowrap\">IB1Z<a name=\"IBSICS-IB1Z\"> </a></td><td>Inverse difference</td></tr><tr><td style=\"white-space:nowrap\">NDRX<a name=\"IBSICS-NDRX\"> </a></td><td>Normalised inverse difference</td></tr><tr><td style=\"white-space:nowrap\">WF0Z<a name=\"IBSICS-WF0Z\"> </a></td><td>Inverse difference moment</td></tr><tr><td style=\"white-space:nowrap\">1QCO<a name=\"IBSICS-1QCO\"> </a></td><td>Normalised inverse difference moment</td></tr><tr><td style=\"white-space:nowrap\">E8JP<a name=\"IBSICS-E8JP\"> </a></td><td>Inverse variance</td></tr><tr><td style=\"white-space:nowrap\">NI2N<a name=\"IBSICS-NI2N\"> </a></td><td>Correlation</td></tr><tr><td style=\"white-space:nowrap\">QWB0<a name=\"IBSICS-QWB0\"> </a></td><td>Autocorrelation</td></tr><tr><td style=\"white-space:nowrap\">DG8W<a name=\"IBSICS-DG8W\"> </a></td><td>Cluster tendency</td></tr><tr><td style=\"white-space:nowrap\">7NFM<a name=\"IBSICS-7NFM\"> </a></td><td>Cluster shade</td></tr><tr><td style=\"white-space:nowrap\">AE86<a name=\"IBSICS-AE86\"> </a></td><td>Cluster prominence</td></tr><tr><td style=\"white-space:nowrap\">R8DG<a name=\"IBSICS-R8DG\"> </a></td><td>First measure of information correlation</td></tr><tr><td style=\"white-space:nowrap\">JN9H<a name=\"IBSICS-JN9H\"> </a></td><td>Second measure of information correlation</td></tr><tr><td style=\"white-space:nowrap\">TP0I<a name=\"IBSICS-TP0I\"> </a></td><td>Grey level run length based features</td></tr><tr><td style=\"white-space:nowrap\">22OV<a name=\"IBSICS-22OV\"> </a></td><td>Short runs emphasis</td></tr><tr><td style=\"white-space:nowrap\">W4KF<a name=\"IBSICS-W4KF\"> </a></td><td>Long runs emphasis</td></tr><tr><td style=\"white-space:nowrap\">V3SW<a name=\"IBSICS-V3SW\"> </a></td><td>Low grey level run emphasis</td></tr><tr><td style=\"white-space:nowrap\">G3QZ<a name=\"IBSICS-G3QZ\"> </a></td><td>High grey level run emphasis</td></tr><tr><td style=\"white-space:nowrap\">HTZT<a name=\"IBSICS-HTZT\"> </a></td><td>Short run low grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">GD3A<a name=\"IBSICS-GD3A\"> </a></td><td>Short run high grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">IVPO<a name=\"IBSICS-IVPO\"> </a></td><td>Long run low grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">3KUM<a name=\"IBSICS-3KUM\"> </a></td><td>Long run high grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">R5YN<a name=\"IBSICS-R5YN\"> </a></td><td>Grey level non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">OVBL<a name=\"IBSICS-OVBL\"> </a></td><td>Normalised grey level non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">W92Y<a name=\"IBSICS-W92Y\"> </a></td><td>Run length non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">IC23<a name=\"IBSICS-IC23\"> </a></td><td>Normalised run length non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">9ZK5<a name=\"IBSICS-9ZK5\"> </a></td><td>Run percentage</td></tr><tr><td style=\"white-space:nowrap\">8CE5<a name=\"IBSICS-8CE5\"> </a></td><td>Grey level variance</td></tr><tr><td style=\"white-space:nowrap\">SXLW<a name=\"IBSICS-SXLW\"> </a></td><td>Run length variance</td></tr><tr><td style=\"white-space:nowrap\">HJ9O<a name=\"IBSICS-HJ9O\"> </a></td><td>Run entropy</td></tr><tr><td style=\"white-space:nowrap\">9SAK<a name=\"IBSICS-9SAK\"> </a></td><td>Grey level size zone based features</td></tr><tr><td style=\"white-space:nowrap\">5QRC<a name=\"IBSICS-5QRC\"> </a></td><td>Small zone emphasis</td></tr><tr><td style=\"white-space:nowrap\">48P8<a name=\"IBSICS-48P8\"> </a></td><td>Large zone emphasis</td></tr><tr><td style=\"white-space:nowrap\">XMSY<a name=\"IBSICS-XMSY\"> </a></td><td>Low grey level zone emphasis</td></tr><tr><td style=\"white-space:nowrap\">5GN9<a name=\"IBSICS-5GN9\"> </a></td><td>High grey level zone emphasis</td></tr><tr><td style=\"white-space:nowrap\">5RAI<a name=\"IBSICS-5RAI\"> </a></td><td>Small zone low grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">HW1V<a name=\"IBSICS-HW1V\"> </a></td><td>Small zone high grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">YH51<a name=\"IBSICS-YH51\"> </a></td><td>Large zone low grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">J17V<a name=\"IBSICS-J17V\"> </a></td><td>Large zone high grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">JNSA<a name=\"IBSICS-JNSA\"> </a></td><td>Grey level non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">Y1RO<a name=\"IBSICS-Y1RO\"> </a></td><td>Normalised grey level non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">4JP3<a name=\"IBSICS-4JP3\"> </a></td><td>Zone size non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">VB3A<a name=\"IBSICS-VB3A\"> </a></td><td>Normalised zone size non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">P30P<a name=\"IBSICS-P30P\"> </a></td><td>Zone percentage</td></tr><tr><td style=\"white-space:nowrap\">BYLV<a name=\"IBSICS-BYLV\"> </a></td><td>Grey level variance</td></tr><tr><td style=\"white-space:nowrap\">3NSA<a name=\"IBSICS-3NSA\"> </a></td><td>Zone size variance</td></tr><tr><td style=\"white-space:nowrap\">GU8N<a name=\"IBSICS-GU8N\"> </a></td><td>Zone size entropy</td></tr><tr><td style=\"white-space:nowrap\">VMDZ<a name=\"IBSICS-VMDZ\"> </a></td><td>Grey level distance zone based features</td></tr><tr><td style=\"white-space:nowrap\">0GBI<a name=\"IBSICS-0GBI\"> </a></td><td>Small distance emphasis</td></tr><tr><td style=\"white-space:nowrap\">MB4I<a name=\"IBSICS-MB4I\"> </a></td><td>Large distance emphasis</td></tr><tr><td style=\"white-space:nowrap\">S1RA<a name=\"IBSICS-S1RA\"> </a></td><td>Low grey level zone emphasis</td></tr><tr><td style=\"white-space:nowrap\">K26C<a name=\"IBSICS-K26C\"> </a></td><td>High grey level zone emphasis</td></tr><tr><td style=\"white-space:nowrap\">RUVG<a name=\"IBSICS-RUVG\"> </a></td><td>Small distance low grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">DKNJ<a name=\"IBSICS-DKNJ\"> </a></td><td>Small distance high grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">A7WM<a name=\"IBSICS-A7WM\"> </a></td><td>Large distance low grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">KLTH<a name=\"IBSICS-KLTH\"> </a></td><td>Large distance high grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">VFT7<a name=\"IBSICS-VFT7\"> </a></td><td>Grey level non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">7HP3<a name=\"IBSICS-7HP3\"> </a></td><td>Normalised grey level non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">V294<a name=\"IBSICS-V294\"> </a></td><td>Zone distance non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">IATH<a name=\"IBSICS-IATH\"> </a></td><td>Zone distance non-uniformity normalised</td></tr><tr><td style=\"white-space:nowrap\">VIWW<a name=\"IBSICS-VIWW\"> </a></td><td>Zone percentage</td></tr><tr><td style=\"white-space:nowrap\">QK93<a name=\"IBSICS-QK93\"> </a></td><td>Grey level variance</td></tr><tr><td style=\"white-space:nowrap\">7WT1<a name=\"IBSICS-7WT1\"> </a></td><td>Zone distance variance</td></tr><tr><td style=\"white-space:nowrap\">GBDU<a name=\"IBSICS-GBDU\"> </a></td><td>Zone distance entropy</td></tr><tr><td style=\"white-space:nowrap\">IPET<a name=\"IBSICS-IPET\"> </a></td><td>Neighbourhood grey tone difference based features</td></tr><tr><td style=\"white-space:nowrap\">QCDE<a name=\"IBSICS-QCDE\"> </a></td><td>Coarseness</td></tr><tr><td style=\"white-space:nowrap\">65HE<a name=\"IBSICS-65HE\"> </a></td><td>Contrast</td></tr><tr><td style=\"white-space:nowrap\">NQ30<a name=\"IBSICS-NQ30\"> </a></td><td>Busyness</td></tr><tr><td style=\"white-space:nowrap\">HDEZ<a name=\"IBSICS-HDEZ\"> </a></td><td>Complexity</td></tr><tr><td style=\"white-space:nowrap\">1X9X<a name=\"IBSICS-1X9X\"> </a></td><td>Strength</td></tr><tr><td style=\"white-space:nowrap\">REK0<a name=\"IBSICS-REK0\"> </a></td><td>Neighbouring grey level dependence based features</td></tr><tr><td style=\"white-space:nowrap\">SODN<a name=\"IBSICS-SODN\"> </a></td><td>Low dependence emphasis</td></tr><tr><td style=\"white-space:nowrap\">IMOQ<a name=\"IBSICS-IMOQ\"> </a></td><td>High dependence emphasis</td></tr><tr><td style=\"white-space:nowrap\">TL9H<a name=\"IBSICS-TL9H\"> </a></td><td>Low grey level count emphasis</td></tr><tr><td style=\"white-space:nowrap\">OAE7<a name=\"IBSICS-OAE7\"> </a></td><td>High grey level count emphasis</td></tr><tr><td style=\"white-space:nowrap\">EQ3F<a name=\"IBSICS-EQ3F\"> </a></td><td>Low dependence low grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">JA6D<a name=\"IBSICS-JA6D\"> </a></td><td>Low dependence high grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">NBZI<a name=\"IBSICS-NBZI\"> </a></td><td>High dependence low grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">9QMG<a name=\"IBSICS-9QMG\"> </a></td><td>High dependence high grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">FP8K<a name=\"IBSICS-FP8K\"> </a></td><td>Grey level non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">5SPA<a name=\"IBSICS-5SPA\"> </a></td><td>Normalised grey level non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">Z87G<a name=\"IBSICS-Z87G\"> </a></td><td>Dependence count non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">OKJI<a name=\"IBSICS-OKJI\"> </a></td><td>Dependence count non-uniformity normalised</td></tr><tr><td style=\"white-space:nowrap\">6XV8<a name=\"IBSICS-6XV8\"> </a></td><td>Dependence count percentage</td></tr><tr><td style=\"white-space:nowrap\">1PFV<a name=\"IBSICS-1PFV\"> </a></td><td>Grey level variance</td></tr><tr><td style=\"white-space:nowrap\">DNX2<a name=\"IBSICS-DNX2\"> </a></td><td>Dependence count variance</td></tr><tr><td style=\"white-space:nowrap\">FCBV<a name=\"IBSICS-FCBV\"> </a></td><td>Dependence count entropy</td></tr><tr><td style=\"white-space:nowrap\">CAS9<a name=\"IBSICS-CAS9\"> </a></td><td>Dependence count energy</td></tr><tr><td style=\"white-space:nowrap\">5QB6<a name=\"IBSICS-5QB6\"> </a></td><td>feature aggregation</td></tr><tr><td style=\"white-space:nowrap\">3IDG<a name=\"IBSICS-3IDG\"> </a></td><td>feature computed per slice, and averaged over slices</td></tr><tr><td style=\"white-space:nowrap\">DHQ4<a name=\"IBSICS-DHQ4\"> </a></td><td>feature computed over the volume</td></tr><tr><td style=\"white-space:nowrap\">BTW3<a name=\"IBSICS-BTW3\"> </a></td><td>feature computed from 2D directional matrix and averaged over 2D directions and slices</td></tr><tr><td style=\"white-space:nowrap\">SUJT<a name=\"IBSICS-SUJT\"> </a></td><td>feature computed from a single matrix after merging 2D directional matrices per slice, and averaged over slices</td></tr><tr><td style=\"white-space:nowrap\">ZW7Z<a name=\"IBSICS-ZW7Z\"> </a></td><td>feature computed from a single matrix after merging all 2D directional matrices</td></tr><tr><td style=\"white-space:nowrap\">ITBB<a name=\"IBSICS-ITBB\"> </a></td><td>feature computed from 3D directional matrix and averaged over 3D directions</td></tr><tr><td style=\"white-space:nowrap\">IAZD<a name=\"IBSICS-IAZD\"> </a></td><td>feature computed from a single matrix after merging all 3D directional matrices</td></tr><tr><td style=\"white-space:nowrap\">8QNN<a name=\"IBSICS-8QNN\"> </a></td><td>feature computed from 2D matrix and averaged over slices</td></tr><tr><td style=\"white-space:nowrap\">62GR<a name=\"IBSICS-62GR\"> </a></td><td>feature computed from a single matrix after merging all 2D matrices</td></tr><tr><td style=\"white-space:nowrap\">KOBO<a name=\"IBSICS-KOBO\"> </a></td><td>feature computed from 3D matrix</td></tr><tr><td style=\"white-space:nowrap\">MPUJ<a name=\"IBSICS-MPUJ\"> </a></td><td>grid distances</td></tr><tr><td style=\"white-space:nowrap\">LIFZ<a name=\"IBSICS-LIFZ\"> </a></td><td>manhattan norm</td></tr><tr><td style=\"white-space:nowrap\">G9EV<a name=\"IBSICS-G9EV\"> </a></td><td>euclidean norm</td></tr><tr><td style=\"white-space:nowrap\">PVMT<a name=\"IBSICS-PVMT\"> </a></td><td>chebyshev norm</td></tr><tr><td style=\"white-space:nowrap\">ECJF<a name=\"IBSICS-ECJF\"> </a></td><td>ROI submasks</td></tr><tr><td style=\"white-space:nowrap\">SEFI<a name=\"IBSICS-SEFI\"> </a></td><td>intensity mask</td></tr><tr><td style=\"white-space:nowrap\">G5KJ<a name=\"IBSICS-G5KJ\"> </a></td><td>morphological mask</td></tr><tr><td style=\"white-space:nowrap\">IF9H<a name=\"IBSICS-IF9H\"> </a></td><td>re-segmentation</td></tr><tr><td style=\"white-space:nowrap\">USB3<a name=\"IBSICS-USB3\"> </a></td><td>range re-segmentation</td></tr><tr><td style=\"white-space:nowrap\">7ACA<a name=\"IBSICS-7ACA\"> </a></td><td>outlier filtering</td></tr><tr><td style=\"white-space:nowrap\">6CK8<a name=\"IBSICS-6CK8\"> </a></td><td>distance weighting</td></tr><tr><td style=\"white-space:nowrap\">LQD8<a name=\"IBSICS-LQD8\"> </a></td><td>volume voxel representation</td></tr><tr><td style=\"white-space:nowrap\">4KW8<a name=\"IBSICS-4KW8\"> </a></td><td>volume voxel point set representation</td></tr><tr><td style=\"white-space:nowrap\">WRJH<a name=\"IBSICS-WRJH\"> </a></td><td>volume voxel mesh representation</td></tr><tr><td style=\"white-space:nowrap\">4R0B<a name=\"IBSICS-4R0B\"> </a></td><td>discretisation</td></tr><tr><td style=\"white-space:nowrap\">Q3RU<a name=\"IBSICS-Q3RU\"> </a></td><td>fixed bin size</td></tr><tr><td style=\"white-space:nowrap\">K15C<a name=\"IBSICS-K15C\"> </a></td><td>fixed bin number</td></tr><tr><td style=\"white-space:nowrap\">23XZ<a name=\"IBSICS-23XZ\"> </a></td><td>data conversion</td></tr><tr><td style=\"white-space:nowrap\">PCDE<a name=\"IBSICS-PCDE\"> </a></td><td>image post-acquisition processing</td></tr><tr><td style=\"white-space:nowrap\">OQYT<a name=\"IBSICS-OQYT\"> </a></td><td>segmentation</td></tr><tr><td style=\"white-space:nowrap\">VTM2<a name=\"IBSICS-VTM2\"> </a></td><td>interpolation</td></tr><tr><td style=\"white-space:nowrap\">68QD<a name=\"IBSICS-68QD\"> </a></td><td>intensity rounding after interpolation</td></tr><tr><td style=\"white-space:nowrap\">E8H9<a name=\"IBSICS-E8H9\"> </a></td><td>roi mask partial volume</td></tr><tr><td style=\"white-space:nowrap\">UMPJ<a name=\"IBSICS-UMPJ\"> </a></td><td>interpolation grid</td></tr><tr><td style=\"white-space:nowrap\">58MB<a name=\"IBSICS-58MB\"> </a></td><td>fit to original grid</td></tr><tr><td style=\"white-space:nowrap\">SBKJ<a name=\"IBSICS-SBKJ\"> </a></td><td>align grid origins</td></tr><tr><td style=\"white-space:nowrap\">3WE3<a name=\"IBSICS-3WE3\"> </a></td><td>align grid centers</td></tr><tr><td style=\"white-space:nowrap\">026Q<a name=\"IBSICS-026Q\"> </a></td><td>align grid centers interpolation grid dimensions</td></tr><tr><td style=\"white-space:nowrap\">QCY4<a name=\"IBSICS-QCY4\"> </a></td><td>align grid centers grid positions</td></tr><tr><td style=\"white-space:nowrap\">1OBP<a name=\"IBSICS-1OBP\"> </a></td><td>ROI extraction</td></tr><tr><td style=\"white-space:nowrap\">JJUI<a name=\"IBSICS-JJUI\"> </a></td><td>feature computed from a single matrix after merging 2D directional matrices per direction, and averaged over directions</td></tr><tr><td style=\"white-space:nowrap\">GFJV<a name=\"IBSICS-GFJV\"> </a></td><td>Calculation Run Space</td></tr><tr><td style=\"white-space:nowrap\">CINW<a name=\"IBSICS-CINW\"> </a></td><td>FeatureParameterSpace</td></tr><tr><td style=\"white-space:nowrap\">1XL1<a name=\"IBSICS-1XL1\"> </a></td><td>texture matrix aggregation parameters</td></tr><tr><td style=\"white-space:nowrap\">8QU8<a name=\"IBSICS-8QU8\"> </a></td><td>intensity discretization parameters</td></tr><tr><td style=\"white-space:nowrap\">I7X7<a name=\"IBSICS-I7X7\"> </a></td><td>histogram equalisation</td></tr><tr><td style=\"white-space:nowrap\">SSX6<a name=\"IBSICS-SSX6\"> </a></td><td>Lloyd-Max discretisation</td></tr><tr><td style=\"white-space:nowrap\">OWOH<a name=\"IBSICS-OWOH\"> </a></td><td>feature specific parameters</td></tr><tr><td style=\"white-space:nowrap\">9LZ9<a name=\"IBSICS-9LZ9\"> </a></td><td>asymmetrical co-occurrence matrix</td></tr><tr><td style=\"white-space:nowrap\">2IQV<a name=\"IBSICS-2IQV\"> </a></td><td>symmetrical co-occurrence matrix</td></tr><tr><td style=\"white-space:nowrap\">3S2S<a name=\"IBSICS-3S2S\"> </a></td><td>distance weighting function</td></tr><tr><td style=\"white-space:nowrap\">V0L6<a name=\"IBSICS-V0L6\"> </a></td><td>no distance weighting</td></tr><tr><td style=\"white-space:nowrap\">4S5Z<a name=\"IBSICS-4S5Z\"> </a></td><td>GLCM specific parameters</td></tr><tr><td style=\"white-space:nowrap\">0OW5<a name=\"IBSICS-0OW5\"> </a></td><td>GLRLM specific parameters</td></tr><tr><td style=\"white-space:nowrap\">6SLW<a name=\"IBSICS-6SLW\"> </a></td><td>GLDZM specific parameters</td></tr><tr><td style=\"white-space:nowrap\">MV8M<a name=\"IBSICS-MV8M\"> </a></td><td>NGTDM specific parameters</td></tr><tr><td style=\"white-space:nowrap\">KQW7<a name=\"IBSICS-KQW7\"> </a></td><td>IntVolSpecificParameters</td></tr><tr><td style=\"white-space:nowrap\">X6TI<a name=\"IBSICS-X6TI\"> </a></td><td>MaximumBound</td></tr><tr><td style=\"white-space:nowrap\">V2QW<a name=\"IBSICS-V2QW\"> </a></td><td>MinimumBound</td></tr><tr><td style=\"white-space:nowrap\">G5MN<a name=\"IBSICS-G5MN\"> </a></td><td>isovalue algorithm</td></tr><tr><td style=\"white-space:nowrap\">CRAM<a name=\"IBSICS-CRAM\"> </a></td><td>marching cube algorithm</td></tr><tr><td style=\"white-space:nowrap\">FFWD<a name=\"IBSICS-FFWD\"> </a></td><td>Morphological features specific parameters</td></tr><tr><td style=\"white-space:nowrap\">VXRR<a name=\"IBSICS-VXRR\"> </a></td><td>dependence coarseness parameter</td></tr><tr><td style=\"white-space:nowrap\">NV3D<a name=\"IBSICS-NV3D\"> </a></td><td>cubic convolution interpolation</td></tr><tr><td style=\"white-space:nowrap\">2I2N<a name=\"IBSICS-2I2N\"> </a></td><td>cubic spline interpolation</td></tr><tr><td style=\"white-space:nowrap\">X13G<a name=\"IBSICS-X13G\"> </a></td><td>linear interpolation</td></tr><tr><td style=\"white-space:nowrap\">EY9L<a name=\"IBSICS-EY9L\"> </a></td><td>nearest neighbour interpolation</td></tr><tr><td style=\"white-space:nowrap\">QP79<a name=\"IBSICS-QP79\"> </a></td><td>re-segmentation parameters</td></tr><tr><td style=\"white-space:nowrap\">LQBA<a name=\"IBSICS-LQBA\"> </a></td><td>spatial filter properties</td></tr><tr><td style=\"white-space:nowrap\">WZSA<a name=\"IBSICS-WZSA\"> </a></td><td>wavelet basis function</td></tr><tr><td style=\"white-space:nowrap\">QVI9<a name=\"IBSICS-QVI9\"> </a></td><td>biorthogonal 3.5 wavelet</td></tr><tr><td style=\"white-space:nowrap\">2CYL<a name=\"IBSICS-2CYL\"> </a></td><td>coiflet 1 wavelet</td></tr><tr><td style=\"white-space:nowrap\">FR3E<a name=\"IBSICS-FR3E\"> </a></td><td>haar wavelet</td></tr><tr><td style=\"white-space:nowrap\">P8W0<a name=\"IBSICS-P8W0\"> </a></td><td>frequency</td></tr><tr><td style=\"white-space:nowrap\">IA9Q<a name=\"IBSICS-IA9Q\"> </a></td><td>wavelet filter direction</td></tr><tr><td style=\"white-space:nowrap\">LCNJ<a name=\"IBSICS-LCNJ\"> </a></td><td>HHH wavelet direction</td></tr><tr><td style=\"white-space:nowrap\">S7CG<a name=\"IBSICS-S7CG\"> </a></td><td>HHL wavelet direction</td></tr><tr><td style=\"white-space:nowrap\">UFRT<a name=\"IBSICS-UFRT\"> </a></td><td>HLH wavelet direction</td></tr><tr><td style=\"white-space:nowrap\">RZ96<a name=\"IBSICS-RZ96\"> </a></td><td>HLL wavelet direction</td></tr><tr><td style=\"white-space:nowrap\">CJ43<a name=\"IBSICS-CJ43\"> </a></td><td>LHH wavelet direction</td></tr><tr><td style=\"white-space:nowrap\">76ZU<a name=\"IBSICS-76ZU\"> </a></td><td>LHL wavelet direction</td></tr><tr><td style=\"white-space:nowrap\">NTRN<a name=\"IBSICS-NTRN\"> </a></td><td>LLL wavelet direction</td></tr><tr><td style=\"white-space:nowrap\">6FPA<a name=\"IBSICS-6FPA\"> </a></td><td>LLH wavelet direction</td></tr><tr><td style=\"white-space:nowrap\">G6RO<a name=\"IBSICS-G6RO\"> </a></td><td>image grey level rounding</td></tr><tr><td style=\"white-space:nowrap\">IZBZ<a name=\"IBSICS-IZBZ\"> </a></td><td>edge enhancement</td></tr><tr><td style=\"white-space:nowrap\">ZS1T<a name=\"IBSICS-ZS1T\"> </a></td><td>HistoEqualization</td></tr><tr><td style=\"white-space:nowrap\">Q2ZB<a name=\"IBSICS-Q2ZB\"> </a></td><td>LocalAreaHistoEqualization</td></tr><tr><td style=\"white-space:nowrap\">OB71<a name=\"IBSICS-OB71\"> </a></td><td>ImageSpace</td></tr><tr><td style=\"white-space:nowrap\">K7BL<a name=\"IBSICS-K7BL\"> </a></td><td>ImageVolume</td></tr><tr><td style=\"white-space:nowrap\">OH8W<a name=\"IBSICS-OH8W\"> </a></td><td>ROIMask</td></tr><tr><td style=\"white-space:nowrap\">GF95<a name=\"IBSICS-GF95\"> </a></td><td>IntensityHistogramStandardDeviation</td></tr><tr><td style=\"white-space:nowrap\">URTB<a name=\"IBSICS-URTB\"> </a></td><td>IntensityHistogramTotalEnergy</td></tr><tr><td style=\"white-space:nowrap\">5ABU<a name=\"IBSICS-5ABU\"> </a></td><td>Maximum2DDiameterColumn</td></tr><tr><td style=\"white-space:nowrap\">4S59<a name=\"IBSICS-4S59\"> </a></td><td>Maximum2DDiameterSlice</td></tr><tr><td style=\"white-space:nowrap\">K57E<a name=\"IBSICS-K57E\"> </a></td><td>Maximum2DDiameterRow</td></tr><tr><td style=\"white-space:nowrap\">EGTD<a name=\"IBSICS-EGTD\"> </a></td><td>Textural</td></tr><tr><td style=\"white-space:nowrap\">5XL6<a name=\"IBSICS-5XL6\"> </a></td><td>GLCM_MaximalCorrelationCoefficient</td></tr><tr><td style=\"white-space:nowrap\">9U4X<a name=\"IBSICS-9U4X\"> </a></td><td>ZeroOrder</td></tr><tr><td style=\"white-space:nowrap\">PWN1<a name=\"IBSICS-PWN1\"> </a></td><td>I10</td></tr><tr><td style=\"white-space:nowrap\">BOHI<a name=\"IBSICS-BOHI\"> </a></td><td>I90</td></tr><tr><td style=\"white-space:nowrap\">JXJA<a name=\"IBSICS-JXJA\"> </a></td><td>I10minusI90</td></tr><tr><td style=\"white-space:nowrap\">NK6P<a name=\"IBSICS-NK6P\"> </a></td><td>V10</td></tr><tr><td style=\"white-space:nowrap\">4279<a name=\"IBSICS-4279\"> </a></td><td>V90</td></tr><tr><td style=\"white-space:nowrap\">WITY<a name=\"IBSICS-WITY\"> </a></td><td>V10minusV90</td></tr><tr><td style=\"white-space:nowrap\">J04R<a name=\"IBSICS-J04R\"> </a></td><td>NGLDMSpecificParameters</td></tr><tr><td style=\"white-space:nowrap\">ASHO<a name=\"IBSICS-ASHO\"> </a></td><td>Voxel</td></tr><tr><td style=\"white-space:nowrap\">NOVP<a name=\"IBSICS-NOVP\"> </a></td><td>ImageFilterSpace</td></tr><tr><td style=\"white-space:nowrap\">XSJL<a name=\"IBSICS-XSJL\"> </a></td><td>AbsoluteFiltering</td></tr><tr><td style=\"white-space:nowrap\">1WTP<a name=\"IBSICS-1WTP\"> </a></td><td>ButterworthFilter</td></tr><tr><td style=\"white-space:nowrap\">PJBO<a name=\"IBSICS-PJBO\"> </a></td><td>ColliageFilter</td></tr><tr><td style=\"white-space:nowrap\">FTIJ<a name=\"IBSICS-FTIJ\"> </a></td><td>MedianFilter</td></tr><tr><td style=\"white-space:nowrap\">9IQY<a name=\"IBSICS-9IQY\"> </a></td><td>SavitzkyGolayFilter</td></tr><tr><td style=\"white-space:nowrap\">SUUU<a name=\"IBSICS-SUUU\"> </a></td><td>WaveletFilter</td></tr><tr><td style=\"white-space:nowrap\">WVUQ<a name=\"IBSICS-WVUQ\"> </a></td><td>ROIMask_PartialVolumeCutOff</td></tr><tr><td style=\"white-space:nowrap\">REY6<a name=\"IBSICS-REY6\"> </a></td><td>SegmentationMethods</td></tr><tr><td style=\"white-space:nowrap\">SBDE<a name=\"IBSICS-SBDE\"> </a></td><td>Automated</td></tr><tr><td style=\"white-space:nowrap\">OAX6<a name=\"IBSICS-OAX6\"> </a></td><td>Manual</td></tr><tr><td style=\"white-space:nowrap\">TGHU<a name=\"IBSICS-TGHU\"> </a></td><td>SemiAutomated</td></tr><tr><td style=\"white-space:nowrap\">6VTB<a name=\"IBSICS-6VTB\"> </a></td><td>SupervisedMethods</td></tr><tr><td style=\"white-space:nowrap\">TV5D<a name=\"IBSICS-TV5D\"> </a></td><td>DeepLearning</td></tr><tr><td style=\"white-space:nowrap\">KJIF<a name=\"IBSICS-KJIF\"> </a></td><td>NeuralNetwork</td></tr><tr><td style=\"white-space:nowrap\">D3RT<a name=\"IBSICS-D3RT\"> </a></td><td>SupportVectorMachine</td></tr><tr><td style=\"white-space:nowrap\">ZJJY<a name=\"IBSICS-ZJJY\"> </a></td><td>UnsupervisedMethods</td></tr><tr><td style=\"white-space:nowrap\">2KAW<a name=\"IBSICS-2KAW\"> </a></td><td>CMeansFuzzy</td></tr><tr><td style=\"white-space:nowrap\">OPMG<a name=\"IBSICS-OPMG\"> </a></td><td>Kmean</td></tr><tr><td style=\"white-space:nowrap\">HF5R<a name=\"IBSICS-HF5R\"> </a></td><td>Manual</td></tr><tr><td style=\"white-space:nowrap\">W455<a name=\"IBSICS-W455\"> </a></td><td>InPolygon</td></tr><tr><td style=\"white-space:nowrap\">8LVU<a name=\"IBSICS-8LVU\"> </a></td><td>RayCasting</td></tr><tr><td style=\"white-space:nowrap\">WAB9<a name=\"IBSICS-WAB9\"> </a></td><td>EdgeBased</td></tr><tr><td style=\"white-space:nowrap\">XL0Q<a name=\"IBSICS-XL0Q\"> </a></td><td>GradientEdgeBased</td></tr><tr><td style=\"white-space:nowrap\">N20K<a name=\"IBSICS-N20K\"> </a></td><td>HoughTransformBased</td></tr><tr><td style=\"white-space:nowrap\">VZXY<a name=\"IBSICS-VZXY\"> </a></td><td>LaplacianEdgeBased</td></tr><tr><td style=\"white-space:nowrap\">EOOR<a name=\"IBSICS-EOOR\"> </a></td><td>MarrHildrethEdgeBased</td></tr><tr><td style=\"white-space:nowrap\">Q6DD<a name=\"IBSICS-Q6DD\"> </a></td><td>ModelBased</td></tr><tr><td style=\"white-space:nowrap\">MGZ1<a name=\"IBSICS-MGZ1\"> </a></td><td>ActiveShape</td></tr><tr><td style=\"white-space:nowrap\">SR1C<a name=\"IBSICS-SR1C\"> </a></td><td>AppereanceModel</td></tr><tr><td style=\"white-space:nowrap\">LAQN<a name=\"IBSICS-LAQN\"> </a></td><td>AtlasModel</td></tr><tr><td style=\"white-space:nowrap\">UU0Q<a name=\"IBSICS-UU0Q\"> </a></td><td>DeformableModel</td></tr><tr><td style=\"white-space:nowrap\">ZCA3<a name=\"IBSICS-ZCA3\"> </a></td><td>RegionBased</td></tr><tr><td style=\"white-space:nowrap\">RZ08<a name=\"IBSICS-RZ08\"> </a></td><td>RegionGrowing</td></tr><tr><td style=\"white-space:nowrap\">A9GC<a name=\"IBSICS-A9GC\"> </a></td><td>RegionSplitting</td></tr><tr><td style=\"white-space:nowrap\">TAWD<a name=\"IBSICS-TAWD\"> </a></td><td>SplitAndMerge</td></tr><tr><td style=\"white-space:nowrap\">Q025<a name=\"IBSICS-Q025\"> </a></td><td>WatershedAlgorithm</td></tr><tr><td style=\"white-space:nowrap\">L2WC<a name=\"IBSICS-L2WC\"> </a></td><td>ThresholdingBased</td></tr><tr><td style=\"white-space:nowrap\">E8C8<a name=\"IBSICS-E8C8\"> </a></td><td>GlobalThresholding</td></tr><tr><td style=\"white-space:nowrap\">81TK<a name=\"IBSICS-81TK\"> </a></td><td>LocalAdaptiveThresholding</td></tr><tr><td style=\"white-space:nowrap\">4VLP<a name=\"IBSICS-4VLP\"> </a></td><td>Institution</td></tr><tr><td style=\"white-space:nowrap\">DTYK<a name=\"IBSICS-DTYK\"> </a></td><td>Phantom</td></tr><tr><td style=\"white-space:nowrap\">YUBG<a name=\"IBSICS-YUBG\"> </a></td><td>Software</td></tr><tr><td style=\"white-space:nowrap\">SU1L<a name=\"IBSICS-SU1L\"> </a></td><td>SoftwareProperties</td></tr><tr><td style=\"white-space:nowrap\">59QT<a name=\"IBSICS-59QT\"> </a></td><td>License</td></tr><tr><td style=\"white-space:nowrap\">1DUG<a name=\"IBSICS-1DUG\"> </a></td><td>OpenSource</td></tr><tr><td style=\"white-space:nowrap\">G91N<a name=\"IBSICS-G91N\"> </a></td><td>Proprietary</td></tr><tr><td style=\"white-space:nowrap\">W2J1<a name=\"IBSICS-W2J1\"> </a></td><td>Version</td></tr><tr><td style=\"white-space:nowrap\">M9H0<a name=\"IBSICS-M9H0\"> </a></td><td>VersionStatus</td></tr><tr><td style=\"white-space:nowrap\">4AGS<a name=\"IBSICS-4AGS\"> </a></td><td>Filter application</td></tr><tr><td style=\"white-space:nowrap\">7QSE<a name=\"IBSICS-7QSE\"> </a></td><td>filter in axial plane</td></tr><tr><td style=\"white-space:nowrap\">0ODV<a name=\"IBSICS-0ODV\"> </a></td><td>volumetric filter</td></tr><tr><td style=\"white-space:nowrap\">GBYQ<a name=\"IBSICS-GBYQ\"> </a></td><td>boundary condition</td></tr><tr><td style=\"white-space:nowrap\">Z3VE<a name=\"IBSICS-Z3VE\"> </a></td><td>constant value</td></tr><tr><td style=\"white-space:nowrap\">SIJG<a name=\"IBSICS-SIJG\"> </a></td><td>nearest value</td></tr><tr><td style=\"white-space:nowrap\">Z7YO<a name=\"IBSICS-Z7YO\"> </a></td><td>periodic</td></tr><tr><td style=\"white-space:nowrap\">ZDTV<a name=\"IBSICS-ZDTV\"> </a></td><td>mirror</td></tr><tr><td style=\"white-space:nowrap\">S60F<a name=\"IBSICS-S60F\"> </a></td><td>MeanFilter</td></tr><tr><td style=\"white-space:nowrap\">YNOF<a name=\"IBSICS-YNOF\"> </a></td><td>kernel support</td></tr><tr><td style=\"white-space:nowrap\">8BC3<a name=\"IBSICS-8BC3\"> </a></td><td>GaussianFilter</td></tr><tr><td style=\"white-space:nowrap\">L6PA<a name=\"IBSICS-L6PA\"> </a></td><td>LaplacianFilter</td></tr><tr><td style=\"white-space:nowrap\">41LN<a name=\"IBSICS-41LN\"> </a></td><td>Gaussian envelope scale</td></tr><tr><td style=\"white-space:nowrap\">WGPM<a name=\"IBSICS-WGPM\"> </a></td><td>Filter size cutoff</td></tr><tr><td style=\"white-space:nowrap\">JTXT<a name=\"IBSICS-JTXT\"> </a></td><td>Laws kernel filter</td></tr><tr><td style=\"white-space:nowrap\">JVAD<a name=\"IBSICS-JVAD\"> </a></td><td>Laws kernels</td></tr><tr><td style=\"white-space:nowrap\">B5BZ<a name=\"IBSICS-B5BZ\"> </a></td><td>Laws L3 kernel</td></tr><tr><td style=\"white-space:nowrap\">6HRH<a name=\"IBSICS-6HRH\"> </a></td><td>Laws L5 kernel</td></tr><tr><td style=\"white-space:nowrap\">LJ4T<a name=\"IBSICS-LJ4T\"> </a></td><td>Laws E3 kernel</td></tr><tr><td style=\"white-space:nowrap\">2WPV<a name=\"IBSICS-2WPV\"> </a></td><td>Laws E5 kernel</td></tr><tr><td style=\"white-space:nowrap\">MK5Z<a name=\"IBSICS-MK5Z\"> </a></td><td>Laws S3 kernel</td></tr><tr><td style=\"white-space:nowrap\">RXA1<a name=\"IBSICS-RXA1\"> </a></td><td>Laws S5 kernel</td></tr><tr><td style=\"white-space:nowrap\">4ENO<a name=\"IBSICS-4ENO\"> </a></td><td>Laws W5 kernel</td></tr><tr><td style=\"white-space:nowrap\">3A1W<a name=\"IBSICS-3A1W\"> </a></td><td>Laws R5 kernel</td></tr><tr><td style=\"white-space:nowrap\">O1AQ<a name=\"IBSICS-O1AQ\"> </a></td><td>Pseudo-rotational invariance</td></tr><tr><td style=\"white-space:nowrap\">SVKW<a name=\"IBSICS-SVKW\"> </a></td><td>Response map pooling</td></tr><tr><td style=\"white-space:nowrap\">M1CY<a name=\"IBSICS-M1CY\"> </a></td><td>average</td></tr><tr><td style=\"white-space:nowrap\">0TAW<a name=\"IBSICS-0TAW\"> </a></td><td>max</td></tr><tr><td style=\"white-space:nowrap\">DUX4<a name=\"IBSICS-DUX4\"> </a></td><td>min</td></tr><tr><td style=\"white-space:nowrap\">PQSD<a name=\"IBSICS-PQSD\"> </a></td><td>Laws energy map</td></tr><tr><td style=\"white-space:nowrap\">I176<a name=\"IBSICS-I176\"> </a></td><td>Laws energy map distance</td></tr><tr><td style=\"white-space:nowrap\">Q88H<a name=\"IBSICS-Q88H\"> </a></td><td>GaborFilter</td></tr><tr><td style=\"white-space:nowrap\">S4N6<a name=\"IBSICS-S4N6\"> </a></td><td>Gabor wavelength lambda</td></tr><tr><td style=\"white-space:nowrap\">GDR5<a name=\"IBSICS-GDR5\"> </a></td><td>Gabor ellipticity gamma</td></tr><tr><td style=\"white-space:nowrap\">FQER<a name=\"IBSICS-FQER\"> </a></td><td>Gabor orientation theta</td></tr><tr><td style=\"white-space:nowrap\">XTGK<a name=\"IBSICS-XTGK\"> </a></td><td>Gabor orientation theta step</td></tr><tr><td style=\"white-space:nowrap\">25BO<a name=\"IBSICS-25BO\"> </a></td><td>Separable wavelets</td></tr><tr><td style=\"white-space:nowrap\">BPXS<a name=\"IBSICS-BPXS\"> </a></td><td>Separable wavelet family</td></tr><tr><td style=\"white-space:nowrap\">UOUE<a name=\"IBSICS-UOUE\"> </a></td><td>haar wavelet</td></tr><tr><td style=\"white-space:nowrap\">UK1F<a name=\"IBSICS-UK1F\"> </a></td><td>Separable wavelet filter combination</td></tr><tr><td style=\"white-space:nowrap\">PPF6<a name=\"IBSICS-PPF6\"> </a></td><td>LL wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">P60O<a name=\"IBSICS-P60O\"> </a></td><td>HL wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">M0S1<a name=\"IBSICS-M0S1\"> </a></td><td>LH wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">WQ2Z<a name=\"IBSICS-WQ2Z\"> </a></td><td>HH wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">KZAS<a name=\"IBSICS-KZAS\"> </a></td><td>LLL wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">TY49<a name=\"IBSICS-TY49\"> </a></td><td>LLH wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">4KRX<a name=\"IBSICS-4KRX\"> </a></td><td>LHL wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">UUV9<a name=\"IBSICS-UUV9\"> </a></td><td>HLL wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">UIT8<a name=\"IBSICS-UIT8\"> </a></td><td>LHH wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">QTIT<a name=\"IBSICS-QTIT\"> </a></td><td>HHL wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">8LD2<a name=\"IBSICS-8LD2\"> </a></td><td>HLH wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">OYUC<a name=\"IBSICS-OYUC\"> </a></td><td>HHH wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">GCEK<a name=\"IBSICS-GCEK\"> </a></td><td>wavelet decomposition level</td></tr><tr><td style=\"white-space:nowrap\">PH3R<a name=\"IBSICS-PH3R\"> </a></td><td>Separable wavelet decimated transform</td></tr><tr><td style=\"white-space:nowrap\">CVCQ<a name=\"IBSICS-CVCQ\"> </a></td><td>Separable wavelet undecimated transform</td></tr><tr><td style=\"white-space:nowrap\">LODD<a name=\"IBSICS-LODD\"> </a></td><td>Non-separable wavelet</td></tr><tr><td style=\"white-space:nowrap\">389V<a name=\"IBSICS-389V\"> </a></td><td>Non-separable wavelet family</td></tr><tr><td style=\"white-space:nowrap\">GWM2<a name=\"IBSICS-GWM2\"> </a></td><td>Shannon wavelet</td></tr><tr><td style=\"white-space:nowrap\">PRT7<a name=\"IBSICS-PRT7\"> </a></td><td>Simoncelli wavelet</td></tr><tr><td style=\"white-space:nowrap\">AYRS<a name=\"IBSICS-AYRS\"> </a></td><td>Riesz transformation</td></tr><tr><td style=\"white-space:nowrap\">OC48<a name=\"IBSICS-OC48\"> </a></td><td>Riesz transformation order</td></tr><tr><td style=\"white-space:nowrap\">1SD3<a name=\"IBSICS-1SD3\"> </a></td><td>Riesz filter steering</td></tr><tr><td style=\"white-space:nowrap\">XKP5<a name=\"IBSICS-XKP5\"> </a></td><td>Image dimension</td></tr><tr><td style=\"white-space:nowrap\">1F0N<a name=\"IBSICS-1F0N\"> </a></td><td>k1-direction</td></tr><tr><td style=\"white-space:nowrap\">M2EZ<a name=\"IBSICS-M2EZ\"> </a></td><td>k2-direction</td></tr><tr><td style=\"white-space:nowrap\">R83H<a name=\"IBSICS-R83H\"> </a></td><td>k3-direction</td></tr><tr><td style=\"white-space:nowrap\">Y4GJ<a name=\"IBSICS-Y4GJ\"> </a></td><td>Convolution operation</td></tr><tr><td style=\"white-space:nowrap\">YHT3<a name=\"IBSICS-YHT3\"> </a></td><td>Aggregating intensities from a response map</td></tr><tr><td style=\"white-space:nowrap\">5P3T<a name=\"IBSICS-5P3T\"> </a></td><td>Response map</td></tr><tr><td style=\"white-space:nowrap\">0J1M<a name=\"IBSICS-0J1M\"> </a></td><td>modulus, magnitude or absolute response map</td></tr><tr><td style=\"white-space:nowrap\">V530<a name=\"IBSICS-V530\"> </a></td><td>angle, phase or argument response map</td></tr><tr><td style=\"white-space:nowrap\">F7DI<a name=\"IBSICS-F7DI\"> </a></td><td>real</td></tr><tr><td style=\"white-space:nowrap\">LI3Y<a name=\"IBSICS-LI3Y\"> </a></td><td>imaginary</td></tr><tr><td style=\"white-space:nowrap\">52<a name=\"IBSICS-52\"> </a></td><td>Intensity rounding: Describe how fractional Hounsfield Units are rounded to integer values after interpolation</td></tr><tr><td style=\"white-space:nowrap\">56a<a name=\"IBSICS-56a\"> </a></td><td>Discretisation method: Describe the method used to discretise image intensities</td></tr><tr><td style=\"white-space:nowrap\">56b<a name=\"IBSICS-56b\"> </a></td><td>Discretisation method: Describe the number of bins (FBN) or the bin size (FBS) used for discretisation</td></tr><tr><td style=\"white-space:nowrap\">56c<a name=\"IBSICS-56c\"> </a></td><td>Discretisation method: Describe the lowest intensity in the first bin for FBS discretisation</td></tr><tr><td style=\"white-space:nowrap\">61<a name=\"IBSICS-61\"> </a></td><td>Software availability: Describe which software and version was used to compute image biomarkers</td></tr><tr><td style=\"white-space:nowrap\">62<a name=\"IBSICS-62\"> </a></td><td>Texture matrix aggregation: Define how texture-matrix based biomarkers were computed from underlying texture matrices</td></tr><tr><td style=\"white-space:nowrap\">63<a name=\"IBSICS-63\"> </a></td><td>Distance weighting: Describe which software and version was used to compute image biomarkers</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "https://ibsi.readthedocs.io/en/latest/"]; # 
+  fhir:CodeSystem.version [ fhir:value "2.1.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "IBSICS"]; # 
+  fhir:CodeSystem.title [ fhir:value "IBSI Code System"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-04-10T11:48:35+02:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "Arkhn"]; # 
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Arkhn" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://arkhn.com" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "contact@arkhn.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Nicolas Riss" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "nicolas@arkhn.com" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "IBSI Code System"]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "419"^^xsd:nonNegativeInteger]; # 
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "HCUG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Morphological features" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "RNU0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Volume" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "YEKZ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Approximate volume" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "C0JK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Surface area" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "2PR5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Surface to volume ratio" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "SKGS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Compactness 1" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "BQWJ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Compactness 2" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "KRCK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spherical disproportion" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "QCFX" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sphericity" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "25C7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Asphericity" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "KLMA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Centre of mass shift" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "L0JK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Maximum 3D diameter" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "TDIC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Major axis length" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "P9VJ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Minor axis length" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "7J51" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Least axis length" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "Q3CK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Elongation" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "N17B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Flatness" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "PBX1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Volume density - axis-aligned bounding box" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "R59B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Area density - axis-aligned bounding box" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "ZH1A" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Volume density - oriented minimum bounding box" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "IQYR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Area density - oriented minimum bounding box" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "6BDE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Volume density - approximate enclosing ellipsoid" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "RDD2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Area density - approximate enclosing ellipsoid" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "SWZ1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Volume density - minimum volume enclosing ellipsoid" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "BRI8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Area density - minimum volume enclosing ellipsoid" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "R3ER" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Volume density - convex hull" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "7T7F" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Area density - convex hull" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "99N0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Integrated intensity" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "N365" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Moran's I index" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "NPT7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Geary's C measure" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "9ST6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Local intensity features" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "VJGA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Local intensity peak" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "0F91" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Global intensity peak" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "UHIW" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity-based statistical features" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "Q4LE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mean" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "ECT3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Variance" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "KE2A" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Skewness" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "IPH6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kurtosis" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "Y12H" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Median" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "1GSF" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Minimum grey level" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "QG58" ];
+     fhir:CodeSystem.concept.display [ fhir:value "10th percentile" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "8DWT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "90th percentile" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "84IY" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Maximum grey level" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "SALO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Interquartile range" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "2OJQ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Range" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "4FUA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mean absolute deviation" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "1128" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Robust mean absolute deviation" ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "N72L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Median absolute deviation" ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "7TET" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Coefficient of variation" ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "9S40" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Quartile coefficient of dispersion" ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "N8CA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Energy" ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "5ZWQ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Root mean square" ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "ZVCW" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity histogram features" ]
+  ], [
+     fhir:index 53;
+     fhir:CodeSystem.concept.code [ fhir:value "X6K6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity histogram mean" ]
+  ], [
+     fhir:index 54;
+     fhir:CodeSystem.concept.code [ fhir:value "CH89" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity histogram variance" ]
+  ], [
+     fhir:index 55;
+     fhir:CodeSystem.concept.code [ fhir:value "88K1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity histogram skewness" ]
+  ], [
+     fhir:index 56;
+     fhir:CodeSystem.concept.code [ fhir:value "C3I7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity histogram kurtosis" ]
+  ], [
+     fhir:index 57;
+     fhir:CodeSystem.concept.code [ fhir:value "WIFQ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity histogram median" ]
+  ], [
+     fhir:index 58;
+     fhir:CodeSystem.concept.code [ fhir:value "1PR8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity histogram minimum grey level" ]
+  ], [
+     fhir:index 59;
+     fhir:CodeSystem.concept.code [ fhir:value "GPMT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity histogram 10th percentile" ]
+  ], [
+     fhir:index 60;
+     fhir:CodeSystem.concept.code [ fhir:value "OZ0C" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity histogram 90th percentile" ]
+  ], [
+     fhir:index 61;
+     fhir:CodeSystem.concept.code [ fhir:value "3NCY" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity histogram maximum grey level" ]
+  ], [
+     fhir:index 62;
+     fhir:CodeSystem.concept.code [ fhir:value "AMMC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity histogram mode" ]
+  ], [
+     fhir:index 63;
+     fhir:CodeSystem.concept.code [ fhir:value "WR0O" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity histogram interquartile range" ]
+  ], [
+     fhir:index 64;
+     fhir:CodeSystem.concept.code [ fhir:value "5Z3W" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity histogram range" ]
+  ], [
+     fhir:index 65;
+     fhir:CodeSystem.concept.code [ fhir:value "D2ZX" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity histogram mean absolute deviation" ]
+  ], [
+     fhir:index 66;
+     fhir:CodeSystem.concept.code [ fhir:value "WRZB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity histogram robust mean absolute deviation" ]
+  ], [
+     fhir:index 67;
+     fhir:CodeSystem.concept.code [ fhir:value "4RNL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity histogram median absolute deviation" ]
+  ], [
+     fhir:index 68;
+     fhir:CodeSystem.concept.code [ fhir:value "CWYJ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity histogram coefficient of variation" ]
+  ], [
+     fhir:index 69;
+     fhir:CodeSystem.concept.code [ fhir:value "SLWD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity histogram quartile coefficient of dispersion" ]
+  ], [
+     fhir:index 70;
+     fhir:CodeSystem.concept.code [ fhir:value "TLU2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity histogram entropy" ]
+  ], [
+     fhir:index 71;
+     fhir:CodeSystem.concept.code [ fhir:value "BJ5W" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity histogram uniformity" ]
+  ], [
+     fhir:index 72;
+     fhir:CodeSystem.concept.code [ fhir:value "12CE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Maximum histogram gradient" ]
+  ], [
+     fhir:index 73;
+     fhir:CodeSystem.concept.code [ fhir:value "8E6O" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Maximum histogram gradient grey level" ]
+  ], [
+     fhir:index 74;
+     fhir:CodeSystem.concept.code [ fhir:value "VQB3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Minimum histogram gradient" ]
+  ], [
+     fhir:index 75;
+     fhir:CodeSystem.concept.code [ fhir:value "RHQZ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Minimum histogram gradient grey level" ]
+  ], [
+     fhir:index 76;
+     fhir:CodeSystem.concept.code [ fhir:value "P88C" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity-volume histogram features" ]
+  ], [
+     fhir:index 77;
+     fhir:CodeSystem.concept.code [ fhir:value "BC2M" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Volume at intensity fraction" ]
+  ], [
+     fhir:index 78;
+     fhir:CodeSystem.concept.code [ fhir:value "GBPN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity at volume fraction" ]
+  ], [
+     fhir:index 79;
+     fhir:CodeSystem.concept.code [ fhir:value "DDTU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Volume fraction difference between intensity fractions" ]
+  ], [
+     fhir:index 80;
+     fhir:CodeSystem.concept.code [ fhir:value "CNV2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity fraction difference between volume fractions" ]
+  ], [
+     fhir:index 81;
+     fhir:CodeSystem.concept.code [ fhir:value "9CMM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Area under IVH curve" ]
+  ], [
+     fhir:index 82;
+     fhir:CodeSystem.concept.code [ fhir:value "LFYI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Grey level co-occurrence based features" ]
+  ], [
+     fhir:index 83;
+     fhir:CodeSystem.concept.code [ fhir:value "GYBY" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Joint maximum" ]
+  ], [
+     fhir:index 84;
+     fhir:CodeSystem.concept.code [ fhir:value "60VM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Joint average" ]
+  ], [
+     fhir:index 85;
+     fhir:CodeSystem.concept.code [ fhir:value "UR99" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Joint variance" ]
+  ], [
+     fhir:index 86;
+     fhir:CodeSystem.concept.code [ fhir:value "TU9B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Joint entropy" ]
+  ], [
+     fhir:index 87;
+     fhir:CodeSystem.concept.code [ fhir:value "TF7R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Difference average" ]
+  ], [
+     fhir:index 88;
+     fhir:CodeSystem.concept.code [ fhir:value "D3YU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Difference variance" ]
+  ], [
+     fhir:index 89;
+     fhir:CodeSystem.concept.code [ fhir:value "NTRS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Difference entropy" ]
+  ], [
+     fhir:index 90;
+     fhir:CodeSystem.concept.code [ fhir:value "ZGXS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sum average" ]
+  ], [
+     fhir:index 91;
+     fhir:CodeSystem.concept.code [ fhir:value "OEEB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sum variance" ]
+  ], [
+     fhir:index 92;
+     fhir:CodeSystem.concept.code [ fhir:value "P6QZ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sum entropy" ]
+  ], [
+     fhir:index 93;
+     fhir:CodeSystem.concept.code [ fhir:value "8ZQL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Angular second moment" ]
+  ], [
+     fhir:index 94;
+     fhir:CodeSystem.concept.code [ fhir:value "ACUI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Contrast" ]
+  ], [
+     fhir:index 95;
+     fhir:CodeSystem.concept.code [ fhir:value "8S9J" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dissimilarity" ]
+  ], [
+     fhir:index 96;
+     fhir:CodeSystem.concept.code [ fhir:value "IB1Z" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inverse difference" ]
+  ], [
+     fhir:index 97;
+     fhir:CodeSystem.concept.code [ fhir:value "NDRX" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Normalised inverse difference" ]
+  ], [
+     fhir:index 98;
+     fhir:CodeSystem.concept.code [ fhir:value "WF0Z" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inverse difference moment" ]
+  ], [
+     fhir:index 99;
+     fhir:CodeSystem.concept.code [ fhir:value "1QCO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Normalised inverse difference moment" ]
+  ], [
+     fhir:index 100;
+     fhir:CodeSystem.concept.code [ fhir:value "E8JP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inverse variance" ]
+  ], [
+     fhir:index 101;
+     fhir:CodeSystem.concept.code [ fhir:value "NI2N" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Correlation" ]
+  ], [
+     fhir:index 102;
+     fhir:CodeSystem.concept.code [ fhir:value "QWB0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Autocorrelation" ]
+  ], [
+     fhir:index 103;
+     fhir:CodeSystem.concept.code [ fhir:value "DG8W" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cluster tendency" ]
+  ], [
+     fhir:index 104;
+     fhir:CodeSystem.concept.code [ fhir:value "7NFM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cluster shade" ]
+  ], [
+     fhir:index 105;
+     fhir:CodeSystem.concept.code [ fhir:value "AE86" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cluster prominence" ]
+  ], [
+     fhir:index 106;
+     fhir:CodeSystem.concept.code [ fhir:value "R8DG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "First measure of information correlation" ]
+  ], [
+     fhir:index 107;
+     fhir:CodeSystem.concept.code [ fhir:value "JN9H" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Second measure of information correlation" ]
+  ], [
+     fhir:index 108;
+     fhir:CodeSystem.concept.code [ fhir:value "TP0I" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Grey level run length based features" ]
+  ], [
+     fhir:index 109;
+     fhir:CodeSystem.concept.code [ fhir:value "22OV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Short runs emphasis" ]
+  ], [
+     fhir:index 110;
+     fhir:CodeSystem.concept.code [ fhir:value "W4KF" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Long runs emphasis" ]
+  ], [
+     fhir:index 111;
+     fhir:CodeSystem.concept.code [ fhir:value "V3SW" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Low grey level run emphasis" ]
+  ], [
+     fhir:index 112;
+     fhir:CodeSystem.concept.code [ fhir:value "G3QZ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "High grey level run emphasis" ]
+  ], [
+     fhir:index 113;
+     fhir:CodeSystem.concept.code [ fhir:value "HTZT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Short run low grey level emphasis" ]
+  ], [
+     fhir:index 114;
+     fhir:CodeSystem.concept.code [ fhir:value "GD3A" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Short run high grey level emphasis" ]
+  ], [
+     fhir:index 115;
+     fhir:CodeSystem.concept.code [ fhir:value "IVPO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Long run low grey level emphasis" ]
+  ], [
+     fhir:index 116;
+     fhir:CodeSystem.concept.code [ fhir:value "3KUM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Long run high grey level emphasis" ]
+  ], [
+     fhir:index 117;
+     fhir:CodeSystem.concept.code [ fhir:value "R5YN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Grey level non-uniformity" ]
+  ], [
+     fhir:index 118;
+     fhir:CodeSystem.concept.code [ fhir:value "OVBL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Normalised grey level non-uniformity" ]
+  ], [
+     fhir:index 119;
+     fhir:CodeSystem.concept.code [ fhir:value "W92Y" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Run length non-uniformity" ]
+  ], [
+     fhir:index 120;
+     fhir:CodeSystem.concept.code [ fhir:value "IC23" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Normalised run length non-uniformity" ]
+  ], [
+     fhir:index 121;
+     fhir:CodeSystem.concept.code [ fhir:value "9ZK5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Run percentage" ]
+  ], [
+     fhir:index 122;
+     fhir:CodeSystem.concept.code [ fhir:value "8CE5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Grey level variance" ]
+  ], [
+     fhir:index 123;
+     fhir:CodeSystem.concept.code [ fhir:value "SXLW" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Run length variance" ]
+  ], [
+     fhir:index 124;
+     fhir:CodeSystem.concept.code [ fhir:value "HJ9O" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Run entropy" ]
+  ], [
+     fhir:index 125;
+     fhir:CodeSystem.concept.code [ fhir:value "9SAK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Grey level size zone based features" ]
+  ], [
+     fhir:index 126;
+     fhir:CodeSystem.concept.code [ fhir:value "5QRC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Small zone emphasis" ]
+  ], [
+     fhir:index 127;
+     fhir:CodeSystem.concept.code [ fhir:value "48P8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Large zone emphasis" ]
+  ], [
+     fhir:index 128;
+     fhir:CodeSystem.concept.code [ fhir:value "XMSY" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Low grey level zone emphasis" ]
+  ], [
+     fhir:index 129;
+     fhir:CodeSystem.concept.code [ fhir:value "5GN9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "High grey level zone emphasis" ]
+  ], [
+     fhir:index 130;
+     fhir:CodeSystem.concept.code [ fhir:value "5RAI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Small zone low grey level emphasis" ]
+  ], [
+     fhir:index 131;
+     fhir:CodeSystem.concept.code [ fhir:value "HW1V" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Small zone high grey level emphasis" ]
+  ], [
+     fhir:index 132;
+     fhir:CodeSystem.concept.code [ fhir:value "YH51" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Large zone low grey level emphasis" ]
+  ], [
+     fhir:index 133;
+     fhir:CodeSystem.concept.code [ fhir:value "J17V" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Large zone high grey level emphasis" ]
+  ], [
+     fhir:index 134;
+     fhir:CodeSystem.concept.code [ fhir:value "JNSA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Grey level non-uniformity" ]
+  ], [
+     fhir:index 135;
+     fhir:CodeSystem.concept.code [ fhir:value "Y1RO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Normalised grey level non-uniformity" ]
+  ], [
+     fhir:index 136;
+     fhir:CodeSystem.concept.code [ fhir:value "4JP3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Zone size non-uniformity" ]
+  ], [
+     fhir:index 137;
+     fhir:CodeSystem.concept.code [ fhir:value "VB3A" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Normalised zone size non-uniformity" ]
+  ], [
+     fhir:index 138;
+     fhir:CodeSystem.concept.code [ fhir:value "P30P" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Zone percentage" ]
+  ], [
+     fhir:index 139;
+     fhir:CodeSystem.concept.code [ fhir:value "BYLV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Grey level variance" ]
+  ], [
+     fhir:index 140;
+     fhir:CodeSystem.concept.code [ fhir:value "3NSA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Zone size variance" ]
+  ], [
+     fhir:index 141;
+     fhir:CodeSystem.concept.code [ fhir:value "GU8N" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Zone size entropy" ]
+  ], [
+     fhir:index 142;
+     fhir:CodeSystem.concept.code [ fhir:value "VMDZ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Grey level distance zone based features" ]
+  ], [
+     fhir:index 143;
+     fhir:CodeSystem.concept.code [ fhir:value "0GBI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Small distance emphasis" ]
+  ], [
+     fhir:index 144;
+     fhir:CodeSystem.concept.code [ fhir:value "MB4I" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Large distance emphasis" ]
+  ], [
+     fhir:index 145;
+     fhir:CodeSystem.concept.code [ fhir:value "S1RA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Low grey level zone emphasis" ]
+  ], [
+     fhir:index 146;
+     fhir:CodeSystem.concept.code [ fhir:value "K26C" ];
+     fhir:CodeSystem.concept.display [ fhir:value "High grey level zone emphasis" ]
+  ], [
+     fhir:index 147;
+     fhir:CodeSystem.concept.code [ fhir:value "RUVG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Small distance low grey level emphasis" ]
+  ], [
+     fhir:index 148;
+     fhir:CodeSystem.concept.code [ fhir:value "DKNJ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Small distance high grey level emphasis" ]
+  ], [
+     fhir:index 149;
+     fhir:CodeSystem.concept.code [ fhir:value "A7WM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Large distance low grey level emphasis" ]
+  ], [
+     fhir:index 150;
+     fhir:CodeSystem.concept.code [ fhir:value "KLTH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Large distance high grey level emphasis" ]
+  ], [
+     fhir:index 151;
+     fhir:CodeSystem.concept.code [ fhir:value "VFT7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Grey level non-uniformity" ]
+  ], [
+     fhir:index 152;
+     fhir:CodeSystem.concept.code [ fhir:value "7HP3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Normalised grey level non-uniformity" ]
+  ], [
+     fhir:index 153;
+     fhir:CodeSystem.concept.code [ fhir:value "V294" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Zone distance non-uniformity" ]
+  ], [
+     fhir:index 154;
+     fhir:CodeSystem.concept.code [ fhir:value "IATH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Zone distance non-uniformity normalised" ]
+  ], [
+     fhir:index 155;
+     fhir:CodeSystem.concept.code [ fhir:value "VIWW" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Zone percentage" ]
+  ], [
+     fhir:index 156;
+     fhir:CodeSystem.concept.code [ fhir:value "QK93" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Grey level variance" ]
+  ], [
+     fhir:index 157;
+     fhir:CodeSystem.concept.code [ fhir:value "7WT1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Zone distance variance" ]
+  ], [
+     fhir:index 158;
+     fhir:CodeSystem.concept.code [ fhir:value "GBDU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Zone distance entropy" ]
+  ], [
+     fhir:index 159;
+     fhir:CodeSystem.concept.code [ fhir:value "IPET" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Neighbourhood grey tone difference based features" ]
+  ], [
+     fhir:index 160;
+     fhir:CodeSystem.concept.code [ fhir:value "QCDE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Coarseness" ]
+  ], [
+     fhir:index 161;
+     fhir:CodeSystem.concept.code [ fhir:value "65HE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Contrast" ]
+  ], [
+     fhir:index 162;
+     fhir:CodeSystem.concept.code [ fhir:value "NQ30" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Busyness" ]
+  ], [
+     fhir:index 163;
+     fhir:CodeSystem.concept.code [ fhir:value "HDEZ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Complexity" ]
+  ], [
+     fhir:index 164;
+     fhir:CodeSystem.concept.code [ fhir:value "1X9X" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Strength" ]
+  ], [
+     fhir:index 165;
+     fhir:CodeSystem.concept.code [ fhir:value "REK0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Neighbouring grey level dependence based features" ]
+  ], [
+     fhir:index 166;
+     fhir:CodeSystem.concept.code [ fhir:value "SODN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Low dependence emphasis" ]
+  ], [
+     fhir:index 167;
+     fhir:CodeSystem.concept.code [ fhir:value "IMOQ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "High dependence emphasis" ]
+  ], [
+     fhir:index 168;
+     fhir:CodeSystem.concept.code [ fhir:value "TL9H" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Low grey level count emphasis" ]
+  ], [
+     fhir:index 169;
+     fhir:CodeSystem.concept.code [ fhir:value "OAE7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "High grey level count emphasis" ]
+  ], [
+     fhir:index 170;
+     fhir:CodeSystem.concept.code [ fhir:value "EQ3F" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Low dependence low grey level emphasis" ]
+  ], [
+     fhir:index 171;
+     fhir:CodeSystem.concept.code [ fhir:value "JA6D" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Low dependence high grey level emphasis" ]
+  ], [
+     fhir:index 172;
+     fhir:CodeSystem.concept.code [ fhir:value "NBZI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "High dependence low grey level emphasis" ]
+  ], [
+     fhir:index 173;
+     fhir:CodeSystem.concept.code [ fhir:value "9QMG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "High dependence high grey level emphasis" ]
+  ], [
+     fhir:index 174;
+     fhir:CodeSystem.concept.code [ fhir:value "FP8K" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Grey level non-uniformity" ]
+  ], [
+     fhir:index 175;
+     fhir:CodeSystem.concept.code [ fhir:value "5SPA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Normalised grey level non-uniformity" ]
+  ], [
+     fhir:index 176;
+     fhir:CodeSystem.concept.code [ fhir:value "Z87G" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dependence count non-uniformity" ]
+  ], [
+     fhir:index 177;
+     fhir:CodeSystem.concept.code [ fhir:value "OKJI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dependence count non-uniformity normalised" ]
+  ], [
+     fhir:index 178;
+     fhir:CodeSystem.concept.code [ fhir:value "6XV8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dependence count percentage" ]
+  ], [
+     fhir:index 179;
+     fhir:CodeSystem.concept.code [ fhir:value "1PFV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Grey level variance" ]
+  ], [
+     fhir:index 180;
+     fhir:CodeSystem.concept.code [ fhir:value "DNX2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dependence count variance" ]
+  ], [
+     fhir:index 181;
+     fhir:CodeSystem.concept.code [ fhir:value "FCBV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dependence count entropy" ]
+  ], [
+     fhir:index 182;
+     fhir:CodeSystem.concept.code [ fhir:value "CAS9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dependence count energy" ]
+  ], [
+     fhir:index 183;
+     fhir:CodeSystem.concept.code [ fhir:value "5QB6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "feature aggregation" ]
+  ], [
+     fhir:index 184;
+     fhir:CodeSystem.concept.code [ fhir:value "3IDG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "feature computed per slice, and averaged over slices" ]
+  ], [
+     fhir:index 185;
+     fhir:CodeSystem.concept.code [ fhir:value "DHQ4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "feature computed over the volume" ]
+  ], [
+     fhir:index 186;
+     fhir:CodeSystem.concept.code [ fhir:value "BTW3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "feature computed from 2D directional matrix and averaged over 2D directions and slices" ]
+  ], [
+     fhir:index 187;
+     fhir:CodeSystem.concept.code [ fhir:value "SUJT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "feature computed from a single matrix after merging 2D directional matrices per slice, and averaged over slices" ]
+  ], [
+     fhir:index 188;
+     fhir:CodeSystem.concept.code [ fhir:value "ZW7Z" ];
+     fhir:CodeSystem.concept.display [ fhir:value "feature computed from a single matrix after merging all 2D directional matrices" ]
+  ], [
+     fhir:index 189;
+     fhir:CodeSystem.concept.code [ fhir:value "ITBB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "feature computed from 3D directional matrix and averaged over 3D directions" ]
+  ], [
+     fhir:index 190;
+     fhir:CodeSystem.concept.code [ fhir:value "IAZD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "feature computed from a single matrix after merging all 3D directional matrices" ]
+  ], [
+     fhir:index 191;
+     fhir:CodeSystem.concept.code [ fhir:value "8QNN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "feature computed from 2D matrix and averaged over slices" ]
+  ], [
+     fhir:index 192;
+     fhir:CodeSystem.concept.code [ fhir:value "62GR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "feature computed from a single matrix after merging all 2D matrices" ]
+  ], [
+     fhir:index 193;
+     fhir:CodeSystem.concept.code [ fhir:value "KOBO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "feature computed from 3D matrix" ]
+  ], [
+     fhir:index 194;
+     fhir:CodeSystem.concept.code [ fhir:value "MPUJ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "grid distances" ]
+  ], [
+     fhir:index 195;
+     fhir:CodeSystem.concept.code [ fhir:value "LIFZ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "manhattan norm" ]
+  ], [
+     fhir:index 196;
+     fhir:CodeSystem.concept.code [ fhir:value "G9EV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "euclidean norm" ]
+  ], [
+     fhir:index 197;
+     fhir:CodeSystem.concept.code [ fhir:value "PVMT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "chebyshev norm" ]
+  ], [
+     fhir:index 198;
+     fhir:CodeSystem.concept.code [ fhir:value "ECJF" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ROI submasks" ]
+  ], [
+     fhir:index 199;
+     fhir:CodeSystem.concept.code [ fhir:value "SEFI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "intensity mask" ]
+  ], [
+     fhir:index 200;
+     fhir:CodeSystem.concept.code [ fhir:value "G5KJ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "morphological mask" ]
+  ], [
+     fhir:index 201;
+     fhir:CodeSystem.concept.code [ fhir:value "IF9H" ];
+     fhir:CodeSystem.concept.display [ fhir:value "re-segmentation" ]
+  ], [
+     fhir:index 202;
+     fhir:CodeSystem.concept.code [ fhir:value "USB3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "range re-segmentation" ]
+  ], [
+     fhir:index 203;
+     fhir:CodeSystem.concept.code [ fhir:value "7ACA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "outlier filtering" ]
+  ], [
+     fhir:index 204;
+     fhir:CodeSystem.concept.code [ fhir:value "6CK8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "distance weighting" ]
+  ], [
+     fhir:index 205;
+     fhir:CodeSystem.concept.code [ fhir:value "LQD8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "volume voxel representation" ]
+  ], [
+     fhir:index 206;
+     fhir:CodeSystem.concept.code [ fhir:value "4KW8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "volume voxel point set representation" ]
+  ], [
+     fhir:index 207;
+     fhir:CodeSystem.concept.code [ fhir:value "WRJH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "volume voxel mesh representation" ]
+  ], [
+     fhir:index 208;
+     fhir:CodeSystem.concept.code [ fhir:value "4R0B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "discretisation" ]
+  ], [
+     fhir:index 209;
+     fhir:CodeSystem.concept.code [ fhir:value "Q3RU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "fixed bin size" ]
+  ], [
+     fhir:index 210;
+     fhir:CodeSystem.concept.code [ fhir:value "K15C" ];
+     fhir:CodeSystem.concept.display [ fhir:value "fixed bin number" ]
+  ], [
+     fhir:index 211;
+     fhir:CodeSystem.concept.code [ fhir:value "23XZ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "data conversion" ]
+  ], [
+     fhir:index 212;
+     fhir:CodeSystem.concept.code [ fhir:value "PCDE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "image post-acquisition processing" ]
+  ], [
+     fhir:index 213;
+     fhir:CodeSystem.concept.code [ fhir:value "OQYT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "segmentation" ]
+  ], [
+     fhir:index 214;
+     fhir:CodeSystem.concept.code [ fhir:value "VTM2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "interpolation" ]
+  ], [
+     fhir:index 215;
+     fhir:CodeSystem.concept.code [ fhir:value "68QD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "intensity rounding after interpolation" ]
+  ], [
+     fhir:index 216;
+     fhir:CodeSystem.concept.code [ fhir:value "E8H9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "roi mask partial volume" ]
+  ], [
+     fhir:index 217;
+     fhir:CodeSystem.concept.code [ fhir:value "UMPJ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "interpolation grid" ]
+  ], [
+     fhir:index 218;
+     fhir:CodeSystem.concept.code [ fhir:value "58MB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "fit to original grid" ]
+  ], [
+     fhir:index 219;
+     fhir:CodeSystem.concept.code [ fhir:value "SBKJ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "align grid origins" ]
+  ], [
+     fhir:index 220;
+     fhir:CodeSystem.concept.code [ fhir:value "3WE3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "align grid centers" ]
+  ], [
+     fhir:index 221;
+     fhir:CodeSystem.concept.code [ fhir:value "026Q" ];
+     fhir:CodeSystem.concept.display [ fhir:value "align grid centers interpolation grid dimensions" ]
+  ], [
+     fhir:index 222;
+     fhir:CodeSystem.concept.code [ fhir:value "QCY4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "align grid centers grid positions" ]
+  ], [
+     fhir:index 223;
+     fhir:CodeSystem.concept.code [ fhir:value "1OBP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ROI extraction" ]
+  ], [
+     fhir:index 224;
+     fhir:CodeSystem.concept.code [ fhir:value "JJUI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "feature computed from a single matrix after merging 2D directional matrices per direction, and averaged over directions" ]
+  ], [
+     fhir:index 225;
+     fhir:CodeSystem.concept.code [ fhir:value "GFJV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Calculation Run Space" ]
+  ], [
+     fhir:index 226;
+     fhir:CodeSystem.concept.code [ fhir:value "CINW" ];
+     fhir:CodeSystem.concept.display [ fhir:value "FeatureParameterSpace" ]
+  ], [
+     fhir:index 227;
+     fhir:CodeSystem.concept.code [ fhir:value "1XL1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "texture matrix aggregation parameters" ]
+  ], [
+     fhir:index 228;
+     fhir:CodeSystem.concept.code [ fhir:value "8QU8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "intensity discretization parameters" ]
+  ], [
+     fhir:index 229;
+     fhir:CodeSystem.concept.code [ fhir:value "I7X7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "histogram equalisation" ]
+  ], [
+     fhir:index 230;
+     fhir:CodeSystem.concept.code [ fhir:value "SSX6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lloyd-Max discretisation" ]
+  ], [
+     fhir:index 231;
+     fhir:CodeSystem.concept.code [ fhir:value "OWOH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "feature specific parameters" ]
+  ], [
+     fhir:index 232;
+     fhir:CodeSystem.concept.code [ fhir:value "9LZ9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "asymmetrical co-occurrence matrix" ]
+  ], [
+     fhir:index 233;
+     fhir:CodeSystem.concept.code [ fhir:value "2IQV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "symmetrical co-occurrence matrix" ]
+  ], [
+     fhir:index 234;
+     fhir:CodeSystem.concept.code [ fhir:value "3S2S" ];
+     fhir:CodeSystem.concept.display [ fhir:value "distance weighting function" ]
+  ], [
+     fhir:index 235;
+     fhir:CodeSystem.concept.code [ fhir:value "V0L6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "no distance weighting" ]
+  ], [
+     fhir:index 236;
+     fhir:CodeSystem.concept.code [ fhir:value "4S5Z" ];
+     fhir:CodeSystem.concept.display [ fhir:value "GLCM specific parameters" ]
+  ], [
+     fhir:index 237;
+     fhir:CodeSystem.concept.code [ fhir:value "0OW5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "GLRLM specific parameters" ]
+  ], [
+     fhir:index 238;
+     fhir:CodeSystem.concept.code [ fhir:value "6SLW" ];
+     fhir:CodeSystem.concept.display [ fhir:value "GLDZM specific parameters" ]
+  ], [
+     fhir:index 239;
+     fhir:CodeSystem.concept.code [ fhir:value "MV8M" ];
+     fhir:CodeSystem.concept.display [ fhir:value "NGTDM specific parameters" ]
+  ], [
+     fhir:index 240;
+     fhir:CodeSystem.concept.code [ fhir:value "KQW7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "IntVolSpecificParameters" ]
+  ], [
+     fhir:index 241;
+     fhir:CodeSystem.concept.code [ fhir:value "X6TI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "MaximumBound" ]
+  ], [
+     fhir:index 242;
+     fhir:CodeSystem.concept.code [ fhir:value "V2QW" ];
+     fhir:CodeSystem.concept.display [ fhir:value "MinimumBound" ]
+  ], [
+     fhir:index 243;
+     fhir:CodeSystem.concept.code [ fhir:value "G5MN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "isovalue algorithm" ]
+  ], [
+     fhir:index 244;
+     fhir:CodeSystem.concept.code [ fhir:value "CRAM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "marching cube algorithm" ]
+  ], [
+     fhir:index 245;
+     fhir:CodeSystem.concept.code [ fhir:value "FFWD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Morphological features specific parameters" ]
+  ], [
+     fhir:index 246;
+     fhir:CodeSystem.concept.code [ fhir:value "VXRR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "dependence coarseness parameter" ]
+  ], [
+     fhir:index 247;
+     fhir:CodeSystem.concept.code [ fhir:value "NV3D" ];
+     fhir:CodeSystem.concept.display [ fhir:value "cubic convolution interpolation" ]
+  ], [
+     fhir:index 248;
+     fhir:CodeSystem.concept.code [ fhir:value "2I2N" ];
+     fhir:CodeSystem.concept.display [ fhir:value "cubic spline interpolation" ]
+  ], [
+     fhir:index 249;
+     fhir:CodeSystem.concept.code [ fhir:value "X13G" ];
+     fhir:CodeSystem.concept.display [ fhir:value "linear interpolation" ]
+  ], [
+     fhir:index 250;
+     fhir:CodeSystem.concept.code [ fhir:value "EY9L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "nearest neighbour interpolation" ]
+  ], [
+     fhir:index 251;
+     fhir:CodeSystem.concept.code [ fhir:value "QP79" ];
+     fhir:CodeSystem.concept.display [ fhir:value "re-segmentation parameters" ]
+  ], [
+     fhir:index 252;
+     fhir:CodeSystem.concept.code [ fhir:value "LQBA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "spatial filter properties" ]
+  ], [
+     fhir:index 253;
+     fhir:CodeSystem.concept.code [ fhir:value "WZSA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "wavelet basis function" ]
+  ], [
+     fhir:index 254;
+     fhir:CodeSystem.concept.code [ fhir:value "QVI9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "biorthogonal 3.5 wavelet" ]
+  ], [
+     fhir:index 255;
+     fhir:CodeSystem.concept.code [ fhir:value "2CYL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "coiflet 1 wavelet" ]
+  ], [
+     fhir:index 256;
+     fhir:CodeSystem.concept.code [ fhir:value "FR3E" ];
+     fhir:CodeSystem.concept.display [ fhir:value "haar wavelet" ]
+  ], [
+     fhir:index 257;
+     fhir:CodeSystem.concept.code [ fhir:value "P8W0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "frequency" ]
+  ], [
+     fhir:index 258;
+     fhir:CodeSystem.concept.code [ fhir:value "IA9Q" ];
+     fhir:CodeSystem.concept.display [ fhir:value "wavelet filter direction" ]
+  ], [
+     fhir:index 259;
+     fhir:CodeSystem.concept.code [ fhir:value "LCNJ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HHH wavelet direction" ]
+  ], [
+     fhir:index 260;
+     fhir:CodeSystem.concept.code [ fhir:value "S7CG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HHL wavelet direction" ]
+  ], [
+     fhir:index 261;
+     fhir:CodeSystem.concept.code [ fhir:value "UFRT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HLH wavelet direction" ]
+  ], [
+     fhir:index 262;
+     fhir:CodeSystem.concept.code [ fhir:value "RZ96" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HLL wavelet direction" ]
+  ], [
+     fhir:index 263;
+     fhir:CodeSystem.concept.code [ fhir:value "CJ43" ];
+     fhir:CodeSystem.concept.display [ fhir:value "LHH wavelet direction" ]
+  ], [
+     fhir:index 264;
+     fhir:CodeSystem.concept.code [ fhir:value "76ZU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "LHL wavelet direction" ]
+  ], [
+     fhir:index 265;
+     fhir:CodeSystem.concept.code [ fhir:value "NTRN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "LLL wavelet direction" ]
+  ], [
+     fhir:index 266;
+     fhir:CodeSystem.concept.code [ fhir:value "6FPA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "LLH wavelet direction" ]
+  ], [
+     fhir:index 267;
+     fhir:CodeSystem.concept.code [ fhir:value "G6RO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "image grey level rounding" ]
+  ], [
+     fhir:index 268;
+     fhir:CodeSystem.concept.code [ fhir:value "IZBZ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "edge enhancement" ]
+  ], [
+     fhir:index 269;
+     fhir:CodeSystem.concept.code [ fhir:value "ZS1T" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HistoEqualization" ]
+  ], [
+     fhir:index 270;
+     fhir:CodeSystem.concept.code [ fhir:value "Q2ZB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "LocalAreaHistoEqualization" ]
+  ], [
+     fhir:index 271;
+     fhir:CodeSystem.concept.code [ fhir:value "OB71" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ImageSpace" ]
+  ], [
+     fhir:index 272;
+     fhir:CodeSystem.concept.code [ fhir:value "K7BL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ImageVolume" ]
+  ], [
+     fhir:index 273;
+     fhir:CodeSystem.concept.code [ fhir:value "OH8W" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ROIMask" ]
+  ], [
+     fhir:index 274;
+     fhir:CodeSystem.concept.code [ fhir:value "GF95" ];
+     fhir:CodeSystem.concept.display [ fhir:value "IntensityHistogramStandardDeviation" ]
+  ], [
+     fhir:index 275;
+     fhir:CodeSystem.concept.code [ fhir:value "URTB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "IntensityHistogramTotalEnergy" ]
+  ], [
+     fhir:index 276;
+     fhir:CodeSystem.concept.code [ fhir:value "5ABU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Maximum2DDiameterColumn" ]
+  ], [
+     fhir:index 277;
+     fhir:CodeSystem.concept.code [ fhir:value "4S59" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Maximum2DDiameterSlice" ]
+  ], [
+     fhir:index 278;
+     fhir:CodeSystem.concept.code [ fhir:value "K57E" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Maximum2DDiameterRow" ]
+  ], [
+     fhir:index 279;
+     fhir:CodeSystem.concept.code [ fhir:value "EGTD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Textural" ]
+  ], [
+     fhir:index 280;
+     fhir:CodeSystem.concept.code [ fhir:value "5XL6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "GLCM_MaximalCorrelationCoefficient" ]
+  ], [
+     fhir:index 281;
+     fhir:CodeSystem.concept.code [ fhir:value "9U4X" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ZeroOrder" ]
+  ], [
+     fhir:index 282;
+     fhir:CodeSystem.concept.code [ fhir:value "PWN1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I10" ]
+  ], [
+     fhir:index 283;
+     fhir:CodeSystem.concept.code [ fhir:value "BOHI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I90" ]
+  ], [
+     fhir:index 284;
+     fhir:CodeSystem.concept.code [ fhir:value "JXJA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I10minusI90" ]
+  ], [
+     fhir:index 285;
+     fhir:CodeSystem.concept.code [ fhir:value "NK6P" ];
+     fhir:CodeSystem.concept.display [ fhir:value "V10" ]
+  ], [
+     fhir:index 286;
+     fhir:CodeSystem.concept.code [ fhir:value "4279" ];
+     fhir:CodeSystem.concept.display [ fhir:value "V90" ]
+  ], [
+     fhir:index 287;
+     fhir:CodeSystem.concept.code [ fhir:value "WITY" ];
+     fhir:CodeSystem.concept.display [ fhir:value "V10minusV90" ]
+  ], [
+     fhir:index 288;
+     fhir:CodeSystem.concept.code [ fhir:value "J04R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "NGLDMSpecificParameters" ]
+  ], [
+     fhir:index 289;
+     fhir:CodeSystem.concept.code [ fhir:value "ASHO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Voxel" ]
+  ], [
+     fhir:index 290;
+     fhir:CodeSystem.concept.code [ fhir:value "NOVP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ImageFilterSpace" ]
+  ], [
+     fhir:index 291;
+     fhir:CodeSystem.concept.code [ fhir:value "XSJL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "AbsoluteFiltering" ]
+  ], [
+     fhir:index 292;
+     fhir:CodeSystem.concept.code [ fhir:value "1WTP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ButterworthFilter" ]
+  ], [
+     fhir:index 293;
+     fhir:CodeSystem.concept.code [ fhir:value "PJBO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ColliageFilter" ]
+  ], [
+     fhir:index 294;
+     fhir:CodeSystem.concept.code [ fhir:value "FTIJ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "MedianFilter" ]
+  ], [
+     fhir:index 295;
+     fhir:CodeSystem.concept.code [ fhir:value "9IQY" ];
+     fhir:CodeSystem.concept.display [ fhir:value "SavitzkyGolayFilter" ]
+  ], [
+     fhir:index 296;
+     fhir:CodeSystem.concept.code [ fhir:value "SUUU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "WaveletFilter" ]
+  ], [
+     fhir:index 297;
+     fhir:CodeSystem.concept.code [ fhir:value "WVUQ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ROIMask_PartialVolumeCutOff" ]
+  ], [
+     fhir:index 298;
+     fhir:CodeSystem.concept.code [ fhir:value "REY6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "SegmentationMethods" ]
+  ], [
+     fhir:index 299;
+     fhir:CodeSystem.concept.code [ fhir:value "SBDE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Automated" ]
+  ], [
+     fhir:index 300;
+     fhir:CodeSystem.concept.code [ fhir:value "OAX6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Manual" ]
+  ], [
+     fhir:index 301;
+     fhir:CodeSystem.concept.code [ fhir:value "TGHU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "SemiAutomated" ]
+  ], [
+     fhir:index 302;
+     fhir:CodeSystem.concept.code [ fhir:value "6VTB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "SupervisedMethods" ]
+  ], [
+     fhir:index 303;
+     fhir:CodeSystem.concept.code [ fhir:value "TV5D" ];
+     fhir:CodeSystem.concept.display [ fhir:value "DeepLearning" ]
+  ], [
+     fhir:index 304;
+     fhir:CodeSystem.concept.code [ fhir:value "KJIF" ];
+     fhir:CodeSystem.concept.display [ fhir:value "NeuralNetwork" ]
+  ], [
+     fhir:index 305;
+     fhir:CodeSystem.concept.code [ fhir:value "D3RT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "SupportVectorMachine" ]
+  ], [
+     fhir:index 306;
+     fhir:CodeSystem.concept.code [ fhir:value "ZJJY" ];
+     fhir:CodeSystem.concept.display [ fhir:value "UnsupervisedMethods" ]
+  ], [
+     fhir:index 307;
+     fhir:CodeSystem.concept.code [ fhir:value "2KAW" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CMeansFuzzy" ]
+  ], [
+     fhir:index 308;
+     fhir:CodeSystem.concept.code [ fhir:value "OPMG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kmean" ]
+  ], [
+     fhir:index 309;
+     fhir:CodeSystem.concept.code [ fhir:value "HF5R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Manual" ]
+  ], [
+     fhir:index 310;
+     fhir:CodeSystem.concept.code [ fhir:value "W455" ];
+     fhir:CodeSystem.concept.display [ fhir:value "InPolygon" ]
+  ], [
+     fhir:index 311;
+     fhir:CodeSystem.concept.code [ fhir:value "8LVU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "RayCasting" ]
+  ], [
+     fhir:index 312;
+     fhir:CodeSystem.concept.code [ fhir:value "WAB9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "EdgeBased" ]
+  ], [
+     fhir:index 313;
+     fhir:CodeSystem.concept.code [ fhir:value "XL0Q" ];
+     fhir:CodeSystem.concept.display [ fhir:value "GradientEdgeBased" ]
+  ], [
+     fhir:index 314;
+     fhir:CodeSystem.concept.code [ fhir:value "N20K" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HoughTransformBased" ]
+  ], [
+     fhir:index 315;
+     fhir:CodeSystem.concept.code [ fhir:value "VZXY" ];
+     fhir:CodeSystem.concept.display [ fhir:value "LaplacianEdgeBased" ]
+  ], [
+     fhir:index 316;
+     fhir:CodeSystem.concept.code [ fhir:value "EOOR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "MarrHildrethEdgeBased" ]
+  ], [
+     fhir:index 317;
+     fhir:CodeSystem.concept.code [ fhir:value "Q6DD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ModelBased" ]
+  ], [
+     fhir:index 318;
+     fhir:CodeSystem.concept.code [ fhir:value "MGZ1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ActiveShape" ]
+  ], [
+     fhir:index 319;
+     fhir:CodeSystem.concept.code [ fhir:value "SR1C" ];
+     fhir:CodeSystem.concept.display [ fhir:value "AppereanceModel" ]
+  ], [
+     fhir:index 320;
+     fhir:CodeSystem.concept.code [ fhir:value "LAQN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "AtlasModel" ]
+  ], [
+     fhir:index 321;
+     fhir:CodeSystem.concept.code [ fhir:value "UU0Q" ];
+     fhir:CodeSystem.concept.display [ fhir:value "DeformableModel" ]
+  ], [
+     fhir:index 322;
+     fhir:CodeSystem.concept.code [ fhir:value "ZCA3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "RegionBased" ]
+  ], [
+     fhir:index 323;
+     fhir:CodeSystem.concept.code [ fhir:value "RZ08" ];
+     fhir:CodeSystem.concept.display [ fhir:value "RegionGrowing" ]
+  ], [
+     fhir:index 324;
+     fhir:CodeSystem.concept.code [ fhir:value "A9GC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "RegionSplitting" ]
+  ], [
+     fhir:index 325;
+     fhir:CodeSystem.concept.code [ fhir:value "TAWD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "SplitAndMerge" ]
+  ], [
+     fhir:index 326;
+     fhir:CodeSystem.concept.code [ fhir:value "Q025" ];
+     fhir:CodeSystem.concept.display [ fhir:value "WatershedAlgorithm" ]
+  ], [
+     fhir:index 327;
+     fhir:CodeSystem.concept.code [ fhir:value "L2WC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ThresholdingBased" ]
+  ], [
+     fhir:index 328;
+     fhir:CodeSystem.concept.code [ fhir:value "E8C8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "GlobalThresholding" ]
+  ], [
+     fhir:index 329;
+     fhir:CodeSystem.concept.code [ fhir:value "81TK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "LocalAdaptiveThresholding" ]
+  ], [
+     fhir:index 330;
+     fhir:CodeSystem.concept.code [ fhir:value "4VLP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Institution" ]
+  ], [
+     fhir:index 331;
+     fhir:CodeSystem.concept.code [ fhir:value "DTYK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Phantom" ]
+  ], [
+     fhir:index 332;
+     fhir:CodeSystem.concept.code [ fhir:value "YUBG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Software" ]
+  ], [
+     fhir:index 333;
+     fhir:CodeSystem.concept.code [ fhir:value "SU1L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "SoftwareProperties" ]
+  ], [
+     fhir:index 334;
+     fhir:CodeSystem.concept.code [ fhir:value "59QT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "License" ]
+  ], [
+     fhir:index 335;
+     fhir:CodeSystem.concept.code [ fhir:value "1DUG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "OpenSource" ]
+  ], [
+     fhir:index 336;
+     fhir:CodeSystem.concept.code [ fhir:value "G91N" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Proprietary" ]
+  ], [
+     fhir:index 337;
+     fhir:CodeSystem.concept.code [ fhir:value "W2J1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Version" ]
+  ], [
+     fhir:index 338;
+     fhir:CodeSystem.concept.code [ fhir:value "M9H0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "VersionStatus" ]
+  ], [
+     fhir:index 339;
+     fhir:CodeSystem.concept.code [ fhir:value "4AGS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Filter application" ]
+  ], [
+     fhir:index 340;
+     fhir:CodeSystem.concept.code [ fhir:value "7QSE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "filter in axial plane" ]
+  ], [
+     fhir:index 341;
+     fhir:CodeSystem.concept.code [ fhir:value "0ODV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "volumetric filter" ]
+  ], [
+     fhir:index 342;
+     fhir:CodeSystem.concept.code [ fhir:value "GBYQ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "boundary condition" ]
+  ], [
+     fhir:index 343;
+     fhir:CodeSystem.concept.code [ fhir:value "Z3VE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "constant value" ]
+  ], [
+     fhir:index 344;
+     fhir:CodeSystem.concept.code [ fhir:value "SIJG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "nearest value" ]
+  ], [
+     fhir:index 345;
+     fhir:CodeSystem.concept.code [ fhir:value "Z7YO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "periodic" ]
+  ], [
+     fhir:index 346;
+     fhir:CodeSystem.concept.code [ fhir:value "ZDTV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "mirror" ]
+  ], [
+     fhir:index 347;
+     fhir:CodeSystem.concept.code [ fhir:value "S60F" ];
+     fhir:CodeSystem.concept.display [ fhir:value "MeanFilter" ]
+  ], [
+     fhir:index 348;
+     fhir:CodeSystem.concept.code [ fhir:value "YNOF" ];
+     fhir:CodeSystem.concept.display [ fhir:value "kernel support" ]
+  ], [
+     fhir:index 349;
+     fhir:CodeSystem.concept.code [ fhir:value "8BC3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "GaussianFilter" ]
+  ], [
+     fhir:index 350;
+     fhir:CodeSystem.concept.code [ fhir:value "L6PA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "LaplacianFilter" ]
+  ], [
+     fhir:index 351;
+     fhir:CodeSystem.concept.code [ fhir:value "41LN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gaussian envelope scale" ]
+  ], [
+     fhir:index 352;
+     fhir:CodeSystem.concept.code [ fhir:value "WGPM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Filter size cutoff" ]
+  ], [
+     fhir:index 353;
+     fhir:CodeSystem.concept.code [ fhir:value "JTXT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Laws kernel filter" ]
+  ], [
+     fhir:index 354;
+     fhir:CodeSystem.concept.code [ fhir:value "JVAD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Laws kernels" ]
+  ], [
+     fhir:index 355;
+     fhir:CodeSystem.concept.code [ fhir:value "B5BZ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Laws L3 kernel" ]
+  ], [
+     fhir:index 356;
+     fhir:CodeSystem.concept.code [ fhir:value "6HRH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Laws L5 kernel" ]
+  ], [
+     fhir:index 357;
+     fhir:CodeSystem.concept.code [ fhir:value "LJ4T" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Laws E3 kernel" ]
+  ], [
+     fhir:index 358;
+     fhir:CodeSystem.concept.code [ fhir:value "2WPV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Laws E5 kernel" ]
+  ], [
+     fhir:index 359;
+     fhir:CodeSystem.concept.code [ fhir:value "MK5Z" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Laws S3 kernel" ]
+  ], [
+     fhir:index 360;
+     fhir:CodeSystem.concept.code [ fhir:value "RXA1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Laws S5 kernel" ]
+  ], [
+     fhir:index 361;
+     fhir:CodeSystem.concept.code [ fhir:value "4ENO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Laws W5 kernel" ]
+  ], [
+     fhir:index 362;
+     fhir:CodeSystem.concept.code [ fhir:value "3A1W" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Laws R5 kernel" ]
+  ], [
+     fhir:index 363;
+     fhir:CodeSystem.concept.code [ fhir:value "O1AQ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pseudo-rotational invariance" ]
+  ], [
+     fhir:index 364;
+     fhir:CodeSystem.concept.code [ fhir:value "SVKW" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Response map pooling" ]
+  ], [
+     fhir:index 365;
+     fhir:CodeSystem.concept.code [ fhir:value "M1CY" ];
+     fhir:CodeSystem.concept.display [ fhir:value "average" ]
+  ], [
+     fhir:index 366;
+     fhir:CodeSystem.concept.code [ fhir:value "0TAW" ];
+     fhir:CodeSystem.concept.display [ fhir:value "max" ]
+  ], [
+     fhir:index 367;
+     fhir:CodeSystem.concept.code [ fhir:value "DUX4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "min" ]
+  ], [
+     fhir:index 368;
+     fhir:CodeSystem.concept.code [ fhir:value "PQSD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Laws energy map" ]
+  ], [
+     fhir:index 369;
+     fhir:CodeSystem.concept.code [ fhir:value "I176" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Laws energy map distance" ]
+  ], [
+     fhir:index 370;
+     fhir:CodeSystem.concept.code [ fhir:value "Q88H" ];
+     fhir:CodeSystem.concept.display [ fhir:value "GaborFilter" ]
+  ], [
+     fhir:index 371;
+     fhir:CodeSystem.concept.code [ fhir:value "S4N6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gabor wavelength lambda" ]
+  ], [
+     fhir:index 372;
+     fhir:CodeSystem.concept.code [ fhir:value "GDR5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gabor ellipticity gamma" ]
+  ], [
+     fhir:index 373;
+     fhir:CodeSystem.concept.code [ fhir:value "FQER" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gabor orientation theta" ]
+  ], [
+     fhir:index 374;
+     fhir:CodeSystem.concept.code [ fhir:value "XTGK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gabor orientation theta step" ]
+  ], [
+     fhir:index 375;
+     fhir:CodeSystem.concept.code [ fhir:value "25BO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Separable wavelets" ]
+  ], [
+     fhir:index 376;
+     fhir:CodeSystem.concept.code [ fhir:value "BPXS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Separable wavelet family" ]
+  ], [
+     fhir:index 377;
+     fhir:CodeSystem.concept.code [ fhir:value "UOUE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "haar wavelet" ]
+  ], [
+     fhir:index 378;
+     fhir:CodeSystem.concept.code [ fhir:value "UK1F" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Separable wavelet filter combination" ]
+  ], [
+     fhir:index 379;
+     fhir:CodeSystem.concept.code [ fhir:value "PPF6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "LL wavelet combination" ]
+  ], [
+     fhir:index 380;
+     fhir:CodeSystem.concept.code [ fhir:value "P60O" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HL wavelet combination" ]
+  ], [
+     fhir:index 381;
+     fhir:CodeSystem.concept.code [ fhir:value "M0S1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "LH wavelet combination" ]
+  ], [
+     fhir:index 382;
+     fhir:CodeSystem.concept.code [ fhir:value "WQ2Z" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HH wavelet combination" ]
+  ], [
+     fhir:index 383;
+     fhir:CodeSystem.concept.code [ fhir:value "KZAS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "LLL wavelet combination" ]
+  ], [
+     fhir:index 384;
+     fhir:CodeSystem.concept.code [ fhir:value "TY49" ];
+     fhir:CodeSystem.concept.display [ fhir:value "LLH wavelet combination" ]
+  ], [
+     fhir:index 385;
+     fhir:CodeSystem.concept.code [ fhir:value "4KRX" ];
+     fhir:CodeSystem.concept.display [ fhir:value "LHL wavelet combination" ]
+  ], [
+     fhir:index 386;
+     fhir:CodeSystem.concept.code [ fhir:value "UUV9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HLL wavelet combination" ]
+  ], [
+     fhir:index 387;
+     fhir:CodeSystem.concept.code [ fhir:value "UIT8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "LHH wavelet combination" ]
+  ], [
+     fhir:index 388;
+     fhir:CodeSystem.concept.code [ fhir:value "QTIT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HHL wavelet combination" ]
+  ], [
+     fhir:index 389;
+     fhir:CodeSystem.concept.code [ fhir:value "8LD2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HLH wavelet combination" ]
+  ], [
+     fhir:index 390;
+     fhir:CodeSystem.concept.code [ fhir:value "OYUC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HHH wavelet combination" ]
+  ], [
+     fhir:index 391;
+     fhir:CodeSystem.concept.code [ fhir:value "GCEK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "wavelet decomposition level" ]
+  ], [
+     fhir:index 392;
+     fhir:CodeSystem.concept.code [ fhir:value "PH3R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Separable wavelet decimated transform" ]
+  ], [
+     fhir:index 393;
+     fhir:CodeSystem.concept.code [ fhir:value "CVCQ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Separable wavelet undecimated transform" ]
+  ], [
+     fhir:index 394;
+     fhir:CodeSystem.concept.code [ fhir:value "LODD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Non-separable wavelet" ]
+  ], [
+     fhir:index 395;
+     fhir:CodeSystem.concept.code [ fhir:value "389V" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Non-separable wavelet family" ]
+  ], [
+     fhir:index 396;
+     fhir:CodeSystem.concept.code [ fhir:value "GWM2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Shannon wavelet" ]
+  ], [
+     fhir:index 397;
+     fhir:CodeSystem.concept.code [ fhir:value "PRT7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Simoncelli wavelet" ]
+  ], [
+     fhir:index 398;
+     fhir:CodeSystem.concept.code [ fhir:value "AYRS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Riesz transformation" ]
+  ], [
+     fhir:index 399;
+     fhir:CodeSystem.concept.code [ fhir:value "OC48" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Riesz transformation order" ]
+  ], [
+     fhir:index 400;
+     fhir:CodeSystem.concept.code [ fhir:value "1SD3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Riesz filter steering" ]
+  ], [
+     fhir:index 401;
+     fhir:CodeSystem.concept.code [ fhir:value "XKP5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Image dimension" ]
+  ], [
+     fhir:index 402;
+     fhir:CodeSystem.concept.code [ fhir:value "1F0N" ];
+     fhir:CodeSystem.concept.display [ fhir:value "k1-direction" ]
+  ], [
+     fhir:index 403;
+     fhir:CodeSystem.concept.code [ fhir:value "M2EZ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "k2-direction" ]
+  ], [
+     fhir:index 404;
+     fhir:CodeSystem.concept.code [ fhir:value "R83H" ];
+     fhir:CodeSystem.concept.display [ fhir:value "k3-direction" ]
+  ], [
+     fhir:index 405;
+     fhir:CodeSystem.concept.code [ fhir:value "Y4GJ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Convolution operation" ]
+  ], [
+     fhir:index 406;
+     fhir:CodeSystem.concept.code [ fhir:value "YHT3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Aggregating intensities from a response map" ]
+  ], [
+     fhir:index 407;
+     fhir:CodeSystem.concept.code [ fhir:value "5P3T" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Response map" ]
+  ], [
+     fhir:index 408;
+     fhir:CodeSystem.concept.code [ fhir:value "0J1M" ];
+     fhir:CodeSystem.concept.display [ fhir:value "modulus, magnitude or absolute response map" ]
+  ], [
+     fhir:index 409;
+     fhir:CodeSystem.concept.code [ fhir:value "V530" ];
+     fhir:CodeSystem.concept.display [ fhir:value "angle, phase or argument response map" ]
+  ], [
+     fhir:index 410;
+     fhir:CodeSystem.concept.code [ fhir:value "F7DI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "real" ]
+  ], [
+     fhir:index 411;
+     fhir:CodeSystem.concept.code [ fhir:value "LI3Y" ];
+     fhir:CodeSystem.concept.display [ fhir:value "imaginary" ]
+  ], [
+     fhir:index 412;
+     fhir:CodeSystem.concept.code [ fhir:value "52" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intensity rounding: Describe how fractional Hounsfield Units are rounded to integer values after interpolation" ]
+  ], [
+     fhir:index 413;
+     fhir:CodeSystem.concept.code [ fhir:value "56a" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Discretisation method: Describe the method used to discretise image intensities" ]
+  ], [
+     fhir:index 414;
+     fhir:CodeSystem.concept.code [ fhir:value "56b" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Discretisation method: Describe the number of bins (FBN) or the bin size (FBS) used for discretisation" ]
+  ], [
+     fhir:index 415;
+     fhir:CodeSystem.concept.code [ fhir:value "56c" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Discretisation method: Describe the lowest intensity in the first bin for FBS discretisation" ]
+  ], [
+     fhir:index 416;
+     fhir:CodeSystem.concept.code [ fhir:value "61" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Software availability: Describe which software and version was used to compute image biomarkers" ]
+  ], [
+     fhir:index 417;
+     fhir:CodeSystem.concept.code [ fhir:value "62" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Texture matrix aggregation: Define how texture-matrix based biomarkers were computed from underlying texture matrices" ]
+  ], [
+     fhir:index 418;
+     fhir:CodeSystem.concept.code [ fhir:value "63" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Distance weighting: Describe which software and version was used to compute image biomarkers" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/IBSICS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

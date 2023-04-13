@@ -1,0 +1,59 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "Pathogenicity",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://github.com/siric-osiris/OSIRIS</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>O81-1</td><td>Pathogenic</td></tr><tr><td>O81-2</td><td>Likely pathogenic</td></tr><tr><td>O81-3</td><td>Uncertain significance</td></tr><tr><td>O81-4</td><td>Likely benign</td></tr><tr><td>O81-5</td><td>Benign</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Pathogenicity",
+  "version" : "2.1.0",
+  "name" : "Pathogenicity",
+  "title" : "Pathogenicity Value Set",
+  "status" : "active",
+  "date" : "2023-04-10T11:48:35+02:00",
+  "publisher" : "Arkhn",
+  "contact" : [{
+    "name" : "Arkhn",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://arkhn.com"
+    },
+    {
+      "system" : "email",
+      "value" : "contact@arkhn.com"
+    }]
+  },
+  {
+    "name" : "Nicolas Riss",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "nicolas@arkhn.com"
+    }]
+  }],
+  "description" : "Pathogenicity",
+  "compose" : {
+    "include" : [{
+      "system" : "https://github.com/siric-osiris/OSIRIS",
+      "concept" : [{
+        "code" : "O81-1",
+        "display" : "Pathogenic"
+      },
+      {
+        "code" : "O81-2",
+        "display" : "Likely pathogenic"
+      },
+      {
+        "code" : "O81-3",
+        "display" : "Uncertain significance"
+      },
+      {
+        "code" : "O81-4",
+        "display" : "Likely benign"
+      },
+      {
+        "code" : "O81-5",
+        "display" : "Benign"
+      }]
+    }]
+  }
+}

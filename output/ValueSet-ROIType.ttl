@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/ROIType> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ROIType"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-RadiomicsCS.html\"><code>https://terminology.arkhn.com/radiomicsCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-RadiomicsCS.html#RadiomicsCS-DICOM\">DICOM</a></td><td>ROI Type DICOM</td></tr><tr><td><a href=\"CodeSystem-RadiomicsCS.html#RadiomicsCS-MASK\">MASK</a></td><td>ROI Type NIfTI</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/ROIType"]; # 
+  fhir:ValueSet.version [ fhir:value "2.1.0"]; # 
+  fhir:ValueSet.name [ fhir:value "ROIType"]; # 
+  fhir:ValueSet.title [ fhir:value "ROI Type Value Set"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.date [ fhir:value "2023-04-10T11:48:35+02:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "Arkhn"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Arkhn" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://arkhn.com" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "contact@arkhn.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Nicolas Riss" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "nicolas@arkhn.com" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "ROI Type"]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://terminology.arkhn.com/radiomicsCS" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "DICOM" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ROI Type DICOM" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "MASK" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ROI Type NIfTI" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/ROIType.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

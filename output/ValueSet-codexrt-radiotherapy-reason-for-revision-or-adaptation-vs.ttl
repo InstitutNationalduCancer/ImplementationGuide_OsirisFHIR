@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/codexrt-radiotherapy-reason-for-revision-or-adaptation-vs> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "codexrt-radiotherapy-reason-for-revision-or-adaptation-vs"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-373858009\">373858009</a></td><td>Radiotherapy course changed - acute radiotherapy toxicity (finding)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-314846003\">314846003</a></td><td>Patient given choice of treatment (finding)</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-SnomedRequestedCScodex.html\"><code>http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/snomed-requested-cs</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-SnomedRequestedCScodex.html#SnomedRequestedCScodex-1259981006\">1259981006</a></td><td>Radiotherapy course change due to change to treatment intent (finding)</td></tr><tr><td><a href=\"CodeSystem-SnomedRequestedCScodex.html#SnomedRequestedCScodex-1259231006\">1259231006</a></td><td>Radiotherapy course changed due to changes to target (finding)</td></tr><tr><td><a href=\"CodeSystem-SnomedRequestedCScodex.html#SnomedRequestedCScodex-1259232004\">1259232004</a></td><td>Radiotherapy course changed due to change to organ at risk (finding)</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/codexrt-radiotherapy-reason-for-revision-or-adaptation-vs"]; # 
+  fhir:ValueSet.version [ fhir:value "2.1.0"]; # 
+  fhir:ValueSet.name [ fhir:value "RadiotherapyReasonReplanificationVS"]; # 
+  fhir:ValueSet.title [ fhir:value "Radiotherapy Reason Replanification"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.date [ fhir:value "2023-04-10T11:48:35+02:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "Arkhn"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Arkhn" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://arkhn.com" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "contact@arkhn.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Nicolas Riss" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "nicolas@arkhn.com" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "Radiotherapy Reason Replanification"]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "373858009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Radiotherapy course changed - acute radiotherapy toxicity (finding)" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "314846003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient given choice of treatment (finding)" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/snomed-requested-cs" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1259981006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Radiotherapy course change due to change to treatment intent (finding)" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1259231006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Radiotherapy course changed due to changes to target (finding)" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1259232004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Radiotherapy course changed due to change to organ at risk (finding)" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/codexrt-radiotherapy-reason-for-revision-or-adaptation-vs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

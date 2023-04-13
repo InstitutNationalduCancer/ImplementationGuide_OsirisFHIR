@@ -1,0 +1,130 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "Parentage",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\"><code>http://terminology.hl7.org/CodeSystem/umls</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C0037047</td><td>Sibling</td></tr><tr><td>C0030551</td><td>Parent</td></tr><tr><td>C0015671</td><td>Father</td></tr><tr><td>C0026591</td><td>Mother</td></tr><tr><td>C3844804</td><td>Paternal cousin</td></tr><tr><td>C3844805</td><td>Maternal cousin</td></tr><tr><td>C3242761</td><td>Maternal grandparent</td></tr><tr><td>C3242764</td><td>Paternal grandparent</td></tr><tr><td>C1273524</td><td>Paternal grandmother</td></tr><tr><td>C1273525</td><td>Maternal grandmother</td></tr><tr><td>C1273523</td><td>Maternal grandfather</td></tr><tr><td>C1273522</td><td>Paternal grandfather</td></tr><tr><td>C0337471</td><td>Grandparent</td></tr><tr><td>C0337577</td><td>Uncle</td></tr><tr><td>C3714276</td><td>Paternal uncle</td></tr><tr><td>C3714277</td><td>Maternal uncle</td></tr><tr><td>C0337576</td><td>Aunt</td></tr><tr><td>C3714274</td><td>Paternal aunt</td></tr><tr><td>C3714275</td><td>Maternal aunt</td></tr><tr><td>C0337580</td><td>Cousin</td></tr><tr><td>C0439673</td><td>Unknown</td></tr></table></li><li>Include these codes as defined in <code>https://github.com/siric-osiris/OSIRIS</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C77-6</td><td>Other</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Parentage",
+  "version" : "2.1.0",
+  "name" : "Parentage",
+  "title" : "Parentage Value Set",
+  "status" : "active",
+  "date" : "2023-04-10T11:48:35+02:00",
+  "publisher" : "Arkhn",
+  "contact" : [{
+    "name" : "Arkhn",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://arkhn.com"
+    },
+    {
+      "system" : "email",
+      "value" : "contact@arkhn.com"
+    }]
+  },
+  {
+    "name" : "Nicolas Riss",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "nicolas@arkhn.com"
+    }]
+  }],
+  "description" : "Parentage",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/umls",
+      "concept" : [{
+        "code" : "C0037047",
+        "display" : "Sibling"
+      },
+      {
+        "code" : "C0030551",
+        "display" : "Parent"
+      },
+      {
+        "code" : "C0015671",
+        "display" : "Father"
+      },
+      {
+        "code" : "C0026591",
+        "display" : "Mother"
+      },
+      {
+        "code" : "C3844804",
+        "display" : "Paternal cousin"
+      },
+      {
+        "code" : "C3844805",
+        "display" : "Maternal cousin"
+      },
+      {
+        "code" : "C3242761",
+        "display" : "Maternal grandparent"
+      },
+      {
+        "code" : "C3242764",
+        "display" : "Paternal grandparent"
+      },
+      {
+        "code" : "C1273524",
+        "display" : "Paternal grandmother"
+      },
+      {
+        "code" : "C1273525",
+        "display" : "Maternal grandmother"
+      },
+      {
+        "code" : "C1273523",
+        "display" : "Maternal grandfather"
+      },
+      {
+        "code" : "C1273522",
+        "display" : "Paternal grandfather"
+      },
+      {
+        "code" : "C0337471",
+        "display" : "Grandparent"
+      },
+      {
+        "code" : "C0337577",
+        "display" : "Uncle"
+      },
+      {
+        "code" : "C3714276",
+        "display" : "Paternal uncle"
+      },
+      {
+        "code" : "C3714277",
+        "display" : "Maternal uncle"
+      },
+      {
+        "code" : "C0337576",
+        "display" : "Aunt"
+      },
+      {
+        "code" : "C3714274",
+        "display" : "Paternal aunt"
+      },
+      {
+        "code" : "C3714275",
+        "display" : "Maternal aunt"
+      },
+      {
+        "code" : "C0337580",
+        "display" : "Cousin"
+      },
+      {
+        "code" : "C0439673",
+        "display" : "Unknown"
+      }]
+    },
+    {
+      "system" : "https://github.com/siric-osiris/OSIRIS",
+      "concept" : [{
+        "code" : "C77-6",
+        "display" : "Other"
+      }]
+    }]
+  }
+}

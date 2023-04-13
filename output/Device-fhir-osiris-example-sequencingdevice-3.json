@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Device",
+  "id" : "fhir-osiris-example-sequencingdevice-3",
+  "meta" : {
+    "profile" : ["https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-device"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Device</b><a name=\"fhir-osiris-example-sequencingdevice-3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Device &quot;fhir-osiris-example-sequencingdevice-3&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-sequencing-device.html\">Sequencing Device</a></p></div><p><b>identifier</b>: </p><p><b>type</b>: O7-25 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (OSIRIS#O7-25)</span></p><h3>Versions</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td>*</td><td>Name of the gene panel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (OSIRIS#O10-0)</span></td><td>not applicable</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "value" : " "
+  }],
+  "type" : {
+    "coding" : [{
+      "system" : "https://github.com/siric-osiris/OSIRIS",
+      "code" : "O7-25"
+    }]
+  },
+  "version" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://github.com/siric-osiris/OSIRIS",
+        "code" : "O10-0"
+      }],
+      "text" : "Name of the gene panel"
+    },
+    "value" : "not applicable"
+  }]
+}

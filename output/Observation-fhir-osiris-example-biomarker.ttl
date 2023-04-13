@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Observation/fhir-osiris-example-biomarker> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fhir-osiris-example-biomarker"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/biomarker";
+       fhir:index 0;
+       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/biomarker>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"fhir-osiris-example-biomarker\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;fhir-osiris-example-biomarker&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-biomarker.html\">Biomarker</a></p></div><p><b>status</b>: final</p><p><b>code</b>: cg6548 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#cg6548)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><p><b>value</b>: ++</p><p><b>derivedFrom</b>: <a href=\"Observation-fhir-osiris-example-analysis-clinical.html\">Observation/fhir-osiris-example-analysis-clinical</a></p></div>"
+  ]; # 
+  fhir:Observation.status [ fhir:value "final"]; # 
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "cg6548" ]
+     ]
+  ]; # 
+  fhir:Observation.subject [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/L304>;
+     fhir:Reference.reference [ fhir:value "Patient/L304" ]
+  ]; # 
+  fhir:Observation.valueString [ fhir:value "++"]; # 
+  fhir:Observation.derivedFrom [
+     fhir:index 0;
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Observation/fhir-osiris-example-analysis-clinical>;
+     fhir:Reference.reference [ fhir:value "Observation/fhir-osiris-example-analysis-clinical" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Observation/fhir-osiris-example-biomarker.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

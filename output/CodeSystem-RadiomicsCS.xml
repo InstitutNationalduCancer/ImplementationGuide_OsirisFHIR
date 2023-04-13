@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="RadiomicsCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://terminology.arkhn.com/radiomicsCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">DICOM<a name="RadiomicsCS-DICOM"> </a></td><td>ROI Type DICOM</td></tr><tr><td style="white-space:nowrap">MASK<a name="RadiomicsCS-MASK"> </a></td><td>ROI Type NIfTI</td></tr></table></div>
+  </text>
+  <url value="https://terminology.arkhn.com/radiomicsCS"/>
+  <version value="2.1.0"/>
+  <name value="RadiomicsCS"/>
+  <title value="Imaging Code System"/>
+  <status value="active"/>
+  <date value="2023-04-10T11:48:35+02:00"/>
+  <publisher value="Arkhn"/>
+  <contact>
+    <name value="Arkhn"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://arkhn.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="contact@arkhn.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nicolas Riss"/>
+    <telecom>
+      <system value="email"/>
+      <value value="nicolas@arkhn.com"/>
+    </telecom>
+  </contact>
+  <description value="Imaging Code System"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="DICOM"/>
+    <display value="ROI Type DICOM"/>
+  </concept>
+  <concept>
+    <code value="MASK"/>
+    <display value="ROI Type NIfTI"/>
+  </concept>
+</CodeSystem>

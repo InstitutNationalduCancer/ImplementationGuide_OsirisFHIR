@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/VerificationResult/fhir-osiris-example-validation-1> a fhir:VerificationResult;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fhir-osiris-example-validation-1"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/data-validation";
+       fhir:index 0;
+       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/data-validation>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: VerificationResult</b><a name=\"fhir-osiris-example-validation-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource VerificationResult &quot;fhir-osiris-example-validation-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-data-validation.html\">Validation</a></p></div><p><b>target</b>: <a href=\"Observation-fhir-osiris-example-snp-1.html\">Observation/fhir-osiris-example-snp-1</a></p><p><b>status</b>: in-process</p><p><b>validationType</b>: By biologist <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (OSIRIS#O16-2)</span></p><p><b>validationProcess</b>: biblio <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></div>"
+  ]; # 
+  fhir:VerificationResult.target [
+     fhir:index 0;
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Observation/fhir-osiris-example-snp-1>;
+     fhir:Reference.reference [ fhir:value "Observation/fhir-osiris-example-snp-1" ]
+  ]; # 
+  fhir:VerificationResult.status [ fhir:value "in-process"]; # 
+  fhir:VerificationResult.validationType [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://github.com/siric-osiris/OSIRIS" ];
+       fhir:Coding.code [ fhir:value "O16-2" ];
+       fhir:Coding.display [ fhir:value "By biologist" ]
+     ]
+  ]; # 
+  fhir:VerificationResult.validationProcess [
+     fhir:index 0;
+     fhir:CodeableConcept.text [ fhir:value "biblio" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/VerificationResult/fhir-osiris-example-validation-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

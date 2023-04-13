@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>ARKHN.FHIR.UV.OSIRIS\IBSI Code System - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.121"}
+    h3,h4,h5,h6{--heading-prefix:"5.121"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="arkhn-logo">
+          <a id="hl7-search-lnk" no-external="true" href="https://www.arkhn.com"><img alt="Arkhn Logo" src="assets/images/logo_arkhn.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Osiris Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">2.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="valuesets.html">ValueSets</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts Summary</a>
+  </li>
+  <li>
+    <a href="requests.html">Requests Example</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://github.com/siric-osiris/OSIRIS">OSIRIS Spec </a>
+      </li>
+      <li>
+        <a target="_blank" href="http://arkhn.com/">Arkhn website </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>IBSI Code System</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-IBSICS.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-IBSICS.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-IBSICS.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: IBSI Code System
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://ibsi.readthedocs.io/en/latest/<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://ibsi.readthedocs.io/en/latest/"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://ibsi.readthedocs.io/en/latest/|2.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2023-04-10
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">IBSICS</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>IBSI Code System</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-RadiomicsFeaturesVS.html">RadiomicsFeaturesVS</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://ibsi.readthedocs.io/en/latest/</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">HCUG<a name="IBSICS-HCUG"> </a></td><td>Morphological features</td></tr><tr><td style="white-space:nowrap">RNU0<a name="IBSICS-RNU0"> </a></td><td>Volume</td></tr><tr><td style="white-space:nowrap">YEKZ<a name="IBSICS-YEKZ"> </a></td><td>Approximate volume</td></tr><tr><td style="white-space:nowrap">C0JK<a name="IBSICS-C0JK"> </a></td><td>Surface area</td></tr><tr><td style="white-space:nowrap">2PR5<a name="IBSICS-2PR5"> </a></td><td>Surface to volume ratio</td></tr><tr><td style="white-space:nowrap">SKGS<a name="IBSICS-SKGS"> </a></td><td>Compactness 1</td></tr><tr><td style="white-space:nowrap">BQWJ<a name="IBSICS-BQWJ"> </a></td><td>Compactness 2</td></tr><tr><td style="white-space:nowrap">KRCK<a name="IBSICS-KRCK"> </a></td><td>Spherical disproportion</td></tr><tr><td style="white-space:nowrap">QCFX<a name="IBSICS-QCFX"> </a></td><td>Sphericity</td></tr><tr><td style="white-space:nowrap">25C7<a name="IBSICS-25C7"> </a></td><td>Asphericity</td></tr><tr><td style="white-space:nowrap">KLMA<a name="IBSICS-KLMA"> </a></td><td>Centre of mass shift</td></tr><tr><td style="white-space:nowrap">L0JK<a name="IBSICS-L0JK"> </a></td><td>Maximum 3D diameter</td></tr><tr><td style="white-space:nowrap">TDIC<a name="IBSICS-TDIC"> </a></td><td>Major axis length</td></tr><tr><td style="white-space:nowrap">P9VJ<a name="IBSICS-P9VJ"> </a></td><td>Minor axis length</td></tr><tr><td style="white-space:nowrap">7J51<a name="IBSICS-7J51"> </a></td><td>Least axis length</td></tr><tr><td style="white-space:nowrap">Q3CK<a name="IBSICS-Q3CK"> </a></td><td>Elongation</td></tr><tr><td style="white-space:nowrap">N17B<a name="IBSICS-N17B"> </a></td><td>Flatness</td></tr><tr><td style="white-space:nowrap">PBX1<a name="IBSICS-PBX1"> </a></td><td>Volume density - axis-aligned bounding box</td></tr><tr><td style="white-space:nowrap">R59B<a name="IBSICS-R59B"> </a></td><td>Area density - axis-aligned bounding box</td></tr><tr><td style="white-space:nowrap">ZH1A<a name="IBSICS-ZH1A"> </a></td><td>Volume density - oriented minimum bounding box</td></tr><tr><td style="white-space:nowrap">IQYR<a name="IBSICS-IQYR"> </a></td><td>Area density - oriented minimum bounding box</td></tr><tr><td style="white-space:nowrap">6BDE<a name="IBSICS-6BDE"> </a></td><td>Volume density - approximate enclosing ellipsoid</td></tr><tr><td style="white-space:nowrap">RDD2<a name="IBSICS-RDD2"> </a></td><td>Area density - approximate enclosing ellipsoid</td></tr><tr><td style="white-space:nowrap">SWZ1<a name="IBSICS-SWZ1"> </a></td><td>Volume density - minimum volume enclosing ellipsoid</td></tr><tr><td style="white-space:nowrap">BRI8<a name="IBSICS-BRI8"> </a></td><td>Area density - minimum volume enclosing ellipsoid</td></tr><tr><td style="white-space:nowrap">R3ER<a name="IBSICS-R3ER"> </a></td><td>Volume density - convex hull</td></tr><tr><td style="white-space:nowrap">7T7F<a name="IBSICS-7T7F"> </a></td><td>Area density - convex hull</td></tr><tr><td style="white-space:nowrap">99N0<a name="IBSICS-99N0"> </a></td><td>Integrated intensity</td></tr><tr><td style="white-space:nowrap">N365<a name="IBSICS-N365"> </a></td><td>Moran's I index</td></tr><tr><td style="white-space:nowrap">NPT7<a name="IBSICS-NPT7"> </a></td><td>Geary's C measure</td></tr><tr><td style="white-space:nowrap">9ST6<a name="IBSICS-9ST6"> </a></td><td>Local intensity features</td></tr><tr><td style="white-space:nowrap">VJGA<a name="IBSICS-VJGA"> </a></td><td>Local intensity peak</td></tr><tr><td style="white-space:nowrap">0F91<a name="IBSICS-0F91"> </a></td><td>Global intensity peak</td></tr><tr><td style="white-space:nowrap">UHIW<a name="IBSICS-UHIW"> </a></td><td>Intensity-based statistical features</td></tr><tr><td style="white-space:nowrap">Q4LE<a name="IBSICS-Q4LE"> </a></td><td>Mean</td></tr><tr><td style="white-space:nowrap">ECT3<a name="IBSICS-ECT3"> </a></td><td>Variance</td></tr><tr><td style="white-space:nowrap">KE2A<a name="IBSICS-KE2A"> </a></td><td>Skewness</td></tr><tr><td style="white-space:nowrap">IPH6<a name="IBSICS-IPH6"> </a></td><td>Kurtosis</td></tr><tr><td style="white-space:nowrap">Y12H<a name="IBSICS-Y12H"> </a></td><td>Median</td></tr><tr><td style="white-space:nowrap">1GSF<a name="IBSICS-1GSF"> </a></td><td>Minimum grey level</td></tr><tr><td style="white-space:nowrap">QG58<a name="IBSICS-QG58"> </a></td><td>10th percentile</td></tr><tr><td style="white-space:nowrap">8DWT<a name="IBSICS-8DWT"> </a></td><td>90th percentile</td></tr><tr><td style="white-space:nowrap">84IY<a name="IBSICS-84IY"> </a></td><td>Maximum grey level</td></tr><tr><td style="white-space:nowrap">SALO<a name="IBSICS-SALO"> </a></td><td>Interquartile range</td></tr><tr><td style="white-space:nowrap">2OJQ<a name="IBSICS-2OJQ"> </a></td><td>Range</td></tr><tr><td style="white-space:nowrap">4FUA<a name="IBSICS-4FUA"> </a></td><td>Mean absolute deviation</td></tr><tr><td style="white-space:nowrap">1128<a name="IBSICS-1128"> </a></td><td>Robust mean absolute deviation</td></tr><tr><td style="white-space:nowrap">N72L<a name="IBSICS-N72L"> </a></td><td>Median absolute deviation</td></tr><tr><td style="white-space:nowrap">7TET<a name="IBSICS-7TET"> </a></td><td>Coefficient of variation</td></tr><tr><td style="white-space:nowrap">9S40<a name="IBSICS-9S40"> </a></td><td>Quartile coefficient of dispersion</td></tr><tr><td style="white-space:nowrap">N8CA<a name="IBSICS-N8CA"> </a></td><td>Energy</td></tr><tr><td style="white-space:nowrap">5ZWQ<a name="IBSICS-5ZWQ"> </a></td><td>Root mean square</td></tr><tr><td style="white-space:nowrap">ZVCW<a name="IBSICS-ZVCW"> </a></td><td>Intensity histogram features</td></tr><tr><td style="white-space:nowrap">X6K6<a name="IBSICS-X6K6"> </a></td><td>Intensity histogram mean</td></tr><tr><td style="white-space:nowrap">CH89<a name="IBSICS-CH89"> </a></td><td>Intensity histogram variance</td></tr><tr><td style="white-space:nowrap">88K1<a name="IBSICS-88K1"> </a></td><td>Intensity histogram skewness</td></tr><tr><td style="white-space:nowrap">C3I7<a name="IBSICS-C3I7"> </a></td><td>Intensity histogram kurtosis</td></tr><tr><td style="white-space:nowrap">WIFQ<a name="IBSICS-WIFQ"> </a></td><td>Intensity histogram median</td></tr><tr><td style="white-space:nowrap">1PR8<a name="IBSICS-1PR8"> </a></td><td>Intensity histogram minimum grey level</td></tr><tr><td style="white-space:nowrap">GPMT<a name="IBSICS-GPMT"> </a></td><td>Intensity histogram 10th percentile</td></tr><tr><td style="white-space:nowrap">OZ0C<a name="IBSICS-OZ0C"> </a></td><td>Intensity histogram 90th percentile</td></tr><tr><td style="white-space:nowrap">3NCY<a name="IBSICS-3NCY"> </a></td><td>Intensity histogram maximum grey level</td></tr><tr><td style="white-space:nowrap">AMMC<a name="IBSICS-AMMC"> </a></td><td>Intensity histogram mode</td></tr><tr><td style="white-space:nowrap">WR0O<a name="IBSICS-WR0O"> </a></td><td>Intensity histogram interquartile range</td></tr><tr><td style="white-space:nowrap">5Z3W<a name="IBSICS-5Z3W"> </a></td><td>Intensity histogram range</td></tr><tr><td style="white-space:nowrap">D2ZX<a name="IBSICS-D2ZX"> </a></td><td>Intensity histogram mean absolute deviation</td></tr><tr><td style="white-space:nowrap">WRZB<a name="IBSICS-WRZB"> </a></td><td>Intensity histogram robust mean absolute deviation</td></tr><tr><td style="white-space:nowrap">4RNL<a name="IBSICS-4RNL"> </a></td><td>Intensity histogram median absolute deviation</td></tr><tr><td style="white-space:nowrap">CWYJ<a name="IBSICS-CWYJ"> </a></td><td>Intensity histogram coefficient of variation</td></tr><tr><td style="white-space:nowrap">SLWD<a name="IBSICS-SLWD"> </a></td><td>Intensity histogram quartile coefficient of dispersion</td></tr><tr><td style="white-space:nowrap">TLU2<a name="IBSICS-TLU2"> </a></td><td>Intensity histogram entropy</td></tr><tr><td style="white-space:nowrap">BJ5W<a name="IBSICS-BJ5W"> </a></td><td>Intensity histogram uniformity</td></tr><tr><td style="white-space:nowrap">12CE<a name="IBSICS-12CE"> </a></td><td>Maximum histogram gradient</td></tr><tr><td style="white-space:nowrap">8E6O<a name="IBSICS-8E6O"> </a></td><td>Maximum histogram gradient grey level</td></tr><tr><td style="white-space:nowrap">VQB3<a name="IBSICS-VQB3"> </a></td><td>Minimum histogram gradient</td></tr><tr><td style="white-space:nowrap">RHQZ<a name="IBSICS-RHQZ"> </a></td><td>Minimum histogram gradient grey level</td></tr><tr><td style="white-space:nowrap">P88C<a name="IBSICS-P88C"> </a></td><td>Intensity-volume histogram features</td></tr><tr><td style="white-space:nowrap">BC2M<a name="IBSICS-BC2M"> </a></td><td>Volume at intensity fraction</td></tr><tr><td style="white-space:nowrap">GBPN<a name="IBSICS-GBPN"> </a></td><td>Intensity at volume fraction</td></tr><tr><td style="white-space:nowrap">DDTU<a name="IBSICS-DDTU"> </a></td><td>Volume fraction difference between intensity fractions</td></tr><tr><td style="white-space:nowrap">CNV2<a name="IBSICS-CNV2"> </a></td><td>Intensity fraction difference between volume fractions</td></tr><tr><td style="white-space:nowrap">9CMM<a name="IBSICS-9CMM"> </a></td><td>Area under IVH curve</td></tr><tr><td style="white-space:nowrap">LFYI<a name="IBSICS-LFYI"> </a></td><td>Grey level co-occurrence based features</td></tr><tr><td style="white-space:nowrap">GYBY<a name="IBSICS-GYBY"> </a></td><td>Joint maximum</td></tr><tr><td style="white-space:nowrap">60VM<a name="IBSICS-60VM"> </a></td><td>Joint average</td></tr><tr><td style="white-space:nowrap">UR99<a name="IBSICS-UR99"> </a></td><td>Joint variance</td></tr><tr><td style="white-space:nowrap">TU9B<a name="IBSICS-TU9B"> </a></td><td>Joint entropy</td></tr><tr><td style="white-space:nowrap">TF7R<a name="IBSICS-TF7R"> </a></td><td>Difference average</td></tr><tr><td style="white-space:nowrap">D3YU<a name="IBSICS-D3YU"> </a></td><td>Difference variance</td></tr><tr><td style="white-space:nowrap">NTRS<a name="IBSICS-NTRS"> </a></td><td>Difference entropy</td></tr><tr><td style="white-space:nowrap">ZGXS<a name="IBSICS-ZGXS"> </a></td><td>Sum average</td></tr><tr><td style="white-space:nowrap">OEEB<a name="IBSICS-OEEB"> </a></td><td>Sum variance</td></tr><tr><td style="white-space:nowrap">P6QZ<a name="IBSICS-P6QZ"> </a></td><td>Sum entropy</td></tr><tr><td style="white-space:nowrap">8ZQL<a name="IBSICS-8ZQL"> </a></td><td>Angular second moment</td></tr><tr><td style="white-space:nowrap">ACUI<a name="IBSICS-ACUI"> </a></td><td>Contrast</td></tr><tr><td style="white-space:nowrap">8S9J<a name="IBSICS-8S9J"> </a></td><td>Dissimilarity</td></tr><tr><td style="white-space:nowrap">IB1Z<a name="IBSICS-IB1Z"> </a></td><td>Inverse difference</td></tr><tr><td style="white-space:nowrap">NDRX<a name="IBSICS-NDRX"> </a></td><td>Normalised inverse difference</td></tr><tr><td style="white-space:nowrap">WF0Z<a name="IBSICS-WF0Z"> </a></td><td>Inverse difference moment</td></tr><tr><td style="white-space:nowrap">1QCO<a name="IBSICS-1QCO"> </a></td><td>Normalised inverse difference moment</td></tr><tr><td style="white-space:nowrap">E8JP<a name="IBSICS-E8JP"> </a></td><td>Inverse variance</td></tr><tr><td style="white-space:nowrap">NI2N<a name="IBSICS-NI2N"> </a></td><td>Correlation</td></tr><tr><td style="white-space:nowrap">QWB0<a name="IBSICS-QWB0"> </a></td><td>Autocorrelation</td></tr><tr><td style="white-space:nowrap">DG8W<a name="IBSICS-DG8W"> </a></td><td>Cluster tendency</td></tr><tr><td style="white-space:nowrap">7NFM<a name="IBSICS-7NFM"> </a></td><td>Cluster shade</td></tr><tr><td style="white-space:nowrap">AE86<a name="IBSICS-AE86"> </a></td><td>Cluster prominence</td></tr><tr><td style="white-space:nowrap">R8DG<a name="IBSICS-R8DG"> </a></td><td>First measure of information correlation</td></tr><tr><td style="white-space:nowrap">JN9H<a name="IBSICS-JN9H"> </a></td><td>Second measure of information correlation</td></tr><tr><td style="white-space:nowrap">TP0I<a name="IBSICS-TP0I"> </a></td><td>Grey level run length based features</td></tr><tr><td style="white-space:nowrap">22OV<a name="IBSICS-22OV"> </a></td><td>Short runs emphasis</td></tr><tr><td style="white-space:nowrap">W4KF<a name="IBSICS-W4KF"> </a></td><td>Long runs emphasis</td></tr><tr><td style="white-space:nowrap">V3SW<a name="IBSICS-V3SW"> </a></td><td>Low grey level run emphasis</td></tr><tr><td style="white-space:nowrap">G3QZ<a name="IBSICS-G3QZ"> </a></td><td>High grey level run emphasis</td></tr><tr><td style="white-space:nowrap">HTZT<a name="IBSICS-HTZT"> </a></td><td>Short run low grey level emphasis</td></tr><tr><td style="white-space:nowrap">GD3A<a name="IBSICS-GD3A"> </a></td><td>Short run high grey level emphasis</td></tr><tr><td style="white-space:nowrap">IVPO<a name="IBSICS-IVPO"> </a></td><td>Long run low grey level emphasis</td></tr><tr><td style="white-space:nowrap">3KUM<a name="IBSICS-3KUM"> </a></td><td>Long run high grey level emphasis</td></tr><tr><td style="white-space:nowrap">R5YN<a name="IBSICS-R5YN"> </a></td><td>Grey level non-uniformity</td></tr><tr><td style="white-space:nowrap">OVBL<a name="IBSICS-OVBL"> </a></td><td>Normalised grey level non-uniformity</td></tr><tr><td style="white-space:nowrap">W92Y<a name="IBSICS-W92Y"> </a></td><td>Run length non-uniformity</td></tr><tr><td style="white-space:nowrap">IC23<a name="IBSICS-IC23"> </a></td><td>Normalised run length non-uniformity</td></tr><tr><td style="white-space:nowrap">9ZK5<a name="IBSICS-9ZK5"> </a></td><td>Run percentage</td></tr><tr><td style="white-space:nowrap">8CE5<a name="IBSICS-8CE5"> </a></td><td>Grey level variance</td></tr><tr><td style="white-space:nowrap">SXLW<a name="IBSICS-SXLW"> </a></td><td>Run length variance</td></tr><tr><td style="white-space:nowrap">HJ9O<a name="IBSICS-HJ9O"> </a></td><td>Run entropy</td></tr><tr><td style="white-space:nowrap">9SAK<a name="IBSICS-9SAK"> </a></td><td>Grey level size zone based features</td></tr><tr><td style="white-space:nowrap">5QRC<a name="IBSICS-5QRC"> </a></td><td>Small zone emphasis</td></tr><tr><td style="white-space:nowrap">48P8<a name="IBSICS-48P8"> </a></td><td>Large zone emphasis</td></tr><tr><td style="white-space:nowrap">XMSY<a name="IBSICS-XMSY"> </a></td><td>Low grey level zone emphasis</td></tr><tr><td style="white-space:nowrap">5GN9<a name="IBSICS-5GN9"> </a></td><td>High grey level zone emphasis</td></tr><tr><td style="white-space:nowrap">5RAI<a name="IBSICS-5RAI"> </a></td><td>Small zone low grey level emphasis</td></tr><tr><td style="white-space:nowrap">HW1V<a name="IBSICS-HW1V"> </a></td><td>Small zone high grey level emphasis</td></tr><tr><td style="white-space:nowrap">YH51<a name="IBSICS-YH51"> </a></td><td>Large zone low grey level emphasis</td></tr><tr><td style="white-space:nowrap">J17V<a name="IBSICS-J17V"> </a></td><td>Large zone high grey level emphasis</td></tr><tr><td style="white-space:nowrap">JNSA<a name="IBSICS-JNSA"> </a></td><td>Grey level non-uniformity</td></tr><tr><td style="white-space:nowrap">Y1RO<a name="IBSICS-Y1RO"> </a></td><td>Normalised grey level non-uniformity</td></tr><tr><td style="white-space:nowrap">4JP3<a name="IBSICS-4JP3"> </a></td><td>Zone size non-uniformity</td></tr><tr><td style="white-space:nowrap">VB3A<a name="IBSICS-VB3A"> </a></td><td>Normalised zone size non-uniformity</td></tr><tr><td style="white-space:nowrap">P30P<a name="IBSICS-P30P"> </a></td><td>Zone percentage</td></tr><tr><td style="white-space:nowrap">BYLV<a name="IBSICS-BYLV"> </a></td><td>Grey level variance</td></tr><tr><td style="white-space:nowrap">3NSA<a name="IBSICS-3NSA"> </a></td><td>Zone size variance</td></tr><tr><td style="white-space:nowrap">GU8N<a name="IBSICS-GU8N"> </a></td><td>Zone size entropy</td></tr><tr><td style="white-space:nowrap">VMDZ<a name="IBSICS-VMDZ"> </a></td><td>Grey level distance zone based features</td></tr><tr><td style="white-space:nowrap">0GBI<a name="IBSICS-0GBI"> </a></td><td>Small distance emphasis</td></tr><tr><td style="white-space:nowrap">MB4I<a name="IBSICS-MB4I"> </a></td><td>Large distance emphasis</td></tr><tr><td style="white-space:nowrap">S1RA<a name="IBSICS-S1RA"> </a></td><td>Low grey level zone emphasis</td></tr><tr><td style="white-space:nowrap">K26C<a name="IBSICS-K26C"> </a></td><td>High grey level zone emphasis</td></tr><tr><td style="white-space:nowrap">RUVG<a name="IBSICS-RUVG"> </a></td><td>Small distance low grey level emphasis</td></tr><tr><td style="white-space:nowrap">DKNJ<a name="IBSICS-DKNJ"> </a></td><td>Small distance high grey level emphasis</td></tr><tr><td style="white-space:nowrap">A7WM<a name="IBSICS-A7WM"> </a></td><td>Large distance low grey level emphasis</td></tr><tr><td style="white-space:nowrap">KLTH<a name="IBSICS-KLTH"> </a></td><td>Large distance high grey level emphasis</td></tr><tr><td style="white-space:nowrap">VFT7<a name="IBSICS-VFT7"> </a></td><td>Grey level non-uniformity</td></tr><tr><td style="white-space:nowrap">7HP3<a name="IBSICS-7HP3"> </a></td><td>Normalised grey level non-uniformity</td></tr><tr><td style="white-space:nowrap">V294<a name="IBSICS-V294"> </a></td><td>Zone distance non-uniformity</td></tr><tr><td style="white-space:nowrap">IATH<a name="IBSICS-IATH"> </a></td><td>Zone distance non-uniformity normalised</td></tr><tr><td style="white-space:nowrap">VIWW<a name="IBSICS-VIWW"> </a></td><td>Zone percentage</td></tr><tr><td style="white-space:nowrap">QK93<a name="IBSICS-QK93"> </a></td><td>Grey level variance</td></tr><tr><td style="white-space:nowrap">7WT1<a name="IBSICS-7WT1"> </a></td><td>Zone distance variance</td></tr><tr><td style="white-space:nowrap">GBDU<a name="IBSICS-GBDU"> </a></td><td>Zone distance entropy</td></tr><tr><td style="white-space:nowrap">IPET<a name="IBSICS-IPET"> </a></td><td>Neighbourhood grey tone difference based features</td></tr><tr><td style="white-space:nowrap">QCDE<a name="IBSICS-QCDE"> </a></td><td>Coarseness</td></tr><tr><td style="white-space:nowrap">65HE<a name="IBSICS-65HE"> </a></td><td>Contrast</td></tr><tr><td style="white-space:nowrap">NQ30<a name="IBSICS-NQ30"> </a></td><td>Busyness</td></tr><tr><td style="white-space:nowrap">HDEZ<a name="IBSICS-HDEZ"> </a></td><td>Complexity</td></tr><tr><td style="white-space:nowrap">1X9X<a name="IBSICS-1X9X"> </a></td><td>Strength</td></tr><tr><td style="white-space:nowrap">REK0<a name="IBSICS-REK0"> </a></td><td>Neighbouring grey level dependence based features</td></tr><tr><td style="white-space:nowrap">SODN<a name="IBSICS-SODN"> </a></td><td>Low dependence emphasis</td></tr><tr><td style="white-space:nowrap">IMOQ<a name="IBSICS-IMOQ"> </a></td><td>High dependence emphasis</td></tr><tr><td style="white-space:nowrap">TL9H<a name="IBSICS-TL9H"> </a></td><td>Low grey level count emphasis</td></tr><tr><td style="white-space:nowrap">OAE7<a name="IBSICS-OAE7"> </a></td><td>High grey level count emphasis</td></tr><tr><td style="white-space:nowrap">EQ3F<a name="IBSICS-EQ3F"> </a></td><td>Low dependence low grey level emphasis</td></tr><tr><td style="white-space:nowrap">JA6D<a name="IBSICS-JA6D"> </a></td><td>Low dependence high grey level emphasis</td></tr><tr><td style="white-space:nowrap">NBZI<a name="IBSICS-NBZI"> </a></td><td>High dependence low grey level emphasis</td></tr><tr><td style="white-space:nowrap">9QMG<a name="IBSICS-9QMG"> </a></td><td>High dependence high grey level emphasis</td></tr><tr><td style="white-space:nowrap">FP8K<a name="IBSICS-FP8K"> </a></td><td>Grey level non-uniformity</td></tr><tr><td style="white-space:nowrap">5SPA<a name="IBSICS-5SPA"> </a></td><td>Normalised grey level non-uniformity</td></tr><tr><td style="white-space:nowrap">Z87G<a name="IBSICS-Z87G"> </a></td><td>Dependence count non-uniformity</td></tr><tr><td style="white-space:nowrap">OKJI<a name="IBSICS-OKJI"> </a></td><td>Dependence count non-uniformity normalised</td></tr><tr><td style="white-space:nowrap">6XV8<a name="IBSICS-6XV8"> </a></td><td>Dependence count percentage</td></tr><tr><td style="white-space:nowrap">1PFV<a name="IBSICS-1PFV"> </a></td><td>Grey level variance</td></tr><tr><td style="white-space:nowrap">DNX2<a name="IBSICS-DNX2"> </a></td><td>Dependence count variance</td></tr><tr><td style="white-space:nowrap">FCBV<a name="IBSICS-FCBV"> </a></td><td>Dependence count entropy</td></tr><tr><td style="white-space:nowrap">CAS9<a name="IBSICS-CAS9"> </a></td><td>Dependence count energy</td></tr><tr><td style="white-space:nowrap">5QB6<a name="IBSICS-5QB6"> </a></td><td>feature aggregation</td></tr><tr><td style="white-space:nowrap">3IDG<a name="IBSICS-3IDG"> </a></td><td>feature computed per slice, and averaged over slices</td></tr><tr><td style="white-space:nowrap">DHQ4<a name="IBSICS-DHQ4"> </a></td><td>feature computed over the volume</td></tr><tr><td style="white-space:nowrap">BTW3<a name="IBSICS-BTW3"> </a></td><td>feature computed from 2D directional matrix and averaged over 2D directions and slices</td></tr><tr><td style="white-space:nowrap">SUJT<a name="IBSICS-SUJT"> </a></td><td>feature computed from a single matrix after merging 2D directional matrices per slice, and averaged over slices</td></tr><tr><td style="white-space:nowrap">ZW7Z<a name="IBSICS-ZW7Z"> </a></td><td>feature computed from a single matrix after merging all 2D directional matrices</td></tr><tr><td style="white-space:nowrap">ITBB<a name="IBSICS-ITBB"> </a></td><td>feature computed from 3D directional matrix and averaged over 3D directions</td></tr><tr><td style="white-space:nowrap">IAZD<a name="IBSICS-IAZD"> </a></td><td>feature computed from a single matrix after merging all 3D directional matrices</td></tr><tr><td style="white-space:nowrap">8QNN<a name="IBSICS-8QNN"> </a></td><td>feature computed from 2D matrix and averaged over slices</td></tr><tr><td style="white-space:nowrap">62GR<a name="IBSICS-62GR"> </a></td><td>feature computed from a single matrix after merging all 2D matrices</td></tr><tr><td style="white-space:nowrap">KOBO<a name="IBSICS-KOBO"> </a></td><td>feature computed from 3D matrix</td></tr><tr><td style="white-space:nowrap">MPUJ<a name="IBSICS-MPUJ"> </a></td><td>grid distances</td></tr><tr><td style="white-space:nowrap">LIFZ<a name="IBSICS-LIFZ"> </a></td><td>manhattan norm</td></tr><tr><td style="white-space:nowrap">G9EV<a name="IBSICS-G9EV"> </a></td><td>euclidean norm</td></tr><tr><td style="white-space:nowrap">PVMT<a name="IBSICS-PVMT"> </a></td><td>chebyshev norm</td></tr><tr><td style="white-space:nowrap">ECJF<a name="IBSICS-ECJF"> </a></td><td>ROI submasks</td></tr><tr><td style="white-space:nowrap">SEFI<a name="IBSICS-SEFI"> </a></td><td>intensity mask</td></tr><tr><td style="white-space:nowrap">G5KJ<a name="IBSICS-G5KJ"> </a></td><td>morphological mask</td></tr><tr><td style="white-space:nowrap">IF9H<a name="IBSICS-IF9H"> </a></td><td>re-segmentation</td></tr><tr><td style="white-space:nowrap">USB3<a name="IBSICS-USB3"> </a></td><td>range re-segmentation</td></tr><tr><td style="white-space:nowrap">7ACA<a name="IBSICS-7ACA"> </a></td><td>outlier filtering</td></tr><tr><td style="white-space:nowrap">6CK8<a name="IBSICS-6CK8"> </a></td><td>distance weighting</td></tr><tr><td style="white-space:nowrap">LQD8<a name="IBSICS-LQD8"> </a></td><td>volume voxel representation</td></tr><tr><td style="white-space:nowrap">4KW8<a name="IBSICS-4KW8"> </a></td><td>volume voxel point set representation</td></tr><tr><td style="white-space:nowrap">WRJH<a name="IBSICS-WRJH"> </a></td><td>volume voxel mesh representation</td></tr><tr><td style="white-space:nowrap">4R0B<a name="IBSICS-4R0B"> </a></td><td>discretisation</td></tr><tr><td style="white-space:nowrap">Q3RU<a name="IBSICS-Q3RU"> </a></td><td>fixed bin size</td></tr><tr><td style="white-space:nowrap">K15C<a name="IBSICS-K15C"> </a></td><td>fixed bin number</td></tr><tr><td style="white-space:nowrap">23XZ<a name="IBSICS-23XZ"> </a></td><td>data conversion</td></tr><tr><td style="white-space:nowrap">PCDE<a name="IBSICS-PCDE"> </a></td><td>image post-acquisition processing</td></tr><tr><td style="white-space:nowrap">OQYT<a name="IBSICS-OQYT"> </a></td><td>segmentation</td></tr><tr><td style="white-space:nowrap">VTM2<a name="IBSICS-VTM2"> </a></td><td>interpolation</td></tr><tr><td style="white-space:nowrap">68QD<a name="IBSICS-68QD"> </a></td><td>intensity rounding after interpolation</td></tr><tr><td style="white-space:nowrap">E8H9<a name="IBSICS-E8H9"> </a></td><td>roi mask partial volume</td></tr><tr><td style="white-space:nowrap">UMPJ<a name="IBSICS-UMPJ"> </a></td><td>interpolation grid</td></tr><tr><td style="white-space:nowrap">58MB<a name="IBSICS-58MB"> </a></td><td>fit to original grid</td></tr><tr><td style="white-space:nowrap">SBKJ<a name="IBSICS-SBKJ"> </a></td><td>align grid origins</td></tr><tr><td style="white-space:nowrap">3WE3<a name="IBSICS-3WE3"> </a></td><td>align grid centers</td></tr><tr><td style="white-space:nowrap">026Q<a name="IBSICS-026Q"> </a></td><td>align grid centers interpolation grid dimensions</td></tr><tr><td style="white-space:nowrap">QCY4<a name="IBSICS-QCY4"> </a></td><td>align grid centers grid positions</td></tr><tr><td style="white-space:nowrap">1OBP<a name="IBSICS-1OBP"> </a></td><td>ROI extraction</td></tr><tr><td style="white-space:nowrap">JJUI<a name="IBSICS-JJUI"> </a></td><td>feature computed from a single matrix after merging 2D directional matrices per direction, and averaged over directions</td></tr><tr><td style="white-space:nowrap">GFJV<a name="IBSICS-GFJV"> </a></td><td>Calculation Run Space</td></tr><tr><td style="white-space:nowrap">CINW<a name="IBSICS-CINW"> </a></td><td>FeatureParameterSpace</td></tr><tr><td style="white-space:nowrap">1XL1<a name="IBSICS-1XL1"> </a></td><td>texture matrix aggregation parameters</td></tr><tr><td style="white-space:nowrap">8QU8<a name="IBSICS-8QU8"> </a></td><td>intensity discretization parameters</td></tr><tr><td style="white-space:nowrap">I7X7<a name="IBSICS-I7X7"> </a></td><td>histogram equalisation</td></tr><tr><td style="white-space:nowrap">SSX6<a name="IBSICS-SSX6"> </a></td><td>Lloyd-Max discretisation</td></tr><tr><td style="white-space:nowrap">OWOH<a name="IBSICS-OWOH"> </a></td><td>feature specific parameters</td></tr><tr><td style="white-space:nowrap">9LZ9<a name="IBSICS-9LZ9"> </a></td><td>asymmetrical co-occurrence matrix</td></tr><tr><td style="white-space:nowrap">2IQV<a name="IBSICS-2IQV"> </a></td><td>symmetrical co-occurrence matrix</td></tr><tr><td style="white-space:nowrap">3S2S<a name="IBSICS-3S2S"> </a></td><td>distance weighting function</td></tr><tr><td style="white-space:nowrap">V0L6<a name="IBSICS-V0L6"> </a></td><td>no distance weighting</td></tr><tr><td style="white-space:nowrap">4S5Z<a name="IBSICS-4S5Z"> </a></td><td>GLCM specific parameters</td></tr><tr><td style="white-space:nowrap">0OW5<a name="IBSICS-0OW5"> </a></td><td>GLRLM specific parameters</td></tr><tr><td style="white-space:nowrap">6SLW<a name="IBSICS-6SLW"> </a></td><td>GLDZM specific parameters</td></tr><tr><td style="white-space:nowrap">MV8M<a name="IBSICS-MV8M"> </a></td><td>NGTDM specific parameters</td></tr><tr><td style="white-space:nowrap">KQW7<a name="IBSICS-KQW7"> </a></td><td>IntVolSpecificParameters</td></tr><tr><td style="white-space:nowrap">X6TI<a name="IBSICS-X6TI"> </a></td><td>MaximumBound</td></tr><tr><td style="white-space:nowrap">V2QW<a name="IBSICS-V2QW"> </a></td><td>MinimumBound</td></tr><tr><td style="white-space:nowrap">G5MN<a name="IBSICS-G5MN"> </a></td><td>isovalue algorithm</td></tr><tr><td style="white-space:nowrap">CRAM<a name="IBSICS-CRAM"> </a></td><td>marching cube algorithm</td></tr><tr><td style="white-space:nowrap">FFWD<a name="IBSICS-FFWD"> </a></td><td>Morphological features specific parameters</td></tr><tr><td style="white-space:nowrap">VXRR<a name="IBSICS-VXRR"> </a></td><td>dependence coarseness parameter</td></tr><tr><td style="white-space:nowrap">NV3D<a name="IBSICS-NV3D"> </a></td><td>cubic convolution interpolation</td></tr><tr><td style="white-space:nowrap">2I2N<a name="IBSICS-2I2N"> </a></td><td>cubic spline interpolation</td></tr><tr><td style="white-space:nowrap">X13G<a name="IBSICS-X13G"> </a></td><td>linear interpolation</td></tr><tr><td style="white-space:nowrap">EY9L<a name="IBSICS-EY9L"> </a></td><td>nearest neighbour interpolation</td></tr><tr><td style="white-space:nowrap">QP79<a name="IBSICS-QP79"> </a></td><td>re-segmentation parameters</td></tr><tr><td style="white-space:nowrap">LQBA<a name="IBSICS-LQBA"> </a></td><td>spatial filter properties</td></tr><tr><td style="white-space:nowrap">WZSA<a name="IBSICS-WZSA"> </a></td><td>wavelet basis function</td></tr><tr><td style="white-space:nowrap">QVI9<a name="IBSICS-QVI9"> </a></td><td>biorthogonal 3.5 wavelet</td></tr><tr><td style="white-space:nowrap">2CYL<a name="IBSICS-2CYL"> </a></td><td>coiflet 1 wavelet</td></tr><tr><td style="white-space:nowrap">FR3E<a name="IBSICS-FR3E"> </a></td><td>haar wavelet</td></tr><tr><td style="white-space:nowrap">P8W0<a name="IBSICS-P8W0"> </a></td><td>frequency</td></tr><tr><td style="white-space:nowrap">IA9Q<a name="IBSICS-IA9Q"> </a></td><td>wavelet filter direction</td></tr><tr><td style="white-space:nowrap">LCNJ<a name="IBSICS-LCNJ"> </a></td><td>HHH wavelet direction</td></tr><tr><td style="white-space:nowrap">S7CG<a name="IBSICS-S7CG"> </a></td><td>HHL wavelet direction</td></tr><tr><td style="white-space:nowrap">UFRT<a name="IBSICS-UFRT"> </a></td><td>HLH wavelet direction</td></tr><tr><td style="white-space:nowrap">RZ96<a name="IBSICS-RZ96"> </a></td><td>HLL wavelet direction</td></tr><tr><td style="white-space:nowrap">CJ43<a name="IBSICS-CJ43"> </a></td><td>LHH wavelet direction</td></tr><tr><td style="white-space:nowrap">76ZU<a name="IBSICS-76ZU"> </a></td><td>LHL wavelet direction</td></tr><tr><td style="white-space:nowrap">NTRN<a name="IBSICS-NTRN"> </a></td><td>LLL wavelet direction</td></tr><tr><td style="white-space:nowrap">6FPA<a name="IBSICS-6FPA"> </a></td><td>LLH wavelet direction</td></tr><tr><td style="white-space:nowrap">G6RO<a name="IBSICS-G6RO"> </a></td><td>image grey level rounding</td></tr><tr><td style="white-space:nowrap">IZBZ<a name="IBSICS-IZBZ"> </a></td><td>edge enhancement</td></tr><tr><td style="white-space:nowrap">ZS1T<a name="IBSICS-ZS1T"> </a></td><td>HistoEqualization</td></tr><tr><td style="white-space:nowrap">Q2ZB<a name="IBSICS-Q2ZB"> </a></td><td>LocalAreaHistoEqualization</td></tr><tr><td style="white-space:nowrap">OB71<a name="IBSICS-OB71"> </a></td><td>ImageSpace</td></tr><tr><td style="white-space:nowrap">K7BL<a name="IBSICS-K7BL"> </a></td><td>ImageVolume</td></tr><tr><td style="white-space:nowrap">OH8W<a name="IBSICS-OH8W"> </a></td><td>ROIMask</td></tr><tr><td style="white-space:nowrap">GF95<a name="IBSICS-GF95"> </a></td><td>IntensityHistogramStandardDeviation</td></tr><tr><td style="white-space:nowrap">URTB<a name="IBSICS-URTB"> </a></td><td>IntensityHistogramTotalEnergy</td></tr><tr><td style="white-space:nowrap">5ABU<a name="IBSICS-5ABU"> </a></td><td>Maximum2DDiameterColumn</td></tr><tr><td style="white-space:nowrap">4S59<a name="IBSICS-4S59"> </a></td><td>Maximum2DDiameterSlice</td></tr><tr><td style="white-space:nowrap">K57E<a name="IBSICS-K57E"> </a></td><td>Maximum2DDiameterRow</td></tr><tr><td style="white-space:nowrap">EGTD<a name="IBSICS-EGTD"> </a></td><td>Textural</td></tr><tr><td style="white-space:nowrap">5XL6<a name="IBSICS-5XL6"> </a></td><td>GLCM_MaximalCorrelationCoefficient</td></tr><tr><td style="white-space:nowrap">9U4X<a name="IBSICS-9U4X"> </a></td><td>ZeroOrder</td></tr><tr><td style="white-space:nowrap">PWN1<a name="IBSICS-PWN1"> </a></td><td>I10</td></tr><tr><td style="white-space:nowrap">BOHI<a name="IBSICS-BOHI"> </a></td><td>I90</td></tr><tr><td style="white-space:nowrap">JXJA<a name="IBSICS-JXJA"> </a></td><td>I10minusI90</td></tr><tr><td style="white-space:nowrap">NK6P<a name="IBSICS-NK6P"> </a></td><td>V10</td></tr><tr><td style="white-space:nowrap">4279<a name="IBSICS-4279"> </a></td><td>V90</td></tr><tr><td style="white-space:nowrap">WITY<a name="IBSICS-WITY"> </a></td><td>V10minusV90</td></tr><tr><td style="white-space:nowrap">J04R<a name="IBSICS-J04R"> </a></td><td>NGLDMSpecificParameters</td></tr><tr><td style="white-space:nowrap">ASHO<a name="IBSICS-ASHO"> </a></td><td>Voxel</td></tr><tr><td style="white-space:nowrap">NOVP<a name="IBSICS-NOVP"> </a></td><td>ImageFilterSpace</td></tr><tr><td style="white-space:nowrap">XSJL<a name="IBSICS-XSJL"> </a></td><td>AbsoluteFiltering</td></tr><tr><td style="white-space:nowrap">1WTP<a name="IBSICS-1WTP"> </a></td><td>ButterworthFilter</td></tr><tr><td style="white-space:nowrap">PJBO<a name="IBSICS-PJBO"> </a></td><td>ColliageFilter</td></tr><tr><td style="white-space:nowrap">FTIJ<a name="IBSICS-FTIJ"> </a></td><td>MedianFilter</td></tr><tr><td style="white-space:nowrap">9IQY<a name="IBSICS-9IQY"> </a></td><td>SavitzkyGolayFilter</td></tr><tr><td style="white-space:nowrap">SUUU<a name="IBSICS-SUUU"> </a></td><td>WaveletFilter</td></tr><tr><td style="white-space:nowrap">WVUQ<a name="IBSICS-WVUQ"> </a></td><td>ROIMask_PartialVolumeCutOff</td></tr><tr><td style="white-space:nowrap">REY6<a name="IBSICS-REY6"> </a></td><td>SegmentationMethods</td></tr><tr><td style="white-space:nowrap">SBDE<a name="IBSICS-SBDE"> </a></td><td>Automated</td></tr><tr><td style="white-space:nowrap">OAX6<a name="IBSICS-OAX6"> </a></td><td>Manual</td></tr><tr><td style="white-space:nowrap">TGHU<a name="IBSICS-TGHU"> </a></td><td>SemiAutomated</td></tr><tr><td style="white-space:nowrap">6VTB<a name="IBSICS-6VTB"> </a></td><td>SupervisedMethods</td></tr><tr><td style="white-space:nowrap">TV5D<a name="IBSICS-TV5D"> </a></td><td>DeepLearning</td></tr><tr><td style="white-space:nowrap">KJIF<a name="IBSICS-KJIF"> </a></td><td>NeuralNetwork</td></tr><tr><td style="white-space:nowrap">D3RT<a name="IBSICS-D3RT"> </a></td><td>SupportVectorMachine</td></tr><tr><td style="white-space:nowrap">ZJJY<a name="IBSICS-ZJJY"> </a></td><td>UnsupervisedMethods</td></tr><tr><td style="white-space:nowrap">2KAW<a name="IBSICS-2KAW"> </a></td><td>CMeansFuzzy</td></tr><tr><td style="white-space:nowrap">OPMG<a name="IBSICS-OPMG"> </a></td><td>Kmean</td></tr><tr><td style="white-space:nowrap">HF5R<a name="IBSICS-HF5R"> </a></td><td>Manual</td></tr><tr><td style="white-space:nowrap">W455<a name="IBSICS-W455"> </a></td><td>InPolygon</td></tr><tr><td style="white-space:nowrap">8LVU<a name="IBSICS-8LVU"> </a></td><td>RayCasting</td></tr><tr><td style="white-space:nowrap">WAB9<a name="IBSICS-WAB9"> </a></td><td>EdgeBased</td></tr><tr><td style="white-space:nowrap">XL0Q<a name="IBSICS-XL0Q"> </a></td><td>GradientEdgeBased</td></tr><tr><td style="white-space:nowrap">N20K<a name="IBSICS-N20K"> </a></td><td>HoughTransformBased</td></tr><tr><td style="white-space:nowrap">VZXY<a name="IBSICS-VZXY"> </a></td><td>LaplacianEdgeBased</td></tr><tr><td style="white-space:nowrap">EOOR<a name="IBSICS-EOOR"> </a></td><td>MarrHildrethEdgeBased</td></tr><tr><td style="white-space:nowrap">Q6DD<a name="IBSICS-Q6DD"> </a></td><td>ModelBased</td></tr><tr><td style="white-space:nowrap">MGZ1<a name="IBSICS-MGZ1"> </a></td><td>ActiveShape</td></tr><tr><td style="white-space:nowrap">SR1C<a name="IBSICS-SR1C"> </a></td><td>AppereanceModel</td></tr><tr><td style="white-space:nowrap">LAQN<a name="IBSICS-LAQN"> </a></td><td>AtlasModel</td></tr><tr><td style="white-space:nowrap">UU0Q<a name="IBSICS-UU0Q"> </a></td><td>DeformableModel</td></tr><tr><td style="white-space:nowrap">ZCA3<a name="IBSICS-ZCA3"> </a></td><td>RegionBased</td></tr><tr><td style="white-space:nowrap">RZ08<a name="IBSICS-RZ08"> </a></td><td>RegionGrowing</td></tr><tr><td style="white-space:nowrap">A9GC<a name="IBSICS-A9GC"> </a></td><td>RegionSplitting</td></tr><tr><td style="white-space:nowrap">TAWD<a name="IBSICS-TAWD"> </a></td><td>SplitAndMerge</td></tr><tr><td style="white-space:nowrap">Q025<a name="IBSICS-Q025"> </a></td><td>WatershedAlgorithm</td></tr><tr><td style="white-space:nowrap">L2WC<a name="IBSICS-L2WC"> </a></td><td>ThresholdingBased</td></tr><tr><td style="white-space:nowrap">E8C8<a name="IBSICS-E8C8"> </a></td><td>GlobalThresholding</td></tr><tr><td style="white-space:nowrap">81TK<a name="IBSICS-81TK"> </a></td><td>LocalAdaptiveThresholding</td></tr><tr><td style="white-space:nowrap">4VLP<a name="IBSICS-4VLP"> </a></td><td>Institution</td></tr><tr><td style="white-space:nowrap">DTYK<a name="IBSICS-DTYK"> </a></td><td>Phantom</td></tr><tr><td style="white-space:nowrap">YUBG<a name="IBSICS-YUBG"> </a></td><td>Software</td></tr><tr><td style="white-space:nowrap">SU1L<a name="IBSICS-SU1L"> </a></td><td>SoftwareProperties</td></tr><tr><td style="white-space:nowrap">59QT<a name="IBSICS-59QT"> </a></td><td>License</td></tr><tr><td style="white-space:nowrap">1DUG<a name="IBSICS-1DUG"> </a></td><td>OpenSource</td></tr><tr><td style="white-space:nowrap">G91N<a name="IBSICS-G91N"> </a></td><td>Proprietary</td></tr><tr><td style="white-space:nowrap">W2J1<a name="IBSICS-W2J1"> </a></td><td>Version</td></tr><tr><td style="white-space:nowrap">M9H0<a name="IBSICS-M9H0"> </a></td><td>VersionStatus</td></tr><tr><td style="white-space:nowrap">4AGS<a name="IBSICS-4AGS"> </a></td><td>Filter application</td></tr><tr><td style="white-space:nowrap">7QSE<a name="IBSICS-7QSE"> </a></td><td>filter in axial plane</td></tr><tr><td style="white-space:nowrap">0ODV<a name="IBSICS-0ODV"> </a></td><td>volumetric filter</td></tr><tr><td style="white-space:nowrap">GBYQ<a name="IBSICS-GBYQ"> </a></td><td>boundary condition</td></tr><tr><td style="white-space:nowrap">Z3VE<a name="IBSICS-Z3VE"> </a></td><td>constant value</td></tr><tr><td style="white-space:nowrap">SIJG<a name="IBSICS-SIJG"> </a></td><td>nearest value</td></tr><tr><td style="white-space:nowrap">Z7YO<a name="IBSICS-Z7YO"> </a></td><td>periodic</td></tr><tr><td style="white-space:nowrap">ZDTV<a name="IBSICS-ZDTV"> </a></td><td>mirror</td></tr><tr><td style="white-space:nowrap">S60F<a name="IBSICS-S60F"> </a></td><td>MeanFilter</td></tr><tr><td style="white-space:nowrap">YNOF<a name="IBSICS-YNOF"> </a></td><td>kernel support</td></tr><tr><td style="white-space:nowrap">8BC3<a name="IBSICS-8BC3"> </a></td><td>GaussianFilter</td></tr><tr><td style="white-space:nowrap">L6PA<a name="IBSICS-L6PA"> </a></td><td>LaplacianFilter</td></tr><tr><td style="white-space:nowrap">41LN<a name="IBSICS-41LN"> </a></td><td>Gaussian envelope scale</td></tr><tr><td style="white-space:nowrap">WGPM<a name="IBSICS-WGPM"> </a></td><td>Filter size cutoff</td></tr><tr><td style="white-space:nowrap">JTXT<a name="IBSICS-JTXT"> </a></td><td>Laws kernel filter</td></tr><tr><td style="white-space:nowrap">JVAD<a name="IBSICS-JVAD"> </a></td><td>Laws kernels</td></tr><tr><td style="white-space:nowrap">B5BZ<a name="IBSICS-B5BZ"> </a></td><td>Laws L3 kernel</td></tr><tr><td style="white-space:nowrap">6HRH<a name="IBSICS-6HRH"> </a></td><td>Laws L5 kernel</td></tr><tr><td style="white-space:nowrap">LJ4T<a name="IBSICS-LJ4T"> </a></td><td>Laws E3 kernel</td></tr><tr><td style="white-space:nowrap">2WPV<a name="IBSICS-2WPV"> </a></td><td>Laws E5 kernel</td></tr><tr><td style="white-space:nowrap">MK5Z<a name="IBSICS-MK5Z"> </a></td><td>Laws S3 kernel</td></tr><tr><td style="white-space:nowrap">RXA1<a name="IBSICS-RXA1"> </a></td><td>Laws S5 kernel</td></tr><tr><td style="white-space:nowrap">4ENO<a name="IBSICS-4ENO"> </a></td><td>Laws W5 kernel</td></tr><tr><td style="white-space:nowrap">3A1W<a name="IBSICS-3A1W"> </a></td><td>Laws R5 kernel</td></tr><tr><td style="white-space:nowrap">O1AQ<a name="IBSICS-O1AQ"> </a></td><td>Pseudo-rotational invariance</td></tr><tr><td style="white-space:nowrap">SVKW<a name="IBSICS-SVKW"> </a></td><td>Response map pooling</td></tr><tr><td style="white-space:nowrap">M1CY<a name="IBSICS-M1CY"> </a></td><td>average</td></tr><tr><td style="white-space:nowrap">0TAW<a name="IBSICS-0TAW"> </a></td><td>max</td></tr><tr><td style="white-space:nowrap">DUX4<a name="IBSICS-DUX4"> </a></td><td>min</td></tr><tr><td style="white-space:nowrap">PQSD<a name="IBSICS-PQSD"> </a></td><td>Laws energy map</td></tr><tr><td style="white-space:nowrap">I176<a name="IBSICS-I176"> </a></td><td>Laws energy map distance</td></tr><tr><td style="white-space:nowrap">Q88H<a name="IBSICS-Q88H"> </a></td><td>GaborFilter</td></tr><tr><td style="white-space:nowrap">S4N6<a name="IBSICS-S4N6"> </a></td><td>Gabor wavelength lambda</td></tr><tr><td style="white-space:nowrap">GDR5<a name="IBSICS-GDR5"> </a></td><td>Gabor ellipticity gamma</td></tr><tr><td style="white-space:nowrap">FQER<a name="IBSICS-FQER"> </a></td><td>Gabor orientation theta</td></tr><tr><td style="white-space:nowrap">XTGK<a name="IBSICS-XTGK"> </a></td><td>Gabor orientation theta step</td></tr><tr><td style="white-space:nowrap">25BO<a name="IBSICS-25BO"> </a></td><td>Separable wavelets</td></tr><tr><td style="white-space:nowrap">BPXS<a name="IBSICS-BPXS"> </a></td><td>Separable wavelet family</td></tr><tr><td style="white-space:nowrap">UOUE<a name="IBSICS-UOUE"> </a></td><td>haar wavelet</td></tr><tr><td style="white-space:nowrap">UK1F<a name="IBSICS-UK1F"> </a></td><td>Separable wavelet filter combination</td></tr><tr><td style="white-space:nowrap">PPF6<a name="IBSICS-PPF6"> </a></td><td>LL wavelet combination</td></tr><tr><td style="white-space:nowrap">P60O<a name="IBSICS-P60O"> </a></td><td>HL wavelet combination</td></tr><tr><td style="white-space:nowrap">M0S1<a name="IBSICS-M0S1"> </a></td><td>LH wavelet combination</td></tr><tr><td style="white-space:nowrap">WQ2Z<a name="IBSICS-WQ2Z"> </a></td><td>HH wavelet combination</td></tr><tr><td style="white-space:nowrap">KZAS<a name="IBSICS-KZAS"> </a></td><td>LLL wavelet combination</td></tr><tr><td style="white-space:nowrap">TY49<a name="IBSICS-TY49"> </a></td><td>LLH wavelet combination</td></tr><tr><td style="white-space:nowrap">4KRX<a name="IBSICS-4KRX"> </a></td><td>LHL wavelet combination</td></tr><tr><td style="white-space:nowrap">UUV9<a name="IBSICS-UUV9"> </a></td><td>HLL wavelet combination</td></tr><tr><td style="white-space:nowrap">UIT8<a name="IBSICS-UIT8"> </a></td><td>LHH wavelet combination</td></tr><tr><td style="white-space:nowrap">QTIT<a name="IBSICS-QTIT"> </a></td><td>HHL wavelet combination</td></tr><tr><td style="white-space:nowrap">8LD2<a name="IBSICS-8LD2"> </a></td><td>HLH wavelet combination</td></tr><tr><td style="white-space:nowrap">OYUC<a name="IBSICS-OYUC"> </a></td><td>HHH wavelet combination</td></tr><tr><td style="white-space:nowrap">GCEK<a name="IBSICS-GCEK"> </a></td><td>wavelet decomposition level</td></tr><tr><td style="white-space:nowrap">PH3R<a name="IBSICS-PH3R"> </a></td><td>Separable wavelet decimated transform</td></tr><tr><td style="white-space:nowrap">CVCQ<a name="IBSICS-CVCQ"> </a></td><td>Separable wavelet undecimated transform</td></tr><tr><td style="white-space:nowrap">LODD<a name="IBSICS-LODD"> </a></td><td>Non-separable wavelet</td></tr><tr><td style="white-space:nowrap">389V<a name="IBSICS-389V"> </a></td><td>Non-separable wavelet family</td></tr><tr><td style="white-space:nowrap">GWM2<a name="IBSICS-GWM2"> </a></td><td>Shannon wavelet</td></tr><tr><td style="white-space:nowrap">PRT7<a name="IBSICS-PRT7"> </a></td><td>Simoncelli wavelet</td></tr><tr><td style="white-space:nowrap">AYRS<a name="IBSICS-AYRS"> </a></td><td>Riesz transformation</td></tr><tr><td style="white-space:nowrap">OC48<a name="IBSICS-OC48"> </a></td><td>Riesz transformation order</td></tr><tr><td style="white-space:nowrap">1SD3<a name="IBSICS-1SD3"> </a></td><td>Riesz filter steering</td></tr><tr><td style="white-space:nowrap">XKP5<a name="IBSICS-XKP5"> </a></td><td>Image dimension</td></tr><tr><td style="white-space:nowrap">1F0N<a name="IBSICS-1F0N"> </a></td><td>k1-direction</td></tr><tr><td style="white-space:nowrap">M2EZ<a name="IBSICS-M2EZ"> </a></td><td>k2-direction</td></tr><tr><td style="white-space:nowrap">R83H<a name="IBSICS-R83H"> </a></td><td>k3-direction</td></tr><tr><td style="white-space:nowrap">Y4GJ<a name="IBSICS-Y4GJ"> </a></td><td>Convolution operation</td></tr><tr><td style="white-space:nowrap">YHT3<a name="IBSICS-YHT3"> </a></td><td>Aggregating intensities from a response map</td></tr><tr><td style="white-space:nowrap">5P3T<a name="IBSICS-5P3T"> </a></td><td>Response map</td></tr><tr><td style="white-space:nowrap">0J1M<a name="IBSICS-0J1M"> </a></td><td>modulus, magnitude or absolute response map</td></tr><tr><td style="white-space:nowrap">V530<a name="IBSICS-V530"> </a></td><td>angle, phase or argument response map</td></tr><tr><td style="white-space:nowrap">F7DI<a name="IBSICS-F7DI"> </a></td><td>real</td></tr><tr><td style="white-space:nowrap">LI3Y<a name="IBSICS-LI3Y"> </a></td><td>imaginary</td></tr><tr><td style="white-space:nowrap">52<a name="IBSICS-52"> </a></td><td>Intensity rounding: Describe how fractional Hounsfield Units are rounded to integer values after interpolation</td></tr><tr><td style="white-space:nowrap">56a<a name="IBSICS-56a"> </a></td><td>Discretisation method: Describe the method used to discretise image intensities</td></tr><tr><td style="white-space:nowrap">56b<a name="IBSICS-56b"> </a></td><td>Discretisation method: Describe the number of bins (FBN) or the bin size (FBS) used for discretisation</td></tr><tr><td style="white-space:nowrap">56c<a name="IBSICS-56c"> </a></td><td>Discretisation method: Describe the lowest intensity in the first bin for FBS discretisation</td></tr><tr><td style="white-space:nowrap">61<a name="IBSICS-61"> </a></td><td>Software availability: Describe which software and version was used to compute image biomarkers</td></tr><tr><td style="white-space:nowrap">62<a name="IBSICS-62"> </a></td><td>Texture matrix aggregation: Define how texture-matrix based biomarkers were computed from underlying texture matrices</td></tr><tr><td style="white-space:nowrap">63<a name="IBSICS-63"> </a></td><td>Distance weighting: Describe which software and version was used to compute image biomarkers</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 10, 2023 11:48+0200">2023-04-10</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+               | <a style="color: #81BEF7" target="_blank" href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Version History  |
+               <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change </a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

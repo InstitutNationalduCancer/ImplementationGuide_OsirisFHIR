@@ -1,0 +1,122 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Observation/fhir-osiris-example-sequencinganalysis-2> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fhir-osiris-example-sequencinganalysis-2"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-analysis";
+       fhir:index 0;
+       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-analysis>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"fhir-osiris-example-sequencinganalysis-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;fhir-osiris-example-sequencinganalysis-2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-sequencing-analysis.html\">Sequencing Analysis</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Omic <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-OsirisCS.html\">Osiris code system</a>#C37-3)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><p><b>focus</b>: <a href=\"Condition-fhir-osiris-example-TumorPathologyEvent-instance-2.html\">Condition/fhir-osiris-example-TumorPathologyEvent-instance-2</a></p><p><b>effective</b>: 2018-02-07</p><p><b>method</b>: O6-12 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (OSIRIS#O6-12)</span></p><p><b>specimen</b>: <a href=\"Specimen-fhir-osiris-example-biologicalsample-2.html\">Specimen/fhir-osiris-example-biologicalsample-2</a></p><p><b>device</b>: <a href=\"Device-fhir-osiris-example-sequencingdevice-2.html\">Device/fhir-osiris-example-sequencingdevice-2</a></p><blockquote><p><b>component</b></p><p><b>code</b>: C0162801 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\">Unified Medical Language System</a>#C0162801)</span></p><p><b>value</b>: RNAseq pipeline v3.2</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: 258049002 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\">Unified Medical Language System</a>#258049002)</span></p><p><b>value</b>: 2017-09-19</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: C3260254 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\">Unified Medical Language System</a>#C3260254)</span></p><p><b>value</b>: 50</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: C0032246 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-umls.html\">Unified Medical Language System</a>#C0032246)</span></p><p><b>value</b>: O13-2 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (OSIRIS#O13-2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Intrachromosomal breakpoint <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA26327-9)</span></p></blockquote></div>"
+  ]; # 
+  fhir:Observation.status [ fhir:value "final"]; # 
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://terminology.arkhn.com/osiris" ];
+       fhir:Coding.code [ fhir:value "C37-3" ]
+     ]
+  ]; # 
+  fhir:Observation.subject [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/L304>;
+     fhir:Reference.reference [ fhir:value "Patient/L304" ]
+  ]; # 
+  fhir:Observation.focus [
+     fhir:index 0;
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Condition/fhir-osiris-example-TumorPathologyEvent-instance-2>;
+     fhir:Reference.reference [ fhir:value "Condition/fhir-osiris-example-TumorPathologyEvent-instance-2" ]
+  ]; # 
+  fhir:Observation.effectiveDateTime [ fhir:value "2018-02-07"^^xsd:date]; # 
+  fhir:Observation.method [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://github.com/siric-osiris/OSIRIS" ];
+       fhir:Coding.code [ fhir:value "O6-12" ]
+     ]
+  ]; # 
+  fhir:Observation.specimen [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Specimen/fhir-osiris-example-biologicalsample-2>;
+     fhir:Reference.reference [ fhir:value "Specimen/fhir-osiris-example-biologicalsample-2" ]
+  ]; # 
+  fhir:Observation.device [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Device/fhir-osiris-example-sequencingdevice-2>;
+     fhir:Reference.reference [ fhir:value "Device/fhir-osiris-example-sequencingdevice-2" ]
+  ]; # 
+  fhir:Observation.component [
+     fhir:index 0;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/umls" ];
+         fhir:Coding.code [ fhir:value "C0162801" ]
+       ]
+     ];
+     fhir:Observation.component.valueString [ fhir:value "RNAseq pipeline v3.2" ]
+  ], [
+     fhir:index 1;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/umls" ];
+         fhir:Coding.code [ fhir:value "258049002" ]
+       ]
+     ];
+     fhir:Observation.component.valueDateTime [ fhir:value "2017-09-19"^^xsd:date ]
+  ], [
+     fhir:index 2;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/umls" ];
+         fhir:Coding.code [ fhir:value "C3260254" ]
+       ]
+     ];
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "50"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/umls" ];
+         fhir:Coding.code [ fhir:value "C0032246" ]
+       ]
+     ];
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://github.com/siric-osiris/OSIRIS" ];
+         fhir:Coding.code [ fhir:value "O13-2" ]
+       ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:LA26327-9;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "LA26327-9" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Observation/fhir-osiris-example-sequencinganalysis-2.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
