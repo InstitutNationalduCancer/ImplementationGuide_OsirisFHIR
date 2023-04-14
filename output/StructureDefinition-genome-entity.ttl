@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "genome-entity"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-genome-entity-definitions.html#MolecularSequence\">MolecularSequence</a><a name=\"MolecularSequence\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/molecularsequence.html\">MolecularSequence</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Information about a biological sequence</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-genome-entity-definitions.html#MolecularSequence.type\" title=\"OSIRIS code of the molecular entity where the genomic alteration is found.\">type</a><a name=\"MolecularSequence.type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Molecular entity<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-GenomeEntityType.html\">Genome entity type Value Set</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-genome-entity-definitions.html#MolecularSequence.coordinateSystem\">coordinateSystem</a><a name=\"MolecularSequence.coordinateSystem\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Base number of coordinate system (0 for 0-based numbering or coordinates, inclusive start, exclusive end, 1 for 1-based numbering, inclusive start, inclusive end)</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">0</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-genome-entity-definitions.html#MolecularSequence.patient\">patient</a><a name=\"MolecularSequence.patient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onco-patient.html\">Oncology Patient</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Who and/or what this is about</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-genome-entity-definitions.html#MolecularSequence.repository\">Slices for repository</a><a name=\"MolecularSequence.repository\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"opacity: 0.5; font-style: italic\">0</span><span style=\"opacity: 0.5; font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">External repository which contains detailed report related with observedSeq in this resource</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:repository.type</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck025.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-genome-entity-definitions.html#MolecularSequence.repository:genome-entity-db\" title=\"Slice genome-entity-db\">repository:genome-entity-db</a><a name=\"MolecularSequence.repository\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">External repository which contains detailed report related with observedSeq in this resource</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0250.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-genome-entity-definitions.html#MolecularSequence.repository:genome-entity-db.name\" title=\"The database used to precisely name the molecular entity.\">name</a><a name=\"MolecularSequence.repository.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The database listing the molecular entity</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-genome-entity-definitions.html#MolecularSequence.repository:genome-entity-db.datasetId\" title=\"The identifier of the molecular entity in the database.\">datasetId</a><a name=\"MolecularSequence.repository.datasetId\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Molecular entity identifier</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-genome-entity-definitions.html#MolecularSequence\">MolecularSequence</a><a name=\"MolecularSequence\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/molecularsequence.html\">MolecularSequence</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Information about a biological sequence</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-genome-entity-definitions.html#MolecularSequence.extension\">Slices for extension</a><a name=\"MolecularSequence.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-genome-entity-definitions.html#MolecularSequence.extension:genomeentityType\" title=\"Extension URL = https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genomeentityType\">genomeentityType</a><a name=\"MolecularSequence.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Molecular entity<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/R4/StructureDefinition-genomeentityType.html\">https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genomeentityType</a><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-GenomeEntityType.html\">Genome entity type Value Set</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">type</span><a name=\"MolecularSequence.type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-genome-entity-definitions.html#MolecularSequence.coordinateSystem\">coordinateSystem</a><a name=\"MolecularSequence.coordinateSystem\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Base number of coordinate system (0 for 0-based numbering or coordinates, inclusive start, exclusive end, 1 for 1-based numbering, inclusive start, inclusive end)</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">0</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-genome-entity-definitions.html#MolecularSequence.patient\">patient</a><a name=\"MolecularSequence.patient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onco-patient.html\">Oncology Patient</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Who and/or what this is about</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-genome-entity-definitions.html#MolecularSequence.repository\">Slices for repository</a><a name=\"MolecularSequence.repository\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"opacity: 0.5; font-style: italic\">0</span><span style=\"opacity: 0.5; font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">External repository which contains detailed report related with observedSeq in this resource</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:repository.type</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck025.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-genome-entity-definitions.html#MolecularSequence.repository:genome-entity-db\" title=\"Slice genome-entity-db\">repository:genome-entity-db</a><a name=\"MolecularSequence.repository\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">External repository which contains detailed report related with observedSeq in this resource</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0250.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-genome-entity-definitions.html#MolecularSequence.repository:genome-entity-db.name\" title=\"The database used to precisely name the molecular entity.\">name</a><a name=\"MolecularSequence.repository.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The database listing the molecular entity</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-genome-entity-definitions.html#MolecularSequence.repository:genome-entity-db.datasetId\" title=\"The identifier of the molecular entity in the database.\">datasetId</a><a name=\"MolecularSequence.repository.datasetId\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Molecular entity identifier</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ]; # 
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "GenomeEntity"]; # 
   fhir:StructureDefinition.title [ fhir:value "Genome Entity"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-04-10T11:48:35+02:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-04-12T16:34:31+02:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "Arkhn"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -406,17 +406,18 @@
        fhir:index 7;
        fhir:Element.id [ fhir:value "MolecularSequence.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.extension" ];
-       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
-       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
-       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
-       fhir:ElementDefinition.alias [
-         fhir:value "extensions";
-         fhir:index 0
-       ], [
-         fhir:value "user content";
-         fhir:index 1
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ];
+         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.short [ fhir:value "Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "DomainResource.extension" ];
@@ -451,14 +452,66 @@
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
-       ]
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 8;
+       fhir:Element.id [ fhir:value "MolecularSequence.extension:genomeentityType" ];
+       fhir:ElementDefinition.path [ fhir:value "MolecularSequence.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "genomeentityType" ];
+       fhir:ElementDefinition.short [ fhir:value "Molecular entity" ];
+       fhir:ElementDefinition.definition [ fhir:value "OSIRIS code of the molecular entity where the genomic alteration is found." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DomainResource.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genomeentityType";
+           fhir:index 0;
+           fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genomeentityType>
+         ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "fhir-osiris-genomeentity" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "OSIRIS_pivot_Annotation.GenomeEntity_Type" ]
+       ]
+     ], [
+       fhir:index 9;
        fhir:Element.id [ fhir:value "MolecularSequence.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored" ];
@@ -515,7 +568,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.id [ fhir:value "MolecularSequence.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.identifier" ];
        fhir:ElementDefinition.short [ fhir:value "Unique ID for this particular sequence. This is a FHIR-defined id" ];
@@ -552,13 +605,13 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.identifier" ]
        ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.id [ fhir:value "MolecularSequence.type" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.type" ];
-       fhir:ElementDefinition.short [ fhir:value "Molecular entity" ];
-       fhir:ElementDefinition.definition [ fhir:value "OSIRIS code of the molecular entity where the genomic alteration is found." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.short [ fhir:value "aa | dna | rna" ];
+       fhir:ElementDefinition.definition [ fhir:value "Amino Acid Sequence/ DNA Sequence / RNA Sequence." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "0" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "MolecularSequence.type" ];
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -584,19 +637,20 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "sequenceType" ]
+         ];
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
+         fhir:ElementDefinition.binding.description [ fhir:value "Type if a sequence -- DNA, RNA, or amino acid sequence." ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeEntityType";
-           fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeEntityType>
+           fhir:value "http://hl7.org/fhir/ValueSet/sequence-type|4.0.1";
+           fhir:link <http://hl7.org/fhir/ValueSet/sequence-type|4.0.1>
          ]
-       ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "fhir-osiris-genomeentity" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "OSIRIS_pivot_Annotation.GenomeEntity_Type" ]
        ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.id [ fhir:value "MolecularSequence.coordinateSystem" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.coordinateSystem" ];
        fhir:ElementDefinition.short [ fhir:value "Base number of coordinate system (0 for 0-based numbering or coordinates, inclusive start, exclusive end, 1 for 1-based numbering, inclusive start, inclusive end)" ];
@@ -628,7 +682,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.id [ fhir:value "MolecularSequence.patient" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.patient" ];
        fhir:ElementDefinition.short [ fhir:value "Who and/or what this is about" ];
@@ -670,7 +724,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "OSIRIS_pivot_Annotation.Patient_Id" ]
        ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.id [ fhir:value "MolecularSequence.specimen" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.specimen" ];
        fhir:ElementDefinition.short [ fhir:value "Specimen used for sequencing" ];
@@ -706,7 +760,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 15;
        fhir:Element.id [ fhir:value "MolecularSequence.device" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.device" ];
        fhir:ElementDefinition.short [ fhir:value "The method for sequencing" ];
@@ -742,7 +796,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.id [ fhir:value "MolecularSequence.performer" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.performer" ];
        fhir:ElementDefinition.short [ fhir:value "Who should be responsible for test result" ];
@@ -778,7 +832,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 17;
        fhir:Element.id [ fhir:value "MolecularSequence.quantity" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quantity" ];
        fhir:ElementDefinition.short [ fhir:value "The number of copies of the sequence of interest.  (RNASeq)" ];
@@ -809,7 +863,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 18;
        fhir:Element.id [ fhir:value "MolecularSequence.referenceSeq" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.referenceSeq" ];
        fhir:ElementDefinition.short [ fhir:value "A sequence used as reference" ];
@@ -862,7 +916,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 19;
        fhir:Element.id [ fhir:value "MolecularSequence.referenceSeq.id" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.referenceSeq.id" ];
        fhir:ElementDefinition.representation [
@@ -895,7 +949,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 19;
+       fhir:index 20;
        fhir:Element.id [ fhir:value "MolecularSequence.referenceSeq.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.referenceSeq.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -950,7 +1004,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 20;
+       fhir:index 21;
        fhir:Element.id [ fhir:value "MolecularSequence.referenceSeq.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.referenceSeq.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -1010,7 +1064,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 21;
+       fhir:index 22;
        fhir:Element.id [ fhir:value "MolecularSequence.referenceSeq.chromosome" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.referenceSeq.chromosome" ];
        fhir:ElementDefinition.short [ fhir:value "Chromosome containing genetic finding" ];
@@ -1054,7 +1108,7 @@
          ]
        ]
      ], [
-       fhir:index 22;
+       fhir:index 23;
        fhir:Element.id [ fhir:value "MolecularSequence.referenceSeq.genomeBuild" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.referenceSeq.genomeBuild" ];
        fhir:ElementDefinition.short [ fhir:value "The Genome Build used for reference, following GRCh build versions e.g. 'GRCh 37'" ];
@@ -1085,7 +1139,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 23;
+       fhir:index 24;
        fhir:Element.id [ fhir:value "MolecularSequence.referenceSeq.orientation" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.referenceSeq.orientation" ];
        fhir:ElementDefinition.short [ fhir:value "sense | antisense" ];
@@ -1129,7 +1183,7 @@
          ]
        ]
      ], [
-       fhir:index 24;
+       fhir:index 25;
        fhir:Element.id [ fhir:value "MolecularSequence.referenceSeq.referenceSeqId" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.referenceSeq.referenceSeqId" ];
        fhir:ElementDefinition.short [ fhir:value "Reference identifier" ];
@@ -1173,7 +1227,7 @@
          ]
        ]
      ], [
-       fhir:index 25;
+       fhir:index 26;
        fhir:Element.id [ fhir:value "MolecularSequence.referenceSeq.referenceSeqPointer" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.referenceSeq.referenceSeqPointer" ];
        fhir:ElementDefinition.short [ fhir:value "A pointer to another MolecularSequence entity as reference sequence" ];
@@ -1209,7 +1263,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 26;
+       fhir:index 27;
        fhir:Element.id [ fhir:value "MolecularSequence.referenceSeq.referenceSeqString" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.referenceSeq.referenceSeqString" ];
        fhir:ElementDefinition.short [ fhir:value "A string to represent reference sequence" ];
@@ -1240,7 +1294,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 27;
+       fhir:index 28;
        fhir:Element.id [ fhir:value "MolecularSequence.referenceSeq.strand" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.referenceSeq.strand" ];
        fhir:ElementDefinition.short [ fhir:value "watson | crick" ];
@@ -1284,7 +1338,7 @@
          ]
        ]
      ], [
-       fhir:index 28;
+       fhir:index 29;
        fhir:Element.id [ fhir:value "MolecularSequence.referenceSeq.windowStart" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.referenceSeq.windowStart" ];
        fhir:ElementDefinition.short [ fhir:value "Start position of the window on the  reference sequence" ];
@@ -1315,7 +1369,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 29;
+       fhir:index 30;
        fhir:Element.id [ fhir:value "MolecularSequence.referenceSeq.windowEnd" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.referenceSeq.windowEnd" ];
        fhir:ElementDefinition.short [ fhir:value "End position of the window on the reference sequence" ];
@@ -1346,7 +1400,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 30;
+       fhir:index 31;
        fhir:Element.id [ fhir:value "MolecularSequence.variant" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.variant" ];
        fhir:ElementDefinition.short [ fhir:value "Variant in sequence" ];
@@ -1377,7 +1431,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 31;
+       fhir:index 32;
        fhir:Element.id [ fhir:value "MolecularSequence.variant.id" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.variant.id" ];
        fhir:ElementDefinition.representation [
@@ -1410,7 +1464,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 32;
+       fhir:index 33;
        fhir:Element.id [ fhir:value "MolecularSequence.variant.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.variant.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -1465,7 +1519,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 33;
+       fhir:index 34;
        fhir:Element.id [ fhir:value "MolecularSequence.variant.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.variant.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -1525,7 +1579,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 34;
+       fhir:index 35;
        fhir:Element.id [ fhir:value "MolecularSequence.variant.start" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.variant.start" ];
        fhir:ElementDefinition.short [ fhir:value "Start position of the variant on the  reference sequence" ];
@@ -1556,7 +1610,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 35;
+       fhir:index 36;
        fhir:Element.id [ fhir:value "MolecularSequence.variant.end" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.variant.end" ];
        fhir:ElementDefinition.short [ fhir:value "End position of the variant on the reference sequence" ];
@@ -1587,7 +1641,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 36;
+       fhir:index 37;
        fhir:Element.id [ fhir:value "MolecularSequence.variant.observedAllele" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.variant.observedAllele" ];
        fhir:ElementDefinition.short [ fhir:value "Allele that was observed" ];
@@ -1618,7 +1672,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 37;
+       fhir:index 38;
        fhir:Element.id [ fhir:value "MolecularSequence.variant.referenceAllele" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.variant.referenceAllele" ];
        fhir:ElementDefinition.short [ fhir:value "Allele in the reference sequence" ];
@@ -1649,7 +1703,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 38;
+       fhir:index 39;
        fhir:Element.id [ fhir:value "MolecularSequence.variant.cigar" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.variant.cigar" ];
        fhir:ElementDefinition.short [ fhir:value "Extended CIGAR string for aligning the sequence with reference bases" ];
@@ -1680,7 +1734,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 39;
+       fhir:index 40;
        fhir:Element.id [ fhir:value "MolecularSequence.variant.variantPointer" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.variant.variantPointer" ];
        fhir:ElementDefinition.short [ fhir:value "Pointer to observed variant information" ];
@@ -1716,7 +1770,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 40;
+       fhir:index 41;
        fhir:Element.id [ fhir:value "MolecularSequence.observedSeq" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.observedSeq" ];
        fhir:ElementDefinition.short [ fhir:value "Sequence that was observed" ];
@@ -1747,7 +1801,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 41;
+       fhir:index 42;
        fhir:Element.id [ fhir:value "MolecularSequence.quality" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality" ];
        fhir:ElementDefinition.short [ fhir:value "An set of value as quality of sequence" ];
@@ -1778,7 +1832,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 42;
+       fhir:index 43;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.id" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.id" ];
        fhir:ElementDefinition.representation [
@@ -1811,7 +1865,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 43;
+       fhir:index 44;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -1866,7 +1920,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 44;
+       fhir:index 45;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -1926,7 +1980,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 45;
+       fhir:index 46;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.type" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.type" ];
        fhir:ElementDefinition.short [ fhir:value "indel | snp | unknown" ];
@@ -1970,7 +2024,7 @@
          ]
        ]
      ], [
-       fhir:index 46;
+       fhir:index 47;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.standardSequence" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.standardSequence" ];
        fhir:ElementDefinition.short [ fhir:value "Standard sequence for comparison" ];
@@ -2014,7 +2068,7 @@
          ]
        ]
      ], [
-       fhir:index 47;
+       fhir:index 48;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.start" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.start" ];
        fhir:ElementDefinition.short [ fhir:value "Start position of the sequence" ];
@@ -2045,7 +2099,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 48;
+       fhir:index 49;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.end" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.end" ];
        fhir:ElementDefinition.short [ fhir:value "End position of the sequence" ];
@@ -2076,7 +2130,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 49;
+       fhir:index 50;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.score" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.score" ];
        fhir:ElementDefinition.short [ fhir:value "Quality score for the comparison" ];
@@ -2107,7 +2161,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 50;
+       fhir:index 51;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.method" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.method" ];
        fhir:ElementDefinition.short [ fhir:value "Method to get quality" ];
@@ -2151,7 +2205,7 @@
          ]
        ]
      ], [
-       fhir:index 51;
+       fhir:index 52;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.truthTP" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.truthTP" ];
        fhir:ElementDefinition.short [ fhir:value "True positives from the perspective of the truth data" ];
@@ -2182,7 +2236,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 52;
+       fhir:index 53;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.queryTP" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.queryTP" ];
        fhir:ElementDefinition.short [ fhir:value "True positives from the perspective of the query data" ];
@@ -2213,7 +2267,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 53;
+       fhir:index 54;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.truthFN" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.truthFN" ];
        fhir:ElementDefinition.short [ fhir:value "False negatives" ];
@@ -2244,7 +2298,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 54;
+       fhir:index 55;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.queryFP" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.queryFP" ];
        fhir:ElementDefinition.short [ fhir:value "False positives" ];
@@ -2275,7 +2329,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 55;
+       fhir:index 56;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.gtFP" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.gtFP" ];
        fhir:ElementDefinition.short [ fhir:value "False positives where the non-REF alleles in the Truth and Query Call Sets match" ];
@@ -2306,7 +2360,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 56;
+       fhir:index 57;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.precision" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.precision" ];
        fhir:ElementDefinition.short [ fhir:value "Precision of comparison" ];
@@ -2337,7 +2391,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 57;
+       fhir:index 58;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.recall" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.recall" ];
        fhir:ElementDefinition.short [ fhir:value "Recall of comparison" ];
@@ -2368,7 +2422,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 58;
+       fhir:index 59;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.fScore" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.fScore" ];
        fhir:ElementDefinition.short [ fhir:value "F-score" ];
@@ -2399,7 +2453,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 59;
+       fhir:index 60;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.roc" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.roc" ];
        fhir:ElementDefinition.short [ fhir:value "Receiver Operator Characteristic (ROC) Curve" ];
@@ -2430,7 +2484,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 60;
+       fhir:index 61;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.roc.id" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.roc.id" ];
        fhir:ElementDefinition.representation [
@@ -2463,7 +2517,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 61;
+       fhir:index 62;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.roc.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.roc.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -2518,7 +2572,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 62;
+       fhir:index 63;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.roc.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.roc.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -2578,7 +2632,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 63;
+       fhir:index 64;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.roc.score" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.roc.score" ];
        fhir:ElementDefinition.short [ fhir:value "Genotype quality score" ];
@@ -2609,7 +2663,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 64;
+       fhir:index 65;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.roc.numTP" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.roc.numTP" ];
        fhir:ElementDefinition.short [ fhir:value "Roc score true positive numbers" ];
@@ -2640,7 +2694,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 65;
+       fhir:index 66;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.roc.numFP" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.roc.numFP" ];
        fhir:ElementDefinition.short [ fhir:value "Roc score false positive numbers" ];
@@ -2671,7 +2725,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 66;
+       fhir:index 67;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.roc.numFN" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.roc.numFN" ];
        fhir:ElementDefinition.short [ fhir:value "Roc score false negative numbers" ];
@@ -2702,7 +2756,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 67;
+       fhir:index 68;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.roc.precision" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.roc.precision" ];
        fhir:ElementDefinition.short [ fhir:value "Precision of the GQ score" ];
@@ -2733,7 +2787,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 68;
+       fhir:index 69;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.roc.sensitivity" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.roc.sensitivity" ];
        fhir:ElementDefinition.short [ fhir:value "Sensitivity of the GQ score" ];
@@ -2764,7 +2818,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 69;
+       fhir:index 70;
        fhir:Element.id [ fhir:value "MolecularSequence.quality.roc.fMeasure" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.quality.roc.fMeasure" ];
        fhir:ElementDefinition.short [ fhir:value "FScore of the GQ score" ];
@@ -2795,7 +2849,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 70;
+       fhir:index 71;
        fhir:Element.id [ fhir:value "MolecularSequence.readCoverage" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.readCoverage" ];
        fhir:ElementDefinition.short [ fhir:value "Average number of reads representing a given nucleotide in the reconstructed sequence" ];
@@ -2826,7 +2880,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 71;
+       fhir:index 72;
        fhir:Element.id [ fhir:value "MolecularSequence.repository" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository" ];
        fhir:ElementDefinition.slicing [
@@ -2866,7 +2920,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 72;
+       fhir:index 73;
        fhir:Element.id [ fhir:value "MolecularSequence.repository.id" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository.id" ];
        fhir:ElementDefinition.representation [
@@ -2899,7 +2953,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 73;
+       fhir:index 74;
        fhir:Element.id [ fhir:value "MolecularSequence.repository.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -2954,7 +3008,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 74;
+       fhir:index 75;
        fhir:Element.id [ fhir:value "MolecularSequence.repository.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -3014,7 +3068,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 75;
+       fhir:index 76;
        fhir:Element.id [ fhir:value "MolecularSequence.repository.type" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository.type" ];
        fhir:ElementDefinition.short [ fhir:value "directlink | openapi | login | oauth | other" ];
@@ -3058,7 +3112,7 @@
          ]
        ]
      ], [
-       fhir:index 76;
+       fhir:index 77;
        fhir:Element.id [ fhir:value "MolecularSequence.repository.url" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository.url" ];
        fhir:ElementDefinition.short [ fhir:value "URI of the repository" ];
@@ -3089,7 +3143,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 77;
+       fhir:index 78;
        fhir:Element.id [ fhir:value "MolecularSequence.repository.name" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository.name" ];
        fhir:ElementDefinition.short [ fhir:value "Repository's name" ];
@@ -3120,7 +3174,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 78;
+       fhir:index 79;
        fhir:Element.id [ fhir:value "MolecularSequence.repository.datasetId" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository.datasetId" ];
        fhir:ElementDefinition.short [ fhir:value "Id of the dataset that used to call for dataset in repository" ];
@@ -3151,7 +3205,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 79;
+       fhir:index 80;
        fhir:Element.id [ fhir:value "MolecularSequence.repository.variantsetId" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository.variantsetId" ];
        fhir:ElementDefinition.short [ fhir:value "Id of the variantset that used to call for variantset in repository" ];
@@ -3182,7 +3236,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 80;
+       fhir:index 81;
        fhir:Element.id [ fhir:value "MolecularSequence.repository.readsetId" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository.readsetId" ];
        fhir:ElementDefinition.short [ fhir:value "Id of the read" ];
@@ -3213,7 +3267,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 81;
+       fhir:index 82;
        fhir:Element.id [ fhir:value "MolecularSequence.repository:genome-entity-db" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository" ];
        fhir:ElementDefinition.sliceName [ fhir:value "genome-entity-db" ];
@@ -3245,7 +3299,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 82;
+       fhir:index 83;
        fhir:Element.id [ fhir:value "MolecularSequence.repository:genome-entity-db.id" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository.id" ];
        fhir:ElementDefinition.representation [
@@ -3278,7 +3332,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 83;
+       fhir:index 84;
        fhir:Element.id [ fhir:value "MolecularSequence.repository:genome-entity-db.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -3333,7 +3387,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 84;
+       fhir:index 85;
        fhir:Element.id [ fhir:value "MolecularSequence.repository:genome-entity-db.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -3393,7 +3447,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 85;
+       fhir:index 86;
        fhir:Element.id [ fhir:value "MolecularSequence.repository:genome-entity-db.type" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository.type" ];
        fhir:ElementDefinition.short [ fhir:value "directlink | openapi | login | oauth | other" ];
@@ -3437,7 +3491,7 @@
          ]
        ]
      ], [
-       fhir:index 86;
+       fhir:index 87;
        fhir:Element.id [ fhir:value "MolecularSequence.repository:genome-entity-db.url" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository.url" ];
        fhir:ElementDefinition.short [ fhir:value "URI of the repository" ];
@@ -3468,7 +3522,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 87;
+       fhir:index 88;
        fhir:Element.id [ fhir:value "MolecularSequence.repository:genome-entity-db.name" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository.name" ];
        fhir:ElementDefinition.short [ fhir:value "The database listing the molecular entity" ];
@@ -3504,7 +3558,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "OSIRIS_pivot_Annotation.GenomeEntity_Database" ]
        ]
      ], [
-       fhir:index 88;
+       fhir:index 89;
        fhir:Element.id [ fhir:value "MolecularSequence.repository:genome-entity-db.datasetId" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository.datasetId" ];
        fhir:ElementDefinition.short [ fhir:value "Molecular entity identifier" ];
@@ -3540,7 +3594,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "OSIRIS_pivot_Annotation.GenomeEntity_Id" ]
        ]
      ], [
-       fhir:index 89;
+       fhir:index 90;
        fhir:Element.id [ fhir:value "MolecularSequence.repository:genome-entity-db.variantsetId" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository.variantsetId" ];
        fhir:ElementDefinition.short [ fhir:value "Id of the variantset that used to call for variantset in repository" ];
@@ -3571,7 +3625,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 90;
+       fhir:index 91;
        fhir:Element.id [ fhir:value "MolecularSequence.repository:genome-entity-db.readsetId" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository.readsetId" ];
        fhir:ElementDefinition.short [ fhir:value "Id of the read" ];
@@ -3602,7 +3656,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 91;
+       fhir:index 92;
        fhir:Element.id [ fhir:value "MolecularSequence.pointer" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.pointer" ];
        fhir:ElementDefinition.short [ fhir:value "Pointer to next atomic sequence" ];
@@ -3638,7 +3692,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 92;
+       fhir:index 93;
        fhir:Element.id [ fhir:value "MolecularSequence.structureVariant" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.structureVariant" ];
        fhir:ElementDefinition.short [ fhir:value "Structural variant" ];
@@ -3669,7 +3723,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 93;
+       fhir:index 94;
        fhir:Element.id [ fhir:value "MolecularSequence.structureVariant.id" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.structureVariant.id" ];
        fhir:ElementDefinition.representation [
@@ -3702,7 +3756,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 94;
+       fhir:index 95;
        fhir:Element.id [ fhir:value "MolecularSequence.structureVariant.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.structureVariant.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -3757,7 +3811,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 95;
+       fhir:index 96;
        fhir:Element.id [ fhir:value "MolecularSequence.structureVariant.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.structureVariant.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -3817,7 +3871,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 96;
+       fhir:index 97;
        fhir:Element.id [ fhir:value "MolecularSequence.structureVariant.variantType" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.structureVariant.variantType" ];
        fhir:ElementDefinition.short [ fhir:value "Structural variant change type" ];
@@ -3861,7 +3915,7 @@
          ]
        ]
      ], [
-       fhir:index 97;
+       fhir:index 98;
        fhir:Element.id [ fhir:value "MolecularSequence.structureVariant.exact" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.structureVariant.exact" ];
        fhir:ElementDefinition.short [ fhir:value "Does the structural variant have base pair resolution breakpoints?" ];
@@ -3892,7 +3946,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 98;
+       fhir:index 99;
        fhir:Element.id [ fhir:value "MolecularSequence.structureVariant.length" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.structureVariant.length" ];
        fhir:ElementDefinition.short [ fhir:value "Structural variant length" ];
@@ -3923,7 +3977,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 99;
+       fhir:index 100;
        fhir:Element.id [ fhir:value "MolecularSequence.structureVariant.outer" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.structureVariant.outer" ];
        fhir:ElementDefinition.short [ fhir:value "Structural variant outer" ];
@@ -3954,7 +4008,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 100;
+       fhir:index 101;
        fhir:Element.id [ fhir:value "MolecularSequence.structureVariant.outer.id" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.structureVariant.outer.id" ];
        fhir:ElementDefinition.representation [
@@ -3987,7 +4041,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 101;
+       fhir:index 102;
        fhir:Element.id [ fhir:value "MolecularSequence.structureVariant.outer.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.structureVariant.outer.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -4042,7 +4096,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 102;
+       fhir:index 103;
        fhir:Element.id [ fhir:value "MolecularSequence.structureVariant.outer.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.structureVariant.outer.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -4102,7 +4156,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 103;
+       fhir:index 104;
        fhir:Element.id [ fhir:value "MolecularSequence.structureVariant.outer.start" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.structureVariant.outer.start" ];
        fhir:ElementDefinition.short [ fhir:value "Structural variant outer start" ];
@@ -4133,7 +4187,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 104;
+       fhir:index 105;
        fhir:Element.id [ fhir:value "MolecularSequence.structureVariant.outer.end" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.structureVariant.outer.end" ];
        fhir:ElementDefinition.short [ fhir:value "Structural variant outer end" ];
@@ -4164,7 +4218,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 105;
+       fhir:index 106;
        fhir:Element.id [ fhir:value "MolecularSequence.structureVariant.inner" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.structureVariant.inner" ];
        fhir:ElementDefinition.short [ fhir:value "Structural variant inner" ];
@@ -4195,7 +4249,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 106;
+       fhir:index 107;
        fhir:Element.id [ fhir:value "MolecularSequence.structureVariant.inner.id" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.structureVariant.inner.id" ];
        fhir:ElementDefinition.representation [
@@ -4228,7 +4282,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 107;
+       fhir:index 108;
        fhir:Element.id [ fhir:value "MolecularSequence.structureVariant.inner.extension" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.structureVariant.inner.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -4283,7 +4337,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 108;
+       fhir:index 109;
        fhir:Element.id [ fhir:value "MolecularSequence.structureVariant.inner.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.structureVariant.inner.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -4343,7 +4397,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 109;
+       fhir:index 110;
        fhir:Element.id [ fhir:value "MolecularSequence.structureVariant.inner.start" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.structureVariant.inner.start" ];
        fhir:ElementDefinition.short [ fhir:value "Structural variant inner start" ];
@@ -4374,7 +4428,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 110;
+       fhir:index 111;
        fhir:Element.id [ fhir:value "MolecularSequence.structureVariant.inner.end" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.structureVariant.inner.end" ];
        fhir:ElementDefinition.short [ fhir:value "Structural variant inner end" ];
@@ -4413,31 +4467,55 @@
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence" ]
      ], [
        fhir:index 1;
-       fhir:Element.id [ fhir:value "MolecularSequence.type" ];
-       fhir:ElementDefinition.path [ fhir:value "MolecularSequence.type" ];
+       fhir:Element.id [ fhir:value "MolecularSequence.extension" ];
+       fhir:ElementDefinition.path [ fhir:value "MolecularSequence.extension" ];
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ];
+         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "MolecularSequence.extension:genomeentityType" ];
+       fhir:ElementDefinition.path [ fhir:value "MolecularSequence.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "genomeentityType" ];
        fhir:ElementDefinition.short [ fhir:value "Molecular entity" ];
        fhir:ElementDefinition.definition [ fhir:value "OSIRIS code of the molecular entity where the genomic alteration is found." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.binding [
-         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeEntityType";
-           fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeEntityType>
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genomeentityType";
+           fhir:index 0;
+           fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genomeentityType>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "fhir-osiris-genomeentity" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "OSIRIS_pivot_Annotation.GenomeEntity_Type" ]
        ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "MolecularSequence.type" ];
+       fhir:ElementDefinition.path [ fhir:value "MolecularSequence.type" ];
+       fhir:ElementDefinition.max [ fhir:value "0" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
        fhir:Element.id [ fhir:value "MolecularSequence.coordinateSystem" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.coordinateSystem" ];
        fhir:ElementDefinition.patternInteger [ fhir:value "0"^^xsd:integer ]
      ], [
-       fhir:index 3;
+       fhir:index 5;
        fhir:Element.id [ fhir:value "MolecularSequence.patient" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.patient" ];
        fhir:ElementDefinition.type [
@@ -4456,7 +4534,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "OSIRIS_pivot_Annotation.Patient_Id" ]
        ]
      ], [
-       fhir:index 4;
+       fhir:index 6;
        fhir:Element.id [ fhir:value "MolecularSequence.repository" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository" ];
        fhir:ElementDefinition.slicing [
@@ -4469,14 +4547,14 @@
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ]
      ], [
-       fhir:index 5;
+       fhir:index 7;
        fhir:Element.id [ fhir:value "MolecularSequence.repository:genome-entity-db" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository" ];
        fhir:ElementDefinition.sliceName [ fhir:value "genome-entity-db" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 6;
+       fhir:index 8;
        fhir:Element.id [ fhir:value "MolecularSequence.repository:genome-entity-db.name" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository.name" ];
        fhir:ElementDefinition.short [ fhir:value "The database listing the molecular entity" ];
@@ -4488,7 +4566,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "OSIRIS_pivot_Annotation.GenomeEntity_Database" ]
        ]
      ], [
-       fhir:index 7;
+       fhir:index 9;
        fhir:Element.id [ fhir:value "MolecularSequence.repository:genome-entity-db.datasetId" ];
        fhir:ElementDefinition.path [ fhir:value "MolecularSequence.repository.datasetId" ];
        fhir:ElementDefinition.short [ fhir:value "Molecular entity identifier" ];

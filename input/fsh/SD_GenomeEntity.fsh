@@ -7,10 +7,11 @@ Description:    "The genome entity profile is used to indicate the genome refere
 * patient MS
 * patient only Reference (onco-patient)
 
-* type 1..1 MS
-* type from GenomeEntityType (required)
-* type ^short = "Molecular entity"
-* type ^definition = "OSIRIS code of the molecular entity where the genomic alteration is found."
+* type 0..0 MS
+
+* extension contains genomeentityType named genomeentityType 1..1 MS
+* extension[genomeentityType] ^short = "Molecular entity"
+* extension[genomeentityType] ^definition = "OSIRIS code of the molecular entity where the genomic alteration is found."
 
 * coordinateSystem = 0
 
@@ -28,6 +29,14 @@ Description:    "The genome entity profile is used to indicate the genome refere
 * repository[genome-entity-db].datasetId ^short = "Molecular entity identifier"
 * repository[genome-entity-db].datasetId ^definition = "The identifier of the molecular entity in the database."
 
+Extension:  GenomeEntityType
+Id: genomeentityType
+Title: "GenomeEntityType"
+Description: "Genome Entity Type"
+* value[x] 1..1 MS
+* value[x] only CodeableConcept
+* valueCodeableConcept from GenomeEntityType
+
 Mapping: FhirOSIRISGenomeEntity
 Source: genome-entity
 Target: "Annotation"
@@ -35,6 +44,6 @@ Id: fhir-osiris-genomeentity
 Title: "OSIRIS pivot files"
 
 * patient -> "OSIRIS_pivot_Annotation.Patient_Id"
-* type -> "OSIRIS_pivot_Annotation.GenomeEntity_Type"
+* extension[genomeentityType] -> "OSIRIS_pivot_Annotation.GenomeEntity_Type"
 * repository[genome-entity-db].name -> "OSIRIS_pivot_Annotation.GenomeEntity_Database"
 * repository[genome-entity-db].datasetId -> "OSIRIS_pivot_Annotation.GenomeEntity_Id"

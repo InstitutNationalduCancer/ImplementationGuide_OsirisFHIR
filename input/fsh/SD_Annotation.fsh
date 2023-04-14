@@ -17,12 +17,8 @@ Description:    "The Annotation profile allows to add information about a SNP, a
 * derivedFrom ^slicing.rules = #open
 * derivedFrom ^slicing.description = "Slice based on referece pattern"
 
-* derivedFrom contains alteration 1..1 MS
-* derivedFrom contains fusion-molecular-sequences 0..1
-* derivedFrom[alteration] only Reference (snp or fusion or expression or copy-number)
-* derivedFrom[fusion-molecular-sequences] only Reference (molecular-sequence-5-prime or molecular-sequence-3-prime)
-* derivedFrom[fusion-molecular-sequences] ^short = "Five prime and three prime positions of the fusion"
-
+* derivedFrom 1..2 MS
+* derivedFrom only Reference (snp or fusion or expression or copy-number or molecular-sequence-5-prime or molecular-sequence-3-prime)
 
 * component[gene-studied] 0..1 MS
 * component[gene-studied].valueCodeableConcept.text ^short = "Gene name"
@@ -125,7 +121,7 @@ Title: "OSIRIS pivot files"
 * component[genomic-dna-chg].valueCodeableConcept.coding.code -> "OSIRIS_pivot_Annotation.Annotation_GenomicSequenceVariation"
 * component[dna-chg].valueCodeableConcept.coding.code -> "OSIRIS_pivot_Annotation.Annotation_DNASequenceVariation"
 * component[rna-chg].valueCodeableConcept.coding.code -> "OSIRIS_pivot_Annotation.Annotation_RNASequenceVariation" //To discuss
-* derivedFrom[fusion-molecular-sequences] -> "OSIRIS_pivot_Annotation.Annotation_FusionPrimeEnd"
+* derivedFrom -> "OSIRIS_pivot_Annotation.Annotation_FusionPrimeEnd"
 * component[on-splicing-site] -> "Missing"
 
 

@@ -20,7 +20,7 @@ Description:    "The annotation reference profile indicates the reference genome
 
 
 * repository ^slicing.discriminator.type = #pattern
-* repository ^slicing.discriminator.path = "repository.type"
+* repository ^slicing.discriminator.path = "type"
 * repository ^slicing.rules = #open
 * repository ^slicing.description = "Slice based on repository pattern"
 * repository contains reference-db 1..1

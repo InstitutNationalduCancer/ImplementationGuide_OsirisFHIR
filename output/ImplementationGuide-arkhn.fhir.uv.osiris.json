@@ -10,7 +10,7 @@
   "name" : "OsirisImplementationGuide",
   "title" : "FHIR Osiris Implementation Guide",
   "status" : "draft",
-  "date" : "2023-04-10T11:48:35+02:00",
+  "date" : "2023-04-12T16:34:31+02:00",
   "publisher" : "Arkhn",
   "contact" : [{
     "name" : "Arkhn",
@@ -1342,6 +1342,18 @@
       },
       "name" : "Gene Expression Data Type",
       "description" : "Type of the expression value corresponding to the level of data processing",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/genomeentityType"
+      },
+      "name" : "GenomeEntityType",
+      "description" : "Genome Entity Type",
       "exampleBoolean" : false
     },
     {

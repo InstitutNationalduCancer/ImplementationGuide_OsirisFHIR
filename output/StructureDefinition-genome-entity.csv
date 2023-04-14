@@ -18,10 +18,14 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 "MolecularSequence.contained","MolecularSequence.contained","","inline resources
 anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","N/A"
-"MolecularSequence.extension","MolecularSequence.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"MolecularSequence.extension","MolecularSequence.extension","","","",1,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"MolecularSequence.extension:genomeentityType","MolecularSequence.extension","genomeentityType","","",1,1,"Y","","","Extension {[CanonicalType[https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genomeentityType]]} {[]}
+","Molecular entity","OSIRIS code of the molecular entity where the genomic alteration is found.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","OSIRIS_pivot_Annotation.GenomeEntity_Type"
 "MolecularSequence.modifierExtension","MolecularSequence.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -31,9 +35,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MolecularSequence.identifier","MolecularSequence.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
 ","Unique ID for this particular sequence. This is a FHIR-defined id","A unique identifier for this particular sequence instance. This is a FHIR-defined id.","","Allows sequences to be distinguished and referenced.","","","","","","","",,,,,"",,,,"MolecularSequence.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.identifier"
-"MolecularSequence.type","MolecularSequence.type","","","",1,1,"Y","","Y","code {[]} {[]}
-","Molecular entity","OSIRIS code of the molecular entity where the genomic alteration is found.","","","","","","","","","",,"required","","https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeEntityType","",,,,"MolecularSequence.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","OSIRIS_pivot_Annotation.GenomeEntity_Type"
+"MolecularSequence.type","MolecularSequence.type","","","",0,0,"Y","","Y","code {[]} {[]}
+","aa | dna | rna","Amino Acid Sequence/ DNA Sequence / RNA Sequence.","","","","","","","","","",,"required","Type if a sequence -- DNA, RNA, or amino acid sequence.","http://hl7.org/fhir/ValueSet/sequence-type|4.0.1","",,,,"MolecularSequence.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "MolecularSequence.coordinateSystem","MolecularSequence.coordinateSystem","","","",1,1,"","","Y","integer {[]} {[]}
 ","Base number of coordinate system (0 for 0-based numbering or coordinates, inclusive start, exclusive end, 1 for 1-based numbering, inclusive start, inclusive end)","Whether the sequence is numbered starting at 0 (0-based numbering or coordinates, inclusive start, exclusive end) or starting at 1 (1-based numbering, inclusive start and inclusive end).","","","","","","<valueInteger xmlns=""http://hl7.org/fhir"" value=""0""/>","","","",,,,,"",,,,"MolecularSequence.coordinateSystem",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

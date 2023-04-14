@@ -5,7 +5,7 @@ Description: "Example of Instance from OSIRIS_pivot_Annotations.csv"
 * subject = Reference(fhir-osiris-example-patient)
 * hasMember[0] = Reference(fhir-osiris-genome-entity-1)
 * hasMember[1] = Reference(fhir-osiris-annotation-reference-1)
-* derivedFrom[alteration] = Reference(fhir-osiris-example-snp-1)
+* derivedFrom[0] = Reference(fhir-osiris-example-snp-1)
 
 * status = #final
 * valueCodeableConcept = LNC#LA9633-4

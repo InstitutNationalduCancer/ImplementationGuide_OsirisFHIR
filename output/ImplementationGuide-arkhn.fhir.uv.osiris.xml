@@ -11,7 +11,7 @@
   <name value="OsirisImplementationGuide"/>
   <title value="FHIR Osiris Implementation Guide"/>
   <status value="draft"/>
-  <date value="2023-04-10T11:48:35+02:00"/>
+  <date value="2023-04-12T16:34:31+02:00"/>
   <publisher value="Arkhn"/>
   <contact>
     <name value="Arkhn"/>
@@ -1129,6 +1129,17 @@
       </reference>
       <name value="Gene Expression Data Type"/>
       <description value="Type of the expression value corresponding to the level of data processing"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/genomeentityType"/>
+      </reference>
+      <name value="GenomeEntityType"/>
+      <description value="Genome Entity Type"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
