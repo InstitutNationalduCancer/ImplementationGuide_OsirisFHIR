@@ -11,7 +11,7 @@
   <name value="OsirisImplementationGuide"/>
   <title value="FHIR Osiris Implementation Guide"/>
   <status value="draft"/>
-  <date value="2023-04-12T16:34:31+02:00"/>
+  <date value="2023-04-14T09:19:10+02:00"/>
   <publisher value="Arkhn"/>
   <contact>
     <name value="Arkhn"/>
@@ -1955,6 +1955,17 @@
       <name value="fhir-osiris-example-patient-mr"/>
       <description value="Example of Patient from OSIRIS_pivot_Patient.csv"/>
       <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FhirOSIRISResponseEvaluation-1"/>
+      </reference>
+      <name value="FhirOSIRISResponseEvaluation-1"/>
+      <description value="Example of ResponseEvaluation from OSIRIS_pivot_ResponseEvaluation .csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/response-evaluation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -10,7 +10,7 @@
   "name" : "OsirisImplementationGuide",
   "title" : "FHIR Osiris Implementation Guide",
   "status" : "draft",
-  "date" : "2023-04-12T16:34:31+02:00",
+  "date" : "2023-04-14T09:19:10+02:00",
   "publisher" : "Arkhn",
   "contact" : [{
     "name" : "Arkhn",
@@ -2243,6 +2243,18 @@
       "name" : "fhir-osiris-example-patient-mr",
       "description" : "Example of Patient from OSIRIS_pivot_Patient.csv",
       "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/FhirOSIRISResponseEvaluation-1"
+      },
+      "name" : "FhirOSIRISResponseEvaluation-1",
+      "description" : "Example of ResponseEvaluation from OSIRIS_pivot_ResponseEvaluation .csv",
+      "exampleCanonical" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/response-evaluation"
     },
     {
       "extension" : [{
