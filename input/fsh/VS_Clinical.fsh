@@ -62,7 +62,17 @@ Description:  "Surgery resection quality"
 * RECIST#R0	"No apparent"
 * RECIST#R1	"Microscopic"
 * RECIST#R2	"Gross"
-* UMLS#C0439673	"Unknown"
+* UMLS#C0439673	"Unknown" 
+
+ValueSet: ResponseEvaluationStatus
+Title: "Response Status Value Set"
+Description:  "Response evaluation status"
+* RECIST#CR "Complete Response"
+* RECIST#PR "Partial Response"
+* RECIST#SD "Stable disease"
+* RECIST#PD "Progressive Disease"
+* RECIST#NE "Not evaluable"
+* UMLS#C0439673   "Unknown"
 
 ValueSet: AdverseEventCode
 Title: "Adverse Event Code Value Set"
