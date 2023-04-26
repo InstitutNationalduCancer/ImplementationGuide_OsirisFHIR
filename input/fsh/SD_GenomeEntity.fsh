@@ -19,7 +19,7 @@ Description:    "The genome entity profile is used to indicate the genome refere
 * repository ^slicing.discriminator.path = "repository.type"
 * repository ^slicing.rules = #open
 * repository ^slicing.description = "Slice based on repository pattern"
-* repository contains genome-entity-db 0..1
+* repository contains genome-entity-db 1..1
 
 * repository[genome-entity-db].name 1..1 
 * repository[genome-entity-db].name ^short = "The database listing the molecular entity"
