@@ -944,6 +944,8 @@ Description:  "Biological sample nature"
 * UMLS#C0229671 "Serum"
 * UMLS#C3827014 "Circulating Tumor-Derived DNA" 
 * UMLS#C0522537 "Xenograft" 
+* UMLS#C0007806 "Cerebrospinal FLuid"
+* UMLS#C0225778 " Pleural Fluid"
 
 ValueSet: BiologicalSampleOrigin
 Title: "Biological Sample Origin Value Set"
