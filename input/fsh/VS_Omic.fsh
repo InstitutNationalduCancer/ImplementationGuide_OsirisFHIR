@@ -128,6 +128,7 @@ Description:  "Panel Name"
 * OSIRIS#O10-10 "Mosc3"
 * OSIRIS#010-OTH "Other"
 * UMLS#C1272460 "Not applicable"
+* UMLS#C0439673 "Unknown"
 
 ValueSet: AlgorithmicPloidy	
 Title: "Algorithmic Ploidy"
