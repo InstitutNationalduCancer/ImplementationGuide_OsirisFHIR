@@ -148,6 +148,7 @@ Description:  "Pathogenicity"
 * OSIRIS#O81-3	"Uncertain significance"
 * OSIRIS#O81-4	"Likely benign"
 * OSIRIS#O81-5	"Benign"
+* UMLS#C0439673	"Unknown"
 
 
 ValueSet: Chromosome
@@ -247,6 +248,7 @@ Description:  "Alteration type"
 * OSIRIS#O15-8 "Histone marks"
 * OSIRIS#O15-9 "Transcript isoform"
 * OSIRIS#O15-10 "Viral insertion site"
+* UMLS#C0439673 "Unknown"
 
 ValueSet: MutationPrediction
 Title: "Mutation prediction Value Set"
