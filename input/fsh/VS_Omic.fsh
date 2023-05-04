@@ -192,6 +192,7 @@ ValueSet: CytoBand
 Title: "CytoBand Value Set"
 Description:  "CytoBand"
 * include codes from system UCSC
+* UMLS#C0439673 "Unknown"
 
 ValueSet: DNAChangeType
 Title: "DNA Change Type Value Set"
