@@ -21,6 +21,8 @@ Description:    "The genome entity profile is used to indicate the genome refere
 * repository ^slicing.description = "Slice based on repository pattern"
 * repository contains genome-entity-db 1..1
 
+* repository[genome-entity-db].type = http://hl7.org/fhir/R4/valueset-repository-type.html#other
+
 * repository[genome-entity-db].name 1..1 
 * repository[genome-entity-db].name ^short = "The database listing the molecular entity"
 * repository[genome-entity-db].name ^definition = "The database used to precisely name the molecular entity."
