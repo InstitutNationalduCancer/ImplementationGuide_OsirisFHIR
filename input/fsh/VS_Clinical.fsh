@@ -54,6 +54,7 @@ Description:  "Treatment type"
 * UMLS#C0021083 "Immunotherapy"
 * UMLS#C0005961 "Bone marrow transplant"
 * UMLS#C0279694 "Monoclonal antibody"
+* UMLS#C93352 "Target therapy"
 * UMLS#C0439673 "Unknown"
 
 ValueSet: SurgeryResectionQuality
@@ -62,7 +63,17 @@ Description:  "Surgery resection quality"
 * RECIST#R0	"No apparent"
 * RECIST#R1	"Microscopic"
 * RECIST#R2	"Gross"
-* UMLS#C0439673	"Unknown"
+* UMLS#C0439673	"Unknown" 
+
+ValueSet: ResponseEvaluationStatus
+Title: "Response Status Value Set"
+Description:  "Response evaluation status"
+* RECIST#CR "Complete Response"
+* RECIST#PR "Partial Response"
+* RECIST#SD "Stable disease"
+* RECIST#PD "Progressive Disease"
+* RECIST#NE "Not evaluable"
+* UMLS#C0439673   "Unknown"
 
 ValueSet: AdverseEventCode
 Title: "Adverse Event Code Value Set"
@@ -905,7 +916,6 @@ Description:  "Adverse event codes"
 * MEDDRA|"12.0"#10047065	"Vascular disorders - Other, specify"
 * MEDDRA|"12.0"#10047115	"Vasculitis"
 
-
 ValueSet: AdverseEventGrade
 Title: "Adverse Event Grade Value Set"
 Description:  "Adverse event grade"
@@ -934,6 +944,9 @@ Description:  "Biological sample nature"
 * UMLS#C0229671 "Serum"
 * UMLS#C3827014 "Circulating Tumor-Derived DNA" 
 * UMLS#C0522537 "Xenograft" 
+* UMLS#C0007806 "Cerebrospinal FLuid"
+* UMLS#C0225778 " Pleural Fluid"
+* UMLS#C2827484 "Fixed Slide"
 
 ValueSet: BiologicalSampleOrigin
 Title: "Biological Sample Origin Value Set"

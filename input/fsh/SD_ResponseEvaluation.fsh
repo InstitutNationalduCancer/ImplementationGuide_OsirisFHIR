@@ -4,35 +4,31 @@ Id:             response-evaluation
 Title:          "Response Evaluation"
 Description:    "Response evaluation to an oncology treatment from RECIST terminology."
 
-// References
+// References 
+* subject MS 
 * subject only Reference (onco-patient)
 * basedOn only Reference (treatment)
 
 // Other
 * code = UMLS#370807008 "Evaluation of response to medications"
-* effectiveDateTime ^short = "Date of assessment of treatment response"
+* effectiveDateTime ^short = "Date of assessment"
+* effectiveDateTime ^definition = "Date of assessement of treatment response"
+* effectiveDateTime 1..1 MS
 * value[x] only CodeableConcept
-* value[x] 1..1
+* value[x] 1..1 MS 
 * value[x] from ResponseEvaluationStatus //Response evaluation status
-* value[x] ^short = "Assessment of treatment response"
+* value[x] ^short = "Evaluation Status"
+* value[x] ^definition = "Treatment response evaluation status"
 
 Mapping: FhirOSIRISResponseEvaluation
 Source: ResponseEvaluation
 Target: "ResponseEvaluation"
 Id: fhir-osiris-responseevaluation
 Title: "Fhir-osiris ResponseEvaluation to osiris ResponseEvaluation"
-* subject -> "ResponseEvaluation.Patient_Identifier"
-* basedOn -> "ResponseEvaluation.Treatment_Ref"
-* effectiveDateTime -> "ResponseEvaluation.Date"
-* valueCodeableConcept -> "ResponseEvaluation.Status"
+* subject -> "OSIRIS_pivot_ResponseEvaluation.ResponseEvaluation.Patient_Identifier"
+* basedOn -> "OSIRIS_pivot_ResponseEvaluation.ResponseEvaluation.Treatment_Ref"
+* effectiveDateTime -> "OSIRIS_pivot_ResponseEvaluation.ResponseEvaluation.Date"
+* valueCodeableConcept -> "OSIRIS_pivot_ResponseEvaluation.ResponseEvaluation.Status"
 
 
 
-ValueSet: ResponseEvaluationStatus
-Title: "Response Status Value Set"
-Description:  "Response evaluation status"
-* RECIST#CR "Complete Response"
-* RECIST#PR "Partial Response"
-* RECIST#SD "Stable disease"
-* RECIST#PD "Progressive Disease"
-* RECIST#NE "Not evaluable"

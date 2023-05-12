@@ -238,6 +238,14 @@
       ]
     },
     {
+      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genomeentityType",
+      "title": "GenomeEntityType",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/histologygrade",
       "title": "Histology",
       "types": [
@@ -1659,9 +1667,6 @@
     "http://hl7.org/fhir/StructureDefinition/bodySite": [
       "Observation"
     ],
-    "http://hl7.org/fhir/StructureDefinition/condition-dueTo": [
-      "Condition"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -1683,6 +1688,9 @@
     "http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding": [
       "Observation"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
     ],
@@ -1694,6 +1702,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
@@ -1740,6 +1751,9 @@
     ],
     "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/gene-expression-data-type": [
       "Observation"
+    ],
+    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genomeentityType": [
+      "MolecularSequence"
     ],
     "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/histologygrade": [
       "Condition"

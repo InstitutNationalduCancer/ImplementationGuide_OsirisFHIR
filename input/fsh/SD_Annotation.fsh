@@ -3,69 +3,125 @@ Parent:         variant
 Id:             variant-annotation
 Title:          "Variant Annotation"
 Description:    "The Annotation profile allows to add information about a SNP, a fusion, an expression or a copy number event. It is generally used to compare variant from a reference genome. There can be multiple instance of Variant Annotation Resource for one instance of SNP, CopyNumber, Expression or Fusion Resource."
-* obeys osiris-1
 
+* subject MS
 * subject only Reference (onco-patient)
+
+
+* hasMember 2..2 MS
 * hasMember only Reference (genome-entity or annotation-reference)
+
 
 * derivedFrom ^slicing.discriminator.type = #pattern
 * derivedFrom ^slicing.discriminator.path = "reference"
 * derivedFrom ^slicing.rules = #open
 * derivedFrom ^slicing.description = "Slice based on referece pattern"
-* derivedFrom contains alteration 1..1
-* derivedFrom contains fusion-molecular-sequences 0..2
-* derivedFrom contains analysis 1..1
-* derivedFrom[alteration] only Reference (snp or fusion or expression or copy-number)
-* derivedFrom[fusion-molecular-sequences] only Reference (molecular-sequence-5-prime or molecular-sequence-3-prime)
-* derivedFrom[fusion-molecular-sequences] ^short = "Five prime and three prime positions of the fusion"
+
+* derivedFrom 1..2 MS
+* derivedFrom only Reference (snp or fusion or expression or copy-number or molecular-sequence-5-prime or molecular-sequence-3-prime)
+
+* component[gene-studied] 0..1 MS
+* component[gene-studied].valueCodeableConcept.text ^short = "Gene name"
+* component[gene-studied].valueCodeableConcept.text ^definition = "Gene symbol following the HUGO (Human Genome Organisation) nomenclature"
 
 
-* derivedFrom[analysis] only Reference (sequencing-analysis) // To add on pyrog
-* derivedFrom[analysis] ^short = "Analysis from which come this observation"
+* component[dna-chg-type] 1..1 MS
+* component[dna-chg-type] ^short = "Type of alteration"
+* component[dna-chg-type] ^definition = "The OSIRIS code of the type of genetic alteration."
+* component[dna-chg-type].valueCodeableConcept.coding 1..1 MS
+* component[dna-chg-type].valueCodeableConcept from AlterationType
+* component[dna-chg-type].valueCodeableConcept ^short = "Type of alteration"
+* component[dna-chg-type].valueCodeableConcept ^definition = "The OSIRIS code of the type of genetic alteration."
 
-* component contains on-splicing-site 0..1
-* component contains mutation-prediction 0..1
 
+* component contains mutation-prediction-software 0..1 MS
+* component[mutation-prediction-software].code = LNC#LP91038-7
+* component[mutation-prediction-software].code.text = "Prediction software"
+* component[mutation-prediction-software].value[x] only CodeableConcept
+* component[mutation-prediction-software].valueCodeableConcept from MutationPrediction (example)
+* component[mutation-prediction-software].valueCodeableConcept ^short = "Prediction software"
+* component[mutation-prediction-software].valueCodeableConcept ^definition = "The name of the software used to predict the impact of the alteration on the protein."
+
+
+* component contains mutation-prediction-score 0..1 MS
+* component[mutation-prediction-score].code = LNC#LP70194-3
+* component[mutation-prediction-score].code.text = "Prediction of the variation effect over the protein"
+* component[mutation-prediction-score].value[x] only Quantity
+* component[mutation-prediction-score].value[x] ^short = "Prediction of the variation effect over the protein"
+* component[mutation-prediction-score].value[x] ^definition = "Prediction of the variation effect over the protein"
+
+
+* component contains mutation-prediction-evidence-value 0..1 MS
+* component[mutation-prediction-evidence-value].code = LNC#93044-6
+* component[mutation-prediction-evidence-value].code.text = "Confidence score"
+* component[mutation-prediction-evidence-value].value[x] only string
+* component[mutation-prediction-evidence-value].valueString ^short = "Confidence score"
+* component[mutation-prediction-evidence-value].valueString ^definition = "Confidence score given by the software."
+
+
+* component[cytogenetic-location] 0..1 MS
+* component[cytogenetic-location] ^short = "Gene region"
+* component[cytogenetic-location] ^definition = "Name of the functional region of the gene containing the genetic alteration (example: exon 3)."
+* component[cytogenetic-location].valueCodeableConcept.text ^short = "Gene region"
+* component[cytogenetic-location].valueCodeableConcept.text ^definition = "Name of the functional region of the gene containing the genetic alteration (example: exon 3)." 
+
+
+* component[amino-acid-chg] 0..1 MS
+* component[amino-acid-chg] ^short = "Incidence on the protein"
+* component[amino-acid-chg] ^definition = "Incidence of genetic alteration according to the HGVS (Human Genome Variation Society) nomenclature. (example: p.Arg2322Cys)"
+
+
+* component[amino-acid-chg-type] 0..1 MS
+* component[amino-acid-chg-type] ^short = "Nomenclature of changes at protein-level"
+* component[amino-acid-chg-type] ^definition = "Nomenclature of changes at protein-level"
+* component[amino-acid-chg-type].valueCodeableConcept ^short = "Nomenclature of changes at protein-level"
+* component[amino-acid-chg-type].valueCodeableConcept ^definition = "Nomenclature of changes at protein-level"
+
+
+* component[genomic-dna-chg] 0..1 MS
+* component[genomic-dna-chg] ^short = "Genomic incidence"
+* component[genomic-dna-chg] ^definition = "Incidence of genetic alteration according to the HGVS (Human Genome Variation Society) nomenclature. (example: g.289G>A)"
+
+
+* component[dna-chg] 0..1 MS
+* component[dna-chg] ^short = "Incidence on the coding region of the gene"
+* component[dna-chg] ^definition = "If the genetic alteration is located on a coding region of the gene, the incidence on this region is indicated according to the HGVS (Human Genome Variation Society) nomenclature. (example: c.12G>A)."
+
+
+* component contains rna-chg 0..1 MS
+* component[rna-chg] ^short = "Incidence on the transcript"
+* component[rna-chg] ^definition = "Incidence of genetic alteration according to the HGVS (Human Genome Variation Society) nomenclature. (example: r.67g>u)"
+* component[rna-chg].code = LNC#LP232001-0
+* component[rna-chg].code.text = "Incidence on the transcript"
+* component[rna-chg].value[x] only CodeableConcept
+* component[rna-chg].valueCodeableConcept from HGVS (extensible)
+
+
+* component contains on-splicing-site 0..1 MS
 * component[on-splicing-site].code = UMLS#C0035687
 * component[on-splicing-site].value[x] only boolean
-* component[on-splicing-site] ^short = "Is the alteration on splicing site ?"
+* component[on-splicing-site] ^short = "Splice site"
+* component[on-splicing-site] ^definition = "Is the variant at an alternative splice site?" 
 
-* component[mutation-prediction] ^short = "Variation effect prediction over the protein"
-* component[mutation-prediction].code ^short = "Algorithm to predict the variation effect over the protein"
-* component[mutation-prediction].code from MutationPrediction (example)
-* component[mutation-prediction].value[x] only string
-* component[mutation-prediction].value[x] ^short = "Prediction of the variation effect over the protein"
-* component[mutation-prediction].interpretation ^short = "Level of confidence of the prediction of the variation effect over the protein"
 
 Mapping: FhirOSIRISAnnotation
 Source: variant-annotation
 Target: "Annotation"
 Id: fhir-osiris-annotation
-Title: "Fhir-osiris annotation to osiris"
-* subject -> "Annotation.Patient_Identifier"
-* component[gene-studied].valueCodeableConcept.coding.code -> "Annotation.GenomeEntity_Symbol"
-* component[mutation-prediction].code -> "Annotation.Annotation_MutationPredictionAlgorithm"
-* component[mutation-prediction].valueString -> "Annotation.Annotation_MutationPredictionValue"
-* component[mutation-prediction].interpretation -> "Annotation.Annotation_MutationPredictionScore"
-* component[cytogenetic-location].valueCodeableConcept.text -> "Annotation.Annotation_DNARegionName"
-* component[amino-acid-chg].valueCodeableConcept.coding.code -> "Annotation.Annotation_AminoAcidChange"
-* component[genomic-dna-chg].valueCodeableConcept.coding.code -> "Annotation.Annotation_GenomicSequenceVariation"
-* component[dna-chg].valueCodeableConcept.coding.code -> "Annotation.Annotation_DNASequenceVariation"
-* component[dna-chg].valueCodeableConcept.coding.code -> "Annotation.Annotation_RNASequenceVariation" //To discuss
-* component[on-splicing-site].valueBoolean -> "Annotation.Annotation_OnSplicingSite"
-* derivedFrom -> "Annotation.Annotation_FusionPrimeEnd" //To discuss
-* derivedFrom -> "Annotation.identifier (link to Expr, Fusion, SNP, CN)"
-* derivedFrom -> "Annotation.identifier (MolecularSequence annotation, GenomeEntity)"
+Title: "OSIRIS pivot files"
+* subject -> "OSIRIS_pivot_Annotation.Patient_Id"
+* component[gene-studied].valueCodeableConcept.coding.code -> "OSIRIS_pivot_Annotation.GenomeEntity_Symbol"
+* component[dna-chg-type].valueCodeableConcept.coding.code -> "OSIRIS_pivot_Annotation.AlterationOnSample_AlterationType"
+* component[mutation-prediction-software].valueCodeableConcept.coding.code -> "OSIRIS_pivot_Annotation.Annotation_MutationPredictionAlgorithm"
+* component[mutation-prediction-evidence-value].valueString -> "OSIRIS_pivot_Annotation.Annotation_MutationPredictionValue"
+* component[mutation-prediction-score].valueQuantity.value -> "OSIRIS_pivot_Annotation.Annotation_MutationPredictionScore"
+* component[cytogenetic-location].valueCodeableConcept.text -> "OSIRIS_pivot_Annotation.Annotation_DNARegionName"
+* component[amino-acid-chg].valueCodeableConcept.coding.code -> "OSIRIS_pivot_Annotation.Annotation_AminoAcidChange"
+* component[amino-acid-chg-type].valueCodeableConcept.coding.code -> "OSIRIS_pivot_Annotation.Annotation_AminoAcidChangeType"
+* component[genomic-dna-chg].valueCodeableConcept.coding.code -> "OSIRIS_pivot_Annotation.Annotation_GenomicSequenceVariation"
+* component[dna-chg].valueCodeableConcept.coding.code -> "OSIRIS_pivot_Annotation.Annotation_DNASequenceVariation"
+* component[rna-chg].valueCodeableConcept.coding.code -> "OSIRIS_pivot_Annotation.Annotation_RNASequenceVariation" //To discuss
+* derivedFrom -> "OSIRIS_pivot_Annotation.Annotation_FusionPrimeEnd"
+* component[on-splicing-site] -> "Missing"
 
 
-Invariant:  osiris-1
-Description: "OsirisAnnotation.derivedFrom with osiris-molecularsequence5prime and osiris-molecularsequence5prime must be present if Annotation references a fusion"
-Severity:   #error
-
-
-ValueSet: MutationPrediction
-Title: "Mutation prediction Value Set"
-Description:  "Mutation prediction"
-* OSIRIS#O63-1	"SIFT"
-* OSIRIS#O63-2	"POLYPHEN2_HDIV"
-* OSIRIS#O63-3	"MutationTaster"

@@ -1,0 +1,106 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AminoAcideChangeType> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "AminoAcideChangeType"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA6692-3/\">LA6692-3</a></td><td>Deletion</td></tr><tr><td><a href=\"https://loinc.org/LA6686-5/\">LA6686-5</a></td><td>Duplication</td></tr><tr><td><a href=\"https://loinc.org/LA6694-9/\">LA6694-9</a></td><td>Frameshift</td></tr><tr><td><a href=\"https://loinc.org/LA6695-6/\">LA6695-6</a></td><td>Initiating Methionine</td></tr><tr><td><a href=\"https://loinc.org/LA6687-3/\">LA6687-3</a></td><td>Insertion</td></tr><tr><td><a href=\"https://loinc.org/LA9659-9/\">LA9659-9</a></td><td>Insertion and Deletion</td></tr><tr><td><a href=\"https://loinc.org/LA6698-0/\">LA6698-0</a></td><td>Missense</td></tr><tr><td><a href=\"https://loinc.org/LA6699-8/\">LA6699-8</a></td><td>Nonsense</td></tr><tr><td><a href=\"https://loinc.org/LA6700-4/\">LA6700-4</a></td><td>Silent</td></tr><tr><td><a href=\"https://loinc.org/LA6701-2/\">LA6701-2</a></td><td>Stop Codon Mutation</td></tr></table></li><li>Include these codes as defined in <code>https://github.com/siric-osiris/OSIRIS</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>O75-1</td><td>In frame</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AminoAcideChangeType"]; # 
+  fhir:ValueSet.version [ fhir:value "2.1.0"]; # 
+  fhir:ValueSet.name [ fhir:value "AminoAcideChangeType"]; # 
+  fhir:ValueSet.title [ fhir:value "Amino Acide Change Type Value Set"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.date [ fhir:value "2023-05-04T17:29:13+02:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "Arkhn"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Arkhn" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://arkhn.com" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "contact@arkhn.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Nicolas Riss" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "nicolas@arkhn.com" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "Amino Acide Change Type"]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA6692-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Deletion" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA6686-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Duplication" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA6694-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Frameshift" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA6695-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Initiating Methionine" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA6687-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Insertion" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA9659-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Insertion and Deletion" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA6698-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Missense" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA6699-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nonsense" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA6700-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Silent" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA6701-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stop Codon Mutation" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://github.com/siric-osiris/OSIRIS" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "O75-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "In frame" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AminoAcideChangeType.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

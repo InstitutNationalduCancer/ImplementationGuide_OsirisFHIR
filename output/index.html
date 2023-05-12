@@ -177,7 +177,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2023-03-28
+            as of 2023-05-04
           
         
       </td>
@@ -196,11 +196,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   
   <div><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#background">Background</a></li><li><a href="#geninfo">Patient general information</a></li><li><a href="#TPE">Cancer History Modelization</a></li><li><a href="#treatments">Treatments</a></li><li><a href="#sequencing">Sequencing</a></li><li><a href="#radiomics">Radiomics and Radiotherapy</a></li><li><a href="#about">About</a></li><li><a href="#contributors">Contributors</a></li></ul></div>
   <a name="background"> </a>
-  <h3>Background</h3>
+  <h3 xmlns:ns0="http://www.w3.org/1999/xhtml">Background</h3>
 
-  <img src="osiris2.png" alt="Osiris logo"/>
+  <img xmlns:ns1="http://www.w3.org/1999/xhtml" src="osiris2.png" alt="Osiris logo"/>
 
-  <p>
+  <p xmlns:ns2="http://www.w3.org/1999/xhtml">
     The OSIRIS (Interoperability and data sharing of clinical and biological
     data in Oncology) is a national initiative launched in 2015 to address data
     heterogeneity and how to accelerate cancer research in France by making
@@ -212,99 +212,99 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     procedures.
   </p>
 
-  <p>
+  <p xmlns:ns3="http://www.w3.org/1999/xhtml">
     The osiris model is divided on multiple parts:
-    <ul>
-      <li>The patient general information</li>
-      <li>The tumor pathology event data</li>
-      <li>The treatments</li>
-      <li>The sequencing analysis, containing omics data</li>
-      <li>The radiomics / radiotherapy module</li>
+    <ul xmlns:ns4="http://www.w3.org/1999/xhtml">
+      <li xmlns:ns5="http://www.w3.org/1999/xhtml">The patient general information</li>
+      <li xmlns:ns6="http://www.w3.org/1999/xhtml">The tumor pathology event data</li>
+      <li xmlns:ns7="http://www.w3.org/1999/xhtml">The treatments</li>
+      <li xmlns:ns8="http://www.w3.org/1999/xhtml">The sequencing analysis, containing omics data</li>
+      <li xmlns:ns9="http://www.w3.org/1999/xhtml">The radiomics / radiotherapy module</li>
     </ul>
   </p>
   <a name="geninfo"> </a>
-  <h3>Patient general information</h3>
-  <p>
+  <h3 xmlns:ns10="http://www.w3.org/1999/xhtml">Patient general information</h3>
+  <p xmlns:ns11="http://www.w3.org/1999/xhtml">
     These resources are directly bound to patient and contain general
     information about the patient and the cancer clinical history (ex: family cancer history, clinical trials participation, vital status, etc).
   </p>
-  <object data="patient_metadata.svg" width="900" type="image/svg+xml" class="center"><a name="l394">​</a>
-    <img src="patient_metadata.jpg"/>
+  <object data="patient_metadata.svg" width="900" xmlns:ns12="http://www.w3.org/1999/xhtml" type="image/svg+xml" class="center"><a name="l394">​</a>
+    <img src="patient_metadata.jpg" xmlns:ns13="http://www.w3.org/1999/xhtml"/>
   </object>
 
   <a name="TPE"> </a>
-  <h3>Cancer History Modelization</h3>
-  <p>
+  <h3 xmlns:ns14="http://www.w3.org/1999/xhtml">Cancer History Modelization</h3>
+  <p xmlns:ns15="http://www.w3.org/1999/xhtml">
     The Tumoral Pathology Event (TPE) is a central resource in the FHIR-OSIRIS model, it will describe a tumoral event (primary or metastasis). All analysis, treatments and omics data will be linked to a TPE.
   </p>
-  <object data="tpe.svg" width="900" type="image/svg+xml" class="center"><a name="l408">​</a>
-    <img src="tpe.jpg"/>
+  <object data="tpe.svg" xmlns:ns16="http://www.w3.org/1999/xhtml" width="900" type="image/svg+xml" class="center"><a name="l408">​</a>
+    <img src="tpe.jpg" xmlns:ns17="http://www.w3.org/1999/xhtml"/>
   </object>
 
-  <p>
+  <p xmlns:ns18="http://www.w3.org/1999/xhtml">
     Other profiles like
-    <a href="https://hl7.org/fhir/bodyweight.html">weight</a>
+    <a xmlns:ns19="http://www.w3.org/1999/xhtml" href="https://hl7.org/fhir/bodyweight.html">weight</a>
     and
-    <a href="https://hl7.org/fhir/bodyheight.html">height</a>
+    <a href="https://hl7.org/fhir/bodyheight.html" xmlns:ns20="http://www.w3.org/1999/xhtml">height</a>
     are also used by the osiris model. These profiles are not added to the osiris-core ig because they are already defined by the FHIR documentation.
   </p>
   <a name="treatments"> </a>
-  <h3>Treatments</h3>
+  <h3 xmlns:ns21="http://www.w3.org/1999/xhtml">Treatments</h3>
 
-  <p>Treatment plan, drug  administrations, surgical procedures, as well as adverse events that could occur.</p>
-  <object data="treatments.svg" width="900" type="image/svg+xml"><a name="l431">​</a>
-    <img src="treatments.jpg"/>
+  <p xmlns:ns22="http://www.w3.org/1999/xhtml">Treatment plan, drug  administrations, surgical procedures, as well as adverse events that could occur.</p>
+  <object data="treatments.svg" width="900" xmlns:ns23="http://www.w3.org/1999/xhtml" type="image/svg+xml"><a name="l431">​</a>
+    <img src="treatments.jpg" xmlns:ns24="http://www.w3.org/1999/xhtml"/>
   </object>
   <a name="sequencing"> </a>
-  <h3>Sequencing</h3>
-  <p>This category contains the results of sequencing analysis.</p>
-  <p>
+  <h3 xmlns:ns25="http://www.w3.org/1999/xhtml">Sequencing</h3>
+  <p xmlns:ns26="http://www.w3.org/1999/xhtml">This category contains the results of sequencing analysis.</p>
+  <p xmlns:ns27="http://www.w3.org/1999/xhtml">
     The sequencing analysis is modelised by the
-    <a href="StructureDefinition-analysis.html">Analysis</a>
+    <a xmlns:ns28="http://www.w3.org/1999/xhtml" href="StructureDefinition-analysis.html">Analysis</a>
     profile.
   </p>
-  <p>
+  <p xmlns:ns29="http://www.w3.org/1999/xhtml">
     Genetic Variants are modelised by
-    <a href="StructureDefinition-snp.html">SNP</a>
+    <a href="StructureDefinition-snp.html" xmlns:ns30="http://www.w3.org/1999/xhtml">SNP</a>
     ,
-    <a href="StructureDefinition-copy-number.html">CopyNumber</a>
+    <a href="StructureDefinition-copy-number.html" xmlns:ns31="http://www.w3.org/1999/xhtml">CopyNumber</a>
     ,
-    <a href="StructureDefinition-expression.html">Expression</a>
+    <a href="StructureDefinition-expression.html" xmlns:ns32="http://www.w3.org/1999/xhtml">Expression</a>
     or
-    <a href="StructureDefinition-fusion.html">Fusion</a>
+    <a href="StructureDefinition-fusion.html" xmlns:ns33="http://www.w3.org/1999/xhtml">Fusion</a>
     profiles. Additional information as the comparison to the reference sequence, is / can be(?) added with the
-    <a href="StructureDefinition-variant-annotation.html">Annotation</a>
+    <a href="StructureDefinition-variant-annotation.html" xmlns:ns34="http://www.w3.org/1999/xhtml">Annotation</a>
     profile.
   </p>
-  <object data="sequencing.svg" width="900" type="image/svg+xml"><a name="l469">​</a>
-    <img src="sequencing.jpg"/>
+  <object data="sequencing.svg" width="900" xmlns:ns35="http://www.w3.org/1999/xhtml" type="image/svg+xml"><a name="l469">​</a>
+    <img src="sequencing.jpg" xmlns:ns36="http://www.w3.org/1999/xhtml"/>
   </object>
 
   <a name="radiomics"> </a>
-  <h3>Radiomics and Radiotherapy</h3>
+  <h3 xmlns:ns37="http://www.w3.org/1999/xhtml">Radiomics and Radiotherapy</h3>
 
-  <p>This category contains the description of imaging studies, radiotherapy tratments and the summary of radiomics criteria, measurements and filterings used for the analysis of the images. </p>
-  <object data="radiotherapie.svg" width="900" type="image/svg+xml"><a name="l483">​</a>
-    <img src="radiotherapie.jpg"/>
+  <p xmlns:ns38="http://www.w3.org/1999/xhtml">This category contains the description of imaging studies, radiotherapy tratments and the summary of radiomics criteria, measurements and filterings used for the analysis of the images. </p>
+  <object data="radiotherapie.svg" xmlns:ns39="http://www.w3.org/1999/xhtml" width="900" type="image/svg+xml"><a name="l483">​</a>
+    <img xmlns:ns40="http://www.w3.org/1999/xhtml" src="radiotherapie.jpg"/>
   </object>
 
   <a name="about"> </a>
-  <h3>About</h3>
-  <p>
+  <h3 xmlns:ns41="http://www.w3.org/1999/xhtml">About</h3>
+  <p xmlns:ns42="http://www.w3.org/1999/xhtml">
     The FHIR osiris implementation guide has been generated using FSH and the FHIR publisher. Source files including FSH files are available open source on
-    <a href="https://github.com/arkhn/arkhn-ig-osiris/">github</a>
+    <a href="https://github.com/arkhn/arkhn-ig-osiris/" xmlns:ns43="http://www.w3.org/1999/xhtml">github</a>
     . You can also download the
-    <a href="package.tgz">FHIR NPM Package</a>
+    <a href="package.tgz" xmlns:ns44="http://www.w3.org/1999/xhtml">FHIR NPM Package</a>
     .
   </p>
 
   <a name="contributors"> </a>
-  <h3>Contributors</h3>
-  <p>
+  <h3 xmlns:ns45="http://www.w3.org/1999/xhtml">Contributors</h3>
+  <p xmlns:ns46="http://www.w3.org/1999/xhtml">
     The OSIRIS project is mainly financed by the
-    <a href="https://www.e-cancer.fr/">INCA</a>
+    <a xmlns:ns47="http://www.w3.org/1999/xhtml" href="https://www.e-cancer.fr/">INCA</a>
     (Institut National du Cancer, The French National Cancer Institute). The core contributors to the original data model are Institut Curie, Institut Bergonié, the oncology center Léon Bérard, with the contribution of a dozen oncology centre and French hospitals. The current FHIR version of the data model was realized by the same stakeholders in partnership with the start-up
-    <a href="https://arkhn.com/">Arkhn</a>
+    <a xmlns:ns48="http://www.w3.org/1999/xhtml" href="https://arkhn.com/">Arkhn</a>
     .
   </p>
 
@@ -331,7 +331,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 28, 2023 12:16+0200">2023-03-28</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 4, 2023 17:29+0200">2023-05-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

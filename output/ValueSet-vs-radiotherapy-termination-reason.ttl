@@ -5,70 +5,90 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/vs-radiotherapy-termination-reason> a fhir:ValueSet ;
-  fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "vs-radiotherapy-termination-reason"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-182992009\">182992009</a></td><td>Treatment completed (situation)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-266721009\">266721009</a></td><td>No response to treatment (situation)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-407563006\">407563006</a></td><td>Treatment not tolerated (situation)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-160932005\">160932005</a></td><td>Financial problem (finding)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-105480006\">105480006</a></td><td>Refusal of treatment by patient (situation)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-184081006\">184081006</a></td><td>Patient has moved away (finding)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-309846006\">309846006</a></td><td>Treatment not available (situation)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-399307001\">399307001</a></td><td>Lost to follow-up (finding)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-419620001\">419620001</a></td><td>Death (event)</td></tr></table></li></ul></div>"
-  ] ; # 
-  fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/vs-radiotherapy-termination-reason"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.1.0"] ; # 
-  fhir:name [ fhir:v "VSRadiotherapyTerminationReason"] ; # 
-  fhir:title [ fhir:v "Radiotherapy Termination Reason"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-03-28T12:16:37+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Arkhn"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "Arkhn" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://arkhn.com" ]
-     ] [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "contact@arkhn.com" ]
-     ] )
-  ] [
-     fhir:name [ fhir:v "Nicolas Riss" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "nicolas@arkhn.com" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Radiotherapy Termination Reason"] ; # 
-  fhir:compose [
-     fhir:include ( [
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:concept ( [
-         fhir:code [ fhir:v "182992009" ] ;
-         fhir:display [ fhir:v "Treatment completed (situation)" ]
-       ] [
-         fhir:code [ fhir:v "266721009" ] ;
-         fhir:display [ fhir:v "No response to treatment (situation)" ]
-       ] [
-         fhir:code [ fhir:v "407563006" ] ;
-         fhir:display [ fhir:v "Treatment not tolerated (situation)" ]
-       ] [
-         fhir:code [ fhir:v "160932005" ] ;
-         fhir:display [ fhir:v "Financial problem (finding)" ]
-       ] [
-         fhir:code [ fhir:v "105480006" ] ;
-         fhir:display [ fhir:v "Refusal of treatment by patient (situation)" ]
-       ] [
-         fhir:code [ fhir:v "184081006" ] ;
-         fhir:display [ fhir:v "Patient has moved away (finding)" ]
-       ] [
-         fhir:code [ fhir:v "309846006" ] ;
-         fhir:display [ fhir:v "Treatment not available (situation)" ]
-       ] [
-         fhir:code [ fhir:v "399307001" ] ;
-         fhir:display [ fhir:v "Lost to follow-up (finding)" ]
-       ] [
-         fhir:code [ fhir:v "419620001" ] ;
-         fhir:display [ fhir:v "Death (event)" ]
-       ] )
-     ] )
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/vs-radiotherapy-termination-reason> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "vs-radiotherapy-termination-reason"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-182992009\">182992009</a></td><td>Treatment completed (situation)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-266721009\">266721009</a></td><td>No response to treatment (situation)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-407563006\">407563006</a></td><td>Treatment not tolerated (situation)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-160932005\">160932005</a></td><td>Financial problem (finding)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-105480006\">105480006</a></td><td>Refusal of treatment by patient (situation)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-184081006\">184081006</a></td><td>Patient has moved away (finding)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-309846006\">309846006</a></td><td>Treatment not available (situation)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-399307001\">399307001</a></td><td>Lost to follow-up (finding)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-419620001\">419620001</a></td><td>Death (event)</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/vs-radiotherapy-termination-reason"]; # 
+  fhir:ValueSet.version [ fhir:value "2.1.0"]; # 
+  fhir:ValueSet.name [ fhir:value "VSRadiotherapyTerminationReason"]; # 
+  fhir:ValueSet.title [ fhir:value "Radiotherapy Termination Reason"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.date [ fhir:value "2023-05-04T17:29:13+02:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "Arkhn"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Arkhn" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://arkhn.com" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "contact@arkhn.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Nicolas Riss" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "nicolas@arkhn.com" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "Radiotherapy Termination Reason"]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "182992009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Treatment completed (situation)" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "266721009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No response to treatment (situation)" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "407563006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Treatment not tolerated (situation)" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "160932005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Financial problem (finding)" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "105480006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Refusal of treatment by patient (situation)" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "184081006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient has moved away (finding)" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "309846006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Treatment not available (situation)" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "399307001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lost to follow-up (finding)" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "419620001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Death (event)" ]
+       ]
+     ]
   ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/vs-radiotherapy-termination-reason.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

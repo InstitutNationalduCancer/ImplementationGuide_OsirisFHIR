@@ -1,6 +1,5 @@
-"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: FiveWs Pattern Mapping","Mapping: RIM Mapping"
-"MolecularSequence","MolecularSequence","","","",0,*,"","","","null {[]} {[]}
-","Information about a biological sequence","Raw data describing a biological sequence.","","","","","","","","","",,,,,"",,,,"MolecularSequence",0,*,"","","Entity. Role, or Act"
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: FiveWs Pattern Mapping","Mapping: RIM Mapping","Mapping: OSIRIS pivot files"
+"MolecularSequence","MolecularSequence","","","",0,*,"","","","","Information about a biological sequence","Raw data describing a biological sequence.","","","","","","","","","",,,,,"",,,,"MolecularSequence",0,*,"","","Entity. Role, or Act"
 "MolecularSequence.id","MolecularSequence.id","","","",0,1,"","","Y","id {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "MolecularSequence.meta","MolecularSequence.meta","","","",0,1,"","","Y","Meta {[]} {[]}
@@ -19,10 +18,14 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 "MolecularSequence.contained","MolecularSequence.contained","","inline resources
 anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","N/A"
-"MolecularSequence.extension","MolecularSequence.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"MolecularSequence.extension","MolecularSequence.extension","","","",1,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"MolecularSequence.extension:genomeentityType","MolecularSequence.extension","genomeentityType","","",1,1,"Y","","","Extension {[CanonicalType[https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genomeentityType]]} {[]}
+","Molecular entity","OSIRIS code of the molecular entity where the genomic alteration is found.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","OSIRIS_pivot_Annotation.GenomeEntity_Type"
 "MolecularSequence.modifierExtension","MolecularSequence.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -32,15 +35,15 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MolecularSequence.identifier","MolecularSequence.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
 ","Unique ID for this particular sequence. This is a FHIR-defined id","A unique identifier for this particular sequence instance. This is a FHIR-defined id.","","Allows sequences to be distinguished and referenced.","","","","","","","",,,,,"",,,,"MolecularSequence.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.identifier"
-"MolecularSequence.type","MolecularSequence.type","","","",0,1,"","","Y","code {[]} {[]}
-","aa | dna | rna","Amino Acid Sequence/ DNA Sequence / RNA Sequence.","","","","","","","","","",,"required","","https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeEntityType","",,,,"MolecularSequence.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"MolecularSequence.type","MolecularSequence.type","","","",0,0,"Y","","Y","code {[]} {[]}
+","aa | dna | rna","Amino Acid Sequence/ DNA Sequence / RNA Sequence.","","","","","","","","","",,"required","Type if a sequence -- DNA, RNA, or amino acid sequence.","http://hl7.org/fhir/ValueSet/sequence-type|4.0.1","",,,,"MolecularSequence.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MolecularSequence.coordinateSystem","MolecularSequence.coordinateSystem","","","",1,1,"","","Y","integer {[]} {[]}
 ","Base number of coordinate system (0 for 0-based numbering or coordinates, inclusive start, exclusive end, 1 for 1-based numbering, inclusive start, inclusive end)","Whether the sequence is numbered starting at 0 (0-based numbering or coordinates, inclusive start, exclusive end) or starting at 1 (1-based numbering, inclusive start and inclusive end).","","","","","","<valueInteger xmlns=""http://hl7.org/fhir"" value=""0""/>","","","",,,,,"",,,,"MolecularSequence.coordinateSystem",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"MolecularSequence.patient","MolecularSequence.patient","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient]]}
+"MolecularSequence.patient","MolecularSequence.patient","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient]]}
 ","Who and/or what this is about","The patient whose sequencing results are described by this resource.","","","","","","","","","",,,,,"",,,,"MolecularSequence.patient",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
+","OSIRIS_pivot_Annotation.Patient_Id"
 "MolecularSequence.specimen","MolecularSequence.specimen","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Specimen]]}
 ","Specimen used for sequencing","Specimen used for sequencing.","","","","","","","","","",,,,,"",,,,"MolecularSequence.specimen",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -227,8 +230,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MolecularSequence.readCoverage","MolecularSequence.readCoverage","","","",0,1,"","","Y","integer {[]} {[]}
 ","Average number of reads representing a given nucleotide in the reconstructed sequence","Coverage (read depth or depth) is the average number of reads representing a given nucleotide in the reconstructed sequence.","","","","","","","","","",,,,,"",,,,"MolecularSequence.readCoverage",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"MolecularSequence.repository","MolecularSequence.repository","","","",0,*,"","","Y","BackboneElement {[]} {[]}
-","External repository which contains detailed report related with observedSeq in this resource","Configurations of the external repository. The repository shall store target's observedSeq or records related with target's observedSeq.","","","","","","","","","",,,,,"","pattern:repository.type}
+"MolecularSequence.repository","MolecularSequence.repository","","","",1,*,"","","Y","BackboneElement {[]} {[]}
+","External repository which contains detailed report related with observedSeq in this resource","Configurations of the external repository. The repository shall store target's observedSeq or records related with target's observedSeq.","","","","","","","","","",,,,,"","pattern:type}
 ","Slice based on repository pattern",,"open","MolecularSequence.repository",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MolecularSequence.repository.id","MolecularSequence.repository.id","","","",0,1,"","","","string {[]} {[]}
@@ -261,7 +264,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MolecularSequence.repository.readsetId","MolecularSequence.repository.readsetId","","","",0,1,"","","Y","string {[]} {[]}
 ","Id of the read","Id of the read in this external repository.","","","","","","","","","",,,,,"",,,,"MolecularSequence.repository.readsetId",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"MolecularSequence.repository:genome-entity-db","MolecularSequence.repository","genome-entity-db","","",0,1,"","","Y","BackboneElement {[]} {[]}
+"MolecularSequence.repository:genome-entity-db","MolecularSequence.repository","genome-entity-db","","",1,1,"","","Y","BackboneElement {[]} {[]}
 ","External repository which contains detailed report related with observedSeq in this resource","Configurations of the external repository. The repository shall store target's observedSeq or records related with target's observedSeq.","","","","","","","","","",,,,,"",,,,"MolecularSequence.repository",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MolecularSequence.repository:genome-entity-db.id","MolecularSequence.repository.id","","","",0,1,"","","","string {[]} {[]}
@@ -277,17 +280,17 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "MolecularSequence.repository:genome-entity-db.type","MolecularSequence.repository.type","","","",1,1,"","","Y","code {[]} {[]}
-","directlink | openapi | login | oauth | other","Click and see / RESTful API / Need login to see / RESTful API with authentication / Other ways to see resource.","","","","","","","","","",,"required","Type for access of external URI.","http://hl7.org/fhir/ValueSet/repository-type|4.0.1","",,,,"MolecularSequence.repository.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","directlink | openapi | login | oauth | other","Click and see / RESTful API / Need login to see / RESTful API with authentication / Other ways to see resource.","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""other""/>","","","",,"required","Type for access of external URI.","http://hl7.org/fhir/ValueSet/repository-type|4.0.1","",,,,"MolecularSequence.repository.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MolecularSequence.repository:genome-entity-db.url","MolecularSequence.repository.url","","","",0,1,"","","Y","uri {[]} {[]}
 ","URI of the repository","URI of an external repository which contains further details about the genetics data.","","","","","","","","","",,,,,"",,,,"MolecularSequence.repository.url",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"MolecularSequence.repository:genome-entity-db.name","MolecularSequence.repository.name","","","",0,1,"","","Y","string {[]} {[]}
-","Database name","URI of an external repository which contains further details about the genetics data.","","","","","","","","","",,,,,"",,,,"MolecularSequence.repository.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"MolecularSequence.repository:genome-entity-db.datasetId","MolecularSequence.repository.datasetId","","","",0,1,"","","Y","string {[]} {[]}
-","GenomeEntity Database ID","Id of the variant in this external repository. The server will understand how to use this id to call for more info about datasets in external repository.","","","","","","","","","",,,,,"",,,,"MolecularSequence.repository.datasetId",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
+"MolecularSequence.repository:genome-entity-db.name","MolecularSequence.repository.name","","","",1,1,"","","Y","string {[]} {[]}
+","The database listing the molecular entity","The database used to precisely name the molecular entity.","","","","","","","","","",,,,,"",,,,"MolecularSequence.repository.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","OSIRIS_pivot_Annotation.GenomeEntity_Database"
+"MolecularSequence.repository:genome-entity-db.datasetId","MolecularSequence.repository.datasetId","","","",1,1,"","","Y","string {[]} {[]}
+","Molecular entity identifier","The identifier of the molecular entity in the database.","","","","","","","","","",,,,,"",,,,"MolecularSequence.repository.datasetId",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","OSIRIS_pivot_Annotation.GenomeEntity_Id"
 "MolecularSequence.repository:genome-entity-db.variantsetId","MolecularSequence.repository.variantsetId","","","",0,1,"","","Y","string {[]} {[]}
 ","Id of the variantset that used to call for variantset in repository","Id of the variantset in this external repository. The server will understand how to use this id to call for more info about variantsets in external repository.","","","","","","","","","",,,,,"",,,,"MolecularSequence.repository.variantsetId",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

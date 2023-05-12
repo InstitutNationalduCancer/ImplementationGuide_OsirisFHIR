@@ -185,6 +185,16 @@
 
 
 
+  
+    
+      <li>
+        <a href="StructureDefinition-annotation-reference-examples.html">Examples</a>
+      </li>
+    
+  
+
+
+
 
   
     <li>
@@ -219,7 +229,7 @@
         
           Active
           
-            as of 2023-03-28
+            as of 2023-05-04
           
         
       </td>
@@ -288,6 +298,21 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
 </table>
+<a name="fhir-osiris-annotation-reference"> </a><h3>Mappings for OSIRIS pivot files (Annotation Reference)</h3><table class="grid">
+ <tr><td colspan="3"><b>AnnotationReference</b></td></tr>
+ <tr><td>MolecularSequence</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>OSIRIS_pivot_Annotation.Patient_Id</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;referenceSeq</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;orientation</td><td>OSIRIS_pivot_Annotation.Annotation_Strand</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;referenceSeqId</td><td>OSIRIS_pivot_Annotation.Annotation_ReferenceType</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;repository</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;repository (reference-db)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name</td><td>OSIRIS_pivot_Annotation.Annotation_ReferenceDatabase</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;datasetId</td><td>OSIRIS_pivot_Annotation.Annotation_ReferenceValue</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;repository (pfam-domain)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;datasetId</td><td>OSIRIS_pivot_Annotation.Annotation_PfamId</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;readsetId</td><td>OSIRIS_pivot_Annotation.Annotation_PfamDomain</td> </tr>
+</table>
 
 
   <!-- insert notes if present -->
@@ -341,7 +366,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 28, 2023 12:16+0200">2023-03-28</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 4, 2023 17:29+0200">2023-05-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

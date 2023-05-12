@@ -11,7 +11,7 @@
   <name value="OsirisImplementationGuide"/>
   <title value="FHIR Osiris Implementation Guide"/>
   <status value="draft"/>
-  <date value="2023-03-28T12:16:37+02:00"/>
+  <date value="2023-05-04T17:29:13+02:00"/>
   <publisher value="Arkhn"/>
   <contact>
     <name value="Arkhn"/>
@@ -251,7 +251,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="copyrightyear"/>
+        <valueString value="copyrightyear"/>
       </extension>
       <extension url="value">
         <valueString value="2020+"/>
@@ -259,7 +259,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="releaselabel"/>
+        <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
         <valueString value="ci-build"/>
@@ -267,7 +267,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="apply-publisher"/>
+        <valueString value="apply-publisher"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -275,7 +275,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="apply-contact"/>
+        <valueString value="apply-contact"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -283,7 +283,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="show-inherited-invariants"/>
+        <valueString value="show-inherited-invariants"/>
       </extension>
       <extension url="value">
         <valueString value="false"/>
@@ -291,7 +291,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="autoload-resources"/>
+        <valueString value="autoload-resources"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -299,7 +299,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="path-liquid"/>
+        <valueString value="path-liquid"/>
       </extension>
       <extension url="value">
         <valueString value="template/liquid"/>
@@ -307,7 +307,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="path-liquid"/>
+        <valueString value="path-liquid"/>
       </extension>
       <extension url="value">
         <valueString value="input/liquid"/>
@@ -315,7 +315,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="path-qa"/>
+        <valueString value="path-qa"/>
       </extension>
       <extension url="value">
         <valueString value="temp/qa"/>
@@ -323,7 +323,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="path-temp"/>
+        <valueString value="path-temp"/>
       </extension>
       <extension url="value">
         <valueString value="temp/pages"/>
@@ -331,7 +331,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="path-output"/>
+        <valueString value="path-output"/>
       </extension>
       <extension url="value">
         <valueString value="output"/>
@@ -339,7 +339,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="path-suppressed-warnings"/>
+        <valueString value="path-suppressed-warnings"/>
       </extension>
       <extension url="value">
         <valueString value="input/ignoreWarnings.txt"/>
@@ -347,7 +347,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="path-history"/>
+        <valueString value="path-history"/>
       </extension>
       <extension url="value">
         <valueString value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html"/>
@@ -355,7 +355,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="template-html"/>
+        <valueString value="template-html"/>
       </extension>
       <extension url="value">
         <valueString value="template-page.html"/>
@@ -363,7 +363,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="template-md"/>
+        <valueString value="template-md"/>
       </extension>
       <extension url="value">
         <valueString value="template-page-md.html"/>
@@ -371,7 +371,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="apply-context"/>
+        <valueString value="apply-context"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -379,7 +379,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="apply-copyright"/>
+        <valueString value="apply-copyright"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -387,7 +387,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="apply-jurisdiction"/>
+        <valueString value="apply-jurisdiction"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -395,7 +395,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="apply-license"/>
+        <valueString value="apply-license"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -403,7 +403,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="apply-version"/>
+        <valueString value="apply-version"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -411,7 +411,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="active-tables"/>
+        <valueString value="active-tables"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -419,7 +419,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="fmm-definition"/>
+        <valueString value="fmm-definition"/>
       </extension>
       <extension url="value">
         <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
@@ -427,7 +427,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="propagate-status"/>
+        <valueString value="propagate-status"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -435,7 +435,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="excludelogbinaryformat"/>
+        <valueString value="excludelogbinaryformat"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -443,7 +443,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="tabbed-snapshots"/>
+        <valueString value="tabbed-snapshots"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -1136,6 +1136,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/genomeentityType"/>
+      </reference>
+      <name value="GenomeEntityType"/>
+      <description value="Genome Entity Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/histologygrade"/>
       </reference>
       <name value="Histology"/>
@@ -1356,6 +1367,28 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/AlterationType"/>
+      </reference>
+      <name value="Alteration Type Value Set"/>
+      <description value="Alteration type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/AminoAcideChangeType"/>
+      </reference>
+      <name value="Amino Acide Change Type Value Set"/>
+      <description value="Amino Acide Change Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/AnalysisType"/>
       </reference>
       <name value="Analysis Types Value Set"/>
@@ -1411,6 +1444,39 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/Chromosome"/>
+      </reference>
+      <name value="Chromosome Value Set"/>
+      <description value="Chromosome"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CytoBand"/>
+      </reference>
+      <name value="CytoBand Value Set"/>
+      <description value="CytoBand"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/DNAChangeType"/>
+      </reference>
+      <name value="DNA Change Type Value Set"/>
+      <description value="DNAChangeType"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/FusionType"/>
       </reference>
       <name value="Fusion Type Value Set"/>
@@ -1437,6 +1503,17 @@
       </reference>
       <name value="GeneticMaterial"/>
       <description value="Genetic material"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/GenomeBuild"/>
+      </reference>
+      <name value="GenomeBuild Value Set"/>
+      <description value="GenomeBuild"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1881,6 +1958,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FhirOSIRISResponseEvaluation-1"/>
+      </reference>
+      <name value="FhirOSIRISResponseEvaluation-1"/>
+      <description value="Example of ResponseEvaluation from OSIRIS_pivot_ResponseEvaluation .csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/response-evaluation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -1933,6 +2021,28 @@
       <name value="fhir-osiris-example-patient-pt-nm"/>
       <description value="Example of Patient from OSIRIS_pivot_Patient.csv"/>
       <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-annotation-1"/>
+      </reference>
+      <name value="fhir-osiris-annotation-1"/>
+      <description value="Example of Instance from OSIRIS_pivot_Annotations.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/variant-annotation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MolecularSequence"/>
+      </extension>
+      <reference>
+        <reference value="MolecularSequence/fhir-osiris-annotation-reference-1"/>
+      </reference>
+      <name value="fhir-osiris-annotation-reference-1"/>
+      <description value="Example of Instance from OSIRIS_pivot_Annotations.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/annotation-reference"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2563,6 +2673,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-snp-1"/>
+      </reference>
+      <name value="fhir-osiris-example-snp-1"/>
+      <description value="Example of Surgery from OSIRIS_pivot_Variant.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/snp"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Procedure"/>
       </extension>
       <reference>
@@ -2618,6 +2739,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="VerificationResult"/>
+      </extension>
+      <reference>
+        <reference value="VerificationResult/fhir-osiris-example-validation-1"/>
+      </reference>
+      <name value="fhir-osiris-example-validation-1"/>
+      <description value="Example of Surgery from OSIRIS_pivot_Variant.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/data-validation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -2626,6 +2758,17 @@
       <name value="fhir-osiris-example-vitalstatus"/>
       <description value="Example of VitalStatus"/>
       <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/vital-status"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MolecularSequence"/>
+      </extension>
+      <reference>
+        <reference value="MolecularSequence/fhir-osiris-genome-entity-1"/>
+      </reference>
+      <name value="fhir-osiris-genome-entity-1"/>
+      <description value="Example of Instance from OSIRIS_pivot_Annotations.csv"/>
+      <exampleCanonical value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genome-entity"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

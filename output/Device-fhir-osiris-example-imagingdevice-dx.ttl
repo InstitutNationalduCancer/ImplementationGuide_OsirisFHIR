@@ -5,27 +5,35 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Device/fhir-osiris-example-imagingdevice-dx> a fhir:Device ;
-  fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "fhir-osiris-example-imagingdevice-dx"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-device"^^xsd:anyURI ;
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Device/fhir-osiris-example-imagingdevice-dx> a fhir:Device;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fhir-osiris-example-imagingdevice-dx"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-device";
+       fhir:index 0;
        fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-device>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Device</b><a name=\"fhir-osiris-example-imagingdevice-dx\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Device &quot;fhir-osiris-example-imagingdevice-dx&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-imaging-device.html\">Imaging Device</a></p></div><p><b>manufacturer</b>: GE MEDICAL SYSTEMS</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>Revolution XQi ADS_28.2	</td><td>manufacturer-name</td></tr></table><h3>Versions</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td></tr><tr><td>*</td><td>Ads Application Package VERSION ADS_28.2</td></tr></table></div>"
-  ] ; # 
-  fhir:manufacturer [ fhir:v "GE MEDICAL SYSTEMS"] ; # 
-  fhir:deviceName ( [
-     fhir:name [ fhir:v "Revolution XQi ADS_28.2	" ] ;
-     fhir:type [ fhir:v "manufacturer-name" ]
-  ] ) ; # 
-  fhir:version ( [
-     fhir:value [ fhir:v "Ads Application Package VERSION ADS_28.2" ]
-  ] ) . # 
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Device</b><a name=\"fhir-osiris-example-imagingdevice-dx\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Device &quot;fhir-osiris-example-imagingdevice-dx&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-imaging-device.html\">Imaging Device</a></p></div><p><b>manufacturer</b>: GE MEDICAL SYSTEMS</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>Revolution XQi ADS_28.2	</td><td>manufacturer-name</td></tr></table><h3>Versions</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td></tr><tr><td>*</td><td>Ads Application Package VERSION ADS_28.2</td></tr></table></div>"
+  ]; # 
+  fhir:Device.manufacturer [ fhir:value "GE MEDICAL SYSTEMS"]; # 
+  fhir:Device.deviceName [
+     fhir:index 0;
+     fhir:Device.deviceName.name [ fhir:value "Revolution XQi ADS_28.2	" ];
+     fhir:Device.deviceName.type [ fhir:value "manufacturer-name" ]
+  ]; # 
+  fhir:Device.version [
+     fhir:index 0;
+     fhir:Device.version.value [ fhir:value "Ads Application Package VERSION ADS_28.2" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Device/fhir-osiris-example-imagingdevice-dx.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

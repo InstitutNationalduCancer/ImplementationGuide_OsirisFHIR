@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="fhir-osiris-annotation-1"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/variant-annotation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="fhir-osiris-annotation-1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;fhir-osiris-annotation-1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-variant-annotation.html">Variant Annotation</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Genetic variant assessment <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#69548-6)</span></p><p><b>subject</b>: <a href="Patient-L304.html">Patient/L304</a></p><p><b>value</b>: Present <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#LA9633-4)</span></p><p><b>hasMember</b>: </p><ul><li><a href="MolecularSequence-fhir-osiris-genome-entity-1.html">MolecularSequence/fhir-osiris-genome-entity-1</a></li><li><a href="MolecularSequence-fhir-osiris-annotation-reference-1.html">MolecularSequence/fhir-osiris-annotation-reference-1</a></li></ul><p><b>derivedFrom</b>: <a href="Observation-fhir-osiris-example-snp-1.html">Observation/fhir-osiris-example-snp-1</a></p><blockquote><p><b>component</b></p><p><b>code</b>: DNA Change Type <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#48019-4)</span></p><p><b>value</b>: O15-4 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (OSIRIS#O15-4)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Gene studied [ID] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#48018-6)</span></p><p><b>value</b>: PI3K <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#PI3K)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Prediction software <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#LP91038-7)</span></p><p><b>value</b>: SIFT <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (OSIRIS#SIFT)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Prediction of the variation effect over the protein <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#LP70194-3)</span></p><p><b>value</b>: 0.35</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Confidence score <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#93044-6)</span></p><p><b>value</b>: Deleterious</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Cytogenetic (chromosome) location <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#48001-2)</span></p><p><b>value</b>: exon 2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Amino acid change (pHGVS) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#48005-3)</span></p><p><b>value</b>: p.E542K <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-hgvs.html">Human Genome Variation Society nomenclature</a>#p.E542K)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Amino acid change [Type] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#48006-1)</span></p><p><b>value</b>: Missense <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#LA6698-0)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Genomic DNA change (gHGVS) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#81290-9)</span></p><p><b>value</b>: C0439673 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-umls.html">Unified Medical Language System</a>#C0439673)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DNA change (c.HGVS) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#48004-6)</span></p><p><b>value</b>: c.1624G&gt;A <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-hgvs.html">Human Genome Variation Society nomenclature</a>#c.1624G&gt;A)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Incidence on the transcript <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#LP232001-0)</span></p><p><b>value</b>: C0439673 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-umls.html">Unified Medical Language System</a>#C0439673)</span></p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="69548-6"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/L304"/>
+  </subject>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="LA9633-4"/>
+    </coding>
+  </valueCodeableConcept>
+  <hasMember>
+    <reference value="MolecularSequence/fhir-osiris-genome-entity-1"/>
+  </hasMember>
+  <hasMember>
+    <reference value="MolecularSequence/fhir-osiris-annotation-reference-1"/>
+  </hasMember>
+  <derivedFrom>
+    <reference value="Observation/fhir-osiris-example-snp-1"/>
+  </derivedFrom>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48019-4"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://github.com/siric-osiris/OSIRIS"/>
+        <code value="O15-4"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48018-6"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://www.genenames.org/"/>
+        <code value="PI3K"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LP91038-7"/>
+      </coding>
+      <text value="Prediction software"/>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://github.com/siric-osiris/OSIRIS"/>
+        <code value="SIFT"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LP70194-3"/>
+      </coding>
+      <text value="Prediction of the variation effect over the protein"/>
+    </code>
+    <valueQuantity>
+      <value value="0.35"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="93044-6"/>
+      </coding>
+      <text value="Confidence score"/>
+    </code>
+    <valueString value="Deleterious"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48001-2"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <text value="exon 2"/>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48005-3"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://varnomen.hgvs.org"/>
+        <code value="p.E542K"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48006-1"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LA6698-0"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="81290-9"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/umls"/>
+        <code value="C0439673"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48004-6"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://varnomen.hgvs.org"/>
+        <code value="c.1624G&gt;A"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LP232001-0"/>
+      </coding>
+      <text value="Incidence on the transcript"/>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/umls"/>
+        <code value="C0439673"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

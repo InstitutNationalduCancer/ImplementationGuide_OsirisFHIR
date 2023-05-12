@@ -5,50 +5,60 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/patient-synthetic> a fhir:Patient ;
-  fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "patient-synthetic"] ; # 
-  fhir:meta [
-     fhir:lastUpdated [ fhir:v "2020-12-16T17:25:54Z"^^xsd:dateTime ] ;
-     fhir:profile ( [
-       fhir:v "http://osiris.arkhn.com/StructureDefinition/onco-patient"^^xsd:anyURI ;
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/patient-synthetic> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "patient-synthetic"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2020-12-16T17:25:54Z"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://osiris.arkhn.com/StructureDefinition/onco-patient";
+       fhir:index 0;
        fhir:link <http://osiris.arkhn.com/StructureDefinition/onco-patient>
-     ] ) ;
-     fhir:tag ( [
-       fhir:system [ fhir:v "http://terminology.arkhn.org/CodeSystem/source"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "ckdreijp80006dupjto75nhrh" ]
-     ] [
-       fhir:system [ fhir:v "http://terminology.arkhn.org/CodeSystem/resource"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "ck8zq2kav35434kp4tvnyg135" ]
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anonymous Patient</b> male, DoB: 1935-02-14 ( id: synthetic_patient_Synthetic_02)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">2018-11-03</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <span>: OriginCenterId</span></li><li>Managing Organization: <span>: ProviderCenterId</span></li></ul></td></tr></table></div>"
-  ] ; # 
-  fhir:identifier ( [
-     fhir:system [ fhir:v "http://terminology.arkhn.org/33a396fc-60e7-468e-a238-3f759fdadeef"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "synthetic_patient_Synthetic_02" ]
-  ] ) ; # 
-  fhir:gender [ fhir:v "male"] ; # 
-  fhir:birthDate [ fhir:v "1935-02-14"^^xsd:date] ; # 
-  fhir:deceased [ fhir:v "2018-11-03"^^xsd:date] ; # 
-  fhir:generalPractitioner ( [
-     fhir:type [ fhir:v "Organization"^^xsd:anyURI ] ;
-     fhir:identifier [
-       fhir:system [ fhir:v "http://finess.sante.gouv.fr"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "330000662" ]
-     ] ;
-     fhir:display [ fhir:v "OriginCenterId" ]
-  ] ) ; # 
-  fhir:managingOrganization [
-     fhir:type [ fhir:v "Organization"^^xsd:anyURI ] ;
-     fhir:identifier [
-       fhir:system [ fhir:v "http://finess.sante.gouv.fr"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "330000662" ]
-     ] ;
-     fhir:display [ fhir:v "ProviderCenterId" ]
+     ];
+     fhir:Meta.tag [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.arkhn.org/CodeSystem/source" ];
+       fhir:Coding.code [ fhir:value "ckdreijp80006dupjto75nhrh" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://terminology.arkhn.org/CodeSystem/resource" ];
+       fhir:Coding.code [ fhir:value "ck8zq2kav35434kp4tvnyg135" ]
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anonymous Patient</b> male, DoB: 1935-02-14 ( id: synthetic_patient_Synthetic_02)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">2018-11-03</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <span>: OriginCenterId</span></li><li>Managing Organization: <span>: ProviderCenterId</span></li></ul></td></tr></table></div>"
+  ]; # 
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://terminology.arkhn.org/33a396fc-60e7-468e-a238-3f759fdadeef" ];
+     fhir:Identifier.value [ fhir:value "synthetic_patient_Synthetic_02" ]
+  ]; # 
+  fhir:Patient.gender [ fhir:value "male"]; # 
+  fhir:Patient.birthDate [ fhir:value "1935-02-14"^^xsd:date]; # 
+  fhir:Patient.deceasedDateTime [ fhir:value "2018-11-03"^^xsd:date]; # 
+  fhir:Patient.generalPractitioner [
+     fhir:index 0;
+     fhir:Reference.type [ fhir:value "Organization" ];
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://finess.sante.gouv.fr" ];
+       fhir:Identifier.value [ fhir:value "330000662" ]
+     ];
+     fhir:Reference.display [ fhir:value "OriginCenterId" ]
+  ]; # 
+  fhir:Patient.managingOrganization [
+     fhir:Reference.type [ fhir:value "Organization" ];
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://finess.sante.gouv.fr" ];
+       fhir:Identifier.value [ fhir:value "330000662" ]
+     ];
+     fhir:Reference.display [ fhir:value "ProviderCenterId" ]
   ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/patient-synthetic.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

@@ -76,7 +76,7 @@ Mapping: FhirOSIRISSeqAnalysis
 Source: SequencingAnalysis
 Target: "Analysis"
 Id: fhir-osiris-sequencing-analysis
-Title: "Fhir-osiris to osiris"
+Title: "OSIRIS pivot files"
 * -> "Analysis" "analysis description"
 * subject -> "OSIRIS_pivot_Analysis.Patient_Id"
 * focus -> "OSIRIS_pivot_Analysis.Analysis_TumorPathologyEvent_Ref"
