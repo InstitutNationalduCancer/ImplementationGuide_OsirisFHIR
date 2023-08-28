@@ -1,4 +1,4 @@
-FROM alpine:3.13 as build-image
+FROM alpine:3.18 as build-image
 
 WORKDIR /build
 
@@ -33,7 +33,7 @@ COPY package-list.json package-list.json
 RUN chmod +x _genonce.sh
 RUN ./_genonce.sh -y
 
-FROM alpine:3.13
+FROM alpine:3.18
 
 WORKDIR /app
 
