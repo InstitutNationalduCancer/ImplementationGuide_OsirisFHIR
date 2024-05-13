@@ -1,0 +1,487 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AdverseEventCode",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "AdverseEventCode",
+      "title" : "Adverse Event Code Value Set",
+      "description" : "Adverse event codes",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/mdr"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AdverseEventGrade",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "AdverseEventGrade",
+      "title" : "Adverse Event Grade Value Set",
+      "description" : "Adverse event grade",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/umls",
+        "https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/CTCAE_v5_Quick_Reference_8.5x11.pdf"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AlgorithmicPloidy",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "AlgorithmicPloidy",
+      "title" : "Algorithmic Ploidy",
+      "description" : "Algorithmic Ploidy",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AlterationType",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "AlterationType",
+      "title" : "Alteration Type Value Set",
+      "description" : "Alteration type",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AminoAcideChangeType",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "AminoAcideChangeType",
+      "title" : "Amino Acide Change Type Value Set",
+      "description" : "Amino Acide Change Type",
+      "systems" : ["https://github.com/siric-osiris/OSIRIS", "http://loinc.org"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AnalysisType",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "AnalysisType",
+      "title" : "Analysis Types Value Set",
+      "description" : "Analysis types",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/BiologicalSampleNature",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "BiologicalSampleNature",
+      "title" : "Biological Sample Nature Value Set",
+      "description" : "Biological sample nature",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/BiologicalSampleOrigin",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "BiologicalSampleOrigin",
+      "title" : "Biological Sample Origin Value Set",
+      "description" : "Biological sample origin",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/BiomarkerCode",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "BiomarkerCode",
+      "title" : "Biomarker Value Set",
+      "description" : "Biomarker types",
+      "systems" : ["https://github.com/siric-osiris/OSIRIS"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/CauseOfDeath",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "CauseOfDeath",
+      "title" : "Cause of death Value Set",
+      "description" : "Cause of death",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Chromosome",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "Chromosome",
+      "title" : "Chromosome Value Set",
+      "description" : "Chromosome",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls",
+        "http://loinc.org"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/CytoBand",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "CytoBand",
+      "title" : "CytoBand Value Set",
+      "description" : "CytoBand",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/umls",
+        "http://genome.ucsc.edu/"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/DNAChangeType",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "DNAChangeType",
+      "title" : "DNA Change Type Value Set",
+      "description" : "DNAChangeType",
+      "systems" : ["https://github.com/siric-osiris/OSIRIS", "http://loinc.org"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/FusionType",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "FusionType",
+      "title" : "Fusion Type Value Set",
+      "description" : "Fusion Type",
+      "systems" : ["https://github.com/siric-osiris/OSIRIS", "http://loinc.org"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GeneExpressionDataType",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "GeneExpressionDataType",
+      "title" : "Gene Expression Data Type Value Set",
+      "description" : "Gene Expression Data Type",
+      "systems" : ["https://github.com/siric-osiris/OSIRIS"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GeneticMaterial",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "GeneticMaterial",
+      "title" : "GeneticMaterial",
+      "description" : "Genetic material",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeBuild",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "GenomeBuild",
+      "title" : "GenomeBuild Value Set",
+      "description" : "GenomeBuild",
+      "systems" : ["https://github.com/siric-osiris/OSIRIS"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeEntityType",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "GenomeEntityType",
+      "title" : "Genome entity type Value Set",
+      "description" : "Type of genome entity",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Laterality",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "Laterality",
+      "title" : "Tumor Laterality Value Set",
+      "description" : "Tumor laterality",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Morphology",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "Morphology",
+      "title" : "Morphology Value Set",
+      "description" : "Cancer morphology",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/MutationPrediction",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "MutationPrediction",
+      "title" : "Mutation prediction Value Set",
+      "description" : "Mutation prediction",
+      "systems" : ["https://github.com/siric-osiris/OSIRIS"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/OsirisValidationType",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "OsirisValidationType",
+      "title" : "Osiris Validation Type",
+      "description" : "Osiris validation type",
+      "systems" : ["https://github.com/siric-osiris/OSIRIS"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/PanelName",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "PanelName",
+      "title" : "Panel Name",
+      "description" : "Panel Name",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Parentage",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "Parentage",
+      "title" : "Parentage Value Set",
+      "description" : "Parentage",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Pathogenicity",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "Pathogenicity",
+      "title" : "Pathogenicity Value Set",
+      "description" : "Pathogenicity",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/PlatformName",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "PlatformName",
+      "title" : "Platform Name",
+      "description" : "Platform Name",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/ROIType",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "ROIType",
+      "title" : "ROI Type Value Set",
+      "description" : "ROI Type",
+      "systems" : ["https://terminology.arkhn.com/radiomicsCS"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/RadiomicsFeaturesVS",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "RadiomicsFeaturesVS",
+      "title" : "Radiomic Features Value Set",
+      "description" : "Radiomic Features",
+      "systems" : [
+        "https://ibsi.readthedocs.io/en/latest/",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/ReferenceType",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "ReferenceType",
+      "title" : "Reference Type Value Set",
+      "description" : "Annotation reference type",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/ResponseEvaluationStatus",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "ResponseEvaluationStatus",
+      "title" : "Response Status Value Set",
+      "description" : "Response evaluation status",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/umls",
+        "https://recist.eortc.org"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/StorageTemperature",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "StorageTemperature",
+      "title" : "Storage temperature Value Set",
+      "description" : "Sample storage temperature",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/SurgeryResectionQuality",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "SurgeryResectionQuality",
+      "title" : "Surgery Resection Quality Value Set",
+      "description" : "Surgery resection quality",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/umls",
+        "https://recist.eortc.org"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/TNMVersion",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "TNMVersion",
+      "title" : "TNM Version Value Set",
+      "description" : "TNM version",
+      "systems" : ["https://github.com/siric-osiris/OSIRIS"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/TechnicalProtocol",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "TechnicalProtocol",
+      "title" : "Analysis Technical Protocol",
+      "description" : "Analysis technical protocol",
+      "systems" : ["https://github.com/siric-osiris/OSIRIS"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Topography",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "Topography",
+      "title" : "Topography Value Set",
+      "description" : "Cancer topography",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/TreatmentType",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "TreatmentType",
+      "title" : "Treatment Type Value Set",
+      "description" : "Treatment type",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/TumorPathologyEventType",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "TumorPathologyEventType",
+      "title" : "Tumor Pathology Event Type Value Set",
+      "description" : "Tumor pathology event type",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/VSBodySite",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "VSBodySite",
+      "title" : " Bodysite Value Set",
+      "description" : "Bodysite",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/VSLocalizationMethod",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "VSLocalizationMethod",
+      "title" : "Localization Method Value Set",
+      "description" : "Localization Method"
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/VSModality",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "VSModality",
+      "title" : " Modality Value Set",
+      "description" : "Modality",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/umls",
+        "https://terminology.arkhn.com/SeriesModalityCS",
+        "https://dicom.nema.org/medical/dicom"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/VitalStatus",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "VitalStatus",
+      "title" : "Vital Status Value Set",
+      "description" : "Vital status",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/codexrt-radiotherapy-reason-for-revision-or-adaptation-vs",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "RadiotherapyReasonReplanificationVS",
+      "title" : "Radiotherapy Reason Replanification",
+      "description" : "Radiotherapy Reason Replanification",
+      "systems" : [
+        "http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/snomed-requested-cs",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/mcode-radiotherapy-treatment-location-qualifier-vs",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "RadiotherapyTreatmentLocationQualifierVS",
+      "title" : "Radiotherapy Treatment Location Qualifier Value Set",
+      "description" : "Various modifiers that can be applied to body locations where radiotherapy treatments can be directed.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/mcode-radiotherapy-volume-type-vs",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "RadiotherapyVolumeTypeVS",
+      "title" : "Radiotherapy Volume Type Value Set",
+      "description" : "Codes describing the types of body volumes used in radiotherapy planning and treatment. The value set includes the most common codes from DICOM CID 9534 Radiotherapy Targets (UID 1.2.840.10008.6.1.1244) and adds a code for Organs at Risk (OAR).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/vs-radiotherapy-category",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "VSRadiotherapyCategory",
+      "title" : "Radiotherapy Category",
+      "description" : "Radiotherapy Category",
+      "systems" : [
+        "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/RadiotherapyCS"
+      ]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/vs-radiotherapy-intent",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "VSRadiotherapyIntent",
+      "title" : "Radiotherapy Intent",
+      "description" : "RadioTherapy Intent ",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/vs-radiotherapy-termination-reason",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "VSRadiotherapyTerminationReason",
+      "title" : "Radiotherapy Termination Reason",
+      "description" : "Radiotherapy Termination Reason",
+      "systems" : ["http://snomed.info/sct"]
+    }
+  ]
+}

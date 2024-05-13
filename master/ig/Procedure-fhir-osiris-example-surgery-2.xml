@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="fhir-osiris-example-surgery-2"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-surgery"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Procedure</b><a name="fhir-osiris-example-surgery-2"> </a><a name="hcfhir-osiris-example-surgery-2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceProcedure &quot;fhir-osiris-example-surgery-2&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-onco-surgery.html">Oncology Surgery</a></p></div><p><b>basedOn</b>: <a href="CarePlan-fhir-osiris-example-treatment-2.html">CarePlan/fhir-osiris-example-treatment-2</a></p><p><b>status</b>: completed</p><p><b>category</b>: Unknown <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient-L304.html">Patient/L304</a></p><p><b>outcome</b>: R1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (recist.eortc.org#R1)</span></p></div>
+  </text>
+  <basedOn>
+    <reference value="CarePlan/fhir-osiris-example-treatment-2"/>
+  </basedOn>
+  <status value="completed"/>
+  <category>
+    <text value="Unknown"/>
+  </category>
+  <subject>
+    <reference value="Patient/L304"/>
+  </subject>
+  <outcome>
+    <coding>
+      <system value="https://recist.eortc.org"/>
+      <code value="R1"/>
+    </coding>
+  </outcome>
+</Procedure>

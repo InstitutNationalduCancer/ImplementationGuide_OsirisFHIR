@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/MolecularSequence/fhir-osiris-genome-entity-1> a fhir:MolecularSequence ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir-osiris-genome-entity-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genome-entity"^^xsd:anyURI ;
+       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genome-entity>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MolecularSequence</b><a name=\"fhir-osiris-genome-entity-1\"> </a><a name=\"hcfhir-osiris-genome-entity-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceMolecularSequence &quot;fhir-osiris-genome-entity-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-genome-entity.html\">Genome Entity</a></p></div><p><b>GenomeEntityType</b>: C0439673 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-umls.html\">Unified Medical Language System</a>#C0439673)</span></p><p><b>coordinateSystem</b>: 0</p><p><b>patient</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><h3>Repositories</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Name</b></td><td><b>DatasetId</b></td></tr><tr><td style=\"display: none\">*</td><td>other</td><td>Unknown</td><td>Unknown</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genomeentityType"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/umls"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "C0439673" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:coordinateSystem [ fhir:v "0"^^xsd:integer] ; # 
+  fhir:patient [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/L304> ;
+     fhir:reference [ fhir:v "Patient/L304" ]
+  ] ; # 
+  fhir:repository ( [
+     fhir:type [ fhir:v "other" ] ;
+     fhir:name [ fhir:v "Unknown" ] ;
+     fhir:datasetId [ fhir:v "Unknown" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

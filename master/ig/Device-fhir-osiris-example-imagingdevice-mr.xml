@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="fhir-osiris-example-imagingdevice-mr"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-device"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Device</b><a name="fhir-osiris-example-imagingdevice-mr"> </a><a name="hcfhir-osiris-example-imagingdevice-mr"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceDevice &quot;fhir-osiris-example-imagingdevice-mr&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-imaging-device.html">Imaging Device</a></p></div><p><b>manufacturer</b>: Philips Medical Systems</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>Achieva</td><td>manufacturer-name</td></tr></table><h3>Versions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td>3.2.3</td></tr></table></div>
+  </text>
+  <manufacturer value="Philips Medical Systems"/>
+  <deviceName>
+    <name value="Achieva"/>
+    <type value="manufacturer-name"/>
+  </deviceName>
+  <version>
+    <value value="3.2.3"/>
+  </version>
+</Device>

@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/RadiomicsCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RadiomicsCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>https://terminology.arkhn.com/radiomicsCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">DICOM<a name=\"RadiomicsCS-DICOM\"> </a></td><td>ROI Type DICOM</td></tr><tr><td style=\"white-space:nowrap\">MASK<a name=\"RadiomicsCS-MASK\"> </a></td><td>ROI Type NIfTI</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://terminology.arkhn.com/radiomicsCS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.1.0"] ; # 
+  fhir:name [ fhir:v "RadiomicsCS"] ; # 
+  fhir:title [ fhir:v "Imaging Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-05-13T13:56:11+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Arkhn"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Arkhn" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://arkhn.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "contact@arkhn.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Nicolas Riss" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "nicolas@arkhn.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Imaging Code System"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "DICOM" ] ;
+     fhir:display [ fhir:v "ROI Type DICOM" ]
+  ] [
+     fhir:code [ fhir:v "MASK" ] ;
+     fhir:display [ fhir:v "ROI Type NIfTI" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

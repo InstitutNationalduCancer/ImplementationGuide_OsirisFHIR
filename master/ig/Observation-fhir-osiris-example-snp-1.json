@@ -1,0 +1,165 @@
+{
+  "resourceType" : "Observation",
+  "id" : "fhir-osiris-example-snp-1",
+  "meta" : {
+    "profile" : ["https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/snp"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"fhir-osiris-example-snp-1\"> </a><a name=\"hcfhir-osiris-example-snp-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;fhir-osiris-example-snp-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-snp.html\">Single Nucleotide Polymorphism</a></p></div><p><b>Strand bias</b>: false</p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Genetic variant assessment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#69548-6)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><p><b>value</b>: Present <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA9633-4)</span></p><p><b>derivedFrom</b>: <a href=\"Observation-fhir-osiris-example-sequencinganalysis-1.html\">Observation/fhir-osiris-example-sequencinganalysis-1</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Human reference sequence assembly version <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#62374-4)</span></p><p><b>value</b>: hg19 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#hg19)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DNA change type <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48019-4)</span></p><p><b>value</b>: Substitution <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA6690-7)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Genomic source class [Type] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48002-0)</span></p><p><b>value</b>: Somatic <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA6684-0)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Allelic read depth <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#82121-5)</span></p><p><b>value</b>: 31</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Genomic ref allele [ID] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#69547-8)</span></p><p><b>value</b>: T</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Genomic alt allele [ID] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#69551-0)</span></p><p><b>value</b>: A</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Chromosome [Identifier] in Blood or Tissue by Molecular genetics method <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48000-4)</span></p><p><b>value</b>: Chromosome 3 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA21256-5)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Genetic variant details <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LP232001-0)</span></p><p><b>value</b>: 6</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Genomic allele start-end <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#81254-5)</span></p><p><b>value</b>: 178916948-178916948</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Allelic state <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#53034-5)</span></p><p><b>value</b>: Heterozygous <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA6706-1)</span></p></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/strand-bias",
+    "valueBoolean" : false
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "69548-6"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/L304"
+  },
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "LA9633-4"
+    }]
+  },
+  "derivedFrom" : [{
+    "reference" : "Observation/fhir-osiris-example-sequencinganalysis-1"
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "62374-4"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "hg19"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "48019-4"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "LA6690-7"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "48002-0"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "LA6684-0"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "82121-5"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 31
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "69547-8"
+      }]
+    },
+    "valueString" : "T"
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "69551-0"
+      }]
+    },
+    "valueString" : "A"
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "48000-4"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "LA21256-5"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "LP232001-0"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 6
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "81254-5"
+      }]
+    },
+    "valueRange" : {
+      "low" : {
+        "value" : 178916948
+      },
+      "high" : {
+        "value" : 178916948
+      }
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "53034-5"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "LA6706-1"
+      }]
+    }
+  }]
+}

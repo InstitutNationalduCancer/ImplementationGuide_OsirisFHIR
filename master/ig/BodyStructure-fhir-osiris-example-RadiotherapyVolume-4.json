@@ -1,0 +1,34 @@
+{
+  "resourceType" : "BodyStructure",
+  "id" : "fhir-osiris-example-RadiotherapyVolume-4",
+  "meta" : {
+    "profile" : ["https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-volume"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: BodyStructure</b><a name=\"fhir-osiris-example-RadiotherapyVolume-4\"> </a><a name=\"hcfhir-osiris-example-RadiotherapyVolume-4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceBodyStructure &quot;fhir-osiris-example-RadiotherapyVolume-4&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-radiotherapy-volume.html\">Radiotherapy Volume Profile</a></p></div><p><b>identifier</b>: urn:oid:1.2.246.352.71.842418.2121.20150602151.105</p><p><b>location</b>: Breast <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT</a>#76752008)</span></p><p><b>locationQualifier</b>: Right (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT</a>#24028007; <a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT</a>#255503000)</span></p><p><b>description</b>: Right Breast</p><p><b>patient</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p></div>"
+  },
+  "identifier" : [{
+    "value" : "urn:oid:1.2.246.352.71.842418.2121.20150602151.105"
+  }],
+  "location" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "76752008"
+    }]
+  },
+  "locationQualifier" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "24028007"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "255503000"
+    }]
+  }],
+  "description" : "Right Breast",
+  "patient" : {
+    "reference" : "Patient/L304"
+  }
+}

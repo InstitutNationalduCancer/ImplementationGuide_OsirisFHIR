@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Consent xmlns="http://hl7.org/fhir">
+  <id value="fhir-osiris-example-consent-1"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genetic-consent"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Consent</b><a name="fhir-osiris-example-consent-1"> </a><a name="hcfhir-osiris-example-consent-1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceConsent &quot;fhir-osiris-example-consent-1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-genetic-consent.html">Consent for Genetic Data Usage</a></p></div><p><b>status</b>: active</p><p><b>scope</b>: Privacy Consent <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-consentscope.html">Consent Scope Codes</a>#patient-privacy)</span></p><p><b>category</b>: research information access <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html">ActCode</a>#RESEARCH)</span></p><p><b>patient</b>: <a href="Patient-L304.html">Patient/L304</a></p><p><b>dateTime</b>: 2000-11-16</p><blockquote><p><b>provision</b></p><p><b>type</b>: deny</p><p><b>class</b>: MolecularSequence (Details: ResourceType code MolecularSequence = 'MolecularSequence', stated as 'null')</p><h3>Data</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Meaning</b></td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td>instance</td><td><a href="Specimen-fhir-osiris-example-biologicalsample-1.html">Specimen/fhir-osiris-example-biologicalsample-1</a></td></tr></table></blockquote></div>
+  </text>
+  <status value="active"/>
+  <scope>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+      <code value="patient-privacy"/>
+    </coding>
+  </scope>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <code value="RESEARCH"/>
+    </coding>
+  </category>
+  <patient>
+    <reference value="Patient/L304"/>
+  </patient>
+  <dateTime value="2000-11-16"/>
+  <provision>
+    <type value="deny"/>
+    <class>
+      <system value="http://hl7.org/fhir/resource-types"/>
+      <code value="MolecularSequence"/>
+    </class>
+    <data>
+      <meaning value="instance"/>
+      <reference>
+        <reference value="Specimen/fhir-osiris-example-biologicalsample-1"/>
+      </reference>
+    </data>
+  </provision>
+</Consent>

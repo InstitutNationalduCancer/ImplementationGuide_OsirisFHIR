@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Observation/fhir-osiris-example-ROISegmentation> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir-osiris-example-ROISegmentation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/roi-segmentation"^^xsd:anyURI ;
+       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/roi-segmentation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div>Poumon</div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:text [ fhir:v "dicom_reference" ]
+     ] ;
+     fhir:value [ fhir:v "1.3.6.1.4.1.14519.5.2.1.5168.1900.145447087104754814293313200434" ]
+  ] [
+     fhir:type [
+       fhir:text [ fhir:v "series_reference" ]
+     ] ;
+     fhir:value [ fhir:v "1.3.6.1.4.1.14519.5.2.1.5168.1900.731508463883905889576807557650" ]
+  ] [
+     fhir:type [
+       fhir:text [ fhir:v "roi" ]
+     ] ;
+     fhir:value [ fhir:v "1 1" ]
+  ] [
+     fhir:type [
+       fhir:text [ fhir:v "file" ]
+     ] ;
+     fhir:value [ fhir:v "Unknown" ]
+  ] [
+     fhir:type [
+       fhir:text [ fhir:v "dicom_reference" ]
+     ] ;
+     fhir:value [ fhir:v "1.3.6.1.4.1.14519.5.2.1.5168.1900.145216219563575643804860454387" ]
+  ] [
+     fhir:type [
+       fhir:text [ fhir:v "dicom_reference" ]
+     ] ;
+     fhir:value [ fhir:v "1.3.6.1.4.1.14519.5.2.1.5168.1900.176764473138537905803461583603" ]
+  ] ) ; # 
+  fhir:partOf ( [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ImagingStudy/fhir-osiris-example-imagingstudy-mri-2> ;
+     fhir:reference [ fhir:v "ImagingStudy/fhir-osiris-example-imagingstudy-mri-2" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "registered"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://terminology.arkhn.com/radiomicsCS"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DICOM" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/STS-010> ;
+     fhir:reference [ fhir:v "Patient/STS-010" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

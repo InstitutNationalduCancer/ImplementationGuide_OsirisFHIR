@@ -1,0 +1,115 @@
+{
+  "resourceType" : "ImagingStudy",
+  "id" : "fhir-osiris-example-imagingstudy-ct",
+  "meta" : {
+    "profile" : ["https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ImagingStudy</b><a name=\"fhir-osiris-example-imagingstudy-ct\"> </a><a name=\"hcfhir-osiris-example-imagingstudy-ct\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceImagingStudy &quot;fhir-osiris-example-imagingstudy-ct&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-imagingstudy.html\">Imaging Study</a></p></div><p><b>identifier</b>: 1.3.12.2.1107.5.8.15.131606.30000020020620243975600000855</p><p><b>status</b>: available</p><p><b>modality</b>: C0439673 (Details: Unified Medical Language System code C0439673 = 'C0439673', stated as 'null')</p><p><b>subject</b>: <a href=\"Patient-13.html\">Patient/13</a></p><p><b>started</b>: 2020-02-06</p><p><b>endpoint</b>: <a href=\"Endpoint-fhir-osiris-example-imagingendpoint-ct.html\">Endpoint/fhir-osiris-example-imagingendpoint-ct</a> &quot;['set_osiris/Poumon/DICOM/39688736']&quot;</p><p><b>numberOfSeries</b>: 999999</p><p><b>reasonReference</b>: <a href=\"fhir-osiris-example-analysis-ct-scan\">fhir-osiris-example-analysis-ct-scan</a></p><p><b>description</b>: Unknown</p><blockquote><p><b>series</b></p><blockquote><p><b>Imaging Settings</b></p><blockquote><p><b>url</b></p><code>slice_thickness</code></blockquote><p><b>value</b>: 1.5</p><blockquote><p><b>url</b></p><code>pixel_spacing</code></blockquote><p><b>value</b>: [0.63671875, 0.63671875]</p><blockquote><p><b>url</b></p><code>rows</code></blockquote><p><b>value</b>: 512</p><blockquote><p><b>url</b></p><code>columns</code></blockquote><p><b>value</b>: 512</p><blockquote><p><b>url</b></p><code>ct_image</code></blockquote></blockquote><blockquote><p><b>Weight and Height at the time of the Serie</b></p><blockquote><p><b>url</b></p><code>patient_weight</code></blockquote><p><b>value</b>: 999999</p><blockquote><p><b>url</b></p><code>patient_height</code></blockquote><p><b>value</b>: 999999</p></blockquote><p><b>uid</b>: 1.3.12.2.1107.5.8.15.131606.30000020020620243975600000856</p><p><b>number</b>: 2</p><p><b>modality</b>: CT (Details: dicom code CT = 'CT', stated as 'null')</p><p><b>description</b>: Unknown</p><p><b>numberOfInstances</b>: 999999</p><p><b>bodySite</b>: Thorax (Details: SNOWMED CT code 43799004 = 'Thorax', stated as 'null')</p><p><b>started</b>: 2020-02-06</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Device-fhir-osiris-example-imagingdevice-ct.html\">Device/fhir-osiris-example-imagingdevice-ct</a></td></tr></table><h3>Instances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Uid</b></td><td><b>SopClass</b></td></tr><tr><td style=\"display: none\">*</td><td>1.3.12.2.1107.5.8.15.131606.30000020020620243975600001109</td><td>CT Image Storage (Details: [not stated] code table_B.5-1#1.2.840.10008.5.1.4.1.1.2 = 'table_B.5-1#1.2.840.10008.5.1.4.1.1.2', stated as 'CT Image Storage')</td></tr></table></blockquote></div>"
+  },
+  "identifier" : [{
+    "value" : "1.3.12.2.1107.5.8.15.131606.30000020020620243975600000855"
+  }],
+  "status" : "available",
+  "modality" : [{
+    "system" : "http://terminology.hl7.org/CodeSystem/umls",
+    "code" : "C0439673"
+  }],
+  "subject" : {
+    "reference" : "Patient/13"
+  },
+  "started" : "2020-02-06",
+  "endpoint" : [{
+    "reference" : "Endpoint/fhir-osiris-example-imagingendpoint-ct"
+  }],
+  "numberOfSeries" : 999999,
+  "reasonReference" : [{
+    "reference" : "fhir-osiris-example-analysis-ct-scan"
+  }],
+  "description" : "Unknown",
+  "series" : [{
+    "extension" : [{
+      "extension" : [{
+        "url" : "slice_thickness",
+        "valueString" : "1.5"
+      },
+      {
+        "url" : "pixel_spacing",
+        "valueString" : "[0.63671875, 0.63671875]"
+      },
+      {
+        "url" : "rows",
+        "valueInteger" : 512
+      },
+      {
+        "url" : "columns",
+        "valueInteger" : 512
+      },
+      {
+        "extension" : [{
+          "url" : "kvp",
+          "valueInteger" : 140
+        },
+        {
+          "url" : "xray_tube_current",
+          "valueInteger" : 70
+        },
+        {
+          "url" : "exposure_time",
+          "valueInteger" : 870
+        },
+        {
+          "url" : "spiral_pitch_factor",
+          "valueDecimal" : 999999
+        },
+        {
+          "url" : "filter_type",
+          "valueString" : "BODY FILTER"
+        },
+        {
+          "url" : "convolution_kernel",
+          "valueString" : "STANDARD"
+        }],
+        "url" : "ct_image"
+      }],
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-settings"
+    },
+    {
+      "extension" : [{
+        "url" : "patient_weight",
+        "valueDecimal" : 999999
+      },
+      {
+        "url" : "patient_height",
+        "valueDecimal" : 999999
+      }],
+      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/series-weightheigt"
+    }],
+    "uid" : "1.3.12.2.1107.5.8.15.131606.30000020020620243975600000856",
+    "number" : 2,
+    "modality" : {
+      "system" : "https://dicom.nema.org/medical/dicom",
+      "code" : "CT"
+    },
+    "description" : "Unknown",
+    "numberOfInstances" : 999999,
+    "bodySite" : {
+      "system" : "http://snomed.info/sct",
+      "code" : "43799004"
+    },
+    "started" : "2020-02-06",
+    "performer" : [{
+      "actor" : {
+        "reference" : "Device/fhir-osiris-example-imagingdevice-ct"
+      }
+    }],
+    "instance" : [{
+      "uid" : "1.3.12.2.1107.5.8.15.131606.30000020020620243975600001109",
+      "sopClass" : {
+        "code" : "table_B.5-1#1.2.840.10008.5.1.4.1.1.2",
+        "display" : "CT Image Storage"
+      }
+    }]
+  }]
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="fhir-osiris-example-ROISegmentation"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/roi-segmentation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div>Poumon</div>
+  </text>
+  <identifier>
+    <type>
+      <text value="dicom_reference"/>
+    </type>
+    <value value="1.3.6.1.4.1.14519.5.2.1.5168.1900.145447087104754814293313200434"/>
+  </identifier>
+  <identifier>
+    <type>
+      <text value="series_reference"/>
+    </type>
+    <value value="1.3.6.1.4.1.14519.5.2.1.5168.1900.731508463883905889576807557650"/>
+  </identifier>
+  <identifier>
+    <type>
+      <text value="roi"/>
+    </type>
+    <value value="1 1"/>
+  </identifier>
+  <identifier>
+    <type>
+      <text value="file"/>
+    </type>
+    <value value="Unknown"/>
+  </identifier>
+  <identifier>
+    <type>
+      <text value="dicom_reference"/>
+    </type>
+    <value value="1.3.6.1.4.1.14519.5.2.1.5168.1900.145216219563575643804860454387"/>
+  </identifier>
+  <identifier>
+    <type>
+      <text value="dicom_reference"/>
+    </type>
+    <value value="1.3.6.1.4.1.14519.5.2.1.5168.1900.176764473138537905803461583603"/>
+  </identifier>
+  <partOf>
+    <reference value="ImagingStudy/fhir-osiris-example-imagingstudy-mri-2"/>
+  </partOf>
+  <status value="registered"/>
+  <code>
+    <coding>
+      <system value="https://terminology.arkhn.com/radiomicsCS"/>
+      <code value="DICOM"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/STS-010"/>
+  </subject>
+</Observation>

@@ -1,0 +1,768 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/OsirisCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OsirisCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>https://terminology.arkhn.com/osiris</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">C39-1<a name=\"OsirisCS-C39-1\"> </a></td><td>CKIT</td><td>CKIT</td></tr><tr><td style=\"white-space:nowrap\">C39-2<a name=\"OsirisCS-C39-2\"> </a></td><td>b-catenine</td><td>b-catenine</td></tr><tr><td style=\"white-space:nowrap\">C39-3<a name=\"OsirisCS-C39-3\"> </a></td><td>CKIT/DOG1</td><td>CKIT/DOG1</td></tr><tr><td style=\"white-space:nowrap\">C39-4<a name=\"OsirisCS-C39-4\"> </a></td><td>FOXL2/DICER</td><td>FOXL2/DICER</td></tr><tr><td style=\"white-space:nowrap\">C39-5<a name=\"OsirisCS-C39-5\"> </a></td><td>ETV6-NTRK3</td><td>ETV6-NTRK3</td></tr><tr><td style=\"white-space:nowrap\">C39-6<a name=\"OsirisCS-C39-6\"> </a></td><td>MYB-NFIB</td><td>MYB-NFIB</td></tr><tr><td style=\"white-space:nowrap\">C39-7<a name=\"OsirisCS-C39-7\"> </a></td><td>PDGFRA/FGFR1</td><td>PDGFRA/FGFR1</td></tr><tr><td style=\"white-space:nowrap\">C39-8<a name=\"OsirisCS-C39-8\"> </a></td><td>MDM2</td><td>MDM2</td></tr><tr><td style=\"white-space:nowrap\">C39-9<a name=\"OsirisCS-C39-9\"> </a></td><td>N-MYC</td><td>N-MYC</td></tr><tr><td style=\"white-space:nowrap\">C39-10<a name=\"OsirisCS-C39-10\"> </a></td><td>C-MYC</td><td>C-MYC</td></tr><tr><td style=\"white-space:nowrap\">C39-11<a name=\"OsirisCS-C39-11\"> </a></td><td>BCR-ABL1</td><td>BCR-ABL1</td></tr><tr><td style=\"white-space:nowrap\">C39-12<a name=\"OsirisCS-C39-12\"> </a></td><td>COL1A1</td><td>COL1A1</td></tr><tr><td style=\"white-space:nowrap\">C39-13<a name=\"OsirisCS-C39-13\"> </a></td><td>DDIT3</td><td>DDIT3</td></tr><tr><td style=\"white-space:nowrap\">C39-14<a name=\"OsirisCS-C39-14\"> </a></td><td>EWSR2</td><td>EWSR2</td></tr><tr><td style=\"white-space:nowrap\">C39-15<a name=\"OsirisCS-C39-15\"> </a></td><td>SYT</td><td>SYT</td></tr><tr><td style=\"white-space:nowrap\">C39-16<a name=\"OsirisCS-C39-16\"> </a></td><td>CTNNB1</td><td>CTNNB1</td></tr><tr><td style=\"white-space:nowrap\">C39-17<a name=\"OsirisCS-C39-17\"> </a></td><td>FUS</td><td>FUS</td></tr><tr><td style=\"white-space:nowrap\">C39-18<a name=\"OsirisCS-C39-18\"> </a></td><td>IGH-BCL2</td><td>IGH-BCL2</td></tr><tr><td style=\"white-space:nowrap\">C39-19<a name=\"OsirisCS-C39-19\"> </a></td><td>JAZF1</td><td>JAZF1</td></tr><tr><td style=\"white-space:nowrap\">C39-20<a name=\"OsirisCS-C39-20\"> </a></td><td>FOXO1A</td><td>FOXO1A</td></tr><tr><td style=\"white-space:nowrap\">C39-21<a name=\"OsirisCS-C39-21\"> </a></td><td>TFE3</td><td>TFE3</td></tr><tr><td style=\"white-space:nowrap\">C39-22<a name=\"OsirisCS-C39-22\"> </a></td><td>HPV</td><td>HPV</td></tr><tr><td style=\"white-space:nowrap\">C39-23<a name=\"OsirisCS-C39-23\"> </a></td><td>Merkell</td><td>Merkell</td></tr><tr><td style=\"white-space:nowrap\">C39-24<a name=\"OsirisCS-C39-24\"> </a></td><td>EBER</td><td>EBER</td></tr><tr><td style=\"white-space:nowrap\">C39-25<a name=\"OsirisCS-C39-25\"> </a></td><td>PSA</td><td>PSA</td></tr><tr><td style=\"white-space:nowrap\">C39-26<a name=\"OsirisCS-C39-26\"> </a></td><td>CA125</td><td>CA125</td></tr><tr><td style=\"white-space:nowrap\">C39-27<a name=\"OsirisCS-C39-27\"> </a></td><td>CA153</td><td>CA153</td></tr><tr><td style=\"white-space:nowrap\">C39-28<a name=\"OsirisCS-C39-28\"> </a></td><td>CA199</td><td>CA199</td></tr><tr><td style=\"white-space:nowrap\">C39-29<a name=\"OsirisCS-C39-29\"> </a></td><td>Ki67</td><td>Ki67</td></tr><tr><td style=\"white-space:nowrap\">C39-30<a name=\"OsirisCS-C39-30\"> </a></td><td>Nb mitoses</td><td>Nb mitoses</td></tr><tr><td style=\"white-space:nowrap\">C39-31<a name=\"OsirisCS-C39-31\"> </a></td><td>RO</td><td>RO</td></tr><tr><td style=\"white-space:nowrap\">C39-32<a name=\"OsirisCS-C39-32\"> </a></td><td>RP</td><td>RP</td></tr><tr><td style=\"white-space:nowrap\">C39-33<a name=\"OsirisCS-C39-33\"> </a></td><td>HER2</td><td>HER2</td></tr><tr><td style=\"white-space:nowrap\">C39-34<a name=\"OsirisCS-C39-34\"> </a></td><td>PD-L1</td><td>PD-L1</td></tr><tr><td style=\"white-space:nowrap\">C39-35<a name=\"OsirisCS-C39-35\"> </a></td><td>AMHR2</td><td>AMHR2</td></tr><tr><td style=\"white-space:nowrap\">C39-36<a name=\"OsirisCS-C39-36\"> </a></td><td>P53</td><td>P53</td></tr><tr><td style=\"white-space:nowrap\">C39-37<a name=\"OsirisCS-C39-37\"> </a></td><td>BRCA</td><td>BRCA</td></tr><tr><td style=\"white-space:nowrap\">C39-38<a name=\"OsirisCS-C39-38\"> </a></td><td>MSI</td><td>MSI</td></tr><tr><td style=\"white-space:nowrap\">C39-39<a name=\"OsirisCS-C39-39\"> </a></td><td>CDK12</td><td>CDK12</td></tr><tr><td style=\"white-space:nowrap\">C39-40<a name=\"OsirisCS-C39-40\"> </a></td><td>BRAF</td><td>BRAF</td></tr><tr><td style=\"white-space:nowrap\">C39-41<a name=\"OsirisCS-C39-41\"> </a></td><td>NRAS-KRAS</td><td>NRAS-KRAS</td></tr><tr><td style=\"white-space:nowrap\">C39-42<a name=\"OsirisCS-C39-42\"> </a></td><td>EGFR</td><td>EGFR</td></tr><tr><td style=\"white-space:nowrap\">C39-43<a name=\"OsirisCS-C39-43\"> </a></td><td>ALK</td><td>ALK</td></tr><tr><td style=\"white-space:nowrap\">C39-44<a name=\"OsirisCS-C39-44\"> </a></td><td>ROS1</td><td>ROS1</td></tr><tr><td style=\"white-space:nowrap\">C39-45<a name=\"OsirisCS-C39-45\"> </a></td><td>C-MET</td><td>C-MET</td></tr><tr><td style=\"white-space:nowrap\">C39-46<a name=\"OsirisCS-C39-46\"> </a></td><td>ESR1</td><td>ESR1</td></tr><tr><td style=\"white-space:nowrap\">C39-47<a name=\"OsirisCS-C39-47\"> </a></td><td>PAM50</td><td>PAM50</td></tr><tr><td style=\"white-space:nowrap\">C39-48<a name=\"OsirisCS-C39-48\"> </a></td><td>ENDOPREDICT</td><td>ENDOPREDICT</td></tr><tr><td style=\"white-space:nowrap\">C37-1<a name=\"OsirisCS-C37-1\"> </a></td><td>Biology</td><td>Biology</td></tr><tr><td style=\"white-space:nowrap\">C37-2<a name=\"OsirisCS-C37-2\"> </a></td><td>Imaging</td><td>Imaging</td></tr><tr><td style=\"white-space:nowrap\">C37-3<a name=\"OsirisCS-C37-3\"> </a></td><td>Omic</td><td>Omic</td></tr><tr><td style=\"white-space:nowrap\">C37-4<a name=\"OsirisCS-C37-4\"> </a></td><td>Pathology</td><td>Pathology</td></tr><tr><td style=\"white-space:nowrap\">C27-1<a name=\"OsirisCS-C27-1\"> </a></td><td>5th edition</td><td>UICC TNM Classification 5th edition</td></tr><tr><td style=\"white-space:nowrap\">C27-2<a name=\"OsirisCS-C27-2\"> </a></td><td>6th edition</td><td>UICC TNM Classification 6th edition</td></tr><tr><td style=\"white-space:nowrap\">C27-3<a name=\"OsirisCS-C27-3\"> </a></td><td>7th edition</td><td>UICC TNM Classification 7th edition</td></tr><tr><td style=\"white-space:nowrap\">O59-1<a name=\"OsirisCS-O59-1\"> </a></td><td>Normal</td><td>Normal sample</td></tr><tr><td style=\"white-space:nowrap\">O59-2<a name=\"OsirisCS-O59-2\"> </a></td><td>Tumoral</td><td>Tumoral sample</td></tr><tr><td style=\"white-space:nowrap\">C60-1<a name=\"OsirisCS-C60-1\"> </a></td><td>Room temperature</td><td>Room temperature</td></tr><tr><td style=\"white-space:nowrap\">C60-2<a name=\"OsirisCS-C60-2\"> </a></td><td>Between 2 °C and 10 °C</td><td>Between 2 °C and 10 °C</td></tr><tr><td style=\"white-space:nowrap\">C60-3<a name=\"OsirisCS-C60-3\"> </a></td><td>Between -18 °C and -35 °C</td><td>Between -18 °C and -35 °C</td></tr><tr><td style=\"white-space:nowrap\">C60-4<a name=\"OsirisCS-C60-4\"> </a></td><td>Between -60 °C and -85 °C</td><td>Between -60 °C and -85 °C</td></tr><tr><td style=\"white-space:nowrap\">C60-5<a name=\"OsirisCS-C60-5\"> </a></td><td>Liquid nitrogen, -150 °C to -196 °C</td><td>Liquid nitrogen, -150 °C to -196 °C</td></tr><tr><td style=\"white-space:nowrap\">O6-1<a name=\"OsirisCS-O6-1\"> </a></td><td>ChIP-on-Chip</td><td>ChIP-on-Chip</td></tr><tr><td style=\"white-space:nowrap\">O6-2<a name=\"OsirisCS-O6-2\"> </a></td><td>ChIP-seq</td><td>ChIP-seq</td></tr><tr><td style=\"white-space:nowrap\">O6-3<a name=\"OsirisCS-O6-3\"> </a></td><td>DNA microarray</td><td>DNA microarray</td></tr><tr><td style=\"white-space:nowrap\">O6-4<a name=\"OsirisCS-O6-4\"> </a></td><td>DNA targeted panel sequencing</td><td>DNA targeted panel sequencing</td></tr><tr><td style=\"white-space:nowrap\">O6-5<a name=\"OsirisCS-O6-5\"> </a></td><td>Exome sequencing</td><td>Exome sequencing</td></tr><tr><td style=\"white-space:nowrap\">O6-6<a name=\"OsirisCS-O6-6\"> </a></td><td>Mass spectrometry</td><td>Mass spectrometry</td></tr><tr><td style=\"white-space:nowrap\">O6-7<a name=\"OsirisCS-O6-7\"> </a></td><td>MeDIP-Chip</td><td>MeDIP-Chip</td></tr><tr><td style=\"white-space:nowrap\">O6-8<a name=\"OsirisCS-O6-8\"> </a></td><td>MeDIP-seq</td><td>MeDIP-seq</td></tr><tr><td style=\"white-space:nowrap\">O6-9<a name=\"OsirisCS-O6-9\"> </a></td><td>Methylation microarray</td><td>Methylation microarray</td></tr><tr><td style=\"white-space:nowrap\">O6-10<a name=\"OsirisCS-O6-10\"> </a></td><td>RNA microarray</td><td>RNA microarray</td></tr><tr><td style=\"white-space:nowrap\">O6-11<a name=\"OsirisCS-O6-11\"> </a></td><td>RNA targeted panel sequencing</td><td>RNA targeted panel sequencing</td></tr><tr><td style=\"white-space:nowrap\">O6-12<a name=\"OsirisCS-O6-12\"> </a></td><td>RNA-seq</td><td>RNA-seq</td></tr><tr><td style=\"white-space:nowrap\">O6-13<a name=\"OsirisCS-O6-13\"> </a></td><td>RPPA</td><td>RPPA</td></tr><tr><td style=\"white-space:nowrap\">O6-14<a name=\"OsirisCS-O6-14\"> </a></td><td>Whole genome bisulfite sequencing</td><td>Whole genome bisulfite sequencing</td></tr><tr><td style=\"white-space:nowrap\">O6-15<a name=\"OsirisCS-O6-15\"> </a></td><td>Whole genome sequencing</td><td>Whole genome sequencing</td></tr><tr><td style=\"white-space:nowrap\">O6-16<a name=\"OsirisCS-O6-16\"> </a></td><td>miRNA microarray</td><td>miRNA microarray</td></tr><tr><td style=\"white-space:nowrap\">O90-1<a name=\"OsirisCS-O90-1\"> </a></td><td>Fusion transcript</td><td>Fusion transcript</td></tr><tr><td style=\"white-space:nowrap\">O90-3<a name=\"OsirisCS-O90-3\"> </a></td><td>Population frequency</td><td>Population frequency</td></tr><tr><td style=\"white-space:nowrap\">O90-4<a name=\"OsirisCS-O90-4\"> </a></td><td>Protein reference</td><td>Protein reference</td></tr><tr><td style=\"white-space:nowrap\">O90-5<a name=\"OsirisCS-O90-5\"> </a></td><td>Transcript reference</td><td>Transcript reference</td></tr><tr><td style=\"white-space:nowrap\">O90-6<a name=\"OsirisCS-O90-6\"> </a></td><td>Variant id</td><td>Variant id</td></tr><tr><td style=\"white-space:nowrap\">O19-1<a name=\"OsirisCS-O19-1\"> </a></td><td>MT</td><td>Mitochondrial genetic material</td></tr><tr><td style=\"white-space:nowrap\">O19-2<a name=\"OsirisCS-O19-2\"> </a></td><td>viral</td><td>Viral genetic material</td></tr><tr><td style=\"white-space:nowrap\">O19-3<a name=\"OsirisCS-O19-3\"> </a></td><td>bacterial</td><td>Bacterial genetic material</td></tr><tr><td style=\"white-space:nowrap\">O63-1<a name=\"OsirisCS-O63-1\"> </a></td><td>SIFT</td><td>SIFT</td></tr><tr><td style=\"white-space:nowrap\">O63-2<a name=\"OsirisCS-O63-2\"> </a></td><td>POLYPHEN2_HDIV</td><td>POLYPHEN2_HDIV</td></tr><tr><td style=\"white-space:nowrap\">O63-3<a name=\"OsirisCS-O63-3\"> </a></td><td>MutationTaster</td><td>MutationTaster</td></tr><tr><td style=\"white-space:nowrap\">O81-1<a name=\"OsirisCS-O81-1\"> </a></td><td>Pathogenic</td><td>Pathogenic</td></tr><tr><td style=\"white-space:nowrap\">O81-2<a name=\"OsirisCS-O81-2\"> </a></td><td>Likely pathogenic</td><td>Likely pathogenic</td></tr><tr><td style=\"white-space:nowrap\">O81-3<a name=\"OsirisCS-O81-3\"> </a></td><td>Uncertain significance</td><td>Uncertain significance</td></tr><tr><td style=\"white-space:nowrap\">O81-4<a name=\"OsirisCS-O81-4\"> </a></td><td>Likely benign</td><td>Likely benign</td></tr><tr><td style=\"white-space:nowrap\">O81-5<a name=\"OsirisCS-O81-5\"> </a></td><td>Benign</td><td>Benign</td></tr><tr><td style=\"white-space:nowrap\">O16-1<a name=\"OsirisCS-O16-1\"> </a></td><td>Experimental</td><td>Experimental</td></tr><tr><td style=\"white-space:nowrap\">O16-2<a name=\"OsirisCS-O16-2\"> </a></td><td>By biologist</td><td>By biologist</td></tr><tr><td style=\"white-space:nowrap\">O16-3<a name=\"OsirisCS-O16-3\"> </a></td><td>In silico</td><td>In silico</td></tr><tr><td style=\"white-space:nowrap\">O84-1<a name=\"OsirisCS-O84-1\"> </a></td><td>RawExpression</td><td>RawExpression</td></tr><tr><td style=\"white-space:nowrap\">O84-2<a name=\"OsirisCS-O84-2\"> </a></td><td>NormalizedExpression</td><td>NormalizedExpression</td></tr><tr><td style=\"white-space:nowrap\">O84-3<a name=\"OsirisCS-O84-3\"> </a></td><td>TPMExpression</td><td>TPMExpression</td></tr><tr><td style=\"white-space:nowrap\">O84-4<a name=\"OsirisCS-O84-4\"> </a></td><td>RPKMExpression</td><td>RPKMExpression</td></tr><tr><td style=\"white-space:nowrap\">O28-1<a name=\"OsirisCS-O28-1\"> </a></td><td>readthrough</td><td>readthrough</td></tr><tr><td style=\"white-space:nowrap\">C60-6<a name=\"OsirisCS-C60-6\"> </a></td><td>Other</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">C77-6<a name=\"OsirisCS-C77-6\"> </a></td><td>Other</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">O6-OTH<a name=\"OsirisCS-O6-OTH\"> </a></td><td>Other</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">O13-OTH<a name=\"OsirisCS-O13-OTH\"> </a></td><td>Other</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">O7-1<a name=\"OsirisCS-O7-1\"> </a></td><td>Affymetrix Cytoscan HD</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-2<a name=\"OsirisCS-O7-2\"> </a></td><td>Affymetrix EMET Plus Premier Pack</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-3<a name=\"OsirisCS-O7-3\"> </a></td><td>Affymetrix Genome-Wide Human SNP Array 5.0</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-4<a name=\"OsirisCS-O7-4\"> </a></td><td>Affymetrix Genome-Wide Human SNP Array 6.0</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-5<a name=\"OsirisCS-O7-5\"> </a></td><td>Affymetrix HT Human Genome U133A Array Plate Set</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-6<a name=\"OsirisCS-O7-6\"> </a></td><td>Affymetrix Human Exon 1.0 ST</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-7<a name=\"OsirisCS-O7-7\"> </a></td><td>Affymetrix Human Gene 1.0 ST</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-8<a name=\"OsirisCS-O7-8\"> </a></td><td>Affymetrix Human Genome U219 Array Plate</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-9<a name=\"OsirisCS-O7-9\"> </a></td><td>Affymetrix Human MIP 330K</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-10<a name=\"OsirisCS-O7-10\"> </a></td><td>Affymetrix Human U133 Plus 2.0</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-11<a name=\"OsirisCS-O7-11\"> </a></td><td>Affymetrix Human U133 Plus PM</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-12<a name=\"OsirisCS-O7-12\"> </a></td><td>Affymetrix Mapping 100K Array Set</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-13<a name=\"OsirisCS-O7-13\"> </a></td><td>Affymetrix Mapping 10K 2.0 Array Set</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-14<a name=\"OsirisCS-O7-14\"> </a></td><td>Affymetrix Mapping 500K Array Set</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-15<a name=\"OsirisCS-O7-15\"> </a></td><td>Affymetrix OncoScan FFPE Express 2.0</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-16<a name=\"OsirisCS-O7-16\"> </a></td><td>Agilent 244K Custom Gene Expression G4502A-07</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-17<a name=\"OsirisCS-O7-17\"> </a></td><td>Agilent 244K Custom Gene Expression G4502A-07-1</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-18<a name=\"OsirisCS-O7-18\"> </a></td><td>Agilent 244K Custom Gene Expression G4502A-07-2</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-19<a name=\"OsirisCS-O7-19\"> </a></td><td>Agilent 244K Custom Gene Expression G4502A-07-3</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-20<a name=\"OsirisCS-O7-20\"> </a></td><td>Agilent 8 x 15K Human miRNA-specific microarray</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-21<a name=\"OsirisCS-O7-21\"> </a></td><td>Agilent Human CGH 1x1M</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-22<a name=\"OsirisCS-O7-22\"> </a></td><td>Agilent Human CGH 2x400K</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-23<a name=\"OsirisCS-O7-23\"> </a></td><td>Agilent Human CGH 4x180K</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-24<a name=\"OsirisCS-O7-24\"> </a></td><td>Agilent Human CGH 8x60K</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-25<a name=\"OsirisCS-O7-25\"> </a></td><td>Agilent Human CNV 2x400K</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-26<a name=\"OsirisCS-O7-26\"> </a></td><td>Agilent Human CNV Association 2x105K</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-27<a name=\"OsirisCS-O7-27\"> </a></td><td>Agilent Human CpG Island Microarray Kit</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-28<a name=\"OsirisCS-O7-28\"> </a></td><td>Agilent Human Genome 105A</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-29<a name=\"OsirisCS-O7-29\"> </a></td><td>Agilent Human Genome 244A</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-30<a name=\"OsirisCS-O7-30\"> </a></td><td>Agilent Human Genome 44K</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-31<a name=\"OsirisCS-O7-31\"> </a></td><td>Agilent Human Genome CGH Custom Microaary 2x415K</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-32<a name=\"OsirisCS-O7-32\"> </a></td><td>Agilent Human miRNA Microarray Kit (v2)</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-33<a name=\"OsirisCS-O7-33\"> </a></td><td>Agilent Human Promoter ChIP-on-chip Microarray Set</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-34<a name=\"OsirisCS-O7-34\"> </a></td><td>Agilent Human SpliceArray</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-35<a name=\"OsirisCS-O7-35\"> </a></td><td>Agilent Whole Human Genome Oligo Microarray Kit</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-36<a name=\"OsirisCS-O7-36\"> </a></td><td>Almac Human CRC</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-37<a name=\"OsirisCS-O7-37\"> </a></td><td>capillary sequencing</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-38<a name=\"OsirisCS-O7-38\"> </a></td><td>Complete Genomics</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-39<a name=\"OsirisCS-O7-39\"> </a></td><td>Custom-designed cDNA array</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-40<a name=\"OsirisCS-O7-40\"> </a></td><td>Custom-designed gene expression array</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-41<a name=\"OsirisCS-O7-41\"> </a></td><td>Helicos sequencing</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-42<a name=\"OsirisCS-O7-42\"> </a></td><td>HumanOmni2.5-8 BeadChip Kit</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-43<a name=\"OsirisCS-O7-43\"> </a></td><td>Illumina GA sequencing</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-44<a name=\"OsirisCS-O7-44\"> </a></td><td>Illumina goldengate methylation</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-45<a name=\"OsirisCS-O7-45\"> </a></td><td>Illumina GoldenGate Methylation Cancer Panel I</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-46<a name=\"OsirisCS-O7-46\"> </a></td><td>Illumina HiSeq</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-47<a name=\"OsirisCS-O7-47\"> </a></td><td>Illumina HiSeq X Ten</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-48<a name=\"OsirisCS-O7-48\"> </a></td><td>Illumina Human Omni1-Quad beadchip</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-49<a name=\"OsirisCS-O7-49\"> </a></td><td>Illumina Human1M OmniQuad chip</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-50<a name=\"OsirisCS-O7-50\"> </a></td><td>Illumina human1m-duo</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-51<a name=\"OsirisCS-O7-51\"> </a></td><td>Illumina human510s-duo</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-52<a name=\"OsirisCS-O7-52\"> </a></td><td>Illumina human660w-quad</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-53<a name=\"OsirisCS-O7-53\"> </a></td><td>Illumina HumanCNV370-Duo v1.0 BeadChip</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-54<a name=\"OsirisCS-O7-54\"> </a></td><td>Illumina humancytosnp-12</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-55<a name=\"OsirisCS-O7-55\"> </a></td><td>Illumina HumanHap550</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-56<a name=\"OsirisCS-O7-56\"> </a></td><td>Illumina HumanHT-12 v4.0 beadchip</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-57<a name=\"OsirisCS-O7-57\"> </a></td><td>Illumina humanht-16</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-58<a name=\"OsirisCS-O7-58\"> </a></td><td>Illumina humanht-17</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-59<a name=\"OsirisCS-O7-59\"> </a></td><td>Illumina humanmethylation27</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-60<a name=\"OsirisCS-O7-60\"> </a></td><td>Illumina HumanOmniExpress BeadChip</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-61<a name=\"OsirisCS-O7-61\"> </a></td><td>Illumina HumanRef-8 v3.0 beadchip</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-62<a name=\"OsirisCS-O7-62\"> </a></td><td>Illumina HumanWG-6 v3.0 beadchip</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-63<a name=\"OsirisCS-O7-63\"> </a></td><td>Illumina Infinium HumanMethylation450</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-64<a name=\"OsirisCS-O7-64\"> </a></td><td>Illumina microRNA Expression Profiling Panel</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-65<a name=\"OsirisCS-O7-65\"> </a></td><td>Illumina MiSeq Personal Sequencer</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-66<a name=\"OsirisCS-O7-66\"> </a></td><td>Ion Torrent PGM</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-67<a name=\"OsirisCS-O7-67\"> </a></td><td>Ion Torrent Proton</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-68<a name=\"OsirisCS-O7-68\"> </a></td><td>M.D. Anderson Reverse Phase Protein Array Core</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-69<a name=\"OsirisCS-O7-69\"> </a></td><td>Microsatellite Instability Analysis</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-70<a name=\"OsirisCS-O7-70\"> </a></td><td>nanoString</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-71<a name=\"OsirisCS-O7-71\"> </a></td><td>Nimblegen CGS</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-72<a name=\"OsirisCS-O7-72\"> </a></td><td>Nimblegen Gene Expression 12x135K</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-73<a name=\"OsirisCS-O7-73\"> </a></td><td>Nimblegen Gene Expression 385K</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-74<a name=\"OsirisCS-O7-74\"> </a></td><td>Nimblegen Gene Expression 4x72K</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-75<a name=\"OsirisCS-O7-75\"> </a></td><td>Nimblegen Human CGH 2.1M Whole-Genome v2.0D Array</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-76<a name=\"OsirisCS-O7-76\"> </a></td><td>Nimblegen Human CGH 3x720 Whole-Genome v3.0 Array</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-77<a name=\"OsirisCS-O7-77\"> </a></td><td>Nimblegen Human Methylation 2.1M Whole-Genome sets</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-78<a name=\"OsirisCS-O7-78\"> </a></td><td>Nimblegen Human Methylation 385K Whole-Genome sets</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-79<a name=\"OsirisCS-O7-79\"> </a></td><td>PacBio RS sequencing</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-80<a name=\"OsirisCS-O7-80\"> </a></td><td>PCR</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-81<a name=\"OsirisCS-O7-81\"> </a></td><td>PCR and capillary sequencing</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-82<a name=\"OsirisCS-O7-82\"> </a></td><td>qPCR</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-83<a name=\"OsirisCS-O7-83\"> </a></td><td>Roche 454 sequencing</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-84<a name=\"OsirisCS-O7-84\"> </a></td><td>Sequenom MassARRAY</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-85<a name=\"OsirisCS-O7-85\"> </a></td><td>SOLiD sequencing</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-86<a name=\"OsirisCS-O7-86\"> </a></td><td>Digital PCR</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-87<a name=\"OsirisCS-O7-87\"> </a></td><td>NextSeq 500</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-88<a name=\"OsirisCS-O7-88\"> </a></td><td>NovaSeq</td><td/></tr><tr><td style=\"white-space:nowrap\">O7-OTH<a name=\"OsirisCS-O7-OTH\"> </a></td><td>Other</td><td/></tr><tr><td style=\"white-space:nowrap\">O10-1<a name=\"OsirisCS-O10-1\"> </a></td><td>Ion AmpliSeq Cancer Hotspot Panel v2</td><td/></tr><tr><td style=\"white-space:nowrap\">O10-2<a name=\"OsirisCS-O10-2\"> </a></td><td>Ion AmpliSeq Colon and Lung Cancer Research Panel v2</td><td/></tr><tr><td style=\"white-space:nowrap\">O10-3<a name=\"OsirisCS-O10-3\"> </a></td><td>Ion AmpliSeq Comprehensive Cancer Panel</td><td/></tr><tr><td style=\"white-space:nowrap\">O10-4<a name=\"OsirisCS-O10-4\"> </a></td><td>Ion AmpliSeq Oncomine Comprehensive Assay</td><td/></tr><tr><td style=\"white-space:nowrap\">O10-5<a name=\"OsirisCS-O10-5\"> </a></td><td>Ion AmpliSeq Oncomine Focus Assay</td><td/></tr><tr><td style=\"white-space:nowrap\">O10-6<a name=\"OsirisCS-O10-6\"> </a></td><td>Ion AmpliSeq TP53 Research Panel</td><td/></tr><tr><td style=\"white-space:nowrap\">O10-7<a name=\"OsirisCS-O10-7\"> </a></td><td>Lyric: Ion AmpliSeq Profiler</td><td/></tr><tr><td style=\"white-space:nowrap\">O10-8<a name=\"OsirisCS-O10-8\"> </a></td><td>QIAGEN GeneRead DNAseq Targeted Panels V2</td><td/></tr><tr><td style=\"white-space:nowrap\">O10-9<a name=\"OsirisCS-O10-9\"> </a></td><td>SAFIR02 Panel</td><td/></tr><tr><td style=\"white-space:nowrap\">O10-10<a name=\"OsirisCS-O10-10\"> </a></td><td>Mosc3</td><td/></tr><tr><td style=\"white-space:nowrap\">010-OTH<a name=\"OsirisCS-010-OTH\"> </a></td><td>Other</td><td/></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://terminology.arkhn.com/osiris"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.1.0"] ; # 
+  fhir:name [ fhir:v "OsirisCS"] ; # 
+  fhir:title [ fhir:v "Osiris code system"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-05-13T13:56:11+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Arkhn"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Arkhn" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://arkhn.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "contact@arkhn.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Nicolas Riss" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "nicolas@arkhn.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Custom code from osiris standard"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "206"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "C39-1" ] ;
+     fhir:display [ fhir:v "CKIT" ] ;
+     fhir:definition [ fhir:v "CKIT" ]
+  ] [
+     fhir:code [ fhir:v "C39-2" ] ;
+     fhir:display [ fhir:v "b-catenine" ] ;
+     fhir:definition [ fhir:v "b-catenine" ]
+  ] [
+     fhir:code [ fhir:v "C39-3" ] ;
+     fhir:display [ fhir:v "CKIT/DOG1" ] ;
+     fhir:definition [ fhir:v "CKIT/DOG1" ]
+  ] [
+     fhir:code [ fhir:v "C39-4" ] ;
+     fhir:display [ fhir:v "FOXL2/DICER" ] ;
+     fhir:definition [ fhir:v "FOXL2/DICER" ]
+  ] [
+     fhir:code [ fhir:v "C39-5" ] ;
+     fhir:display [ fhir:v "ETV6-NTRK3" ] ;
+     fhir:definition [ fhir:v "ETV6-NTRK3" ]
+  ] [
+     fhir:code [ fhir:v "C39-6" ] ;
+     fhir:display [ fhir:v "MYB-NFIB" ] ;
+     fhir:definition [ fhir:v "MYB-NFIB" ]
+  ] [
+     fhir:code [ fhir:v "C39-7" ] ;
+     fhir:display [ fhir:v "PDGFRA/FGFR1" ] ;
+     fhir:definition [ fhir:v "PDGFRA/FGFR1" ]
+  ] [
+     fhir:code [ fhir:v "C39-8" ] ;
+     fhir:display [ fhir:v "MDM2" ] ;
+     fhir:definition [ fhir:v "MDM2" ]
+  ] [
+     fhir:code [ fhir:v "C39-9" ] ;
+     fhir:display [ fhir:v "N-MYC" ] ;
+     fhir:definition [ fhir:v "N-MYC" ]
+  ] [
+     fhir:code [ fhir:v "C39-10" ] ;
+     fhir:display [ fhir:v "C-MYC" ] ;
+     fhir:definition [ fhir:v "C-MYC" ]
+  ] [
+     fhir:code [ fhir:v "C39-11" ] ;
+     fhir:display [ fhir:v "BCR-ABL1" ] ;
+     fhir:definition [ fhir:v "BCR-ABL1" ]
+  ] [
+     fhir:code [ fhir:v "C39-12" ] ;
+     fhir:display [ fhir:v "COL1A1" ] ;
+     fhir:definition [ fhir:v "COL1A1" ]
+  ] [
+     fhir:code [ fhir:v "C39-13" ] ;
+     fhir:display [ fhir:v "DDIT3" ] ;
+     fhir:definition [ fhir:v "DDIT3" ]
+  ] [
+     fhir:code [ fhir:v "C39-14" ] ;
+     fhir:display [ fhir:v "EWSR2" ] ;
+     fhir:definition [ fhir:v "EWSR2" ]
+  ] [
+     fhir:code [ fhir:v "C39-15" ] ;
+     fhir:display [ fhir:v "SYT" ] ;
+     fhir:definition [ fhir:v "SYT" ]
+  ] [
+     fhir:code [ fhir:v "C39-16" ] ;
+     fhir:display [ fhir:v "CTNNB1" ] ;
+     fhir:definition [ fhir:v "CTNNB1" ]
+  ] [
+     fhir:code [ fhir:v "C39-17" ] ;
+     fhir:display [ fhir:v "FUS" ] ;
+     fhir:definition [ fhir:v "FUS" ]
+  ] [
+     fhir:code [ fhir:v "C39-18" ] ;
+     fhir:display [ fhir:v "IGH-BCL2" ] ;
+     fhir:definition [ fhir:v "IGH-BCL2" ]
+  ] [
+     fhir:code [ fhir:v "C39-19" ] ;
+     fhir:display [ fhir:v "JAZF1" ] ;
+     fhir:definition [ fhir:v "JAZF1" ]
+  ] [
+     fhir:code [ fhir:v "C39-20" ] ;
+     fhir:display [ fhir:v "FOXO1A" ] ;
+     fhir:definition [ fhir:v "FOXO1A" ]
+  ] [
+     fhir:code [ fhir:v "C39-21" ] ;
+     fhir:display [ fhir:v "TFE3" ] ;
+     fhir:definition [ fhir:v "TFE3" ]
+  ] [
+     fhir:code [ fhir:v "C39-22" ] ;
+     fhir:display [ fhir:v "HPV" ] ;
+     fhir:definition [ fhir:v "HPV" ]
+  ] [
+     fhir:code [ fhir:v "C39-23" ] ;
+     fhir:display [ fhir:v "Merkell" ] ;
+     fhir:definition [ fhir:v "Merkell" ]
+  ] [
+     fhir:code [ fhir:v "C39-24" ] ;
+     fhir:display [ fhir:v "EBER" ] ;
+     fhir:definition [ fhir:v "EBER" ]
+  ] [
+     fhir:code [ fhir:v "C39-25" ] ;
+     fhir:display [ fhir:v "PSA" ] ;
+     fhir:definition [ fhir:v "PSA" ]
+  ] [
+     fhir:code [ fhir:v "C39-26" ] ;
+     fhir:display [ fhir:v "CA125" ] ;
+     fhir:definition [ fhir:v "CA125" ]
+  ] [
+     fhir:code [ fhir:v "C39-27" ] ;
+     fhir:display [ fhir:v "CA153" ] ;
+     fhir:definition [ fhir:v "CA153" ]
+  ] [
+     fhir:code [ fhir:v "C39-28" ] ;
+     fhir:display [ fhir:v "CA199" ] ;
+     fhir:definition [ fhir:v "CA199" ]
+  ] [
+     fhir:code [ fhir:v "C39-29" ] ;
+     fhir:display [ fhir:v "Ki67" ] ;
+     fhir:definition [ fhir:v "Ki67" ]
+  ] [
+     fhir:code [ fhir:v "C39-30" ] ;
+     fhir:display [ fhir:v "Nb mitoses" ] ;
+     fhir:definition [ fhir:v "Nb mitoses" ]
+  ] [
+     fhir:code [ fhir:v "C39-31" ] ;
+     fhir:display [ fhir:v "RO" ] ;
+     fhir:definition [ fhir:v "RO" ]
+  ] [
+     fhir:code [ fhir:v "C39-32" ] ;
+     fhir:display [ fhir:v "RP" ] ;
+     fhir:definition [ fhir:v "RP" ]
+  ] [
+     fhir:code [ fhir:v "C39-33" ] ;
+     fhir:display [ fhir:v "HER2" ] ;
+     fhir:definition [ fhir:v "HER2" ]
+  ] [
+     fhir:code [ fhir:v "C39-34" ] ;
+     fhir:display [ fhir:v "PD-L1" ] ;
+     fhir:definition [ fhir:v "PD-L1" ]
+  ] [
+     fhir:code [ fhir:v "C39-35" ] ;
+     fhir:display [ fhir:v "AMHR2" ] ;
+     fhir:definition [ fhir:v "AMHR2" ]
+  ] [
+     fhir:code [ fhir:v "C39-36" ] ;
+     fhir:display [ fhir:v "P53" ] ;
+     fhir:definition [ fhir:v "P53" ]
+  ] [
+     fhir:code [ fhir:v "C39-37" ] ;
+     fhir:display [ fhir:v "BRCA" ] ;
+     fhir:definition [ fhir:v "BRCA" ]
+  ] [
+     fhir:code [ fhir:v "C39-38" ] ;
+     fhir:display [ fhir:v "MSI" ] ;
+     fhir:definition [ fhir:v "MSI" ]
+  ] [
+     fhir:code [ fhir:v "C39-39" ] ;
+     fhir:display [ fhir:v "CDK12" ] ;
+     fhir:definition [ fhir:v "CDK12" ]
+  ] [
+     fhir:code [ fhir:v "C39-40" ] ;
+     fhir:display [ fhir:v "BRAF" ] ;
+     fhir:definition [ fhir:v "BRAF" ]
+  ] [
+     fhir:code [ fhir:v "C39-41" ] ;
+     fhir:display [ fhir:v "NRAS-KRAS" ] ;
+     fhir:definition [ fhir:v "NRAS-KRAS" ]
+  ] [
+     fhir:code [ fhir:v "C39-42" ] ;
+     fhir:display [ fhir:v "EGFR" ] ;
+     fhir:definition [ fhir:v "EGFR" ]
+  ] [
+     fhir:code [ fhir:v "C39-43" ] ;
+     fhir:display [ fhir:v "ALK" ] ;
+     fhir:definition [ fhir:v "ALK" ]
+  ] [
+     fhir:code [ fhir:v "C39-44" ] ;
+     fhir:display [ fhir:v "ROS1" ] ;
+     fhir:definition [ fhir:v "ROS1" ]
+  ] [
+     fhir:code [ fhir:v "C39-45" ] ;
+     fhir:display [ fhir:v "C-MET" ] ;
+     fhir:definition [ fhir:v "C-MET" ]
+  ] [
+     fhir:code [ fhir:v "C39-46" ] ;
+     fhir:display [ fhir:v "ESR1" ] ;
+     fhir:definition [ fhir:v "ESR1" ]
+  ] [
+     fhir:code [ fhir:v "C39-47" ] ;
+     fhir:display [ fhir:v "PAM50" ] ;
+     fhir:definition [ fhir:v "PAM50" ]
+  ] [
+     fhir:code [ fhir:v "C39-48" ] ;
+     fhir:display [ fhir:v "ENDOPREDICT" ] ;
+     fhir:definition [ fhir:v "ENDOPREDICT" ]
+  ] [
+     fhir:code [ fhir:v "C37-1" ] ;
+     fhir:display [ fhir:v "Biology" ] ;
+     fhir:definition [ fhir:v "Biology" ]
+  ] [
+     fhir:code [ fhir:v "C37-2" ] ;
+     fhir:display [ fhir:v "Imaging" ] ;
+     fhir:definition [ fhir:v "Imaging" ]
+  ] [
+     fhir:code [ fhir:v "C37-3" ] ;
+     fhir:display [ fhir:v "Omic" ] ;
+     fhir:definition [ fhir:v "Omic" ]
+  ] [
+     fhir:code [ fhir:v "C37-4" ] ;
+     fhir:display [ fhir:v "Pathology" ] ;
+     fhir:definition [ fhir:v "Pathology" ]
+  ] [
+     fhir:code [ fhir:v "C27-1" ] ;
+     fhir:display [ fhir:v "5th edition" ] ;
+     fhir:definition [ fhir:v "UICC TNM Classification 5th edition" ]
+  ] [
+     fhir:code [ fhir:v "C27-2" ] ;
+     fhir:display [ fhir:v "6th edition" ] ;
+     fhir:definition [ fhir:v "UICC TNM Classification 6th edition" ]
+  ] [
+     fhir:code [ fhir:v "C27-3" ] ;
+     fhir:display [ fhir:v "7th edition" ] ;
+     fhir:definition [ fhir:v "UICC TNM Classification 7th edition" ]
+  ] [
+     fhir:code [ fhir:v "O59-1" ] ;
+     fhir:display [ fhir:v "Normal" ] ;
+     fhir:definition [ fhir:v "Normal sample" ]
+  ] [
+     fhir:code [ fhir:v "O59-2" ] ;
+     fhir:display [ fhir:v "Tumoral" ] ;
+     fhir:definition [ fhir:v "Tumoral sample" ]
+  ] [
+     fhir:code [ fhir:v "C60-1" ] ;
+     fhir:display [ fhir:v "Room temperature" ] ;
+     fhir:definition [ fhir:v "Room temperature" ]
+  ] [
+     fhir:code [ fhir:v "C60-2" ] ;
+     fhir:display [ fhir:v "Between 2 °C and 10 °C" ] ;
+     fhir:definition [ fhir:v "Between 2 °C and 10 °C" ]
+  ] [
+     fhir:code [ fhir:v "C60-3" ] ;
+     fhir:display [ fhir:v "Between -18 °C and -35 °C" ] ;
+     fhir:definition [ fhir:v "Between -18 °C and -35 °C" ]
+  ] [
+     fhir:code [ fhir:v "C60-4" ] ;
+     fhir:display [ fhir:v "Between -60 °C and -85 °C" ] ;
+     fhir:definition [ fhir:v "Between -60 °C and -85 °C" ]
+  ] [
+     fhir:code [ fhir:v "C60-5" ] ;
+     fhir:display [ fhir:v "Liquid nitrogen, -150 °C to -196 °C" ] ;
+     fhir:definition [ fhir:v "Liquid nitrogen, -150 °C to -196 °C" ]
+  ] [
+     fhir:code [ fhir:v "O6-1" ] ;
+     fhir:display [ fhir:v "ChIP-on-Chip" ] ;
+     fhir:definition [ fhir:v "ChIP-on-Chip" ]
+  ] [
+     fhir:code [ fhir:v "O6-2" ] ;
+     fhir:display [ fhir:v "ChIP-seq" ] ;
+     fhir:definition [ fhir:v "ChIP-seq" ]
+  ] [
+     fhir:code [ fhir:v "O6-3" ] ;
+     fhir:display [ fhir:v "DNA microarray" ] ;
+     fhir:definition [ fhir:v "DNA microarray" ]
+  ] [
+     fhir:code [ fhir:v "O6-4" ] ;
+     fhir:display [ fhir:v "DNA targeted panel sequencing" ] ;
+     fhir:definition [ fhir:v "DNA targeted panel sequencing" ]
+  ] [
+     fhir:code [ fhir:v "O6-5" ] ;
+     fhir:display [ fhir:v "Exome sequencing" ] ;
+     fhir:definition [ fhir:v "Exome sequencing" ]
+  ] [
+     fhir:code [ fhir:v "O6-6" ] ;
+     fhir:display [ fhir:v "Mass spectrometry" ] ;
+     fhir:definition [ fhir:v "Mass spectrometry" ]
+  ] [
+     fhir:code [ fhir:v "O6-7" ] ;
+     fhir:display [ fhir:v "MeDIP-Chip" ] ;
+     fhir:definition [ fhir:v "MeDIP-Chip" ]
+  ] [
+     fhir:code [ fhir:v "O6-8" ] ;
+     fhir:display [ fhir:v "MeDIP-seq" ] ;
+     fhir:definition [ fhir:v "MeDIP-seq" ]
+  ] [
+     fhir:code [ fhir:v "O6-9" ] ;
+     fhir:display [ fhir:v "Methylation microarray" ] ;
+     fhir:definition [ fhir:v "Methylation microarray" ]
+  ] [
+     fhir:code [ fhir:v "O6-10" ] ;
+     fhir:display [ fhir:v "RNA microarray" ] ;
+     fhir:definition [ fhir:v "RNA microarray" ]
+  ] [
+     fhir:code [ fhir:v "O6-11" ] ;
+     fhir:display [ fhir:v "RNA targeted panel sequencing" ] ;
+     fhir:definition [ fhir:v "RNA targeted panel sequencing" ]
+  ] [
+     fhir:code [ fhir:v "O6-12" ] ;
+     fhir:display [ fhir:v "RNA-seq" ] ;
+     fhir:definition [ fhir:v "RNA-seq" ]
+  ] [
+     fhir:code [ fhir:v "O6-13" ] ;
+     fhir:display [ fhir:v "RPPA" ] ;
+     fhir:definition [ fhir:v "RPPA" ]
+  ] [
+     fhir:code [ fhir:v "O6-14" ] ;
+     fhir:display [ fhir:v "Whole genome bisulfite sequencing" ] ;
+     fhir:definition [ fhir:v "Whole genome bisulfite sequencing" ]
+  ] [
+     fhir:code [ fhir:v "O6-15" ] ;
+     fhir:display [ fhir:v "Whole genome sequencing" ] ;
+     fhir:definition [ fhir:v "Whole genome sequencing" ]
+  ] [
+     fhir:code [ fhir:v "O6-16" ] ;
+     fhir:display [ fhir:v "miRNA microarray" ] ;
+     fhir:definition [ fhir:v "miRNA microarray" ]
+  ] [
+     fhir:code [ fhir:v "O90-1" ] ;
+     fhir:display [ fhir:v "Fusion transcript" ] ;
+     fhir:definition [ fhir:v "Fusion transcript" ]
+  ] [
+     fhir:code [ fhir:v "O90-3" ] ;
+     fhir:display [ fhir:v "Population frequency" ] ;
+     fhir:definition [ fhir:v "Population frequency" ]
+  ] [
+     fhir:code [ fhir:v "O90-4" ] ;
+     fhir:display [ fhir:v "Protein reference" ] ;
+     fhir:definition [ fhir:v "Protein reference" ]
+  ] [
+     fhir:code [ fhir:v "O90-5" ] ;
+     fhir:display [ fhir:v "Transcript reference" ] ;
+     fhir:definition [ fhir:v "Transcript reference" ]
+  ] [
+     fhir:code [ fhir:v "O90-6" ] ;
+     fhir:display [ fhir:v "Variant id" ] ;
+     fhir:definition [ fhir:v "Variant id" ]
+  ] [
+     fhir:code [ fhir:v "O19-1" ] ;
+     fhir:display [ fhir:v "MT" ] ;
+     fhir:definition [ fhir:v "Mitochondrial genetic material" ]
+  ] [
+     fhir:code [ fhir:v "O19-2" ] ;
+     fhir:display [ fhir:v "viral" ] ;
+     fhir:definition [ fhir:v "Viral genetic material" ]
+  ] [
+     fhir:code [ fhir:v "O19-3" ] ;
+     fhir:display [ fhir:v "bacterial" ] ;
+     fhir:definition [ fhir:v "Bacterial genetic material" ]
+  ] [
+     fhir:code [ fhir:v "O63-1" ] ;
+     fhir:display [ fhir:v "SIFT" ] ;
+     fhir:definition [ fhir:v "SIFT" ]
+  ] [
+     fhir:code [ fhir:v "O63-2" ] ;
+     fhir:display [ fhir:v "POLYPHEN2_HDIV" ] ;
+     fhir:definition [ fhir:v "POLYPHEN2_HDIV" ]
+  ] [
+     fhir:code [ fhir:v "O63-3" ] ;
+     fhir:display [ fhir:v "MutationTaster" ] ;
+     fhir:definition [ fhir:v "MutationTaster" ]
+  ] [
+     fhir:code [ fhir:v "O81-1" ] ;
+     fhir:display [ fhir:v "Pathogenic" ] ;
+     fhir:definition [ fhir:v "Pathogenic" ]
+  ] [
+     fhir:code [ fhir:v "O81-2" ] ;
+     fhir:display [ fhir:v "Likely pathogenic" ] ;
+     fhir:definition [ fhir:v "Likely pathogenic" ]
+  ] [
+     fhir:code [ fhir:v "O81-3" ] ;
+     fhir:display [ fhir:v "Uncertain significance" ] ;
+     fhir:definition [ fhir:v "Uncertain significance" ]
+  ] [
+     fhir:code [ fhir:v "O81-4" ] ;
+     fhir:display [ fhir:v "Likely benign" ] ;
+     fhir:definition [ fhir:v "Likely benign" ]
+  ] [
+     fhir:code [ fhir:v "O81-5" ] ;
+     fhir:display [ fhir:v "Benign" ] ;
+     fhir:definition [ fhir:v "Benign" ]
+  ] [
+     fhir:code [ fhir:v "O16-1" ] ;
+     fhir:display [ fhir:v "Experimental" ] ;
+     fhir:definition [ fhir:v "Experimental" ]
+  ] [
+     fhir:code [ fhir:v "O16-2" ] ;
+     fhir:display [ fhir:v "By biologist" ] ;
+     fhir:definition [ fhir:v "By biologist" ]
+  ] [
+     fhir:code [ fhir:v "O16-3" ] ;
+     fhir:display [ fhir:v "In silico" ] ;
+     fhir:definition [ fhir:v "In silico" ]
+  ] [
+     fhir:code [ fhir:v "O84-1" ] ;
+     fhir:display [ fhir:v "RawExpression" ] ;
+     fhir:definition [ fhir:v "RawExpression" ]
+  ] [
+     fhir:code [ fhir:v "O84-2" ] ;
+     fhir:display [ fhir:v "NormalizedExpression" ] ;
+     fhir:definition [ fhir:v "NormalizedExpression" ]
+  ] [
+     fhir:code [ fhir:v "O84-3" ] ;
+     fhir:display [ fhir:v "TPMExpression" ] ;
+     fhir:definition [ fhir:v "TPMExpression" ]
+  ] [
+     fhir:code [ fhir:v "O84-4" ] ;
+     fhir:display [ fhir:v "RPKMExpression" ] ;
+     fhir:definition [ fhir:v "RPKMExpression" ]
+  ] [
+     fhir:code [ fhir:v "O28-1" ] ;
+     fhir:display [ fhir:v "readthrough" ] ;
+     fhir:definition [ fhir:v "readthrough" ]
+  ] [
+     fhir:code [ fhir:v "C60-6" ] ;
+     fhir:display [ fhir:v "Other" ] ;
+     fhir:definition [ fhir:v "Other" ]
+  ] [
+     fhir:code [ fhir:v "C77-6" ] ;
+     fhir:display [ fhir:v "Other" ] ;
+     fhir:definition [ fhir:v "Other" ]
+  ] [
+     fhir:code [ fhir:v "O6-OTH" ] ;
+     fhir:display [ fhir:v "Other" ] ;
+     fhir:definition [ fhir:v "Other" ]
+  ] [
+     fhir:code [ fhir:v "O13-OTH" ] ;
+     fhir:display [ fhir:v "Other" ] ;
+     fhir:definition [ fhir:v "Other" ]
+  ] [
+     fhir:code [ fhir:v "O7-1" ] ;
+     fhir:display [ fhir:v "Affymetrix Cytoscan HD" ]
+  ] [
+     fhir:code [ fhir:v "O7-2" ] ;
+     fhir:display [ fhir:v "Affymetrix EMET Plus Premier Pack" ]
+  ] [
+     fhir:code [ fhir:v "O7-3" ] ;
+     fhir:display [ fhir:v "Affymetrix Genome-Wide Human SNP Array 5.0" ]
+  ] [
+     fhir:code [ fhir:v "O7-4" ] ;
+     fhir:display [ fhir:v "Affymetrix Genome-Wide Human SNP Array 6.0" ]
+  ] [
+     fhir:code [ fhir:v "O7-5" ] ;
+     fhir:display [ fhir:v "Affymetrix HT Human Genome U133A Array Plate Set" ]
+  ] [
+     fhir:code [ fhir:v "O7-6" ] ;
+     fhir:display [ fhir:v "Affymetrix Human Exon 1.0 ST" ]
+  ] [
+     fhir:code [ fhir:v "O7-7" ] ;
+     fhir:display [ fhir:v "Affymetrix Human Gene 1.0 ST" ]
+  ] [
+     fhir:code [ fhir:v "O7-8" ] ;
+     fhir:display [ fhir:v "Affymetrix Human Genome U219 Array Plate" ]
+  ] [
+     fhir:code [ fhir:v "O7-9" ] ;
+     fhir:display [ fhir:v "Affymetrix Human MIP 330K" ]
+  ] [
+     fhir:code [ fhir:v "O7-10" ] ;
+     fhir:display [ fhir:v "Affymetrix Human U133 Plus 2.0" ]
+  ] [
+     fhir:code [ fhir:v "O7-11" ] ;
+     fhir:display [ fhir:v "Affymetrix Human U133 Plus PM" ]
+  ] [
+     fhir:code [ fhir:v "O7-12" ] ;
+     fhir:display [ fhir:v "Affymetrix Mapping 100K Array Set" ]
+  ] [
+     fhir:code [ fhir:v "O7-13" ] ;
+     fhir:display [ fhir:v "Affymetrix Mapping 10K 2.0 Array Set" ]
+  ] [
+     fhir:code [ fhir:v "O7-14" ] ;
+     fhir:display [ fhir:v "Affymetrix Mapping 500K Array Set" ]
+  ] [
+     fhir:code [ fhir:v "O7-15" ] ;
+     fhir:display [ fhir:v "Affymetrix OncoScan FFPE Express 2.0" ]
+  ] [
+     fhir:code [ fhir:v "O7-16" ] ;
+     fhir:display [ fhir:v "Agilent 244K Custom Gene Expression G4502A-07" ]
+  ] [
+     fhir:code [ fhir:v "O7-17" ] ;
+     fhir:display [ fhir:v "Agilent 244K Custom Gene Expression G4502A-07-1" ]
+  ] [
+     fhir:code [ fhir:v "O7-18" ] ;
+     fhir:display [ fhir:v "Agilent 244K Custom Gene Expression G4502A-07-2" ]
+  ] [
+     fhir:code [ fhir:v "O7-19" ] ;
+     fhir:display [ fhir:v "Agilent 244K Custom Gene Expression G4502A-07-3" ]
+  ] [
+     fhir:code [ fhir:v "O7-20" ] ;
+     fhir:display [ fhir:v "Agilent 8 x 15K Human miRNA-specific microarray" ]
+  ] [
+     fhir:code [ fhir:v "O7-21" ] ;
+     fhir:display [ fhir:v "Agilent Human CGH 1x1M" ]
+  ] [
+     fhir:code [ fhir:v "O7-22" ] ;
+     fhir:display [ fhir:v "Agilent Human CGH 2x400K" ]
+  ] [
+     fhir:code [ fhir:v "O7-23" ] ;
+     fhir:display [ fhir:v "Agilent Human CGH 4x180K" ]
+  ] [
+     fhir:code [ fhir:v "O7-24" ] ;
+     fhir:display [ fhir:v "Agilent Human CGH 8x60K" ]
+  ] [
+     fhir:code [ fhir:v "O7-25" ] ;
+     fhir:display [ fhir:v "Agilent Human CNV 2x400K" ]
+  ] [
+     fhir:code [ fhir:v "O7-26" ] ;
+     fhir:display [ fhir:v "Agilent Human CNV Association 2x105K" ]
+  ] [
+     fhir:code [ fhir:v "O7-27" ] ;
+     fhir:display [ fhir:v "Agilent Human CpG Island Microarray Kit" ]
+  ] [
+     fhir:code [ fhir:v "O7-28" ] ;
+     fhir:display [ fhir:v "Agilent Human Genome 105A" ]
+  ] [
+     fhir:code [ fhir:v "O7-29" ] ;
+     fhir:display [ fhir:v "Agilent Human Genome 244A" ]
+  ] [
+     fhir:code [ fhir:v "O7-30" ] ;
+     fhir:display [ fhir:v "Agilent Human Genome 44K" ]
+  ] [
+     fhir:code [ fhir:v "O7-31" ] ;
+     fhir:display [ fhir:v "Agilent Human Genome CGH Custom Microaary 2x415K" ]
+  ] [
+     fhir:code [ fhir:v "O7-32" ] ;
+     fhir:display [ fhir:v "Agilent Human miRNA Microarray Kit (v2)" ]
+  ] [
+     fhir:code [ fhir:v "O7-33" ] ;
+     fhir:display [ fhir:v "Agilent Human Promoter ChIP-on-chip Microarray Set" ]
+  ] [
+     fhir:code [ fhir:v "O7-34" ] ;
+     fhir:display [ fhir:v "Agilent Human SpliceArray" ]
+  ] [
+     fhir:code [ fhir:v "O7-35" ] ;
+     fhir:display [ fhir:v "Agilent Whole Human Genome Oligo Microarray Kit" ]
+  ] [
+     fhir:code [ fhir:v "O7-36" ] ;
+     fhir:display [ fhir:v "Almac Human CRC" ]
+  ] [
+     fhir:code [ fhir:v "O7-37" ] ;
+     fhir:display [ fhir:v "capillary sequencing" ]
+  ] [
+     fhir:code [ fhir:v "O7-38" ] ;
+     fhir:display [ fhir:v "Complete Genomics" ]
+  ] [
+     fhir:code [ fhir:v "O7-39" ] ;
+     fhir:display [ fhir:v "Custom-designed cDNA array" ]
+  ] [
+     fhir:code [ fhir:v "O7-40" ] ;
+     fhir:display [ fhir:v "Custom-designed gene expression array" ]
+  ] [
+     fhir:code [ fhir:v "O7-41" ] ;
+     fhir:display [ fhir:v "Helicos sequencing" ]
+  ] [
+     fhir:code [ fhir:v "O7-42" ] ;
+     fhir:display [ fhir:v "HumanOmni2.5-8 BeadChip Kit" ]
+  ] [
+     fhir:code [ fhir:v "O7-43" ] ;
+     fhir:display [ fhir:v "Illumina GA sequencing" ]
+  ] [
+     fhir:code [ fhir:v "O7-44" ] ;
+     fhir:display [ fhir:v "Illumina goldengate methylation" ]
+  ] [
+     fhir:code [ fhir:v "O7-45" ] ;
+     fhir:display [ fhir:v "Illumina GoldenGate Methylation Cancer Panel I" ]
+  ] [
+     fhir:code [ fhir:v "O7-46" ] ;
+     fhir:display [ fhir:v "Illumina HiSeq" ]
+  ] [
+     fhir:code [ fhir:v "O7-47" ] ;
+     fhir:display [ fhir:v "Illumina HiSeq X Ten" ]
+  ] [
+     fhir:code [ fhir:v "O7-48" ] ;
+     fhir:display [ fhir:v "Illumina Human Omni1-Quad beadchip" ]
+  ] [
+     fhir:code [ fhir:v "O7-49" ] ;
+     fhir:display [ fhir:v "Illumina Human1M OmniQuad chip" ]
+  ] [
+     fhir:code [ fhir:v "O7-50" ] ;
+     fhir:display [ fhir:v "Illumina human1m-duo" ]
+  ] [
+     fhir:code [ fhir:v "O7-51" ] ;
+     fhir:display [ fhir:v "Illumina human510s-duo" ]
+  ] [
+     fhir:code [ fhir:v "O7-52" ] ;
+     fhir:display [ fhir:v "Illumina human660w-quad" ]
+  ] [
+     fhir:code [ fhir:v "O7-53" ] ;
+     fhir:display [ fhir:v "Illumina HumanCNV370-Duo v1.0 BeadChip" ]
+  ] [
+     fhir:code [ fhir:v "O7-54" ] ;
+     fhir:display [ fhir:v "Illumina humancytosnp-12" ]
+  ] [
+     fhir:code [ fhir:v "O7-55" ] ;
+     fhir:display [ fhir:v "Illumina HumanHap550" ]
+  ] [
+     fhir:code [ fhir:v "O7-56" ] ;
+     fhir:display [ fhir:v "Illumina HumanHT-12 v4.0 beadchip" ]
+  ] [
+     fhir:code [ fhir:v "O7-57" ] ;
+     fhir:display [ fhir:v "Illumina humanht-16" ]
+  ] [
+     fhir:code [ fhir:v "O7-58" ] ;
+     fhir:display [ fhir:v "Illumina humanht-17" ]
+  ] [
+     fhir:code [ fhir:v "O7-59" ] ;
+     fhir:display [ fhir:v "Illumina humanmethylation27" ]
+  ] [
+     fhir:code [ fhir:v "O7-60" ] ;
+     fhir:display [ fhir:v "Illumina HumanOmniExpress BeadChip" ]
+  ] [
+     fhir:code [ fhir:v "O7-61" ] ;
+     fhir:display [ fhir:v "Illumina HumanRef-8 v3.0 beadchip" ]
+  ] [
+     fhir:code [ fhir:v "O7-62" ] ;
+     fhir:display [ fhir:v "Illumina HumanWG-6 v3.0 beadchip" ]
+  ] [
+     fhir:code [ fhir:v "O7-63" ] ;
+     fhir:display [ fhir:v "Illumina Infinium HumanMethylation450" ]
+  ] [
+     fhir:code [ fhir:v "O7-64" ] ;
+     fhir:display [ fhir:v "Illumina microRNA Expression Profiling Panel" ]
+  ] [
+     fhir:code [ fhir:v "O7-65" ] ;
+     fhir:display [ fhir:v "Illumina MiSeq Personal Sequencer" ]
+  ] [
+     fhir:code [ fhir:v "O7-66" ] ;
+     fhir:display [ fhir:v "Ion Torrent PGM" ]
+  ] [
+     fhir:code [ fhir:v "O7-67" ] ;
+     fhir:display [ fhir:v "Ion Torrent Proton" ]
+  ] [
+     fhir:code [ fhir:v "O7-68" ] ;
+     fhir:display [ fhir:v "M.D. Anderson Reverse Phase Protein Array Core" ]
+  ] [
+     fhir:code [ fhir:v "O7-69" ] ;
+     fhir:display [ fhir:v "Microsatellite Instability Analysis" ]
+  ] [
+     fhir:code [ fhir:v "O7-70" ] ;
+     fhir:display [ fhir:v "nanoString" ]
+  ] [
+     fhir:code [ fhir:v "O7-71" ] ;
+     fhir:display [ fhir:v "Nimblegen CGS" ]
+  ] [
+     fhir:code [ fhir:v "O7-72" ] ;
+     fhir:display [ fhir:v "Nimblegen Gene Expression 12x135K" ]
+  ] [
+     fhir:code [ fhir:v "O7-73" ] ;
+     fhir:display [ fhir:v "Nimblegen Gene Expression 385K" ]
+  ] [
+     fhir:code [ fhir:v "O7-74" ] ;
+     fhir:display [ fhir:v "Nimblegen Gene Expression 4x72K" ]
+  ] [
+     fhir:code [ fhir:v "O7-75" ] ;
+     fhir:display [ fhir:v "Nimblegen Human CGH 2.1M Whole-Genome v2.0D Array" ]
+  ] [
+     fhir:code [ fhir:v "O7-76" ] ;
+     fhir:display [ fhir:v "Nimblegen Human CGH 3x720 Whole-Genome v3.0 Array" ]
+  ] [
+     fhir:code [ fhir:v "O7-77" ] ;
+     fhir:display [ fhir:v "Nimblegen Human Methylation 2.1M Whole-Genome sets" ]
+  ] [
+     fhir:code [ fhir:v "O7-78" ] ;
+     fhir:display [ fhir:v "Nimblegen Human Methylation 385K Whole-Genome sets" ]
+  ] [
+     fhir:code [ fhir:v "O7-79" ] ;
+     fhir:display [ fhir:v "PacBio RS sequencing" ]
+  ] [
+     fhir:code [ fhir:v "O7-80" ] ;
+     fhir:display [ fhir:v "PCR" ]
+  ] [
+     fhir:code [ fhir:v "O7-81" ] ;
+     fhir:display [ fhir:v "PCR and capillary sequencing" ]
+  ] [
+     fhir:code [ fhir:v "O7-82" ] ;
+     fhir:display [ fhir:v "qPCR" ]
+  ] [
+     fhir:code [ fhir:v "O7-83" ] ;
+     fhir:display [ fhir:v "Roche 454 sequencing" ]
+  ] [
+     fhir:code [ fhir:v "O7-84" ] ;
+     fhir:display [ fhir:v "Sequenom MassARRAY" ]
+  ] [
+     fhir:code [ fhir:v "O7-85" ] ;
+     fhir:display [ fhir:v "SOLiD sequencing" ]
+  ] [
+     fhir:code [ fhir:v "O7-86" ] ;
+     fhir:display [ fhir:v "Digital PCR" ]
+  ] [
+     fhir:code [ fhir:v "O7-87" ] ;
+     fhir:display [ fhir:v "NextSeq 500" ]
+  ] [
+     fhir:code [ fhir:v "O7-88" ] ;
+     fhir:display [ fhir:v "NovaSeq" ]
+  ] [
+     fhir:code [ fhir:v "O7-OTH" ] ;
+     fhir:display [ fhir:v "Other" ]
+  ] [
+     fhir:code [ fhir:v "O10-1" ] ;
+     fhir:display [ fhir:v "Ion AmpliSeq Cancer Hotspot Panel v2" ]
+  ] [
+     fhir:code [ fhir:v "O10-2" ] ;
+     fhir:display [ fhir:v "Ion AmpliSeq Colon and Lung Cancer Research Panel v2" ]
+  ] [
+     fhir:code [ fhir:v "O10-3" ] ;
+     fhir:display [ fhir:v "Ion AmpliSeq Comprehensive Cancer Panel" ]
+  ] [
+     fhir:code [ fhir:v "O10-4" ] ;
+     fhir:display [ fhir:v "Ion AmpliSeq Oncomine Comprehensive Assay" ]
+  ] [
+     fhir:code [ fhir:v "O10-5" ] ;
+     fhir:display [ fhir:v "Ion AmpliSeq Oncomine Focus Assay" ]
+  ] [
+     fhir:code [ fhir:v "O10-6" ] ;
+     fhir:display [ fhir:v "Ion AmpliSeq TP53 Research Panel" ]
+  ] [
+     fhir:code [ fhir:v "O10-7" ] ;
+     fhir:display [ fhir:v "Lyric: Ion AmpliSeq Profiler" ]
+  ] [
+     fhir:code [ fhir:v "O10-8" ] ;
+     fhir:display [ fhir:v "QIAGEN GeneRead DNAseq Targeted Panels V2" ]
+  ] [
+     fhir:code [ fhir:v "O10-9" ] ;
+     fhir:display [ fhir:v "SAFIR02 Panel" ]
+  ] [
+     fhir:code [ fhir:v "O10-10" ] ;
+     fhir:display [ fhir:v "Mosc3" ]
+  ] [
+     fhir:code [ fhir:v "010-OTH" ] ;
+     fhir:display [ fhir:v "Other" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

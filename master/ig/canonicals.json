@@ -1,0 +1,912 @@
+[
+  {
+    "id" : "SnomedRequestedCScodex",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/snomed-requested-cs",
+    "version" : "2.1.0",
+    "name" : "SnomedRequestedCScodex"
+  },
+  {
+    "id" : "SnomedRequestedCSmcode",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.org/fhir/us/mcode/CodeSystem/snomed-requested-cs",
+    "version" : "2.1.0",
+    "name" : "SnomedRequestedCSmcode"
+  },
+  {
+    "id" : "SnomedCS",
+    "type" : "CodeSystem",
+    "url" : "http://snomed.info/sct",
+    "version" : "2.1.0",
+    "name" : "SnomedCS"
+  },
+  {
+    "id" : "RadiotherapyCS",
+    "type" : "CodeSystem",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/RadiotherapyCS",
+    "version" : "2.1.0",
+    "name" : "RadiotherapyCS"
+  },
+  {
+    "id" : "arkhn.fhir.uv.osiris",
+    "type" : "ImplementationGuide",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ImplementationGuide/arkhn.fhir.uv.osiris",
+    "version" : "2.1.0",
+    "name" : "OsirisImplementationGuide"
+  },
+  {
+    "id" : "BasedOnCondition",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/BasedOnCondition",
+    "version" : "2.1.0",
+    "name" : "BasedOnCondition"
+  },
+  {
+    "id" : "BiologicalSampleOrigin",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/BiologicalSampleOrigin",
+    "version" : "2.1.0",
+    "name" : "BiologicalSampleOrigin"
+  },
+  {
+    "id" : "adverse-event-end-date",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/adverse-event-end-date",
+    "version" : "2.1.0",
+    "name" : "EndDate"
+  },
+  {
+    "id" : "algorithmName",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/algorithmName",
+    "version" : "2.1.0",
+    "name" : "AlgorithmName"
+  },
+  {
+    "id" : "analysis",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis",
+    "version" : "2.1.0",
+    "name" : "Analysis"
+  },
+  {
+    "id" : "annotation-reference",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/annotation-reference",
+    "version" : "2.1.0",
+    "name" : "AnnotationReference"
+  },
+  {
+    "id" : "basedOn",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/basedOn",
+    "version" : "2.1.0",
+    "name" : "BasedOn"
+  },
+  {
+    "id" : "biomarker",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/biomarker",
+    "version" : "2.1.0",
+    "name" : "Biomarker"
+  },
+  {
+    "id" : "cause-of-death",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/cause-of-death",
+    "version" : "2.1.0",
+    "name" : "CauseOfDeath"
+  },
+  {
+    "id" : "clinical-trial",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/clinical-trial",
+    "version" : "2.1.0",
+    "name" : "ClinicalTrial"
+  },
+  {
+    "id" : "clinical-trial-subject",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/clinical-trial-subject",
+    "version" : "2.1.0",
+    "name" : "ClinicalTrialSubject"
+  },
+  {
+    "id" : "copy-number",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/copy-number",
+    "version" : "2.1.0",
+    "name" : "CopyNumber"
+  },
+  {
+    "id" : "data-validation",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/data-validation",
+    "version" : "2.1.0",
+    "name" : "DataValidation"
+  },
+  {
+    "id" : "doseToVolume",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/doseToVolume",
+    "version" : "2.1.0",
+    "name" : "DoseToVolume"
+  },
+  {
+    "id" : "dueTo-tumor-pathology-event",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/dueTo-tumor-pathology-event",
+    "version" : "2.1.0",
+    "name" : "DueToTumorPathologyEvent"
+  },
+  {
+    "id" : "energyOrIsotope",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/energyOrIsotope",
+    "version" : "2.1.0",
+    "name" : "EnergyOrIsotope"
+  },
+  {
+    "id" : "ethnicity",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/ethnicity",
+    "version" : "2.1.0",
+    "name" : "Ethnicity"
+  },
+  {
+    "id" : "expression",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/expression",
+    "version" : "2.1.0",
+    "name" : "Expression"
+  },
+  {
+    "id" : "family-cancer-history",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/family-cancer-history",
+    "version" : "2.1.0",
+    "name" : "FamilyCancerHistory"
+  },
+  {
+    "id" : "fusion",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/fusion",
+    "version" : "2.1.0",
+    "name" : "Fusion"
+  },
+  {
+    "id" : "gene-expression-data-type",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/gene-expression-data-type",
+    "version" : "2.1.0",
+    "name" : "GeneExpressionDataType"
+  },
+  {
+    "id" : "genetic-consent",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genetic-consent",
+    "version" : "2.1.0",
+    "name" : "GeneticConsent"
+  },
+  {
+    "id" : "genome-entity",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genome-entity",
+    "version" : "2.1.0",
+    "name" : "GenomeEntity"
+  },
+  {
+    "id" : "genomeentityType",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genomeentityType",
+    "version" : "2.1.0",
+    "name" : "GenomeEntityType"
+  },
+  {
+    "id" : "histologygrade",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/histologygrade",
+    "version" : "2.1.0",
+    "name" : "Histology_Grade"
+  },
+  {
+    "id" : "imaging-device",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-device",
+    "version" : "2.1.0",
+    "name" : "ImagingDevice"
+  },
+  {
+    "id" : "imaging-pacs",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-pacs",
+    "version" : "2.1.0",
+    "name" : "EndpointImaging"
+  },
+  {
+    "id" : "imaging-service",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-service",
+    "version" : "2.1.0",
+    "name" : "LocationImaging"
+  },
+  {
+    "id" : "imaging-settings",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-settings",
+    "version" : "2.1.0",
+    "name" : "ImagingSettings"
+  },
+  {
+    "id" : "laterality",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/laterality",
+    "version" : "2.1.0",
+    "name" : "Laterality"
+  },
+  {
+    "id" : "modalityAndTechnique",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/modalityAndTechnique",
+    "version" : "2.1.0",
+    "name" : "ModalityAndTechnique"
+  },
+  {
+    "id" : "molecular-sequence-3-prime",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/molecular-sequence-3-prime",
+    "version" : "2.1.0",
+    "name" : "MolecularSequence3Prime"
+  },
+  {
+    "id" : "molecular-sequence-5-prime",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/molecular-sequence-5-prime",
+    "version" : "2.1.0",
+    "name" : "MolecularSequence5Prime"
+  },
+  {
+    "id" : "numberOfFractions",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/numberOfFractions",
+    "version" : "2.1.0",
+    "name" : "NumberOfFractions"
+  },
+  {
+    "id" : "numberOfSessions",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/numberOfSessions",
+    "version" : "2.1.0",
+    "name" : "NumberOfSessions"
+  },
+  {
+    "id" : "onco-adverse-event",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-adverse-event",
+    "version" : "2.1.0",
+    "name" : "OncoAdverseEvent"
+  },
+  {
+    "id" : "onco-biological-contrast",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-biological-contrast",
+    "version" : "2.1.0",
+    "name" : "ImagingContrast"
+  },
+  {
+    "id" : "onco-biological-sample",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-biological-sample",
+    "version" : "2.1.0",
+    "name" : "BiologicalSample"
+  },
+  {
+    "id" : "onco-imagingstudy",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy",
+    "version" : "2.1.0",
+    "name" : "OncoImagingStudy"
+  },
+  {
+    "id" : "onco-imagingstudy-injection",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy-injection",
+    "version" : "2.1.0",
+    "name" : "ImagingInjection"
+  },
+  {
+    "id" : "onco-medication-statement",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-medication-statement",
+    "version" : "2.1.0",
+    "name" : "OncoMedicationStatement"
+  },
+  {
+    "id" : "onco-organization",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-organization",
+    "version" : "2.1.0",
+    "name" : "OncoOrganization"
+  },
+  {
+    "id" : "onco-patient",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient",
+    "version" : "2.1.0",
+    "name" : "OncoPatient"
+  },
+  {
+    "id" : "onco-surgery",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-surgery",
+    "version" : "2.1.0",
+    "name" : "Surgery"
+  },
+  {
+    "id" : "onco-tnm",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-tnm",
+    "version" : "2.1.0",
+    "name" : "OncoTNM"
+  },
+  {
+    "id" : "origin-center",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/origin-center",
+    "version" : "2.1.0",
+    "name" : "OriginCenter"
+  },
+  {
+    "id" : "performance-status",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/performance-status",
+    "version" : "2.1.0",
+    "name" : "PerformanceStatus"
+  },
+  {
+    "id" : "radiomics-Image-filters",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-Image-filters",
+    "version" : "2.1.0",
+    "name" : "RadiomicsImageFilters"
+  },
+  {
+    "id" : "radiomics-criteria",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria",
+    "version" : "2.1.0",
+    "name" : "RadiomicsCriteria"
+  },
+  {
+    "id" : "radiomics-criteria-settings",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings",
+    "version" : "2.1.0",
+    "name" : "RadiomicsCriteriaSettings"
+  },
+  {
+    "id" : "radiomics-features",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-features",
+    "version" : "2.1.0",
+    "name" : "RadiomicsFeatures"
+  },
+  {
+    "id" : "radiomics-image-filters-settings",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-image-filters-settings",
+    "version" : "2.1.0",
+    "name" : "RadiomicsImageFiltersSettings"
+  },
+  {
+    "id" : "radiotherapy-course-summary",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-course-summary",
+    "version" : "2.1.0",
+    "name" : "RadiotherapyCourseSummary"
+  },
+  {
+    "id" : "radiotherapy-phase",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase",
+    "version" : "2.1.0",
+    "name" : "RadiotherapyPhase"
+  },
+  {
+    "id" : "radiotherapy-plan",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-plan",
+    "version" : "2.1.0",
+    "name" : "RadiotherapyPlan"
+  },
+  {
+    "id" : "radiotherapy-volume",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-volume",
+    "version" : "2.1.0",
+    "name" : "RadiotherapyVolume"
+  },
+  {
+    "id" : "reasonReplanification",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/reasonReplanification",
+    "version" : "2.1.0",
+    "name" : "ReasonReplanification"
+  },
+  {
+    "id" : "related-pathology",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/related-pathology",
+    "version" : "2.1.0",
+    "name" : "RelatedPathology"
+  },
+  {
+    "id" : "response-evaluation",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/response-evaluation",
+    "version" : "2.1.0",
+    "name" : "ResponseEvaluation"
+  },
+  {
+    "id" : "roi-segmentation",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/roi-segmentation",
+    "version" : "2.1.0",
+    "name" : "RoiSegmentation"
+  },
+  {
+    "id" : "sequencing-analysis",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-analysis",
+    "version" : "2.1.0",
+    "name" : "SequencingAnalysis"
+  },
+  {
+    "id" : "sequencing-device",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-device",
+    "version" : "2.1.0",
+    "name" : "SequencingDevice"
+  },
+  {
+    "id" : "series-weightheigt",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/series-weightheigt",
+    "version" : "2.1.0",
+    "name" : "WeightHeight"
+  },
+  {
+    "id" : "snp",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/snp",
+    "version" : "2.1.0",
+    "name" : "SNP"
+  },
+  {
+    "id" : "spanning-pairs",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/spanning-pairs",
+    "version" : "2.1.0",
+    "name" : "SpanningPairs"
+  },
+  {
+    "id" : "split-reads",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/split-reads",
+    "version" : "2.1.0",
+    "name" : "SplitReads"
+  },
+  {
+    "id" : "strand-bias",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/strand-bias",
+    "version" : "2.1.0",
+    "name" : "StrandBias"
+  },
+  {
+    "id" : "treatment",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment",
+    "version" : "2.1.0",
+    "name" : "Treatment"
+  },
+  {
+    "id" : "treatment-line",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment-line",
+    "version" : "2.1.0",
+    "name" : "TreatmentLine"
+  },
+  {
+    "id" : "treatmentIntent",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatmentIntent",
+    "version" : "2.1.0",
+    "name" : "TreatmentIntent"
+  },
+  {
+    "id" : "treatmentTerminationReason",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatmentTerminationReason",
+    "version" : "2.1.0",
+    "name" : "TreatmentTerminationReason"
+  },
+  {
+    "id" : "tumor-pathology-event",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/tumor-pathology-event",
+    "version" : "2.1.0",
+    "name" : "TumorPathologyEvent"
+  },
+  {
+    "id" : "variant-annotation",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/variant-annotation",
+    "version" : "2.1.0",
+    "name" : "VariantAnnotation"
+  },
+  {
+    "id" : "vital-status",
+    "type" : "StructureDefinition",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/vital-status",
+    "version" : "2.1.0",
+    "name" : "VitalStatus"
+  },
+  {
+    "id" : "AdverseEventCode",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AdverseEventCode",
+    "version" : "2.1.0",
+    "name" : "AdverseEventCode"
+  },
+  {
+    "id" : "AdverseEventGrade",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AdverseEventGrade",
+    "version" : "2.1.0",
+    "name" : "AdverseEventGrade"
+  },
+  {
+    "id" : "AlgorithmicPloidy",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AlgorithmicPloidy",
+    "version" : "2.1.0",
+    "name" : "AlgorithmicPloidy"
+  },
+  {
+    "id" : "AlterationType",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AlterationType",
+    "version" : "2.1.0",
+    "name" : "AlterationType"
+  },
+  {
+    "id" : "AminoAcideChangeType",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AminoAcideChangeType",
+    "version" : "2.1.0",
+    "name" : "AminoAcideChangeType"
+  },
+  {
+    "id" : "AnalysisType",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AnalysisType",
+    "version" : "2.1.0",
+    "name" : "AnalysisType"
+  },
+  {
+    "id" : "BiologicalSampleNature",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/BiologicalSampleNature",
+    "version" : "2.1.0",
+    "name" : "BiologicalSampleNature"
+  },
+  {
+    "id" : "BiologicalSampleOrigin",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/BiologicalSampleOrigin",
+    "version" : "2.1.0",
+    "name" : "BiologicalSampleOrigin"
+  },
+  {
+    "id" : "BiomarkerCode",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/BiomarkerCode",
+    "version" : "2.1.0",
+    "name" : "BiomarkerCode"
+  },
+  {
+    "id" : "CauseOfDeath",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/CauseOfDeath",
+    "version" : "2.1.0",
+    "name" : "CauseOfDeath"
+  },
+  {
+    "id" : "Chromosome",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Chromosome",
+    "version" : "2.1.0",
+    "name" : "Chromosome"
+  },
+  {
+    "id" : "CytoBand",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/CytoBand",
+    "version" : "2.1.0",
+    "name" : "CytoBand"
+  },
+  {
+    "id" : "DNAChangeType",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/DNAChangeType",
+    "version" : "2.1.0",
+    "name" : "DNAChangeType"
+  },
+  {
+    "id" : "FusionType",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/FusionType",
+    "version" : "2.1.0",
+    "name" : "FusionType"
+  },
+  {
+    "id" : "GeneExpressionDataType",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GeneExpressionDataType",
+    "version" : "2.1.0",
+    "name" : "GeneExpressionDataType"
+  },
+  {
+    "id" : "GeneticMaterial",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GeneticMaterial",
+    "version" : "2.1.0",
+    "name" : "GeneticMaterial"
+  },
+  {
+    "id" : "GenomeBuild",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeBuild",
+    "version" : "2.1.0",
+    "name" : "GenomeBuild"
+  },
+  {
+    "id" : "GenomeEntityType",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeEntityType",
+    "version" : "2.1.0",
+    "name" : "GenomeEntityType"
+  },
+  {
+    "id" : "Laterality",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Laterality",
+    "version" : "2.1.0",
+    "name" : "Laterality"
+  },
+  {
+    "id" : "Morphology",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Morphology",
+    "version" : "2.1.0",
+    "name" : "Morphology"
+  },
+  {
+    "id" : "MutationPrediction",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/MutationPrediction",
+    "version" : "2.1.0",
+    "name" : "MutationPrediction"
+  },
+  {
+    "id" : "OsirisValidationType",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/OsirisValidationType",
+    "version" : "2.1.0",
+    "name" : "OsirisValidationType"
+  },
+  {
+    "id" : "PanelName",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/PanelName",
+    "version" : "2.1.0",
+    "name" : "PanelName"
+  },
+  {
+    "id" : "Parentage",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Parentage",
+    "version" : "2.1.0",
+    "name" : "Parentage"
+  },
+  {
+    "id" : "Pathogenicity",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Pathogenicity",
+    "version" : "2.1.0",
+    "name" : "Pathogenicity"
+  },
+  {
+    "id" : "PlatformName",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/PlatformName",
+    "version" : "2.1.0",
+    "name" : "PlatformName"
+  },
+  {
+    "id" : "ROIType",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/ROIType",
+    "version" : "2.1.0",
+    "name" : "ROIType"
+  },
+  {
+    "id" : "RadiomicsFeaturesVS",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/RadiomicsFeaturesVS",
+    "version" : "2.1.0",
+    "name" : "RadiomicsFeaturesVS"
+  },
+  {
+    "id" : "ReferenceType",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/ReferenceType",
+    "version" : "2.1.0",
+    "name" : "ReferenceType"
+  },
+  {
+    "id" : "ResponseEvaluationStatus",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/ResponseEvaluationStatus",
+    "version" : "2.1.0",
+    "name" : "ResponseEvaluationStatus"
+  },
+  {
+    "id" : "StorageTemperature",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/StorageTemperature",
+    "version" : "2.1.0",
+    "name" : "StorageTemperature"
+  },
+  {
+    "id" : "SurgeryResectionQuality",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/SurgeryResectionQuality",
+    "version" : "2.1.0",
+    "name" : "SurgeryResectionQuality"
+  },
+  {
+    "id" : "TNMVersion",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/TNMVersion",
+    "version" : "2.1.0",
+    "name" : "TNMVersion"
+  },
+  {
+    "id" : "TechnicalProtocol",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/TechnicalProtocol",
+    "version" : "2.1.0",
+    "name" : "TechnicalProtocol"
+  },
+  {
+    "id" : "Topography",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Topography",
+    "version" : "2.1.0",
+    "name" : "Topography"
+  },
+  {
+    "id" : "TreatmentType",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/TreatmentType",
+    "version" : "2.1.0",
+    "name" : "TreatmentType"
+  },
+  {
+    "id" : "TumorPathologyEventType",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/TumorPathologyEventType",
+    "version" : "2.1.0",
+    "name" : "TumorPathologyEventType"
+  },
+  {
+    "id" : "VSBodySite",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/VSBodySite",
+    "version" : "2.1.0",
+    "name" : "VSBodySite"
+  },
+  {
+    "id" : "VSLocalizationMethod",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/VSLocalizationMethod",
+    "version" : "2.1.0",
+    "name" : "VSLocalizationMethod"
+  },
+  {
+    "id" : "VSModality",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/VSModality",
+    "version" : "2.1.0",
+    "name" : "VSModality"
+  },
+  {
+    "id" : "VitalStatus",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/VitalStatus",
+    "version" : "2.1.0",
+    "name" : "VitalStatus"
+  },
+  {
+    "id" : "codexrt-radiotherapy-reason-for-revision-or-adaptation-vs",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/codexrt-radiotherapy-reason-for-revision-or-adaptation-vs",
+    "version" : "2.1.0",
+    "name" : "RadiotherapyReasonReplanificationVS"
+  },
+  {
+    "id" : "mcode-radiotherapy-treatment-location-qualifier-vs",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/mcode-radiotherapy-treatment-location-qualifier-vs",
+    "version" : "2.1.0",
+    "name" : "RadiotherapyTreatmentLocationQualifierVS"
+  },
+  {
+    "id" : "mcode-radiotherapy-volume-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/mcode-radiotherapy-volume-type-vs",
+    "version" : "2.1.0",
+    "name" : "RadiotherapyVolumeTypeVS"
+  },
+  {
+    "id" : "vs-radiotherapy-category",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/vs-radiotherapy-category",
+    "version" : "2.1.0",
+    "name" : "VSRadiotherapyCategory"
+  },
+  {
+    "id" : "vs-radiotherapy-intent",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/vs-radiotherapy-intent",
+    "version" : "2.1.0",
+    "name" : "VSRadiotherapyIntent"
+  },
+  {
+    "id" : "vs-radiotherapy-termination-reason",
+    "type" : "ValueSet",
+    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/vs-radiotherapy-termination-reason",
+    "version" : "2.1.0",
+    "name" : "VSRadiotherapyTerminationReason"
+  },
+  {
+    "id" : "IBSICS",
+    "type" : "CodeSystem",
+    "url" : "https://ibsi.readthedocs.io/en/latest/",
+    "version" : "2.1.0",
+    "name" : "IBSICS"
+  },
+  {
+    "id" : "SeriesModalityCS",
+    "type" : "CodeSystem",
+    "url" : "https://terminology.arkhn.com/SeriesModalityCS",
+    "version" : "2.1.0",
+    "name" : "SeriesModalityCS"
+  },
+  {
+    "id" : "OsirisCS",
+    "type" : "CodeSystem",
+    "url" : "https://terminology.arkhn.com/osiris",
+    "version" : "2.1.0",
+    "name" : "OsirisCS"
+  },
+  {
+    "id" : "RadiomicsCS",
+    "type" : "CodeSystem",
+    "url" : "https://terminology.arkhn.com/radiomicsCS",
+    "version" : "2.1.0",
+    "name" : "RadiomicsCS"
+  }
+]

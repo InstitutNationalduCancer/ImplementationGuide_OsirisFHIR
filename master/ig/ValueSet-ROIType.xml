@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ROIType"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-RadiomicsCS.html"><code>https://terminology.arkhn.com/radiomicsCS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-RadiomicsCS.html#RadiomicsCS-DICOM">DICOM</a></td><td>ROI Type DICOM</td></tr><tr><td><a href="CodeSystem-RadiomicsCS.html#RadiomicsCS-MASK">MASK</a></td><td>ROI Type NIfTI</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/ROIType"/>
+  <version value="2.1.0"/>
+  <name value="ROIType"/>
+  <title value="ROI Type Value Set"/>
+  <status value="draft"/>
+  <date value="2024-05-13T13:56:11+00:00"/>
+  <publisher value="Arkhn"/>
+  <contact>
+    <name value="Arkhn"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://arkhn.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="contact@arkhn.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nicolas Riss"/>
+    <telecom>
+      <system value="email"/>
+      <value value="nicolas@arkhn.com"/>
+    </telecom>
+  </contact>
+  <description value="ROI Type"/>
+  <compose>
+    <include>
+      <system value="https://terminology.arkhn.com/radiomicsCS"/>
+      <concept>
+        <code value="DICOM"/>
+        <display value="ROI Type DICOM"/>
+      </concept>
+      <concept>
+        <code value="MASK"/>
+        <display value="ROI Type NIfTI"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

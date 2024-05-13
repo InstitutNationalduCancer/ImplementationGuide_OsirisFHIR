@@ -1,0 +1,1751 @@
+@startuml
+set namespaceSeparator ?
+hide circle
+hide class fields
+
+package IG #DDDDDD{
+
+     package Profiles #DDDDDD{
+
+        class Analysis{
+
+             Observation.category => [None..1]
+             Observation.category.text => [None..None]
+             Observation.code => [None..None]
+             Observation.subject => [None..None]
+             Observation.focus => [None..None]
+             Observation.effective[x] => [1..None]
+             Observation.effective[x]:effectiveDateTime => [1..1]
+        } 
+
+        class AnnotationReference{
+
+             MolecularSequence.coordinateSystem => [None..None]
+             MolecularSequence.patient => [None..None]
+             MolecularSequence.referenceSeq.orientation => [None..None]
+             MolecularSequence.referenceSeq.referenceSeqId => [1..None]
+             MolecularSequence.repository => [1..None]
+             MolecularSequence.repository:reference-db => [1..1]
+             MolecularSequence.repository:reference-db.type => [None..None]
+             MolecularSequence.repository:reference-db.name => [1..None]
+             MolecularSequence.repository:reference-db.datasetId => [1..None]
+             MolecularSequence.repository:pfam-domain => [0..1]
+             MolecularSequence.repository:pfam-domain.type => [None..None]
+             MolecularSequence.repository:pfam-domain.url => [None..None]
+             MolecularSequence.repository:pfam-domain.name => [None..None]
+             MolecularSequence.repository:pfam-domain.datasetId => [None..None]
+             MolecularSequence.repository:pfam-domain.readsetId => [None..None]
+        } 
+
+        class Biomarker{
+
+             Observation.code => [None..None]
+             Observation.subject => [None..None]
+             Observation.value[x] => [1..None]
+             Observation.value[x]:valueQuantity => [0..1]
+             Observation.value[x]:valueQuantity.value => [None..None]
+             Observation.value[x]:valueQuantity.unit => [None..None]
+             Observation.derivedFrom => [None..None]
+        } 
+
+        class CauseOfDeath{
+
+             Observation.code => [None..None]
+             Observation.subject => [1..None]
+             Observation.value[x] => [1..None]
+             Observation.component => [None..0]
+        } 
+
+        class ClinicalTrialSubject{
+
+             ResearchSubject.study => [None..None]
+             ResearchSubject.individual => [None..None]
+        } 
+
+        class ClinicalTrial{
+
+             ResearchStudy.identifier => [1..1]
+             ResearchStudy.title => [1..None]
+        } 
+
+        class CopyNumber{
+
+             Observation => [None..None]
+             Observation.subject => [None..None]
+             Observation.derivedFrom => [1..None]
+             Observation.derivedFrom:Analysis => [1..1]
+             Observation.component:cytogenetic-location => [None..None]
+             Observation.component:ref-sequence-assembly => [None..None]
+             Observation.component:ref-sequence-assembly.value[x] => [None..None]
+             Observation.component:variation-code => [None..None]
+             Observation.component:variation-code.value[x] => [None..None]
+             Observation.component:copy-number => [None..None]
+             Observation.component:copy-number.value[x] => [None..None]
+             Observation.component:exact-start-end => [None..None]
+             Observation.component:exact-start-end.value[x].low => [None..None]
+             Observation.component:exact-start-end.value[x].high => [None..None]
+             Observation.component:variant-length => [None..None]
+             Observation.component:actionability => [0..1]
+             Observation.component:actionability.code => [None..None]
+             Observation.component:actionability.value[x] => [None..None]
+             Observation.component:proposed-for-orientation => [0..1]
+             Observation.component:proposed-for-orientation.code => [None..None]
+             Observation.component:proposed-for-orientation.value[x] => [None..None]
+             Observation.component:pathogenicity => [0..1]
+             Observation.component:pathogenicity.code => [None..None]
+             Observation.component:pathogenicity.value[x] => [None..None]
+             Observation.component:loss-of-heterozygosity => [0..1]
+             Observation.component:loss-of-heterozygosity.code => [None..None]
+             Observation.component:loss-of-heterozygosity.value[x] => [None..None]
+             Observation.component:segment-intensity => [0..1]
+             Observation.component:segment-intensity.code => [None..None]
+             Observation.component:segment-intensity.value[x] => [None..None]
+        } 
+
+        class DataValidation{
+
+             VerificationResult.target => [1..1]
+             VerificationResult.status => [None..None]
+             VerificationResult.validationType => [1..None]
+             VerificationResult.validationProcess => [None..1]
+        } 
+
+        class DueToTumorPathologyEvent{
+
+             Extension => [None..None]
+             Extension.value[x] => [None..None]
+        } 
+
+        class Expression{
+
+             Observation.extension:strandBias => <&plus>[0..1]
+             Observation.code => [None..None]
+             Observation.subject => [None..None]
+             Observation.derivedFrom => [1..None]
+             Observation.derivedFrom:analysis => [1..1]
+             Observation.component => [1..None]
+             Observation.component:actionability => [0..1]
+             Observation.component:actionability.code => [None..None]
+             Observation.component:actionability.value[x] => [None..None]
+             Observation.component:proposed-for-orientation => [0..1]
+             Observation.component:proposed-for-orientation.code => [None..None]
+             Observation.component:proposed-for-orientation.value[x] => [None..None]
+             Observation.component:pathogenicity => [0..1]
+             Observation.component:pathogenicity.code => [None..None]
+             Observation.component:pathogenicity.value[x] => [None..None]
+             Observation.component:gene-studied => [0..*]
+             Observation.component:gene-studied.code => [None..None]
+             Observation.component:gene-studied.value[x] => [1..None]
+             Observation.component:gene-expression => [1..1]
+             Observation.component:gene-expression.code => [None..None]
+             Observation.component:gene-expression.value[x] => [None..None]
+        } 
+
+        class FamilyCancerHistory{
+
+             FamilyMemberHistory.patient => [None..None]
+             FamilyMemberHistory.relationship => [None..None]
+             FamilyMemberHistory.condition.code => [None..None]
+        } 
+
+        class Fusion{
+
+             Observation.extension:spanning-pairs => <&plus>[0..1]
+             Observation.extension:spanning-pairs.value[x] => <&plus>[None..None]
+             Observation.extension:split-reads => <&plus>[0..1]
+             Observation.extension:split-reads.value[x] => <&plus>[None..None]
+             Observation.code => [None..None]
+             Observation.subject => [None..None]
+             Observation.derivedFrom => [1..None]
+             Observation.derivedFrom:fusion-molecular-sequences => [0..2]
+             Observation.derivedFrom:analysis => [1..1]
+             Observation.component => [1..None]
+             Observation.component:actionability => [0..1]
+             Observation.component:actionability.code => [None..None]
+             Observation.component:actionability.value[x] => [None..None]
+             Observation.component:proposed-for-orientation => [0..1]
+             Observation.component:proposed-for-orientation.code => [None..None]
+             Observation.component:proposed-for-orientation.value[x] => [None..None]
+             Observation.component:pathogenicity => [0..1]
+             Observation.component:pathogenicity.code => [None..None]
+             Observation.component:pathogenicity.value[x] => [None..None]
+             Observation.component:gene-studied => [0..*]
+             Observation.component:gene-studied.code => [None..None]
+             Observation.component:gene-studied.value[x] => [1..None]
+             Observation.component:in-frame => [1..1]
+             Observation.component:in-frame.code => [None..None]
+             Observation.component:in-frame.value[x] => [None..None]
+        } 
+
+        class GeneticConsent{
+
+             Consent.scope => [None..None]
+             Consent.category => [None..None]
+             Consent.patient => [None..None]
+             Consent.dateTime => [1..None]
+             Consent.provision => [1..None]
+             Consent.provision.type => [1..None]
+             Consent.provision.class => [1..1]
+             Consent.provision.data.reference => [None..None]
+        } 
+
+        class GenomeEntity{
+
+             MolecularSequence.extension => [1..None]
+             MolecularSequence.extension:genomeentityType => <&plus>[1..1]
+             MolecularSequence.type => [None..0]
+             MolecularSequence.coordinateSystem => [None..None]
+             MolecularSequence.patient => [None..None]
+             MolecularSequence.repository => [1..None]
+             MolecularSequence.repository:genome-entity-db => [1..1]
+             MolecularSequence.repository:genome-entity-db.type => [None..None]
+             MolecularSequence.repository:genome-entity-db.name => [1..None]
+             MolecularSequence.repository:genome-entity-db.datasetId => [1..None]
+        } 
+
+        class ImagingDevice{
+
+             Device.manufacturer => [1..None]
+             Device.deviceName => [1..1]
+             Device.deviceName.name => [None..None]
+             Device.deviceName.type => [None..None]
+             Device.version => [1..1]
+        } 
+
+        class EndpointImaging{
+
+             Endpoint.name => [1..None]
+        } 
+
+        class LocationImaging{
+
+             Location.name => [None..None]
+        } 
+
+        class MolecularSequence3Prime{
+
+             MolecularSequence.type => [None..None]
+             MolecularSequence.coordinateSystem => [None..None]
+             MolecularSequence.patient => [None..None]
+             MolecularSequence.referenceSeq => [1..None]
+             MolecularSequence.referenceSeq.chromosome => [None..None]
+             MolecularSequence.referenceSeq.strand => [None..None]
+             MolecularSequence.referenceSeq.windowStart => [None..None]
+        } 
+
+        class MolecularSequence5Prime{
+
+             MolecularSequence.type => [None..None]
+             MolecularSequence.coordinateSystem => [None..None]
+             MolecularSequence.patient => [None..None]
+             MolecularSequence.referenceSeq => [1..None]
+             MolecularSequence.referenceSeq.chromosome => [None..None]
+             MolecularSequence.referenceSeq.strand => [None..None]
+             MolecularSequence.referenceSeq.windowStart => [None..None]
+        } 
+
+        class OncoAdverseEvent{
+
+             AdverseEvent.extension:end-date => <&plus>[0..1]
+             AdverseEvent.event => [1..None]
+             AdverseEvent.subject => [None..None]
+             AdverseEvent.date => [1..None]
+             AdverseEvent.seriousness => [1..None]
+             AdverseEvent.seriousness.coding.code => [None..None]
+             AdverseEvent.suspectEntity.instance => [None..None]
+             AdverseEvent.subjectMedicalHistory => [None..None]
+        } 
+
+        class ImagingContrast{
+
+             Medication.code => [1..None]
+             Medication.code.text => [None..None]
+        } 
+
+        class BiologicalSample{
+
+             Specimen.extension => [1..None]
+             Specimen.extension:BiologicalSampleOrigin => <&plus>[1..1]
+             Specimen.extension:BiologicalSampleOrigin.value[x]:valueCodeableConcept => <&plus>[None..None]
+             Specimen.extension:BasedOnCondition => <&plus>[0..1]
+             Specimen.extension:BasedOnCondition.value[x]:valueReference => <&plus>[None..None]
+             Specimen.identifier => [1..1]
+             Specimen.type => [1..None]
+             Specimen.subject => [None..None]
+             Specimen.parent => [None..1]
+             Specimen.collection.collected[x] => [1..None]
+             Specimen.collection.collected[x]:collectedDateTime => [1..1]
+             Specimen.collection.quantity => [None..None]
+             Specimen.collection.quantity.value => [None..None]
+             Specimen.collection.quantity.unit => [None..None]
+             Specimen.collection.quantity.code => [None..None]
+             Specimen.collection.bodySite => [1..None]
+             Specimen.condition => [None..1]
+             Specimen.condition.text => [None..None]
+        } 
+
+        class ImagingInjection{
+
+             MedicationAdministration.medication[x] => [None..None]
+             MedicationAdministration.effective[x] => [None..None]
+             MedicationAdministration.effective[x]:effectiveDateTime => [0..1]
+             MedicationAdministration.effective[x]:effectivePeriod => [0..1]
+             MedicationAdministration.effective[x]:effectivePeriod.start => [None..None]
+             MedicationAdministration.effective[x]:effectivePeriod.end => [None..None]
+             MedicationAdministration.dosage => [None..None]
+             MedicationAdministration.dosage.route => [None..None]
+             MedicationAdministration.dosage.route.coding.code => [None..None]
+             MedicationAdministration.dosage.route.coding.display => [None..None]
+             MedicationAdministration.dosage.dose => [None..None]
+        } 
+
+        class OncoImagingStudy{
+
+             ImagingStudy.identifier => [1..1]
+             ImagingStudy.modality => [1..None]
+             ImagingStudy.subject => [None..None]
+             ImagingStudy.started => [1..None]
+             ImagingStudy.endpoint => [1..1]
+             ImagingStudy.numberOfSeries => [1..None]
+             ImagingStudy.location => [None..None]
+             ImagingStudy.reasonReference => [1..1]
+             ImagingStudy.description => [1..None]
+             ImagingStudy.series => [1..None]
+             ImagingStudy.series.extension => [1..None]
+             ImagingStudy.series.extension:series-weightheigt => <&plus>[0..1]
+             ImagingStudy.series.extension:series-weightheigt.extension:patient_weight => <&plus>[None..None]
+             ImagingStudy.series.extension:series-weightheigt.extension:patient_height => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings => <&plus>[1..1]
+             ImagingStudy.series.extension:imaging-settings.extension:slice_thickness => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:pixel_spacing => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:field_of_view => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:rows => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:columns => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:mr_image => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:mr_image.extension:sequence_name => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:mr_image.extension:magnetic_field_strength => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:mr_image.extension:mr_acquisition_type => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:mr_image.extension:repetition_time => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:mr_image.extension:echo_time => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:mr_image.extension:imaging_frequency => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:mr_image.extension:flip_angle => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:mr_image.extension:inversion_time => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:mr_image.extension:receive_coil_name => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:ct_image => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:ct_image.extension:kvp => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:ct_image.extension:xray_tube_current => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:ct_image.extension:exposure_time => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:ct_image.extension:spiral_pitch_factor => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:ct_image.extension:filter_type => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:ct_image.extension:convolution_kernel => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:dx_image => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:dx_image.extension:image_laterality => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:dx_image.extension:patient_orientation => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:dx_image.extension:kvp => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:dx_image.extension:exposure => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:dx_image.extension:exposure_time => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:pt_nm_image => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:pt_nm_image.extension:attenuation_correction_method => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:pt_nm_image.extension:reconstruction_method => <&plus>[None..None]
+             ImagingStudy.series.extension:imaging-settings.extension:pt_nm_image.extension:scatter_correction_method => <&plus>[None..None]
+             ImagingStudy.series.uid => [None..None]
+             ImagingStudy.series.number => [None..None]
+             ImagingStudy.series.modality => [None..None]
+             ImagingStudy.series.description => [1..None]
+             ImagingStudy.series.numberOfInstances => [1..None]
+             ImagingStudy.series.bodySite => [None..None]
+             ImagingStudy.series.started => [1..None]
+             ImagingStudy.series.performer.actor => [None..None]
+             ImagingStudy.series.instance.uid => [None..None]
+        } 
+
+        class OncoMedicationStatement{
+
+             MedicationStatement.basedOn => [None..None]
+             MedicationStatement.medication[x] => [None..None]
+             MedicationStatement.medication[x]:medicationCodeableConcept => [0..1]
+             MedicationStatement.medication[x]:medicationCodeableConcept.coding.code => [None..None]
+             MedicationStatement.medication[x]:medicationCodeableConcept.text => [None..None]
+             MedicationStatement.subject => [None..None]
+        } 
+
+        class OncoOrganization{
+
+             Organization.identifier => [1..None]
+             Organization.identifier:finess => [1..1]
+             Organization.identifier:finess.system => [1..None]
+             Organization.identifier:finess.value => [None..None]
+        } 
+
+        class OncoPatient{
+
+             Patient.id => [1..None]
+             Patient.extension => [1..None]
+             Patient.extension:ethnicity => <&plus>[0..1]
+             Patient.extension:origin-center => <&plus>[1..1]
+             Patient.gender => [1..None]
+             Patient.birthDate => [1..None]
+             Patient.deceased[x] => [None..None]
+             Patient.deceased[x]:deceasedDateTime => [0..1]
+             Patient.managingOrganization => [1..None]
+        } 
+
+        class Surgery{
+
+             Procedure.basedOn => [None..None]
+             Procedure.category => [None..None]
+             Procedure.category.text => [None..None]
+             Procedure.code => [None..None]
+             Procedure.subject => [None..None]
+             Procedure.reasonReference => [None..None]
+             Procedure.outcome => [None..None]
+        } 
+
+        class OncoTNM{
+
+             Observation.code => [None..None]
+             Observation.subject => [None..None]
+             Observation.focus => [None..None]
+             Observation.component => [None..None]
+             Observation.component:tnm-t => [0..1]
+             Observation.component:tnm-t.code => [None..None]
+             Observation.component:tnm-t.value[x] => [None..None]
+             Observation.component:tnm-n => [0..1]
+             Observation.component:tnm-n.code => [None..None]
+             Observation.component:tnm-n.value[x] => [None..None]
+             Observation.component:tnm-m => [0..1]
+             Observation.component:tnm-m.code => [None..None]
+             Observation.component:tnm-m.value[x] => [None..None]
+             Observation.component:tnm-type => [0..1]
+             Observation.component:tnm-type.code => [None..None]
+             Observation.component:tnm-type.value[x] => [None..None]
+             Observation.component:tnm-type.value[x].coding.version => [None..None]
+             Observation.component:tnm-type.value[x].coding.code => [None..None]
+        } 
+
+        class PerformanceStatus{
+
+             Observation.code => [None..None]
+             Observation.subject => [None..None]
+             Observation.focus => [None..None]
+             Observation.value[x] => [None..None]
+        } 
+
+        class RadiomicsImageFilters{
+
+             Observation.extension => [1..None]
+             Observation.extension:radiomics-image-filters-settings => <&plus>[1..1]
+             Observation.partOf => [1..1]
+             Observation.code => [None..None]
+             Observation.note => [1..1]
+        } 
+
+        class RadiomicsCriteria{
+
+             Observation.extension => [1..None]
+             Observation.extension:radiomics-criteria-settings => <&plus>[1..1]
+             Observation.code => [None..None]
+             Observation.focus => [1..1]
+             Observation.hasMember => [1..1]
+        } 
+
+        class RadiomicsFeatures{
+
+             Observation.code => [None..None]
+             Observation.code.coding.code => [1..None]
+             Observation.code.text => [1..None]
+             Observation.value[x] => [1..None]
+             Observation.value[x]:valueQuantity => [1..1]
+             Observation.hasMember => [1..None]
+        } 
+
+        class RadiotherapyCourseSummary{
+
+             Procedure.extension:treatmentIntent => <&plus>[0..1]
+             Procedure.extension:treatmentTerminationReason => <&plus>[0..1]
+             Procedure.extension:numberOfSessions => <&plus>[0..1]
+             Procedure.basedOn => [None..None]
+             Procedure.category => [1..None]
+             Procedure.category.coding.code => [1..None]
+             Procedure.code => [1..None]
+             Procedure.code.coding.display => [None..None]
+             Procedure.subject => [None..None]
+             Procedure.performed[x] => [1..None]
+             Procedure.performed[x].start => [1..None]
+             Procedure.performed[x].end => [1..None]
+        } 
+
+        class RadiotherapyPhase{
+
+             Procedure.extension => [1..None]
+             Procedure.extension:numberOfFractions => <&plus>[1..1]
+             Procedure.partOf => [1..1]
+             Procedure.category => [1..None]
+             Procedure.category.coding.code => [1..None]
+             Procedure.code => [1..None]
+             Procedure.code.coding.display => [None..None]
+             Procedure.subject => [None..None]
+             Procedure.performed[x] => [1..None]
+             Procedure.performed[x].start => [1..None]
+             Procedure.performed[x].end => [1..None]
+        } 
+
+        class RadiotherapyPlan{
+
+             Procedure.extension => [2..None]
+             Procedure.extension:basedOn => <&plus>[0..3]
+             Procedure.extension:basedOn.extension:seriesUID => <&plus>[None..None]
+             Procedure.extension:basedOn.extension:rtStructUID => <&plus>[None..None]
+             Procedure.extension:doseToVolume => <&plus>[0..*]
+             Procedure.extension:doseToVolume.extension:fractionDose => <&plus>[None..None]
+             Procedure.extension:doseToVolume.extension:numberOfFractions => <&plus>[None..None]
+             Procedure.extension:doseToVolume.extension:totalDose => <&plus>[None..None]
+             Procedure.extension:doseToVolume.extension:rtDoseUID => <&plus>[None..None]
+             Procedure.extension:modalityAndTechnique => <&plus>[0..*]
+             Procedure.extension:modalityAndTechnique.extension:radiotherapyModality => <&plus>[None..None]
+             Procedure.extension:modalityAndTechnique.extension:radiotherapyTechnique => <&plus>[None..None]
+             Procedure.extension:modalityAndTechnique.extension:radiotherapyTreatmentMachinePlanned => <&plus>[None..None]
+             Procedure.extension:energyOrIsotope => <&plus>[0..*]
+             Procedure.extension:energyOrIsotope.extension:quantityEnergyOrIsotope => <&plus>[None..None]
+             Procedure.extension:energyOrIsotope.extension:nameEnergyOrIsotope => <&plus>[None..None]
+             Procedure.extension:numberOfFractions => <&plus>[1..1]
+             Procedure.extension:reasonReplanification => <&plus>[0..1]
+             Procedure.extension:algorithmName => <&plus>[1..1]
+             Procedure.identifier => [1..None]
+             Procedure.identifier:rtPlanUID => [1..1]
+             Procedure.identifier:rtPlanUID.type => [1..None]
+             Procedure.partOf => [1..1]
+             Procedure.category => [1..None]
+             Procedure.category.coding.code => [1..None]
+             Procedure.code => [1..None]
+             Procedure.code.coding.display => [None..None]
+             Procedure.subject => [None..None]
+             Procedure.performed[x] => [1..None]
+             Procedure.performed[x].start => [1..None]
+             Procedure.performed[x].end => [1..None]
+        } 
+
+        class RadiotherapyVolume{
+
+             BodyStructure.identifier => [1..1]
+             BodyStructure.location => [1..None]
+             BodyStructure.locationQualifier => [None..None]
+             BodyStructure.description => [None..None]
+             BodyStructure.patient => [None..None]
+        } 
+
+        class RelatedPathology{
+
+             Condition.code => [None..None]
+             Condition.subject => [None..None]
+             Condition.onset[x] => [None..None]
+             Condition.onset[x]:onsetDateTime => [0..1]
+             Condition.abatement[x] => [None..None]
+             Condition.abatement[x]:abatementDateTime => [0..1]
+        } 
+
+        class ResponseEvaluation{
+
+             Observation.basedOn => [None..None]
+             Observation.code => [None..None]
+             Observation.subject => [None..None]
+             Observation.effective[x] => [1..None]
+             Observation.effective[x]:effectiveDateTime => [1..1]
+             Observation.value[x] => [1..None]
+        } 
+
+        class RoiSegmentation{
+
+             Observation.text => [1..None]
+             Observation.identifier => [4..None]
+             Observation.identifier:dicom_reference => [1..*]
+             Observation.identifier:dicom_reference.type.text => [1..None]
+             Observation.identifier:series_reference => [1..1]
+             Observation.identifier:series_reference.type.text => [1..None]
+             Observation.identifier:roi => [1..1]
+             Observation.identifier:roi.type.text => [1..None]
+             Observation.identifier:file => [1..1]
+             Observation.identifier:file.type.text => [1..None]
+             Observation.partOf => [1..1]
+             Observation.code => [None..None]
+             Observation.subject => [None..None]
+             Observation.note => [None..1]
+        } 
+
+        class SequencingAnalysis{
+
+             Observation => [None..None]
+             Observation.category.text => [None..None]
+             Observation.code => [None..None]
+             Observation.subject => [None..None]
+             Observation.focus => [None..None]
+             Observation.effective[x]:effectiveDateTime => [None..None]
+             Observation.method => [1..None]
+             Observation.specimen => [None..None]
+             Observation.device => [1..None]
+             Observation.component => [1..None]
+             Observation.component:algorithmic-cellularity => [0..1]
+             Observation.component:algorithmic-cellularity.code => [None..None]
+             Observation.component:algorithmic-cellularity.value[x] => [None..None]
+             Observation.component:algorithmic-ploidy => [0..1]
+             Observation.component:algorithmic-ploidy.code => [None..None]
+             Observation.component:algorithmic-ploidy.value[x] => [None..None]
+             Observation.component:algorithmic-ploidy.value[x]:valueCodeableConcept => [0..1]
+             Observation.component:number-of-breakpoints => [0..1]
+             Observation.component:number-of-breakpoints.code => [None..None]
+             Observation.component:number-of-breakpoints.value[x] => [None..None]
+             Observation.component:date-of-experiment => [0..1]
+             Observation.component:date-of-experiment.code => [None..None]
+             Observation.component:date-of-experiment.value[x] => [None..None]
+             Observation.component:analytic-pipeline-code => [1..1]
+             Observation.component:analytic-pipeline-code.code => [None..None]
+             Observation.component:analytic-pipeline-code.value[x] => [None..None]
+        } 
+
+        class SequencingDevice{
+
+             Device.identifier => [None..1]
+             Device.type => [1..None]
+             Device.version => [None..1]
+             Device.version.type => [None..None]
+             Device.version.type.coding => [None..None]
+             Device.version.type.text => [None..None]
+        } 
+
+        class SNP{
+
+             Observation.extension:strand-bias => <&plus>[0..1]
+             Observation.extension:strand-bias.value[x] => <&plus>[None..None]
+             Observation.subject => [1..None]
+             Observation.derivedFrom => [1..1]
+             Observation.component => [8..None]
+             Observation.component:cytogenetic-location => [None..1]
+             Observation.component:cytogenetic-location.value[x] => [None..None]
+             Observation.component:ref-sequence-assembly => [1..1]
+             Observation.component:ref-sequence-assembly.value[x] => [None..None]
+             Observation.component:dna-chg-type => [1..None]
+             Observation.component:dna-chg-type.value[x] => [None..None]
+             Observation.component:genomic-source-class => [1..None]
+             Observation.component:genomic-source-class.value[x] => [None..None]
+             Observation.component:allelic-read-depth => [1..1]
+             Observation.component:allelic-read-depth.value[x] => [None..None]
+             Observation.component:allelic-state => [None..None]
+             Observation.component:allelic-state.value[x] => [None..None]
+             Observation.component:ref-allele => [1..None]
+             Observation.component:ref-allele.value[x] => [None..None]
+             Observation.component:alt-allele => [1..None]
+             Observation.component:alt-allele.value[x] => [None..None]
+             Observation.component:exact-start-end => [None..None]
+             Observation.component:exact-start-end.value[x].low => [None..None]
+             Observation.component:exact-start-end.value[x].high => [1..None]
+             Observation.component:pathogenicity => [0..1]
+             Observation.component:pathogenicity.code => [None..None]
+             Observation.component:pathogenicity.value[x] => [None..None]
+             Observation.component:actionability => [0..1]
+             Observation.component:actionability.code => [None..None]
+             Observation.component:actionability.value[x] => [None..None]
+             Observation.component:proposed-for-orientation => [0..1]
+             Observation.component:proposed-for-orientation.code => [None..None]
+             Observation.component:proposed-for-orientation.value[x] => [None..None]
+             Observation.component:chromosome => [1..*]
+             Observation.component:chromosome.code => [None..None]
+             Observation.component:chromosome.value[x] => [1..None]
+             Observation.component:variant-read-depth => [1..1]
+             Observation.component:variant-read-depth.code => [None..None]
+             Observation.component:variant-read-depth.value[x] => [1..None]
+        } 
+
+        class Treatment{
+
+             CarePlan.extension:treatment-line => <&plus>[0..1]
+             CarePlan.extension:treatment-line.value[x]:valueInteger => <&plus>[None..None]
+             CarePlan.category => [1..1]
+             CarePlan.subject => [None..None]
+             CarePlan.period.start => [1..None]
+             CarePlan.period.end => [1..None]
+             CarePlan.supportingInfo => [None..1]
+             CarePlan.activity => [None..None]
+             CarePlan.activity.detail.code => [None..None]
+             CarePlan.activity.detail.reasonReference => [None..None]
+             CarePlan.activity:activity-code => [0..1]
+             CarePlan.activity:activity-code.detail => [1..None]
+             CarePlan.activity:activity-code.detail.code => [1..None]
+             CarePlan.activity:activity-code.detail.code.coding.system => [1..None]
+        } 
+
+        class TumorPathologyEvent{
+
+             Condition.extension:due-to => <&plus>[0..1]
+             Condition.extension:laterality => <&plus>[0..1]
+             Condition.extension:laterality.value[x].coding.code => <&plus>[None..None]
+             Condition.extension:histologygrade => <&plus>[0..1]
+             Condition.extension:histologygrade.extension:histologyGradeType => <&plus>[None..None]
+             Condition.extension:histologygrade.extension:histologyGradeValue => <&plus>[None..None]
+             Condition.code => [1..None]
+             Condition.bodySite => [1..1]
+             Condition.bodySite.coding.code => [None..None]
+             Condition.subject => [None..None]
+             Condition.onset[x] => [1..None]
+             Condition.onset[x]:onsetDateTime => [1..1]
+             Condition.abatement[x] => [None..None]
+             Condition.abatement[x]:abatementDateTime => [0..1]
+             Condition.recordedDate => [1..None]
+             Condition.stage => [1..None]
+             Condition.stage:morphology => [1..1]
+             Condition.stage:morphology.summary => [1..None]
+             Condition.stage:morphology.summary.coding.code => [None..None]
+             Condition.stage:morphology.type.coding.code => [1..None]
+        } 
+
+        class VariantAnnotation{
+
+             Observation => [None..None]
+             Observation.subject => [None..None]
+             Observation.hasMember => [2..2]
+             Observation.derivedFrom => [1..2]
+             Observation.component => [1..None]
+             Observation.component:gene-studied => [None..1]
+             Observation.component:gene-studied.value[x].coding.code => [None..None]
+             Observation.component:gene-studied.value[x].text => [None..None]
+             Observation.component:cytogenetic-location => [None..1]
+             Observation.component:cytogenetic-location.value[x].text => [None..None]
+             Observation.component:dna-chg => [None..None]
+             Observation.component:dna-chg.value[x].coding.code => [None..None]
+             Observation.component:dna-chg-type => [1..None]
+             Observation.component:dna-chg-type.value[x] => [None..None]
+             Observation.component:dna-chg-type.value[x].coding => [1..1]
+             Observation.component:dna-chg-type.value[x].coding.code => [None..None]
+             Observation.component:genomic-dna-chg => [None..None]
+             Observation.component:genomic-dna-chg.value[x].coding.code => [None..None]
+             Observation.component:amino-acid-chg => [None..None]
+             Observation.component:amino-acid-chg.value[x].coding.code => [None..None]
+             Observation.component:amino-acid-chg-type => [None..None]
+             Observation.component:amino-acid-chg-type.value[x] => [None..None]
+             Observation.component:amino-acid-chg-type.value[x].coding.code => [None..None]
+             Observation.component:mutation-prediction-software => [0..1]
+             Observation.component:mutation-prediction-software.code => [None..None]
+             Observation.component:mutation-prediction-software.code.text => [None..None]
+             Observation.component:mutation-prediction-software.value[x] => [None..None]
+             Observation.component:mutation-prediction-software.value[x].coding.code => [None..None]
+             Observation.component:mutation-prediction-score => [0..1]
+             Observation.component:mutation-prediction-score.code => [None..None]
+             Observation.component:mutation-prediction-score.code.text => [None..None]
+             Observation.component:mutation-prediction-score.value[x] => [None..None]
+             Observation.component:mutation-prediction-score.value[x].value => [None..None]
+             Observation.component:mutation-prediction-evidence-value => [0..1]
+             Observation.component:mutation-prediction-evidence-value.code => [None..None]
+             Observation.component:mutation-prediction-evidence-value.code.text => [None..None]
+             Observation.component:mutation-prediction-evidence-value.value[x] => [None..None]
+             Observation.component:rna-chg => [0..1]
+             Observation.component:rna-chg.code => [None..None]
+             Observation.component:rna-chg.code.text => [None..None]
+             Observation.component:rna-chg.value[x] => [None..None]
+             Observation.component:rna-chg.value[x].coding.code => [None..None]
+             Observation.component:on-splicing-site => [0..1]
+             Observation.component:on-splicing-site.code => [None..None]
+             Observation.component:on-splicing-site.value[x] => [None..None]
+        } 
+
+        class VitalStatus{
+
+             Observation.code => [None..None]
+             Observation.subject => [1..None]
+             Observation.effective[x] => [1..None]
+             Observation.value[x] => [1..None]
+             Observation.value[x].coding.code => [1..None]
+             Observation.component => [None..0]
+         }
+
+     }
+     package extension #paleturquoise {
+
+     Expression -[#black,dashed,thickness=2]-> GeneExpressionDataType
+     Fusion -[#black,dashed,thickness=2]-> SpanningPairs
+     Fusion -[#black,dashed,thickness=2]-> SplitReads
+     GenomeEntity -[#black,dashed,thickness=2]-> GenomeEntityType
+     OncoAdverseEvent -[#black,dashed,thickness=2]-> EndDate
+     BiologicalSample -[#black,dashed,thickness=2]-> BiologicalSampleOrigin
+     BiologicalSample -[#black,dashed,thickness=2]-> BasedOnCondition
+     OncoImagingStudy -[#black,dashed,thickness=2]-> WeightHeight
+     OncoImagingStudy -[#black,dashed,thickness=2]-> ImagingSettings
+     OncoPatient -[#black,dashed,thickness=2]-> Ethnicity
+     OncoPatient -[#black,dashed,thickness=2]-> OriginCenter
+     RadiomicsImageFilters -[#black,dashed,thickness=2]-> RadiomicsImageFiltersSettings
+     RadiomicsCriteria -[#black,dashed,thickness=2]-> RadiomicsCriteriaSettings
+     RadiotherapyCourseSummary -[#black,dashed,thickness=2]-> TreatmentIntent
+     RadiotherapyCourseSummary -[#black,dashed,thickness=2]-> TreatmentTerminationReason
+     RadiotherapyCourseSummary -[#black,dashed,thickness=2]-> NumberOfSessions
+     RadiotherapyPhase -[#black,dashed,thickness=2]-> NumberOfFractions
+     RadiotherapyPlan -[#black,dashed,thickness=2]-> BasedOn
+     RadiotherapyPlan -[#black,dashed,thickness=2]-> DoseToVolume
+     RadiotherapyPlan -[#black,dashed,thickness=2]-> ModalityAndTechnique
+     RadiotherapyPlan -[#black,dashed,thickness=2]-> EnergyOrIsotope
+     RadiotherapyPlan -[#black,dashed,thickness=2]-> NumberOfFractions
+     RadiotherapyPlan -[#black,dashed,thickness=2]-> ReasonReplanification
+     RadiotherapyPlan -[#black,dashed,thickness=2]-> AlgorithmName
+     SNP -[#black,dashed,thickness=2]-> StrandBias
+     Treatment -[#black,dashed,thickness=2]-> TreatmentLine
+     TumorPathologyEvent -[#black,dashed,thickness=2]-> DueToTumorPathologyEvent
+     TumorPathologyEvent -[#black,dashed,thickness=2]-> Laterality
+     TumorPathologyEvent -[#black,dashed,thickness=2]-> Histology_Grade
+
+        class BasedOnCondition{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+          Extension.value[x]:valueReference => [0..1]
+        } 
+        class BiologicalSampleOrigin{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [1..None]
+          Extension.value[x]:valueCodeableConcept => [1..1]
+          Extension.value[x]:valueCodeableConcept.text => [None..None]
+        } 
+        class EndDate{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class AlgorithmName{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class BasedOn{
+
+          Extension.extension:imagingStudyRef => [0..1]
+          Extension.extension:imagingStudyRef.extension => [None..0]
+          Extension.extension:imagingStudyRef.url => [None..None]
+          Extension.extension:imagingStudyRef.value[x] => [None..None]
+          Extension.extension:seriesUID => [0..1]
+          Extension.extension:seriesUID.extension => [None..0]
+          Extension.extension:seriesUID.url => [None..None]
+          Extension.extension:seriesUID.value[x] => [None..None]
+          Extension.extension:rtStructUID => [0..1]
+          Extension.extension:rtStructUID.extension => [None..0]
+          Extension.extension:rtStructUID.url => [None..None]
+          Extension.extension:rtStructUID.value[x] => [None..None]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
+        class DoseToVolume{
+
+          Extension.extension => [4..None]
+          Extension.extension:volume => [1..*]
+          Extension.extension:volume.extension => [None..0]
+          Extension.extension:volume.url => [None..None]
+          Extension.extension:volume.value[x] => [1..None]
+          Extension.extension:fractionDose => [1..1]
+          Extension.extension:fractionDose.extension => [None..0]
+          Extension.extension:fractionDose.url => [None..None]
+          Extension.extension:fractionDose.value[x] => [1..None]
+          Extension.extension:numberOfFractions => [1..1]
+          Extension.extension:numberOfFractions.extension => [None..0]
+          Extension.extension:numberOfFractions.url => [None..None]
+          Extension.extension:numberOfFractions.value[x] => [1..None]
+          Extension.extension:totalDose => [1..1]
+          Extension.extension:totalDose.extension => [None..0]
+          Extension.extension:totalDose.url => [None..None]
+          Extension.extension:totalDose.value[x] => [1..None]
+          Extension.extension:rtDoseUID => [0..1]
+          Extension.extension:rtDoseUID.extension => [None..0]
+          Extension.extension:rtDoseUID.url => [None..None]
+          Extension.extension:rtDoseUID.value[x] => [None..None]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
+        class EnergyOrIsotope{
+
+          Extension.extension => [1..None]
+          Extension.extension:quantityEnergyOrIsotope => [1..1]
+          Extension.extension:quantityEnergyOrIsotope.extension => [None..0]
+          Extension.extension:quantityEnergyOrIsotope.url => [None..None]
+          Extension.extension:quantityEnergyOrIsotope.value[x] => [1..None]
+          Extension.extension:nameEnergyOrIsotope => [0..1]
+          Extension.extension:nameEnergyOrIsotope.extension => [None..0]
+          Extension.extension:nameEnergyOrIsotope.url => [None..None]
+          Extension.extension:nameEnergyOrIsotope.value[x] => [None..None]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
+        class Ethnicity{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class GeneExpressionDataType{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class GenomeEntityType{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [1..None]
+        } 
+        class Histology_Grade{
+
+          Extension.extension:histologyGradeType => [0..1]
+          Extension.extension:histologyGradeType.extension => [None..0]
+          Extension.extension:histologyGradeType.url => [None..None]
+          Extension.extension:histologyGradeType.value[x] => [None..None]
+          Extension.extension:histologyGradeValue => [0..1]
+          Extension.extension:histologyGradeValue.extension => [None..0]
+          Extension.extension:histologyGradeValue.url => [None..None]
+          Extension.extension:histologyGradeValue.value[x] => [None..None]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
+        class ImagingSettings{
+
+          Extension.extension => [4..None]
+          Extension.extension:slice_thickness => [1..1]
+          Extension.extension:slice_thickness.extension => [None..0]
+          Extension.extension:slice_thickness.url => [None..None]
+          Extension.extension:slice_thickness.value[x] => [1..None]
+          Extension.extension:pixel_spacing => [1..1]
+          Extension.extension:pixel_spacing.extension => [None..0]
+          Extension.extension:pixel_spacing.url => [None..None]
+          Extension.extension:pixel_spacing.value[x] => [1..None]
+          Extension.extension:field_of_view => [0..1]
+          Extension.extension:field_of_view.extension => [None..0]
+          Extension.extension:field_of_view.url => [None..None]
+          Extension.extension:field_of_view.value[x] => [None..None]
+          Extension.extension:rows => [1..1]
+          Extension.extension:rows.extension => [None..0]
+          Extension.extension:rows.url => [None..None]
+          Extension.extension:rows.value[x] => [1..None]
+          Extension.extension:columns => [1..1]
+          Extension.extension:columns.extension => [None..0]
+          Extension.extension:columns.url => [None..None]
+          Extension.extension:columns.value[x] => [1..None]
+          Extension.extension:imaging_injection => [0..1]
+          Extension.extension:imaging_injection.extension => [None..0]
+          Extension.extension:imaging_injection.url => [None..None]
+          Extension.extension:imaging_injection.value[x] => [None..None]
+          Extension.extension:imaging_injection.value[x]:valueReference => [0..1]
+          Extension.extension:mr_image => [0..1]
+          Extension.extension:mr_image.extension => [9..None]
+          Extension.extension:mr_image.extension:sequence_name => [1..1]
+          Extension.extension:mr_image.extension:sequence_name.extension => [None..0]
+          Extension.extension:mr_image.extension:sequence_name.url => [None..None]
+          Extension.extension:mr_image.extension:sequence_name.value[x] => [1..None]
+          Extension.extension:mr_image.extension:magnetic_field_strength => [1..1]
+          Extension.extension:mr_image.extension:magnetic_field_strength.extension => [None..0]
+          Extension.extension:mr_image.extension:magnetic_field_strength.url => [None..None]
+          Extension.extension:mr_image.extension:magnetic_field_strength.value[x] => [1..None]
+          Extension.extension:mr_image.extension:mr_acquisition_type => [1..1]
+          Extension.extension:mr_image.extension:mr_acquisition_type.extension => [None..0]
+          Extension.extension:mr_image.extension:mr_acquisition_type.url => [None..None]
+          Extension.extension:mr_image.extension:mr_acquisition_type.value[x] => [1..None]
+          Extension.extension:mr_image.extension:repetition_time => [1..1]
+          Extension.extension:mr_image.extension:repetition_time.extension => [None..0]
+          Extension.extension:mr_image.extension:repetition_time.url => [None..None]
+          Extension.extension:mr_image.extension:repetition_time.value[x] => [1..None]
+          Extension.extension:mr_image.extension:echo_time => [1..1]
+          Extension.extension:mr_image.extension:echo_time.extension => [None..0]
+          Extension.extension:mr_image.extension:echo_time.url => [None..None]
+          Extension.extension:mr_image.extension:echo_time.value[x] => [1..None]
+          Extension.extension:mr_image.extension:imaging_frequency => [1..1]
+          Extension.extension:mr_image.extension:imaging_frequency.extension => [None..0]
+          Extension.extension:mr_image.extension:imaging_frequency.url => [None..None]
+          Extension.extension:mr_image.extension:imaging_frequency.value[x] => [1..None]
+          Extension.extension:mr_image.extension:flip_angle => [1..1]
+          Extension.extension:mr_image.extension:flip_angle.extension => [None..0]
+          Extension.extension:mr_image.extension:flip_angle.url => [None..None]
+          Extension.extension:mr_image.extension:flip_angle.value[x] => [1..None]
+          Extension.extension:mr_image.extension:inversion_time => [1..1]
+          Extension.extension:mr_image.extension:inversion_time.extension => [None..0]
+          Extension.extension:mr_image.extension:inversion_time.url => [None..None]
+          Extension.extension:mr_image.extension:inversion_time.value[x] => [1..None]
+          Extension.extension:mr_image.extension:receive_coil_name => [1..1]
+          Extension.extension:mr_image.extension:receive_coil_name.extension => [None..0]
+          Extension.extension:mr_image.extension:receive_coil_name.url => [None..None]
+          Extension.extension:mr_image.extension:receive_coil_name.value[x] => [1..None]
+          Extension.extension:mr_image.url => [None..None]
+          Extension.extension:mr_image.value[x] => [None..0]
+          Extension.extension:ct_image => [0..1]
+          Extension.extension:ct_image.extension => [5..None]
+          Extension.extension:ct_image.extension:kvp => [0..1]
+          Extension.extension:ct_image.extension:kvp.extension => [None..0]
+          Extension.extension:ct_image.extension:kvp.url => [None..None]
+          Extension.extension:ct_image.extension:kvp.value[x] => [None..None]
+          Extension.extension:ct_image.extension:xray_tube_current => [1..1]
+          Extension.extension:ct_image.extension:xray_tube_current.extension => [None..0]
+          Extension.extension:ct_image.extension:xray_tube_current.url => [None..None]
+          Extension.extension:ct_image.extension:xray_tube_current.value[x] => [1..None]
+          Extension.extension:ct_image.extension:exposure_time => [1..1]
+          Extension.extension:ct_image.extension:exposure_time.extension => [None..0]
+          Extension.extension:ct_image.extension:exposure_time.url => [None..None]
+          Extension.extension:ct_image.extension:exposure_time.value[x] => [1..None]
+          Extension.extension:ct_image.extension:spiral_pitch_factor => [1..1]
+          Extension.extension:ct_image.extension:spiral_pitch_factor.extension => [None..0]
+          Extension.extension:ct_image.extension:spiral_pitch_factor.url => [None..None]
+          Extension.extension:ct_image.extension:spiral_pitch_factor.value[x] => [1..None]
+          Extension.extension:ct_image.extension:filter_type => [1..1]
+          Extension.extension:ct_image.extension:filter_type.extension => [None..0]
+          Extension.extension:ct_image.extension:filter_type.url => [None..None]
+          Extension.extension:ct_image.extension:filter_type.value[x] => [1..None]
+          Extension.extension:ct_image.extension:convolution_kernel => [1..1]
+          Extension.extension:ct_image.extension:convolution_kernel.extension => [None..0]
+          Extension.extension:ct_image.extension:convolution_kernel.url => [None..None]
+          Extension.extension:ct_image.extension:convolution_kernel.value[x] => [1..None]
+          Extension.extension:ct_image.url => [None..None]
+          Extension.extension:ct_image.value[x] => [None..0]
+          Extension.extension:dx_image => [0..1]
+          Extension.extension:dx_image.extension => [4..None]
+          Extension.extension:dx_image.extension:image_laterality => [1..1]
+          Extension.extension:dx_image.extension:image_laterality.extension => [None..0]
+          Extension.extension:dx_image.extension:image_laterality.url => [None..None]
+          Extension.extension:dx_image.extension:image_laterality.value[x] => [1..None]
+          Extension.extension:dx_image.extension:patient_orientation => [0..1]
+          Extension.extension:dx_image.extension:patient_orientation.extension => [None..0]
+          Extension.extension:dx_image.extension:patient_orientation.url => [None..None]
+          Extension.extension:dx_image.extension:patient_orientation.value[x] => [None..None]
+          Extension.extension:dx_image.extension:kvp => [1..1]
+          Extension.extension:dx_image.extension:kvp.extension => [None..0]
+          Extension.extension:dx_image.extension:kvp.url => [None..None]
+          Extension.extension:dx_image.extension:kvp.value[x] => [1..None]
+          Extension.extension:dx_image.extension:exposure => [1..1]
+          Extension.extension:dx_image.extension:exposure.extension => [None..0]
+          Extension.extension:dx_image.extension:exposure.url => [None..None]
+          Extension.extension:dx_image.extension:exposure.value[x] => [1..None]
+          Extension.extension:dx_image.extension:exposure_time => [1..1]
+          Extension.extension:dx_image.extension:exposure_time.extension => [None..0]
+          Extension.extension:dx_image.extension:exposure_time.url => [None..None]
+          Extension.extension:dx_image.extension:exposure_time.value[x] => [1..None]
+          Extension.extension:dx_image.url => [None..None]
+          Extension.extension:dx_image.value[x] => [None..0]
+          Extension.extension:pt_nm_image => [0..1]
+          Extension.extension:pt_nm_image.extension => [3..None]
+          Extension.extension:pt_nm_image.extension:attenuation_correction_method => [1..1]
+          Extension.extension:pt_nm_image.extension:attenuation_correction_method.extension => [None..0]
+          Extension.extension:pt_nm_image.extension:attenuation_correction_method.url => [None..None]
+          Extension.extension:pt_nm_image.extension:attenuation_correction_method.value[x] => [1..None]
+          Extension.extension:pt_nm_image.extension:reconstruction_method => [1..1]
+          Extension.extension:pt_nm_image.extension:reconstruction_method.extension => [None..0]
+          Extension.extension:pt_nm_image.extension:reconstruction_method.url => [None..None]
+          Extension.extension:pt_nm_image.extension:reconstruction_method.value[x] => [1..None]
+          Extension.extension:pt_nm_image.extension:scatter_correction_method => [1..1]
+          Extension.extension:pt_nm_image.extension:scatter_correction_method.extension => [None..0]
+          Extension.extension:pt_nm_image.extension:scatter_correction_method.url => [None..None]
+          Extension.extension:pt_nm_image.extension:scatter_correction_method.value[x] => [1..None]
+          Extension.extension:pt_nm_image.url => [None..None]
+          Extension.extension:pt_nm_image.value[x] => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
+        class Laterality{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class ModalityAndTechnique{
+
+          Extension.extension => [2..None]
+          Extension.extension:radiotherapyModality => [1..1]
+          Extension.extension:radiotherapyModality.extension => [None..0]
+          Extension.extension:radiotherapyModality.url => [None..None]
+          Extension.extension:radiotherapyModality.value[x] => [1..None]
+          Extension.extension:radiotherapyTechnique => [1..1]
+          Extension.extension:radiotherapyTechnique.extension => [None..0]
+          Extension.extension:radiotherapyTechnique.url => [None..None]
+          Extension.extension:radiotherapyTechnique.value[x] => [1..None]
+          Extension.extension:radiotherapyTreatmentMachinePlanned => [0..1]
+          Extension.extension:radiotherapyTreatmentMachinePlanned.extension => [None..0]
+          Extension.extension:radiotherapyTreatmentMachinePlanned.url => [None..None]
+          Extension.extension:radiotherapyTreatmentMachinePlanned.value[x] => [None..None]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
+        class NumberOfFractions{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class NumberOfSessions{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class OriginCenter{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [1..None]
+        } 
+        class RadiomicsCriteriaSettings{
+
+          Extension.extension => [11..None]
+          Extension.extension:softwareName => [1..1]
+          Extension.extension:softwareName.extension => [2..None]
+          Extension.extension:softwareName.extension:code => [1..1]
+          Extension.extension:softwareName.extension:code.extension => [None..0]
+          Extension.extension:softwareName.extension:code.url => [None..None]
+          Extension.extension:softwareName.extension:code.value[x] => [None..None]
+          Extension.extension:softwareName.extension:code.value[x]:valueCoding => [0..1]
+          Extension.extension:softwareName.extension:valueString => [1..1]
+          Extension.extension:softwareName.extension:valueString.extension => [None..0]
+          Extension.extension:softwareName.extension:valueString.url => [None..None]
+          Extension.extension:softwareName.extension:valueString.value[x] => [1..None]
+          Extension.extension:softwareName.extension:valueString.value[x]:valueString => [1..1]
+          Extension.extension:softwareName.url => [None..None]
+          Extension.extension:softwareName.value[x] => [None..0]
+          Extension.extension:softwareVersion => [1..1]
+          Extension.extension:softwareVersion.extension => [2..None]
+          Extension.extension:softwareVersion.extension:code => [1..1]
+          Extension.extension:softwareVersion.extension:code.extension => [None..0]
+          Extension.extension:softwareVersion.extension:code.url => [None..None]
+          Extension.extension:softwareVersion.extension:code.value[x] => [None..None]
+          Extension.extension:softwareVersion.extension:code.value[x]:valueCoding => [0..1]
+          Extension.extension:softwareVersion.extension:valueString => [1..1]
+          Extension.extension:softwareVersion.extension:valueString.extension => [None..0]
+          Extension.extension:softwareVersion.extension:valueString.url => [None..None]
+          Extension.extension:softwareVersion.extension:valueString.value[x] => [1..None]
+          Extension.extension:softwareVersion.extension:valueString.value[x]:valueString => [1..1]
+          Extension.extension:softwareVersion.url => [None..None]
+          Extension.extension:softwareVersion.value[x] => [None..0]
+          Extension.extension:localizationMethod => [1..1]
+          Extension.extension:localizationMethod.extension => [None..0]
+          Extension.extension:localizationMethod.url => [None..None]
+          Extension.extension:localizationMethod.value[x] => [1..None]
+          Extension.extension:localizationMethod.value[x]:valueString => [1..1]
+          Extension.extension:windowMatrix => [0..1]
+          Extension.extension:windowMatrix.url => [None..None]
+          Extension.extension:usedImageFilter => [1..1]
+          Extension.extension:usedImageFilter.extension => [None..0]
+          Extension.extension:usedImageFilter.url => [None..None]
+          Extension.extension:usedImageFilter.value[x] => [1..None]
+          Extension.extension:usedImageFilter.value[x]:valueString => [1..1]
+          Extension.extension:usedImageFilterParameters => [1..1]
+          Extension.extension:usedImageFilterParameters.url => [None..None]
+          Extension.extension:distanceWeighting => [1..1]
+          Extension.extension:distanceWeighting.extension => [2..None]
+          Extension.extension:distanceWeighting.extension:code => [1..1]
+          Extension.extension:distanceWeighting.extension:code.extension => [None..0]
+          Extension.extension:distanceWeighting.extension:code.url => [None..None]
+          Extension.extension:distanceWeighting.extension:code.value[x] => [None..None]
+          Extension.extension:distanceWeighting.extension:code.value[x]:valueCoding => [0..1]
+          Extension.extension:distanceWeighting.extension:valueString => [1..1]
+          Extension.extension:distanceWeighting.extension:valueString.extension => [None..0]
+          Extension.extension:distanceWeighting.extension:valueString.url => [None..None]
+          Extension.extension:distanceWeighting.extension:valueString.value[x] => [1..None]
+          Extension.extension:distanceWeighting.extension:valueString.value[x]:valueString => [1..1]
+          Extension.extension:distanceWeighting.url => [None..None]
+          Extension.extension:distanceWeighting.value[x] => [None..0]
+          Extension.extension:discretisationMethod => [1..1]
+          Extension.extension:discretisationMethod.extension => [2..None]
+          Extension.extension:discretisationMethod.extension:code => [1..1]
+          Extension.extension:discretisationMethod.extension:code.extension => [None..0]
+          Extension.extension:discretisationMethod.extension:code.url => [None..None]
+          Extension.extension:discretisationMethod.extension:code.value[x] => [None..None]
+          Extension.extension:discretisationMethod.extension:code.value[x]:valueCoding => [0..1]
+          Extension.extension:discretisationMethod.extension:valueString => [1..1]
+          Extension.extension:discretisationMethod.extension:valueString.extension => [None..0]
+          Extension.extension:discretisationMethod.extension:valueString.url => [None..None]
+          Extension.extension:discretisationMethod.extension:valueString.value[x] => [1..None]
+          Extension.extension:discretisationMethod.extension:valueString.value[x]:valueString => [1..1]
+          Extension.extension:discretisationMethod.url => [None..None]
+          Extension.extension:discretisationMethod.value[x] => [None..0]
+          Extension.extension:binSize => [1..1]
+          Extension.extension:binSize.extension => [2..None]
+          Extension.extension:binSize.extension:code => [1..1]
+          Extension.extension:binSize.extension:code.extension => [None..0]
+          Extension.extension:binSize.extension:code.url => [None..None]
+          Extension.extension:binSize.extension:code.value[x] => [None..None]
+          Extension.extension:binSize.extension:code.value[x]:valueCoding => [0..1]
+          Extension.extension:binSize.extension:valueDecimal => [1..1]
+          Extension.extension:binSize.extension:valueDecimal.extension => [None..0]
+          Extension.extension:binSize.extension:valueDecimal.url => [None..None]
+          Extension.extension:binSize.extension:valueDecimal.value[x] => [1..None]
+          Extension.extension:binSize.extension:valueDecimal.value[x]:valueDecimal => [1..1]
+          Extension.extension:binSize.url => [None..None]
+          Extension.extension:binSize.value[x] => [None..0]
+          Extension.extension:bounds => [0..1]
+          Extension.extension:bounds.extension => [None..0]
+          Extension.extension:bounds.url => [None..None]
+          Extension.extension:bounds.value[x] => [None..None]
+          Extension.extension:bounds.value[x]:valueString => [0..1]
+          Extension.extension:lowestIntensity => [0..1]
+          Extension.extension:lowestIntensity.extension => [2..None]
+          Extension.extension:lowestIntensity.extension:code => [1..1]
+          Extension.extension:lowestIntensity.extension:code.extension => [None..0]
+          Extension.extension:lowestIntensity.extension:code.url => [None..None]
+          Extension.extension:lowestIntensity.extension:code.value[x] => [None..None]
+          Extension.extension:lowestIntensity.extension:code.value[x]:valueCoding => [0..1]
+          Extension.extension:lowestIntensity.extension:valueDecimal => [1..1]
+          Extension.extension:lowestIntensity.extension:valueDecimal.extension => [None..0]
+          Extension.extension:lowestIntensity.extension:valueDecimal.url => [None..None]
+          Extension.extension:lowestIntensity.extension:valueDecimal.value[x] => [1..None]
+          Extension.extension:lowestIntensity.extension:valueDecimal.value[x]:valueDecimal => [1..1]
+          Extension.extension:lowestIntensity.url => [None..None]
+          Extension.extension:lowestIntensity.value[x] => [None..0]
+          Extension.extension:biggestIntensity => [0..1]
+          Extension.extension:biggestIntensity.extension => [2..None]
+          Extension.extension:biggestIntensity.extension:code => [1..1]
+          Extension.extension:biggestIntensity.extension:code.extension => [None..0]
+          Extension.extension:biggestIntensity.extension:code.url => [None..None]
+          Extension.extension:biggestIntensity.extension:code.value[x] => [None..None]
+          Extension.extension:biggestIntensity.extension:code.value[x]:valueCoding => [0..1]
+          Extension.extension:biggestIntensity.extension:valueDecimal => [1..1]
+          Extension.extension:biggestIntensity.extension:valueDecimal.extension => [None..0]
+          Extension.extension:biggestIntensity.extension:valueDecimal.url => [None..None]
+          Extension.extension:biggestIntensity.extension:valueDecimal.value[x] => [1..None]
+          Extension.extension:biggestIntensity.extension:valueDecimal.value[x]:valueDecimal => [1..1]
+          Extension.extension:biggestIntensity.url => [None..None]
+          Extension.extension:biggestIntensity.value[x] => [None..0]
+          Extension.extension:boundsRangeOfValueAfterDiscretisation => [1..1]
+          Extension.extension:boundsRangeOfValueAfterDiscretisation.extension => [None..0]
+          Extension.extension:boundsRangeOfValueAfterDiscretisation.url => [None..None]
+          Extension.extension:boundsRangeOfValueAfterDiscretisation.value[x] => [1..None]
+          Extension.extension:boundsRangeOfValueAfterDiscretisation.value[x]:valueString => [1..1]
+          Extension.extension:spatialResamplingMethod => [1..1]
+          Extension.extension:spatialResamplingMethod.extension => [None..0]
+          Extension.extension:spatialResamplingMethod.url => [None..None]
+          Extension.extension:spatialResamplingMethod.value[x] => [1..None]
+          Extension.extension:spatialResamplingMethod.value[x]:valueString => [1..1]
+          Extension.extension:spatialResamplingValues => [0..1]
+          Extension.extension:spatialResamplingValues.extension => [None..0]
+          Extension.extension:spatialResamplingValues.url => [None..None]
+          Extension.extension:spatialResamplingValues.value[x] => [None..None]
+          Extension.extension:spatialResamplingValues.value[x]:valueString => [0..1]
+          Extension.extension:textureMatrixAggregation => [1..1]
+          Extension.extension:textureMatrixAggregation.extension => [2..None]
+          Extension.extension:textureMatrixAggregation.extension:code => [1..1]
+          Extension.extension:textureMatrixAggregation.extension:code.extension => [None..0]
+          Extension.extension:textureMatrixAggregation.extension:code.url => [None..None]
+          Extension.extension:textureMatrixAggregation.extension:code.value[x] => [None..None]
+          Extension.extension:textureMatrixAggregation.extension:code.value[x]:valueCoding => [0..1]
+          Extension.extension:textureMatrixAggregation.extension:valueString => [1..1]
+          Extension.extension:textureMatrixAggregation.extension:valueString.extension => [None..0]
+          Extension.extension:textureMatrixAggregation.extension:valueString.url => [None..None]
+          Extension.extension:textureMatrixAggregation.extension:valueString.value[x] => [1..None]
+          Extension.extension:textureMatrixAggregation.extension:valueString.value[x]:valueString => [1..1]
+          Extension.extension:textureMatrixAggregation.url => [None..None]
+          Extension.extension:textureMatrixAggregation.value[x] => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
+        class RadiomicsImageFiltersSettings{
+
+          Extension.extension => [2..None]
+          Extension.extension:softwareName => [1..1]
+          Extension.extension:softwareName.extension => [None..0]
+          Extension.extension:softwareName.url => [None..None]
+          Extension.extension:softwareName.value[x] => [1..None]
+          Extension.extension:softwareName.value[x]:valueString => [1..1]
+          Extension.extension:softwareVersion => [1..1]
+          Extension.extension:softwareVersion.extension => [None..0]
+          Extension.extension:softwareVersion.url => [None..None]
+          Extension.extension:softwareVersion.value[x] => [1..None]
+          Extension.extension:softwareVersion.value[x]:valueString => [1..1]
+          Extension.extension:filterMethod => [0..1]
+          Extension.extension:filterMethod.extension => [None..0]
+          Extension.extension:filterMethod.url => [None..None]
+          Extension.extension:filterMethod.value[x] => [None..None]
+          Extension.extension:filterMethod.value[x]:valueString => [0..1]
+          Extension.extension:filterType => [0..1]
+          Extension.extension:filterType.extension => [None..0]
+          Extension.extension:filterType.url => [None..None]
+          Extension.extension:filterType.value[x] => [None..None]
+          Extension.extension:filterType.value[x]:valueString => [0..1]
+          Extension.extension:filterInterpolation => [0..1]
+          Extension.extension:filterInterpolation.extension => [None..0]
+          Extension.extension:filterInterpolation.url => [None..None]
+          Extension.extension:filterInterpolation.value[x] => [None..None]
+          Extension.extension:filterInterpolation.value[x]:valueString => [0..1]
+          Extension.extension:intensityRounding => [0..1]
+          Extension.extension:intensityRounding.extension => [2..None]
+          Extension.extension:intensityRounding.extension:code => [1..1]
+          Extension.extension:intensityRounding.extension:code.extension => [None..0]
+          Extension.extension:intensityRounding.extension:code.url => [None..None]
+          Extension.extension:intensityRounding.extension:code.value[x] => [None..None]
+          Extension.extension:intensityRounding.extension:code.value[x]:valueCoding => [0..1]
+          Extension.extension:intensityRounding.extension:valueString => [1..1]
+          Extension.extension:intensityRounding.extension:valueString.extension => [None..0]
+          Extension.extension:intensityRounding.extension:valueString.url => [None..None]
+          Extension.extension:intensityRounding.extension:valueString.value[x] => [1..None]
+          Extension.extension:intensityRounding.url => [None..None]
+          Extension.extension:intensityRounding.value[x] => [None..0]
+          Extension.extension:boundaryCondition => [0..1]
+          Extension.extension:boundaryCondition.extension => [None..0]
+          Extension.extension:boundaryCondition.url => [None..None]
+          Extension.extension:boundaryCondition.value[x] => [None..None]
+          Extension.extension:boundaryCondition.value[x]:valueString => [0..1]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
+        class ReasonReplanification{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class WeightHeight{
+
+          Extension.extension:patient_weight => [0..1]
+          Extension.extension:patient_weight.extension => [None..0]
+          Extension.extension:patient_weight.url => [None..None]
+          Extension.extension:patient_weight.value[x] => [None..None]
+          Extension.extension:patient_height => [0..1]
+          Extension.extension:patient_height.extension => [None..0]
+          Extension.extension:patient_height.url => [None..None]
+          Extension.extension:patient_height.value[x] => [None..None]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..0]
+        } 
+        class SpanningPairs{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class SplitReads{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class StrandBias{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TreatmentLine{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+          Extension.value[x]:valueInteger => [0..1]
+        } 
+        class TreatmentIntent{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TreatmentTerminationReason{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+         }
+     }
+     package valueset #PaleVioletRed{
+
+        class BiologicalSampleOrigin  
+
+     BiologicalSampleOrigin -[#black,dotted,thickness=2]-> BiologicalSampleOrigin
+
+        class AnalysisType  
+
+     Analysis -[#black,dotted,thickness=2]-> AnalysisType
+
+        class ReferenceType  
+
+     AnnotationReference -[#black,dotted,thickness=2]-> ReferenceType
+
+        class BiomarkerCode  
+
+     Biomarker -[#black,dotted,thickness=2]-> BiomarkerCode
+
+        class CauseOfDeath  
+
+     CauseOfDeath -[#black,dotted,thickness=2]-> CauseOfDeath
+
+        class Pathogenicity  
+
+     CopyNumber -[#black,dotted,thickness=2]-> Pathogenicity
+
+        class OsirisValidationType  
+
+     DataValidation -[#black,dotted,thickness=2]-> OsirisValidationType
+
+        class Pathogenicity  
+
+     Expression -[#black,dotted,thickness=2]-> Pathogenicity
+
+        class Parentage  
+
+     FamilyCancerHistory -[#black,dotted,thickness=2]-> Parentage
+
+        class Topography  
+
+     FamilyCancerHistory -[#black,dotted,thickness=2]-> Topography
+
+        class FusionType  
+
+     Fusion -[#black,dotted,thickness=2]-> FusionType
+
+        class Pathogenicity  
+
+     Fusion -[#black,dotted,thickness=2]-> Pathogenicity
+
+        class GeneExpressionDataType  
+
+     GeneExpressionDataType -[#black,dotted,thickness=2]-> GeneExpressionDataType
+
+        class GenomeEntityType  
+
+     GenomeEntityType -[#black,dotted,thickness=2]-> GenomeEntityType
+
+        class Laterality  
+
+     Laterality -[#black,dotted,thickness=2]-> Laterality
+
+        class GenomeEntityType  
+
+     MolecularSequence3Prime -[#black,dotted,thickness=2]-> GenomeEntityType
+
+        class GeneticMaterial  
+
+     MolecularSequence3Prime -[#black,dotted,thickness=2]-> GeneticMaterial
+
+        class GenomeEntityType  
+
+     MolecularSequence5Prime -[#black,dotted,thickness=2]-> GenomeEntityType
+
+        class GeneticMaterial  
+
+     MolecularSequence5Prime -[#black,dotted,thickness=2]-> GeneticMaterial
+
+        class AdverseEventCode  
+
+     OncoAdverseEvent -[#black,dotted,thickness=2]-> AdverseEventCode
+
+        class AdverseEventGrade  
+
+     OncoAdverseEvent -[#black,dotted,thickness=2]-> AdverseEventGrade
+
+        class BiologicalSampleNature  
+
+     BiologicalSample -[#black,dotted,thickness=2]-> BiologicalSampleNature
+
+        class Topography  
+
+     BiologicalSample -[#black,dotted,thickness=2]-> Topography
+
+        class StorageTemperature  
+
+     BiologicalSample -[#black,dotted,thickness=2]-> StorageTemperature
+
+        class VSModality  
+
+     OncoImagingStudy -[#black,dotted,thickness=2]-> VSModality
+
+        class VSModality  
+
+     OncoImagingStudy -[#black,dotted,thickness=2]-> VSModality
+
+        class VSBodySite  
+
+     OncoImagingStudy -[#black,dotted,thickness=2]-> VSBodySite
+
+        class SurgeryResectionQuality  
+
+     Surgery -[#black,dotted,thickness=2]-> SurgeryResectionQuality
+
+        class RadiomicsFeaturesVS  
+
+     RadiomicsFeatures -[#black,dotted,thickness=2]-> RadiomicsFeaturesVS
+
+        class VSRadiotherapyCategory  
+
+     RadiotherapyCourseSummary -[#black,dotted,thickness=2]-> VSRadiotherapyCategory
+
+        class VSRadiotherapyCategory  
+
+     RadiotherapyPhase -[#black,dotted,thickness=2]-> VSRadiotherapyCategory
+
+        class VSRadiotherapyCategory  
+
+     RadiotherapyPlan -[#black,dotted,thickness=2]-> VSRadiotherapyCategory
+
+        class RadiotherapyReasonReplanificationVS  
+
+     ReasonReplanification -[#black,dotted,thickness=2]-> RadiotherapyReasonReplanificationVS
+
+        class ResponseEvaluationStatus  
+
+     ResponseEvaluation -[#black,dotted,thickness=2]-> ResponseEvaluationStatus
+
+        class ROIType  
+
+     RoiSegmentation -[#black,dotted,thickness=2]-> ROIType
+
+        class TechnicalProtocol  
+
+     SequencingAnalysis -[#black,dotted,thickness=2]-> TechnicalProtocol
+
+        class AlgorithmicPloidy  
+
+     SequencingAnalysis -[#black,dotted,thickness=2]-> AlgorithmicPloidy
+
+        class PlatformName  
+
+     SequencingDevice -[#black,dotted,thickness=2]-> PlatformName
+
+        class PanelName  
+
+     SequencingDevice -[#black,dotted,thickness=2]-> PanelName
+
+        class CytoBand  
+
+     SNP -[#black,dotted,thickness=2]-> CytoBand
+
+        class GenomeBuild  
+
+     SNP -[#black,dotted,thickness=2]-> GenomeBuild
+
+        class DNAChangeType  
+
+     SNP -[#black,dotted,thickness=2]-> DNAChangeType
+
+        class Pathogenicity  
+
+     SNP -[#black,dotted,thickness=2]-> Pathogenicity
+
+        class Chromosome  
+
+     SNP -[#black,dotted,thickness=2]-> Chromosome
+
+        class TreatmentType  
+
+     Treatment -[#black,dotted,thickness=2]-> TreatmentType
+
+        class VSRadiotherapyIntent  
+
+     TreatmentIntent -[#black,dotted,thickness=2]-> VSRadiotherapyIntent
+
+        class VSRadiotherapyTerminationReason  
+
+     TreatmentTerminationReason -[#black,dotted,thickness=2]-> VSRadiotherapyTerminationReason
+
+        class TumorPathologyEventType  
+
+     TumorPathologyEvent -[#black,dotted,thickness=2]-> TumorPathologyEventType
+
+        class Topography  
+
+     TumorPathologyEvent -[#black,dotted,thickness=2]-> Topography
+
+        class Morphology  
+
+     TumorPathologyEvent -[#black,dotted,thickness=2]-> Morphology
+
+        class AlterationType  
+
+     VariantAnnotation -[#black,dotted,thickness=2]-> AlterationType
+
+        class MutationPrediction  
+
+     VariantAnnotation -[#black,dotted,thickness=2]-> MutationPrediction
+
+        class VitalStatus  
+
+     VitalStatus -[#black,dotted,thickness=2]-> VitalStatus
+       }
+
+package "Ressources de base" #palegreen {
+
+ class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
+
+    classc680d437163cc6bab4f9bdb35c3073d0 --> Analysis
+
+ class "MolecularSequence" as  class55cdaf00840eebccd8cade13f9dc5497 
+
+    class55cdaf00840eebccd8cade13f9dc5497 --> AnnotationReference
+
+ class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
+
+    classc680d437163cc6bab4f9bdb35c3073d0 --> Biomarker
+
+ class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
+
+    classc680d437163cc6bab4f9bdb35c3073d0 --> CauseOfDeath
+
+ class "ResearchSubject" as  classd0fa40459828950eb594cc51d4cb788f 
+
+    classd0fa40459828950eb594cc51d4cb788f --> ClinicalTrialSubject
+
+ class "ResearchStudy" as  class9b1969036d5277c87c566c7a48c0e9dd 
+
+    class9b1969036d5277c87c566c7a48c0e9dd --> ClinicalTrial
+
+ class "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant" as  classd26ee9bc6d9889b2c928e62b21dd43d7 
+
+    classd26ee9bc6d9889b2c928e62b21dd43d7 --> CopyNumber
+
+ class "VerificationResult" as  classba2870a3d78bc841e6113b5ba6d69d74 
+
+    classba2870a3d78bc841e6113b5ba6d69d74 --> DataValidation
+
+ class "condition-dueTo" as  class8000b081ad6fad98fb00e723d937227e 
+
+    class8000b081ad6fad98fb00e723d937227e --> DueToTumorPathologyEvent
+
+ class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
+
+    classc680d437163cc6bab4f9bdb35c3073d0 --> Expression
+
+ class "FamilyMemberHistory" as  class8133ff052c92e7041ff8cc4a25e4bc31 
+
+    class8133ff052c92e7041ff8cc4a25e4bc31 --> FamilyCancerHistory
+
+ class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
+
+    classc680d437163cc6bab4f9bdb35c3073d0 --> Fusion
+
+ class "Consent" as  class1bbdf136f897ea2075a786bd05152095 
+
+    class1bbdf136f897ea2075a786bd05152095 --> GeneticConsent
+
+ class "MolecularSequence" as  class55cdaf00840eebccd8cade13f9dc5497 
+
+    class55cdaf00840eebccd8cade13f9dc5497 --> GenomeEntity
+
+ class "Device" as  classe0ac20adce6ffee48c7151b070aa5737 
+
+    classe0ac20adce6ffee48c7151b070aa5737 --> ImagingDevice
+
+ class "Endpoint" as  class2a6ba72e93aa7fa676d07973ed2716bb 
+
+    class2a6ba72e93aa7fa676d07973ed2716bb --> EndpointImaging
+
+ class "Location" as  classce5bf551379459c1c61d2a204061c455 
+
+    classce5bf551379459c1c61d2a204061c455 --> LocationImaging
+
+ class "MolecularSequence" as  class55cdaf00840eebccd8cade13f9dc5497 
+
+    class55cdaf00840eebccd8cade13f9dc5497 --> MolecularSequence3Prime
+
+ class "MolecularSequence" as  class55cdaf00840eebccd8cade13f9dc5497 
+
+    class55cdaf00840eebccd8cade13f9dc5497 --> MolecularSequence5Prime
+
+ class "AdverseEvent" as  class4ca62a9eb23559401c22b37926007bc6 
+
+    class4ca62a9eb23559401c22b37926007bc6 --> OncoAdverseEvent
+
+ class "Medication" as  class353bd6f65060d17097c3b03141e79cce 
+
+    class353bd6f65060d17097c3b03141e79cce --> ImagingContrast
+
+ class "Specimen" as  class8dc6383321d3c88f6b3d533921197caa 
+
+    class8dc6383321d3c88f6b3d533921197caa --> BiologicalSample
+
+ class "MedicationAdministration" as  classcb08d1580a4f19d9fc3a0c98169f1144 
+
+    classcb08d1580a4f19d9fc3a0c98169f1144 --> ImagingInjection
+
+ class "ImagingStudy" as  class98b883da5bd7f6cf3d633a7ac978e365 
+
+    class98b883da5bd7f6cf3d633a7ac978e365 --> OncoImagingStudy
+
+ class "MedicationStatement" as  class8934c1aef5d0ec0c826ed7fe19f4e1a3 
+
+    class8934c1aef5d0ec0c826ed7fe19f4e1a3 --> OncoMedicationStatement
+
+ class "Organization" as  classd6b258792ff06f82933c74eeb8aef591 
+
+    classd6b258792ff06f82933c74eeb8aef591 --> OncoOrganization
+
+ class "Patient" as  class01122a97dca927210827560cb7d76af8 
+
+    class01122a97dca927210827560cb7d76af8 --> OncoPatient
+
+ class "Procedure" as  class8c4271e6faf2cea4cfc8e5b7108d8ee9 
+
+    class8c4271e6faf2cea4cfc8e5b7108d8ee9 --> Surgery
+
+ class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
+
+    classc680d437163cc6bab4f9bdb35c3073d0 --> OncoTNM
+
+ class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
+
+    classc680d437163cc6bab4f9bdb35c3073d0 --> PerformanceStatus
+
+ class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
+
+    classc680d437163cc6bab4f9bdb35c3073d0 --> RadiomicsImageFilters
+
+ class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
+
+    classc680d437163cc6bab4f9bdb35c3073d0 --> RadiomicsCriteria
+
+ class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
+
+    classc680d437163cc6bab4f9bdb35c3073d0 --> RadiomicsFeatures
+
+ class "Procedure" as  class8c4271e6faf2cea4cfc8e5b7108d8ee9 
+
+    class8c4271e6faf2cea4cfc8e5b7108d8ee9 --> RadiotherapyCourseSummary
+
+ class "Procedure" as  class8c4271e6faf2cea4cfc8e5b7108d8ee9 
+
+    class8c4271e6faf2cea4cfc8e5b7108d8ee9 --> RadiotherapyPhase
+
+ class "Procedure" as  class8c4271e6faf2cea4cfc8e5b7108d8ee9 
+
+    class8c4271e6faf2cea4cfc8e5b7108d8ee9 --> RadiotherapyPlan
+
+ class "BodyStructure" as  class09bb6a98ab055feba97313b9e64d5941 
+
+    class09bb6a98ab055feba97313b9e64d5941 --> RadiotherapyVolume
+
+ class "Condition" as  class9e2941b3c81256fac10392aaca4ccfde 
+
+    class9e2941b3c81256fac10392aaca4ccfde --> RelatedPathology
+
+ class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
+
+    classc680d437163cc6bab4f9bdb35c3073d0 --> ResponseEvaluation
+
+ class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
+
+    classc680d437163cc6bab4f9bdb35c3073d0 --> RoiSegmentation
+
+ class "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis" as  classbbf45add7ca3ea8c271c17539920f9f8 
+
+    classbbf45add7ca3ea8c271c17539920f9f8 --> SequencingAnalysis
+
+ class "Device" as  classe0ac20adce6ffee48c7151b070aa5737 
+
+    classe0ac20adce6ffee48c7151b070aa5737 --> SequencingDevice
+
+ class "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant" as  classd26ee9bc6d9889b2c928e62b21dd43d7 
+
+    classd26ee9bc6d9889b2c928e62b21dd43d7 --> SNP
+
+ class "CarePlan" as  classc1c8e4b50c739ddc150dd233aa035d7a 
+
+    classc1c8e4b50c739ddc150dd233aa035d7a --> Treatment
+
+ class "Condition" as  class9e2941b3c81256fac10392aaca4ccfde 
+
+    class9e2941b3c81256fac10392aaca4ccfde --> TumorPathologyEvent
+
+ class "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant" as  classd26ee9bc6d9889b2c928e62b21dd43d7 
+
+    classd26ee9bc6d9889b2c928e62b21dd43d7 --> VariantAnnotation
+
+ class "Observation" as  classc680d437163cc6bab4f9bdb35c3073d0 
+
+    classc680d437163cc6bab4f9bdb35c3073d0 --> VitalStatus
+}
+@enduml

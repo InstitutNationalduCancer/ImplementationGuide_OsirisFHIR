@@ -1,0 +1,60 @@
+{
+  "resourceType" : "Observation",
+  "id" : "fhir-osiris-example-ROISegmentation",
+  "meta" : {
+    "profile" : ["https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/roi-segmentation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div>Poumon</div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "text" : "dicom_reference"
+    },
+    "value" : "1.3.6.1.4.1.14519.5.2.1.5168.1900.145447087104754814293313200434"
+  },
+  {
+    "type" : {
+      "text" : "series_reference"
+    },
+    "value" : "1.3.6.1.4.1.14519.5.2.1.5168.1900.731508463883905889576807557650"
+  },
+  {
+    "type" : {
+      "text" : "roi"
+    },
+    "value" : "1 1"
+  },
+  {
+    "type" : {
+      "text" : "file"
+    },
+    "value" : "Unknown"
+  },
+  {
+    "type" : {
+      "text" : "dicom_reference"
+    },
+    "value" : "1.3.6.1.4.1.14519.5.2.1.5168.1900.145216219563575643804860454387"
+  },
+  {
+    "type" : {
+      "text" : "dicom_reference"
+    },
+    "value" : "1.3.6.1.4.1.14519.5.2.1.5168.1900.176764473138537905803461583603"
+  }],
+  "partOf" : [{
+    "reference" : "ImagingStudy/fhir-osiris-example-imagingstudy-mri-2"
+  }],
+  "status" : "registered",
+  "code" : {
+    "coding" : [{
+      "system" : "https://terminology.arkhn.com/radiomicsCS",
+      "code" : "DICOM"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/STS-010"
+  }
+}

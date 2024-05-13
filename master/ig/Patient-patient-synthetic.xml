@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="patient-synthetic"/>
+  <meta>
+    <lastUpdated value="2020-12-16T17:25:54Z"/>
+    <profile value="http://osiris.arkhn.com/StructureDefinition/onco-patient"/>
+    <tag>
+      <system value="http://terminology.arkhn.org/CodeSystem/source"/>
+      <code value="ckdreijp80006dupjto75nhrh"/>
+    </tag>
+    <tag>
+      <system value="http://terminology.arkhn.org/CodeSystem/resource"/>
+      <code value="ck8zq2kav35434kp4tvnyg135"/>
+    </tag>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Anonymous Patient</b> male, DoB: 1935-02-14 ( <code>http://terminology.arkhn.org/33a396fc-60e7-468e-a238-3f759fdadeef</code>/synthetic_patient_Synthetic_02)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">2018-11-03</td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>General Practitioner: <span>: OriginCenterId</span></li><li>Managing Organization: <span>: ProviderCenterId</span></li></ul></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://terminology.arkhn.org/33a396fc-60e7-468e-a238-3f759fdadeef"/>
+    <value value="synthetic_patient_Synthetic_02"/>
+  </identifier>
+  <gender value="male"/>
+  <birthDate value="1935-02-14"/>
+  <deceasedDateTime value="2018-11-03"/>
+  <generalPractitioner>
+    <type value="Organization"/>
+    <identifier>
+      <system value="http://finess.sante.gouv.fr"/>
+      <value value="330000662"/>
+    </identifier>
+    <display value="OriginCenterId"/>
+  </generalPractitioner>
+  <managingOrganization>
+    <type value="Organization"/>
+    <identifier>
+      <system value="http://finess.sante.gouv.fr"/>
+      <value value="330000662"/>
+    </identifier>
+    <display value="ProviderCenterId"/>
+  </managingOrganization>
+</Patient>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="GeneExpressionDataType"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://github.com/siric-osiris/OSIRIS</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>O84-1</td><td>RawExpression</td></tr><tr><td>O84-2</td><td>NormalizedExpression</td></tr><tr><td>O84-3</td><td>TPMExpression</td></tr><tr><td>O84-4</td><td>RPKMExpression</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GeneExpressionDataType"/>
+  <version value="2.1.0"/>
+  <name value="GeneExpressionDataType"/>
+  <title value="Gene Expression Data Type Value Set"/>
+  <status value="draft"/>
+  <date value="2024-05-13T13:56:11+00:00"/>
+  <publisher value="Arkhn"/>
+  <contact>
+    <name value="Arkhn"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://arkhn.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="contact@arkhn.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nicolas Riss"/>
+    <telecom>
+      <system value="email"/>
+      <value value="nicolas@arkhn.com"/>
+    </telecom>
+  </contact>
+  <description value="Gene Expression Data Type"/>
+  <compose>
+    <include>
+      <system value="https://github.com/siric-osiris/OSIRIS"/>
+      <concept>
+        <code value="O84-1"/>
+        <display value="RawExpression"/>
+      </concept>
+      <concept>
+        <code value="O84-2"/>
+        <display value="NormalizedExpression"/>
+      </concept>
+      <concept>
+        <code value="O84-3"/>
+        <display value="TPMExpression"/>
+      </concept>
+      <concept>
+        <code value="O84-4"/>
+        <display value="RPKMExpression"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,121 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ImagingStudy/fhir-osiris-example-imagingstudy-ct> a fhir:ImagingStudy ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir-osiris-example-imagingstudy-ct"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy"^^xsd:anyURI ;
+       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ImagingStudy</b><a name=\"fhir-osiris-example-imagingstudy-ct\"> </a><a name=\"hcfhir-osiris-example-imagingstudy-ct\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceImagingStudy &quot;fhir-osiris-example-imagingstudy-ct&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-imagingstudy.html\">Imaging Study</a></p></div><p><b>identifier</b>: 1.3.12.2.1107.5.8.15.131606.30000020020620243975600000855</p><p><b>status</b>: available</p><p><b>modality</b>: C0439673 (Details: Unified Medical Language System code C0439673 = 'C0439673', stated as 'null')</p><p><b>subject</b>: <a href=\"Patient-13.html\">Patient/13</a></p><p><b>started</b>: 2020-02-06</p><p><b>endpoint</b>: <a href=\"Endpoint-fhir-osiris-example-imagingendpoint-ct.html\">Endpoint/fhir-osiris-example-imagingendpoint-ct</a> &quot;['set_osiris/Poumon/DICOM/39688736']&quot;</p><p><b>numberOfSeries</b>: 999999</p><p><b>reasonReference</b>: <a href=\"fhir-osiris-example-analysis-ct-scan\">fhir-osiris-example-analysis-ct-scan</a></p><p><b>description</b>: Unknown</p><blockquote><p><b>series</b></p><blockquote><p><b>Imaging Settings</b></p><blockquote><p><b>url</b></p><code>slice_thickness</code></blockquote><p><b>value</b>: 1.5</p><blockquote><p><b>url</b></p><code>pixel_spacing</code></blockquote><p><b>value</b>: [0.63671875, 0.63671875]</p><blockquote><p><b>url</b></p><code>rows</code></blockquote><p><b>value</b>: 512</p><blockquote><p><b>url</b></p><code>columns</code></blockquote><p><b>value</b>: 512</p><blockquote><p><b>url</b></p><code>ct_image</code></blockquote></blockquote><blockquote><p><b>Weight and Height at the time of the Serie</b></p><blockquote><p><b>url</b></p><code>patient_weight</code></blockquote><p><b>value</b>: 999999</p><blockquote><p><b>url</b></p><code>patient_height</code></blockquote><p><b>value</b>: 999999</p></blockquote><p><b>uid</b>: 1.3.12.2.1107.5.8.15.131606.30000020020620243975600000856</p><p><b>number</b>: 2</p><p><b>modality</b>: CT (Details: dicom code CT = 'CT', stated as 'null')</p><p><b>description</b>: Unknown</p><p><b>numberOfInstances</b>: 999999</p><p><b>bodySite</b>: Thorax (Details: SNOWMED CT code 43799004 = 'Thorax', stated as 'null')</p><p><b>started</b>: 2020-02-06</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Device-fhir-osiris-example-imagingdevice-ct.html\">Device/fhir-osiris-example-imagingdevice-ct</a></td></tr></table><h3>Instances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Uid</b></td><td><b>SopClass</b></td></tr><tr><td style=\"display: none\">*</td><td>1.3.12.2.1107.5.8.15.131606.30000020020620243975600001109</td><td>CT Image Storage (Details: [not stated] code table_B.5-1#1.2.840.10008.5.1.4.1.1.2 = 'table_B.5-1#1.2.840.10008.5.1.4.1.1.2', stated as 'CT Image Storage')</td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "1.3.12.2.1107.5.8.15.131606.30000020020620243975600000855" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "available"] ; # 
+  fhir:modality ( [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/umls"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "C0439673" ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/13> ;
+     fhir:reference [ fhir:v "Patient/13" ]
+  ] ; # 
+  fhir:started [ fhir:v "2020-02-06"^^xsd:date] ; # 
+  fhir:endpoint ( [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Endpoint/fhir-osiris-example-imagingendpoint-ct> ;
+     fhir:reference [ fhir:v "Endpoint/fhir-osiris-example-imagingendpoint-ct" ]
+  ] ) ; # 
+  fhir:numberOfSeries [ fhir:v "999999"^^xsd:nonNegativeInteger] ; # 
+  fhir:reasonReference ( [
+     fhir:reference [ fhir:v "fhir-osiris-example-analysis-ct-scan" ]
+  ] ) ; # 
+  fhir:description [ fhir:v "Unknown"] ; # 
+  fhir:series ( [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "slice_thickness"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "1.5" ]
+       ] [
+         fhir:url [ fhir:v "pixel_spacing"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "[0.63671875, 0.63671875]" ]
+       ] [
+         fhir:url [ fhir:v "rows"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "512"^^xsd:integer ]
+       ] [
+         fhir:url [ fhir:v "columns"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "512"^^xsd:integer ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "kvp"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "140"^^xsd:integer ]
+         ] [
+           fhir:url [ fhir:v "xray_tube_current"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "70"^^xsd:integer ]
+         ] [
+           fhir:url [ fhir:v "exposure_time"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "870"^^xsd:integer ]
+         ] [
+           fhir:url [ fhir:v "spiral_pitch_factor"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "999999"^^xsd:decimal ]
+         ] [
+           fhir:url [ fhir:v "filter_type"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "BODY FILTER" ]
+         ] [
+           fhir:url [ fhir:v "convolution_kernel"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "STANDARD" ]
+         ] ) ;
+         fhir:url [ fhir:v "ct_image"^^xsd:anyURI ]
+       ] ) ;
+       fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-settings"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "patient_weight"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "999999"^^xsd:decimal ]
+       ] [
+         fhir:url [ fhir:v "patient_height"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "999999"^^xsd:decimal ]
+       ] ) ;
+       fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/series-weightheigt"^^xsd:anyURI ]
+     ] ) ;
+     fhir:uid [ fhir:v "1.3.12.2.1107.5.8.15.131606.30000020020620243975600000856" ] ;
+     fhir:number [ fhir:v "2"^^xsd:nonNegativeInteger ] ;
+     fhir:modality [
+       fhir:system [ fhir:v "https://dicom.nema.org/medical/dicom"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CT" ]
+     ] ;
+     fhir:description [ fhir:v "Unknown" ] ;
+     fhir:numberOfInstances [ fhir:v "999999"^^xsd:nonNegativeInteger ] ;
+     fhir:bodySite [
+       a sct:43799004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "43799004" ]
+     ] ;
+     fhir:started [ fhir:v "2020-02-06"^^xsd:date ] ;
+     fhir:performer ( [
+       fhir:actor [
+         fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Device/fhir-osiris-example-imagingdevice-ct> ;
+         fhir:reference [ fhir:v "Device/fhir-osiris-example-imagingdevice-ct" ]
+       ]
+     ] ) ;
+     fhir:instance ( [
+       fhir:uid [ fhir:v "1.3.12.2.1107.5.8.15.131606.30000020020620243975600001109" ] ;
+       fhir:sopClass [
+         fhir:code [ fhir:v "table_B.5-1#1.2.840.10008.5.1.4.1.1.2" ] ;
+         fhir:display [ fhir:v "CT Image Storage" ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

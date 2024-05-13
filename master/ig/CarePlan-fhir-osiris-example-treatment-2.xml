@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="fhir-osiris-example-treatment-2"/>
+  <meta>
+    <profile value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CarePlan</b><a name="fhir-osiris-example-treatment-2"> </a><a name="hcfhir-osiris-example-treatment-2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceCarePlan &quot;fhir-osiris-example-treatment-2&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-treatment.html">Treatment</a></p></div><p><b>status</b>: unknown</p><p><b>intent</b>: plan</p><p><b>category</b>: C3665472 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-umls.html">Unified Medical Language System</a>#C3665472)</span></p><p><b>subject</b>: <a href="Patient-L304.html">Patient/L304</a></p><p><b>period</b>: 2007-01-12 --&gt; 2008-11-17</p><p><b>supportingInfo</b>: <a href="ResearchStudy-fhir-osiris-example-researchstudy.html">ResearchStudy/fhir-osiris-example-researchstudy</a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ReasonReference</b></td><td><b>Status</b></td></tr><tr><td style="display: none">*</td><td><a href="Condition-fhir-osiris-example-TumorPathologyEvent-instance-2.html">Condition/fhir-osiris-example-TumorPathologyEvent-instance-2</a></td><td>unknown</td></tr></table></blockquote></div>
+  </text>
+  <status value="unknown"/>
+  <intent value="plan"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/umls"/>
+      <code value="C3665472"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/L304"/>
+  </subject>
+  <period>
+    <start value="2007-01-12"/>
+    <end value="2008-11-17"/>
+  </period>
+  <supportingInfo>
+    <reference value="ResearchStudy/fhir-osiris-example-researchstudy"/>
+  </supportingInfo>
+  <activity>
+    <detail>
+      <reasonReference>
+        <reference value="Condition/fhir-osiris-example-TumorPathologyEvent-instance-2"/>
+      </reasonReference>
+      <status value="unknown"/>
+    </detail>
+  </activity>
+</CarePlan>

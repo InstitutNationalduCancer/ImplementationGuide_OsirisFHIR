@@ -1,0 +1,34 @@
+{
+  "resourceType" : "MolecularSequence",
+  "id" : "fhir-osiris-annotation-reference-1",
+  "meta" : {
+    "profile" : ["https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/annotation-reference"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MolecularSequence</b><a name=\"fhir-osiris-annotation-reference-1\"> </a><a name=\"hcfhir-osiris-annotation-reference-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceMolecularSequence &quot;fhir-osiris-annotation-reference-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-annotation-reference.html\">Annotation Reference</a></p></div><p><b>coordinateSystem</b>: 0</p><p><b>patient</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><h3>ReferenceSeqs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ReferenceSeqId</b></td></tr><tr><td style=\"display: none\">*</td><td>O90-1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (OSIRIS#O90-1)</span></td></tr></table><blockquote><p><b>repository</b></p><p><b>type</b>: other</p><p><b>name</b>: COSMIC</p><p><b>datasetId</b>: COSM760</p></blockquote><blockquote><p><b>repository</b></p><p><b>type</b>: directlink</p><p><b>url</b>: <a href=\"http://pfam.xfam.org/\">http://pfam.xfam.org/</a></p><p><b>datasetId</b>: PI3K_rbd; PI3-kinase family, ras-binding domain</p><p><b>readsetId</b>: pfam00794</p></blockquote></div>"
+  },
+  "coordinateSystem" : 0,
+  "patient" : {
+    "reference" : "Patient/L304"
+  },
+  "referenceSeq" : {
+    "referenceSeqId" : {
+      "coding" : [{
+        "system" : "https://github.com/siric-osiris/OSIRIS",
+        "code" : "O90-1"
+      }]
+    }
+  },
+  "repository" : [{
+    "type" : "other",
+    "name" : "COSMIC",
+    "datasetId" : "COSM760"
+  },
+  {
+    "type" : "directlink",
+    "url" : "http://pfam.xfam.org/",
+    "datasetId" : "PI3K_rbd; PI3-kinase family, ras-binding domain",
+    "readsetId" : "pfam00794"
+  }]
+}

@@ -1,0 +1,22 @@
+{
+  "resourceType" : "Observation",
+  "id" : "fhir-osiris-example-analysis-mr",
+  "meta" : {
+    "profile" : ["https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/analysis"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"fhir-osiris-example-analysis-mr\"> </a><a name=\"hcfhir-osiris-example-analysis-mr\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;fhir-osiris-example-analysis-mr&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-analysis.html\">Analysis</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Imaging <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-OsirisCS.html\">Osiris code system</a>#C37-2)</span></p><p><b>subject</b>: <a href=\"fhir-osiris-example-patient-ct-mr\">fhir-osiris-example-patient-ct-mr</a></p><p><b>effective</b>: 2018-10-12</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "https://terminology.arkhn.com/osiris",
+      "code" : "C37-2"
+    }]
+  },
+  "subject" : {
+    "reference" : "fhir-osiris-example-patient-ct-mr"
+  },
+  "effectiveDateTime" : "2018-10-12"
+}

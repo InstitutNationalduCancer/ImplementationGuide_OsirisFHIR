@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="GenomeBuild"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://github.com/siric-osiris/OSIRIS</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>O22-1</td><td>GRCh37</td></tr><tr><td>O22-2</td><td>GRCh38</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeBuild"/>
+  <version value="2.1.0"/>
+  <name value="GenomeBuild"/>
+  <title value="GenomeBuild Value Set"/>
+  <status value="draft"/>
+  <date value="2024-05-13T13:56:11+00:00"/>
+  <publisher value="Arkhn"/>
+  <contact>
+    <name value="Arkhn"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://arkhn.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="contact@arkhn.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nicolas Riss"/>
+    <telecom>
+      <system value="email"/>
+      <value value="nicolas@arkhn.com"/>
+    </telecom>
+  </contact>
+  <description value="GenomeBuild"/>
+  <compose>
+    <include>
+      <system value="https://github.com/siric-osiris/OSIRIS"/>
+      <concept>
+        <code value="O22-1"/>
+        <display value="GRCh37"/>
+      </concept>
+      <concept>
+        <code value="O22-2"/>
+        <display value="GRCh38"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

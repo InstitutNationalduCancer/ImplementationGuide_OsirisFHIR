@@ -1,0 +1,220 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Observation/fhir-osiris-annotation-1> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir-osiris-annotation-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/variant-annotation"^^xsd:anyURI ;
+       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/variant-annotation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"fhir-osiris-annotation-1\"> </a><a name=\"hcfhir-osiris-annotation-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;fhir-osiris-annotation-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-variant-annotation.html\">Variant Annotation</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Genetic variant assessment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#69548-6)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><p><b>value</b>: Present <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA9633-4)</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"MolecularSequence-fhir-osiris-genome-entity-1.html\">MolecularSequence/fhir-osiris-genome-entity-1</a></li><li><a href=\"MolecularSequence-fhir-osiris-annotation-reference-1.html\">MolecularSequence/fhir-osiris-annotation-reference-1</a></li></ul><p><b>derivedFrom</b>: <a href=\"Observation-fhir-osiris-example-snp-1.html\">Observation/fhir-osiris-example-snp-1</a></p><blockquote><p><b>component</b></p><p><b>code</b>: DNA change type <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48019-4)</span></p><p><b>value</b>: O15-4 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (OSIRIS#O15-4)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Gene studied [ID] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48018-6)</span></p><p><b>value</b>: PI3K <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#PI3K)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Prediction software <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LP91038-7)</span></p><p><b>value</b>: SIFT <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (OSIRIS#SIFT)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Prediction of the variation effect over the protein <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LP70194-3)</span></p><p><b>value</b>: 0.35</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Confidence score <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#93044-6)</span></p><p><b>value</b>: Deleterious</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Cytogenetic (chromosome) location <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48001-2)</span></p><p><b>value</b>: exon 2 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Amino acid change (pHGVS) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48005-3)</span></p><p><b>value</b>: p.E542K <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-hgvs.html\">Human Genome Variation Society nomenclature</a>#p.E542K)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Amino acid change [Type] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48006-1)</span></p><p><b>value</b>: Missense <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA6698-0)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Genomic DNA change (gHGVS) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#81290-9)</span></p><p><b>value</b>: C0439673 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-umls.html\">Unified Medical Language System</a>#C0439673)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DNA change (c.HGVS) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48004-6)</span></p><p><b>value</b>: c.1624G&gt;A <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-hgvs.html\">Human Genome Variation Society nomenclature</a>#c.1624G&gt;A)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Incidence on the transcript <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LP232001-0)</span></p><p><b>value</b>: C0439673 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-umls.html\">Unified Medical Language System</a>#C0439673)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:69548-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "69548-6" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/L304> ;
+     fhir:reference [ fhir:v "Patient/L304" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a loinc:LA9633-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "LA9633-4" ]
+     ] )
+  ] ; # 
+  fhir:hasMember ( [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/MolecularSequence/fhir-osiris-genome-entity-1> ;
+     fhir:reference [ fhir:v "MolecularSequence/fhir-osiris-genome-entity-1" ]
+  ] [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/MolecularSequence/fhir-osiris-annotation-reference-1> ;
+     fhir:reference [ fhir:v "MolecularSequence/fhir-osiris-annotation-reference-1" ]
+  ] ) ; # 
+  fhir:derivedFrom ( [
+     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Observation/fhir-osiris-example-snp-1> ;
+     fhir:reference [ fhir:v "Observation/fhir-osiris-example-snp-1" ]
+  ] ) ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:48019-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48019-4" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://github.com/siric-osiris/OSIRIS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "O15-4" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:48018-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48018-6" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.genenames.org/"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PI3K" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:LP91038-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LP91038-7" ]
+       ] ) ;
+       fhir:text [ fhir:v "Prediction software" ]
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://github.com/siric-osiris/OSIRIS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "SIFT" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:LP70194-3 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LP70194-3" ]
+       ] ) ;
+       fhir:text [ fhir:v "Prediction of the variation effect over the protein" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "0.35"^^xsd:decimal ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:93044-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "93044-6" ]
+       ] ) ;
+       fhir:text [ fhir:v "Confidence score" ]
+     ] ;
+     fhir:value [ fhir:v "Deleterious" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:48001-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48001-2" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:text [ fhir:v "exon 2" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:48005-3 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48005-3" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://varnomen.hgvs.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "p.E542K" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:48006-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48006-1" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a loinc:LA6698-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LA6698-0" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:81290-9 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "81290-9" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/umls"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "C0439673" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:48004-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48004-6" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://varnomen.hgvs.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "c.1624G>A" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:LP232001-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LP232001-0" ]
+       ] ) ;
+       fhir:text [ fhir:v "Incidence on the transcript" ]
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/umls"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "C0439673" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
