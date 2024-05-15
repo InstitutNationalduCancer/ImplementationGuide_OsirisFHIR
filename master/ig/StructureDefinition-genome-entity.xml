@@ -22,7 +22,7 @@
   <name value="GenomeEntity"/>
   <title value="Genome Entity"/>
   <status value="draft"/>
-  <date value="2024-05-15T14:10:31+00:00"/>
+  <date value="2024-05-15T14:17:55+00:00"/>
   <publisher value="Arkhn"/>
   <contact>
     <name value="Arkhn"/>
@@ -614,7 +614,7 @@
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
       </constraint>
       <mustSupport value="true"/>
       <isSummary value="true"/>
@@ -662,7 +662,7 @@
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -705,7 +705,7 @@
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -748,7 +748,7 @@
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1178,7 +1178,7 @@
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -1656,7 +1656,7 @@
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>
@@ -3475,7 +3475,7 @@
         <human value="SHALL have a contained resource if a local reference is provided"/>
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
       </constraint>
       <isSummary value="true"/>
       <mapping>

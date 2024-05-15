@@ -10,7 +10,7 @@
   "name" : "OncoOrganization",
   "title" : "Cancer Organization",
   "status" : "draft",
-  "date" : "2024-05-15T14:10:31+00:00",
+  "date" : "2024-05-15T14:17:55+00:00",
   "publisher" : "Arkhn",
   "contact" : [{
     "name" : "Arkhn",
@@ -930,7 +930,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/NamingSystem"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Questionnaire"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -990,7 +990,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -1247,7 +1247,7 @@
         "human" : "A system is required if a value is provided.",
         "expression" : "value.empty() or system.exists()",
         "xpath" : "not(exists(f:value)) or exists(f:system)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/ContactDetail"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Subscription"
       },
       {
         "key" : "org-3",
@@ -1387,7 +1387,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -1718,7 +1718,7 @@
         "human" : "A system is required if a value is provided.",
         "expression" : "value.empty() or system.exists()",
         "xpath" : "not(exists(f:value)) or exists(f:system)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/ContactDetail"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Subscription"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -1829,7 +1829,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"
       }],
       "mapping" : [{
         "identity" : "rim",

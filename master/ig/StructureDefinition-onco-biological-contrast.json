@@ -10,7 +10,7 @@
   "name" : "ImagingContrast",
   "title" : "Imaging Study Injection Contrast",
   "status" : "draft",
-  "date" : "2024-05-15T14:10:31+00:00",
+  "date" : "2024-05-15T14:17:55+00:00",
   "publisher" : "Arkhn",
   "contact" : [{
     "name" : "Arkhn",
@@ -871,7 +871,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -993,7 +993,7 @@
         "human" : "Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present",
         "expression" : "(numerator.empty() xor denominator.exists()) and (numerator.exists() or extension.exists())",
         "xpath" : "(count(f:numerator) = count(f:denominator)) and ((count(f:numerator) > 0) or (count(f:extension) > 0))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Substance"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -1293,7 +1293,7 @@
         "human" : "Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present",
         "expression" : "(numerator.empty() xor denominator.exists()) and (numerator.exists() or extension.exists())",
         "xpath" : "(count(f:numerator) = count(f:denominator)) and ((count(f:numerator) > 0) or (count(f:extension) > 0))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Substance"
       }],
       "mapping" : [{
         "identity" : "rim",
