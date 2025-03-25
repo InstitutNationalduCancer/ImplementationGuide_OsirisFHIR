@@ -3,21 +3,21 @@
 # │  supported properties, see:                                                                    │
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: arkhn.fhir.uv.osiris
-canonical: https://build.fhir.org/ig/arkhn/arkhn-ig-osiris
+id: ig.fhir.uv.osiris
+canonical: https://ig-osiris.cancer.fr # https://build.fhir.org/ig/arkhn/arkhn-ig-osiris # à changer
 version: 2.1.0
 name: OsirisImplementationGuide
 title: FHIR Osiris Implementation Guide
 status: draft
 publisher:
-  name: Arkhn
-  url: http://arkhn.com
-  email: contact@arkhn.com
+  name: institutcancer
+  url: http://cancer.fr
+  email: osiris@institutcancer.fr
 contact:
-  - name: Nicolas Riss
+  - name: Aurélien JOBARD
     telecom:
       - system: email
-        value: nicolas@arkhn.com
+        value: osiris@institutcancer.fr
 description: An implementation guide about FHIR-osiris to store interoperable data about oncology, including genomics.
 license: CC0-1.0
 fhirVersion: 4.0.1
@@ -44,7 +44,7 @@ menu:
   Other Resources:
     "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html
     "OSIRIS Spec ": new-tab https://github.com/siric-osiris/OSIRIS
-    "Arkhn website ": new-tab http://arkhn.com/
+    "inca website ": new-tab http://cancer.fr/
 
 groups:
   Treatment:
