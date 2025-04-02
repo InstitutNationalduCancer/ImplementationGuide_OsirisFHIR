@@ -3,8 +3,8 @@
 # │  supported properties, see:                                                                    │
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: ig.fhir.uv.osiris
-canonical: https://ig-osiris.cancer.fr # https://build.fhir.org/ig/arkhn/arkhn-ig-osiris # à changer
+id: inca.fhir.uv.osiris
+canonical: https://ig-osiris.cancer.fr/ig/osiris
 version: 2.1.0
 name: OsirisImplementationGuide
 title: FHIR Osiris Implementation Guide
@@ -29,7 +29,7 @@ parameters:
   apply-contact: true
   show-inherited-invariants: false
 copyrightYear: 2020+
-releaseLabel: ci-build
+releaseLabel: trial-implementation
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
