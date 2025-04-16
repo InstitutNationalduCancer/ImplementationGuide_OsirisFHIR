@@ -1,0 +1,46 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "fhir-osiris-example-RadiotherapyCourse-1",
+  "meta" : {
+    "profile" : ["https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-course-summary"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure fhir-osiris-example-RadiotherapyCourse-1</b></p><a name=\"fhir-osiris-example-RadiotherapyCourse-1\"> </a><a name=\"hcfhir-osiris-example-RadiotherapyCourse-1\"> </a><a name=\"fhir-osiris-example-RadiotherapyCourse-1-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-radiotherapy-course-summary.html\">Radiotherapy course Summary</a></p></div><p><b>Treatment Intent</b>: <span title=\"Codes:\">373808002</span></p><p><b>Number of Sessions</b>: 36</p><p><b>basedOn</b>: <a href=\"CarePlan-fhir-osiris-example-treatment-radiotherapy.html\">CarePlan: status = unknown; intent = plan; category = C1522449; period = 2018-08-15 --&gt; 2018-12-25</a></p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/RadiotherapyCS Planned}\">Planified</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1217123003}\">Radiotherapy course of treatment (regime/therapy)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Anonymous Patient Male, DoB: 1967-11-08</a></p><p><b>performed</b>: 2018-08-15 --&gt; 2018-12-25</p></div>"
+  },
+  "extension" : [{
+    "url" : "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/treatmentIntent",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "373808002"
+      }]
+    }
+  },
+  {
+    "url" : "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/numberOfSessions",
+    "valueUnsignedInt" : 36
+  }],
+  "basedOn" : [{
+    "reference" : "CarePlan/fhir-osiris-example-treatment-radiotherapy"
+  }],
+  "status" : "completed",
+  "category" : {
+    "coding" : [{
+      "system" : "https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/RadiotherapyCS",
+      "code" : "Planned"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1217123003"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/L304"
+  },
+  "performedPeriod" : {
+    "start" : "2018-08-15",
+    "end" : "2018-12-25"
+  }
+}

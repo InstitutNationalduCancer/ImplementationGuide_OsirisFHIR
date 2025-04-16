@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ig-osiris.cancer.fr/ig/osiris/ValueSet/mcode-radiotherapy-volume-type-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mcode-radiotherapy-volume-type-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mcode-radiotherapy-volume-type-vs</b></p><a name=\"mcode-radiotherapy-volume-type-vs\"> </a><a name=\"hcmcode-radiotherapy-volume-type-vs\"> </a><a name=\"mcode-radiotherapy-volume-type-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-228793007\">228793007</a></td><td>Planning target volume (observable entity)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-228791009\">228791009</a></td><td>Gross tumor volume (observable entity)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-228792002\">228792002</a></td><td>Clinical target volume (observable entity)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-1162586008\">1162586008</a></td><td>Irradiated volume of organ at risk (observable entity)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-1201745009\">1201745009</a></td><td>Internal target volume (observable entity)</td></tr><tr><td><a href=\"CodeSystem-SnomedCS.html#SnomedCS-1201746005\">1201746005</a></td><td>Internal gross tumor volume (observable entity)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/mcode-radiotherapy-volume-type-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.1.0"] ; # 
+  fhir:name [ fhir:v "RadiotherapyVolumeTypeVS"] ; # 
+  fhir:title [ fhir:v "Radiotherapy Volume Type Value Set"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-04-16T19:28:51+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "institutcancer"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "institutcancer" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://cancer.fr" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "osiris@institutcancer.fr" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Aurélien JOBARD" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "osiris@institutcancer.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes describing the types of body volumes used in radiotherapy planning and treatment. The value set includes the most common codes from DICOM CID 9534 Radiotherapy Targets (UID 1.2.840.10008.6.1.1244) and adds a code for Organs at Risk (OAR)."] ; # 
+  fhir:copyright [ fhir:v "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "228793007" ] ;
+         fhir:display [ fhir:v "Planning target volume (observable entity)" ]
+       ] [
+         fhir:code [ fhir:v "228791009" ] ;
+         fhir:display [ fhir:v "Gross tumor volume (observable entity)" ]
+       ] [
+         fhir:code [ fhir:v "228792002" ] ;
+         fhir:display [ fhir:v "Clinical target volume (observable entity)" ]
+       ] [
+         fhir:code [ fhir:v "1162586008" ] ;
+         fhir:display [ fhir:v "Irradiated volume of organ at risk (observable entity)" ]
+       ] [
+         fhir:code [ fhir:v "1201745009" ] ;
+         fhir:display [ fhir:v "Internal target volume (observable entity)" ]
+       ] [
+         fhir:code [ fhir:v "1201746005" ] ;
+         fhir:display [ fhir:v "Internal gross tumor volume (observable entity)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

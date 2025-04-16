@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="fhir-osiris-example-vitalstatus"/>
+  <meta>
+    <profile value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/vital-status"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation fhir-osiris-example-vitalstatus</b></p><a name="fhir-osiris-example-vitalstatus"> </a><a name="hcfhir-osiris-example-vitalstatus"> </a><a name="fhir-osiris-example-vitalstatus-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-vital-status.html">Vital Status</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 22023-6}">Last follow-up hospital [Identifier] Cancer registry</span></p><p><b>subject</b>: <a href="Patient-L304.html">Anonymous Patient Male, DoB: 1967-11-08</a></p><p><b>effective</b>: 2017-11-29</p><p><b>value</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/umls C1546956}">C1546956</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="22023-6"/>
+      <display value="Last follow-up hospital [Identifier] Cancer registry"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/L304"/>
+  </subject>
+  <effectiveDateTime value="2017-11-29"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/umls"/>
+      <code value="C1546956"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

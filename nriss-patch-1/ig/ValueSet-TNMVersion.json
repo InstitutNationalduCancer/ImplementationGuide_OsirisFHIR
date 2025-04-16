@@ -1,0 +1,51 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "TNMVersion",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TNMVersion</b></p><a name=\"TNMVersion\"> </a><a name=\"hcTNMVersion\"> </a><a name=\"TNMVersion-en-US\"> </a><ul><li>Include these codes as defined in <code>https://github.com/siric-osiris/OSIRIS</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C27-1</td><td>5th edition</td></tr><tr><td>C27-2</td><td>6th edition</td></tr><tr><td>C27-3</td><td>7th edition</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/TNMVersion",
+  "version" : "1.1.0",
+  "name" : "TNMVersion",
+  "title" : "TNM Version Value Set",
+  "status" : "draft",
+  "date" : "2025-04-16T19:28:51+00:00",
+  "publisher" : "institutcancer",
+  "contact" : [{
+    "name" : "institutcancer",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://cancer.fr"
+    },
+    {
+      "system" : "email",
+      "value" : "osiris@institutcancer.fr"
+    }]
+  },
+  {
+    "name" : "Aurélien JOBARD",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "osiris@institutcancer.fr"
+    }]
+  }],
+  "description" : "TNM version",
+  "compose" : {
+    "include" : [{
+      "system" : "https://github.com/siric-osiris/OSIRIS",
+      "concept" : [{
+        "code" : "C27-1",
+        "display" : "5th edition"
+      },
+      {
+        "code" : "C27-2",
+        "display" : "6th edition"
+      },
+      {
+        "code" : "C27-3",
+        "display" : "7th edition"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Endpoint xmlns="http://hl7.org/fhir">
+  <id value="fhir-osiris-example-imagingendpoint-dx"/>
+  <meta>
+    <profile value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-pacs"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Endpoint fhir-osiris-example-imagingendpoint-dx</b></p><a name="fhir-osiris-example-imagingendpoint-dx"> </a><a name="hcfhir-osiris-example-imagingendpoint-dx"> </a><a name="fhir-osiris-example-imagingendpoint-dx-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-imaging-pacs.html">Location to the PACS server</a></p></div><p><b>status</b>: Active</p><p><b>connectionType</b>: <a href="http://terminology.hl7.org/6.2.0/CodeSystem-umls.html#umls-C0439673">Unified Medical Language System C0439673</a>: C0439673</p><p><b>name</b>: ['Soft-tissue-Sarcoma/LIDC-IDRI-0001/01-01-2000-NA-NA-35511/3000923.000000-NA-62357/1-1.dcm']</p><p><b>payloadType</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/umls C0439673}">C0439673</span></p><p><b>address</b>: </p></div>
+  </text>
+  <status value="active"/>
+  <connectionType>
+    <system value="http://terminology.hl7.org/CodeSystem/umls"/>
+    <code value="C0439673"/>
+  </connectionType>
+  <name value="['Soft-tissue-Sarcoma/LIDC-IDRI-0001/01-01-2000-NA-NA-35511/3000923.000000-NA-62357/1-1.dcm']"/>
+  <payloadType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/umls"/>
+      <code value="C0439673"/>
+    </coding>
+  </payloadType>
+  <address value=""/>
+</Endpoint>

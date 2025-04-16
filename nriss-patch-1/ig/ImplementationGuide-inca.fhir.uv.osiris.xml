@@ -1,0 +1,2933 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="inca.fhir.uv.osiris"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide inca.fhir.uv.osiris</b></p><a name="inca.fhir.uv.osiris"> </a><a name="hcinca.fhir.uv.osiris"> </a><a name="inca.fhir.uv.osiris-en-US"> </a><h2>OsirisImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://ig-osiris.cancer.fr/ig/osiris/ImplementationGuide/inca.fhir.uv.osiris</pre><div><p>An implementation guide about FHIR-osiris to store interoperable data about oncology, including genomics.</p>
+</div></div>
+  </text>
+  <url value="https://ig-osiris.cancer.fr/ig/osiris/ImplementationGuide/inca.fhir.uv.osiris"/>
+  <version value="1.1.0"/>
+  <name value="OsirisImplementationGuide"/>
+  <title value="FHIR Osiris Implementation Guide"/>
+  <status value="draft"/>
+  <date value="2025-04-16T19:28:51+00:00"/>
+  <publisher value="institutcancer"/>
+  <contact>
+    <name value="institutcancer"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://cancer.fr"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="osiris@institutcancer.fr"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Aurélien JOBARD"/>
+    <telecom>
+      <system value="email"/>
+      <value value="osiris@institutcancer.fr"/>
+    </telecom>
+  </contact>
+  <description value="An implementation guide about FHIR-osiris to store interoperable data about oncology, including genomics."/>
+  <packageId value="inca.fhir.uv.osiris"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="6.2.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.2.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_genomics_reporting">
+    <uri value="http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting"/>
+    <packageId value="hl7.fhir.uv.genomics-reporting"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2020+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="trial-implementation"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://ig-osiris.cancer.fr/ig/osiris/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#0.4.1"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2020+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="trial-implementation"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://ig-osiris.cancer.fr/ig/osiris/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <grouping id="Treatment">
+      <name value="Treatment related profiles"/>
+      <description value="Information about patient treatments"/>
+    </grouping>
+    <grouping id="Clinical">
+      <name value="Clinical data related profiles"/>
+      <description value="Osiris clinical data"/>
+    </grouping>
+    <grouping id="Omics">
+      <name value="Omics related profiles"/>
+      <description value="Osiris omics data"/>
+    </grouping>
+    <grouping id="General">
+      <name value="General information profiles"/>
+      <description value="Osiris general information"/>
+    </grouping>
+    <grouping id="Radiomics and Radiotherapy">
+      <name value="Radiomics and radiotherapy related ressources"/>
+      <description value="Osiris radiomics &amp; radiotherapy data"/>
+    </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSBodySite"/>
+      </reference>
+      <name value=" Bodysite Value Set"/>
+      <description value="Bodysite"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSModality"/>
+      </reference>
+      <name value=" Modality Value Set"/>
+      <description value="Modality"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/molecular-sequence-3-prime"/>
+      </reference>
+      <name value="3 Prime Molecular Sequence"/>
+      <description value="3 prime molecular sequence is for referencing the 3' edge of a Fusion Observation."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Omics"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/molecular-sequence-5-prime"/>
+      </reference>
+      <name value="5 Prime Molecular Sequence"/>
+      <description value="5 prime molecular sequence is for referencing the 5' edge of a Fusion Observation."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Omics"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/AdverseEventCode"/>
+      </reference>
+      <name value="Adverse Event Code Value Set"/>
+      <description value="Adverse event codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/adverse-event-end-date"/>
+      </reference>
+      <name value="Adverse Event End date"/>
+      <description value="End date of the adverse event"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/AdverseEventGrade"/>
+      </reference>
+      <name value="Adverse Event Grade Value Set"/>
+      <description value="Adverse event grade"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/algorithmName"/>
+      </reference>
+      <name value="Algorith mName"/>
+      <description value="Algorith mName"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/AlgorithmicPloidy"/>
+      </reference>
+      <name value="Algorithmic Ploidy"/>
+      <description value="Algorithmic Ploidy"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/AlterationType"/>
+      </reference>
+      <name value="Alteration Type Value Set"/>
+      <description value="Alteration type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/AminoAcideChangeType"/>
+      </reference>
+      <name value="Amino Acide Change Type Value Set"/>
+      <description value="Amino Acide Change Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/analysis"/>
+      </reference>
+      <name value="Analysis"/>
+      <description value="Assessment of the technique(s) used to establish the diagnosis(es)"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Clinical"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/TechnicalProtocol"/>
+      </reference>
+      <name value="Analysis Technical Protocol"/>
+      <description value="Analysis technical protocol"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/AnalysisType"/>
+      </reference>
+      <name value="Analysis Types Value Set"/>
+      <description value="Analysis types"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/annotation-reference"/>
+      </reference>
+      <name value="Annotation Reference"/>
+      <description value="The annotation reference profile indicates the reference genome / pfam domain / database used to generate the Annotation instance linked."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Omics"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BasedOnCondition"/>
+      </reference>
+      <name value="Based On Condition (Tumor Pathology Event)"/>
+      <description value="Based On Condition (Tumor Pathology Event)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onco-biological-sample"/>
+      </reference>
+      <name value="Biological Sample"/>
+      <description value="Description of a biological sample coming from an oncology Patient, with its storage condition."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Clinical"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BiologicalSampleNature"/>
+      </reference>
+      <name value="Biological Sample Nature Value Set"/>
+      <description value="Biological sample nature"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BiologicalSampleOrigin"/>
+      </reference>
+      <name value="Biological Sample Origin"/>
+      <description value="Biological Sample Origin"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BiologicalSampleOrigin"/>
+      </reference>
+      <name value="Biological Sample Origin Value Set"/>
+      <description value="Biological sample origin"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/biomarker"/>
+      </reference>
+      <name value="Biomarker"/>
+      <description value="Biomarker Observation about a patient from BiomarkerCode ValueSet."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Clinical"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BiomarkerCode"/>
+      </reference>
+      <name value="Biomarker Value Set"/>
+      <description value="Biomarker types"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onco-organization"/>
+      </reference>
+      <name value="Cancer Organization"/>
+      <description value="Cancer organization to describe the provider center or origin center of the onco-patient."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="General"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cause-of-death"/>
+      </reference>
+      <name value="Cause Of Death"/>
+      <description value="Observation that indicates the cause of death of an Oncology Patient."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Clinical"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CauseOfDeath"/>
+      </reference>
+      <name value="Cause of death Value Set"/>
+      <description value="Cause of death"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Chromosome"/>
+      </reference>
+      <name value="Chromosome Value Set"/>
+      <description value="Chromosome"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/clinical-trial-subject"/>
+      </reference>
+      <name value="Clinical Trial Subject"/>
+      <description value="Subject that belongs to a oncology-related Clinical Trial."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="General"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/basedOn"/>
+      </reference>
+      <name value="Connection with the imaging module"/>
+      <description value="Connection with the imaging module (ImagingStudy and ROI Segmentation)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/genetic-consent"/>
+      </reference>
+      <name value="Consent for Genetic Data Usage"/>
+      <description value="The genetic consent resource indicates if a patient has given his authorization to share and use its genetics data."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="General"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CytoBand"/>
+      </reference>
+      <name value="CytoBand Value Set"/>
+      <description value="CytoBand"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/DNAChangeType"/>
+      </reference>
+      <name value="DNA Change Type Value Set"/>
+      <description value="DNAChangeType"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/doseToVolume"/>
+      </reference>
+      <name value="Dose To Volume"/>
+      <description value="Dose To Volume"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/energyOrIsotope"/>
+      </reference>
+      <name value="Energy Or Isotope"/>
+      <description value="Energy Or Isotope"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/family-cancer-history"/>
+      </reference>
+      <name value="Family Cancer History"/>
+      <description value="History of cancer in an Onco Patient Family."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Clinical"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-annotation-1"/>
+      </reference>
+      <name value="fhir-osiris-annotation-1"/>
+      <description value="Example of Instance from OSIRIS_pivot_Annotations.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/variant-annotation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MolecularSequence"/>
+      </extension>
+      <reference>
+        <reference value="MolecularSequence/fhir-osiris-annotation-reference-1"/>
+      </reference>
+      <name value="fhir-osiris-annotation-reference-1"/>
+      <description value="Example of Instance from OSIRIS_pivot_Annotations.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/annotation-reference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AdverseEvent"/>
+      </extension>
+      <reference>
+        <reference value="AdverseEvent/fhir-osiris-example-adverseevent-1"/>
+      </reference>
+      <name value="fhir-osiris-example-adverseevent-1"/>
+      <description value="Example of Adverse Event from OSIRIS_pivot_AdverseEvent.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-adverse-event"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-analysis-clinical"/>
+      </reference>
+      <name value="fhir-osiris-example-analysis-clinical"/>
+      <description value="Example of Analysis from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/analysis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-analysis-ct"/>
+      </reference>
+      <name value="fhir-osiris-example-analysis-ct"/>
+      <description value="Example of Analysis from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/analysis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-analysis-dx"/>
+      </reference>
+      <name value="fhir-osiris-example-analysis-dx"/>
+      <description value="Example of Analysis from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/analysis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-analysis-mr"/>
+      </reference>
+      <name value="fhir-osiris-example-analysis-mr"/>
+      <description value="Example of Analysis from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/analysis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-analysis-mr-2"/>
+      </reference>
+      <name value="fhir-osiris-example-analysis-mr-2"/>
+      <description value="Example of Analysis from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/analysis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-analysis-pt-nm"/>
+      </reference>
+      <name value="fhir-osiris-example-analysis-pt-nm"/>
+      <description value="Example of Analysis from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/analysis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/fhir-osiris-example-biologicalsample-1"/>
+      </reference>
+      <name value="fhir-osiris-example-biologicalsample-1"/>
+      <description value="Example of BiologicalSample from OSIRIS_pivot_BiologicalSample.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-biological-sample"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/fhir-osiris-example-biologicalsample-2"/>
+      </reference>
+      <name value="fhir-osiris-example-biologicalsample-2"/>
+      <description value="Example of BiologicalSample from OSIRIS_pivot_BiologicalSample.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-biological-sample"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-biomarker"/>
+      </reference>
+      <name value="fhir-osiris-example-biomarker"/>
+      <description value="Example of Biomarker"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/biomarker"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-causeofdeath"/>
+      </reference>
+      <name value="fhir-osiris-example-causeofdeath"/>
+      <description value="Example of CauseOfDeath"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/cause-of-death"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/fhir-osiris-example-consent-1"/>
+      </reference>
+      <name value="fhir-osiris-example-consent-1"/>
+      <description value="Example of Instance from OSIRIS_pivot_Consent.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/genetic-consent"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/fhir-osiris-example-consent-2"/>
+      </reference>
+      <name value="fhir-osiris-example-consent-2"/>
+      <description value="Example of Instance from OSIRIS_pivot_Consent.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/genetic-consent"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/fhir-osiris-example-imagingdevice-ct"/>
+      </reference>
+      <name value="fhir-osiris-example-imagingdevice-ct"/>
+      <description value="Example of Imaging Study from OSIRIS_pivot_Equipment.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-device"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/fhir-osiris-example-imagingdevice-dx"/>
+      </reference>
+      <name value="fhir-osiris-example-imagingdevice-dx"/>
+      <description value="Example of Imaging Study from OSIRIS_pivot_Equipment.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-device"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/fhir-osiris-example-imagingdevice-mr"/>
+      </reference>
+      <name value="fhir-osiris-example-imagingdevice-mr"/>
+      <description value="Example of Imaging Study from OSIRIS_pivot_Equipment.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-device"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/fhir-osiris-example-imagingdevice-mr-2"/>
+      </reference>
+      <name value="fhir-osiris-example-imagingdevice-mr-2"/>
+      <description value="Example of Imaging Study from OSIRIS_pivot_Equipment.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-device"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/fhir-osiris-example-imagingdevice-pt-nm"/>
+      </reference>
+      <name value="fhir-osiris-example-imagingdevice-pt-nm"/>
+      <description value="Example of Imaging Study from OSIRIS_pivot_Equipment.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-device"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/fhir-osiris-example-imagingendpoint-ct"/>
+      </reference>
+      <name value="fhir-osiris-example-imagingendpoint-ct"/>
+      <description value="Example of Imaging Study from OSIRIS_pivot_CommonImage.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-pacs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/fhir-osiris-example-imagingendpoint-dx"/>
+      </reference>
+      <name value="fhir-osiris-example-imagingendpoint-dx"/>
+      <description value="Example of Imaging Study from OSIRIS_pivot_CommonImage.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-pacs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/fhir-osiris-example-imagingendpoint-mr"/>
+      </reference>
+      <name value="fhir-osiris-example-imagingendpoint-mr"/>
+      <description value="Example of Imaging Study from OSIRIS_pivot_CommonImage.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-pacs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/fhir-osiris-example-imagingendpoint-mr-2"/>
+      </reference>
+      <name value="fhir-osiris-example-imagingendpoint-mr-2"/>
+      <description value="Example of Imaging Study from OSIRIS_pivot_CommonImage.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-pacs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/fhir-osiris-example-imagingendpoint-pt-nm"/>
+      </reference>
+      <name value="fhir-osiris-example-imagingendpoint-pt-nm"/>
+      <description value="Example of Imaging Study from OSIRIS_pivot_CommonImage.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-pacs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ImagingStudy"/>
+      </extension>
+      <reference>
+        <reference value="ImagingStudy/fhir-osiris-example-imagingstudy-ct"/>
+      </reference>
+      <name value="fhir-osiris-example-imagingstudy-ct"/>
+      <description value="Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_CTImage.csv, OSIRIS_pivot_CommonImage.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-imagingstudy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ImagingStudy"/>
+      </extension>
+      <reference>
+        <reference value="ImagingStudy/fhir-osiris-example-imagingstudy-dx"/>
+      </reference>
+      <name value="fhir-osiris-example-imagingstudy-dx"/>
+      <description value="Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_CTImage.csv, OSIRIS_pivot_CommonImage.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-imagingstudy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ImagingStudy"/>
+      </extension>
+      <reference>
+        <reference value="ImagingStudy/fhir-osiris-example-imagingstudy-mri"/>
+      </reference>
+      <name value="fhir-osiris-example-imagingstudy-mri"/>
+      <description value="Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_MRImage.csv, OSIRIS_pivot_CommonImage.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-imagingstudy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ImagingStudy"/>
+      </extension>
+      <reference>
+        <reference value="ImagingStudy/fhir-osiris-example-imagingstudy-mri-2"/>
+      </reference>
+      <name value="fhir-osiris-example-imagingstudy-mri-2"/>
+      <description value="Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_MRImage.csv, OSIRIS_pivot_CommonImage.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-imagingstudy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ImagingStudy"/>
+      </extension>
+      <reference>
+        <reference value="ImagingStudy/fhir-osiris-example-imagingstudy-pt-nm"/>
+      </reference>
+      <name value="fhir-osiris-example-imagingstudy-pt-nm"/>
+      <description value="Example of Imaging Study from OSIRIS_pivot_CommonImage.csv, OSIRIS_pivot_Study.csv, OSIRIS_pivot_CTImage.csv, OSIRIS_pivot_CommonImage.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-imagingstudy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/fhir-osiris-example-injection-medication-pt-nm"/>
+      </reference>
+      <name value="fhir-osiris-example-injection-medication-pt-nm"/>
+      <description value="Example of Imaging Study from OSIRIS_pivot_Injection.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-biological-contrast"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/fhir-osiris-example-injection-pt-nm"/>
+      </reference>
+      <name value="fhir-osiris-example-injection-pt-nm"/>
+      <description value="Example of Imaging Study from OSIRIS_pivot_Injection.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-imagingstudy-injection"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/fhir-osiris-example-oncomedicalstatement-1"/>
+      </reference>
+      <name value="fhir-osiris-example-oncomedicalstatement-1"/>
+      <description value="Example of OncoMedicalStatement from OSIRIS_pivot_Drug.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-medication-statement"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/L304"/>
+      </reference>
+      <name value="fhir-osiris-example-patient"/>
+      <description value="Example of Patient from OSIRIS_pivot_Patient.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/13"/>
+      </reference>
+      <name value="fhir-osiris-example-patient-ct-scan"/>
+      <description value="Example of Patient from OSIRIS_pivot_Patient.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/LIDC-IDRI-0001"/>
+      </reference>
+      <name value="fhir-osiris-example-patient-dx"/>
+      <description value="Example of Patient from OSIRIS_pivot_Patient.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/24"/>
+      </reference>
+      <name value="fhir-osiris-example-patient-mr"/>
+      <description value="Example of Patient from OSIRIS_pivot_Patient.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/STS-010"/>
+      </reference>
+      <name value="fhir-osiris-example-patient-mr-2"/>
+      <description value="Example of Patient from OSIRIS_pivot_Patient.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/STS-028"/>
+      </reference>
+      <name value="fhir-osiris-example-patient-pt-nm"/>
+      <description value="Example of Patient from OSIRIS_pivot_Patient.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Patient-XRTS-04-22A"/>
+      </reference>
+      <name value="fhir-osiris-example-patient-radiotherapy"/>
+      <description value="Example of Patient for radiotherapy"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-RadiomicsCriteria"/>
+      </reference>
+      <name value="fhir-osiris-example-RadiomicsCriteria"/>
+      <description value="Example of Patient from OSIRIS_pivot_RadiomicsCriteria.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiomics-criteria"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-RadiomicsFeature"/>
+      </reference>
+      <name value="fhir-osiris-example-RadiomicsFeature"/>
+      <description value="Example of Patient from OSIRIS_pivot_RadiomicsFeature.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiomics-features"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-RadiomicsImageFilter"/>
+      </reference>
+      <name value="fhir-osiris-example-RadiomicsImageFilter"/>
+      <description value="Example of Patient from OSIRIS_pivot_RadiomicsImageFilter.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiomics-Image-filters"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/fhir-osiris-example-RadiotherapyCourse-1"/>
+      </reference>
+      <name value="fhir-osiris-example-RadiotherapyCourse-1"/>
+      <description value="Example of instance from OSIRIS_pivot_CourseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv, OSIRIS_pivot_DoseToVolumeRT.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-course-summary"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/fhir-osiris-example-RadiotherapyCourse-2"/>
+      </reference>
+      <name value="fhir-osiris-example-RadiotherapyCourse-2"/>
+      <description value="Example of instance from OSIRIS_pivot_CourseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv, OSIRIS_pivot_DoseToVolumeRT.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-course-summary"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/fhir-osiris-example-RadiotherapyPhase-1"/>
+      </reference>
+      <name value="fhir-osiris-example-RadiotherapyPhase-1"/>
+      <description value="Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-phase"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/fhir-osiris-example-RadiotherapyPhase-2"/>
+      </reference>
+      <name value="fhir-osiris-example-RadiotherapyPhase-2"/>
+      <description value="Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-phase"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/fhir-osiris-example-RadiotherapyPhase-3"/>
+      </reference>
+      <name value="fhir-osiris-example-RadiotherapyPhase-3"/>
+      <description value="Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-phase"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/fhir-osiris-example-RadiotherapyPhase-4"/>
+      </reference>
+      <name value="fhir-osiris-example-RadiotherapyPhase-4"/>
+      <description value="Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-phase"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/fhir-osiris-example-RadiotherapyPhase-5"/>
+      </reference>
+      <name value="fhir-osiris-example-RadiotherapyPhase-5"/>
+      <description value="Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-phase"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/fhir-osiris-example-RadiotherapyPhase-6"/>
+      </reference>
+      <name value="fhir-osiris-example-RadiotherapyPhase-6"/>
+      <description value="Example of instance from OSIRIS_pivot_PhaseRT.csv, OSIRIS_pivot_EnergyOrIsotopeRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-phase"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/fhir-osiris-example-RadiotherapyPlan-1"/>
+      </reference>
+      <name value="fhir-osiris-example-RadiotherapyPlan-1"/>
+      <description value="Example of instance from OSIRIS_pivot_PlanRT.csv, OSIRIS_pivot_EquipmentRT.csv and OSIRIS_pivot_ModalityAndTechniqueRT.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-plan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="BodyStructure"/>
+      </extension>
+      <reference>
+        <reference value="BodyStructure/fhir-osiris-example-RadiotherapyVolume-1"/>
+      </reference>
+      <name value="fhir-osiris-example-RadiotherapyVolume-1"/>
+      <description value="Example of instance from OSIRIS_pivot_VolumeRT.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-volume"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="BodyStructure"/>
+      </extension>
+      <reference>
+        <reference value="BodyStructure/fhir-osiris-example-RadiotherapyVolume-2"/>
+      </reference>
+      <name value="fhir-osiris-example-RadiotherapyVolume-2"/>
+      <description value="Example of instance from OSIRIS_pivot_VolumeRT.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-volume"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="BodyStructure"/>
+      </extension>
+      <reference>
+        <reference value="BodyStructure/fhir-osiris-example-RadiotherapyVolume-3"/>
+      </reference>
+      <name value="fhir-osiris-example-RadiotherapyVolume-3"/>
+      <description value="Example of instance from OSIRIS_pivot_VolumeRT.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-volume"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="BodyStructure"/>
+      </extension>
+      <reference>
+        <reference value="BodyStructure/fhir-osiris-example-RadiotherapyVolume-4"/>
+      </reference>
+      <name value="fhir-osiris-example-RadiotherapyVolume-4"/>
+      <description value="Example of instance from OSIRIS_pivot_VolumeRT.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-volume"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-ROISegmentation"/>
+      </reference>
+      <name value="fhir-osiris-example-ROISegmentation"/>
+      <description value="Example of Patient from OSIRIS_pivot_ROISegmentation.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/roi-segmentation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-sequencinganalysis-1"/>
+      </reference>
+      <name value="fhir-osiris-example-sequencinganalysis-1"/>
+      <description value="Example of SequencingAnalysis from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/sequencing-analysis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-sequencinganalysis-2"/>
+      </reference>
+      <name value="fhir-osiris-example-sequencinganalysis-2"/>
+      <description value="Example of SequencingAnalysis from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/sequencing-analysis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-sequencinganalysis-3"/>
+      </reference>
+      <name value="fhir-osiris-example-sequencinganalysis-3"/>
+      <description value="Example of SequencingAnalysis from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/sequencing-analysis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/fhir-osiris-example-sequencingdevice-1"/>
+      </reference>
+      <name value="fhir-osiris-example-sequencingdevice-1"/>
+      <description value="Example of SequencingDevice from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/sequencing-device"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/fhir-osiris-example-sequencingdevice-2"/>
+      </reference>
+      <name value="fhir-osiris-example-sequencingdevice-2"/>
+      <description value="Example of SequencingDevice from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/sequencing-device"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/fhir-osiris-example-sequencingdevice-3"/>
+      </reference>
+      <name value="fhir-osiris-example-sequencingdevice-3"/>
+      <description value="Example of SequencingDevice from OSIRIS_pivot_Analysis.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/sequencing-device"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-snp-1"/>
+      </reference>
+      <name value="fhir-osiris-example-snp-1"/>
+      <description value="Example of Surgery from OSIRIS_pivot_Variant.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/snp"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/fhir-osiris-example-surgery-1"/>
+      </reference>
+      <name value="fhir-osiris-example-surgery-1"/>
+      <description value="Example of Surgery from OSIRIS_pivot_Treatment.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-surgery"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/fhir-osiris-example-surgery-2"/>
+      </reference>
+      <name value="fhir-osiris-example-surgery-2"/>
+      <description value="Example of Surgery from OSIRIS_pivot_Treatment.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-surgery"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/fhir-osiris-example-treatment-1"/>
+      </reference>
+      <name value="fhir-osiris-example-treatment-1"/>
+      <description value="Example of Treatment from OSIRIS_pivot_Treatment.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/treatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/fhir-osiris-example-treatment-2"/>
+      </reference>
+      <name value="fhir-osiris-example-treatment-2"/>
+      <description value="Example of Treatment from OSIRIS_pivot_Treatment.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/treatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/fhir-osiris-example-treatment-radiotherapy"/>
+      </reference>
+      <name value="fhir-osiris-example-treatment-radiotherapy"/>
+      <description value="Example of Treatment from OSIRIS_pivot_Treatment.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/treatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/fhir-osiris-example-TumorPathologyEvent-instance-1"/>
+      </reference>
+      <name value="fhir-osiris-example-TumorPathologyEvent-instance-1"/>
+      <description value="Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/tumor-pathology-event"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/fhir-osiris-example-TumorPathologyEvent-instance-2"/>
+      </reference>
+      <name value="fhir-osiris-example-TumorPathologyEvent-instance-2"/>
+      <description value="Example of TPE from OSIRIS_pivot_TumorPathologyEvent.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/tumor-pathology-event"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="VerificationResult"/>
+      </extension>
+      <reference>
+        <reference value="VerificationResult/fhir-osiris-example-validation-1"/>
+      </reference>
+      <name value="fhir-osiris-example-validation-1"/>
+      <description value="Example of Surgery from OSIRIS_pivot_Variant.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/data-validation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fhir-osiris-example-vitalstatus"/>
+      </reference>
+      <name value="fhir-osiris-example-vitalstatus"/>
+      <description value="Example of VitalStatus"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/vital-status"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MolecularSequence"/>
+      </extension>
+      <reference>
+        <reference value="MolecularSequence/fhir-osiris-genome-entity-1"/>
+      </reference>
+      <name value="fhir-osiris-genome-entity-1"/>
+      <description value="Example of Instance from OSIRIS_pivot_Annotations.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/genome-entity"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/fhir-osiris-origin-organization"/>
+      </reference>
+      <name value="fhir-osiris-origin-organization"/>
+      <description value="Example of origin(organization) from OSIRIS_pivot_Patient.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/fhir-osiris-provider-organization"/>
+      </reference>
+      <name value="fhir-osiris-provider-organization"/>
+      <description value="Example of provider(organization) from OSIRIS_pivot_Patient.csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FhirOSIRISResponseEvaluation-1"/>
+      </reference>
+      <name value="FhirOSIRISResponseEvaluation-1"/>
+      <description value="Example of ResponseEvaluation from OSIRIS_pivot_ResponseEvaluation .csv"/>
+      <exampleCanonical value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/response-evaluation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/spanning-pairs"/>
+      </reference>
+      <name value="Fusion Spanning Pairs"/>
+      <description value="Number of reads pairs spanning the fusion"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/split-reads"/>
+      </reference>
+      <name value="Fusion Split Reads"/>
+      <description value="Number of reads containing the fusion point"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/FusionType"/>
+      </reference>
+      <name value="Fusion Type Value Set"/>
+      <description value="Fusion Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/expression"/>
+      </reference>
+      <name value="Gene Expression"/>
+      <description value="Observation of a Gene Expression variant derived from a SequencingAnalysis. The Expression profile is used to indicate the actionability, the pathogenecity and the gene expression quantity of the gene of interest."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Omics"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/gene-expression-data-type"/>
+      </reference>
+      <name value="Gene Expression Data Type"/>
+      <description value="Type of the expression value corresponding to the level of data processing"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/GeneExpressionDataType"/>
+      </reference>
+      <name value="Gene Expression Data Type Value Set"/>
+      <description value="Gene Expression Data Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fusion"/>
+      </reference>
+      <name value="Gene Fusion"/>
+      <description value="Observation of a Gene Fusion derived from a SequencingAnalysis. The Fusion profile indicates the pathogenicity, the actionability and if the fusion has occured in the reading frame."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Omics"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/GeneticMaterial"/>
+      </reference>
+      <name value="GeneticMaterial"/>
+      <description value="Genetic material"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/genome-entity"/>
+      </reference>
+      <name value="Genome Entity"/>
+      <description value="The genome entity profile is used to indicate the genome reference used to build the Annotation."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Omics"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/GenomeEntityType"/>
+      </reference>
+      <name value="Genome entity type Value Set"/>
+      <description value="Type of genome entity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/GenomeBuild"/>
+      </reference>
+      <name value="GenomeBuild Value Set"/>
+      <description value="GenomeBuild"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/genomeentityType"/>
+      </reference>
+      <name value="GenomeEntityType"/>
+      <description value="Genome Entity Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/histologygrade"/>
+      </reference>
+      <name value="Histology"/>
+      <description value="Grade of Histology"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/IBSICS"/>
+      </reference>
+      <name value="IBSI Code System"/>
+      <description value="IBSI Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/RadiomicsCS"/>
+      </reference>
+      <name value="Imaging Code System"/>
+      <description value="Imaging Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/imaging-device"/>
+      </reference>
+      <name value="Imaging Device"/>
+      <description value="Qualification of the equipment used to acquire a series of images"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Radiomics and Radiotherapy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/imaging-service"/>
+      </reference>
+      <name value="Imaging Service"/>
+      <description value="Description of an imaging service."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Radiomics and Radiotherapy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/imaging-settings"/>
+      </reference>
+      <name value="Imaging Settings"/>
+      <description value="Imaging Settings."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onco-imagingstudy"/>
+      </reference>
+      <name value="Imaging Study"/>
+      <description value="Description of an imaging study."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Radiomics and Radiotherapy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onco-imagingstudy-injection"/>
+      </reference>
+      <name value="Imaging Study Injection"/>
+      <description value="Description of an imaging study injection."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Radiomics and Radiotherapy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onco-biological-contrast"/>
+      </reference>
+      <name value="Imaging Study Injection Contrast"/>
+      <description value="Description of a contrast product."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Radiomics and Radiotherapy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/laterality"/>
+      </reference>
+      <name value="Laterality"/>
+      <description value="Laterality of location (if it exists)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSLocalizationMethod"/>
+      </reference>
+      <name value="Localization Method Value Set"/>
+      <description value="Localization Method"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/imaging-pacs"/>
+      </reference>
+      <name value="Location to the PACS server"/>
+      <description value="System communication to the PACS server"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Radiomics and Radiotherapy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/modalityAndTechnique"/>
+      </reference>
+      <name value="Modality And Technique"/>
+      <description value="Modality And Technique"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Morphology"/>
+      </reference>
+      <name value="Morphology Value Set"/>
+      <description value="Cancer morphology"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/MutationPrediction"/>
+      </reference>
+      <name value="Mutation prediction Value Set"/>
+      <description value="Mutation prediction"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/numberOfFractions"/>
+      </reference>
+      <name value="Number of Fractions"/>
+      <description value="The number of fractions"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/numberOfSessions"/>
+      </reference>
+      <name value="Number of Sessions"/>
+      <description value="The number of sessions"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onco-adverse-event"/>
+      </reference>
+      <name value="Oncologic Adverse Event"/>
+      <description value="Adverse event related to a cancer-related treatment associated to a grade from MEDDRA terminology (ex: 10047700: &quot;Vomiting&quot;)."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Treatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/clinical-trial"/>
+      </reference>
+      <name value="Oncology Clinical Trial"/>
+      <description value="Oncology clinical trial used to associate a Onco Patient to a Clinical Trial"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="General"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onco-patient"/>
+      </reference>
+      <name value="Oncology Patient"/>
+      <description value="Oncology patient defined by Osiris."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Clinical"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/related-pathology"/>
+      </reference>
+      <name value="Oncology Patient Related Pathology"/>
+      <description value="Related pathology of oncology patient."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Clinical"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onco-surgery"/>
+      </reference>
+      <name value="Oncology Surgery"/>
+      <description value="Oncology-related surgery with a description of the outcome using RECIST categorys."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Treatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onco-medication-statement"/>
+      </reference>
+      <name value="Oncology-related Medication Statement"/>
+      <description value="Medication statement related to a cancer cure."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Treatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/OsirisCS"/>
+      </reference>
+      <name value="Osiris code system"/>
+      <description value="Custom code from osiris standard"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/OsirisValidationType"/>
+      </reference>
+      <name value="Osiris Validation Type"/>
+      <description value="Osiris validation type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/PanelName"/>
+      </reference>
+      <name value="Panel Name"/>
+      <description value="Panel Name"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Parentage"/>
+      </reference>
+      <name value="Parentage Value Set"/>
+      <description value="Parentage"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Pathogenicity"/>
+      </reference>
+      <name value="Pathogenicity Value Set"/>
+      <description value="Pathogenicity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ethnicity"/>
+      </reference>
+      <name value="Patient Ethnicity"/>
+      <description value="The patient ethnicity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/origin-center"/>
+      </reference>
+      <name value="Patient Origin Center"/>
+      <description value="The origin center organization of an Oncology Patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-synthetic"/>
+      </reference>
+      <name value="patient-synthetic"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/performance-status"/>
+      </reference>
+      <name value="Performance Status"/>
+      <description value="Oncology-patient performance status observation (see https://www.ncbi.nlm.nih.gov/books/NBK97482/ for more information)."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Clinical"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/PlatformName"/>
+      </reference>
+      <name value="Platform Name"/>
+      <description value="Platform Name"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RadiomicsFeaturesVS"/>
+      </reference>
+      <name value="Radiomic Features Value Set"/>
+      <description value="Radiomic Features"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/radiomics-criteria"/>
+      </reference>
+      <name value="Radiomics Criteria"/>
+      <description value="Description of the criteria used for the biomarkers calculations"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Radiomics and Radiotherapy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/radiomics-criteria-settings"/>
+      </reference>
+      <name value="Radiomics Criteria Settings"/>
+      <description value="Radiomics Criteria Settings."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/radiomics-features"/>
+      </reference>
+      <name value="Radiomics Features"/>
+      <description value="Description of the radiomics measurements described in IBSI nomenclature"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Radiomics and Radiotherapy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/radiomics-Image-filters"/>
+      </reference>
+      <name value="Radiomics Image Filters"/>
+      <description value="Filtering parameters used for the imaging analysis"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Radiomics and Radiotherapy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/radiomics-image-filters-settings"/>
+      </reference>
+      <name value="Radiomics Image Filters Settings"/>
+      <description value="Radiomics Image Filters Settings."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-radiotherapy-category"/>
+      </reference>
+      <name value="Radiotherapy Category"/>
+      <description value="Radiotherapy Category"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/RadiotherapyCS"/>
+      </reference>
+      <name value="Radiotherapy Code System"/>
+      <description value="Radiotherapy Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/radiotherapy-course-summary"/>
+      </reference>
+      <name value="Radiotherapy course Summary"/>
+      <description value="A summary of a course of radiotherapy planned or delivered to a patient"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Radiomics and Radiotherapy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-radiotherapy-intent"/>
+      </reference>
+      <name value="Radiotherapy Intent"/>
+      <description value="RadioTherapy Intent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/radiotherapy-phase"/>
+      </reference>
+      <name value="Radiotherapy Phase"/>
+      <description value="Summary of the radiotherapy phases planned or delivered to a patient"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Radiomics and Radiotherapy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/radiotherapy-plan"/>
+      </reference>
+      <name value="Radiotherapy Plan"/>
+      <description value="Radiotherapy plans planned or delivered to a patient"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Radiomics and Radiotherapy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/codexrt-radiotherapy-reason-for-revision-or-adaptation-vs"/>
+      </reference>
+      <name value="Radiotherapy Reason Replanification"/>
+      <description value="Radiotherapy Reason Replanification"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-radiotherapy-termination-reason"/>
+      </reference>
+      <name value="Radiotherapy Termination Reason"/>
+      <description value="Radiotherapy Termination Reason"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mcode-radiotherapy-treatment-location-qualifier-vs"/>
+      </reference>
+      <name value="Radiotherapy Treatment Location Qualifier Value Set"/>
+      <description value="Various modifiers that can be applied to body locations where radiotherapy treatments can be directed."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/radiotherapy-volume"/>
+      </reference>
+      <name value="Radiotherapy Volume Profile"/>
+      <description value="A volume of the body treated by radiotherapy (plannes or delivered)."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Radiomics and Radiotherapy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mcode-radiotherapy-volume-type-vs"/>
+      </reference>
+      <name value="Radiotherapy Volume Type Value Set"/>
+      <description value="Codes describing the types of body volumes used in radiotherapy planning and treatment. The value set includes the most common codes from DICOM CID 9534 Radiotherapy Targets (UID 1.2.840.10008.6.1.1244) and adds a code for Organs at Risk (OAR)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/reasonReplanification"/>
+      </reference>
+      <name value="Reason Replanification"/>
+      <description value="Reason Replanification"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ReferenceType"/>
+      </reference>
+      <name value="Reference Type Value Set"/>
+      <description value="Annotation reference type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SnomedRequestedCSmcode"/>
+      </reference>
+      <name value="Requested SNOMED Codes Code System"/>
+      <description value="Requested SNOMED Codes by mcode"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SnomedRequestedCScodex"/>
+      </reference>
+      <name value="Requested SNOMED Codes Code System"/>
+      <description value="Requested SNOMED Codes by codex"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/response-evaluation"/>
+      </reference>
+      <name value="Response Evaluation"/>
+      <description value="Response evaluation to an oncology treatment from RECIST terminology."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Treatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ResponseEvaluationStatus"/>
+      </reference>
+      <name value="Response Status Value Set"/>
+      <description value="Response evaluation status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/roi-segmentation"/>
+      </reference>
+      <name value="ROI segmentation"/>
+      <description value="Description of the segmentation method used allowing the deffinition of a region of interest (ROI)."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Radiomics and Radiotherapy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ROIType"/>
+      </reference>
+      <name value="ROI Type Value Set"/>
+      <description value="ROI Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sequencing-analysis"/>
+      </reference>
+      <name value="Sequencing Analysis"/>
+      <description value="Sequencing analysis about a biological sample coming from a TumorPathologyEvent. This profile shows general information about the analysis done, additional omics results can be found in SNP, Fusion, CopyNumber, Expression and Annotation profiles."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Clinical"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sequencing-device"/>
+      </reference>
+      <name value="Sequencing Device"/>
+      <description value="Description of a sequencing device used for a Sequencing Analysis."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Omics"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SeriesModalityCS"/>
+      </reference>
+      <name value="Series Modality Code System"/>
+      <description value="Series Modality  Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/snp"/>
+      </reference>
+      <name value="Single Nucleotide Polymorphism"/>
+      <description value="Observation of a Single Nucleotide Polymorphism (SNP) derived from a Sequencing Analysis."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Omics"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SnomedCS"/>
+      </reference>
+      <name value="SNOMED Codes Code System"/>
+      <description value="SNOMED Codes Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/StorageTemperature"/>
+      </reference>
+      <name value="Storage temperature Value Set"/>
+      <description value="Sample storage temperature"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/strand-bias"/>
+      </reference>
+      <name value="Strand bias"/>
+      <description value="Indication of the existence of strand bias at the variant position"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SurgeryResectionQuality"/>
+      </reference>
+      <name value="Surgery Resection Quality Value Set"/>
+      <description value="Surgery resection quality"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/onco-tnm"/>
+      </reference>
+      <name value="TNM"/>
+      <description value="TNM Classification of malignant tumors used to indicate the tumor, node and metastasis state of a Tumor Pathology Event."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Clinical"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/TNMVersion"/>
+      </reference>
+      <name value="TNM Version Value Set"/>
+      <description value="TNM version"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Topography"/>
+      </reference>
+      <name value="Topography Value Set"/>
+      <description value="Cancer topography"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/treatment"/>
+      </reference>
+      <name value="Treatment"/>
+      <description value="Description of a treatment plan related to an Oncology Patient."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Treatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/treatmentIntent"/>
+      </reference>
+      <name value="Treatment Intent"/>
+      <description value="The treatment Intent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/treatment-line"/>
+      </reference>
+      <name value="Treatment Line Number"/>
+      <description value="The treatment line number"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/treatmentTerminationReason"/>
+      </reference>
+      <name value="Treatment Termination Reason"/>
+      <description value="The treatment Termination Reason"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/TreatmentType"/>
+      </reference>
+      <name value="Treatment Type Value Set"/>
+      <description value="Treatment type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Laterality"/>
+      </reference>
+      <name value="Tumor Laterality Value Set"/>
+      <description value="Tumor laterality"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tumor-pathology-event"/>
+      </reference>
+      <name value="Tumor Pathology Event"/>
+      <description value="Tumor Pathology Event (TPE) Condition describing a tumoral event: reference to the parent TPE, laterality, morphology."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Clinical"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dueTo-tumor-pathology-event"/>
+      </reference>
+      <name value="Tumor Pathology Event Parent"/>
+      <description value="Reference the Tumor Pathology Event from which the metastasis comes from."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/TumorPathologyEventType"/>
+      </reference>
+      <name value="Tumor Pathology Event Type Value Set"/>
+      <description value="Tumor pathology event type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchStudy"/>
+      </extension>
+      <reference>
+        <reference value="ResearchStudy/fhir-osiris-example-researchstudy"/>
+      </reference>
+      <name value="Unknown"/>
+      <description value="Example of ResearchStudy from OSIRIS_pivot_Treatment.csv"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/data-validation"/>
+      </reference>
+      <name value="Validation"/>
+      <description value="Validation information about data from a Variant / Expression / Fusion / CopyNumber profile."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Omics"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/variant-annotation"/>
+      </reference>
+      <name value="Variant Annotation"/>
+      <description value="The Annotation profile allows to add information about a SNP, a fusion, an expression or a copy number event. It is generally used to compare variant from a reference genome. There can be multiple instance of Variant Annotation Resource for one instance of SNP, CopyNumber, Expression or Fusion Resource."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Omics"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/copy-number"/>
+      </reference>
+      <name value="Variant Copy Number"/>
+      <description value="Observation of a Copy Number variant derived from a SequencingAnalysis. The CopyNumber profile is used to indicate the pathogenicity, the actionability, the loss of heterozygosity, the cytogenetic location, the start - end positions, the reference sequence assembly, the variation code, the segment intensity, the number of copy found and the Copy Number segment size."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Omics"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vital-status"/>
+      </reference>
+      <name value="Vital Status"/>
+      <description value="Observation that indicates the last known Vital status of an Onco Patient."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Clinical"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VitalStatus"/>
+      </reference>
+      <name value="Vital Status Value Set"/>
+      <description value="Vital status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/series-weightheigt"/>
+      </reference>
+      <name value="Weight and Height at the time of the Serie"/>
+      <description value="Weight and Height at the time of the Serie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="requests.html"/>
+        </extension>
+        <nameUrl value="requests.html"/>
+        <title value="Requests"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="valuesets.html"/>
+        </extension>
+        <nameUrl value="valuesets.html"/>
+        <title value="Valuesets"/>
+        <generation value="html"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="AlterationType"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet AlterationType</b></p><a name="AlterationType"> </a><a name="hcAlterationType"> </a><a name="AlterationType-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>https://github.com/siric-osiris/OSIRIS</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>O15-1</td><td>Gene expression</td></tr><tr><td>O15-2</td><td>Protein expression</td></tr><tr><td>O15-3</td><td>Fusion</td></tr><tr><td>O15-4</td><td>Copy number variation</td></tr><tr><td>O15-5</td><td>Genetic variant</td></tr><tr><td>O15-6</td><td>Structural alteration</td></tr><tr><td>O15-7</td><td>Transcription factor</td></tr><tr><td>O15-8</td><td>Histone marks</td></tr><tr><td>O15-9</td><td>Transcript isoform</td></tr><tr><td>O15-10</td><td>Viral insertion site</td></tr></table></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/6.2.0/CodeSystem-umls.html"><code>http://terminology.hl7.org/CodeSystem/umls</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C0439673</td><td>Unknown</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AlterationType"/>
+  <version value="1.1.0"/>
+  <name value="AlterationType"/>
+  <title value="Alteration Type Value Set"/>
+  <status value="draft"/>
+  <date value="2025-04-16T19:28:51+00:00"/>
+  <publisher value="institutcancer"/>
+  <contact>
+    <name value="institutcancer"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://cancer.fr"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="osiris@institutcancer.fr"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Aurélien JOBARD"/>
+    <telecom>
+      <system value="email"/>
+      <value value="osiris@institutcancer.fr"/>
+    </telecom>
+  </contact>
+  <description value="Alteration type"/>
+  <compose>
+    <include>
+      <system value="https://github.com/siric-osiris/OSIRIS"/>
+      <concept>
+        <code value="O15-1"/>
+        <display value="Gene expression"/>
+      </concept>
+      <concept>
+        <code value="O15-2"/>
+        <display value="Protein expression"/>
+      </concept>
+      <concept>
+        <code value="O15-3"/>
+        <display value="Fusion"/>
+      </concept>
+      <concept>
+        <code value="O15-4"/>
+        <display value="Copy number variation"/>
+      </concept>
+      <concept>
+        <code value="O15-5"/>
+        <display value="Genetic variant"/>
+      </concept>
+      <concept>
+        <code value="O15-6"/>
+        <display value="Structural alteration"/>
+      </concept>
+      <concept>
+        <code value="O15-7"/>
+        <display value="Transcription factor"/>
+      </concept>
+      <concept>
+        <code value="O15-8"/>
+        <display value="Histone marks"/>
+      </concept>
+      <concept>
+        <code value="O15-9"/>
+        <display value="Transcript isoform"/>
+      </concept>
+      <concept>
+        <code value="O15-10"/>
+        <display value="Viral insertion site"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/umls"/>
+      <concept>
+        <code value="C0439673"/>
+        <display value="Unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

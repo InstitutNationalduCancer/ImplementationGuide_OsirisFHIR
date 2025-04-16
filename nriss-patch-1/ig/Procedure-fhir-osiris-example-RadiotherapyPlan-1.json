@@ -1,0 +1,168 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "fhir-osiris-example-RadiotherapyPlan-1",
+  "meta" : {
+    "profile" : ["https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-plan"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure fhir-osiris-example-RadiotherapyPlan-1</b></p><a name=\"fhir-osiris-example-RadiotherapyPlan-1\"> </a><a name=\"hcfhir-osiris-example-RadiotherapyPlan-1\"> </a><a name=\"fhir-osiris-example-RadiotherapyPlan-1-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-radiotherapy-plan.html\">Radiotherapy Plan</a></p></div><p><b>Number of Fractions</b>: 16</p><p><b>Algorith mName</b>: Unknown</p><blockquote><p><b>Connection with the imaging module</b></p><ul><li>seriesUID: Unknown</li><li>rtStructUID: <a href=\"Observation-fhir-osiris-example-ROISegmentation.html\">Observation ROI Type DICOM</a></li></ul></blockquote><blockquote><p><b>Dose To Volume</b></p><ul><li>rtDoseUID: Unknown</li><li>volume: <a href=\"BodyStructure-fhir-osiris-example-RadiotherapyVolume-1.html\">BodyStructure: identifier = urn:oid:1.2.246.352.71.842418.2121.20150602151.102; location = Breast; locationQualifier = Left (qualifier value); description = Left Breast</a></li><li>fractionDose: 266</li><li>numberOfFractions: 16</li><li>totalDose: 4256</li></ul></blockquote><blockquote><p><b>Dose To Volume</b></p><ul><li>volume: <a href=\"BodyStructure-fhir-osiris-example-RadiotherapyVolume-2.html\">BodyStructure: identifier = urn:oid:1.2.246.352.71.842418.2121.20150602151.103; location = Breast; locationQualifier = Left (qualifier value); description = Left Breast Surgical Bed</a></li><li>fractionDose: 266</li><li>numberOfFractions: 16</li><li>totalDose: 4256</li></ul></blockquote><blockquote><p><b>Dose To Volume</b></p><ul><li>volume: <a href=\"BodyStructure-fhir-osiris-example-RadiotherapyVolume-3.html\">BodyStructure: identifier = urn:oid:1.2.246.352.71.842418.2121.20150602151.104; location = Breast; locationQualifier = Left (qualifier value); description = Left Axillary Nodes</a></li><li>fractionDose: 266</li><li>numberOfFractions: 16</li><li>totalDose: 4256</li></ul></blockquote><blockquote><p><b>Modality And Technique</b></p><ul><li>radiotherapyModality: <span title=\"Codes:{http://snomed.info/sct 1156506007}\">External beam radiation therapy using photons (procedure)</span></li><li>radiotherapyTechnique: <span title=\"Codes:{http://hl7.org/fhir/us/mcode/CodeSystem/snomed-requested-cs 1162782007}\">Three dimensional external beam radiation therapy (procedure)</span></li><li>radiotherapyTreatmentMachinePlanned: Unknown</li></ul></blockquote><blockquote><p><b>Energy Or Isotope</b></p><ul><li>quantityEnergyOrIsotope: 999999</li><li>nameEnergyOrIsotope: Unknown</li></ul></blockquote><p><b>identifier</b>: MR/Unknown</p><p><b>partOf</b>: <a href=\"Procedure-fhir-osiris-example-RadiotherapyPhase-1.html\">Procedure Radiotherapy treatment phase (regime/therapy)</a></p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/RadiotherapyCS Planned}\">Planified</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1255724003}\">Radiotherapy treatment plan (regime/therapy)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Anonymous Patient Male, DoB: 1967-11-08</a></p><p><b>performed</b>: 2018-08-15 --&gt; 2018-11-25</p></div>"
+  },
+  "extension" : [{
+    "url" : "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/numberOfFractions",
+    "valueUnsignedInt" : 16
+  },
+  {
+    "url" : "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/algorithmName",
+    "valueString" : "Unknown"
+  },
+  {
+    "extension" : [{
+      "url" : "seriesUID",
+      "valueString" : "Unknown"
+    },
+    {
+      "url" : "rtStructUID",
+      "valueReference" : {
+        "reference" : "Observation/fhir-osiris-example-ROISegmentation"
+      }
+    }],
+    "url" : "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/basedOn"
+  },
+  {
+    "extension" : [{
+      "url" : "rtDoseUID",
+      "valueString" : "Unknown"
+    },
+    {
+      "url" : "volume",
+      "valueReference" : {
+        "reference" : "BodyStructure/fhir-osiris-example-RadiotherapyVolume-1"
+      }
+    },
+    {
+      "url" : "fractionDose",
+      "valueString" : "266"
+    },
+    {
+      "url" : "numberOfFractions",
+      "valueUnsignedInt" : 16
+    },
+    {
+      "url" : "totalDose",
+      "valueString" : "4256"
+    }],
+    "url" : "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/doseToVolume"
+  },
+  {
+    "extension" : [{
+      "url" : "radiotherapyModality",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "1156506007"
+        }]
+      }
+    },
+    {
+      "url" : "radiotherapyTechnique",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/mcode/CodeSystem/snomed-requested-cs",
+          "code" : "1162782007"
+        }]
+      }
+    },
+    {
+      "url" : "radiotherapyTreatmentMachinePlanned",
+      "valueString" : "Unknown"
+    }],
+    "url" : "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/modalityAndTechnique"
+  },
+  {
+    "extension" : [{
+      "url" : "volume",
+      "valueReference" : {
+        "reference" : "BodyStructure/fhir-osiris-example-RadiotherapyVolume-2"
+      }
+    },
+    {
+      "url" : "fractionDose",
+      "valueString" : "266"
+    },
+    {
+      "url" : "numberOfFractions",
+      "valueUnsignedInt" : 16
+    },
+    {
+      "url" : "totalDose",
+      "valueString" : "4256"
+    }],
+    "url" : "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/doseToVolume"
+  },
+  {
+    "extension" : [{
+      "url" : "volume",
+      "valueReference" : {
+        "reference" : "BodyStructure/fhir-osiris-example-RadiotherapyVolume-3"
+      }
+    },
+    {
+      "url" : "fractionDose",
+      "valueString" : "266"
+    },
+    {
+      "url" : "numberOfFractions",
+      "valueUnsignedInt" : 16
+    },
+    {
+      "url" : "totalDose",
+      "valueString" : "4256"
+    }],
+    "url" : "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/doseToVolume"
+  },
+  {
+    "extension" : [{
+      "url" : "quantityEnergyOrIsotope",
+      "valueQuantity" : {
+        "value" : 999999
+      }
+    },
+    {
+      "url" : "nameEnergyOrIsotope",
+      "valueString" : "Unknown"
+    }],
+    "url" : "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/energyOrIsotope"
+  }],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "code" : "MR"
+      }]
+    },
+    "value" : "Unknown"
+  }],
+  "partOf" : [{
+    "reference" : "Procedure/fhir-osiris-example-RadiotherapyPhase-1"
+  }],
+  "status" : "completed",
+  "category" : {
+    "coding" : [{
+      "system" : "https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/RadiotherapyCS",
+      "code" : "Planned"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1255724003"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/L304"
+  },
+  "performedPeriod" : {
+    "start" : "2018-08-15",
+    "end" : "2018-11-25"
+  }
+}

@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ig-osiris.cancer.fr/ig/osiris/CarePlan/fhir-osiris-example-treatment-1> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir-osiris-example-treatment-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/treatment"^^xsd:anyURI ;
+       fhir:link <https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/treatment>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan fhir-osiris-example-treatment-1</b></p><a name=\"fhir-osiris-example-treatment-1\"> </a><a name=\"hcfhir-osiris-example-treatment-1\"> </a><a name=\"fhir-osiris-example-treatment-1-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-treatment.html\">Treatment</a></p></div><p><b>Treatment Line Number</b>: 2</p><p><b>status</b>: Unknown</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/umls C0728940}\">C0728940</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Anonymous Patient Male, DoB: 1967-11-08</a></p><p><b>period</b>: 2006-01-04 --&gt; 2006-11-23</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ReasonReference</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Condition-fhir-osiris-example-TumorPathologyEvent-instance-1.html\">Condition C0677930</a></td><td>Unknown</td></tr></table></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/treatment-line"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 2
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "unknown"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/umls"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "C0728940" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <https://ig-osiris.cancer.fr/ig/osiris/Patient/L304> ;
+     fhir:reference [ fhir:v "Patient/L304" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2006-01-04"^^xsd:date ] ;
+     fhir:end [ fhir:v "2006-11-23"^^xsd:date ]
+  ] ; # 
+  fhir:activity ( [
+     fhir:detail [
+       fhir:reasonReference ( [
+         fhir:link <https://ig-osiris.cancer.fr/ig/osiris/Condition/fhir-osiris-example-TumorPathologyEvent-instance-1> ;
+         fhir:reference [ fhir:v "Condition/fhir-osiris-example-TumorPathologyEvent-instance-1" ]
+       ] ) ;
+       fhir:status [ fhir:v "unknown" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ig-osiris.cancer.fr/ig/osiris/Consent/fhir-osiris-example-consent-1> a fhir:Consent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir-osiris-example-consent-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/genetic-consent"^^xsd:anyURI ;
+       fhir:link <https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/genetic-consent>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Consent fhir-osiris-example-consent-1</b></p><a name=\"fhir-osiris-example-consent-1\"> </a><a name=\"hcfhir-osiris-example-consent-1\"> </a><a name=\"fhir-osiris-example-consent-1-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-genetic-consent.html\">Consent for Genetic Data Usage</a></p></div><p><b>status</b>: Active</p><p><b>scope</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/consentscope patient-privacy}\">Privacy Consent</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode RESEARCH}\">research information access</span></p><p><b>patient</b>: <a href=\"Patient-L304.html\">Anonymous Patient Male, DoB: 1967-11-08</a></p><p><b>dateTime</b>: 2000-11-16</p><blockquote><p><b>provision</b></p><p><b>type</b>: Opt Out</p><p><b>class</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-resource-types.html#resource-types-MolecularSequence\">ResourceType MolecularSequence</a>: MolecularSequence</p><h3>Data</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Meaning</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td>Instance</td><td><a href=\"Specimen-fhir-osiris-example-biologicalsample-1.html\">Specimen: extension = Tumoral,-&gt;Condition C0677930; identifier = ech primary; type = C4039816; condition = Tissue Frozen</a></td></tr></table></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:scope [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "patient-privacy" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "RESEARCH" ]
+     ] )
+  ] ) ; # 
+  fhir:patient [
+     fhir:link <https://ig-osiris.cancer.fr/ig/osiris/Patient/L304> ;
+     fhir:reference [ fhir:v "Patient/L304" ]
+  ] ; # 
+  fhir:dateTime [ fhir:v "2000-11-16"^^xsd:date] ; # 
+  fhir:provision [
+     fhir:type [ fhir:v "deny" ] ;
+     fhir:class ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/resource-types"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "MolecularSequence" ]
+     ] ) ;
+     fhir:data ( [
+       fhir:meaning [ fhir:v "instance" ] ;
+       fhir:reference [
+         fhir:link <https://ig-osiris.cancer.fr/ig/osiris/Specimen/fhir-osiris-example-biologicalsample-1> ;
+         fhir:reference [ fhir:v "Specimen/fhir-osiris-example-biologicalsample-1" ]
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

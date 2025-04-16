@@ -1,0 +1,70 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "StorageTemperature",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet StorageTemperature</b></p><a name=\"StorageTemperature\"> </a><a name=\"hcStorageTemperature\"> </a><a name=\"StorageTemperature-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>https://github.com/siric-osiris/OSIRIS</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C60-1</td><td>Room temperature</td></tr><tr><td>C60-2</td><td>Between 2 °C and 10 °C</td></tr><tr><td>C60-3</td><td>Between -18 °C and -35 °C</td></tr><tr><td>C60-4</td><td>Between -60 °C and -85 °C</td></tr><tr><td>C60-5</td><td>Liquid nitrogen, -150 °C to -196 °C</td></tr><tr><td>C60-6</td><td>Other</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-umls.html\"><code>http://terminology.hl7.org/CodeSystem/umls</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C0439673</td><td>Unknown</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/StorageTemperature",
+  "version" : "1.1.0",
+  "name" : "StorageTemperature",
+  "title" : "Storage temperature Value Set",
+  "status" : "draft",
+  "date" : "2025-04-16T19:28:51+00:00",
+  "publisher" : "institutcancer",
+  "contact" : [{
+    "name" : "institutcancer",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://cancer.fr"
+    },
+    {
+      "system" : "email",
+      "value" : "osiris@institutcancer.fr"
+    }]
+  },
+  {
+    "name" : "Aurélien JOBARD",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "osiris@institutcancer.fr"
+    }]
+  }],
+  "description" : "Sample storage temperature",
+  "compose" : {
+    "include" : [{
+      "system" : "https://github.com/siric-osiris/OSIRIS",
+      "concept" : [{
+        "code" : "C60-1",
+        "display" : "Room temperature"
+      },
+      {
+        "code" : "C60-2",
+        "display" : "Between 2 °C and 10 °C"
+      },
+      {
+        "code" : "C60-3",
+        "display" : "Between -18 °C and -35 °C"
+      },
+      {
+        "code" : "C60-4",
+        "display" : "Between -60 °C and -85 °C"
+      },
+      {
+        "code" : "C60-5",
+        "display" : "Liquid nitrogen, -150 °C to -196 °C"
+      },
+      {
+        "code" : "C60-6",
+        "display" : "Other"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/umls",
+      "concept" : [{
+        "code" : "C0439673",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}

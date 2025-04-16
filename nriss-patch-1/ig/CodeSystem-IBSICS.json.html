@@ -1,0 +1,2105 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>IBSI Code System - JSON Representation - FHIR Osiris Implementation Guide v1.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5.122"}
+    h3,h4,h5,h6{--heading-prefix:"5.122"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" no-external="true" href="https://cancer.fr/"><img height="50" alt="inca Logo" src="assets/images/logo-inca.png"/></a>
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
+
+  <div id="ig-search">
+ </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Osiris Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.1.0 - trial-implementation
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="valuesets.html">ValueSets</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts Summary</a>
+  </li>
+  <li>
+    <a href="requests.html">Requests Example</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://github.com/siric-osiris/OSIRIS">OSIRIS Spec </a>
+      </li>
+      <li>
+        <a target="_blank" href="http://cancer.fr/">inca website </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>IBSI Code System</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v1.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://ig-osiris.cancer.fr/ig/osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-IBSICS.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-IBSICS.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-IBSICS.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: IBSI Code System - JSON Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2025-04-16
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-IBSICS.json" no-download="true">Raw json</a> | <a href="CodeSystem-IBSICS.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "IBSICS",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem IBSICS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;IBSICS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcIBSICS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;IBSICS-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;This  code system &lt;code&gt;https://ibsi.readthedocs.io/en/latest/&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HCUG&lt;a name=\&quot;IBSICS-HCUG\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Morphological features&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;RNU0&lt;a name=\&quot;IBSICS-RNU0\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Volume&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;YEKZ&lt;a name=\&quot;IBSICS-YEKZ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Approximate volume&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;C0JK&lt;a name=\&quot;IBSICS-C0JK\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Surface area&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2PR5&lt;a name=\&quot;IBSICS-2PR5\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Surface to volume ratio&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SKGS&lt;a name=\&quot;IBSICS-SKGS\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Compactness 1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;BQWJ&lt;a name=\&quot;IBSICS-BQWJ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Compactness 2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;KRCK&lt;a name=\&quot;IBSICS-KRCK\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spherical disproportion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;QCFX&lt;a name=\&quot;IBSICS-QCFX\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sphericity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;25C7&lt;a name=\&quot;IBSICS-25C7\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Asphericity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;KLMA&lt;a name=\&quot;IBSICS-KLMA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Centre of mass shift&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L0JK&lt;a name=\&quot;IBSICS-L0JK\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Maximum 3D diameter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TDIC&lt;a name=\&quot;IBSICS-TDIC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Major axis length&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;P9VJ&lt;a name=\&quot;IBSICS-P9VJ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Minor axis length&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;7J51&lt;a name=\&quot;IBSICS-7J51\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Least axis length&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Q3CK&lt;a name=\&quot;IBSICS-Q3CK\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Elongation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;N17B&lt;a name=\&quot;IBSICS-N17B\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Flatness&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PBX1&lt;a name=\&quot;IBSICS-PBX1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Volume density - axis-aligned bounding box&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;R59B&lt;a name=\&quot;IBSICS-R59B\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Area density - axis-aligned bounding box&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ZH1A&lt;a name=\&quot;IBSICS-ZH1A\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Volume density - oriented minimum bounding box&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;IQYR&lt;a name=\&quot;IBSICS-IQYR\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Area density - oriented minimum bounding box&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;6BDE&lt;a name=\&quot;IBSICS-6BDE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Volume density - approximate enclosing ellipsoid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;RDD2&lt;a name=\&quot;IBSICS-RDD2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Area density - approximate enclosing ellipsoid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SWZ1&lt;a name=\&quot;IBSICS-SWZ1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Volume density - minimum volume enclosing ellipsoid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;BRI8&lt;a name=\&quot;IBSICS-BRI8\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Area density - minimum volume enclosing ellipsoid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;R3ER&lt;a name=\&quot;IBSICS-R3ER\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Volume density - convex hull&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;7T7F&lt;a name=\&quot;IBSICS-7T7F\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Area density - convex hull&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;99N0&lt;a name=\&quot;IBSICS-99N0\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Integrated intensity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;N365&lt;a name=\&quot;IBSICS-N365\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Moran's I index&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPT7&lt;a name=\&quot;IBSICS-NPT7\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Geary's C measure&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9ST6&lt;a name=\&quot;IBSICS-9ST6\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Local intensity features&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;VJGA&lt;a name=\&quot;IBSICS-VJGA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Local intensity peak&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0F91&lt;a name=\&quot;IBSICS-0F91\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Global intensity peak&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;UHIW&lt;a name=\&quot;IBSICS-UHIW\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity-based statistical features&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Q4LE&lt;a name=\&quot;IBSICS-Q4LE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mean&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ECT3&lt;a name=\&quot;IBSICS-ECT3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Variance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;KE2A&lt;a name=\&quot;IBSICS-KE2A\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Skewness&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;IPH6&lt;a name=\&quot;IBSICS-IPH6\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kurtosis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Y12H&lt;a name=\&quot;IBSICS-Y12H\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Median&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1GSF&lt;a name=\&quot;IBSICS-1GSF\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Minimum grey level&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;QG58&lt;a name=\&quot;IBSICS-QG58\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;10th percentile&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;8DWT&lt;a name=\&quot;IBSICS-8DWT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;90th percentile&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;84IY&lt;a name=\&quot;IBSICS-84IY\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Maximum grey level&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SALO&lt;a name=\&quot;IBSICS-SALO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Interquartile range&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2OJQ&lt;a name=\&quot;IBSICS-2OJQ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Range&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4FUA&lt;a name=\&quot;IBSICS-4FUA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mean absolute deviation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1128&lt;a name=\&quot;IBSICS-1128\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Robust mean absolute deviation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;N72L&lt;a name=\&quot;IBSICS-N72L\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Median absolute deviation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;7TET&lt;a name=\&quot;IBSICS-7TET\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Coefficient of variation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9S40&lt;a name=\&quot;IBSICS-9S40\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Quartile coefficient of dispersion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;N8CA&lt;a name=\&quot;IBSICS-N8CA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Energy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;5ZWQ&lt;a name=\&quot;IBSICS-5ZWQ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Root mean square&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ZVCW&lt;a name=\&quot;IBSICS-ZVCW\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity histogram features&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;X6K6&lt;a name=\&quot;IBSICS-X6K6\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity histogram mean&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CH89&lt;a name=\&quot;IBSICS-CH89\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity histogram variance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;88K1&lt;a name=\&quot;IBSICS-88K1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity histogram skewness&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;C3I7&lt;a name=\&quot;IBSICS-C3I7\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity histogram kurtosis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;WIFQ&lt;a name=\&quot;IBSICS-WIFQ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity histogram median&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1PR8&lt;a name=\&quot;IBSICS-1PR8\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity histogram minimum grey level&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;GPMT&lt;a name=\&quot;IBSICS-GPMT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity histogram 10th percentile&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;OZ0C&lt;a name=\&quot;IBSICS-OZ0C\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity histogram 90th percentile&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3NCY&lt;a name=\&quot;IBSICS-3NCY\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity histogram maximum grey level&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AMMC&lt;a name=\&quot;IBSICS-AMMC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity histogram mode&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;WR0O&lt;a name=\&quot;IBSICS-WR0O\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity histogram interquartile range&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;5Z3W&lt;a name=\&quot;IBSICS-5Z3W\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity histogram range&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;D2ZX&lt;a name=\&quot;IBSICS-D2ZX\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity histogram mean absolute deviation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;WRZB&lt;a name=\&quot;IBSICS-WRZB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity histogram robust mean absolute deviation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4RNL&lt;a name=\&quot;IBSICS-4RNL\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity histogram median absolute deviation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CWYJ&lt;a name=\&quot;IBSICS-CWYJ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity histogram coefficient of variation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SLWD&lt;a name=\&quot;IBSICS-SLWD\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity histogram quartile coefficient of dispersion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TLU2&lt;a name=\&quot;IBSICS-TLU2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity histogram entropy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;BJ5W&lt;a name=\&quot;IBSICS-BJ5W\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity histogram uniformity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;12CE&lt;a name=\&quot;IBSICS-12CE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Maximum histogram gradient&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;8E6O&lt;a name=\&quot;IBSICS-8E6O\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Maximum histogram gradient grey level&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;VQB3&lt;a name=\&quot;IBSICS-VQB3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Minimum histogram gradient&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;RHQZ&lt;a name=\&quot;IBSICS-RHQZ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Minimum histogram gradient grey level&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;P88C&lt;a name=\&quot;IBSICS-P88C\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity-volume histogram features&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;BC2M&lt;a name=\&quot;IBSICS-BC2M\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Volume at intensity fraction&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;GBPN&lt;a name=\&quot;IBSICS-GBPN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity at volume fraction&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DDTU&lt;a name=\&quot;IBSICS-DDTU\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Volume fraction difference between intensity fractions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CNV2&lt;a name=\&quot;IBSICS-CNV2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity fraction difference between volume fractions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9CMM&lt;a name=\&quot;IBSICS-9CMM\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Area under IVH curve&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LFYI&lt;a name=\&quot;IBSICS-LFYI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Grey level co-occurrence based features&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;GYBY&lt;a name=\&quot;IBSICS-GYBY\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Joint maximum&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;60VM&lt;a name=\&quot;IBSICS-60VM\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Joint average&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;UR99&lt;a name=\&quot;IBSICS-UR99\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Joint variance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TU9B&lt;a name=\&quot;IBSICS-TU9B\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Joint entropy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TF7R&lt;a name=\&quot;IBSICS-TF7R\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Difference average&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;D3YU&lt;a name=\&quot;IBSICS-D3YU\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Difference variance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NTRS&lt;a name=\&quot;IBSICS-NTRS\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Difference entropy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ZGXS&lt;a name=\&quot;IBSICS-ZGXS\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sum average&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;OEEB&lt;a name=\&quot;IBSICS-OEEB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sum variance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;P6QZ&lt;a name=\&quot;IBSICS-P6QZ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sum entropy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;8ZQL&lt;a name=\&quot;IBSICS-8ZQL\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Angular second moment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ACUI&lt;a name=\&quot;IBSICS-ACUI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Contrast&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;8S9J&lt;a name=\&quot;IBSICS-8S9J\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dissimilarity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;IB1Z&lt;a name=\&quot;IBSICS-IB1Z\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inverse difference&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NDRX&lt;a name=\&quot;IBSICS-NDRX\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Normalised inverse difference&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;WF0Z&lt;a name=\&quot;IBSICS-WF0Z\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inverse difference moment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1QCO&lt;a name=\&quot;IBSICS-1QCO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Normalised inverse difference moment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;E8JP&lt;a name=\&quot;IBSICS-E8JP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inverse variance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NI2N&lt;a name=\&quot;IBSICS-NI2N\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Correlation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;QWB0&lt;a name=\&quot;IBSICS-QWB0\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Autocorrelation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DG8W&lt;a name=\&quot;IBSICS-DG8W\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cluster tendency&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;7NFM&lt;a name=\&quot;IBSICS-7NFM\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cluster shade&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AE86&lt;a name=\&quot;IBSICS-AE86\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cluster prominence&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;R8DG&lt;a name=\&quot;IBSICS-R8DG\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;First measure of information correlation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;JN9H&lt;a name=\&quot;IBSICS-JN9H\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Second measure of information correlation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TP0I&lt;a name=\&quot;IBSICS-TP0I\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Grey level run length based features&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;22OV&lt;a name=\&quot;IBSICS-22OV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Short runs emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W4KF&lt;a name=\&quot;IBSICS-W4KF\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Long runs emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;V3SW&lt;a name=\&quot;IBSICS-V3SW\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Low grey level run emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;G3QZ&lt;a name=\&quot;IBSICS-G3QZ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;High grey level run emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HTZT&lt;a name=\&quot;IBSICS-HTZT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Short run low grey level emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;GD3A&lt;a name=\&quot;IBSICS-GD3A\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Short run high grey level emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;IVPO&lt;a name=\&quot;IBSICS-IVPO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Long run low grey level emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3KUM&lt;a name=\&quot;IBSICS-3KUM\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Long run high grey level emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;R5YN&lt;a name=\&quot;IBSICS-R5YN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Grey level non-uniformity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;OVBL&lt;a name=\&quot;IBSICS-OVBL\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Normalised grey level non-uniformity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W92Y&lt;a name=\&quot;IBSICS-W92Y\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Run length non-uniformity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;IC23&lt;a name=\&quot;IBSICS-IC23\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Normalised run length non-uniformity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9ZK5&lt;a name=\&quot;IBSICS-9ZK5\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Run percentage&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;8CE5&lt;a name=\&quot;IBSICS-8CE5\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Grey level variance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SXLW&lt;a name=\&quot;IBSICS-SXLW\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Run length variance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HJ9O&lt;a name=\&quot;IBSICS-HJ9O\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Run entropy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9SAK&lt;a name=\&quot;IBSICS-9SAK\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Grey level size zone based features&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;5QRC&lt;a name=\&quot;IBSICS-5QRC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Small zone emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;48P8&lt;a name=\&quot;IBSICS-48P8\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Large zone emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;XMSY&lt;a name=\&quot;IBSICS-XMSY\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Low grey level zone emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;5GN9&lt;a name=\&quot;IBSICS-5GN9\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;High grey level zone emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;5RAI&lt;a name=\&quot;IBSICS-5RAI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Small zone low grey level emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HW1V&lt;a name=\&quot;IBSICS-HW1V\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Small zone high grey level emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;YH51&lt;a name=\&quot;IBSICS-YH51\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Large zone low grey level emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J17V&lt;a name=\&quot;IBSICS-J17V\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Large zone high grey level emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;JNSA&lt;a name=\&quot;IBSICS-JNSA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Grey level non-uniformity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Y1RO&lt;a name=\&quot;IBSICS-Y1RO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Normalised grey level non-uniformity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4JP3&lt;a name=\&quot;IBSICS-4JP3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zone size non-uniformity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;VB3A&lt;a name=\&quot;IBSICS-VB3A\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Normalised zone size non-uniformity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;P30P&lt;a name=\&quot;IBSICS-P30P\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zone percentage&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;BYLV&lt;a name=\&quot;IBSICS-BYLV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Grey level variance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3NSA&lt;a name=\&quot;IBSICS-3NSA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zone size variance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;GU8N&lt;a name=\&quot;IBSICS-GU8N\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zone size entropy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;VMDZ&lt;a name=\&quot;IBSICS-VMDZ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Grey level distance zone based features&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0GBI&lt;a name=\&quot;IBSICS-0GBI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Small distance emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MB4I&lt;a name=\&quot;IBSICS-MB4I\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Large distance emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;S1RA&lt;a name=\&quot;IBSICS-S1RA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Low grey level zone emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;K26C&lt;a name=\&quot;IBSICS-K26C\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;High grey level zone emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;RUVG&lt;a name=\&quot;IBSICS-RUVG\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Small distance low grey level emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DKNJ&lt;a name=\&quot;IBSICS-DKNJ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Small distance high grey level emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;A7WM&lt;a name=\&quot;IBSICS-A7WM\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Large distance low grey level emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;KLTH&lt;a name=\&quot;IBSICS-KLTH\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Large distance high grey level emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;VFT7&lt;a name=\&quot;IBSICS-VFT7\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Grey level non-uniformity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;7HP3&lt;a name=\&quot;IBSICS-7HP3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Normalised grey level non-uniformity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;V294&lt;a name=\&quot;IBSICS-V294\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zone distance non-uniformity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;IATH&lt;a name=\&quot;IBSICS-IATH\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zone distance non-uniformity normalised&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;VIWW&lt;a name=\&quot;IBSICS-VIWW\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zone percentage&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;QK93&lt;a name=\&quot;IBSICS-QK93\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Grey level variance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;7WT1&lt;a name=\&quot;IBSICS-7WT1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zone distance variance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;GBDU&lt;a name=\&quot;IBSICS-GBDU\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zone distance entropy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;IPET&lt;a name=\&quot;IBSICS-IPET\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neighbourhood grey tone difference based features&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;QCDE&lt;a name=\&quot;IBSICS-QCDE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Coarseness&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;65HE&lt;a name=\&quot;IBSICS-65HE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Contrast&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NQ30&lt;a name=\&quot;IBSICS-NQ30\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Busyness&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HDEZ&lt;a name=\&quot;IBSICS-HDEZ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Complexity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1X9X&lt;a name=\&quot;IBSICS-1X9X\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Strength&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;REK0&lt;a name=\&quot;IBSICS-REK0\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neighbouring grey level dependence based features&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SODN&lt;a name=\&quot;IBSICS-SODN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Low dependence emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;IMOQ&lt;a name=\&quot;IBSICS-IMOQ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;High dependence emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TL9H&lt;a name=\&quot;IBSICS-TL9H\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Low grey level count emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;OAE7&lt;a name=\&quot;IBSICS-OAE7\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;High grey level count emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EQ3F&lt;a name=\&quot;IBSICS-EQ3F\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Low dependence low grey level emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;JA6D&lt;a name=\&quot;IBSICS-JA6D\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Low dependence high grey level emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NBZI&lt;a name=\&quot;IBSICS-NBZI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;High dependence low grey level emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9QMG&lt;a name=\&quot;IBSICS-9QMG\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;High dependence high grey level emphasis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;FP8K&lt;a name=\&quot;IBSICS-FP8K\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Grey level non-uniformity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;5SPA&lt;a name=\&quot;IBSICS-5SPA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Normalised grey level non-uniformity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Z87G&lt;a name=\&quot;IBSICS-Z87G\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dependence count non-uniformity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;OKJI&lt;a name=\&quot;IBSICS-OKJI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dependence count non-uniformity normalised&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;6XV8&lt;a name=\&quot;IBSICS-6XV8\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dependence count percentage&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1PFV&lt;a name=\&quot;IBSICS-1PFV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Grey level variance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DNX2&lt;a name=\&quot;IBSICS-DNX2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dependence count variance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;FCBV&lt;a name=\&quot;IBSICS-FCBV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dependence count entropy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CAS9&lt;a name=\&quot;IBSICS-CAS9\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dependence count energy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;5QB6&lt;a name=\&quot;IBSICS-5QB6\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;feature aggregation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3IDG&lt;a name=\&quot;IBSICS-3IDG\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;feature computed per slice, and averaged over slices&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DHQ4&lt;a name=\&quot;IBSICS-DHQ4\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;feature computed over the volume&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;BTW3&lt;a name=\&quot;IBSICS-BTW3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;feature computed from 2D directional matrix and averaged over 2D directions and slices&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SUJT&lt;a name=\&quot;IBSICS-SUJT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;feature computed from a single matrix after merging 2D directional matrices per slice, and averaged over slices&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ZW7Z&lt;a name=\&quot;IBSICS-ZW7Z\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;feature computed from a single matrix after merging all 2D directional matrices&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ITBB&lt;a name=\&quot;IBSICS-ITBB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;feature computed from 3D directional matrix and averaged over 3D directions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;IAZD&lt;a name=\&quot;IBSICS-IAZD\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;feature computed from a single matrix after merging all 3D directional matrices&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;8QNN&lt;a name=\&quot;IBSICS-8QNN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;feature computed from 2D matrix and averaged over slices&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;62GR&lt;a name=\&quot;IBSICS-62GR\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;feature computed from a single matrix after merging all 2D matrices&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;KOBO&lt;a name=\&quot;IBSICS-KOBO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;feature computed from 3D matrix&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MPUJ&lt;a name=\&quot;IBSICS-MPUJ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;grid distances&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LIFZ&lt;a name=\&quot;IBSICS-LIFZ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;manhattan norm&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;G9EV&lt;a name=\&quot;IBSICS-G9EV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;euclidean norm&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PVMT&lt;a name=\&quot;IBSICS-PVMT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;chebyshev norm&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ECJF&lt;a name=\&quot;IBSICS-ECJF\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ROI submasks&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SEFI&lt;a name=\&quot;IBSICS-SEFI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;intensity mask&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;G5KJ&lt;a name=\&quot;IBSICS-G5KJ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;morphological mask&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;IF9H&lt;a name=\&quot;IBSICS-IF9H\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;re-segmentation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;USB3&lt;a name=\&quot;IBSICS-USB3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;range re-segmentation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;7ACA&lt;a name=\&quot;IBSICS-7ACA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;outlier filtering&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;6CK8&lt;a name=\&quot;IBSICS-6CK8\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;distance weighting&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LQD8&lt;a name=\&quot;IBSICS-LQD8\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;volume voxel representation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4KW8&lt;a name=\&quot;IBSICS-4KW8\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;volume voxel point set representation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;WRJH&lt;a name=\&quot;IBSICS-WRJH\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;volume voxel mesh representation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4R0B&lt;a name=\&quot;IBSICS-4R0B\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;discretisation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Q3RU&lt;a name=\&quot;IBSICS-Q3RU\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;fixed bin size&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;K15C&lt;a name=\&quot;IBSICS-K15C\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;fixed bin number&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;23XZ&lt;a name=\&quot;IBSICS-23XZ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;data conversion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PCDE&lt;a name=\&quot;IBSICS-PCDE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;image post-acquisition processing&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;OQYT&lt;a name=\&quot;IBSICS-OQYT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;segmentation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;VTM2&lt;a name=\&quot;IBSICS-VTM2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;interpolation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;68QD&lt;a name=\&quot;IBSICS-68QD\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;intensity rounding after interpolation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;E8H9&lt;a name=\&quot;IBSICS-E8H9\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;roi mask partial volume&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;UMPJ&lt;a name=\&quot;IBSICS-UMPJ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;interpolation grid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;58MB&lt;a name=\&quot;IBSICS-58MB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;fit to original grid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SBKJ&lt;a name=\&quot;IBSICS-SBKJ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;align grid origins&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3WE3&lt;a name=\&quot;IBSICS-3WE3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;align grid centers&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;026Q&lt;a name=\&quot;IBSICS-026Q\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;align grid centers interpolation grid dimensions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;QCY4&lt;a name=\&quot;IBSICS-QCY4\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;align grid centers grid positions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1OBP&lt;a name=\&quot;IBSICS-1OBP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ROI extraction&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;JJUI&lt;a name=\&quot;IBSICS-JJUI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;feature computed from a single matrix after merging 2D directional matrices per direction, and averaged over directions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;GFJV&lt;a name=\&quot;IBSICS-GFJV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Calculation Run Space&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CINW&lt;a name=\&quot;IBSICS-CINW\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;FeatureParameterSpace&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1XL1&lt;a name=\&quot;IBSICS-1XL1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;texture matrix aggregation parameters&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;8QU8&lt;a name=\&quot;IBSICS-8QU8\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;intensity discretization parameters&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;I7X7&lt;a name=\&quot;IBSICS-I7X7\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;histogram equalisation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SSX6&lt;a name=\&quot;IBSICS-SSX6\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lloyd-Max discretisation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;OWOH&lt;a name=\&quot;IBSICS-OWOH\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;feature specific parameters&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9LZ9&lt;a name=\&quot;IBSICS-9LZ9\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;asymmetrical co-occurrence matrix&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2IQV&lt;a name=\&quot;IBSICS-2IQV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;symmetrical co-occurrence matrix&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3S2S&lt;a name=\&quot;IBSICS-3S2S\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;distance weighting function&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;V0L6&lt;a name=\&quot;IBSICS-V0L6\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;no distance weighting&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4S5Z&lt;a name=\&quot;IBSICS-4S5Z\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GLCM specific parameters&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0OW5&lt;a name=\&quot;IBSICS-0OW5\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GLRLM specific parameters&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;6SLW&lt;a name=\&quot;IBSICS-6SLW\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GLDZM specific parameters&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MV8M&lt;a name=\&quot;IBSICS-MV8M\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;NGTDM specific parameters&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;KQW7&lt;a name=\&quot;IBSICS-KQW7\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;IntVolSpecificParameters&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;X6TI&lt;a name=\&quot;IBSICS-X6TI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MaximumBound&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;V2QW&lt;a name=\&quot;IBSICS-V2QW\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MinimumBound&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;G5MN&lt;a name=\&quot;IBSICS-G5MN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;isovalue algorithm&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CRAM&lt;a name=\&quot;IBSICS-CRAM\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;marching cube algorithm&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;FFWD&lt;a name=\&quot;IBSICS-FFWD\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Morphological features specific parameters&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;VXRR&lt;a name=\&quot;IBSICS-VXRR\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;dependence coarseness parameter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NV3D&lt;a name=\&quot;IBSICS-NV3D\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;cubic convolution interpolation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2I2N&lt;a name=\&quot;IBSICS-2I2N\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;cubic spline interpolation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;X13G&lt;a name=\&quot;IBSICS-X13G\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;linear interpolation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EY9L&lt;a name=\&quot;IBSICS-EY9L\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;nearest neighbour interpolation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;QP79&lt;a name=\&quot;IBSICS-QP79\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;re-segmentation parameters&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LQBA&lt;a name=\&quot;IBSICS-LQBA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;spatial filter properties&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;WZSA&lt;a name=\&quot;IBSICS-WZSA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;wavelet basis function&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;QVI9&lt;a name=\&quot;IBSICS-QVI9\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;biorthogonal 3.5 wavelet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2CYL&lt;a name=\&quot;IBSICS-2CYL\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;coiflet 1 wavelet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;FR3E&lt;a name=\&quot;IBSICS-FR3E\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;haar wavelet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;P8W0&lt;a name=\&quot;IBSICS-P8W0\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;frequency&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;IA9Q&lt;a name=\&quot;IBSICS-IA9Q\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;wavelet filter direction&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LCNJ&lt;a name=\&quot;IBSICS-LCNJ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HHH wavelet direction&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;S7CG&lt;a name=\&quot;IBSICS-S7CG\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HHL wavelet direction&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;UFRT&lt;a name=\&quot;IBSICS-UFRT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HLH wavelet direction&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;RZ96&lt;a name=\&quot;IBSICS-RZ96\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HLL wavelet direction&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CJ43&lt;a name=\&quot;IBSICS-CJ43\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LHH wavelet direction&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;76ZU&lt;a name=\&quot;IBSICS-76ZU\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LHL wavelet direction&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NTRN&lt;a name=\&quot;IBSICS-NTRN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LLL wavelet direction&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;6FPA&lt;a name=\&quot;IBSICS-6FPA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LLH wavelet direction&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;G6RO&lt;a name=\&quot;IBSICS-G6RO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;image grey level rounding&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;IZBZ&lt;a name=\&quot;IBSICS-IZBZ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;edge enhancement&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ZS1T&lt;a name=\&quot;IBSICS-ZS1T\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HistoEqualization&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Q2ZB&lt;a name=\&quot;IBSICS-Q2ZB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LocalAreaHistoEqualization&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;OB71&lt;a name=\&quot;IBSICS-OB71\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ImageSpace&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;K7BL&lt;a name=\&quot;IBSICS-K7BL\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ImageVolume&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;OH8W&lt;a name=\&quot;IBSICS-OH8W\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ROIMask&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;GF95&lt;a name=\&quot;IBSICS-GF95\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;IntensityHistogramStandardDeviation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;URTB&lt;a name=\&quot;IBSICS-URTB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;IntensityHistogramTotalEnergy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;5ABU&lt;a name=\&quot;IBSICS-5ABU\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Maximum2DDiameterColumn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4S59&lt;a name=\&quot;IBSICS-4S59\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Maximum2DDiameterSlice&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;K57E&lt;a name=\&quot;IBSICS-K57E\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Maximum2DDiameterRow&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EGTD&lt;a name=\&quot;IBSICS-EGTD\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Textural&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;5XL6&lt;a name=\&quot;IBSICS-5XL6\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GLCM_MaximalCorrelationCoefficient&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9U4X&lt;a name=\&quot;IBSICS-9U4X\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ZeroOrder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PWN1&lt;a name=\&quot;IBSICS-PWN1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;I10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;BOHI&lt;a name=\&quot;IBSICS-BOHI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;I90&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;JXJA&lt;a name=\&quot;IBSICS-JXJA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;I10minusI90&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NK6P&lt;a name=\&quot;IBSICS-NK6P\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;V10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4279&lt;a name=\&quot;IBSICS-4279\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;V90&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;WITY&lt;a name=\&quot;IBSICS-WITY\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;V10minusV90&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J04R&lt;a name=\&quot;IBSICS-J04R\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;NGLDMSpecificParameters&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ASHO&lt;a name=\&quot;IBSICS-ASHO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Voxel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NOVP&lt;a name=\&quot;IBSICS-NOVP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ImageFilterSpace&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;XSJL&lt;a name=\&quot;IBSICS-XSJL\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AbsoluteFiltering&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1WTP&lt;a name=\&quot;IBSICS-1WTP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ButterworthFilter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PJBO&lt;a name=\&quot;IBSICS-PJBO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ColliageFilter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;FTIJ&lt;a name=\&quot;IBSICS-FTIJ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MedianFilter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9IQY&lt;a name=\&quot;IBSICS-9IQY\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SavitzkyGolayFilter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SUUU&lt;a name=\&quot;IBSICS-SUUU\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;WaveletFilter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;WVUQ&lt;a name=\&quot;IBSICS-WVUQ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ROIMask_PartialVolumeCutOff&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;REY6&lt;a name=\&quot;IBSICS-REY6\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SegmentationMethods&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SBDE&lt;a name=\&quot;IBSICS-SBDE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Automated&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;OAX6&lt;a name=\&quot;IBSICS-OAX6\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Manual&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TGHU&lt;a name=\&quot;IBSICS-TGHU\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SemiAutomated&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;6VTB&lt;a name=\&quot;IBSICS-6VTB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SupervisedMethods&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TV5D&lt;a name=\&quot;IBSICS-TV5D\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;DeepLearning&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;KJIF&lt;a name=\&quot;IBSICS-KJIF\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;NeuralNetwork&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;D3RT&lt;a name=\&quot;IBSICS-D3RT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SupportVectorMachine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ZJJY&lt;a name=\&quot;IBSICS-ZJJY\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;UnsupervisedMethods&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2KAW&lt;a name=\&quot;IBSICS-2KAW\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CMeansFuzzy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;OPMG&lt;a name=\&quot;IBSICS-OPMG\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kmean&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HF5R&lt;a name=\&quot;IBSICS-HF5R\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Manual&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W455&lt;a name=\&quot;IBSICS-W455\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;InPolygon&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;8LVU&lt;a name=\&quot;IBSICS-8LVU\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RayCasting&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;WAB9&lt;a name=\&quot;IBSICS-WAB9\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EdgeBased&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;XL0Q&lt;a name=\&quot;IBSICS-XL0Q\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GradientEdgeBased&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;N20K&lt;a name=\&quot;IBSICS-N20K\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HoughTransformBased&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;VZXY&lt;a name=\&quot;IBSICS-VZXY\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LaplacianEdgeBased&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EOOR&lt;a name=\&quot;IBSICS-EOOR\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MarrHildrethEdgeBased&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Q6DD&lt;a name=\&quot;IBSICS-Q6DD\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ModelBased&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MGZ1&lt;a name=\&quot;IBSICS-MGZ1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ActiveShape&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SR1C&lt;a name=\&quot;IBSICS-SR1C\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AppereanceModel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LAQN&lt;a name=\&quot;IBSICS-LAQN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AtlasModel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;UU0Q&lt;a name=\&quot;IBSICS-UU0Q\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;DeformableModel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ZCA3&lt;a name=\&quot;IBSICS-ZCA3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RegionBased&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;RZ08&lt;a name=\&quot;IBSICS-RZ08\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RegionGrowing&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;A9GC&lt;a name=\&quot;IBSICS-A9GC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RegionSplitting&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAWD&lt;a name=\&quot;IBSICS-TAWD\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SplitAndMerge&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Q025&lt;a name=\&quot;IBSICS-Q025\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;WatershedAlgorithm&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L2WC&lt;a name=\&quot;IBSICS-L2WC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ThresholdingBased&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;E8C8&lt;a name=\&quot;IBSICS-E8C8\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GlobalThresholding&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;81TK&lt;a name=\&quot;IBSICS-81TK\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LocalAdaptiveThresholding&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4VLP&lt;a name=\&quot;IBSICS-4VLP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Institution&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DTYK&lt;a name=\&quot;IBSICS-DTYK\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Phantom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;YUBG&lt;a name=\&quot;IBSICS-YUBG\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Software&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SU1L&lt;a name=\&quot;IBSICS-SU1L\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SoftwareProperties&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;59QT&lt;a name=\&quot;IBSICS-59QT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;License&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1DUG&lt;a name=\&quot;IBSICS-1DUG\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OpenSource&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;G91N&lt;a name=\&quot;IBSICS-G91N\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Proprietary&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W2J1&lt;a name=\&quot;IBSICS-W2J1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Version&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M9H0&lt;a name=\&quot;IBSICS-M9H0\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;VersionStatus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4AGS&lt;a name=\&quot;IBSICS-4AGS\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Filter application&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;7QSE&lt;a name=\&quot;IBSICS-7QSE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;filter in axial plane&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0ODV&lt;a name=\&quot;IBSICS-0ODV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;volumetric filter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;GBYQ&lt;a name=\&quot;IBSICS-GBYQ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;boundary condition&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Z3VE&lt;a name=\&quot;IBSICS-Z3VE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;constant value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SIJG&lt;a name=\&quot;IBSICS-SIJG\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;nearest value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Z7YO&lt;a name=\&quot;IBSICS-Z7YO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;periodic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ZDTV&lt;a name=\&quot;IBSICS-ZDTV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;mirror&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;S60F&lt;a name=\&quot;IBSICS-S60F\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MeanFilter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;YNOF&lt;a name=\&quot;IBSICS-YNOF\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;kernel support&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;8BC3&lt;a name=\&quot;IBSICS-8BC3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GaussianFilter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L6PA&lt;a name=\&quot;IBSICS-L6PA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LaplacianFilter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;41LN&lt;a name=\&quot;IBSICS-41LN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gaussian envelope scale&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;WGPM&lt;a name=\&quot;IBSICS-WGPM\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Filter size cutoff&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;JTXT&lt;a name=\&quot;IBSICS-JTXT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laws kernel filter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;JVAD&lt;a name=\&quot;IBSICS-JVAD\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laws kernels&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;B5BZ&lt;a name=\&quot;IBSICS-B5BZ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laws L3 kernel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;6HRH&lt;a name=\&quot;IBSICS-6HRH\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laws L5 kernel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LJ4T&lt;a name=\&quot;IBSICS-LJ4T\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laws E3 kernel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2WPV&lt;a name=\&quot;IBSICS-2WPV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laws E5 kernel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MK5Z&lt;a name=\&quot;IBSICS-MK5Z\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laws S3 kernel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;RXA1&lt;a name=\&quot;IBSICS-RXA1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laws S5 kernel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4ENO&lt;a name=\&quot;IBSICS-4ENO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laws W5 kernel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3A1W&lt;a name=\&quot;IBSICS-3A1W\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laws R5 kernel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;O1AQ&lt;a name=\&quot;IBSICS-O1AQ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pseudo-rotational invariance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SVKW&lt;a name=\&quot;IBSICS-SVKW\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Response map pooling&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M1CY&lt;a name=\&quot;IBSICS-M1CY\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;average&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0TAW&lt;a name=\&quot;IBSICS-0TAW\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;max&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DUX4&lt;a name=\&quot;IBSICS-DUX4\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;min&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PQSD&lt;a name=\&quot;IBSICS-PQSD\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laws energy map&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;I176&lt;a name=\&quot;IBSICS-I176\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laws energy map distance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Q88H&lt;a name=\&quot;IBSICS-Q88H\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GaborFilter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;S4N6&lt;a name=\&quot;IBSICS-S4N6\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gabor wavelength lambda&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;GDR5&lt;a name=\&quot;IBSICS-GDR5\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gabor ellipticity gamma&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;FQER&lt;a name=\&quot;IBSICS-FQER\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gabor orientation theta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;XTGK&lt;a name=\&quot;IBSICS-XTGK\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gabor orientation theta step&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;25BO&lt;a name=\&quot;IBSICS-25BO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Separable wavelets&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;BPXS&lt;a name=\&quot;IBSICS-BPXS\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Separable wavelet family&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;UOUE&lt;a name=\&quot;IBSICS-UOUE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;haar wavelet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;UK1F&lt;a name=\&quot;IBSICS-UK1F\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Separable wavelet filter combination&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PPF6&lt;a name=\&quot;IBSICS-PPF6\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LL wavelet combination&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;P60O&lt;a name=\&quot;IBSICS-P60O\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HL wavelet combination&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M0S1&lt;a name=\&quot;IBSICS-M0S1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LH wavelet combination&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;WQ2Z&lt;a name=\&quot;IBSICS-WQ2Z\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HH wavelet combination&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;KZAS&lt;a name=\&quot;IBSICS-KZAS\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LLL wavelet combination&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TY49&lt;a name=\&quot;IBSICS-TY49\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LLH wavelet combination&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4KRX&lt;a name=\&quot;IBSICS-4KRX\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LHL wavelet combination&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;UUV9&lt;a name=\&quot;IBSICS-UUV9\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HLL wavelet combination&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;UIT8&lt;a name=\&quot;IBSICS-UIT8\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LHH wavelet combination&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;QTIT&lt;a name=\&quot;IBSICS-QTIT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HHL wavelet combination&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;8LD2&lt;a name=\&quot;IBSICS-8LD2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HLH wavelet combination&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;OYUC&lt;a name=\&quot;IBSICS-OYUC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HHH wavelet combination&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;GCEK&lt;a name=\&quot;IBSICS-GCEK\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;wavelet decomposition level&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PH3R&lt;a name=\&quot;IBSICS-PH3R\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Separable wavelet decimated transform&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CVCQ&lt;a name=\&quot;IBSICS-CVCQ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Separable wavelet undecimated transform&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LODD&lt;a name=\&quot;IBSICS-LODD\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Non-separable wavelet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;389V&lt;a name=\&quot;IBSICS-389V\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Non-separable wavelet family&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;GWM2&lt;a name=\&quot;IBSICS-GWM2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Shannon wavelet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PRT7&lt;a name=\&quot;IBSICS-PRT7\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Simoncelli wavelet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AYRS&lt;a name=\&quot;IBSICS-AYRS\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Riesz transformation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;OC48&lt;a name=\&quot;IBSICS-OC48\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Riesz transformation order&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1SD3&lt;a name=\&quot;IBSICS-1SD3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Riesz filter steering&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;XKP5&lt;a name=\&quot;IBSICS-XKP5\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Image dimension&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1F0N&lt;a name=\&quot;IBSICS-1F0N\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;k1-direction&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M2EZ&lt;a name=\&quot;IBSICS-M2EZ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;k2-direction&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;R83H&lt;a name=\&quot;IBSICS-R83H\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;k3-direction&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Y4GJ&lt;a name=\&quot;IBSICS-Y4GJ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Convolution operation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;YHT3&lt;a name=\&quot;IBSICS-YHT3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aggregating intensities from a response map&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;5P3T&lt;a name=\&quot;IBSICS-5P3T\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Response map&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0J1M&lt;a name=\&quot;IBSICS-0J1M\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;modulus, magnitude or absolute response map&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;V530&lt;a name=\&quot;IBSICS-V530\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;angle, phase or argument response map&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;F7DI&lt;a name=\&quot;IBSICS-F7DI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;real&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LI3Y&lt;a name=\&quot;IBSICS-LI3Y\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;imaginary&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;52&lt;a name=\&quot;IBSICS-52\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intensity rounding: Describe how fractional Hounsfield Units are rounded to integer values after interpolation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;56a&lt;a name=\&quot;IBSICS-56a\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Discretisation method: Describe the method used to discretise image intensities&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;56b&lt;a name=\&quot;IBSICS-56b\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Discretisation method: Describe the number of bins (FBN) or the bin size (FBS) used for discretisation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;56c&lt;a name=\&quot;IBSICS-56c\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Discretisation method: Describe the lowest intensity in the first bin for FBS discretisation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;61&lt;a name=\&quot;IBSICS-61\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Software availability: Describe which software and version was used to compute image biomarkers&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;62&lt;a name=\&quot;IBSICS-62\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Texture matrix aggregation: Define how texture-matrix based biomarkers were computed from underlying texture matrices&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;63&lt;a name=\&quot;IBSICS-63\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Distance weighting: Describe which software and version was used to compute image biomarkers&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://ibsi.readthedocs.io/en/latest/",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "1.1.0",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "IBSICS",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "IBSI Code System",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2025-04-16T19:28:51+00:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "institutcancer",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "institutcancer",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://cancer.fr"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "osiris@institutcancer.fr"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Aurélien JOBARD",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "osiris@institutcancer.fr"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "IBSI Code System",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 419,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "HCUG",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Morphological features"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "RNU0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Volume"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "YEKZ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Approximate volume"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "C0JK",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Surface area"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2PR5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Surface to volume ratio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SKGS",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Compactness 1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "BQWJ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Compactness 2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "KRCK",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Spherical disproportion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "QCFX",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sphericity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "25C7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Asphericity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "KLMA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Centre of mass shift"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L0JK",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Maximum 3D diameter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TDIC",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Major axis length"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "P9VJ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Minor axis length"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "7J51",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Least axis length"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Q3CK",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Elongation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "N17B",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Flatness"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PBX1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Volume density - axis-aligned bounding box"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "R59B",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Area density - axis-aligned bounding box"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ZH1A",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Volume density - oriented minimum bounding box"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "IQYR",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Area density - oriented minimum bounding box"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "6BDE",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Volume density - approximate enclosing ellipsoid"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "RDD2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Area density - approximate enclosing ellipsoid"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SWZ1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Volume density - minimum volume enclosing ellipsoid"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "BRI8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Area density - minimum volume enclosing ellipsoid"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "R3ER",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Volume density - convex hull"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "7T7F",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Area density - convex hull"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "99N0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Integrated intensity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "N365",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Moran's I index"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "NPT7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Geary's C measure"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "9ST6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Local intensity features"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "VJGA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Local intensity peak"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0F91",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Global intensity peak"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "UHIW",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity-based statistical features"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Q4LE",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mean"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ECT3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Variance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "KE2A",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Skewness"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "IPH6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Kurtosis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Y12H",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Median"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1GSF",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Minimum grey level"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "QG58",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "10th percentile"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "8DWT",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "90th percentile"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "84IY",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Maximum grey level"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SALO",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Interquartile range"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2OJQ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Range"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4FUA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mean absolute deviation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1128",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Robust mean absolute deviation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "N72L",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Median absolute deviation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "7TET",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Coefficient of variation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "9S40",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Quartile coefficient of dispersion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "N8CA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Energy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "5ZWQ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Root mean square"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ZVCW",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity histogram features"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "X6K6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity histogram mean"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "CH89",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity histogram variance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "88K1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity histogram skewness"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "C3I7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity histogram kurtosis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "WIFQ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity histogram median"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1PR8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity histogram minimum grey level"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "GPMT",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity histogram 10th percentile"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "OZ0C",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity histogram 90th percentile"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "3NCY",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity histogram maximum grey level"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AMMC",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity histogram mode"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "WR0O",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity histogram interquartile range"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "5Z3W",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity histogram range"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "D2ZX",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity histogram mean absolute deviation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "WRZB",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity histogram robust mean absolute deviation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4RNL",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity histogram median absolute deviation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "CWYJ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity histogram coefficient of variation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SLWD",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity histogram quartile coefficient of dispersion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TLU2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity histogram entropy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "BJ5W",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity histogram uniformity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "12CE",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Maximum histogram gradient"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "8E6O",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Maximum histogram gradient grey level"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "VQB3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Minimum histogram gradient"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "RHQZ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Minimum histogram gradient grey level"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "P88C",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity-volume histogram features"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "BC2M",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Volume at intensity fraction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "GBPN",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity at volume fraction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DDTU",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Volume fraction difference between intensity fractions"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "CNV2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity fraction difference between volume fractions"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "9CMM",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Area under IVH curve"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LFYI",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Grey level co-occurrence based features"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "GYBY",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Joint maximum"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "60VM",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Joint average"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "UR99",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Joint variance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TU9B",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Joint entropy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TF7R",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Difference average"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "D3YU",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Difference variance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "NTRS",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Difference entropy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ZGXS",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sum average"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "OEEB",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sum variance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "P6QZ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sum entropy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "8ZQL",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Angular second moment"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ACUI",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Contrast"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "8S9J",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dissimilarity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "IB1Z",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Inverse difference"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "NDRX",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Normalised inverse difference"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "WF0Z",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Inverse difference moment"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1QCO",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Normalised inverse difference moment"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "E8JP",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Inverse variance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "NI2N",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Correlation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "QWB0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Autocorrelation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DG8W",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cluster tendency"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "7NFM",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cluster shade"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AE86",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cluster prominence"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "R8DG",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "First measure of information correlation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "JN9H",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Second measure of information correlation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TP0I",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Grey level run length based features"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "22OV",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Short runs emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W4KF",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Long runs emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "V3SW",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Low grey level run emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "G3QZ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "High grey level run emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "HTZT",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Short run low grey level emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "GD3A",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Short run high grey level emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "IVPO",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Long run low grey level emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "3KUM",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Long run high grey level emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "R5YN",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Grey level non-uniformity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "OVBL",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Normalised grey level non-uniformity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W92Y",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Run length non-uniformity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "IC23",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Normalised run length non-uniformity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "9ZK5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Run percentage"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "8CE5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Grey level variance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SXLW",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Run length variance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "HJ9O",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Run entropy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "9SAK",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Grey level size zone based features"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "5QRC",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Small zone emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "48P8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Large zone emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "XMSY",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Low grey level zone emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "5GN9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "High grey level zone emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "5RAI",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Small zone low grey level emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "HW1V",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Small zone high grey level emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "YH51",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Large zone low grey level emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J17V",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Large zone high grey level emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "JNSA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Grey level non-uniformity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Y1RO",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Normalised grey level non-uniformity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4JP3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Zone size non-uniformity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "VB3A",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Normalised zone size non-uniformity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "P30P",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Zone percentage"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "BYLV",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Grey level variance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "3NSA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Zone size variance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "GU8N",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Zone size entropy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "VMDZ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Grey level distance zone based features"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0GBI",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Small distance emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MB4I",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Large distance emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "S1RA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Low grey level zone emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "K26C",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "High grey level zone emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "RUVG",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Small distance low grey level emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DKNJ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Small distance high grey level emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "A7WM",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Large distance low grey level emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "KLTH",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Large distance high grey level emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "VFT7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Grey level non-uniformity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "7HP3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Normalised grey level non-uniformity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "V294",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Zone distance non-uniformity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "IATH",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Zone distance non-uniformity normalised"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "VIWW",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Zone percentage"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "QK93",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Grey level variance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "7WT1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Zone distance variance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "GBDU",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Zone distance entropy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "IPET",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Neighbourhood grey tone difference based features"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "QCDE",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Coarseness"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "65HE",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Contrast"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "NQ30",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Busyness"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "HDEZ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Complexity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1X9X",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Strength"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "REK0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Neighbouring grey level dependence based features"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SODN",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Low dependence emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "IMOQ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "High dependence emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TL9H",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Low grey level count emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "OAE7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "High grey level count emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EQ3F",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Low dependence low grey level emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "JA6D",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Low dependence high grey level emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "NBZI",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "High dependence low grey level emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "9QMG",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "High dependence high grey level emphasis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "FP8K",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Grey level non-uniformity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "5SPA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Normalised grey level non-uniformity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Z87G",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dependence count non-uniformity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "OKJI",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dependence count non-uniformity normalised"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "6XV8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dependence count percentage"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1PFV",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Grey level variance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DNX2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dependence count variance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "FCBV",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dependence count entropy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "CAS9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dependence count energy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "5QB6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "feature aggregation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "3IDG",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "feature computed per slice, and averaged over slices"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DHQ4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "feature computed over the volume"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "BTW3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "feature computed from 2D directional matrix and averaged over 2D directions and slices"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SUJT",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "feature computed from a single matrix after merging 2D directional matrices per slice, and averaged over slices"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ZW7Z",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "feature computed from a single matrix after merging all 2D directional matrices"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ITBB",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "feature computed from 3D directional matrix and averaged over 3D directions"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "IAZD",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "feature computed from a single matrix after merging all 3D directional matrices"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "8QNN",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "feature computed from 2D matrix and averaged over slices"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "62GR",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "feature computed from a single matrix after merging all 2D matrices"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "KOBO",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "feature computed from 3D matrix"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MPUJ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "grid distances"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LIFZ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "manhattan norm"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "G9EV",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "euclidean norm"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PVMT",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "chebyshev norm"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ECJF",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ROI submasks"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SEFI",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "intensity mask"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "G5KJ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "morphological mask"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "IF9H",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "re-segmentation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "USB3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "range re-segmentation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "7ACA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "outlier filtering"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "6CK8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "distance weighting"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LQD8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "volume voxel representation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4KW8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "volume voxel point set representation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "WRJH",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "volume voxel mesh representation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4R0B",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "discretisation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Q3RU",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "fixed bin size"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "K15C",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "fixed bin number"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "23XZ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "data conversion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PCDE",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "image post-acquisition processing"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "OQYT",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "segmentation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "VTM2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "interpolation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "68QD",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "intensity rounding after interpolation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "E8H9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "roi mask partial volume"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "UMPJ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "interpolation grid"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "58MB",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "fit to original grid"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SBKJ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "align grid origins"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "3WE3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "align grid centers"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "026Q",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "align grid centers interpolation grid dimensions"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "QCY4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "align grid centers grid positions"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1OBP",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ROI extraction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "JJUI",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "feature computed from a single matrix after merging 2D directional matrices per direction, and averaged over directions"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "GFJV",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Calculation Run Space"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "CINW",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "FeatureParameterSpace"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1XL1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "texture matrix aggregation parameters"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "8QU8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "intensity discretization parameters"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "I7X7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "histogram equalisation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SSX6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lloyd-Max discretisation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "OWOH",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "feature specific parameters"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "9LZ9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "asymmetrical co-occurrence matrix"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2IQV",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "symmetrical co-occurrence matrix"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "3S2S",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "distance weighting function"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "V0L6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "no distance weighting"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4S5Z",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "GLCM specific parameters"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0OW5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "GLRLM specific parameters"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "6SLW",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "GLDZM specific parameters"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MV8M",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "NGTDM specific parameters"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "KQW7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "IntVolSpecificParameters"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "X6TI",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MaximumBound"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "V2QW",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MinimumBound"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "G5MN",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "isovalue algorithm"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "CRAM",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "marching cube algorithm"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "FFWD",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Morphological features specific parameters"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "VXRR",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "dependence coarseness parameter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "NV3D",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "cubic convolution interpolation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2I2N",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "cubic spline interpolation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "X13G",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "linear interpolation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EY9L",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "nearest neighbour interpolation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "QP79",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "re-segmentation parameters"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LQBA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "spatial filter properties"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "WZSA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "wavelet basis function"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "QVI9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "biorthogonal 3.5 wavelet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2CYL",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "coiflet 1 wavelet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "FR3E",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "haar wavelet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "P8W0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "frequency"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "IA9Q",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "wavelet filter direction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LCNJ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HHH wavelet direction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "S7CG",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HHL wavelet direction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "UFRT",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HLH wavelet direction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "RZ96",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HLL wavelet direction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "CJ43",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "LHH wavelet direction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "76ZU",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "LHL wavelet direction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "NTRN",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "LLL wavelet direction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "6FPA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "LLH wavelet direction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "G6RO",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "image grey level rounding"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "IZBZ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "edge enhancement"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ZS1T",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HistoEqualization"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Q2ZB",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "LocalAreaHistoEqualization"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "OB71",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ImageSpace"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "K7BL",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ImageVolume"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "OH8W",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ROIMask"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "GF95",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "IntensityHistogramStandardDeviation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "URTB",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "IntensityHistogramTotalEnergy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "5ABU",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Maximum2DDiameterColumn"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4S59",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Maximum2DDiameterSlice"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "K57E",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Maximum2DDiameterRow"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EGTD",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Textural"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "5XL6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "GLCM_MaximalCorrelationCoefficient"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "9U4X",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ZeroOrder"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PWN1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "I10"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "BOHI",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "I90"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "JXJA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "I10minusI90"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "NK6P",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "V10"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4279",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "V90"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "WITY",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "V10minusV90"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J04R",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "NGLDMSpecificParameters"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ASHO",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Voxel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "NOVP",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ImageFilterSpace"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "XSJL",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AbsoluteFiltering"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1WTP",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ButterworthFilter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PJBO",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ColliageFilter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "FTIJ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MedianFilter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "9IQY",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SavitzkyGolayFilter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SUUU",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "WaveletFilter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "WVUQ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ROIMask_PartialVolumeCutOff"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "REY6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SegmentationMethods"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SBDE",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Automated"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "OAX6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Manual"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TGHU",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SemiAutomated"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "6VTB",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SupervisedMethods"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TV5D",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "DeepLearning"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "KJIF",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "NeuralNetwork"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "D3RT",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SupportVectorMachine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ZJJY",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "UnsupervisedMethods"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2KAW",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "CMeansFuzzy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "OPMG",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Kmean"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "HF5R",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Manual"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W455",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "InPolygon"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "8LVU",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RayCasting"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "WAB9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "EdgeBased"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "XL0Q",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "GradientEdgeBased"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "N20K",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HoughTransformBased"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "VZXY",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "LaplacianEdgeBased"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EOOR",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MarrHildrethEdgeBased"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Q6DD",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ModelBased"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MGZ1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ActiveShape"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SR1C",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AppereanceModel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LAQN",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AtlasModel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "UU0Q",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "DeformableModel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ZCA3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RegionBased"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "RZ08",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RegionGrowing"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "A9GC",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RegionSplitting"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAWD",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SplitAndMerge"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Q025",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "WatershedAlgorithm"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L2WC",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ThresholdingBased"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "E8C8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "GlobalThresholding"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "81TK",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "LocalAdaptiveThresholding"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4VLP",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Institution"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DTYK",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Phantom"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "YUBG",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Software"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SU1L",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SoftwareProperties"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "59QT",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "License"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1DUG",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "OpenSource"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "G91N",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Proprietary"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W2J1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Version"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M9H0",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "VersionStatus"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4AGS",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Filter application"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "7QSE",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "filter in axial plane"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0ODV",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "volumetric filter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "GBYQ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "boundary condition"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Z3VE",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "constant value"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SIJG",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "nearest value"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Z7YO",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "periodic"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ZDTV",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "mirror"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "S60F",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MeanFilter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "YNOF",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "kernel support"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "8BC3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "GaussianFilter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L6PA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "LaplacianFilter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "41LN",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Gaussian envelope scale"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "WGPM",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Filter size cutoff"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "JTXT",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Laws kernel filter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "JVAD",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Laws kernels"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "B5BZ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Laws L3 kernel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "6HRH",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Laws L5 kernel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LJ4T",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Laws E3 kernel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2WPV",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Laws E5 kernel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MK5Z",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Laws S3 kernel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "RXA1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Laws S5 kernel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4ENO",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Laws W5 kernel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "3A1W",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Laws R5 kernel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "O1AQ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pseudo-rotational invariance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SVKW",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Response map pooling"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M1CY",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "average"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0TAW",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "max"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DUX4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "min"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PQSD",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Laws energy map"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "I176",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Laws energy map distance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Q88H",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "GaborFilter"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "S4N6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Gabor wavelength lambda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "GDR5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Gabor ellipticity gamma"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "FQER",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Gabor orientation theta"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "XTGK",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Gabor orientation theta step"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "25BO",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Separable wavelets"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "BPXS",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Separable wavelet family"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "UOUE",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "haar wavelet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "UK1F",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Separable wavelet filter combination"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PPF6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "LL wavelet combination"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "P60O",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HL wavelet combination"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M0S1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "LH wavelet combination"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "WQ2Z",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HH wavelet combination"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "KZAS",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "LLL wavelet combination"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TY49",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "LLH wavelet combination"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4KRX",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "LHL wavelet combination"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "UUV9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HLL wavelet combination"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "UIT8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "LHH wavelet combination"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "QTIT",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HHL wavelet combination"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "8LD2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HLH wavelet combination"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "OYUC",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HHH wavelet combination"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "GCEK",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "wavelet decomposition level"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PH3R",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Separable wavelet decimated transform"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "CVCQ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Separable wavelet undecimated transform"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LODD",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Non-separable wavelet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "389V",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Non-separable wavelet family"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "GWM2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Shannon wavelet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PRT7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Simoncelli wavelet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AYRS",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Riesz transformation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "OC48",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Riesz transformation order"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1SD3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Riesz filter steering"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "XKP5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Image dimension"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1F0N",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "k1-direction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M2EZ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "k2-direction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "R83H",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "k3-direction"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Y4GJ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Convolution operation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "YHT3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Aggregating intensities from a response map"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "5P3T",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Response map"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0J1M",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "modulus, magnitude or absolute response map"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "V530",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "angle, phase or argument response map"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "F7DI",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "real"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LI3Y",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "imaginary"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "52",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intensity rounding: Describe how fractional Hounsfield Units are rounded to integer values after interpolation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "56a",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Discretisation method: Describe the method used to discretise image intensities"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "56b",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Discretisation method: Describe the number of bins (FBN) or the bin size (FBS) used for discretisation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "56c",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Discretisation method: Describe the lowest intensity in the first bin for FBS discretisation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "61",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Software availability: Describe which software and version was used to compute image biomarkers"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "62",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Texture matrix aggregation: Define how texture-matrix based biomarkers were computed from underlying texture matrices"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "63",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Distance weighting: Describe which software and version was used to compute image biomarkers"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://cancer.fr">institutcancer</a>.  Package inca.fhir.uv.osiris#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 16, 2025 19:29+0000">2025-04-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://ig-osiris.cancer.fr/ig/osiris/history.html">Historique des versions </a>
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
+
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+
+  <!-- Analytics Below
+  ================================================== -->
+
+
+  <!-- AJOUT ANS -->
+
+<footer class="footer footer-principal" role="contentinfo">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://sante.gouv.fr" title="Ministère de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/Republique-francaise-logo.png" alt="Ministère de la Santé" width="100" height="57" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://cancer.fr/" title="Institut National du Cancer (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-inca-footer.jpg" alt="Institut National du Cancer" width="100" height="57" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Institut National du Cancer</p>
+          <p>52 Av. André Morizet, 92100 Boulogne-Billancourt</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ajobard@institutcancer.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>
+

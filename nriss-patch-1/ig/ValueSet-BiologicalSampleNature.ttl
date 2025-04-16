@@ -1,0 +1,102 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ig-osiris.cancer.fr/ig/osiris/ValueSet/BiologicalSampleNature> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BiologicalSampleNature"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet BiologicalSampleNature</b></p><a name=\"BiologicalSampleNature\"> </a><a name=\"hcBiologicalSampleNature\"> </a><a name=\"BiologicalSampleNature-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-umls.html\"><code>http://terminology.hl7.org/CodeSystem/umls</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C0005767</td><td>Blood</td></tr><tr><td>C0032105</td><td>Plasma</td></tr><tr><td>C0033684</td><td>Protein</td></tr><tr><td>C0035668</td><td>RNA</td></tr><tr><td>C0012854</td><td>DNA</td></tr><tr><td>C1321301</td><td>Peripheral Blood Mononuclear Cell</td></tr><tr><td>C0085983</td><td>Tumor Cell Line</td></tr><tr><td>C1548793</td><td>Frozen Specimen</td></tr><tr><td>C1519524</td><td>Paraffin Embedded Tissue (FFPE)</td></tr><tr><td>C0042036</td><td>Urine</td></tr><tr><td>C0439673</td><td>Unknown</td></tr><tr><td>C0036087</td><td>Saliva</td></tr><tr><td>C0229671</td><td>Serum</td></tr><tr><td>C3827014</td><td>Circulating Tumor-Derived DNA</td></tr><tr><td>C0522537</td><td>Xenograft</td></tr><tr><td>C0007806</td><td>Cerebrospinal FLuid</td></tr><tr><td>C0225778</td><td> Pleural Fluid</td></tr><tr><td>C2827484</td><td>Fixed Slide</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/BiologicalSampleNature"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.1.0"] ; # 
+  fhir:name [ fhir:v "BiologicalSampleNature"] ; # 
+  fhir:title [ fhir:v "Biological Sample Nature Value Set"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-04-16T19:28:51+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "institutcancer"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "institutcancer" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://cancer.fr" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "osiris@institutcancer.fr" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Aurélien JOBARD" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "osiris@institutcancer.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Biological sample nature"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/umls"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "C0005767" ] ;
+         fhir:display [ fhir:v "Blood" ]
+       ] [
+         fhir:code [ fhir:v "C0032105" ] ;
+         fhir:display [ fhir:v "Plasma" ]
+       ] [
+         fhir:code [ fhir:v "C0033684" ] ;
+         fhir:display [ fhir:v "Protein" ]
+       ] [
+         fhir:code [ fhir:v "C0035668" ] ;
+         fhir:display [ fhir:v "RNA" ]
+       ] [
+         fhir:code [ fhir:v "C0012854" ] ;
+         fhir:display [ fhir:v "DNA" ]
+       ] [
+         fhir:code [ fhir:v "C1321301" ] ;
+         fhir:display [ fhir:v "Peripheral Blood Mononuclear Cell" ]
+       ] [
+         fhir:code [ fhir:v "C0085983" ] ;
+         fhir:display [ fhir:v "Tumor Cell Line" ]
+       ] [
+         fhir:code [ fhir:v "C1548793" ] ;
+         fhir:display [ fhir:v "Frozen Specimen" ]
+       ] [
+         fhir:code [ fhir:v "C1519524" ] ;
+         fhir:display [ fhir:v "Paraffin Embedded Tissue (FFPE)" ]
+       ] [
+         fhir:code [ fhir:v "C0042036" ] ;
+         fhir:display [ fhir:v "Urine" ]
+       ] [
+         fhir:code [ fhir:v "C0439673" ] ;
+         fhir:display [ fhir:v "Unknown" ]
+       ] [
+         fhir:code [ fhir:v "C0036087" ] ;
+         fhir:display [ fhir:v "Saliva" ]
+       ] [
+         fhir:code [ fhir:v "C0229671" ] ;
+         fhir:display [ fhir:v "Serum" ]
+       ] [
+         fhir:code [ fhir:v "C3827014" ] ;
+         fhir:display [ fhir:v "Circulating Tumor-Derived DNA" ]
+       ] [
+         fhir:code [ fhir:v "C0522537" ] ;
+         fhir:display [ fhir:v "Xenograft" ]
+       ] [
+         fhir:code [ fhir:v "C0007806" ] ;
+         fhir:display [ fhir:v "Cerebrospinal FLuid" ]
+       ] [
+         fhir:code [ fhir:v "C0225778" ] ;
+         fhir:display [ fhir:v " Pleural Fluid" ]
+       ] [
+         fhir:code [ fhir:v "C2827484" ] ;
+         fhir:display [ fhir:v "Fixed Slide" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

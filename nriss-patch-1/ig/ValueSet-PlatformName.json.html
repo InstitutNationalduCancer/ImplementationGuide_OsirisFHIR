@@ -1,0 +1,799 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Platform Name - JSON Representation - FHIR Osiris Implementation Guide v1.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5.103"}
+    h3,h4,h5,h6{--heading-prefix:"5.103"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" no-external="true" href="https://cancer.fr/"><img height="50" alt="inca Logo" src="assets/images/logo-inca.png"/></a>
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
+
+  <div id="ig-search">
+ </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Osiris Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.1.0 - trial-implementation
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="valuesets.html">ValueSets</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts Summary</a>
+  </li>
+  <li>
+    <a href="requests.html">Requests Example</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://github.com/siric-osiris/OSIRIS">OSIRIS Spec </a>
+      </li>
+      <li>
+        <a target="_blank" href="http://cancer.fr/">inca website </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Platform Name</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v1.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://ig-osiris.cancer.fr/ig/osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-PlatformName.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-PlatformName.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-PlatformName.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Platform Name - JSON Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2025-04-16
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-PlatformName.json" no-download="true">Raw json</a> | <a href="ValueSet-PlatformName.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "PlatformName",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet PlatformName&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PlatformName\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPlatformName\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;PlatformName-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;https://github.com/siric-osiris/OSIRIS&lt;/code&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-1&lt;/td&gt;&lt;td&gt;Affymetrix Cytoscan HD&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-2&lt;/td&gt;&lt;td&gt;Affymetrix EMET Plus Premier Pack&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-3&lt;/td&gt;&lt;td&gt;Affymetrix Genome-Wide Human SNP Array 5.0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-4&lt;/td&gt;&lt;td&gt;Affymetrix Genome-Wide Human SNP Array 6.0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-5&lt;/td&gt;&lt;td&gt;Affymetrix HT Human Genome U133A Array Plate Set&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-6&lt;/td&gt;&lt;td&gt;Affymetrix Human Exon 1.0 ST&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-7&lt;/td&gt;&lt;td&gt;Affymetrix Human Gene 1.0 ST&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-8&lt;/td&gt;&lt;td&gt;Affymetrix Human Genome U219 Array Plate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-9&lt;/td&gt;&lt;td&gt;Affymetrix Human MIP 330K&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-10&lt;/td&gt;&lt;td&gt;Affymetrix Human U133 Plus 2.0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-11&lt;/td&gt;&lt;td&gt;Affymetrix Human U133 Plus PM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-12&lt;/td&gt;&lt;td&gt;Affymetrix Mapping 100K Array Set&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-13&lt;/td&gt;&lt;td&gt;Affymetrix Mapping 10K 2.0 Array Set&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-14&lt;/td&gt;&lt;td&gt;Affymetrix Mapping 500K Array Set&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-15&lt;/td&gt;&lt;td&gt;Affymetrix OncoScan FFPE Express 2.0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-16&lt;/td&gt;&lt;td&gt;Agilent 244K Custom Gene Expression G4502A-07&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-17&lt;/td&gt;&lt;td&gt;Agilent 244K Custom Gene Expression G4502A-07-1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-18&lt;/td&gt;&lt;td&gt;Agilent 244K Custom Gene Expression G4502A-07-2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-19&lt;/td&gt;&lt;td&gt;Agilent 244K Custom Gene Expression G4502A-07-3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-20&lt;/td&gt;&lt;td&gt;Agilent 8 x 15K Human miRNA-specific microarray&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-21&lt;/td&gt;&lt;td&gt;Agilent Human CGH 1x1M&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-22&lt;/td&gt;&lt;td&gt;Agilent Human CGH 2x400K&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-23&lt;/td&gt;&lt;td&gt;Agilent Human CGH 4x180K&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-24&lt;/td&gt;&lt;td&gt;Agilent Human CGH 8x60K&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-25&lt;/td&gt;&lt;td&gt;Agilent Human CNV 2x400K&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-26&lt;/td&gt;&lt;td&gt;Agilent Human CNV Association 2x105K&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-27&lt;/td&gt;&lt;td&gt;Agilent Human CpG Island Microarray Kit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-28&lt;/td&gt;&lt;td&gt;Agilent Human Genome 105A&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-29&lt;/td&gt;&lt;td&gt;Agilent Human Genome 244A&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-30&lt;/td&gt;&lt;td&gt;Agilent Human Genome 44K&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-31&lt;/td&gt;&lt;td&gt;Agilent Human Genome CGH Custom Microaary 2x415K&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-32&lt;/td&gt;&lt;td&gt;Agilent Human miRNA Microarray Kit (v2)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-33&lt;/td&gt;&lt;td&gt;Agilent Human Promoter ChIP-on-chip Microarray Set&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-34&lt;/td&gt;&lt;td&gt;Agilent Human SpliceArray&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-35&lt;/td&gt;&lt;td&gt;Agilent Whole Human Genome Oligo Microarray Kit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-36&lt;/td&gt;&lt;td&gt;Almac Human CRC&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-37&lt;/td&gt;&lt;td&gt;capillary sequencing&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-38&lt;/td&gt;&lt;td&gt;Complete Genomics&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-39&lt;/td&gt;&lt;td&gt;Custom-designed cDNA array&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-40&lt;/td&gt;&lt;td&gt;Custom-designed gene expression array&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-41&lt;/td&gt;&lt;td&gt;Helicos sequencing&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-42&lt;/td&gt;&lt;td&gt;HumanOmni2.5-8 BeadChip Kit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-43&lt;/td&gt;&lt;td&gt;Illumina GA sequencing&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-44&lt;/td&gt;&lt;td&gt;Illumina goldengate methylation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-45&lt;/td&gt;&lt;td&gt;Illumina GoldenGate Methylation Cancer Panel I&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-46&lt;/td&gt;&lt;td&gt;Illumina HiSeq&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-47&lt;/td&gt;&lt;td&gt;Illumina HiSeq X Ten&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-48&lt;/td&gt;&lt;td&gt;Illumina Human Omni1-Quad beadchip&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-49&lt;/td&gt;&lt;td&gt;Illumina Human1M OmniQuad chip&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-50&lt;/td&gt;&lt;td&gt;Illumina human1m-duo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-51&lt;/td&gt;&lt;td&gt;Illumina human510s-duo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-52&lt;/td&gt;&lt;td&gt;Illumina human660w-quad&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-53&lt;/td&gt;&lt;td&gt;Illumina HumanCNV370-Duo v1.0 BeadChip&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-54&lt;/td&gt;&lt;td&gt;Illumina humancytosnp-12&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-55&lt;/td&gt;&lt;td&gt;Illumina HumanHap550&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-56&lt;/td&gt;&lt;td&gt;Illumina HumanHT-12 v4.0 beadchip&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-57&lt;/td&gt;&lt;td&gt;Illumina humanht-16&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-58&lt;/td&gt;&lt;td&gt;Illumina humanht-17&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-59&lt;/td&gt;&lt;td&gt;Illumina humanmethylation27&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-60&lt;/td&gt;&lt;td&gt;Illumina HumanOmniExpress BeadChip&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-61&lt;/td&gt;&lt;td&gt;Illumina HumanRef-8 v3.0 beadchip&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-62&lt;/td&gt;&lt;td&gt;Illumina HumanWG-6 v3.0 beadchip&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-63&lt;/td&gt;&lt;td&gt;Illumina Infinium HumanMethylation450&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-64&lt;/td&gt;&lt;td&gt;Illumina microRNA Expression Profiling Panel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-65&lt;/td&gt;&lt;td&gt;Illumina MiSeq Personal Sequencer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-66&lt;/td&gt;&lt;td&gt;Ion Torrent PGM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-67&lt;/td&gt;&lt;td&gt;Ion Torrent Proton&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-68&lt;/td&gt;&lt;td&gt;M.D. Anderson Reverse Phase Protein Array Core&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-69&lt;/td&gt;&lt;td&gt;Microsatellite Instability Analysis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-70&lt;/td&gt;&lt;td&gt;nanoString&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-71&lt;/td&gt;&lt;td&gt;Nimblegen CGS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-72&lt;/td&gt;&lt;td&gt;Nimblegen Gene Expression 12x135K&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-73&lt;/td&gt;&lt;td&gt;Nimblegen Gene Expression 385K&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-74&lt;/td&gt;&lt;td&gt;Nimblegen Gene Expression 4x72K&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-75&lt;/td&gt;&lt;td&gt;Nimblegen Human CGH 2.1M Whole-Genome v2.0D Array&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-76&lt;/td&gt;&lt;td&gt;Nimblegen Human CGH 3x720 Whole-Genome v3.0 Array&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-77&lt;/td&gt;&lt;td&gt;Nimblegen Human Methylation 2.1M Whole-Genome sets&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-78&lt;/td&gt;&lt;td&gt;Nimblegen Human Methylation 385K Whole-Genome sets&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-79&lt;/td&gt;&lt;td&gt;PacBio RS sequencing&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-80&lt;/td&gt;&lt;td&gt;PCR&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-81&lt;/td&gt;&lt;td&gt;PCR and capillary sequencing&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-82&lt;/td&gt;&lt;td&gt;qPCR&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-83&lt;/td&gt;&lt;td&gt;Roche 454 sequencing&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-84&lt;/td&gt;&lt;td&gt;Sequenom MassARRAY&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-85&lt;/td&gt;&lt;td&gt;SOLiD sequencing&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-86&lt;/td&gt;&lt;td&gt;Digital PCR&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-87&lt;/td&gt;&lt;td&gt;NextSeq 500&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-88&lt;/td&gt;&lt;td&gt;NovaSeq&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;O7-OTH&lt;/td&gt;&lt;td&gt;Other&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://terminology.hl7.org/6.2.0/CodeSystem-umls.html\&quot;&gt;&lt;code&gt;http://terminology.hl7.org/CodeSystem/umls&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C0439673&lt;/td&gt;&lt;td&gt;Unknown&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/PlatformName",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "1.1.0",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "PlatformName",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "Platform Name",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2025-04-16T19:28:51+00:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "institutcancer",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "institutcancer",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://cancer.fr"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "osiris@institutcancer.fr"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Aurélien JOBARD",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "osiris@institutcancer.fr"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "Platform Name",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://github.com/siric-osiris/OSIRIS",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-1",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Affymetrix Cytoscan HD"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-2",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Affymetrix EMET Plus Premier Pack"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-3",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Affymetrix Genome-Wide Human SNP Array 5.0"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-4",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Affymetrix Genome-Wide Human SNP Array 6.0"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-5",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Affymetrix HT Human Genome U133A Array Plate Set"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-6",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Affymetrix Human Exon 1.0 ST"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-7",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Affymetrix Human Gene 1.0 ST"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-8",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Affymetrix Human Genome U219 Array Plate"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-9",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Affymetrix Human MIP 330K"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-10",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Affymetrix Human U133 Plus 2.0"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-11",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Affymetrix Human U133 Plus PM"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-12",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Affymetrix Mapping 100K Array Set"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-13",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Affymetrix Mapping 10K 2.0 Array Set"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-14",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Affymetrix Mapping 500K Array Set"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-15",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Affymetrix OncoScan FFPE Express 2.0"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-16",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Agilent 244K Custom Gene Expression G4502A-07"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-17",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Agilent 244K Custom Gene Expression G4502A-07-1"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-18",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Agilent 244K Custom Gene Expression G4502A-07-2"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-19",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Agilent 244K Custom Gene Expression G4502A-07-3"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-20",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Agilent 8 x 15K Human miRNA-specific microarray"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-21",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Agilent Human CGH 1x1M"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-22",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Agilent Human CGH 2x400K"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-23",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Agilent Human CGH 4x180K"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-24",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Agilent Human CGH 8x60K"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-25",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Agilent Human CNV 2x400K"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-26",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Agilent Human CNV Association 2x105K"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-27",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Agilent Human CpG Island Microarray Kit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-28",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Agilent Human Genome 105A"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-29",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Agilent Human Genome 244A"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-30",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Agilent Human Genome 44K"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-31",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Agilent Human Genome CGH Custom Microaary 2x415K"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-32",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Agilent Human miRNA Microarray Kit (v2)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-33",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Agilent Human Promoter ChIP-on-chip Microarray Set"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-34",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Agilent Human SpliceArray"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-35",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Agilent Whole Human Genome Oligo Microarray Kit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-36",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Almac Human CRC"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-37",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "capillary sequencing"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-38",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Complete Genomics"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-39",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Custom-designed cDNA array"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-40",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Custom-designed gene expression array"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-41",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Helicos sequencing"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-42",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "HumanOmni2.5-8 BeadChip Kit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-43",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina GA sequencing"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-44",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina goldengate methylation"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-45",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina GoldenGate Methylation Cancer Panel I"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-46",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina HiSeq"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-47",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina HiSeq X Ten"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-48",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina Human Omni1-Quad beadchip"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-49",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina Human1M OmniQuad chip"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-50",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina human1m-duo"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-51",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina human510s-duo"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-52",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina human660w-quad"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-53",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina HumanCNV370-Duo v1.0 BeadChip"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-54",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina humancytosnp-12"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-55",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina HumanHap550"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-56",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina HumanHT-12 v4.0 beadchip"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-57",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina humanht-16"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-58",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina humanht-17"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-59",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina humanmethylation27"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-60",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina HumanOmniExpress BeadChip"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-61",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina HumanRef-8 v3.0 beadchip"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-62",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina HumanWG-6 v3.0 beadchip"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-63",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina Infinium HumanMethylation450"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-64",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina microRNA Expression Profiling Panel"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-65",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Illumina MiSeq Personal Sequencer"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-66",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ion Torrent PGM"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-67",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ion Torrent Proton"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-68",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "M.D. Anderson Reverse Phase Protein Array Core"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-69",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Microsatellite Instability Analysis"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-70",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "nanoString"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-71",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nimblegen CGS"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-72",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nimblegen Gene Expression 12x135K"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-73",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nimblegen Gene Expression 385K"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-74",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nimblegen Gene Expression 4x72K"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-75",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nimblegen Human CGH 2.1M Whole-Genome v2.0D Array"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-76",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nimblegen Human CGH 3x720 Whole-Genome v3.0 Array"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-77",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nimblegen Human Methylation 2.1M Whole-Genome sets"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-78",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nimblegen Human Methylation 385K Whole-Genome sets"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-79",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "PacBio RS sequencing"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-80",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "PCR"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-81",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "PCR and capillary sequencing"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-82",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "qPCR"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-83",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Roche 454 sequencing"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-84",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Sequenom MassARRAY"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-85",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SOLiD sequencing"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-86",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Digital PCR"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-87",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "NextSeq 500"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-88",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "NovaSeq"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "O7-OTH",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Other"
+          }
+        ]
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "http://terminology.hl7.org/CodeSystem/umls",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "C0439673",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Unknown"
+          }
+        ]
+      }
+    ]
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://cancer.fr">institutcancer</a>.  Package inca.fhir.uv.osiris#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 16, 2025 19:29+0000">2025-04-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://ig-osiris.cancer.fr/ig/osiris/history.html">Historique des versions </a>
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
+
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+
+  <!-- Analytics Below
+  ================================================== -->
+
+
+  <!-- AJOUT ANS -->
+
+<footer class="footer footer-principal" role="contentinfo">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://sante.gouv.fr" title="Ministère de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/Republique-francaise-logo.png" alt="Ministère de la Santé" width="100" height="57" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://cancer.fr/" title="Institut National du Cancer (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-inca-footer.jpg" alt="Institut National du Cancer" width="100" height="57" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Institut National du Cancer</p>
+          <p>52 Av. André Morizet, 92100 Boulogne-Billancourt</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ajobard@institutcancer.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>
+

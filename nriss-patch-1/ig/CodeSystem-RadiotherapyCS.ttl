@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/RadiotherapyCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RadiotherapyCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem RadiotherapyCS</b></p><a name=\"RadiotherapyCS\"> </a><a name=\"hcRadiotherapyCS\"> </a><a name=\"RadiotherapyCS-en-US\"> </a><p>This  code system <code>https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/RadiotherapyCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Planned<a name=\"RadiotherapyCS-Planned\"> </a></td><td>Planified</td></tr><tr><td style=\"white-space:nowrap\">Delivered<a name=\"RadiotherapyCS-Delivered\"> </a></td><td>Delivered</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/RadiotherapyCS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.1.0"] ; # 
+  fhir:name [ fhir:v "RadiotherapyCS"] ; # 
+  fhir:title [ fhir:v "Radiotherapy Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-04-16T19:28:51+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "institutcancer"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "institutcancer" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://cancer.fr" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "osiris@institutcancer.fr" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Aurélien JOBARD" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "osiris@institutcancer.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Radiotherapy Code System"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "Planned" ] ;
+     fhir:display [ fhir:v "Planified" ]
+  ] [
+     fhir:code [ fhir:v "Delivered" ] ;
+     fhir:display [ fhir:v "Delivered" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ig-osiris.cancer.fr/ig/osiris/Observation/fhir-osiris-example-RadiomicsFeature> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir-osiris-example-RadiomicsFeature"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiomics-features"^^xsd:anyURI ;
+       fhir:link <https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiomics-features>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation fhir-osiris-example-RadiomicsFeature</b></p><a name=\"fhir-osiris-example-RadiomicsFeature\"> </a><a name=\"hcfhir-osiris-example-RadiomicsFeature\"> </a><a name=\"fhir-osiris-example-RadiomicsFeature-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-radiomics-features.html\">Radiomics Features</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:\">original_shape_Elongation</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Anonymous Patient Male, DoB: 1967-11-08</a></p><p><b>value</b>: 0.9124894758560576</p><p><b>hasMember</b>: <a href=\"Observation-fhir-osiris-example-RadiomicsCriteria.html\">Observation Diagnostic imaging report - example sections and entries</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:code [ fhir:v "Q3CK" ]
+     ] ) ;
+     fhir:text [ fhir:v "original_shape_Elongation" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://ig-osiris.cancer.fr/ig/osiris/Patient/L304> ;
+     fhir:reference [ fhir:v "Patient/L304" ]
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v 0.9124894758560576 ]
+  ] ; # 
+  fhir:hasMember ( [
+     fhir:link <https://ig-osiris.cancer.fr/ig/osiris/Observation/fhir-osiris-example-RadiomicsCriteria> ;
+     fhir:reference [ fhir:v "Observation/fhir-osiris-example-RadiomicsCriteria" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

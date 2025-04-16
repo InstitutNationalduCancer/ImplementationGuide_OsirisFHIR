@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="fhir-osiris-example-RadiotherapyPhase-3"/>
+  <meta>
+    <profile value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-phase"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure fhir-osiris-example-RadiotherapyPhase-3</b></p><a name="fhir-osiris-example-RadiotherapyPhase-3"> </a><a name="hcfhir-osiris-example-RadiotherapyPhase-3"> </a><a name="fhir-osiris-example-RadiotherapyPhase-3-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-radiotherapy-phase.html">Radiotherapy Phase</a></p></div><p><b>Number of Fractions</b>: 16</p><p><b>partOf</b>: <a href="Procedure-fhir-osiris-example-RadiotherapyCourse-1.html">Procedure Radiotherapy course of treatment (regime/therapy)</a></p><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/RadiotherapyCS Planned}">Planified</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 1222565005}">Radiotherapy treatment phase (regime/therapy)</span></p><p><b>subject</b>: <a href="Patient-L304.html">Anonymous Patient Male, DoB: 1967-11-08</a></p><p><b>performed</b>: 2018-09-15 --&gt; 2018-12-25</p></div>
+  </text>
+  <extension url="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/numberOfFractions">
+    <valueUnsignedInt value="16"/>
+  </extension>
+  <partOf>
+    <reference value="Procedure/fhir-osiris-example-RadiotherapyCourse-1"/>
+  </partOf>
+  <status value="completed"/>
+  <category>
+    <coding>
+      <system value="https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/RadiotherapyCS"/>
+      <code value="Planned"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1222565005"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/L304"/>
+  </subject>
+  <performedPeriod>
+    <start value="2018-09-15"/>
+    <end value="2018-12-25"/>
+  </performedPeriod>
+</Procedure>

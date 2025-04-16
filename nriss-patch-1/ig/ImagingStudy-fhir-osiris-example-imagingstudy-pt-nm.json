@@ -1,0 +1,109 @@
+{
+  "resourceType" : "ImagingStudy",
+  "id" : "fhir-osiris-example-imagingstudy-pt-nm",
+  "meta" : {
+    "profile" : ["https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-imagingstudy"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImagingStudy fhir-osiris-example-imagingstudy-pt-nm</b></p><a name=\"fhir-osiris-example-imagingstudy-pt-nm\"> </a><a name=\"hcfhir-osiris-example-imagingstudy-pt-nm\"> </a><a name=\"fhir-osiris-example-imagingstudy-pt-nm-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-imagingstudy.html\">Imaging Study</a></p></div><p><b>identifier</b>: 1.3.6.1.4.1.14519.5.2.1.5168.1900.291490762800233473213844289511</p><p><b>status</b>: Available</p><p><b>modality</b>: <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-umls.html#umls-C0439673\">Unified Medical Language System C0439673</a>: C0439673</p><p><b>subject</b>: <a href=\"Patient-STS-028.html\">Anonymous Patient Unknown, DoB: 1000-01-01</a></p><p><b>started</b>: 2004-01-27</p><p><b>endpoint</b>: <a href=\"Endpoint-fhir-osiris-example-imagingendpoint-pt-nm.html\">Endpoint ['Soft-tissue-Sarcoma/STS_028/01-27-2004-NA-PET CT with registered MR-89511/4.000000-LEGS2DAC-91862/1-036.dcm']</a></p><p><b>numberOfSeries</b>: 999999</p><p><b>reasonReference</b>: <a href=\"Observation-fhir-osiris-example-analysis-pt-nm.html\">Observation Imaging</a></p><p><b>description</b>: CT PET with registered MR\t</p><blockquote><p><b>series</b></p><blockquote><p><b>Imaging Settings</b></p><blockquote><p><b>url</b></p>slice_thickness</blockquote><p><b>value</b>: 3.2700</p><blockquote><p><b>url</b></p>pixel_spacing</blockquote><p><b>value</b>: [5.46875, 5.46875]</p><blockquote><p><b>url</b></p>rows</blockquote><p><b>value</b>: 128</p><blockquote><p><b>url</b></p>columns</blockquote><p><b>value</b>: 128</p><blockquote><p><b>url</b></p>imaging_injection</blockquote><p><b>value</b>: <a href=\"MedicationAdministration-fhir-osiris-example-injection-pt-nm.html\">MedicationAdministration: status = completed; medication[x] = -&gt;Medication ; effective[x] = 1000-01-01</a></p><p><b>attenuation_correction_method</b>: measured,, 0.096000 cm-1</p><p><b>reconstruction_method</b>: OSEM</p><p><b>scatter_correction_method</b>: Convolution subtraction</p><blockquote><p><b>url</b></p>pt_nm_image</blockquote></blockquote><blockquote><p><b>Weight and Height at the time of the Serie</b></p><ul><li>patient_weight: 58</li><li>patient_height: 1.57</li></ul></blockquote><p><b>uid</b>: 1.3.6.1.4.1.14519.5.2.1.5168.1900.250501927430896548137411991862</p><p><b>number</b>: 4</p><p><b>modality</b>: dicom PT: PT</p><p><b>description</b>: LEGS_2D_AC PET CT with registered MR</p><p><b>numberOfInstances</b>: 999999</p><p><b>bodySite</b>: <a href=\"http://snomed.info/id/66019005\">SNOMED CT 66019005</a>: Extremity</p><p><b>started</b>: 2004-01-27</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Device-fhir-osiris-example-imagingdevice-pt-nm.html\">Device: manufacturer = GE MEDICAL SYSTEMS</a></td></tr></table><h3>Instances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Uid</b></td><td><b>SopClass</b></td></tr><tr><td style=\"display: none\">*</td><td>1.3.6.1.4.1.14519.5.2.1.5168.1900.309323295882753345616672095692</td><td>[not stated] table_B.5-1#1.2.840.10008.5.1.4.1.1.128: Positron Emission Tomography Image Storage</td></tr></table></blockquote></div>"
+  },
+  "identifier" : [{
+    "value" : "1.3.6.1.4.1.14519.5.2.1.5168.1900.291490762800233473213844289511"
+  }],
+  "status" : "available",
+  "modality" : [{
+    "system" : "http://terminology.hl7.org/CodeSystem/umls",
+    "code" : "C0439673"
+  }],
+  "subject" : {
+    "reference" : "Patient/STS-028"
+  },
+  "started" : "2004-01-27",
+  "endpoint" : [{
+    "reference" : "Endpoint/fhir-osiris-example-imagingendpoint-pt-nm"
+  }],
+  "numberOfSeries" : 999999,
+  "reasonReference" : [{
+    "reference" : "Observation/fhir-osiris-example-analysis-pt-nm"
+  }],
+  "description" : "CT PET with registered MR\t",
+  "series" : [{
+    "extension" : [{
+      "extension" : [{
+        "url" : "slice_thickness",
+        "valueString" : "3.2700"
+      },
+      {
+        "url" : "pixel_spacing",
+        "valueString" : "[5.46875, 5.46875]"
+      },
+      {
+        "url" : "rows",
+        "valueInteger" : 128
+      },
+      {
+        "url" : "columns",
+        "valueInteger" : 128
+      },
+      {
+        "url" : "imaging_injection",
+        "valueReference" : {
+          "reference" : "MedicationAdministration/fhir-osiris-example-injection-pt-nm"
+        }
+      },
+      {
+        "extension" : [{
+          "url" : "attenuation_correction_method",
+          "valueString" : "measured,, 0.096000 cm-1"
+        },
+        {
+          "url" : "reconstruction_method",
+          "valueString" : "OSEM"
+        },
+        {
+          "url" : "scatter_correction_method",
+          "valueString" : "Convolution subtraction"
+        }],
+        "url" : "pt_nm_image"
+      }],
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-settings"
+    },
+    {
+      "extension" : [{
+        "url" : "patient_weight",
+        "valueDecimal" : 58
+      },
+      {
+        "url" : "patient_height",
+        "valueDecimal" : 1.57
+      }],
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/series-weightheigt"
+    }],
+    "uid" : "1.3.6.1.4.1.14519.5.2.1.5168.1900.250501927430896548137411991862",
+    "number" : 4,
+    "modality" : {
+      "system" : "https://dicom.nema.org/medical/dicom",
+      "code" : "PT"
+    },
+    "description" : "LEGS_2D_AC PET CT with registered MR",
+    "numberOfInstances" : 999999,
+    "bodySite" : {
+      "system" : "http://snomed.info/sct",
+      "code" : "66019005"
+    },
+    "started" : "2004-01-27",
+    "performer" : [{
+      "actor" : {
+        "reference" : "Device/fhir-osiris-example-imagingdevice-pt-nm"
+      }
+    }],
+    "instance" : [{
+      "uid" : "1.3.6.1.4.1.14519.5.2.1.5168.1900.309323295882753345616672095692",
+      "sopClass" : {
+        "code" : "table_B.5-1#1.2.840.10008.5.1.4.1.1.128",
+        "display" : "Positron Emission Tomography Image Storage"
+      }
+    }]
+  }]
+}
