@@ -1,3 +1,5 @@
+Lien vers l'intégration continue : https://institutnationalducancer.github.io/ImplementationGuide_OsirisFHIR/master/ig/
+
 # IG-OSIRIS
 
 By [Arkhn](http://arkhn.com/), data for open and collaborative healthcare
