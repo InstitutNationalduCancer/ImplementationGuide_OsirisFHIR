@@ -1,38 +1,39 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
 
-<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-service> a fhir:StructureDefinition ;
+<https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-service> a fhir:StructureDefinition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "imaging-service"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-imaging-service-definitions.html#Location\">Location</a><a name=\"Location\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Details and position information for a physical place</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-imaging-service-definitions.html#Location.name\" title=\"Name of the organization or institution responsible for the study. Dicom Tag (0008,0080)\">name</a><a name=\"Location.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Name of the institution</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition imaging-service</b></p><a name=\"imaging-service\"> </a><a name=\"hcimaging-service\"> </a><a name=\"imaging-service-en-US\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-imaging-service-definitions.html#Location\">Location</a><a name=\"Location\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Details and position information for a physical place</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-imaging-service-definitions.html#Location.name\" title=\"Name of the organization or institution responsible for the study. Dicom Tag (0008,0080)\">name</a><a name=\"Location.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Name of the institution</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-service"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.1.0"] ; # 
+  fhir:url [ fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-service"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.1.0"] ; # 
   fhir:name [ fhir:v "LocationImaging"] ; # 
   fhir:title [ fhir:v "Imaging Service"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-15T14:17:55+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Arkhn"] ; # 
+  fhir:date [ fhir:v "2025-04-22T15:19:59+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "institutcancer"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Arkhn" ] ;
+     fhir:name [ fhir:v "institutcancer" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://arkhn.com" ]
+       fhir:value [ fhir:v "http://cancer.fr" ]
      ] [
        fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "contact@arkhn.com" ]
+       fhir:value [ fhir:v "osiris@institutcancer.fr" ]
      ] )
   ] [
-     fhir:name [ fhir:v "Nicolas Riss" ] ;
+     fhir:name [ fhir:v "Aurélien JOBARD" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "nicolas@arkhn.com" ]
+       fhir:value [ fhir:v "osiris@institutcancer.fr" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Description of an imaging service."] ; # 
@@ -55,7 +56,7 @@
      fhir:name [ fhir:v "FiveWs Pattern Mapping" ]
   ] ) ; # 
   fhir:kind [ fhir:v "resource"] ; # 
-  fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:abstract [ fhir:v false] ; # 
   fhir:type [ fhir:v "Location"^^xsd:anyURI] ; # 
   fhir:baseDefinition [
      fhir:v "http://hl7.org/fhir/StructureDefinition/Location"^^xsd:anyURI ;
@@ -63,6 +64,13 @@
   ] ; # 
   fhir:derivation [ fhir:v "constraint"] ; # 
   fhir:snapshot [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "4.0.1"
+       ]
+     ] ) ;
      fhir:element ( [
        fhir:id [ fhir:v "Location" ] ;
        fhir:path [ fhir:v "Location" ] ;
@@ -86,16 +94,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] [
-         fhir:key [ fhir:v "dom-4" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated" ] ;
-         fhir:expression [ fhir:v "contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()" ] ;
-         fhir:xpath [ fhir:v "not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
-         ]
-       ] [
          fhir:key [ fhir:v "dom-3" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource" ] ;
@@ -106,18 +104,11 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "true"^^xsd:boolean ]
-         ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a human readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time." ]
-         ] ) ;
-         fhir:key [ fhir:v "dom-6" ] ;
-         fhir:severity [ fhir:v "warning" ] ;
-         fhir:human [ fhir:v "A resource should have narrative for robust management" ] ;
-         fhir:expression [ fhir:v "text.`div`.exists()" ] ;
-         fhir:xpath [ fhir:v "exists(f:text/h:div)" ] ;
+         fhir:key [ fhir:v "dom-4" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated" ] ;
+         fhir:expression [ fhir:v "contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()" ] ;
+         fhir:xpath [ fhir:v "not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
@@ -132,14 +123,33 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:boolean ;
+             fhir:v true
+           ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:markdown ;
+             fhir:v "When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a human readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time."
+           ]
+         ] ) ;
+         fhir:key [ fhir:v "dom-6" ] ;
+         fhir:severity [ fhir:v "warning" ] ;
+         fhir:human [ fhir:v "A resource should have narrative for robust management" ] ;
+         fhir:expression [ fhir:v "text.`div`.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:text/h:div)" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+         ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "Entity. Role, or Act" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v ".Role[classCode=SDLC]" ]
-       ] [
          fhir:identity [ fhir:v "fhir-osiris-imaging-service" ] ;
          fhir:map [ fhir:v "Imaging Service" ] ;
          fhir:comment [ fhir:v "Imaging service description" ]
@@ -147,6 +157,12 @@
          fhir:identity [ fhir:v "fhir-osiris-to-dicom-imaging-service" ] ;
          fhir:map [ fhir:v "Imaging Service" ] ;
          fhir:comment [ fhir:v "Imaging service description" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "Entity. Role, or Act" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v ".Role[classCode=SDLC]" ]
        ] )
      ] [
        fhir:id [ fhir:v "Location.id" ] ;
@@ -164,11 +180,15 @@
        fhir:type ( [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "id"^^xsd:anyURI ]
+           fhir:value [
+             a fhir:url ;
+             fhir:v "id"^^xsd:anyURI
+           ]
          ] ) ;
          fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ]
      ] [
        fhir:id [ fhir:v "Location.meta" ] ;
        fhir:path [ fhir:v "Location.meta" ] ;
@@ -184,7 +204,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Meta"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -196,14 +215,8 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "N/A" ]
-       ] )
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ]
      ] [
        fhir:id [ fhir:v "Location.implicitRules" ] ;
        fhir:path [ fhir:v "Location.implicitRules" ] ;
@@ -220,7 +233,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "uri"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -232,13 +244,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v true ] ;
        fhir:isModifierReason [ fhir:v "This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation" ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] )
+       fhir:isSummary [ fhir:v true ]
      ] [
        fhir:id [ fhir:v "Location.language" ] ;
        fhir:path [ fhir:v "Location.language" ] ;
@@ -255,7 +263,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "code"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -267,16 +274,22 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet"^^xsd:anyURI ] ;
            fhir:value [
+             a fhir:canonical ;
              fhir:v "http://hl7.org/fhir/ValueSet/all-languages"^^xsd:anyURI ;
              fhir:link <http://hl7.org/fhir/ValueSet/all-languages>
            ]
          ] [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "Language" ]
+           fhir:value [
+             a fhir:string ;
+             fhir:v "Language"
+           ]
          ] ) ;
          fhir:strength [ fhir:v "preferred" ] ;
          fhir:description [ fhir:v "A human language." ] ;
@@ -284,11 +297,7 @@
            fhir:v "http://hl7.org/fhir/ValueSet/languages"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/ValueSet/languages>
          ]
-       ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] )
+       ]
      ] [
        fhir:id [ fhir:v "Location.text" ] ;
        fhir:path [ fhir:v "Location.text" ] ;
@@ -306,7 +315,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Narrative"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -318,13 +326,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "N/A" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Act.text?" ]
        ] )
@@ -345,31 +349,15 @@
        fhir:type ( [
          fhir:code [ fhir:v "Resource"^^xsd:anyURI ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "Entity. Role, or Act" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "N/A" ]
        ] )
      ] [
        fhir:id [ fhir:v "Location.extension" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] ) ;
        fhir:path [ fhir:v "Location.extension" ] ;
-       fhir:slicing [
-         fhir:discriminator ( [
-           fhir:type [ fhir:v "value" ] ;
-           fhir:path [ fhir:v "url" ]
-         ] ) ;
-         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
-         fhir:rules [ fhir:v "open" ]
-       ] ;
        fhir:short [ fhir:v "Additional content defined by implementations" ] ;
        fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
        fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
@@ -384,7 +372,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -400,37 +387,21 @@
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
-         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "N/A" ]
        ] )
      ] [
        fhir:id [ fhir:v "Location.modifierExtension" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] ) ;
        fhir:path [ fhir:v "Location.modifierExtension" ] ;
-       fhir:slicing [
-         fhir:discriminator ( [
-           fhir:type [ fhir:v "value" ] ;
-           fhir:path [ fhir:v "url" ]
-         ] ) ;
-         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
-         fhir:rules [ fhir:v "open" ]
-       ] ;
        fhir:short [ fhir:v "Extensions that cannot be ignored" ] ;
        fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." ] ;
        fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
@@ -446,7 +417,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -462,18 +432,16 @@
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
-         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v true ] ;
        fhir:isModifierReason [ fhir:v "Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them" ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "N/A" ]
        ] )
@@ -493,7 +461,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Identifier"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -505,20 +472,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "v2" ] ;
-         fhir:map [ fhir:v "CX / EI (occasionally, more often EI maps to a resource id or a URL)" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]" ]
-       ] [
-         fhir:identity [ fhir:v "servd" ] ;
-         fhir:map [ fhir:v "Identifier" ]
-       ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.identifier" ]
        ] [
@@ -530,7 +486,6 @@
        fhir:path [ fhir:v "Location.status" ] ;
        fhir:short [ fhir:v "active | suspended | inactive" ] ;
        fhir:definition [ fhir:v "The status property covers the general availability of the resource, not the current value which may be covered by the operationStatus, or by a schedule/slots if they are configured for the location." ] ;
-       fhir:comment [ fhir:v "Note that FHIR strings SHALL NOT exceed 1MB in size" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -541,7 +496,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "code"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -553,13 +507,16 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v true ] ;
        fhir:isModifierReason [ fhir:v "This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid" ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "LocationStatus" ]
+           fhir:value [
+             a fhir:string ;
+             fhir:v "LocationStatus"
+           ]
          ] ) ;
          fhir:strength [ fhir:v "required" ] ;
          fhir:description [ fhir:v "Indicates whether the location is still in use." ] ;
@@ -569,9 +526,6 @@
          ]
        ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.status" ]
        ] [
@@ -583,7 +537,6 @@
        fhir:path [ fhir:v "Location.operationalStatus" ] ;
        fhir:short [ fhir:v "The operational status of the location (typically only for a bed/room)" ] ;
        fhir:definition [ fhir:v "The operational status covers operation values most relevant to beds (but can also apply to rooms/units/chairs/etc. such as an isolation unit/dialysis chair). This typically covers concepts such as contamination, housekeeping, and other activities like maintenance." ] ;
-       fhir:comment [ fhir:v "Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -594,7 +547,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -606,11 +558,15 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "OperationalStatus" ]
+           fhir:value [
+             a fhir:string ;
+             fhir:v "OperationalStatus"
+           ]
          ] ) ;
          fhir:strength [ fhir:v "preferred" ] ;
          fhir:description [ fhir:v "The operational status if the location (where typically a bed/room)." ] ;
@@ -620,20 +576,11 @@
          ]
        ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "v2" ] ;
-         fhir:map [ fhir:v "CE/CNE/CWE subset one of the sets of component 1-3 or 4-6" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "CV" ]
-       ] [
-         fhir:identity [ fhir:v "orim" ] ;
-         fhir:map [ fhir:v "fhir:Coding rdfs:subClassOf dt:CDCoding" ]
-       ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.status" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
        ] )
      ] [
        fhir:id [ fhir:v "Location.name" ] ;
@@ -651,7 +598,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -663,20 +609,18 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v true ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v ".name" ]
-       ] [
          fhir:identity [ fhir:v "fhir-osiris-imaging-service" ] ;
          fhir:map [ fhir:v "OSIRIS_pivot_Study.Study_InstitutionName" ]
        ] [
          fhir:identity [ fhir:v "fhir-osiris-to-dicom-imaging-service" ] ;
          fhir:map [ fhir:v "Dicom Tag (0008,0080)" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v ".name" ]
        ] )
      ] [
        fhir:id [ fhir:v "Location.alias" ] ;
@@ -695,7 +639,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -707,10 +650,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".name" ]
        ] )
@@ -719,7 +661,6 @@
        fhir:path [ fhir:v "Location.description" ] ;
        fhir:short [ fhir:v "Additional details about the location that could be displayed as further information to identify the location beyond its name" ] ;
        fhir:definition [ fhir:v "Description of the Location, which helps in finding or referencing the place." ] ;
-       fhir:comment [ fhir:v "Note that FHIR strings SHALL NOT exceed 1MB in size" ] ;
        fhir:requirements [ fhir:v "Humans need additional information to verify a correct location has been identified." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
@@ -731,7 +672,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -743,11 +683,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".playingEntity[classCode=PLC determinerCode=INSTANCE].desc" ]
        ] )
@@ -768,7 +706,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "code"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -780,11 +717,15 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "LocationMode" ]
+           fhir:value [
+             a fhir:string ;
+             fhir:v "LocationMode"
+           ]
          ] ) ;
          fhir:strength [ fhir:v "required" ] ;
          fhir:description [ fhir:v "Indicates whether a resource instance represents a specific location or a class of locations." ] ;
@@ -794,9 +735,6 @@
          ]
        ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.class" ]
        ] [
@@ -808,7 +746,6 @@
        fhir:path [ fhir:v "Location.type" ] ;
        fhir:short [ fhir:v "Type of function performed" ] ;
        fhir:definition [ fhir:v "Indicates the type of function performed at the location." ] ;
-       fhir:comment [ fhir:v "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
@@ -819,7 +756,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -831,11 +767,15 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "LocationType" ]
+           fhir:value [
+             a fhir:string ;
+             fhir:v "LocationType"
+           ]
          ] ) ;
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "Indicates the type of function performed at the location." ] ;
@@ -845,18 +785,6 @@
          ]
        ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "v2" ] ;
-         fhir:map [ fhir:v "CE/CNE/CWE" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "CD" ]
-       ] [
-         fhir:identity [ fhir:v "orim" ] ;
-         fhir:map [ fhir:v "fhir:CodeableConcept rdfs:subClassOf dt:CD" ]
-       ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.class" ]
        ] [
@@ -878,7 +806,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "ContactPoint"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -889,30 +816,10 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] [
-         fhir:key [ fhir:v "cpt-2" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "A system is required if a value is provided." ] ;
-         fhir:expression [ fhir:v "value.empty() or system.exists()" ] ;
-         fhir:xpath [ fhir:v "not(exists(f:value)) or exists(f:system)" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Subscription"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Subscription>
-         ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "v2" ] ;
-         fhir:map [ fhir:v "XTN" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "TEL" ]
-       ] [
-         fhir:identity [ fhir:v "servd" ] ;
-         fhir:map [ fhir:v "ContactPoint" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".telecom" ]
        ] )
@@ -933,7 +840,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Address"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -945,19 +851,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "v2" ] ;
-         fhir:map [ fhir:v "XAD" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "AD" ]
-       ] [
-         fhir:identity [ fhir:v "servd" ] ;
-         fhir:map [ fhir:v "Address" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".addr" ]
        ] )
@@ -966,7 +862,6 @@
        fhir:path [ fhir:v "Location.physicalType" ] ;
        fhir:short [ fhir:v "Physical form of the location" ] ;
        fhir:definition [ fhir:v "Physical form of the location, e.g. building, room, vehicle, road." ] ;
-       fhir:comment [ fhir:v "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." ] ;
        fhir:requirements [ fhir:v "For purposes of showing relevant locations in queries, we need to categorize locations." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
@@ -978,7 +873,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -990,11 +884,15 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "PhysicalType" ]
+           fhir:value [
+             a fhir:string ;
+             fhir:v "PhysicalType"
+           ]
          ] ) ;
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "Physical form of the location." ] ;
@@ -1004,18 +902,6 @@
          ]
        ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "v2" ] ;
-         fhir:map [ fhir:v "CE/CNE/CWE" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "CD" ]
-       ] [
-         fhir:identity [ fhir:v "orim" ] ;
-         fhir:map [ fhir:v "fhir:CodeableConcept rdfs:subClassOf dt:CD" ]
-       ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.class" ]
        ] [
@@ -1038,7 +924,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "BackboneElement"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1050,10 +935,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".playingEntity [classCode=PLC determinerCode=INSTANCE].positionText" ]
        ] )
@@ -1073,32 +957,22 @@
        fhir:type ( [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "string"^^xsd:anyURI ]
+           fhir:value [
+             a fhir:url ;
+             fhir:v "string"^^xsd:anyURI
+           ]
          ] ) ;
          fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
        ] )
      ] [
        fhir:id [ fhir:v "Location.position.extension" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] ) ;
        fhir:path [ fhir:v "Location.position.extension" ] ;
-       fhir:slicing [
-         fhir:discriminator ( [
-           fhir:type [ fhir:v "value" ] ;
-           fhir:path [ fhir:v "url" ]
-         ] ) ;
-         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
-         fhir:rules [ fhir:v "open" ]
-       ] ;
        fhir:short [ fhir:v "Additional content defined by implementations" ] ;
        fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
        fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
@@ -1113,7 +987,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1129,18 +1002,17 @@
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
-         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "N/A" ]
        ] )
      ] [
        fhir:id [ fhir:v "Location.position.modifierExtension" ] ;
@@ -1160,7 +1032,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1176,19 +1047,16 @@
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
-         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v true ] ;
        fhir:isModifierReason [ fhir:v "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them" ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "N/A" ]
        ] )
@@ -1197,7 +1065,6 @@
        fhir:path [ fhir:v "Location.position.longitude" ] ;
        fhir:short [ fhir:v "Longitude with WGS84 datum" ] ;
        fhir:definition [ fhir:v "Longitude. The value domain and the interpretation are the same as for the text of the longitude element in KML (see notes below)." ] ;
-       fhir:comment [ fhir:v "Do not use an IEEE type floating point type, instead use something that works like a true decimal, with inbuilt precision (e.g. Java BigInteger)" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -1208,7 +1075,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "decimal"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1220,10 +1086,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "(RIM Opted not to map the sub-elements of GPS location, is now an OBS)" ]
        ] )
@@ -1232,7 +1097,6 @@
        fhir:path [ fhir:v "Location.position.latitude" ] ;
        fhir:short [ fhir:v "Latitude with WGS84 datum" ] ;
        fhir:definition [ fhir:v "Latitude. The value domain and the interpretation are the same as for the text of the latitude element in KML (see notes below)." ] ;
-       fhir:comment [ fhir:v "Do not use an IEEE type floating point type, instead use something that works like a true decimal, with inbuilt precision (e.g. Java BigInteger)" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -1243,7 +1107,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "decimal"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1255,10 +1118,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "(RIM Opted not to map the sub-elements of GPS location, is now an OBS)" ]
        ] )
@@ -1267,7 +1129,6 @@
        fhir:path [ fhir:v "Location.position.altitude" ] ;
        fhir:short [ fhir:v "Altitude with WGS84 datum" ] ;
        fhir:definition [ fhir:v "Altitude. The value domain and the interpretation are the same as for the text of the altitude element in KML (see notes below)." ] ;
-       fhir:comment [ fhir:v "Do not use an IEEE type floating point type, instead use something that works like a true decimal, with inbuilt precision (e.g. Java BigInteger)" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -1278,7 +1139,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "decimal"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1290,10 +1150,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "(RIM Opted not to map the sub-elements of GPS location, is now an OBS)" ]
        ] )
@@ -1318,7 +1177,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
          ] )
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1329,25 +1187,10 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] [
-         fhir:key [ fhir:v "ref-1" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "SHALL have a contained resource if a local reference is provided" ] ;
-         fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
-         fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
-         ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".scopingEntity[classCode=ORG determinerKind=INSTANCE]" ]
        ] )
@@ -1356,7 +1199,6 @@
        fhir:path [ fhir:v "Location.partOf" ] ;
        fhir:short [ fhir:v "Another Location this one is physically a part of" ] ;
        fhir:definition [ fhir:v "Another Location of which this Location is physically a part of." ] ;
-       fhir:comment [ fhir:v "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." ] ;
        fhir:requirements [ fhir:v "For purposes of location, display and identification, knowing which locations are located within other locations is important." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
@@ -1368,7 +1210,10 @@
        fhir:type ( [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "true"^^xsd:boolean ]
+           fhir:value [
+             a fhir:boolean ;
+             fhir:v true
+           ]
          ] ) ;
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
@@ -1376,7 +1221,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Location>
          ] )
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1387,24 +1231,10 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] [
-         fhir:key [ fhir:v "ref-1" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "SHALL have a contained resource if a local reference is provided" ] ;
-         fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
-         fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
-         ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".inboundLink[typeCode=PART].source[classCode=SDLC]" ]
        ] )
@@ -1424,7 +1254,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "BackboneElement"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1436,10 +1265,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".effectiveTime" ]
        ] )
@@ -1459,32 +1287,22 @@
        fhir:type ( [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "string"^^xsd:anyURI ]
+           fhir:value [
+             a fhir:url ;
+             fhir:v "string"^^xsd:anyURI
+           ]
          ] ) ;
          fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
        ] )
      ] [
        fhir:id [ fhir:v "Location.hoursOfOperation.extension" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] ) ;
        fhir:path [ fhir:v "Location.hoursOfOperation.extension" ] ;
-       fhir:slicing [
-         fhir:discriminator ( [
-           fhir:type [ fhir:v "value" ] ;
-           fhir:path [ fhir:v "url" ]
-         ] ) ;
-         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
-         fhir:rules [ fhir:v "open" ]
-       ] ;
        fhir:short [ fhir:v "Additional content defined by implementations" ] ;
        fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
        fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
@@ -1499,7 +1317,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1515,18 +1332,17 @@
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
-         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "N/A" ]
        ] )
      ] [
        fhir:id [ fhir:v "Location.hoursOfOperation.modifierExtension" ] ;
@@ -1546,7 +1362,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1562,19 +1377,16 @@
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
-         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v true ] ;
        fhir:isModifierReason [ fhir:v "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them" ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "N/A" ]
        ] )
@@ -1583,7 +1395,6 @@
        fhir:path [ fhir:v "Location.hoursOfOperation.daysOfWeek" ] ;
        fhir:short [ fhir:v "mon | tue | wed | thu | fri | sat | sun" ] ;
        fhir:definition [ fhir:v "Indicates which days of the week are available between the start and end Times." ] ;
-       fhir:comment [ fhir:v "Note that FHIR strings SHALL NOT exceed 1MB in size" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
@@ -1594,7 +1405,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "code"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1606,10 +1416,15 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "DaysOfWeek" ]
+           fhir:value [
+             a fhir:string ;
+             fhir:v "DaysOfWeek"
+           ]
          ] ) ;
          fhir:strength [ fhir:v "required" ] ;
          fhir:description [ fhir:v "The days of the week." ] ;
@@ -1619,9 +1434,6 @@
          ]
        ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".effectiveTime" ]
        ] )
@@ -1640,7 +1452,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1652,10 +1463,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".effectiveTime" ]
        ] )
@@ -1674,7 +1484,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "time"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1686,10 +1495,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".effectiveTime" ]
        ] )
@@ -1708,7 +1516,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "time"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1720,10 +1527,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".effectiveTime" ]
        ] )
@@ -1732,7 +1538,6 @@
        fhir:path [ fhir:v "Location.availabilityExceptions" ] ;
        fhir:short [ fhir:v "Description of availability exceptions" ] ;
        fhir:definition [ fhir:v "A description of when the locations opening ours are different to normal, e.g. public holiday availability. Succinctly describing all possible exceptions to normal site availability as detailed in the opening hours Times." ] ;
-       fhir:comment [ fhir:v "Note that FHIR strings SHALL NOT exceed 1MB in size" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -1743,7 +1548,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1755,6 +1559,8 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
@@ -1764,7 +1570,6 @@
        fhir:path [ fhir:v "Location.endpoint" ] ;
        fhir:short [ fhir:v "Technical endpoints providing access to services operated for the location" ] ;
        fhir:definition [ fhir:v "Technical endpoints providing access to services operated for the location." ] ;
-       fhir:comment [ fhir:v "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." ] ;
        fhir:requirements [ fhir:v "Organizations may have different systems at different locations that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
@@ -1780,7 +1585,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Endpoint>
          ] )
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1791,23 +1595,12 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] [
-         fhir:key [ fhir:v "ref-1" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "SHALL have a contained resource if a local reference is provided" ] ;
-         fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
-         fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
-         ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
        ] )
      ] )
   ] ; # 
@@ -1829,7 +1622,7 @@
        fhir:path [ fhir:v "Location.name" ] ;
        fhir:short [ fhir:v "Name of the institution" ] ;
        fhir:definition [ fhir:v "Name of the organization or institution responsible for the study. Dicom Tag (0008,0080)" ] ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "fhir-osiris-imaging-service" ] ;
          fhir:map [ fhir:v "OSIRIS_pivot_Study.Study_InstitutionName" ]

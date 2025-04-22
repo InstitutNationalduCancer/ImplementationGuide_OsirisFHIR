@@ -1,38 +1,39 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
 
-<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-adverse-event> a fhir:StructureDefinition ;
+<https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-adverse-event> a fhir:StructureDefinition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "onco-adverse-event"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent\">AdverseEvent</a><a name=\"AdverseEvent\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/adverseevent.html\">AdverseEvent</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Medical care, research study or other healthcare event causing physical injury</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> Slices for extension<a name=\"AdverseEvent.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Content/Rules for all slices</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.extension:end-date\" title=\"Extension URL = https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/adverse-event-end-date\">end-date</a><a name=\"AdverseEvent.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">End date<br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-adverse-event-end-date.html\">https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/adverse-event-end-date</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.event\" title=\"The international MedDRA code (version 12.0) is used to describe the Adverse Event (AE) occurring during treatment.\">event</a><a name=\"AdverseEvent.event\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Term to describe the adverse event<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-AdverseEventCode.html\" title=\"https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AdverseEventCode\">Adverse Event Code Value Set</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.subject\">subject</a><a name=\"AdverseEvent.subject\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onco-patient.html\">Oncology Patient</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Subject impacted by event</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.date\" title=\"Date of diagnosis of the adverse event.\">date</a><a name=\"AdverseEvent.date\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date of diagnosis</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.seriousness\" title=\"The Common Terminology Criteria For Adverse Events (CTCAE version 5.0) grade is used to define the severity of the AE.\">seriousness</a><a name=\"AdverseEvent.seriousness\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Grade of the adverse event<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-AdverseEventGrade.html\" title=\"https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AdverseEventGrade\">Adverse Event Grade Value Set</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.seriousness.coding\">coding</a><a name=\"AdverseEvent.seriousness.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.seriousness.coding.code\">code</a><a name=\"AdverseEvent.seriousness.coding.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Symbol in syntax defined by the system</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.suspectEntity\">suspectEntity</a><a name=\"AdverseEvent.suspectEntity\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.suspectEntity.instance\">instance</a><a name=\"AdverseEvent.suspectEntity.instance\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onco-medication-statement.html\">Oncology-related Medication Statement</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Refers to the specific entity that caused the adverse event</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.subjectMedicalHistory\">subjectMedicalHistory</a><a name=\"AdverseEvent.subjectMedicalHistory\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-tumor-pathology-event.html\">Tumor Pathology Event</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">AdverseEvent.subjectMedicalHistory</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition onco-adverse-event</b></p><a name=\"onco-adverse-event\"> </a><a name=\"hconco-adverse-event\"> </a><a name=\"onco-adverse-event-en-US\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent\">AdverseEvent</a><a name=\"AdverseEvent\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/adverseevent.html\">AdverseEvent</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Medical care, research study or other healthcare event causing physical injury</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.extension\">Slices for extension</a><a name=\"AdverseEvent.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.extension:end-date\" title=\"Extension URL = https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/adverse-event-end-date\">extension:end-date</a><a name=\"AdverseEvent.extension.2\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">End date<br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-adverse-event-end-date.html\">https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/adverse-event-end-date</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.event\" title=\"The international MedDRA code (version 12.0) is used to describe the Adverse Event (AE) occurring during treatment.\">event</a><a name=\"AdverseEvent.event\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Term to describe the adverse event<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-AdverseEventCode.html\" title=\"https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AdverseEventCode\">Adverse Event Code Value Set</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.subject\">subject</a><a name=\"AdverseEvent.subject\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onco-patient.html\">Oncology Patient</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Subject impacted by event</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.date\" title=\"Date of diagnosis of the adverse event.\">date</a><a name=\"AdverseEvent.date\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date of diagnosis</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.seriousness\" title=\"The Common Terminology Criteria For Adverse Events (CTCAE version 5.0) grade is used to define the severity of the AE.\">seriousness</a><a name=\"AdverseEvent.seriousness\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Grade of the adverse event<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-AdverseEventGrade.html\" title=\"https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AdverseEventGrade\">Adverse Event Grade Value Set</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.seriousness.coding\">coding</a><a name=\"AdverseEvent.seriousness.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.seriousness.coding.code\">code</a><a name=\"AdverseEvent.seriousness.coding.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Symbol in syntax defined by the system</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.suspectEntity\">suspectEntity</a><a name=\"AdverseEvent.suspectEntity\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.suspectEntity.instance\">instance</a><a name=\"AdverseEvent.suspectEntity.instance\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onco-medication-statement.html\">Oncology-related Medication Statement</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Refers to the specific entity that caused the adverse event</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onco-adverse-event-definitions.html#AdverseEvent.subjectMedicalHistory\">subjectMedicalHistory</a><a name=\"AdverseEvent.subjectMedicalHistory\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-tumor-pathology-event.html\">Tumor Pathology Event</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">AdverseEvent.subjectMedicalHistory</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-adverse-event"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.1.0"] ; # 
+  fhir:url [ fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-adverse-event"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.1.0"] ; # 
   fhir:name [ fhir:v "OncoAdverseEvent"] ; # 
   fhir:title [ fhir:v "Oncologic Adverse Event"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-15T14:17:55+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Arkhn"] ; # 
+  fhir:date [ fhir:v "2025-04-22T15:19:59+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "institutcancer"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Arkhn" ] ;
+     fhir:name [ fhir:v "institutcancer" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://arkhn.com" ]
+       fhir:value [ fhir:v "http://cancer.fr" ]
      ] [
        fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "contact@arkhn.com" ]
+       fhir:value [ fhir:v "osiris@institutcancer.fr" ]
      ] )
   ] [
-     fhir:name [ fhir:v "Nicolas Riss" ] ;
+     fhir:name [ fhir:v "Aurélien JOBARD" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "nicolas@arkhn.com" ]
+       fhir:value [ fhir:v "osiris@institutcancer.fr" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Adverse event related to a cancer-related treatment associated to a grade from MEDDRA terminology (ex: 10047700: \"Vomiting\")."] ; # 
@@ -51,7 +52,7 @@
      fhir:name [ fhir:v "RIM Mapping" ]
   ] ) ; # 
   fhir:kind [ fhir:v "resource"] ; # 
-  fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:abstract [ fhir:v false] ; # 
   fhir:type [ fhir:v "AdverseEvent"^^xsd:anyURI] ; # 
   fhir:baseDefinition [
      fhir:v "http://hl7.org/fhir/StructureDefinition/AdverseEvent"^^xsd:anyURI ;
@@ -59,6 +60,13 @@
   ] ; # 
   fhir:derivation [ fhir:v "constraint"] ; # 
   fhir:snapshot [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "4.0.1"
+       ]
+     ] ) ;
      fhir:element ( [
        fhir:id [ fhir:v "AdverseEvent" ] ;
        fhir:path [ fhir:v "AdverseEvent" ] ;
@@ -83,16 +91,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] [
-         fhir:key [ fhir:v "dom-4" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated" ] ;
-         fhir:expression [ fhir:v "contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()" ] ;
-         fhir:xpath [ fhir:v "not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
-         ]
-       ] [
          fhir:key [ fhir:v "dom-3" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource" ] ;
@@ -103,18 +101,11 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "true"^^xsd:boolean ]
-         ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a human readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time." ]
-         ] ) ;
-         fhir:key [ fhir:v "dom-6" ] ;
-         fhir:severity [ fhir:v "warning" ] ;
-         fhir:human [ fhir:v "A resource should have narrative for robust management" ] ;
-         fhir:expression [ fhir:v "text.`div`.exists()" ] ;
-         fhir:xpath [ fhir:v "exists(f:text/h:div)" ] ;
+         fhir:key [ fhir:v "dom-4" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated" ] ;
+         fhir:expression [ fhir:v "contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()" ] ;
+         fhir:xpath [ fhir:v "not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
@@ -129,7 +120,32 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:boolean ;
+             fhir:v true
+           ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:markdown ;
+             fhir:v "When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a human readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time."
+           ]
+         ] ) ;
+         fhir:key [ fhir:v "dom-6" ] ;
+         fhir:severity [ fhir:v "warning" ] ;
+         fhir:human [ fhir:v "A resource should have narrative for robust management" ] ;
+         fhir:expression [ fhir:v "text.`div`.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:text/h:div)" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+         ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Entity. Role, or Act" ]
@@ -150,11 +166,15 @@
        fhir:type ( [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "id"^^xsd:anyURI ]
+           fhir:value [
+             a fhir:url ;
+             fhir:v "id"^^xsd:anyURI
+           ]
          ] ) ;
          fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.meta" ] ;
        fhir:path [ fhir:v "AdverseEvent.meta" ] ;
@@ -170,7 +190,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Meta"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -182,14 +201,8 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "N/A" ]
-       ] )
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.implicitRules" ] ;
        fhir:path [ fhir:v "AdverseEvent.implicitRules" ] ;
@@ -206,7 +219,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "uri"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -218,13 +230,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v true ] ;
        fhir:isModifierReason [ fhir:v "This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation" ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] )
+       fhir:isSummary [ fhir:v true ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.language" ] ;
        fhir:path [ fhir:v "AdverseEvent.language" ] ;
@@ -241,7 +249,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "code"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -253,16 +260,22 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet"^^xsd:anyURI ] ;
            fhir:value [
+             a fhir:canonical ;
              fhir:v "http://hl7.org/fhir/ValueSet/all-languages"^^xsd:anyURI ;
              fhir:link <http://hl7.org/fhir/ValueSet/all-languages>
            ]
          ] [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "Language" ]
+           fhir:value [
+             a fhir:string ;
+             fhir:v "Language"
+           ]
          ] ) ;
          fhir:strength [ fhir:v "preferred" ] ;
          fhir:description [ fhir:v "A human language." ] ;
@@ -270,11 +283,7 @@
            fhir:v "http://hl7.org/fhir/ValueSet/languages"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/ValueSet/languages>
          ]
-       ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] )
+       ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.text" ] ;
        fhir:path [ fhir:v "AdverseEvent.text" ] ;
@@ -292,7 +301,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Narrative"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -304,13 +312,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "N/A" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Act.text?" ]
        ] )
@@ -331,35 +335,25 @@
        fhir:type ( [
          fhir:code [ fhir:v "Resource"^^xsd:anyURI ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "Entity. Role, or Act" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "N/A" ]
        ] )
      ] [
        fhir:id [ fhir:v "AdverseEvent.extension" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] ) ;
        fhir:path [ fhir:v "AdverseEvent.extension" ] ;
        fhir:slicing [
          fhir:discriminator ( [
            fhir:type [ fhir:v "value" ] ;
            fhir:path [ fhir:v "url" ]
          ] ) ;
-         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
+         fhir:ordered [ fhir:v false ] ;
          fhir:rules [ fhir:v "open" ]
        ] ;
-       fhir:short [ fhir:v "Additional content defined by implementations" ] ;
-       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
-       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
-       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] ) ;
+       fhir:short [ fhir:v "Extension" ] ;
+       fhir:definition [ fhir:v "An Extension" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
@@ -370,7 +364,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -386,19 +379,14 @@
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
-         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "N/A" ]
-       ] )
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.extension:end-date" ] ;
        fhir:path [ fhir:v "AdverseEvent.extension" ] ;
@@ -415,8 +403,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
          fhir:profile ( [
-           fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/adverse-event-end-date"^^xsd:anyURI ;
-           fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/adverse-event-end-date>
+           fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/adverse-event-end-date"^^xsd:anyURI ;
+           fhir:link <https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/adverse-event-end-date>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
@@ -437,33 +425,20 @@
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v true ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "fhir-osiris-adverseevent" ] ;
          fhir:map [ fhir:v "OSIRIS_pivot_AdverseEvent.AdverseEvent_EndDate" ]
        ] )
      ] [
        fhir:id [ fhir:v "AdverseEvent.modifierExtension" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] ) ;
        fhir:path [ fhir:v "AdverseEvent.modifierExtension" ] ;
-       fhir:slicing [
-         fhir:discriminator ( [
-           fhir:type [ fhir:v "value" ] ;
-           fhir:path [ fhir:v "url" ]
-         ] ) ;
-         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
-         fhir:rules [ fhir:v "open" ]
-       ] ;
        fhir:short [ fhir:v "Extensions that cannot be ignored" ] ;
        fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." ] ;
        fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
@@ -479,7 +454,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -495,18 +469,16 @@
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
-         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v true ] ;
        fhir:isModifierReason [ fhir:v "Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them" ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "N/A" ]
        ] )
@@ -527,7 +499,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Identifier"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -539,26 +510,13 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "v2" ] ;
-         fhir:map [ fhir:v "CX / EI (occasionally, more often EI maps to a resource id or a URL)" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]" ]
-       ] [
-         fhir:identity [ fhir:v "servd" ] ;
-         fhir:map [ fhir:v "Identifier" ]
-       ] )
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.actuality" ] ;
        fhir:path [ fhir:v "AdverseEvent.actuality" ] ;
        fhir:short [ fhir:v "actual | potential" ] ;
        fhir:definition [ fhir:v "Whether the event actually happened, or just had the potential to. Note that this is independent of whether anyone was affected or harmed or how severely." ] ;
-       fhir:comment [ fhir:v "Note that FHIR strings SHALL NOT exceed 1MB in size" ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -569,7 +527,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "code"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -581,13 +538,16 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v true ] ;
        fhir:isModifierReason [ fhir:v "This element is labeled as a modifier because it has a potential code that indicates the adverse event did not actually happen." ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "AdverseEventActuality" ]
+           fhir:value [
+             a fhir:string ;
+             fhir:v "AdverseEventActuality"
+           ]
          ] ) ;
          fhir:strength [ fhir:v "required" ] ;
          fhir:description [ fhir:v "Overall nature of the adverse event, e.g. real or potential." ] ;
@@ -597,9 +557,6 @@
          ]
        ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.class" ]
        ] )
@@ -608,7 +565,6 @@
        fhir:path [ fhir:v "AdverseEvent.category" ] ;
        fhir:short [ fhir:v "product-problem | product-quality | product-use-error | wrong-dose | incorrect-prescribing-information | wrong-technique | wrong-route-of-administration | wrong-rate | wrong-duration | wrong-time | expired-drug | medical-device-use-error | problem-different-manufacturer | unsafe-physical-environment" ] ;
        fhir:definition [ fhir:v "The overall type of event, intended for search and filtering purposes." ] ;
-       fhir:comment [ fhir:v "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
@@ -619,7 +575,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -631,11 +586,15 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "AdverseEventCategory" ]
+           fhir:value [
+             a fhir:string ;
+             fhir:v "AdverseEventCategory"
+           ]
          ] ) ;
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "Overall categorization of the event, e.g. product-related or situational." ] ;
@@ -645,18 +604,6 @@
          ]
        ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "v2" ] ;
-         fhir:map [ fhir:v "CE/CNE/CWE" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "CD" ]
-       ] [
-         fhir:identity [ fhir:v "orim" ] ;
-         fhir:map [ fhir:v "fhir:CodeableConcept rdfs:subClassOf dt:CD" ]
-       ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.class" ]
        ] )
@@ -665,7 +612,6 @@
        fhir:path [ fhir:v "AdverseEvent.event" ] ;
        fhir:short [ fhir:v "Term to describe the adverse event" ] ;
        fhir:definition [ fhir:v "The international MedDRA code (version 12.0) is used to describe the Adverse Event (AE) occurring during treatment." ] ;
-       fhir:comment [ fhir:v "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -676,7 +622,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -688,32 +633,21 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:valueSet [
-           fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AdverseEventCode"^^xsd:anyURI ;
-           fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AdverseEventCode>
+           fhir:v "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AdverseEventCode"^^xsd:anyURI ;
+           fhir:link <https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AdverseEventCode>
          ]
        ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "v2" ] ;
-         fhir:map [ fhir:v "CE/CNE/CWE" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "CD" ]
-       ] [
-         fhir:identity [ fhir:v "orim" ] ;
-         fhir:map [ fhir:v "fhir:CodeableConcept rdfs:subClassOf dt:CD" ]
+         fhir:identity [ fhir:v "fhir-osiris-adverseevent" ] ;
+         fhir:map [ fhir:v "OSIRIS_pivot_AdverseEvent.AdverseEvent_Code" ]
        ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.what[x]" ]
-       ] [
-         fhir:identity [ fhir:v "fhir-osiris-adverseevent" ] ;
-         fhir:map [ fhir:v "OSIRIS_pivot_AdverseEvent.AdverseEvent_Code" ]
        ] )
      ] [
        fhir:id [ fhir:v "AdverseEvent.subject" ] ;
@@ -733,11 +667,10 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"^^xsd:anyURI ;
-           fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient>
+           fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-patient"^^xsd:anyURI ;
+           fhir:link <https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-patient>
          ] )
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -748,31 +681,16 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] [
-         fhir:key [ fhir:v "ref-1" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "SHALL have a contained resource if a local reference is provided" ] ;
-         fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
-         fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
-         ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v true ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
+         fhir:identity [ fhir:v "fhir-osiris-adverseevent" ] ;
+         fhir:map [ fhir:v "OSIRIS_pivot_AdverseEvent.Patient_Id" ]
        ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.who" ]
-       ] [
-         fhir:identity [ fhir:v "fhir-osiris-adverseevent" ] ;
-         fhir:map [ fhir:v "OSIRIS_pivot_AdverseEvent.Patient_Id" ]
        ] )
      ] [
        fhir:id [ fhir:v "AdverseEvent.encounter" ] ;
@@ -794,7 +712,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Encounter>
          ] )
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -805,25 +722,10 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] [
-         fhir:key [ fhir:v "ref-1" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "SHALL have a contained resource if a local reference is provided" ] ;
-         fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
-         fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
-         ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.context" ]
        ] )
@@ -842,7 +744,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -854,17 +755,15 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v true ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
+         fhir:identity [ fhir:v "fhir-osiris-adverseevent" ] ;
+         fhir:map [ fhir:v "OSIRIS_pivot_AdverseEvent.AdverseEvent_Date" ]
        ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.init" ]
-       ] [
-         fhir:identity [ fhir:v "fhir-osiris-adverseevent" ] ;
-         fhir:map [ fhir:v "OSIRIS_pivot_AdverseEvent.AdverseEvent_Date" ]
        ] )
      ] [
        fhir:id [ fhir:v "AdverseEvent.detected" ] ;
@@ -881,7 +780,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -893,11 +791,8 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] )
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.recordedDate" ] ;
        fhir:path [ fhir:v "AdverseEvent.recordedDate" ] ;
@@ -914,7 +809,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -926,11 +820,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.recorded" ]
        ] )
@@ -939,7 +831,6 @@
        fhir:path [ fhir:v "AdverseEvent.resultingCondition" ] ;
        fhir:short [ fhir:v "Effect on the subject due to this event" ] ;
        fhir:definition [ fhir:v "Includes information about the reaction that occurred as a result of exposure to a substance (for example, a drug or a chemical)." ] ;
-       fhir:comment [ fhir:v "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
@@ -954,7 +845,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Condition>
          ] )
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -965,31 +855,14 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] [
-         fhir:key [ fhir:v "ref-1" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "SHALL have a contained resource if a local reference is provided" ] ;
-         fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
-         fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
-         ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ] )
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.location" ] ;
        fhir:path [ fhir:v "AdverseEvent.location" ] ;
        fhir:short [ fhir:v "Location where adverse event occurred" ] ;
        fhir:definition [ fhir:v "The information about where the adverse event occurred." ] ;
-       fhir:comment [ fhir:v "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -1004,7 +877,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Location>
          ] )
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1015,31 +887,14 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] [
-         fhir:key [ fhir:v "ref-1" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "SHALL have a contained resource if a local reference is provided" ] ;
-         fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
-         fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
-         ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ] )
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.seriousness" ] ;
        fhir:path [ fhir:v "AdverseEvent.seriousness" ] ;
        fhir:short [ fhir:v "Grade of the adverse event" ] ;
        fhir:definition [ fhir:v "The Common Terminology Criteria For Adverse Events (CTCAE version 5.0) grade is used to define the severity of the AE." ] ;
-       fhir:comment [ fhir:v "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -1050,7 +905,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1062,28 +916,16 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v true ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
-           fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AdverseEventGrade"^^xsd:anyURI ;
-           fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AdverseEventGrade>
+           fhir:v "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AdverseEventGrade"^^xsd:anyURI ;
+           fhir:link <https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AdverseEventGrade>
          ]
-       ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "v2" ] ;
-         fhir:map [ fhir:v "CE/CNE/CWE" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "CD" ]
-       ] [
-         fhir:identity [ fhir:v "orim" ] ;
-         fhir:map [ fhir:v "fhir:CodeableConcept rdfs:subClassOf dt:CD" ]
-       ] )
+       ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.seriousness.id" ] ;
        fhir:path [ fhir:v "AdverseEvent.seriousness.id" ] ;
@@ -1100,23 +942,21 @@
        fhir:type ( [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "string"^^xsd:anyURI ]
+           fhir:value [
+             a fhir:url ;
+             fhir:v "string"^^xsd:anyURI
+           ]
          ] ) ;
          fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
        ] )
      ] [
        fhir:id [ fhir:v "AdverseEvent.seriousness.extension" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] ) ;
        fhir:path [ fhir:v "AdverseEvent.seriousness.extension" ] ;
        fhir:slicing [
          fhir:discriminator ( [
@@ -1140,7 +980,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1156,18 +995,17 @@
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
-         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "N/A" ]
        ] )
      ] [
        fhir:id [ fhir:v "AdverseEvent.seriousness.coding" ] ;
@@ -1186,7 +1024,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1198,20 +1035,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "v2" ] ;
-         fhir:map [ fhir:v "CE/CNE/CWE subset one of the sets of component 1-3 or 4-6" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "CV" ]
-       ] [
-         fhir:identity [ fhir:v "orim" ] ;
-         fhir:map [ fhir:v "fhir:Coding rdfs:subClassOf dt:CDCoding" ]
-       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "C*E.1-8, C*E.10-22" ]
        ] [
@@ -1237,23 +1063,21 @@
        fhir:type ( [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "string"^^xsd:anyURI ]
+           fhir:value [
+             a fhir:url ;
+             fhir:v "string"^^xsd:anyURI
+           ]
          ] ) ;
          fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
        ] )
      ] [
        fhir:id [ fhir:v "AdverseEvent.seriousness.coding.extension" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] ) ;
        fhir:path [ fhir:v "AdverseEvent.seriousness.coding.extension" ] ;
        fhir:slicing [
          fhir:discriminator ( [
@@ -1277,7 +1101,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1293,18 +1116,17 @@
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
-         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "N/A" ]
        ] )
      ] [
        fhir:id [ fhir:v "AdverseEvent.seriousness.coding.system" ] ;
@@ -1323,7 +1145,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "uri"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1335,11 +1156,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "C*E.3" ]
        ] [
@@ -1365,7 +1184,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1377,11 +1195,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "C*E.7" ]
        ] [
@@ -1396,7 +1212,6 @@
        fhir:path [ fhir:v "AdverseEvent.seriousness.coding.code" ] ;
        fhir:short [ fhir:v "Symbol in syntax defined by the system" ] ;
        fhir:definition [ fhir:v "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." ] ;
-       fhir:comment [ fhir:v "Note that FHIR strings SHALL NOT exceed 1MB in size" ] ;
        fhir:requirements [ fhir:v "Need to refer to a particular code in the system." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
@@ -1408,7 +1223,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "code"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1420,10 +1234,11 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
+         fhir:identity [ fhir:v "fhir-osiris-adverseevent" ] ;
+         fhir:map [ fhir:v "OSIRIS_pivot_AdverseEvent.AdverseEvent_Grade" ]
        ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "C*E.1" ]
@@ -1433,20 +1248,19 @@
        ] [
          fhir:identity [ fhir:v "orim" ] ;
          fhir:map [ fhir:v "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
-       ] [
-         fhir:identity [ fhir:v "fhir-osiris-adverseevent" ] ;
-         fhir:map [ fhir:v "OSIRIS_pivot_AdverseEvent.AdverseEvent_Grade" ]
        ] )
      ] [
        fhir:id [ fhir:v "AdverseEvent.seriousness.coding.display" ] ;
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "true"^^xsd:boolean ]
+         fhir:value [
+           a fhir:boolean ;
+           fhir:v true
+         ]
        ] ) ;
        fhir:path [ fhir:v "AdverseEvent.seriousness.coding.display" ] ;
        fhir:short [ fhir:v "Representation defined by the system" ] ;
        fhir:definition [ fhir:v "A representation of the meaning of the code in the system, following the rules of the system." ] ;
-       fhir:comment [ fhir:v "Note that FHIR strings SHALL NOT exceed 1MB in size" ] ;
        fhir:requirements [ fhir:v "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
@@ -1458,7 +1272,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1470,11 +1283,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "C*E.2 - but note this is not well followed" ]
        ] [
@@ -1501,7 +1312,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1513,11 +1323,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "Sometimes implied by being first" ]
        ] [
@@ -1531,7 +1339,10 @@
        fhir:id [ fhir:v "AdverseEvent.seriousness.text" ] ;
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "true"^^xsd:boolean ]
+         fhir:value [
+           a fhir:boolean ;
+           fhir:v true
+         ]
        ] ) ;
        fhir:path [ fhir:v "AdverseEvent.seriousness.text" ] ;
        fhir:short [ fhir:v "Plain text representation of the concept" ] ;
@@ -1548,7 +1359,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1560,11 +1370,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "C*E.9. But note many systems use C*E.2 for this" ]
        ] [
@@ -1579,7 +1387,6 @@
        fhir:path [ fhir:v "AdverseEvent.severity" ] ;
        fhir:short [ fhir:v "mild | moderate | severe" ] ;
        fhir:definition [ fhir:v "Describes the severity of the adverse event, in relation to the subject. Contrast to AdverseEvent.seriousness - a severe rash might not be serious, but a mild heart problem is." ] ;
-       fhir:comment [ fhir:v "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -1590,7 +1397,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1602,11 +1408,15 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "AdverseEventSeverity" ]
+           fhir:value [
+             a fhir:string ;
+             fhir:v "AdverseEventSeverity"
+           ]
          ] ) ;
          fhir:strength [ fhir:v "required" ] ;
          fhir:description [ fhir:v "The severity of the adverse event itself, in direct relation to the subject." ] ;
@@ -1614,26 +1424,12 @@
            fhir:v "http://hl7.org/fhir/ValueSet/adverse-event-severity|4.0.1"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/ValueSet/adverse-event-severity|4.0.1>
          ]
-       ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "v2" ] ;
-         fhir:map [ fhir:v "CE/CNE/CWE" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "CD" ]
-       ] [
-         fhir:identity [ fhir:v "orim" ] ;
-         fhir:map [ fhir:v "fhir:CodeableConcept rdfs:subClassOf dt:CD" ]
-       ] )
+       ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.outcome" ] ;
        fhir:path [ fhir:v "AdverseEvent.outcome" ] ;
        fhir:short [ fhir:v "resolved | recovering | ongoing | resolvedWithSequelae | fatal | unknown" ] ;
        fhir:definition [ fhir:v "Describes the type of outcome from the adverse event." ] ;
-       fhir:comment [ fhir:v "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -1644,7 +1440,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1656,11 +1451,15 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "AdverseEventOutcome" ]
+           fhir:value [
+             a fhir:string ;
+             fhir:v "AdverseEventOutcome"
+           ]
          ] ) ;
          fhir:strength [ fhir:v "required" ] ;
          fhir:description [ fhir:v "TODO (and should this be required?)." ] ;
@@ -1668,26 +1467,12 @@
            fhir:v "http://hl7.org/fhir/ValueSet/adverse-event-outcome|4.0.1"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/ValueSet/adverse-event-outcome|4.0.1>
          ]
-       ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "v2" ] ;
-         fhir:map [ fhir:v "CE/CNE/CWE" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "CD" ]
-       ] [
-         fhir:identity [ fhir:v "orim" ] ;
-         fhir:map [ fhir:v "fhir:CodeableConcept rdfs:subClassOf dt:CD" ]
-       ] )
+       ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.recorder" ] ;
        fhir:path [ fhir:v "AdverseEvent.recorder" ] ;
        fhir:short [ fhir:v "Who recorded the adverse event" ] ;
        fhir:definition [ fhir:v "Information on who recorded the adverse event.  May be the patient or a practitioner." ] ;
-       fhir:comment [ fhir:v "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -1711,7 +1496,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/RelatedPerson>
          ] )
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1722,25 +1506,10 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] [
-         fhir:key [ fhir:v "ref-1" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "SHALL have a contained resource if a local reference is provided" ] ;
-         fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
-         fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
-         ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.author" ]
        ] )
@@ -1749,7 +1518,6 @@
        fhir:path [ fhir:v "AdverseEvent.contributor" ] ;
        fhir:short [ fhir:v "Who  was involved in the adverse event or the potential adverse event" ] ;
        fhir:definition [ fhir:v "Parties that may or should contribute or have contributed information to the adverse event, which can consist of one or more activities.  Such information includes information leading to the decision to perform the activity and how to perform the activity (e.g. consultant), information that the activity itself seeks to reveal (e.g. informant of clinical history), or information about what activity was performed (e.g. informant witness)." ] ;
-       fhir:comment [ fhir:v "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
@@ -1770,7 +1538,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Device>
          ] )
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1781,25 +1548,9 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] [
-         fhir:key [ fhir:v "ref-1" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "SHALL have a contained resource if a local reference is provided" ] ;
-         fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
-         fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
-         ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ] )
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.suspectEntity" ] ;
        fhir:path [ fhir:v "AdverseEvent.suspectEntity" ] ;
@@ -1815,7 +1566,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "BackboneElement"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1827,11 +1577,8 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] )
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.suspectEntity.id" ] ;
        fhir:path [ fhir:v "AdverseEvent.suspectEntity.id" ] ;
@@ -1848,32 +1595,22 @@
        fhir:type ( [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "string"^^xsd:anyURI ]
+           fhir:value [
+             a fhir:url ;
+             fhir:v "string"^^xsd:anyURI
+           ]
          ] ) ;
          fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
        ] )
      ] [
        fhir:id [ fhir:v "AdverseEvent.suspectEntity.extension" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] ) ;
        fhir:path [ fhir:v "AdverseEvent.suspectEntity.extension" ] ;
-       fhir:slicing [
-         fhir:discriminator ( [
-           fhir:type [ fhir:v "value" ] ;
-           fhir:path [ fhir:v "url" ]
-         ] ) ;
-         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
-         fhir:rules [ fhir:v "open" ]
-       ] ;
        fhir:short [ fhir:v "Additional content defined by implementations" ] ;
        fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
        fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
@@ -1888,7 +1625,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1904,18 +1640,17 @@
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
-         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "N/A" ]
        ] )
      ] [
        fhir:id [ fhir:v "AdverseEvent.suspectEntity.modifierExtension" ] ;
@@ -1935,7 +1670,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1951,19 +1685,16 @@
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
-         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v true ] ;
        fhir:isModifierReason [ fhir:v "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them" ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "N/A" ]
        ] )
@@ -1972,7 +1703,6 @@
        fhir:path [ fhir:v "AdverseEvent.suspectEntity.instance" ] ;
        fhir:short [ fhir:v "Refers to the specific entity that caused the adverse event" ] ;
        fhir:definition [ fhir:v "Identifies the actual instance of what caused the adverse event.  May be a substance, medication, medication administration, medication statement or a device." ] ;
-       fhir:comment [ fhir:v "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." ] ;
        fhir:alias ( [ fhir:v "Substance or Medication or Device" ] ) ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
@@ -1984,11 +1714,10 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-medication-statement"^^xsd:anyURI ;
-           fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-medication-statement>
+           fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-medication-statement"^^xsd:anyURI ;
+           fhir:link <https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-medication-statement>
          ] )
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -1999,26 +1728,11 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] [
-         fhir:key [ fhir:v "ref-1" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "SHALL have a contained resource if a local reference is provided" ] ;
-         fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
-         fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
-         ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v true ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ] [
          fhir:identity [ fhir:v "fhir-osiris-adverseevent" ] ;
          fhir:map [ fhir:v "OSIRIS_pivot_AdverseEvent.Treatment_Ref" ]
        ] )
@@ -2037,7 +1751,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "BackboneElement"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -2049,11 +1762,8 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] )
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.suspectEntity.causality.id" ] ;
        fhir:path [ fhir:v "AdverseEvent.suspectEntity.causality.id" ] ;
@@ -2070,32 +1780,22 @@
        fhir:type ( [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "string"^^xsd:anyURI ]
+           fhir:value [
+             a fhir:url ;
+             fhir:v "string"^^xsd:anyURI
+           ]
          ] ) ;
          fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
        ] )
      ] [
        fhir:id [ fhir:v "AdverseEvent.suspectEntity.causality.extension" ] ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "normative" ]
-       ] [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "4.0.0" ]
-       ] ) ;
        fhir:path [ fhir:v "AdverseEvent.suspectEntity.causality.extension" ] ;
-       fhir:slicing [
-         fhir:discriminator ( [
-           fhir:type [ fhir:v "value" ] ;
-           fhir:path [ fhir:v "url" ]
-         ] ) ;
-         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
-         fhir:rules [ fhir:v "open" ]
-       ] ;
        fhir:short [ fhir:v "Additional content defined by implementations" ] ;
        fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
        fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
@@ -2110,7 +1810,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -2126,18 +1825,17 @@
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
-         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "N/A" ]
        ] )
      ] [
        fhir:id [ fhir:v "AdverseEvent.suspectEntity.causality.modifierExtension" ] ;
@@ -2157,7 +1855,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -2173,19 +1870,16 @@
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
-         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v true ] ;
        fhir:isModifierReason [ fhir:v "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them" ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "N/A" ]
        ] )
@@ -2194,7 +1888,6 @@
        fhir:path [ fhir:v "AdverseEvent.suspectEntity.causality.assessment" ] ;
        fhir:short [ fhir:v "Assessment of if the entity caused the event" ] ;
        fhir:definition [ fhir:v "Assessment of if the entity caused the event." ] ;
-       fhir:comment [ fhir:v "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -2205,7 +1898,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -2217,11 +1909,15 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "AdverseEventCausalityAssessment" ]
+           fhir:value [
+             a fhir:string ;
+             fhir:v "AdverseEventCausalityAssessment"
+           ]
          ] ) ;
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "Codes for the assessment of whether the entity caused the event." ] ;
@@ -2229,26 +1925,12 @@
            fhir:v "http://hl7.org/fhir/ValueSet/adverse-event-causality-assess"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/ValueSet/adverse-event-causality-assess>
          ]
-       ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "v2" ] ;
-         fhir:map [ fhir:v "CE/CNE/CWE" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "CD" ]
-       ] [
-         fhir:identity [ fhir:v "orim" ] ;
-         fhir:map [ fhir:v "fhir:CodeableConcept rdfs:subClassOf dt:CD" ]
-       ] )
+       ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.suspectEntity.causality.productRelatedness" ] ;
        fhir:path [ fhir:v "AdverseEvent.suspectEntity.causality.productRelatedness" ] ;
        fhir:short [ fhir:v "AdverseEvent.suspectEntity.causalityProductRelatedness" ] ;
        fhir:definition [ fhir:v "AdverseEvent.suspectEntity.causalityProductRelatedness." ] ;
-       fhir:comment [ fhir:v "Note that FHIR strings SHALL NOT exceed 1MB in size" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -2259,7 +1941,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -2271,17 +1952,13 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] )
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.suspectEntity.causality.author" ] ;
        fhir:path [ fhir:v "AdverseEvent.suspectEntity.causality.author" ] ;
        fhir:short [ fhir:v "AdverseEvent.suspectEntity.causalityAuthor" ] ;
        fhir:definition [ fhir:v "AdverseEvent.suspectEntity.causalityAuthor." ] ;
-       fhir:comment [ fhir:v "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -2299,7 +1976,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
          ] )
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -2310,31 +1986,14 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] [
-         fhir:key [ fhir:v "ref-1" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "SHALL have a contained resource if a local reference is provided" ] ;
-         fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
-         fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
-         ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ] )
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.suspectEntity.causality.method" ] ;
        fhir:path [ fhir:v "AdverseEvent.suspectEntity.causality.method" ] ;
        fhir:short [ fhir:v "ProbabilityScale | Bayesian | Checklist" ] ;
        fhir:definition [ fhir:v "ProbabilityScale | Bayesian | Checklist." ] ;
-       fhir:comment [ fhir:v "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -2345,7 +2004,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -2357,11 +2015,15 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "AdverseEventCausalityMethod" ]
+           fhir:value [
+             a fhir:string ;
+             fhir:v "AdverseEventCausalityMethod"
+           ]
          ] ) ;
          fhir:strength [ fhir:v "example" ] ;
          fhir:description [ fhir:v "TODO." ] ;
@@ -2369,26 +2031,12 @@
            fhir:v "http://hl7.org/fhir/ValueSet/adverse-event-causality-method"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/ValueSet/adverse-event-causality-method>
          ]
-       ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "v2" ] ;
-         fhir:map [ fhir:v "CE/CNE/CWE" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "CD" ]
-       ] [
-         fhir:identity [ fhir:v "orim" ] ;
-         fhir:map [ fhir:v "fhir:CodeableConcept rdfs:subClassOf dt:CD" ]
-       ] )
+       ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.subjectMedicalHistory" ] ;
        fhir:path [ fhir:v "AdverseEvent.subjectMedicalHistory" ] ;
        fhir:short [ fhir:v "AdverseEvent.subjectMedicalHistory" ] ;
        fhir:definition [ fhir:v "AdverseEvent.subjectMedicalHistory." ] ;
-       fhir:comment [ fhir:v "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
@@ -2399,11 +2047,10 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/tumor-pathology-event"^^xsd:anyURI ;
-           fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/tumor-pathology-event>
+           fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/tumor-pathology-event"^^xsd:anyURI ;
+           fhir:link <https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/tumor-pathology-event>
          ] )
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -2414,26 +2061,11 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] [
-         fhir:key [ fhir:v "ref-1" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "SHALL have a contained resource if a local reference is provided" ] ;
-         fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
-         fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
-         ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v true ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ] [
          fhir:identity [ fhir:v "fhir-osiris-adverseevent" ] ;
          fhir:map [ fhir:v "OSIRIS_pivot_AdverseEvent.TumorPathologyEvent_Ref" ]
        ] )
@@ -2442,7 +2074,6 @@
        fhir:path [ fhir:v "AdverseEvent.referenceDocument" ] ;
        fhir:short [ fhir:v "AdverseEvent.referenceDocument" ] ;
        fhir:definition [ fhir:v "AdverseEvent.referenceDocument." ] ;
-       fhir:comment [ fhir:v "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
@@ -2457,7 +2088,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/DocumentReference>
          ] )
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -2468,31 +2098,14 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] [
-         fhir:key [ fhir:v "ref-1" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "SHALL have a contained resource if a local reference is provided" ] ;
-         fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
-         fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
-         ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ] )
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.study" ] ;
        fhir:path [ fhir:v "AdverseEvent.study" ] ;
        fhir:short [ fhir:v "AdverseEvent.study" ] ;
        fhir:definition [ fhir:v "AdverseEvent.study." ] ;
-       fhir:comment [ fhir:v "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
@@ -2507,7 +2120,6 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/ResearchStudy>
          ] )
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -2518,31 +2130,26 @@
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
-       ] [
-         fhir:key [ fhir:v "ref-1" ] ;
-         fhir:severity [ fhir:v "error" ] ;
-         fhir:human [ fhir:v "SHALL have a contained resource if a local reference is provided" ] ;
-         fhir:expression [ fhir:v "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" ] ;
-         fhir:xpath [ fhir:v "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" ] ;
-         fhir:source [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
-         ]
        ] ) ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "The target of a resource reference is a RIM entry point (Act, Role, or Entity)" ]
-       ] )
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ]
      ] )
   ] ; # 
   fhir:differential [
      fhir:element ( [
        fhir:id [ fhir:v "AdverseEvent" ] ;
        fhir:path [ fhir:v "AdverseEvent" ]
+     ] [
+       fhir:id [ fhir:v "AdverseEvent.extension" ] ;
+       fhir:path [ fhir:v "AdverseEvent.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:ordered [ fhir:v false ] ;
+         fhir:rules [ fhir:v "open" ]
+       ]
      ] [
        fhir:id [ fhir:v "AdverseEvent.extension:end-date" ] ;
        fhir:path [ fhir:v "AdverseEvent.extension" ] ;
@@ -2554,11 +2161,11 @@
        fhir:type ( [
          fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
          fhir:profile ( [
-           fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/adverse-event-end-date"^^xsd:anyURI ;
-           fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/adverse-event-end-date>
+           fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/adverse-event-end-date"^^xsd:anyURI ;
+           fhir:link <https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/adverse-event-end-date>
          ] )
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "fhir-osiris-adverseevent" ] ;
          fhir:map [ fhir:v "OSIRIS_pivot_AdverseEvent.AdverseEvent_EndDate" ]
@@ -2572,8 +2179,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:valueSet [
-           fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AdverseEventCode"^^xsd:anyURI ;
-           fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AdverseEventCode>
+           fhir:v "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AdverseEventCode"^^xsd:anyURI ;
+           fhir:link <https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AdverseEventCode>
          ]
        ] ;
        fhir:mapping ( [
@@ -2586,11 +2193,11 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"^^xsd:anyURI ;
-           fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient>
+           fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-patient"^^xsd:anyURI ;
+           fhir:link <https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-patient>
          ] )
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "fhir-osiris-adverseevent" ] ;
          fhir:map [ fhir:v "OSIRIS_pivot_AdverseEvent.Patient_Id" ]
@@ -2601,7 +2208,7 @@
        fhir:short [ fhir:v "Date of diagnosis" ] ;
        fhir:definition [ fhir:v "Date of diagnosis of the adverse event." ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "fhir-osiris-adverseevent" ] ;
          fhir:map [ fhir:v "OSIRIS_pivot_AdverseEvent.AdverseEvent_Date" ]
@@ -2612,12 +2219,12 @@
        fhir:short [ fhir:v "Grade of the adverse event" ] ;
        fhir:definition [ fhir:v "The Common Terminology Criteria For Adverse Events (CTCAE version 5.0) grade is used to define the severity of the AE." ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v true ] ;
        fhir:binding [
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
-           fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AdverseEventGrade"^^xsd:anyURI ;
-           fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AdverseEventGrade>
+           fhir:v "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AdverseEventGrade"^^xsd:anyURI ;
+           fhir:link <https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AdverseEventGrade>
          ]
        ]
      ] [
@@ -2633,11 +2240,11 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-medication-statement"^^xsd:anyURI ;
-           fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-medication-statement>
+           fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-medication-statement"^^xsd:anyURI ;
+           fhir:link <https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-medication-statement>
          ] )
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "fhir-osiris-adverseevent" ] ;
          fhir:map [ fhir:v "OSIRIS_pivot_AdverseEvent.Treatment_Ref" ]
@@ -2648,11 +2255,11 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/tumor-pathology-event"^^xsd:anyURI ;
-           fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/tumor-pathology-event>
+           fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/tumor-pathology-event"^^xsd:anyURI ;
+           fhir:link <https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/tumor-pathology-event>
          ] )
        ] ) ;
-       fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "fhir-osiris-adverseevent" ] ;
          fhir:map [ fhir:v "OSIRIS_pivot_AdverseEvent.TumorPathologyEvent_Ref" ]

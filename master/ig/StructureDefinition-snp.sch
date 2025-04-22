@@ -14,7 +14,7 @@
     <sch:rule context="f:Observation">
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/bodySite']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/bodySite': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/strand-bias']) &lt;= 1">extension with URL = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/strand-bias': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/strand-bias']) &lt;= 1">extension with URL = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/strand-bias': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:subject) &gt;= 1">subject: minimum cardinality of 'subject' is 1</sch:assert>
       <sch:assert test="count(f:derivedFrom) &gt;= 1">derivedFrom: minimum cardinality of 'derivedFrom' is 1</sch:assert>
       <sch:assert test="count(f:derivedFrom) &lt;= 1">derivedFrom: maximum cardinality of 'derivedFrom' is 1</sch:assert>

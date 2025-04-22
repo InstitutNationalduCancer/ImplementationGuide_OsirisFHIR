@@ -12,8 +12,8 @@
   <sch:pattern>
     <sch:title>f:Observation</sch:title>
     <sch:rule context="f:Observation">
-      <sch:assert test="count(f:extension[@url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings']) &gt;= 1">extension with URL = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings']) &lt;= 1">extension with URL = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiomics-criteria-settings']) &gt;= 1">extension with URL = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiomics-criteria-settings': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiomics-criteria-settings']) &lt;= 1">extension with URL = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiomics-criteria-settings': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:focus) &gt;= 1">focus: minimum cardinality of 'focus' is 1</sch:assert>
       <sch:assert test="count(f:focus) &lt;= 1">focus: maximum cardinality of 'focus' is 1</sch:assert>
       <sch:assert test="count(f:hasMember) &gt;= 1">hasMember: minimum cardinality of 'hasMember' is 1</sch:assert>

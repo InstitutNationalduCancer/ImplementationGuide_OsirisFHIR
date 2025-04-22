@@ -28,9 +28,9 @@
   <sch:pattern>
     <sch:title>f:ImagingStudy/f:series</sch:title>
     <sch:rule context="f:ImagingStudy/f:series">
-      <sch:assert test="count(f:extension[@url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/series-weightheigt']) &lt;= 1">extension with URL = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/series-weightheigt': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-settings']) &gt;= 1">extension with URL = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-settings': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-settings']) &lt;= 1">extension with URL = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-settings': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/series-weightheigt']) &lt;= 1">extension with URL = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/series-weightheigt': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-settings']) &gt;= 1">extension with URL = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-settings': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-settings']) &lt;= 1">extension with URL = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-settings': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:description) &gt;= 1">description: minimum cardinality of 'description' is 1</sch:assert>
       <sch:assert test="count(f:numberOfInstances) &gt;= 1">numberOfInstances: minimum cardinality of 'numberOfInstances' is 1</sch:assert>
       <sch:assert test="count(f:started) &gt;= 1">started: minimum cardinality of 'started' is 1</sch:assert>

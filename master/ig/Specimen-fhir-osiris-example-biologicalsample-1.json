@@ -2,14 +2,14 @@
   "resourceType" : "Specimen",
   "id" : "fhir-osiris-example-biologicalsample-1",
   "meta" : {
-    "profile" : ["https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-biological-sample"]
+    "profile" : ["https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-biological-sample"]
   },
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Specimen</b><a name=\"fhir-osiris-example-biologicalsample-1\"> </a><a name=\"hcfhir-osiris-example-biologicalsample-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceSpecimen &quot;fhir-osiris-example-biologicalsample-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-biological-sample.html\">Biological Sample</a></p></div><p><b>Biological Sample Origin</b>: Origin of the sample <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-OsirisCS.html\">Osiris code system</a>#O59-2)</span></p><p><b>Based On Condition (Tumor Pathology Event)</b>: <a href=\"Condition-fhir-osiris-example-TumorPathologyEvent-instance-1.html\">Condition/fhir-osiris-example-TumorPathologyEvent-instance-1</a></p><p><b>identifier</b>: ech primary</p><p><b>type</b>: C4039816 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-umls.html\">Unified Medical Language System</a>#C4039816)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td><td><b>Quantity</b></td><td><b>BodySite</b></td></tr><tr><td style=\"display: none\">*</td><td>2005-12-27</td><td>30 %<span style=\"background: LightGoldenRodYellow\"> (Details: [not stated] code C4055283 = 'C4055283')</span></td><td>C34 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-icd-o-3.html\">International Classification of Diseases for Oncology, version 3.</a>#C34)</span></td></tr></table><p><b>condition</b>: Storage temperature of the sample. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (miabis#Tissue Frozen)</span></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen fhir-osiris-example-biologicalsample-1</b></p><a name=\"fhir-osiris-example-biologicalsample-1\"> </a><a name=\"hcfhir-osiris-example-biologicalsample-1\"> </a><a name=\"fhir-osiris-example-biologicalsample-1-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-biological-sample.html\">Biological Sample</a></p></div><p><b>Biological Sample Origin</b>: <span title=\"Codes:{https://terminology.arkhn.com/osiris O59-2}\">Origin of the sample</span></p><p><b>Based On Condition (Tumor Pathology Event)</b>: <a href=\"Condition-fhir-osiris-example-TumorPathologyEvent-instance-1.html\">Condition C0677930</a></p><p><b>identifier</b>: ech primary</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/umls C4039816}\">C4039816</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Anonymous Patient Male, DoB: 1967-11-08</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td><td><b>Quantity</b></td><td><b>BodySite</b></td></tr><tr><td style=\"display: none\">*</td><td>2005-12-27</td><td>30 %<span style=\"background: LightGoldenRodYellow\"> (Details: [not stated]  codeC4055283 = 'C4055283')</span></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/icd-o-3 C34}\">C34</span></td></tr></table><p><b>condition</b>: <span title=\"Codes:{https://learning.iarc.fr/biobanking/all-resources/sample-and-data-management/miabis Tissue Frozen}\">Storage temperature of the sample.</span></p></div>"
   },
   "extension" : [{
-    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/BiologicalSampleOrigin",
+    "url" : "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/BiologicalSampleOrigin",
     "valueCodeableConcept" : {
       "coding" : [{
         "system" : "https://terminology.arkhn.com/osiris",
@@ -19,7 +19,7 @@
     }
   },
   {
-    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/BasedOnCondition",
+    "url" : "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/BasedOnCondition",
     "valueReference" : {
       "reference" : "Condition/fhir-osiris-example-TumorPathologyEvent-instance-1"
     }

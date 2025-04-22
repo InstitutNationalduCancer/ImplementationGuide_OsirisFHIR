@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:CarePlan</sch:title>
     <sch:rule context="f:CarePlan">
-      <sch:assert test="count(f:extension[@url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment-line']) &lt;= 1">extension with URL = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment-line': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/treatment-line']) &lt;= 1">extension with URL = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/treatment-line': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:category) &gt;= 1">category: minimum cardinality of 'category' is 1</sch:assert>
       <sch:assert test="count(f:category) &lt;= 1">category: maximum cardinality of 'category' is 1</sch:assert>
       <sch:assert test="count(f:supportingInfo) &lt;= 1">supportingInfo: maximum cardinality of 'supportingInfo' is 1</sch:assert>

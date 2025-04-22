@@ -1,22 +1,23 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
 
-<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Observation/fhir-osiris-example-biomarker> a fhir:Observation ;
+<https://ig-osiris.cancer.fr/ig/osiris/Observation/fhir-osiris-example-biomarker> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "fhir-osiris-example-biomarker"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/biomarker"^^xsd:anyURI ;
-       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/biomarker>
+       fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/biomarker"^^xsd:anyURI ;
+       fhir:link <https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/biomarker>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"fhir-osiris-example-biomarker\"> </a><a name=\"hcfhir-osiris-example-biomarker\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;fhir-osiris-example-biomarker&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-biomarker.html\">Biomarker</a></p></div><p><b>status</b>: final</p><p><b>code</b>: cg6548 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#cg6548)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><p><b>value</b>: ++</p><p><b>derivedFrom</b>: <a href=\"Observation-fhir-osiris-example-analysis-clinical.html\">Observation/fhir-osiris-example-analysis-clinical</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation fhir-osiris-example-biomarker</b></p><a name=\"fhir-osiris-example-biomarker\"> </a><a name=\"hcfhir-osiris-example-biomarker\"> </a><a name=\"fhir-osiris-example-biomarker-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-biomarker.html\">Biomarker</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:\">cg6548</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Anonymous Patient Male, DoB: 1967-11-08</a></p><p><b>value</b>: ++</p><p><b>derivedFrom</b>: <a href=\"Observation-fhir-osiris-example-analysis-clinical.html\">Observation Omic</a></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
@@ -25,12 +26,15 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/L304> ;
+     fhir:link <https://ig-osiris.cancer.fr/ig/osiris/Patient/L304> ;
      fhir:reference [ fhir:v "Patient/L304" ]
   ] ; # 
-  fhir:value [ fhir:v "++"] ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "++"
+  ] ; # 
   fhir:derivedFrom ( [
-     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Observation/fhir-osiris-example-analysis-clinical> ;
+     fhir:link <https://ig-osiris.cancer.fr/ig/osiris/Observation/fhir-osiris-example-analysis-clinical> ;
      fhir:reference [ fhir:v "Observation/fhir-osiris-example-analysis-clinical" ]
   ] ) . # 
 

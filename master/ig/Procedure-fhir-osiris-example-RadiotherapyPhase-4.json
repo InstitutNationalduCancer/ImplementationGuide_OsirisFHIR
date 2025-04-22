@@ -2,14 +2,14 @@
   "resourceType" : "Procedure",
   "id" : "fhir-osiris-example-RadiotherapyPhase-4",
   "meta" : {
-    "profile" : ["https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase"]
+    "profile" : ["https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-phase"]
   },
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"fhir-osiris-example-RadiotherapyPhase-4\"> </a><a name=\"hcfhir-osiris-example-RadiotherapyPhase-4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceProcedure &quot;fhir-osiris-example-RadiotherapyPhase-4&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-radiotherapy-phase.html\">Radiotherapy Phase</a></p></div><p><b>Number of Fractions</b>: 16</p><p><b>partOf</b>: <a href=\"Procedure-fhir-osiris-example-RadiotherapyCourse-2.html\">Procedure/fhir-osiris-example-RadiotherapyCourse-2</a></p><p><b>status</b>: completed</p><p><b>category</b>: Delivered <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-RadiotherapyCS.html\">Radiotherapy Code System</a>#Delivered)</span></p><p><b>code</b>: Radiotherapy treatment phase (regime/therapy) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT</a>#1222565005)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><p><b>performed</b>: 2018-08-15 --&gt; 2018-11-25</p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure fhir-osiris-example-RadiotherapyPhase-4</b></p><a name=\"fhir-osiris-example-RadiotherapyPhase-4\"> </a><a name=\"hcfhir-osiris-example-RadiotherapyPhase-4\"> </a><a name=\"fhir-osiris-example-RadiotherapyPhase-4-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-radiotherapy-phase.html\">Radiotherapy Phase</a></p></div><p><b>Number of Fractions</b>: 16</p><p><b>partOf</b>: <a href=\"Procedure-fhir-osiris-example-RadiotherapyCourse-2.html\">Procedure Radiotherapy course of treatment (regime/therapy)</a></p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/RadiotherapyCS Delivered}\">Delivered</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1222565005}\">Radiotherapy treatment phase (regime/therapy)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Anonymous Patient Male, DoB: 1967-11-08</a></p><p><b>performed</b>: 2018-08-15 --&gt; 2018-11-25</p></div>"
   },
   "extension" : [{
-    "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/numberOfFractions",
+    "url" : "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/numberOfFractions",
     "valueUnsignedInt" : 16
   }],
   "partOf" : [{
@@ -18,7 +18,7 @@
   "status" : "completed",
   "category" : {
     "coding" : [{
-      "system" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/RadiotherapyCS",
+      "system" : "https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/RadiotherapyCS",
       "code" : "Delivered"
     }]
   },

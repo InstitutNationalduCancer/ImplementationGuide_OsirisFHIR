@@ -12,9 +12,9 @@
   <sch:pattern>
     <sch:title>f:Procedure</sch:title>
     <sch:rule context="f:Procedure">
-      <sch:assert test="count(f:extension[@url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatmentIntent']) &lt;= 1">extension with URL = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatmentIntent': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatmentTerminationReason']) &lt;= 1">extension with URL = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatmentTerminationReason': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/numberOfSessions']) &lt;= 1">extension with URL = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/numberOfSessions': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/treatmentIntent']) &lt;= 1">extension with URL = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/treatmentIntent': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/treatmentTerminationReason']) &lt;= 1">extension with URL = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/treatmentTerminationReason': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/numberOfSessions']) &lt;= 1">extension with URL = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/numberOfSessions': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:category) &gt;= 1">category: minimum cardinality of 'category' is 1</sch:assert>
       <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
       <sch:assert test="count(f:performed[x]) &gt;= 1">performed[x]: minimum cardinality of 'performed[x]' is 1</sch:assert>

@@ -1,23 +1,24 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
 
-<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Observation/fhir-osiris-example-RadiomicsCriteria> a fhir:Observation ;
+<https://ig-osiris.cancer.fr/ig/osiris/Observation/fhir-osiris-example-RadiomicsCriteria> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "fhir-osiris-example-RadiomicsCriteria"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria"^^xsd:anyURI ;
-       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria>
+       fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiomics-criteria"^^xsd:anyURI ;
+       fhir:link <https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiomics-criteria>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"fhir-osiris-example-RadiomicsCriteria\"> </a><a name=\"hcfhir-osiris-example-RadiomicsCriteria\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceObservation &quot;fhir-osiris-example-RadiomicsCriteria&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-radiomics-criteria.html\">Radiomics Criteria</a></p></div><blockquote><p><b>Radiomics Criteria Settings</b></p><blockquote><p><b>url</b></p><code>softwareName</code></blockquote><blockquote><p><b>url</b></p><code>softwareVersion</code></blockquote><blockquote><p><b>url</b></p><code>localizationMethod</code></blockquote><p><b>value</b>: GLOBAL</p><blockquote><p><b>url</b></p><code>usedImageFilter</code></blockquote><p><b>value</b>: None</p><blockquote><p><b>url</b></p><code>usedImageFilterParameters</code></blockquote><p><b>value</b>: 3x3x3</p><blockquote><p><b>url</b></p><code>distanceWeighting</code></blockquote><blockquote><p><b>url</b></p><code>discretisationMethod</code></blockquote><blockquote><p><b>url</b></p><code>binSize</code></blockquote><blockquote><p><b>url</b></p><code>boundsRangeOfValueAfterDiscretisation</code></blockquote><p><b>value</b>: 0,100</p><blockquote><p><b>url</b></p><code>spatialResamplingMethod</code></blockquote><p><b>value</b>: Bicubic spline</p><blockquote><p><b>url</b></p><code>textureMatrixAggregation</code></blockquote><blockquote><p><b>url</b></p><code>lowestIntensity</code></blockquote><blockquote><p><b>url</b></p><code>biggestIntensity</code></blockquote><blockquote><p><b>url</b></p><code>spatialResamplingValues</code></blockquote><p><b>value</b>: [1.0, 2.0, 3.0]</p></blockquote><p><b>status</b>: final</p><p><b>code</b>: Diagnostic imaging report - example sections and entries <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#85430-7)</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Patient/L304</a></p><p><b>focus</b>: <a href=\"Observation-fhir-osiris-example-ROISegmentation.html\">Observation/fhir-osiris-example-ROISegmentation</a></p><p><b>hasMember</b>: <a href=\"Observation-fhir-osiris-example-RadiomicsImageFilter.html\">Observation/fhir-osiris-example-RadiomicsImageFilter</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation fhir-osiris-example-RadiomicsCriteria</b></p><a name=\"fhir-osiris-example-RadiomicsCriteria\"> </a><a name=\"hcfhir-osiris-example-RadiomicsCriteria\"> </a><a name=\"fhir-osiris-example-RadiomicsCriteria-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-radiomics-criteria.html\">Radiomics Criteria</a></p></div><blockquote><p><b>Radiomics Criteria Settings</b></p><p><b>valueString</b>: PyRadiomics</p><blockquote><p><b>url</b></p>softwareName</blockquote><p><b>valueString</b>: v3.0.1</p><blockquote><p><b>url</b></p>softwareVersion</blockquote><blockquote><p><b>url</b></p>localizationMethod</blockquote><p><b>value</b>: GLOBAL</p><blockquote><p><b>url</b></p>usedImageFilter</blockquote><p><b>value</b>: None</p><blockquote><p><b>url</b></p>usedImageFilterParameters</blockquote><p><b>value</b>: 3x3x3</p><p><b>valueString</b>: None</p><blockquote><p><b>url</b></p>distanceWeighting</blockquote><p><b>valueString</b>: FBS</p><blockquote><p><b>url</b></p>discretisationMethod</blockquote><p><b>valueDecimal</b>: 12</p><blockquote><p><b>url</b></p>binSize</blockquote><blockquote><p><b>url</b></p>boundsRangeOfValueAfterDiscretisation</blockquote><p><b>value</b>: 0,100</p><blockquote><p><b>url</b></p>spatialResamplingMethod</blockquote><p><b>value</b>: Bicubic spline</p><p><b>valueString</b>: None</p><blockquote><p><b>url</b></p>textureMatrixAggregation</blockquote><p><b>valueDecimal</b>: 0</p><blockquote><p><b>url</b></p>lowestIntensity</blockquote><p><b>valueDecimal</b>: 1</p><blockquote><p><b>url</b></p>biggestIntensity</blockquote><blockquote><p><b>url</b></p>spatialResamplingValues</blockquote><p><b>value</b>: [1.0, 2.0, 3.0]</p></blockquote><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 85430-7}\">Diagnostic imaging report - example sections and entries</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Anonymous Patient Male, DoB: 1967-11-08</a></p><p><b>focus</b>: <a href=\"Observation-fhir-osiris-example-ROISegmentation.html\">Observation ROI Type DICOM</a></p><p><b>hasMember</b>: <a href=\"Observation-fhir-osiris-example-RadiomicsImageFilter.html\">Observation Diagnostic imaging report - example sections and entries</a></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
      fhir:extension ( [
@@ -25,7 +26,10 @@
          fhir:url [ fhir:v "code"^^xsd:anyURI ]
        ] [
          fhir:url [ fhir:v "valueString"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "PyRadiomics" ]
+         fhir:value [
+           a fhir:string ;
+           fhir:v "PyRadiomics"
+         ]
        ] ) ;
        fhir:url [ fhir:v "softwareName"^^xsd:anyURI ]
      ] [
@@ -33,24 +37,39 @@
          fhir:url [ fhir:v "code"^^xsd:anyURI ]
        ] [
          fhir:url [ fhir:v "valueString"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "v3.0.1" ]
+         fhir:value [
+           a fhir:string ;
+           fhir:v "v3.0.1"
+         ]
        ] ) ;
        fhir:url [ fhir:v "softwareVersion"^^xsd:anyURI ]
      ] [
        fhir:url [ fhir:v "localizationMethod"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "GLOBAL" ]
+       fhir:value [
+         a fhir:string ;
+         fhir:v "GLOBAL"
+       ]
      ] [
        fhir:url [ fhir:v "usedImageFilter"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "None" ]
+       fhir:value [
+         a fhir:string ;
+         fhir:v "None"
+       ]
      ] [
        fhir:url [ fhir:v "usedImageFilterParameters"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "3x3x3" ]
+       fhir:value [
+         a fhir:string ;
+         fhir:v "3x3x3"
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ]
        ] [
          fhir:url [ fhir:v "valueString"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "None" ]
+         fhir:value [
+           a fhir:string ;
+           fhir:v "None"
+         ]
        ] ) ;
        fhir:url [ fhir:v "distanceWeighting"^^xsd:anyURI ]
      ] [
@@ -58,7 +77,10 @@
          fhir:url [ fhir:v "code"^^xsd:anyURI ]
        ] [
          fhir:url [ fhir:v "valueString"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "FBS" ]
+         fhir:value [
+           a fhir:string ;
+           fhir:v "FBS"
+         ]
        ] ) ;
        fhir:url [ fhir:v "discretisationMethod"^^xsd:anyURI ]
      ] [
@@ -66,27 +88,42 @@
          fhir:url [ fhir:v "code"^^xsd:anyURI ]
        ] [
          fhir:url [ fhir:v "valueDecimal"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "12"^^xsd:decimal ]
+         fhir:value [
+           a fhir:decimal ;
+           fhir:v "12"^^xsd:decimal
+         ]
        ] ) ;
        fhir:url [ fhir:v "binSize"^^xsd:anyURI ]
      ] [
        fhir:url [ fhir:v "boundsRangeOfValueAfterDiscretisation"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "0,100" ]
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0,100"
+       ]
      ] [
        fhir:url [ fhir:v "spatialResamplingMethod"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "Bicubic spline" ]
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Bicubic spline"
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ]
        ] [
          fhir:url [ fhir:v "valueString"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "None" ]
+         fhir:value [
+           a fhir:string ;
+           fhir:v "None"
+         ]
        ] ) ;
        fhir:url [ fhir:v "textureMatrixAggregation"^^xsd:anyURI ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "valueDecimal"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "0"^^xsd:decimal ]
+         fhir:value [
+           a fhir:decimal ;
+           fhir:v "0"^^xsd:decimal
+         ]
        ] [
          fhir:url [ fhir:v "code"^^xsd:anyURI ]
        ] ) ;
@@ -94,16 +131,22 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "valueDecimal"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "1"^^xsd:decimal ]
+         fhir:value [
+           a fhir:decimal ;
+           fhir:v "1"^^xsd:decimal
+         ]
        ] [
          fhir:url [ fhir:v "code"^^xsd:anyURI ]
        ] ) ;
        fhir:url [ fhir:v "biggestIntensity"^^xsd:anyURI ]
      ] [
        fhir:url [ fhir:v "spatialResamplingValues"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "[1.0, 2.0, 3.0]" ]
+       fhir:value [
+         a fhir:string ;
+         fhir:v "[1.0, 2.0, 3.0]"
+       ]
      ] ) ;
-     fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings"^^xsd:anyURI ]
+     fhir:url [ fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiomics-criteria-settings"^^xsd:anyURI ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
@@ -114,15 +157,15 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/L304> ;
+     fhir:link <https://ig-osiris.cancer.fr/ig/osiris/Patient/L304> ;
      fhir:reference [ fhir:v "Patient/L304" ]
   ] ; # 
   fhir:focus ( [
-     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Observation/fhir-osiris-example-ROISegmentation> ;
+     fhir:link <https://ig-osiris.cancer.fr/ig/osiris/Observation/fhir-osiris-example-ROISegmentation> ;
      fhir:reference [ fhir:v "Observation/fhir-osiris-example-ROISegmentation" ]
   ] ) ; # 
   fhir:hasMember ( [
-     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Observation/fhir-osiris-example-RadiomicsImageFilter> ;
+     fhir:link <https://ig-osiris.cancer.fr/ig/osiris/Observation/fhir-osiris-example-RadiomicsImageFilter> ;
      fhir:reference [ fhir:v "Observation/fhir-osiris-example-RadiomicsImageFilter" ]
   ] ) . # 
 

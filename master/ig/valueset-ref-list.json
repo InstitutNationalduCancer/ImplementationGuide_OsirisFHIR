@@ -13,8 +13,32 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-expression.html" : "Gene Expression",
-      "StructureDefinition-fusion.html" : "Gene Fusion"
+      "StructureDefinition-fusion.html" : "Gene Fusion",
+      "StructureDefinition-expression.html" : "Gene Expression"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips",
+      "version" : "2.0.0-ballot",
+      "status" : "active",
+      "name" : "WhoAtcUvIps",
+      "title" : "WHO ATC - IPS",
+      "description" : "World Health Organization Anatomical Therapeutic Chemical (ATC) classification system.",
+      "systems" : ["http://www.whocc.no/atc"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-medication-statement.html" : "Oncology-related Medication Statement"
+    },
+    {
+      "url" : "http://loinc.org/vs/LL2938-0",
+      "version" : "2.80",
+      "status" : "active",
+      "name" : "LOINCAnswerListLL2938_0",
+      "title" : null,
+      "description" : "LOINC Answer list for code LL2938-0: List of human chromosomes",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "ValueSet-GeneticMaterial.html" : "GeneticMaterial"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-Race",
@@ -31,8 +55,8 @@
       "StructureDefinition-ethnicity.html" : "Patient Ethnicity"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AdverseEventCode",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AdverseEventCode",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "AdverseEventCode",
       "title" : "Adverse Event Code Value Set",
@@ -43,8 +67,8 @@
       "StructureDefinition-onco-adverse-event.html" : "Oncologic Adverse Event"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AdverseEventGrade",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AdverseEventGrade",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "AdverseEventGrade",
       "title" : "Adverse Event Grade Value Set",
@@ -58,8 +82,8 @@
       "StructureDefinition-onco-adverse-event.html" : "Oncologic Adverse Event"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AlgorithmicPloidy",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AlgorithmicPloidy",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "AlgorithmicPloidy",
       "title" : "Algorithmic Ploidy",
@@ -73,8 +97,8 @@
       "StructureDefinition-sequencing-analysis.html" : "Sequencing Analysis"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AlterationType",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AlterationType",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "AlterationType",
       "title" : "Alteration Type Value Set",
@@ -88,8 +112,8 @@
       "StructureDefinition-variant-annotation.html" : "Variant Annotation"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AminoAcideChangeType",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AminoAcideChangeType",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "AminoAcideChangeType",
       "title" : "Amino Acide Change Type Value Set",
@@ -97,8 +121,8 @@
       "systems" : ["https://github.com/siric-osiris/OSIRIS", "http://loinc.org"]
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/AnalysisType",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AnalysisType",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "AnalysisType",
       "title" : "Analysis Types Value Set",
@@ -112,8 +136,8 @@
       "StructureDefinition-analysis.html" : "Analysis"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/BiologicalSampleNature",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/BiologicalSampleNature",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "BiologicalSampleNature",
       "title" : "Biological Sample Nature Value Set",
@@ -124,8 +148,8 @@
       "StructureDefinition-onco-biological-sample.html" : "Biological Sample"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/BiologicalSampleOrigin",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/BiologicalSampleOrigin",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "BiologicalSampleOrigin",
       "title" : "Biological Sample Origin Value Set",
@@ -139,8 +163,8 @@
       "StructureDefinition-BiologicalSampleOrigin.html" : "Biological Sample Origin"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/BiomarkerCode",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/BiomarkerCode",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "BiomarkerCode",
       "title" : "Biomarker Value Set",
@@ -151,8 +175,8 @@
       "StructureDefinition-biomarker.html" : "Biomarker"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/CauseOfDeath",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/CauseOfDeath",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "CauseOfDeath",
       "title" : "Cause of death Value Set",
@@ -163,8 +187,8 @@
       "StructureDefinition-cause-of-death.html" : "Cause Of Death"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Chromosome",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/Chromosome",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "Chromosome",
       "title" : "Chromosome Value Set",
@@ -179,8 +203,8 @@
       "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/CytoBand",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/CytoBand",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "CytoBand",
       "title" : "CytoBand Value Set",
@@ -194,8 +218,8 @@
       "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/DNAChangeType",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/DNAChangeType",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "DNAChangeType",
       "title" : "DNA Change Type Value Set",
@@ -206,8 +230,8 @@
       "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/FusionType",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/FusionType",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "FusionType",
       "title" : "Fusion Type Value Set",
@@ -218,8 +242,8 @@
       "StructureDefinition-fusion.html" : "Gene Fusion"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GeneExpressionDataType",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/GeneExpressionDataType",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "GeneExpressionDataType",
       "title" : "Gene Expression Data Type Value Set",
@@ -230,15 +254,16 @@
       "StructureDefinition-gene-expression-data-type.html" : "Gene Expression Data Type"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GeneticMaterial",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/GeneticMaterial",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "GeneticMaterial",
       "title" : "GeneticMaterial",
       "description" : "Genetic material",
       "systems" : [
         "https://github.com/siric-osiris/OSIRIS",
-        "http://terminology.hl7.org/CodeSystem/umls"
+        "http://terminology.hl7.org/CodeSystem/umls",
+        "http://loinc.org"
       ],
       "uses" : {
       },
@@ -246,8 +271,8 @@
       "StructureDefinition-molecular-sequence-5-prime.html" : "5 Prime Molecular Sequence"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeBuild",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/GenomeBuild",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "GenomeBuild",
       "title" : "GenomeBuild Value Set",
@@ -258,8 +283,8 @@
       "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/GenomeEntityType",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/GenomeEntityType",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "GenomeEntityType",
       "title" : "Genome entity type Value Set",
@@ -267,13 +292,13 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/umls"],
       "uses" : {
       },
+      "StructureDefinition-genomeentityType.html" : "GenomeEntityType",
       "StructureDefinition-molecular-sequence-3-prime.html" : "3 Prime Molecular Sequence",
-      "StructureDefinition-molecular-sequence-5-prime.html" : "5 Prime Molecular Sequence",
-      "StructureDefinition-genomeentityType.html" : "GenomeEntityType"
+      "StructureDefinition-molecular-sequence-5-prime.html" : "5 Prime Molecular Sequence"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Laterality",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/Laterality",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "Laterality",
       "title" : "Tumor Laterality Value Set",
@@ -284,8 +309,8 @@
       "StructureDefinition-laterality.html" : "Laterality"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Morphology",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/Morphology",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "Morphology",
       "title" : "Morphology Value Set",
@@ -296,8 +321,8 @@
       "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/MutationPrediction",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/MutationPrediction",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "MutationPrediction",
       "title" : "Mutation prediction Value Set",
@@ -308,8 +333,8 @@
       "StructureDefinition-variant-annotation.html" : "Variant Annotation"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/OsirisValidationType",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/OsirisValidationType",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "OsirisValidationType",
       "title" : "Osiris Validation Type",
@@ -320,8 +345,8 @@
       "StructureDefinition-data-validation.html" : "Validation"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/PanelName",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/PanelName",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "PanelName",
       "title" : "Panel Name",
@@ -335,8 +360,8 @@
       "StructureDefinition-sequencing-device.html" : "Sequencing Device"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Parentage",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/Parentage",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "Parentage",
       "title" : "Parentage Value Set",
@@ -350,8 +375,8 @@
       "StructureDefinition-family-cancer-history.html" : "Family Cancer History"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Pathogenicity",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/Pathogenicity",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "Pathogenicity",
       "title" : "Pathogenicity Value Set",
@@ -362,14 +387,14 @@
       ],
       "uses" : {
       },
+      "StructureDefinition-fusion.html" : "Gene Fusion",
       "StructureDefinition-copy-number.html" : "Variant Copy Number",
-      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism",
       "StructureDefinition-expression.html" : "Gene Expression",
-      "StructureDefinition-fusion.html" : "Gene Fusion"
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/PlatformName",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/PlatformName",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "PlatformName",
       "title" : "Platform Name",
@@ -383,8 +408,8 @@
       "StructureDefinition-sequencing-device.html" : "Sequencing Device"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/ROIType",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/ROIType",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "ROIType",
       "title" : "ROI Type Value Set",
@@ -395,8 +420,8 @@
       "StructureDefinition-roi-segmentation.html" : "ROI segmentation"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/RadiomicsFeaturesVS",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/RadiomicsFeaturesVS",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "RadiomicsFeaturesVS",
       "title" : "Radiomic Features Value Set",
@@ -410,8 +435,8 @@
       "StructureDefinition-radiomics-features.html" : "Radiomics Features"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/ReferenceType",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/ReferenceType",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "ReferenceType",
       "title" : "Reference Type Value Set",
@@ -425,8 +450,8 @@
       "StructureDefinition-annotation-reference.html" : "Annotation Reference"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/ResponseEvaluationStatus",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/ResponseEvaluationStatus",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "ResponseEvaluationStatus",
       "title" : "Response Status Value Set",
@@ -440,8 +465,8 @@
       "StructureDefinition-response-evaluation.html" : "Response Evaluation"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/StorageTemperature",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/StorageTemperature",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "StorageTemperature",
       "title" : "Storage temperature Value Set",
@@ -455,8 +480,8 @@
       "StructureDefinition-onco-biological-sample.html" : "Biological Sample"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/SurgeryResectionQuality",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/SurgeryResectionQuality",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "SurgeryResectionQuality",
       "title" : "Surgery Resection Quality Value Set",
@@ -470,8 +495,8 @@
       "StructureDefinition-onco-surgery.html" : "Oncology Surgery"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/TNMVersion",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/TNMVersion",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "TNMVersion",
       "title" : "TNM Version Value Set",
@@ -479,8 +504,8 @@
       "systems" : ["https://github.com/siric-osiris/OSIRIS"]
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/TechnicalProtocol",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/TechnicalProtocol",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "TechnicalProtocol",
       "title" : "Analysis Technical Protocol",
@@ -491,8 +516,8 @@
       "StructureDefinition-sequencing-analysis.html" : "Sequencing Analysis"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Topography",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/Topography",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "Topography",
       "title" : "Topography Value Set",
@@ -501,12 +526,12 @@
       "uses" : {
       },
       "StructureDefinition-family-cancer-history.html" : "Family Cancer History",
-      "StructureDefinition-onco-biological-sample.html" : "Biological Sample",
-      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event",
+      "StructureDefinition-onco-biological-sample.html" : "Biological Sample"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/TreatmentType",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/TreatmentType",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "TreatmentType",
       "title" : "Treatment Type Value Set",
@@ -517,8 +542,8 @@
       "StructureDefinition-treatment.html" : "Treatment"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/TumorPathologyEventType",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/TumorPathologyEventType",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "TumorPathologyEventType",
       "title" : "Tumor Pathology Event Type Value Set",
@@ -529,8 +554,8 @@
       "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/VSBodySite",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/VSBodySite",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "VSBodySite",
       "title" : " Bodysite Value Set",
@@ -541,16 +566,16 @@
       "StructureDefinition-onco-imagingstudy.html" : "Imaging Study"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/VSLocalizationMethod",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/VSLocalizationMethod",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "VSLocalizationMethod",
       "title" : "Localization Method Value Set",
       "description" : "Localization Method"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/VSModality",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/VSModality",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "VSModality",
       "title" : " Modality Value Set",
@@ -565,8 +590,8 @@
       "StructureDefinition-onco-imagingstudy.html" : "Imaging Study"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/VitalStatus",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/VitalStatus",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "VitalStatus",
       "title" : "Vital Status Value Set",
@@ -577,8 +602,8 @@
       "StructureDefinition-vital-status.html" : "Vital Status"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/codexrt-radiotherapy-reason-for-revision-or-adaptation-vs",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/codexrt-radiotherapy-reason-for-revision-or-adaptation-vs",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "RadiotherapyReasonReplanificationVS",
       "title" : "Radiotherapy Reason Replanification",
@@ -592,8 +617,8 @@
       "StructureDefinition-reasonReplanification.html" : "Reason Replanification"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/mcode-radiotherapy-treatment-location-qualifier-vs",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/mcode-radiotherapy-treatment-location-qualifier-vs",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "RadiotherapyTreatmentLocationQualifierVS",
       "title" : "Radiotherapy Treatment Location Qualifier Value Set",
@@ -601,8 +626,8 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/mcode-radiotherapy-volume-type-vs",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/mcode-radiotherapy-volume-type-vs",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "RadiotherapyVolumeTypeVS",
       "title" : "Radiotherapy Volume Type Value Set",
@@ -610,24 +635,24 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/vs-radiotherapy-category",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/vs-radiotherapy-category",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "VSRadiotherapyCategory",
       "title" : "Radiotherapy Category",
       "description" : "Radiotherapy Category",
       "systems" : [
-        "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/RadiotherapyCS"
+        "https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/RadiotherapyCS"
       ],
       "uses" : {
       },
-      "StructureDefinition-radiotherapy-phase.html" : "Radiotherapy Phase",
       "StructureDefinition-radiotherapy-plan.html" : "Radiotherapy Plan",
-      "StructureDefinition-radiotherapy-course-summary.html" : "Radiotherapy course Summary"
+      "StructureDefinition-radiotherapy-course-summary.html" : "Radiotherapy course Summary",
+      "StructureDefinition-radiotherapy-phase.html" : "Radiotherapy Phase"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/vs-radiotherapy-intent",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/vs-radiotherapy-intent",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "VSRadiotherapyIntent",
       "title" : "Radiotherapy Intent",
@@ -638,8 +663,8 @@
       "StructureDefinition-treatmentIntent.html" : "Treatment Intent"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/vs-radiotherapy-termination-reason",
-      "version" : "2.1.0",
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/vs-radiotherapy-termination-reason",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "VSRadiotherapyTerminationReason",
       "title" : "Radiotherapy Termination Reason",

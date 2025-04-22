@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Algorith mName - FHIR Osiris Implementation Guide v2.1.0</title>
+    <title>Algorith mName - FHIR Osiris Implementation Guide v1.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -18,8 +18,9 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
     <!-- Placeholder for child template CSS declarations -->
-    <link href="assets/css/fhir.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -39,25 +40,29 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"5.48"}
     h3,h4,h5,h6{--heading-prefix:"5.48"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" no-external="true" href="https://cancer.fr/"><img height="50" alt="inca Logo" src="assets/images/logo-inca.png"/></a>
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
 
-        <div id="family-nav">
-          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-        </div>
-        <div id="arkhn-logo">
-          <a id="hl7-search-lnk" no-external="true" href="https://www.arkhn.com"><img alt="Arkhn Logo" src="assets/images/logo_arkhn.png"/></a>
-        </div>
+  <div id="ig-search">
+ </div>
 
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">FHIR Osiris Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - ci-build
+            <span style="display:inline-block;">1.1.0 - trial-implementation
 
 
             </span>
@@ -114,7 +119,7 @@
         <a target="_blank" href="https://github.com/siric-osiris/OSIRIS">OSIRIS Spec </a>
       </li>
       <li>
-        <a target="_blank" href="http://arkhn.com/">Arkhn website </a>
+        <a target="_blank" href="http://cancer.fr/">inca website </a>
       </li>
     </ul>
   </li>
@@ -143,7 +148,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v1.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://ig-osiris.cancer.fr/ig/osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -213,10 +218,10 @@
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/algorithmName<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/algorithmName"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/algorithmName<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/algorithmName"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">2.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/algorithmName|2.1.0"/></span>
+      <span class="copy-text">1.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/algorithmName|1.1.0"/></span>
       </td>
     </tr>
 
@@ -232,7 +237,7 @@
         
           Draft
           
-            as of 2024-05-15
+            as of 2025-04-22
           
         
       </td>
@@ -252,11 +257,15 @@
 
 
   <p><b>Context of Use</b></p>
-  <p>This extension may be used on the following  element(s):</p>
   <ul>
-    
-    <li>Element ID Element</li>
-    
+  <p>This extension may be used on the following element(s):</p>
+<ul>
+  <li>
+Element ID:     <code>
+<a href="http://hl7.org/fhir/R4/datatypes.html#Element">Element</a>    </code>
+  </li>
+</ul>
+
   </ul>
 
   <!-- insert intro if present -->
@@ -281,9 +290,6 @@
   <div id="tabs">
     <ul>
       <li>
-        <a href="#tabs-summ">Text Summary</a>
-      </li>
-      <li>
         <a href="#tabs-diff">Differential Table</a>
       </li>
       <li>
@@ -305,56 +311,44 @@
       </li>-->
 
       <li>
+        <a href="#tabs-summ">Statistics/References</a>
+      </li>
+      <li>
         <a href="#tabs-all">All</a>
       </li>
     </ul>
-    <a name="tabs-summ"> </a>
-    <div id="tabs-summ">
-      <div id="tbl-summ">
-        <p>This structure is derived from <a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>
-        </p>
-        <div id="tbl-summ-inner">
-          <a name="summary"> </a>
-          <a name="summary"> </a>
-<p><b>
-Summary
-</b></p>
-<p>Simple Extension of type string: Algorith mName</p>
-        </div>
-      </div>
-    </div>
     <a name="tabs-diff"> </a>
     <div id="tabs-diff">
       <div id="tbl-diff">
         <p>This structure is derived from <a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>
         </p>
         <div id="tbl-diff-inner">
-          <table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="algorithmNamed"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#diff_Extension" title="Algorith mName">Extension</a><a name="Extension"> </a></td>
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="algorithmNamed" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element" data-no-external="true">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description &amp; Constraints</a><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension" title="Algorith mName" data-no-external="true">Extension</a><a name="d-Extension"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Algorith mName</td></tr>
 
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <span style="text-decoration:line-through">extension</span><a name="Extension.extension"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <span style="text-decoration:line-through">extension</span><a name="d-Extension.extension"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"></span><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
 
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#diff_Extension.url">url</a><a name="Extension.url"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension.url" data-no-external="true">url</a><a name="d-Extension.url"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/algorithmName"</span></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/algorithmName"</span></td></tr>
 
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#diff_Extension.value[x]">value[x]</a><a name="Extension.value_x_"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension.value[x]" data-no-external="true">value[x]</a><a name="d-Extension.value_x_"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Value of extension</span></td></tr>
 
-<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
         </div>
       </div>
     </div>
@@ -362,38 +356,38 @@ Summary
     <div id="tabs-snap">
       <div id="tbl-snap">
         <div id="tbl-snap-inner">
-          <table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="algorithmNames"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension" title="Algorith mName">Extension</a><a name="Extension"> </a></td>
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="algorithmNames" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element" data-no-external="true">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description &amp; Constraints</a><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension" title="Algorith mName" data-no-external="true">Extension</a><a name="Extension"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Algorith mName<br/></td></tr>
 
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.">id</a><a name="Extension.id"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." data-no-external="true">id</a><a name="Extension.id"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Unique id for inter-element referencing</td></tr>
 
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension.extension" title="An Extension">extension</a><a name="Extension.extension"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension.extension" title="An Extension" data-no-external="true">extension</a><a name="Extension.extension"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..0</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
 
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension.url" title="Source of the definition for the extension code - a logical name or a URL.">url</a><a name="Extension.url"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension.url" title="Source of the definition for the extension code - a logical name or a URL." data-no-external="true">url</a><a name="Extension.url"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/algorithmName"</span></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/algorithmName"</span></td></tr>
 
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension.value[x]" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).">value[x]</a><a name="Extension.value_x_"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension.value[x]" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)." data-no-external="true">value[x]</a><a name="Extension.value_x_"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value of extension</td></tr>
 
-<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
         </div>
       </div>
     </div>
@@ -416,7 +410,7 @@ Summary
            // <span style="color: navy; opacity: 0.8">Algorith mName</span>
  {
     "<a href="StructureDefinition-algorithmName.html#Extension.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces" class="dict"><span style="text-decoration: underline">id</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Unique id for inter-element referencing</span>
-    "<a href="StructureDefinition-algorithmName.html#Extension.url" title="Source of the definition for the extension code - a logical name or a URL" class="dict"><span style="text-decoration: underline">url</span></a>" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/algorithmName", <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span>
+    "<a href="StructureDefinition-algorithmName.html#Extension.url" title="Source of the definition for the extension code - a logical name or a URL" class="dict"><span style="text-decoration: underline">url</span></a>" : "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/algorithmName", <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span>
     "<a href="StructureDefinition-algorithmName.html#Extension.valueString" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueString</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Value of extension</span>
   }
 
@@ -435,19 +429,23 @@ Summary
       </div>
     </div>-->
 
-    <a name="tabs-all"> </a>
-    <div id="tabs-all">
-      <div id="all-summ">
+    <a name="tabs-summ"> </a>
+    <div id="tabs-summ">
+      <div id="tbl-summ">
         <p>This structure is derived from <a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>
         </p>
-        <div id="all-summ-inner">
+        <div id="tbl-summ-inner">
           <a name="summary"> </a>
+          <a name="s-summary"> </a>
 <p><b>
 Summary
 </b></p>
 <p>Simple Extension of type string: Algorith mName</p>
         </div>
       </div>
+    </div>
+    <a name="tabs-all"> </a>
+    <div id="tabs-all">
       <div id="all-tbl-diff">
         <p>
           <b>Differential View</b>
@@ -455,32 +453,32 @@ Summary
         <p>This structure is derived from <a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>
         </p>
         <div id="all-tbl-diff-inner">
-          <table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="algorithmNamed"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#diff_Extension" title="Algorith mName">Extension</a><a name="Extension"> </a></td>
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="algorithmNamed" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element" data-no-external="true">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description &amp; Constraints</a><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension" title="Algorith mName" data-no-external="true">Extension</a><a name="da-Extension"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Algorith mName</td></tr>
 
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <span style="text-decoration:line-through">extension</span><a name="Extension.extension"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <span style="text-decoration:line-through">extension</span><a name="da-Extension.extension"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"></span><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
 
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#diff_Extension.url">url</a><a name="Extension.url"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension.url" data-no-external="true">url</a><a name="da-Extension.url"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/algorithmName"</span></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/algorithmName"</span></td></tr>
 
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#diff_Extension.value[x]">value[x]</a><a name="Extension.value_x_"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension.value[x]" data-no-external="true">value[x]</a><a name="da-Extension.value_x_"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Value of extension</span></td></tr>
 
-<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
         </div>
       </div>
       <div id="all-tbl-snap">
@@ -488,38 +486,38 @@ Summary
           <b>Snapshot View</b>
         </p>
         <div id="all-tbl-snap-inner">
-          <table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="algorithmNames"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension" title="Algorith mName">Extension</a><a name="Extension"> </a></td>
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="algorithmNames" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element" data-no-external="true">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description &amp; Constraints</a><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension" title="Algorith mName" data-no-external="true">Extension</a><a name="sa-Extension"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Algorith mName<br/></td></tr>
 
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.">id</a><a name="Extension.id"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." data-no-external="true">id</a><a name="sa-Extension.id"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Unique id for inter-element referencing</td></tr>
 
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension.extension" title="An Extension">extension</a><a name="Extension.extension"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension.extension" title="An Extension" data-no-external="true">extension</a><a name="sa-Extension.extension"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..0</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
 
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension.url" title="Source of the definition for the extension code - a logical name or a URL.">url</a><a name="Extension.url"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension.url" title="Source of the definition for the extension code - a logical name or a URL." data-no-external="true">url</a><a name="sa-Extension.url"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/algorithmName"</span></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="color: darkgreen">"https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/algorithmName"</span></td></tr>
 
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension.value[x]" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).">value[x]</a><a name="Extension.value_x_"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-algorithmName-definitions.html#Extension.value[x]" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)." data-no-external="true">value[x]</a><a name="sa-Extension.value_x_"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value of extension</td></tr>
 
-<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
         </div>
       </div>
 
@@ -542,7 +540,7 @@ Summary
            // <span style="color: navy; opacity: 0.8">Algorith mName</span>
  {
     "<a href="StructureDefinition-algorithmName.html#Extension.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces" class="dict"><span style="text-decoration: underline">id</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Unique id for inter-element referencing</span>
-    "<a href="StructureDefinition-algorithmName.html#Extension.url" title="Source of the definition for the extension code - a logical name or a URL" class="dict"><span style="text-decoration: underline">url</span></a>" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/algorithmName", <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span>
+    "<a href="StructureDefinition-algorithmName.html#Extension.url" title="Source of the definition for the extension code - a logical name or a URL" class="dict"><span style="text-decoration: underline">url</span></a>" : "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/algorithmName", <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span>
     "<a href="StructureDefinition-algorithmName.html#Extension.valueString" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueString</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: brown" title=""><b>C?</b></span> <span style="color: navy; opacity: 0.8">Value of extension</span>
   }
 
@@ -560,6 +558,17 @@ Summary
         </div>
       </div>-->
 
+      <div id="all-summ">
+        <p>This structure is derived from <a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>
+        </p>
+        <div id="all-summ-inner">
+          <a name="a-summary"> </a>
+<p><b>
+Summary
+</b></p>
+<p>Simple Extension of type string: Algorith mName</p>
+        </div>
+      </div>
     </div>
   </div>
   <p>&#160;</p>
@@ -590,25 +599,20 @@ Summary
 
   <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
-  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 15, 2024 14:17+0000">2024-05-15</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://cancer.fr">institutcancer</a>.  Package inca.fhir.uv.osiris#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 22, 2025 15:20+0000">2025-04-22</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)">
-                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                 
-                
-               | <a style="color: #81BEF7" target="_blank" href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Version History  |
-               <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
-                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
-                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change </a>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://ig-osiris.cancer.fr/ig/osiris/history.html">Historique des versions </a>
+
 
           </span>
         </p>
@@ -630,10 +634,114 @@ Summary
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
+
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
+
   <!-- Analytics Below
   ================================================== -->
+
+
+  <!-- AJOUT ANS -->
+
+<footer class="footer footer-principal" role="contentinfo">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://sante.gouv.fr" title="Ministère de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/Republique-francaise-logo.png" alt="Ministère de la Santé" width="100" height="57" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://cancer.fr/" title="Institut National du Cancer (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-inca-footer.jpg" alt="Institut National du Cancer" width="100" height="57" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Institut National du Cancer</p>
+          <p>52 Av. André Morizet, 92100 Boulogne-Billancourt</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ajobard@institutcancer.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
   </body>
 </html>
 

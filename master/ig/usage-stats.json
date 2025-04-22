@@ -1,18 +1,67 @@
 {
-  "package": "arkhn.fhir.uv.osiris",
-  "version": "2.1.0",
+  "package": "inca.fhir.uv.osiris",
+  "version": "1.1.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/BasedOnCondition",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/BasedOnCondition",
       "title": "Based On Condition (Tumor Pathology Event)",
       "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
         "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
         "Reference"
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/BiologicalSampleOrigin",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/BiologicalSampleOrigin",
       "title": "Biological Sample Origin",
       "types": [
         "CodeableConcept",
@@ -24,21 +73,21 @@
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/adverse-event-end-date",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/adverse-event-end-date",
       "title": "Adverse Event End date",
       "types": [
         "dateTime"
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/algorithmName",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/algorithmName",
       "title": "Algorith mName",
       "types": [
         "string"
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/basedOn",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/basedOn",
       "title": "Connection with the imaging module",
       "types": [
         "Reference",
@@ -97,7 +146,7 @@
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/doseToVolume",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/doseToVolume",
       "title": "Dose To Volume",
       "types": [
         "Reference",
@@ -158,14 +207,14 @@
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/dueTo-tumor-pathology-event",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/dueTo-tumor-pathology-event",
       "title": "Tumor Pathology Event Parent",
       "types": [
         "Reference"
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/energyOrIsotope",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/energyOrIsotope",
       "title": "Energy Or Isotope",
       "types": [
         "Quantity",
@@ -223,28 +272,28 @@
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/ethnicity",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/ethnicity",
       "title": "Patient Ethnicity",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/gene-expression-data-type",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/gene-expression-data-type",
       "title": "Gene Expression Data Type",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genomeentityType",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/genomeentityType",
       "title": "GenomeEntityType",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/histologygrade",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/histologygrade",
       "title": "Histology",
       "types": [
         "string",
@@ -302,7 +351,7 @@
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-settings",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-settings",
       "title": "Imaging Settings",
       "types": [
         "string",
@@ -310,7 +359,56 @@
         "integer",
         "integer",
         "integer",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
         "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
         "Reference",
         "string",
         "decimal",
@@ -588,14 +686,14 @@
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/laterality",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/laterality",
       "title": "Laterality",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/modalityAndTechnique",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/modalityAndTechnique",
       "title": "Modality And Technique",
       "types": [
         "CodeableConcept",
@@ -654,31 +752,80 @@
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/numberOfFractions",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/numberOfFractions",
       "title": "Number of Fractions",
       "types": [
         "unsignedInt"
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/numberOfSessions",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/numberOfSessions",
       "title": "Number of Sessions",
       "types": [
         "unsignedInt"
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/origin-center",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/origin-center",
       "title": "Patient Origin Center",
       "types": [
         "Reference"
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiomics-criteria-settings",
       "title": "Radiomics Criteria Settings",
       "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
         "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
         "Coding",
         "string",
         "string",
@@ -732,7 +879,56 @@
         "UsageContext",
         "Dosage",
         "Meta",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
         "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
         "Coding",
         "string",
         "string",
@@ -890,7 +1086,56 @@
         "UsageContext",
         "Dosage",
         "Meta",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
         "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
         "Coding",
         "string",
         "string",
@@ -944,7 +1189,56 @@
         "UsageContext",
         "Dosage",
         "Meta",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
         "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
         "Coding",
         "string",
         "string",
@@ -998,7 +1292,313 @@
         "UsageContext",
         "Dosage",
         "Meta",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
         "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "Coding",
+        "decimal",
+        "decimal",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "Coding",
+        "decimal",
+        "decimal",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
         "Coding",
         "decimal",
         "decimal",
@@ -1054,64 +1654,8 @@
         "Meta",
         "string",
         "string",
-        "Coding",
-        "Coding",
-        "decimal",
-        "decimal",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
         "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "Coding",
-        "Coding",
-        "decimal",
-        "decimal",
+        "string",
         "base64Binary",
         "boolean",
         "canonical",
@@ -1163,12 +1707,56 @@
         "Dosage",
         "Meta",
         "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
         "string",
-        "string",
-        "string",
-        "string",
-        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
         "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
         "Coding",
         "string",
         "string",
@@ -1275,21 +1863,63 @@
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-image-filters-settings",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiomics-image-filters-settings",
       "title": "Radiomics Image Filters Settings",
       "types": [
         "string",
         "string",
         "string",
         "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
         "string",
-        "string",
-        "string",
-        "string",
-        "string",
-        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
         "Coding",
-        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
         "string",
         "base64Binary",
         "boolean",
@@ -1342,6 +1972,209 @@
         "Dosage",
         "Meta",
         "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "Coding",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
         "string",
         "base64Binary",
         "boolean",
@@ -1396,14 +2229,14 @@
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/reasonReplanification",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/reasonReplanification",
       "title": "Reason Replanification",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/series-weightheigt",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/series-weightheigt",
       "title": "Weight and Height at the time of the Serie",
       "types": [
         "decimal",
@@ -1461,28 +2294,28 @@
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/spanning-pairs",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/spanning-pairs",
       "title": "Fusion Spanning Pairs",
       "types": [
         "integer"
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/split-reads",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/split-reads",
       "title": "Fusion Split Reads",
       "types": [
         "integer"
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/strand-bias",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/strand-bias",
       "title": "Strand bias",
       "types": [
         "boolean"
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment-line",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/treatment-line",
       "title": "Treatment Line Number",
       "types": [
         "integer",
@@ -1490,14 +2323,14 @@
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatmentIntent",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/treatmentIntent",
       "title": "Treatment Intent",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatmentTerminationReason",
+      "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/treatmentTerminationReason",
       "title": "Treatment Termination Reason",
       "types": [
         "CodeableConcept"
@@ -1507,149 +2340,149 @@
   "profiles": {
     "Observation": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/variant-annotation",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/variant-annotation",
         "title": "Variant Annotation"
       },
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/vital-status",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/vital-status",
         "title": "Vital Status"
       }
     ],
     "MolecularSequence": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/molecular-sequence-3-prime",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/molecular-sequence-3-prime",
         "title": "3 Prime Molecular Sequence"
       },
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/molecular-sequence-5-prime",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/molecular-sequence-5-prime",
         "title": "5 Prime Molecular Sequence"
       }
     ],
     "ResearchStudy": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/clinical-trial",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/clinical-trial",
         "title": "Oncology Clinical Trial"
       }
     ],
     "ResearchSubject": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/clinical-trial-subject",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/clinical-trial-subject",
         "title": "Clinical Trial Subject"
       }
     ],
     "VerificationResult": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/data-validation",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/data-validation",
         "title": "Validation"
       }
     ],
     "FamilyMemberHistory": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/family-cancer-history",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/family-cancer-history",
         "title": "Family Cancer History"
       }
     ],
     "Consent": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genetic-consent",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/genetic-consent",
         "title": "Consent for Genetic Data Usage"
       }
     ],
     "Device": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/sequencing-device",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/sequencing-device",
         "title": "Sequencing Device"
       }
     ],
     "Endpoint": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-pacs",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-pacs",
         "title": "Location to the PACS server"
       }
     ],
     "Location": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-service",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-service",
         "title": "Imaging Service"
       }
     ],
     "AdverseEvent": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-adverse-event",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-adverse-event",
         "title": "Oncologic Adverse Event"
       }
     ],
     "Medication": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-biological-contrast",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-biological-contrast",
         "title": "Imaging Study Injection Contrast"
       }
     ],
     "Specimen": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-biological-sample",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-biological-sample",
         "title": "Biological Sample"
       }
     ],
     "ImagingStudy": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-imagingstudy",
         "title": "Imaging Study"
       }
     ],
     "MedicationAdministration": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-imagingstudy-injection",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-imagingstudy-injection",
         "title": "Imaging Study Injection"
       }
     ],
     "MedicationStatement": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-medication-statement",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-medication-statement",
         "title": "Oncology-related Medication Statement"
       }
     ],
     "Organization": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-organization",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-organization",
         "title": "Cancer Organization"
       }
     ],
     "Patient": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-patient",
         "title": "Oncology Patient"
       }
     ],
     "Procedure": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-course-summary",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-course-summary",
         "title": "Radiotherapy course Summary"
       },
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-phase",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-phase",
         "title": "Radiotherapy Phase"
       },
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-plan",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-plan",
         "title": "Radiotherapy Plan"
       }
     ],
     "BodyStructure": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-volume",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-volume",
         "title": "Radiotherapy Volume Profile"
       }
     ],
     "Condition": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/tumor-pathology-event",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/tumor-pathology-event",
         "title": "Tumor Pathology Event"
       }
     ],
     "CarePlan": [
       {
-        "url": "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment",
+        "url": "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/treatment",
         "title": "Treatment"
       }
     ]
@@ -1688,12 +2521,6 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
-      "StructureDefinition.snapshot.element"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
-      "StructureDefinition.snapshot.element"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics": [
       "StructureDefinition"
     ],
@@ -1713,88 +2540,91 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/BasedOnCondition": [
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/BasedOnCondition": [
       "Specimen"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/BiologicalSampleOrigin": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/BiologicalSampleOrigin": [
       "Specimen"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/adverse-event-end-date": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/adverse-event-end-date": [
       "AdverseEvent"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/algorithmName": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/algorithmName": [
       "Procedure"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/basedOn": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/basedOn": [
       "Procedure"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/doseToVolume": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/doseToVolume": [
       "Procedure"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/dueTo-tumor-pathology-event": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/dueTo-tumor-pathology-event": [
       "Condition"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/energyOrIsotope": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/energyOrIsotope": [
       "Procedure"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/ethnicity": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/ethnicity": [
       "Patient"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/gene-expression-data-type": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/gene-expression-data-type": [
       "Observation"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/genomeentityType": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/genomeentityType": [
       "MolecularSequence"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/histologygrade": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/histologygrade": [
       "Condition"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-settings": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-settings": [
       "ImagingStudy.series"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/laterality": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/laterality": [
       "Condition"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/modalityAndTechnique": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/modalityAndTechnique": [
       "Procedure"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/numberOfFractions": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/numberOfFractions": [
       "Procedure"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/numberOfSessions": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/numberOfSessions": [
       "Procedure"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/origin-center": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/origin-center": [
       "Patient"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-criteria-settings": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiomics-criteria-settings": [
       "Observation"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiomics-image-filters-settings": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiomics-image-filters-settings": [
       "Observation"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/reasonReplanification": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/reasonReplanification": [
       "Procedure"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/series-weightheigt": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/series-weightheigt": [
       "ImagingStudy.series"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/spanning-pairs": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/spanning-pairs": [
       "Observation"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/split-reads": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/split-reads": [
       "Observation"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/strand-bias": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/strand-bias": [
       "Observation"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatment-line": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/treatment-line": [
       "CarePlan"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatmentIntent": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/treatmentIntent": [
       "Procedure"
     ],
-    "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/treatmentTerminationReason": [
+    "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/treatmentTerminationReason": [
       "Procedure"
     ]
   }

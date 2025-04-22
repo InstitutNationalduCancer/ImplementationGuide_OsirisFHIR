@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>fhir-osiris-example-snp-1 - TTL Representation - FHIR Osiris Implementation Guide v2.1.0</title>
+    <title>fhir-osiris-example-snp-1 - TTL Representation - FHIR Osiris Implementation Guide v1.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -20,8 +20,9 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
     <!-- Placeholder for child template CSS declarations -->
-    <link href="assets/css/fhir.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -41,25 +42,29 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"5.193"}
     h3,h4,h5,h6{--heading-prefix:"5.193"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" no-external="true" href="https://cancer.fr/"><img height="50" alt="inca Logo" src="assets/images/logo-inca.png"/></a>
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
 
-        <div id="family-nav">
-          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-        </div>
-        <div id="arkhn-logo">
-          <a id="hl7-search-lnk" no-external="true" href="https://www.arkhn.com"><img alt="Arkhn Logo" src="assets/images/logo_arkhn.png"/></a>
-        </div>
+  <div id="ig-search">
+ </div>
 
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">FHIR Osiris Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - ci-build
+            <span style="display:inline-block;">1.1.0 - trial-implementation
 
 
             </span>
@@ -116,7 +121,7 @@
         <a target="_blank" href="https://github.com/siric-osiris/OSIRIS">OSIRIS Spec </a>
       </li>
       <li>
-        <a target="_blank" href="http://arkhn.com/">Arkhn website </a>
+        <a target="_blank" href="http://cancer.fr/">inca website </a>
       </li>
     </ul>
   </li>
@@ -145,7 +150,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v1.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://ig-osiris.cancer.fr/ig/osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -205,6 +210,7 @@
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix loinc: &lt;https://loinc.org/rdf/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
@@ -215,16 +221,18 @@
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;fhir-osiris-example-snp-1&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/snp&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/snp&gt;     ] )
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/snp&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/snp&gt;     ] )
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name=\&quot;fhir-osiris-example-snp-1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcfhir-osiris-example-snp-1\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;ResourceObservation &amp;quot;fhir-osiris-example-snp-1&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-snp.html\&quot;&gt;Single Nucleotide Polymorphism&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Strand bias&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Laboratory &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.5.0/CodeSystem-observation-category.html\&quot;&gt;Observation Category Codes&lt;/a&gt;#laboratory)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Genetic variant assessment &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#69548-6)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-L304.html\&quot;&gt;Patient/L304&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Present &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#LA9633-4)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;derivedFrom&lt;/b&gt;: &lt;a href=\&quot;Observation-fhir-osiris-example-sequencinganalysis-1.html\&quot;&gt;Observation/fhir-osiris-example-sequencinganalysis-1&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Human reference sequence assembly version &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#62374-4)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: hg19 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ([not stated]#hg19)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: DNA change type &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#48019-4)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Substitution &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#LA6690-7)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Genomic source class [Type] &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#48002-0)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Somatic &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#LA6684-0)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Allelic read depth &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#82121-5)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 31&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Genomic ref allele [ID] &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#69547-8)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: T&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Genomic alt allele [ID] &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#69551-0)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: A&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Chromosome [Identifier] in Blood or Tissue by Molecular genetics method &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#48000-4)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Chromosome 3 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#LA21256-5)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Genetic variant details &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#LP232001-0)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 6&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Genomic allele start-end &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#81254-5)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 178916948-178916948&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Allelic state &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#53034-5)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Heterozygous &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#LA6706-1)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation fhir-osiris-example-snp-1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;fhir-osiris-example-snp-1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcfhir-osiris-example-snp-1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;fhir-osiris-example-snp-1-en-US\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-snp.html\&quot;&gt;Single Nucleotide Polymorphism&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Strand bias&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;Laboratory&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 69548-6}\&quot;&gt;Genetic variant assessment&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-L304.html\&quot;&gt;Anonymous Patient Male, DoB: 1967-11-08&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org LA9633-4}\&quot;&gt;Present&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;derivedFrom&lt;/b&gt;: &lt;a href=\&quot;Observation-fhir-osiris-example-sequencinganalysis-1.html\&quot;&gt;Observation Omic&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 62374-4}\&quot;&gt;Human reference sequence assembly version&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;hg19&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 48019-4}\&quot;&gt;DNA change type&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org LA6690-7}\&quot;&gt;Substitution&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 48002-0}\&quot;&gt;Genomic source class [Type]&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org LA6684-0}\&quot;&gt;Somatic&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 82121-5}\&quot;&gt;Allelic read depth&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 31&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 69547-8}\&quot;&gt;Genomic ref allele [ID]&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: T&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 69551-0}\&quot;&gt;Genomic alt allele [ID]&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: A&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 48000-4}\&quot;&gt;Chromosome [Identifier] in Blood or Tissue by Molecular genetics method&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org LA21256-5}\&quot;&gt;Chromosome 3&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org LP232001-0}\&quot;&gt;Genetic variant details&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 6&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 81254-5}\&quot;&gt;Genomic allele start-end&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 178916948-178916948&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 53034-5}\&quot;&gt;Allelic state&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org LA6706-1}\&quot;&gt;Heterozygous&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.extension">fhir:extension</a> ( [
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/strand-bias&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ]
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/strand-bias&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#boolean">a</a> fhir:boolean ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false     ]
   ] ) ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.category">fhir:category</a> ( [
@@ -300,14 +308,18 @@ a loinc:82121-5 ;
 a loinc:69547-8 ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;69547-8&quot; ]       ] )     ] ;
-<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;T&quot; ]
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;T&quot;     ]
   ] [
 <a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">fhir:code</a> [
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
 a loinc:69551-0 ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;69551-0&quot; ]       ] )     ] ;
-<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;A&quot; ]
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;A&quot;     ]
   ] [
 <a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">fhir:code</a> [
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
@@ -373,25 +385,20 @@ a loinc:LA6706-1 ;
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 15, 2024 14:17+0000">2024-05-15</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://cancer.fr">institutcancer</a>.  Package inca.fhir.uv.osiris#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 22, 2025 15:20+0000">2025-04-22</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)">
-                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                 
-                
-               | <a style="color: #81BEF7" target="_blank" href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Version History  |
-               <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
-                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
-                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change </a>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://ig-osiris.cancer.fr/ig/osiris/history.html">Historique des versions </a>
+
 
           </span>
         </p>
@@ -413,10 +420,114 @@ a loinc:LA6706-1 ;
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
+
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
+
   <!-- Analytics Below
   ================================================== -->
+
+
+  <!-- AJOUT ANS -->
+
+<footer class="footer footer-principal" role="contentinfo">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://sante.gouv.fr" title="Ministère de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/Republique-francaise-logo.png" alt="Ministère de la Santé" width="100" height="57" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://cancer.fr/" title="Institut National du Cancer (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-inca-footer.jpg" alt="Institut National du Cancer" width="100" height="57" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Institut National du Cancer</p>
+          <p>52 Av. André Morizet, 92100 Boulogne-Billancourt</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ajobard@institutcancer.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
   </body>
 </html>
 

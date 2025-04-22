@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/snomed-requested-cs",
-      "version" : "2.1.0",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "SnomedRequestedCScodex",
       "title" : "Requested SNOMED Codes Code System",
@@ -21,26 +21,26 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "ValueSet-FusionType.html" : "Fusion Type Value Set",
-      "ValueSet-DNAChangeType.html" : "DNA Change Type Value Set",
       "ValueSet-Chromosome.html" : "Chromosome Value Set",
-      "ValueSet-AminoAcideChangeType.html" : "Amino Acide Change Type Value Set"
+      "ValueSet-DNAChangeType.html" : "DNA Change Type Value Set",
+      "ValueSet-AminoAcideChangeType.html" : "Amino Acide Change Type Value Set",
+      "ValueSet-FusionType.html" : "Fusion Type Value Set"
     },
     {
       "url" : "http://snomed.info/sct",
-      "version" : "2.1.0",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "SnomedCS",
       "title" : "SNOMED Codes Code System",
       "description" : "SNOMED Codes Code System",
       "uses" : {
       },
-      "ValueSet-VSBodySite.html" : " Bodysite Value Set",
-      "ValueSet-mcode-radiotherapy-volume-type-vs.html" : "Radiotherapy Volume Type Value Set",
       "ValueSet-vs-radiotherapy-termination-reason.html" : "Radiotherapy Termination Reason",
-      "ValueSet-vs-radiotherapy-intent.html" : "Radiotherapy Intent",
+      "ValueSet-mcode-radiotherapy-treatment-location-qualifier-vs.html" : "Radiotherapy Treatment Location Qualifier Value Set",
+      "ValueSet-mcode-radiotherapy-volume-type-vs.html" : "Radiotherapy Volume Type Value Set",
       "ValueSet-codexrt-radiotherapy-reason-for-revision-or-adaptation-vs.html" : "Radiotherapy Reason Replanification",
-      "ValueSet-mcode-radiotherapy-treatment-location-qualifier-vs.html" : "Radiotherapy Treatment Location Qualifier Value Set"
+      "ValueSet-vs-radiotherapy-intent.html" : "Radiotherapy Intent",
+      "ValueSet-VSBodySite.html" : " Bodysite Value Set"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
@@ -65,31 +65,31 @@
       "oids" : ["2.16.840.1.113883.6.86"],
       "uses" : {
       },
-      "ValueSet-RadiomicsFeaturesVS.html" : "Radiomic Features Value Set",
-      "ValueSet-AnalysisType.html" : "Analysis Types Value Set",
-      "ValueSet-AlgorithmicPloidy.html" : "Algorithmic Ploidy",
-      "ValueSet-ResponseEvaluationStatus.html" : "Response Status Value Set",
-      "ValueSet-PanelName.html" : "Panel Name",
       "ValueSet-GenomeEntityType.html" : "Genome entity type Value Set",
-      "ValueSet-CytoBand.html" : "CytoBand Value Set",
+      "ValueSet-VitalStatus.html" : "Vital Status Value Set",
+      "ValueSet-TreatmentType.html" : "Treatment Type Value Set",
+      "ValueSet-Laterality.html" : "Tumor Laterality Value Set",
+      "ValueSet-SurgeryResectionQuality.html" : "Surgery Resection Quality Value Set",
+      "ValueSet-AlgorithmicPloidy.html" : "Algorithmic Ploidy",
       "ValueSet-ReferenceType.html" : "Reference Type Value Set",
       "ValueSet-GeneticMaterial.html" : "GeneticMaterial",
-      "ValueSet-BiologicalSampleOrigin.html" : "Biological Sample Origin Value Set",
-      "ValueSet-VitalStatus.html" : "Vital Status Value Set",
-      "ValueSet-VSModality.html" : " Modality Value Set",
-      "ValueSet-PlatformName.html" : "Platform Name",
-      "ValueSet-Parentage.html" : "Parentage Value Set",
-      "ValueSet-BiologicalSampleNature.html" : "Biological Sample Nature Value Set",
-      "ValueSet-TumorPathologyEventType.html" : "Tumor Pathology Event Type Value Set",
-      "ValueSet-Laterality.html" : "Tumor Laterality Value Set",
-      "ValueSet-Pathogenicity.html" : "Pathogenicity Value Set",
-      "ValueSet-StorageTemperature.html" : "Storage temperature Value Set",
-      "ValueSet-TreatmentType.html" : "Treatment Type Value Set",
-      "ValueSet-SurgeryResectionQuality.html" : "Surgery Resection Quality Value Set",
-      "ValueSet-Chromosome.html" : "Chromosome Value Set",
+      "ValueSet-ResponseEvaluationStatus.html" : "Response Status Value Set",
+      "ValueSet-CytoBand.html" : "CytoBand Value Set",
       "ValueSet-AlterationType.html" : "Alteration Type Value Set",
       "ValueSet-AdverseEventGrade.html" : "Adverse Event Grade Value Set",
-      "ValueSet-CauseOfDeath.html" : "Cause of death Value Set"
+      "ValueSet-AnalysisType.html" : "Analysis Types Value Set",
+      "ValueSet-Chromosome.html" : "Chromosome Value Set",
+      "ValueSet-VSModality.html" : " Modality Value Set",
+      "ValueSet-BiologicalSampleOrigin.html" : "Biological Sample Origin Value Set",
+      "ValueSet-PanelName.html" : "Panel Name",
+      "ValueSet-Parentage.html" : "Parentage Value Set",
+      "ValueSet-TumorPathologyEventType.html" : "Tumor Pathology Event Type Value Set",
+      "ValueSet-BiologicalSampleNature.html" : "Biological Sample Nature Value Set",
+      "ValueSet-PlatformName.html" : "Platform Name",
+      "ValueSet-Pathogenicity.html" : "Pathogenicity Value Set",
+      "ValueSet-CauseOfDeath.html" : "Cause of death Value Set",
+      "ValueSet-StorageTemperature.html" : "Storage temperature Value Set",
+      "ValueSet-RadiomicsFeaturesVS.html" : "Radiomic Features Value Set"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-Race",
@@ -101,33 +101,34 @@
       "oids" : ["2.16.840.1.113883.5.104"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-Race.html" : "Race"
+      "http://terminology.hl7.org/6.2.0/ValueSet-v3-Race.html" : "Race"
     },
     {
       "url" : "http://www.genenames.org/genegroup",
-      "version" : "1.0.0",
+      "version" : "1.1.0",
       "status" : "active",
       "name" : "HGNCGeneGroup",
       "title" : "HUGO Gene Nomenclature Committee Gene Group",
-      "description" : "The HGNC is responsible for approving unique symbols and names for human loci, including protein coding genes, ncRNA genes and pseudogenes, to allow unambiguous scientific communication.\r\n\r\nFor each known human gene we approve a gene name and symbol (short-form abbreviation). All approved symbols are stored in the HGNC database,[www.genenames.org](https://www.genenames.org/tools/search), a curated online repository of HGNC-approved gene nomenclature, gene groups and associated resources including links to genomic, proteomic and phenotypic information. Each symbol is unique and we ensure that each gene is only given one approved gene symbol. It is necessary to provide a unique symbol for each gene so that we and others can talk about them, and this also facilitates electronic data retrieval from publications and databases. Please see https://www.genenames.org/ for more info.",
+      "description" : "\"The HGNC is responsible for approving unique symbols and names for human loci, including protein coding genes, ncRNA genes and pseudogenes, to allow unambiguous scientific communication.\"\r\n\r\nHGNC Gene Group is an index on gene families/groups. The numeric GeneGroup IDs should be used as codes. GeneGroup IDs do not begin with \"HGNC:\" (like the GeneIDs for genes in HGNC Genes), so care must be made to ensure alignment of concepts when viewing an HGNC ID from an older system that may be referring to the GeneID and not a gene group. For example, 588 refers to the HLA gene family, but HGNC:588 identifies the ATG12 gene. To provide clarity for systems that do not distinguish codes from genes and gene families, use \"http://www.genenames.org\" for genes and \"http://www.genenames.org/genegroup\" for gene families as code system URIs.\r\n\r\n\"For each known human gene we approve a gene name and symbol (short-form abbreviation). All approved symbols are stored in the HGNC database,[www.genenames.org](https://www.genenames.org/tools/search), a curated online repository of HGNC-approved gene nomenclature, gene groups and associated resources including links to genomic, proteomic and phenotypic information. Each symbol is unique and we ensure that each gene is only given one approved gene symbol. It is necessary to provide a unique symbol for each gene so that we and others can talk about them, and this also facilitates electronic data retrieval from publications and databases.\"\r\n\r\nFor more information on the use of HGNC Genes, see [https://terminology.hl7.org/CodeSystem-v3-hgnc.html](https://terminology.hl7.org/CodeSystem-v3-hgnc.html).\r\n\r\nHGNC is a free database for the public.\r\n\r\nPlease see https://www.genenames.org/ for more info.",
       "uses" : {
       },
       "http://hl7.org/fhir/uv/genomics-reporting/STU1/valueset-hgnc.html" : "HGNC"
     },
     {
-      "url" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/RadiotherapyCS",
-      "version" : "2.1.0",
-      "status" : "draft",
-      "name" : "RadiotherapyCS",
-      "title" : "Radiotherapy Code System",
-      "description" : "Radiotherapy Code System",
+      "url" : "http://www.whocc.no/atc",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "WC",
+      "title" : "WHO ATC",
+      "description" : "WHO ATC",
+      "oids" : ["2.16.840.1.113883.6.73"],
       "uses" : {
       },
-      "ValueSet-vs-radiotherapy-category.html" : "Radiotherapy Category"
+      "http://tx.hl7europe.eu/r4/ValueSet/whoatc-uv-ips" : "WHO ATC - IPS"
     },
     {
       "url" : "https://ibsi.readthedocs.io/en/latest/",
-      "version" : "2.1.0",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "IBSICS",
       "title" : "IBSI Code System",
@@ -137,8 +138,19 @@
       "ValueSet-RadiomicsFeaturesVS.html" : "Radiomic Features Value Set"
     },
     {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/RadiotherapyCS",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "RadiotherapyCS",
+      "title" : "Radiotherapy Code System",
+      "description" : "Radiotherapy Code System",
+      "uses" : {
+      },
+      "ValueSet-vs-radiotherapy-category.html" : "Radiotherapy Category"
+    },
+    {
       "url" : "https://terminology.arkhn.com/SeriesModalityCS",
-      "version" : "2.1.0",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "SeriesModalityCS",
       "title" : "Series Modality Code System",
@@ -149,7 +161,7 @@
     },
     {
       "url" : "https://terminology.arkhn.com/radiomicsCS",
-      "version" : "2.1.0",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "RadiomicsCS",
       "title" : "Imaging Code System",

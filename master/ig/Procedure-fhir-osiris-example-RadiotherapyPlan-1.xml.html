@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>fhir-osiris-example-RadiotherapyPlan-1 - XML Representation - FHIR Osiris Implementation Guide v2.1.0</title>
+    <title>fhir-osiris-example-RadiotherapyPlan-1 - XML Representation - FHIR Osiris Implementation Guide v1.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -20,8 +20,9 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
     <!-- Placeholder for child template CSS declarations -->
-    <link href="assets/css/fhir.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -41,25 +42,29 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"5.181"}
     h3,h4,h5,h6{--heading-prefix:"5.181"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" no-external="true" href="https://cancer.fr/"><img height="50" alt="inca Logo" src="assets/images/logo-inca.png"/></a>
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
 
-        <div id="family-nav">
-          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-        </div>
-        <div id="arkhn-logo">
-          <a id="hl7-search-lnk" no-external="true" href="https://www.arkhn.com"><img alt="Arkhn Logo" src="assets/images/logo_arkhn.png"/></a>
-        </div>
+  <div id="ig-search">
+ </div>
 
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">FHIR Osiris Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - ci-build
+            <span style="display:inline-block;">1.1.0 - trial-implementation
 
 
             </span>
@@ -116,7 +121,7 @@
         <a target="_blank" href="https://github.com/siric-osiris/OSIRIS">OSIRIS Spec </a>
       </li>
       <li>
-        <a target="_blank" href="http://arkhn.com/">Arkhn website </a>
+        <a target="_blank" href="http://cancer.fr/">inca website </a>
       </li>
     </ul>
   </li>
@@ -145,7 +150,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v1.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://ig-osiris.cancer.fr/ig/osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -201,28 +206,27 @@
 
 
 
-  <pre class="xml" style="white-space: pre; text-wrap: nowrap;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
-
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
 &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure">Procedure</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;fhir-osiris-example-RadiotherapyPlan-1&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.meta">meta</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/radiotherapy-plan&quot;/&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-plan&quot;/&gt;
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Procedure&lt;/b&gt;&lt;a name=&quot;fhir-osiris-example-RadiotherapyPlan-1&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcfhir-osiris-example-RadiotherapyPlan-1&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;ResourceProcedure &amp;quot;fhir-osiris-example-RadiotherapyPlan-1&amp;quot; &lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-radiotherapy-plan.html&quot;&gt;Radiotherapy Plan&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Number of Fractions&lt;/b&gt;: 16&lt;/p&gt;&lt;p&gt;&lt;b&gt;Algorith mName&lt;/b&gt;: Unknown&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Connection with the imaging module&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;seriesUID&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Unknown&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;rtStructUID&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;a href=&quot;Observation-fhir-osiris-example-ROISegmentation.html&quot;&gt;Observation/fhir-osiris-example-ROISegmentation&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Dose To Volume&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;rtDoseUID&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Unknown&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;volume&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;a href=&quot;BodyStructure-fhir-osiris-example-RadiotherapyVolume-1.html&quot;&gt;BodyStructure/fhir-osiris-example-RadiotherapyVolume-1&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;fractionDose&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 266&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;a href=&quot;StructureDefinition-numberOfFractions.html&quot;&gt;Number of Fractions&lt;/a&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 16&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;totalDose&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 4256&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Modality And Technique&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;radiotherapyModality&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: External beam radiation therapy using photons (procedure) &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;https://browser.ihtsdotools.org/&quot;&gt;SNOWMED CT&lt;/a&gt;#1156506007)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;radiotherapyTechnique&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Three dimensional external beam radiation therapy (procedure) &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;CodeSystem-SnomedRequestedCSmcode.html&quot;&gt;Requested SNOMED Codes Code System&lt;/a&gt;#1162782007)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;radiotherapyTreatmentMachinePlanned&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Unknown&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Dose To Volume&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;volume&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;a href=&quot;BodyStructure-fhir-osiris-example-RadiotherapyVolume-2.html&quot;&gt;BodyStructure/fhir-osiris-example-RadiotherapyVolume-2&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;fractionDose&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 266&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;a href=&quot;StructureDefinition-numberOfFractions.html&quot;&gt;Number of Fractions&lt;/a&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 16&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;totalDose&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 4256&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Dose To Volume&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;volume&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;a href=&quot;BodyStructure-fhir-osiris-example-RadiotherapyVolume-3.html&quot;&gt;BodyStructure/fhir-osiris-example-RadiotherapyVolume-3&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;fractionDose&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 266&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;a href=&quot;StructureDefinition-numberOfFractions.html&quot;&gt;Number of Fractions&lt;/a&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 16&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;totalDose&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 4256&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Energy Or Isotope&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;quantityEnergyOrIsotope&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 999999&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;nameEnergyOrIsotope&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Unknown&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: MR/Unknown&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=&quot;Procedure-fhir-osiris-example-RadiotherapyPhase-1.html&quot;&gt;Procedure/fhir-osiris-example-RadiotherapyPhase-1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Planified &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;CodeSystem-RadiotherapyCS.html&quot;&gt;Radiotherapy Code System&lt;/a&gt;#Planned)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Radiotherapy treatment plan (regime/therapy) &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;https://browser.ihtsdotools.org/&quot;&gt;SNOWMED CT&lt;/a&gt;#1255724003)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-L304.html&quot;&gt;Patient/L304&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;performed&lt;/b&gt;: 2018-08-15 --&amp;gt; 2018-11-25&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Procedure fhir-osiris-example-RadiotherapyPlan-1&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;fhir-osiris-example-RadiotherapyPlan-1&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcfhir-osiris-example-RadiotherapyPlan-1&quot;&gt; &lt;/a&gt;&lt;a name=&quot;fhir-osiris-example-RadiotherapyPlan-1-en-US&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-radiotherapy-plan.html&quot;&gt;Radiotherapy Plan&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Number of Fractions&lt;/b&gt;: 16&lt;/p&gt;&lt;p&gt;&lt;b&gt;Algorith mName&lt;/b&gt;: Unknown&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Connection with the imaging module&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;seriesUID: Unknown&lt;/li&gt;&lt;li&gt;rtStructUID: &lt;a href=&quot;Observation-fhir-osiris-example-ROISegmentation.html&quot;&gt;Observation ROI Type DICOM&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Dose To Volume&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;rtDoseUID: Unknown&lt;/li&gt;&lt;li&gt;volume: &lt;a href=&quot;BodyStructure-fhir-osiris-example-RadiotherapyVolume-1.html&quot;&gt;BodyStructure: identifier = urn:oid:1.2.246.352.71.842418.2121.20150602151.102; location = Breast; locationQualifier = Left (qualifier value); description = Left Breast&lt;/a&gt;&lt;/li&gt;&lt;li&gt;fractionDose: 266&lt;/li&gt;&lt;li&gt;numberOfFractions: 16&lt;/li&gt;&lt;li&gt;totalDose: 4256&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Dose To Volume&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;volume: &lt;a href=&quot;BodyStructure-fhir-osiris-example-RadiotherapyVolume-2.html&quot;&gt;BodyStructure: identifier = urn:oid:1.2.246.352.71.842418.2121.20150602151.103; location = Breast; locationQualifier = Left (qualifier value); description = Left Breast Surgical Bed&lt;/a&gt;&lt;/li&gt;&lt;li&gt;fractionDose: 266&lt;/li&gt;&lt;li&gt;numberOfFractions: 16&lt;/li&gt;&lt;li&gt;totalDose: 4256&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Dose To Volume&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;volume: &lt;a href=&quot;BodyStructure-fhir-osiris-example-RadiotherapyVolume-3.html&quot;&gt;BodyStructure: identifier = urn:oid:1.2.246.352.71.842418.2121.20150602151.104; location = Breast; locationQualifier = Left (qualifier value); description = Left Axillary Nodes&lt;/a&gt;&lt;/li&gt;&lt;li&gt;fractionDose: 266&lt;/li&gt;&lt;li&gt;numberOfFractions: 16&lt;/li&gt;&lt;li&gt;totalDose: 4256&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Modality And Technique&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;radiotherapyModality: &lt;span title=&quot;Codes:{http://snomed.info/sct 1156506007}&quot;&gt;External beam radiation therapy using photons (procedure)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;radiotherapyTechnique: &lt;span title=&quot;Codes:{http://hl7.org/fhir/us/mcode/CodeSystem/snomed-requested-cs 1162782007}&quot;&gt;Three dimensional external beam radiation therapy (procedure)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;radiotherapyTreatmentMachinePlanned: Unknown&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Energy Or Isotope&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;quantityEnergyOrIsotope: 999999&lt;/li&gt;&lt;li&gt;nameEnergyOrIsotope: Unknown&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: MR/Unknown&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=&quot;Procedure-fhir-osiris-example-RadiotherapyPhase-1.html&quot;&gt;Procedure Radiotherapy treatment phase (regime/therapy)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=&quot;Codes:{https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/RadiotherapyCS Planned}&quot;&gt;Planified&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:{http://snomed.info/sct 1255724003}&quot;&gt;Radiotherapy treatment plan (regime/therapy)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-L304.html&quot;&gt;Anonymous Patient Male, DoB: 1967-11-08&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;performed&lt;/b&gt;: 2018-08-15 --&amp;gt; 2018-11-25&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.extension">extension</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/numberOfFractions&quot;&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/numberOfFractions&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueUnsignedInt</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;16&quot;/&gt;
   &lt;/extension&gt;
   &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.extension">extension</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/algorithmName&quot;&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/algorithmName&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unknown&quot;/&gt;
   &lt;/extension&gt;
   &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.extension">extension</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/basedOn&quot;&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/basedOn&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;seriesUID&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unknown&quot;/&gt;
     &lt;/extension&gt;
@@ -233,7 +237,7 @@
     &lt;/extension&gt;
   &lt;/extension&gt;
   &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.extension">extension</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/doseToVolume&quot;&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/doseToVolume&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;rtDoseUID&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unknown&quot;/&gt;
     &lt;/extension&gt;
@@ -254,7 +258,7 @@
     &lt;/extension&gt;
   &lt;/extension&gt;
   &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.extension">extension</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/modalityAndTechnique&quot;&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/modalityAndTechnique&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;radiotherapyModality&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
@@ -277,7 +281,7 @@
     &lt;/extension&gt;
   &lt;/extension&gt;
   &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.extension">extension</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/doseToVolume&quot;&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/doseToVolume&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;volume&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;<a href="BodyStructure-fhir-osiris-example-RadiotherapyVolume-2.html" style="color: Maroon">&#x1F517;</a> 
         &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
@@ -295,7 +299,7 @@
     &lt;/extension&gt;
   &lt;/extension&gt;
   &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.extension">extension</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/doseToVolume&quot;&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/doseToVolume&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;volume&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;<a href="BodyStructure-fhir-osiris-example-RadiotherapyVolume-3.html" style="color: Maroon">&#x1F517;</a> 
         &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
@@ -313,7 +317,7 @@
     &lt;/extension&gt;
   &lt;/extension&gt;
   &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.extension">extension</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/energyOrIsotope&quot;&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/energyOrIsotope&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;quantityEnergyOrIsotope&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueQuantity</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;999999&quot;/&gt;
@@ -338,7 +342,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.category">category</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
-              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/CodeSystem/RadiotherapyCS&quot;/&gt;
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/RadiotherapyCS&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Planned&quot;/&gt;
     &lt;/coding&gt;
   &lt;/category&gt;
@@ -372,25 +376,20 @@
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 15, 2024 14:17+0000">2024-05-15</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://cancer.fr">institutcancer</a>.  Package inca.fhir.uv.osiris#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 22, 2025 15:20+0000">2025-04-22</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)">
-                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                 
-                
-               | <a style="color: #81BEF7" target="_blank" href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Version History  |
-               <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
-                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
-                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change </a>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://ig-osiris.cancer.fr/ig/osiris/history.html">Historique des versions </a>
+
 
           </span>
         </p>
@@ -412,10 +411,114 @@
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
+
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
+
   <!-- Analytics Below
   ================================================== -->
+
+
+  <!-- AJOUT ANS -->
+
+<footer class="footer footer-principal" role="contentinfo">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://sante.gouv.fr" title="Ministère de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/Republique-francaise-logo.png" alt="Ministère de la Santé" width="100" height="57" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://cancer.fr/" title="Institut National du Cancer (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-inca-footer.jpg" alt="Institut National du Cancer" width="100" height="57" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Institut National du Cancer</p>
+          <p>52 Av. André Morizet, 92100 Boulogne-Billancourt</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ajobard@institutcancer.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
   </body>
 </html>
 

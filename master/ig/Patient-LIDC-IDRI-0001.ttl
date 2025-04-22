@@ -1,35 +1,36 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
 
-<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Patient/LIDC-IDRI-0001> a fhir:Patient ;
+<https://ig-osiris.cancer.fr/ig/osiris/Patient/LIDC-IDRI-0001> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "LIDC-IDRI-0001"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"^^xsd:anyURI ;
-       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient>
+       fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-patient"^^xsd:anyURI ;
+       fhir:link <https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-patient>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anonymous Patient</b> unknown, DoB: 1000-01-01</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: <a href=\"Organization-fhir-osiris-provider-organization.html\">Organization/fhir-osiris-provider-organization</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The origin center organization of an Oncology Patient.\"><a href=\"StructureDefinition-origin-center.html\">Patient Origin Center</a></td><td colspan=\"3\"><ul><li><a href=\"Organization-fhir-osiris-origin-organization.html\">Organization/fhir-osiris-origin-organization</a></li></ul></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient LIDC-IDRI-0001</b></p><a name=\"LIDC-IDRI-0001\"> </a><a name=\"hcLIDC-IDRI-0001\"> </a><a name=\"LIDC-IDRI-0001-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-patient.html\">Oncology Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient Unknown, DoB: 1000-01-01</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: <a href=\"Organization-fhir-osiris-provider-organization.html\">Organization: identifier = http://finess.sante.gouv.fr#330000662</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The origin center organization of an Oncology Patient.\"><a href=\"StructureDefinition-origin-center.html\">Patient Origin Center</a></td><td colspan=\"3\"><a href=\"Organization-fhir-osiris-origin-organization.html\">Organization: identifier = http://finess.sante.gouv.fr#330000662</a></td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/origin-center"^^xsd:anyURI ] ;
+     fhir:url [ fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/origin-center"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Organization/fhir-osiris-origin-organization> ;
+       fhir:link <https://ig-osiris.cancer.fr/ig/osiris/Organization/fhir-osiris-origin-organization> ;
        fhir:reference [ fhir:v "Organization/fhir-osiris-origin-organization" ]
      ]
   ] ) ; # 
   fhir:gender [ fhir:v "unknown"] ; # 
   fhir:birthDate [ fhir:v "1000-01-01"^^xsd:date] ; # 
   fhir:managingOrganization [
-     fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Organization/fhir-osiris-provider-organization> ;
+     fhir:link <https://ig-osiris.cancer.fr/ig/osiris/Organization/fhir-osiris-provider-organization> ;
      fhir:reference [ fhir:v "Organization/fhir-osiris-provider-organization" ]
   ] . # 
 

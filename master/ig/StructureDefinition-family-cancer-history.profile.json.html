@@ -11,7 +11,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Family Cancer History - JSON Representation - FHIR Osiris Implementation Guide v2.1.0</title>
+    <title>Family Cancer History - JSON Representation - FHIR Osiris Implementation Guide v1.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -26,8 +26,9 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
     <!-- Placeholder for child template CSS declarations -->
-    <link href="assets/css/fhir.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -47,25 +48,29 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"5.10"}
     h3,h4,h5,h6{--heading-prefix:"5.10"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" no-external="true" href="https://cancer.fr/"><img height="50" alt="inca Logo" src="assets/images/logo-inca.png"/></a>
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
 
-        <div id="family-nav">
-          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-        </div>
-        <div id="arkhn-logo">
-          <a id="hl7-search-lnk" no-external="true" href="https://www.arkhn.com"><img alt="Arkhn Logo" src="assets/images/logo_arkhn.png"/></a>
-        </div>
+  <div id="ig-search">
+ </div>
 
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">FHIR Osiris Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - ci-build
+            <span style="display:inline-block;">1.1.0 - trial-implementation
 
 
             </span>
@@ -122,7 +127,7 @@
         <a target="_blank" href="https://github.com/siric-osiris/OSIRIS">OSIRIS Spec </a>
       </li>
       <li>
-        <a target="_blank" href="http://arkhn.com/">Arkhn website </a>
+        <a target="_blank" href="http://cancer.fr/">inca website </a>
       </li>
     </ul>
   </li>
@@ -151,7 +156,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v1.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://ig-osiris.cancer.fr/ig/osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -224,7 +229,7 @@
         
           Draft
           
-            as of 2024-05-15
+            as of 2025-04-22
           
         
       </td>
@@ -242,41 +247,40 @@
 
 
 
-  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
-{
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition">resourceType</a>" : "StructureDefinition",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.id">id</a>" : "family-cancer-history",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table border=\&quot;0\&quot; cellpadding=\&quot;0\&quot; cellspacing=\&quot;0\&quot; style=\&quot;border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\&quot;&gt;&lt;tr style=\&quot;border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\&quot;&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;The logical name of the element\&quot;&gt;Name&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Information about the use of the element\&quot;&gt;Flags&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Minimum and Maximum # of times the the element can appear in the instance\&quot;&gt;Card.&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;width: 100px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Reference to the type of the element\&quot;&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Additional information about the element\&quot;&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style=\&quot;float: right\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Legend for this format\&quot;&gt;&lt;img src=\&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\&quot; alt=\&quot;doco\&quot; style=\&quot;background-color: inherit\&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_resource.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Resource\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-family-cancer-history-definitions.html#FamilyMemberHistory\&quot;&gt;FamilyMemberHistory&lt;/a&gt;&lt;a name=\&quot;FamilyMemberHistory\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;0&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;..&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/familymemberhistory.html\&quot;&gt;FamilyMemberHistory&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;Information about patient's relatives, relevant for patient&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_reference.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Reference to another Resource\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-family-cancer-history-definitions.html#FamilyMemberHistory.patient\&quot;&gt;patient&lt;/a&gt;&lt;a name=\&quot;FamilyMemberHistory.patient\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;1&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;..&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/references.html\&quot;&gt;Reference&lt;/a&gt;(&lt;a href=\&quot;StructureDefinition-onco-patient.html\&quot;&gt;Oncology Patient&lt;/a&gt;)&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;Patient history is about&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_element.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Element\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-family-cancer-history-definitions.html#FamilyMemberHistory.relationship\&quot;&gt;relationship&lt;/a&gt;&lt;a name=\&quot;FamilyMemberHistory.relationship\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;1&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;..&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a style=\&quot;opacity: 0.5\&quot; href=\&quot;http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;Relationship to the subject&lt;/span&gt;&lt;br/&gt;&lt;span style=\&quot;font-weight:bold\&quot;&gt;Binding: &lt;/span&gt;&lt;a href=\&quot;ValueSet-Parentage.html\&quot; title=\&quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Parentage\&quot;&gt;Parentage Value Set&lt;/a&gt; (&lt;a href=\&quot;http://hl7.org/fhir/R4/terminologies.html#required\&quot; title=\&quot;To be conformant, the concept in this element SHALL be from the specified value set.\&quot;&gt;required&lt;/a&gt;)&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin_end.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_element.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Element\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-family-cancer-history-definitions.html#FamilyMemberHistory.condition\&quot;&gt;condition&lt;/a&gt;&lt;a name=\&quot;FamilyMemberHistory.condition\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_blank.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin_end.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_element.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Element\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-family-cancer-history-definitions.html#FamilyMemberHistory.condition.code\&quot;&gt;code&lt;/a&gt;&lt;a name=\&quot;FamilyMemberHistory.condition.code\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;1&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;..&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a style=\&quot;opacity: 0.5\&quot; href=\&quot;http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;International code for the localization of the oncologic primary site&lt;br/&gt;&lt;span style=\&quot;font-weight:bold\&quot;&gt;Binding: &lt;/span&gt;&lt;a href=\&quot;ValueSet-Topography.html\&quot; title=\&quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Topography\&quot;&gt;Topography Value Set&lt;/a&gt; (&lt;a href=\&quot;http://hl7.org/fhir/R4/terminologies.html#extensible\&quot; title=\&quot;To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\&quot;&gt;extensible&lt;/a&gt;)&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr&gt;&lt;td colspan=\&quot;5\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;br/&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Legend for this format\&quot;&gt;&lt;img src=\&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\&quot; alt=\&quot;doco\&quot; style=\&quot;background-color: inherit\&quot;/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: StructureDefinition family-cancer-history&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;family-cancer-history\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcfamily-cancer-history\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;family-cancer-history-en-US\&quot;&gt; &lt;/a&gt;&lt;table border=\&quot;0\&quot; cellpadding=\&quot;0\&quot; cellspacing=\&quot;0\&quot; style=\&quot;border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\&quot;&gt;&lt;tr style=\&quot;border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\&quot;&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;The logical name of the element\&quot;&gt;Name&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Information about the use of the element\&quot;&gt;Flags&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Minimum and Maximum # of times the element can appear in the instance\&quot;&gt;Card.&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;width: 100px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Reference to the type of the element\&quot;&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Additional information about the element\&quot;&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style=\&quot;float: right\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Legend for this format\&quot;&gt;&lt;img src=\&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\&quot; alt=\&quot;doco\&quot; style=\&quot;background-color: inherit\&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_resource.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Resource\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-family-cancer-history-definitions.html#FamilyMemberHistory\&quot;&gt;FamilyMemberHistory&lt;/a&gt;&lt;a name=\&quot;FamilyMemberHistory\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;0&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;..&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/familymemberhistory.html\&quot;&gt;FamilyMemberHistory&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;Information about patient's relatives, relevant for patient&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_reference.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Reference to another Resource\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-family-cancer-history-definitions.html#FamilyMemberHistory.patient\&quot;&gt;patient&lt;/a&gt;&lt;a name=\&quot;FamilyMemberHistory.patient\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;1&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;..&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/references.html\&quot;&gt;Reference&lt;/a&gt;(&lt;a href=\&quot;StructureDefinition-onco-patient.html\&quot;&gt;Oncology Patient&lt;/a&gt;)&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;Patient history is about&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_element.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Element\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-family-cancer-history-definitions.html#FamilyMemberHistory.relationship\&quot;&gt;relationship&lt;/a&gt;&lt;a name=\&quot;FamilyMemberHistory.relationship\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;1&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;..&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a style=\&quot;opacity: 0.5\&quot; href=\&quot;http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;Relationship to the subject&lt;/span&gt;&lt;br/&gt;&lt;span style=\&quot;font-weight:bold\&quot;&gt;Binding: &lt;/span&gt;&lt;a href=\&quot;ValueSet-Parentage.html\&quot; title=\&quot;https://ig-osiris.cancer.fr/ig/osiris/ValueSet/Parentage\&quot;&gt;Parentage Value Set&lt;/a&gt; (&lt;a href=\&quot;http://hl7.org/fhir/R4/terminologies.html#required\&quot; title=\&quot;To be conformant, the concept in this element SHALL be from the specified value set.\&quot;&gt;required&lt;/a&gt;)&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin_end.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_element.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Element\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-family-cancer-history-definitions.html#FamilyMemberHistory.condition\&quot;&gt;condition&lt;/a&gt;&lt;a name=\&quot;FamilyMemberHistory.condition\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_blank.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin_end.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_element.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Element\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-family-cancer-history-definitions.html#FamilyMemberHistory.condition.code\&quot;&gt;code&lt;/a&gt;&lt;a name=\&quot;FamilyMemberHistory.condition.code\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;1&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;..&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a style=\&quot;opacity: 0.5\&quot; href=\&quot;http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;International code for the localization of the oncologic primary site&lt;br/&gt;&lt;span style=\&quot;font-weight:bold\&quot;&gt;Binding: &lt;/span&gt;&lt;a href=\&quot;ValueSet-Topography.html\&quot; title=\&quot;https://ig-osiris.cancer.fr/ig/osiris/ValueSet/Topography\&quot;&gt;Topography Value Set&lt;/a&gt; (&lt;a href=\&quot;http://hl7.org/fhir/R4/terminologies.html#extensible\&quot; title=\&quot;To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\&quot;&gt;extensible&lt;/a&gt;)&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr&gt;&lt;td colspan=\&quot;5\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;br/&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Legend for this format\&quot;&gt;&lt;img src=\&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\&quot; alt=\&quot;doco\&quot; style=\&quot;background-color: inherit\&quot;/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
   },
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">url</a>" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/family-cancer-history",
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a>" : "2.1.0",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">url</a>" : "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/family-cancer-history",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a>" : "1.1.0",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a>" : "FamilyCancerHistory",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>" : "Family Cancer History",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2024-05-15T14:17:55+00:00",
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "Arkhn",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2025-04-22T15:19:59+00:00",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "institutcancer",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Arkhn",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "institutcancer",
       "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://arkhn.com"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://cancer.fr"
         },
         {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "contact@arkhn.com"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "osiris@institutcancer.fr"
         }
       ]
     },
     {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Nicolas Riss",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Aurélien JOBARD",
       "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "nicolas@arkhn.com"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "osiris@institutcancer.fr"
         }
       ]
     }
@@ -316,6 +320,12 @@
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.baseDefinition">baseDefinition</a>" : "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.derivation">derivation</a>" : "constraint",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot">snapshot</a>" : {
+    "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.extension">extension</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "4.0.1"
+      }
+    ],
     "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">element</a>" : [
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "FamilyMemberHistory",
@@ -339,6 +349,14 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
           },
           {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "dom-3",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+          },
+          {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "dom-4",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated",
@@ -347,11 +365,11 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
           },
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "dom-3",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "dom-5",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "If a resource is contained in another resource, it SHALL NOT have a security label",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "contained.meta.security.empty()",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "not(exists(f:contained/*/f:meta/f:security))",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
           },
           {
@@ -373,12 +391,12 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
           },
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "dom-5",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "fhs-1",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "If a resource is contained in another resource, it SHALL NOT have a security label",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "contained.meta.security.empty()",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "not(exists(f:contained/*/f:meta/f:security))",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Can have age[x] or born[x], but not both",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "age.empty() or born.empty()",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "not (*[starts-with(local-name(.), 'age')] and *[starts-with(local-name(.), 'birth')])",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory"
           },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "fhs-2",
@@ -387,16 +405,10 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "age.exists() or estimatedAge.empty()",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(*[starts-with(local-name(.), 'age')]) or not(exists(f:estimatedAge))",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "fhs-1",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Can have age[x] or born[x], but not both",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "age.empty() or born.empty()",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "not (*[starts-with(local-name(.), 'age')] and *[starts-with(local-name(.), 'birth')])",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
@@ -440,6 +452,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "http://hl7.org/fhirpath/System.String"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true
       },
       {
@@ -459,9 +472,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Meta"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -472,17 +482,8 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "N/A"
-          }
-        ]
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true
       },
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "FamilyMemberHistory.implicitRules",
@@ -502,9 +503,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "uri"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -517,13 +515,7 @@
         ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          }
-        ]
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true
       },
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "FamilyMemberHistory.language",
@@ -543,9 +535,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "code"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -556,6 +545,8 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>" : [
             {
@@ -570,13 +561,7 @@
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "preferred",
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "A human language.",
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/languages"
-        },
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          }
-        ]
+        }
       },
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "FamilyMemberHistory.text",
@@ -602,9 +587,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Narrative"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -615,15 +597,9 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "N/A"
-          },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Act.text?"
@@ -653,11 +629,9 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Resource"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Entity. Role, or Act"
-          },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "N/A"
@@ -666,27 +640,7 @@
       },
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "FamilyMemberHistory.extension",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "normative"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "4.0.0"
-          }
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "FamilyMemberHistory.extension",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">type</a>" : "value",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a>" : "url"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.description">description</a>" : "Extensions are always sliced by (at least) url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">rules</a>" : "open"
-        },
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Additional content defined by implementations",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -706,9 +660,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -723,15 +674,13 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "N/A"
@@ -740,27 +689,7 @@
       },
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "FamilyMemberHistory.modifierExtension",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "normative"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "4.0.0"
-          }
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "FamilyMemberHistory.modifierExtension",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">type</a>" : "value",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a>" : "url"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.description">description</a>" : "Extensions are always sliced by (at least) url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">rules</a>" : "open"
-        },
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Extensions that cannot be ignored",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -781,9 +710,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -798,17 +724,14 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "N/A"
@@ -834,9 +757,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Identifier"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -847,24 +767,9 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "CX / EI (occasionally, more often EI maps to a resource id or a URL)"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "servd",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Identifier"
-          },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Event.identifier"
@@ -884,7 +789,6 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "FamilyMemberHistory.instantiatesCanonical",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Instantiates FHIR protocol or definition",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The URL pointing to a FHIR-defined protocol, guideline, orderset or other definition that is adhered to in whole or in part by this FamilyMemberHistory.",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "see [Canonical References](http://hl7.org/fhir/R4/references.html#canonical)",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
@@ -904,9 +808,6 @@
             ]
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -917,12 +818,9 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Event.instantiatesCanonical"
@@ -951,9 +849,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "uri"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -964,12 +859,9 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Event.instantiatesUri"
@@ -998,9 +890,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "code"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -1027,10 +916,6 @@
         },
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
-          {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Event.status"
           },
@@ -1045,7 +930,6 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "FamilyMemberHistory.dataAbsentReason",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "subject-unknown | withheld | unable-to-obtain | deferred",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Describes why the family member's history is not available.",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>" : "This is a separate element to allow it to have a distinct binding from reasonCode.",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
@@ -1059,9 +943,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "CodeableConcept"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -1072,6 +953,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>" : [
@@ -1087,22 +969,6 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "CE/CNE/CWE"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "CD"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "orim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "fhir:CodeableConcept rdfs:subClassOf dt:CD"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".reasonCode"
           }
         ]
@@ -1112,7 +978,6 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "FamilyMemberHistory.patient",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Patient history is about",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The person who this history concerns.",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a>" : [
           "Proband"
         ],
@@ -1127,12 +992,9 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              <a href="StructureDefinition-onco-patient.html" style="color: Maroon">&#x1F517;</a> "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"
+              <a href="StructureDefinition-onco-patient.html" style="color: Maroon">&#x1F517;</a> "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-patient"
             ]
           }
-        ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
         ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
@@ -1142,25 +1004,14 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "hasValue() or (children().count() &gt; id.count())",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "@value|f:*|h:div",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ref-1",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "SHALL have a contained resource if a local reference is provided",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "The target of a resource reference is a RIM entry point (Act, Role, or Entity)"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "fhir-osiris-family-cancer-history",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FamilyCancerHistory.Patient_Identifier"
           },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
@@ -1177,10 +1028,6 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "w5",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FiveWs.subject"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "fhir-osiris-family-cancer-history",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FamilyCancerHistory.Patient_Identifier"
           }
         ]
       },
@@ -1203,9 +1050,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "dateTime"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -1216,12 +1060,9 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "w5",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FiveWs.recorded"
@@ -1237,7 +1078,6 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "FamilyMemberHistory.name",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "The family member described",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "This will either be a name or a description; e.g. \&quot;Aunt Susan\&quot;, \&quot;my cousin with the red hair\&quot;.",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "Note that FHIR strings SHALL NOT exceed 1MB in size",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>" : "Allows greater ease in ensuring the same person is being talked about.",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
@@ -1251,9 +1091,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "string"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -1264,12 +1101,9 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "name"
@@ -1281,7 +1115,6 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "FamilyMemberHistory.relationship",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Relationship to the subject",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The type of relationship this person has to the patient (father, mother, brother etc.).",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
@@ -1294,9 +1127,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "CodeableConcept"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -1307,35 +1137,20 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "required",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Parentage"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/Parentage"
         },
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "CE/CNE/CWE"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "CD"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "orim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "fhir:CodeableConcept rdfs:subClassOf dt:CD"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "fhir-osiris-family-cancer-history",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FamilyCancerHistory.FamilyCancerHistory_Parentage"
           },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "code"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "fhir-osiris-family-cancer-history",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FamilyCancerHistory.FamilyCancerHistory_Parentage"
           }
         ]
       },
@@ -1358,9 +1173,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "CodeableConcept"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -1371,6 +1183,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>" : [
@@ -1382,25 +1195,7 @@
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "Codes describing the sex assigned at birth as documented on the birth registration.",
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/administrative-gender"
-        },
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "CE/CNE/CWE"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "CD"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "orim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "fhir:CodeableConcept rdfs:subClassOf dt:CD"
-          }
-        ]
+        }
       },
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "FamilyMemberHistory.born[x]",
@@ -1427,7 +1222,6 @@
           }
         ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1",
           "fhs-1"
         ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
@@ -1440,11 +1234,9 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "player[classCode=LIV, determinerCode=INSTANCE]. birthDate (could be URG)"
@@ -1477,7 +1269,6 @@
           }
         ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1",
           "fhs-1"
         ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
@@ -1490,12 +1281,9 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "participation[typeCode=SBJ].act[classCode=OBS,moodCode=EVN, code=\&quot;age\&quot;].value"
@@ -1523,7 +1311,6 @@
         ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.meaningWhenMissing">meaningWhenMissing</a>" : "It is unknown whether the age is an estimate or not",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1",
           "fhs-2"
         ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
@@ -1536,13 +1323,8 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          }
-        ]
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true
       },
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "FamilyMemberHistory.deceased[x]",
@@ -1573,9 +1355,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "string"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -1586,12 +1365,9 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "player[classCode=LIV, determinerCode=INSTANCE].deceasedInd, deceasedDate (could be URG)  For age, you'd hang an observation off the role"
@@ -1616,9 +1392,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "CodeableConcept"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -1629,6 +1402,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>" : [
@@ -1642,22 +1416,6 @@
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/clinical-findings"
         },
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "CE/CNE/CWE"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "CD"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "orim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "fhir:CodeableConcept rdfs:subClassOf dt:CD"
-          },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Event.reasonCode"
@@ -1677,7 +1435,6 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "FamilyMemberHistory.reasonReference",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Why was family member history performed?",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Indicates a Condition, Observation, AllergyIntolerance, or QuestionnaireResponse that justifies this family member history event.",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
@@ -1698,9 +1455,6 @@
             ]
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -1709,26 +1463,11 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "hasValue() or (children().count() &gt; id.count())",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "@value|f:*|h:div",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ref-1",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "SHALL have a contained resource if a local reference is provided",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "The target of a resource reference is a RIM entry point (Act, Role, or Entity)"
-          },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Event.reasonReference"
@@ -1748,7 +1487,6 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "FamilyMemberHistory.note",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "General note about related person",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "This property allows a non condition-specific note to the made about the related person. Ideally, the note would be in the condition property, but this is not always possible.",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "For systems that do not have structured annotations, they can simply communicate a single annotation with no author or time.  This element may need to be included in narrative because of the potential for modifying information.  *Annotations SHOULD NOT* be used to communicate \&quot;modifying\&quot; information that could be computable. (This is a SHOULD because enforcing user behavior is nearly impossible).",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
@@ -1761,9 +1499,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Annotation"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -1774,19 +1509,9 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "N/A"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Act"
-          },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "workflow",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Event.note"
@@ -1814,9 +1539,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "BackboneElement"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -1827,11 +1549,9 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=ActCode#ASSERTION, value&lt;Diagnosis]"
@@ -1864,6 +1584,8 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "http://hl7.org/fhirpath/System.String"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
@@ -1873,27 +1595,7 @@
       },
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "FamilyMemberHistory.condition.extension",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "normative"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "4.0.0"
-          }
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "FamilyMemberHistory.condition.extension",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">type</a>" : "value",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a>" : "url"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.description">description</a>" : "Extensions are always sliced by (at least) url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">rules</a>" : "open"
-        },
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Additional content defined by implementations",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -1913,9 +1615,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -1930,18 +1629,16 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "N/A"
           }
         ]
       },
@@ -1969,9 +1666,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -1986,18 +1680,14 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "Must have either extensions or value[x], not both",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \&quot;value\&quot;)])",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : true,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "N/A"
@@ -2009,7 +1699,6 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "FamilyMemberHistory.condition.code",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "International code for the localization of the oncologic primary site",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The actual condition specified. Could be a coded condition (like MI or Diabetes) or a less specific string like 'cancer' depending on how much is known about the condition and the capabilities of the creating system.",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
@@ -2022,9 +1711,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "CodeableConcept"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -2035,34 +1721,20 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Topography"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/Topography"
         },
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "CE/CNE/CWE"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "CD"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "orim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "fhir:CodeableConcept rdfs:subClassOf dt:CD"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "fhir-osiris-family-cancer-history",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FamilyCancerHistory.FamilyCancerHistory_TopographyCode"
           },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : ".value"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "fhir-osiris-family-cancer-history",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "FamilyCancerHistory.FamilyCancerHistory_TopographyCode"
           }
         ]
       },
@@ -2071,7 +1743,6 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "FamilyMemberHistory.condition.outcome",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "deceased | permanent disability | etc.",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Indicates what happened following the condition.  If the condition resulted in death, deceased date is captured on the relation.",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
@@ -2084,9 +1755,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "CodeableConcept"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -2097,6 +1765,8 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>" : [
             {
@@ -2109,22 +1779,6 @@
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "http://hl7.org/fhir/ValueSet/condition-outcome"
         },
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "CE/CNE/CWE"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "CD"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "orim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "fhir:CodeableConcept rdfs:subClassOf dt:CD"
-          },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "outboundRelationship[typeCode=OUTC)].target[classCode=OBS, moodCode=EVN, code=ActCode#ASSERTION].value"
@@ -2148,9 +1802,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "boolean"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -2161,12 +1812,8 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          }
-        ]
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false
       },
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "FamilyMemberHistory.condition.onset[x]",
@@ -2195,9 +1842,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "string"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -2208,11 +1852,9 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=\&quot;Subject Age at measurement\&quot;, value&lt;Diagnosis].value[@xsi:typeCode='TS' or 'IVL_TS']  Use originalText for string"
@@ -2224,7 +1866,6 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "FamilyMemberHistory.condition.note",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Extra information about condition",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "An area where general notes can be placed about this specific condition.",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "For systems that do not have structured annotations, they can simply communicate a single annotation with no author or time.  This element may need to be included in narrative because of the potential for modifying information.  *Annotations SHOULD NOT* be used to communicate \&quot;modifying\&quot; information that could be computable. (This is a SHOULD because enforcing user behavior is nearly impossible).",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
@@ -2237,9 +1878,6 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Annotation"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
-          "ele-1"
-        ],
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "ele-1",
@@ -2250,19 +1888,9 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : false,
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "n/a"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "v2",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "N/A"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "Act"
-          },
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=ActCode#ANNGEN].value"
@@ -2284,7 +1912,7 @@
           {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>" : [
-              <a href="StructureDefinition-onco-patient.html" style="color: Maroon">&#x1F517;</a> "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-patient"
+              <a href="StructureDefinition-onco-patient.html" style="color: Maroon">&#x1F517;</a> "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-patient"
             ]
           }
         ],
@@ -2300,7 +1928,7 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "FamilyMemberHistory.relationship",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "required",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Parentage"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/Parentage"
         },
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -2315,7 +1943,7 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "International code for the localization of the oncologic primary site",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/ValueSet/Topography"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a>" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/Topography"
         },
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
           {
@@ -2346,25 +1974,20 @@
 
   <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
-  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 15, 2024 14:17+0000">2024-05-15</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://cancer.fr">institutcancer</a>.  Package inca.fhir.uv.osiris#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 22, 2025 15:20+0000">2025-04-22</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)">
-                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                 
-                
-               | <a style="color: #81BEF7" target="_blank" href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Version History  |
-               <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
-                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
-                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change </a>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://ig-osiris.cancer.fr/ig/osiris/history.html">Historique des versions </a>
+
 
           </span>
         </p>
@@ -2386,10 +2009,114 @@
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
+
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
+
   <!-- Analytics Below
   ================================================== -->
+
+
+  <!-- AJOUT ANS -->
+
+<footer class="footer footer-principal" role="contentinfo">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://sante.gouv.fr" title="Ministère de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/Republique-francaise-logo.png" alt="Ministère de la Santé" width="100" height="57" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://cancer.fr/" title="Institut National du Cancer (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-inca-footer.jpg" alt="Institut National du Cancer" width="100" height="57" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Institut National du Cancer</p>
+          <p>52 Av. André Morizet, 92100 Boulogne-Billancourt</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ajobard@institutcancer.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
   </body>
 </html>
 

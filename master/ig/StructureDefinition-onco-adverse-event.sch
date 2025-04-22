@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:AdverseEvent</sch:title>
     <sch:rule context="f:AdverseEvent">
-      <sch:assert test="count(f:extension[@url = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/adverse-event-end-date']) &lt;= 1">extension with URL = 'https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/adverse-event-end-date': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/adverse-event-end-date']) &lt;= 1">extension with URL = 'https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/adverse-event-end-date': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:event) &gt;= 1">event: minimum cardinality of 'event' is 1</sch:assert>
       <sch:assert test="count(f:date) &gt;= 1">date: minimum cardinality of 'date' is 1</sch:assert>
       <sch:assert test="count(f:seriousness) &gt;= 1">seriousness: minimum cardinality of 'seriousness' is 1</sch:assert>

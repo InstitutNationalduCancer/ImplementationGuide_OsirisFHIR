@@ -11,7 +11,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Imaging Study Injection Contrast - XML Representation - FHIR Osiris Implementation Guide v2.1.0</title>
+    <title>Imaging Study Injection Contrast - XML Representation - FHIR Osiris Implementation Guide v1.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -26,8 +26,9 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
     <!-- Placeholder for child template CSS declarations -->
-    <link href="assets/css/fhir.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -47,25 +48,29 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"5.37"}
     h3,h4,h5,h6{--heading-prefix:"5.37"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" no-external="true" href="https://cancer.fr/"><img height="50" alt="inca Logo" src="assets/images/logo-inca.png"/></a>
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
 
-        <div id="family-nav">
-          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-        </div>
-        <div id="arkhn-logo">
-          <a id="hl7-search-lnk" no-external="true" href="https://www.arkhn.com"><img alt="Arkhn Logo" src="assets/images/logo_arkhn.png"/></a>
-        </div>
+  <div id="ig-search">
+ </div>
 
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">FHIR Osiris Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - ci-build
+            <span style="display:inline-block;">1.1.0 - trial-implementation
 
 
             </span>
@@ -122,7 +127,7 @@
         <a target="_blank" href="https://github.com/siric-osiris/OSIRIS">OSIRIS Spec </a>
       </li>
       <li>
-        <a target="_blank" href="http://arkhn.com/">Arkhn website </a>
+        <a target="_blank" href="http://cancer.fr/">inca website </a>
       </li>
     </ul>
   </li>
@@ -151,7 +156,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v1.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://ig-osiris.cancer.fr/ig/osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -234,7 +239,7 @@
         
           Draft
           
-            as of 2024-05-15
+            as of 2025-04-22
           
         
       </td>
@@ -252,41 +257,40 @@
 
 
 
-  <pre class="xml" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
-
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">
 &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition">StructureDefinition</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;onco-biological-contrast&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;&quot;&gt;&lt;tr style=&quot;border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top&quot;&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views&quot; title=&quot;The logical name of the element&quot;&gt;Name&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views&quot; title=&quot;Information about the use of the element&quot;&gt;Flags&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views&quot; title=&quot;Minimum and Maximum # of times the the element can appear in the instance&quot;&gt;Card.&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;width: 100px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views&quot; title=&quot;Reference to the type of the element&quot;&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views&quot; title=&quot;Additional information about the element&quot;&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style=&quot;float: right&quot;&gt;&lt;a href=&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views&quot; title=&quot;Legend for this format&quot;&gt;&lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC&quot; alt=&quot;doco&quot; style=&quot;background-color: inherit&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_resource.png&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Resource&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-onco-biological-contrast-definitions.html#Medication&quot;&gt;Medication&lt;/a&gt;&lt;a name=&quot;Medication&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;..&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/medication.html&quot;&gt;Medication&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;Definition of a Medication&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: StructureDefinition onco-biological-contrast&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;onco-biological-contrast&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hconco-biological-contrast&quot;&gt; &lt;/a&gt;&lt;a name=&quot;onco-biological-contrast-en-US&quot;&gt; &lt;/a&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;&quot;&gt;&lt;tr style=&quot;border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top&quot;&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views&quot; title=&quot;The logical name of the element&quot;&gt;Name&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views&quot; title=&quot;Information about the use of the element&quot;&gt;Flags&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views&quot; title=&quot;Minimum and Maximum # of times the element can appear in the instance&quot;&gt;Card.&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;width: 100px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views&quot; title=&quot;Reference to the type of the element&quot;&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views&quot; title=&quot;Additional information about the element&quot;&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style=&quot;float: right&quot;&gt;&lt;a href=&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views&quot; title=&quot;Legend for this format&quot;&gt;&lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC&quot; alt=&quot;doco&quot; style=&quot;background-color: inherit&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_resource.png&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Resource&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-onco-biological-contrast-definitions.html#Medication&quot;&gt;Medication&lt;/a&gt;&lt;a name=&quot;Medication&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;..&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/medication.html&quot;&gt;Medication&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;Definition of a Medication&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin_end.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_element.gif&quot; alt=&quot;.&quot; style=&quot;background-color: #F7F7F7; background-color: inherit&quot; title=&quot;Element&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-onco-biological-contrast-definitions.html#Medication.code&quot;&gt;code&lt;/a&gt;&lt;a name=&quot;Medication.code&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;padding-left: 3px; padding-right: 3px; color: white; background-color: red&quot; title=&quot;This element must be supported&quot;&gt;S&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;1..&lt;span style=&quot;opacity: 0.5&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a style=&quot;opacity: 0.5&quot; href=&quot;http://hl7.org/fhir/R4/datatypes.html#CodeableConcept&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;Codes that identify this medication&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;tr style=&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_blank.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin_end.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_element.gif&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Element&quot; class=&quot;hierarchy&quot;/&gt; &lt;a href=&quot;StructureDefinition-onco-biological-contrast-definitions.html#Medication.code.text&quot; title=&quot;Name of the radiopharmaceutical (Dicom Tag (0018,0031)) or the contrast agent (Dicom Tag (0018,0010)). This variable is mandatory only if the series is PT.&quot;&gt;text&lt;/a&gt;&lt;a name=&quot;Medication.code.text&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;..&lt;/span&gt;&lt;span style=&quot;opacity: 0.5&quot;&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a style=&quot;opacity: 0.5&quot; href=&quot;http://hl7.org/fhir/R4/datatypes.html#string&quot;&gt;string&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;Name of the radiopharmaceutical or the contrast agent&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td colspan=&quot;5&quot; class=&quot;hierarchy&quot;&gt;&lt;br/&gt;&lt;a href=&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views&quot; title=&quot;Legend for this format&quot;&gt;&lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC&quot; alt=&quot;doco&quot; style=&quot;background-color: inherit&quot;/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">url</a>
-       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/onco-biological-contrast&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2.1.0&quot;/&gt;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-biological-contrast&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.1.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ImagingContrast&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Imaging Study Injection Contrast&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2024-05-15T14:17:55+00:00&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Arkhn&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-04-22T15:19:59+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;institutcancer&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Arkhn&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;institutcancer&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;http://arkhn.com&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;http://cancer.fr&quot;/&gt;
     &lt;/telecom&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;contact@arkhn.com&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;osiris@institutcancer.fr&quot;/&gt;
     &lt;/telecom&gt;
   &lt;/contact&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Nicolas Riss&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Aurélien JOBARD&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;nicolas@arkhn.com&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;osiris@institutcancer.fr&quot;/&gt;
     &lt;/telecom&gt;
   &lt;/contact&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Description of a contrast product.&quot;/&gt;
@@ -327,6 +331,10 @@
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.baseDefinition">baseDefinition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Medication&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.derivation">derivation</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;constraint&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot">snapshot</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;4.0.1&quot;/&gt;
+    &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;Medication&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medication&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Definition of a Medication&quot;/&gt;
@@ -350,6 +358,18 @@
                 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;dom-3&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+      &lt;/constraint&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;dom-4&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
@@ -362,14 +382,12 @@
                 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;dom-3&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;dom-5&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))&quot;/&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;If a resource is contained in another resource, it SHALL NOT have a security label&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;contained.meta.security.empty()&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;not(exists(f:contained/*/f:meta/f:security))&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
       &lt;/constraint&gt;
@@ -392,16 +410,18 @@
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
       &lt;/constraint&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;dom-5&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;If a resource is contained in another resource, it SHALL NOT have a security label&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;contained.meta.security.empty()&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;not(exists(f:contained/*/f:meta/f:security))&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
-      &lt;/constraint&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;fhir-osiris-imaging-contrast&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Imaging Contrast&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.comment">comment</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Imaging Contrast description&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;dicom-to-fhir-imaging-contrast&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Imaging Contrast&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.comment">comment</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Imaging Contrast description&quot;/&gt;
+      &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Entity. Role, or Act&quot;/&gt;
@@ -414,16 +434,6 @@
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ManufacturedProduct[classCode=ADMM]&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;fhir-osiris-imaging-contrast&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Imaging Contrast&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.comment">comment</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Imaging Contrast description&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;dicom-to-fhir-imaging-contrast&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Imaging Contrast&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.comment">comment</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Imaging Contrast description&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;Medication.id&quot;&gt;
@@ -447,6 +457,7 @@
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhirpath/System.String&quot;/&gt;
       &lt;/type&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;Medication.meta&quot;&gt;
@@ -464,7 +475,6 @@
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Meta&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -474,15 +484,8 @@
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;N/A&quot;/&gt;
-      &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;Medication.implicitRules&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medication.implicitRules&quot;/&gt;
@@ -501,7 +504,6 @@
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;uri&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -515,10 +517,6 @@
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
                         <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;Medication.language&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medication.language&quot;/&gt;
@@ -537,7 +535,6 @@
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;code&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -547,6 +544,8 @@
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet&quot;&gt;
@@ -560,10 +559,6 @@
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;A human language.&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/languages&quot;/&gt;
       &lt;/binding&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;Medication.text&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medication.text&quot;/&gt;
@@ -586,7 +581,6 @@
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Narrative&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -596,14 +590,8 @@
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;N/A&quot;/&gt;
-      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Act.text?&quot;/&gt;
@@ -629,33 +617,15 @@
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Resource&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Entity. Role, or Act&quot;/&gt;
-      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;N/A&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;Medication.extension&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;normative&quot;/&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;4.0.0&quot;/&gt;
-      &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medication.extension&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;value&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;url&quot;/&gt;
-        &lt;/discriminator&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Extensions are always sliced by (at least) url&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">rules</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;open&quot;/&gt;
-      &lt;/slicing&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Additional content defined by implementations&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;/&gt;
@@ -673,7 +643,6 @@
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -689,37 +658,18 @@
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Must have either extensions or value[x], not both&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), &amp;quot;value&amp;quot;)])&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Extension&quot;/&gt;
       &lt;/constraint&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;N/A&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;Medication.modifierExtension&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;normative&quot;/&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;4.0.0&quot;/&gt;
-      &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medication.modifierExtension&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;value&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;url&quot;/&gt;
-        &lt;/discriminator&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Extensions are always sliced by (at least) url&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">rules</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;open&quot;/&gt;
-      &lt;/slicing&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Extensions that cannot be ignored&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -741,7 +691,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -757,17 +706,13 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Must have either extensions or value[x], not both&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), &amp;quot;value&amp;quot;)])&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Extension&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
                         <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;N/A&quot;/&gt;
@@ -788,7 +733,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Identifier&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -798,25 +742,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CX / EI (occasionally, more often EI maps to a resource id or a URL)&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;servd&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Identifier&quot;/&gt;
-      &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;w5&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;FiveWs.identifier&quot;/&gt;
@@ -843,7 +770,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;CodeableConcept&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -854,6 +780,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">mustSupport</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
@@ -865,22 +792,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
                      <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;A coded concept that defines the type of a medication.&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/medication-codes&quot;/&gt;
       &lt;/binding&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CE/CNE/CWE&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CD&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;orim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;fhir:CodeableConcept rdfs:subClassOf dt:CD&quot;/&gt;
-      &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;script10.6&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
@@ -920,20 +831,14 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhirpath/System.String&quot;/&gt;
       &lt;/type&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;Medication.code.extension&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;normative&quot;/&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;4.0.0&quot;/&gt;
-      &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medication.code.extension&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>&gt;
@@ -960,7 +865,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -976,17 +880,14 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Must have either extensions or value[x], not both&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), &amp;quot;value&amp;quot;)])&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Extension&quot;/&gt;
       &lt;/constraint&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;N/A&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;Medication.code.coding&quot;&gt;
@@ -1008,7 +909,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Coding&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -1018,24 +918,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CE/CNE/CWE subset one of the sets of component 1-3 or 4-6&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CV&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;orim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;fhir:Coding rdfs:subClassOf dt:CDCoding&quot;/&gt;
-      &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;C*E.1-8, C*E.10-22&quot;/&gt;
@@ -1073,7 +957,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;string&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -1083,10 +966,16 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;fhir-osiris-imaging-contrast&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;OSIRIS_pivot_Injection.Injection_Radiopharmaceutical / OSIRIS_pivot_Injection.Injection_ContrastBolusAgent&quot;/&gt;
+      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;dicom-to-fhir-imaging-contrast&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Dicom Tag (0018,0031) / Dicom Tag (0018,0010)&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -1101,15 +990,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;orim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;fhir-osiris-imaging-contrast&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;OSIRIS_pivot_Injection.Injection_Radiopharmaceutical / OSIRIS_pivot_Injection.Injection_ContrastBolusAgent&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;dicom-to-fhir-imaging-contrast&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Dicom Tag (0018,0031) / Dicom Tag (0018,0010)&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;Medication.status&quot;&gt;
@@ -1129,7 +1009,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;code&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -1156,10 +1035,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;/binding&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;.statusCode&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
@@ -1168,8 +1043,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Manufacturer of the item&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Describes the details of the manufacturer of the medication product.  This is not intended to represent the distributor of a medication product.&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>&gt;
@@ -1182,7 +1055,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Organization&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -1192,28 +1064,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ref-1&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;SHALL have a contained resource if a local reference is provided&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DiagnosticReport&quot;/&gt;
-      &lt;/constraint&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The target of a resource reference is a RIM entry point (Act, Role, or Entity)&quot;/&gt;
-      &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;script10.6&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;no mapping&quot;/&gt;
@@ -1249,7 +1101,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;CodeableConcept&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -1259,6 +1110,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
@@ -1269,22 +1122,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
                      <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;A coded concept defining the form of a medication.&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">valueSet</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/ValueSet/medication-form-codes&quot;/&gt;
       &lt;/binding&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CE/CNE/CWE&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CD&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;orim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;fhir:CodeableConcept rdfs:subClassOf dt:CD&quot;/&gt;
-      &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;script10.6&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
@@ -1305,8 +1142,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Amount of drug in package&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Specific amount of the drug in the packaged product.  For example, when specifying a product that has the same strength (For example, Insulin glargine 100 unit per mL solution for injection), this attribute provides additional clarification of the package amount (For example, 3 mL, 10mL, etc.).&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;The Ratio datatype should only be used to express a relationship of two numbers if the relationship cannot be suitably expressed using a Quantity and a common unit.  Where the denominator value is known to be fixed to &amp;quot;1&amp;quot;, Quantity should be used instead of Ratio.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>&gt;
@@ -1317,7 +1152,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Ratio&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -1327,30 +1161,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rat-1&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;(numerator.empty() xor denominator.exists()) and (numerator.exists() or extension.exists())&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;(count(f:numerator) = count(f:denominator)) and ((count(f:numerator) &amp;gt; 0) or (count(f:extension) &amp;gt; 0))&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Substance&quot;/&gt;
-      &lt;/constraint&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;N/A&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;RTO&quot;/&gt;
-      &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;.quantity&quot;/&gt;
@@ -1373,7 +1185,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;BackboneElement&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -1383,10 +1194,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;.scopesRole[typeCode=INGR]&quot;/&gt;
@@ -1412,29 +1221,15 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhirpath/System.String&quot;/&gt;
       &lt;/type&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;Medication.ingredient.extension&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;normative&quot;/&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;4.0.0&quot;/&gt;
-      &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medication.ingredient.extension&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;value&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;url&quot;/&gt;
-        &lt;/discriminator&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Extensions are always sliced by (at least) url&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">rules</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;open&quot;/&gt;
-      &lt;/slicing&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Additional content defined by implementations&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;/&gt;
@@ -1452,7 +1247,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -1468,17 +1262,14 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Must have either extensions or value[x], not both&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), &amp;quot;value&amp;quot;)])&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Extension&quot;/&gt;
       &lt;/constraint&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;N/A&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;Medication.ingredient.modifierExtension&quot;&gt;
@@ -1505,7 +1296,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -1521,18 +1311,13 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Must have either extensions or value[x], not both&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), &amp;quot;value&amp;quot;)])&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Extension&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
                         <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Modifier extensions are expected to modify the meaning or interpretation of the element that contains them&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;N/A&quot;/&gt;
@@ -1562,7 +1347,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Medication&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -1572,10 +1356,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;script10.6&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
@@ -1608,7 +1390,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;boolean&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -1618,10 +1399,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;NA&quot;/&gt;
@@ -1632,8 +1411,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Quantity of ingredient present&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Specifies how many (or how much) of the items there are in this Medication.  For example, 250 mg per tablet.  This is expressed as a ratio where the numerator is 250mg and the denominator is 1 tablet.&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;The Ratio datatype should only be used to express a relationship of two numbers if the relationship cannot be suitably expressed using a Quantity and a common unit.  Where the denominator value is known to be fixed to &amp;quot;1&amp;quot;, Quantity should be used instead of Ratio.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>&gt;
@@ -1644,7 +1421,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Ratio&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -1654,29 +1430,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rat-1&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;(numerator.empty() xor denominator.exists()) and (numerator.exists() or extension.exists())&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;(count(f:numerator) = count(f:denominator)) and ((count(f:numerator) &amp;gt; 0) or (count(f:extension) &amp;gt; 0))&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Substance&quot;/&gt;
-      &lt;/constraint&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;N/A&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;RTO&quot;/&gt;
-      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;script10.6&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;//element(*,DrugCodedType)/Strength&quot;/&gt;
@@ -1706,7 +1461,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;BackboneElement&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -1716,10 +1470,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;script10.6&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;no mapping&quot;/&gt;
@@ -1749,29 +1501,15 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhirpath/System.String&quot;/&gt;
       &lt;/type&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;Medication.batch.extension&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;normative&quot;/&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;4.0.0&quot;/&gt;
-      &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medication.batch.extension&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;value&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;url&quot;/&gt;
-        &lt;/discriminator&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Extensions are always sliced by (at least) url&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">rules</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;open&quot;/&gt;
-      &lt;/slicing&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Additional content defined by implementations&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.&quot;/&gt;
@@ -1789,7 +1527,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -1805,17 +1542,14 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Must have either extensions or value[x], not both&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), &amp;quot;value&amp;quot;)])&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Extension&quot;/&gt;
       &lt;/constraint&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;N/A&quot;/&gt;
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;Medication.batch.modifierExtension&quot;&gt;
@@ -1842,7 +1576,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -1858,18 +1591,13 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Must have either extensions or value[x], not both&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension.exists() != value.exists()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;/&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;exists(f:extension)!=exists(f:*[starts-with(local-name(.), &amp;quot;value&amp;quot;)])&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Extension&quot;/&gt;
       &lt;/constraint&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">isModifierReason</a>
                         <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Modifier extensions are expected to modify the meaning or interpretation of the element that contains them&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;N/A&quot;/&gt;
@@ -1880,7 +1608,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Identifier assigned to batch&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;The assigned lot number of a batch of the specified product.&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Note that FHIR strings SHALL NOT exceed 1MB in size&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>&gt;
@@ -1891,7 +1618,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;string&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -1901,10 +1627,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;script10.6&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;no mapping&quot;/&gt;
@@ -1933,7 +1657,6 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;dateTime&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
@@ -1943,10 +1666,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;@value|f:*|h:div&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Element&quot;/&gt;
       &lt;/constraint&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;n/a&quot;/&gt;
-      &lt;/mapping&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;script10.6&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;no mapping&quot;/&gt;
@@ -2018,25 +1739,20 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
   <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
-  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://arkhn.com">Arkhn</a>.  Package arkhn.fhir.uv.osiris#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 15, 2024 14:17+0000">2024-05-15</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://cancer.fr">institutcancer</a>.  Package inca.fhir.uv.osiris#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 22, 2025 15:20+0000">2025-04-22</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)">
-                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                 
-                
-               | <a style="color: #81BEF7" target="_blank" href="https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/history.html">Version History  |
-               <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
-                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
-                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change </a>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://ig-osiris.cancer.fr/ig/osiris/history.html">Historique des versions </a>
+
 
           </span>
         </p>
@@ -2058,10 +1774,114 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
+
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
+
   <!-- Analytics Below
   ================================================== -->
+
+
+  <!-- AJOUT ANS -->
+
+<footer class="footer footer-principal" role="contentinfo">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://sante.gouv.fr" title="Ministère de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/Republique-francaise-logo.png" alt="Ministère de la Santé" width="100" height="57" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://cancer.fr/" title="Institut National du Cancer (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-inca-footer.jpg" alt="Institut National du Cancer" width="100" height="57" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Institut National du Cancer</p>
+          <p>52 Av. André Morizet, 92100 Boulogne-Billancourt</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ajobard@institutcancer.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
   </body>
 </html>
 

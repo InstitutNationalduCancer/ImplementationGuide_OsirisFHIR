@@ -1,22 +1,23 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
 
-<https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/Endpoint/fhir-osiris-example-imagingendpoint-ct> a fhir:Endpoint ;
+<https://ig-osiris.cancer.fr/ig/osiris/Endpoint/fhir-osiris-example-imagingendpoint-ct> a fhir:Endpoint ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "fhir-osiris-example-imagingendpoint-ct"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-pacs"^^xsd:anyURI ;
-       fhir:link <https://build.fhir.org/ig/arkhn/arkhn-ig-osiris/StructureDefinition/imaging-pacs>
+       fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-pacs"^^xsd:anyURI ;
+       fhir:link <https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-pacs>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Endpoint</b><a name=\"fhir-osiris-example-imagingendpoint-ct\"> </a><a name=\"hcfhir-osiris-example-imagingendpoint-ct\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceEndpoint &quot;fhir-osiris-example-imagingendpoint-ct&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-imaging-pacs.html\">Location to the PACS server</a></p></div><p><b>status</b>: active</p><p><b>connectionType</b>: C0439673 (Details: Unified Medical Language System code C0439673 = 'C0439673', stated as 'null')</p><p><b>name</b>: ['set_osiris/Poumon/DICOM/39688736']</p><p><b>payloadType</b>: C0439673 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-umls.html\">Unified Medical Language System</a>#C0439673)</span></p><p><b>address</b>: </p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Endpoint fhir-osiris-example-imagingendpoint-ct</b></p><a name=\"fhir-osiris-example-imagingendpoint-ct\"> </a><a name=\"hcfhir-osiris-example-imagingendpoint-ct\"> </a><a name=\"fhir-osiris-example-imagingendpoint-ct-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-imaging-pacs.html\">Location to the PACS server</a></p></div><p><b>status</b>: Active</p><p><b>connectionType</b>: <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-umls.html#umls-C0439673\">Unified Medical Language System C0439673</a>: C0439673</p><p><b>name</b>: ['set_osiris/Poumon/DICOM/39688736']</p><p><b>payloadType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/umls C0439673}\">C0439673</span></p><p><b>address</b>: </p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:connectionType [
