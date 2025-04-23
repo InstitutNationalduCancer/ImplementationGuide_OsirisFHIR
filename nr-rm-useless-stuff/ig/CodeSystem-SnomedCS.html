@@ -1,0 +1,1304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>SNOMED Codes Code System - FHIR Osiris Implementation Guide v1.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5.129"}
+    h3,h4,h5,h6{--heading-prefix:"5.129"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" no-external="true" href="https://cancer.fr/"><img height="50" alt="inca Logo" src="assets/images/logo-inca.png"/></a>
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
+
+  <div id="ig-search">
+ </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Osiris Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.1.0 - trial-implementation
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="valuesets.html">ValueSets</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts Summary</a>
+  </li>
+  <li>
+    <a href="requests.html">Requests Example</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://github.com/siric-osiris/OSIRIS">OSIRIS Spec </a>
+      </li>
+      <li>
+        <a target="_blank" href="http://cancer.fr/">inca website </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>SNOMED Codes Code System</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR Osiris Implementation Guide - Local Development build (v1.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://ig-osiris.cancer.fr/ig/osiris/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-SnomedCS.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-SnomedCS.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-SnomedCS.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: SNOMED Codes Code System
+
+  </h2>
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://snomed.info/sct<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://snomed.info/sct"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://snomed.info/sct|1.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2025-04-23
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">SnomedCS</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>SNOMED Codes Code System</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html">SNOMEDCTAdditionalDosageInstructions</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-administration-method-codes.html">SNOMEDCTAdministrationMethodCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-adverse-event-type.html">SNOMEDCTClinicalFindings</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-allergyintolerance-code.html">AllergyIntoleranceSubstance/Product,ConditionAndNegationCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-animal-breeds.html">AnimalBreeds</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.2.0/ValueSet-animal-breeds.html">AnimalBreeds</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-animal-species.html">AnimalSpecies</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.2.0/ValueSet-animal-species.html">AnimalSpecies</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-approach-site-codes.html">SNOMEDCTAnatomicalStructureForAdministrationSiteCodes</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.2.0/ValueSet-barrier.html">Barrier</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-bodysite-laterality.html">Laterality</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-bodystructure-code.html">SNOMEDCTMorphologicAbnormalities</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-bodystructure-relative-location.html">BodystructureLocationQualifier</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html">FacilityTypeCodeValueSet</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-c80-practice-codes.html">PracticeSettingCodeValueSet</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html">CarePlanActivityOutcome</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-care-plan-category.html">CarePlanCategory</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-clinical-findings.html">SNOMEDCTClinicalFindings</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-clinicalimpression-prognosis.html">ClinicalImpressionPrognosis</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-condition-cause.html">ConditionCauseCodes</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.2.0/ValueSet-condition-cause.html">ConditionCauseCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-condition-code.html">Condition/Problem/DiagnosisCodes</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.2.0/ValueSet-condition-course.html">ConditionCourseCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-condition-outcome.html">ConditionOutcomeCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-condition-predecessor.html">ConditionPredecessorCodes</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.2.0/ValueSet-condition-predecessor.html">ConditionPredecessorCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-condition-severity.html">Condition/DiagnosisSeverity</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-condition-stage.html">ConditionStage</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-condition-stage-type.html">ConditionStageType</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-consistency-type.html">FluidConsistencyTypeCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-container-material.html">ContainerMaterials</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-dataelement-sdcobjectclass.html">DataElementSDCObjectClass</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.2.0/ValueSet-dataelement-sdcobjectclass.html">DataElementSDCObjectClass</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-dataelement-sdcobjectclassproperty.html">DataElementSDCObjectClass</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.2.0/ValueSet-dataelement-sdcobjectclassproperty.html">DataElementSDCObjectClassProperty</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-designation-use.html">DesignationUse</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-device-action.html">ProcedureDeviceActionCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-device-kind.html">FHIRDeviceTypes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-device-type.html">DeviceType</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-diagnostic-based-on-snomed.html">DiagnosticAttachmentType</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-diet-type.html">DietCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-encounter-reason.html">EncounterReasonCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-entformula-type.html">EnteralFormulaTypeCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-feeding-device.html">FeedingDeviceCodes</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.2.0/ValueSet-feeding-device.html">FeedingDeviceCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-flag-code.html">FlagCode</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-focal-subject.html">FocalSubjectCodes</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.2.0/ValueSet-focal-subject.html">FocalSubjectCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-food-type.html">FoodTypeCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-goal-start-event.html">GoalStartEvent</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-immunization-evaluation-target-disease.html">ImmunizationEvaluationTargetDiseaseCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-immunization-reason.html">ImmunizationReasonCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-immunization-recommendation-reason.html">ImmunizationRecommendationReasonCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-immunization-recommendation-target-disease.html">ImmunizationRecommendationTargetDiseaseCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-immunization-status-reason.html">ImmunizationStatusReasonCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-immunization-target-disease.html">ImmunizationTargetDiseaseCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-investigation-sets.html">InvestigationType</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html">ManifestationAndSymptomCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-media-view.html">MediaCollectionView/Projection</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html">SNOMEDCTMedicationAsNeededReasonCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-medication-codes.html">SNOMEDCTMedicationCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-medication-form-codes.html">SNOMEDCTFormCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-modified-foodtype.html">TextureModifiedFoodTypeCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-nutrient-code.html">NutrientModifierCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-observation-methods.html">ObservationMethods</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-participant-role.html">ParticipantRoles</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-performer-role.html">ProcedurePerformerRoleCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-practitioner-role.html">PractitionerRole</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-prepare-patient-prior-specimen-collection.html">PreparePatient</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-procedure-category.html">ProcedureCategoryCodes(SNOMEDCT)</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-procedure-code.html">ProcedureCodes(SNOMEDCT)</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-procedure-followup.html">ProcedureFollowUpCodes(SNOMEDCT)</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html">ProcedureNotPerformedReason(SNOMED-CT)</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-procedure-outcome.html">ProcedureOutcomeCodes(SNOMEDCT)</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-procedure-reason.html">ProcedureReasonCodes</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.2.0/ValueSet-protective-factor.html">ProtectiveFactor</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-questionnaire-answers.html">QuestionnaireAnswerCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-questionnaire-category.html">QuestionnaireCategoryCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html">SNOMEDCTReasonMedicationNotGivenCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-reason-medication-status-codes.html">SNOMEDCTDrugTherapyStatusCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html">ObservationReferenceRangeAppliesToCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-route-codes.html">SNOMEDCTRouteCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-sequence-species.html">SNOMEDCTCodesForSpecies</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-servicerequest-category.html">ServiceRequestCategoryCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html">ServiceRequestOrderDetailsCodes</a></li>
+ <li><a href="http://hl7.org/fhir/extensions/5.2.0/ValueSet-specimen-additive-substance.html">SpecimenAdditiveSubstanceCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-specimen-collection.html">SpecimenCollection</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-specimen-collection-method.html">FHIRSpecimenCollectionMethod</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-specimen-container-type.html">SpecimenContainerType</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-substance-code.html">SubstanceCode</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-supplement-type.html">SupplementTypeCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-supply-item.html">SNOMEDCTSupplyItem</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-texture-code.html">TextureModifierCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-use-context.html">Context of Use ValueSet</a></li>
+ <li><a href="http://terminology.hl7.org/6.2.0/ValueSet-device-kind.html">FHIRDeviceTypes</a></li>
+ <li><a href="http://terminology.hl7.org/6.2.0/ValueSet-edible-substance-type.html">TypesOfEdibleSubstances</a></li>
+ <li><a href="http://terminology.hl7.org/6.2.0/ValueSet-gender-identity.html">GenderIdentity</a></li>
+ <li><a href="http://terminology.hl7.org/6.2.0/ValueSet-snomed-intl-gps.html">SnomedIntlGps</a></li>
+ <li><a href="http://terminology.hl7.org/6.2.0/ValueSet-v3-AllergyStatus.html">AllergyStatus</a></li>
+ <li><a href="http://terminology.hl7.org/6.2.0/ValueSet-v3-KnowledgeSubjectObservationValue.html">KnowledgeSubjectObservationValue</a></li>
+ <li><a href="http://terminology.hl7.org/6.2.0/ValueSet-v3-KnowledgeSubtopicObservationValue.html">KnowledgeSubtopicObservationValue</a></li>
+ <li><a href="http://terminology.hl7.org/6.2.0/ValueSet-v3-ObservationMeasureCountableItems.html">ObservationMeasureCountableItems</a></li>
+ <li><a href="http://terminology.hl7.org/6.2.0/ValueSet-v3-immunizationForecastStatusObservationValue.html">ImmunizationForecastStatusObservationValue</a></li>
+ <li><a href="ValueSet-VSBodySite.html">VSBodySite</a></li>
+ <li><a href="ValueSet-codexrt-radiotherapy-reason-for-revision-or-adaptation-vs.html">RadiotherapyReasonReplanificationVS</a></li>
+ <li><a href="ValueSet-mcode-radiotherapy-treatment-location-qualifier-vs.html">RadiotherapyTreatmentLocationQualifierVS</a></li>
+ <li><a href="ValueSet-mcode-radiotherapy-volume-type-vs.html">RadiotherapyVolumeTypeVS</a></li>
+ <li><a href="ValueSet-vs-radiotherapy-intent.html">VSRadiotherapyIntent</a></li>
+ <li><a href="ValueSet-vs-radiotherapy-termination-reason.html">VSRadiotherapyTerminationReason</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem SnomedCS</b></p><a name="SnomedCS"> </a><a name="hcSnomedCS"> </a><a name="SnomedCS-en-US"> </a><p>This  code system <code>http://snomed.info/sct</code> defines the following codes:</p>
+<table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr>
+<tr><td style="white-space:nowrap">13881006<a name="SnomedCS-13881006"> </a></td>
+<td>Zygoma</td></tr>
+<tr><td style="white-space:nowrap">74670003<a name="SnomedCS-74670003"> </a></td>
+<td>Wrist joint</td></tr>
+<tr><td style="white-space:nowrap">38266002<a name="SnomedCS-38266002"> </a></td>
+<td>Entire body</td></tr>
+<tr><td style="white-space:nowrap">45292006<a name="SnomedCS-45292006"> </a></td>
+<td>Vulva</td></tr>
+<tr><td style="white-space:nowrap">85234005<a name="SnomedCS-85234005"> </a></td>
+<td>Vertebral artery</td></tr>
+<tr><td style="white-space:nowrap">76784001<a name="SnomedCS-76784001"> </a></td>
+<td>Vagina</td></tr>
+<tr><td style="white-space:nowrap">35039007<a name="SnomedCS-35039007"> </a></td>
+<td>Uterus</td></tr>
+<tr><td style="white-space:nowrap">13648007<a name="SnomedCS-13648007"> </a></td>
+<td>Urethra</td></tr>
+<tr><td style="white-space:nowrap">87953007<a name="SnomedCS-87953007"> </a></td>
+<td>Ureter</td></tr>
+<tr><td style="white-space:nowrap">431491007<a name="SnomedCS-431491007"> </a></td>
+<td>Upper urinary tract</td></tr>
+<tr><td style="white-space:nowrap">53120007<a name="SnomedCS-53120007"> </a></td>
+<td>Upper limb</td></tr>
+<tr><td style="white-space:nowrap">40983000<a name="SnomedCS-40983000"> </a></td>
+<td>Upper arm</td></tr>
+<tr><td style="white-space:nowrap">284639000<a name="SnomedCS-284639000"> </a></td>
+<td>Umbilical vein</td></tr>
+<tr><td style="white-space:nowrap">50536004<a name="SnomedCS-50536004"> </a></td>
+<td>Umbilical artery</td></tr>
+<tr><td style="white-space:nowrap">90290004<a name="SnomedCS-90290004"> </a></td>
+<td>Umbilical region</td></tr>
+<tr><td style="white-space:nowrap">44984001<a name="SnomedCS-44984001"> </a></td>
+<td>Ulnar artery</td></tr>
+<tr><td style="white-space:nowrap">23416004<a name="SnomedCS-23416004"> </a></td>
+<td>Ulna</td></tr>
+<tr><td style="white-space:nowrap">122495006<a name="SnomedCS-122495006"> </a></td>
+<td>Thoracic spine</td></tr>
+<tr><td style="white-space:nowrap">485005<a name="SnomedCS-485005"> </a></td>
+<td>Transverse colon</td></tr>
+<tr><td style="white-space:nowrap">110726009<a name="SnomedCS-110726009"> </a></td>
+<td>Trachea and bronchus</td></tr>
+<tr><td style="white-space:nowrap">44567001<a name="SnomedCS-44567001"> </a></td>
+<td>Trachea</td></tr>
+<tr><td style="white-space:nowrap">21974007<a name="SnomedCS-21974007"> </a></td>
+<td>Tongue</td></tr>
+<tr><td style="white-space:nowrap">29707007<a name="SnomedCS-29707007"> </a></td>
+<td>Toe</td></tr>
+<tr><td style="white-space:nowrap">53620006<a name="SnomedCS-53620006"> </a></td>
+<td>Temporomandibular joint</td></tr>
+<tr><td style="white-space:nowrap">1217256009<a name="SnomedCS-1217256009"> </a></td>
+<td>Thoraco-lumbar spine</td></tr>
+<tr><td style="white-space:nowrap">110536004<a name="SnomedCS-110536004"> </a></td>
+<td>Tibia and fibula</td></tr>
+<tr><td style="white-space:nowrap">12611008<a name="SnomedCS-12611008"> </a></td>
+<td>Tibia</td></tr>
+<tr><td style="white-space:nowrap">69748006<a name="SnomedCS-69748006"> </a></td>
+<td>Thyroid</td></tr>
+<tr><td style="white-space:nowrap">9875009<a name="SnomedCS-9875009"> </a></td>
+<td>Thymus</td></tr>
+<tr><td style="white-space:nowrap">76505004<a name="SnomedCS-76505004"> </a></td>
+<td>Thumb</td></tr>
+<tr><td style="white-space:nowrap">43799004<a name="SnomedCS-43799004"> </a></td>
+<td>Thorax</td></tr>
+<tr><td style="white-space:nowrap">113262008<a name="SnomedCS-113262008"> </a></td>
+<td>Thoracic aorta</td></tr>
+<tr><td style="white-space:nowrap">68367000<a name="SnomedCS-68367000"> </a></td>
+<td>Thigh</td></tr>
+<tr><td style="white-space:nowrap">42695009<a name="SnomedCS-42695009"> </a></td>
+<td>Thalamus</td></tr>
+<tr><td style="white-space:nowrap">40689003<a name="SnomedCS-40689003"> </a></td>
+<td>Testis</td></tr>
+<tr><td style="white-space:nowrap">48345005<a name="SnomedCS-48345005"> </a></td>
+<td>Superior vena cava</td></tr>
+<tr><td style="white-space:nowrap">72021004<a name="SnomedCS-72021004"> </a></td>
+<td>Superior thyroid artery</td></tr>
+<tr><td style="white-space:nowrap">11708003<a name="SnomedCS-11708003"> </a></td>
+<td>Pubic region</td></tr>
+<tr><td style="white-space:nowrap">77621008<a name="SnomedCS-77621008"> </a></td>
+<td>Supraclavicular region of neck</td></tr>
+<tr><td style="white-space:nowrap">54019009<a name="SnomedCS-54019009"> </a></td>
+<td>Submandibular gland</td></tr>
+<tr><td style="white-space:nowrap">19695001<a name="SnomedCS-19695001"> </a></td>
+<td>Subcostal</td></tr>
+<tr><td style="white-space:nowrap">9454009<a name="SnomedCS-9454009"> </a></td>
+<td>Subclavian vein</td></tr>
+<tr><td style="white-space:nowrap">36765005<a name="SnomedCS-36765005"> </a></td>
+<td>Subclavian artery</td></tr>
+<tr><td style="white-space:nowrap">69695003<a name="SnomedCS-69695003"> </a></td>
+<td>Stomach</td></tr>
+<tr><td style="white-space:nowrap">56873002<a name="SnomedCS-56873002"> </a></td>
+<td>Sternum</td></tr>
+<tr><td style="white-space:nowrap">54735007<a name="SnomedCS-54735007"> </a></td>
+<td>Sacrum</td></tr>
+<tr><td style="white-space:nowrap">35819009<a name="SnomedCS-35819009"> </a></td>
+<td>Splenic vein</td></tr>
+<tr><td style="white-space:nowrap">22083002<a name="SnomedCS-22083002"> </a></td>
+<td>Splenic artery</td></tr>
+<tr><td style="white-space:nowrap">78961009<a name="SnomedCS-78961009"> </a></td>
+<td>Spleen</td></tr>
+<tr><td style="white-space:nowrap">421060004<a name="SnomedCS-421060004"> </a></td>
+<td>Spine</td></tr>
+<tr><td style="white-space:nowrap">2748008<a name="SnomedCS-2748008"> </a></td>
+<td>Spinal cord</td></tr>
+<tr><td style="white-space:nowrap">30315005<a name="SnomedCS-30315005"> </a></td>
+<td>Small intestine</td></tr>
+<tr><td style="white-space:nowrap">42258001<a name="SnomedCS-42258001"> </a></td>
+<td>Superior mesenteric artery</td></tr>
+<tr><td style="white-space:nowrap">89546000<a name="SnomedCS-89546000"> </a></td>
+<td>Skull</td></tr>
+<tr><td style="white-space:nowrap">39723000<a name="SnomedCS-39723000"> </a></td>
+<td>Sacroiliac joint</td></tr>
+<tr><td style="white-space:nowrap">60184004<a name="SnomedCS-60184004"> </a></td>
+<td>Sigmoid colon</td></tr>
+<tr><td style="white-space:nowrap">16982005<a name="SnomedCS-16982005"> </a></td>
+<td>Shoulder</td></tr>
+<tr><td style="white-space:nowrap">397364003<a name="SnomedCS-397364003"> </a></td>
+<td>Superficial femoral vein</td></tr>
+<tr><td style="white-space:nowrap">128587003<a name="SnomedCS-128587003"> </a></td>
+<td>Saphenofemoral junction</td></tr>
+<tr><td style="white-space:nowrap">181349008<a name="SnomedCS-181349008"> </a></td>
+<td>Superficial femoral artery</td></tr>
+<tr><td style="white-space:nowrap">58742003<a name="SnomedCS-58742003"> </a></td>
+<td>Sesamoid bones of foot</td></tr>
+<tr><td style="white-space:nowrap">64739004<a name="SnomedCS-64739004"> </a></td>
+<td>Seminal vesicle</td></tr>
+<tr><td style="white-space:nowrap">42575006<a name="SnomedCS-42575006"> </a></td>
+<td>Sella turcica</td></tr>
+<tr><td style="white-space:nowrap">20233005<a name="SnomedCS-20233005"> </a></td>
+<td>Scrotum</td></tr>
+<tr><td style="white-space:nowrap">18619003<a name="SnomedCS-18619003"> </a></td>
+<td>Sclera</td></tr>
+<tr><td style="white-space:nowrap">7844006<a name="SnomedCS-7844006"> </a></td>
+<td>Sternoclavicular joint</td></tr>
+<tr><td style="white-space:nowrap">79601000<a name="SnomedCS-79601000"> </a></td>
+<td>Scapula</td></tr>
+<tr><td style="white-space:nowrap">41695006<a name="SnomedCS-41695006"> </a></td>
+<td>Scalp</td></tr>
+<tr><td style="white-space:nowrap">362072009<a name="SnomedCS-362072009"> </a></td>
+<td>Saphenous vein</td></tr>
+<tr><td style="white-space:nowrap">53085002<a name="SnomedCS-53085002"> </a></td>
+<td>Right ventricle</td></tr>
+<tr><td style="white-space:nowrap">50519007<a name="SnomedCS-50519007"> </a></td>
+<td>Right upper quadrant of abdomen</td></tr>
+<tr><td style="white-space:nowrap">8629005<a name="SnomedCS-8629005"> </a></td>
+<td>Superior right pulmonary vein</td></tr>
+<tr><td style="white-space:nowrap">78480002<a name="SnomedCS-78480002"> </a></td>
+<td>Right pulmonary artery</td></tr>
+<tr><td style="white-space:nowrap">73931004<a name="SnomedCS-73931004"> </a></td>
+<td>Right portal vein</td></tr>
+<tr><td style="white-space:nowrap">1017211000<a name="SnomedCS-1017211000"> </a></td>
+<td>Right lumbar region</td></tr>
+<tr><td style="white-space:nowrap">48544008<a name="SnomedCS-48544008"> </a></td>
+<td>Right lower quadrant of abdomen</td></tr>
+<tr><td style="white-space:nowrap">37117007<a name="SnomedCS-37117007"> </a></td>
+<td>Right inguinal region</td></tr>
+<tr><td style="white-space:nowrap">113197003<a name="SnomedCS-113197003"> </a></td>
+<td>Rib</td></tr>
+<tr><td style="white-space:nowrap">133946002<a name="SnomedCS-133946002"> </a></td>
+<td>Right hypochondriac region</td></tr>
+<tr><td style="white-space:nowrap">272998002<a name="SnomedCS-272998002"> </a></td>
+<td>Right hepatic vein</td></tr>
+<tr><td style="white-space:nowrap">69833005<a name="SnomedCS-69833005"> </a></td>
+<td>Right femoral artery</td></tr>
+<tr><td style="white-space:nowrap">82849001<a name="SnomedCS-82849001"> </a></td>
+<td>Retroperitoneum</td></tr>
+<tr><td style="white-space:nowrap">56400007<a name="SnomedCS-56400007"> </a></td>
+<td>Renal vein</td></tr>
+<tr><td style="white-space:nowrap">2841007<a name="SnomedCS-2841007"> </a></td>
+<td>Renal artery</td></tr>
+<tr><td style="white-space:nowrap">34402009<a name="SnomedCS-34402009"> </a></td>
+<td>Rectum</td></tr>
+<tr><td style="white-space:nowrap">73829009<a name="SnomedCS-73829009"> </a></td>
+<td>Right atrium</td></tr>
+<tr><td style="white-space:nowrap">110535000<a name="SnomedCS-110535000"> </a></td>
+<td>Radius and ulna</td></tr>
+<tr><td style="white-space:nowrap">62413002<a name="SnomedCS-62413002"> </a></td>
+<td>Radius</td></tr>
+<tr><td style="white-space:nowrap">45631007<a name="SnomedCS-45631007"> </a></td>
+<td>Radial artery</td></tr>
+<tr><td style="white-space:nowrap">122972007<a name="SnomedCS-122972007"> </a></td>
+<td>Pulmonary vein</td></tr>
+<tr><td style="white-space:nowrap">81040000<a name="SnomedCS-81040000"> </a></td>
+<td>Pulmonary artery</td></tr>
+<tr><td style="white-space:nowrap">41216001<a name="SnomedCS-41216001"> </a></td>
+<td>Prostate</td></tr>
+<tr><td style="white-space:nowrap">23438002<a name="SnomedCS-23438002"> </a></td>
+<td>Profunda femoris vein</td></tr>
+<tr><td style="white-space:nowrap">31677005<a name="SnomedCS-31677005"> </a></td>
+<td>Profunda femoris artery</td></tr>
+<tr><td style="white-space:nowrap">13363002<a name="SnomedCS-13363002"> </a></td>
+<td>Posterior tibial artery</td></tr>
+<tr><td style="white-space:nowrap">43119007<a name="SnomedCS-43119007"> </a></td>
+<td>Posterior communicating artery</td></tr>
+<tr><td style="white-space:nowrap">32764006<a name="SnomedCS-32764006"> </a></td>
+<td>Portal vein</td></tr>
+<tr><td style="white-space:nowrap">56849005<a name="SnomedCS-56849005"> </a></td>
+<td>Popliteal vein</td></tr>
+<tr><td style="white-space:nowrap">32361000<a name="SnomedCS-32361000"> </a></td>
+<td>Popliteal fossa</td></tr>
+<tr><td style="white-space:nowrap">43899006<a name="SnomedCS-43899006"> </a></td>
+<td>Popliteal artery</td></tr>
+<tr><td style="white-space:nowrap">78067005<a name="SnomedCS-78067005"> </a></td>
+<td>Placenta</td></tr>
+<tr><td style="white-space:nowrap">312535008<a name="SnomedCS-312535008"> </a></td>
+<td>Pharynx and larynx</td></tr>
+<tr><td style="white-space:nowrap">54066008<a name="SnomedCS-54066008"> </a></td>
+<td>Pharynx</td></tr>
+<tr><td style="white-space:nowrap">706342009<a name="SnomedCS-706342009"> </a></td>
+<td>Phantom</td></tr>
+<tr><td style="white-space:nowrap">8821006<a name="SnomedCS-8821006"> </a></td>
+<td>Peroneal artery</td></tr>
+<tr><td style="white-space:nowrap">38864007<a name="SnomedCS-38864007"> </a></td>
+<td>Perineum</td></tr>
+<tr><td style="white-space:nowrap">18911002<a name="SnomedCS-18911002"> </a></td>
+<td>Penis</td></tr>
+<tr><td style="white-space:nowrap">282044005<a name="SnomedCS-282044005"> </a></td>
+<td>Penile artery</td></tr>
+<tr><td style="white-space:nowrap">1231522001<a name="SnomedCS-1231522001"> </a></td>
+<td>Pelvis and lower extremities</td></tr>
+<tr><td style="white-space:nowrap">816092008<a name="SnomedCS-816092008"> </a></td>
+<td>Pelvis</td></tr>
+<tr><td style="white-space:nowrap">70382005<a name="SnomedCS-70382005"> </a></td>
+<td>Posterior cerebral artery</td></tr>
+<tr><td style="white-space:nowrap">64234005<a name="SnomedCS-64234005"> </a></td>
+<td>Patella</td></tr>
+<tr><td style="white-space:nowrap">45289007<a name="SnomedCS-45289007"> </a></td>
+<td>Parotid gland</td></tr>
+<tr><td style="white-space:nowrap">111002<a name="SnomedCS-111002"> </a></td>
+<td>Parathyroid</td></tr>
+<tr><td style="white-space:nowrap">91691001<a name="SnomedCS-91691001"> </a></td>
+<td>Parasternal</td></tr>
+<tr><td style="white-space:nowrap">69930009<a name="SnomedCS-69930009"> </a></td>
+<td>Pancreatic duct</td></tr>
+<tr><td style="white-space:nowrap">15776009<a name="SnomedCS-15776009"> </a></td>
+<td>Pancreas</td></tr>
+<tr><td style="white-space:nowrap">110621006<a name="SnomedCS-110621006"> </a></td>
+<td>Pancreatic duct and bile duct systems</td></tr>
+<tr><td style="white-space:nowrap">15497006<a name="SnomedCS-15497006"> </a></td>
+<td>Ovary</td></tr>
+<tr><td style="white-space:nowrap">363654007<a name="SnomedCS-363654007"> </a></td>
+<td>Orbital structure</td></tr>
+<tr><td style="white-space:nowrap">55024004<a name="SnomedCS-55024004"> </a></td>
+<td>Optic canal</td></tr>
+<tr><td style="white-space:nowrap">53549008<a name="SnomedCS-53549008"> </a></td>
+<td>Ophthalmic artery</td></tr>
+<tr><td style="white-space:nowrap">31145008<a name="SnomedCS-31145008"> </a></td>
+<td>Occipital artery</td></tr>
+<tr><td style="white-space:nowrap">32114007<a name="SnomedCS-32114007"> </a></td>
+<td>Occipital vein</td></tr>
+<tr><td style="white-space:nowrap">45206002<a name="SnomedCS-45206002"> </a></td>
+<td>Nose</td></tr>
+<tr><td style="white-space:nowrap">416319003<a name="SnomedCS-416319003"> </a></td>
+<td>Neck, Chest, Abdomen and Pelvis</td></tr>
+<tr><td style="white-space:nowrap">416152001<a name="SnomedCS-416152001"> </a></td>
+<td>Neck, Chest and Abdomen</td></tr>
+<tr><td style="white-space:nowrap">417437006<a name="SnomedCS-417437006"> </a></td>
+<td>Neck and Chest</td></tr>
+<tr><td style="white-space:nowrap">45048000<a name="SnomedCS-45048000"> </a></td>
+<td>Neck</td></tr>
+<tr><td style="white-space:nowrap">360955006<a name="SnomedCS-360955006"> </a></td>
+<td>Nasopharynx</td></tr>
+<tr><td style="white-space:nowrap">123851003<a name="SnomedCS-123851003"> </a></td>
+<td>Mouth</td></tr>
+<tr><td style="white-space:nowrap">243977002<a name="SnomedCS-243977002"> </a></td>
+<td>Morisons pouch</td></tr>
+<tr><td style="white-space:nowrap">273099000<a name="SnomedCS-273099000"> </a></td>
+<td>Middle hepatic vein</td></tr>
+<tr><td style="white-space:nowrap">128583004<a name="SnomedCS-128583004"> </a></td>
+<td>Mesenteric vein</td></tr>
+<tr><td style="white-space:nowrap">86570000<a name="SnomedCS-86570000"> </a></td>
+<td>Mesenteric artery</td></tr>
+<tr><td style="white-space:nowrap">72410000<a name="SnomedCS-72410000"> </a></td>
+<td>Mediastinum</td></tr>
+<tr><td style="white-space:nowrap">17232002<a name="SnomedCS-17232002"> </a></td>
+<td>Middle cerebral artery</td></tr>
+<tr><td style="white-space:nowrap">70925003<a name="SnomedCS-70925003"> </a></td>
+<td>Maxilla</td></tr>
+<tr><td style="white-space:nowrap">59066005<a name="SnomedCS-59066005"> </a></td>
+<td>Mastoid bone</td></tr>
+<tr><td style="white-space:nowrap">91609006<a name="SnomedCS-91609006"> </a></td>
+<td>Mandible</td></tr>
+<tr><td style="white-space:nowrap">87878005<a name="SnomedCS-87878005"> </a></td>
+<td>Left ventricle</td></tr>
+<tr><td style="white-space:nowrap">86367003<a name="SnomedCS-86367003"> </a></td>
+<td>Left upper quadrant of abdomen</td></tr>
+<tr><td style="white-space:nowrap">39607008<a name="SnomedCS-39607008"> </a></td>
+<td>Lung</td></tr>
+<tr><td style="white-space:nowrap">91747007<a name="SnomedCS-91747007"> </a></td>
+<td>Lumen of blood vessel</td></tr>
+<tr><td style="white-space:nowrap">34635009<a name="SnomedCS-34635009"> </a></td>
+<td>Lumbar artery</td></tr>
+<tr><td style="white-space:nowrap">52612000<a name="SnomedCS-52612000"> </a></td>
+<td>Lumbar region</td></tr>
+<tr><td style="white-space:nowrap">43863001<a name="SnomedCS-43863001"> </a></td>
+<td>Superior left pulmonary vein</td></tr>
+<tr><td style="white-space:nowrap">1217253001<a name="SnomedCS-1217253001"> </a></td>
+<td>Lumbo-sacral spine</td></tr>
+<tr><td style="white-space:nowrap">122496007<a name="SnomedCS-122496007"> </a></td>
+<td>Lumbar spine</td></tr>
+<tr><td style="white-space:nowrap">50408007<a name="SnomedCS-50408007"> </a></td>
+<td>Left pulmonary artery</td></tr>
+<tr><td style="white-space:nowrap">70253006<a name="SnomedCS-70253006"> </a></td>
+<td>Left portal vein</td></tr>
+<tr><td style="white-space:nowrap">61685007<a name="SnomedCS-61685007"> </a></td>
+<td>Lower limb</td></tr>
+<tr><td style="white-space:nowrap">30021000<a name="SnomedCS-30021000"> </a></td>
+<td>Lower leg</td></tr>
+<tr><td style="white-space:nowrap">1017210004<a name="SnomedCS-1017210004"> </a></td>
+<td>Left lumbar region</td></tr>
+<tr><td style="white-space:nowrap">68505006<a name="SnomedCS-68505006"> </a></td>
+<td>Left lower quadrant of abdomen</td></tr>
+<tr><td style="white-space:nowrap">10200004<a name="SnomedCS-10200004"> </a></td>
+<td>Liver</td></tr>
+<tr><td style="white-space:nowrap">85119005<a name="SnomedCS-85119005"> </a></td>
+<td>Left inguinal region</td></tr>
+<tr><td style="white-space:nowrap">113264009<a name="SnomedCS-113264009"> </a></td>
+<td>Lingual artery</td></tr>
+<tr><td style="white-space:nowrap">133945003<a name="SnomedCS-133945003"> </a></td>
+<td>Left hypochondriac region</td></tr>
+<tr><td style="white-space:nowrap">273202007<a name="SnomedCS-273202007"> </a></td>
+<td>Left hepatic vein</td></tr>
+<tr><td style="white-space:nowrap">113270003<a name="SnomedCS-113270003"> </a></td>
+<td>Left femoral artery</td></tr>
+<tr><td style="white-space:nowrap">66720007<a name="SnomedCS-66720007"> </a></td>
+<td>Lateral Ventricle</td></tr>
+<tr><td style="white-space:nowrap">82471001<a name="SnomedCS-82471001"> </a></td>
+<td>Left atrium</td></tr>
+<tr><td style="white-space:nowrap">4596009<a name="SnomedCS-4596009"> </a></td>
+<td>Larynx</td></tr>
+<tr><td style="white-space:nowrap">14742008<a name="SnomedCS-14742008"> </a></td>
+<td>Large intestine</td></tr>
+<tr><td style="white-space:nowrap">59749000<a name="SnomedCS-59749000"> </a></td>
+<td>Lacrimal artery</td></tr>
+<tr><td style="white-space:nowrap">72696002<a name="SnomedCS-72696002"> </a></td>
+<td>Knee</td></tr>
+<tr><td style="white-space:nowrap">64033007<a name="SnomedCS-64033007"> </a></td>
+<td>Kidney</td></tr>
+<tr><td style="white-space:nowrap">39352004<a name="SnomedCS-39352004"> </a></td>
+<td>Joint</td></tr>
+<tr><td style="white-space:nowrap">21306003<a name="SnomedCS-21306003"> </a></td>
+<td>Jejunum</td></tr>
+<tr><td style="white-space:nowrap">661005<a name="SnomedCS-661005"> </a></td>
+<td>Jaw region</td></tr>
+<tr><td style="white-space:nowrap">1101003<a name="SnomedCS-1101003"> </a></td>
+<td>Intracranial</td></tr>
+<tr><td style="white-space:nowrap">69327007<a name="SnomedCS-69327007"> </a></td>
+<td>Internal mammary artery</td></tr>
+<tr><td style="white-space:nowrap">12123001<a name="SnomedCS-12123001"> </a></td>
+<td>Internal jugular vein</td></tr>
+<tr><td style="white-space:nowrap">90024005<a name="SnomedCS-90024005"> </a></td>
+<td>Internal iliac artery</td></tr>
+<tr><td style="white-space:nowrap">8887007<a name="SnomedCS-8887007"> </a></td>
+<td>Innominate vein</td></tr>
+<tr><td style="white-space:nowrap">12691009<a name="SnomedCS-12691009"> </a></td>
+<td>Innominate artery</td></tr>
+<tr><td style="white-space:nowrap">26893007<a name="SnomedCS-26893007"> </a></td>
+<td>Inguinal region</td></tr>
+<tr><td style="white-space:nowrap">64131007<a name="SnomedCS-64131007"> </a></td>
+<td>Inferior vena cava</td></tr>
+<tr><td style="white-space:nowrap">33795007<a name="SnomedCS-33795007"> </a></td>
+<td>Inferior mesenteric artery</td></tr>
+<tr><td style="white-space:nowrap">22356005<a name="SnomedCS-22356005"> </a></td>
+<td>Ilium</td></tr>
+<tr><td style="white-space:nowrap">244411005<a name="SnomedCS-244411005"> </a></td>
+<td>Iliac vein</td></tr>
+<tr><td style="white-space:nowrap">10293006<a name="SnomedCS-10293006"> </a></td>
+<td>Iliac artery</td></tr>
+<tr><td style="white-space:nowrap">34516001<a name="SnomedCS-34516001"> </a></td>
+<td>Ileum</td></tr>
+<tr><td style="white-space:nowrap">86117002<a name="SnomedCS-86117002"> </a></td>
+<td>Internal carotid artery</td></tr>
+<tr><td style="white-space:nowrap">361078006<a name="SnomedCS-361078006"> </a></td>
+<td>Internal Auditory Canal</td></tr>
+<tr><td style="white-space:nowrap">81502006<a name="SnomedCS-81502006"> </a></td>
+<td>Hypopharynx</td></tr>
+<tr><td style="white-space:nowrap">85050009<a name="SnomedCS-85050009"> </a></td>
+<td>Humerus</td></tr>
+<tr><td style="white-space:nowrap">24136001<a name="SnomedCS-24136001"> </a></td>
+<td>Hip joint</td></tr>
+<tr><td style="white-space:nowrap">8993003<a name="SnomedCS-8993003"> </a></td>
+<td>Hepatic vein</td></tr>
+<tr><td style="white-space:nowrap">76015000<a name="SnomedCS-76015000"> </a></td>
+<td>Hepatic artery</td></tr>
+<tr><td style="white-space:nowrap">80891009<a name="SnomedCS-80891009"> </a></td>
+<td>Heart</td></tr>
+<tr><td style="white-space:nowrap">774007<a name="SnomedCS-774007"> </a></td>
+<td>Head and Neck</td></tr>
+<tr><td style="white-space:nowrap">69536005<a name="SnomedCS-69536005"> </a></td>
+<td>Head</td></tr>
+<tr><td style="white-space:nowrap">85562004<a name="SnomedCS-85562004"> </a></td>
+<td>Hand</td></tr>
+<tr><td style="white-space:nowrap">60734001<a name="SnomedCS-60734001"> </a></td>
+<td>Great saphenous vein</td></tr>
+<tr><td style="white-space:nowrap">46862004<a name="SnomedCS-46862004"> </a></td>
+<td>Gluteal region</td></tr>
+<tr><td style="white-space:nowrap">300571009<a name="SnomedCS-300571009"> </a></td>
+<td>Gestational sac</td></tr>
+<tr><td style="white-space:nowrap">128559007<a name="SnomedCS-128559007"> </a></td>
+<td>Genicular artery</td></tr>
+<tr><td style="white-space:nowrap">110568007<a name="SnomedCS-110568007"> </a></td>
+<td>Gastric vein</td></tr>
+<tr><td style="white-space:nowrap">28231008<a name="SnomedCS-28231008"> </a></td>
+<td>Gallbladder</td></tr>
+<tr><td style="white-space:nowrap">14975008<a name="SnomedCS-14975008"> </a></td>
+<td>Forearm</td></tr>
+<tr><td style="white-space:nowrap">56459004<a name="SnomedCS-56459004"> </a></td>
+<td>Foot</td></tr>
+<tr><td style="white-space:nowrap">79361005<a name="SnomedCS-79361005"> </a></td>
+<td>Fontanel of skull</td></tr>
+<tr><td style="white-space:nowrap">58602004<a name="SnomedCS-58602004"> </a></td>
+<td>Flank</td></tr>
+<tr><td style="white-space:nowrap">7569003<a name="SnomedCS-7569003"> </a></td>
+<td>Finger</td></tr>
+<tr><td style="white-space:nowrap">87342007<a name="SnomedCS-87342007"> </a></td>
+<td>Fibula</td></tr>
+<tr><td style="white-space:nowrap">71341001<a name="SnomedCS-71341001"> </a></td>
+<td>Femur</td></tr>
+<tr><td style="white-space:nowrap">83419000<a name="SnomedCS-83419000"> </a></td>
+<td>Femoral vein</td></tr>
+<tr><td style="white-space:nowrap">7657000<a name="SnomedCS-7657000"> </a></td>
+<td>Femoral artery</td></tr>
+<tr><td style="white-space:nowrap">23074001<a name="SnomedCS-23074001"> </a></td>
+<td>Facial artery</td></tr>
+<tr><td style="white-space:nowrap">89545001<a name="SnomedCS-89545001"> </a></td>
+<td>Face</td></tr>
+<tr><td style="white-space:nowrap">80243003<a name="SnomedCS-80243003"> </a></td>
+<td>Eyelid</td></tr>
+<tr><td style="white-space:nowrap">81745001<a name="SnomedCS-81745001"> </a></td>
+<td>Eye</td></tr>
+<tr><td style="white-space:nowrap">66019005<a name="SnomedCS-66019005"> </a></td>
+<td>Extremity</td></tr>
+<tr><td style="white-space:nowrap">71585003<a name="SnomedCS-71585003"> </a></td>
+<td>External jugular vein</td></tr>
+<tr><td style="white-space:nowrap">63507001<a name="SnomedCS-63507001"> </a></td>
+<td>External iliac vein</td></tr>
+<tr><td style="white-space:nowrap">113269004<a name="SnomedCS-113269004"> </a></td>
+<td>External iliac artery</td></tr>
+<tr><td style="white-space:nowrap">32849002<a name="SnomedCS-32849002"> </a></td>
+<td>Esophagus</td></tr>
+<tr><td style="white-space:nowrap">27947004<a name="SnomedCS-27947004"> </a></td>
+<td>Epigastric region</td></tr>
+<tr><td style="white-space:nowrap">87644002<a name="SnomedCS-87644002"> </a></td>
+<td>Epididymis</td></tr>
+<tr><td style="white-space:nowrap">48367006<a name="SnomedCS-48367006"> </a></td>
+<td>Endo-vesical</td></tr>
+<tr><td style="white-space:nowrap">29092000<a name="SnomedCS-29092000"> </a></td>
+<td>Vein</td></tr>
+<tr><td style="white-space:nowrap">59820001<a name="SnomedCS-59820001"> </a></td>
+<td>Endo-vascular</td></tr>
+<tr><td style="white-space:nowrap">18962004<a name="SnomedCS-18962004"> </a></td>
+<td>Endo-nasopharyngeal</td></tr>
+<tr><td style="white-space:nowrap">53342003<a name="SnomedCS-53342003"> </a></td>
+<td>Endo-nasal</td></tr>
+<tr><td style="white-space:nowrap">2739003<a name="SnomedCS-2739003"> </a></td>
+<td>Endometrium</td></tr>
+<tr><td style="white-space:nowrap">16953009<a name="SnomedCS-16953009"> </a></td>
+<td>Elbow joint</td></tr>
+<tr><td style="white-space:nowrap">22286001<a name="SnomedCS-22286001"> </a></td>
+<td>External carotid artery</td></tr>
+<tr><td style="white-space:nowrap">117590005<a name="SnomedCS-117590005"> </a></td>
+<td>Ear</td></tr>
+<tr><td style="white-space:nowrap">84301002<a name="SnomedCS-84301002"> </a></td>
+<td>External auditory canal</td></tr>
+<tr><td style="white-space:nowrap">38848004<a name="SnomedCS-38848004"> </a></td>
+<td>Duodenum</td></tr>
+<tr><td style="white-space:nowrap">32622004<a name="SnomedCS-32622004"> </a></td>
+<td>Descending colon</td></tr>
+<tr><td style="white-space:nowrap">32672002<a name="SnomedCS-32672002"> </a></td>
+<td>Descending aorta</td></tr>
+<tr><td style="white-space:nowrap">53843000<a name="SnomedCS-53843000"> </a></td>
+<td>Rectouterine pouch</td></tr>
+<tr><td style="white-space:nowrap">1217257000<a name="SnomedCS-1217257000"> </a></td>
+<td>Cervico-thoracic spine</td></tr>
+<tr><td style="white-space:nowrap">122494005<a name="SnomedCS-122494005"> </a></td>
+<td>Cervical spine</td></tr>
+<tr><td style="white-space:nowrap">90219004<a name="SnomedCS-90219004"> </a></td>
+<td>Coronary sinus</td></tr>
+<tr><td style="white-space:nowrap">41801008<a name="SnomedCS-41801008"> </a></td>
+<td>Coronary artery</td></tr>
+<tr><td style="white-space:nowrap">28726007<a name="SnomedCS-28726007"> </a></td>
+<td>Cornea</td></tr>
+<tr><td style="white-space:nowrap">79741001<a name="SnomedCS-79741001"> </a></td>
+<td>Common bile duct</td></tr>
+<tr><td style="white-space:nowrap">46027005<a name="SnomedCS-46027005"> </a></td>
+<td>Common iliac vein</td></tr>
+<tr><td style="white-space:nowrap">73634005<a name="SnomedCS-73634005"> </a></td>
+<td>Common iliac artery</td></tr>
+<tr><td style="white-space:nowrap">71854001<a name="SnomedCS-71854001"> </a></td>
+<td>Colon</td></tr>
+<tr><td style="white-space:nowrap">64688005<a name="SnomedCS-64688005"> </a></td>
+<td>Coccyx</td></tr>
+<tr><td style="white-space:nowrap">51299004<a name="SnomedCS-51299004"> </a></td>
+<td>Clavicle</td></tr>
+<tr><td style="white-space:nowrap">11279006<a name="SnomedCS-11279006"> </a></td>
+<td>Circle of Willis</td></tr>
+<tr><td style="white-space:nowrap">80621003<a name="SnomedCS-80621003"> </a></td>
+<td>Choroid plexus</td></tr>
+<tr><td style="white-space:nowrap">416775004<a name="SnomedCS-416775004"> </a></td>
+<td>Chest, Abdomen and Pelvis</td></tr>
+<tr><td style="white-space:nowrap">416550000<a name="SnomedCS-416550000"> </a></td>
+<td>Chest and Abdomen</td></tr>
+<tr><td style="white-space:nowrap">60819002<a name="SnomedCS-60819002"> </a></td>
+<td>Cheek</td></tr>
+<tr><td style="white-space:nowrap">397363009<a name="SnomedCS-397363009"> </a></td>
+<td>Common femoral vein</td></tr>
+<tr><td style="white-space:nowrap">181347005<a name="SnomedCS-181347005"> </a></td>
+<td>Common femoral artery</td></tr>
+<tr><td style="white-space:nowrap">71252005<a name="SnomedCS-71252005"> </a></td>
+<td>Cervix</td></tr>
+<tr><td style="white-space:nowrap">88556005<a name="SnomedCS-88556005"> </a></td>
+<td>Cerebral artery</td></tr>
+<tr><td style="white-space:nowrap">372073000<a name="SnomedCS-372073000"> </a></td>
+<td>Cerebral hemisphere</td></tr>
+<tr><td style="white-space:nowrap">113305005<a name="SnomedCS-113305005"> </a></td>
+<td>Cerebellum</td></tr>
+<tr><td style="white-space:nowrap">20699002<a name="SnomedCS-20699002"> </a></td>
+<td>Cephalic vein</td></tr>
+<tr><td style="white-space:nowrap">57850000<a name="SnomedCS-57850000"> </a></td>
+<td>Celiac artery</td></tr>
+<tr><td style="white-space:nowrap">32062004<a name="SnomedCS-32062004"> </a></td>
+<td>Common carotid artery</td></tr>
+<tr><td style="white-space:nowrap">69105007<a name="SnomedCS-69105007"> </a></td>
+<td>Carotid Artery</td></tr>
+<tr><td style="white-space:nowrap">53840002<a name="SnomedCS-53840002"> </a></td>
+<td>Calf of leg</td></tr>
+<tr><td style="white-space:nowrap">80144004<a name="SnomedCS-80144004"> </a></td>
+<td>Calcaneus</td></tr>
+<tr><td style="white-space:nowrap">21479005<a name="SnomedCS-21479005"> </a></td>
+<td>Carotid bulb</td></tr>
+<tr><td style="white-space:nowrap">955009<a name="SnomedCS-955009"> </a></td>
+<td>Bronchus</td></tr>
+<tr><td style="white-space:nowrap">76752008<a name="SnomedCS-76752008"> </a></td>
+<td>Breast</td></tr>
+<tr><td style="white-space:nowrap">12738006<a name="SnomedCS-12738006"> </a></td>
+<td>Brain</td></tr>
+<tr><td style="white-space:nowrap">20115005<a name="SnomedCS-20115005"> </a></td>
+<td>Brachial vein</td></tr>
+<tr><td style="white-space:nowrap">17137000<a name="SnomedCS-17137000"> </a></td>
+<td>Brachial artery</td></tr>
+<tr><td style="white-space:nowrap">110837003<a name="SnomedCS-110837003"> </a></td>
+<td>Bladder and urethra</td></tr>
+<tr><td style="white-space:nowrap">89837001<a name="SnomedCS-89837001"> </a></td>
+<td>Bladder</td></tr>
+<tr><td style="white-space:nowrap">34707002<a name="SnomedCS-34707002"> </a></td>
+<td>Biliary tract</td></tr>
+<tr><td style="white-space:nowrap">28273000<a name="SnomedCS-28273000"> </a></td>
+<td>Bile duct</td></tr>
+<tr><td style="white-space:nowrap">59011009<a name="SnomedCS-59011009"> </a></td>
+<td>Basilar artery</td></tr>
+<tr><td style="white-space:nowrap">77568009<a name="SnomedCS-77568009"> </a></td>
+<td>Back</td></tr>
+<tr><td style="white-space:nowrap">72107004<a name="SnomedCS-72107004"> </a></td>
+<td>Azygos vein</td></tr>
+<tr><td style="white-space:nowrap">68705008<a name="SnomedCS-68705008"> </a></td>
+<td>Axillary vein</td></tr>
+<tr><td style="white-space:nowrap">67937003<a name="SnomedCS-67937003"> </a></td>
+<td>Axillary Artery</td></tr>
+<tr><td style="white-space:nowrap">91470000<a name="SnomedCS-91470000"> </a></td>
+<td>Axilla</td></tr>
+<tr><td style="white-space:nowrap">9040008<a name="SnomedCS-9040008"> </a></td>
+<td>Ascending colon</td></tr>
+<tr><td style="white-space:nowrap">54247002<a name="SnomedCS-54247002"> </a></td>
+<td>Ascending aorta</td></tr>
+<tr><td style="white-space:nowrap">51114001<a name="SnomedCS-51114001"> </a></td>
+<td>Artery</td></tr>
+<tr><td style="white-space:nowrap">66754008<a name="SnomedCS-66754008"> </a></td>
+<td>Appendix</td></tr>
+<tr><td style="white-space:nowrap">57034009<a name="SnomedCS-57034009"> </a></td>
+<td>Aortic arch</td></tr>
+<tr><td style="white-space:nowrap">15825003<a name="SnomedCS-15825003"> </a></td>
+<td>Aorta</td></tr>
+<tr><td style="white-space:nowrap">110612005<a name="SnomedCS-110612005"> </a></td>
+<td>Anus, rectum and sigmoid colon</td></tr>
+<tr><td style="white-space:nowrap">68053000<a name="SnomedCS-68053000"> </a></td>
+<td>Anterior tibial artery</td></tr>
+<tr><td style="white-space:nowrap">17388009<a name="SnomedCS-17388009"> </a></td>
+<td>Anterior spinal artery</td></tr>
+<tr><td style="white-space:nowrap">128553008<a name="SnomedCS-128553008"> </a></td>
+<td>Antecubital vein</td></tr>
+<tr><td style="white-space:nowrap">8012006<a name="SnomedCS-8012006"> </a></td>
+<td>Anterior communicating artery</td></tr>
+<tr><td style="white-space:nowrap">194996006<a name="SnomedCS-194996006"> </a></td>
+<td>Anterior cardiac vein</td></tr>
+<tr><td style="white-space:nowrap">70258002<a name="SnomedCS-70258002"> </a></td>
+<td>Ankle joint</td></tr>
+<tr><td style="white-space:nowrap">77012006<a name="SnomedCS-77012006"> </a></td>
+<td>Amniotic fluid</td></tr>
+<tr><td style="white-space:nowrap">23451007<a name="SnomedCS-23451007"> </a></td>
+<td>Adrenal gland</td></tr>
+<tr><td style="white-space:nowrap">85856004<a name="SnomedCS-85856004"> </a></td>
+<td>Acromioclavicular joint</td></tr>
+<tr><td style="white-space:nowrap">60176003<a name="SnomedCS-60176003"> </a></td>
+<td>Anterior cerebral artery</td></tr>
+<tr><td style="white-space:nowrap">7832008<a name="SnomedCS-7832008"> </a></td>
+<td>Abdominal aorta</td></tr>
+<tr><td style="white-space:nowrap">818982008<a name="SnomedCS-818982008"> </a></td>
+<td>Abdomen and Pelvis</td></tr>
+<tr><td style="white-space:nowrap">818981001<a name="SnomedCS-818981001"> </a></td>
+<td>Abdomen</td></tr>
+<tr><td style="white-space:nowrap">35918002<a name="SnomedCS-35918002"> </a></td>
+<td>Fourth ventricle</td></tr>
+<tr><td style="white-space:nowrap">49841001<a name="SnomedCS-49841001"> </a></td>
+<td>Third ventricle</td></tr>
+<tr><td style="white-space:nowrap">47625008<a name="SnomedCS-47625008"> </a></td>
+<td>Intravenous use</td></tr>
+<tr><td style="white-space:nowrap">1217123003<a name="SnomedCS-1217123003"> </a></td>
+<td>Radiotherapy course of treatment (regime/therapy)</td></tr>
+<tr><td style="white-space:nowrap">1222565005<a name="SnomedCS-1222565005"> </a></td>
+<td>Radiotherapy treatment phase (regime/therapy)</td></tr>
+<tr><td style="white-space:nowrap">1255724003<a name="SnomedCS-1255724003"> </a></td>
+<td>Radiotherapy treatment plan (regime/therapy)</td></tr>
+<tr><td style="white-space:nowrap">373808002<a name="SnomedCS-373808002"> </a></td>
+<td>Curative - procedure intent</td></tr>
+<tr><td style="white-space:nowrap">363676003<a name="SnomedCS-363676003"> </a></td>
+<td>Palliative - procedure intent</td></tr>
+<tr><td style="white-space:nowrap">399707004<a name="SnomedCS-399707004"> </a></td>
+<td>Supportive - procedure intent</td></tr>
+<tr><td style="white-space:nowrap">261004008<a name="SnomedCS-261004008"> </a></td>
+<td>Diagnostic intent</td></tr>
+<tr><td style="white-space:nowrap">129428001<a name="SnomedCS-129428001"> </a></td>
+<td>Preventive - intent</td></tr>
+<tr><td style="white-space:nowrap">429892002<a name="SnomedCS-429892002"> </a></td>
+<td>Guidance intent</td></tr>
+<tr><td style="white-space:nowrap">360156006<a name="SnomedCS-360156006"> </a></td>
+<td>Screening - procedure intent</td></tr>
+<tr><td style="white-space:nowrap">447295008<a name="SnomedCS-447295008"> </a></td>
+<td>Forensic intent</td></tr>
+<tr><td style="white-space:nowrap">182992009<a name="SnomedCS-182992009"> </a></td>
+<td>Treatment completed (situation)</td></tr>
+<tr><td style="white-space:nowrap">266721009<a name="SnomedCS-266721009"> </a></td>
+<td>No response to treatment (situation)</td></tr>
+<tr><td style="white-space:nowrap">407563006<a name="SnomedCS-407563006"> </a></td>
+<td>Treatment not tolerated (situation)</td></tr>
+<tr><td style="white-space:nowrap">160932005<a name="SnomedCS-160932005"> </a></td>
+<td>Financial problem (finding)</td></tr>
+<tr><td style="white-space:nowrap">105480006<a name="SnomedCS-105480006"> </a></td>
+<td>Refusal of treatment by patient (situation)</td></tr>
+<tr><td style="white-space:nowrap">184081006<a name="SnomedCS-184081006"> </a></td>
+<td>Patient has moved away (finding)</td></tr>
+<tr><td style="white-space:nowrap">309846006<a name="SnomedCS-309846006"> </a></td>
+<td>Treatment not available (situation)</td></tr>
+<tr><td style="white-space:nowrap">399307001<a name="SnomedCS-399307001"> </a></td>
+<td>Lost to follow-up (finding)</td></tr>
+<tr><td style="white-space:nowrap">419620001<a name="SnomedCS-419620001"> </a></td>
+<td>Death (event)</td></tr>
+<tr><td style="white-space:nowrap">228793007<a name="SnomedCS-228793007"> </a></td>
+<td>Planning target volume (observable entity)</td></tr>
+<tr><td style="white-space:nowrap">228791009<a name="SnomedCS-228791009"> </a></td>
+<td>Gross tumor volume (observable entity)</td></tr>
+<tr><td style="white-space:nowrap">228792002<a name="SnomedCS-228792002"> </a></td>
+<td>Clinical target volume (observable entity)</td></tr>
+<tr><td style="white-space:nowrap">1162586008<a name="SnomedCS-1162586008"> </a></td>
+<td>Irradiated volume of organ at risk (observable entity)</td></tr>
+<tr><td style="white-space:nowrap">1201745009<a name="SnomedCS-1201745009"> </a></td>
+<td>Internal target volume (observable entity)</td></tr>
+<tr><td style="white-space:nowrap">1201746005<a name="SnomedCS-1201746005"> </a></td>
+<td>Internal gross tumor volume (observable entity)</td></tr>
+<tr><td style="white-space:nowrap">277733009<a name="SnomedCS-277733009"> </a></td>
+<td>Level 1 (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">277734003<a name="SnomedCS-277734003"> </a></td>
+<td>Level 2 (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">277735002<a name="SnomedCS-277735002"> </a></td>
+<td>Level 3 (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">261089000<a name="SnomedCS-261089000"> </a></td>
+<td>Inferior (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">264217000<a name="SnomedCS-264217000"> </a></td>
+<td>Superior (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">261183002<a name="SnomedCS-261183002"> </a></td>
+<td>Upper (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">261122009<a name="SnomedCS-261122009"> </a></td>
+<td>Lower (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">260528009<a name="SnomedCS-260528009"> </a></td>
+<td>Middle (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">46053002<a name="SnomedCS-46053002"> </a></td>
+<td>Distal (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">40415009<a name="SnomedCS-40415009"> </a></td>
+<td>Proximal (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">255503000<a name="SnomedCS-255503000"> </a></td>
+<td>Entire (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">255609007<a name="SnomedCS-255609007"> </a></td>
+<td>Partial (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">7771000<a name="SnomedCS-7771000"> </a></td>
+<td>Left (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">24028007<a name="SnomedCS-24028007"> </a></td>
+<td>Right (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">51440002<a name="SnomedCS-51440002"> </a></td>
+<td>Right and left (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">14414005<a name="SnomedCS-14414005"> </a></td>
+<td>Peripheral (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">26216008<a name="SnomedCS-26216008"> </a></td>
+<td>Central (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">260235002<a name="SnomedCS-260235002"> </a></td>
+<td>Core (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">410679008<a name="SnomedCS-410679008"> </a></td>
+<td>Surface (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">260521003<a name="SnomedCS-260521003"> </a></td>
+<td>Internal (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">261074009<a name="SnomedCS-261074009"> </a></td>
+<td>External (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">261115001<a name="SnomedCS-261115001"> </a></td>
+<td>Laryngeal (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">260548002<a name="SnomedCS-260548002"> </a></td>
+<td>Oral (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">18769003<a name="SnomedCS-18769003"> </a></td>
+<td>Adjacent</td></tr>
+<tr><td style="white-space:nowrap">1217011006<a name="SnomedCS-1217011006"> </a></td>
+<td>Non-adjacent (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">1162616006<a name="SnomedCS-1162616006"> </a></td>
+<td>Lymph node level IA (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">1162617002<a name="SnomedCS-1162617002"> </a></td>
+<td>Lymph node level IB (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">1162620005<a name="SnomedCS-1162620005"> </a></td>
+<td>Lymph node level IVA (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">1162621009<a name="SnomedCS-1162621009"> </a></td>
+<td>Lymph node level IVB (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">1162622002<a name="SnomedCS-1162622002"> </a></td>
+<td>Lymph node level VA (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">1162623007<a name="SnomedCS-1162623007"> </a></td>
+<td>Lymph node level VB (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">1162624001<a name="SnomedCS-1162624001"> </a></td>
+<td>Lymph node level VC (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">1162625000<a name="SnomedCS-1162625000"> </a></td>
+<td>Lymph node level VIA (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">1162626004<a name="SnomedCS-1162626004"> </a></td>
+<td>Lymph node level VIB (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">1162628003<a name="SnomedCS-1162628003"> </a></td>
+<td>Lymph node level VIIA (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">1162627008<a name="SnomedCS-1162627008"> </a></td>
+<td>Lymph node level VIIB (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">1162618007<a name="SnomedCS-1162618007"> </a></td>
+<td>Lymph node level VIII (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">1162619004<a name="SnomedCS-1162619004"> </a></td>
+<td>Lymph node level IX (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">1162614009<a name="SnomedCS-1162614009"> </a></td>
+<td>Lymph node level X (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">1162615005<a name="SnomedCS-1162615005"> </a></td>
+<td>Lymph node level XA (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">1162613003<a name="SnomedCS-1162613003"> </a></td>
+<td>Lymph node level XB (qualifier value)</td></tr>
+<tr><td style="white-space:nowrap">68171009<a name="SnomedCS-68171009"> </a></td>
+<td>Axillary lymph node structure</td></tr>
+<tr><td style="white-space:nowrap">373858009<a name="SnomedCS-373858009"> </a></td>
+<td>Radiotherapy course changed - acute radiotherapy toxicity (finding)</td></tr>
+<tr><td style="white-space:nowrap">314846003<a name="SnomedCS-314846003"> </a></td>
+<td>Patient given choice of treatment (finding)</td></tr>
+<tr><td style="white-space:nowrap">10611004<a name="SnomedCS-10611004"> </a></td>
+<td>External beam radiation therapy protons (procedure)</td></tr>
+<tr><td style="white-space:nowrap">45643008<a name="SnomedCS-45643008"> </a></td>
+<td>External beam radiation therapy using electrons (procedure)</td></tr>
+<tr><td style="white-space:nowrap">80347004<a name="SnomedCS-80347004"> </a></td>
+<td>External beam radiation therapy neutrons (procedure)</td></tr>
+<tr><td style="white-space:nowrap">1156505006<a name="SnomedCS-1156505006"> </a></td>
+<td>External beam radiation therapy using carbon ions (procedure)</td></tr>
+<tr><td style="white-space:nowrap">1156506007<a name="SnomedCS-1156506007"> </a></td>
+<td>External beam radiation therapy using photons (procedure)</td></tr>
+<tr><td style="white-space:nowrap">1156708005<a name="SnomedCS-1156708005"> </a></td>
+<td>Low dose rate brachytherapy using temporary radioactive source (procedure)</td></tr>
+<tr><td style="white-space:nowrap">169359004<a name="SnomedCS-169359004"> </a></td>
+<td>Internal radiotherapy - permanent seeds (procedure)</td></tr>
+<tr><td style="white-space:nowrap">1156384006<a name="SnomedCS-1156384006"> </a></td>
+<td>Pulsed dose rate brachytherapy (procedure)</td></tr>
+<tr><td style="white-space:nowrap">394902000<a name="SnomedCS-394902000"> </a></td>
+<td>High dose brachytherapy (procedure)</td></tr>
+<tr><td style="white-space:nowrap">438629002<a name="SnomedCS-438629002"> </a></td>
+<td>High dose rate electronic brachytherapy (procedure)</td></tr>
+<tr><td style="white-space:nowrap">440252007<a name="SnomedCS-440252007"> </a></td>
+<td>Administration of radiopharmaceutical (procedure)</td></tr>
+<tr><td style="white-space:nowrap">441799006<a name="SnomedCS-441799006"> </a></td>
+<td>Intensity modulated radiation therapy (procedure)</td></tr>
+<tr><td style="white-space:nowrap">1156530009<a name="SnomedCS-1156530009"> </a></td>
+<td>Volumetric Modulated Arc Therapy (procedure)</td></tr>
+<tr><td style="white-space:nowrap">1156526006<a name="SnomedCS-1156526006"> </a></td>
+<td>Two dimensional external beam radiation therapy (procedure)</td></tr>
+<tr><td style="white-space:nowrap">168524008<a name="SnomedCS-168524008"> </a></td>
+<td>Radiotherapy - intraoperative control (procedure)</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://cancer.fr">institutcancer</a>.  Package inca.fhir.uv.osiris#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 23, 2025 09:24+0000">2025-04-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://ig-osiris.cancer.fr/ig/osiris/history.html">Historique des versions </a>
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
+
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+
+  <!-- Analytics Below
+  ================================================== -->
+
+
+  <!-- AJOUT ANS -->
+
+<footer class="footer footer-principal" role="contentinfo">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://sante.gouv.fr" title="Ministère de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/Republique-francaise-logo.png" alt="Ministère de la Santé" width="100" height="57" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://cancer.fr/" title="Institut National du Cancer (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-inca-footer.jpg" alt="Institut National du Cancer" width="100" height="57" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Institut National du Cancer</p>
+          <p>52 Av. André Morizet, 92100 Boulogne-Billancourt</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ajobard@institutcancer.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>
+

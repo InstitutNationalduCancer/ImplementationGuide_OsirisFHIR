@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/SnomedRequestedCScodex> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SnomedRequestedCScodex"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem SnomedRequestedCScodex</b></p><a name=\"SnomedRequestedCScodex\"> </a><a name=\"hcSnomedRequestedCScodex\"> </a><a name=\"SnomedRequestedCScodex-en-US\"> </a><p>This  code system <code>http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/snomed-requested-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1259981006<a name=\"SnomedRequestedCScodex-1259981006\"> </a></td><td>Radiotherapy course change due to change to treatment intent (finding)</td></tr><tr><td style=\"white-space:nowrap\">1259232004<a name=\"SnomedRequestedCScodex-1259232004\"> </a></td><td>Radiotherapy course changed due to change to organ at risk (finding)</td></tr><tr><td style=\"white-space:nowrap\">1259231006<a name=\"SnomedRequestedCScodex-1259231006\"> </a></td><td>Radiotherapy course changed due to changes to target (finding)</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/snomed-requested-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.1.0"] ; # 
+  fhir:name [ fhir:v "SnomedRequestedCScodex"] ; # 
+  fhir:title [ fhir:v "Requested SNOMED Codes Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-04-23T09:23:26+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "institutcancer"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "institutcancer" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://cancer.fr" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "osiris@institutcancer.fr" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Aurélien JOBARD" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "osiris@institutcancer.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Requested SNOMED Codes by codex"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1259981006" ] ;
+     fhir:display [ fhir:v "Radiotherapy course change due to change to treatment intent (finding)" ]
+  ] [
+     fhir:code [ fhir:v "1259232004" ] ;
+     fhir:display [ fhir:v "Radiotherapy course changed due to change to organ at risk (finding)" ]
+  ] [
+     fhir:code [ fhir:v "1259231006" ] ;
+     fhir:display [ fhir:v "Radiotherapy course changed due to changes to target (finding)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,1302 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/IBSICS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IBSICS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IBSICS</b></p><a name=\"IBSICS\"> </a><a name=\"hcIBSICS\"> </a><a name=\"IBSICS-en-US\"> </a><p>This  code system <code>https://ibsi.readthedocs.io/en/latest/</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">HCUG<a name=\"IBSICS-HCUG\"> </a></td><td>Morphological features</td></tr><tr><td style=\"white-space:nowrap\">RNU0<a name=\"IBSICS-RNU0\"> </a></td><td>Volume</td></tr><tr><td style=\"white-space:nowrap\">YEKZ<a name=\"IBSICS-YEKZ\"> </a></td><td>Approximate volume</td></tr><tr><td style=\"white-space:nowrap\">C0JK<a name=\"IBSICS-C0JK\"> </a></td><td>Surface area</td></tr><tr><td style=\"white-space:nowrap\">2PR5<a name=\"IBSICS-2PR5\"> </a></td><td>Surface to volume ratio</td></tr><tr><td style=\"white-space:nowrap\">SKGS<a name=\"IBSICS-SKGS\"> </a></td><td>Compactness 1</td></tr><tr><td style=\"white-space:nowrap\">BQWJ<a name=\"IBSICS-BQWJ\"> </a></td><td>Compactness 2</td></tr><tr><td style=\"white-space:nowrap\">KRCK<a name=\"IBSICS-KRCK\"> </a></td><td>Spherical disproportion</td></tr><tr><td style=\"white-space:nowrap\">QCFX<a name=\"IBSICS-QCFX\"> </a></td><td>Sphericity</td></tr><tr><td style=\"white-space:nowrap\">25C7<a name=\"IBSICS-25C7\"> </a></td><td>Asphericity</td></tr><tr><td style=\"white-space:nowrap\">KLMA<a name=\"IBSICS-KLMA\"> </a></td><td>Centre of mass shift</td></tr><tr><td style=\"white-space:nowrap\">L0JK<a name=\"IBSICS-L0JK\"> </a></td><td>Maximum 3D diameter</td></tr><tr><td style=\"white-space:nowrap\">TDIC<a name=\"IBSICS-TDIC\"> </a></td><td>Major axis length</td></tr><tr><td style=\"white-space:nowrap\">P9VJ<a name=\"IBSICS-P9VJ\"> </a></td><td>Minor axis length</td></tr><tr><td style=\"white-space:nowrap\">7J51<a name=\"IBSICS-7J51\"> </a></td><td>Least axis length</td></tr><tr><td style=\"white-space:nowrap\">Q3CK<a name=\"IBSICS-Q3CK\"> </a></td><td>Elongation</td></tr><tr><td style=\"white-space:nowrap\">N17B<a name=\"IBSICS-N17B\"> </a></td><td>Flatness</td></tr><tr><td style=\"white-space:nowrap\">PBX1<a name=\"IBSICS-PBX1\"> </a></td><td>Volume density - axis-aligned bounding box</td></tr><tr><td style=\"white-space:nowrap\">R59B<a name=\"IBSICS-R59B\"> </a></td><td>Area density - axis-aligned bounding box</td></tr><tr><td style=\"white-space:nowrap\">ZH1A<a name=\"IBSICS-ZH1A\"> </a></td><td>Volume density - oriented minimum bounding box</td></tr><tr><td style=\"white-space:nowrap\">IQYR<a name=\"IBSICS-IQYR\"> </a></td><td>Area density - oriented minimum bounding box</td></tr><tr><td style=\"white-space:nowrap\">6BDE<a name=\"IBSICS-6BDE\"> </a></td><td>Volume density - approximate enclosing ellipsoid</td></tr><tr><td style=\"white-space:nowrap\">RDD2<a name=\"IBSICS-RDD2\"> </a></td><td>Area density - approximate enclosing ellipsoid</td></tr><tr><td style=\"white-space:nowrap\">SWZ1<a name=\"IBSICS-SWZ1\"> </a></td><td>Volume density - minimum volume enclosing ellipsoid</td></tr><tr><td style=\"white-space:nowrap\">BRI8<a name=\"IBSICS-BRI8\"> </a></td><td>Area density - minimum volume enclosing ellipsoid</td></tr><tr><td style=\"white-space:nowrap\">R3ER<a name=\"IBSICS-R3ER\"> </a></td><td>Volume density - convex hull</td></tr><tr><td style=\"white-space:nowrap\">7T7F<a name=\"IBSICS-7T7F\"> </a></td><td>Area density - convex hull</td></tr><tr><td style=\"white-space:nowrap\">99N0<a name=\"IBSICS-99N0\"> </a></td><td>Integrated intensity</td></tr><tr><td style=\"white-space:nowrap\">N365<a name=\"IBSICS-N365\"> </a></td><td>Moran's I index</td></tr><tr><td style=\"white-space:nowrap\">NPT7<a name=\"IBSICS-NPT7\"> </a></td><td>Geary's C measure</td></tr><tr><td style=\"white-space:nowrap\">9ST6<a name=\"IBSICS-9ST6\"> </a></td><td>Local intensity features</td></tr><tr><td style=\"white-space:nowrap\">VJGA<a name=\"IBSICS-VJGA\"> </a></td><td>Local intensity peak</td></tr><tr><td style=\"white-space:nowrap\">0F91<a name=\"IBSICS-0F91\"> </a></td><td>Global intensity peak</td></tr><tr><td style=\"white-space:nowrap\">UHIW<a name=\"IBSICS-UHIW\"> </a></td><td>Intensity-based statistical features</td></tr><tr><td style=\"white-space:nowrap\">Q4LE<a name=\"IBSICS-Q4LE\"> </a></td><td>Mean</td></tr><tr><td style=\"white-space:nowrap\">ECT3<a name=\"IBSICS-ECT3\"> </a></td><td>Variance</td></tr><tr><td style=\"white-space:nowrap\">KE2A<a name=\"IBSICS-KE2A\"> </a></td><td>Skewness</td></tr><tr><td style=\"white-space:nowrap\">IPH6<a name=\"IBSICS-IPH6\"> </a></td><td>Kurtosis</td></tr><tr><td style=\"white-space:nowrap\">Y12H<a name=\"IBSICS-Y12H\"> </a></td><td>Median</td></tr><tr><td style=\"white-space:nowrap\">1GSF<a name=\"IBSICS-1GSF\"> </a></td><td>Minimum grey level</td></tr><tr><td style=\"white-space:nowrap\">QG58<a name=\"IBSICS-QG58\"> </a></td><td>10th percentile</td></tr><tr><td style=\"white-space:nowrap\">8DWT<a name=\"IBSICS-8DWT\"> </a></td><td>90th percentile</td></tr><tr><td style=\"white-space:nowrap\">84IY<a name=\"IBSICS-84IY\"> </a></td><td>Maximum grey level</td></tr><tr><td style=\"white-space:nowrap\">SALO<a name=\"IBSICS-SALO\"> </a></td><td>Interquartile range</td></tr><tr><td style=\"white-space:nowrap\">2OJQ<a name=\"IBSICS-2OJQ\"> </a></td><td>Range</td></tr><tr><td style=\"white-space:nowrap\">4FUA<a name=\"IBSICS-4FUA\"> </a></td><td>Mean absolute deviation</td></tr><tr><td style=\"white-space:nowrap\">1128<a name=\"IBSICS-1128\"> </a></td><td>Robust mean absolute deviation</td></tr><tr><td style=\"white-space:nowrap\">N72L<a name=\"IBSICS-N72L\"> </a></td><td>Median absolute deviation</td></tr><tr><td style=\"white-space:nowrap\">7TET<a name=\"IBSICS-7TET\"> </a></td><td>Coefficient of variation</td></tr><tr><td style=\"white-space:nowrap\">9S40<a name=\"IBSICS-9S40\"> </a></td><td>Quartile coefficient of dispersion</td></tr><tr><td style=\"white-space:nowrap\">N8CA<a name=\"IBSICS-N8CA\"> </a></td><td>Energy</td></tr><tr><td style=\"white-space:nowrap\">5ZWQ<a name=\"IBSICS-5ZWQ\"> </a></td><td>Root mean square</td></tr><tr><td style=\"white-space:nowrap\">ZVCW<a name=\"IBSICS-ZVCW\"> </a></td><td>Intensity histogram features</td></tr><tr><td style=\"white-space:nowrap\">X6K6<a name=\"IBSICS-X6K6\"> </a></td><td>Intensity histogram mean</td></tr><tr><td style=\"white-space:nowrap\">CH89<a name=\"IBSICS-CH89\"> </a></td><td>Intensity histogram variance</td></tr><tr><td style=\"white-space:nowrap\">88K1<a name=\"IBSICS-88K1\"> </a></td><td>Intensity histogram skewness</td></tr><tr><td style=\"white-space:nowrap\">C3I7<a name=\"IBSICS-C3I7\"> </a></td><td>Intensity histogram kurtosis</td></tr><tr><td style=\"white-space:nowrap\">WIFQ<a name=\"IBSICS-WIFQ\"> </a></td><td>Intensity histogram median</td></tr><tr><td style=\"white-space:nowrap\">1PR8<a name=\"IBSICS-1PR8\"> </a></td><td>Intensity histogram minimum grey level</td></tr><tr><td style=\"white-space:nowrap\">GPMT<a name=\"IBSICS-GPMT\"> </a></td><td>Intensity histogram 10th percentile</td></tr><tr><td style=\"white-space:nowrap\">OZ0C<a name=\"IBSICS-OZ0C\"> </a></td><td>Intensity histogram 90th percentile</td></tr><tr><td style=\"white-space:nowrap\">3NCY<a name=\"IBSICS-3NCY\"> </a></td><td>Intensity histogram maximum grey level</td></tr><tr><td style=\"white-space:nowrap\">AMMC<a name=\"IBSICS-AMMC\"> </a></td><td>Intensity histogram mode</td></tr><tr><td style=\"white-space:nowrap\">WR0O<a name=\"IBSICS-WR0O\"> </a></td><td>Intensity histogram interquartile range</td></tr><tr><td style=\"white-space:nowrap\">5Z3W<a name=\"IBSICS-5Z3W\"> </a></td><td>Intensity histogram range</td></tr><tr><td style=\"white-space:nowrap\">D2ZX<a name=\"IBSICS-D2ZX\"> </a></td><td>Intensity histogram mean absolute deviation</td></tr><tr><td style=\"white-space:nowrap\">WRZB<a name=\"IBSICS-WRZB\"> </a></td><td>Intensity histogram robust mean absolute deviation</td></tr><tr><td style=\"white-space:nowrap\">4RNL<a name=\"IBSICS-4RNL\"> </a></td><td>Intensity histogram median absolute deviation</td></tr><tr><td style=\"white-space:nowrap\">CWYJ<a name=\"IBSICS-CWYJ\"> </a></td><td>Intensity histogram coefficient of variation</td></tr><tr><td style=\"white-space:nowrap\">SLWD<a name=\"IBSICS-SLWD\"> </a></td><td>Intensity histogram quartile coefficient of dispersion</td></tr><tr><td style=\"white-space:nowrap\">TLU2<a name=\"IBSICS-TLU2\"> </a></td><td>Intensity histogram entropy</td></tr><tr><td style=\"white-space:nowrap\">BJ5W<a name=\"IBSICS-BJ5W\"> </a></td><td>Intensity histogram uniformity</td></tr><tr><td style=\"white-space:nowrap\">12CE<a name=\"IBSICS-12CE\"> </a></td><td>Maximum histogram gradient</td></tr><tr><td style=\"white-space:nowrap\">8E6O<a name=\"IBSICS-8E6O\"> </a></td><td>Maximum histogram gradient grey level</td></tr><tr><td style=\"white-space:nowrap\">VQB3<a name=\"IBSICS-VQB3\"> </a></td><td>Minimum histogram gradient</td></tr><tr><td style=\"white-space:nowrap\">RHQZ<a name=\"IBSICS-RHQZ\"> </a></td><td>Minimum histogram gradient grey level</td></tr><tr><td style=\"white-space:nowrap\">P88C<a name=\"IBSICS-P88C\"> </a></td><td>Intensity-volume histogram features</td></tr><tr><td style=\"white-space:nowrap\">BC2M<a name=\"IBSICS-BC2M\"> </a></td><td>Volume at intensity fraction</td></tr><tr><td style=\"white-space:nowrap\">GBPN<a name=\"IBSICS-GBPN\"> </a></td><td>Intensity at volume fraction</td></tr><tr><td style=\"white-space:nowrap\">DDTU<a name=\"IBSICS-DDTU\"> </a></td><td>Volume fraction difference between intensity fractions</td></tr><tr><td style=\"white-space:nowrap\">CNV2<a name=\"IBSICS-CNV2\"> </a></td><td>Intensity fraction difference between volume fractions</td></tr><tr><td style=\"white-space:nowrap\">9CMM<a name=\"IBSICS-9CMM\"> </a></td><td>Area under IVH curve</td></tr><tr><td style=\"white-space:nowrap\">LFYI<a name=\"IBSICS-LFYI\"> </a></td><td>Grey level co-occurrence based features</td></tr><tr><td style=\"white-space:nowrap\">GYBY<a name=\"IBSICS-GYBY\"> </a></td><td>Joint maximum</td></tr><tr><td style=\"white-space:nowrap\">60VM<a name=\"IBSICS-60VM\"> </a></td><td>Joint average</td></tr><tr><td style=\"white-space:nowrap\">UR99<a name=\"IBSICS-UR99\"> </a></td><td>Joint variance</td></tr><tr><td style=\"white-space:nowrap\">TU9B<a name=\"IBSICS-TU9B\"> </a></td><td>Joint entropy</td></tr><tr><td style=\"white-space:nowrap\">TF7R<a name=\"IBSICS-TF7R\"> </a></td><td>Difference average</td></tr><tr><td style=\"white-space:nowrap\">D3YU<a name=\"IBSICS-D3YU\"> </a></td><td>Difference variance</td></tr><tr><td style=\"white-space:nowrap\">NTRS<a name=\"IBSICS-NTRS\"> </a></td><td>Difference entropy</td></tr><tr><td style=\"white-space:nowrap\">ZGXS<a name=\"IBSICS-ZGXS\"> </a></td><td>Sum average</td></tr><tr><td style=\"white-space:nowrap\">OEEB<a name=\"IBSICS-OEEB\"> </a></td><td>Sum variance</td></tr><tr><td style=\"white-space:nowrap\">P6QZ<a name=\"IBSICS-P6QZ\"> </a></td><td>Sum entropy</td></tr><tr><td style=\"white-space:nowrap\">8ZQL<a name=\"IBSICS-8ZQL\"> </a></td><td>Angular second moment</td></tr><tr><td style=\"white-space:nowrap\">ACUI<a name=\"IBSICS-ACUI\"> </a></td><td>Contrast</td></tr><tr><td style=\"white-space:nowrap\">8S9J<a name=\"IBSICS-8S9J\"> </a></td><td>Dissimilarity</td></tr><tr><td style=\"white-space:nowrap\">IB1Z<a name=\"IBSICS-IB1Z\"> </a></td><td>Inverse difference</td></tr><tr><td style=\"white-space:nowrap\">NDRX<a name=\"IBSICS-NDRX\"> </a></td><td>Normalised inverse difference</td></tr><tr><td style=\"white-space:nowrap\">WF0Z<a name=\"IBSICS-WF0Z\"> </a></td><td>Inverse difference moment</td></tr><tr><td style=\"white-space:nowrap\">1QCO<a name=\"IBSICS-1QCO\"> </a></td><td>Normalised inverse difference moment</td></tr><tr><td style=\"white-space:nowrap\">E8JP<a name=\"IBSICS-E8JP\"> </a></td><td>Inverse variance</td></tr><tr><td style=\"white-space:nowrap\">NI2N<a name=\"IBSICS-NI2N\"> </a></td><td>Correlation</td></tr><tr><td style=\"white-space:nowrap\">QWB0<a name=\"IBSICS-QWB0\"> </a></td><td>Autocorrelation</td></tr><tr><td style=\"white-space:nowrap\">DG8W<a name=\"IBSICS-DG8W\"> </a></td><td>Cluster tendency</td></tr><tr><td style=\"white-space:nowrap\">7NFM<a name=\"IBSICS-7NFM\"> </a></td><td>Cluster shade</td></tr><tr><td style=\"white-space:nowrap\">AE86<a name=\"IBSICS-AE86\"> </a></td><td>Cluster prominence</td></tr><tr><td style=\"white-space:nowrap\">R8DG<a name=\"IBSICS-R8DG\"> </a></td><td>First measure of information correlation</td></tr><tr><td style=\"white-space:nowrap\">JN9H<a name=\"IBSICS-JN9H\"> </a></td><td>Second measure of information correlation</td></tr><tr><td style=\"white-space:nowrap\">TP0I<a name=\"IBSICS-TP0I\"> </a></td><td>Grey level run length based features</td></tr><tr><td style=\"white-space:nowrap\">22OV<a name=\"IBSICS-22OV\"> </a></td><td>Short runs emphasis</td></tr><tr><td style=\"white-space:nowrap\">W4KF<a name=\"IBSICS-W4KF\"> </a></td><td>Long runs emphasis</td></tr><tr><td style=\"white-space:nowrap\">V3SW<a name=\"IBSICS-V3SW\"> </a></td><td>Low grey level run emphasis</td></tr><tr><td style=\"white-space:nowrap\">G3QZ<a name=\"IBSICS-G3QZ\"> </a></td><td>High grey level run emphasis</td></tr><tr><td style=\"white-space:nowrap\">HTZT<a name=\"IBSICS-HTZT\"> </a></td><td>Short run low grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">GD3A<a name=\"IBSICS-GD3A\"> </a></td><td>Short run high grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">IVPO<a name=\"IBSICS-IVPO\"> </a></td><td>Long run low grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">3KUM<a name=\"IBSICS-3KUM\"> </a></td><td>Long run high grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">R5YN<a name=\"IBSICS-R5YN\"> </a></td><td>Grey level non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">OVBL<a name=\"IBSICS-OVBL\"> </a></td><td>Normalised grey level non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">W92Y<a name=\"IBSICS-W92Y\"> </a></td><td>Run length non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">IC23<a name=\"IBSICS-IC23\"> </a></td><td>Normalised run length non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">9ZK5<a name=\"IBSICS-9ZK5\"> </a></td><td>Run percentage</td></tr><tr><td style=\"white-space:nowrap\">8CE5<a name=\"IBSICS-8CE5\"> </a></td><td>Grey level variance</td></tr><tr><td style=\"white-space:nowrap\">SXLW<a name=\"IBSICS-SXLW\"> </a></td><td>Run length variance</td></tr><tr><td style=\"white-space:nowrap\">HJ9O<a name=\"IBSICS-HJ9O\"> </a></td><td>Run entropy</td></tr><tr><td style=\"white-space:nowrap\">9SAK<a name=\"IBSICS-9SAK\"> </a></td><td>Grey level size zone based features</td></tr><tr><td style=\"white-space:nowrap\">5QRC<a name=\"IBSICS-5QRC\"> </a></td><td>Small zone emphasis</td></tr><tr><td style=\"white-space:nowrap\">48P8<a name=\"IBSICS-48P8\"> </a></td><td>Large zone emphasis</td></tr><tr><td style=\"white-space:nowrap\">XMSY<a name=\"IBSICS-XMSY\"> </a></td><td>Low grey level zone emphasis</td></tr><tr><td style=\"white-space:nowrap\">5GN9<a name=\"IBSICS-5GN9\"> </a></td><td>High grey level zone emphasis</td></tr><tr><td style=\"white-space:nowrap\">5RAI<a name=\"IBSICS-5RAI\"> </a></td><td>Small zone low grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">HW1V<a name=\"IBSICS-HW1V\"> </a></td><td>Small zone high grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">YH51<a name=\"IBSICS-YH51\"> </a></td><td>Large zone low grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">J17V<a name=\"IBSICS-J17V\"> </a></td><td>Large zone high grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">JNSA<a name=\"IBSICS-JNSA\"> </a></td><td>Grey level non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">Y1RO<a name=\"IBSICS-Y1RO\"> </a></td><td>Normalised grey level non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">4JP3<a name=\"IBSICS-4JP3\"> </a></td><td>Zone size non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">VB3A<a name=\"IBSICS-VB3A\"> </a></td><td>Normalised zone size non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">P30P<a name=\"IBSICS-P30P\"> </a></td><td>Zone percentage</td></tr><tr><td style=\"white-space:nowrap\">BYLV<a name=\"IBSICS-BYLV\"> </a></td><td>Grey level variance</td></tr><tr><td style=\"white-space:nowrap\">3NSA<a name=\"IBSICS-3NSA\"> </a></td><td>Zone size variance</td></tr><tr><td style=\"white-space:nowrap\">GU8N<a name=\"IBSICS-GU8N\"> </a></td><td>Zone size entropy</td></tr><tr><td style=\"white-space:nowrap\">VMDZ<a name=\"IBSICS-VMDZ\"> </a></td><td>Grey level distance zone based features</td></tr><tr><td style=\"white-space:nowrap\">0GBI<a name=\"IBSICS-0GBI\"> </a></td><td>Small distance emphasis</td></tr><tr><td style=\"white-space:nowrap\">MB4I<a name=\"IBSICS-MB4I\"> </a></td><td>Large distance emphasis</td></tr><tr><td style=\"white-space:nowrap\">S1RA<a name=\"IBSICS-S1RA\"> </a></td><td>Low grey level zone emphasis</td></tr><tr><td style=\"white-space:nowrap\">K26C<a name=\"IBSICS-K26C\"> </a></td><td>High grey level zone emphasis</td></tr><tr><td style=\"white-space:nowrap\">RUVG<a name=\"IBSICS-RUVG\"> </a></td><td>Small distance low grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">DKNJ<a name=\"IBSICS-DKNJ\"> </a></td><td>Small distance high grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">A7WM<a name=\"IBSICS-A7WM\"> </a></td><td>Large distance low grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">KLTH<a name=\"IBSICS-KLTH\"> </a></td><td>Large distance high grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">VFT7<a name=\"IBSICS-VFT7\"> </a></td><td>Grey level non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">7HP3<a name=\"IBSICS-7HP3\"> </a></td><td>Normalised grey level non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">V294<a name=\"IBSICS-V294\"> </a></td><td>Zone distance non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">IATH<a name=\"IBSICS-IATH\"> </a></td><td>Zone distance non-uniformity normalised</td></tr><tr><td style=\"white-space:nowrap\">VIWW<a name=\"IBSICS-VIWW\"> </a></td><td>Zone percentage</td></tr><tr><td style=\"white-space:nowrap\">QK93<a name=\"IBSICS-QK93\"> </a></td><td>Grey level variance</td></tr><tr><td style=\"white-space:nowrap\">7WT1<a name=\"IBSICS-7WT1\"> </a></td><td>Zone distance variance</td></tr><tr><td style=\"white-space:nowrap\">GBDU<a name=\"IBSICS-GBDU\"> </a></td><td>Zone distance entropy</td></tr><tr><td style=\"white-space:nowrap\">IPET<a name=\"IBSICS-IPET\"> </a></td><td>Neighbourhood grey tone difference based features</td></tr><tr><td style=\"white-space:nowrap\">QCDE<a name=\"IBSICS-QCDE\"> </a></td><td>Coarseness</td></tr><tr><td style=\"white-space:nowrap\">65HE<a name=\"IBSICS-65HE\"> </a></td><td>Contrast</td></tr><tr><td style=\"white-space:nowrap\">NQ30<a name=\"IBSICS-NQ30\"> </a></td><td>Busyness</td></tr><tr><td style=\"white-space:nowrap\">HDEZ<a name=\"IBSICS-HDEZ\"> </a></td><td>Complexity</td></tr><tr><td style=\"white-space:nowrap\">1X9X<a name=\"IBSICS-1X9X\"> </a></td><td>Strength</td></tr><tr><td style=\"white-space:nowrap\">REK0<a name=\"IBSICS-REK0\"> </a></td><td>Neighbouring grey level dependence based features</td></tr><tr><td style=\"white-space:nowrap\">SODN<a name=\"IBSICS-SODN\"> </a></td><td>Low dependence emphasis</td></tr><tr><td style=\"white-space:nowrap\">IMOQ<a name=\"IBSICS-IMOQ\"> </a></td><td>High dependence emphasis</td></tr><tr><td style=\"white-space:nowrap\">TL9H<a name=\"IBSICS-TL9H\"> </a></td><td>Low grey level count emphasis</td></tr><tr><td style=\"white-space:nowrap\">OAE7<a name=\"IBSICS-OAE7\"> </a></td><td>High grey level count emphasis</td></tr><tr><td style=\"white-space:nowrap\">EQ3F<a name=\"IBSICS-EQ3F\"> </a></td><td>Low dependence low grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">JA6D<a name=\"IBSICS-JA6D\"> </a></td><td>Low dependence high grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">NBZI<a name=\"IBSICS-NBZI\"> </a></td><td>High dependence low grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">9QMG<a name=\"IBSICS-9QMG\"> </a></td><td>High dependence high grey level emphasis</td></tr><tr><td style=\"white-space:nowrap\">FP8K<a name=\"IBSICS-FP8K\"> </a></td><td>Grey level non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">5SPA<a name=\"IBSICS-5SPA\"> </a></td><td>Normalised grey level non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">Z87G<a name=\"IBSICS-Z87G\"> </a></td><td>Dependence count non-uniformity</td></tr><tr><td style=\"white-space:nowrap\">OKJI<a name=\"IBSICS-OKJI\"> </a></td><td>Dependence count non-uniformity normalised</td></tr><tr><td style=\"white-space:nowrap\">6XV8<a name=\"IBSICS-6XV8\"> </a></td><td>Dependence count percentage</td></tr><tr><td style=\"white-space:nowrap\">1PFV<a name=\"IBSICS-1PFV\"> </a></td><td>Grey level variance</td></tr><tr><td style=\"white-space:nowrap\">DNX2<a name=\"IBSICS-DNX2\"> </a></td><td>Dependence count variance</td></tr><tr><td style=\"white-space:nowrap\">FCBV<a name=\"IBSICS-FCBV\"> </a></td><td>Dependence count entropy</td></tr><tr><td style=\"white-space:nowrap\">CAS9<a name=\"IBSICS-CAS9\"> </a></td><td>Dependence count energy</td></tr><tr><td style=\"white-space:nowrap\">5QB6<a name=\"IBSICS-5QB6\"> </a></td><td>feature aggregation</td></tr><tr><td style=\"white-space:nowrap\">3IDG<a name=\"IBSICS-3IDG\"> </a></td><td>feature computed per slice, and averaged over slices</td></tr><tr><td style=\"white-space:nowrap\">DHQ4<a name=\"IBSICS-DHQ4\"> </a></td><td>feature computed over the volume</td></tr><tr><td style=\"white-space:nowrap\">BTW3<a name=\"IBSICS-BTW3\"> </a></td><td>feature computed from 2D directional matrix and averaged over 2D directions and slices</td></tr><tr><td style=\"white-space:nowrap\">SUJT<a name=\"IBSICS-SUJT\"> </a></td><td>feature computed from a single matrix after merging 2D directional matrices per slice, and averaged over slices</td></tr><tr><td style=\"white-space:nowrap\">ZW7Z<a name=\"IBSICS-ZW7Z\"> </a></td><td>feature computed from a single matrix after merging all 2D directional matrices</td></tr><tr><td style=\"white-space:nowrap\">ITBB<a name=\"IBSICS-ITBB\"> </a></td><td>feature computed from 3D directional matrix and averaged over 3D directions</td></tr><tr><td style=\"white-space:nowrap\">IAZD<a name=\"IBSICS-IAZD\"> </a></td><td>feature computed from a single matrix after merging all 3D directional matrices</td></tr><tr><td style=\"white-space:nowrap\">8QNN<a name=\"IBSICS-8QNN\"> </a></td><td>feature computed from 2D matrix and averaged over slices</td></tr><tr><td style=\"white-space:nowrap\">62GR<a name=\"IBSICS-62GR\"> </a></td><td>feature computed from a single matrix after merging all 2D matrices</td></tr><tr><td style=\"white-space:nowrap\">KOBO<a name=\"IBSICS-KOBO\"> </a></td><td>feature computed from 3D matrix</td></tr><tr><td style=\"white-space:nowrap\">MPUJ<a name=\"IBSICS-MPUJ\"> </a></td><td>grid distances</td></tr><tr><td style=\"white-space:nowrap\">LIFZ<a name=\"IBSICS-LIFZ\"> </a></td><td>manhattan norm</td></tr><tr><td style=\"white-space:nowrap\">G9EV<a name=\"IBSICS-G9EV\"> </a></td><td>euclidean norm</td></tr><tr><td style=\"white-space:nowrap\">PVMT<a name=\"IBSICS-PVMT\"> </a></td><td>chebyshev norm</td></tr><tr><td style=\"white-space:nowrap\">ECJF<a name=\"IBSICS-ECJF\"> </a></td><td>ROI submasks</td></tr><tr><td style=\"white-space:nowrap\">SEFI<a name=\"IBSICS-SEFI\"> </a></td><td>intensity mask</td></tr><tr><td style=\"white-space:nowrap\">G5KJ<a name=\"IBSICS-G5KJ\"> </a></td><td>morphological mask</td></tr><tr><td style=\"white-space:nowrap\">IF9H<a name=\"IBSICS-IF9H\"> </a></td><td>re-segmentation</td></tr><tr><td style=\"white-space:nowrap\">USB3<a name=\"IBSICS-USB3\"> </a></td><td>range re-segmentation</td></tr><tr><td style=\"white-space:nowrap\">7ACA<a name=\"IBSICS-7ACA\"> </a></td><td>outlier filtering</td></tr><tr><td style=\"white-space:nowrap\">6CK8<a name=\"IBSICS-6CK8\"> </a></td><td>distance weighting</td></tr><tr><td style=\"white-space:nowrap\">LQD8<a name=\"IBSICS-LQD8\"> </a></td><td>volume voxel representation</td></tr><tr><td style=\"white-space:nowrap\">4KW8<a name=\"IBSICS-4KW8\"> </a></td><td>volume voxel point set representation</td></tr><tr><td style=\"white-space:nowrap\">WRJH<a name=\"IBSICS-WRJH\"> </a></td><td>volume voxel mesh representation</td></tr><tr><td style=\"white-space:nowrap\">4R0B<a name=\"IBSICS-4R0B\"> </a></td><td>discretisation</td></tr><tr><td style=\"white-space:nowrap\">Q3RU<a name=\"IBSICS-Q3RU\"> </a></td><td>fixed bin size</td></tr><tr><td style=\"white-space:nowrap\">K15C<a name=\"IBSICS-K15C\"> </a></td><td>fixed bin number</td></tr><tr><td style=\"white-space:nowrap\">23XZ<a name=\"IBSICS-23XZ\"> </a></td><td>data conversion</td></tr><tr><td style=\"white-space:nowrap\">PCDE<a name=\"IBSICS-PCDE\"> </a></td><td>image post-acquisition processing</td></tr><tr><td style=\"white-space:nowrap\">OQYT<a name=\"IBSICS-OQYT\"> </a></td><td>segmentation</td></tr><tr><td style=\"white-space:nowrap\">VTM2<a name=\"IBSICS-VTM2\"> </a></td><td>interpolation</td></tr><tr><td style=\"white-space:nowrap\">68QD<a name=\"IBSICS-68QD\"> </a></td><td>intensity rounding after interpolation</td></tr><tr><td style=\"white-space:nowrap\">E8H9<a name=\"IBSICS-E8H9\"> </a></td><td>roi mask partial volume</td></tr><tr><td style=\"white-space:nowrap\">UMPJ<a name=\"IBSICS-UMPJ\"> </a></td><td>interpolation grid</td></tr><tr><td style=\"white-space:nowrap\">58MB<a name=\"IBSICS-58MB\"> </a></td><td>fit to original grid</td></tr><tr><td style=\"white-space:nowrap\">SBKJ<a name=\"IBSICS-SBKJ\"> </a></td><td>align grid origins</td></tr><tr><td style=\"white-space:nowrap\">3WE3<a name=\"IBSICS-3WE3\"> </a></td><td>align grid centers</td></tr><tr><td style=\"white-space:nowrap\">026Q<a name=\"IBSICS-026Q\"> </a></td><td>align grid centers interpolation grid dimensions</td></tr><tr><td style=\"white-space:nowrap\">QCY4<a name=\"IBSICS-QCY4\"> </a></td><td>align grid centers grid positions</td></tr><tr><td style=\"white-space:nowrap\">1OBP<a name=\"IBSICS-1OBP\"> </a></td><td>ROI extraction</td></tr><tr><td style=\"white-space:nowrap\">JJUI<a name=\"IBSICS-JJUI\"> </a></td><td>feature computed from a single matrix after merging 2D directional matrices per direction, and averaged over directions</td></tr><tr><td style=\"white-space:nowrap\">GFJV<a name=\"IBSICS-GFJV\"> </a></td><td>Calculation Run Space</td></tr><tr><td style=\"white-space:nowrap\">CINW<a name=\"IBSICS-CINW\"> </a></td><td>FeatureParameterSpace</td></tr><tr><td style=\"white-space:nowrap\">1XL1<a name=\"IBSICS-1XL1\"> </a></td><td>texture matrix aggregation parameters</td></tr><tr><td style=\"white-space:nowrap\">8QU8<a name=\"IBSICS-8QU8\"> </a></td><td>intensity discretization parameters</td></tr><tr><td style=\"white-space:nowrap\">I7X7<a name=\"IBSICS-I7X7\"> </a></td><td>histogram equalisation</td></tr><tr><td style=\"white-space:nowrap\">SSX6<a name=\"IBSICS-SSX6\"> </a></td><td>Lloyd-Max discretisation</td></tr><tr><td style=\"white-space:nowrap\">OWOH<a name=\"IBSICS-OWOH\"> </a></td><td>feature specific parameters</td></tr><tr><td style=\"white-space:nowrap\">9LZ9<a name=\"IBSICS-9LZ9\"> </a></td><td>asymmetrical co-occurrence matrix</td></tr><tr><td style=\"white-space:nowrap\">2IQV<a name=\"IBSICS-2IQV\"> </a></td><td>symmetrical co-occurrence matrix</td></tr><tr><td style=\"white-space:nowrap\">3S2S<a name=\"IBSICS-3S2S\"> </a></td><td>distance weighting function</td></tr><tr><td style=\"white-space:nowrap\">V0L6<a name=\"IBSICS-V0L6\"> </a></td><td>no distance weighting</td></tr><tr><td style=\"white-space:nowrap\">4S5Z<a name=\"IBSICS-4S5Z\"> </a></td><td>GLCM specific parameters</td></tr><tr><td style=\"white-space:nowrap\">0OW5<a name=\"IBSICS-0OW5\"> </a></td><td>GLRLM specific parameters</td></tr><tr><td style=\"white-space:nowrap\">6SLW<a name=\"IBSICS-6SLW\"> </a></td><td>GLDZM specific parameters</td></tr><tr><td style=\"white-space:nowrap\">MV8M<a name=\"IBSICS-MV8M\"> </a></td><td>NGTDM specific parameters</td></tr><tr><td style=\"white-space:nowrap\">KQW7<a name=\"IBSICS-KQW7\"> </a></td><td>IntVolSpecificParameters</td></tr><tr><td style=\"white-space:nowrap\">X6TI<a name=\"IBSICS-X6TI\"> </a></td><td>MaximumBound</td></tr><tr><td style=\"white-space:nowrap\">V2QW<a name=\"IBSICS-V2QW\"> </a></td><td>MinimumBound</td></tr><tr><td style=\"white-space:nowrap\">G5MN<a name=\"IBSICS-G5MN\"> </a></td><td>isovalue algorithm</td></tr><tr><td style=\"white-space:nowrap\">CRAM<a name=\"IBSICS-CRAM\"> </a></td><td>marching cube algorithm</td></tr><tr><td style=\"white-space:nowrap\">FFWD<a name=\"IBSICS-FFWD\"> </a></td><td>Morphological features specific parameters</td></tr><tr><td style=\"white-space:nowrap\">VXRR<a name=\"IBSICS-VXRR\"> </a></td><td>dependence coarseness parameter</td></tr><tr><td style=\"white-space:nowrap\">NV3D<a name=\"IBSICS-NV3D\"> </a></td><td>cubic convolution interpolation</td></tr><tr><td style=\"white-space:nowrap\">2I2N<a name=\"IBSICS-2I2N\"> </a></td><td>cubic spline interpolation</td></tr><tr><td style=\"white-space:nowrap\">X13G<a name=\"IBSICS-X13G\"> </a></td><td>linear interpolation</td></tr><tr><td style=\"white-space:nowrap\">EY9L<a name=\"IBSICS-EY9L\"> </a></td><td>nearest neighbour interpolation</td></tr><tr><td style=\"white-space:nowrap\">QP79<a name=\"IBSICS-QP79\"> </a></td><td>re-segmentation parameters</td></tr><tr><td style=\"white-space:nowrap\">LQBA<a name=\"IBSICS-LQBA\"> </a></td><td>spatial filter properties</td></tr><tr><td style=\"white-space:nowrap\">WZSA<a name=\"IBSICS-WZSA\"> </a></td><td>wavelet basis function</td></tr><tr><td style=\"white-space:nowrap\">QVI9<a name=\"IBSICS-QVI9\"> </a></td><td>biorthogonal 3.5 wavelet</td></tr><tr><td style=\"white-space:nowrap\">2CYL<a name=\"IBSICS-2CYL\"> </a></td><td>coiflet 1 wavelet</td></tr><tr><td style=\"white-space:nowrap\">FR3E<a name=\"IBSICS-FR3E\"> </a></td><td>haar wavelet</td></tr><tr><td style=\"white-space:nowrap\">P8W0<a name=\"IBSICS-P8W0\"> </a></td><td>frequency</td></tr><tr><td style=\"white-space:nowrap\">IA9Q<a name=\"IBSICS-IA9Q\"> </a></td><td>wavelet filter direction</td></tr><tr><td style=\"white-space:nowrap\">LCNJ<a name=\"IBSICS-LCNJ\"> </a></td><td>HHH wavelet direction</td></tr><tr><td style=\"white-space:nowrap\">S7CG<a name=\"IBSICS-S7CG\"> </a></td><td>HHL wavelet direction</td></tr><tr><td style=\"white-space:nowrap\">UFRT<a name=\"IBSICS-UFRT\"> </a></td><td>HLH wavelet direction</td></tr><tr><td style=\"white-space:nowrap\">RZ96<a name=\"IBSICS-RZ96\"> </a></td><td>HLL wavelet direction</td></tr><tr><td style=\"white-space:nowrap\">CJ43<a name=\"IBSICS-CJ43\"> </a></td><td>LHH wavelet direction</td></tr><tr><td style=\"white-space:nowrap\">76ZU<a name=\"IBSICS-76ZU\"> </a></td><td>LHL wavelet direction</td></tr><tr><td style=\"white-space:nowrap\">NTRN<a name=\"IBSICS-NTRN\"> </a></td><td>LLL wavelet direction</td></tr><tr><td style=\"white-space:nowrap\">6FPA<a name=\"IBSICS-6FPA\"> </a></td><td>LLH wavelet direction</td></tr><tr><td style=\"white-space:nowrap\">G6RO<a name=\"IBSICS-G6RO\"> </a></td><td>image grey level rounding</td></tr><tr><td style=\"white-space:nowrap\">IZBZ<a name=\"IBSICS-IZBZ\"> </a></td><td>edge enhancement</td></tr><tr><td style=\"white-space:nowrap\">ZS1T<a name=\"IBSICS-ZS1T\"> </a></td><td>HistoEqualization</td></tr><tr><td style=\"white-space:nowrap\">Q2ZB<a name=\"IBSICS-Q2ZB\"> </a></td><td>LocalAreaHistoEqualization</td></tr><tr><td style=\"white-space:nowrap\">OB71<a name=\"IBSICS-OB71\"> </a></td><td>ImageSpace</td></tr><tr><td style=\"white-space:nowrap\">K7BL<a name=\"IBSICS-K7BL\"> </a></td><td>ImageVolume</td></tr><tr><td style=\"white-space:nowrap\">OH8W<a name=\"IBSICS-OH8W\"> </a></td><td>ROIMask</td></tr><tr><td style=\"white-space:nowrap\">GF95<a name=\"IBSICS-GF95\"> </a></td><td>IntensityHistogramStandardDeviation</td></tr><tr><td style=\"white-space:nowrap\">URTB<a name=\"IBSICS-URTB\"> </a></td><td>IntensityHistogramTotalEnergy</td></tr><tr><td style=\"white-space:nowrap\">5ABU<a name=\"IBSICS-5ABU\"> </a></td><td>Maximum2DDiameterColumn</td></tr><tr><td style=\"white-space:nowrap\">4S59<a name=\"IBSICS-4S59\"> </a></td><td>Maximum2DDiameterSlice</td></tr><tr><td style=\"white-space:nowrap\">K57E<a name=\"IBSICS-K57E\"> </a></td><td>Maximum2DDiameterRow</td></tr><tr><td style=\"white-space:nowrap\">EGTD<a name=\"IBSICS-EGTD\"> </a></td><td>Textural</td></tr><tr><td style=\"white-space:nowrap\">5XL6<a name=\"IBSICS-5XL6\"> </a></td><td>GLCM_MaximalCorrelationCoefficient</td></tr><tr><td style=\"white-space:nowrap\">9U4X<a name=\"IBSICS-9U4X\"> </a></td><td>ZeroOrder</td></tr><tr><td style=\"white-space:nowrap\">PWN1<a name=\"IBSICS-PWN1\"> </a></td><td>I10</td></tr><tr><td style=\"white-space:nowrap\">BOHI<a name=\"IBSICS-BOHI\"> </a></td><td>I90</td></tr><tr><td style=\"white-space:nowrap\">JXJA<a name=\"IBSICS-JXJA\"> </a></td><td>I10minusI90</td></tr><tr><td style=\"white-space:nowrap\">NK6P<a name=\"IBSICS-NK6P\"> </a></td><td>V10</td></tr><tr><td style=\"white-space:nowrap\">4279<a name=\"IBSICS-4279\"> </a></td><td>V90</td></tr><tr><td style=\"white-space:nowrap\">WITY<a name=\"IBSICS-WITY\"> </a></td><td>V10minusV90</td></tr><tr><td style=\"white-space:nowrap\">J04R<a name=\"IBSICS-J04R\"> </a></td><td>NGLDMSpecificParameters</td></tr><tr><td style=\"white-space:nowrap\">ASHO<a name=\"IBSICS-ASHO\"> </a></td><td>Voxel</td></tr><tr><td style=\"white-space:nowrap\">NOVP<a name=\"IBSICS-NOVP\"> </a></td><td>ImageFilterSpace</td></tr><tr><td style=\"white-space:nowrap\">XSJL<a name=\"IBSICS-XSJL\"> </a></td><td>AbsoluteFiltering</td></tr><tr><td style=\"white-space:nowrap\">1WTP<a name=\"IBSICS-1WTP\"> </a></td><td>ButterworthFilter</td></tr><tr><td style=\"white-space:nowrap\">PJBO<a name=\"IBSICS-PJBO\"> </a></td><td>ColliageFilter</td></tr><tr><td style=\"white-space:nowrap\">FTIJ<a name=\"IBSICS-FTIJ\"> </a></td><td>MedianFilter</td></tr><tr><td style=\"white-space:nowrap\">9IQY<a name=\"IBSICS-9IQY\"> </a></td><td>SavitzkyGolayFilter</td></tr><tr><td style=\"white-space:nowrap\">SUUU<a name=\"IBSICS-SUUU\"> </a></td><td>WaveletFilter</td></tr><tr><td style=\"white-space:nowrap\">WVUQ<a name=\"IBSICS-WVUQ\"> </a></td><td>ROIMask_PartialVolumeCutOff</td></tr><tr><td style=\"white-space:nowrap\">REY6<a name=\"IBSICS-REY6\"> </a></td><td>SegmentationMethods</td></tr><tr><td style=\"white-space:nowrap\">SBDE<a name=\"IBSICS-SBDE\"> </a></td><td>Automated</td></tr><tr><td style=\"white-space:nowrap\">OAX6<a name=\"IBSICS-OAX6\"> </a></td><td>Manual</td></tr><tr><td style=\"white-space:nowrap\">TGHU<a name=\"IBSICS-TGHU\"> </a></td><td>SemiAutomated</td></tr><tr><td style=\"white-space:nowrap\">6VTB<a name=\"IBSICS-6VTB\"> </a></td><td>SupervisedMethods</td></tr><tr><td style=\"white-space:nowrap\">TV5D<a name=\"IBSICS-TV5D\"> </a></td><td>DeepLearning</td></tr><tr><td style=\"white-space:nowrap\">KJIF<a name=\"IBSICS-KJIF\"> </a></td><td>NeuralNetwork</td></tr><tr><td style=\"white-space:nowrap\">D3RT<a name=\"IBSICS-D3RT\"> </a></td><td>SupportVectorMachine</td></tr><tr><td style=\"white-space:nowrap\">ZJJY<a name=\"IBSICS-ZJJY\"> </a></td><td>UnsupervisedMethods</td></tr><tr><td style=\"white-space:nowrap\">2KAW<a name=\"IBSICS-2KAW\"> </a></td><td>CMeansFuzzy</td></tr><tr><td style=\"white-space:nowrap\">OPMG<a name=\"IBSICS-OPMG\"> </a></td><td>Kmean</td></tr><tr><td style=\"white-space:nowrap\">HF5R<a name=\"IBSICS-HF5R\"> </a></td><td>Manual</td></tr><tr><td style=\"white-space:nowrap\">W455<a name=\"IBSICS-W455\"> </a></td><td>InPolygon</td></tr><tr><td style=\"white-space:nowrap\">8LVU<a name=\"IBSICS-8LVU\"> </a></td><td>RayCasting</td></tr><tr><td style=\"white-space:nowrap\">WAB9<a name=\"IBSICS-WAB9\"> </a></td><td>EdgeBased</td></tr><tr><td style=\"white-space:nowrap\">XL0Q<a name=\"IBSICS-XL0Q\"> </a></td><td>GradientEdgeBased</td></tr><tr><td style=\"white-space:nowrap\">N20K<a name=\"IBSICS-N20K\"> </a></td><td>HoughTransformBased</td></tr><tr><td style=\"white-space:nowrap\">VZXY<a name=\"IBSICS-VZXY\"> </a></td><td>LaplacianEdgeBased</td></tr><tr><td style=\"white-space:nowrap\">EOOR<a name=\"IBSICS-EOOR\"> </a></td><td>MarrHildrethEdgeBased</td></tr><tr><td style=\"white-space:nowrap\">Q6DD<a name=\"IBSICS-Q6DD\"> </a></td><td>ModelBased</td></tr><tr><td style=\"white-space:nowrap\">MGZ1<a name=\"IBSICS-MGZ1\"> </a></td><td>ActiveShape</td></tr><tr><td style=\"white-space:nowrap\">SR1C<a name=\"IBSICS-SR1C\"> </a></td><td>AppereanceModel</td></tr><tr><td style=\"white-space:nowrap\">LAQN<a name=\"IBSICS-LAQN\"> </a></td><td>AtlasModel</td></tr><tr><td style=\"white-space:nowrap\">UU0Q<a name=\"IBSICS-UU0Q\"> </a></td><td>DeformableModel</td></tr><tr><td style=\"white-space:nowrap\">ZCA3<a name=\"IBSICS-ZCA3\"> </a></td><td>RegionBased</td></tr><tr><td style=\"white-space:nowrap\">RZ08<a name=\"IBSICS-RZ08\"> </a></td><td>RegionGrowing</td></tr><tr><td style=\"white-space:nowrap\">A9GC<a name=\"IBSICS-A9GC\"> </a></td><td>RegionSplitting</td></tr><tr><td style=\"white-space:nowrap\">TAWD<a name=\"IBSICS-TAWD\"> </a></td><td>SplitAndMerge</td></tr><tr><td style=\"white-space:nowrap\">Q025<a name=\"IBSICS-Q025\"> </a></td><td>WatershedAlgorithm</td></tr><tr><td style=\"white-space:nowrap\">L2WC<a name=\"IBSICS-L2WC\"> </a></td><td>ThresholdingBased</td></tr><tr><td style=\"white-space:nowrap\">E8C8<a name=\"IBSICS-E8C8\"> </a></td><td>GlobalThresholding</td></tr><tr><td style=\"white-space:nowrap\">81TK<a name=\"IBSICS-81TK\"> </a></td><td>LocalAdaptiveThresholding</td></tr><tr><td style=\"white-space:nowrap\">4VLP<a name=\"IBSICS-4VLP\"> </a></td><td>Institution</td></tr><tr><td style=\"white-space:nowrap\">DTYK<a name=\"IBSICS-DTYK\"> </a></td><td>Phantom</td></tr><tr><td style=\"white-space:nowrap\">YUBG<a name=\"IBSICS-YUBG\"> </a></td><td>Software</td></tr><tr><td style=\"white-space:nowrap\">SU1L<a name=\"IBSICS-SU1L\"> </a></td><td>SoftwareProperties</td></tr><tr><td style=\"white-space:nowrap\">59QT<a name=\"IBSICS-59QT\"> </a></td><td>License</td></tr><tr><td style=\"white-space:nowrap\">1DUG<a name=\"IBSICS-1DUG\"> </a></td><td>OpenSource</td></tr><tr><td style=\"white-space:nowrap\">G91N<a name=\"IBSICS-G91N\"> </a></td><td>Proprietary</td></tr><tr><td style=\"white-space:nowrap\">W2J1<a name=\"IBSICS-W2J1\"> </a></td><td>Version</td></tr><tr><td style=\"white-space:nowrap\">M9H0<a name=\"IBSICS-M9H0\"> </a></td><td>VersionStatus</td></tr><tr><td style=\"white-space:nowrap\">4AGS<a name=\"IBSICS-4AGS\"> </a></td><td>Filter application</td></tr><tr><td style=\"white-space:nowrap\">7QSE<a name=\"IBSICS-7QSE\"> </a></td><td>filter in axial plane</td></tr><tr><td style=\"white-space:nowrap\">0ODV<a name=\"IBSICS-0ODV\"> </a></td><td>volumetric filter</td></tr><tr><td style=\"white-space:nowrap\">GBYQ<a name=\"IBSICS-GBYQ\"> </a></td><td>boundary condition</td></tr><tr><td style=\"white-space:nowrap\">Z3VE<a name=\"IBSICS-Z3VE\"> </a></td><td>constant value</td></tr><tr><td style=\"white-space:nowrap\">SIJG<a name=\"IBSICS-SIJG\"> </a></td><td>nearest value</td></tr><tr><td style=\"white-space:nowrap\">Z7YO<a name=\"IBSICS-Z7YO\"> </a></td><td>periodic</td></tr><tr><td style=\"white-space:nowrap\">ZDTV<a name=\"IBSICS-ZDTV\"> </a></td><td>mirror</td></tr><tr><td style=\"white-space:nowrap\">S60F<a name=\"IBSICS-S60F\"> </a></td><td>MeanFilter</td></tr><tr><td style=\"white-space:nowrap\">YNOF<a name=\"IBSICS-YNOF\"> </a></td><td>kernel support</td></tr><tr><td style=\"white-space:nowrap\">8BC3<a name=\"IBSICS-8BC3\"> </a></td><td>GaussianFilter</td></tr><tr><td style=\"white-space:nowrap\">L6PA<a name=\"IBSICS-L6PA\"> </a></td><td>LaplacianFilter</td></tr><tr><td style=\"white-space:nowrap\">41LN<a name=\"IBSICS-41LN\"> </a></td><td>Gaussian envelope scale</td></tr><tr><td style=\"white-space:nowrap\">WGPM<a name=\"IBSICS-WGPM\"> </a></td><td>Filter size cutoff</td></tr><tr><td style=\"white-space:nowrap\">JTXT<a name=\"IBSICS-JTXT\"> </a></td><td>Laws kernel filter</td></tr><tr><td style=\"white-space:nowrap\">JVAD<a name=\"IBSICS-JVAD\"> </a></td><td>Laws kernels</td></tr><tr><td style=\"white-space:nowrap\">B5BZ<a name=\"IBSICS-B5BZ\"> </a></td><td>Laws L3 kernel</td></tr><tr><td style=\"white-space:nowrap\">6HRH<a name=\"IBSICS-6HRH\"> </a></td><td>Laws L5 kernel</td></tr><tr><td style=\"white-space:nowrap\">LJ4T<a name=\"IBSICS-LJ4T\"> </a></td><td>Laws E3 kernel</td></tr><tr><td style=\"white-space:nowrap\">2WPV<a name=\"IBSICS-2WPV\"> </a></td><td>Laws E5 kernel</td></tr><tr><td style=\"white-space:nowrap\">MK5Z<a name=\"IBSICS-MK5Z\"> </a></td><td>Laws S3 kernel</td></tr><tr><td style=\"white-space:nowrap\">RXA1<a name=\"IBSICS-RXA1\"> </a></td><td>Laws S5 kernel</td></tr><tr><td style=\"white-space:nowrap\">4ENO<a name=\"IBSICS-4ENO\"> </a></td><td>Laws W5 kernel</td></tr><tr><td style=\"white-space:nowrap\">3A1W<a name=\"IBSICS-3A1W\"> </a></td><td>Laws R5 kernel</td></tr><tr><td style=\"white-space:nowrap\">O1AQ<a name=\"IBSICS-O1AQ\"> </a></td><td>Pseudo-rotational invariance</td></tr><tr><td style=\"white-space:nowrap\">SVKW<a name=\"IBSICS-SVKW\"> </a></td><td>Response map pooling</td></tr><tr><td style=\"white-space:nowrap\">M1CY<a name=\"IBSICS-M1CY\"> </a></td><td>average</td></tr><tr><td style=\"white-space:nowrap\">0TAW<a name=\"IBSICS-0TAW\"> </a></td><td>max</td></tr><tr><td style=\"white-space:nowrap\">DUX4<a name=\"IBSICS-DUX4\"> </a></td><td>min</td></tr><tr><td style=\"white-space:nowrap\">PQSD<a name=\"IBSICS-PQSD\"> </a></td><td>Laws energy map</td></tr><tr><td style=\"white-space:nowrap\">I176<a name=\"IBSICS-I176\"> </a></td><td>Laws energy map distance</td></tr><tr><td style=\"white-space:nowrap\">Q88H<a name=\"IBSICS-Q88H\"> </a></td><td>GaborFilter</td></tr><tr><td style=\"white-space:nowrap\">S4N6<a name=\"IBSICS-S4N6\"> </a></td><td>Gabor wavelength lambda</td></tr><tr><td style=\"white-space:nowrap\">GDR5<a name=\"IBSICS-GDR5\"> </a></td><td>Gabor ellipticity gamma</td></tr><tr><td style=\"white-space:nowrap\">FQER<a name=\"IBSICS-FQER\"> </a></td><td>Gabor orientation theta</td></tr><tr><td style=\"white-space:nowrap\">XTGK<a name=\"IBSICS-XTGK\"> </a></td><td>Gabor orientation theta step</td></tr><tr><td style=\"white-space:nowrap\">25BO<a name=\"IBSICS-25BO\"> </a></td><td>Separable wavelets</td></tr><tr><td style=\"white-space:nowrap\">BPXS<a name=\"IBSICS-BPXS\"> </a></td><td>Separable wavelet family</td></tr><tr><td style=\"white-space:nowrap\">UOUE<a name=\"IBSICS-UOUE\"> </a></td><td>haar wavelet</td></tr><tr><td style=\"white-space:nowrap\">UK1F<a name=\"IBSICS-UK1F\"> </a></td><td>Separable wavelet filter combination</td></tr><tr><td style=\"white-space:nowrap\">PPF6<a name=\"IBSICS-PPF6\"> </a></td><td>LL wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">P60O<a name=\"IBSICS-P60O\"> </a></td><td>HL wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">M0S1<a name=\"IBSICS-M0S1\"> </a></td><td>LH wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">WQ2Z<a name=\"IBSICS-WQ2Z\"> </a></td><td>HH wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">KZAS<a name=\"IBSICS-KZAS\"> </a></td><td>LLL wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">TY49<a name=\"IBSICS-TY49\"> </a></td><td>LLH wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">4KRX<a name=\"IBSICS-4KRX\"> </a></td><td>LHL wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">UUV9<a name=\"IBSICS-UUV9\"> </a></td><td>HLL wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">UIT8<a name=\"IBSICS-UIT8\"> </a></td><td>LHH wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">QTIT<a name=\"IBSICS-QTIT\"> </a></td><td>HHL wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">8LD2<a name=\"IBSICS-8LD2\"> </a></td><td>HLH wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">OYUC<a name=\"IBSICS-OYUC\"> </a></td><td>HHH wavelet combination</td></tr><tr><td style=\"white-space:nowrap\">GCEK<a name=\"IBSICS-GCEK\"> </a></td><td>wavelet decomposition level</td></tr><tr><td style=\"white-space:nowrap\">PH3R<a name=\"IBSICS-PH3R\"> </a></td><td>Separable wavelet decimated transform</td></tr><tr><td style=\"white-space:nowrap\">CVCQ<a name=\"IBSICS-CVCQ\"> </a></td><td>Separable wavelet undecimated transform</td></tr><tr><td style=\"white-space:nowrap\">LODD<a name=\"IBSICS-LODD\"> </a></td><td>Non-separable wavelet</td></tr><tr><td style=\"white-space:nowrap\">389V<a name=\"IBSICS-389V\"> </a></td><td>Non-separable wavelet family</td></tr><tr><td style=\"white-space:nowrap\">GWM2<a name=\"IBSICS-GWM2\"> </a></td><td>Shannon wavelet</td></tr><tr><td style=\"white-space:nowrap\">PRT7<a name=\"IBSICS-PRT7\"> </a></td><td>Simoncelli wavelet</td></tr><tr><td style=\"white-space:nowrap\">AYRS<a name=\"IBSICS-AYRS\"> </a></td><td>Riesz transformation</td></tr><tr><td style=\"white-space:nowrap\">OC48<a name=\"IBSICS-OC48\"> </a></td><td>Riesz transformation order</td></tr><tr><td style=\"white-space:nowrap\">1SD3<a name=\"IBSICS-1SD3\"> </a></td><td>Riesz filter steering</td></tr><tr><td style=\"white-space:nowrap\">XKP5<a name=\"IBSICS-XKP5\"> </a></td><td>Image dimension</td></tr><tr><td style=\"white-space:nowrap\">1F0N<a name=\"IBSICS-1F0N\"> </a></td><td>k1-direction</td></tr><tr><td style=\"white-space:nowrap\">M2EZ<a name=\"IBSICS-M2EZ\"> </a></td><td>k2-direction</td></tr><tr><td style=\"white-space:nowrap\">R83H<a name=\"IBSICS-R83H\"> </a></td><td>k3-direction</td></tr><tr><td style=\"white-space:nowrap\">Y4GJ<a name=\"IBSICS-Y4GJ\"> </a></td><td>Convolution operation</td></tr><tr><td style=\"white-space:nowrap\">YHT3<a name=\"IBSICS-YHT3\"> </a></td><td>Aggregating intensities from a response map</td></tr><tr><td style=\"white-space:nowrap\">5P3T<a name=\"IBSICS-5P3T\"> </a></td><td>Response map</td></tr><tr><td style=\"white-space:nowrap\">0J1M<a name=\"IBSICS-0J1M\"> </a></td><td>modulus, magnitude or absolute response map</td></tr><tr><td style=\"white-space:nowrap\">V530<a name=\"IBSICS-V530\"> </a></td><td>angle, phase or argument response map</td></tr><tr><td style=\"white-space:nowrap\">F7DI<a name=\"IBSICS-F7DI\"> </a></td><td>real</td></tr><tr><td style=\"white-space:nowrap\">LI3Y<a name=\"IBSICS-LI3Y\"> </a></td><td>imaginary</td></tr><tr><td style=\"white-space:nowrap\">52<a name=\"IBSICS-52\"> </a></td><td>Intensity rounding: Describe how fractional Hounsfield Units are rounded to integer values after interpolation</td></tr><tr><td style=\"white-space:nowrap\">56a<a name=\"IBSICS-56a\"> </a></td><td>Discretisation method: Describe the method used to discretise image intensities</td></tr><tr><td style=\"white-space:nowrap\">56b<a name=\"IBSICS-56b\"> </a></td><td>Discretisation method: Describe the number of bins (FBN) or the bin size (FBS) used for discretisation</td></tr><tr><td style=\"white-space:nowrap\">56c<a name=\"IBSICS-56c\"> </a></td><td>Discretisation method: Describe the lowest intensity in the first bin for FBS discretisation</td></tr><tr><td style=\"white-space:nowrap\">61<a name=\"IBSICS-61\"> </a></td><td>Software availability: Describe which software and version was used to compute image biomarkers</td></tr><tr><td style=\"white-space:nowrap\">62<a name=\"IBSICS-62\"> </a></td><td>Texture matrix aggregation: Define how texture-matrix based biomarkers were computed from underlying texture matrices</td></tr><tr><td style=\"white-space:nowrap\">63<a name=\"IBSICS-63\"> </a></td><td>Distance weighting: Describe which software and version was used to compute image biomarkers</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://ibsi.readthedocs.io/en/latest/"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.1.0"] ; # 
+  fhir:name [ fhir:v "IBSICS"] ; # 
+  fhir:title [ fhir:v "IBSI Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-04-23T09:23:26+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "institutcancer"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "institutcancer" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://cancer.fr" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "osiris@institutcancer.fr" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Aurélien JOBARD" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "osiris@institutcancer.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "IBSI Code System"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "419"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "HCUG" ] ;
+     fhir:display [ fhir:v "Morphological features" ]
+  ] [
+     fhir:code [ fhir:v "RNU0" ] ;
+     fhir:display [ fhir:v "Volume" ]
+  ] [
+     fhir:code [ fhir:v "YEKZ" ] ;
+     fhir:display [ fhir:v "Approximate volume" ]
+  ] [
+     fhir:code [ fhir:v "C0JK" ] ;
+     fhir:display [ fhir:v "Surface area" ]
+  ] [
+     fhir:code [ fhir:v "2PR5" ] ;
+     fhir:display [ fhir:v "Surface to volume ratio" ]
+  ] [
+     fhir:code [ fhir:v "SKGS" ] ;
+     fhir:display [ fhir:v "Compactness 1" ]
+  ] [
+     fhir:code [ fhir:v "BQWJ" ] ;
+     fhir:display [ fhir:v "Compactness 2" ]
+  ] [
+     fhir:code [ fhir:v "KRCK" ] ;
+     fhir:display [ fhir:v "Spherical disproportion" ]
+  ] [
+     fhir:code [ fhir:v "QCFX" ] ;
+     fhir:display [ fhir:v "Sphericity" ]
+  ] [
+     fhir:code [ fhir:v "25C7" ] ;
+     fhir:display [ fhir:v "Asphericity" ]
+  ] [
+     fhir:code [ fhir:v "KLMA" ] ;
+     fhir:display [ fhir:v "Centre of mass shift" ]
+  ] [
+     fhir:code [ fhir:v "L0JK" ] ;
+     fhir:display [ fhir:v "Maximum 3D diameter" ]
+  ] [
+     fhir:code [ fhir:v "TDIC" ] ;
+     fhir:display [ fhir:v "Major axis length" ]
+  ] [
+     fhir:code [ fhir:v "P9VJ" ] ;
+     fhir:display [ fhir:v "Minor axis length" ]
+  ] [
+     fhir:code [ fhir:v "7J51" ] ;
+     fhir:display [ fhir:v "Least axis length" ]
+  ] [
+     fhir:code [ fhir:v "Q3CK" ] ;
+     fhir:display [ fhir:v "Elongation" ]
+  ] [
+     fhir:code [ fhir:v "N17B" ] ;
+     fhir:display [ fhir:v "Flatness" ]
+  ] [
+     fhir:code [ fhir:v "PBX1" ] ;
+     fhir:display [ fhir:v "Volume density - axis-aligned bounding box" ]
+  ] [
+     fhir:code [ fhir:v "R59B" ] ;
+     fhir:display [ fhir:v "Area density - axis-aligned bounding box" ]
+  ] [
+     fhir:code [ fhir:v "ZH1A" ] ;
+     fhir:display [ fhir:v "Volume density - oriented minimum bounding box" ]
+  ] [
+     fhir:code [ fhir:v "IQYR" ] ;
+     fhir:display [ fhir:v "Area density - oriented minimum bounding box" ]
+  ] [
+     fhir:code [ fhir:v "6BDE" ] ;
+     fhir:display [ fhir:v "Volume density - approximate enclosing ellipsoid" ]
+  ] [
+     fhir:code [ fhir:v "RDD2" ] ;
+     fhir:display [ fhir:v "Area density - approximate enclosing ellipsoid" ]
+  ] [
+     fhir:code [ fhir:v "SWZ1" ] ;
+     fhir:display [ fhir:v "Volume density - minimum volume enclosing ellipsoid" ]
+  ] [
+     fhir:code [ fhir:v "BRI8" ] ;
+     fhir:display [ fhir:v "Area density - minimum volume enclosing ellipsoid" ]
+  ] [
+     fhir:code [ fhir:v "R3ER" ] ;
+     fhir:display [ fhir:v "Volume density - convex hull" ]
+  ] [
+     fhir:code [ fhir:v "7T7F" ] ;
+     fhir:display [ fhir:v "Area density - convex hull" ]
+  ] [
+     fhir:code [ fhir:v "99N0" ] ;
+     fhir:display [ fhir:v "Integrated intensity" ]
+  ] [
+     fhir:code [ fhir:v "N365" ] ;
+     fhir:display [ fhir:v "Moran's I index" ]
+  ] [
+     fhir:code [ fhir:v "NPT7" ] ;
+     fhir:display [ fhir:v "Geary's C measure" ]
+  ] [
+     fhir:code [ fhir:v "9ST6" ] ;
+     fhir:display [ fhir:v "Local intensity features" ]
+  ] [
+     fhir:code [ fhir:v "VJGA" ] ;
+     fhir:display [ fhir:v "Local intensity peak" ]
+  ] [
+     fhir:code [ fhir:v "0F91" ] ;
+     fhir:display [ fhir:v "Global intensity peak" ]
+  ] [
+     fhir:code [ fhir:v "UHIW" ] ;
+     fhir:display [ fhir:v "Intensity-based statistical features" ]
+  ] [
+     fhir:code [ fhir:v "Q4LE" ] ;
+     fhir:display [ fhir:v "Mean" ]
+  ] [
+     fhir:code [ fhir:v "ECT3" ] ;
+     fhir:display [ fhir:v "Variance" ]
+  ] [
+     fhir:code [ fhir:v "KE2A" ] ;
+     fhir:display [ fhir:v "Skewness" ]
+  ] [
+     fhir:code [ fhir:v "IPH6" ] ;
+     fhir:display [ fhir:v "Kurtosis" ]
+  ] [
+     fhir:code [ fhir:v "Y12H" ] ;
+     fhir:display [ fhir:v "Median" ]
+  ] [
+     fhir:code [ fhir:v "1GSF" ] ;
+     fhir:display [ fhir:v "Minimum grey level" ]
+  ] [
+     fhir:code [ fhir:v "QG58" ] ;
+     fhir:display [ fhir:v "10th percentile" ]
+  ] [
+     fhir:code [ fhir:v "8DWT" ] ;
+     fhir:display [ fhir:v "90th percentile" ]
+  ] [
+     fhir:code [ fhir:v "84IY" ] ;
+     fhir:display [ fhir:v "Maximum grey level" ]
+  ] [
+     fhir:code [ fhir:v "SALO" ] ;
+     fhir:display [ fhir:v "Interquartile range" ]
+  ] [
+     fhir:code [ fhir:v "2OJQ" ] ;
+     fhir:display [ fhir:v "Range" ]
+  ] [
+     fhir:code [ fhir:v "4FUA" ] ;
+     fhir:display [ fhir:v "Mean absolute deviation" ]
+  ] [
+     fhir:code [ fhir:v "1128" ] ;
+     fhir:display [ fhir:v "Robust mean absolute deviation" ]
+  ] [
+     fhir:code [ fhir:v "N72L" ] ;
+     fhir:display [ fhir:v "Median absolute deviation" ]
+  ] [
+     fhir:code [ fhir:v "7TET" ] ;
+     fhir:display [ fhir:v "Coefficient of variation" ]
+  ] [
+     fhir:code [ fhir:v "9S40" ] ;
+     fhir:display [ fhir:v "Quartile coefficient of dispersion" ]
+  ] [
+     fhir:code [ fhir:v "N8CA" ] ;
+     fhir:display [ fhir:v "Energy" ]
+  ] [
+     fhir:code [ fhir:v "5ZWQ" ] ;
+     fhir:display [ fhir:v "Root mean square" ]
+  ] [
+     fhir:code [ fhir:v "ZVCW" ] ;
+     fhir:display [ fhir:v "Intensity histogram features" ]
+  ] [
+     fhir:code [ fhir:v "X6K6" ] ;
+     fhir:display [ fhir:v "Intensity histogram mean" ]
+  ] [
+     fhir:code [ fhir:v "CH89" ] ;
+     fhir:display [ fhir:v "Intensity histogram variance" ]
+  ] [
+     fhir:code [ fhir:v "88K1" ] ;
+     fhir:display [ fhir:v "Intensity histogram skewness" ]
+  ] [
+     fhir:code [ fhir:v "C3I7" ] ;
+     fhir:display [ fhir:v "Intensity histogram kurtosis" ]
+  ] [
+     fhir:code [ fhir:v "WIFQ" ] ;
+     fhir:display [ fhir:v "Intensity histogram median" ]
+  ] [
+     fhir:code [ fhir:v "1PR8" ] ;
+     fhir:display [ fhir:v "Intensity histogram minimum grey level" ]
+  ] [
+     fhir:code [ fhir:v "GPMT" ] ;
+     fhir:display [ fhir:v "Intensity histogram 10th percentile" ]
+  ] [
+     fhir:code [ fhir:v "OZ0C" ] ;
+     fhir:display [ fhir:v "Intensity histogram 90th percentile" ]
+  ] [
+     fhir:code [ fhir:v "3NCY" ] ;
+     fhir:display [ fhir:v "Intensity histogram maximum grey level" ]
+  ] [
+     fhir:code [ fhir:v "AMMC" ] ;
+     fhir:display [ fhir:v "Intensity histogram mode" ]
+  ] [
+     fhir:code [ fhir:v "WR0O" ] ;
+     fhir:display [ fhir:v "Intensity histogram interquartile range" ]
+  ] [
+     fhir:code [ fhir:v "5Z3W" ] ;
+     fhir:display [ fhir:v "Intensity histogram range" ]
+  ] [
+     fhir:code [ fhir:v "D2ZX" ] ;
+     fhir:display [ fhir:v "Intensity histogram mean absolute deviation" ]
+  ] [
+     fhir:code [ fhir:v "WRZB" ] ;
+     fhir:display [ fhir:v "Intensity histogram robust mean absolute deviation" ]
+  ] [
+     fhir:code [ fhir:v "4RNL" ] ;
+     fhir:display [ fhir:v "Intensity histogram median absolute deviation" ]
+  ] [
+     fhir:code [ fhir:v "CWYJ" ] ;
+     fhir:display [ fhir:v "Intensity histogram coefficient of variation" ]
+  ] [
+     fhir:code [ fhir:v "SLWD" ] ;
+     fhir:display [ fhir:v "Intensity histogram quartile coefficient of dispersion" ]
+  ] [
+     fhir:code [ fhir:v "TLU2" ] ;
+     fhir:display [ fhir:v "Intensity histogram entropy" ]
+  ] [
+     fhir:code [ fhir:v "BJ5W" ] ;
+     fhir:display [ fhir:v "Intensity histogram uniformity" ]
+  ] [
+     fhir:code [ fhir:v "12CE" ] ;
+     fhir:display [ fhir:v "Maximum histogram gradient" ]
+  ] [
+     fhir:code [ fhir:v "8E6O" ] ;
+     fhir:display [ fhir:v "Maximum histogram gradient grey level" ]
+  ] [
+     fhir:code [ fhir:v "VQB3" ] ;
+     fhir:display [ fhir:v "Minimum histogram gradient" ]
+  ] [
+     fhir:code [ fhir:v "RHQZ" ] ;
+     fhir:display [ fhir:v "Minimum histogram gradient grey level" ]
+  ] [
+     fhir:code [ fhir:v "P88C" ] ;
+     fhir:display [ fhir:v "Intensity-volume histogram features" ]
+  ] [
+     fhir:code [ fhir:v "BC2M" ] ;
+     fhir:display [ fhir:v "Volume at intensity fraction" ]
+  ] [
+     fhir:code [ fhir:v "GBPN" ] ;
+     fhir:display [ fhir:v "Intensity at volume fraction" ]
+  ] [
+     fhir:code [ fhir:v "DDTU" ] ;
+     fhir:display [ fhir:v "Volume fraction difference between intensity fractions" ]
+  ] [
+     fhir:code [ fhir:v "CNV2" ] ;
+     fhir:display [ fhir:v "Intensity fraction difference between volume fractions" ]
+  ] [
+     fhir:code [ fhir:v "9CMM" ] ;
+     fhir:display [ fhir:v "Area under IVH curve" ]
+  ] [
+     fhir:code [ fhir:v "LFYI" ] ;
+     fhir:display [ fhir:v "Grey level co-occurrence based features" ]
+  ] [
+     fhir:code [ fhir:v "GYBY" ] ;
+     fhir:display [ fhir:v "Joint maximum" ]
+  ] [
+     fhir:code [ fhir:v "60VM" ] ;
+     fhir:display [ fhir:v "Joint average" ]
+  ] [
+     fhir:code [ fhir:v "UR99" ] ;
+     fhir:display [ fhir:v "Joint variance" ]
+  ] [
+     fhir:code [ fhir:v "TU9B" ] ;
+     fhir:display [ fhir:v "Joint entropy" ]
+  ] [
+     fhir:code [ fhir:v "TF7R" ] ;
+     fhir:display [ fhir:v "Difference average" ]
+  ] [
+     fhir:code [ fhir:v "D3YU" ] ;
+     fhir:display [ fhir:v "Difference variance" ]
+  ] [
+     fhir:code [ fhir:v "NTRS" ] ;
+     fhir:display [ fhir:v "Difference entropy" ]
+  ] [
+     fhir:code [ fhir:v "ZGXS" ] ;
+     fhir:display [ fhir:v "Sum average" ]
+  ] [
+     fhir:code [ fhir:v "OEEB" ] ;
+     fhir:display [ fhir:v "Sum variance" ]
+  ] [
+     fhir:code [ fhir:v "P6QZ" ] ;
+     fhir:display [ fhir:v "Sum entropy" ]
+  ] [
+     fhir:code [ fhir:v "8ZQL" ] ;
+     fhir:display [ fhir:v "Angular second moment" ]
+  ] [
+     fhir:code [ fhir:v "ACUI" ] ;
+     fhir:display [ fhir:v "Contrast" ]
+  ] [
+     fhir:code [ fhir:v "8S9J" ] ;
+     fhir:display [ fhir:v "Dissimilarity" ]
+  ] [
+     fhir:code [ fhir:v "IB1Z" ] ;
+     fhir:display [ fhir:v "Inverse difference" ]
+  ] [
+     fhir:code [ fhir:v "NDRX" ] ;
+     fhir:display [ fhir:v "Normalised inverse difference" ]
+  ] [
+     fhir:code [ fhir:v "WF0Z" ] ;
+     fhir:display [ fhir:v "Inverse difference moment" ]
+  ] [
+     fhir:code [ fhir:v "1QCO" ] ;
+     fhir:display [ fhir:v "Normalised inverse difference moment" ]
+  ] [
+     fhir:code [ fhir:v "E8JP" ] ;
+     fhir:display [ fhir:v "Inverse variance" ]
+  ] [
+     fhir:code [ fhir:v "NI2N" ] ;
+     fhir:display [ fhir:v "Correlation" ]
+  ] [
+     fhir:code [ fhir:v "QWB0" ] ;
+     fhir:display [ fhir:v "Autocorrelation" ]
+  ] [
+     fhir:code [ fhir:v "DG8W" ] ;
+     fhir:display [ fhir:v "Cluster tendency" ]
+  ] [
+     fhir:code [ fhir:v "7NFM" ] ;
+     fhir:display [ fhir:v "Cluster shade" ]
+  ] [
+     fhir:code [ fhir:v "AE86" ] ;
+     fhir:display [ fhir:v "Cluster prominence" ]
+  ] [
+     fhir:code [ fhir:v "R8DG" ] ;
+     fhir:display [ fhir:v "First measure of information correlation" ]
+  ] [
+     fhir:code [ fhir:v "JN9H" ] ;
+     fhir:display [ fhir:v "Second measure of information correlation" ]
+  ] [
+     fhir:code [ fhir:v "TP0I" ] ;
+     fhir:display [ fhir:v "Grey level run length based features" ]
+  ] [
+     fhir:code [ fhir:v "22OV" ] ;
+     fhir:display [ fhir:v "Short runs emphasis" ]
+  ] [
+     fhir:code [ fhir:v "W4KF" ] ;
+     fhir:display [ fhir:v "Long runs emphasis" ]
+  ] [
+     fhir:code [ fhir:v "V3SW" ] ;
+     fhir:display [ fhir:v "Low grey level run emphasis" ]
+  ] [
+     fhir:code [ fhir:v "G3QZ" ] ;
+     fhir:display [ fhir:v "High grey level run emphasis" ]
+  ] [
+     fhir:code [ fhir:v "HTZT" ] ;
+     fhir:display [ fhir:v "Short run low grey level emphasis" ]
+  ] [
+     fhir:code [ fhir:v "GD3A" ] ;
+     fhir:display [ fhir:v "Short run high grey level emphasis" ]
+  ] [
+     fhir:code [ fhir:v "IVPO" ] ;
+     fhir:display [ fhir:v "Long run low grey level emphasis" ]
+  ] [
+     fhir:code [ fhir:v "3KUM" ] ;
+     fhir:display [ fhir:v "Long run high grey level emphasis" ]
+  ] [
+     fhir:code [ fhir:v "R5YN" ] ;
+     fhir:display [ fhir:v "Grey level non-uniformity" ]
+  ] [
+     fhir:code [ fhir:v "OVBL" ] ;
+     fhir:display [ fhir:v "Normalised grey level non-uniformity" ]
+  ] [
+     fhir:code [ fhir:v "W92Y" ] ;
+     fhir:display [ fhir:v "Run length non-uniformity" ]
+  ] [
+     fhir:code [ fhir:v "IC23" ] ;
+     fhir:display [ fhir:v "Normalised run length non-uniformity" ]
+  ] [
+     fhir:code [ fhir:v "9ZK5" ] ;
+     fhir:display [ fhir:v "Run percentage" ]
+  ] [
+     fhir:code [ fhir:v "8CE5" ] ;
+     fhir:display [ fhir:v "Grey level variance" ]
+  ] [
+     fhir:code [ fhir:v "SXLW" ] ;
+     fhir:display [ fhir:v "Run length variance" ]
+  ] [
+     fhir:code [ fhir:v "HJ9O" ] ;
+     fhir:display [ fhir:v "Run entropy" ]
+  ] [
+     fhir:code [ fhir:v "9SAK" ] ;
+     fhir:display [ fhir:v "Grey level size zone based features" ]
+  ] [
+     fhir:code [ fhir:v "5QRC" ] ;
+     fhir:display [ fhir:v "Small zone emphasis" ]
+  ] [
+     fhir:code [ fhir:v "48P8" ] ;
+     fhir:display [ fhir:v "Large zone emphasis" ]
+  ] [
+     fhir:code [ fhir:v "XMSY" ] ;
+     fhir:display [ fhir:v "Low grey level zone emphasis" ]
+  ] [
+     fhir:code [ fhir:v "5GN9" ] ;
+     fhir:display [ fhir:v "High grey level zone emphasis" ]
+  ] [
+     fhir:code [ fhir:v "5RAI" ] ;
+     fhir:display [ fhir:v "Small zone low grey level emphasis" ]
+  ] [
+     fhir:code [ fhir:v "HW1V" ] ;
+     fhir:display [ fhir:v "Small zone high grey level emphasis" ]
+  ] [
+     fhir:code [ fhir:v "YH51" ] ;
+     fhir:display [ fhir:v "Large zone low grey level emphasis" ]
+  ] [
+     fhir:code [ fhir:v "J17V" ] ;
+     fhir:display [ fhir:v "Large zone high grey level emphasis" ]
+  ] [
+     fhir:code [ fhir:v "JNSA" ] ;
+     fhir:display [ fhir:v "Grey level non-uniformity" ]
+  ] [
+     fhir:code [ fhir:v "Y1RO" ] ;
+     fhir:display [ fhir:v "Normalised grey level non-uniformity" ]
+  ] [
+     fhir:code [ fhir:v "4JP3" ] ;
+     fhir:display [ fhir:v "Zone size non-uniformity" ]
+  ] [
+     fhir:code [ fhir:v "VB3A" ] ;
+     fhir:display [ fhir:v "Normalised zone size non-uniformity" ]
+  ] [
+     fhir:code [ fhir:v "P30P" ] ;
+     fhir:display [ fhir:v "Zone percentage" ]
+  ] [
+     fhir:code [ fhir:v "BYLV" ] ;
+     fhir:display [ fhir:v "Grey level variance" ]
+  ] [
+     fhir:code [ fhir:v "3NSA" ] ;
+     fhir:display [ fhir:v "Zone size variance" ]
+  ] [
+     fhir:code [ fhir:v "GU8N" ] ;
+     fhir:display [ fhir:v "Zone size entropy" ]
+  ] [
+     fhir:code [ fhir:v "VMDZ" ] ;
+     fhir:display [ fhir:v "Grey level distance zone based features" ]
+  ] [
+     fhir:code [ fhir:v "0GBI" ] ;
+     fhir:display [ fhir:v "Small distance emphasis" ]
+  ] [
+     fhir:code [ fhir:v "MB4I" ] ;
+     fhir:display [ fhir:v "Large distance emphasis" ]
+  ] [
+     fhir:code [ fhir:v "S1RA" ] ;
+     fhir:display [ fhir:v "Low grey level zone emphasis" ]
+  ] [
+     fhir:code [ fhir:v "K26C" ] ;
+     fhir:display [ fhir:v "High grey level zone emphasis" ]
+  ] [
+     fhir:code [ fhir:v "RUVG" ] ;
+     fhir:display [ fhir:v "Small distance low grey level emphasis" ]
+  ] [
+     fhir:code [ fhir:v "DKNJ" ] ;
+     fhir:display [ fhir:v "Small distance high grey level emphasis" ]
+  ] [
+     fhir:code [ fhir:v "A7WM" ] ;
+     fhir:display [ fhir:v "Large distance low grey level emphasis" ]
+  ] [
+     fhir:code [ fhir:v "KLTH" ] ;
+     fhir:display [ fhir:v "Large distance high grey level emphasis" ]
+  ] [
+     fhir:code [ fhir:v "VFT7" ] ;
+     fhir:display [ fhir:v "Grey level non-uniformity" ]
+  ] [
+     fhir:code [ fhir:v "7HP3" ] ;
+     fhir:display [ fhir:v "Normalised grey level non-uniformity" ]
+  ] [
+     fhir:code [ fhir:v "V294" ] ;
+     fhir:display [ fhir:v "Zone distance non-uniformity" ]
+  ] [
+     fhir:code [ fhir:v "IATH" ] ;
+     fhir:display [ fhir:v "Zone distance non-uniformity normalised" ]
+  ] [
+     fhir:code [ fhir:v "VIWW" ] ;
+     fhir:display [ fhir:v "Zone percentage" ]
+  ] [
+     fhir:code [ fhir:v "QK93" ] ;
+     fhir:display [ fhir:v "Grey level variance" ]
+  ] [
+     fhir:code [ fhir:v "7WT1" ] ;
+     fhir:display [ fhir:v "Zone distance variance" ]
+  ] [
+     fhir:code [ fhir:v "GBDU" ] ;
+     fhir:display [ fhir:v "Zone distance entropy" ]
+  ] [
+     fhir:code [ fhir:v "IPET" ] ;
+     fhir:display [ fhir:v "Neighbourhood grey tone difference based features" ]
+  ] [
+     fhir:code [ fhir:v "QCDE" ] ;
+     fhir:display [ fhir:v "Coarseness" ]
+  ] [
+     fhir:code [ fhir:v "65HE" ] ;
+     fhir:display [ fhir:v "Contrast" ]
+  ] [
+     fhir:code [ fhir:v "NQ30" ] ;
+     fhir:display [ fhir:v "Busyness" ]
+  ] [
+     fhir:code [ fhir:v "HDEZ" ] ;
+     fhir:display [ fhir:v "Complexity" ]
+  ] [
+     fhir:code [ fhir:v "1X9X" ] ;
+     fhir:display [ fhir:v "Strength" ]
+  ] [
+     fhir:code [ fhir:v "REK0" ] ;
+     fhir:display [ fhir:v "Neighbouring grey level dependence based features" ]
+  ] [
+     fhir:code [ fhir:v "SODN" ] ;
+     fhir:display [ fhir:v "Low dependence emphasis" ]
+  ] [
+     fhir:code [ fhir:v "IMOQ" ] ;
+     fhir:display [ fhir:v "High dependence emphasis" ]
+  ] [
+     fhir:code [ fhir:v "TL9H" ] ;
+     fhir:display [ fhir:v "Low grey level count emphasis" ]
+  ] [
+     fhir:code [ fhir:v "OAE7" ] ;
+     fhir:display [ fhir:v "High grey level count emphasis" ]
+  ] [
+     fhir:code [ fhir:v "EQ3F" ] ;
+     fhir:display [ fhir:v "Low dependence low grey level emphasis" ]
+  ] [
+     fhir:code [ fhir:v "JA6D" ] ;
+     fhir:display [ fhir:v "Low dependence high grey level emphasis" ]
+  ] [
+     fhir:code [ fhir:v "NBZI" ] ;
+     fhir:display [ fhir:v "High dependence low grey level emphasis" ]
+  ] [
+     fhir:code [ fhir:v "9QMG" ] ;
+     fhir:display [ fhir:v "High dependence high grey level emphasis" ]
+  ] [
+     fhir:code [ fhir:v "FP8K" ] ;
+     fhir:display [ fhir:v "Grey level non-uniformity" ]
+  ] [
+     fhir:code [ fhir:v "5SPA" ] ;
+     fhir:display [ fhir:v "Normalised grey level non-uniformity" ]
+  ] [
+     fhir:code [ fhir:v "Z87G" ] ;
+     fhir:display [ fhir:v "Dependence count non-uniformity" ]
+  ] [
+     fhir:code [ fhir:v "OKJI" ] ;
+     fhir:display [ fhir:v "Dependence count non-uniformity normalised" ]
+  ] [
+     fhir:code [ fhir:v "6XV8" ] ;
+     fhir:display [ fhir:v "Dependence count percentage" ]
+  ] [
+     fhir:code [ fhir:v "1PFV" ] ;
+     fhir:display [ fhir:v "Grey level variance" ]
+  ] [
+     fhir:code [ fhir:v "DNX2" ] ;
+     fhir:display [ fhir:v "Dependence count variance" ]
+  ] [
+     fhir:code [ fhir:v "FCBV" ] ;
+     fhir:display [ fhir:v "Dependence count entropy" ]
+  ] [
+     fhir:code [ fhir:v "CAS9" ] ;
+     fhir:display [ fhir:v "Dependence count energy" ]
+  ] [
+     fhir:code [ fhir:v "5QB6" ] ;
+     fhir:display [ fhir:v "feature aggregation" ]
+  ] [
+     fhir:code [ fhir:v "3IDG" ] ;
+     fhir:display [ fhir:v "feature computed per slice, and averaged over slices" ]
+  ] [
+     fhir:code [ fhir:v "DHQ4" ] ;
+     fhir:display [ fhir:v "feature computed over the volume" ]
+  ] [
+     fhir:code [ fhir:v "BTW3" ] ;
+     fhir:display [ fhir:v "feature computed from 2D directional matrix and averaged over 2D directions and slices" ]
+  ] [
+     fhir:code [ fhir:v "SUJT" ] ;
+     fhir:display [ fhir:v "feature computed from a single matrix after merging 2D directional matrices per slice, and averaged over slices" ]
+  ] [
+     fhir:code [ fhir:v "ZW7Z" ] ;
+     fhir:display [ fhir:v "feature computed from a single matrix after merging all 2D directional matrices" ]
+  ] [
+     fhir:code [ fhir:v "ITBB" ] ;
+     fhir:display [ fhir:v "feature computed from 3D directional matrix and averaged over 3D directions" ]
+  ] [
+     fhir:code [ fhir:v "IAZD" ] ;
+     fhir:display [ fhir:v "feature computed from a single matrix after merging all 3D directional matrices" ]
+  ] [
+     fhir:code [ fhir:v "8QNN" ] ;
+     fhir:display [ fhir:v "feature computed from 2D matrix and averaged over slices" ]
+  ] [
+     fhir:code [ fhir:v "62GR" ] ;
+     fhir:display [ fhir:v "feature computed from a single matrix after merging all 2D matrices" ]
+  ] [
+     fhir:code [ fhir:v "KOBO" ] ;
+     fhir:display [ fhir:v "feature computed from 3D matrix" ]
+  ] [
+     fhir:code [ fhir:v "MPUJ" ] ;
+     fhir:display [ fhir:v "grid distances" ]
+  ] [
+     fhir:code [ fhir:v "LIFZ" ] ;
+     fhir:display [ fhir:v "manhattan norm" ]
+  ] [
+     fhir:code [ fhir:v "G9EV" ] ;
+     fhir:display [ fhir:v "euclidean norm" ]
+  ] [
+     fhir:code [ fhir:v "PVMT" ] ;
+     fhir:display [ fhir:v "chebyshev norm" ]
+  ] [
+     fhir:code [ fhir:v "ECJF" ] ;
+     fhir:display [ fhir:v "ROI submasks" ]
+  ] [
+     fhir:code [ fhir:v "SEFI" ] ;
+     fhir:display [ fhir:v "intensity mask" ]
+  ] [
+     fhir:code [ fhir:v "G5KJ" ] ;
+     fhir:display [ fhir:v "morphological mask" ]
+  ] [
+     fhir:code [ fhir:v "IF9H" ] ;
+     fhir:display [ fhir:v "re-segmentation" ]
+  ] [
+     fhir:code [ fhir:v "USB3" ] ;
+     fhir:display [ fhir:v "range re-segmentation" ]
+  ] [
+     fhir:code [ fhir:v "7ACA" ] ;
+     fhir:display [ fhir:v "outlier filtering" ]
+  ] [
+     fhir:code [ fhir:v "6CK8" ] ;
+     fhir:display [ fhir:v "distance weighting" ]
+  ] [
+     fhir:code [ fhir:v "LQD8" ] ;
+     fhir:display [ fhir:v "volume voxel representation" ]
+  ] [
+     fhir:code [ fhir:v "4KW8" ] ;
+     fhir:display [ fhir:v "volume voxel point set representation" ]
+  ] [
+     fhir:code [ fhir:v "WRJH" ] ;
+     fhir:display [ fhir:v "volume voxel mesh representation" ]
+  ] [
+     fhir:code [ fhir:v "4R0B" ] ;
+     fhir:display [ fhir:v "discretisation" ]
+  ] [
+     fhir:code [ fhir:v "Q3RU" ] ;
+     fhir:display [ fhir:v "fixed bin size" ]
+  ] [
+     fhir:code [ fhir:v "K15C" ] ;
+     fhir:display [ fhir:v "fixed bin number" ]
+  ] [
+     fhir:code [ fhir:v "23XZ" ] ;
+     fhir:display [ fhir:v "data conversion" ]
+  ] [
+     fhir:code [ fhir:v "PCDE" ] ;
+     fhir:display [ fhir:v "image post-acquisition processing" ]
+  ] [
+     fhir:code [ fhir:v "OQYT" ] ;
+     fhir:display [ fhir:v "segmentation" ]
+  ] [
+     fhir:code [ fhir:v "VTM2" ] ;
+     fhir:display [ fhir:v "interpolation" ]
+  ] [
+     fhir:code [ fhir:v "68QD" ] ;
+     fhir:display [ fhir:v "intensity rounding after interpolation" ]
+  ] [
+     fhir:code [ fhir:v "E8H9" ] ;
+     fhir:display [ fhir:v "roi mask partial volume" ]
+  ] [
+     fhir:code [ fhir:v "UMPJ" ] ;
+     fhir:display [ fhir:v "interpolation grid" ]
+  ] [
+     fhir:code [ fhir:v "58MB" ] ;
+     fhir:display [ fhir:v "fit to original grid" ]
+  ] [
+     fhir:code [ fhir:v "SBKJ" ] ;
+     fhir:display [ fhir:v "align grid origins" ]
+  ] [
+     fhir:code [ fhir:v "3WE3" ] ;
+     fhir:display [ fhir:v "align grid centers" ]
+  ] [
+     fhir:code [ fhir:v "026Q" ] ;
+     fhir:display [ fhir:v "align grid centers interpolation grid dimensions" ]
+  ] [
+     fhir:code [ fhir:v "QCY4" ] ;
+     fhir:display [ fhir:v "align grid centers grid positions" ]
+  ] [
+     fhir:code [ fhir:v "1OBP" ] ;
+     fhir:display [ fhir:v "ROI extraction" ]
+  ] [
+     fhir:code [ fhir:v "JJUI" ] ;
+     fhir:display [ fhir:v "feature computed from a single matrix after merging 2D directional matrices per direction, and averaged over directions" ]
+  ] [
+     fhir:code [ fhir:v "GFJV" ] ;
+     fhir:display [ fhir:v "Calculation Run Space" ]
+  ] [
+     fhir:code [ fhir:v "CINW" ] ;
+     fhir:display [ fhir:v "FeatureParameterSpace" ]
+  ] [
+     fhir:code [ fhir:v "1XL1" ] ;
+     fhir:display [ fhir:v "texture matrix aggregation parameters" ]
+  ] [
+     fhir:code [ fhir:v "8QU8" ] ;
+     fhir:display [ fhir:v "intensity discretization parameters" ]
+  ] [
+     fhir:code [ fhir:v "I7X7" ] ;
+     fhir:display [ fhir:v "histogram equalisation" ]
+  ] [
+     fhir:code [ fhir:v "SSX6" ] ;
+     fhir:display [ fhir:v "Lloyd-Max discretisation" ]
+  ] [
+     fhir:code [ fhir:v "OWOH" ] ;
+     fhir:display [ fhir:v "feature specific parameters" ]
+  ] [
+     fhir:code [ fhir:v "9LZ9" ] ;
+     fhir:display [ fhir:v "asymmetrical co-occurrence matrix" ]
+  ] [
+     fhir:code [ fhir:v "2IQV" ] ;
+     fhir:display [ fhir:v "symmetrical co-occurrence matrix" ]
+  ] [
+     fhir:code [ fhir:v "3S2S" ] ;
+     fhir:display [ fhir:v "distance weighting function" ]
+  ] [
+     fhir:code [ fhir:v "V0L6" ] ;
+     fhir:display [ fhir:v "no distance weighting" ]
+  ] [
+     fhir:code [ fhir:v "4S5Z" ] ;
+     fhir:display [ fhir:v "GLCM specific parameters" ]
+  ] [
+     fhir:code [ fhir:v "0OW5" ] ;
+     fhir:display [ fhir:v "GLRLM specific parameters" ]
+  ] [
+     fhir:code [ fhir:v "6SLW" ] ;
+     fhir:display [ fhir:v "GLDZM specific parameters" ]
+  ] [
+     fhir:code [ fhir:v "MV8M" ] ;
+     fhir:display [ fhir:v "NGTDM specific parameters" ]
+  ] [
+     fhir:code [ fhir:v "KQW7" ] ;
+     fhir:display [ fhir:v "IntVolSpecificParameters" ]
+  ] [
+     fhir:code [ fhir:v "X6TI" ] ;
+     fhir:display [ fhir:v "MaximumBound" ]
+  ] [
+     fhir:code [ fhir:v "V2QW" ] ;
+     fhir:display [ fhir:v "MinimumBound" ]
+  ] [
+     fhir:code [ fhir:v "G5MN" ] ;
+     fhir:display [ fhir:v "isovalue algorithm" ]
+  ] [
+     fhir:code [ fhir:v "CRAM" ] ;
+     fhir:display [ fhir:v "marching cube algorithm" ]
+  ] [
+     fhir:code [ fhir:v "FFWD" ] ;
+     fhir:display [ fhir:v "Morphological features specific parameters" ]
+  ] [
+     fhir:code [ fhir:v "VXRR" ] ;
+     fhir:display [ fhir:v "dependence coarseness parameter" ]
+  ] [
+     fhir:code [ fhir:v "NV3D" ] ;
+     fhir:display [ fhir:v "cubic convolution interpolation" ]
+  ] [
+     fhir:code [ fhir:v "2I2N" ] ;
+     fhir:display [ fhir:v "cubic spline interpolation" ]
+  ] [
+     fhir:code [ fhir:v "X13G" ] ;
+     fhir:display [ fhir:v "linear interpolation" ]
+  ] [
+     fhir:code [ fhir:v "EY9L" ] ;
+     fhir:display [ fhir:v "nearest neighbour interpolation" ]
+  ] [
+     fhir:code [ fhir:v "QP79" ] ;
+     fhir:display [ fhir:v "re-segmentation parameters" ]
+  ] [
+     fhir:code [ fhir:v "LQBA" ] ;
+     fhir:display [ fhir:v "spatial filter properties" ]
+  ] [
+     fhir:code [ fhir:v "WZSA" ] ;
+     fhir:display [ fhir:v "wavelet basis function" ]
+  ] [
+     fhir:code [ fhir:v "QVI9" ] ;
+     fhir:display [ fhir:v "biorthogonal 3.5 wavelet" ]
+  ] [
+     fhir:code [ fhir:v "2CYL" ] ;
+     fhir:display [ fhir:v "coiflet 1 wavelet" ]
+  ] [
+     fhir:code [ fhir:v "FR3E" ] ;
+     fhir:display [ fhir:v "haar wavelet" ]
+  ] [
+     fhir:code [ fhir:v "P8W0" ] ;
+     fhir:display [ fhir:v "frequency" ]
+  ] [
+     fhir:code [ fhir:v "IA9Q" ] ;
+     fhir:display [ fhir:v "wavelet filter direction" ]
+  ] [
+     fhir:code [ fhir:v "LCNJ" ] ;
+     fhir:display [ fhir:v "HHH wavelet direction" ]
+  ] [
+     fhir:code [ fhir:v "S7CG" ] ;
+     fhir:display [ fhir:v "HHL wavelet direction" ]
+  ] [
+     fhir:code [ fhir:v "UFRT" ] ;
+     fhir:display [ fhir:v "HLH wavelet direction" ]
+  ] [
+     fhir:code [ fhir:v "RZ96" ] ;
+     fhir:display [ fhir:v "HLL wavelet direction" ]
+  ] [
+     fhir:code [ fhir:v "CJ43" ] ;
+     fhir:display [ fhir:v "LHH wavelet direction" ]
+  ] [
+     fhir:code [ fhir:v "76ZU" ] ;
+     fhir:display [ fhir:v "LHL wavelet direction" ]
+  ] [
+     fhir:code [ fhir:v "NTRN" ] ;
+     fhir:display [ fhir:v "LLL wavelet direction" ]
+  ] [
+     fhir:code [ fhir:v "6FPA" ] ;
+     fhir:display [ fhir:v "LLH wavelet direction" ]
+  ] [
+     fhir:code [ fhir:v "G6RO" ] ;
+     fhir:display [ fhir:v "image grey level rounding" ]
+  ] [
+     fhir:code [ fhir:v "IZBZ" ] ;
+     fhir:display [ fhir:v "edge enhancement" ]
+  ] [
+     fhir:code [ fhir:v "ZS1T" ] ;
+     fhir:display [ fhir:v "HistoEqualization" ]
+  ] [
+     fhir:code [ fhir:v "Q2ZB" ] ;
+     fhir:display [ fhir:v "LocalAreaHistoEqualization" ]
+  ] [
+     fhir:code [ fhir:v "OB71" ] ;
+     fhir:display [ fhir:v "ImageSpace" ]
+  ] [
+     fhir:code [ fhir:v "K7BL" ] ;
+     fhir:display [ fhir:v "ImageVolume" ]
+  ] [
+     fhir:code [ fhir:v "OH8W" ] ;
+     fhir:display [ fhir:v "ROIMask" ]
+  ] [
+     fhir:code [ fhir:v "GF95" ] ;
+     fhir:display [ fhir:v "IntensityHistogramStandardDeviation" ]
+  ] [
+     fhir:code [ fhir:v "URTB" ] ;
+     fhir:display [ fhir:v "IntensityHistogramTotalEnergy" ]
+  ] [
+     fhir:code [ fhir:v "5ABU" ] ;
+     fhir:display [ fhir:v "Maximum2DDiameterColumn" ]
+  ] [
+     fhir:code [ fhir:v "4S59" ] ;
+     fhir:display [ fhir:v "Maximum2DDiameterSlice" ]
+  ] [
+     fhir:code [ fhir:v "K57E" ] ;
+     fhir:display [ fhir:v "Maximum2DDiameterRow" ]
+  ] [
+     fhir:code [ fhir:v "EGTD" ] ;
+     fhir:display [ fhir:v "Textural" ]
+  ] [
+     fhir:code [ fhir:v "5XL6" ] ;
+     fhir:display [ fhir:v "GLCM_MaximalCorrelationCoefficient" ]
+  ] [
+     fhir:code [ fhir:v "9U4X" ] ;
+     fhir:display [ fhir:v "ZeroOrder" ]
+  ] [
+     fhir:code [ fhir:v "PWN1" ] ;
+     fhir:display [ fhir:v "I10" ]
+  ] [
+     fhir:code [ fhir:v "BOHI" ] ;
+     fhir:display [ fhir:v "I90" ]
+  ] [
+     fhir:code [ fhir:v "JXJA" ] ;
+     fhir:display [ fhir:v "I10minusI90" ]
+  ] [
+     fhir:code [ fhir:v "NK6P" ] ;
+     fhir:display [ fhir:v "V10" ]
+  ] [
+     fhir:code [ fhir:v "4279" ] ;
+     fhir:display [ fhir:v "V90" ]
+  ] [
+     fhir:code [ fhir:v "WITY" ] ;
+     fhir:display [ fhir:v "V10minusV90" ]
+  ] [
+     fhir:code [ fhir:v "J04R" ] ;
+     fhir:display [ fhir:v "NGLDMSpecificParameters" ]
+  ] [
+     fhir:code [ fhir:v "ASHO" ] ;
+     fhir:display [ fhir:v "Voxel" ]
+  ] [
+     fhir:code [ fhir:v "NOVP" ] ;
+     fhir:display [ fhir:v "ImageFilterSpace" ]
+  ] [
+     fhir:code [ fhir:v "XSJL" ] ;
+     fhir:display [ fhir:v "AbsoluteFiltering" ]
+  ] [
+     fhir:code [ fhir:v "1WTP" ] ;
+     fhir:display [ fhir:v "ButterworthFilter" ]
+  ] [
+     fhir:code [ fhir:v "PJBO" ] ;
+     fhir:display [ fhir:v "ColliageFilter" ]
+  ] [
+     fhir:code [ fhir:v "FTIJ" ] ;
+     fhir:display [ fhir:v "MedianFilter" ]
+  ] [
+     fhir:code [ fhir:v "9IQY" ] ;
+     fhir:display [ fhir:v "SavitzkyGolayFilter" ]
+  ] [
+     fhir:code [ fhir:v "SUUU" ] ;
+     fhir:display [ fhir:v "WaveletFilter" ]
+  ] [
+     fhir:code [ fhir:v "WVUQ" ] ;
+     fhir:display [ fhir:v "ROIMask_PartialVolumeCutOff" ]
+  ] [
+     fhir:code [ fhir:v "REY6" ] ;
+     fhir:display [ fhir:v "SegmentationMethods" ]
+  ] [
+     fhir:code [ fhir:v "SBDE" ] ;
+     fhir:display [ fhir:v "Automated" ]
+  ] [
+     fhir:code [ fhir:v "OAX6" ] ;
+     fhir:display [ fhir:v "Manual" ]
+  ] [
+     fhir:code [ fhir:v "TGHU" ] ;
+     fhir:display [ fhir:v "SemiAutomated" ]
+  ] [
+     fhir:code [ fhir:v "6VTB" ] ;
+     fhir:display [ fhir:v "SupervisedMethods" ]
+  ] [
+     fhir:code [ fhir:v "TV5D" ] ;
+     fhir:display [ fhir:v "DeepLearning" ]
+  ] [
+     fhir:code [ fhir:v "KJIF" ] ;
+     fhir:display [ fhir:v "NeuralNetwork" ]
+  ] [
+     fhir:code [ fhir:v "D3RT" ] ;
+     fhir:display [ fhir:v "SupportVectorMachine" ]
+  ] [
+     fhir:code [ fhir:v "ZJJY" ] ;
+     fhir:display [ fhir:v "UnsupervisedMethods" ]
+  ] [
+     fhir:code [ fhir:v "2KAW" ] ;
+     fhir:display [ fhir:v "CMeansFuzzy" ]
+  ] [
+     fhir:code [ fhir:v "OPMG" ] ;
+     fhir:display [ fhir:v "Kmean" ]
+  ] [
+     fhir:code [ fhir:v "HF5R" ] ;
+     fhir:display [ fhir:v "Manual" ]
+  ] [
+     fhir:code [ fhir:v "W455" ] ;
+     fhir:display [ fhir:v "InPolygon" ]
+  ] [
+     fhir:code [ fhir:v "8LVU" ] ;
+     fhir:display [ fhir:v "RayCasting" ]
+  ] [
+     fhir:code [ fhir:v "WAB9" ] ;
+     fhir:display [ fhir:v "EdgeBased" ]
+  ] [
+     fhir:code [ fhir:v "XL0Q" ] ;
+     fhir:display [ fhir:v "GradientEdgeBased" ]
+  ] [
+     fhir:code [ fhir:v "N20K" ] ;
+     fhir:display [ fhir:v "HoughTransformBased" ]
+  ] [
+     fhir:code [ fhir:v "VZXY" ] ;
+     fhir:display [ fhir:v "LaplacianEdgeBased" ]
+  ] [
+     fhir:code [ fhir:v "EOOR" ] ;
+     fhir:display [ fhir:v "MarrHildrethEdgeBased" ]
+  ] [
+     fhir:code [ fhir:v "Q6DD" ] ;
+     fhir:display [ fhir:v "ModelBased" ]
+  ] [
+     fhir:code [ fhir:v "MGZ1" ] ;
+     fhir:display [ fhir:v "ActiveShape" ]
+  ] [
+     fhir:code [ fhir:v "SR1C" ] ;
+     fhir:display [ fhir:v "AppereanceModel" ]
+  ] [
+     fhir:code [ fhir:v "LAQN" ] ;
+     fhir:display [ fhir:v "AtlasModel" ]
+  ] [
+     fhir:code [ fhir:v "UU0Q" ] ;
+     fhir:display [ fhir:v "DeformableModel" ]
+  ] [
+     fhir:code [ fhir:v "ZCA3" ] ;
+     fhir:display [ fhir:v "RegionBased" ]
+  ] [
+     fhir:code [ fhir:v "RZ08" ] ;
+     fhir:display [ fhir:v "RegionGrowing" ]
+  ] [
+     fhir:code [ fhir:v "A9GC" ] ;
+     fhir:display [ fhir:v "RegionSplitting" ]
+  ] [
+     fhir:code [ fhir:v "TAWD" ] ;
+     fhir:display [ fhir:v "SplitAndMerge" ]
+  ] [
+     fhir:code [ fhir:v "Q025" ] ;
+     fhir:display [ fhir:v "WatershedAlgorithm" ]
+  ] [
+     fhir:code [ fhir:v "L2WC" ] ;
+     fhir:display [ fhir:v "ThresholdingBased" ]
+  ] [
+     fhir:code [ fhir:v "E8C8" ] ;
+     fhir:display [ fhir:v "GlobalThresholding" ]
+  ] [
+     fhir:code [ fhir:v "81TK" ] ;
+     fhir:display [ fhir:v "LocalAdaptiveThresholding" ]
+  ] [
+     fhir:code [ fhir:v "4VLP" ] ;
+     fhir:display [ fhir:v "Institution" ]
+  ] [
+     fhir:code [ fhir:v "DTYK" ] ;
+     fhir:display [ fhir:v "Phantom" ]
+  ] [
+     fhir:code [ fhir:v "YUBG" ] ;
+     fhir:display [ fhir:v "Software" ]
+  ] [
+     fhir:code [ fhir:v "SU1L" ] ;
+     fhir:display [ fhir:v "SoftwareProperties" ]
+  ] [
+     fhir:code [ fhir:v "59QT" ] ;
+     fhir:display [ fhir:v "License" ]
+  ] [
+     fhir:code [ fhir:v "1DUG" ] ;
+     fhir:display [ fhir:v "OpenSource" ]
+  ] [
+     fhir:code [ fhir:v "G91N" ] ;
+     fhir:display [ fhir:v "Proprietary" ]
+  ] [
+     fhir:code [ fhir:v "W2J1" ] ;
+     fhir:display [ fhir:v "Version" ]
+  ] [
+     fhir:code [ fhir:v "M9H0" ] ;
+     fhir:display [ fhir:v "VersionStatus" ]
+  ] [
+     fhir:code [ fhir:v "4AGS" ] ;
+     fhir:display [ fhir:v "Filter application" ]
+  ] [
+     fhir:code [ fhir:v "7QSE" ] ;
+     fhir:display [ fhir:v "filter in axial plane" ]
+  ] [
+     fhir:code [ fhir:v "0ODV" ] ;
+     fhir:display [ fhir:v "volumetric filter" ]
+  ] [
+     fhir:code [ fhir:v "GBYQ" ] ;
+     fhir:display [ fhir:v "boundary condition" ]
+  ] [
+     fhir:code [ fhir:v "Z3VE" ] ;
+     fhir:display [ fhir:v "constant value" ]
+  ] [
+     fhir:code [ fhir:v "SIJG" ] ;
+     fhir:display [ fhir:v "nearest value" ]
+  ] [
+     fhir:code [ fhir:v "Z7YO" ] ;
+     fhir:display [ fhir:v "periodic" ]
+  ] [
+     fhir:code [ fhir:v "ZDTV" ] ;
+     fhir:display [ fhir:v "mirror" ]
+  ] [
+     fhir:code [ fhir:v "S60F" ] ;
+     fhir:display [ fhir:v "MeanFilter" ]
+  ] [
+     fhir:code [ fhir:v "YNOF" ] ;
+     fhir:display [ fhir:v "kernel support" ]
+  ] [
+     fhir:code [ fhir:v "8BC3" ] ;
+     fhir:display [ fhir:v "GaussianFilter" ]
+  ] [
+     fhir:code [ fhir:v "L6PA" ] ;
+     fhir:display [ fhir:v "LaplacianFilter" ]
+  ] [
+     fhir:code [ fhir:v "41LN" ] ;
+     fhir:display [ fhir:v "Gaussian envelope scale" ]
+  ] [
+     fhir:code [ fhir:v "WGPM" ] ;
+     fhir:display [ fhir:v "Filter size cutoff" ]
+  ] [
+     fhir:code [ fhir:v "JTXT" ] ;
+     fhir:display [ fhir:v "Laws kernel filter" ]
+  ] [
+     fhir:code [ fhir:v "JVAD" ] ;
+     fhir:display [ fhir:v "Laws kernels" ]
+  ] [
+     fhir:code [ fhir:v "B5BZ" ] ;
+     fhir:display [ fhir:v "Laws L3 kernel" ]
+  ] [
+     fhir:code [ fhir:v "6HRH" ] ;
+     fhir:display [ fhir:v "Laws L5 kernel" ]
+  ] [
+     fhir:code [ fhir:v "LJ4T" ] ;
+     fhir:display [ fhir:v "Laws E3 kernel" ]
+  ] [
+     fhir:code [ fhir:v "2WPV" ] ;
+     fhir:display [ fhir:v "Laws E5 kernel" ]
+  ] [
+     fhir:code [ fhir:v "MK5Z" ] ;
+     fhir:display [ fhir:v "Laws S3 kernel" ]
+  ] [
+     fhir:code [ fhir:v "RXA1" ] ;
+     fhir:display [ fhir:v "Laws S5 kernel" ]
+  ] [
+     fhir:code [ fhir:v "4ENO" ] ;
+     fhir:display [ fhir:v "Laws W5 kernel" ]
+  ] [
+     fhir:code [ fhir:v "3A1W" ] ;
+     fhir:display [ fhir:v "Laws R5 kernel" ]
+  ] [
+     fhir:code [ fhir:v "O1AQ" ] ;
+     fhir:display [ fhir:v "Pseudo-rotational invariance" ]
+  ] [
+     fhir:code [ fhir:v "SVKW" ] ;
+     fhir:display [ fhir:v "Response map pooling" ]
+  ] [
+     fhir:code [ fhir:v "M1CY" ] ;
+     fhir:display [ fhir:v "average" ]
+  ] [
+     fhir:code [ fhir:v "0TAW" ] ;
+     fhir:display [ fhir:v "max" ]
+  ] [
+     fhir:code [ fhir:v "DUX4" ] ;
+     fhir:display [ fhir:v "min" ]
+  ] [
+     fhir:code [ fhir:v "PQSD" ] ;
+     fhir:display [ fhir:v "Laws energy map" ]
+  ] [
+     fhir:code [ fhir:v "I176" ] ;
+     fhir:display [ fhir:v "Laws energy map distance" ]
+  ] [
+     fhir:code [ fhir:v "Q88H" ] ;
+     fhir:display [ fhir:v "GaborFilter" ]
+  ] [
+     fhir:code [ fhir:v "S4N6" ] ;
+     fhir:display [ fhir:v "Gabor wavelength lambda" ]
+  ] [
+     fhir:code [ fhir:v "GDR5" ] ;
+     fhir:display [ fhir:v "Gabor ellipticity gamma" ]
+  ] [
+     fhir:code [ fhir:v "FQER" ] ;
+     fhir:display [ fhir:v "Gabor orientation theta" ]
+  ] [
+     fhir:code [ fhir:v "XTGK" ] ;
+     fhir:display [ fhir:v "Gabor orientation theta step" ]
+  ] [
+     fhir:code [ fhir:v "25BO" ] ;
+     fhir:display [ fhir:v "Separable wavelets" ]
+  ] [
+     fhir:code [ fhir:v "BPXS" ] ;
+     fhir:display [ fhir:v "Separable wavelet family" ]
+  ] [
+     fhir:code [ fhir:v "UOUE" ] ;
+     fhir:display [ fhir:v "haar wavelet" ]
+  ] [
+     fhir:code [ fhir:v "UK1F" ] ;
+     fhir:display [ fhir:v "Separable wavelet filter combination" ]
+  ] [
+     fhir:code [ fhir:v "PPF6" ] ;
+     fhir:display [ fhir:v "LL wavelet combination" ]
+  ] [
+     fhir:code [ fhir:v "P60O" ] ;
+     fhir:display [ fhir:v "HL wavelet combination" ]
+  ] [
+     fhir:code [ fhir:v "M0S1" ] ;
+     fhir:display [ fhir:v "LH wavelet combination" ]
+  ] [
+     fhir:code [ fhir:v "WQ2Z" ] ;
+     fhir:display [ fhir:v "HH wavelet combination" ]
+  ] [
+     fhir:code [ fhir:v "KZAS" ] ;
+     fhir:display [ fhir:v "LLL wavelet combination" ]
+  ] [
+     fhir:code [ fhir:v "TY49" ] ;
+     fhir:display [ fhir:v "LLH wavelet combination" ]
+  ] [
+     fhir:code [ fhir:v "4KRX" ] ;
+     fhir:display [ fhir:v "LHL wavelet combination" ]
+  ] [
+     fhir:code [ fhir:v "UUV9" ] ;
+     fhir:display [ fhir:v "HLL wavelet combination" ]
+  ] [
+     fhir:code [ fhir:v "UIT8" ] ;
+     fhir:display [ fhir:v "LHH wavelet combination" ]
+  ] [
+     fhir:code [ fhir:v "QTIT" ] ;
+     fhir:display [ fhir:v "HHL wavelet combination" ]
+  ] [
+     fhir:code [ fhir:v "8LD2" ] ;
+     fhir:display [ fhir:v "HLH wavelet combination" ]
+  ] [
+     fhir:code [ fhir:v "OYUC" ] ;
+     fhir:display [ fhir:v "HHH wavelet combination" ]
+  ] [
+     fhir:code [ fhir:v "GCEK" ] ;
+     fhir:display [ fhir:v "wavelet decomposition level" ]
+  ] [
+     fhir:code [ fhir:v "PH3R" ] ;
+     fhir:display [ fhir:v "Separable wavelet decimated transform" ]
+  ] [
+     fhir:code [ fhir:v "CVCQ" ] ;
+     fhir:display [ fhir:v "Separable wavelet undecimated transform" ]
+  ] [
+     fhir:code [ fhir:v "LODD" ] ;
+     fhir:display [ fhir:v "Non-separable wavelet" ]
+  ] [
+     fhir:code [ fhir:v "389V" ] ;
+     fhir:display [ fhir:v "Non-separable wavelet family" ]
+  ] [
+     fhir:code [ fhir:v "GWM2" ] ;
+     fhir:display [ fhir:v "Shannon wavelet" ]
+  ] [
+     fhir:code [ fhir:v "PRT7" ] ;
+     fhir:display [ fhir:v "Simoncelli wavelet" ]
+  ] [
+     fhir:code [ fhir:v "AYRS" ] ;
+     fhir:display [ fhir:v "Riesz transformation" ]
+  ] [
+     fhir:code [ fhir:v "OC48" ] ;
+     fhir:display [ fhir:v "Riesz transformation order" ]
+  ] [
+     fhir:code [ fhir:v "1SD3" ] ;
+     fhir:display [ fhir:v "Riesz filter steering" ]
+  ] [
+     fhir:code [ fhir:v "XKP5" ] ;
+     fhir:display [ fhir:v "Image dimension" ]
+  ] [
+     fhir:code [ fhir:v "1F0N" ] ;
+     fhir:display [ fhir:v "k1-direction" ]
+  ] [
+     fhir:code [ fhir:v "M2EZ" ] ;
+     fhir:display [ fhir:v "k2-direction" ]
+  ] [
+     fhir:code [ fhir:v "R83H" ] ;
+     fhir:display [ fhir:v "k3-direction" ]
+  ] [
+     fhir:code [ fhir:v "Y4GJ" ] ;
+     fhir:display [ fhir:v "Convolution operation" ]
+  ] [
+     fhir:code [ fhir:v "YHT3" ] ;
+     fhir:display [ fhir:v "Aggregating intensities from a response map" ]
+  ] [
+     fhir:code [ fhir:v "5P3T" ] ;
+     fhir:display [ fhir:v "Response map" ]
+  ] [
+     fhir:code [ fhir:v "0J1M" ] ;
+     fhir:display [ fhir:v "modulus, magnitude or absolute response map" ]
+  ] [
+     fhir:code [ fhir:v "V530" ] ;
+     fhir:display [ fhir:v "angle, phase or argument response map" ]
+  ] [
+     fhir:code [ fhir:v "F7DI" ] ;
+     fhir:display [ fhir:v "real" ]
+  ] [
+     fhir:code [ fhir:v "LI3Y" ] ;
+     fhir:display [ fhir:v "imaginary" ]
+  ] [
+     fhir:code [ fhir:v "52" ] ;
+     fhir:display [ fhir:v "Intensity rounding: Describe how fractional Hounsfield Units are rounded to integer values after interpolation" ]
+  ] [
+     fhir:code [ fhir:v "56a" ] ;
+     fhir:display [ fhir:v "Discretisation method: Describe the method used to discretise image intensities" ]
+  ] [
+     fhir:code [ fhir:v "56b" ] ;
+     fhir:display [ fhir:v "Discretisation method: Describe the number of bins (FBN) or the bin size (FBS) used for discretisation" ]
+  ] [
+     fhir:code [ fhir:v "56c" ] ;
+     fhir:display [ fhir:v "Discretisation method: Describe the lowest intensity in the first bin for FBS discretisation" ]
+  ] [
+     fhir:code [ fhir:v "61" ] ;
+     fhir:display [ fhir:v "Software availability: Describe which software and version was used to compute image biomarkers" ]
+  ] [
+     fhir:code [ fhir:v "62" ] ;
+     fhir:display [ fhir:v "Texture matrix aggregation: Define how texture-matrix based biomarkers were computed from underlying texture matrices" ]
+  ] [
+     fhir:code [ fhir:v "63" ] ;
+     fhir:display [ fhir:v "Distance weighting: Describe which software and version was used to compute image biomarkers" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="fhir-osiris-example-analysis-mr-2"/>
+  <meta>
+    <profile value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/analysis"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation fhir-osiris-example-analysis-mr-2</b></p><a name="fhir-osiris-example-analysis-mr-2"> </a><a name="hcfhir-osiris-example-analysis-mr-2"> </a><a name="fhir-osiris-example-analysis-mr-2-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-analysis.html">Analysis</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{https://terminology.arkhn.com/osiris C37-2}">Imaging</span></p><p><b>subject</b>: <code>fhir-osiris-example-patient-ct-mr-2</code></p><p><b>effective</b>: 2018-10-12</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="https://terminology.arkhn.com/osiris"/>
+      <code value="C37-2"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="fhir-osiris-example-patient-ct-mr-2"/>
+  </subject>
+  <effectiveDateTime value="2018-10-12"/>
+</Observation>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="FusionType"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet FusionType</b></p><a name="FusionType"> </a><a name="hcFusionType"> </a><a name="FusionType-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LA26331-1/">LA26331-1</a></td><td>translocation</td></tr></table></li><li>Include these codes as defined in <code>https://github.com/siric-osiris/OSIRIS</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>O28-1</td><td>readthrough</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://ig-osiris.cancer.fr/ig/osiris/ValueSet/FusionType"/>
+  <version value="1.1.0"/>
+  <name value="FusionType"/>
+  <title value="Fusion Type Value Set"/>
+  <status value="draft"/>
+  <date value="2025-04-23T09:23:26+00:00"/>
+  <publisher value="institutcancer"/>
+  <contact>
+    <name value="institutcancer"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://cancer.fr"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="osiris@institutcancer.fr"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Aurélien JOBARD"/>
+    <telecom>
+      <system value="email"/>
+      <value value="osiris@institutcancer.fr"/>
+    </telecom>
+  </contact>
+  <description value="Fusion Type"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA26331-1"/>
+        <display value="translocation"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://github.com/siric-osiris/OSIRIS"/>
+      <concept>
+        <code value="O28-1"/>
+        <display value="readthrough"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

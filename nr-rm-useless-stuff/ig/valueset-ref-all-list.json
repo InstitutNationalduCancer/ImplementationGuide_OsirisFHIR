@@ -1,0 +1,3039 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administration-method-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTAdministrationMethodCodes",
+      "title" : "SNOMED CT Administration Method Codes",
+      "description" : "This value set includes some method codes from SNOMED CT - provided as an exemplar",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.97"],
+      "sources" : ["2.16.840.1.113883.4.642.3.97"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-imagingstudy-injection.html" : "Imaging Study Injection"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-patient.html" : "Oncology Patient",
+      "StructureDefinition-family-cancer-history.html" : "Family Cancer History"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-actuality",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdverseEventActuality",
+      "title" : "AdverseEventActuality",
+      "description" : "Overall nature of the adverse event, e.g. real or potential.",
+      "systems" : ["http://hl7.org/fhir/adverse-event-actuality"],
+      "oids" : ["2.16.840.1.113883.4.642.3.831"],
+      "sources" : ["2.16.840.1.113883.4.642.3.831"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-adverse-event.html" : "Oncologic Adverse Event"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdverseEventCategory",
+      "title" : "AdverseEventCategory",
+      "description" : "Overall categorization of the event, e.g. product-related or situational.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/adverse-event-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.833"],
+      "sources" : ["2.16.840.1.113883.4.642.3.833"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-adverse-event.html" : "Oncologic Adverse Event"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-causality-assess",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdverseEventCausalityAssessment",
+      "title" : "AdverseEventCausalityAssessment",
+      "description" : "Codes for the assessment of whether the entity caused the event.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.840"],
+      "sources" : ["2.16.840.1.113883.4.642.3.840"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-adverse-event.html" : "Oncologic Adverse Event"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-causality-method",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdverseEventCausalityMethod",
+      "title" : "AdverseEventCausalityMethod",
+      "description" : "TODO.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/adverse-event-causality-method"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.842"],
+      "sources" : ["2.16.840.1.113883.4.642.3.842"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-adverse-event.html" : "Oncologic Adverse Event"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-outcome",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdverseEventOutcome",
+      "title" : "AdverseEventOutcome",
+      "description" : "TODO (and should this be required?).",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/adverse-event-outcome"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.836"],
+      "sources" : ["2.16.840.1.113883.4.642.3.836"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-adverse-event.html" : "Oncologic Adverse Event"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adverse-event-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdverseEventSeverity",
+      "title" : "AdverseEventSeverity",
+      "description" : "The severity of the adverse event itself, in direct relation to the subject.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/adverse-event-severity"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.844"],
+      "sources" : ["2.16.840.1.113883.4.642.3.844"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-adverse-event.html" : "Oncologic Adverse Event"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/approach-site-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTAnatomicalStructureForAdministrationSiteCodes",
+      "title" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+      "description" : "This value set includes Anatomical Structure codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.346"],
+      "sources" : ["2.16.840.1.113883.4.642.3.346"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-imagingstudy-injection.html" : "Imaging Study Injection"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-fusion.html" : "Gene Fusion",
+      "StructureDefinition-vital-status.html" : "Vital Status",
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-onco-tnm.html" : "TNM",
+      "StructureDefinition-radiomics-criteria.html" : "Radiomics Criteria",
+      "StructureDefinition-radiotherapy-volume.html" : "Radiotherapy Volume Profile",
+      "StructureDefinition-cause-of-death.html" : "Cause Of Death",
+      "StructureDefinition-biomarker.html" : "Biomarker",
+      "StructureDefinition-expression.html" : "Gene Expression",
+      "StructureDefinition-radiomics-Image-filters.html" : "Radiomics Image Filters",
+      "StructureDefinition-roi-segmentation.html" : "ROI segmentation",
+      "StructureDefinition-sequencing-analysis.html" : "Sequencing Analysis",
+      "StructureDefinition-radiotherapy-course-summary.html" : "Radiotherapy course Summary",
+      "StructureDefinition-radiotherapy-phase.html" : "Radiotherapy Phase",
+      "StructureDefinition-radiotherapy-plan.html" : "Radiotherapy Plan",
+      "StructureDefinition-performance-status.html" : "Performance Status",
+      "StructureDefinition-onco-surgery.html" : "Oncology Surgery",
+      "StructureDefinition-related-pathology.html" : "Oncology Patient Related Pathology",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-analysis.html" : "Analysis",
+      "StructureDefinition-response-evaluation.html" : "Response Evaluation",
+      "StructureDefinition-radiomics-features.html" : "Radiomics Features",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/bodysite-laterality",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Laterality",
+      "title" : "Laterality",
+      "description" : "Laterality: SNOMED-CT concepts for 'left', 'right', and 'bilateral'",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.287"],
+      "sources" : ["2.16.840.1.113883.4.642.3.287"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-imagingstudy.html" : "Imaging Study"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/bodystructure-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMorphologicAbnormalities",
+      "title" : "SNOMED CT Morphologic Abnormalities",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.142"],
+      "sources" : ["2.16.840.1.113883.4.642.3.142"],
+      "uses" : {
+      },
+      "StructureDefinition-radiotherapy-volume.html" : "Radiotherapy Volume Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/bodystructure-relative-location",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "BodystructureLocationQualifier",
+      "title" : "Bodystructure Location Qualifier",
+      "description" : "SNOMED-CT concepts modifying the anatomic location",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.140"],
+      "sources" : ["2.16.840.1.113883.4.642.3.140"],
+      "uses" : {
+      },
+      "StructureDefinition-radiotherapy-volume.html" : "Radiotherapy Volume Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityKind",
+      "title" : "Care Plan Activity Kind",
+      "description" : "Resource types defined as part of FHIR that can be represented as in-line definitions of a care plan activity.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.145"],
+      "sources" : ["2.16.840.1.113883.4.642.3.145"],
+      "uses" : {
+      },
+      "StructureDefinition-treatment.html" : "Treatment"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-outcome",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityOutcome",
+      "title" : "Care Plan Activity Outcome",
+      "description" : "Example codes indicating the outcome of a care plan activity. Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.149"],
+      "sources" : ["2.16.840.1.113883.4.642.3.149"],
+      "uses" : {
+      },
+      "StructureDefinition-treatment.html" : "Treatment"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityStatus",
+      "title" : "CarePlanActivityStatus",
+      "description" : "Codes that reflect the current state of a care plan activity within its overall life cycle.",
+      "systems" : ["http://hl7.org/fhir/care-plan-activity-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.146"],
+      "sources" : ["2.16.840.1.113883.4.642.3.146"],
+      "uses" : {
+      },
+      "StructureDefinition-treatment.html" : "Treatment"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanIntent",
+      "title" : "Care Plan Intent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a care plan.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.150"],
+      "sources" : ["2.16.840.1.113883.4.642.3.150"],
+      "uses" : {
+      },
+      "StructureDefinition-treatment.html" : "Treatment"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/chromosome-human",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "chromosome-human",
+      "title" : "chromosome-human",
+      "description" : "Chromosome number for human.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/chromosome-human"],
+      "oids" : ["2.16.840.1.113883.4.642.3.224"],
+      "sources" : ["2.16.840.1.113883.4.642.3.224"],
+      "uses" : {
+      },
+      "StructureDefinition-genome-entity.html" : "Genome Entity",
+      "StructureDefinition-annotation-reference.html" : "Annotation Reference"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.232"],
+      "sources" : ["2.16.840.1.113883.4.642.3.232"],
+      "uses" : {
+      },
+      "StructureDefinition-treatment.html" : "Treatment",
+      "StructureDefinition-family-cancer-history.html" : "Family Cancer History"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionCategoryCodes",
+      "title" : "Condition Category Codes",
+      "description" : "Preferred value set for Condition Categories.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.162"],
+      "sources" : ["2.16.840.1.113883.4.642.3.162"],
+      "uses" : {
+      },
+      "StructureDefinition-related-pathology.html" : "Oncology Patient Related Pathology",
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+      "oids" : ["2.16.840.1.113883.4.642.3.164"],
+      "sources" : ["2.16.840.1.113883.4.642.3.164"],
+      "uses" : {
+      },
+      "StructureDefinition-related-pathology.html" : "Oncology Patient Related Pathology",
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/Problem/DiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.161"],
+      "sources" : ["2.16.840.1.113883.4.642.3.161"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-surgery.html" : "Oncology Surgery",
+      "StructureDefinition-related-pathology.html" : "Oncology Patient Related Pathology",
+      "StructureDefinition-clinical-trial.html" : "Oncology Clinical Trial",
+      "StructureDefinition-onco-medication-statement.html" : "Oncology-related Medication Statement",
+      "StructureDefinition-radiotherapy-course-summary.html" : "Radiotherapy course Summary",
+      "StructureDefinition-radiotherapy-phase.html" : "Radiotherapy Phase",
+      "StructureDefinition-radiotherapy-plan.html" : "Radiotherapy Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-outcome",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionOutcomeCodes",
+      "title" : "Condition Outcome Codes",
+      "description" : "Example value set for condition outcomes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.967"],
+      "sources" : ["2.16.840.1.113883.4.642.3.967"],
+      "uses" : {
+      },
+      "StructureDefinition-family-cancer-history.html" : "Family Cancer History"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/DiagnosisSeverity",
+      "title" : "Condition/Diagnosis Severity",
+      "description" : "Preferred value set for Condition/Diagnosis severity grading.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.168"],
+      "sources" : ["2.16.840.1.113883.4.642.3.168"],
+      "uses" : {
+      },
+      "StructureDefinition-related-pathology.html" : "Oncology Patient Related Pathology",
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStage",
+      "title" : "Condition Stage",
+      "description" : "Example value set for stages of cancer and other conditions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.170"],
+      "sources" : ["2.16.840.1.113883.4.642.3.170"],
+      "uses" : {
+      },
+      "StructureDefinition-related-pathology.html" : "Oncology Patient Related Pathology",
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStageType",
+      "title" : "Condition Stage Type",
+      "description" : "Example value set for the type of stages of cancer and other conditions",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.171"],
+      "sources" : ["2.16.840.1.113883.4.642.3.171"],
+      "uses" : {
+      },
+      "StructureDefinition-related-pathology.html" : "Oncology Patient Related Pathology",
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.166"],
+      "sources" : ["2.16.840.1.113883.4.642.3.166"],
+      "uses" : {
+      },
+      "StructureDefinition-related-pathology.html" : "Oncology Patient Related Pathology",
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/consent-action",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentActionCodes",
+      "title" : "Consent Action Codes",
+      "description" : "This value set includes sample Consent Action codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/consentaction"],
+      "oids" : ["2.16.840.1.113883.4.642.3.753"],
+      "sources" : ["2.16.840.1.113883.4.642.3.753"],
+      "uses" : {
+      },
+      "StructureDefinition-genetic-consent.html" : "Consent for Genetic Data Usage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/consent-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentCategoryCodes",
+      "title" : "Consent Category Codes",
+      "description" : "This value set includes sample Consent Directive Type codes, including several consent directive related LOINC codes; HL7 VALUE SET: ActConsentType(2.16.840.1.113883.1.11.19897); examples of US realm consent directive legal descriptions and references to online and/or downloadable forms such as the SSA-827 Authorization to Disclose Information to the Social Security Administration; and other anticipated consent directives related to participation in a clinical trial, medical procedures, reproductive procedures; health care directive (Living Will); advance directive, do not resuscitate (DNR); Physician Orders for Life-Sustaining Treatment (POLST)",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "http://loinc.org",
+        "http://terminology.hl7.org/CodeSystem/consentcategorycodes"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.751"],
+      "sources" : ["2.16.840.1.113883.4.642.3.751"],
+      "uses" : {
+      },
+      "StructureDefinition-genetic-consent.html" : "Consent for Genetic Data Usage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/consent-content-class",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentContentClass",
+      "title" : "Consent Content Class",
+      "description" : "This value set includes the FHIR resource types, along with some other important content class codes",
+      "systems" : [
+        "urn:ietf:rfc:3986",
+        "urn:ietf:bcp:13",
+        "http://hl7.org/fhir/resource-types",
+        "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.747"],
+      "sources" : ["2.16.840.1.113883.4.642.3.747"],
+      "uses" : {
+      },
+      "StructureDefinition-genetic-consent.html" : "Consent for Genetic Data Usage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/consent-content-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentContentCodes",
+      "title" : "Consent Content Codes",
+      "description" : "This example value set contains all LOINC code",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.748"],
+      "sources" : ["2.16.840.1.113883.4.642.3.748"],
+      "uses" : {
+      },
+      "StructureDefinition-genetic-consent.html" : "Consent for Genetic Data Usage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/consent-data-meaning",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentDataMeaning",
+      "title" : "ConsentDataMeaning",
+      "description" : "How a resource reference is interpreted when testing consent restrictions.",
+      "systems" : ["http://hl7.org/fhir/consent-data-meaning"],
+      "oids" : ["2.16.840.1.113883.4.642.3.759"],
+      "sources" : ["2.16.840.1.113883.4.642.3.759"],
+      "uses" : {
+      },
+      "StructureDefinition-genetic-consent.html" : "Consent for Genetic Data Usage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/consent-policy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentPolicyRuleCodes",
+      "title" : "Consent PolicyRule Codes",
+      "description" : "This value set includes sample Regulatory consent policy types from the US and other regions.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/consentpolicycodes"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1014"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1014"],
+      "uses" : {
+      },
+      "StructureDefinition-genetic-consent.html" : "Consent for Genetic Data Usage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/consent-provision-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentProvisionType",
+      "title" : "ConsentProvisionType",
+      "description" : "How a rule statement is applied, such as adding additional consent or removing consent.",
+      "systems" : ["http://hl7.org/fhir/consent-provision-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.757"],
+      "sources" : ["2.16.840.1.113883.4.642.3.757"],
+      "uses" : {
+      },
+      "StructureDefinition-genetic-consent.html" : "Consent for Genetic Data Usage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/consent-scope",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentScopeCodes",
+      "title" : "Consent Scope Codes",
+      "description" : "This value set includes the four Consent scope codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/consentscope"],
+      "oids" : ["2.16.840.1.113883.4.642.3.761"],
+      "sources" : ["2.16.840.1.113883.4.642.3.761"],
+      "uses" : {
+      },
+      "StructureDefinition-genetic-consent.html" : "Consent for Genetic Data Usage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/consent-state-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentState",
+      "title" : "ConsentState",
+      "description" : "Indicates the state of the consent.",
+      "systems" : ["http://hl7.org/fhir/consent-state-codes"],
+      "oids" : ["2.16.840.1.113883.4.642.3.755"],
+      "sources" : ["2.16.840.1.113883.4.642.3.755"],
+      "uses" : {
+      },
+      "StructureDefinition-genetic-consent.html" : "Consent for Genetic Data Usage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/contactentity-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.416"],
+      "sources" : ["2.16.840.1.113883.4.642.3.416"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-organization.html" : "Cancer Organization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-fusion.html" : "Gene Fusion",
+      "StructureDefinition-vital-status.html" : "Vital Status",
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-onco-tnm.html" : "TNM",
+      "StructureDefinition-radiomics-criteria.html" : "Radiomics Criteria",
+      "StructureDefinition-cause-of-death.html" : "Cause Of Death",
+      "StructureDefinition-biomarker.html" : "Biomarker",
+      "StructureDefinition-expression.html" : "Gene Expression",
+      "StructureDefinition-radiomics-Image-filters.html" : "Radiomics Image Filters",
+      "StructureDefinition-roi-segmentation.html" : "ROI segmentation",
+      "StructureDefinition-sequencing-analysis.html" : "Sequencing Analysis",
+      "StructureDefinition-performance-status.html" : "Performance Status",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-analysis.html" : "Analysis",
+      "StructureDefinition-response-evaluation.html" : "Response Evaluation",
+      "StructureDefinition-radiomics-features.html" : "Radiomics Features",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "systems" : ["http://hl7.org/fhir/days-of-week"],
+      "oids" : ["2.16.840.1.113883.4.642.3.512"],
+      "sources" : ["2.16.840.1.113883.4.642.3.512"],
+      "uses" : {
+      },
+      "StructureDefinition-imaging-service.html" : "Imaging Service"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-action",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureDeviceActionCodes",
+      "title" : "Procedure Device Action Codes",
+      "description" : "Example codes indicating the change that happened to the device during the procedure.  Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.425"],
+      "sources" : ["2.16.840.1.113883.4.642.3.425"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-surgery.html" : "Oncology Surgery",
+      "StructureDefinition-radiotherapy-course-summary.html" : "Radiotherapy course Summary",
+      "StructureDefinition-radiotherapy-phase.html" : "Radiotherapy Phase",
+      "StructureDefinition-radiotherapy-plan.html" : "Radiotherapy Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-kind",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FHIRDeviceTypes",
+      "title" : "FHIR Device Types",
+      "description" : "Codes used to identify medical devices. Includes concepts from SNOMED CT (http://www.snomed.org/) where concept is-a 49062001 (Device)  and is provided as a suggestive example.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.208"],
+      "sources" : ["2.16.840.1.113883.4.642.3.208"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-surgery.html" : "Oncology Surgery",
+      "StructureDefinition-radiotherapy-course-summary.html" : "Radiotherapy course Summary",
+      "StructureDefinition-radiotherapy-phase.html" : "Radiotherapy Phase",
+      "StructureDefinition-radiotherapy-plan.html" : "Radiotherapy Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-nametype",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DeviceNameType",
+      "title" : "DeviceNameType",
+      "description" : "The type of name the device is referred by.",
+      "systems" : ["http://hl7.org/fhir/device-nametype"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1083"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1083"],
+      "uses" : {
+      },
+      "StructureDefinition-sequencing-device.html" : "Sequencing Device",
+      "StructureDefinition-imaging-device.html" : "Imaging Device"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FHIRDeviceStatus",
+      "title" : "FHIRDeviceStatus",
+      "description" : "The availability status of the device.",
+      "systems" : ["http://hl7.org/fhir/device-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.209"],
+      "sources" : ["2.16.840.1.113883.4.642.3.209"],
+      "uses" : {
+      },
+      "StructureDefinition-sequencing-device.html" : "Sequencing Device",
+      "StructureDefinition-imaging-device.html" : "Imaging Device"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FHIRDeviceStatusReason",
+      "title" : "FHIRDeviceStatusReason",
+      "description" : "The availability status reason of the device.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/device-status-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1081"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1081"],
+      "uses" : {
+      },
+      "StructureDefinition-sequencing-device.html" : "Sequencing Device",
+      "StructureDefinition-imaging-device.html" : "Imaging Device"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DeviceType",
+      "title" : "Device Type",
+      "description" : "Codes used to identify medical devices. Includes concepts from SNOMED CT (http://www.snomed.org/) where concept is-a 49062001 (Device)  and is provided as a suggestive example.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1376"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1376"],
+      "uses" : {
+      },
+      "StructureDefinition-imaging-device.html" : "Imaging Device"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/endpoint-connection-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EndpointConnectionType",
+      "title" : "Endpoint Connection Type",
+      "description" : "This is an example value set defined by the FHIR project, that could be used to represent possible connection type profile values.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.498"],
+      "sources" : ["2.16.840.1.113883.4.642.3.498"],
+      "uses" : {
+      },
+      "StructureDefinition-imaging-pacs.html" : "Location to the PACS server"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/endpoint-payload-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EndpointPayloadType",
+      "title" : "Endpoint Payload Type",
+      "description" : "This is an example value set defined by the FHIR project, that could be used to represent possible payload document types.",
+      "systems" : [
+        "urn:oid:1.3.6.1.4.1.19376.1.2.3",
+        "http://terminology.hl7.org/CodeSystem/endpoint-payload-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.496"],
+      "sources" : ["2.16.840.1.113883.4.642.3.496"],
+      "uses" : {
+      },
+      "StructureDefinition-imaging-pacs.html" : "Location to the PACS server"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/endpoint-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EndpointStatus",
+      "title" : "EndpointStatus",
+      "description" : "The status of the endpoint.",
+      "systems" : ["http://hl7.org/fhir/endpoint-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.494"],
+      "sources" : ["2.16.840.1.113883.4.642.3.494"],
+      "uses" : {
+      },
+      "StructureDefinition-imaging-pacs.html" : "Location to the PACS server"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/event-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EventStatus",
+      "title" : "EventStatus",
+      "description" : "Codes identifying the lifecycle stage of an event.",
+      "systems" : ["http://hl7.org/fhir/event-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.109"],
+      "sources" : ["2.16.840.1.113883.4.642.3.109"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-surgery.html" : "Oncology Surgery",
+      "StructureDefinition-radiotherapy-course-summary.html" : "Radiotherapy course Summary",
+      "StructureDefinition-radiotherapy-phase.html" : "Radiotherapy Phase",
+      "StructureDefinition-radiotherapy-plan.html" : "Radiotherapy Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/history-absent-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FamilyHistoryAbsentReason",
+      "title" : "FamilyHistoryAbsentReason",
+      "description" : "Codes describing the reason why a family member's history is not available.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/history-absent-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.269"],
+      "sources" : ["2.16.840.1.113883.4.642.3.269"],
+      "uses" : {
+      },
+      "StructureDefinition-family-cancer-history.html" : "Family Cancer History"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/history-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FamilyHistoryStatus",
+      "title" : "FamilyHistoryStatus",
+      "description" : "A code that identifies the status of the family history record.",
+      "systems" : ["http://hl7.org/fhir/history-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.267"],
+      "sources" : ["2.16.840.1.113883.4.642.3.267"],
+      "uses" : {
+      },
+      "StructureDefinition-family-cancer-history.html" : "Family Cancer History"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-roi-segmentation.html" : "ROI segmentation",
+      "StructureDefinition-onco-organization.html" : "Cancer Organization",
+      "StructureDefinition-radiotherapy-plan.html" : "Radiotherapy Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-roi-segmentation.html" : "ROI segmentation",
+      "StructureDefinition-onco-organization.html" : "Cancer Organization",
+      "StructureDefinition-radiotherapy-plan.html" : "Radiotherapy Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/imagingstudy-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImagingStudyStatus",
+      "title" : "ImagingStudyStatus",
+      "description" : "The status of the ImagingStudy.",
+      "systems" : ["http://hl7.org/fhir/imagingstudy-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.990"],
+      "sources" : ["2.16.840.1.113883.4.642.3.990"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-imagingstudy.html" : "Imaging Study"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/jurisdiction",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Jurisdiction ValueSet",
+      "title" : "Jurisdiction",
+      "description" : "This value set defines a base set of codes for country, country subdivision and region    for indicating where a resource is intended to be used.   \r\n   \r\n   Note: The codes for countries and country subdivisions are taken from    [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)    while the codes for \"supra-national\" regions are from    [UN Standard country or area codes for statistical use (M49)](http://unstats.un.org/unsd/methods/m49/m49.htm).",
+      "systems" : [
+        "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "urn:iso:std:iso:3166",
+        "urn:iso:std:iso:3166:-2"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.48"],
+      "sources" : ["2.16.840.1.113883.4.642.3.48"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-trial.html" : "Oncology Clinical Trial"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-fusion.html" : "Gene Fusion",
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-radiotherapy-volume.html" : "Radiotherapy Volume Profile",
+      "StructureDefinition-cause-of-death.html" : "Cause Of Death",
+      "StructureDefinition-onco-biological-sample.html" : "Biological Sample",
+      "StructureDefinition-data-validation.html" : "Validation",
+      "StructureDefinition-expression.html" : "Gene Expression",
+      "StructureDefinition-onco-imagingstudy-injection.html" : "Imaging Study Injection",
+      "StructureDefinition-onco-patient.html" : "Oncology Patient",
+      "StructureDefinition-roi-segmentation.html" : "ROI segmentation",
+      "StructureDefinition-sequencing-device.html" : "Sequencing Device",
+      "StructureDefinition-radiotherapy-course-summary.html" : "Radiotherapy course Summary",
+      "StructureDefinition-family-cancer-history.html" : "Family Cancer History",
+      "StructureDefinition-imaging-device.html" : "Imaging Device",
+      "StructureDefinition-onco-biological-contrast.html" : "Imaging Study Injection Contrast",
+      "StructureDefinition-radiotherapy-plan.html" : "Radiotherapy Plan",
+      "StructureDefinition-performance-status.html" : "Performance Status",
+      "StructureDefinition-onco-surgery.html" : "Oncology Surgery",
+      "StructureDefinition-related-pathology.html" : "Oncology Patient Related Pathology",
+      "StructureDefinition-clinical-trial.html" : "Oncology Clinical Trial",
+      "StructureDefinition-genetic-consent.html" : "Consent for Genetic Data Usage",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-onco-medication-statement.html" : "Oncology-related Medication Statement",
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event",
+      "StructureDefinition-clinical-trial-subject.html" : "Clinical Trial Subject",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism",
+      "StructureDefinition-vital-status.html" : "Vital Status",
+      "StructureDefinition-onco-tnm.html" : "TNM",
+      "StructureDefinition-radiomics-criteria.html" : "Radiomics Criteria",
+      "StructureDefinition-biomarker.html" : "Biomarker",
+      "StructureDefinition-imaging-pacs.html" : "Location to the PACS server",
+      "StructureDefinition-radiomics-Image-filters.html" : "Radiomics Image Filters",
+      "StructureDefinition-sequencing-analysis.html" : "Sequencing Analysis",
+      "StructureDefinition-imaging-service.html" : "Imaging Service",
+      "StructureDefinition-radiotherapy-phase.html" : "Radiotherapy Phase",
+      "StructureDefinition-onco-adverse-event.html" : "Oncologic Adverse Event",
+      "StructureDefinition-genome-entity.html" : "Genome Entity",
+      "StructureDefinition-treatment.html" : "Treatment",
+      "StructureDefinition-molecular-sequence-5-prime.html" : "5 Prime Molecular Sequence",
+      "StructureDefinition-analysis.html" : "Analysis",
+      "StructureDefinition-onco-imagingstudy.html" : "Imaging Study",
+      "StructureDefinition-response-evaluation.html" : "Response Evaluation",
+      "StructureDefinition-onco-organization.html" : "Cancer Organization",
+      "StructureDefinition-annotation-reference.html" : "Annotation Reference",
+      "StructureDefinition-radiomics-features.html" : "Radiomics Features",
+      "StructureDefinition-molecular-sequence-3-prime.html" : "3 Prime Molecular Sequence"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-patient.html" : "Oncology Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationMode",
+      "title" : "LocationMode",
+      "description" : "Indicates whether a resource instance represents a specific location or a class of locations.",
+      "systems" : ["http://hl7.org/fhir/location-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.330"],
+      "sources" : ["2.16.840.1.113883.4.642.3.330"],
+      "uses" : {
+      },
+      "StructureDefinition-imaging-service.html" : "Imaging Service"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationType",
+      "title" : "Location type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/location-physical-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.328"],
+      "sources" : ["2.16.840.1.113883.4.642.3.328"],
+      "uses" : {
+      },
+      "StructureDefinition-imaging-service.html" : "Imaging Service"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationStatus",
+      "title" : "LocationStatus",
+      "description" : "Indicates whether the location is still in use.",
+      "systems" : ["http://hl7.org/fhir/location-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.332"],
+      "sources" : ["2.16.840.1.113883.4.642.3.332"],
+      "uses" : {
+      },
+      "StructureDefinition-imaging-service.html" : "Imaging Service"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ManifestationAndSymptomCodes",
+      "title" : "Manifestation and Symptom Codes",
+      "description" : "Example value set for Manifestation and Symptom codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.169"],
+      "sources" : ["2.16.840.1.113883.4.642.3.169"],
+      "uses" : {
+      },
+      "StructureDefinition-related-pathology.html" : "Oncology Patient Related Pathology",
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Marital Status Codes",
+      "title" : "MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-patient.html" : "Oncology Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/med-admin-perform-function",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationAdministration Performer Function Codes",
+      "title" : "Medication administration  performer  function  codes",
+      "description" : "MedicationAdministration Performer Function Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/med-admin-perform-function"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.349"],
+      "sources" : ["2.16.840.1.113883.4.642.3.349"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-imagingstudy-injection.html" : "Imaging Study Injection"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-admin-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationAdministration Category Codes",
+      "title" : "Medication administration  category  codes",
+      "description" : "MedicationAdministration Category Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medication-admin-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.347"],
+      "sources" : ["2.16.840.1.113883.4.642.3.347"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-imagingstudy-injection.html" : "Imaging Study Injection"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-admin-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationAdministration Status Codes",
+      "title" : "Medication administration  status  codes",
+      "description" : "MedicationAdministration Status Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medication-admin-status"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.340"],
+      "sources" : ["2.16.840.1.113883.4.642.3.340"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-imagingstudy-injection.html" : "Imaging Study Injection"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.375"],
+      "sources" : ["2.16.840.1.113883.4.642.3.375"],
+      "uses" : {
+      },
+      "StructureDefinition-treatment.html" : "Treatment",
+      "StructureDefinition-onco-medication-statement.html" : "Oncology-related Medication Statement",
+      "StructureDefinition-onco-biological-contrast.html" : "Imaging Study Injection Contrast"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-form-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTFormCodes",
+      "title" : "SNOMED CT Form Codes",
+      "description" : "This value set includes all dose form codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.374"],
+      "sources" : ["2.16.840.1.113883.4.642.3.374"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-biological-contrast.html" : "Imaging Study Injection Contrast"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-statement-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication usage category codes",
+      "title" : "Medication usage category codes",
+      "description" : "Medication Status Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medication-statement-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.370"],
+      "sources" : ["2.16.840.1.113883.4.642.3.370"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-medication-statement.html" : "Oncology-related Medication Statement"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-statement-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication Status Codes",
+      "title" : "Medication  status  codes",
+      "description" : "Medication Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-statement-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.367"],
+      "sources" : ["2.16.840.1.113883.4.642.3.367"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-medication-statement.html" : "Oncology-related Medication Statement"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication Status Codes",
+      "title" : "Medication  status  codes",
+      "description" : "Medication Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.376"],
+      "sources" : ["2.16.840.1.113883.4.642.3.376"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-biological-contrast.html" : "Imaging Study Injection Contrast"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/mimetypes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Mime Types",
+      "title" : "MimeType",
+      "description" : "This value set includes all possible codes from BCP-13 (http://tools.ietf.org/html/bcp13)",
+      "systems" : ["urn:ietf:bcp:13"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1024"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1024"],
+      "uses" : {
+      },
+      "StructureDefinition-imaging-pacs.html" : "Location to the PACS server"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.403"],
+      "sources" : ["2.16.840.1.113883.4.642.3.403"],
+      "uses" : {
+      },
+      "StructureDefinition-fusion.html" : "Gene Fusion",
+      "StructureDefinition-vital-status.html" : "Vital Status",
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-onco-tnm.html" : "TNM",
+      "StructureDefinition-radiomics-criteria.html" : "Radiomics Criteria",
+      "StructureDefinition-cause-of-death.html" : "Cause Of Death",
+      "StructureDefinition-biomarker.html" : "Biomarker",
+      "StructureDefinition-expression.html" : "Gene Expression",
+      "StructureDefinition-radiomics-Image-filters.html" : "Radiomics Image Filters",
+      "StructureDefinition-roi-segmentation.html" : "ROI segmentation",
+      "StructureDefinition-sequencing-analysis.html" : "Sequencing Analysis",
+      "StructureDefinition-performance-status.html" : "Performance Status",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-analysis.html" : "Analysis",
+      "StructureDefinition-response-evaluation.html" : "Response Evaluation",
+      "StructureDefinition-radiomics-features.html" : "Radiomics Features",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.396"],
+      "uses" : {
+      },
+      "StructureDefinition-fusion.html" : "Gene Fusion",
+      "StructureDefinition-vital-status.html" : "Vital Status",
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-onco-tnm.html" : "TNM",
+      "StructureDefinition-radiomics-criteria.html" : "Radiomics Criteria",
+      "StructureDefinition-cause-of-death.html" : "Cause Of Death",
+      "StructureDefinition-biomarker.html" : "Biomarker",
+      "StructureDefinition-expression.html" : "Gene Expression",
+      "StructureDefinition-radiomics-Image-filters.html" : "Radiomics Image Filters",
+      "StructureDefinition-roi-segmentation.html" : "ROI segmentation",
+      "StructureDefinition-sequencing-analysis.html" : "Sequencing Analysis",
+      "StructureDefinition-performance-status.html" : "Performance Status",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-analysis.html" : "Analysis",
+      "StructureDefinition-response-evaluation.html" : "Response Evaluation",
+      "StructureDefinition-radiomics-features.html" : "Radiomics Features",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.399"],
+      "sources" : ["2.16.840.1.113883.4.642.3.399"],
+      "uses" : {
+      },
+      "StructureDefinition-fusion.html" : "Gene Fusion",
+      "StructureDefinition-vital-status.html" : "Vital Status",
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-onco-tnm.html" : "TNM",
+      "StructureDefinition-radiomics-criteria.html" : "Radiomics Criteria",
+      "StructureDefinition-cause-of-death.html" : "Cause Of Death",
+      "StructureDefinition-biomarker.html" : "Biomarker",
+      "StructureDefinition-expression.html" : "Gene Expression",
+      "StructureDefinition-radiomics-Image-filters.html" : "Radiomics Image Filters",
+      "StructureDefinition-roi-segmentation.html" : "ROI segmentation",
+      "StructureDefinition-sequencing-analysis.html" : "Sequencing Analysis",
+      "StructureDefinition-performance-status.html" : "Performance Status",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-analysis.html" : "Analysis",
+      "StructureDefinition-response-evaluation.html" : "Response Evaluation",
+      "StructureDefinition-radiomics-features.html" : "Radiomics Features",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.395"],
+      "sources" : ["2.16.840.1.113883.4.642.3.395"],
+      "uses" : {
+      },
+      "StructureDefinition-fusion.html" : "Gene Fusion",
+      "StructureDefinition-vital-status.html" : "Vital Status",
+      "StructureDefinition-onco-tnm.html" : "TNM",
+      "StructureDefinition-radiomics-criteria.html" : "Radiomics Criteria",
+      "StructureDefinition-cause-of-death.html" : "Cause Of Death",
+      "StructureDefinition-biomarker.html" : "Biomarker",
+      "StructureDefinition-expression.html" : "Gene Expression",
+      "StructureDefinition-radiomics-Image-filters.html" : "Radiomics Image Filters",
+      "StructureDefinition-roi-segmentation.html" : "ROI segmentation",
+      "StructureDefinition-performance-status.html" : "Performance Status",
+      "StructureDefinition-analysis.html" : "Analysis",
+      "StructureDefinition-response-evaluation.html" : "Response Evaluation",
+      "StructureDefinition-radiomics-features.html" : "Radiomics Features"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.400"],
+      "sources" : ["2.16.840.1.113883.4.642.3.400"],
+      "uses" : {
+      },
+      "StructureDefinition-fusion.html" : "Gene Fusion",
+      "StructureDefinition-vital-status.html" : "Vital Status",
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-onco-tnm.html" : "TNM",
+      "StructureDefinition-radiomics-criteria.html" : "Radiomics Criteria",
+      "StructureDefinition-cause-of-death.html" : "Cause Of Death",
+      "StructureDefinition-biomarker.html" : "Biomarker",
+      "StructureDefinition-expression.html" : "Gene Expression",
+      "StructureDefinition-radiomics-Image-filters.html" : "Radiomics Image Filters",
+      "StructureDefinition-roi-segmentation.html" : "ROI segmentation",
+      "StructureDefinition-sequencing-analysis.html" : "Sequencing Analysis",
+      "StructureDefinition-performance-status.html" : "Performance Status",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-analysis.html" : "Analysis",
+      "StructureDefinition-response-evaluation.html" : "Response Evaluation",
+      "StructureDefinition-radiomics-features.html" : "Radiomics Features",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/organization-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/organization-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.414"],
+      "sources" : ["2.16.840.1.113883.4.642.3.414"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-organization.html" : "Cancer Organization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/orientation-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "orientationType",
+      "title" : "orientationType",
+      "description" : "Type for orientation.",
+      "systems" : ["http://hl7.org/fhir/orientation-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.987"],
+      "sources" : ["2.16.840.1.113883.4.642.3.987"],
+      "uses" : {
+      },
+      "StructureDefinition-genome-entity.html" : "Genome Entity",
+      "StructureDefinition-molecular-sequence-5-prime.html" : "5 Prime Molecular Sequence",
+      "StructureDefinition-annotation-reference.html" : "Annotation Reference",
+      "StructureDefinition-molecular-sequence-3-prime.html" : "3 Prime Molecular Sequence"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-patient.html" : "Oncology Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/performer-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedurePerformerRoleCodes",
+      "title" : "Procedure Performer Role Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a role of a procedure performer.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.433"],
+      "sources" : ["2.16.840.1.113883.4.642.3.433"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-surgery.html" : "Oncology Surgery",
+      "StructureDefinition-radiotherapy-course-summary.html" : "Radiotherapy course Summary",
+      "StructureDefinition-radiotherapy-phase.html" : "Radiotherapy Phase",
+      "StructureDefinition-radiotherapy-plan.html" : "Radiotherapy Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureCategoryCodes(SNOMEDCT)",
+      "title" : "Procedure Category Codes (SNOMED CT)",
+      "description" : "Procedure Category code: A selection of relevant SNOMED CT codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.430"],
+      "sources" : ["2.16.840.1.113883.4.642.3.430"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-surgery.html" : "Oncology Surgery",
+      "StructureDefinition-radiotherapy-course-summary.html" : "Radiotherapy course Summary",
+      "StructureDefinition-radiotherapy-phase.html" : "Radiotherapy Phase",
+      "StructureDefinition-radiotherapy-plan.html" : "Radiotherapy Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureCodes(SNOMEDCT)",
+      "title" : "Procedure Codes (SNOMED CT)",
+      "description" : "Procedure Code: All SNOMED CT procedure codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.427"],
+      "sources" : ["2.16.840.1.113883.4.642.3.427"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-surgery.html" : "Oncology Surgery",
+      "StructureDefinition-treatment.html" : "Treatment",
+      "StructureDefinition-radiotherapy-course-summary.html" : "Radiotherapy course Summary",
+      "StructureDefinition-radiotherapy-phase.html" : "Radiotherapy Phase",
+      "StructureDefinition-radiotherapy-plan.html" : "Radiotherapy Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-followup",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureFollowUpCodes(SNOMEDCT)",
+      "title" : "Procedure Follow up Codes (SNOMED CT)",
+      "description" : "Procedure follow up codes: A selection of SNOMED CT codes relevant to procedure follow up.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.429"],
+      "sources" : ["2.16.840.1.113883.4.642.3.429"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-surgery.html" : "Oncology Surgery",
+      "StructureDefinition-radiotherapy-course-summary.html" : "Radiotherapy course Summary",
+      "StructureDefinition-radiotherapy-phase.html" : "Radiotherapy Phase",
+      "StructureDefinition-radiotherapy-plan.html" : "Radiotherapy Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-not-performed-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ProcedureNotPerformedReason(SNOMED-CT)",
+      "title" : "Procedure Not Performed Reason (SNOMED-CT)",
+      "description" : "Situation codes describing the reason that a procedure, which might otherwise be expected, was not performed, or a procedure that was started and was not completed. Consists of SNOMED CT codes, children of procedure contraindicated (183932001), procedure discontinued (416406003), procedure not done (416237000), procedure not indicated (428119001), procedure not offered (416064006), procedure not wanted (416432009), procedure refused (183944003), and procedure stopped (394908001).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.431"],
+      "sources" : ["2.16.840.1.113883.4.642.3.431"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-surgery.html" : "Oncology Surgery",
+      "StructureDefinition-radiotherapy-course-summary.html" : "Radiotherapy course Summary",
+      "StructureDefinition-radiotherapy-phase.html" : "Radiotherapy Phase",
+      "StructureDefinition-radiotherapy-plan.html" : "Radiotherapy Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-outcome",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureOutcomeCodes(SNOMEDCT)",
+      "title" : "Procedure Outcome Codes (SNOMED CT)",
+      "description" : "Procedure Outcome code: A selection of relevant SNOMED CT codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.428"],
+      "sources" : ["2.16.840.1.113883.4.642.3.428"],
+      "uses" : {
+      },
+      "StructureDefinition-radiotherapy-course-summary.html" : "Radiotherapy course Summary",
+      "StructureDefinition-radiotherapy-phase.html" : "Radiotherapy Phase",
+      "StructureDefinition-radiotherapy-plan.html" : "Radiotherapy Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureReasonCodes",
+      "title" : "Procedure Reason Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a reason for a procedure.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.432"],
+      "sources" : ["2.16.840.1.113883.4.642.3.432"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-surgery.html" : "Oncology Surgery",
+      "StructureDefinition-onco-imagingstudy.html" : "Imaging Study",
+      "StructureDefinition-radiotherapy-course-summary.html" : "Radiotherapy course Summary",
+      "StructureDefinition-radiotherapy-phase.html" : "Radiotherapy Phase",
+      "StructureDefinition-radiotherapy-plan.html" : "Radiotherapy Plan"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/quality-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "qualityType",
+      "title" : "qualityType",
+      "description" : "Type for quality report.",
+      "systems" : ["http://hl7.org/fhir/quality-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.228"],
+      "sources" : ["2.16.840.1.113883.4.642.3.228"],
+      "uses" : {
+      },
+      "StructureDefinition-genome-entity.html" : "Genome Entity",
+      "StructureDefinition-molecular-sequence-5-prime.html" : "5 Prime Molecular Sequence",
+      "StructureDefinition-annotation-reference.html" : "Annotation Reference",
+      "StructureDefinition-molecular-sequence-3-prime.html" : "3 Prime Molecular Sequence"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+      "oids" : ["2.16.840.1.113883.4.642.3.59"],
+      "sources" : ["2.16.840.1.113883.4.642.3.59"],
+      "uses" : {
+      },
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-onco-biological-sample.html" : "Biological Sample",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-biomarker.html" : "Biomarker",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/reason-medication-given-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ReasonMedicationGivenCodes",
+      "title" : "Reason Medication Given Codes",
+      "description" : "This value set is provided as an example. The value set to instantiate this attribute should be drawn from a robust terminology code system that consists of or contains concepts to support the medication process.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/reason-medication-given"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.344"],
+      "sources" : ["2.16.840.1.113883.4.642.3.344"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-imagingstudy-injection.html" : "Imaging Study Injection"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/reason-medication-not-given-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTReasonMedicationNotGivenCodes",
+      "title" : "SNOMED CT Reason Medication Not Given Codes",
+      "description" : "This value set includes all medication refused, medication not administered, and non-administration of necessary drug or medicine codes from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.342"],
+      "sources" : ["2.16.840.1.113883.4.642.3.342"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-imagingstudy-injection.html" : "Imaging Study Injection"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/reason-medication-status-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTDrugTherapyStatusCodes",
+      "title" : "SNOMED CT Drug Therapy Status codes ",
+      "description" : "This value set includes some taken and not taken reason codes from SNOMED CT - provided as an exemplar",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.369"],
+      "sources" : ["2.16.840.1.113883.4.642.3.369"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-medication-statement.html" : "Oncology-related Medication Statement"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeAppliesToCodes",
+      "title" : "Observation Reference Range Applies To Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.407"],
+      "sources" : ["2.16.840.1.113883.4.642.3.407"],
+      "uses" : {
+      },
+      "StructureDefinition-fusion.html" : "Gene Fusion",
+      "StructureDefinition-vital-status.html" : "Vital Status",
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-onco-tnm.html" : "TNM",
+      "StructureDefinition-radiomics-criteria.html" : "Radiomics Criteria",
+      "StructureDefinition-cause-of-death.html" : "Cause Of Death",
+      "StructureDefinition-biomarker.html" : "Biomarker",
+      "StructureDefinition-expression.html" : "Gene Expression",
+      "StructureDefinition-radiomics-Image-filters.html" : "Radiomics Image Filters",
+      "StructureDefinition-roi-segmentation.html" : "ROI segmentation",
+      "StructureDefinition-sequencing-analysis.html" : "Sequencing Analysis",
+      "StructureDefinition-performance-status.html" : "Performance Status",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-analysis.html" : "Analysis",
+      "StructureDefinition-response-evaluation.html" : "Response Evaluation",
+      "StructureDefinition-radiomics-features.html" : "Radiomics Features",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.397"],
+      "sources" : ["2.16.840.1.113883.4.642.3.397"],
+      "uses" : {
+      },
+      "StructureDefinition-fusion.html" : "Gene Fusion",
+      "StructureDefinition-vital-status.html" : "Vital Status",
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-onco-tnm.html" : "TNM",
+      "StructureDefinition-radiomics-criteria.html" : "Radiomics Criteria",
+      "StructureDefinition-cause-of-death.html" : "Cause Of Death",
+      "StructureDefinition-biomarker.html" : "Biomarker",
+      "StructureDefinition-expression.html" : "Gene Expression",
+      "StructureDefinition-radiomics-Image-filters.html" : "Radiomics Image Filters",
+      "StructureDefinition-roi-segmentation.html" : "ROI segmentation",
+      "StructureDefinition-sequencing-analysis.html" : "Sequencing Analysis",
+      "StructureDefinition-performance-status.html" : "Performance Status",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-analysis.html" : "Analysis",
+      "StructureDefinition-response-evaluation.html" : "Response Evaluation",
+      "StructureDefinition-radiomics-features.html" : "Radiomics Features",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/repository-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "repositoryType",
+      "title" : "repositoryType",
+      "description" : "Type for access of external URI.",
+      "systems" : ["http://hl7.org/fhir/repository-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.230"],
+      "sources" : ["2.16.840.1.113883.4.642.3.230"],
+      "uses" : {
+      },
+      "StructureDefinition-genome-entity.html" : "Genome Entity",
+      "StructureDefinition-molecular-sequence-5-prime.html" : "5 Prime Molecular Sequence",
+      "StructureDefinition-annotation-reference.html" : "Annotation Reference",
+      "StructureDefinition-molecular-sequence-3-prime.html" : "3 Prime Molecular Sequence"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "systems" : ["http://hl7.org/fhir/request-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.111"],
+      "sources" : ["2.16.840.1.113883.4.642.3.111"],
+      "uses" : {
+      },
+      "StructureDefinition-treatment.html" : "Treatment"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-study-objective-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ResearchStudyObjectiveType",
+      "title" : "ResearchStudyObjectiveType",
+      "description" : "Codes for the kind of study objective.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/research-study-objective-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.823"],
+      "sources" : ["2.16.840.1.113883.4.642.3.823"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-trial.html" : "Oncology Clinical Trial"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-study-phase",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ResearchStudyPhase",
+      "title" : "ResearchStudyPhase",
+      "description" : "Codes for the stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/research-study-phase"],
+      "oids" : ["2.16.840.1.113883.4.642.3.821"],
+      "sources" : ["2.16.840.1.113883.4.642.3.821"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-trial.html" : "Oncology Clinical Trial"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-study-prim-purp-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ResearchStudyPrimaryPurposeType",
+      "title" : "ResearchStudyPrimaryPurposeType",
+      "description" : "Codes for the main intent of the study.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.827"],
+      "sources" : ["2.16.840.1.113883.4.642.3.827"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-trial.html" : "Oncology Clinical Trial"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-study-reason-stopped",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ResearchStudyReasonStopped",
+      "title" : "ResearchStudyReasonStopped",
+      "description" : "Codes for why the study ended prematurely.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/research-study-reason-stopped"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.825"],
+      "sources" : ["2.16.840.1.113883.4.642.3.825"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-trial.html" : "Oncology Clinical Trial"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-study-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ResearchStudyStatus",
+      "title" : "ResearchStudyStatus",
+      "description" : "Codes that convey the current status of the research study.",
+      "systems" : ["http://hl7.org/fhir/research-study-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.819"],
+      "sources" : ["2.16.840.1.113883.4.642.3.819"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-trial.html" : "Oncology Clinical Trial"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-subject-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ResearchSubjectStatus",
+      "title" : "ResearchSubjectStatus",
+      "description" : "Indicates the progression of a study subject through a study.",
+      "systems" : ["http://hl7.org/fhir/research-subject-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.829"],
+      "sources" : ["2.16.840.1.113883.4.642.3.829"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-trial-subject.html" : "Clinical Trial Subject"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/route-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTRouteCodes",
+      "title" : "SNOMED CT Route Codes",
+      "description" : "This value set includes all Route codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.98"],
+      "sources" : ["2.16.840.1.113883.4.642.3.98"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-imagingstudy-injection.html" : "Imaging Study Injection"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/security-labels",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "All Security Labels",
+      "title" : "SecurityLabels",
+      "description" : "A single value set for all security labels defined by FHIR.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw",
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.47"],
+      "sources" : ["2.16.840.1.113883.4.642.3.47"],
+      "uses" : {
+      },
+      "StructureDefinition-genetic-consent.html" : "Consent for Genetic Data Usage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/security-role-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SecurityRoleType",
+      "title" : "SecurityRoleType",
+      "description" : "This example FHIR value set is comprised of example Actor Type codes, which can be used to value FHIR agents, actors, and other role         elements such as those specified in financial transactions. The FHIR Actor value set is based on    DICOM Audit Message, C402;   ASTM Standard, E1762-95 [2013]; selected codes and          derived actor roles from HL7 RoleClass OID 2.16.840.1.113883.5.110;    HL7 Role Code 2.16.840.1.113883.5.111, including AgentRoleType;          HL7 ParticipationType OID: 2.16.840.1.113883.5.90; and    HL7 ParticipationFunction codes OID: 2.16.840.1.113883.5.88.           This value set includes, by reference, role codes from external code systems: NUCC Health Care Provider Taxonomy OID: 2.16.840.1.113883.6.101;          North American Industry Classification System [NAICS]OID: 2.16.840.1.113883.6.85; IndustryClassificationSystem 2.16.840.1.113883.1.11.16039;          and US Census Occupation Code OID: 2.16.840.1.113883.6.243 for relevant recipient or custodian codes not included in this value set.            If no source is indicated in the definition comments, then these are example FHIR codes.          It can be extended with appropriate roles described by SNOMED as well as those described in the HL7 Role Based Access Control Catalog and the          HL7 Healthcare (Security and Privacy) Access Control Catalog.            In Role-Based Access Control (RBAC), permissions are operations on an object that a user wishes to access. Permissions are grouped into roles.          A role characterizes the functions a user is allowed to perform. Roles are assigned to users. If the user's role has the appropriate permissions          to access an object, then that user is granted access to the object. FHIR readily enables RBAC, as FHIR Resources are object types and the CRUDE          events (the FHIR equivalent to permissions in the RBAC scheme) are operations on those objects.          In Attribute-Based Access Control (ABAC), a user requests to perform operations on objects. That user's access request is granted or denied          based on a set of access control policies that are specified in terms of attributes and conditions. FHIR readily enables ABAC, as instances of          a Resource in FHIR (again, Resources are object types) can have attributes associated with them. These attributes include security tags,          environment conditions, and a host of user and object characteristics, which are the same attributes as those used in ABAC. Attributes help          define the access control policies that determine the operations a user may perform on a Resource (in FHIR) or object (in ABAC). For example,          a tag (or attribute) may specify that the identified Resource (object) is not to be further disclosed without explicit consent from the patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
+        "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+        "http://dicom.nema.org/resources/ontology/DCM"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.978"],
+      "sources" : ["2.16.840.1.113883.4.642.3.978"],
+      "uses" : {
+      },
+      "StructureDefinition-genetic-consent.html" : "Consent for Genetic Data Usage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/sequence-quality-method",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FDA-Method",
+      "title" : "F d a- method",
+      "description" : "This value set includes sequence quality method",
+      "systems" : [
+        "https://precision.fda.gov/jobs/",
+        "https://precision.fda.gov/apps/"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.223"],
+      "sources" : ["2.16.840.1.113883.4.642.3.223"],
+      "uses" : {
+      },
+      "StructureDefinition-genome-entity.html" : "Genome Entity",
+      "StructureDefinition-molecular-sequence-5-prime.html" : "5 Prime Molecular Sequence",
+      "StructureDefinition-annotation-reference.html" : "Annotation Reference",
+      "StructureDefinition-molecular-sequence-3-prime.html" : "3 Prime Molecular Sequence"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/sequence-quality-standardSequence",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FDA-StandardSequence",
+      "title" : "F d a- standard sequence",
+      "description" : "This value set includes sequence quality standard",
+      "systems" : ["https://precision.fda.gov/files/"],
+      "oids" : ["2.16.840.1.113883.4.642.3.222"],
+      "sources" : ["2.16.840.1.113883.4.642.3.222"],
+      "uses" : {
+      },
+      "StructureDefinition-genome-entity.html" : "Genome Entity",
+      "StructureDefinition-molecular-sequence-5-prime.html" : "5 Prime Molecular Sequence",
+      "StructureDefinition-annotation-reference.html" : "Annotation Reference",
+      "StructureDefinition-molecular-sequence-3-prime.html" : "3 Prime Molecular Sequence"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/sequence-referenceSeq",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ENSEMBL",
+      "title" : "E n s e m b l",
+      "description" : "This value set includes all Reference codes",
+      "systems" : [
+        "http://www.ensembl.org",
+        "http://www.ncbi.nlm.nih.gov/nuccore"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.221"],
+      "sources" : ["2.16.840.1.113883.4.642.3.221"],
+      "uses" : {
+      },
+      "StructureDefinition-genome-entity.html" : "Genome Entity",
+      "StructureDefinition-molecular-sequence-5-prime.html" : "5 Prime Molecular Sequence",
+      "StructureDefinition-molecular-sequence-3-prime.html" : "3 Prime Molecular Sequence"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/sequence-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "sequenceType",
+      "title" : "sequenceType",
+      "description" : "Type if a sequence -- DNA, RNA, or amino acid sequence.",
+      "systems" : ["http://hl7.org/fhir/sequence-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.219"],
+      "sources" : ["2.16.840.1.113883.4.642.3.219"],
+      "uses" : {
+      },
+      "StructureDefinition-genome-entity.html" : "Genome Entity",
+      "StructureDefinition-annotation-reference.html" : "Annotation Reference"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/series-performer-function",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImagingStudySeriesPerformerFunction",
+      "title" : "ImagingStudy series performer function",
+      "description" : "Performer function of an agent in an imaging study series",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ParticipationType"],
+      "oids" : ["2.16.840.1.113883.4.642.3.989"],
+      "sources" : ["2.16.840.1.113883.4.642.3.989"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-imagingstudy.html" : "Imaging Study"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-collection-method",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FHIRSpecimenCollectionMethod",
+      "title" : "FHIR Specimen Collection Method",
+      "description" : " This example value set defines a set of codes that can be used to indicate the method by which a specimen was collected.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.468"],
+      "sources" : ["2.16.840.1.113883.4.642.3.468"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-biological-sample.html" : "Biological Sample"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-container-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecimenContainerType",
+      "title" : "Specimen Container Type",
+      "description" : "Checks on the patient prior specimen collection. All SNOMED CT concepts descendants of 706041008 |Device for body fluid and tissue collection/transfer/processing (physical object)|",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.470"],
+      "sources" : ["2.16.840.1.113883.4.642.3.470"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-biological-sample.html" : "Biological Sample"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-processing-procedure",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecimenProcessingProcedure",
+      "title" : "Specimen processing procedure",
+      "description" : "The technique that is used to perform the process or preserve the specimen.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0373"],
+      "oids" : ["2.16.840.1.113883.4.642.3.469"],
+      "sources" : ["2.16.840.1.113883.4.642.3.469"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-biological-sample.html" : "Biological Sample"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecimenStatus",
+      "title" : "SpecimenStatus",
+      "description" : "Codes providing the status/availability of a specimen.",
+      "systems" : ["http://hl7.org/fhir/specimen-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.471"],
+      "sources" : ["2.16.840.1.113883.4.642.3.471"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-biological-sample.html" : "Biological Sample"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/strand-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "strandType",
+      "title" : "strandType",
+      "description" : "Type for strand.",
+      "systems" : ["http://hl7.org/fhir/strand-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.985"],
+      "sources" : ["2.16.840.1.113883.4.642.3.985"],
+      "uses" : {
+      },
+      "StructureDefinition-genome-entity.html" : "Genome Entity",
+      "StructureDefinition-molecular-sequence-5-prime.html" : "5 Prime Molecular Sequence",
+      "StructureDefinition-annotation-reference.html" : "Annotation Reference",
+      "StructureDefinition-molecular-sequence-3-prime.html" : "3 Prime Molecular Sequence"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/udi-entry-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "UDIEntryType",
+      "title" : "UDIEntryType",
+      "description" : "Codes to identify how UDI data was entered.",
+      "systems" : ["http://hl7.org/fhir/udi-entry-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.211"],
+      "sources" : ["2.16.840.1.113883.4.642.3.211"],
+      "uses" : {
+      },
+      "StructureDefinition-sequencing-device.html" : "Sequencing Device",
+      "StructureDefinition-imaging-device.html" : "Imaging Device"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/verificationresult-can-push-updates",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "can-push-updates",
+      "title" : "Can-push-updates",
+      "description" : "Ability of the primary source to push updates/alerts",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/can-push-updates"],
+      "oids" : ["2.16.840.1.113883.4.642.3.896"],
+      "sources" : ["2.16.840.1.113883.4.642.3.896"],
+      "uses" : {
+      },
+      "StructureDefinition-data-validation.html" : "Validation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/verificationresult-communication-method",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "verificationresult-communication-method",
+      "title" : "VerificationResult Communication Method",
+      "description" : "Attested information may be validated by process that are manual or automated. For automated processes it may accomplished by the system of record reaching out through another system's API or information may be sent to the system of record. This value set defines a set of codes to describing the process, the how, a resource or data element is validated.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/verificationresult-communication-method"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1401"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1401"],
+      "uses" : {
+      },
+      "StructureDefinition-data-validation.html" : "Validation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/verificationresult-failure-action",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "failure-action",
+      "title" : "Failure-action",
+      "description" : "The result if validation fails",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/failure-action"],
+      "oids" : ["2.16.840.1.113883.4.642.3.890"],
+      "sources" : ["2.16.840.1.113883.4.642.3.890"],
+      "uses" : {
+      },
+      "StructureDefinition-data-validation.html" : "Validation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/verificationresult-need",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "need",
+      "title" : "Need",
+      "description" : "The frequency with which the target must be validated",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/need"],
+      "oids" : ["2.16.840.1.113883.4.642.3.882"],
+      "sources" : ["2.16.840.1.113883.4.642.3.882"],
+      "uses" : {
+      },
+      "StructureDefinition-data-validation.html" : "Validation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/verificationresult-primary-source-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "primary-source-type",
+      "title" : "Primary-source-type",
+      "description" : "Type of the validation primary source",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/primary-source-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.892"],
+      "sources" : ["2.16.840.1.113883.4.642.3.892"],
+      "uses" : {
+      },
+      "StructureDefinition-data-validation.html" : "Validation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/verificationresult-push-type-available",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "push-type-available",
+      "title" : "Push-type-available",
+      "description" : "Type of alerts/updates the primary source can send",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/push-type-available"],
+      "oids" : ["2.16.840.1.113883.4.642.3.898"],
+      "sources" : ["2.16.840.1.113883.4.642.3.898"],
+      "uses" : {
+      },
+      "StructureDefinition-data-validation.html" : "Validation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/verificationresult-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "status",
+      "title" : "Status",
+      "description" : "The validation status of the target",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.884"],
+      "sources" : ["2.16.840.1.113883.4.642.3.884"],
+      "uses" : {
+      },
+      "StructureDefinition-data-validation.html" : "Validation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/verificationresult-validation-process",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "validation-process",
+      "title" : "Validation-process",
+      "description" : "The primary process by which the target is validated",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/validation-process"],
+      "oids" : ["2.16.840.1.113883.4.642.3.888"],
+      "sources" : ["2.16.840.1.113883.4.642.3.888"],
+      "uses" : {
+      },
+      "StructureDefinition-data-validation.html" : "Validation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/verificationresult-validation-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "validation-status",
+      "title" : "Validation-status",
+      "description" : "Status of the validation of the target against the primary source",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/validation-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.894"],
+      "sources" : ["2.16.840.1.113883.4.642.3.894"],
+      "uses" : {
+      },
+      "StructureDefinition-data-validation.html" : "Validation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/dna-change-type",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "DnaChangeType",
+      "title" : "DNA Change Type",
+      "description" : "DNA Change Type of a variant",
+      "systems" : ["http://sequenceontology.org"],
+      "uses" : {
+      },
+      "StructureDefinition-copy-number.html" : "Variant Copy Number"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/functional-annotation",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "FunctionalAnnotation",
+      "title" : "Functional Annotation",
+      "description" : "Functional annotation of a variant",
+      "systems" : ["http://sequenceontology.org"],
+      "uses" : {
+      },
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/hgnc",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "HGNC",
+      "title" : "HGNC",
+      "description" : "This value set includes all HGNC Codes, which includes multiple code systems. In this guide, Gene IDs from HGNC are used as CodeableConcepts, which must be sent with the HGNC gene ID including the prefix 'HGNC:' as the `code` and the HGNC 'gene symbol' as `display`. CAUTION: HGNC also indexes gene groups by numeric ID (without a prefix), and older systems may send HGNC gene IDs without the prefix, so care must be taken to confirm alignment. We have separately included the genegroup code system to draw attention to this ambiguity and potential error.",
+      "systems" : [
+        "http://www.genenames.org/genegroup",
+        "http://www.genenames.org/geneId"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-fusion.html" : "Gene Fusion",
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-expression.html" : "Gene Expression",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/hgvs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "HGVS",
+      "title" : "HGVS",
+      "description" : "This value set includes all HGVS Codes",
+      "systems" : ["http://varnomen.hgvs.org"],
+      "uses" : {
+      },
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/variant-inheritance",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "VariantInheritance",
+      "title" : "Variant Inheritance",
+      "description" : "A quality inhering in a variant by virtue of its origin.",
+      "systems" : [
+        "http://sequenceontology.org",
+        "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips",
+      "version" : "2.0.0-ballot",
+      "status" : "active",
+      "name" : "WhoAtcUvIps",
+      "title" : "WHO ATC - IPS",
+      "description" : "World Health Organization Anatomical Therapeutic Chemical (ATC) classification system.",
+      "systems" : ["http://www.whocc.no/atc"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-medication-statement.html" : "Oncology-related Medication Statement"
+    },
+    {
+      "url" : "http://loinc.org/vs/LL1040-6",
+      "version" : "2.80",
+      "status" : "active",
+      "name" : "LOINCAnswerListLL1040_6",
+      "title" : null,
+      "description" : "LOINC Answer list for code LL1040-6: HumanRefSeqNCBIBuildId",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation"
+    },
+    {
+      "url" : "http://loinc.org/vs/LL1041-4",
+      "version" : "2.80",
+      "status" : "active",
+      "name" : "LOINCAnswerListLL1041_4",
+      "title" : null,
+      "description" : "LOINC Answer list for code LL1041-4: CopyNumberChangeType",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://loinc.org/vs/LL1971-2",
+      "version" : "2.80",
+      "status" : "active",
+      "name" : "LOINCAnswerListLL1971_2",
+      "title" : null,
+      "description" : "LOINC Answer list for code LL1971-2: Variant Assess",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://loinc.org/vs/LL2938-0",
+      "version" : "2.80",
+      "status" : "active",
+      "name" : "LOINCAnswerListLL2938_0",
+      "title" : null,
+      "description" : "LOINC Answer list for code LL2938-0: List of human chromosomes",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "ValueSet-GeneticMaterial.html" : "GeneticMaterial"
+    },
+    {
+      "url" : "http://loinc.org/vs/LL378-1",
+      "version" : "2.80",
+      "status" : "active",
+      "name" : "LOINCAnswerListLL378_1",
+      "title" : null,
+      "description" : "LOINC Answer list for code LL378-1: MG_2_Genetic variant source",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://loinc.org/vs/LL379-9|4.0.1",
+      "version" : "4.0.1",
+      "name" : null,
+      "title" : null,
+      "description" : null,
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-genome-entity.html" : "Genome Entity",
+      "StructureDefinition-molecular-sequence-5-prime.html" : "5 Prime Molecular Sequence",
+      "StructureDefinition-annotation-reference.html" : "Annotation Reference",
+      "StructureDefinition-molecular-sequence-3-prime.html" : "3 Prime Molecular Sequence"
+    },
+    {
+      "url" : "http://loinc.org/vs/LL380-7",
+      "version" : "2.80",
+      "status" : "active",
+      "name" : "LOINCAnswerListLL380_7",
+      "title" : null,
+      "description" : "LOINC Answer list for code LL380-7: MG_4_Amino acid change type",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://loinc.org/vs/LL381-5",
+      "version" : "2.80",
+      "status" : "active",
+      "name" : "LOINCAnswerListLL381_5",
+      "title" : null,
+      "description" : "LOINC Answer list for code LL381-5: MG_5_Genetic variant allelic state",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://loinc.org/vs/LL3999-1",
+      "version" : "2.80",
+      "status" : "active",
+      "name" : "LOINCAnswerListLL3999_1",
+      "title" : null,
+      "description" : "LOINC Answer list for code LL3999-1: Complex variant types",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://loinc.org/vs/LL4048-6",
+      "version" : "2.80",
+      "status" : "active",
+      "name" : "LOINCAnswerListLL4048_6",
+      "title" : null,
+      "description" : "LOINC Answer list for code LL4048-6: Structural variant analysis method",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://loinc.org/vs/LL5323-2",
+      "version" : "2.80",
+      "status" : "active",
+      "name" : "LOINCAnswerListLL5323_2",
+      "title" : null,
+      "description" : "LOINC Answer list for code LL5323-2: Genomic coordinate system",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0116",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSBedStatus",
+      "title" : "hl7VS-bedStatus",
+      "description" : "Value Set of codes that specify the state of a bed in an inpatient setting, and is used to determine if a patient may be assigned to it or not.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0116"],
+      "oids" : ["2.16.840.1.113883.21.51"],
+      "sources" : ["2.16.840.1.113883.21.51"],
+      "uses" : {
+      },
+      "StructureDefinition-imaging-service.html" : "Imaging Service"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0371",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSAdditivePreservative",
+      "title" : "hl7VS-additivePreservative",
+      "description" : "Concepts specifying any additive introduced to the specimen before or at the time of collection.  These additives may be introduced in order to preserve, maintain or enhance the particular nature or component of the specimen.  Used in Version 2 messaging in the SPM segment.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0371"],
+      "oids" : ["2.16.840.1.113883.21.245"],
+      "sources" : ["2.16.840.1.113883.21.245"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-biological-sample.html" : "Biological Sample"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0916",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSRelevantClincialInformation",
+      "title" : "hl7VS-relevantClincialInformation",
+      "description" : "Value Set of codes that specify additional clinical information about the patient or specimen to report the supporting and/or suspected diagnosis and clinical findings on requests for interpreted diagnostic studies.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0916"],
+      "oids" : ["2.16.840.1.113883.21.440"],
+      "sources" : ["2.16.840.1.113883.21.440"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-biological-sample.html" : "Biological Sample"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-PurposeOfUse",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "PurposeOfUse",
+      "title" : "PurposeOfUse",
+      "description" : "Supports communication of purpose of use at a general level.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActReason"],
+      "oids" : ["2.16.840.1.113883.1.11.20448"],
+      "sources" : ["2.16.840.1.113883.1.11.20448"],
+      "uses" : {
+      },
+      "StructureDefinition-genetic-consent.html" : "Consent for Genetic Data Usage"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-Race",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "Race",
+      "title" : "Race",
+      "description" : "In the United States, federal standards for classifying data on race determine the categories used by federal agencies and exert a strong influence on categorization by state and local agencies and private sector organizations. The federal standards do not conceptually define race, and they recognize the absence of an anthropological or scientific basis for racial classification. Instead, the federal standards acknowledge that race is a social-political construct in which an individual's own identification with one more race categories is preferred to observer identification. The standards use a variety of features to define five minimum race categories. Among these features are descent from \"the original peoples\" of a specified region or nation. The minimum race categories are American Indian or Alaska Native, Asian, Black or African American, Native Hawaiian or Other Pacific Islander, and White. The federal standards stipulate that race data need not be limited to the five minimum categories, but any expansion must be collapsible to those categories.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-Race"],
+      "oids" : ["2.16.840.1.113883.1.11.14914"],
+      "sources" : ["2.16.840.1.113883.1.11.14914"],
+      "uses" : {
+      },
+      "StructureDefinition-ethnicity.html" : "Patient Ethnicity"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ServiceDeliveryLocationRoleType",
+      "title" : "ServiceDeliveryLocationRoleType",
+      "description" : "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "oids" : ["2.16.840.1.113883.1.11.17660"],
+      "sources" : ["2.16.840.1.113883.1.11.17660"],
+      "uses" : {
+      },
+      "StructureDefinition-imaging-service.html" : "Imaging Service"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AdverseEventCode",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "AdverseEventCode",
+      "title" : "Adverse Event Code Value Set",
+      "description" : "Adverse event codes",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/mdr"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-adverse-event.html" : "Oncologic Adverse Event"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AdverseEventGrade",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "AdverseEventGrade",
+      "title" : "Adverse Event Grade Value Set",
+      "description" : "Adverse event grade",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/umls",
+        "https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/CTCAE_v5_Quick_Reference_8.5x11.pdf"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-onco-adverse-event.html" : "Oncologic Adverse Event"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AlgorithmicPloidy",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "AlgorithmicPloidy",
+      "title" : "Algorithmic Ploidy",
+      "description" : "Algorithmic Ploidy",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-sequencing-analysis.html" : "Sequencing Analysis"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AlterationType",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "AlterationType",
+      "title" : "Alteration Type Value Set",
+      "description" : "Alteration type",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AminoAcideChangeType",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "AminoAcideChangeType",
+      "title" : "Amino Acide Change Type Value Set",
+      "description" : "Amino Acide Change Type",
+      "systems" : ["https://github.com/siric-osiris/OSIRIS", "http://loinc.org"]
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AnalysisType",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "AnalysisType",
+      "title" : "Analysis Types Value Set",
+      "description" : "Analysis types",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-analysis.html" : "Analysis",
+      "StructureDefinition-sequencing-analysis.html" : "Sequencing Analysis"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/BiologicalSampleNature",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "BiologicalSampleNature",
+      "title" : "Biological Sample Nature Value Set",
+      "description" : "Biological sample nature",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-biological-sample.html" : "Biological Sample"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/BiologicalSampleOrigin",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "BiologicalSampleOrigin",
+      "title" : "Biological Sample Origin Value Set",
+      "description" : "Biological sample origin",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-onco-biological-sample.html" : "Biological Sample",
+      "StructureDefinition-BiologicalSampleOrigin.html" : "Biological Sample Origin"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/BiomarkerCode",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "BiomarkerCode",
+      "title" : "Biomarker Value Set",
+      "description" : "Biomarker types",
+      "systems" : ["https://github.com/siric-osiris/OSIRIS"],
+      "uses" : {
+      },
+      "StructureDefinition-biomarker.html" : "Biomarker"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/CauseOfDeath",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "CauseOfDeath",
+      "title" : "Cause of death Value Set",
+      "description" : "Cause of death",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"],
+      "uses" : {
+      },
+      "StructureDefinition-cause-of-death.html" : "Cause Of Death"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/Chromosome",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "Chromosome",
+      "title" : "Chromosome Value Set",
+      "description" : "Chromosome",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls",
+        "http://loinc.org"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/CytoBand",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "CytoBand",
+      "title" : "CytoBand Value Set",
+      "description" : "CytoBand",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/umls",
+        "http://genome.ucsc.edu/"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/DNAChangeType",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "DNAChangeType",
+      "title" : "DNA Change Type Value Set",
+      "description" : "DNAChangeType",
+      "systems" : ["https://github.com/siric-osiris/OSIRIS", "http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/FusionType",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "FusionType",
+      "title" : "Fusion Type Value Set",
+      "description" : "Fusion Type",
+      "systems" : ["https://github.com/siric-osiris/OSIRIS", "http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-fusion.html" : "Gene Fusion"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/GeneExpressionDataType",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "GeneExpressionDataType",
+      "title" : "Gene Expression Data Type Value Set",
+      "description" : "Gene Expression Data Type",
+      "systems" : ["https://github.com/siric-osiris/OSIRIS"],
+      "uses" : {
+      },
+      "StructureDefinition-gene-expression-data-type.html" : "Gene Expression Data Type"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/GeneticMaterial",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "GeneticMaterial",
+      "title" : "GeneticMaterial",
+      "description" : "Genetic material",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls",
+        "http://loinc.org"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-molecular-sequence-5-prime.html" : "5 Prime Molecular Sequence",
+      "StructureDefinition-molecular-sequence-3-prime.html" : "3 Prime Molecular Sequence"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/GenomeBuild",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "GenomeBuild",
+      "title" : "GenomeBuild Value Set",
+      "description" : "GenomeBuild",
+      "systems" : ["https://github.com/siric-osiris/OSIRIS"],
+      "uses" : {
+      },
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/GenomeEntityType",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "GenomeEntityType",
+      "title" : "Genome entity type Value Set",
+      "description" : "Type of genome entity",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"],
+      "uses" : {
+      },
+      "StructureDefinition-molecular-sequence-5-prime.html" : "5 Prime Molecular Sequence",
+      "StructureDefinition-genomeentityType.html" : "GenomeEntityType",
+      "StructureDefinition-molecular-sequence-3-prime.html" : "3 Prime Molecular Sequence"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/Laterality",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "Laterality",
+      "title" : "Tumor Laterality Value Set",
+      "description" : "Tumor laterality",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"],
+      "uses" : {
+      },
+      "StructureDefinition-laterality.html" : "Laterality",
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/Morphology",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "Morphology",
+      "title" : "Morphology Value Set",
+      "description" : "Cancer morphology",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"],
+      "uses" : {
+      },
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/MutationPrediction",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "MutationPrediction",
+      "title" : "Mutation prediction Value Set",
+      "description" : "Mutation prediction",
+      "systems" : ["https://github.com/siric-osiris/OSIRIS"],
+      "uses" : {
+      },
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/OsirisValidationType",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "OsirisValidationType",
+      "title" : "Osiris Validation Type",
+      "description" : "Osiris validation type",
+      "systems" : ["https://github.com/siric-osiris/OSIRIS"],
+      "uses" : {
+      },
+      "StructureDefinition-data-validation.html" : "Validation"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/PanelName",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "PanelName",
+      "title" : "Panel Name",
+      "description" : "Panel Name",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-sequencing-device.html" : "Sequencing Device"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/Parentage",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "Parentage",
+      "title" : "Parentage Value Set",
+      "description" : "Parentage",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-family-cancer-history.html" : "Family Cancer History"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/Pathogenicity",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "Pathogenicity",
+      "title" : "Pathogenicity Value Set",
+      "description" : "Pathogenicity",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-fusion.html" : "Gene Fusion",
+      "StructureDefinition-copy-number.html" : "Variant Copy Number",
+      "StructureDefinition-expression.html" : "Gene Expression",
+      "StructureDefinition-snp.html" : "Single Nucleotide Polymorphism"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/PlatformName",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "PlatformName",
+      "title" : "Platform Name",
+      "description" : "Platform Name",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-sequencing-device.html" : "Sequencing Device"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/ROIType",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "ROIType",
+      "title" : "ROI Type Value Set",
+      "description" : "ROI Type",
+      "systems" : ["https://terminology.arkhn.com/radiomicsCS"],
+      "uses" : {
+      },
+      "StructureDefinition-roi-segmentation.html" : "ROI segmentation"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/RadiomicsFeaturesVS",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "RadiomicsFeaturesVS",
+      "title" : "Radiomic Features Value Set",
+      "description" : "Radiomic Features",
+      "systems" : [
+        "https://ibsi.readthedocs.io/en/latest/",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-radiomics-features.html" : "Radiomics Features"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/ReferenceType",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "ReferenceType",
+      "title" : "Reference Type Value Set",
+      "description" : "Annotation reference type",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-annotation-reference.html" : "Annotation Reference"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/ResponseEvaluationStatus",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "ResponseEvaluationStatus",
+      "title" : "Response Status Value Set",
+      "description" : "Response evaluation status",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/umls",
+        "https://recist.eortc.org"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-response-evaluation.html" : "Response Evaluation"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/StorageTemperature",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "StorageTemperature",
+      "title" : "Storage temperature Value Set",
+      "description" : "Sample storage temperature",
+      "systems" : [
+        "https://github.com/siric-osiris/OSIRIS",
+        "http://terminology.hl7.org/CodeSystem/umls"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-onco-biological-sample.html" : "Biological Sample"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/SurgeryResectionQuality",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "SurgeryResectionQuality",
+      "title" : "Surgery Resection Quality Value Set",
+      "description" : "Surgery resection quality",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/umls",
+        "https://recist.eortc.org"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-onco-surgery.html" : "Oncology Surgery"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/TNMVersion",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "TNMVersion",
+      "title" : "TNM Version Value Set",
+      "description" : "TNM version",
+      "systems" : ["https://github.com/siric-osiris/OSIRIS"]
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/TechnicalProtocol",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "TechnicalProtocol",
+      "title" : "Analysis Technical Protocol",
+      "description" : "Analysis technical protocol",
+      "systems" : ["https://github.com/siric-osiris/OSIRIS"],
+      "uses" : {
+      },
+      "StructureDefinition-sequencing-analysis.html" : "Sequencing Analysis"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/Topography",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "Topography",
+      "title" : "Topography Value Set",
+      "description" : "Cancer topography",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-biological-sample.html" : "Biological Sample",
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event",
+      "StructureDefinition-family-cancer-history.html" : "Family Cancer History"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/TreatmentType",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "TreatmentType",
+      "title" : "Treatment Type Value Set",
+      "description" : "Treatment type",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"],
+      "uses" : {
+      },
+      "StructureDefinition-treatment.html" : "Treatment"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/TumorPathologyEventType",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "TumorPathologyEventType",
+      "title" : "Tumor Pathology Event Type Value Set",
+      "description" : "Tumor pathology event type",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"],
+      "uses" : {
+      },
+      "StructureDefinition-tumor-pathology-event.html" : "Tumor Pathology Event"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/VSBodySite",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "VSBodySite",
+      "title" : " Bodysite Value Set",
+      "description" : "Bodysite",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-onco-imagingstudy.html" : "Imaging Study"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/VSLocalizationMethod",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "VSLocalizationMethod",
+      "title" : "Localization Method Value Set",
+      "description" : "Localization Method"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/VSModality",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "VSModality",
+      "title" : " Modality Value Set",
+      "description" : "Modality",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/umls",
+        "https://terminology.arkhn.com/SeriesModalityCS",
+        "https://dicom.nema.org/medical/dicom"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-onco-imagingstudy.html" : "Imaging Study"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/VitalStatus",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "VitalStatus",
+      "title" : "Vital Status Value Set",
+      "description" : "Vital status",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/umls"],
+      "uses" : {
+      },
+      "StructureDefinition-vital-status.html" : "Vital Status"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/codexrt-radiotherapy-reason-for-revision-or-adaptation-vs",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "RadiotherapyReasonReplanificationVS",
+      "title" : "Radiotherapy Reason Replanification",
+      "description" : "Radiotherapy Reason Replanification",
+      "systems" : [
+        "http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/snomed-requested-cs",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-reasonReplanification.html" : "Reason Replanification"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/mcode-radiotherapy-treatment-location-qualifier-vs",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "RadiotherapyTreatmentLocationQualifierVS",
+      "title" : "Radiotherapy Treatment Location Qualifier Value Set",
+      "description" : "Various modifiers that can be applied to body locations where radiotherapy treatments can be directed.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/mcode-radiotherapy-volume-type-vs",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "RadiotherapyVolumeTypeVS",
+      "title" : "Radiotherapy Volume Type Value Set",
+      "description" : "Codes describing the types of body volumes used in radiotherapy planning and treatment. The value set includes the most common codes from DICOM CID 9534 Radiotherapy Targets (UID 1.2.840.10008.6.1.1244) and adds a code for Organs at Risk (OAR).",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/vs-radiotherapy-category",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "VSRadiotherapyCategory",
+      "title" : "Radiotherapy Category",
+      "description" : "Radiotherapy Category",
+      "systems" : [
+        "https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/RadiotherapyCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-radiotherapy-course-summary.html" : "Radiotherapy course Summary",
+      "StructureDefinition-radiotherapy-phase.html" : "Radiotherapy Phase",
+      "StructureDefinition-radiotherapy-plan.html" : "Radiotherapy Plan"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/vs-radiotherapy-intent",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "VSRadiotherapyIntent",
+      "title" : "Radiotherapy Intent",
+      "description" : "RadioTherapy Intent ",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-treatmentIntent.html" : "Treatment Intent"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/vs-radiotherapy-termination-reason",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "VSRadiotherapyTerminationReason",
+      "title" : "Radiotherapy Termination Reason",
+      "description" : "Radiotherapy Termination Reason",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-treatmentTerminationReason.html" : "Treatment Termination Reason"
+    }
+  ]
+}

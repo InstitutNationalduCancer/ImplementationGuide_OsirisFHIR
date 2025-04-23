@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ig-osiris.cancer.fr/ig/osiris/VerificationResult/fhir-osiris-example-validation-1> a fhir:VerificationResult ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir-osiris-example-validation-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/data-validation"^^xsd:anyURI ;
+       fhir:link <https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/data-validation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: VerificationResult fhir-osiris-example-validation-1</b></p><a name=\"fhir-osiris-example-validation-1\"> </a><a name=\"hcfhir-osiris-example-validation-1\"> </a><a name=\"fhir-osiris-example-validation-1-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-data-validation.html\">Validation</a></p></div><p><b>target</b>: <a href=\"Observation-fhir-osiris-example-snp-1.html\">Observation Genetic variant assessment</a></p><p><b>status</b>: In process</p><p><b>validationType</b>: <span title=\"Codes:{https://github.com/siric-osiris/OSIRIS O16-2}\">By biologist</span></p><p><b>validationProcess</b>: <span title=\"Codes:\">biblio</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:target ( [
+     fhir:link <https://ig-osiris.cancer.fr/ig/osiris/Observation/fhir-osiris-example-snp-1> ;
+     fhir:reference [ fhir:v "Observation/fhir-osiris-example-snp-1" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "in-process"] ; # 
+  fhir:validationType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://github.com/siric-osiris/OSIRIS"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "O16-2" ] ;
+       fhir:display [ fhir:v "By biologist" ]
+     ] )
+  ] ; # 
+  fhir:validationProcess ( [
+     fhir:text [ fhir:v "biblio" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

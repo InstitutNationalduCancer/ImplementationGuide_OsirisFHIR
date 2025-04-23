@@ -1,0 +1,1362 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://dicom.nema.org/resources/ontology/DCM",
+      "version" : "01",
+      "status" : "active",
+      "name" : "DICOM Controlled Terminology Definitions",
+      "title" : null,
+      "description" : "DICOM Code Definitions (Coding Scheme Designator \"DCM\" Coding Scheme Version \"01\")",
+      "oids" : ["1.2.840.10008.2.16.4"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medication-statement-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication Status Codes",
+      "title" : "Medication  status  codes",
+      "description" : "Medication Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1379"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medication-statement-status.html" : "Medication  status  codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medication-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication Status Codes",
+      "title" : "Medication  status  codes",
+      "description" : "Medication Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1380"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medication-status.html" : "Medication  status  codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "status",
+      "title" : "Status",
+      "description" : "The validation status of the target",
+      "oids" : ["2.16.840.1.113883.4.642.1.885"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-verificationresult-status.html" : "Status"
+    },
+    {
+      "url" : "http://hl7.org/fhir/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
+    },
+    {
+      "url" : "http://hl7.org/fhir/adverse-event-actuality",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdverseEventActuality",
+      "title" : "AdverseEventActuality",
+      "description" : "Overall nature of the adverse event, e.g. real or potential.",
+      "oids" : ["2.16.840.1.113883.4.642.4.832"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-adverse-event-actuality.html" : "AdverseEventActuality"
+    },
+    {
+      "url" : "http://hl7.org/fhir/care-plan-activity-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityStatus",
+      "title" : "CarePlanActivityStatus",
+      "description" : "Codes that reflect the current state of a care plan activity within its overall life cycle.",
+      "oids" : ["2.16.840.1.113883.4.642.4.147"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-care-plan-activity-status.html" : "CarePlanActivityStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/consent-data-meaning",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentDataMeaning",
+      "title" : "ConsentDataMeaning",
+      "description" : "How a resource reference is interpreted when testing consent restrictions.",
+      "oids" : ["2.16.840.1.113883.4.642.4.760"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-consent-data-meaning.html" : "ConsentDataMeaning"
+    },
+    {
+      "url" : "http://hl7.org/fhir/consent-provision-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentProvisionType",
+      "title" : "ConsentProvisionType",
+      "description" : "How a rule statement is applied, such as adding additional consent or removing consent.",
+      "oids" : ["2.16.840.1.113883.4.642.4.758"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-consent-provision-type.html" : "ConsentProvisionType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/consent-state-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConsentState",
+      "title" : "ConsentState",
+      "description" : "Indicates the state of the consent.",
+      "oids" : ["2.16.840.1.113883.4.642.4.756"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-consent-state-codes.html" : "ConsentState"
+    },
+    {
+      "url" : "http://hl7.org/fhir/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "oids" : ["2.16.840.1.113883.4.642.4.513"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-days-of-week.html" : "DaysOfWeek"
+    },
+    {
+      "url" : "http://hl7.org/fhir/device-nametype",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DeviceNameType",
+      "title" : "DeviceNameType",
+      "description" : "The type of name the device is referred by.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1084"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-device-nametype.html" : "DeviceNameType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/device-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FHIRDeviceStatus",
+      "title" : "FHIRDeviceStatus",
+      "description" : "The availability status of the device.",
+      "oids" : ["2.16.840.1.113883.4.642.4.210"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-device-status.html" : "FHIRDeviceStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/endpoint-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EndpointStatus",
+      "title" : "EndpointStatus",
+      "description" : "The status of the endpoint.",
+      "oids" : ["2.16.840.1.113883.4.642.4.495"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-endpoint-status.html" : "EndpointStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/event-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EventStatus",
+      "title" : "EventStatus",
+      "description" : "Codes identifying the lifecycle stage of an event.",
+      "oids" : ["2.16.840.1.113883.4.642.4.110"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-event-status.html" : "EventStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/history-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FamilyHistoryStatus",
+      "title" : "FamilyHistoryStatus",
+      "description" : "A code that identifies the status of the family history record.",
+      "oids" : ["2.16.840.1.113883.4.642.4.268"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-history-status.html" : "FamilyHistoryStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "oids" : ["2.16.840.1.113883.4.642.4.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/imagingstudy-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImagingStudyStatus",
+      "title" : "ImagingStudyStatus",
+      "description" : "The status of the ImagingStudy.",
+      "oids" : ["2.16.840.1.113883.4.642.4.991"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-imagingstudy-status.html" : "ImagingStudyStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "oids" : ["2.16.840.1.113883.4.642.4.424"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/location-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationMode",
+      "title" : "LocationMode",
+      "description" : "Indicates whether a resource instance represents a specific location or a class of locations.",
+      "oids" : ["2.16.840.1.113883.4.642.4.331"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-location-mode.html" : "LocationMode"
+    },
+    {
+      "url" : "http://hl7.org/fhir/location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationStatus",
+      "title" : "LocationStatus",
+      "description" : "Indicates whether the location is still in use.",
+      "oids" : ["2.16.840.1.113883.4.642.4.333"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-location-status.html" : "LocationStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "oids" : ["2.16.840.1.113883.4.642.4.401"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/orientation-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "orientationType",
+      "title" : "orientationType",
+      "description" : "Type for orientation.",
+      "oids" : ["2.16.840.1.113883.4.642.4.988"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-orientation-type.html" : "orientationType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/quality-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "qualityType",
+      "title" : "qualityType",
+      "description" : "Type for quality report.",
+      "oids" : ["2.16.840.1.113883.4.642.4.229"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-quality-type.html" : "qualityType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/quantity-comparator",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "oids" : ["2.16.840.1.113883.4.642.4.60"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-quantity-comparator.html" : "QuantityComparator"
+    },
+    {
+      "url" : "http://hl7.org/fhir/repository-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "repositoryType",
+      "title" : "repositoryType",
+      "description" : "Type for access of external URI.",
+      "oids" : ["2.16.840.1.113883.4.642.4.231"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-repository-type.html" : "repositoryType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/request-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestIntent",
+      "title" : "RequestIntent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+      "oids" : ["2.16.840.1.113883.4.642.4.114"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-care-plan-intent.html" : "Care Plan Intent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "oids" : ["2.16.840.1.113883.4.642.4.112"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-request-status.html" : "RequestStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ResearchStudyStatus",
+      "title" : "ResearchStudyStatus",
+      "description" : "Codes that convey the current status of the research study.",
+      "oids" : ["2.16.840.1.113883.4.642.4.820"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-research-study-status.html" : "ResearchStudyStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-subject-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ResearchSubjectStatus",
+      "title" : "ResearchSubjectStatus",
+      "description" : "Indicates the progression of a study subject through a study.",
+      "oids" : ["2.16.840.1.113883.4.642.4.830"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-research-subject-status.html" : "ResearchSubjectStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class",
+      "http://hl7.org/fhir/R4/valueset-care-plan-activity-kind.html" : "Care Plan Activity Kind"
+    },
+    {
+      "url" : "http://hl7.org/fhir/sequence-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "sequenceType",
+      "title" : "sequenceType",
+      "description" : "Type if a sequence -- DNA, RNA, or amino acid sequence.",
+      "oids" : ["2.16.840.1.113883.4.642.4.220"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-sequence-type.html" : "sequenceType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/specimen-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecimenStatus",
+      "title" : "SpecimenStatus",
+      "description" : "Codes providing the status/availability of a specimen.",
+      "oids" : ["2.16.840.1.113883.4.642.4.472"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-specimen-status.html" : "SpecimenStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/strand-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "strandType",
+      "title" : "strandType",
+      "description" : "Type for strand.",
+      "oids" : ["2.16.840.1.113883.4.642.4.986"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-strand-type.html" : "strandType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/udi-entry-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "UDIEntryType",
+      "title" : "UDIEntryType",
+      "description" : "Codes to identify how UDI data was entered.",
+      "oids" : ["2.16.840.1.113883.4.642.4.212"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-udi-entry-type.html" : "UDIEntryType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/snomed-requested-cs",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "SnomedRequestedCScodex",
+      "title" : "Requested SNOMED Codes Code System",
+      "description" : "Requested SNOMED Codes by codex",
+      "uses" : {
+      },
+      "ValueSet-codexrt-radiotherapy-reason-for-revision-or-adaptation-vs.html" : "Radiotherapy Reason Replanification"
+    },
+    {
+      "url" : "http://loinc.org",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "LOINC",
+      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+      "oids" : ["2.16.840.1.113883.6.1"],
+      "uses" : {
+      },
+      "http://tx.fhir.org/r4/ValueSet/2696c87d-0c89-4de4-9a09-226f9c88b8e9" : "LOINCAnswerListLL1040_6",
+      "ValueSet-AminoAcideChangeType.html" : "Amino Acide Change Type Value Set",
+      "http://hl7.org/fhir/R4/valueset-consent-content-code.html" : "Consent Content Codes",
+      "ValueSet-FusionType.html" : "Fusion Type Value Set",
+      "http://tx.fhir.org/r4/ValueSet/5b4c3f96-432f-4269-aa27-49d0e8076344" : "LOINCAnswerListLL381_5",
+      "http://tx.fhir.org/r4/ValueSet/754221e8-982b-4410-8152-2d0a0df2946f" : "LOINCAnswerListLL380_7",
+      "http://tx.fhir.org/r4/ValueSet/cc2dff26-06a3-4eef-981d-3c9ba88f9fac" : "LOINCAnswerListLL378_1",
+      "http://tx.fhir.org/r4/ValueSet/4aa7dd9f-d150-4d14-bba9-a4cb96eae8db" : "LOINCAnswerListLL1041_4",
+      "http://tx.fhir.org/r4/ValueSet/9e6f82bc-3080-4eb6-b324-c7e6d06c08b9" : "LOINCAnswerListLL1971_2",
+      "http://tx.fhir.org/r4/ValueSet/33b75675-da80-4af1-a1fc-26619ef480c4" : "LOINCAnswerListLL3999_1",
+      "ValueSet-Chromosome.html" : "Chromosome Value Set",
+      "http://tx.fhir.org/r4/ValueSet/37d13f28-9591-44b4-9e03-42ce7bb9dfa5" : "LOINCAnswerListLL4048_6",
+      "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes",
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
+      "http://tx.fhir.org/r4/ValueSet/c130e538-f544-4b06-84d8-a9dbe1ddfdcd" : "LOINCAnswerListLL5323_2",
+      "ValueSet-DNAChangeType.html" : "DNA Change Type Value Set",
+      "http://tx.fhir.org/r4/ValueSet" : "ValueSet[http://loinc.org/vs/LL379-9|4.0.1|4.0.1]"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "SnomedCS",
+      "title" : "SNOMED Codes Code System",
+      "description" : "SNOMED Codes Code System",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+      "ValueSet-mcode-radiotherapy-volume-type-vs.html" : "Radiotherapy Volume Type Value Set",
+      "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type",
+      "http://hl7.org/fhir/R4/valueset-bodystructure-code.html" : "SNOMED CT Morphologic Abnormalities",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "http://hl7.org/fhir/R4/valueset-reason-medication-status-codes.html" : "SNOMED CT Drug Therapy Status codes ",
+      "ValueSet-vs-radiotherapy-intent.html" : "Radiotherapy Intent",
+      "http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html" : "Care Plan Activity Outcome",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+      "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-bodystructure-relative-location.html" : "Bodystructure Location Qualifier",
+      "http://hl7.org/fhir/R4/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
+      "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
+      "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+      "http://hl7.org/fhir/R4/valueset-bodysite-laterality.html" : "Laterality",
+      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+      "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
+      "ValueSet-VSBodySite.html" : " Bodysite Value Set",
+      "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
+      "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+      "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
+      "ValueSet-vs-radiotherapy-termination-reason.html" : "Radiotherapy Termination Reason",
+      "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "ValueSet-mcode-radiotherapy-treatment-location-qualifier-vs.html" : "Radiotherapy Treatment Location Qualifier Value Set",
+      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-outcome.html" : "Condition Outcome Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
+      "ValueSet-codexrt-radiotherapy-reason-for-revision-or-adaptation-vs.html" : "Radiotherapy Reason Replanification",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-category",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "AdverseEventCategory",
+      "title" : "AdverseEventCategory",
+      "description" : "Overall categorization of the event, e.g. product-related or situational.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1251"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-adverse-event-category.html" : "AdverseEventCategory"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AdverseEventCausalityAssessment",
+      "title" : "AdverseEventCausalityAssessment",
+      "description" : "Codes for the assessment of whether the entity caused the event.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1254"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-adverse-event-causality-assess.html" : "AdverseEventCausalityAssessment"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-causality-method",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "AdverseEventCausalityMethod",
+      "title" : "AdverseEventCausalityMethod",
+      "description" : "This code system contains methods for assessing causality.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1255"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-adverse-event-causality-method.html" : "AdverseEventCausalityMethod"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-outcome",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdverseEventOutcome",
+      "title" : "AdverseEventOutcome",
+      "description" : "TODO (and should this be required?).",
+      "oids" : ["2.16.840.1.113883.4.642.4.1252"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-adverse-event-outcome.html" : "AdverseEventOutcome"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-severity",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "AdverseEventSeverity",
+      "title" : "AdverseEventSeverity",
+      "description" : "The severity of the adverse event itself, in direct relation to the subject.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1256"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-adverse-event-severity.html" : "AdverseEventSeverity"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/can-push-updates",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "Can_push_updates",
+      "title" : "Can-push-updates",
+      "description" : "Ability of the primary source to push updates/alerts",
+      "oids" : ["2.16.840.1.113883.4.642.1.897"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-verificationresult-can-push-updates.html" : "Can-push-updates"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/chromosome-human",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "Chromosome_human",
+      "title" : "chromosome-human",
+      "description" : "Chromosome number for human.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1086"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-chromosome-human.html" : "chromosome-human"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ConditionCategoryCodes",
+      "title" : "Condition Category Codes",
+      "description" : "Preferred value set for Condition Categories.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1073"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-condition-category.html" : "Condition Category Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1074"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-condition-clinical.html" : "Condition Clinical Status Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1075"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-condition-ver-status.html" : "ConditionVerificationStatus"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/consentaction",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ConsentActionCodes",
+      "title" : "Consent Action Codes",
+      "description" : "This value set includes sample Consent Action codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1227"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-consent-action.html" : "Consent Action Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ConsentCategoryCodes",
+      "title" : "Consent Category Codes",
+      "description" : "This value set includes sample Consent Directive Type codes, including several consent directive related LOINC codes; HL7 VALUE SET: ActConsentType(2.16.840.1.113883.1.11.19897); examples of US realm consent directive legal descriptions and references to online and/or downloadable forms such as the SSA-827 Authorization to Disclose Information to the Social Security Administration; and other anticipated consent directives related to participation in a clinical trial, medical procedures, reproductive procedures; health care directive (Living Will); advance directive, do not resuscitate (DNR); Physician Orders for Life-Sustaining Treatment (POLST)",
+      "oids" : ["2.16.840.1.113883.4.642.1.1226"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/consentpolicycodes",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "ConsentPolicyRuleCodes",
+      "title" : "Consent PolicyRule Codes",
+      "description" : "This value set includes sample Regulatory consent policy types from the US and other regions.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1229"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-consent-policy.html" : "Consent PolicyRule Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/consentscope",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "ConsentScopeCodes",
+      "title" : "Consent Scope Codes",
+      "description" : "This value set includes the four Consent scope codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1228"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-consent-scope.html" : "Consent Scope Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/contactentity-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1129"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-contactentity-type.html" : "Contact entity type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ContractSignerTypeCodes",
+      "title" : "Contract Signer Type Codes",
+      "description" : "This value set includes sample Contract Signer Type codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1201"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1048"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/uv/genomics-reporting/STU1/valueset-variant-inheritance.html" : "Variant Inheritance",
+      "http://hl7.org/fhir/R4/valueset-data-absent-reason.html" : "DataAbsentReason"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/device-status-reason",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "FHIRDeviceStatusReason",
+      "title" : "FHIRDeviceStatusReason",
+      "description" : "The availability status reason of the device.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1082"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-device-status-reason.html" : "FHIRDeviceStatusReason"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+      "version" : "2.1.1",
+      "status" : "active",
+      "name" : "EndpointConnectionType",
+      "title" : "Endpoint Connection Type",
+      "description" : "This is an example value set defined by the FHIR project, that could be used to represent possible connection type profile values.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1140"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-endpoint-connection-type.html" : "Endpoint Connection Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "EndpointPayloadType",
+      "title" : "Endpoint Payload Type",
+      "description" : "This is an example value set defined by the FHIR project, that could be used to represent possible payload document types.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1139"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-endpoint-payload-type.html" : "Endpoint Payload Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "SecurityRoleType",
+      "title" : "Security Role Type",
+      "description" : "This CodeSystem contains Additional FHIR-defined Security Role types not defined elsewhere",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/failure-action",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "Failure_action",
+      "title" : "Failure-action",
+      "description" : "The result if validation fails",
+      "oids" : ["2.16.840.1.113883.4.642.1.891"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-verificationresult-failure-action.html" : "Failure-action"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/history-absent-reason",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "FamilyHistoryAbsentReason",
+      "title" : "FamilyHistoryAbsentReason",
+      "description" : "Codes describing the reason why a family member's history is not available.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1094"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-history-absent-reason.html" : "FamilyHistoryAbsentReason"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "IcdO3",
+      "title" : "International Classification of Diseases for Oncology, version 3.",
+      "description" : "International Classification of Diseases for Oncology, version 3. For more information see http://www.who.int/classifications/icd/adaptations/oncology/en/.",
+      "oids" : ["2.16.840.1.113883.6.43.1"],
+      "uses" : {
+      },
+      "ValueSet-Topography.html" : "Topography Value Set",
+      "ValueSet-Morphology.html" : "Morphology Value Set"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "LocationType",
+      "title" : "Location type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.\r\rThis includes several 'non physical' codes which are still considered a location.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1108"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-location-physical-type.html" : "Location type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/med-admin-perform-function",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "MedicationAdministrationPerformerFunctionCodes",
+      "title" : "MedicationAdministration Performer Function Codes",
+      "description" : "MedicationAdministration Performer Function Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.1112"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-med-admin-perform-function.html" : "Medication administration  performer  function  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationAdministration Category Codes",
+      "title" : "Medication administration  category  codes",
+      "description" : "MedicationAdministration Category Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1111"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medication-admin-category.html" : "Medication administration  category  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medication-admin-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationAdministration Status Codes",
+      "title" : "Medication administration  status  codes",
+      "description" : "MedicationAdministration Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1311"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medication-admin-status.html" : "Medication administration  status  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication usage category codes",
+      "title" : "Medication usage category codes",
+      "description" : "Medication Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1120"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medication-statement-category.html" : "Medication usage category codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/need",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "Need",
+      "title" : "Need",
+      "description" : "The frequency with which the target must be validated",
+      "oids" : ["2.16.840.1.113883.4.642.1.883"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-verificationresult-need.html" : "Need"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1125"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1128"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-organization-type.html" : "Organization type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/primary-source-type",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "Primary_source_type",
+      "title" : "Primary-source-type",
+      "description" : "Type of the validation primary source",
+      "oids" : ["2.16.840.1.113883.4.642.1.893"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-verificationresult-primary-source-type.html" : "Primary-source-type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/push-type-available",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "Push_type_available",
+      "title" : "Push-type-available",
+      "description" : "Type of alerts/updates the primary source can send",
+      "oids" : ["2.16.840.1.113883.4.642.1.899"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-verificationresult-push-type-available.html" : "Push-type-available"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/reason-medication-given",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ReasonMedicationGivenCodes",
+      "title" : "Reason Medication Given Codes",
+      "description" : "This value set is provided as an example. The value set to instantiate this attribute should be drawn from a robust terminology code system that consists of or contains concepts to support the medication process.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1110"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-reason-medication-given-codes.html" : "Reason Medication Given Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1124"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-referencerange-meaning.html" : "Observation Reference Range Meaning Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/research-study-objective-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ResearchStudyObjectiveType",
+      "title" : "ResearchStudyObjectiveType",
+      "description" : "Codes for the kind of study objective.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1248"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-research-study-objective-type.html" : "ResearchStudyObjectiveType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/research-study-phase",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ResearchStudyPhase",
+      "title" : "ResearchStudyPhase",
+      "description" : "Codes for the stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1247"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-research-study-phase.html" : "ResearchStudyPhase"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ResearchStudyPrimaryPurposeType",
+      "title" : "ResearchStudyPrimaryPurposeType",
+      "description" : "Codes for the main intent of the study.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1250"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html" : "ResearchStudyPrimaryPurposeType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/research-study-reason-stopped",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ResearchStudyReasonStopped",
+      "title" : "ResearchStudyReasonStopped",
+      "description" : "Codes for why the study ended prematurely.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1249"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-research-study-reason-stopped.html" : "ResearchStudyReasonStopped"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/umls",
+      "version" : "2.0.1",
+      "status" : "retired",
+      "name" : "Umls",
+      "title" : "Unified Medical Language System",
+      "description" : "UMLS codes as CUIs making up the values in a coding system. More information may be found at http://www.nlm.nih.gov/research/umls/",
+      "oids" : ["2.16.840.1.113883.6.86"],
+      "uses" : {
+      },
+      "ValueSet-Laterality.html" : "Tumor Laterality Value Set",
+      "ValueSet-AdverseEventGrade.html" : "Adverse Event Grade Value Set",
+      "ValueSet-RadiomicsFeaturesVS.html" : "Radiomic Features Value Set",
+      "ValueSet-PlatformName.html" : "Platform Name",
+      "ValueSet-CauseOfDeath.html" : "Cause of death Value Set",
+      "ValueSet-Chromosome.html" : "Chromosome Value Set",
+      "ValueSet-ResponseEvaluationStatus.html" : "Response Status Value Set",
+      "ValueSet-VitalStatus.html" : "Vital Status Value Set",
+      "ValueSet-BiologicalSampleNature.html" : "Biological Sample Nature Value Set",
+      "ValueSet-SurgeryResectionQuality.html" : "Surgery Resection Quality Value Set",
+      "ValueSet-ReferenceType.html" : "Reference Type Value Set",
+      "ValueSet-GeneticMaterial.html" : "GeneticMaterial",
+      "ValueSet-TreatmentType.html" : "Treatment Type Value Set",
+      "ValueSet-AlgorithmicPloidy.html" : "Algorithmic Ploidy",
+      "ValueSet-AnalysisType.html" : "Analysis Types Value Set",
+      "ValueSet-GenomeEntityType.html" : "Genome entity type Value Set",
+      "ValueSet-CytoBand.html" : "CytoBand Value Set",
+      "ValueSet-AlterationType.html" : "Alteration Type Value Set",
+      "ValueSet-StorageTemperature.html" : "Storage temperature Value Set",
+      "ValueSet-TumorPathologyEventType.html" : "Tumor Pathology Event Type Value Set",
+      "ValueSet-Parentage.html" : "Parentage Value Set",
+      "ValueSet-PanelName.html" : "Panel Name",
+      "ValueSet-Pathogenicity.html" : "Pathogenicity Value Set",
+      "ValueSet-VSModality.html" : " Modality Value Set",
+      "ValueSet-BiologicalSampleOrigin.html" : "Biological Sample Origin Value Set"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0116",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "BedStatus",
+      "title" : "bedStatus",
+      "description" : "Code system of concepts which specify the state of a bed in an inpatient setting, and is used to determine if a patient may be assigned to it or not.  Used in HL7 Version 2.x messaging in the DLD and PV1 segments.",
+      "oids" : ["2.16.840.1.113883.18.47"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.2.0/ValueSet-v2-0116.html" : "hl7VS-bedStatus"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ContactRole2",
+      "title" : "contactRole2",
+      "description" : "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
+      "oids" : ["2.16.840.1.113883.18.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "IdentifierType",
+      "title" : "identifierType",
+      "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+      "oids" : ["2.16.840.1.113883.18.108"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0371",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "AdditivePreservative",
+      "title" : "additivePreservative",
+      "description" : "HL7-defined code system of concepts specifying any additive introduced to the specimen before or at the time of collection.  These additives may be introduced in order to preserve, maintain or enhance the particular nature or component of the specimen.  Used in HL7 Version 2.x messaging in the SPM and SAC segments.",
+      "oids" : ["2.16.840.1.113883.18.229"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.2.0/ValueSet-v2-0371.html" : "hl7VS-additivePreservative"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0373",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Treatment",
+      "title" : "treatment",
+      "description" : "Code system of concepts that identify the specimen treatment performed during lab processing.  Used in the Interaction Specimen Container Detail (SAC) segment in HL7 Version 2.x messaging.",
+      "oids" : ["2.16.840.1.113883.18.231"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-specimen-processing-procedure.html" : "Specimen processing procedure"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0916",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "RelevantClincialInformation",
+      "title" : "relevantClincialInformation",
+      "description" : "Code system of concepts specifying additional clinical information about the patient or specimen to report the supporting and/or suspected diagnosis and clinical findings on requests for interpreted diagnostic studies. Used in HL7 Version 2.x messaging in the OBR segment.",
+      "oids" : ["2.16.840.1.113883.18.422"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.2.0/ValueSet-v2-0916.html" : "hl7VS-relevantClincialInformation"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "ActReason",
+      "title" : "ActReason",
+      "description" : "A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type \"has reason\" linking to another Act.\r\n\r\n*Examples:* Example reasons that might qualify for being coded in this field might be: \"routine requirement\", \"infectious disease reporting requirement\", \"on patient request\", \"required by law\".",
+      "oids" : ["2.16.840.1.113883.5.8"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.2.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "MaritalStatus",
+      "title" : "MaritalStatus",
+      "description" : "\\* \\* \\* No description supplied \\* \\* \\*\r\n\r\n*Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.\r\n\r\n*Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.",
+      "oids" : ["2.16.840.1.113883.5.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "NullFlavor",
+      "title" : "NullFlavor",
+      "description" : "A collection of codes specifying why a valid value is not present.",
+      "oids" : ["2.16.840.1.113883.5.1008"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ObservationInterpretation",
+      "title" : "ObservationInterpretation",
+      "description" : "One or more codes providing a rough qualitative interpretation of the observation, such as \"normal\" / \"abnormal\", \"low\" / \"high\", \"better\" / \"worse\", \"resistant\" / \"susceptible\", \"expected\" / \"not expected\". The value set is intended to be for ANY use where coded representation of an interpretation is needed.",
+      "oids" : ["2.16.840.1.113883.5.83"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ParticipationFunction",
+      "title" : "ParticipationFunction",
+      "description" : "This code is used to specify the exact function an actor had in a service in all necessary detail. This domain may include local extensions (CWE).",
+      "oids" : ["2.16.840.1.113883.5.88"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ParticipationType",
+      "title" : "ParticipationType",
+      "description" : "A code specifying the meaning and purpose of every Participation instance. Each of its values implies specific constraints on the Roles undertaking the participation.",
+      "oids" : ["2.16.840.1.113883.5.90"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+      "http://hl7.org/fhir/R4/valueset-series-performer-function.html" : "ImagingStudy series performer function"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-Race",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "Race",
+      "title" : "Race",
+      "description" : "**Deprecation Information:** Deprecated per UP-263. This code system is NOT the acknowledged source of truth for Race concepts and codes. It should no longer be used. https://terminology.hl7.org/CodeSystem-CDCREC.html should be used in its place. In the United States, federal standards for classifying data on race determine the categories used by federal agencies and exert a strong influence on categorization by state and local agencies and private sector organizations. The federal standards do not conceptually define race, and they recognize the absence of an anthropological or scientific basis for racial classification. Instead, the federal standards acknowledge that race is a social-political construct in which an individual's own identification with one more race categories is preferred to observer identification. The standards use a variety of features to define five minimum race categories. Among these features are descent from \"the original peoples\" of a specified region or nation. The minimum race categories are American Indian or Alaska Native, Asian, Black or African American, Native Hawaiian or Other Pacific Islander, and White. The federal standards stipulate that race data need not be limited to the five minimum categories, but any expansion must be collapsible to those categories.",
+      "oids" : ["2.16.840.1.113883.5.104"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.2.0/ValueSet-v3-Race.html" : "Race"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "RoleClass",
+      "title" : "RoleClass",
+      "description" : "Codes for the Role class hierarchy. The values in this hierarchy, represent a Role which is an association or relationship between two entities - the entity that plays the role and the entity that scopes the role. Roles names are derived from the name of the playing entity in that role.\r\n\r\nThe role hierarchy stems from three core concepts, or abstract domains:\r\n\r\n *  **RoleClassOntological** is an abstract domain that collects roles in which the playing entity is defined or specified by the scoping entity.\r\n *  **RoleClassPartitive** collects roles in which the playing entity is in some sense a \"part\" of the scoping entity.\r\n *  **RoleClassAssociative** collects all of the remaining forms of association between the playing entity and the scoping entity. This set of roles is further partitioned between:\r\n    \r\n     *  **RoleClassPassive** which are roles in which the playing entity is used, known, treated, handled, built, or destroyed, etc. under the auspices of the scoping entity. The playing entity is passive in these roles in that the role exists without an agreement from the playing entity.\r\n     *  **RoleClassMutualRelationship** which are relationships based on mutual behavior of the two entities. The basis of these relationship may be formal agreements or they may be *de facto* behavior. Thus, this sub-domain is further divided into:\r\n        \r\n         *  **RoleClassRelationshipFormal** in which the relationship is formally defined, frequently by a contract or agreement.\r\n         *  **Personal relationship** which inks two people in a personal relationship.\r\n\r\nThe hierarchy discussed above is represented In the current vocabulary tables as a set of abstract domains, with the exception of the \"Personal relationship\" which is a leaf concept.\r\n\r\n*OpenIssue:* Description copied from Concept Domain of same name. Must be verified.",
+      "oids" : ["2.16.840.1.113883.5.110"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "RoleCode",
+      "title" : "RoleCode",
+      "description" : "A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
+      "oids" : ["2.16.840.1.113883.5.111"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+      "http://terminology.hl7.org/6.2.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/validation-process",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Validation_process",
+      "title" : "Validation-process",
+      "description" : "The primary process by which the target is validated",
+      "oids" : ["2.16.840.1.113883.4.642.1.889"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-verificationresult-validation-process.html" : "Validation-process"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/validation-status",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "Validation_status",
+      "title" : "Validation-status",
+      "description" : "Status of the validation of the target against the primary source",
+      "oids" : ["2.16.840.1.113883.4.642.1.895"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-verificationresult-validation-status.html" : "Validation-status"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/verificationresult-communication-method",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "Verificationresult_communication_method",
+      "title" : "VerificationResult Communication Method",
+      "description" : "Attested information may be validated by process that are manual or automated. For automated processes it may accomplished by the system of record reaching out through another system's API or information may be sent to the system of record. This value set defines a set of codes to describing the process, the how, a resource or data element is validated.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1402"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-verificationresult-communication-method.html" : "VerificationResult Communication Method"
+    },
+    {
+      "url" : "http://varnomen.hgvs.org",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Hgvs",
+      "title" : "Human Genome Variation Society nomenclature",
+      "description" : "HGVS nomenclatures are the guidelines for mutation nomenclature made by the Human Genome Variation Society.\r\n\r\nHGVS nomenclature can be used with the HL7 coded data type (code data type that accepts expression data, or a coded expression data type). This coded data type should be able to distinguish expressions in HGVS nomenclature from coded concepts. For example, in the HL7 messages specified according to the HL7 V2 Clinical Genomics Fully LOINC-Qualified Genetic Variation Model, HGVS nomenclature can be used to as the observation values for DNA sequence variations. For example, OBX|1|CWE|48004-6^DNA Sequence Variation^LN||c.1129C>T^^HGVS|\r\n\r\nVersioning information: The HGVS nomenclature for the description of sequence variants was last modified Feb 20, 2008. The HGVS nomenclature for the description of protein sequence variants was last modified May 12, 2007. The HGVS nomenclature for the description of DNA sequence variants was last modified June 15, 2007 The HGVS nomenclature for the description of RNA sequence variants was last modified May 12, 2007\r\n\r\nHGVS nomenclatures can be used freely by the public.",
+      "oids" : ["2.16.840.1.113883.6.282"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/uv/genomics-reporting/STU1/valueset-hgvs.html" : "HGVS"
+    },
+    {
+      "url" : "http://www.genenames.org/genegroup",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "HGNCGeneGroup",
+      "title" : "HUGO Gene Nomenclature Committee Gene Group",
+      "description" : "\"The HGNC is responsible for approving unique symbols and names for human loci, including protein coding genes, ncRNA genes and pseudogenes, to allow unambiguous scientific communication.\"\r\n\r\nHGNC Gene Group is an index on gene families/groups. The numeric GeneGroup IDs should be used as codes. GeneGroup IDs do not begin with \"HGNC:\" (like the GeneIDs for genes in HGNC Genes), so care must be made to ensure alignment of concepts when viewing an HGNC ID from an older system that may be referring to the GeneID and not a gene group. For example, 588 refers to the HLA gene family, but HGNC:588 identifies the ATG12 gene. To provide clarity for systems that do not distinguish codes from genes and gene families, use \"http://www.genenames.org\" for genes and \"http://www.genenames.org/genegroup\" for gene families as code system URIs.\r\n\r\n\"For each known human gene we approve a gene name and symbol (short-form abbreviation). All approved symbols are stored in the HGNC database,[www.genenames.org](https://www.genenames.org/tools/search), a curated online repository of HGNC-approved gene nomenclature, gene groups and associated resources including links to genomic, proteomic and phenotypic information. Each symbol is unique and we ensure that each gene is only given one approved gene symbol. It is necessary to provide a unique symbol for each gene so that we and others can talk about them, and this also facilitates electronic data retrieval from publications and databases.\"\r\n\r\nFor more information on the use of HGNC Genes, see [https://terminology.hl7.org/CodeSystem-v3-hgnc.html](https://terminology.hl7.org/CodeSystem-v3-hgnc.html).\r\n\r\nHGNC is a free database for the public.\r\n\r\nPlease see https://www.genenames.org/ for more info.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/uv/genomics-reporting/STU1/valueset-hgnc.html" : "HGNC"
+    },
+    {
+      "url" : "http://www.whocc.no/atc",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "WC",
+      "title" : "WHO ATC",
+      "description" : "WHO ATC",
+      "oids" : ["2.16.840.1.113883.6.73"],
+      "uses" : {
+      },
+      "http://tx.hl7europe.eu/r4/ValueSet/whoatc-uv-ips" : "WHO ATC - IPS"
+    },
+    {
+      "url" : "https://ibsi.readthedocs.io/en/latest/",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "IBSICS",
+      "title" : "IBSI Code System",
+      "description" : "IBSI Code System",
+      "uses" : {
+      },
+      "ValueSet-RadiomicsFeaturesVS.html" : "Radiomic Features Value Set"
+    },
+    {
+      "url" : "https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/RadiotherapyCS",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "RadiotherapyCS",
+      "title" : "Radiotherapy Code System",
+      "description" : "Radiotherapy Code System",
+      "uses" : {
+      },
+      "ValueSet-vs-radiotherapy-category.html" : "Radiotherapy Category"
+    },
+    {
+      "url" : "https://terminology.arkhn.com/SeriesModalityCS",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "SeriesModalityCS",
+      "title" : "Series Modality Code System",
+      "description" : "Series Modality  Code System",
+      "uses" : {
+      },
+      "ValueSet-VSModality.html" : " Modality Value Set"
+    },
+    {
+      "url" : "https://terminology.arkhn.com/radiomicsCS",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "RadiomicsCS",
+      "title" : "Imaging Code System",
+      "description" : "Imaging Code System",
+      "uses" : {
+      },
+      "ValueSet-ROIType.html" : "ROI Type Value Set"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ISO3166Part1",
+      "title" : "ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code",
+      "description" : "ISO 3166-1 establishes codes that represent the current names of countries, dependencies, and other areas of particular geopolitical interest, on the basis of country names obtained from the United Nations.",
+      "oids" : ["1.0.3166.1"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-jurisdiction.html" : "Jurisdiction"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166:-2",
+      "version" : "2013-11",
+      "status" : "retired",
+      "name" : "Iso3166_2",
+      "title" : "ISO 3166 Part 2 Country Subdivision Codes",
+      "description" : "Identifies the coding system published in the ISO 3166-2 Standard for Country Subdivision codes. This standard is released periodically, and a new OID will be assigned by ISO for new editions.",
+      "oids" : ["1.0.3166.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-jurisdiction.html" : "Jurisdiction"
+    }
+  ]
+}

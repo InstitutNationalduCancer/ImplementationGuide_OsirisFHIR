@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationAdministration xmlns="http://hl7.org/fhir">
+  <id value="fhir-osiris-example-injection-pt-nm"/>
+  <meta>
+    <profile value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-imagingstudy-injection"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationAdministration fhir-osiris-example-injection-pt-nm</b></p><a name="fhir-osiris-example-injection-pt-nm"> </a><a name="hcfhir-osiris-example-injection-pt-nm"> </a><a name="fhir-osiris-example-injection-pt-nm-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-onco-imagingstudy-injection.html">Imaging Study Injection</a></p></div><p><b>status</b>: Completed</p><p><b>medication</b>: <a href="Medication-fhir-osiris-example-injection-medication-pt-nm.html">Medication </a></p><p><b>subject</b>: <a href="Patient-STS-028.html">Anonymous Patient Unknown, DoB: 1000-01-01</a></p><p><b>effective</b>: 1000-01-01</p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose</b></td></tr><tr><td style="display: none">*</td><td>132600</td></tr></table></div>
+  </text>
+  <status value="completed"/>
+  <medicationReference>
+    <reference value="Medication/fhir-osiris-example-injection-medication-pt-nm"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/STS-028"/>
+  </subject>
+  <effectiveDateTime value="1000-01-01"/>
+  <dosage>
+    <dose>
+      <value value="132600"/>
+    </dose>
+  </dosage>
+</MedicationAdministration>

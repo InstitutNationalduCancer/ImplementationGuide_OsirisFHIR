@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="fhir-osiris-example-snp-1"/>
+  <meta>
+    <profile value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/snp"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation fhir-osiris-example-snp-1</b></p><a name="fhir-osiris-example-snp-1"> </a><a name="hcfhir-osiris-example-snp-1"> </a><a name="fhir-osiris-example-snp-1-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-snp.html">Single Nucleotide Polymorphism</a></p></div><p><b>Strand bias</b>: false</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 69548-6}">Genetic variant assessment</span></p><p><b>subject</b>: <a href="Patient-L304.html">Anonymous Patient Male, DoB: 1967-11-08</a></p><p><b>value</b>: <span title="Codes:{http://loinc.org LA9633-4}">Present</span></p><p><b>derivedFrom</b>: <a href="Observation-fhir-osiris-example-sequencinganalysis-1.html">Observation Omic</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 62374-4}">Human reference sequence assembly version</span></p><p><b>value</b>: <span title="Codes:">hg19</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 48019-4}">DNA change type</span></p><p><b>value</b>: <span title="Codes:{http://loinc.org LA6690-7}">Substitution</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 48002-0}">Genomic source class [Type]</span></p><p><b>value</b>: <span title="Codes:{http://loinc.org LA6684-0}">Somatic</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 82121-5}">Allelic read depth</span></p><p><b>value</b>: 31</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 69547-8}">Genomic ref allele [ID]</span></p><p><b>value</b>: T</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 69551-0}">Genomic alt allele [ID]</span></p><p><b>value</b>: A</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 48000-4}">Chromosome [Identifier] in Blood or Tissue by Molecular genetics method</span></p><p><b>value</b>: <span title="Codes:{http://loinc.org LA21256-5}">Chromosome 3</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org LP232001-0}">Genetic variant details</span></p><p><b>value</b>: 6</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 81254-5}">Genomic allele start-end</span></p><p><b>value</b>: 178916948-178916948</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 53034-5}">Allelic state</span></p><p><b>value</b>: <span title="Codes:{http://loinc.org LA6706-1}">Heterozygous</span></p></blockquote></div>
+  </text>
+  <extension url="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/strand-bias">
+    <valueBoolean value="false"/>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="69548-6"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/L304"/>
+  </subject>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="LA9633-4"/>
+    </coding>
+  </valueCodeableConcept>
+  <derivedFrom>
+    <reference value="Observation/fhir-osiris-example-sequencinganalysis-1"/>
+  </derivedFrom>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="62374-4"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <code value="hg19"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48019-4"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LA6690-7"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48002-0"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LA6684-0"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="82121-5"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="31"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="69547-8"/>
+      </coding>
+    </code>
+    <valueString value="T"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="69551-0"/>
+      </coding>
+    </code>
+    <valueString value="A"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48000-4"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LA21256-5"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LP232001-0"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="6"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="81254-5"/>
+      </coding>
+    </code>
+    <valueRange>
+      <low>
+        <value value="178916948"/>
+      </low>
+      <high>
+        <value value="178916948"/>
+      </high>
+    </valueRange>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="53034-5"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LA6706-1"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

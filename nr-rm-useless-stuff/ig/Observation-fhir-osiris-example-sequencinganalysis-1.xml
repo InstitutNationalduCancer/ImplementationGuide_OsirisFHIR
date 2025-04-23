@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="fhir-osiris-example-sequencinganalysis-1"/>
+  <meta>
+    <profile value="https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/sequencing-analysis"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation fhir-osiris-example-sequencinganalysis-1</b></p><a name="fhir-osiris-example-sequencinganalysis-1"> </a><a name="hcfhir-osiris-example-sequencinganalysis-1"> </a><a name="fhir-osiris-example-sequencinganalysis-1-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-sequencing-analysis.html">Sequencing Analysis</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{https://terminology.arkhn.com/osiris C37-3}">Omic</span></p><p><b>subject</b>: <a href="Patient-L304.html">Anonymous Patient Male, DoB: 1967-11-08</a></p><p><b>focus</b>: <a href="Condition-fhir-osiris-example-TumorPathologyEvent-instance-1.html">Condition C0677930</a></p><p><b>effective</b>: 2018-02-07</p><p><b>method</b>: <span title="Codes:{https://github.com/siric-osiris/OSIRIS O6-4}">O6-4</span></p><p><b>specimen</b>: <a href="Specimen-fhir-osiris-example-biologicalsample-1.html">Specimen: extension = Tumoral,-&gt;Condition C0677930; identifier = ech primary; type = C4039816; condition = Tissue Frozen</a></p><p><b>device</b>: <a href="Device-fhir-osiris-example-sequencingdevice-1.html">Device: identifier =  ; type = O7-66</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/umls C0162801}">C0162801</span></p><p><b>value</b>: v351</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/umls 258049002}">258049002</span></p><p><b>value</b>: 2017-09-20</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/umls C3260254}">C3260254</span></p><p><b>value</b>: 50</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/umls C0032246}">C0032246</span></p><p><b>value</b>: <span title="Codes:{https://github.com/siric-osiris/OSIRIS O13-2}">O13-2</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org LA26327-9}">Intrachromosomal breakpoint</span></p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="https://terminology.arkhn.com/osiris"/>
+      <code value="C37-3"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/L304"/>
+  </subject>
+  <focus>
+    <reference value="Condition/fhir-osiris-example-TumorPathologyEvent-instance-1"/>
+  </focus>
+  <effectiveDateTime value="2018-02-07"/>
+  <method>
+    <coding>
+      <system value="https://github.com/siric-osiris/OSIRIS"/>
+      <code value="O6-4"/>
+    </coding>
+  </method>
+  <specimen>
+    <reference value="Specimen/fhir-osiris-example-biologicalsample-1"/>
+  </specimen>
+  <device>
+    <reference value="Device/fhir-osiris-example-sequencingdevice-1"/>
+  </device>
+  <component>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/umls"/>
+        <code value="C0162801"/>
+      </coding>
+    </code>
+    <valueString value="v351"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/umls"/>
+        <code value="258049002"/>
+      </coding>
+    </code>
+    <valueDateTime value="2017-09-20"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/umls"/>
+        <code value="C3260254"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="50"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/umls"/>
+        <code value="C0032246"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://github.com/siric-osiris/OSIRIS"/>
+        <code value="O13-2"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LA26327-9"/>
+      </coding>
+    </code>
+  </component>
+</Observation>

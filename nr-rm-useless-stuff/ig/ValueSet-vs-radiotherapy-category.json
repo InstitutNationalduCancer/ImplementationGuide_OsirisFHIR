@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-radiotherapy-category",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-radiotherapy-category</b></p><a name=\"vs-radiotherapy-category\"> </a><a name=\"hcvs-radiotherapy-category\"> </a><a name=\"vs-radiotherapy-category-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-RadiotherapyCS.html\"><code>https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/RadiotherapyCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-RadiotherapyCS.html#RadiotherapyCS-Planned\">Planned</a></td><td style=\"color: #cccccc\">Planified</td></tr><tr><td><a href=\"CodeSystem-RadiotherapyCS.html#RadiotherapyCS-Delivered\">Delivered</a></td><td style=\"color: #cccccc\">Delivered</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/vs-radiotherapy-category",
+  "version" : "1.1.0",
+  "name" : "VSRadiotherapyCategory",
+  "title" : "Radiotherapy Category",
+  "status" : "draft",
+  "date" : "2025-04-23T09:23:26+00:00",
+  "publisher" : "institutcancer",
+  "contact" : [{
+    "name" : "institutcancer",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://cancer.fr"
+    },
+    {
+      "system" : "email",
+      "value" : "osiris@institutcancer.fr"
+    }]
+  },
+  {
+    "name" : "Aurélien JOBARD",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "osiris@institutcancer.fr"
+    }]
+  }],
+  "description" : "Radiotherapy Category",
+  "compose" : {
+    "include" : [{
+      "system" : "https://ig-osiris.cancer.fr/ig/osiris/CodeSystem/RadiotherapyCS",
+      "concept" : [{
+        "code" : "Planned"
+      },
+      {
+        "code" : "Delivered"
+      }]
+    }]
+  }
+}

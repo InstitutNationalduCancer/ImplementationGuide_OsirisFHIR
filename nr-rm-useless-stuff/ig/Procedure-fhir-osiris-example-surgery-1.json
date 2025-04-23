@@ -1,0 +1,27 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "fhir-osiris-example-surgery-1",
+  "meta" : {
+    "profile" : ["https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-surgery"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure fhir-osiris-example-surgery-1</b></p><a name=\"fhir-osiris-example-surgery-1\"> </a><a name=\"hcfhir-osiris-example-surgery-1\"> </a><a name=\"fhir-osiris-example-surgery-1-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-surgery.html\">Oncology Surgery</a></p></div><p><b>basedOn</b>: <a href=\"CarePlan-fhir-osiris-example-treatment-1.html\">CarePlan: extension = 2; status = unknown; intent = plan; category = C0728940; period = 2006-01-04 --&gt; 2006-11-23</a></p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:\">Unknown</span></p><p><b>subject</b>: <a href=\"Patient-L304.html\">Anonymous Patient Male, DoB: 1967-11-08</a></p><p><b>outcome</b>: <span title=\"Codes:{https://recist.eortc.org R0}\">R0</span></p></div>"
+  },
+  "basedOn" : [{
+    "reference" : "CarePlan/fhir-osiris-example-treatment-1"
+  }],
+  "status" : "completed",
+  "category" : {
+    "text" : "Unknown"
+  },
+  "subject" : {
+    "reference" : "Patient/L304"
+  },
+  "outcome" : {
+    "coding" : [{
+      "system" : "https://recist.eortc.org",
+      "code" : "R0"
+    }]
+  }
+}

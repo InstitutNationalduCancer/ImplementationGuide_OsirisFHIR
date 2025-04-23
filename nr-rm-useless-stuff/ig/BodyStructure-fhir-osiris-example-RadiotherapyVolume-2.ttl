@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ig-osiris.cancer.fr/ig/osiris/BodyStructure/fhir-osiris-example-RadiotherapyVolume-2> a fhir:BodyStructure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir-osiris-example-RadiotherapyVolume-2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-volume"^^xsd:anyURI ;
+       fhir:link <https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/radiotherapy-volume>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: BodyStructure fhir-osiris-example-RadiotherapyVolume-2</b></p><a name=\"fhir-osiris-example-RadiotherapyVolume-2\"> </a><a name=\"hcfhir-osiris-example-RadiotherapyVolume-2\"> </a><a name=\"fhir-osiris-example-RadiotherapyVolume-2-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-radiotherapy-volume.html\">Radiotherapy Volume Profile</a></p></div><p><b>identifier</b>: urn:oid:1.2.246.352.71.842418.2121.20150602151.103</p><p><b>location</b>: <span title=\"Codes:{http://snomed.info/sct 76752008}\">Breast</span></p><p><b>locationQualifier</b>: <span title=\"Codes:{http://snomed.info/sct 7771000}, {http://snomed.info/sct 255609007}\">Left (qualifier value)</span></p><p><b>description</b>: Left Breast Surgical Bed</p><p><b>patient</b>: <a href=\"Patient-L304.html\">Anonymous Patient Male, DoB: 1967-11-08</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "urn:oid:1.2.246.352.71.842418.2121.20150602151.103" ]
+  ] ) ; # 
+  fhir:location [
+     fhir:coding ( [
+       a sct:76752008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "76752008" ]
+     ] )
+  ] ; # 
+  fhir:locationQualifier ( [
+     fhir:coding ( [
+       a sct:7771000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "7771000" ]
+     ] [
+       a sct:255609007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "255609007" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Left Breast Surgical Bed"] ; # 
+  fhir:patient [
+     fhir:link <https://ig-osiris.cancer.fr/ig/osiris/Patient/L304> ;
+     fhir:reference [ fhir:v "Patient/L304" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mcode-radiotherapy-volume-type-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet mcode-radiotherapy-volume-type-vs</b></p><a name="mcode-radiotherapy-volume-type-vs"> </a><a name="hcmcode-radiotherapy-volume-type-vs"> </a><a name="mcode-radiotherapy-volume-type-vs-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-SnomedCS.html#SnomedCS-228793007">228793007</a></td><td>Planning target volume (observable entity)</td></tr><tr><td><a href="CodeSystem-SnomedCS.html#SnomedCS-228791009">228791009</a></td><td>Gross tumor volume (observable entity)</td></tr><tr><td><a href="CodeSystem-SnomedCS.html#SnomedCS-228792002">228792002</a></td><td>Clinical target volume (observable entity)</td></tr><tr><td><a href="CodeSystem-SnomedCS.html#SnomedCS-1162586008">1162586008</a></td><td>Irradiated volume of organ at risk (observable entity)</td></tr><tr><td><a href="CodeSystem-SnomedCS.html#SnomedCS-1201745009">1201745009</a></td><td>Internal target volume (observable entity)</td></tr><tr><td><a href="CodeSystem-SnomedCS.html#SnomedCS-1201746005">1201746005</a></td><td>Internal gross tumor volume (observable entity)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://ig-osiris.cancer.fr/ig/osiris/ValueSet/mcode-radiotherapy-volume-type-vs"/>
+  <version value="1.1.0"/>
+  <name value="RadiotherapyVolumeTypeVS"/>
+  <title value="Radiotherapy Volume Type Value Set"/>
+  <status value="draft"/>
+  <date value="2025-04-23T09:23:26+00:00"/>
+  <publisher value="institutcancer"/>
+  <contact>
+    <name value="institutcancer"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://cancer.fr"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="osiris@institutcancer.fr"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Aurélien JOBARD"/>
+    <telecom>
+      <system value="email"/>
+      <value value="osiris@institutcancer.fr"/>
+    </telecom>
+  </contact>
+  <description value="Codes describing the types of body volumes used in radiotherapy planning and treatment. The value set includes the most common codes from DICOM CID 9534 Radiotherapy Targets (UID 1.2.840.10008.6.1.1244) and adds a code for Organs at Risk (OAR)."/>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="228793007"/>
+        <display value="Planning target volume (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="228791009"/>
+        <display value="Gross tumor volume (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="228792002"/>
+        <display value="Clinical target volume (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="1162586008"/>
+        <display value="Irradiated volume of organ at risk (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="1201745009"/>
+        <display value="Internal target volume (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="1201746005"/>
+        <display value="Internal gross tumor volume (observable entity)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

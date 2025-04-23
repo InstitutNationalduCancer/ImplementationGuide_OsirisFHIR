@@ -1,0 +1,84 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AminoAcideChangeType> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AminoAcideChangeType"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet AminoAcideChangeType</b></p><a name=\"AminoAcideChangeType\"> </a><a name=\"hcAminoAcideChangeType\"> </a><a name=\"AminoAcideChangeType-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA6692-3/\">LA6692-3</a></td><td>Deletion</td></tr><tr><td><a href=\"https://loinc.org/LA6686-5/\">LA6686-5</a></td><td>Duplication</td></tr><tr><td><a href=\"https://loinc.org/LA6694-9/\">LA6694-9</a></td><td>Frameshift</td></tr><tr><td><a href=\"https://loinc.org/LA6695-6/\">LA6695-6</a></td><td>Initiating Methionine</td></tr><tr><td><a href=\"https://loinc.org/LA6687-3/\">LA6687-3</a></td><td>Insertion</td></tr><tr><td><a href=\"https://loinc.org/LA9659-9/\">LA9659-9</a></td><td>Insertion and Deletion</td></tr><tr><td><a href=\"https://loinc.org/LA6698-0/\">LA6698-0</a></td><td>Missense</td></tr><tr><td><a href=\"https://loinc.org/LA6699-8/\">LA6699-8</a></td><td>Nonsense</td></tr><tr><td><a href=\"https://loinc.org/LA6700-4/\">LA6700-4</a></td><td>Silent</td></tr><tr><td><a href=\"https://loinc.org/LA6701-2/\">LA6701-2</a></td><td>Stop Codon Mutation</td></tr></table></li><li>Include these codes as defined in <code>https://github.com/siric-osiris/OSIRIS</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>O75-1</td><td>In frame</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://ig-osiris.cancer.fr/ig/osiris/ValueSet/AminoAcideChangeType"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.1.0"] ; # 
+  fhir:name [ fhir:v "AminoAcideChangeType"] ; # 
+  fhir:title [ fhir:v "Amino Acide Change Type Value Set"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-04-23T09:23:26+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "institutcancer"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "institutcancer" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://cancer.fr" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "osiris@institutcancer.fr" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Aurélien JOBARD" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "osiris@institutcancer.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Amino Acide Change Type"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA6692-3" ] ;
+         fhir:display [ fhir:v "Deletion" ]
+       ] [
+         fhir:code [ fhir:v "LA6686-5" ] ;
+         fhir:display [ fhir:v "Duplication" ]
+       ] [
+         fhir:code [ fhir:v "LA6694-9" ] ;
+         fhir:display [ fhir:v "Frameshift" ]
+       ] [
+         fhir:code [ fhir:v "LA6695-6" ] ;
+         fhir:display [ fhir:v "Initiating Methionine" ]
+       ] [
+         fhir:code [ fhir:v "LA6687-3" ] ;
+         fhir:display [ fhir:v "Insertion" ]
+       ] [
+         fhir:code [ fhir:v "LA9659-9" ] ;
+         fhir:display [ fhir:v "Insertion and Deletion" ]
+       ] [
+         fhir:code [ fhir:v "LA6698-0" ] ;
+         fhir:display [ fhir:v "Missense" ]
+       ] [
+         fhir:code [ fhir:v "LA6699-8" ] ;
+         fhir:display [ fhir:v "Nonsense" ]
+       ] [
+         fhir:code [ fhir:v "LA6700-4" ] ;
+         fhir:display [ fhir:v "Silent" ]
+       ] [
+         fhir:code [ fhir:v "LA6701-2" ] ;
+         fhir:display [ fhir:v "Stop Codon Mutation" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://github.com/siric-osiris/OSIRIS"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "O75-1" ] ;
+         fhir:display [ fhir:v "In frame" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

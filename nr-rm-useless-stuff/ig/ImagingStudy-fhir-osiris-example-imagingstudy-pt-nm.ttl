@@ -1,0 +1,148 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ig-osiris.cancer.fr/ig/osiris/ImagingStudy/fhir-osiris-example-imagingstudy-pt-nm> a fhir:ImagingStudy ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir-osiris-example-imagingstudy-pt-nm"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-imagingstudy"^^xsd:anyURI ;
+       fhir:link <https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/onco-imagingstudy>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImagingStudy fhir-osiris-example-imagingstudy-pt-nm</b></p><a name=\"fhir-osiris-example-imagingstudy-pt-nm\"> </a><a name=\"hcfhir-osiris-example-imagingstudy-pt-nm\"> </a><a name=\"fhir-osiris-example-imagingstudy-pt-nm-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-onco-imagingstudy.html\">Imaging Study</a></p></div><p><b>identifier</b>: 1.3.6.1.4.1.14519.5.2.1.5168.1900.291490762800233473213844289511</p><p><b>status</b>: Available</p><p><b>modality</b>: <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-umls.html#umls-C0439673\">Unified Medical Language System C0439673</a>: C0439673</p><p><b>subject</b>: <a href=\"Patient-STS-028.html\">Anonymous Patient Unknown, DoB: 1000-01-01</a></p><p><b>started</b>: 2004-01-27</p><p><b>endpoint</b>: <a href=\"Endpoint-fhir-osiris-example-imagingendpoint-pt-nm.html\">Endpoint ['Soft-tissue-Sarcoma/STS_028/01-27-2004-NA-PET CT with registered MR-89511/4.000000-LEGS2DAC-91862/1-036.dcm']</a></p><p><b>numberOfSeries</b>: 999999</p><p><b>reasonReference</b>: <a href=\"Observation-fhir-osiris-example-analysis-pt-nm.html\">Observation Imaging</a></p><p><b>description</b>: CT PET with registered MR	</p><blockquote><p><b>series</b></p><blockquote><p><b>Imaging Settings</b></p><blockquote><p><b>url</b></p>slice_thickness</blockquote><p><b>value</b>: 3.2700</p><blockquote><p><b>url</b></p>pixel_spacing</blockquote><p><b>value</b>: [5.46875, 5.46875]</p><blockquote><p><b>url</b></p>rows</blockquote><p><b>value</b>: 128</p><blockquote><p><b>url</b></p>columns</blockquote><p><b>value</b>: 128</p><blockquote><p><b>url</b></p>imaging_injection</blockquote><p><b>value</b>: <a href=\"MedicationAdministration-fhir-osiris-example-injection-pt-nm.html\">MedicationAdministration: status = completed; medication[x] = -&gt;Medication ; effective[x] = 1000-01-01</a></p><p><b>attenuation_correction_method</b>: measured,, 0.096000 cm-1</p><p><b>reconstruction_method</b>: OSEM</p><p><b>scatter_correction_method</b>: Convolution subtraction</p><blockquote><p><b>url</b></p>pt_nm_image</blockquote></blockquote><blockquote><p><b>Weight and Height at the time of the Serie</b></p><ul><li>patient_weight: 58</li><li>patient_height: 1.57</li></ul></blockquote><p><b>uid</b>: 1.3.6.1.4.1.14519.5.2.1.5168.1900.250501927430896548137411991862</p><p><b>number</b>: 4</p><p><b>modality</b>: dicom PT: PT</p><p><b>description</b>: LEGS_2D_AC PET CT with registered MR</p><p><b>numberOfInstances</b>: 999999</p><p><b>bodySite</b>: <a href=\"http://snomed.info/id/66019005\">SNOMED CT 66019005</a>: Extremity</p><p><b>started</b>: 2004-01-27</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Device-fhir-osiris-example-imagingdevice-pt-nm.html\">Device: manufacturer = GE MEDICAL SYSTEMS</a></td></tr></table><h3>Instances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Uid</b></td><td><b>SopClass</b></td></tr><tr><td style=\"display: none\">*</td><td>1.3.6.1.4.1.14519.5.2.1.5168.1900.309323295882753345616672095692</td><td>[not stated] table_B.5-1#1.2.840.10008.5.1.4.1.1.128: Positron Emission Tomography Image Storage</td></tr></table></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "1.3.6.1.4.1.14519.5.2.1.5168.1900.291490762800233473213844289511" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "available"] ; # 
+  fhir:modality ( [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/umls"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "C0439673" ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <https://ig-osiris.cancer.fr/ig/osiris/Patient/STS-028> ;
+     fhir:reference [ fhir:v "Patient/STS-028" ]
+  ] ; # 
+  fhir:started [ fhir:v "2004-01-27"^^xsd:date] ; # 
+  fhir:endpoint ( [
+     fhir:link <https://ig-osiris.cancer.fr/ig/osiris/Endpoint/fhir-osiris-example-imagingendpoint-pt-nm> ;
+     fhir:reference [ fhir:v "Endpoint/fhir-osiris-example-imagingendpoint-pt-nm" ]
+  ] ) ; # 
+  fhir:numberOfSeries [ fhir:v "999999"^^xsd:nonNegativeInteger] ; # 
+  fhir:reasonReference ( [
+     fhir:link <https://ig-osiris.cancer.fr/ig/osiris/Observation/fhir-osiris-example-analysis-pt-nm> ;
+     fhir:reference [ fhir:v "Observation/fhir-osiris-example-analysis-pt-nm" ]
+  ] ) ; # 
+  fhir:description [ fhir:v "CT PET with registered MR	"] ; # 
+  fhir:series ( [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "slice_thickness"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "3.2700"
+         ]
+       ] [
+         fhir:url [ fhir:v "pixel_spacing"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "[5.46875, 5.46875]"
+         ]
+       ] [
+         fhir:url [ fhir:v "rows"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 128
+         ]
+       ] [
+         fhir:url [ fhir:v "columns"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 128
+         ]
+       ] [
+         fhir:url [ fhir:v "imaging_injection"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Reference ;
+           fhir:link <https://ig-osiris.cancer.fr/ig/osiris/MedicationAdministration/fhir-osiris-example-injection-pt-nm> ;
+           fhir:reference [ fhir:v "MedicationAdministration/fhir-osiris-example-injection-pt-nm" ]
+         ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "attenuation_correction_method"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:string ;
+             fhir:v "measured,, 0.096000 cm-1"
+           ]
+         ] [
+           fhir:url [ fhir:v "reconstruction_method"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:string ;
+             fhir:v "OSEM"
+           ]
+         ] [
+           fhir:url [ fhir:v "scatter_correction_method"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:string ;
+             fhir:v "Convolution subtraction"
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "pt_nm_image"^^xsd:anyURI ]
+       ] ) ;
+       fhir:url [ fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/imaging-settings"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "patient_weight"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:decimal ;
+           fhir:v "58"^^xsd:decimal
+         ]
+       ] [
+         fhir:url [ fhir:v "patient_height"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:decimal ;
+           fhir:v 1.57
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "https://ig-osiris.cancer.fr/ig/osiris/StructureDefinition/series-weightheigt"^^xsd:anyURI ]
+     ] ) ;
+     fhir:uid [ fhir:v "1.3.6.1.4.1.14519.5.2.1.5168.1900.250501927430896548137411991862" ] ;
+     fhir:number [ fhir:v "4"^^xsd:nonNegativeInteger ] ;
+     fhir:modality [
+       fhir:system [ fhir:v "https://dicom.nema.org/medical/dicom"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ]
+     ] ;
+     fhir:description [ fhir:v "LEGS_2D_AC PET CT with registered MR" ] ;
+     fhir:numberOfInstances [ fhir:v "999999"^^xsd:nonNegativeInteger ] ;
+     fhir:bodySite [
+       a sct:66019005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "66019005" ]
+     ] ;
+     fhir:started [ fhir:v "2004-01-27"^^xsd:date ] ;
+     fhir:performer ( [
+       fhir:actor [
+         fhir:link <https://ig-osiris.cancer.fr/ig/osiris/Device/fhir-osiris-example-imagingdevice-pt-nm> ;
+         fhir:reference [ fhir:v "Device/fhir-osiris-example-imagingdevice-pt-nm" ]
+       ]
+     ] ) ;
+     fhir:instance ( [
+       fhir:uid [ fhir:v "1.3.6.1.4.1.14519.5.2.1.5168.1900.309323295882753345616672095692" ] ;
+       fhir:sopClass [
+         fhir:code [ fhir:v "table_B.5-1#1.2.840.10008.5.1.4.1.1.128" ] ;
+         fhir:display [ fhir:v "Positron Emission Tomography Image Storage" ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
